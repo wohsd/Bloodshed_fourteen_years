@@ -1,11 +1,11 @@
 
 ROY_buffer_in_mainland = {
 	allowed = {
-		tag = ROY
+		tag = ROH
 	}
 	enable = {
 		check_variable = {
-			Chi_Shui=4
+			Chi_Shui=2
 		}
 	}
 	abort_when_not_enabled = yes
@@ -13,19 +13,10 @@ ROY_buffer_in_mainland = {
 	ai_strategy = {
 		type = put_unit_buffers
 		states = {
-			619
-		}
-		ratio = 0
-		area = asia
-		subtract_invasions_from_need = no
-		subtract_fronts_from_need = no
-	}
-	ai_strategy = {
-		type = put_unit_buffers
-		states = {
-			341
-			321
-			286
+			615
+			614
+			309
+			283
 		}
 		ratio = 0.8
 		area = asia
