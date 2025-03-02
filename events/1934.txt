@@ -329,10 +329,8 @@ country_event = {
 	fire_only_once = yes
     trigger = {
 		PRC = {
-			AND={
 				has_war = yes
-				controls_province = 3932
-			}
+				controls_province = 3923
 		}
     }
     immediate = {
@@ -350,7 +348,7 @@ country_event = {
 
 country_event = {
 	id = PRC_1934Hidden.9
-	hidden = yes
+	#hidden = yes
 	fire_only_once = yes
     trigger = {
 		PRC = {
@@ -374,13 +372,13 @@ country_event = {
 }
 country_event = {
 	id = PRC_1934Hidden.10
-	hidden = yes
+	#hidden = yes
 	fire_only_once = yes
     trigger = {
 		PRC = {
 			AND={
 				has_war = yes
-				controls_province = 4847
+				controls_province = 5247
 			}
 		}
     }
@@ -398,13 +396,13 @@ country_event = {
 }
 country_event = {
 	id = PRC_1934Hidden.11
-	hidden = yes
+	#hidden = yes
 	fire_only_once = yes
     trigger = {
 		PRC = {
 			AND={
 				has_war = yes
-				controls_province = 4848
+				controls_province = 5248
 			}
 		}
     }
