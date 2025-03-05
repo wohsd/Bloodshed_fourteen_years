@@ -9,7 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		
+		victory_points = {
+			2541 5
+		}
 		1936.1.1={
 			owner = ROD
 		}

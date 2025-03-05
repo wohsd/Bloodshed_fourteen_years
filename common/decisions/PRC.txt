@@ -145,6 +145,10 @@ Long_march_decisions = {
 			add_ideas = Chinese_red_army1
 			PRC={
 				declare_war_on = {
+					target = YHC
+					type = annex_everything
+				} 
+				declare_war_on = {
 					target = JZZ
 					type = annex_everything
 				} 
@@ -538,13 +542,13 @@ Long_march_decisions = {
 			PRC = {
 				AND={
 					has_war = yes
-					controls_province = 1606
+					controls_province = 3766
 				}
 			}
 		}
 		days_mission_timeout = 35
 		activation = {
-			has_country_flag = Long_march_mission6
+			#has_country_flag = Long_march_mission6
 		}
 		visible = {
 		}		
@@ -580,7 +584,7 @@ Long_march_decisions = {
 		}
 		days_mission_timeout = 50
 		activation = {
-			has_country_flag = Long_march_mission7
+			#has_country_flag = Long_march_mission7
 		}
 		visible = {
 		}		

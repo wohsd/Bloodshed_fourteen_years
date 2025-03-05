@@ -323,10 +323,147 @@ country_event = {
 
 
 
+country_event = {
+	id = PRC_1934Hidden.8
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3923
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_3923
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.8.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.7
+			}
+		}
+		clr_global_flag = fall_3923
+	}		
+}
 
+
+
+country_event = {
+	id = PRC_1934Hidden.9
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5250
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_5250
+		add_to_variable = {
+			Chi_Shui = 1
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.9.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.8
+			}
+		}
+		clr_global_flag = fall_5250
+	}		
+}
+
+
+
+
+
+
+country_event = {
+	id = PRC_1934Hidden.10
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5248
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_5248
+		add_to_variable = {
+			Chi_Shui = 1
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.10.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.9
+			}
+		}
+		clr_global_flag = fall_5248
+	}		
+}
+
+
+country_event = {
+	id = PRC_1934Hidden.11
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5249
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_5249
+		add_to_variable = { 
+			Chi_Shui = 1
+		}
+    } 
+     
+	option = {
+		name = PRC_1934Hidden.11.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.10
+			}
+		}
+		clr_global_flag = fall_5249
+	}		
+}
 ###############################
 ###############################
+
 ####HIDDEN####
+
 ####################################
 ###############################
 
@@ -430,6 +567,72 @@ country_event = {
 		name = PRC_1934.6.a
 	}
 }
+
+
+country_event = {
+	id = PRC_1934.7
+	title =PRC_1934.7.t
+	desc = PRC_1934.7.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.7.a
+	}
+}
+
+country_event = {
+	id = PRC_1934.8
+	title =PRC_1934.8.t
+	desc = PRC_1934.8.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.8.a
+	}
+}
+
+country_event = {
+	id = PRC_1934.9
+	title =PRC_1934.9.t
+	desc = PRC_1934.9.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.9.a
+	}
+}
+
+country_event = {
+	id = PRC_1934.10
+	title =PRC_1934.10.t
+	desc = PRC_1934.10.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.10.a
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 news_event = {
