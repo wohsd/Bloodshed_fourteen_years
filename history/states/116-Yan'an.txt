@@ -5,6 +5,9 @@ state={
 		steel=3.000
 		tungsten=3.000
 	}
+	provinces={
+		1896 1976 
+	}
 	history={
 		owner = YHC
 		add_core_of = YHC
@@ -15,9 +18,12 @@ state={
 		1935.1.1={
 			owner = PRC
 		}
-	}
-	provinces={
-		680 1256 1896 1976 2078 
+		victory_points = {
+			1976 30
+		}
+		victory_points = {
+			1896 5
+		}
 	}
 	manpower=623000
 	buildings_max_level_factor=1.000

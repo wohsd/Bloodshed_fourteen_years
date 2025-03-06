@@ -15,6 +15,9 @@ state={
 		1936.1.1={
 			owner = ROD
 		}
+		victory_points = {
+			880 5
+		}
 		add_core_of = CHI
 	}
 	manpower=1423000
