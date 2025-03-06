@@ -15,7 +15,12 @@ set_popularities = {
 	communism = 0
                 neutrality = 100
 }
-add_ideas = Regionalist_warlords
+add_ideas = {
+	MoFang
+	Regionalist_warlords
+	Rich_minerals
+}
+
 set_politics = {
 	ruling_party = neutrality
 	#last_election = "1936.11.11"
