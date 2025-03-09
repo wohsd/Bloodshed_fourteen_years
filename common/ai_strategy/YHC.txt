@@ -1,21 +1,19 @@
 
-ROW_buffer_in_mainland = {
+YHC_buffer_in_mainland = {
 	allowed = {
-		tag = ROW
+		tag = YHC
 	}
 	enable = {
-		check_variable = {
-			Chi_Shui=4
-		}
+		always = yes
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = put_unit_buffers
 		states = {
-			263
-			627
-			310
-			277
+			170
+			157
+			162
+			190
 		}
 		ratio = 0.8
 		area = asia

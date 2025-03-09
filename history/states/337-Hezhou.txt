@@ -16,6 +16,9 @@ state={
 		}
 		add_core_of = ROC
 		add_core_of = CHI
+		victory_points = {
+			1540 5
+		}
 	}
 	manpower=323000
 	state_category = town

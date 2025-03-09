@@ -12,13 +12,10 @@ state={
 		add_core_of = ROW
 		add_core_of = ROS
 		add_core_of = CHI
-		victory_points = {
-			3857 10
-		}
 	}
 
 	provinces={
-		3857 
+		3875 839 
 	}
 	manpower=323000
 	buildings_max_level_factor=1.000

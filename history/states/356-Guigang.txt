@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			2221 5
+		}
 		add_core_of = ROC
 		add_core_of = CHI
 	}

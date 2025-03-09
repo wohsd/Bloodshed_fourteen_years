@@ -2,12 +2,18 @@ state={
 	id=239
 	name="STATE_239"
 	provinces={
-		229 1525 1559 3875 839 
+		229 1525 1559 
 	}
 	history={
 		owner = ROW
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			1559 20
+		}
+		victory_points = {
+			3875 20
 		}
 		add_core_of = ROS
 		add_core_of = ROS

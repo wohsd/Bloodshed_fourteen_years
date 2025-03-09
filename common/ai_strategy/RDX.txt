@@ -4,6 +4,9 @@ RDX_buffer_in_mainland = {
 		tag = RDX
 	}
 	enable = {
+		check_variable = {
+			Chi_Shui=4
+		}
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {

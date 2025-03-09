@@ -11,7 +11,9 @@ state={
 
 		}
 		add_core_of = ROY
-
+		victory_points = {
+			2620 5
+		}
 	}
 	manpower=23110
 	buildings_max_level_factor=1.000
