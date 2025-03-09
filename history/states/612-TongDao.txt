@@ -11,7 +11,9 @@ state={
 
 		}
 		add_core_of = RON
-
+		victory_points = {
+			1670 3
+		}
 	}
 	manpower=23110
 	buildings_max_level_factor=1.000

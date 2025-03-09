@@ -118,7 +118,7 @@ PRC_Buy_gun = {
 		}
 		remove_effect = {
 		}
-	}
+	} 
 
 }
 Long_march_decisions = {

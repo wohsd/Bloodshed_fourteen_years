@@ -1,31 +1,21 @@
 
-ROY_buffer_in_mainland = {
+RDX_buffer_in_mainland = {
 	allowed = {
-		tag = ROY
+		tag = RDX
 	}
 	enable = {
-		check_variable = {
-			Chi_Shui=4
-		}
 	}
 	abort_when_not_enabled = yes
-	
 	ai_strategy = {
 		type = put_unit_buffers
 		states = {
-			619
-		}
-		ratio = 0
-		area = asia
-		subtract_invasions_from_need = no
-		subtract_fronts_from_need = no
-	}
-	ai_strategy = {
-		type = put_unit_buffers
-		states = {
-			341
-			321
-			286
+			692
+			223
+			632
+			643
+			644
+			631
+			642
 		}
 		ratio = 0.8
 		area = asia

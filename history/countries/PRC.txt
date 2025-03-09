@@ -10,7 +10,6 @@ set_power_balance = {
     id = PRC_struggle_balance
 }
 recruit_character = PRC_BoGu
-recruit_character = PRC_XuXianQian
 recruit_character = PRC_MaoZeDong
 recruit_character = PRC_ZhuDe
 recruit_character = PRC_ZhouEngLai
@@ -18,7 +17,6 @@ recruit_character = PRC_ZhouEngLai
 recruit_character = PRC_LiDe
 recruit_character = PRC_PengDeHuai
 recruit_character = PRC_LingBiao
-recruit_character = PRC_HeLong
 recruit_character =PRC_LuoBinHui
 recruit_character =PRC_ZhouKun
 recruit_character =PRC_XunHuaiZhou

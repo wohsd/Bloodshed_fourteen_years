@@ -7,62 +7,58 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
 	}
-	
 }
 division_template = {
-	name = "独立旅" 
+	name = "独立团" 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
 	}
-	
+}
+division_template = {
+	name = "骑兵旅" 		
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
 }
 units = {
 	division= {	
-		location = 3766
-		name = "川军第二十八军独立旅"
-		division_template = "独立旅"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
-	}
-	division= {	
-		location = 1981
-		name = "川军第二十八军第一师"
+		location = 2541
+		name = "甘军第一旅"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 	}
 	division= {	
-		location = 2346
-		name = "川军第二十八军第二师"
+		location = 2541
+		name = "甘军第二旅"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 	}
 	division= {	
-		location = 3818
-		name = "川军第二十八军第三师"
+		location = 441
+		name = "甘军第三旅"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 	}
 	division= {	
-		location = 3844
-		name = "川军第二十八军第四师"
+		location = 1698
+		name = "甘军独立团"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 	}
 	division= {	
-		location = 692
-		name = "川军第二十八军第七师"
+		location = 1272
+		name = "甘军骑兵旅"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2

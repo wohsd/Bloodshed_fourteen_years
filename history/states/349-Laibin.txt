@@ -6,7 +6,7 @@ state={
 		aluminium=4 # was: 12
 	}
 	provinces={
-		 1567 2245 2395 3185 4129 1381 1898 3211 4083 2897 2204 
+		 1567 2245 2395 3185 4129
 	}
 	history={
 		owner = ROC

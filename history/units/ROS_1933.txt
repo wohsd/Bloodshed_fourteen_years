@@ -48,7 +48,7 @@ units = {
 		start_equipment_factor = 0.5
 	}
 	division= {	
-		location = 692
+		location = 3850
 		name = "川军第13旅"
 		division_template = "独立旅"
 		start_experience_factor = 0.5
@@ -104,7 +104,7 @@ units = {
 		start_equipment_factor = 0.5
 	}
 	division= {	
-		location = 692
+		location = 3344
 		name = "川军第147师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
@@ -133,7 +133,7 @@ units = {
 		start_equipment_factor = 0.5
 	}
 	division= {	
-		location = 692
+		location = 1776
 		name = "川军第150师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.5

@@ -9,55 +9,51 @@
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
-	name = "骑兵旅" 			
+	name = "川康边防军" 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "炮兵团" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
-	division_names_group = JAP_CAV_01
-	regiments = {
-		artillery = { x = 0 y = 2 }
-		artillery = { x = 1 y = 0 }
-		artillery = { x = 1 y = 1 }
-		artillery = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 }
 units = {
 	division= {	
-		location = 2860
-		division_template = "国民革命军"
+		location = 1097
+		name = "川康边防军第一师"
+		division_template = "川康边防军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 2164
+		name = "川康边防军第二师"
+		division_template = "川康边防军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 	}
 	division= {	
 		location = 3857
+		name = "川军第二十四军一师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
+		start_equipment_factor = 0.3
 	}
 	division= {	
-		location = 3897
+		location = 229
+		name = "川军第二十四军二师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 1733
+		name = "川军第二十四军三师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3

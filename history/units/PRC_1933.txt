@@ -11,8 +11,7 @@
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
 	}
-	support = {
-	}
+	
 }
 division_template = {
 	name = "独立师" 
@@ -24,8 +23,7 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
-	support = {
-	}
+	
 }
 division_template = {
 	name = "骑兵旅" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment

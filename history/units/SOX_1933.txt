@@ -14,8 +14,7 @@
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
 	}
-	support = {
-	}
+	
 }
 division_template = {
 	name = "国民革命军独立旅" 
@@ -28,8 +27,7 @@ division_template = {
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 	}
-	support = {
-	}
+	
 }
 units = {
 	division= {	
