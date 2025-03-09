@@ -25,4 +25,5 @@ set_politics = {
 }
 1933.1.1={
 	set_oob = "ROS_1933"
+	set_naval_oob = "ROS_1933_Naval"
 }

@@ -1,0 +1,201 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = scriptpeaceconference.1 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_start_date < 1008.1.1 #不是eaw
+						has_start_date > 1961.1.1 #不是TNO
+						ENG = {
+							has_country_leader = { #不是PB
+								character = ENG_hrm_victoria
+								ruling_only = yes
+							}
+						}
+					}
+				}
+				set_global_flag = scriptpeaceconference_warsummary
+			}
+		}
+	}
+	on_capitulation = {
+		#ROOT为败方，FROM为胜方
+		effect = {
+			# 以下为战争结语gui
+			if = {
+				limit = {
+					has_global_flag = scriptpeaceconference_warsummary
+				}
+				set_global_flag = sp_warpeace_show_gui
+				FROM = { save_global_event_target_as = winning_country }
+				ROOT = { save_global_event_target_as = losing_country }
+				add_to_variable = { global.sp_warpeace_dirty = 1 }
+			}
+			# 以上为战争结语gui
+			every_country = {
+				limit = {
+					OR = {
+						tag = ROOT
+						AND = {
+							is_in_faction_with = ROOT
+							has_war_together_with = ROOT
+						}
+					}
+				}
+				every_state = {
+					limit = { is_owned_by = PREV }
+					set_state_flag = state_to_reduce
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = scriptpeaceconference_scriptpeaceconference } }
+				if = {
+					limit = {
+						ROOT = { 
+							NOT = { civilwar_target = FROM } #排除内战目标，以防破坏某些东西
+							OR = { #战败方满足以下判定的，视为单独被击败
+								AND = { #没有阵营，不是傀儡
+									is_in_faction = no
+									is_subject = no
+								}
+								AND = { #没有阵营，是傀儡，但宗主未与战胜方交战
+									is_in_faction = no
+									is_subject = yes
+									any_other_country = {
+										has_subject = ROOT
+										NOT = { has_war_with = FROM }
+									}
+								}
+								AND = { #有阵营，但阵营内没有任何一个国家与其共同作战
+									is_in_faction = yes
+									NOT = { any_allied_country = { has_war_together_with = ROOT } }
+								}
+								AND = { #有阵营，但阵营内没有任何一个主要国家与其共同作战，且自身不是主要国家
+									is_in_faction = yes
+									is_major = no
+									any_allied_country = { has_war_together_with = ROOT }
+									NOT = {
+										any_allied_country = {
+											is_major = yes
+											has_war_together_with = ROOT
+										}
+									}
+								}
+							}
+						}
+					}
+					ROOT = { transfer_navy = { target = FROM } }
+					if = { #开启了有效占领
+						limit = { has_global_flag = sp_noecAI }
+						random_state = { #以防破坏某些东西
+							limit = {
+								is_owned_by = ROOT
+								NOT = { is_controlled_by = ROOT }
+							}
+							controller = { set_country_flag = prevcontroller }
+							set_state_flag = tobeown
+							set_state_controller_to = ROOT
+						}
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+								NOT = { is_controlled_by = ROOT }
+							}
+							controller = { transfer_state = PREV }
+						}
+					}
+					every_country = {
+						limit = { has_war_with = ROOT }
+						white_peace = ROOT
+					}
+					FROM = {
+						annex_country = { target = ROOT transfer_troops = no }
+						country_event = { id = sp_fuction.1 hours = 1 }
+					}
+					every_state = {
+						limit = { has_state_flag = tobeown }
+						clr_state_flag = tobeown
+						every_country = {
+							limit = { has_country_flag = prevcontroller }
+							clr_country_flag = prevcontroller
+							transfer_state = PREV
+						}
+					}
+				}
+				else_if = { #若战败国在阵营内，且不满足视为被单独击败的条件
+					limit = {
+						ROOT = { 
+							is_in_faction = yes
+							all_allied_country = {
+								OR = {
+									AND = {
+										has_war_together_with = ROOT
+										has_capitulated = yes
+										is_major = yes
+									}
+									AND = {
+										has_war_together_with = ROOT
+										is_major = no
+									}
+									NOT = { has_war_together_with = ROOT }
+								}
+							}
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = ROOT
+								AND = {
+									is_in_faction_with = ROOT
+									has_war_together_with = ROOT
+								}
+							}
+						}
+						transfer_navy = { target = FROM }
+						if = { #开启了有效占领
+							limit = { has_global_flag = sp_noecAI }
+							random_state = { #以防破坏某些东西
+								limit = {
+									is_owned_by = ROOT
+									NOT = { is_controlled_by = ROOT }
+								}
+								controller = { set_country_flag = prevcontroller }
+								set_state_flag = tobeown
+								set_state_controller_to = ROOT
+							}
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+									NOT = { is_controlled_by = ROOT }
+								}
+								controller = { transfer_state = PREV }
+							}
+						}
+						every_country = {
+							limit = { has_war_with = PREV }
+							white_peace = PREV
+						}
+						FROM = {
+							annex_country = { target = PREV transfer_troops = no }
+							country_event = { id = sp_fuction.1 hours = 1 }
+						}
+						every_state = {
+							limit = { has_state_flag = tobeown }
+							clr_state_flag = tobeown
+							every_country = {
+								limit = { has_country_flag = prevcontroller }
+								clr_country_flag = prevcontroller
+								transfer_state = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-capital = 229 
+capital = 239
 set_oob = ROW_1933
 set_technology = {
 	infantry_weapons = 1

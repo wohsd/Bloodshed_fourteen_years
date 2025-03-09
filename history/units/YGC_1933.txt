@@ -11,7 +11,7 @@
 }
 units = {
 	division= {	
-		location = 3138
+		location = 1885
 		name = "滇军第2师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.1

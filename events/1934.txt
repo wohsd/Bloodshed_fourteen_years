@@ -97,6 +97,15 @@ country_event = {
 			annex_country = {
 				target = ROW
 			}
+			annex_country = {
+				target = RDX
+			}
+			annex_country = {
+				target = RYS
+			}
+			annex_country = {
+				target = RHC
+			}
 		}
 		hidden_effect = {
 			complete_national_focus = PRC_focus43
@@ -171,6 +180,10 @@ country_event = {
 			}
 		}
 		CHI={
+
+			annex_country = {
+				target = ROH
+			}
 			annex_country = {
 				target = NHA
 			}
@@ -192,6 +205,18 @@ country_event = {
 			white_peace =ROS
 			#country_event = CHI_1932.1
 		}
+		616={
+			transfer_state_to = CHI
+		}
+		615={
+			transfer_state_to = CHI
+		}
+		617={
+			transfer_state_to = CHI
+		}
+		648={
+			transfer_state_to = CHI
+		}
 		588={
 			transfer_state_to = ROC
 		}
@@ -201,6 +226,38 @@ country_event = {
 		116={
 			transfer_state_to = PRC
 		}
+
+		262={
+			transfer_state_to = CHI
+		}
+		288={
+			transfer_state_to = CHI
+		}
+		599={
+			transfer_state_to = CHI
+		}
+		584={
+			transfer_state_to = CHI
+		}
+		589={
+			transfer_state_to = CHI
+		}
+		600={
+			transfer_state_to = CHI
+		}
+		598={
+			transfer_state_to = CHI
+		}
+		582={
+			transfer_state_to = CHI
+		}
+		593={
+			transfer_state_to = CHI
+		}
+		595={
+			transfer_state_to = CHI
+		}
+		
 		set_global_flag = fall_of_ChangZheng_end
 		clr_global_flag = fall_of_ChangZheng
 	}		
