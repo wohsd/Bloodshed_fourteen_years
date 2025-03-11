@@ -1,0 +1,114 @@
+﻿division_template = {
+	name = "东北边防军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "骑兵旅" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "炮兵团" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		artillery = { x = 0 y = 2 }
+		artillery = { x = 1 y = 0 }
+		artillery = { x = 1 y = 1 }
+		artillery = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+	division= {	
+		location = 1104
+		division_template = "炮兵团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1498
+		division_template = "炮兵团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1391
+		division_template = "炮兵团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 972
+		division_template = "炮兵团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1104
+		division_template = "炮兵团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1104
+		division_template = "骑兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1104
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2294
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 141
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3491
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 438
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 141
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}division= {	
+		location = 141
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+}
