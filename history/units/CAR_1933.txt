@@ -7,108 +7,281 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		infantry = { x = 4 y = 0 }
-		infantry = { x = 4 y = 1 }
-		infantry = { x = 4 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
-	name = "骑兵旅" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
-	division_names_group = JAP_CAV_01
+	name = "察哈尔自卫军" 
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "抗日救国军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "游击师" 
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "蒙古军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "骑兵师" 			
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "炮兵团" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
-	division_names_group = JAP_CAV_01
-	regiments = {
-		artillery = { x = 0 y = 2 }
-		artillery = { x = 1 y = 0 }
-		artillery = { x = 1 y = 1 }
-		artillery = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
 	}
 }
 units = {
 	division= {	
-		location = 1104
-		division_template = "炮兵团"
+		location = 2482
+		name = "察哈尔自卫军第一师"
+		division_template = "察哈尔自卫军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 1498
-		division_template = "炮兵团"
+		location = 2482
+		name = "察哈尔自卫军第二师"
+		division_template = "察哈尔自卫军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 1391
-		division_template = "炮兵团"
+		location = 2482
+		name = "察哈尔自卫军第三师"
+		division_template = "察哈尔自卫军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 972
-		division_template = "炮兵团"
+		location = 2482
+		name = "抗日救国军第二师"
+		division_template = "抗日救国军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 1104
-		division_template = "炮兵团"
+		location = 2482
+		name = "抗日救国军第三师"
+		division_template = "抗日救国军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 1104
-		division_template = "骑兵旅"
+		location = 2482
+		name = "抗日救国军教导师"
+		division_template = "抗日救国军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 1104
+		location = 2482
+		name = "游击第一路"
+		division_template = "游击师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "游击第二路"
+		division_template = "游击师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第六路军第一师"
+		division_template = "游击师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第十八军第三十二师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第十八军第二十三师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第十八军第三十四师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	
+	division= {	
+		location = 2482
+		name = "国民革命军第十六军第一师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第十六军第二师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		location = 2482
+		name = "国民革命军第十六军第三师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第二十九军第一师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第二十九军第二师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第二十九军第二十四师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "国民革命军第二十九军第二十五师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第三师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第四师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第五师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第十师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第十一师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第十二师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第十六师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第十八师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "骑兵第二师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2482
+		name = "东北军第十六师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2294
+		location = 2482
+		name = "东北军第二十四师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	
+	division= {	
+		location = 2482
+		name = "东北军第二十五师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 141
-		division_template = "东北边防军"
+		location = 2482
+		name = "骑兵第一挺进军"
+		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 3491
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 438
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 141
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}division= {	
-		location = 141
-		division_template = "东北边防军"
+		location = 2482
+		name = "骑兵第二挺进军"
+		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 }
