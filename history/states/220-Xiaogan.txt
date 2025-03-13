@@ -2,12 +2,15 @@ state={
 	id=220
 	name="STATE_220"
 	provinces={
-		1435 3823 1035 
+		1435 3823
 	}
 	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			1435 5
 		}
 		add_core_of = CHI
 	}

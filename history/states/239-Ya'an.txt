@@ -13,7 +13,7 @@ state={
 			1559 20
 		}
 		victory_points = {
-			3875 20
+			3875 5
 		}
 		add_core_of = ROS
 		add_core_of = ROS

@@ -122,7 +122,7 @@ units = {
 		start_equipment_factor = 0.3
 	}
 	division= {	
-		location = 3282
+		location = 1217
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
@@ -206,7 +206,7 @@ units = {
 		start_equipment_factor = 0.3
 	}
 	division= {	
-		location = 3282
+		location = 1217
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
@@ -378,18 +378,23 @@ units = {
 
 	##西安
 	division= {	
-		location = 1809
+		location = 1053
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
-		location = 3200
+		location = 2819
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
-
+	division= {	
+		location = 2101
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
 
 	#湖北
 	division= {	

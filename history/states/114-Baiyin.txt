@@ -9,7 +9,13 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		1936.1.1={
+			owner = ROD
+		}
 		add_core_of = YHC
+		victory_points = {
+			941 5
+		}
 	}
 	manpower=323000
 	state_category = town

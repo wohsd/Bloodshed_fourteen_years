@@ -6,18 +6,18 @@ state={
 	history={
 		owner = ROW
 
-1933.1.1={
+	1933.1.1={
 		owner = RDX
-}
+	}
 
 
-		buildings = {
-			infrastructure = 1
+	buildings = {
+		infrastructure = 1
 
-		}
-		add_core_of = ROS
-				add_core_of = ROW
-		add_core_of = CHI
+	}
+	1936.1.1={
+		owner = ROS
+	}
 
 	}
 

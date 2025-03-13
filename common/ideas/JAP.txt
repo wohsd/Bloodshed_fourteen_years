@@ -10,8 +10,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_speed_factor=0.12
-				breakthrough_factor=0.12		
+				army_speed_factor=0.1
+				breakthrough_factor=0.1		
 				ai_focus_military_equipment_factor= 0.5
 				ai_focus_aggressive_factor = 1
 				ai_focus_naval_factor = 0.5

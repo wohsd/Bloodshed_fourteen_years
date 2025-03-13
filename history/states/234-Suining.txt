@@ -14,7 +14,7 @@ state={
 			owner = RYS
 		}	
 		1936.1.1={
-			owner = ROS
+			owner = RYS
 		}
 		add_core_of = ROS
 		add_core_of = ROW

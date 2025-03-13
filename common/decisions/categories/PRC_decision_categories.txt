@@ -56,17 +56,17 @@ Long_march_decisions = {
 		state = 320
 		state = 325
 		state = 263
-		state = 239
-		state = 634
-		state = 640
+		state = 253
+		state = 223
+		state = 633
+		state = 643
+		state = 644
 		state = 641
 		state = 638
-		state = 633
 		state = 174
 		state = 623
 		state = 624
 		state = 625
-		state = 631
 		zoom = 650
 	}
 }

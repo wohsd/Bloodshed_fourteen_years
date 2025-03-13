@@ -15,9 +15,7 @@ state={
 			owner = RHC
 		}
 		1936.1.1={
-			owner = CHI
-			add_core_of = PRC
-		    add_core_of = CHI
+			owner = RYS
 		}
 	}
 	

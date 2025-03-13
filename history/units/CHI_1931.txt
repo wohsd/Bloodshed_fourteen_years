@@ -187,13 +187,13 @@ units = {
 
 	##西安
 	division= {	
-		location = 1809
+		location = 1053
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 	}
 	division= {	
-		location = 3200
+		location = 2819
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5

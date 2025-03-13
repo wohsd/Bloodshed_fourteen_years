@@ -126,7 +126,6 @@ Long_march_decisions = {
 		available = {
 			#has_war = yes
 			#date > 1934.9.8
-			
 		}
 		visible = {
 			
@@ -142,8 +141,15 @@ Long_march_decisions = {
 			hidden_effect = {
 				country_event = {id=PRC_1934.6 days=124}
 			}
+			YHC={
+				add_ideas = Negative_Encirclement
+			}
 			add_ideas = Chinese_red_army1
 			PRC={
+				declare_war_on = {
+					target = CHI
+					type = annex_everything
+				} 
 				declare_war_on = {
 					target = YHC
 					type = annex_everything
@@ -266,12 +272,21 @@ Long_march_decisions = {
 	Long_march_mission0 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 2268
+			OR={
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 2268
+					}
+				}
+				PRJ = {
+					AND={
+						has_war = yes
+						controls_province = 2268
+					}
 				}
 			}
+			
 			
 		}
 		days_mission_timeout = 25
@@ -307,10 +322,18 @@ Long_march_decisions = {
 	Long_march_mission1 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 2970
+			OR={
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 2970
+					}
+				}
+				PRJ = {
+					AND={
+						has_war = yes
+						controls_province = 2970
+					}
 				}
 			}
 		}
@@ -344,10 +367,18 @@ Long_march_decisions = {
 	Long_march_mission2 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 4020
+			OR={
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 4020
+					}
+				}
+				PRJ = {
+					AND={
+						has_war = yes
+						controls_province = 4020
+					}
 				}
 			}
 		}
@@ -380,10 +411,18 @@ Long_march_decisions = {
 	Long_march_mission3 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 4029
+			OR={
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 4029
+					}
+				}
+				PRJ = {
+					AND={
+						has_war = yes
+						controls_province = 4029
+					}
 				}
 			}
 		}
@@ -416,10 +455,18 @@ Long_march_decisions = {
 	Long_march_mission4 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 4013
+			OR={
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 4013
+					}
+				}
+				PRJ = {
+					AND={
+						has_war = yes
+						controls_province = 4013
+					}
 				}
 			}
 		}
@@ -476,7 +523,7 @@ Long_march_decisions = {
 		}
 		days_mission_timeout = 245
 		activation = {
-			#has_country_flag = Long_march_mission4
+			has_country_flag = Long_march_mission3
 		}
 		visible = {
 		}		
@@ -499,18 +546,18 @@ Long_march_decisions = {
 			}
 			set_country_flag = Long_march_mission5
 		}
-	}
+	} 
 	Long_march_mission6 = {
 		icon = generic_civil_support
 		available = {
 			PRC = {
 				AND={
 					has_war = yes
-					controls_province = 3857
+					controls_province = 3875
 				}
 			}
 		}
-		days_mission_timeout = 35
+		days_mission_timeout = 135
 		activation = {
 			has_country_flag = Long_march_mission5
 		}
@@ -548,7 +595,7 @@ Long_march_decisions = {
 		}
 		days_mission_timeout = 35
 		activation = {
-			#has_country_flag = Long_march_mission6
+			has_country_flag = Long_march_mission6
 		}
 		visible = {
 		}		
@@ -584,7 +631,7 @@ Long_march_decisions = {
 		}
 		days_mission_timeout = 50
 		activation = {
-			#has_country_flag = Long_march_mission7
+			has_country_flag = Long_march_mission7
 		}
 		visible = {
 		}		

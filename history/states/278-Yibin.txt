@@ -10,7 +10,7 @@ state={
 			owner = ROS	
 		}
 		1936.1.1={
-			owner = CHI
+			owner = ROS
 		}
 		buildings = {
 			infrastructure = 1

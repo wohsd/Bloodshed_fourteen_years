@@ -12,7 +12,9 @@ state={
 
 		}
 		add_core_of = ROH
-
+		1936.1.1={
+			owner = CHI
+		}
 	}
 	manpower=223000
 	buildings_max_level_factor=1.000

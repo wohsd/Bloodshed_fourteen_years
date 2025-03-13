@@ -108,7 +108,9 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			complete_national_focus = PRC_focus43
+			PRC = {
+				complete_national_focus = PRC_focus43
+			}
 			news_event = WorldNew.17
 		}
 		every_controlled_state = {
@@ -180,7 +182,9 @@ country_event = {
 			}
 		}
 		CHI={
-
+			annex_country = {
+				target = JZZ
+			}
 			annex_country = {
 				target = ROH
 			}
@@ -198,7 +202,10 @@ country_event = {
 			}
 		}
 		PRC={
+			white_peace =YHC
+			white_peace =YUL
 			white_peace =CHI
+			white_peace =LDC
 			white_peace =ROC
 			white_peace =ROY
 			white_peace =ROH
@@ -214,6 +221,12 @@ country_event = {
 		617={
 			transfer_state_to = CHI
 		}
+		280={
+			transfer_state_to = CHI
+		}
+		283={
+			transfer_state_to = CHI
+		}
 		648={
 			transfer_state_to = CHI
 		}
@@ -223,7 +236,7 @@ country_event = {
 		592={
 			transfer_state_to = ROG
 		}
-		116={
+		655={
 			transfer_state_to = PRC
 		}
 
@@ -257,7 +270,18 @@ country_event = {
 		595={
 			transfer_state_to = CHI
 		}
-		
+		624={
+			transfer_state_to = YHC
+		}
+		625={
+			transfer_state_to = YHC
+		}
+		183={
+			transfer_state_to = NSD
+		}
+		642={
+			transfer_state_to = NSD
+		}
 		set_global_flag = fall_of_ChangZheng_end
 		clr_global_flag = fall_of_ChangZheng
 	}		
@@ -389,6 +413,7 @@ country_event = {
 			AND={
 				has_war = yes
 				controls_province = 3923
+				
 			}
 		}
     }
@@ -493,6 +518,9 @@ country_event = {
 			AND={
 				has_war = yes
 				controls_province = 5249
+				NOT = {
+					controls_province = 3938
+				}
 			}
 		}
     }
@@ -580,7 +608,9 @@ country_event = {
    
 	option = {
 		name = PRC_1934.4.a
-		
+		remove_power_balance = {
+			id = PRC_struggle_balance
+		}
 	}
 }
 
@@ -614,7 +644,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			116={
+			655={
 				transfer_state_to = NSA
 				add_core_of = NSA
 			}

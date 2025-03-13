@@ -8,6 +8,9 @@ state={
 		owner = ROW
 		buildings = {
 		}
+		1936.1.1={
+			owner = ROS
+		}
 		add_core_of = ROW
 	}
 	manpower=113000

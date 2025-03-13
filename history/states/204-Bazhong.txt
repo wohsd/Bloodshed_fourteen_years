@@ -18,7 +18,7 @@ state={
 		    add_core_of = CHI
 		}
 		1936.1.1={
-			owner = ROS
+			owner = RYS
 		}
 	}
 	manpower=323000

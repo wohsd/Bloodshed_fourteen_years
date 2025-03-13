@@ -1,13 +1,12 @@
 capital = 63
 #首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
-oob = CAR_1931
+
+oob = CAR_1933
 #军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
 set_technology = {
 	infantry_weapons = 1
-	tech_support = 1		
-	tech_engineers = 1
-	gw_artillery = 1
+	mass_assault = 1
 }
 #开始时的科技
 set_stability = 0.7
@@ -35,7 +34,12 @@ set_popularities = {
 	neutrality = 100
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
-add_manpower = 100000
+add_manpower = 1500
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = CHI
+}
 add_ideas = {
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

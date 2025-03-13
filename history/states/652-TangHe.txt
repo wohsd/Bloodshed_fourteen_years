@@ -12,6 +12,9 @@ state={
 		1933.1.1={
 			owner = NHA
 		}
+		1936.1.1={
+			owner = CHI
+		}
 		add_core_of = NHA
 	}
 	manpower=19000

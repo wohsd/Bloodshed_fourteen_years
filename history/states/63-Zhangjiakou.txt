@@ -9,11 +9,6 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ROD
-		add_core_of = CHI
-		1936.1.1={
-			owner = JDW
-		}
 		victory_points = {
 			544 5
 		}

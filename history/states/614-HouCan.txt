@@ -11,6 +11,9 @@ state={
 			industrial_complex = 1
 
 		}
+		1936.1.1={
+			owner = CHI
+		}
 		victory_points = {
 			2321 3
 		}

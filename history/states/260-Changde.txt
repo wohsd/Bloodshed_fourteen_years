@@ -10,7 +10,7 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			3375 5
+			3375 15
 		}
 		add_core_of = RON
 	}

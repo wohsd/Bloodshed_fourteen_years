@@ -15,6 +15,9 @@ state={
 		1936.1.1={
 			owner = ROD
 		}
+		victory_points = {
+			2780 10
+		}
 	}
 
 	provinces={

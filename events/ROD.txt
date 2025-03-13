@@ -33,3 +33,39 @@ country_event = {
 		name = ROD.1.a
 	}
 }		
+
+
+
+country_event = {
+	id = ROD.2
+	title = ROD.2.t
+	desc = ROD.2.d
+    #picture = 
+
+	fire_only_once = yes
+	
+    is_triggered_only = yes
+    immediate = {
+	}
+    mean_time_to_happen = {
+      	days = 2
+    }
+	option = {
+		name = ROD.2.a
+		hidden_effect = {
+			ROD={
+				declare_war_on = {
+					target = CAR
+					type = annex_everything
+				}
+			}
+			JAP={
+				declare_war_on = {
+					target = CAR
+					type = annex_everything
+				}
+			}
+		}
+		
+	}
+}		

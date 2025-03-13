@@ -16,7 +16,8 @@ state={
 			owner = ROW
 		}
 		1936.1.1={
-			owner = PRC
+			owner = NSD
+			add_core_of = NSD
 		}
 	}
 	manpower=12311

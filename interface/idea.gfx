@@ -48,6 +48,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CHI/Not_resisting.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_Negative_Encirclement"
+		texturefile = "gfx/interface/ideas/CHI/Negative_Encirclement.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_Chinese_red_army"
 		texturefile = "gfx/interface/ideas/PRC/Chinese_red_army.dds"
 	}

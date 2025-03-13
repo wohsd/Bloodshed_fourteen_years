@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		1936.1.1={
+			owner = MZY
+		}
 		add_core_of = ROX
 	}
 	manpower=323000

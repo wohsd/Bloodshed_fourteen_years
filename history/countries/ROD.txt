@@ -32,6 +32,5 @@ set_politics = {
 	add_ideas = Not_resisting
 }
 1936.1.1={
-	capital = 170
 	set_cosmetic_tag = ROD_1936
 }

@@ -54,6 +54,7 @@ CHI_Purging_party_category = {
 		available = {
 		} 
 		visible = {
+			date < 1931.11.29
 		}
 		cost = 20 
 		days_remove= 15

@@ -4,7 +4,6 @@ state={
 	provinces={
 		2466 3187 3207 4235 4239 4241 
 	}
-	impassable = yes
     history={
 		owner = PRQ
 		add_core_of = PRQ
@@ -12,7 +11,7 @@ state={
 			4235 10
 		}
 		1936.1.1={
-			owner = ROG
+			owner = PRQ
 		}
 	}
 	manpower=83350

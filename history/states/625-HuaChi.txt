@@ -2,7 +2,7 @@ state={
 	id=625
 	name="STATE_625"
 	provinces={
-		636 1387 2710 
+		636 1387 
 	}
 	resources = {
 		tungsten = 2.000
@@ -12,6 +12,9 @@ state={
 		buildings = {
 			infrastructure = 1
 
+		}
+		victory_points = {
+			1387 5
 		}
 		add_core_of = YHC
 		1936.1.1={

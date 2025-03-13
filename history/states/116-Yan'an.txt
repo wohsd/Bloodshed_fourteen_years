@@ -16,7 +16,7 @@ state={
 		add_core_of = PRC
 		add_core_of = CHI
 		1935.1.1={
-			owner = PRC
+			owner = ROD
 		}
 		victory_points = {
 			1976 30

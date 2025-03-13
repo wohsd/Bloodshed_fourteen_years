@@ -60,7 +60,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus35
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
+		cost = 1.00
 		x = 30
 		y = 5
 			available = {
@@ -76,15 +76,18 @@ focus_tree = {
 	focus = {
 		id = PRC_focus45
 		icon = GFX_focus_ETH_callout_to_the_world
-		cost = 10.00
+		cost = 1.00
 		x = 39
 		y = 5
 			available = {
-					PRC = {
-							controls_state = 116
-						}
-					has_completed_focus = PRC_focus43
+					#PRC = {
+					#		controls_state = 655
+					#}
+					#has_completed_focus = PRC_focus43
 				}
+			completion_reward = {
+				set_cosmetic_tag = PRC_1936
+			}
 
 	}
 	focus = {
@@ -635,6 +638,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+					
 					582 = {
 							add_building_construction = {
 									type = bunker
@@ -677,7 +681,14 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-
+		completion_reward = {
+			PRC = {
+				every_army_leader = {
+					add_defense = 1
+					add_skill_level = 1
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus29
@@ -730,7 +741,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus39
 		icon = GFX_focus_generic_military_academy
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = PRC_focus35
 		}
@@ -785,8 +796,14 @@ focus_tree = {
 		x = 32
 		y = 6
 			completion_reward = {
-
-}
+				PRC = {
+					every_army_leader = {
+						add_planning = 1
+						add_attack = 1
+						add_skill_level = 1
+					}
+				}
+			}
 
 	}
 	focus = {
@@ -934,13 +951,15 @@ focus_tree = {
 	focus = {
 		id = PRC_focus44
 		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = PRC_focus45
 		}
 		x = 39
 		y = 6
-
+		completion_reward = {
+			country_event = PRC_focus.7
+		}
 	}
 	focus = {
 		id = PRC_focus46
@@ -949,30 +968,50 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus44
 		}
-		mutually_exclusive = {
-			focus = PRC_focus47
-		}
 		x = 37
 		y = 7
-			available = {
-					PRC = {
-							controls_state = 116
-						}
-				}
+		available = {
+			PRC = {
+				controls_state = 116
+			}
+		}
+		completion_reward = {
+			NSD={
+				set_cosmetic_tag = NSD_1936
+			}
+		}
 
 	}
 	focus = {
 		id = PRC_focus48
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		icon = GFX_focus_generic_conspiracy
 		cost = 10.00
 		prerequisite = {
 			focus = PRC_focus44
 		}
 		x = 39
 		y = 8
-			available = {
+		available = {
 
-}
+		}
+		completion_reward = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 655
+					num_provinces = 1
+					modifier = 0.1
+					dig_in_factor = 0.4
+					terrain_factor = 0.4
+				}	
+				defender = {
+					state = 629
+					num_provinces = 1
+					dig_in_factor = -0.35
+					terrain_factor = -0.35
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -992,9 +1031,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = PRC_focus44
-		}
-		mutually_exclusive = {
-			focus = PRC_focus46
 		}
 		x = 41
 		y = 7

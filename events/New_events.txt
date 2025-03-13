@@ -452,14 +452,32 @@ country_event = {
 	}		
 }
 
-
-
-
-
-
-
-
-
+####
+country_event = {
+	id = Hidden_News.18
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		CAR = {
+			AND={
+				controls_province = 342
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = Hidden_News_18
+    } 
+    
+	option = {
+		name = Hidden_News.18.a
+		hidden_effect = {
+			CAR={
+				news_event = WorldNew.23
+			}
+		}
+		clr_global_flag = Hidden_News_18
+	}		
+}
 #######
 
 
@@ -729,15 +747,6 @@ news_event = {
 
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			CAR={
-				white_peace = JAP
-				declare_war_on = {
-					target = ROD
-					type = annex_everything
-				}
-			}
-		}
 		
 	}
 	option = {
@@ -802,8 +811,9 @@ news_event = {
 				transfer_state_to = CAR
 			}
 			CAR={
+				load_oob = "CAR_1933"
 				declare_war_on = {
-					target = JAP
+					target = LSX
 					type = annex_everything
 				}
 				give_military_access = ROD
@@ -813,8 +823,9 @@ news_event = {
 	}
 
 	option = {
-			name = WorldNew.13.a
-		}		
+		name = WorldNew.13.a
+		
+	}		
 }
 
 news_event = {
@@ -1072,4 +1083,29 @@ news_event = {
 	option = {
 			name = WorldNew.22.a
 	}		
+}
+
+news_event = {
+	id = WorldNew.23
+	title = WorldNew.23.t
+	desc = WorldNew.23.d
+
+	picture = GFX_WorldNew_23
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+	}
+	option = {
+		name = WorldNew.23.a
+		hidden_effect = {
+			ROD={
+				country_event = {id=ROD.2 days = 5}	
+			}
+		}
+	}
 }

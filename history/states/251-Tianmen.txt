@@ -9,6 +9,9 @@ state={
 			infrastructure = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			3917 5
+		}
 		add_core_of = PRH
 		add_core_of = CHI
 		1933.1.1={
@@ -17,7 +20,7 @@ state={
 	}
 
 	provinces={
-		2260 3839 3842 3917 
+		2260 3917 
 	}
 	manpower=233000
 	buildings_max_level_factor=1.000

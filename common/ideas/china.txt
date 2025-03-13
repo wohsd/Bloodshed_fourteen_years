@@ -150,6 +150,26 @@ ideas = {
 		}
 
 
+		Negative_Encirclement = {
+		
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed=-0.1
+				army_speed_factor=-0.1
+			}
+			targeted_modifier = {
+				tag=PRC
+					attack_bonus_against=-0.45 
+                    defense_bonus_against=-0.45
+				}
+		}
+
+
 		Anti_hometown_group= {
 			picture=generic_oppression
 			allowed = {

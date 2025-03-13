@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		1936.1.1={
+			owner = MBQ
+		}
 	}
 	manpower=323000
 	state_category = town

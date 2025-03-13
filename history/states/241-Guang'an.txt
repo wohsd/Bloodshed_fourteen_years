@@ -15,7 +15,7 @@ state={
 			owner = RYS
 		}
 		1936.1.1={
-			owner = CHI
+			owner = RYS
 		}
 	}
 	manpower=323000
