@@ -21,8 +21,6 @@ division_template = {
 		militia = { x = 1 y = 0 }
 		militia = { x = 1 y = 1 }
 	}
-	support = {
-	}
 }
 division_template = {
 	name = "国民革命军" 
@@ -58,8 +56,6 @@ division_template = {
 		militia = { x = 0 y = 2 }
 		militia = { x = 1 y = 0 }
 	}
-	support = {
-	}
 }
 
 division_template = {
@@ -84,202 +80,202 @@ division_template = {
 }
 units = {
 	division= {	
-		location = 2482
+		location = 544
 		name = "察哈尔自卫军第一师"
 		division_template = "察哈尔自卫军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "察哈尔自卫军第二师"
 		division_template = "察哈尔自卫军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "察哈尔自卫军第三师"
 		division_template = "察哈尔自卫军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "抗日救国军第二师"
 		division_template = "抗日救国军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "抗日救国军第三师"
 		division_template = "抗日救国军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "抗日救国军教导师"
 		division_template = "抗日救国军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "游击第一路"
 		division_template = "游击师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "游击第二路"
 		division_template = "游击师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第六路军第一师"
 		division_template = "游击师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第十八军第三十二师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第十八军第二十三师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第十八军第三十四师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第十六军第一师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第十六军第二师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第十六军第三师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第二十九军第一师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第二十九军第二师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第二十九军第二十四师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "国民革命军第二十九军第二十五师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第三师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第四师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第五师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第十师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第十一师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第十二师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第十六师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第十八师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第二师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "东北军第十六师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "东北军第二十四师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	
 	division= {	
-		location = 2482
+		location = 544
 		name = "东北军第二十五师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第一挺进军"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2482
+		location = 544
 		name = "骑兵第二挺进军"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
