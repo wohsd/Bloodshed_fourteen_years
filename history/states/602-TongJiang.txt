@@ -13,6 +13,9 @@ state={
 		1933.1.1={
 			owner = ROT
 		}
+		1938.1.1={
+			owner = CHI
+		}
 	}
 	manpower=23400
 	state_category = rural

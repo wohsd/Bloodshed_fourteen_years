@@ -38,9 +38,14 @@ Long_march_mission4: "血战湘江"
 Long_march_mission5: "四渡赤水"
 Chi_Shui: "渡河次数:[?Chi_Shui]\n\n渡过赤水县\n渡过古籣\n渡过茅台镇\n攻克娄山关"
 Chi_Shui_tooltip: "渡河次数大于等于4"
-Long_march_mission6: "强渡大渡河"
-Long_march_mission7: "包座战役"
-Long_march_mission8: "激战腊子口"
+##新增
+Long_march_mission6: "巧渡金沙江"
+
+Long_march_mission7: "强渡大渡河"
+Long_march_mission8: "懋功会师"
+Long_march_mission9: "包座战役"
+Long_march_mission10: "激战腊子口"
+Long_march_mission11: "吴起镇会师"
 
 
 PRC_Buy_gun: "中华苏维埃国家银行"

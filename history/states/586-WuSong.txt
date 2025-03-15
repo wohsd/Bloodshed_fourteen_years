@@ -13,6 +13,13 @@ state={
 		1933.1.1={
 			set_demilitarized_zone = yes
 		}
+		1939.1.1={
+			owner = JAP
+			set_demilitarized_zone = no
+		}
+		1941.1.1={
+			owner = JDF
+		}
 	}
 	manpower=323000
 	state_category = town

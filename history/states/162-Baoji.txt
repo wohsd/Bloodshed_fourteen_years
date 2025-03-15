@@ -15,6 +15,9 @@ state={
 		1936.1.1={
 			owner = ROD
 		}
+		1938.1.1={
+			owner = CHI
+		}
 		victory_points = {
 			880 5
 		}

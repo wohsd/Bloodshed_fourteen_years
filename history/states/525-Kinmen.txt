@@ -9,6 +9,9 @@ state={
 		buildings = {
 		}
 		add_core_of = CHI
+		1941.1.1={
+			owner = JAP
+		}
 	}
 	manpower=323000
 	state_category = town

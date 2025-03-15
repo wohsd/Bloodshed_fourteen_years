@@ -16,10 +16,13 @@ state={
 		victory_points = {
 			2202 5
 		}
+		1939.1.1={
+			owner = CHI
+		}
 	}
 
 	provinces={
-		456 1193 1615 2046 2202 3959 3968 3983 2317 3197
+		456 1193 1615 2046 2202 3959 3968 3983
 	}
 	manpower=323000
 	buildings_max_level_factor=1.000

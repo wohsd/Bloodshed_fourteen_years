@@ -12,6 +12,9 @@ state={
 		add_core_of = ROS
 				add_core_of = ROT
 		add_core_of = CHI
+		1938.1.1={
+			owner = CHI
+		}
 	}
 	manpower=1223000
 	state_category = town

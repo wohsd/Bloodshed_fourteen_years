@@ -19,6 +19,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		1939.1.1={
+			owner = CHI
+		}
 		add_core_of = RON
 		add_core_of = PRH
 	}

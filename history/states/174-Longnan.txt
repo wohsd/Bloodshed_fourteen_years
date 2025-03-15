@@ -9,9 +9,14 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		
+		victory_points = {
+			3384 5
+		}
 		1936.1.1={
 			owner = LDC
+		}
+		1938.1.1={
+			owner = CHI
 		}
 	}
 	manpower=323000

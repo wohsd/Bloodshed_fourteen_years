@@ -19,6 +19,9 @@ state={
 			owner = NSD
 			add_core_of = NSD
 		}
+		1938.1.1={
+			owner = ROW
+		}
 	}
 	manpower=12311
 	buildings_max_level_factor=1.000

@@ -16,6 +16,9 @@ state={
 		victory_points = {
 			4061 20
 		}
+		1941.1.1={
+			owner = JAP
+		}
 		add_core_of = CHI
 	}
 	manpower=323000

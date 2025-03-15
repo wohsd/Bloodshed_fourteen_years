@@ -13,6 +13,9 @@ state={
 			3710 5
 		}
 		add_core_of = CHI
+		1939.1.1={
+			owner = JAP
+		}
 	}
 	manpower=723000
 	state_category = town

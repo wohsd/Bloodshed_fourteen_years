@@ -1,0 +1,20 @@
+﻿add_namespace = RTS_1944
+
+
+###抗日 
+country_event = {
+	id =RTS_1944.1
+	title =RTS_1944.1.t
+	desc =RTS_1944.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =RTS_1944.1.a
+	}
+	option = {
+		name =RTS_1944.1.b
+	}
+	option = {
+		name =RTS_1944.1.c
+	}			
+}

@@ -8,9 +8,15 @@ state={
 		owner = RDX
 		buildings = {
 		}
+		victory_points = {
+			1479 3
+		}
 		add_core_of = ROS
 		add_core_of = RDX
 		add_core_of = CHI
+		1941.1.1={
+			owner = CHI
+		}
 	}
 	manpower=113000
 	buildings_max_level_factor=1.000

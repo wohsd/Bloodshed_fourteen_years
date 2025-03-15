@@ -1,0 +1,23 @@
+state={
+	id=656
+	name="STATE_656"
+	provinces={
+		2975 5251 
+	}
+	history={
+		owner = YHC
+		add_core_of = YHC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CHI
+		1936.1.1 = {
+			owner = PRC
+		}
+	}
+	manpower=223000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -10,6 +10,9 @@ state={
 			infrastructure = 1
 
 		}
+		1939.1.1={
+			owner = CHI
+		}
 		add_core_of = RON
 victory_points = {
 	4029 5

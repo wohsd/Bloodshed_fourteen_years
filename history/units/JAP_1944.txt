@@ -1,0 +1,540 @@
+﻿division_template = {
+	name = "甲种师团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "乙种师团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "丙种师团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "独立混成旅团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵联队" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "海军陆战队"				
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
+division_template = {
+	name = "关东军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		light_armor = { x = 3 y = 0 }
+	}
+	support = {
+		artillery= { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+units = {
+	##武汉方面
+	division= {	
+		location = 2141
+		name = "日军第3师团第6联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2141
+		name = "日军第3师团第34联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2141
+		name = "日军第3师团第68联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	###宜昌方面
+	division= {	
+		location = 3835
+		name = "日军第13师团第58联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 3835
+		name = "日军第13师团第65联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 3835
+		name = "日军第13师团第104联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	###广州
+	division= {	
+		location = 4156
+		name = "日军第22师团第84联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 4156
+		name = "日军第22师团第85联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 4156
+		name = "日军第22师团第86联队"
+		division_template = "甲种师团"
+		start_experience_factor = 0.7
+	}
+	##江西南昌
+	division= {	
+		location = 2101
+		name = "日军第34师团第216联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2101
+		name = "日军第34师团第217联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2101
+		name = "日军第34师团第218联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##河南开封
+	division= {	
+		location = 3734
+		name = "日军第37师团第225联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3734
+		name = "日军第37师团第226联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3734
+		name = "日军第37师团第227联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	##湖北咸宁
+	division= {	
+		location = 3734
+		name = "日军第40师团第234联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3734
+		name = "日军第40师团第235联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3734
+		name = "日军第40师团第236联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##湖北岳阳
+	division= {	
+		location = 2125
+		name = "日军第58师团第51联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2125
+		name = "日军第58师团第52联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2125
+		name = "日军第58师团第53联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##河南新乡
+	division= {	
+		location = 2879
+		name = "日军第62师团第63联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2879
+		name = "日军第62师团第64联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2879
+		name = "日军第62师团第65联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##湖北武昌
+	division= {	
+		location = 3846
+		name = "日军第68师团第57联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3846
+		name = "日军第68师团第58联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3846
+		name = "日军第68师团第59联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##山西运城
+	division= {	
+		location = 3721
+		name = "日军第69师团第59联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3721
+		name = "日军第69师团第60联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3721
+		name = "日军第69师团第61联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##广东佛山
+	division= {	
+		location = 2027
+		name = "日军第104师团第108联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2027
+		name = "日军第104师团第137联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 2027
+		name = "日军第104师团第161联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	##河北石家庄
+	division= {	
+		location = 972
+		name = "日军第110师团第139联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 972
+		name = "日军第110师团第140联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 972
+		name = "日军第110师团第141联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	##山西临汾
+	division= {	
+		location = 1022
+		name = "日军第114师团第127联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 1022
+		name = "日军第114师团第128联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 1022
+		name = "日军第114师团第129联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	##湖北汉口
+	division= {	
+		location = 3023
+		name = "日军第114师团第127联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3023
+		name = "日军第114师团第128联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3023
+		name = "日军第114师团第129联队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	##河南安阳
+	division= {	
+		location = 1507
+		name = "日军独立混成第7旅团第26大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1507
+		name = "日军独立混成第7旅团第27大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 1507
+		name = "日军独立混成第7旅团第28大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 1507
+		name = "日军独立混成第7旅团第29大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##河南商丘
+	division= {	
+		location = 3745
+		name = "日军独立混成第9旅团第36大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3745
+		name = "日军独立混成第9旅团第37大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3745
+		name = "日军独立混成第9旅团第38大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 3745
+		name = "日军独立混成第9旅团第39大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##山西太原
+	division= {	
+		location = 102
+		name = "日军独立混成第3旅团第6大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 102
+		name = "日军独立混成第3旅团第7大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 102
+		name = "日军独立混成第3旅团第8大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+	division= {	
+		location = 102
+		name = "日军独立混成第3旅团第9大队"
+		division_template = "乙种师团"
+		start_experience_factor = 0.5
+	}
+
+	##山西长治
+	division= {	
+		location = 1545
+		name = "日军独立混成第10旅团第41大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1545
+		name = "日军独立混成第10旅团第42大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1545
+		name = "日军独立混成第10旅团第43大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1545
+		name = "日军独立混成第10旅团第44大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	##广东汕头
+	division= {	
+		location = 2251
+		name = "日军独立混成第19旅团第98大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2251
+		name = "日军独立混成第19旅团第99大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2251
+		name = "日军独立混成第19旅团第100大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2251
+		name = "日军独立混成第19旅团第101大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	##广东惠州
+	division= {	
+		location = 2849
+		name = "日军独立混成第22旅团第66大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2849
+		name = "日军独立混成第22旅团第67大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2849
+		name = "日军独立混成第22旅团第68大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2849
+		name = "日军独立混成第22旅团第69大队"
+		division_template = "独立混成旅团"
+		start_experience_factor = 0.4
+	}
+}

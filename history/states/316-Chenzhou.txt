@@ -12,6 +12,9 @@ state={
 		}
 		add_core_of = RON
 		add_core_of = PRC
+		1939.1.1={
+			owner = CHI
+		}
 	}
 	manpower=323000
 	buildings_max_level_factor=1.000

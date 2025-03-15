@@ -11,7 +11,12 @@ state={
 		}
 		add_core_of = ROG
 		add_core_of = CHI
-
+		1941.1.1={
+			owner = JAP
+		}
+		1939.1.1={
+			owner = CHI
+		}
 	}
 
 	provinces={

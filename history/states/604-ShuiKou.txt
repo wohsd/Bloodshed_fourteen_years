@@ -13,6 +13,9 @@ state={
         victory_points = {
 		  	3008 3
 	    }
+		1939.1.1={
+			owner = CHI
+		}
 	}
 	manpower=224001
 	buildings_max_level_factor=1.000

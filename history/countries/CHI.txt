@@ -94,6 +94,10 @@ add_equipment_to_stockpile = {
 	set_oob = "CHI_1937"
 }
 1944.1.1={
+	CHI = {
+		country_event = RTS_1944.1
+	}
+	
 	add_ideas = {
 		Encourage_enlistment_military
 	}

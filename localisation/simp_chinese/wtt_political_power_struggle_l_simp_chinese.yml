@@ -350,15 +350,28 @@
  PRC_struggle_mid_range: "党内平衡"
  PRC_struggle_left_side: "偏向王明"
  PRC_struggle_right_side: "偏向毛泽东"
-PRC_criticism_WangMing: "批判王明"
-PRC_criticism_MaoZeDong: "批判毛泽东"
-PRC_emphasize_unimpressed: "强调独立自主原则"
-PRC_Obey_Kuomintang: "服从国民党的指挥"
-PRC_Attack_right_capitulationism: "抨击右倾投降主义"
-PRC_left_side_range_Low: "王明支持度较低"
-PRC_left_side_range_High: "王明支持度较高"
-PRC_right_side_range_Low: "毛泽东支持度较低"
-PRC_right_side_range_High: "毛泽东支持度较高"
+ PRC_criticism_WangMing: "批判王明"
+ PRC_criticism_MaoZeDong: "批判毛泽东"
+ PRC_emphasize_unimpressed: "强调独立自主原则"
+ PRC_Obey_Kuomintang: "服从国民党的指挥"
+ PRC_Attack_right_capitulationism: "抨击右倾投降主义"
+ PRC_left_side_range_Low: "王明支持度较低"
+ PRC_left_side_range_High: "王明支持度较高"
+ PRC_right_side_range_Low: "毛泽东支持度较低"
+ PRC_right_side_range_High: "毛泽东支持度较高"
+
+
+
+
+ PRC_struggle_balance1: "中共中央政治局"
+ PRC_struggle_mid_range1: "党内平衡"
+ PRC_struggle_left_side1: "偏向张国焘"
+ PRC_struggle_right_side1: "偏向毛泽东"
+ PRC_Second_Central: "第二中央"
+ PRC_left_side_range_Low1: "张国焘支持度较低"
+ PRC_left_side_range_High1: "张国焘支持度较高"
+ PRC_right_side_range_Low1: "毛泽东支持度较低"
+ PRC_right_side_range_High1: "毛泽东支持度较高"
 
 
  CHI_struggle_balance: "中华民国国民政府"

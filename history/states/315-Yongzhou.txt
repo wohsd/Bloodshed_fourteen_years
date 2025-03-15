@@ -10,7 +10,9 @@ state={
 
 		}
 		add_core_of = RON
-
+		1939.1.1={
+			owner = CHI
+		}
 	}
 
 	provinces={

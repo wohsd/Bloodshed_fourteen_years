@@ -1,106 +1,171 @@
 ﻿add_namespace = PRC_1935Hidden
 add_namespace = PRC_1935
-add_namespace = SiFang
+add_namespace = PRC_SiFang
 add_namespace = CHI_1935
 add_namespace = CHI_1935Hidden
 
+country_event = {
+	id =  PRC_1935.1
+	title = PRC_1935.1.t
+	desc =  PRC_1935.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.1.a
+	}		
+}
+country_event = {
+	id =  PRC_1935.2
+	title = PRC_1935.2.t
+	desc =  PRC_1935.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.2.a
+	}		
+}
 
+country_event = {
+	id =  PRC_1935.3
+	title = PRC_1935.3.t
+	desc =  PRC_1935.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.3.a
+	}		
+}
+country_event = {
+	id =  PRC_1935.4
+	title = PRC_1935.4.t
+	desc =  PRC_1935.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.4.a
+	}		
+}
+country_event = {
+	id =  PRC_1935.5
+	title = PRC_1935.5.t
+	desc =  PRC_1935.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name =  PRC_1935.5.a
+		country_event = PRC_1935.6
+	}		
+}
+country_event = {
+	id =  PRC_1935.6
+	title = PRC_1935.6.t
+	desc =  PRC_1935.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.6.a
+	}		
+}
 ###四方面军
 country_event = {
-	id = SiFang.1
-	title =SiFang.1.t
-	desc = SiFang.1.d
+	id = PRC_SiFang.1
+	title =PRC_SiFang.1.t
+	desc = PRC_SiFang.1.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.1.a
-		country_event = {id=SiFang.2}
+		name = PRC_SiFang.1.a
+		country_event = {id=PRC_SiFang.2 days=2}
+		set_country_flag = PRC_SiFang
+		set_power_balance = {
+			id = PRC_struggle_balance1
+		}
 	}		
 }
 country_event = {
-	id = SiFang.2
-	title =SiFang.2.t
-	desc = SiFang.2.d
+	id = PRC_SiFang.2
+	title =PRC_SiFang.2.t
+	desc = PRC_SiFang.2.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.2.a
-		country_event = {id=SiFang.3}
+		name = PRC_SiFang.2.a
+		country_event = {id=PRC_SiFang.3 days=2}
 	}		
 }
 country_event = {
-	id = SiFang.3
-	title =SiFang.3.t
-	desc = SiFang.3.d
+	id = PRC_SiFang.3
+	title =PRC_SiFang.3.t
+	desc = PRC_SiFang.3.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.3.a
-		country_event = {id=SiFang.4}
+		name = PRC_SiFang.3.a
+		country_event = {id=PRC_SiFang.4 days=2}
 	}		
 }
 country_event = {
-	id = SiFang.4
-	title =SiFang.4.t
-	desc = SiFang.4.d
+	id = PRC_SiFang.4
+	title =PRC_SiFang.4.t
+	desc = PRC_SiFang.4.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.4.a
-		country_event = {id=SiFang.5}
+		name = PRC_SiFang.4.a
+		country_event = {id=PRC_SiFang.5 days=2}
 	}		
 }
 country_event = {
-	id = SiFang.5
-	title =SiFang.5.t
-	desc = SiFang.5.d
+	id = PRC_SiFang.5
+	title =PRC_SiFang.5.t
+	desc = PRC_SiFang.5.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.5.a
-		country_event = {id=SiFang.6}
+		name = PRC_SiFang.5.a
+		country_event = {id=PRC_SiFang.6 days=2}
 	}		
 }
 country_event = {
-	id = SiFang.6
-	title =SiFang.6.t
-	desc = SiFang.6.d
+	id = PRC_SiFang.6
+	title =PRC_SiFang.6.t
+	desc = PRC_SiFang.6.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.6.a
-		country_event = {id=SiFang.7}
-		country_event = {id=SiFang.8}
+		name = PRC_SiFang.6.a
+		country_event = {id=PRC_SiFang.7 days=2}
+		country_event = {id=PRC_SiFang.8 days=2}
 	}	
 	option = {
-		name = SiFang.6.b
-		country_event = {id=SiFang.7}
+		name = PRC_SiFang.6.b
+		country_event = {id=PRC_SiFang.7 days=2}
 		
 	}		
 }
 country_event = {
-	id = SiFang.7
-	title =SiFang.7.t
-	desc = SiFang.7.d
+	id = PRC_SiFang.7
+	title =PRC_SiFang.7.t
+	desc = PRC_SiFang.7.d
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.7.a
-		country_event = {id=SiFang.8}
+		name = PRC_SiFang.7.a
+		country_event = {id=PRC_SiFang.8 days=2}
 	}
 	option = {
-		name = SiFang.7.b
+		name = PRC_SiFang.7.b
 	}				
 }
 country_event = {
-	id = SiFang.8
-	title =SiFang.8.t
-	desc = SiFang.8.d
+	id = PRC_SiFang.8
+	title =PRC_SiFang.8.t
+	desc = PRC_SiFang.8.d
     
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = SiFang.8.a
+		name = PRC_SiFang.8.a
 	}
 }
 ###

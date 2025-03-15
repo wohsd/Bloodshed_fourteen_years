@@ -490,7 +490,10 @@ spriteType = {
 		name = "GFX_bop_PRC_MaoZeDong"
 		texturefile = "gfx/interface/bop/bop_PRC_MaoZeDong.dds"
 	}
-
+spriteType = {
+		name = "GFX_bop_ZhangGuoTao"
+		texturefile = "gfx/interface/bop/bop_ZhangGuoTao.png"
+	}
 
 spriteType = {
 		name = "GFX_bop_CHI_KMT"

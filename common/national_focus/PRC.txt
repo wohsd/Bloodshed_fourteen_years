@@ -15,12 +15,12 @@ focus_tree = {
 		x = 7
 		y = 0
 			completion_reward = {
-					582 = {
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-								}
+				582 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
 						}
+					}
 				}
 
 	}
@@ -996,16 +996,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			start_border_war = {
-				change_state_after_war = yes
+				change_state_after_war = no
 				attacker = {
-					state = 655
+					state = 629
 					num_provinces = 1
 					modifier = 0.1
 					dig_in_factor = 0.4
 					terrain_factor = 0.4
 				}	
 				defender = {
-					state = 629
+					state = 131
 					num_provinces = 1
 					dig_in_factor = -0.35
 					terrain_factor = -0.35

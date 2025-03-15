@@ -16,6 +16,9 @@ state={
 		1936.1.1={
 			owner = RON
 		}
+		1939.1.1={
+			owner = CHI
+		}
 	}
 	manpower=23000
 	state_category = town

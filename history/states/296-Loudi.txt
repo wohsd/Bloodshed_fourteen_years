@@ -13,6 +13,9 @@ state={
 			3937 5
 		}
 		add_core_of = RON
+		1939.1.1={
+			owner = CHI
+		}
 	}
 	manpower=323000
 	state_category = town

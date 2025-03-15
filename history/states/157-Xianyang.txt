@@ -1,8 +1,9 @@
-
 state={
 	id=157
 	name="STATE_157"
-
+	provinces={
+		3248 
+	}
 	history={
 		owner = YHC
 		add_core_of = YHC
@@ -13,17 +14,12 @@ state={
 		add_core_of = CHI
 		1936.1.1 = {
 			owner = ROD
-
 		}
-		victory_points = {
-			3248 10
+		1938.1.1={
+			owner = CHI
 		}
 	}
-
-	provinces={
-		2975 3248 
-	}
-	manpower=323000
+	manpower=223000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

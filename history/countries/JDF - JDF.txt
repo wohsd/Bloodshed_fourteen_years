@@ -15,6 +15,7 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = JDF_YingRuGeng
+recruit_character = JDF_WangJingWei
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
@@ -34,7 +35,11 @@ set_popularities = {
 	neutrality = 0
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
-
+1941.1.1={
+	capital = 214
+	set_cosmetic_tag = JDF_1941
+	retire_character = JDF_YingRuGeng
+}
 add_ideas = {
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

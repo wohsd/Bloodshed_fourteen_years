@@ -17,6 +17,9 @@ state={
 		1933.1.1={
 			owner = ROA
 		}
+		1939.1.1={
+			owner = JAP
+		}
 	}
 	manpower=323000
 	state_category = town
