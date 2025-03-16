@@ -53,6 +53,23 @@ division_template = {
 	}
 }
 division_template = {
+	name = "日伪军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+	}
+}
+division_template = {
 	name = "独立混成旅团" 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -112,6 +129,7 @@ division_template = {
 	}
 }
 units = {
+	
 	##武汉方面
 	division= {	
 		location = 2141
@@ -208,6 +226,122 @@ units = {
 		division_template = "乙种师团"
 		start_experience_factor = 0.5
 	}
+
+
+	##开封方面
+	division= {	
+		location = 3734
+		name = "日伪军第1师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 3734
+		name = "日伪军第2师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 3734
+		name = "日伪军第3师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	##南京方面
+	division= {	
+		location = 2957
+		name = "日伪军第4师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2957
+		name = "日伪军第5师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2957
+		name = "日伪军第6师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	##南京方面
+	division= {	
+		location = 2141
+		name = "日伪军第10师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2141
+		name = "日伪军第11师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2141
+		name = "日伪军第12师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	##湖北方面
+	division= {	
+		location = 2125
+		name = "日伪军第13师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2125
+		name = "日伪军第14师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 2125
+		name = "日伪军第15师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	##广西方面
+	division= {	
+		location = 1683
+		name = "日伪军第19师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 1683
+		name = "日伪军第20师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 1683
+		name = "日伪军第21师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	##广东方面
+	division= {	
+		location = 1352
+		name = "日伪军第22师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 1352
+		name = "日伪军第23师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 1352
+		name = "日伪军第24师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
 	##湖北咸宁
 	division= {	
 		location = 3734
@@ -247,7 +381,25 @@ units = {
 		division_template = "乙种师团"
 		start_experience_factor = 0.5
 	}
-
+	##长沙方面
+	division= {	
+		location = 1507
+		name = "日伪军第10师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 1507
+		name = "日伪军第11师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
+	division= {	
+		location = 1507
+		name = "日伪军第12师"
+		division_template = "日伪军"
+		start_experience_factor = 0.7
+	}
 	##河南新乡
 	division= {	
 		location = 2879

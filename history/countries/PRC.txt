@@ -102,3 +102,6 @@ add_intel = {
 	set_cosmetic_tag = PRC_1931
 	add_to_faction = NSD
 }
+1944.1.1={
+	set_oob = "PRC_1944"
+}

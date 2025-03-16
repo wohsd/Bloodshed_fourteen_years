@@ -94,12 +94,47 @@ add_equipment_to_stockpile = {
 	set_oob = "CHI_1937"
 }
 1944.1.1={
+	capital = 238
 	CHI = {
+		retire_character = CHI_ZhangZiZhong
+		retire_character = CHI_DaiAngLang
+		create_faction = China_Faction
+		add_to_faction = YUL
+		add_to_faction = ROC
+		add_to_faction = BTF
+		add_to_faction = PRC
+		add_to_faction = SJN
+		add_to_faction = ROJ
+		add_to_faction = ROY
+		add_to_faction = ROW
+		add_to_faction = ROZ
+		add_to_faction = MBQ
+		add_to_faction = ROQ
+		add_to_faction = ROX
+		add_to_faction = XZS
 		country_event = RTS_1944.1
 	}
 	
+	set_technology = {
+		infantry_weapons = 1
+		tech_recon = 2
+		tech_support = 2		
+		tech_engineers = 2
+		tech_mountaineers = 2
+		tech_trucks = 2
+		motorised_infantry = 2
+		gw_artillery = 2
+		interwar_antiair = 2
+		basic_train = 2
+		mobile_warfare = 2
+		trade_interdiction = 2
+		formation_flying = 2
+		synth_oil_experiments = 2
+		fuel_silos = 2
+		fuel_refining = 2
+	}
 	add_ideas = {
 		Encourage_enlistment_military
 	}
-	set_oob = "CHI_1937"
+	set_oob = "CHI_1944"
 }

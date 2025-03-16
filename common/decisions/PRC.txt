@@ -124,8 +124,8 @@ PRC_Buy_gun = {
 Long_march_decisions = {
 	Long_March_mobilization_meeting = {
 		available = {
-			#has_war = yes
-			#date > 1934.9.8
+			has_war = yes
+			date > 1934.9.8
 		}
 		visible = {
 			
@@ -705,7 +705,7 @@ Long_march_decisions = {
 				}
 			}
 		}
-		days_mission_timeout = 35
+		days_mission_timeout = 50
 		activation = {
 			has_country_flag = Long_march_mission9
 		}
@@ -740,7 +740,7 @@ Long_march_decisions = {
 				}
 			}
 		}
-		days_mission_timeout = 35
+		days_mission_timeout = 45
 		activation = {
 			has_country_flag = Long_march_mission10
 		}

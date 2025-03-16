@@ -98,6 +98,7 @@ news_event = {
 	trigger = {
 		AND={
 			date > 1933.1.1 
+			date < 1934.1.1
 			YGC={ 
 				NOT = {
 					has_global_flag = fall_of_GuiYan

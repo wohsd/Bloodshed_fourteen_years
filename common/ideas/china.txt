@@ -56,6 +56,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				surrender_limit=10
 				conscription_factor= 0.1
 				war_support_weekly_factor = 0.05
 				training_time_factor = -0.05

@@ -7,7 +7,6 @@ bookmarks = {
 		default_country = "CHI"
 		default = yes
 		"PRC"={
-			
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		"CHI"={

@@ -1,0 +1,523 @@
+﻿division_template = {
+	name = "国民革命军甲种师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		field_hospital= { x = 0 y = 2 }
+		military_police= { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "国民革命军乙种师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "国民革命军丙种师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	
+}
+division_template = {
+	name = "骑兵旅" 		
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	#河南洛阳
+	division= {	
+		location = 3738
+		name = "国军第14军第83师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3738
+		name = "国军第14军第85师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#河南许昌
+	division= {	
+		location = 3748
+		name = "国军第93军第10师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3748
+		name = "国军第93军第166师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#河南郑州
+	division= {	
+		location = 816
+		name = "国军第13军第4师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 816
+		name = "国军第13军第89师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	#河南信阳
+	division= {	
+		location = 2095
+		name = "国军第85军第23师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 2095
+		name = "国军第85军第110师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	#湖南长沙
+	division= {	
+		location = 1657
+		name = "川军第20军第133师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 1657
+		name = "川军第20军第134师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	#湖南衡阳
+	division= {	
+		location = 3748
+		name = "国军第58军新10师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3748
+		name = "国军第58军新11师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖南岳阳
+	division= {	
+		location = 2728
+		name = "国军第72军第34师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 2728
+		name = "国军第72军新13师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+
+
+	#湖南常德
+	division= {	
+		location = 3375
+		name = "国军第78军新15师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3375
+		name = "国军第78军新16师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖南常德
+	division= {	
+		location = 3966
+		name = "国军第4军第59师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3966
+		name = "国军第4军第90师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3966
+		name = "国军第4军第102师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+
+	#浙江金华
+	division= {	
+		location = 3892
+		name = "国军第49军第26师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3892
+		name = "国军第49军第105师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#浙江衢州
+	division= {	
+		location = 11
+		name = "国军第28军第52师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	division= {	
+		location = 11
+		name = "国军第28军第62师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#浙江丽水
+	division= {	
+		location = 3927
+		name = "国军第88军新21师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3927
+		name = "国军第88军新22师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖北随州
+	division= {	
+		location = 354
+		name = "国军第41军新122师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 354
+		name = "国军第41军新124师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖北枣阳
+	division= {	
+		location = 1565
+		name = "国军第45军第125师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 1565
+		name = "国军第45军第127师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖北恩施
+	division= {	
+		location = 874
+		name = "国军第32军第139师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 874
+		name = "国军第32军第141师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖北巴东
+	division= {	
+		location = 2494
+		name = "国军第75军第6师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 2494
+		name = "国军第75军第16师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖北宜昌
+	division= {	
+		location = 3056
+		name = "国军第59军第38师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3056
+		name = "国军第59军第180师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖北荆门
+	division= {	
+		location = 2267
+		name = "国军第77军第37师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 2267
+		name = "国军第77军第132师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+
+	#广东韶关
+	division= {	
+		location = 4055
+		name = "粤军第62军第151师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 4055
+		name = "粤军第62军第157师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#广东梅州
+	division= {	
+		location = 4092
+		name = "粤军第63军第152师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 4092
+		name = "粤军第63军第153师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#广东韶关
+	division= {	
+		location = 4092
+		name = "粤军第63军第152师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 4092
+		name = "粤军第63军第153师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#广东肇庆
+	division= {	
+		location = 4144
+		name = "粤军第64军第155师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 4144
+		name = "粤军第64军第156师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#福建福州
+	division= {	
+		location = 4002
+		name = "国军第70军第19师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 4002
+		name = "国军第70军第107师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#湖北襄阳
+	division= {	
+		location = 3240
+		name = "国军第7军第171师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3240
+		name = "国军第7军第172师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	#湖北宜昌
+	division= {	
+		location = 3056
+		name = "国军第48军第138师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3056
+		name = "国军第48军第176师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	#安徽合肥
+	division= {	
+		location = 3163
+		name = "国军第21军第145师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3163
+		name = "国军第21军第146师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#安徽六安
+	division= {	
+		location = 2315
+		name = "国军第50军第148师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 2315
+		name = "国军第50军第149师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#安徽六安
+	division= {	
+		location = 3944
+		name = "国军第79军第98师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 3944
+		name = "国军第79军第194师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	#江西吉安
+	division= {	
+		location = 3942
+		name = "国军第74军第51师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3942
+		name = "国军第74军第57师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3942
+		name = "国军第74军第58师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+}

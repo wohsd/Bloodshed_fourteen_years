@@ -11,10 +11,4 @@ country_event = {
 	option = {
 		name =RTS_1944.1.a
 	}
-	option = {
-		name =RTS_1944.1.b
-	}
-	option = {
-		name =RTS_1944.1.c
-	}			
 }

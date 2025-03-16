@@ -10,7 +10,7 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		"CHI"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CHI_STORM_DESC"
 		}
 		"JAP"={
 			history = "OTHER_GATHERING_STORM_DESC"
