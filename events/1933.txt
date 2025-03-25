@@ -563,7 +563,7 @@ country_event = {
 		ROD = {
 			AND={
 				has_war = yes
-				surrender_progress > 0.25
+				surrender_progress > 0.27
 			}
 		}
     }

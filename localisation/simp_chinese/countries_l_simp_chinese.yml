@@ -158,6 +158,8 @@ CHI_fascism: "改组派中华民国"
  ROS_DEF: "川系-刘湘"
  ROS_ADJ: "川系-刘湘"
 
+ ROS_faction: "安川军"
+
  ROW_fascism: "川系-刘文辉"
  ROW_fascism_DEF: "川系-刘文辉"
  ROW_democratic: "川系-刘文辉"

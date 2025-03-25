@@ -117,5 +117,20 @@ spriteTypes = {
 		name = "GFX_JiangJieShi"
 		texturefile = "gfx/event/JiangJieShi.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_ROS_1"
+		texturefile = "gfx/event/ROS_1.png"
+	}
+	spriteType = {
+		name = "GFX_ROS_2"
+		texturefile = "gfx/event/ROS_2.png"
+	}
+	spriteType = {
+		name = "GFX_ROS_3"
+		texturefile = "gfx/event/ROS_3.png"
+	}
+	spriteType = {
+		name = "GFX_ROH1933_1"
+		texturefile = "gfx/event/ROH1933_1.png"
+	}
 }

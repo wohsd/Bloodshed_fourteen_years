@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_decision_NSD_Suppression"
+		texturefile = "gfx/interface/decisions/NSD_Suppression.png"
+	}
+}

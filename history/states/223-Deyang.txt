@@ -4,13 +4,7 @@ state={
 	name="STATE_223"
 
 	history={
-		owner = ROW
-
-	1933.1.1={
-		owner = RDX
-	}
-
-
+	owner = ROW
 	buildings = {
 		infrastructure = 1
 
