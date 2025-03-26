@@ -141,7 +141,7 @@ units = {
 	}
 
 	division= {	
-		location = 3324
+		location = 3344
 		name = "川军第165师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.5

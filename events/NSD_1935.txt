@@ -1,0 +1,115 @@
+﻿add_namespace = NSD_1935
+country_event = {
+	id = NSD_1935.1
+	title = NSD_1935.1.t
+	desc = NSD_1935.1.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			NSD={
+				declare_war_on = {
+					target = RHC
+					type = annex_everything
+				}
+			}
+			country_event = {id=NSD_1935.2 days=10}
+		}
+	}
+	option = {
+		name = NSD_1935.1.a
+		
+	}
+}
+country_event = {
+	id = NSD_1935.2
+	title = NSD_1935.2.t
+	desc = NSD_1935.2.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			ROS={
+				declare_war_on = {
+					target = NSD
+					type = annex_everything
+				}
+			}
+			country_event = {id=NSD_1935.3 days=10}
+		}
+	}
+	option = {
+		name = NSD_1935.2.a
+	}
+}
+country_event = {
+	id = NSD_1935.3
+	title = NSD_1935.3.t
+	desc = NSD_1935.3.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {id=NSD_1935.4 days=10}
+		}
+	}
+	option = {
+		name = NSD_1935.3.a
+		
+	}
+}
+country_event = {
+	id = NSD_1935.4
+	title = NSD_1935.4.t
+	desc = NSD_1935.4.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			transfer_state = 634
+			country_event = {id=NSD_1935.5 days=10}
+		}
+	}
+	option = {
+		name = NSD_1935.4.a
+	}
+}
+country_event = {
+	id = NSD_1935.5
+	title = NSD_1935.5.t
+	desc = NSD_1935.5.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = faction_traitor
+			}
+			country_event = {id=NSD_1935.6 days=10}
+		}
+	}
+	option = {
+		name = NSD_1935.5.a
+	}
+}
+country_event = {
+	id = NSD_1935.6
+	title = NSD_1935.6.t
+	desc = NSD_1935.6.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = NSD_1935.6.a
+	}
+}

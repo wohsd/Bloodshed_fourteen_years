@@ -1,0 +1,81 @@
+﻿add_namespace = ROS
+news_event = {
+	id = ROS.1
+	title = ROS.1.t
+	desc = ROS.1.d
+    picture = GFX_ROS_1
+
+	major = yes
+
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			ROS = {
+				create_faction = ROS_faction
+				add_to_faction = RDX
+				add_to_faction = ROT
+				add_to_faction = RYS
+				declare_war_on = {
+					target = ROW
+					type = annex_everything
+				}
+			}
+			every_country = {
+				news_event = {id=ROS.2 days=45}
+			}
+		}
+	}
+    
+	option = {
+		name = ROS.1.a
+	}
+}
+
+news_event = {
+	id = ROS.2
+	title = ROS.2.t
+	desc = ROS.2.d
+    picture = GFX_ROS_2
+	
+	major = yes
+
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			RDX={
+				transfer_state = 229
+				transfer_state = 223
+			}
+			ROS={
+				transfer_state = 253
+				transfer_state = 622
+			}
+			news_event = {id=ROS.3 days=30}
+		}
+	}
+    
+	option = {
+		name = ROS.2.a
+	}
+}
+
+news_event = {
+	id = ROS.3
+	title = ROS.3.t
+	desc = ROS.3.d
+    picture = GFX_ROS_3
+	
+	major = yes
+
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			ROW={
+				white_peace = ROS
+			}
+		}
+	}
+	option = {
+		name = ROS.3.a
+	}
+}
