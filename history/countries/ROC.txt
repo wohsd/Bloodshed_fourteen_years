@@ -11,6 +11,7 @@ set_technology = {
 
 recruit_character = ROC_HuangShaoHong
 recruit_character = ROC_HuangXuChu
+recruit_character = ROC_LiZongRen
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -28,6 +29,10 @@ add_ideas = Regionalist_warlords
 	add_ideas = Regionalist_warlords
 }
 1933.1.1={
+	retire_character = ROC_HuangXuChu	
+	ROC_LiZongRen={
+		promote_character = yes
+	}
 	set_oob = "ROC_1933"
 }
 1944.1.1={
