@@ -2,21 +2,17 @@ characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	PRH_ZhouYiQun={
 		name=PRH_ZhouYiQun
-
 		#肖像选择（平民状态和军事状态）
 		portraits={
-
 			#平民状态
 			civilian={
 				large="gfx//leaders//PRH//PRH_ZhouYiQun.png"
 			}
-
 			#军事状态
 			army={
 				large="gfx//leaders//PRH//PRH_ZhouYiQun.png"
 				small="gfx//leaders//PRH//PRH_ZhouYiQun.png"
 			}
-
 		}
 		#担任党派领导人时的数据
 		country_leader={
@@ -28,6 +24,79 @@ characters={
 			expire="1965.1.1.1"
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
+		}
+		#担任陆军将军时的数据
+	}
+
+	PRH_HeLong={
+		name=PRH_HeLong
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//PRH//PRH_HeLong.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//PRH//PRH_HeLong.png"
+				small="gfx//leaders//PRH//PRH_HeLong.png"
+			}
+		}
+		#担任党派领导人时的数据
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		#担任陆军将军时的数据
+	}
+	PRH_GuangXiangYing={
+		name=PRH_GuangXiangYing
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//PRH//PRH_GuangXiangYing.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//PRH//PRH_GuangXiangYing.png"
+				small="gfx//leaders//PRH//PRH_GuangXiangYing.png"
+			}
+		}
+		#担任党派领导人时的数据
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		#担任陆军将军时的数据
+	}
+	PRH_XiaoKe={
+		name=PRH_XiaoKe
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//PRH//PRH_XiaoKe.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//PRH//PRH_XiaoKe.png"
+				small="gfx//leaders//PRH//PRH_XiaoKe.png"
+			}
+		}
+		#担任党派领导人时的数据
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
 		}
 		#担任陆军将军时的数据
 	}

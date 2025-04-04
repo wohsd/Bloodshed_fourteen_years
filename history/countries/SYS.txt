@@ -10,6 +10,7 @@ set_technology = {
 }
 
 recruit_character = SYS_ShiYouSan
+recruit_character = SYS_SunDianYing
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -20,4 +21,8 @@ set_politics = {
 	#last_election = "1936.11.11"
 	election_frequency = 72
 	elections_allowed = no
+}
+1933.1.1={
+	retire_character = SYS_ShiYouSan
+	set_cosmetic_tag = SYS_1933
 }

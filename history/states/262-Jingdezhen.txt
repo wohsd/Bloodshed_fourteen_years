@@ -6,20 +6,18 @@ state={
 	}
 	history={
 		owner = CHI
-		buildings = {
-			infrastructure = 1
-		}
-		victory_points = {
-			3873 5
-		}
 		1933.1.1={
-			owner = PRC
-			add_core_of = PRC
+			owner = PRH
+			add_core_of = PRH
+		}
+		buildings = {
 		}
 		1936.1.1={
 			owner = CHI
 		}
-		add_core_of = CHI
+		1939.1.1={
+			owner = JAP
+		}
 	}
 	manpower=323000
 	state_category = town

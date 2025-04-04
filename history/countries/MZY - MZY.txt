@@ -34,7 +34,9 @@ set_popularities = {
 	neutrality = 100
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
-
+1933.1.1={
+	news_event = {id=MZY.1 days = 5}
+}
 add_ideas = {
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

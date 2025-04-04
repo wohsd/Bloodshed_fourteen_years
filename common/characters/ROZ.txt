@@ -12,5 +12,19 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+	ROZ_MaHongKui={
+		name=ROZ_MaHongKui
+		portraits={
+			civilian={
+				large="gfx/leaders/ROZ/ROZ_MaHongKui.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}		
 	}

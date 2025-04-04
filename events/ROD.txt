@@ -1,5 +1,5 @@
 ﻿add_namespace = ROD
-
+add_namespace = ROD_hidden
 country_event = {
 	id = ROD.1
 	title = ROD.1.t
@@ -69,3 +69,52 @@ country_event = {
 		
 	}
 }		
+
+country_event = {
+	id = ROD_hidden.1
+	title = ROD_hidden.1.t
+	desc = ROD_hidden.1.d
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		ROD = {
+			AND={
+				has_war = yes
+				surrender_progress > 0.19
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = ROD_3_flag
+		ROD={
+			retire_character = ROD_ZhangXueLiang
+			ROD_YuXueZhong={
+				promote_character = yes
+			}
+		}
+    } 
+	option = {
+		name = ROD_hidden.1.a
+		hidden_effect = {
+			news_event = ROD.3
+		}
+		clr_global_flag = ROD_3_flag
+	}		
+}
+news_event = {
+	id = ROD.3
+	title = ROD.3.t
+	desc = ROD.3.d
+
+	picture = GFX_ROD_3
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+			name = ROD.3.a
+	}		
+}

@@ -24,7 +24,7 @@ state={
 			3101 5 
 		}
 		victory_points = {
-			2257 20
+			2257 30
 		}
 		add_core_of = ROC
 		add_core_of = CHI

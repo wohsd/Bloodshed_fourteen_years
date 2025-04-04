@@ -705,7 +705,7 @@ Long_march_decisions = {
 				}
 			}
 		}
-		days_mission_timeout = 50
+		days_mission_timeout = 55
 		activation = {
 			has_country_flag = Long_march_mission9
 		}

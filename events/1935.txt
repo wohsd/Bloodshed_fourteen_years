@@ -216,9 +216,11 @@ news_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			JDF={
-				transfer_state = 79
-				transfer_state = 78
+			79={
+				transfer_state_to = JDF
+			}
+			78={
+				transfer_state_to = JDF
 			}
 		}
 	}

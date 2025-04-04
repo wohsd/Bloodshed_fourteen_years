@@ -25,10 +25,10 @@ ideas = {
                 army_defence_factor=0.05
 				army_speed_factor=0.1
 				army_org_factor=0.25
-				breakthrough_factor=0.05
-				river_crossing_factor=-0.05			
-                terrain_penalty_reduction=0.05	
-                pocket_penalty=-0.1				
+				breakthrough_factor=0.1
+				river_crossing_factor=-0.15			
+                terrain_penalty_reduction=0.15	
+                pocket_penalty=-0.15				
                 fortification_damage=0.05
 				land_night_attack=0.05
 				
@@ -166,6 +166,51 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = 0.1
+			}
+		}
+
+		Long_March_Trauma= {
+			allowed = {
+			}
+			picture = prc_the_long_march2
+			
+			modifier = {
+				army_attack_factor = -0.10     
+    			army_defence_factor = -0.10    
+				training_time_factor = 0.1
+				army_org_factor= -0.1     # 训练时间 +10%
+			}
+		}
+		Shortage_commanders_fighters= {
+			allowed = {
+			}
+			picture = saf_soviet_advisers
+			
+			modifier = {
+				experience_gain_factor=-0.03
+				army_chief_cost_factor=0.3
+			}
+		}
+		Closed_economy= {
+			allowed = {
+			}
+			picture = saf_history_of_segregation_2
+			
+			modifier = {
+				political_power_cost=0.1
+				stability_factor=-0.05
+				disabled_ideas = 1
+			}
+		}
+		Challenged_authority= {
+			allowed = {
+			}
+			picture = anti_soviet_pact 
+			
+			modifier = {
+				political_power_factor=-0.1
+				political_advisor_cost_factor=0.25
+				stability_factor=-0.05
 			}
 		}
 	}

@@ -11,6 +11,7 @@ set_power_balance = {
 }
 recruit_character = PRC_BoGu
 recruit_character = PRC_ZhangWengTian
+recruit_character = PRC_LingBoQu
 recruit_character = PRC_MaoZeDong
 recruit_character = PRC_ZhuDe
 recruit_character = PRC_ZhouEngLai
@@ -86,6 +87,10 @@ add_intel = {
 	complete_national_focus = PRC_focus24
 	complete_national_focus = PRC_focus30
 	complete_national_focus = PRC_focus31
+	complete_national_focus = PRC_focus50
+	complete_national_focus = PRC_focus52
+	complete_national_focus = PRC_focus51
+	complete_national_focus = PRC_focus53
 	add_ideas={
 		Soviet_district_spirit
 		Leftism
@@ -101,6 +106,47 @@ add_intel = {
 	}
 	set_cosmetic_tag = PRC_1931
 	add_to_faction = NSD
+}
+1936.1.1={
+	capital = 655
+	set_oob = PRC_1936
+	remove_power_balance = {
+		id = PRC_struggle_balance
+	}
+	set_power_balance = {
+		id = PRC_struggle_balance1
+	}
+	complete_national_focus = PRC_focus35
+	complete_national_focus = PRC_focus38
+	complete_national_focus = PRC_focus36
+	complete_national_focus = PRC_focus42
+	complete_national_focus = PRC_focus43
+	complete_national_focus = PRC_focus45
+	retire_character = PRC_BoGu
+	add_country_leader_role = {
+		character = PRC_ZhangWengTian
+		promote_leader = yes
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1.1"
+			traits = {  }
+		}
+	}
+	remove_ideas = {
+		Soviet_district_spirit
+		Leftism
+		Revolutionary_base
+		AB_spirit
+		Extensive_conscription
+	}
+	add_ideas = {
+		Long_March_Trauma
+		Shortage_commanders_fighters
+		Closed_economy
+		Challenged_authority
+		closed_economy
+	}
+	
 }
 1944.1.1={
 	set_oob = "PRC_1944"

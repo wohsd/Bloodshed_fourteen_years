@@ -1,6 +1,8 @@
 ﻿
 add_namespace = PRC_1933
+add_namespace = ROX_1933
 add_namespace = PRC_1933Hidden
+add_namespace = ROX_1933Hidden
 add_namespace = ROH_1933Hidden
 add_namespace = CHI1933
 add_namespace = ROH1933
@@ -62,6 +64,84 @@ country_event = {
 		name = PRC_1933Hidden.1.a
 	}		
 }
+
+#######
+
+country_event = {
+	id = ROX_1933Hidden.1
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.4.11
+			date < 1933.4.13
+		}
+    }
+    immediate = {
+		news_event = {id=ROX_1933.1}
+    } 
+    
+	option = {
+		name = ROX_1933Hidden.1.a
+	}		
+}
+
+news_event = {
+	id = ROX_1933.1
+	title = ROX_1933.1.t
+	desc = ROX_1933.1.d
+
+	picture = GFX_ROX_1933_1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ROX_1933_1
+			ROX={
+				retire_character = ROX_JingShuRen
+				ROX_ShengShiCai={
+					promote_character = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ROX_1933.1.a
+		clr_country_flag = ROX_1933_1
+	}		
+}
+
+
+
+
+
+
+############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 country_event = {
 	id = ROH1933.1
 	title = ROH1933.1.t
@@ -91,7 +171,7 @@ news_event = {
 	title = ROH1933.2.t
 	desc = ROH1933.2.d
 
-	#picture = GFX_fall_of_berlin
+	picture = GFX_ROH1933_2
 
 	major = yes
 

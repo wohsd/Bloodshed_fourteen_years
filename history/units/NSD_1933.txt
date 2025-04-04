@@ -61,21 +61,21 @@ units = {
 	}
 	division= {	
 		name = "中国工农红军第11师"
-		location = 1297
+		location = 2039
 		division_template = "独立师"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "中国工农红军第73师"
-		location = 2901
+		location = 227
 		division_template = "独立师"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1
 	}
 	division= {	
 		name = "中国工农红军第25师"
-		location = 3837
+		location = 622
 		division_template = "独立师"
 		start_experience_factor = 0.7
 		start_equipment_factor = 1

@@ -13,5 +13,25 @@ characters={
 			id=-1
 		}
 	}
-	
+	ROD_YuXueZhong={
+		name=ROD_YuXueZhong
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_YuXueZhong.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 	}

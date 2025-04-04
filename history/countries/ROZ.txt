@@ -10,6 +10,7 @@ set_technology = {
 }
 
 recruit_character = ROZ_MaHongBing
+recruit_character = ROZ_MaHongKui
 set_popularities = {
 	democratic = 0
 	communism = 0

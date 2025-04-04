@@ -12,5 +12,26 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+	SYS_SunDianYing={
+		name=SYS_SunDianYing
+		portraits={
+			civilian={
+				large="gfx/leaders/SYS/SYS_SunDianYing.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}	
 	}

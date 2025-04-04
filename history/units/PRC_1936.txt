@@ -1,0 +1,106 @@
+﻿division_template = {
+	name = "中国工农红军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	
+}
+division_template = {
+	name = "独立团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	
+}
+units = {
+	division= {	
+		name = "军委纵队"
+		location = 680
+		division_template = "独立团"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军独立第1团"
+		location = 680
+		division_template = "独立团"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第27军1团"
+		location = 680
+		division_template = "独立团"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第27军3团"
+		location = 680
+		division_template = "独立团"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+	division= {	
+		name = "中国工农红军第1军1师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第1军2师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第15军75师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第15军78师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第15军81师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第26军42师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第26军84师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}

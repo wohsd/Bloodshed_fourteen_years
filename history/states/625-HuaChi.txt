@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = YHC
 		1936.1.1={
-			owner = PRC
+			owner = ROD
 		}
 	}
 	manpower=23110

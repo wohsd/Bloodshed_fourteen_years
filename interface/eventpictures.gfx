@@ -1,5 +1,25 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_HET_1"
+		texturefile = "gfx/event/HET_1.png"
+	}
+	spriteType = {
+		name = "GFX_MZY_1"
+		texturefile = "gfx/event/MZY_1.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_3"
+		texturefile = "gfx/event/ROD_3.png"
+	}
+	spriteType = {
+		name = "GFX_ROX_1933_1"
+		texturefile = "gfx/event/ROX_1933_1.png"
+	}
+	spriteType = {
+		name = "GFX_ROH_1933_2"
+		texturefile = "gfx/event/ROH_1933_2.png"
+	}
+	spriteType = {
 		name = "GFX_KanRi_1937_2"
 		texturefile = "gfx/event/KanRi_1937_2.dds"
 	}

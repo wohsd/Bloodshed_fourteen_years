@@ -1,0 +1,22 @@
+﻿
+add_namespace = ROZ_1933
+
+
+country_event = {
+	id = ROZ_1933.1
+	title = ROZ_1933.1.t
+	desc = ROZ_1933.1.d
+	fire_only_once = yes
+    trigger = {
+		AND={
+			date > 1933.3.14
+			date < 1933.3.16
+		}
+    }
+    immediate = {
+		retire_character = ROZ_MaHongBing
+    } 
+	option = {
+		name = ROZ_1933.1.a
+	}
+}

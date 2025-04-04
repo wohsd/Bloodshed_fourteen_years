@@ -10,7 +10,7 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			4169 30
+			4169 20
 		}
 		add_core_of = ROC
 		add_core_of = CHI

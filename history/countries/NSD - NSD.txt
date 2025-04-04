@@ -17,6 +17,14 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = NSD_SiFangMian
+recruit_character = NSD_ChenChangHao
+recruit_character = NSD_KuanJiXun
+recruit_character = NSD_LiTe
+recruit_character = NSD_HeWei
+recruit_character = NSD_WangShuSeng
+recruit_character = NSD_YuTianYun
+recruit_character = NSD_XuXianQiang
+recruit_character = NSD_XuHaiDong
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
@@ -40,3 +48,9 @@ set_popularities = {
 add_ideas = {
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
+1934.1.1={
+	retire_character = NSD_KuanJiXun
+}
+1936.4.1={
+	retire_character = NSD_YuTianYun
+}

@@ -17,4 +17,10 @@ opinion_modifiers = {
 	National_scum = {
 		value = -100
 	}
+	CHI_cooperation_with_the_communists_positive= {
+		value = 20
+	}
+	CHI_cooperation_with_the_nationalists_positive= {
+		value = 20
+	}
 }

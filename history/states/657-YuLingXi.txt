@@ -1,0 +1,32 @@
+state={
+	id=657
+	name="STATE_657"
+	provinces={
+		1829 1928 2303
+	}
+	history={
+		owner = YUL
+		add_core_of = YUL
+		buildings = {
+		}
+		1936.1.1={
+			owner = PRC
+			add_core_of = PRC
+		}
+		victory_points = {
+			3302 3
+		}
+		victory_points = {
+			2303 3
+		}
+		victory_points = {
+			1928 3
+		}
+		victory_points = {
+			1829 5
+		}
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

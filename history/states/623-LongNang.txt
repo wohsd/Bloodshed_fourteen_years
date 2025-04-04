@@ -19,7 +19,7 @@ state={
 			owner = CHI
 		}
 	}
-	manpower=323000
+	manpower=123000
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

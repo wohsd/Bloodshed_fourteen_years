@@ -15,6 +15,9 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = PRH_ZhouYiQun
+recruit_character = PRH_GuangXiangYing
+recruit_character = PRH_HeLong
+recruit_character = PRH_XiaoKe
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

@@ -19,7 +19,7 @@ state={
 			owner = CHI
 		}
 	}
-	manpower=323000
+	manpower=63000
 	state_category = town
 	local_supplies = 0.0
 }

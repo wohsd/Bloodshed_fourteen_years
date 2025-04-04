@@ -10,7 +10,6 @@ characters={
 			civilian={
 				large="gfx//leaders//NSD//NSD_SiFangMian.png"
 			}
-
 			#军事状态
 			army={
 				large="gfx//leaders//NSD//NSD_SiFangMian.png"
@@ -30,5 +29,181 @@ characters={
 			id=-1
 		}
 		
+	}
+	NSD_XuXianQiang={
+		name=NSD_XuXianQiang
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_XuXianQiang.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_XuXianQiang.png"
+				small="gfx//leaders//NSD//NSD_XuXianQiang.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	NSD_YuTianYun={
+		name=NSD_YuTianYun
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_YuTianYun.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_YuTianYun.png"
+				small="gfx//leaders//NSD//NSD_YuTianYun.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NSD_WangShuSeng={
+		name=NSD_WangShuSeng
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_WangShuSeng.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_WangShuSeng.png"
+				small="gfx//leaders//NSD//NSD_WangShuSeng.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	NSD_HeWei={
+		name=NSD_HeWei
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_HeWei.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_HeWei.png"
+				small="gfx//leaders//NSD//NSD_HeWei.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NSD_ChenChangHao={
+		name=NSD_ChenChangHao
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_ChenChangHao.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_ChenChangHao.png"
+				small="gfx//leaders//NSD//NSD_ChenChangHao.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NSD_LiTe={
+		name=NSD_LiTe
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_LiTe.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_LiTe.png"
+				small="gfx//leaders//NSD//NSD_LiTe.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NSD_KuanJiXun={
+		name=NSD_KuanJiXun
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_KuanJiXun.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_KuanJiXun.png"
+				small="gfx//leaders//NSD//NSD_KuanJiXun.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	NSD_XuHaiDong={
+		name=NSD_XuHaiDong
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			#平民状态
+			civilian={
+				large="gfx//leaders//NSD//NSD_XuHaiDong.png"
+			}
+			#军事状态
+			army={
+				large="gfx//leaders//NSD//NSD_XuHaiDong.png"
+				small="gfx//leaders//NSD//NSD_XuHaiDong.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
 	}
 }

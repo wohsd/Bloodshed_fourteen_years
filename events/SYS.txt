@@ -1,0 +1,55 @@
+﻿
+add_namespace = SYS_1933
+add_namespace = SYS_1933Hidden
+
+
+country_event = {
+	id = SYS_1933Hidden.1
+    hidden = yes
+	fire_only_once = yes
+    trigger = {
+		AND={
+			date > 1933.12.13
+			date < 1933.12.15
+		}
+    }
+    immediate = {
+		news_event = {id=SYS_1933.1}
+		97={
+			transfer_state_to = SYS
+		}
+		105={
+			transfer_state_to = SYS
+		}
+		SYS={
+			declare_war_on = {
+				target = ROZ
+				type = annex_everything
+			} 
+			declare_war_on = {
+				target = MBQ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROQ
+				type = annex_everything
+			} 
+		}
+    } 
+	option = {
+		name = SYS_1933.1.a
+	}
+}
+
+
+news_event = {
+	id = SYS_1933.1
+	title = SYS_1933.1.t
+	desc = SYS_1933.1.d
+	picture = GFX_SYS_1933_1
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = SYS_1933.1.a
+	}		
+}

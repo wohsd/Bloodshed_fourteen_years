@@ -1,0 +1,21 @@
+state={
+	id=658
+	name="STATE_658"
+	provinces={
+		3302 
+	}
+	history={
+		owner = YUL
+		buildings = {
+		}
+		1936.1.1={
+			owner = ROZ
+		}
+		victory_points = {
+			3302 3
+		}
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

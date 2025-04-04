@@ -1,0 +1,61 @@
+﻿add_namespace = common
+country_event = {
+	id = common.1
+	title = common.1.t
+	desc = common.1.d
+    #picture = 
+	is_triggered_only = yes
+    trigger = {
+    }
+	option = {
+		name = common.1.a
+		PRC={
+			country_event = {id=common.2 days=2}
+		}
+		ROOT={
+			add_to_war = {
+				targeted_alliance = PRC
+				enemy = CHI
+			}
+		}
+		ai_chance = {
+            base = 2
+			add = 10
+        	tag = RFC        
+        }
+	}
+	option = {
+		name = common.1.b
+		ai_chance = {
+            base = 4       
+        }
+		PRC={
+			country_event = {id=common.3 days=2}
+		}
+	}
+}
+
+country_event = {
+	id = common.2
+	title = common.2.t
+	desc = common.2.d
+    #picture = 
+	is_triggered_only = yes
+    trigger = {
+    }
+	option = {
+		name = common.2.a
+	}
+}		
+country_event = {
+	id = common.3
+	title = common.3.t
+	desc = common.3.d
+    #picture = 
+	is_triggered_only = yes
+    trigger = {
+    }
+	option = {
+		name = common.3.a
+	}
+}
