@@ -5,7 +5,7 @@ state={
 		1184 3853 
 	}
 	history={
-		owner = CHI
+		owner = PRH
 		buildings = {
 			infrastructure = 1
 		}

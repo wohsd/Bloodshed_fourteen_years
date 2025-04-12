@@ -9,7 +9,7 @@ state={
 		1970 2553 3029 3365 4175 4185 4186 4200 
 	}
 	history={
-		owner = ROC
+		owner = ROG
 		buildings = {
 			infrastructure = 1
 		}

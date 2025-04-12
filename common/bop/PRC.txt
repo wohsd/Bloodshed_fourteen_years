@@ -1,4 +1,6 @@
 
+######
+######王明
 PRC_struggle_balance = {
 	initial_value = 1
 	left_side = PRC_struggle_left_side
@@ -75,10 +77,63 @@ PRC_struggle_balance = {
 	}
 }
 
-#######张国焘
+#######
+############
+##########立三路线
 ######################
-######################
+
+PRC_struggle_balance0 = {
+	initial_value = 1
+	left_side = PRC_struggle_left_side0
+	right_side = PRC_struggle_right_side0
+	decision_category = PRC_struggle_balance0_category
+	range = {
+		id = PRC_struggle_mid_range0
+		min = -0.25
+		max = 0.25
+		modifier = {
+		}
+	}
+	side = {
+		id = PRC_struggle_left_side0
+		#icon = GFX_bop_PRC_WangMing
+		range = {
+			id = PRC_left_side_range_Low0
+			min = -0.75 
+			max = -0.25
+			modifier = {
+			}
+		}
+		range = {
+			id = PRC_left_side_range_High0
+			min = -1
+			max = -0.75
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = PRC_struggle_right_side0
+	#	icon = GFX_bop_PRC_MaoZeDong
+		range = {
+			id = PRC_right_side_range_Low0
+			min = 0.25
+			max = 0.75
+			modifier = {
+			}
+		}
+		range = {
+			id = PRC_right_side_range_High0
+			min = 0.75
+			max = 1
+			modifier = {
+			}
+		}
+	}
+}
+
 #################################
+###张国焘
 #################################
 PRC_struggle_balance1 = {
 	initial_value = 1

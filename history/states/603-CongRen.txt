@@ -5,14 +5,13 @@ state={
 		1217 2490 2996 
 	}
 	history={
-		owner = PRC
+		owner = CHI
 		buildings = {
 			industrial_complex = 1
 		}
 		victory_points = {
 			2490 5
 		}
-		add_core_of = PRC
 		1933.1.1={
 			owner = CHI
 		}

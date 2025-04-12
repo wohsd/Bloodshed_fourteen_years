@@ -378,6 +378,16 @@ PRC_anti_chi: "反蒋同盟"
  NEW_CHINA_DEF: "中华人民共和国"
  NEW_CHINA_ADJ: "中华人民共和国"
 
+
+
+ PRD: "东江根据地"
+ PRD_DEF: "东江根据地"
+ PRD_ADJ: "东江根据地"
+
+ PRY: "右江根据地"
+ PRY_DEF: "右江根据地"
+ PRY_ADJ: "右江根据地"
+
  MEG_fascism: "蒙古人民共和国"
  MEG_fascism_DEF: "蒙古人民共和国"
  MEG_democratic: "蒙古人民共和国"

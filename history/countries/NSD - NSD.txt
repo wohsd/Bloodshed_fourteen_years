@@ -44,6 +44,29 @@ set_popularities = {
 	neutrality = 0
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
+NSD={
+	set_variable = {
+		paranoia_photo1 = 10
+	}
+	set_variable = {
+		paranoia_photo2 = 10
+	}
+	set_variable = {
+		paranoia_photo3 = 10
+	}
+	set_variable = {
+		paranoia_photo4 = 10
+	} 
+	set_variable = {
+		paranoia_photo5 = 10
+	}
+	set_variable = {
+		paranoia_photo6 = 10
+	}
+	set_variable = {
+		paranoia_photo7 = 10
+	}
+}
 
 add_ideas = {
 }

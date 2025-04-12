@@ -22,4 +22,15 @@ leader_traits = {
 			factor = 0
 		}
 	}
+	Puppet_leader = {
+		random = no
+		sprite = 13
+		
+		political_power_cost = 0.05
+		stability_factor = -0.02
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

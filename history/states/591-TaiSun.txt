@@ -5,11 +5,9 @@ state={
 		2742 
 	}
 	history={
-		owner = PRC
+		owner = CHI
 		buildings = {
 		}
-		add_core_of = PRC
-		add_core_of = CHI
 		1933.1.1={
 			owner = CHI
 		}

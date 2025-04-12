@@ -9,7 +9,7 @@ state={
 			infrastructure = 1
 
 		}
-		add_core_of = YHC
+		
 		1936.1.1={
 			owner = ROD
 		}
@@ -21,7 +21,7 @@ state={
 	provinces={
 		3722 
 	}
-	manpower=323000
+	manpower=71200
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

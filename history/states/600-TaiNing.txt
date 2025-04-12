@@ -9,8 +9,6 @@ state={
 			infrastructure = 1
 
 		}
-		add_core_of = CHI
-		add_core_of = PRC
 		1933.1.1 = {
 			owner = PRC
 			add_core_of = PRC
@@ -21,9 +19,9 @@ state={
 	}
 
 	provinces={
-		2273 2980 3961 
+		2273 3961 
 	}
-	manpower=1330000
+	manpower=530000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

@@ -13,7 +13,7 @@ state={
 		victory_points = {
 			2710 5
 		}
-		add_core_of = YHC
+		
 		1936.1.1={
 			owner = ROD
 		}
@@ -21,7 +21,7 @@ state={
 			owner = CHI
 		}
 	}
-	manpower=23110
+	manpower=33110
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

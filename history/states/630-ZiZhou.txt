@@ -6,7 +6,7 @@ state={
 	}
 	history={
 		owner = YHC
-		add_core_of = YHC
+		
 		buildings = {
 		}
 		victory_points = {
@@ -18,7 +18,7 @@ state={
 			owner = PRC
 		}
 	}
-	manpower=11000
+	manpower=101000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

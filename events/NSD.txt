@@ -1,5 +1,6 @@
 ﻿add_namespace = NSD_1935
 add_namespace = NSD_1938
+add_namespace = NSD_Paranoia
 country_event = {
 	id = NSD_1935.1
 	title = NSD_1935.1.t
@@ -128,5 +129,159 @@ country_event = {
 	}
 	option = {
 		name = NSD_1938.1.a
+	}
+}
+
+
+
+country_event = {
+	id = NSD_Paranoia.1
+	title = NSD_Paranoia.1.t
+	desc = NSD_Paranoia.1.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.1.a
+	}
+}
+country_event = {
+	id = NSD_Paranoia.2
+	title = NSD_Paranoia.2.t
+	desc = NSD_Paranoia.2.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.2.a
+	}
+}
+country_event = {
+	id = NSD_Paranoia.3
+	title = NSD_Paranoia.3.t
+	desc = NSD_Paranoia.3.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.3.a
+	}
+}
+country_event = {
+	id = NSD_Paranoia.4
+	title = NSD_Paranoia.4.t
+	desc = NSD_Paranoia.4.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.4.a
+		set_variable = {
+			paranoia_photo1 = 1
+		}
+	}
+}
+country_event = {
+	id = NSD_Paranoia.5
+	title = NSD_Paranoia.5.t
+	desc = NSD_Paranoia.5.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.5.a
+		set_variable = {
+			paranoia_photo2 =2
+		}
+	}
+}
+country_event = {
+	id = NSD_Paranoia.6
+	title = NSD_Paranoia.16.t
+	desc = NSD_Paranoia.6.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.6.a
+		set_variable = {
+			paranoia_photo3 =3
+		}
+	}
+}
+country_event = {
+	id = NSD_Paranoia.7
+	title = NSD_Paranoia.7.t
+	desc = NSD_Paranoia.7.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.7.a
+		set_variable = {
+			paranoia_photo7 =7
+		}
+	}
+}
+country_event = {
+	id = NSD_Paranoia.8
+	title = NSD_Paranoia.8.t
+	desc = NSD_Paranoia.8.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.8.a
+		set_variable = {
+			paranoia_photo6 =6
+		}
+	}
+}
+country_event = {
+	id = NSD_Paranoia.9
+	title = NSD_Paranoia.9.t
+	desc = NSD_Paranoia.9.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.9.a
+		set_variable = {
+			paranoia_photo5 =5
+		}
+	}
+}
+country_event = {
+	id = NSD_Paranoia.10
+	title = NSD_Paranoia.10.t
+	desc = NSD_Paranoia.10.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+	option = {
+		name = NSD_Paranoia.10.a
+		set_variable = {
+			paranoia_photo4 = 4
+		} 
 	}
 }

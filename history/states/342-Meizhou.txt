@@ -1,25 +1,15 @@
-
 state={
 	id=342
 	name="STATE_342"
 	resources={
-		tungsten=5 # was: 20
-		steel= 5 # was: 20
-		chromium = 3 # was: 4
+		tungsten=5.000
+		steel=5.000
+		chromium=3.000
 	}
 	history={
 		owner = ROG
 		buildings = {
 			infrastructure = 1
-			3220={
-				bunker = 2
-			}
-			4065={
-				bunker = 2
-			}
-			1823={
-				bunker = 2
-			}
 		}
 		1939.1.1={
 			owner = CHI
@@ -27,15 +17,11 @@ state={
 		victory_points = {
 			4092 10
 		}
-		add_core_of = ROG
-		add_core_of = CHI
-
 	}
-
 	provinces={
-		1447 1669 1823 2477 2775 2919 3220 3270 4065 4077 4088 4092 4093 4096 4103 4113 4115 
+		4077 4088 4092 4113
 	}
-	manpower=323000
+	manpower=423000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

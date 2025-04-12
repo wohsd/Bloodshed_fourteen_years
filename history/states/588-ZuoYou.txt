@@ -5,11 +5,10 @@ state={
 		2528 615 4080 
 	}
 	history={
-		owner = PRC
+		owner = PRY
 		buildings = {
 		}
-		add_core_of = ROC
-		add_core_of = PRC
+		add_core_of = PRY
 		victory_points = {
 			4080 10
 		}

@@ -5,12 +5,11 @@ state={
 		2399 3935 3946 
 	}
 	history={
-		owner = CHI
+		owner = PRC
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = CHI
         1933.1.1={
 			owner = PRC
 		}

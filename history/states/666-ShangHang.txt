@@ -1,0 +1,21 @@
+state={
+	id=666
+	name="STATE_666"
+	provinces={
+		348 1402 4041 4042 4053 
+	}
+	history={
+		owner = PRC
+		buildings = {
+
+		}
+		add_core_of = PRC
+		add_core_of = CHI
+		1933.1.1={
+			owner = CHI
+		}
+	}
+	manpower=121320
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

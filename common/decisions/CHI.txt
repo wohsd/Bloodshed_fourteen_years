@@ -235,6 +235,114 @@ CHI_Defend_against_enemy_category = {
 ######### 
 
 CHI_Encirclement_suppression_operation_category = {
+	####二剿
+	CHI_Encirclement1 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement1
+			} 
+		}
+		days_mission_timeout = 90
+		activation = {
+			tag = CHI
+			#has_country_flag = Long_march_mission0
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.1}
+			set_country_flag = CHI_Encirclement1 
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####三剿
+	CHI_Encirclement2 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement2
+			} 
+		}
+		days_mission_timeout = 90
+		activation = {
+			tag = CHI
+			has_country_flag = CHI_Encirclement1
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.2}
+			set_country_flag = CHI_Encirclement2
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####四剿
+	CHI_Encirclement3 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement3
+			} 
+		}
+		days_mission_timeout = 90
+		activation = {
+			tag = CHI
+			has_country_flag = CHI_Encirclement2
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.3}
+			set_country_flag = CHI_Encirclement3
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####五剿
+	CHI_Encirclement4 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement4
+			} 
+		}
+		days_mission_timeout = 90
+		activation = {
+			tag = CHI
+			has_country_flag = CHI_Encirclement3
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.4}
+
+		}
+		complete_effect = {
+		}
+	}
+	####
 	PRC_Massacre1 = {
 		available = {
 			PRC = {
@@ -514,59 +622,6 @@ CHI_Encirclement_suppression_operation_category = {
 					}
 				}
 			}
-		}
-	}
-############
-#################
-	#############
-	CHI_suppression_operation2 = {
-		available = {
-			AND={
-				582={
-					is_controlled_by = CHI
-				}
-			}
-		}
-		days_mission_timeout = 60
-		activation = { 
-			AND={
-				date > 1931.4.1
-				date < 1931.5.30
-			}
-		}		
-		fixed_random_seed = no
-		fire_only_once = yes
-		is_good = no
-		timeout_effect = {
-
-		}
-		complete_effect = {
-			add_political_power = 100
-		}
-	}
-	CHI_suppression_operation3 = {
-		available = {
-			AND={
-				582={
-					is_controlled_by = CHI
-				}
-			}
-		}
-		days_mission_timeout = 80
-		activation = { 
-			AND={
-				date > 1931.7.1
-				date < 1931.9.1
-			}
-		}		
-		fixed_random_seed = no
-		fire_only_once = yes
-		is_good = no
-		timeout_effect = {
-
-		}
-		complete_effect = {
-			add_political_power = 100
 		}
 	}
 }

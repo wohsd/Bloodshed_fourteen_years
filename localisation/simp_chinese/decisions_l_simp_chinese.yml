@@ -76,12 +76,15 @@ flood_effect: "洪水泛滥区"
 
 
 NSD_Suppression_campaign_decisions: "川陕大肃反"
-NSD_Suppression_campaign_decisions_desc: "在党内很多反革命分子内外勾结，大搞破坏，曾经造成过重大损失。甚至有高级别的高级指战员被杀的事件，损失巨大，危害甚广。于是张国焘成立了肃反机构“川陕省总保卫局”，各县也成立县保卫局，并配备了保卫团、营、连或队等武装，实行“宪兵”职责。总保卫局由张国焘一人控制，任何人不能插手。"
+NSD_Suppression_campaign_decisions_desc: "在党内很多反革命分子内外勾结，大搞破坏，曾经造成过重大损失。甚至有高级别的高级指战员被杀的事件，损失巨大，危害甚广。于是张国焘成立了肃反机构“川陕省总保卫局”，各县也成立县保卫局，并配备了保卫团、营、连或队等武装，实行“宪兵”职责。总保卫局由张国焘一人控制，任何人不能插手。\n\n\n\n\n\n"
 NSD_Suppression_campaign0: "编造整人材料"
 NSD_Suppression_campaign1: "肃反进行时"
-NSD_Suppression_campaign1_desc: "在这个决议结束前，肃反不会被停止。"
+NSD_Suppression_campaign1_desc: "在这个决议结束前，肃反不会被停止。\n\n每周的偏执度将增加§R5§!点"
 NSD_Suppression_campaign2: "封锁肃反消息"
 NSD_Suppression_campaign2_desc: "这次的肃反行动是秘密进行，必须严加封锁，哪怕是中央都不能阻挡，以免乱了军心。"
 NSD_Suppression_campaign3: "伪造右派身份"
 NSD_Suppression_campaign3_desc: "在我们当中的许多将领都曾是起义而来的，我们必须对他们保持怀疑态度。"
 NSD_Suppression_end: "提前终止肃反。"
+
+NSD_paranoia_value_text: "政治偏执度：§R[?NSD_paranoia]%§!"
+NSD_paranoia_bg_tooltip: "每§R25§!偏执度会发生清洗下层士兵事件，偏执度越高，且超过上述阈值的天数越多，会发生清洗高级将领的事件。\n\n某些国策、决议和效果可能导致期偏执度立即增加/减少，某些顾问和国家领导人特质也能缓慢增加偏执度。"

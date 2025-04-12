@@ -1,39 +1,20 @@
-
 state={
 	id=327
 	name="STATE_327"
-
+	provinces={
+		2534 3182 3282 4027 4039 
+	}
 	history={
 		owner = CHI
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			
-			4015={
-				bunker = 2
-			}
-			1402={
-				bunker = 2
-			}
-			4053={
-				bunker = 2
-			}
-		}
-		victory_points = {
-			1402 10 
-		}
-		victory_points = {
-			4053 5 
-		}
-		victory_points = {
-			4021 5 
-		}
-		add_core_of = CHI
 
-	}
-
-	provinces={
-		1402 2534 3182 3282 4015 4027 4039 4053 
+		}
+		victory_points = {
+			3182 5
+		}
+		1936.1.1={
+			owner = CHI
+		}
 	}
 	manpower=323000
 	buildings_max_level_factor=1.000

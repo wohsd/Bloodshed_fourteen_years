@@ -374,6 +374,16 @@
  PRC_right_side_range_High1: "毛泽东支持度较高"
 
 
+ PRC_struggle_balance0: "中共中央政治局"
+ PRC_struggle_mid_range0: "党内平衡"
+ PRC_struggle_left_side0: "偏向王明"
+ PRC_struggle_right_side0: "偏向李立三"
+ PRC_left_side_range_Low0: "王明支持度较低"
+ PRC_left_side_range_High0: "王明支持度较高"
+ PRC_right_side_range_Low0: "李立三支持度较低"
+ PRC_right_side_range_High0: "李立三支持度较高"
+
+
  CHI_struggle_balance: "中华民国国民政府"
  CHI_struggle_mid_range: "党内平衡"
  CHI_struggle_left_side: "偏向中央监委"
@@ -394,5 +404,8 @@
  PRC_Massacre4:"清剿湘赣苏区"
  PRC_Massacre5:"清剿川陕苏区"
  PRC_Massacre6:"清剿琼崖苏区"
- CHI_suppression_operation2: "第二次围剿"
- CHI_suppression_operation3: "第三次围剿"
+
+ CHI_Encirclement1: "第二次围剿" 
+ CHI_Encirclement2: "第三次围剿"
+ CHI_Encirclement3: "第四次围剿"
+ CHI_Encirclement4: "第五次围剿"

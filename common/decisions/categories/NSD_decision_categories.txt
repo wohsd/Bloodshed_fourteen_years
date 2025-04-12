@@ -2,6 +2,7 @@ NSD_Suppression_campaign_decisions = {
 	icon = GFX_decision_NSD_Suppression
 	picture = GFX_Buy_gun
 	visible = { 
-		tag=NSD
-	}
-}
+		tag=NSD 
+	}  
+	scripted_gui = NSD_paranoia_system_ui 
+}              

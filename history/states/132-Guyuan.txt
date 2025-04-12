@@ -17,7 +17,7 @@ state={
 		1938.1.1={
 			owner = CHI
 		}
-		add_core_of = YHC
+		
 		victory_points = {
 			1605 5
 		}
@@ -26,7 +26,7 @@ state={
 	provinces={
 		160 1605 3713 
 	}
-	manpower=323000
+	manpower=243000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

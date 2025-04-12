@@ -35,6 +35,8 @@ set_politics = {
 	set_oob = "ROD_1936"
 	remove_ideas = Not_resisting
 	add_ideas = Negative_Encirclement
-	white_peace = JAP
+	JAP={
+		white_peace = ROD
+	}
 	set_cosmetic_tag = ROD_1936
 }

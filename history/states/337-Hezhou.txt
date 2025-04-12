@@ -10,14 +10,19 @@ state={
 		chromium = 3 # was: 4
 	}
 	history={
-		owner = ROC
+		owner = ROG
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = ROC
-		add_core_of = CHI
+		1931.2.1={
+			owner = ROC
+		}
 		victory_points = {
 			1540 5
+		}
+		1931.2.1={
+			owner = ROC
 		}
 	}
 	manpower=323000

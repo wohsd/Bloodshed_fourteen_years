@@ -6,6 +6,250 @@ add_namespace = ROG_1931
 add_namespace = world1931
 add_namespace = world1931Hidden
 
+add_namespace = CHI_Encirclement
+
+country_event = {
+	id = CHI_Encirclement.1
+	title = CHI_Encirclement.1.t
+	desc = CHI_Encirclement.1.d
+	#picture = GFX_ROG_1931_1
+	trigger = {
+	}
+	fire_only_once = yes
+    is_triggered_only = yes 
+    immediate = {
+		hidden_effect = {
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 589
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = 0.4
+				terrain_factor = 0.4
+			}	
+			defender = {
+				state = 600
+				num_provinces = 3
+				dig_in_factor = -0.45
+				terrain_factor = -0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 589
+			defender = 600
+			defender_modifier = 0.2
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 302
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = -0.4
+				terrain_factor = -0.4
+			}	
+			defender = {
+				state = 598
+				num_provinces = 3
+				dig_in_factor = 0.45
+				terrain_factor = 0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 302
+			defender = 598
+			defender_modifier = 0.2
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 327
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = -0.4
+				terrain_factor = -0.4
+			}	
+			defender = {
+				state = 666
+				num_provinces = 3
+				dig_in_factor = 0.45
+				terrain_factor = 0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 327
+			defender = 666
+			defender_modifier = 0.2
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 312
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = -0.4
+				terrain_factor = -0.4
+			}	
+			defender = {
+				state = 582
+				num_provinces = 3
+				dig_in_factor = 0.45
+				terrain_factor = 0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 312
+			defender = 582
+			defender_modifier = 0.2
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 628
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = -0.4
+				terrain_factor = -0.4
+			}	
+			defender = {
+				state = 251
+				num_provinces = 3
+				dig_in_factor = 0.45
+				terrain_factor = 0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 628
+			defender = 251
+			defender_modifier = 0.2
+		}
+
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 601
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = -0.4
+				terrain_factor = -0.4
+			}	
+			defender = {
+				state = 661
+				num_provinces = 3
+				dig_in_factor = 0.45
+				terrain_factor = 0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 601
+			defender = 661
+			defender_modifier = 0.2
+		}
+
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 342
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = -0.4
+				terrain_factor = -0.4
+			}	
+			defender = {
+				state = 665
+				num_provinces = 3
+				dig_in_factor = 0.45
+				terrain_factor = 0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 342
+			defender = 665
+			defender_modifier = 0.2
+		}
+
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 353
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = -0.4
+				terrain_factor = -0.4
+			}	
+			defender = {
+				state = 663
+				num_provinces = 3
+				dig_in_factor = 0.45
+				terrain_factor = 0.45
+			}
+		}
+		set_border_war_data = {
+			attacker = 353
+			defender = 663
+			defender_modifier = 0.2
+		}
+	}
+    } 
+	option = {
+		name = CHI_Encirclement.1.a
+	}
+}
+
+country_event = {
+	id = CHI_Encirclement.2
+	title = CHI_Encirclement.2.t
+	desc = CHI_Encirclement.2.d
+	#picture = GFX_ROG_1931_1
+	trigger = {
+	}
+	fire_only_once = yes
+    is_triggered_only = yes 
+    immediate = {
+		
+    } 
+	option = {
+		name = CHI_Encirclement.2.a
+	}
+}
+
+
+country_event = {
+	id = CHI_Encirclement.3
+	title = CHI_Encirclement.3.t
+	desc = CHI_Encirclement.3.d
+	#picture = GFX_ROG_1931_1
+	trigger = {
+	}
+	fire_only_once = yes
+    is_triggered_only = yes 
+    immediate = {
+		
+    } 
+	option = {
+		name = CHI_Encirclement.3.a
+	}
+}
+
+country_event = {
+	id = CHI_Encirclement.4
+	title = CHI_Encirclement.4.t
+	desc = CHI_Encirclement.4.d
+	#picture = GFX_ROG_1931_1
+	trigger = {
+	}
+	fire_only_once = yes
+    is_triggered_only = yes 
+    immediate = {
+		
+    } 
+	option = {
+		name = CHI_Encirclement.3.a
+		
+	}
+}
+
 news_event = {
 	id = ROC_1931.1
 	title = ROC_1931.1.t
@@ -225,7 +469,7 @@ news_event = {
 
 
 country_event = {
-	id = PRC_1931Hidden.0
+	id = PRC_1931Hidden.1
     hidden = yes
 	fire_only_once = yes
 	
@@ -262,6 +506,56 @@ country_event = {
 		name = PRC_1931Hidden.1.a
 	}		
 }
+
+country_event = {
+	id = PRC_1931Hidden.2
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1931.1.2
+			date < 1931.1.4
+		}
+    }
+    immediate = {
+		PRC={
+			country_event = {id=PRC_1931.2 days=1}
+		}
+    } 
+    
+	option = {
+		name = PRC_1931Hidden.2.a
+	}		
+}
+
+
+
+
+
+
+
+
+country_event = {
+	id = PRC_1931.0
+	title = PRC_1931.0.t
+	desc = PRC_1931.0.d
+	#picture = GFX_PRC_1931_0
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.0.a
+		country_event = {id=PRC_1931.8 days=28}
+	}	
+	option = {
+		name = PRC_1931.0.b
+		country_event = {id=PRC_1931.9 days=28}
+	}	
+}
+
+
+
 news_event = {
 	id = PRC_1931.1
 	title = PRC_1931.1.t
@@ -281,42 +575,114 @@ news_event = {
 }
 
 
-
-
 country_event = {
 	id = PRC_1931.2
 	title = PRC_1931.2.t
 	desc = PRC_1931.2.d
-	picture = GFX_PRC_1931_1
-    trigger = {
-		AND={
-			date > 1931.4.1
-			date < 1931.4.3
-		}
-    }
-    immediate = {
-    } 
+	picture = GFX_PRC_1931_2
+	fire_only_once = yes
+	is_triggered_only = yes
+
 	option = {
 		name = PRC_1931.2.a
+		
 	}		
 }
-
-
 
 country_event = {
 	id = PRC_1931.3
 	title = PRC_1931.3.t
 	desc = PRC_1931.3.d
-	picture = GFX_PRC_1931_1
-    trigger = {
-		AND={
-			date > 1931.7.1
-			date < 1931.7.3
-		}
-    }
-    immediate = {
-    } 
+	picture = GFX_PRC_1931_3
+	fire_only_once = yes
+	is_triggered_only = yes
+
 	option = {
 		name = PRC_1931.3.a
+		country_event = {id=PRC_1931.4 days=10}
+	}		
+}
+
+country_event = {
+	id = PRC_1931.4
+	title = PRC_1931.4.t
+	desc = PRC_1931.4.d
+	picture = GFX_PRC_1931_4
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.4.a
+		country_event = {id=PRC_1931.5 days=1}
+	}		
+}
+
+country_event = {
+	id = PRC_1931.5
+	title = PRC_1931.5.t
+	desc = PRC_1931.5.d
+	picture = GFX_PRC_1931_5
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.5.a
+		country_event = {id=PRC_1931.6 days=2}
+	}		
+}
+
+country_event = {
+	id = PRC_1931.6
+	title = PRC_1931.6.t
+	desc = PRC_1931.6.d
+	picture = GFX_PRC_1931_6
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.6.a
+		country_event = {id=PRC_1931.7 days=2}
+	}		
+}
+
+country_event = {
+	id = PRC_1931.7
+	title = PRC_1931.7.t
+	desc = PRC_1931.7.d
+	picture = GFX_PRC_1931_7
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.7.a
+		
+	}		
+}
+
+country_event = {
+	id = PRC_1931.8
+	title = PRC_1931.8.t
+	desc = PRC_1931.8.d
+	picture = GFX_PRC_1931_8
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.8.a
+		
+	}		
+}
+
+country_event = {
+	id = PRC_1931.9
+	title = PRC_1931.9.t
+	desc = PRC_1931.9.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.9.a
+		
 	}		
 }

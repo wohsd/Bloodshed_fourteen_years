@@ -1,4 +1,18 @@
 characters={
+	PRC_XiangZhongFa={
+		name=PRC_XiangZhongFa
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_XiangZhongFa.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={Puppet_leader}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	PRC_MaoZeDong={
 		name=PRC_MaoZeDong
 		portraits={

@@ -1,0 +1,35 @@
+scripted_gui = {
+
+	NSD_paranoia_system_ui = {
+		context_type = decision_category
+		window_name = "NSA_paranoia_system_ui_window"
+
+		properties = {
+			paranoia_needle = {
+				frame = 1
+			}
+			paranoia_photo_1 = {
+				frame = paranoia_photo1
+			}
+			paranoia_photo_2 = {
+				frame = paranoia_photo2
+			}
+			paranoia_photo_3 = {
+				frame = paranoia_photo3
+			}
+			paranoia_photo_4 = {
+				frame = paranoia_photo4
+			}
+			paranoia_photo_5 = {
+				frame = paranoia_photo5
+			}
+			paranoia_photo_6 = {
+				frame = paranoia_photo6
+			}
+			paranoia_photo_7 = {
+				frame = paranoia_photo7
+			}
+		}
+	} 
+	 
+}

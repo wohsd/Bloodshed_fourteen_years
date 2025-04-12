@@ -5,7 +5,7 @@ state={
 		2251 
 	}
 	history={
-		owner = ROG
+		owner = PRD
 		buildings = {
 			infrastructure = 1
 		}

@@ -15,12 +15,12 @@ state={
 		1938.1.1={
 			owner = CHI
 		}
-		add_core_of = YHC
+		
 		victory_points = {
 			941 5
 		}
 	}
-	manpower=323000
+	manpower=421000
 	state_category = town
 	local_supplies = 0.0
 }

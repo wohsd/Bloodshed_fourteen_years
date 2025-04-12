@@ -6,16 +6,13 @@ set_technology = {
 	tech_engineers = 1
 }
 
-set_power_balance = {
-    id = PRC_struggle_balance
-}
+recruit_character = PRC_XiangZhongFa
 recruit_character = PRC_BoGu
 recruit_character = PRC_ZhangWengTian
 recruit_character = PRC_LingBoQu
 recruit_character = PRC_MaoZeDong
 recruit_character = PRC_ZhuDe
 recruit_character = PRC_ZhouEngLai
-
 recruit_character = PRC_LiDe
 recruit_character = PRC_PengDeHuai
 recruit_character = PRC_LingBiao
@@ -27,7 +24,6 @@ recruit_character =PRC_GuZuoLing
 recruit_character =PRC_RenBiShi
 recruit_character =PRC_WangJiaXiang
 set_popularities = {
-	democratic = 0
 	communism = 100
 }
 create_faction = PRC_faction
@@ -35,11 +31,13 @@ add_to_faction = PRH
 add_to_faction = NHA
 add_to_faction = PRQ
 add_to_faction = PRJ
+add_to_faction = PRY
+add_to_faction = PRD
 
 set_variable = {
 	Chi_Shui=0
 }
-
+country_event = {id=PRC_1931.0 days=1}
 set_politics = {
 	ruling_party = communism
 	#last_election = "1936.11.11"
@@ -57,6 +55,14 @@ create_intelligence_agency = {
     name = "中央特科"
     icon = GFX_Central_Special_Branch
 }
+create_operative_leader = {
+	name = "顾顺章"
+	GFX = GFX_PRC_GuSunZhang
+	traits = { }
+	bypass_recruitment = no
+	available_to_spy_master = yes
+	nationalities = { PRC }
+}
 add_intel = {
     target = CHI
     civilian_intel = 7
@@ -64,7 +70,11 @@ add_intel = {
     navy_intel = 2
     airforce_intel = 2
 }
+set_power_balance = {
+	id =  PRC_struggle_balance0
+}
 1933.1.1={
+	retire_character = PRC_XiangZhongFa
 	capital = 582 
 	set_oob = PRC_1933
 	set_variable = {
@@ -110,6 +120,15 @@ add_intel = {
 1936.1.1={
 	capital = 655
 	set_oob = PRC_1936
+	NSA={
+		NSA_LiuZhiDan  = { set_nationality = PRC }
+	}
+	add_manpower = 35000
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 20000
+		producer = PRC
+	}
 	remove_power_balance = {
 		id = PRC_struggle_balance
 	}
@@ -121,6 +140,7 @@ add_intel = {
 	complete_national_focus = PRC_focus36
 	complete_national_focus = PRC_focus42
 	complete_national_focus = PRC_focus43
+	complete_national_focus = PRC_focus44
 	complete_national_focus = PRC_focus45
 	retire_character = PRC_BoGu
 	add_country_leader_role = {
@@ -147,6 +167,17 @@ add_intel = {
 		closed_economy
 	}
 	
+}
+1938.1.1={
+	promote_character = {
+		character = PRC_MaoZeDong
+		ideology = marxism
+	}
+	set_country_leader_portrait = {
+		ideology = marxism
+		portrait = GFX_MaoZeDong1
+	}
+	set_cosmetic_tag = PRC_1937
 }
 1944.1.1={
 	set_oob = "PRC_1944"

@@ -12,7 +12,8 @@ country_event = {
     
 	option = {
 		name = PRC_focus.1.a
-		country_event = {id=PRC_focus.2 days=10}
+		country_event = {id=PRC_1931.3 days=1}
+		country_event = {id=PRC_focus.2 days=20}
 	}
 }
 country_event = {

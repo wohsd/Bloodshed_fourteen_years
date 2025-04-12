@@ -5,13 +5,15 @@ state={
 		2152 2505 4026 
 	}
 	history={
-		owner = PRJ
+		owner = CHI
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = PRJ
-		
+		1933.1.1={
+			owner = PRJ
+			add_core_of = PRJ
+		}
 		1936.1.1={
 			owner = CHI
 		}

@@ -1,0 +1,23 @@
+state={
+	id=659
+	name="STATE_659"
+	provinces={
+		476 3228 
+	}
+	history={
+		owner = NHA
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			2095 5
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=81000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -6,7 +6,7 @@ state={
 	}
 	history={
 		owner = YHC
-		add_core_of = YHC
+		
 		buildings = {
 		}
 		add_core_of = PRC
@@ -24,7 +24,7 @@ state={
 			1256 5
 		}
 	}
-	manpower=623000
+	manpower=423000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

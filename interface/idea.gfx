@@ -1,5 +1,14 @@
 spriteTypes = {
-
+	
+	spriteType = {
+		name = "GFX_PRC_GuSunZhang"
+		texturefile = "gfx/interface/operative/PRC_GuSunZhang.png"
+	}
+	spriteType = {
+		name = "GFX_MaoZeDong1"
+		texturefile = "gfx/leaders/PRC/PRC_MaoZeDong1.png"
+	}
+	
 	spriteType = {
 		name = "GFX_idea_MoFang"
 		texturefile = "gfx/interface/ideas/ROJ/MoFang.dds"
@@ -49,7 +58,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Negative_Encirclement"
-		texturefile = "gfx/interface/ideas/CHI/Negative_Encirclement.dds"
+		texturefile = "gfx/interface/ideas/ROD/Negative_Encirclement.png"
 	}
 	spriteType = {
 		name = "GFX_idea_Chinese_red_army"
@@ -78,6 +87,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Death_in_March"
 		texturefile = "gfx/interface/ideas/JAP/Death_in_March.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NSD_photo"
+		texturefile = "gfx/interface/NSD/paranoia_portrait_strip.png"
+		legacy_lazy_load = no
+		noOfFrames = 7
+	}
+	spriteType = {
+		name = "GFX_NSD_paranoia_needle"
+		texturefile = "gfx/interface/NSD/NSD_paranoia_needle.png"
+		legacy_lazy_load = no
+		noOfFrames = 5
 	}
 	
 }

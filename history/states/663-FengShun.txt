@@ -1,0 +1,19 @@
+state={
+	id=663
+	name="STATE_663"
+	provinces={
+		1669 2775
+	}
+	history={
+		owner = PRD
+		buildings = {
+			infrastructure = 1
+		}
+		1939.1.1={
+			owner = PRD
+		}
+	}
+	manpower=51230
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

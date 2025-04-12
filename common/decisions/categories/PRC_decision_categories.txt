@@ -17,6 +17,16 @@ PRC_struggle_balance_category = {
 	icon = military_operation
 	visible = { 
 		tag=PRC
+		has_country_flag = SiFang
+	}
+}
+PRC_struggle_balance0_category = {
+	icon = military_operation
+	visible = {
+		AND = {
+			tag=PRC
+		} 
+		
 	}
 }
 PRC_struggle_balance1_category = {
@@ -45,6 +55,7 @@ Long_march_decisions = {
 		NOT={
 			has_global_flag = fall_of_ChangZheng_end
 		}
+		has_completed_focus = PRC_focus38
 	}
 	on_map_area = {
 		name = Long_march_decisions_map

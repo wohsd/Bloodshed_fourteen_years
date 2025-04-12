@@ -62,8 +62,76 @@ division_template = {
 	}
 }
 units = {
-
-	#上海
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第一军团"
+		location = 4014
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
 	division= {	
 		name = "中国工农红军第一军团"
 		location = 4014

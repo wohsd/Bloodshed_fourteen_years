@@ -1,0 +1,19 @@
+state={
+	id=662
+	name="STATE_662"
+	provinces={
+		4093 1823
+	}
+	history={
+		owner = ROG
+		buildings = {
+			infrastructure = 1
+		}
+		1939.1.1={
+			owner = CHI
+		}
+	}
+	manpower=31230
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

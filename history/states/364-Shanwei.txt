@@ -5,12 +5,18 @@ state={
 		964 2561 4158 4167 4168 
 	}
 	history={
-		owner = ROG
+		owner = PRD
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			964 5
+		}
+		victory_points = {
+			4158 2
+		}
+		victory_points = {
+			4168 2
 		}
 		1939.1.1={
 			owner = JAP

@@ -1,0 +1,22 @@
+state={
+	id=665
+	name="STATE_665"
+	provinces={
+		1447 2477 4096 
+	}
+	history={
+		owner = PRD
+		buildings = {
+			infrastructure = 1
+		}
+		1931.3.1={
+			owner = ROG
+		}
+		1939.1.1={
+			owner = CHI
+		}
+	}
+	manpower=33230
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

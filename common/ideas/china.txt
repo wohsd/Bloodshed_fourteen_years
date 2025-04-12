@@ -152,7 +152,7 @@ ideas = {
 
 
 		Negative_Encirclement = {
-		
+			picture=Negative_Encirclement
 			allowed = {
 				always = yes
 			}
@@ -164,10 +164,10 @@ ideas = {
 				army_speed_factor=-0.1
 			}
 			targeted_modifier = {
-				tag=PRC
-					attack_bonus_against=-0.45 
-                    defense_bonus_against=-0.45
-				}
+				tag = PRC
+				attack_bonus_against=-0.75 
+                defense_bonus_against=-0.75
+			}
 		}
 
 

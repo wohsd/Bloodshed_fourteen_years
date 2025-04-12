@@ -111,6 +111,9 @@ country_event = {
 			PRC = {
 				complete_national_focus = PRC_focus43
 			}
+			NSA_LiuZhiDan = {
+				set_nationality = PRC
+			}
 			news_event = WorldNew.17
 		}
 		every_controlled_state = {
@@ -687,6 +690,84 @@ country_event = {
 	}		
 }
 
+
+country_event = {
+	id = PRC_1934Hidden.17
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 1670
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_1670
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.11
+			}
+		}
+		clr_global_flag = fall_of_1670
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.18
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3255
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_3255
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.12
+			}
+		}
+		clr_global_flag = fall_of_3255
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.19
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 2321
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_2321
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.13
+			}
+		}
+		clr_global_flag = fall_of_2321
+	}		
+}
 ###############################
 ###############################
 
@@ -866,14 +947,49 @@ country_event = {
 }
 
 
+country_event = {
+	id = PRC_1934.11
+	title =PRC_1934.11.t
+	desc = PRC_1934.11.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.11.a
+	}
+}
 
 
+country_event = {
+	id = PRC_1934.12
+	title =PRC_1934.12.t
+	desc = PRC_1934.12.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.12.a
+	}
+}
 
 
-
-
-
-
+country_event = {
+	id = PRC_1934.13
+	title =PRC_1934.13.t
+	desc = PRC_1934.13.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.13.a
+	}
+}
 
 news_event = {
 	id = CHI_1934.1

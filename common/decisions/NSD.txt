@@ -7,13 +7,21 @@ NSD_Suppression_campaign_decisions = {
 		cost = 20 
 		days_remove= 5
 		fire_only_once = no
-		ai_will_do = {
+		ai_will_do = { 
 			factor = 1
-		}
+		} 
 		complete_effect = {
 			set_country_flag = NSD_Suppression_campaign0
 			unlock_decision_tooltip = NSD_Suppression_campaign1
-		}
+			add_to_variable = {
+				NSD_paranoia = 5
+			}
+			clamp_variable = {
+				var = NSD_paranoia
+				min = 0
+				max = 100
+			}
+		} 
 	}
 	NSD_Suppression_campaign1 = {
 		icon = generic_civil_support
@@ -37,6 +45,14 @@ NSD_Suppression_campaign_decisions = {
 		timeout_effect = {
 		} 
 		complete_effect = {
+			add_to_variable = {
+				NSD_paranoia = 5
+			}
+			clamp_variable = {
+				var = NSD_paranoia
+				min = 0
+				max = 100
+			}
 		}
 	}
 	NSD_Suppression_campaign2 = {
@@ -51,7 +67,14 @@ NSD_Suppression_campaign_decisions = {
 			factor = 1
 		}
 		complete_effect = {
-			
+			add_to_variable = {
+				NSD_paranoia = 5
+			}
+			clamp_variable = {
+				var = NSD_paranoia
+				min = 0
+				max = 100
+			}
 		}
 	}
 	NSD_Suppression_campaign3 = {
@@ -66,7 +89,14 @@ NSD_Suppression_campaign_decisions = {
 			factor = 1
 		}
 		complete_effect = {
-			
+			add_to_variable = {
+				NSD_paranoia = 5
+			}
+			clamp_variable = {
+				var = NSD_paranoia
+				min = 0
+				max = 100
+			}
 		}
 	}
 }

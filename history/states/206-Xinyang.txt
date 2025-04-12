@@ -1,8 +1,9 @@
-
 state={
 	id=206
 	name="STATE_206"
-
+	provinces={
+		2095 2628 3798 
+	}
 	history={
 		owner = CHI
 		buildings = {
@@ -16,10 +17,6 @@ state={
 		1939.1.1={
 			owner = JAP
 		}
-	}
-
-	provinces={
-		476 2095 2628 3228 3798 
 	}
 	manpower=323000
 	buildings_max_level_factor=1.000

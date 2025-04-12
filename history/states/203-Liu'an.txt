@@ -1,8 +1,9 @@
-
 state={
 	id=203
 	name="STATE_203"
-
+	provinces={
+		1867 2315 3817 
+	}
 	history={
 		owner = NHA
 		buildings = {
@@ -20,10 +21,6 @@ state={
 		1936.1.1={
 			owner = CHI
 		}
-	}
-
-	provinces={
-		1767 1867 2315 3799 
 	}
 	manpower=1275000
 	buildings_max_level_factor=1.000

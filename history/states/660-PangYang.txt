@@ -1,0 +1,26 @@
+state={
+	id=660
+	name="STATE_660"
+	provinces={
+		3139 3884 2843 2998 2865 2186
+	}
+	history={
+		owner = PRH
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2186 5
+		}
+		victory_points = {
+			3884 5
+		}
+		1933.1.1={
+			owner = CHI
+		}
+	}
+	
+	manpower=111202
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

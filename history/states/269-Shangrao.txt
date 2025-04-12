@@ -1,15 +1,13 @@
-
 state={
 	id=269
 	name="STATE_269"
-
+	provinces={
+		1444 2661 2932 3380 3886 3894 3908 
+	}
 	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 1
-			2843={
-				bunker = 2
-			}
 			3380={
 				bunker = 2
 			}
@@ -18,20 +16,10 @@ state={
 			1444 10
 		}
 		victory_points = {
-			2186 5
-		}
-		victory_points = {
 			3886 5
-		}
-		victory_points = {
-			3884 5
 		}
 		add_core_of = CHI
 
-	}
-
-	provinces={
-		1444 2186 2661 2843 2865 2932 2998 3139 3380 3884 3886 3894 3908 
 	}
 	manpower=1323000
 	buildings_max_level_factor=1.000

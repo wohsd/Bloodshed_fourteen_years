@@ -2,23 +2,24 @@ state={
 	id=601
 	name="STATE_601"
 	provinces={
-		1598 4043 4052 
+		1598 4065 
 	}
 	history={
 		owner = ROG
 		buildings = {
 			infrastructure = 1
-
-		}
-		add_core_of = ROG
-        1933.1.1={
-			owner = ROG
-		}
-		1936.1.1={
-			owner = ROG
+			4065={
+				bunker = 2
+			}
+			1823={
+				bunker = 2
+			}
 		}
 		1939.1.1={
 			owner = CHI
+		}
+		victory_points = {
+			4092 10
 		}
 	}
 	manpower=330000

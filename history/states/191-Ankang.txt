@@ -6,11 +6,10 @@ state={
 	}
 	history={
 		owner = YHC
-		add_core_of = YHC
+		
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = CHI
 		1936.1.1={
 			owner = ROD
 		}
@@ -21,7 +20,7 @@ state={
 			3782 5
 		}
 	}
-	manpower=323000
+	manpower=523000
 	state_category = town
 	local_supplies = 0.0
 }

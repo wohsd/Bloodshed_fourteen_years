@@ -1,0 +1,80 @@
+on_actions = {
+	# country
+	on_weekly_NSD = {
+		effect = {
+			if = {
+				limit = { 
+					check_variable = {
+						NSD_paranoia > 25 
+					}
+				}
+				random_list = {
+					60={
+						country_event = {id=NSD_Paranoia.1}
+					}
+					40={
+					}
+				}
+				
+			}
+			if = {
+				limit = { 
+					has_country_flag = NSD_Suppression_campaign0
+				}
+				add_to_variable={
+					NSD_paranoia = 5
+				}
+				clamp_variable = {
+					var = NSD_paranoia
+					min = 0
+					max = 100
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						NSD_paranoia > 45 
+					}
+				}
+				random_list = {
+					80={
+						country_event = {id=NSD_Paranoia.2}
+					}
+					20={
+						country_event = {id=NSD_Paranoia.1}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						NSD_paranoia > 60 
+					}
+				}
+				random_list = {
+					15={
+						country_event = {id=NSD_Paranoia.4}
+					}
+					15={
+						country_event = {id=NSD_Paranoia.5}
+					}
+					15={
+						country_event = {id=NSD_Paranoia.6}
+					}
+					15={
+						country_event = {id=NSD_Paranoia.7}
+					}
+					15={
+						country_event = {id=NSD_Paranoia.8}
+					}
+					15={
+						country_event = {id=NSD_Paranoia.9}
+					}
+					10={
+						country_event = {id=NSD_Paranoia.10}
+					}
+				}
+			}
+		} 
+	}
+}

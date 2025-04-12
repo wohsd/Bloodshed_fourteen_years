@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = ROW
 	}
-	manpower=113000
+	manpower=213000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

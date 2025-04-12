@@ -4,12 +4,12 @@ state={
 	provinces={
 		2495 2963 
 	}
-               history={
-		owner = PRC
+        history={
+		owner = ROG
+
 		buildings = {
 		}
-		add_core_of = PRC
-		add_core_of = CHI
+		
 		1936.1.1={
 			owner = ROG
 		}

@@ -5,7 +5,7 @@ state={
 		140 2169 2221 3176 4132 
 	}
 	history={
-		owner = ROC
+		owner = ROG
 		buildings = {
 			infrastructure = 1
 		}
@@ -13,7 +13,9 @@ state={
 			2221 5
 		}
 		add_core_of = ROC
-		add_core_of = CHI
+		1931.2.1={
+			owner = ROC
+		}
 	}
 	manpower=323000
 	state_category = town

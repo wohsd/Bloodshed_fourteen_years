@@ -30,19 +30,18 @@ NSA_LiuZhiDan={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		field_marshal={
+		corps_commander={
 			#特质（如堑壕大师）
 			traits={ }
 			#等级
-			skill=4
+			skill=2
 			#攻击等级
 			attack_skill=2
 			#防御等级
-			defense_skill=4
+			defense_skill=2
 			#计划等级
-			planning_skill=3
-			后勤等级
-			logistics_skill=4
+			planning_skill=2
+			logistics_skill=2
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
 		}

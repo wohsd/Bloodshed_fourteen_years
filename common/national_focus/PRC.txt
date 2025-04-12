@@ -49,7 +49,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus20
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
+		cost = 1.00
 		x = 30
 		y = 0
 			completion_reward = {
@@ -69,7 +69,8 @@ focus_tree = {
 			completion_reward = {
 					country_event = {
 							id = PRC_focus.6
-						}
+					}
+					
 				}
 
 	}
@@ -956,6 +957,7 @@ focus_tree = {
 		x = 32
 		y = 6
 			completion_reward = {
+				unlock_decision_category_tooltip = Long_march_decisions
 					PRC = {
 							every_army_leader = {
 									add_planning = 1
@@ -963,7 +965,7 @@ focus_tree = {
 									add_skill_level = 1
 								}
 						}
-				}
+			}
 
 	}
 	focus = {
@@ -1129,20 +1131,14 @@ focus_tree = {
 					terrain_factor = -1
 				}
 			} 
-			start_border_war = {
-				change_state_after_war = yes
-				attacker = {
-					state = 656
-					num_provinces = 1
-					#on_win = japan_border_conflict.2
-				}	
-				defender = {
-					state = 149
-					num_provinces = 1
-					dig_in_factor = -1
-					terrain_factor = -1
-				}
+			set_border_war_data = {
+				attacker = 656
+				defender = 625
+				attacker_modifier= 0.85
+				defender_modifier = -0.85
+				combat_width = 100
 			}
+			
 			start_border_war = {
 				change_state_after_war = yes
 				attacker = {
@@ -1156,6 +1152,13 @@ focus_tree = {
 					dig_in_factor = -1
 					terrain_factor = -1
 				}
+			}
+			set_border_war_data = {
+				attacker = 657
+				defender = 122
+				attacker_modifier= 0.75
+				defender_modifier = -0.75
+				combat_width = 100
 			}
 		}
 	}
@@ -1281,6 +1284,7 @@ focus_tree = {
 					state = 131
 				 }
 			}
+			country_event = {id=PRC_1936.4 days=10}
 		}
 	}
 	focus = {
