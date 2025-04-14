@@ -82,6 +82,7 @@ add_equipment_to_stockpile = {
 		CHI_army_corruption_1
 		The_Golden_Decade
 	}
+	set_country_flag = CHI_Encirclement5
 }
 1936.1.1={
 	set_oob = "CHI_1937"
