@@ -5,7 +5,7 @@ guiTypes = {
 	    position = { x=0 y =0 }	
 	    size = { 
 		    width = 1920 
-		    height = 1080 
+		    height = 1440 
 		    min = { width = 100% height = 100% }
 		    max = { width = 100% height = 10000 }
 		    preserve_aspect_ratio = yes
@@ -19,7 +19,7 @@ guiTypes = {
 		position = { x=-912 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -38,7 +38,7 @@ guiTypes = {
 		position = { x=-816 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -57,7 +57,7 @@ guiTypes = {
 		position = { x=-720 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -76,7 +76,7 @@ guiTypes = {
 		position = { x=-624 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -95,7 +95,7 @@ guiTypes = {
 		position = { x=-528  y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -114,7 +114,7 @@ guiTypes = {
 		position = { x=-432 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -133,7 +133,7 @@ guiTypes = {
 		position = { x=-336 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -152,7 +152,7 @@ guiTypes = {
 		position = { x=-240 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -171,7 +171,7 @@ guiTypes = {
 		position = { x=-144 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -190,7 +190,7 @@ guiTypes = {
 		position = { x=-48 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -209,7 +209,7 @@ guiTypes = {
 		position = { x=48 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -228,7 +228,7 @@ guiTypes = {
 		position = { x=144 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -247,7 +247,7 @@ guiTypes = {
 		position = { x=240 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -266,7 +266,7 @@ guiTypes = {
 		position = { x=336 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -285,7 +285,7 @@ guiTypes = {
 		position = { x=432 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -304,7 +304,7 @@ guiTypes = {
 		position = { x=528 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -323,7 +323,7 @@ guiTypes = {
 		position = { x=624 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -342,7 +342,7 @@ guiTypes = {
 		position = { x=720 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -361,7 +361,7 @@ guiTypes = {
 		position = { x=816 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -380,7 +380,7 @@ guiTypes = {
 		position = { x=912 y =0 }	
 		size = { 
 			width = 96 
-			height = 1080 
+			height = 1440 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
