@@ -1351,7 +1351,9 @@ focus_tree = {
 		}
 		x = 31
 		y = 16
-
+		completion_reward = {
+			add_ideas = Rent_interest_reductions
+		}
 	}
 	focus = {
 		id = PRC_focus66
@@ -1446,7 +1448,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 16
-
+		completion_reward = {
+			add_ideas = Mass_production_movement
+		}
 	}
 	focus = {
 		id = PRC_focus67
@@ -1457,7 +1461,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 17
-
+		completion_reward = {
+			add_ideas = Three_three_system_border_areas
+		}
 	}
 	focus = {
 		id = PRC_focus68
@@ -1501,7 +1507,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 18
-
+		completion_reward = {
+			add_ideas = The_spirit_Nanniwan
+		}
 	}
 	focus = {
 		id = PRC_focus73

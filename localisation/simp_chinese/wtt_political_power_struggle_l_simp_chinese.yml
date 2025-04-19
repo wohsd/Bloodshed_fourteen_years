@@ -373,6 +373,9 @@
  PRC_right_side_range_Low1: "毛泽东支持度较低"
  PRC_right_side_range_High1: "毛泽东支持度较高"
 
+ PRC_struggle_Zhang_Guotao: "张国焘的野心"
+ Zhang_Guotao: "张国焘未叛逃"
+ PRC_Red_Four_group: "建立红四帮" 
 
  PRC_struggle_balance0: "中共中央政治局"
  PRC_struggle_mid_range0: "党内平衡"
@@ -408,4 +411,5 @@
  CHI_Encirclement1: "第二次围剿" 
  CHI_Encirclement2: "第三次围剿"
  CHI_Encirclement3: "第四次围剿"
+ CHI_Encirclement5: "第四次围剿"
  CHI_Encirclement4: "第五次围剿"

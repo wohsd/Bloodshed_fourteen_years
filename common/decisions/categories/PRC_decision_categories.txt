@@ -34,7 +34,7 @@ PRC_struggle_balance1_category = {
 	visible = {
 		AND = {
 			tag=PRC
-			has_country_flag = SiFang
+			#has_country_flag = SiFang
 		} 
 		
 	}

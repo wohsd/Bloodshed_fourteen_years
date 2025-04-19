@@ -2,10 +2,10 @@ guiTypes = {
 
     containerWindowType = {
 	    name ="frontend_background"
-	    position = { x=0 y =0 }	
+	    position = { x=0 y =-210 }	
 	    size = { 
 		    width = 1920 
-		    height = 1440 
+		    height = 1080 
 		    min = { width = 100% height = 100% }
 		    max = { width = 100% height = 10000 }
 		    preserve_aspect_ratio = yes
@@ -19,7 +19,7 @@ guiTypes = {
 		position = { x=-912 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -38,7 +38,7 @@ guiTypes = {
 		position = { x=-816 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -57,7 +57,7 @@ guiTypes = {
 		position = { x=-720 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -76,7 +76,7 @@ guiTypes = {
 		position = { x=-624 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -95,7 +95,7 @@ guiTypes = {
 		position = { x=-528  y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -114,7 +114,7 @@ guiTypes = {
 		position = { x=-432 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -133,7 +133,7 @@ guiTypes = {
 		position = { x=-336 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -152,7 +152,7 @@ guiTypes = {
 		position = { x=-240 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -171,7 +171,7 @@ guiTypes = {
 		position = { x=-144 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -190,7 +190,7 @@ guiTypes = {
 		position = { x=-48 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -209,7 +209,7 @@ guiTypes = {
 		position = { x=48 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -228,7 +228,7 @@ guiTypes = {
 		position = { x=144 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -247,7 +247,7 @@ guiTypes = {
 		position = { x=240 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -266,7 +266,7 @@ guiTypes = {
 		position = { x=336 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -285,7 +285,7 @@ guiTypes = {
 		position = { x=432 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -304,7 +304,7 @@ guiTypes = {
 		position = { x=528 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -323,7 +323,7 @@ guiTypes = {
 		position = { x=624 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -342,7 +342,7 @@ guiTypes = {
 		position = { x=720 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -361,7 +361,7 @@ guiTypes = {
 		position = { x=816 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -380,7 +380,7 @@ guiTypes = {
 		position = { x=912 y =0 }	
 		size = { 
 			width = 96 
-			height = 1440 
+			height = 1080 
 			preserve_aspect_ratio = yes
 		}
 		Orientation = center
@@ -465,6 +465,7 @@ guiTypes = {
 		
 	}
 	
+	
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
@@ -483,6 +484,7 @@ guiTypes = {
 		
 	}
 
+	
 	
 	### MAIN MENU PANEL (upperright)
 	containerWindowType = {
@@ -617,7 +619,7 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=800 y =128}
+		position = { x=800 y =258}
 		size = { width = 320 height = 435 }
 		Orientation = CENTER
 		Origo = center		
@@ -813,9 +815,16 @@ guiTypes = {
 			
 			buttonType = {
 				name = "toggle_button"
-				quadTextureSprite = "GFX_sort_button_83x29" 
+				quadTextureSprite = "GFX_sort_button_83x29" ## Orig: 60x29
 				position = { x=0 y=0  }
 				buttonFont = "hoi_16mbs"
+			}
+				
+			iconType = {
+				name = "button_toggle_socialview_icon"
+				spriteType = "GFX_socialview_icon"
+				position = { x=0 y=0 }
+				alwaystransparent = yes
 			}
 				
 			instantTextBoxType={
@@ -845,14 +854,18 @@ guiTypes = {
 		}
 		
 		ButtonType = {
-			name = "youtube_button"
-			position = { x=1470 y=-170 }
+			name = "privacy_policy_button"
+			position = { x=228 y=0 } 
+			quadTextureSprite ="privacy"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_PRIVACY_POLICY"
+			scale = 0.9
+			position = { x=1470 y=-50 }
 			quadTextureSprite ="GFX_14years"
 			pdx_tooltip = "GFX_14years"
 			web_link = "https://www.bilibili.com/video/BV11bCUY8Eca/?spm_id_from=333.1387.list.card_archive.click&vd_source=b81441fdeef9aa5c7e116f0f597fb241"
 			scale = 1
 		}
-
 	}
 
 	## This position needs updated

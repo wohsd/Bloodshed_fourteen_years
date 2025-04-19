@@ -38,7 +38,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 589
 			defender = 600
-			defender_modifier = 0.2
+			attacker_modifier = 0.75
+			defender_modifier = -0.75
+			combat_width = 100
 		}
 		start_border_war = {
 			change_state_after_war = no
@@ -46,12 +48,12 @@ country_event = {
 				state = 302
 				num_provinces = 1
 				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
+				dig_in_factor = -0.3
+				terrain_factor = -0.3
 			}	
 			defender = {
 				state = 598
-				num_provinces = 3
+				num_provinces = 2
 				dig_in_factor = 0.45
 				terrain_factor = 0.45
 			}
@@ -59,7 +61,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 302
 			defender = 598
-			defender_modifier = 0.2
+			attacker_modifier = -0.35
+			defender_modifier = 0.75
+			combat_width = 100
 		}
 		start_border_war = {
 			change_state_after_war = no
@@ -80,7 +84,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 327
 			defender = 666
-			defender_modifier = 0.2
+			attacker_modifier = -0.75
+			defender_modifier = 0.75
+			combat_width = 100
 		}
 		start_border_war = {
 			change_state_after_war = no
@@ -88,8 +94,8 @@ country_event = {
 				state = 312
 				num_provinces = 1
 				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
+				dig_in_factor = -0.2
+				terrain_factor = -0.2
 			}	
 			defender = {
 				state = 582
@@ -101,7 +107,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 312
 			defender = 582
-			defender_modifier = 0.2
+			attacker_modifier = -0.35
+			defender_modifier = 0.35
+			combat_width = 100
 		}
 		start_border_war = {
 			change_state_after_war = no
@@ -122,7 +130,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 628
 			defender = 251
-			defender_modifier = 0.2
+			attacker_modifier = -0.75
+			defender_modifier = 0.75
+			combat_width = 100
 		}
 
 		start_border_war = {
@@ -144,7 +154,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 601
 			defender = 661
-			defender_modifier = 0.2
+			attacker_modifier = 0.75
+			defender_modifier = -0.75
+			combat_width = 100
 		}
 
 		start_border_war = {
@@ -166,7 +178,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 342
 			defender = 665
-			defender_modifier = 0.2
+			attacker_modifier = -0.75
+			defender_modifier = 0.75
+			combat_width = 100
 		}
 
 		start_border_war = {
@@ -188,7 +202,9 @@ country_event = {
 		set_border_war_data = {
 			attacker = 353
 			defender = 663
-			defender_modifier = 0.2
+			attacker_modifier = -0.75
+			defender_modifier = 0.75
+			combat_width = 100
 		}
 	}
     } 
@@ -242,7 +258,6 @@ country_event = {
 	fire_only_once = yes
     is_triggered_only = yes 
     immediate = {
-		
     } 
 	option = {
 		name = CHI_Encirclement.3.a
@@ -541,6 +556,9 @@ country_event = {
 	title = PRC_1931.0.t
 	desc = PRC_1931.0.d
 	#picture = GFX_PRC_1931_0
+	trigger = {
+		date < 1931.5.1
+	}
 	fire_only_once = yes
 	is_triggered_only = yes
 

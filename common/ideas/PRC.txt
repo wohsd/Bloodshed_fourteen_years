@@ -213,5 +213,41 @@ ideas = {
 				stability_factor=-0.05
 			}
 		}
+
+		The_spirit_Nanniwan= {
+			allowed = {
+			}
+			picture = The_spirit_Nanniwan
+			
+			modifier = {
+			}
+		}
+		
+		Mass_production_movement= {
+			allowed = {
+			}
+			picture = The_spirit_Nanniwan
+			
+			modifier = {
+			}
+		}
+
+		Rent_interest_reductions= {
+			allowed = {
+			}
+			picture = Rent_interest_reductions
+			
+			modifier = {
+			}
+		}
+
+		Three_three_system_border_areas= {
+			allowed = {
+			}
+			picture = Three_three_system_border_areas
+			
+			modifier = {
+			}
+		}
 	}
 }

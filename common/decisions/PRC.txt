@@ -768,25 +768,42 @@ Long_march_decisions = {
 
 
 PRC_struggle_balance1_category = {
-	PRC_Second_Central = {
+	PRC_struggle_Zhang_Guotao = {
 		available = {
+			has_country_flag = Zhang_Guotao
 		}
-		visible = {
-		}
-		cost = 25
-		days_remove= 55
-		ai_will_do = {
-			factor = 1
+		days_mission_timeout = 50
+		activation = {  
+		}		
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = no
+		timeout_effect = {
 		}
 		complete_effect = {
 			add_power_balance_value = {
 				id = PRC_struggle_balance1
-				value = 0.1
+				value = -0.05
 			}
+		}
+	}
+	PRC_Red_Four_group = {
+		available = {
+		}
+		visible = {
+		} 
+		cost = 25
+		days_remove= 55 
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
 		}
 		remove_effect = {
 		}
 	}
+	
 }
 
 

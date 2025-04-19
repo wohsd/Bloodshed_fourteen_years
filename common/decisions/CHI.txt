@@ -245,11 +245,14 @@ CHI_Encirclement_suppression_operation_category = {
 		}
 		days_mission_timeout = 90
 		activation = {
-			tag = CHI
+			AND={
+				tag = CHI
+				date < 1931.7.1
+			}
 			#has_country_flag = Long_march_mission0
 		}
 		visible = { 
-			tag = CHI
+			
 		}		
 		fixed_random_seed = no
 		fire_only_once = yes
@@ -270,10 +273,13 @@ CHI_Encirclement_suppression_operation_category = {
 				has_country_flag = CHI_Encirclement2
 			} 
 		}
-		days_mission_timeout = 90
+		days_mission_timeout = 100
 		activation = {
-			tag = CHI
-			has_country_flag = CHI_Encirclement1
+			AND={
+				tag = CHI
+				date < 1931.10.1
+				has_country_flag = CHI_Encirclement1
+			}
 		}
 		visible = { 
 			tag = CHI
@@ -289,7 +295,7 @@ CHI_Encirclement_suppression_operation_category = {
 		}
 	}
 	####
-	####四剿
+	####四剿1931的四剿决议
 	CHI_Encirclement3 = {
 		icon = generic_civil_support
 		available = {
@@ -297,10 +303,78 @@ CHI_Encirclement_suppression_operation_category = {
 				has_country_flag = CHI_Encirclement3
 			} 
 		}
+		days_mission_timeout = 515
+		activation = {
+			AND={
+				tag = CHI
+				date < 1933.3.1
+				NOT={
+					has_country_flag = CHI_Encirclement5
+				}
+				has_country_flag = CHI_Encirclement2
+			}
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.3}
+			set_country_flag = CHI_Encirclement3
+		}
+		complete_effect = {
+		}
+	}
+	
+	####
+	####五剿
+	CHI_Encirclement4 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement4
+			} 
+		}
 		days_mission_timeout = 90
 		activation = {
+			AND={
+				tag = CHI
+				date < 1933.10.1
+				has_country_flag = CHI_Encirclement3
+			}
+		}
+		visible = { 
 			tag = CHI
-			has_country_flag = CHI_Encirclement2
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.4}
+
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####
+	####四剿1933的四剿决议
+	CHI_Encirclement5 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement77
+			} 
+		}
+		days_mission_timeout = 34
+		activation = {
+			AND={
+				tag = CHI
+				date < 1933.3.1
+				has_country_flag = CHI_Encirclement5
+			}
 		}
 		visible = { 
 			tag = CHI
@@ -317,32 +391,6 @@ CHI_Encirclement_suppression_operation_category = {
 	}
 	####
 	####五剿
-	CHI_Encirclement4 = {
-		icon = generic_civil_support
-		available = {
-			hidden_trigger = { 
-				has_country_flag = CHI_Encirclement4
-			} 
-		}
-		days_mission_timeout = 90
-		activation = {
-			tag = CHI
-			has_country_flag = CHI_Encirclement3
-		}
-		visible = { 
-			tag = CHI
-		}		
-		fixed_random_seed = no
-		fire_only_once = yes
-		is_good = no
-		timeout_effect = {
-			country_event = {id=CHI_Encirclement.4}
-
-		}
-		complete_effect = {
-		}
-	}
-	####
 	PRC_Massacre1 = {
 		available = {
 			PRC = {

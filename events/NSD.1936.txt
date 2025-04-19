@@ -1,0 +1,14 @@
+﻿add_namespace = NSD_1936
+country_event = {
+	id =  NSD_1936.0
+	title = NSD_1936.0.t
+	desc =  NSD_1936.0.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  NSD_1936.0.a
+		ROW={
+			transfer_state = 627
+		}
+	}		
+}
