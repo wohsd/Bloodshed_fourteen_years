@@ -179,6 +179,11 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_14years"
-		texturefile = "gfx/interface/14years.png"
+		texturefile = "gfx/interface/14years.dds"
+	}
+
+	spriteType = {
+		name = "GFX_main_bg"
+		texturefile = "gfx/interface/main/main_bg.dds"
 	}
 }
