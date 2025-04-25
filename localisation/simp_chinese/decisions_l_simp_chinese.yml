@@ -48,11 +48,16 @@ Long_march_mission10: "激战腊子口"
 Long_march_mission11: "吴起镇会师"
 
 
-PRC_Buy_gun: "中华苏维埃国家银行"
-PRC_Buy_gun_desc: "1932年3月，以江西工农银行为基础，并抽调闽西工农银行干部参加，在江西瑞金正式成立了中华苏维埃共和国国家银行，由毛泽民任行长。国家银行及其分支机构开始营业后，承办了代理金库、吸收存款、发放贷款和稳定市场等几方面的任务。\n\n目前银行有：[?Gold_bar]根金条"
+PRC_Buy_gun: "中华苏维埃国家银行" 
+PRC_Buy_gun_desc: "1932年3月，以江西工农银行为基础，并抽调闽西工农银行干部参加，在江西瑞金正式成立了中华苏维埃共和国国家银行，由毛泽民任行长。国家银行及其分支机构开始营业后，承办了代理金库、吸收存款、发放贷款和稳定市场等几方面的任务。\n\n\n\n\n£GFX_PRC_MaoZeMing\n\n\n\n\n\n银行行长：毛泽民\n目前银行有：[?Gold_bar]根金条"
 PRC_Buy_gun_tt: "将从银行中扣除20根金条"
+PRC_Buy_gun_10tt: "将从中获得10根金条"
 PRC_Buy_gun_from: "以金条换枪"
 Gold_bar_available: "目前银行：金条>20"
+PRC_Reassure_people: "安抚民心"
+PRC_Large_scale_money_printing: "大规模印钞"
+PRC_Smuggling_gold_bars: "偷运金条"
+
 PRC_CHINA: "新中国"
 PRC_NEW_CHINA: "建立新中国"
 PRC_NEW_CHINA1: "定都北京"

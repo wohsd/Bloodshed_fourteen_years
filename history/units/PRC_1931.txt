@@ -9,16 +9,6 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
-		infantry = { x = 2 y = 4 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
 	}
 	
 }
@@ -31,23 +21,8 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	
-}
-division_template = {
-	name = "骑兵旅" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
-	division_names_group = JAP_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
 }
 division_template = {
 	name = "游击支队" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
@@ -63,99 +38,114 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红三军七师"
+		location = 4043
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红三军八师"
+		location = 4052
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红三军九师"
+		location = 4033
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红四军十师"
+		location = 1546
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红四军十一师"
+		location = 1299
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红四军十二师"
+		location = 4021
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红十二军三十四师"
+		location = 2483
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
+		name = "中国工农红军第一军团红十二军三十五师"
+		location = 2273
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
-		division_template = "中国工农红军"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
-	}
-	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
-		division_template = "中国工农红军"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
-	}
-	division= {	
-		name = "中国工农红军第一军团"
-		location = 4014
-		division_template = "中国工农红军"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
-	}
-	division= {	
-		name = "中国工农红军第二军团"
-		location = 739
-		division_template = "中国工农红军"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
-	}
-	division= {	
-		name = "中国工农红军第三军团"
-		location = 2396
-		division_template = "中国工农红军"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
-	}
-	division= {	
-		name = "江西独立师"
+		name = "中国工农红军第一军团红十二军三十六师"
 		location = 618
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第三军团红五军一师"
+		location = 618
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第三军团红五军二师"
+		location = 2757
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第三军团红五军三师"
+		location = 2916
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军第三军团红八军"
+		location = 3955
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+
+	division= {	
+		name = "中国工农红军红三十五军"
+		location = 618
+		division_template = "独立师"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "闽西独立师"
+		location = 1402
+		division_template = "独立师"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "赣东独立师"
+		location = 4000
 		division_template = "独立师"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9

@@ -1,5 +1,8 @@
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_PRC_MaoZeMing"
+		texturefile = "gfx/interface/ideas/PRC_MaoZeMing.png"
+	}
 	spriteType = {
 		name = "GFX_PRC_GuSunZhang"
 		texturefile = "gfx/interface/operative/PRC_GuSunZhang.png"

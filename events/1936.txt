@@ -191,7 +191,16 @@ country_event = {
 	}		
 }
 
-
+country_event = {
+	id =  PRC_1936.6
+	title = PRC_1936.6.t
+	desc =  PRC_1936.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.6.a
+	}		
+}
 
 
 country_event = {

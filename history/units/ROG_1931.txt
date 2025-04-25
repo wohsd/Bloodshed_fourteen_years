@@ -1,0 +1,139 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "独立旅" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵旅" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		name = "国民革命军独立一旅"
+		location = 4162
+		division_template = "独立旅"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军独立二旅"
+		location = 4117
+		division_template = "独立旅"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军独立三旅"
+		location = 1823
+		division_template = "独立旅"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军教导师"
+		location = 394
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军第一军一师"
+		location = 4055
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军第一军二师"
+		location = 1699
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军第一军三师"
+		location = 4055
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+
+	division= {	
+		name = "国民革命军第二军四师"
+		location = 3176
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军第二军五师"
+		location = 4090
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军第二军六师"
+		location = 4187
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+
+	division= {	
+		name = "国民革命军第三军七师"
+		location = 2963
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军第三军八师"
+		location = 4065
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "国民革命军第三军九师"
+		location = 2919
+		division_template = "国民革命军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+}
