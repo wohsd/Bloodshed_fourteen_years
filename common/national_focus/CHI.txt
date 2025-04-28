@@ -1,498 +1,1793 @@
-#!gfx:interface\BFY_goals.gfx
-#!gfx:interface\goals.gfx
 focus_tree = {
-	id = CHI
+	id = FocusTree_0
 	country = {
 		factor = 0
 		modifier = {
-			add = 10 
-			tag = CHI
-		}   
-	}
-	      
-	inlay_window = {
-		id = CHI_circle_inlay_window
-		position = { x = 120 y = 300 }
-	}
-	default = no 
-	focus = {
-		id = ROCfocus_0
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 28
-		y = 0
-		available = {
-			date < 1933.1.1
+			add = 10
+			tag = chi
 		}
-			completion_reward = {
-					news_event = {
-							id = ROC_1931.1
-							days = 2
-						}
-				}
+	}
+	default = no
+	focus = {
+		id = 国民革命的胜利
+		icon = GFX_goal_anschluss
+		cost = 2.00
+		x = 75
+		y = 0
 
 	}
 	focus = {
-		id = ROCfocus_21
-		icon = GFX_focus_jap_cast_the_die
-		cost = 10.00
-		x = 16
-		y = 0
-		
+		id = 拉拢中立派军官
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 46
+		y = 7
+
 	}
 	focus = {
-		id = ROCfocus_22
-		icon = GFX_focus_GER_end_european_communism
-		cost = 10.00
+		id = 军队现代化改革
+		icon = GFX_goal_unknown
+		cost = 5.00
 		prerequisite = {
-			focus = ROCfocus_21
+			focus = 国民革命的胜利
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = 整编国民革命军
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 军队现代化改革
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = 德国军事顾问
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 整编国民革命军
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = 德式调整师
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 德国军事顾问
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = 中国兴登堡防线
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 德国军事顾问
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = 设立兵工总署
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 整编国民革命军
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = 开设军事研究所
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 设立兵工总署
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = 开设中央军校
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 设立兵工总署
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = 成立海军部
+		icon = GFX_goal_generic_alliance
+		cost = 5.00
+		prerequisite = {
+			focus = 军队现代化改革
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = 订购船只
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5.00
+		prerequisite = {
+			focus = 成立海军部
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = 60万吨计划
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = 订购船只
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = 民主战胜独裁
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民革命的胜利
 		}
 		mutually_exclusive = {
-			focus = ROCfocus_23
-			focus = ROCfocus_23
-		}
-		x = 14
-		y = 1
-
-	}
-	focus = {
-		id = ROCfocus_24
-		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_22
-		}
-		x = 13
-		y = 2
-		completion_reward = {
-			add_war_support=-0.1
-		}
-	}
-	focus = {
-		id = ROCfocus_25
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_22
-		}
-		x = 14
-		y = 3
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-			add_war_support=-0.1
-		}
-	}
-	focus = {
-		id = ROCfocus_23
-		icon = GFX_focus_AST_war_japan
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_21
-		}
-		mutually_exclusive = {
-			focus = ROCfocus_22
-			focus = ROCfocus_22
-		}
-		x = 18
-		y = 1
-		completion_reward={
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.1
-			}
-		}
-	}
-	focus = {
-		id = ROCfocus_27
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_23
-		}
-		x = 18
-		y = 3
-		completion_reward = {
-			add_opinion_modifier = {
-				target = PRC
-				modifier = Anti_Japanese_Front
-			}
-		}
-	}
-	focus = {
-		id = ROCfocus_28
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = { 
-			focus = ROCfocus_22
-		}
-		x = 16
-		y = 2
-
-	}
-	focus = {
-		id = ROCfocus_29
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_1
-		}
-		x = 29
-		y = 2
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = ROCfocus_30
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_29
-		} 
-		x = 29
-		y = 3
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = ROCfocus_31
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_28
-		}
-		x = 16
-		y = 3
-		completion_reward={
-			
-			add_opinion_modifier = {
-				target = PRC
-				modifier = National_scum
-			}
-		}
-	}
-	focus = { 
-		id = ROCfocus_26
-		icon = GFX_focus_GER_support_the_proletarian_uprising
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_23
-		}
-		x = 19
-		y = 2
-		completion_reward = {
-			add_stability = 0.05
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = ROCfocus_2
-		icon = GFX_ROCfocus_2 
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_0
-		}
-		x = 22
-		y = 1
-		completion_reward = {
-			unlock_decision_category_tooltip=CHI_Purging_party_category
-		}
-	}
-	focus = {
-		id = ROCfocus_18 
-		icon = GFX_focus_eng_special_air_service
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_2
-		}
-		x = 21
-		y = 2
-		completion_reward = {
-			unlock_decision_tooltip = Assassination_Deng_Yanda
-		}
-	}
-	focus = {
-		id = ROCfocus_19
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_2
-		}
-		x = 23
-		y = 3
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = ROCfocus_1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_0
-		}
-		x = 28
-		y = 1
-
-	}
-	focus = {
-		id = ROCfocus_4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_1
-		}
-		x = 26
-		y = 2
-
-	}
-	focus = {
-		id = ROCfocus_5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_4
-		}
-		x = 25
-		y = 3
-
-	}
-	focus = {
-		id = ROCfocus_7
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_1
-		}
-		x = 31
-		y = 2
-
-	}
-	focus = {
-		id = ROCfocus_8
-		icon = GFX_focus_AUS_lawmaking_leniency
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_7
-		}
-		x = 31
-		y = 3
-
-	}
-	focus = {
-		id = ROCfocus_3
-		icon = GFX_ROCfocus_3
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_0
-		}
-		x = 36
-		y = 1
-
-	}
-	focus = {
-		id = ROCfocus_9
-		icon = GFX_focus_CHL_focus_on_cattle_and_wool
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_3
-		}
-		x = 33
-		y = 2
-
-	}
-	focus = {
-		id = ROCfocus_12
-		icon = GFX_focus_GER_autarky_ambitions
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_9
-		}
-		x = 33
-		y = 3
-
-	}
-	focus = {
-		id = ROCfocus_10
-		icon = GFX_focus_GER_integrated_economies
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_3
-		}
-		x = 36
-		y = 2
-		completion_reward = {
-			246={
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			216={
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			214={
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			228={
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = ROCfocus_13
-		icon = GFX_focus_generic_road_investment
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_10
-		}
-		x = 36
-		y = 3
-		completion_reward = {
-			246={
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			216={
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			214={
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			228={
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-		}
-	}
-	focus = {
-		id = ROCfocus_11
-		icon = GFX_focus_generic_economic_recovery
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_3
-		}
-		x = 40
-		y = 2
-
-	}
-	focus = {
-		id = ROCfocus_14
-		icon = GFX_focus_GER_wirtschaftswunder
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_10
-		}
-		prerequisite = {
-			focus = ROCfocus_11
-		}
-		x = 38
-		y = 3
-		completion_reward = {
-			228={
-				add_building_construction = {
-					type = air_base
-					level = 1
-				}
-			}
-			246={
-				add_building_construction = {
-					type = air_base
-					level = 1
-				}
-			}
-			214={
-				add_building_construction = {
-					type = air_base
-					level = 1
-				}
-			}
-		}
-	}
-	focus = {
-		id = ROCfocus_6
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROCfocus_4
+			focus = 蒋介石稳居高位
 		}
 		x = 27
-		y = 3
+		y = 1
 
 	}
 	focus = {
-		id = ROCfocus_15
-		icon = GFX_focus_generic_coal_mining
-		cost = 10.00
+		id = 反蒋同盟的矛盾
+		icon = GFX_goal_unknown
+		cost = 2.00
 		prerequisite = {
-			focus = ROCfocus_11
+			focus = 民主战胜独裁
 		}
-		x = 40
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = 胡汉民主导
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 反蒋同盟的矛盾
+		}
+		mutually_exclusive = {
+			focus = 汪精卫主导
+		}
+		x = 20
 		y = 3
 
 	}
 	focus = {
-		id = ROCfocus_16
-		icon = GFX_focus_BRA_cafe_com_leite_politics
-		cost = 10.00
+		id = 不稳定的政局
+		icon = GFX_goal_unknown
+		cost = 5.00
 		prerequisite = {
-			focus = ROCfocus_12
+			focus = 反蒋同盟的矛盾
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = 稳定政局
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 不稳定的政局
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = 确保党内稳定
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 稳定政局
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = 开设“76”号委员会
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 确保党内稳定
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = 扩大反蒋同盟
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 确保党内稳定
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = 拉拢基层官员
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 确保党内稳定
 		}
 		x = 33
-		y = 4
+		y = 7
 
 	}
 	focus = {
-		id = ROCfocus_17
-		icon = GFX_focus_generic_railroad
-		cost = 10.00
+		id = 获取民众支持
+		icon = GFX_goal_unknown
+		cost = 5.00
 		prerequisite = {
-			focus = ROCfocus_13
+			focus = 稳定政局
 		}
 		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = 加强媒体审查
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 获取民众支持
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = 扩大反蒋宣传
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 获取民众支持
+		}
+		x = 37
+		y = 7
+
+	}
+	focus = {
+		id = 四大家族的结局
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 不稳定的政局
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = 稳定军心
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 不稳定的政局
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = 地方军阀之需求
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 稳定军心
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = 加强与粤桂的合作
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 地方军阀之需求
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = 安抚地方军阀
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 地方军阀之需求
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = 党国军队之必要
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 稳定军心
+		}
+		x = 46
+		y = 6
+
+	}
+	focus = {
+		id = 打压蒋氏集团
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 党国军队之必要
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = 培养忠诚军官
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 党国军队之必要
+		}
+		x = 48
+		y = 7
+
+	}
+	focus = {
+		id = 汪精卫主导
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 反蒋同盟的矛盾
+		}
+		mutually_exclusive = {
+			focus = 胡汉民主导
+		}
+		x = 62
+		y = 3
+
+	}
+	focus = {
+		id = 重新制定纲领
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 汪精卫主导
+		}
+		prerequisite = {
+			focus = 汪精卫主导
+		}
+		x = 62
 		y = 4
 
 	}
 	focus = {
-		id = ROCfocus_20
+		id = “特别议会”领袖胡汉民
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
-			focus = ROCfocus_18
+			focus = 重新制定纲领
 		}
 		prerequisite = {
-			focus = ROCfocus_19
+			focus = 不稳定的政局
 		}
-		x = 22
+		prerequisite = {
+			focus = 重新制定纲领
+		}
+		x = 52
+		y = 5
+
+	}
+	focus = {
+		id = 枪杆子的支持
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = “特别议会”领袖胡汉民
+		}
+		x = 50
+		y = 6
+
+	}
+	focus = {
+		id = 笔杆子的锋芒
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = “特别议会”领袖胡汉民
+		}
+		x = 54
+		y = 6
+
+	}
+	focus = {
+		id = 土地平权
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 重新制定纲领
+		}
+		x = 58
+		y = 5
+
+	}
+	focus = {
+		id = 征收地价税
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 土地平权
+		}
+		x = 56
+		y = 6
+
+	}
+	focus = {
+		id = 改组国民党
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 重新制定纲领
+		}
+		x = 62
+		y = 5
+
+	}
+	focus = {
+		id = 打击“腐化”势力
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 改组国民党
+		}
+		x = 60
+		y = 6
+
+	}
+	focus = {
+		id = 提高党的权威
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 改组国民党
+		}
+		x = 62
+		y = 6
+
+	}
+	focus = {
+		id = 恢复工农政策
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 改组国民党
+		}
+		x = 64
+		y = 6
+
+	}
+	focus = {
+		id = 中国国民党的新生
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 提高党的权威
+		}
+		prerequisite = {
+			focus = 恢复工农政策
+		}
+		prerequisite = {
+			focus = 打击“腐化”势力
+		}
+		x = 62
+		y = 7
+
+	}
+	focus = {
+		id = 节制资本
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 重新制定纲领
+		}
+		x = 66
+		y = 5
+
+	}
+	focus = {
+		id = 发展国家资本
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 节制资本
+		}
+		x = 66
+		y = 6
+
+	}
+	focus = {
+		id = 节制私人资本
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 节制资本
+		}
+		x = 68
+		y = 6
+
+	}
+	focus = {
+		id = 振兴实业，开发富源
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 发展国家资本
+		}
+		prerequisite = {
+			focus = 节制私人资本
+		}
+		x = 66
+		y = 7
+
+	}
+	focus = {
+		id = 蒋介石稳居高位
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民革命的胜利
+		}
+		mutually_exclusive = {
+			focus = 民主战胜独裁
+		}
+		x = 81
+		y = 1
+
+	}
+	focus = {
+		id = 四大家族的利益
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 蒋介石稳居高位
+		}
+		x = 81
+		y = 2
+
+	}
+	focus = {
+		id = 宋氏姐妹孔家财
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 四大家族的利益
+		}
+		x = 75
+		y = 3
+
+	}
+	focus = {
+		id = 控制国家经济
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 宋氏姐妹孔家财
+		}
+		x = 72
 		y = 4
-		completion_reward = {
-			create_intelligence_agency = {
-			name = "中统局"
-			icon = GFX_intelligence_agency_logo_agency
-			}
+
+	}
+	focus = {
+		id = 建立资源委员会
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 控制国家经济
 		}
+		x = 70
+		y = 5
+
+	}
+	focus = {
+		id = 建立贸易委员会
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 控制国家经济
+		}
+		x = 74
+		y = 5
+
+	}
+	focus = {
+		id = 经济改革
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 宋氏姐妹孔家财
+		}
+		x = 78
+		y = 4
+
+	}
+	focus = {
+		id = 推行币制改革
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 经济改革
+		}
+		x = 76
+		y = 5
+
+	}
+	focus = {
+		id = 下放高利贷款
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 经济改革
+		}
+		x = 80
+		y = 5
+
+	}
+	focus = {
+		id = 蒋家天下陈家党
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 四大家族的利益
+		}
+		x = 87
+		y = 3
+
+	}
+	focus = {
+		id = 中华复兴社
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 蒋家天下陈家党
+		}
+		x = 84
+		y = 4
+
+	}
+	focus = {
+		id = 镇压抗日活动
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 中华复兴社
+		}
+		x = 82
+		y = 5
+
+	}
+	focus = {
+		id = 开设军统局
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 中华复兴社
+		}
+		x = 84
+		y = 5
+
+	}
+	focus = {
+		id = 控制媒体信息
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 中华复兴社
+		}
+		x = 86
+		y = 5
+
+	}
+	focus = {
+		id = 中央俱乐部
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 蒋家天下陈家党
+		}
+		x = 90
+		y = 4
+
+	}
+	focus = {
+		id = 新生活运动
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 中央俱乐部
+		}
+		x = 88
+		y = 5
+
+	}
+	focus = {
+		id = 开设中统局
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 中央俱乐部
+		}
+		x = 90
+		y = 5
+
+	}
+	focus = {
+		id = 中国本位文化建设运动
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 中央俱乐部
+		}
+		x = 92
+		y = 5
+
+	}
+	focus = {
+		id = 宣布训政
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民革命的胜利
+		}
+		x = 103
+		y = 1
+
+	}
+	focus = {
+		id = 国民之教育
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 宣布训政
+		}
+		x = 96
+		y = 2
+
+	}
+	focus = {
+		id = 完善教育体系
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民之教育
+			focus = 国民之教育
+		}
+		prerequisite = {
+			focus = 国民之教育
+		}
+		x = 94
+		y = 3
+
+	}
+	focus = {
+		id = 推广建议师范学堂
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民之教育
+			focus = 国民之教育
+		}
+		prerequisite = {
+			focus = 国民之教育
+		}
+		x = 96
+		y = 3
+
+	}
+	focus = {
+		id = 建设中央研究院
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民之教育
+			focus = 国民之教育
+		}
+		prerequisite = {
+			focus = 国民之教育
+		}
+		x = 98
+		y = 3
+
+	}
+	focus = {
+		id = 提高边境教师待遇
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 推广建议师范学堂
+			focus = 推广建议师范学堂
+			focus = 建设中央研究院
+			focus = 完善教育体系
+		}
+		x = 96
+		y = 4
+
+	}
+	focus = {
+		id = 施行义务教育
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 完善教育体系
+			focus = 推广建议师范学堂
+			focus = 完善教育体系
+			focus = 建设中央研究院
+		}
+		x = 94
+		y = 4
+
+	}
+	focus = {
+		id = 改善高等教育体制
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 建设中央研究院
+			focus = 推广建议师范学堂
+			focus = 完善教育体系
+			focus = 建设中央研究院
+		}
+		x = 98
+		y = 4
+
+	}
+	focus = {
+		id = 国民素质之进步
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 施行义务教育
+			focus = 提高边境教师待遇
+			focus = 改善高等教育体制
+		}
+		x = 96
+		y = 5
+
+	}
+	focus = {
+		id = 政府之组织
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 宣布训政
+		}
+		x = 102
+		y = 2
+
+	}
+	focus = {
+		id = 颁布训政纲领
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 政府之组织
+		}
+		x = 100
+		y = 3
+
+	}
+	focus = {
+		id = 国民政府组织法
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 颁布训政纲领
+		}
+		x = 100
+		y = 4
+
+	}
+	focus = {
+		id = 推行五院制
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 政府之组织
+		}
+		x = 102
+		y = 3
+
+	}
+	focus = {
+		id = 订正主席权利
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 推行五院制
+		}
+		x = 102
+		y = 4
+
+	}
+	focus = {
+		id = 地方均权制度
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 政府之组织
+		}
+		x = 104
+		y = 3
+
+	}
+	focus = {
+		id = 草拟地方法律
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 地方均权制度
+		}
+		x = 104
+		y = 4
+
+	}
+	focus = {
+		id = 总揽中华民国之治权
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 订正主席权利
+		}
+		prerequisite = {
+			focus = 草拟地方法律
+		}
+		prerequisite = {
+			focus = 国民政府组织法
+		}
+		x = 102
+		y = 5
+
+	}
+	focus = {
+		id = 国民生计
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 宣布训政
+		}
+		x = 108
+		y = 2
+
+	}
+	focus = {
+		id = 大规模交通建设
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民生计
+		}
+		x = 106
+		y = 3
+
+	}
+	focus = {
+		id = 统税改革
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民生计
+		}
+		x = 108
+		y = 3
+
+	}
+	focus = {
+		id = 农业发展计划
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民生计
+		}
+		x = 110
+		y = 3
+
+	}
+	focus = {
+		id = 重工五年计划
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 统税改革
+			focus = 农业发展计划
+			focus = 大规模交通建设
+		}
+		x = 106
+		y = 4
+
+	}
+	focus = {
+		id = 恢复关税自主权
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 统税改革
+			focus = 大规模交通建设
+			focus = 农业发展计划
+		}
+		x = 108
+		y = 4
+
+	}
+	focus = {
+		id = 新技术推广
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 农业发展计划
+			focus = 农业发展计划
+			focus = 统税改革
+			focus = 大规模交通建设
+		}
+		x = 110
+		y = 4
+
+	}
+	focus = {
+		id = 国民经济之发展
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 恢复关税自主权
+			focus = 恢复关税自主权
+			focus = 新技术推广
+			focus = 重工五年计划
+		}
+		x = 108
+		y = 5
+
+	}
+	focus = {
+		id = 国难当头
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民革命的胜利
+		}
+		x = 115
+		y = 1
+
+	}
+	focus = {
+		id = 攘外必先安内
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国难当头
+		}
+		mutually_exclusive = {
+			focus = 救国必先抗日
+		}
+		x = 113
+		y = 2
+
+	}
+	focus = {
+		id = 号令军阀围击
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 攘外必先安内
+		}
+		x = 112
+		y = 3
+
+	}
+	focus = {
+		id = 组织缴费军
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 攘外必先安内
+		}
+		x = 114
+		y = 3
+
+	}
+	focus = {
+		id = 德国阵地战术
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 组织缴费军
+		}
+		x = 114
+		y = 4
+
+	}
+	focus = {
+		id = 空对地支援
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 德国阵地战术
+		}
+		x = 114
+		y = 5
+
+	}
+	focus = {
+		id = 救国必先抗日
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国难当头
+		}
+		mutually_exclusive = {
+			focus = 攘外必先安内
+		}
+		x = 117
+		y = 2
+
+	}
+	focus = {
+		id = 与共产党和解
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 救国必先抗日
+		}
+		x = 116
+		y = 3
+
+	}
+	focus = {
+		id = 扩大抗日宣传
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 与共产党和解
+		}
+		x = 116
+		y = 4
+
+	}
+	focus = {
+		id = 建立统一阵线
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 扩大抗日宣传
+		}
+		x = 116
+		y = 5
+
+	}
+	focus = {
+		id = 以党治国
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = 胡汉民主导
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = 发扬胡汉民思想
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 加强党的领导
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = 军队党代表制度
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 加强党的领导
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = 推广党化教育
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 以党治国
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = 加强党的领导
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 推广党化教育
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = 扩建地方党委
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 加强党的领导
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = 建立党治国家
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 扩建地方党委
+		}
+		prerequisite = {
+			focus = 军队党代表制度
+		}
+		prerequisite = {
+			focus = 发扬胡汉民思想
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = 革命元老雏鲁
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 建立党治国家
+		}
+		mutually_exclusive = {
+			focus = 国民正统孙科
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = 开展土地改良
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 革命元老雏鲁
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = 党权至上
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 革命元老雏鲁
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = 支持抗日救亡
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 革命元老雏鲁
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = 新训政
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 党权至上
+		}
+		prerequisite = {
+			focus = 支持抗日救亡
+		}
+		prerequisite = {
+			focus = 开展土地改良
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = 推广穗政
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 以党治国
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = 官产投变
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 推广穗政
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = 推动教育改革
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 官产投变
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = 基础设施兴建计划
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 官产投变
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = 市政体系创新
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 官产投变
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = 国民政府为国民
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 基础设施兴建计划
+		}
+		prerequisite = {
+			focus = 市政体系创新
+		}
+		prerequisite = {
+			focus = 推动教育改革
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = 国民正统孙科
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民政府为国民
+		}
+		mutually_exclusive = {
+			focus = 革命元老雏鲁
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = 注重城市建设
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民正统孙科
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = 与蒋氏集团和解
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民正统孙科
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = 扩大国外投资
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 国民正统孙科
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = 走向宪政
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 与蒋氏集团和解
+		}
+		prerequisite = {
+			focus = 注重城市建设
+		}
+		prerequisite = {
+			focus = 扩大国外投资
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = 汪主席的欧洲考察
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 不稳定的政局
+		}
+		prerequisite = {
+			focus = 以党治国
+		}
+		prerequisite = {
+			focus = 以党治国
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = 寻求国联帮助
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 汪主席的欧洲考察
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = 寻求华侨帮助
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 寻求国联帮助
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = 扩大美英在华利益
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 寻求国联帮助
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = 请求苏联援助
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 寻求国联帮助
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = 拉拢温和派
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 汪主席的欧洲考察
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = 挑拨改组会矛盾
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 汪主席的欧洲考察
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = 和平解决中日冲突？
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 寻求华侨帮助
+		}
+		prerequisite = {
+			focus = 扩大美英在华利益
+		}
+		prerequisite = {
+			focus = 请求苏联援助
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = 与日本进行谈判
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = “特别议会”领袖胡汉民
+		}
+		x = 52
+		y = 6
+
+	}
+	focus = {
+		id = 承认伪满洲国
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 与日本进行谈判
+		}
+		x = 52
+		y = 7
+
+	}
+	focus = {
+		id = 镇压抗日情绪
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 与日本进行谈判
+		}
+		x = 50
+		y = 7
+
+	}
+	focus = {
+		id = 接受日本投资
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 与日本进行谈判
+		}
+		x = 54
+		y = 7
+
+	}
+	focus = {
+		id = 和平解决中日冲突？
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 承认伪满洲国
+		}
+		prerequisite = {
+			focus = 接受日本投资
+		}
+		prerequisite = {
+			focus = 镇压抗日情绪
+		}
+		x = 52
+		y = 8
+
+	}
+	focus = {
+		id = 土地增产归公
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 土地平权
+		}
+		x = 58
+		y = 6
+
+	}
+	focus = {
+		id = 耕者有其田
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 土地增产归公
+		}
+		prerequisite = {
+			focus = 征收地价税
+		}
+		x = 58
+		y = 7
+
+	}
+	focus = {
+		id = 走向民生主义国家
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 中国国民党的新生
+		}
+		prerequisite = {
+			focus = 耕者有其田
+		}
+		prerequisite = {
+			focus = 振兴实业，开发富源
+		}
+		x = 62
+		y = 8
+
+	}
+	focus = {
+		id = 农产调整委员会
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 控制国家经济
+		}
+		x = 72
+		y = 5
+
+	}
+	focus = {
+		id = 开设四联总处
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 经济改革
+		}
+		x = 78
+		y = 5
+
+	}
+	focus = {
+		id = 创立中央航空学校
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 军队现代化改革
+		}
+		x = -1
+		y = 2
+
+	}
+	focus = {
+		id = 航空救国运动
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = 创立中央航空学校
+		}
+		x = 0
+		y = 3
+
+	}
+	focus = {
+		id = 规范培训体系
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		prerequisite = {
+			focus = 航空救国运动
+		}
+		x = 0
+		y = 4
+
+	}
+	focus = {
+		id = 召开全国代表大会
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 总揽中华民国之治权
+		}
+		prerequisite = {
+			focus = 国民经济之发展
+		}
+		prerequisite = {
+			focus = 国民素质之进步
+		}
+		x = 102
+		y = 6
+
+	}
+	focus = {
+		id = 扩大地方影响力
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 号令军阀围击
+		}
+		x = 112
+		y = 4
+
+	}
+	focus = {
+		id = 通电张学良
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 救国必先抗日
+		}
+		x = 118
+		y = 3
+
+	}
+	focus = {
+		id = 运输抗日物资
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = 通电张学良
+		}
+		x = 118
+		y = 4
+
 	}
 }
