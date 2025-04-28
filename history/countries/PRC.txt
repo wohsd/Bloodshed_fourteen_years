@@ -130,9 +130,6 @@ set_power_balance = {
 		producer = PRC
 	}
 	remove_power_balance = {
-		id = PRC_struggle_balance0
-	}
-	remove_power_balance = {
 		id = PRC_struggle_balance
 	}
 	set_power_balance = {

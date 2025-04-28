@@ -990,7 +990,13 @@ focus_tree = {
 			focus = PRC_focus42
 		}
 		available = {
-			has_country_flag = fall_of_ChangZheng_end
+			or={
+				has_country_flag = fall_of_ChangZheng_end
+				PRC = {
+					controls_state = 655
+				}
+			}
+			
 		}
 		x = 32
 		y = 9
@@ -1096,12 +1102,12 @@ focus_tree = {
 		}
 		x = 32
 		y = 13
-			available = {
+		available = {
 
-}
-			completion_reward = {
-					
-				}
+		}
+		completion_reward = {
+			country_event = {id=PRC_1936.6 days=4}
+		}
 
 	}
 	focus = {
@@ -1329,6 +1335,18 @@ focus_tree = {
 				promote_character = yes
 			}
 			set_cosmetic_tag = PRC_1937
+			add_dynamic_modifier = {
+				modifier = PRC_Economic_crisis_effect
+			}
+			add_to_variable = {
+				PRC_political_power_cost_M = -0.1
+			}
+			add_to_variable = {
+				PRC_consumer_goods_factor_M = 0.1
+			}
+			add_to_variable = {
+				PRC_min_export_M = -0.15
+			}
 		}
 	}
 	focus = {

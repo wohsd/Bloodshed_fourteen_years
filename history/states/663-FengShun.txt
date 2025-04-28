@@ -9,8 +9,11 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		1939.1.1={
-			owner = PRD
+		1936.1.1={
+			owner = ROG
+		}
+		1942.1.1={
+			owner = JAP
 		}
 	}
 	manpower=51230

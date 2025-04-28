@@ -16,7 +16,7 @@ set_war_support = 0.7
 
 recruit_character = YUL_JingYueXiu
 #获取领导人，将领（在common\characters\你的国家tag）
-
+recruit_character = YUL_GaoShuangChen
 set_politics = {
 	ruling_party = neutrality
 	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
@@ -38,3 +38,6 @@ set_popularities = {
 add_ideas = {
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
+1936.1.1={
+	country_event = {id=YUL_1936.1 days=30}
+}

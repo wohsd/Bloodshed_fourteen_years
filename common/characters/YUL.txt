@@ -47,4 +47,44 @@ YUL_JingYueXiu={
 			legacy_id=-1
 		}
 	}
+	YUL_GaoShuangChen={
+		name=YUL_GaoShuangChen
+
+		#肖像选择（平民状态和军事状态）
+		portraits={
+			civilian={
+				large="gfx//leaders//YUL//YUL_GaoShuangChen.png"
+			}
+			army={
+				large="gfx//leaders//YUL//YUL_GaoShuangChen.png"
+				small="gfx//leaders//YUL//YUL_GaoShuangChen.png"
+			}
+
+		}
+		#担任党派领导人时的数据
+		country_leader={
+			#意识形态
+			ideology=despotism
+			#特质
+			traits={ }
+			#不可用日期（死亡日期）
+			expire="1965.1.1.1"
+			#我也不知道这个是什么，但最好不要碰这个
+			id=-1
+		}
+		field_marshal={
+			#特质（如堑壕大师）
+			traits={ }
+			#等级
+			skill=4
+			#攻击等级
+			attack_skill=2
+			#防御等级
+			defense_skill=2
+			#计划等级
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }

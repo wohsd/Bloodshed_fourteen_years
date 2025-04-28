@@ -18,7 +18,7 @@ state={
 		victory_points = {
 			4168 2
 		}
-		1939.1.1={
+		1936.1.1={
 			owner = JAP
 		}
 		add_core_of = ROG

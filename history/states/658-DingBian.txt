@@ -11,6 +11,9 @@ state={
 		1936.1.1={
 			owner = ROZ
 		}
+		1938.1.1={
+			owner = PRC
+		}
 		victory_points = {
 			3302 3
 		}

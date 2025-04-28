@@ -141,11 +141,51 @@ country_event = {
 				state = 601
 				num_provinces = 1
 				modifier = 0.1
+				dig_in_factor = 0.7
+				terrain_factor = 0.7
+			}	
+			defender = {
+				state = 661
+				num_provinces = 3
+				dig_in_factor = -0.85
+				terrain_factor = -0.85
+			}
+		}
+
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 342
+				num_provinces = 1
+				modifier = 0.1
+				dig_in_factor = 0.4
+				terrain_factor = 0.4
+			}	
+			defender = {
+				state = 665
+				num_provinces = 1
+				dig_in_factor = -0.75
+				terrain_factor = -0.75
+			}
+		}
+		set_border_war_data = {
+			attacker = 342
+			defender = 665
+			attacker_modifier = 0.75
+			defender_modifier = -0.75
+			combat_width = 100
+		}
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 353
+				num_provinces = 1
+				modifier = 0.1
 				dig_in_factor = -0.4
 				terrain_factor = -0.4
 			}	
 			defender = {
-				state = 661
+				state = 663
 				num_provinces = 3
 				dig_in_factor = 0.45
 				terrain_factor = 0.45
@@ -159,29 +199,7 @@ country_event = {
 			combat_width = 100
 		}
 
-		start_border_war = {
-			change_state_after_war = yes
-			attacker = {
-				state = 342
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
-			}	
-			defender = {
-				state = 665
-				num_provinces = 3
-				dig_in_factor = 0.45
-				terrain_factor = 0.45
-			}
-		}
-		set_border_war_data = {
-			attacker = 342
-			defender = 665
-			attacker_modifier = -0.75
-			defender_modifier = 0.75
-			combat_width = 100
-		}
+		
 
 		start_border_war = {
 			change_state_after_war = yes
@@ -202,8 +220,8 @@ country_event = {
 		set_border_war_data = {
 			attacker = 353
 			defender = 663
-			attacker_modifier = -0.75
-			defender_modifier = 0.75
+			attacker_modifier = -0.35
+			defender_modifier = 0.35
 			combat_width = 100
 		}
 	}

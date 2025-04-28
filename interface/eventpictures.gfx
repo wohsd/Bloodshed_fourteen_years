@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_WangJingWei_1938_1"
+		texturefile = "gfx/event/WangJingWei_1938_1.png"
+	}
+	spriteType = {
 		name = "GFX_HET_1"
 		texturefile = "gfx/event/HET_1.png"
 	}
