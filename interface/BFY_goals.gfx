@@ -1,24 +1,24 @@
 spriteTypes = {
 	
 spriteType = {
-	name = "GFX_ROCfocus_28"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_28.png"
+	name = "GFX_kmt01"
+	texturefile = "gfx\interface\goals\CHI\kmt01.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_29"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_29.png"
+	name = "GFX_kmt02"
+	texturefile = "gfx\interface\goals\CHI\kmt02.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_30"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_30.png"
+	name = "GFX_kmt03"
+	texturefile = "gfx\interface\goals\CHI\kmt03.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_31"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_31.png"
+	name = "GFX_kmt04"
+	texturefile = "gfx\interface\goals\CHI\kmt04.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_5"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_5.png"
+	name = "GFX_kmt05"
+	texturefile = "gfx\interface\goals\CHI\kmt05.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_unknown"
@@ -27,17 +27,17 @@ spriteType = {
 	}
 
 	spriteType = {
-	name = "GFX_ROCfocus_2"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_2.png"
+	name = "GFX_kmt06"
+	texturefile = "gfx\interface\goals\CHI\kmt06.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_3"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_3.png"
+	name = "GFX_kmt07"
+	texturefile = "gfx\interface\goals\CHI\kmt07.png"
 	}
 	
 spriteType = {
-	name = "GFX_ROCfocus_0"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_0.png"
+	name = "GFX_kmt08"
+	texturefile = "gfx\interface\goals\CHI\kmt08.png"
 	}
 	spriteType = {
 	name = "GFX_ROCfocus_1"

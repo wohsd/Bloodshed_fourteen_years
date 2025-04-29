@@ -1,22 +1,2 @@
 spriteTypes = {
-spriteType = {
-name = "GFX_ROCfocus_28"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_28.png"
-}
-spriteType = {
-name = "GFX_ROCfocus_29"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_29.png"
-}
-spriteType = {
-name = "GFX_ROCfocus_30"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_30.png"
-}
-spriteType = {
-name = "GFX_ROCfocus_31"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_31.png"
-}
-spriteType = {
-name = "GFX_ROCfocus_5"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_5.png"
-}
 }

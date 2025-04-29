@@ -1,10 +1,10 @@
 spriteTypes = {
 spriteType = {
-name = "GFX_ROCfocus_28_shine"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_28.png"
+name = "GFX_国民革命的胜利_shine"
+texturefile = "gfx\interface\goals\CHI\CHI/国民革命的胜利.png"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_28.png"
+	animationmaskfile = "gfx\interface\goals\CHI\CHI/国民革命的胜利.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -16,7 +16,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_28.png"
+	animationmaskfile = "gfx\interface\goals\CHI\CHI/国民革命的胜利.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -30,11 +30,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_ROCfocus_29_shine"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_29.png"
+name = "GFX_民主战胜独裁_shine"
+texturefile = "gfx\interface\goals\CHI\CHI/民主战胜独裁.png"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_29.png"
+	animationmaskfile = "gfx\interface\goals\CHI\CHI/民主战胜独裁.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -46,7 +46,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_29.png"
+	animationmaskfile = "gfx\interface\goals\CHI\CHI/民主战胜独裁.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -60,11 +60,11 @@ animation = {
 legacy_lazy_load = no
 }
 spriteType = {
-name = "GFX_ROCfocus_30_shine"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_30.png"
+name = "GFX_稳居高位_shine"
+texturefile = "gfx\interface\goals\CHI\CHI/稳居高位.png"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_30.png"
+	animationmaskfile = "gfx\interface\goals\CHI\CHI/稳居高位.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)
@@ -76,67 +76,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 } 
 }
 animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_30.png"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_ROCfocus_31_shine"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_31.png"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_31.png"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_31.png"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-legacy_lazy_load = no
-}
-spriteType = {
-name = "GFX_ROCfocus_5_shine"
-texturefile = "gfx\interface\goals\CHI\CHI/ROCfocus_5.png"
-effectFile = "gfx/FX/buttonstate.lua"
-animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_5.png"
-	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-	animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-	animationlooping = no			# yes or no ;)
-	animationtime = 0.75				# in seconds
-	animationdelay = 0			# in seconds
-	animationblendmode = "add"       #add, multiply, overlay
-	animationtype = "scrolling"      #scrolling, rotating, pulsing
-	animationrotationoffset = { x = 0.0 y = 0.0 }
-	animationtexturescale = { x = 1.0 y = 1.0 } 
-}
-animation = {
-	animationmaskfile = "gfx\interface\goals\CHI\CHI/ROCfocus_5.png"
+	animationmaskfile = "gfx\interface\goals\CHI\CHI/稳居高位.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 	animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 	animationlooping = no			# yes or no ;)

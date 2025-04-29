@@ -1,26 +1,20 @@
 focus_tree = {
 	id = FocusTree_0
 	country = {
-		factor = 0 
+		factor = 0
 		modifier = {
 			add = 10
 			tag = chi
 		}
-	} 
-	inlay_window = {
-		id = CHI_circle_inlay_window
-		position = { x = 120 y =1500 }
 	}
-
 	default = no
 	focus = {
 		id = 国民革命的胜利
-		icon = GFX_goal_anschluss
+		icon = GFX_kmt01
 		cost = 2.00
 		x = 75
 		y = 0
-		available = {
-		}
+
 	}
 	focus = {
 		id = 拉拢中立派军官
@@ -34,6 +28,9 @@ focus_tree = {
 		id = 军队现代化改革
 		icon = GFX_goal_unknown
 		cost = 5.00
+		prerequisite = {
+			focus = 国民革命的胜利
+		}
 		x = 5
 		y = 1
 
@@ -150,7 +147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 民主战胜独裁
-		icon = GFX_goal_unknown
+		icon = GFX_kmt02
 		cost = 5.00
 		prerequisite = {
 			focus = 国民革命的胜利
@@ -163,8 +160,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = 反蒋同盟的矛盾
-		icon = GFX_goal_unknown
+		id = 廖仲恺问题
+		icon = GFX_kmt05
 		cost = 2.00
 		prerequisite = {
 			focus = 民主战胜独裁
@@ -175,10 +172,10 @@ focus_tree = {
 	}
 	focus = {
 		id = 胡汉民主导
-		icon = GFX_goal_unknown
+		icon = GFX_kmt04
 		cost = 2.00
 		prerequisite = {
-			focus = 反蒋同盟的矛盾
+			focus = 廖仲恺问题
 		}
 		mutually_exclusive = {
 			focus = 汪精卫主导
@@ -192,7 +189,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 反蒋同盟的矛盾
+			focus = 廖仲恺问题
 		}
 		x = 38
 		y = 4
@@ -376,10 +373,10 @@ focus_tree = {
 	}
 	focus = {
 		id = 汪精卫主导
-		icon = GFX_goal_unknown
+		icon = GFX_kmt07
 		cost = 2.00
 		prerequisite = {
-			focus = 反蒋同盟的矛盾
+			focus = 廖仲恺问题
 		}
 		mutually_exclusive = {
 			focus = 胡汉民主导
@@ -573,7 +570,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 蒋介石稳居高位
-		icon = GFX_goal_unknown
+		icon = GFX_kmt03
 		cost = 5.00
 		prerequisite = {
 			focus = 国民革命的胜利
@@ -1204,7 +1201,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 以党治国
-		icon = GFX_goal_unknown
+		icon = GFX_kmt08
 		cost = 2.00
 		prerequisite = {
 			focus = 胡汉民主导
@@ -1237,7 +1234,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 推广党化教育
-		icon = GFX_goal_unknown
+		icon = GFX_kmt06
 		cost = 5.00
 		prerequisite = {
 			focus = 以党治国
