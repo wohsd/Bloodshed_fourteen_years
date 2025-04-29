@@ -768,6 +768,59 @@ country_event = {
 		clr_global_flag = fall_of_2321
 	}		
 }
+
+
+country_event = {
+	id = PRC_1934Hidden.20
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 2970
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_2970
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.12
+			}
+		}
+		clr_global_flag = fall_of_2970
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.21
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 2146
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_2146
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.13
+			}
+		}
+		clr_global_flag = fall_of_2146
+	}		
+}
 ###############################
 ###############################
 
@@ -901,6 +954,7 @@ country_event = {
 	}
 	option = {
 		name = PRC_1934.7.a
+		country_event = {id=PRC_1934.11 days=5}
 	}
 }
 
@@ -958,6 +1012,9 @@ country_event = {
 	}
 	option = {
 		name = PRC_1934.11.a
+		PRC = {
+			retire_character = PRC_DengPing
+		}
 	}
 }
 
@@ -968,9 +1025,7 @@ country_event = {
 	desc = PRC_1934.12.d
     #picture = 
 	fire_only_once = yes
-	is_triggered_only = yes
-	immediate = {
-	}
+    is_triggered_only = yes
 	option = {
 		name = PRC_1934.12.a
 	}
@@ -984,10 +1039,23 @@ country_event = {
     #picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
+	option = {
+		name = PRC_1934.13.a
+	}
+}
+
+
+country_event = {
+	id = PRC_1934.14
+	title =PRC_1934.14.t
+	desc = PRC_1934.14.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
 	immediate = {
 	}
 	option = {
-		name = PRC_1934.13.a
+		name = PRC_1934.14.a
 	}
 }
 

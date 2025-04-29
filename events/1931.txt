@@ -310,7 +310,7 @@ country_event = {
     } 
 	option = {
 		name = ROG_1931.0.a
-		news_event = {id=ROG_1931.1 days=8}
+		news_event = {id=ROG_1931.1 }
 	}
 }
 
@@ -329,15 +329,68 @@ news_event = {
 				ROG_WangJingWei={
 					promote_character = yes
 				}
+				news_event = {id=ROG_1931.3 days=91}
 			}
+
 		}
+		
 	}
 	option = {
 		name = ROG_1931.1.a
 	}		
 }
 
+news_event = {
+	id = ROG_1931.2
+	title = ROG_1931.2.t
+	desc = ROG_1931.2.d
+	picture = GFX_ROG_1931_2
+	major = yes
+	is_triggered_only = yes 
+	immediate = {
+		hidden_effect = {
+			ROC={
+				transfer_state = 380
+				transfer_state = 368
+				transfer_state = 356
+				transfer_state = 350
+				transfer_state = 337
+			}
+		}
+	}
+	option = {
+		name = ROG_1931.2.a
+	}		
+}
 
+news_event = {
+	id = ROG_1931.3
+	title = ROG_1931.3.t
+	desc = ROG_1931.3.d
+	picture = GFX_ROG_1931_3
+	major = yes
+	is_triggered_only = yes 
+	immediate = {
+		hidden_effect = {
+			ROG={
+				declare_war_on = {
+					target = RON
+					type = annex_everything
+				}
+			}
+			ROC={
+				declare_war_on = {
+					target = RON
+					type = annex_everything
+				}
+			}
+			
+		}
+	}
+	option = {
+		name = ROG_1931.3.a
+	}		
+}
 
 country_event = {
 	id = world1931Hidden.1

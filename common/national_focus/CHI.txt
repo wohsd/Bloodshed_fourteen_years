@@ -1,12 +1,17 @@
 focus_tree = {
 	id = FocusTree_0
 	country = {
-		factor = 0
+		factor = 0 
 		modifier = {
 			add = 10
 			tag = chi
 		}
+	} 
+	inlay_window = {
+		id = CHI_circle_inlay_window
+		position = { x = 120 y =1500 }
 	}
+
 	default = no
 	focus = {
 		id = 国民革命的胜利
@@ -14,7 +19,8 @@ focus_tree = {
 		cost = 2.00
 		x = 75
 		y = 0
-
+		available = {
+		}
 	}
 	focus = {
 		id = 拉拢中立派军官
@@ -28,9 +34,6 @@ focus_tree = {
 		id = 军队现代化改革
 		icon = GFX_goal_unknown
 		cost = 5.00
-		prerequisite = {
-			focus = 国民革命的胜利
-		}
 		x = 5
 		y = 1
 

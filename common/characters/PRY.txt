@@ -46,4 +46,56 @@ characters={
 			legacy_id=-1
 		}
 	}
+
+
+
+	
+	PRY_DengXiaoPing={
+		name=PRY_DengXiaoPing
+		portraits={
+			army = {
+				large="gfx/leaders/PRC/PRY_DengXiaoPing.png"
+			}
+			civilian={
+				small = "gfx/interface/advisers/PRY_DengXiaoPing.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRY_DengXiaoPing_H
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRY_DengXiaoPing_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
 }

@@ -13,11 +13,11 @@ CHI_Purging_party_category = {
 	visible = { 
 		tag=CHI
 	}
-}
+} 
 
 CHI_Defend_against_enemy_category= {
 	icon = military_operation
-	picture = GFX_JiangJieShi
+	picture = GFX_JiangJieShi_1
 	visible = { 
 		tag=CHI
 		#has_war = yes

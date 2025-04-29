@@ -25,7 +25,11 @@ set_politics = {
 	elections_allowed = no
 }
 1931.1.1={
-	country_event = {id=ROG_1931.0 days=170}
+	ROG={
+		country_event = {id=ROG_1931.0 days=147}
+		news_event = {id=ROG_1931.2 days=56}
+	}
+	
 }
 add_ideas = Regionalist_warlords
 1931.5.12={

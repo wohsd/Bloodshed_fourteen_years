@@ -299,9 +299,95 @@ characters={
 		}
 	}
 
-
-
-
+	PRC_ChenYun={
+		name=PRC_ChenYun
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_ChenYun.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_ChenYun_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+	PRC_LiuBoChen={
+		name=PRC_LiuBoChen
+		portraits={
+			army = {
+				large="gfx/leaders/PRC/PRC_LiuBoChen.png"
+			}
+			civilian={
+				small = "gfx/interface/advisers/PRC_LiuBoChen.png"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_LiuBoChen_H
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+	PRC_DengPing={
+		name=PRC_DengPing
+		portraits={
+			army = {
+				large="gfx/leaders/PRC/PRC_DengPing.png"
+			}
+			civilian={
+				small = "gfx/interface/advisers/PRC_DengPing.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_DengPing_H
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
 
 
 
@@ -316,6 +402,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/PRC/PRC_PengDeHuai.png"
+				small = "gfx/interface/advisers/PRC_PengDeHuai.png"
 			}
 		}
 		corps_commander={
@@ -326,12 +413,64 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_PengDeHuai_H
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
 	}
+
+	PRC_FangZhiMing={
+		name=PRC_FangZhiMing
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_FangZhiMing.png"
+				small = "gfx/interface/advisers/PRC_FangZhiMing.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_FangZhiMing_H
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+
+
 	PRC_LingBiao={
 		name=PRC_LingBiao
 		portraits={
 			civilian={
 				large="gfx/leaders/PRC/PRC_LingBiao.png"
+				small = "gfx/interface/advisers/PRC_LingBiao.png"
 			}
 		}
 		corps_commander={
@@ -341,6 +480,21 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_PengDeHuai_H
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
 		}
 	}	
 	PRC_HeLong={

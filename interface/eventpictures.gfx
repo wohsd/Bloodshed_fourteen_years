@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_ROG_1931_1"
+		texturefile = "gfx/event/ROG_1931_1.png"
+	}
+	spriteType = {
+		name = "GFX_ROG_1931_2"
+		texturefile = "gfx/event/ROG_1931_2.png"
+	}
+	spriteType = {
+		name = "GFX_ROG_1931_3"
+		texturefile = "gfx/event/ROG_1931_3.png"
+	}
+	spriteType = {
 		name = "GFX_WangJingWei_1938_1"
 		texturefile = "gfx/event/WangJingWei_1938_1.png"
 	}
@@ -138,7 +150,7 @@ spriteTypes = {
 		texturefile = "gfx/event/Encirclement_suppression_operation.dds"
 	}
 	spriteType = {
-		name = "GFX_JiangJieShi"
+		name = "GFX_JiangJieShi_1"
 		texturefile = "gfx/event/JiangJieShi.dds"
 	}
 	spriteType = {

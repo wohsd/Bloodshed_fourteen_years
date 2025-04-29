@@ -32,7 +32,11 @@ country_event = {
 					prioritize_location = 4000
 				}
 			}
-			
+		}
+		PRY={
+			PRY_DengXiaoPing = {
+				set_nationality = PRC
+			}
 		}
 	}
 }

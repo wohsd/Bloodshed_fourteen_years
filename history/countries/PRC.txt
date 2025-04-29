@@ -23,6 +23,10 @@ recruit_character =PRC_DongZhenTang
 recruit_character =PRC_GuZuoLing
 recruit_character =PRC_RenBiShi
 recruit_character =PRC_WangJiaXiang
+recruit_character =PRC_LiuBoChen
+recruit_character =PRC_FangZhiMing
+recruit_character =PRC_ChenYun
+recruit_character =PRC_DengPing
 set_popularities = {
 	communism = 100
 }
@@ -116,6 +120,12 @@ set_power_balance = {
 	}
 	set_cosmetic_tag = PRC_1931
 	add_to_faction = NSD
+	remove_power_balance = {
+		id = PRC_struggle_balance0
+	}
+	set_power_balance = {
+		id = PRC_struggle_balance
+	}
 }
 1936.1.1={
 	capital = 655

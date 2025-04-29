@@ -345,8 +345,8 @@
  WTT_remove_opposition_in_nanning: "肃清南宁反对势力"
  WTT_remove_opposition_in_guangxi: "肃清广西反对势力"
 
-
- PRC_struggle_balance: "中共中央政治局"
+ Balance_of_Power: "政治平衡"
+ PRC_struggle_balance: "中共中央政治局" 
  PRC_struggle_mid_range: "党内平衡"
  PRC_struggle_left_side: "偏向王明"
  PRC_struggle_right_side: "偏向毛泽东"
@@ -385,6 +385,8 @@
  PRC_left_side_range_High0: "王明支持度较高"
  PRC_right_side_range_Low0: "李立三支持度较低"
  PRC_right_side_range_High0: "李立三支持度较高"
+ PRC_Maintain_intra_party_unity: "维护党内团结"
+ PRC_Execution_USSR_directives: "贯彻共产国际指令"
 
 
  CHI_struggle_balance: "中华民国国民政府"
