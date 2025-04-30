@@ -22,6 +22,7 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = 党国军队之必要
+		}
 		x = 46
 		y = 7
 
