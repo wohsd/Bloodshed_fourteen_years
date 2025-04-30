@@ -1,6 +1,10 @@
 spriteTypes = {
-	
-spriteType = {
+SpriteType = {
+		name = "GFX_goal_unknown"
+		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		legacy_lazy_load = no
+	}
+    spriteType = {
 	name = "GFX_kmt01"
 	texturefile = "gfx\interface\goals\CHI\kmt01.png"
 	}
@@ -20,12 +24,6 @@ spriteType = {
 	name = "GFX_kmt05"
 	texturefile = "gfx\interface\goals\CHI\kmt05.png"
 	}
-	SpriteType = {
-		name = "GFX_goal_unknown"
-		texturefile = "gfx/interface/goals/goal_unknown.dds"
-		legacy_lazy_load = no
-	}
-
 	spriteType = {
 	name = "GFX_kmt06"
 	texturefile = "gfx\interface\goals\CHI\kmt06.png"
@@ -34,44 +32,137 @@ spriteType = {
 	name = "GFX_kmt07"
 	texturefile = "gfx\interface\goals\CHI\kmt07.png"
 	}
-	
-spriteType = {
+    spriteType = {
 	name = "GFX_kmt08"
 	texturefile = "gfx\interface\goals\CHI\kmt08.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_1"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_1.png"
+	name = "GFX_kmt09"
+	texturefile = "gfx\interface\goals\CHI\kmt09.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_1111"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_1111.png"
+	name = "GFX_kmt10"
+	texturefile = "gfx\interface\goals\CHI\kmt10.png"
+		}
+	spriteType = {
+	name = "GFX_kmt11"
+	texturefile = "gfx\interface\goals\CHI\kmt11.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_19"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_19.png"
+	name = "GFX_kmt12"
+	texturefile = "gfx\interface\goals\CHI\kmt12.png"
+		}
+    spriteType = {
+	name = "GFX_kmt13"
+	texturefile = "gfx\interface\goals\CHI\kmt13.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_20"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_20.png"
+	name = "GFX_kmt14"
+	texturefile = "gfx\interface\goals\CHI\kmt14.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_27"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_27.png"
+	name = "GFX_kmt15"
+	texturefile = "gfx\interface\goals\CHI\kmt15.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_4"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_4.png"
+	name = "GFX_kmt16"
+	texturefile = "gfx\interface\goals\CHI\kmt16.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_6"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_6.png"
+	name = "GFX_kmt17"
+	texturefile = "gfx\interface\goals\CHI\kmt17.png"
 	}
 	spriteType = {
-	name = "GFX_ROCfocus_7"
-	texturefile = "gfx\interface\goals\CHI\ROCfocus_7.png"
+	name = "GFX_kmt18"
+	texturefile = "gfx\interface\goals\CHI\kmt18.png"
 	}
-	
-	
+	spriteType = {
+	name = "GFX_kmt19"
+	texturefile = "gfx\interface\goals\CHI\kmt19.png"
+	}
+    spriteType = {
+	name = "GFX_kmt20"
+	texturefile = "gfx\interface\goals\CHI\kmt20.png"
+	}
+	spriteType = {
+	name = "GFX_kmt21"
+	texturefile = "gfx\interface\goals\CHI\kmt21.png"
+	}
+	spriteType = {
+	name = "GFX_kmt22"
+	texturefile = "gfx\interface\goals\CHI\kmt22.png"
+		}
+	spriteType = {
+	name = "GFX_kmt23"
+	texturefile = "gfx\interface\goals\CHI\kmt23.png"
+	}
+	spriteType = {
+	name = "GFX_kmt24"
+	texturefile = "gfx\interface\goals\CHI\kmt24.png"
+		}
+	spriteType = {
+	name = "GFX_kmt25"
+	texturefile = "gfx\interface\goals\CHI\kmt25.png"
+	}
+	spriteType = {
+	name = "GFX_kmt26"
+	texturefile = "gfx\interface\goals\CHI\kmt26.png"
+	}
+	spriteType = {
+	name = "GFX_kmt27"
+	texturefile = "gfx\interface\goals\CHI\kmt27.png"
+	}
+	spriteType = {
+	name = "GFX_kmt28"
+	texturefile = "gfx\interface\goals\CHI\kmt28.png"
+	}
+	spriteType = {
+	name = "GFX_kmt29"
+	texturefile = "gfx\interface\goals\CHI\kmt29.png"
+	}
+	spriteType = {
+	name = "GFX_kmt30"
+	texturefile = "gfx\interface\goals\CHI\kmt30.png"
+	}
+	spriteType = {
+	name = "GFX_kmt31"
+	texturefile = "gfx\interface\goals\CHI\kmt31.png"
+	}
+    spriteType = {
+	name = "GFX_kmt32"
+	texturefile = "gfx\interface\goals\CHI\kmt32.png"
+	}
+	spriteType = {
+	name = "GFX_kmt33"
+	texturefile = "gfx\interface\goals\CHI\kmt33.png"
+	}
+	spriteType = {
+	name = "GFX_kmt34"
+	texturefile = "gfx\interface\goals\CHI\kmt34.png"
+		}
+	spriteType = {
+	name = "GFX_kmt35"
+	texturefile = "gfx\interface\goals\CHI\kmt35.png"
+	}
+	spriteType = {
+	name = "GFX_kmt36"
+	texturefile = "gfx\interface\goals\CHI\kmt36.png"
+		}
+    spriteType = {
+	name = "GFX_kmt37"
+	texturefile = "gfx\interface\goals\CHI\kmt37.png"
+		}
+	spriteType = {
+	name = "GFX_kmt38"
+	texturefile = "gfx\interface\goals\CHI\kmt38.png"
+		}
+	spriteType = {
+	name = "GFX_kmt39"
+	texturefile = "gfx\interface\goals\CHI\kmt39.png"
+		}
+	spriteType = {
+	name = "GFX_kmt40"
+	texturefile = "gfx\interface\goals\CHI\kmt40.png"
+		}
 	}
 	

@@ -1179,7 +1179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 扩大抗日宣传
-		icon = GFX_goal_unknown
+		icon = GFX_kmt16
 		cost = 5.00
 		prerequisite = {
 			focus = 与共产党和解
@@ -1212,7 +1212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 发扬胡汉民思想
-		icon = GFX_goal_unknown
+		icon = GFX_kmt10
 		cost = 5.00
 		prerequisite = {
 			focus = 加强党的领导
@@ -1223,7 +1223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 军队党代表制度
-		icon = GFX_goal_unknown
+		icon = GFX_kmt11
 		cost = 5.00
 		prerequisite = {
 			focus = 加强党的领导
@@ -1245,7 +1245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 加强党的领导
-		icon = GFX_goal_unknown
+		icon = GFX_kmt09
 		cost = 5.00
 		prerequisite = {
 			focus = 推广党化教育
@@ -1256,7 +1256,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 扩建地方党委
-		icon = GFX_goal_unknown
+		icon = GFX_kmt12
 		cost = 5.00
 		prerequisite = {
 			focus = 加强党的领导
@@ -1267,7 +1267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 建立党治国家
-		icon = GFX_goal_unknown
+		icon = GFX_kmt13
 		cost = 5.00
 		prerequisite = {
 			focus = 扩建地方党委
@@ -1284,7 +1284,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 革命元老雏鲁
-		icon = GFX_goal_unknown
+		icon = GFX_kmt14
 		cost = 5.00
 		prerequisite = {
 			focus = 建立党治国家
@@ -1298,7 +1298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 开展土地改良
-		icon = GFX_goal_unknown
+		icon = GFX_kmt15
 		cost = 5.00
 		prerequisite = {
 			focus = 革命元老雏鲁
@@ -1309,7 +1309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 党权至上
-		icon = GFX_goal_unknown
+		icon = GFX_kmt17
 		cost = 5.00
 		prerequisite = {
 			focus = 革命元老雏鲁
@@ -1320,7 +1320,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 支持抗日救亡
-		icon = GFX_goal_unknown
+		icon = GFX_kmt16
 		cost = 5.00
 		prerequisite = {
 			focus = 革命元老雏鲁
@@ -1331,7 +1331,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 新训政
-		icon = GFX_goal_unknown
+		icon = GFX_kmt18
 		cost = 5.00
 		prerequisite = {
 			focus = 党权至上
