@@ -20,6 +20,8 @@ focus_tree = {
 		id = 拉拢中立派军官
 		icon = GFX_goal_unknown
 		cost = 5.00
+		prerequisite = {
+			focus = 党国军队之必要
 		x = 46
 		y = 7
 
@@ -1348,7 +1350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 推广穗政
-		icon = GFX_goal_unknown
+		icon = GFX_kmt20
 		cost = 5.00
 		prerequisite = {
 			focus = 以党治国
@@ -1359,7 +1361,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 官产投变
-		icon = GFX_goal_unknown
+		icon = GFX_kmt21
 		cost = 5.00
 		prerequisite = {
 			focus = 推广穗政
@@ -1370,7 +1372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 推动教育改革
-		icon = GFX_goal_unknown
+		icon = GFX_kmt22
 		cost = 5.00
 		prerequisite = {
 			focus = 官产投变
@@ -1381,7 +1383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 基础设施兴建计划
-		icon = GFX_goal_unknown
+		icon = GFX_kmt23
 		cost = 5.00
 		prerequisite = {
 			focus = 官产投变
@@ -1392,7 +1394,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 市政体系创新
-		icon = GFX_goal_unknown
+		icon = GFX_kmt24
 		cost = 5.00
 		prerequisite = {
 			focus = 官产投变
@@ -1403,7 +1405,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 国民政府为国民
-		icon = GFX_goal_unknown
+		icon = GFX_kmt25
 		cost = 5.00
 		prerequisite = {
 			focus = 基础设施兴建计划
@@ -1420,7 +1422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 国民正统孙科
-		icon = GFX_goal_unknown
+		icon = GFX_kmt33
 		cost = 5.00
 		prerequisite = {
 			focus = 国民政府为国民
@@ -1434,7 +1436,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 注重城市建设
-		icon = GFX_goal_unknown
+		icon = GFX_kmt26
 		cost = 5.00
 		prerequisite = {
 			focus = 国民正统孙科
@@ -1445,7 +1447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 与蒋氏集团和解
-		icon = GFX_goal_unknown
+		icon = GFX_kmt30
 		cost = 5.00
 		prerequisite = {
 			focus = 国民正统孙科
@@ -1456,7 +1458,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 扩大国外投资
-		icon = GFX_goal_unknown
+		icon = GFX_kmt31
 		cost = 5.00
 		prerequisite = {
 			focus = 国民正统孙科
@@ -1467,7 +1469,7 @@ focus_tree = {
 	}
 	focus = {
 		id = 走向宪政
-		icon = GFX_goal_unknown
+		icon = GFX_kmt32
 		cost = 5.00
 		prerequisite = {
 			focus = 与蒋氏集团和解
@@ -1714,7 +1716,7 @@ focus_tree = {
 		prerequisite = {
 			focus = 军队现代化改革
 		}
-		x = -1
+		x = 0
 		y = 2
 
 	}
@@ -1790,4 +1792,5 @@ focus_tree = {
 		y = 4
 
 	}
+}
 }

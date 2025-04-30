@@ -1,0 +1,6 @@
+spriteTypes = {
+spriteType = {
+name = "GFX_kmt01"
+texturefile = "gfx\interface\goals\CHI\CHI/kmt01.png"
+}
+}
