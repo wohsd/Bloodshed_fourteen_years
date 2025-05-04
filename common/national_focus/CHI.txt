@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = 国民革命的胜利
+		id = Victory_of_the_National_Revolution
 		icon = GFX_kmt01
 		cost = 2.00
 		x = 75
@@ -17,1781 +17,1780 @@ focus_tree = {
 
 	}
 	focus = {
-		id = 拉拢中立派军官
+		id = Win_Over_Neutral_Officers
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 党国军队之必要
+			focus = Necessity_of_National_Army
 		}
 		x = 46
 		y = 7
 
 	}
 	focus = {
-		id = 军队现代化改革
+		id = Modernize_Military_Reform
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民革命的胜利
+			focus = Victory_of_the_National_Revolution
 		}
 		x = 5
 		y = 1
 
 	}
 	focus = {
-		id = 整编国民革命军
+		id = Reorganize_National_Revolutionary_Army
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 军队现代化改革
+			focus = Modernize_Military_Reform
 		}
 		x = 5
 		y = 2
 
 	}
 	focus = {
-		id = 德国军事顾问
+		id = German_Military_Advisors
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 整编国民革命军
+			focus = Reorganize_National_Revolutionary_Army
 		}
 		x = 3
 		y = 3
 
 	}
 	focus = {
-		id = 德式调整师
+		id = German-style_Adjusted_Division
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 德国军事顾问
+			focus = German_Military_Advisors
 		}
 		x = 2
 		y = 4
 
 	}
 	focus = {
-		id = 中国兴登堡防线
+		id = Chinese_Hindenburg_Line
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 德国军事顾问
+			focus = German_Military_Advisors
 		}
 		x = 4
 		y = 4
 
 	}
 	focus = {
-		id = 设立兵工总署
+		id = Establish_Munitions_Department
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 整编国民革命军
+			focus = Reorganize_National_Revolutionary_Army
 		}
 		x = 7
 		y = 3
 
 	}
 	focus = {
-		id = 开设军事研究所
+		id = Open_Military_Research_Institute
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 设立兵工总署
+			focus = Establish_Munitions_Department
 		}
 		x = 6
 		y = 4
 
 	}
 	focus = {
-		id = 开设中央军校
+		id = Establish_Central_Military_Academy
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 设立兵工总署
+			focus = Establish_Munitions_Department
 		}
 		x = 8
 		y = 4
 
 	}
 	focus = {
-		id = 成立海军部
+		id = Establish_Navy_Department
 		icon = GFX_goal_generic_alliance
 		cost = 5.00
 		prerequisite = {
-			focus = 军队现代化改革
+			focus = Modernize_Military_Reform
 		}
 		x = 10
 		y = 2
 
 	}
 	focus = {
-		id = 订购船只
+		id = Order_Warships
 		icon = GFX_goal_generic_amphibious_assault
 		cost = 5.00
 		prerequisite = {
-			focus = 成立海军部
+			focus = Establish_Navy_Department
 		}
 		x = 10
 		y = 3
 
 	}
 	focus = {
-		id = 60万吨计划
+		id = 600000_Tonnage_Plan
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		prerequisite = {
-			focus = 订购船只
+			focus = Order_Warships
 		}
 		x = 10
 		y = 4
 
 	}
 	focus = {
-		id = 民主战胜独裁
+		id = Democracy_Over_Autocracy
 		icon = GFX_kmt02
 		cost = 5.00
 		prerequisite = {
-			focus = 国民革命的胜利
+			focus = Victory_of_the_National_Revolution
 		}
 		mutually_exclusive = {
-			focus = 蒋介石稳居高位
+			focus = Chiang_Kai-shek_Consolidates_Power
 		}
 		x = 27
 		y = 1
 
 	}
 	focus = {
-		id = 廖仲恺问题
+		id = Liao_Zhongkai_Issue
 		icon = GFX_kmt05
 		cost = 2.00
 		prerequisite = {
-			focus = 民主战胜独裁
+			focus = Democracy_Over_Autocracy
 		}
 		x = 27
 		y = 2
 
 	}
 	focus = {
-		id = 胡汉民主导
+		id = Hu_Hanmin_Leadership
 		icon = GFX_kmt04
 		cost = 2.00
 		prerequisite = {
-			focus = 廖仲恺问题
+			focus = Liao_Zhongkai_Issue
 		}
 		mutually_exclusive = {
-			focus = 汪精卫主导
+			focus = Wang_Jingwei_Leadership
 		}
 		x = 20
 		y = 3
 
 	}
 	focus = {
-		id = 不稳定的政局
+		id = Unstable_Political_Situation
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 廖仲恺问题
+			focus = Liao_Zhongkai_Issue
 		}
 		x = 38
 		y = 4
 
 	}
 	focus = {
-		id = 稳定政局
+		id = Stabilize_Political_Situation
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 不稳定的政局
+			focus = Unstable_Political_Situation
 		}
 		x = 34
 		y = 5
 
 	}
 	focus = {
-		id = 确保党内稳定
+		id = Ensure_Party_Stability
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 稳定政局
+			focus = Stabilize_Political_Situation
 		}
 		x = 32
 		y = 6
 
 	}
 	focus = {
-		id = 开设“76”号委员会
+		id = Establish_Committee_76
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 确保党内稳定
+			focus = Ensure_Party_Stability
 		}
 		x = 29
 		y = 7
 
 	}
 	focus = {
-		id = 扩大反蒋同盟
+		id = Expand_Anti-Chiang_Coalition
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 确保党内稳定
+			focus = Ensure_Party_Stability
 		}
 		x = 31
 		y = 7
 
 	}
 	focus = {
-		id = 拉拢基层官员
+		id = Win_Over_Grassroots_Officials
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 确保党内稳定
+			focus = Ensure_Party_Stability
 		}
 		x = 33
 		y = 7
 
 	}
 	focus = {
-		id = 获取民众支持
+		id = Gain_Public_Support
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 稳定政局
+			focus = Stabilize_Political_Situation
 		}
 		x = 36
 		y = 6
 
 	}
 	focus = {
-		id = 加强媒体审查
+		id = Strengthen_Media_Censorship
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 获取民众支持
+			focus = Gain_Public_Support
 		}
 		x = 35
 		y = 7
 
 	}
 	focus = {
-		id = 扩大反蒋宣传
+		id = Expand_Anti-Chiang_Propaganda
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 获取民众支持
+			focus = Gain_Public_Support
 		}
 		x = 37
 		y = 7
 
 	}
 	focus = {
-		id = 四大家族的结局
+		id = Fate_of_the_Four_Families
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 不稳定的政局
+			focus = Unstable_Political_Situation
 		}
 		x = 38
 		y = 5
 
 	}
 	focus = {
-		id = 稳定军心
+		id = Stabilize_Military_Morale
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 不稳定的政局
+			focus = Unstable_Political_Situation
 		}
 		x = 43
 		y = 5
 
 	}
 	focus = {
-		id = 地方军阀之需求
+		id = Warlords_Demands
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = 稳定军心
+			focus = Stabilize_Military_Morale
 		}
 		x = 41
 		y = 6
 
 	}
 	focus = {
-		id = 加强与粤桂的合作
+		id = Strengthen_Cooperation_with_Yue-Gui
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 地方军阀之需求
+			focus = Warlords_Demands
 		}
 		x = 40
 		y = 7
 
 	}
 	focus = {
-		id = 安抚地方军阀
+		id = Pacify_Local_Warlords
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 地方军阀之需求
+			focus = Warlords_Demands
 		}
 		x = 42
 		y = 7
 
 	}
 	focus = {
-		id = 党国军队之必要
+		id = Necessity_of_National_Army
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = 稳定军心
+			focus = Stabilize_Military_Morale
 		}
 		x = 46
 		y = 6
 
 	}
 	focus = {
-		id = 打压蒋氏集团
+		id = Suppress_Chiang_Faction
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 党国军队之必要
+			focus = Necessity_of_National_Army
 		}
 		x = 44
 		y = 7
 
 	}
 	focus = {
-		id = 培养忠诚军官
+		id = Cultivate_Loyal_Officers
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 党国军队之必要
+			focus = Necessity_of_National_Army
 		}
 		x = 48
 		y = 7
 
 	}
 	focus = {
-		id = 汪精卫主导
+		id = Wang_Jingwei_Leadership
 		icon = GFX_kmt07
 		cost = 2.00
 		prerequisite = {
-			focus = 廖仲恺问题
+			focus = Liao_Zhongkai_Issue
 		}
 		mutually_exclusive = {
-			focus = 胡汉民主导
+			focus = Hu_Hanmin_Leadership
 		}
 		x = 62
 		y = 3
 
 	}
 	focus = {
-		id = 重新制定纲领
+		id = Redraft_Party_Program
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = 汪精卫主导
+			focus = Wang_Jingwei_Leadership
 		}
 		prerequisite = {
-			focus = 汪精卫主导
+			focus = Wang_Jingwei_Leadership
 		}
 		x = 62
 		y = 4
 
 	}
 	focus = {
-		id = “特别议会”领袖胡汉民
+		id = Special_Parliament_Leader_Hu_Hanmin
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 重新制定纲领
+			focus = Redraft_Party_Program
 		}
 		prerequisite = {
-			focus = 不稳定的政局
+			focus = Unstable_Political_Situation
 		}
 		prerequisite = {
-			focus = 重新制定纲领
+			focus = Redraft_Party_Program
 		}
 		x = 52
 		y = 5
 
 	}
 	focus = {
-		id = 枪杆子的支持
+		id = Support_from_the_Gun
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = “特别议会”领袖胡汉民
+			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
 		x = 50
 		y = 6
 
 	}
 	focus = {
-		id = 笔杆子的锋芒
+		id = Power_of_the_Pen
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = “特别议会”领袖胡汉民
+			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
 		x = 54
 		y = 6
 
 	}
 	focus = {
-		id = 土地平权
+		id = Land_Equalization
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 重新制定纲领
+			focus = Redraft_Party_Program
 		}
 		x = 58
 		y = 5
 
 	}
 	focus = {
-		id = 征收地价税
+		id = Impose_Land_Value_Tax
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 土地平权
+			focus = Land_Equalization
 		}
 		x = 56
 		y = 6
 
 	}
 	focus = {
-		id = 改组国民党
+		id = Reorganize_Kuomintang
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 重新制定纲领
+			focus = Redraft_Party_Program
 		}
 		x = 62
 		y = 5
 
 	}
 	focus = {
-		id = 打击“腐化”势力
+		id = Crackdown_on_Corruption
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 改组国民党
+			focus = Reorganize_Kuomintang
 		}
 		x = 60
 		y = 6
 
 	}
 	focus = {
-		id = 提高党的权威
+		id = Strengthen_Party_Authority
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 改组国民党
+			focus = Reorganize_Kuomintang
 		}
 		x = 62
 		y = 6
 
 	}
 	focus = {
-		id = 恢复工农政策
+		id = Restore_Worker-Peasant_Policies
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 改组国民党
+			focus = Reorganize_Kuomintang
 		}
 		x = 64
 		y = 6
 
 	}
 	focus = {
-		id = 中国国民党的新生
+		id = Rebirth_of_Kuomintang
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 提高党的权威
+			focus = Strengthen_Party_Authority
 		}
 		prerequisite = {
-			focus = 恢复工农政策
+			focus = Restore_Worker-Peasant_Policies
 		}
 		prerequisite = {
-			focus = 打击“腐化”势力
+			focus = Crackdown_on_Corruption
 		}
 		x = 62
 		y = 7
 
 	}
 	focus = {
-		id = 节制资本
+		id = Regulate_Capital
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 重新制定纲领
+			focus = Redraft_Party_Program
 		}
 		x = 66
 		y = 5
 
 	}
 	focus = {
-		id = 发展国家资本
+		id = Develop_National_Capital
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 节制资本
+			focus = Regulate_Capital
 		}
 		x = 66
 		y = 6
 
 	}
 	focus = {
-		id = 节制私人资本
+		id = Restrict_Private_Capital
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 节制资本
+			focus = Regulate_Capital
 		}
 		x = 68
 		y = 6
 
 	}
 	focus = {
-		id = 振兴实业，开发富源
+		id = Revitalize_Industry_Develop_Resources
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 发展国家资本
+			focus = Develop_National_Capital
 		}
 		prerequisite = {
-			focus = 节制私人资本
+			focus = Restrict_Private_Capital
 		}
 		x = 66
 		y = 7
 
 	}
 	focus = {
-		id = 蒋介石稳居高位
+		id = Chiang_Kai-shek_Consolidates_Power
 		icon = GFX_kmt03
 		cost = 5.00
 		prerequisite = {
-			focus = 国民革命的胜利
+			focus = Victory_of_the_National_Revolution
 		}
 		mutually_exclusive = {
-			focus = 民主战胜独裁
+			focus = Democracy_Over_Autocracy
 		}
 		x = 81
 		y = 1
 
 	}
 	focus = {
-		id = 四大家族的利益
+		id = Interests_of_Four_Families
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = 蒋介石稳居高位
+			focus = Chiang_Kai-shek_Consolidates_Power
 		}
 		x = 81
 		y = 2
 
 	}
 	focus = {
-		id = 宋氏姐妹孔家财
+		id = Soong_Sisters_Kong_Family_Wealth
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = 四大家族的利益
+			focus = Interests_of_Four_Families
 		}
 		x = 75
 		y = 3
 
 	}
 	focus = {
-		id = 控制国家经济
+		id = Control_National_Economy
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 宋氏姐妹孔家财
+			focus = Soong_Sisters_Kong_Family_Wealth
 		}
 		x = 72
 		y = 4
 
 	}
 	focus = {
-		id = 建立资源委员会
+		id = Establish_Resources_Committee
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 控制国家经济
+			focus = Control_National_Economy
 		}
 		x = 70
 		y = 5
 
 	}
 	focus = {
-		id = 建立贸易委员会
+		id = Establish_Trade_Committee
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 控制国家经济
+			focus = Control_National_Economy
 		}
 		x = 74
 		y = 5
 
 	}
 	focus = {
-		id = 经济改革
+		id = Economic_Reforms
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 宋氏姐妹孔家财
+			focus = Soong_Sisters_Kong_Family_Wealth
 		}
 		x = 78
 		y = 4
 
 	}
 	focus = {
-		id = 推行币制改革
+		id = Implement_Currency_Reform
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 经济改革
+			focus = Economic_Reforms
 		}
 		x = 76
 		y = 5
 
 	}
 	focus = {
-		id = 下放高利贷款
+		id = Issue_High-Interest_Loans
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 经济改革
+			focus = Economic_Reforms
 		}
 		x = 80
 		y = 5
 
 	}
 	focus = {
-		id = 蒋家天下陈家党
+		id = Chiangs_Rule_Chens_Party
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = 四大家族的利益
+			focus = Interests_of_Four_Families
 		}
 		x = 87
 		y = 3
 
 	}
 	focus = {
-		id = 中华复兴社
+		id = China_Revival_Society
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 蒋家天下陈家党
+			focus = Chiangs_Rule_Chens_Party
 		}
 		x = 84
 		y = 4
 
 	}
 	focus = {
-		id = 镇压抗日活动
+		id = Suppress_Anti-Japanese_Activities
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 中华复兴社
+			focus = China_Revival_Society
 		}
 		x = 82
 		y = 5
 
 	}
 	focus = {
-		id = 开设军统局
+		id = Establish_Military_Statistics_Bureau
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 中华复兴社
+			focus = China_Revival_Society
 		}
 		x = 84
 		y = 5
 
 	}
 	focus = {
-		id = 控制媒体信息
+		id = Control_Media_Information
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 中华复兴社
+			focus = China_Revival_Society
 		}
 		x = 86
 		y = 5
 
 	}
 	focus = {
-		id = 中央俱乐部
+		id = Central_Club
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 蒋家天下陈家党
+			focus = Chiangs_Rule_Chens_Party
 		}
 		x = 90
 		y = 4
 
 	}
 	focus = {
-		id = 新生活运动
+		id = New_Life_Movement
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 中央俱乐部
+			focus = Central_Club
 		}
 		x = 88
 		y = 5
 
 	}
 	focus = {
-		id = 开设中统局
+		id = Establish_Central_Statistics_Bureau
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 中央俱乐部
+			focus = Central_Club
 		}
 		x = 90
 		y = 5
 
 	}
 	focus = {
-		id = 中国本位文化建设运动
+		id = Chinese_Cultural_Construction_Movement
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 中央俱乐部
+			focus = Central_Club
 		}
 		x = 92
 		y = 5
 
 	}
 	focus = {
-		id = 宣布训政
+		id = Announce_Political_Tutelage
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民革命的胜利
+			focus = Victory_of_the_National_Revolution
 		}
 		x = 103
 		y = 1
 
 	}
 	focus = {
-		id = 国民之教育
+		id = National_Education
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 宣布训政
+			focus = Announce_Political_Tutelage
 		}
 		x = 96
 		y = 2
 
 	}
 	focus = {
-		id = 完善教育体系
+		id = Improve_Education_System
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民之教育
-			focus = 国民之教育
+			focus = National_Education
+			focus = National_Education
 		}
 		prerequisite = {
-			focus = 国民之教育
+			focus = National_Education
 		}
 		x = 94
 		y = 3
 
 	}
 	focus = {
-		id = 推广建议师范学堂
+		id = Promote_Teacher_Colleges
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民之教育
-			focus = 国民之教育
+			focus = National_Education
+			focus = National_Education
 		}
 		prerequisite = {
-			focus = 国民之教育
+			focus = National_Education
 		}
 		x = 96
 		y = 3
 
 	}
 	focus = {
-		id = 建设中央研究院
+		id = Build_Central_Research_Academy
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民之教育
-			focus = 国民之教育
+			focus = National_Education
+			focus = National_Education
 		}
 		prerequisite = {
-			focus = 国民之教育
+			focus = National_Education
 		}
 		x = 98
 		y = 3
 
 	}
 	focus = {
-		id = 提高边境教师待遇
+		id = Improve_Border_Teacher_Welfare
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 推广建议师范学堂
-			focus = 推广建议师范学堂
-			focus = 建设中央研究院
-			focus = 完善教育体系
+			focus = Promote_Teacher_Colleges
+			focus = Promote_Teacher_Colleges
+			focus = Build_Central_Research_Academy
+			focus = Improve_Education_System
 		}
 		x = 96
 		y = 4
 
 	}
 	focus = {
-		id = 施行义务教育
+		id = Implement_Compulsory_Education
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 完善教育体系
-			focus = 推广建议师范学堂
-			focus = 完善教育体系
-			focus = 建设中央研究院
+			focus = Improve_Education_System
+			focus = Promote_Teacher_Colleges
+			focus = Improve_Education_System
+			focus = Build_Central_Research_Academy
 		}
 		x = 94
 		y = 4
 
 	}
 	focus = {
-		id = 改善高等教育体制
+		id = Reform_Higher_Education_System
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 建设中央研究院
-			focus = 推广建议师范学堂
-			focus = 完善教育体系
-			focus = 建设中央研究院
+			focus = Build_Central_Research_Academy
+			focus = Promote_Teacher_Colleges
+			focus = Improve_Education_System
+			focus = Build_Central_Research_Academy
 		}
 		x = 98
 		y = 4
 
 	}
 	focus = {
-		id = 国民素质之进步
+		id = Progress_of_National_Quality
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 施行义务教育
-			focus = 提高边境教师待遇
-			focus = 改善高等教育体制
+			focus = Implement_Compulsory_Education
+			focus = Improve_Border_Teacher_Welfare
+			focus = Reform_Higher_Education_System
 		}
 		x = 96
 		y = 5
 
 	}
 	focus = {
-		id = 政府之组织
+		id = Government_Organization
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 宣布训政
+			focus = Announce_Political_Tutelage
 		}
 		x = 102
 		y = 2
 
 	}
 	focus = {
-		id = 颁布训政纲领
+		id = Announce_Political_Tutelage_Program
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 政府之组织
+			focus = Government_Organization
 		}
 		x = 100
 		y = 3
 
 	}
 	focus = {
-		id = 国民政府组织法
+		id = National_Government_Organization_Law
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 颁布训政纲领
+			focus = Announce_Political_Tutelage_Program
 		}
 		x = 100
 		y = 4
 
 	}
 	focus = {
-		id = 推行五院制
+		id = Implement_Five-Power_System
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 政府之组织
+			focus = Government_Organization
 		}
 		x = 102
 		y = 3
 
 	}
 	focus = {
-		id = 订正主席权利
+		id = Define_Chairman_Authority
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 推行五院制
+			focus = Implement_Five-Power_System
 		}
 		x = 102
 		y = 4
 
 	}
 	focus = {
-		id = 地方均权制度
+		id = Local_Equal_Authority_System
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 政府之组织
+			focus = Government_Organization
 		}
 		x = 104
 		y = 3
 
 	}
 	focus = {
-		id = 草拟地方法律
+		id = Draft_Local_Laws
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 地方均权制度
+			focus = Local_Equal_Authority_System
 		}
 		x = 104
 		y = 4
 
 	}
 	focus = {
-		id = 总揽中华民国之治权
+		id = Consolidate_Republics_Governance
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 订正主席权利
+			focus = Define_Chairman_Authority
 		}
 		prerequisite = {
-			focus = 草拟地方法律
+			focus = Draft_Local_Laws
 		}
 		prerequisite = {
-			focus = 国民政府组织法
+			focus = National_Government_Organization_Law
 		}
 		x = 102
 		y = 5
 
 	}
 	focus = {
-		id = 国民生计
+		id = National_Livelihood
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 宣布训政
+			focus = Announce_Political_Tutelage
 		}
 		x = 108
 		y = 2
 
 	}
 	focus = {
-		id = 大规模交通建设
+		id = Large-scale_Transport_Construction
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民生计
+			focus = National_Livelihood
 		}
 		x = 106
 		y = 3
 
 	}
 	focus = {
-		id = 统税改革
+		id = Unified_Tax_Reform
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民生计
+			focus = National_Livelihood
 		}
 		x = 108
 		y = 3
 
 	}
 	focus = {
-		id = 农业发展计划
+		id = Agricultural_Development_Plan
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民生计
+			focus = National_Livelihood
 		}
 		x = 110
 		y = 3
 
 	}
 	focus = {
-		id = 重工五年计划
+		id = Five-Year_Heavy_Industry_Plan
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 统税改革
-			focus = 农业发展计划
-			focus = 大规模交通建设
+			focus = Unified_Tax_Reform
+			focus = Agricultural_Development_Plan
+			focus = Large-scale_Transport_Construction
 		}
 		x = 106
 		y = 4
 
 	}
 	focus = {
-		id = 恢复关税自主权
+		id = Restore_Tariff_Autonomy
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 统税改革
-			focus = 大规模交通建设
-			focus = 农业发展计划
+			focus = Unified_Tax_Reform
+			focus = Large-scale_Transport_Construction
+			focus = Agricultural_Development_Plan
 		}
 		x = 108
 		y = 4
 
 	}
 	focus = {
-		id = 新技术推广
+		id = Promote_New_Technologies
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 农业发展计划
-			focus = 农业发展计划
-			focus = 统税改革
-			focus = 大规模交通建设
+			focus = Agricultural_Development_Plan
+			focus = Agricultural_Development_Plan
+			focus = Unified_Tax_Reform
+			focus = Large-scale_Transport_Construction
 		}
 		x = 110
 		y = 4
 
 	}
 	focus = {
-		id = 国民经济之发展
+		id = Development_of_National_Economy
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 恢复关税自主权
-			focus = 恢复关税自主权
-			focus = 新技术推广
-			focus = 重工五年计划
+			focus = Restore_Tariff_Autonomy
+			focus = Restore_Tariff_Autonomy
+			focus = Promote_New_Technologies
+			focus = Five-Year_Heavy_Industry_Plan
 		}
 		x = 108
 		y = 5
 
 	}
 	focus = {
-		id = 国难当头
+		id = National_Crisis
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国民革命的胜利
+			focus = Victory_of_the_National_Revolution
 		}
 		x = 115
 		y = 1
 
 	}
 	focus = {
-		id = 攘外必先安内
+		id = Internal_Pacification_Before_Resistance
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国难当头
+			focus = National_Crisis
 		}
 		mutually_exclusive = {
-			focus = 救国必先抗日
+			focus = Resistance_First_to_Save_Nation
 		}
 		x = 113
 		y = 2
 
 	}
 	focus = {
-		id = 号令军阀围击
+		id = Order_Warlords_to_Attack
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 攘外必先安内
+			focus = Internal_Pacification_Before_Resistance
 		}
 		x = 112
 		y = 3
 
 	}
 	focus = {
-		id = 组织缴费军
+		id = Organize_Expeditionary_Force
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 攘外必先安内
+			focus = Internal_Pacification_Before_Resistance
 		}
 		x = 114
 		y = 3
 
 	}
 	focus = {
-		id = 德国阵地战术
+		id = German_Positional_Tactics
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 组织缴费军
+			focus = Organize_Expeditionary_Force
 		}
 		x = 114
 		y = 4
 
 	}
 	focus = {
-		id = 空对地支援
+		id = Air-to-Ground_Support
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 德国阵地战术
+			focus = German_Positional_Tactics
 		}
 		x = 114
 		y = 5
 
 	}
 	focus = {
-		id = 救国必先抗日
+		id = Resistance_First_to_Save_Nation
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 国难当头
+			focus = National_Crisis
 		}
 		mutually_exclusive = {
-			focus = 攘外必先安内
+			focus = Internal_Pacification_Before_Resistance
 		}
 		x = 117
 		y = 2
 
 	}
 	focus = {
-		id = 与共产党和解
+		id = Reconcile_with_Communists
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 救国必先抗日
+			focus = Resistance_First_to_Save_Nation
 		}
 		x = 116
 		y = 3
 
 	}
 	focus = {
-		id = 扩大抗日宣传
+		id = Expand_Anti-Japanese_Propaganda
 		icon = GFX_kmt16
 		cost = 5.00
 		prerequisite = {
-			focus = 与共产党和解
+			focus = Reconcile_with_Communists
 		}
 		x = 116
 		y = 4
 
 	}
 	focus = {
-		id = 建立统一阵线
+		id = Establish_United_Front
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 扩大抗日宣传
+			focus = Expand_Anti-Japanese_Propaganda
 		}
 		x = 116
 		y = 5
 
 	}
 	focus = {
-		id = 以党治国
+		id = Party-Ruled_State
 		icon = GFX_kmt08
 		cost = 2.00
 		prerequisite = {
-			focus = 胡汉民主导
+			focus = Hu_Hanmin_Leadership
 		}
 		x = 20
 		y = 4
 
 	}
 	focus = {
-		id = 发扬胡汉民思想
+		id = Promote_Hu_Hanmin_Ideology
 		icon = GFX_kmt10
 		cost = 5.00
 		prerequisite = {
-			focus = 加强党的领导
+			focus = Strengthen_Party_Leadership
 		}
 		x = 11
 		y = 7
 
 	}
 	focus = {
-		id = 军队党代表制度
+		id = Party_Representative_System_in_Army
 		icon = GFX_kmt11
 		cost = 5.00
 		prerequisite = {
-			focus = 加强党的领导
+			focus = Strengthen_Party_Leadership
 		}
 		x = 15
 		y = 7
 
 	}
 	focus = {
-		id = 推广党化教育
+		id = Promote_Party-based_Education
 		icon = GFX_kmt06
 		cost = 5.00
 		prerequisite = {
-			focus = 以党治国
+			focus = Party-Ruled_State
 		}
 		x = 13
 		y = 5
 
 	}
 	focus = {
-		id = 加强党的领导
+		id = Strengthen_Party_Leadership
 		icon = GFX_kmt09
 		cost = 5.00
 		prerequisite = {
-			focus = 推广党化教育
+			focus = Promote_Party-based_Education
 		}
 		x = 13
 		y = 6
 
 	}
 	focus = {
-		id = 扩建地方党委
+		id = Expand_Local_Party_Committees
 		icon = GFX_kmt12
 		cost = 5.00
 		prerequisite = {
-			focus = 加强党的领导
+			focus = Strengthen_Party_Leadership
 		}
 		x = 13
 		y = 7
 
 	}
 	focus = {
-		id = 建立党治国家
+		id = Establish_Party-Ruled_Nation
 		icon = GFX_kmt13
 		cost = 5.00
 		prerequisite = {
-			focus = 扩建地方党委
+			focus = Expand_Local_Party_Committees
 		}
 		prerequisite = {
-			focus = 军队党代表制度
+			focus = Party_Representative_System_in_Army
 		}
 		prerequisite = {
-			focus = 发扬胡汉民思想
+			focus = Promote_Hu_Hanmin_Ideology
 		}
 		x = 13
 		y = 8
 
 	}
 	focus = {
-		id = 革命元老雏鲁
+		id = Revolutionary_Elder_Chu_Lu
 		icon = GFX_kmt14
 		cost = 5.00
 		prerequisite = {
-			focus = 建立党治国家
+			focus = Establish_Party-Ruled_Nation
 		}
 		mutually_exclusive = {
-			focus = 国民正统孙科
+			focus = National_Legitimacy_Sun_Ke
 		}
 		x = 13
 		y = 9
 
 	}
 	focus = {
-		id = 开展土地改良
+		id = Implement_Land_Reform
 		icon = GFX_kmt15
 		cost = 5.00
 		prerequisite = {
-			focus = 革命元老雏鲁
+			focus = Revolutionary_Elder_Chu_Lu
 		}
 		x = 11
 		y = 10
 
 	}
 	focus = {
-		id = 党权至上
+		id = Party_Supremacy
 		icon = GFX_kmt17
 		cost = 5.00
 		prerequisite = {
-			focus = 革命元老雏鲁
+			focus = Revolutionary_Elder_Chu_Lu
 		}
 		x = 13
 		y = 10
 
 	}
 	focus = {
-		id = 支持抗日救亡
+		id = Support_Anti-Japanese_Salvation
 		icon = GFX_kmt16
 		cost = 5.00
 		prerequisite = {
-			focus = 革命元老雏鲁
+			focus = Revolutionary_Elder_Chu_Lu
 		}
 		x = 15
 		y = 10
 
 	}
 	focus = {
-		id = 新训政
+		id = New_Political_Tutelage
 		icon = GFX_kmt18
 		cost = 5.00
 		prerequisite = {
-			focus = 党权至上
+			focus = Party_Supremacy
 		}
 		prerequisite = {
-			focus = 支持抗日救亡
+			focus = Support_Anti-Japanese_Salvation
 		}
 		prerequisite = {
-			focus = 开展土地改良
+			focus = Implement_Land_Reform
 		}
 		x = 13
 		y = 11
 
 	}
 	focus = {
-		id = 推广穗政
+		id = Promote_Canton_Governance
 		icon = GFX_kmt20
 		cost = 5.00
 		prerequisite = {
-			focus = 以党治国
+			focus = Party-Ruled_State
 		}
 		x = 19
 		y = 5
 
 	}
 	focus = {
-		id = 官产投变
+		id = Government_Asset_Management
 		icon = GFX_kmt21
 		cost = 5.00
 		prerequisite = {
-			focus = 推广穗政
+			focus = Promote_Canton_Governance
 		}
 		x = 19
 		y = 6
 
 	}
 	focus = {
-		id = 推动教育改革
+		id = Promote_Educational_Reform
 		icon = GFX_kmt22
 		cost = 5.00
 		prerequisite = {
-			focus = 官产投变
+			focus = Government_Asset_Management
 		}
 		x = 17
 		y = 7
 
 	}
 	focus = {
-		id = 基础设施兴建计划
+		id = Infrastructure_Construction_Plan
 		icon = GFX_kmt23
 		cost = 5.00
 		prerequisite = {
-			focus = 官产投变
+			focus = Government_Asset_Management
 		}
 		x = 19
 		y = 7
 
 	}
 	focus = {
-		id = 市政体系创新
+		id = Innovate_Municipal_System
 		icon = GFX_kmt24
 		cost = 5.00
 		prerequisite = {
-			focus = 官产投变
+			focus = Government_Asset_Management
 		}
 		x = 21
 		y = 7
 
 	}
 	focus = {
-		id = 国民政府为国民
+		id = National_Government_for_the_People
 		icon = GFX_kmt25
 		cost = 5.00
 		prerequisite = {
-			focus = 基础设施兴建计划
+			focus = Infrastructure_Construction_Plan
 		}
 		prerequisite = {
-			focus = 市政体系创新
+			focus = Innovate_Municipal_System
 		}
 		prerequisite = {
-			focus = 推动教育改革
+			focus = Promote_Educational_Reform
 		}
 		x = 19
 		y = 8
 
 	}
 	focus = {
-		id = 国民正统孙科
+		id = National_Legitimacy_Sun_Ke
 		icon = GFX_kmt33
 		cost = 5.00
 		prerequisite = {
-			focus = 国民政府为国民
+			focus = National_Government_for_the_People
 		}
 		mutually_exclusive = {
-			focus = 革命元老雏鲁
+			focus = Revolutionary_Elder_Chu_Lu
 		}
 		x = 19
 		y = 9
 
 	}
 	focus = {
-		id = 注重城市建设
+		id = Focus_on_Urban_Development
 		icon = GFX_kmt26
 		cost = 5.00
 		prerequisite = {
-			focus = 国民正统孙科
+			focus = National_Legitimacy_Sun_Ke
 		}
 		x = 17
 		y = 10
 
 	}
 	focus = {
-		id = 与蒋氏集团和解
+		id = Reconcile_with_Chiang_Faction
 		icon = GFX_kmt30
 		cost = 5.00
 		prerequisite = {
-			focus = 国民正统孙科
+			focus = National_Legitimacy_Sun_Ke
 		}
 		x = 19
 		y = 10
 
 	}
 	focus = {
-		id = 扩大国外投资
+		id = Expand_Foreign_Investment
 		icon = GFX_kmt31
 		cost = 5.00
 		prerequisite = {
-			focus = 国民正统孙科
+			focus = National_Legitimacy_Sun_Ke
 		}
 		x = 21
 		y = 10
 
 	}
 	focus = {
-		id = 走向宪政
+		id = Transition_to_Constitutional_Government
 		icon = GFX_kmt32
 		cost = 5.00
 		prerequisite = {
-			focus = 与蒋氏集团和解
+			focus = Reconcile_with_Chiang_Faction
 		}
 		prerequisite = {
-			focus = 注重城市建设
+			focus = Focus_on_Urban_Development
 		}
 		prerequisite = {
-			focus = 扩大国外投资
+			focus = Expand_Foreign_Investment
 		}
 		x = 19
 		y = 11
 
 	}
 	focus = {
-		id = 汪主席的欧洲考察
+		id = Chairman_Wangs_European_Tour
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 不稳定的政局
+			focus = Unstable_Political_Situation
 		}
 		prerequisite = {
-			focus = 以党治国
+			focus = Party-Ruled_State
 		}
 		prerequisite = {
-			focus = 以党治国
+			focus = Party-Ruled_State
 		}
 		x = 25
 		y = 5
 
 	}
 	focus = {
-		id = 寻求国联帮助
+		id = Seek_League_of_Nations_Help
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 汪主席的欧洲考察
+			focus = Chairman_Wangs_European_Tour
 		}
 		x = 25
 		y = 6
 
 	}
 	focus = {
-		id = 寻求华侨帮助
+		id = Seek_Overseas_Chinese_Support
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 寻求国联帮助
+			focus = Seek_League_of_Nations_Help
 		}
 		x = 25
 		y = 7
 
 	}
 	focus = {
-		id = 扩大美英在华利益
+		id = Expand_US-UK_Interests_in_China
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 寻求国联帮助
+			focus = Seek_League_of_Nations_Help
 		}
 		x = 27
 		y = 7
 
 	}
 	focus = {
-		id = 请求苏联援助
+		id = Request_Soviet_Aid
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 寻求国联帮助
+			focus = Seek_League_of_Nations_Help
 		}
 		x = 23
 		y = 7
 
 	}
 	focus = {
-		id = 拉拢温和派
+		id = Win_Over_Moderates
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 汪主席的欧洲考察
+			focus = Chairman_Wangs_European_Tour
 		}
 		x = 23
 		y = 6
 
 	}
 	focus = {
-		id = 挑拨改组会矛盾
+		id = Incite_Reorganization_Clique_Conflict
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 汪主席的欧洲考察
+			focus = Chairman_Wangs_European_Tour
 		}
 		x = 27
 		y = 6
 
 	}
 	focus = {
-		id = 和平解决中日冲突？
+		id = Peaceful_Resolution_to_Sino-Japanese_Conflict?
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 寻求华侨帮助
+			focus = Seek_Overseas_Chinese_Support
 		}
 		prerequisite = {
-			focus = 扩大美英在华利益
+			focus = Expand_US-UK_Interests_in_China
 		}
 		prerequisite = {
-			focus = 请求苏联援助
+			focus = Request_Soviet_Aid
 		}
 		x = 25
 		y = 8
 
 	}
 	focus = {
-		id = 与日本进行谈判
+		id = Negotiate_with_Japan
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = “特别议会”领袖胡汉民
+			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
 		x = 52
 		y = 6
 
 	}
 	focus = {
-		id = 承认伪满洲国
+		id = Recognize_Puppet_Manchukuo
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 与日本进行谈判
+			focus = Negotiate_with_Japan
 		}
 		x = 52
 		y = 7
 
 	}
 	focus = {
-		id = 镇压抗日情绪
+		id = Suppress_Anti-Japanese_Sentiment
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 与日本进行谈判
+			focus = Negotiate_with_Japan
 		}
 		x = 50
 		y = 7
 
 	}
 	focus = {
-		id = 接受日本投资
+		id = Accept_Japanese_Investment
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 与日本进行谈判
+			focus = Negotiate_with_Japan
 		}
 		x = 54
 		y = 7
 
 	}
 	focus = {
-		id = 和平解决中日冲突？
+		id = Peaceful_Resolution_to_Sino-Japanese_Conflict?
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 承认伪满洲国
+			focus = Recognize_Puppet_Manchukuo
 		}
 		prerequisite = {
-			focus = 接受日本投资
+			focus = Accept_Japanese_Investment
 		}
 		prerequisite = {
-			focus = 镇压抗日情绪
+			focus = Suppress_Anti-Japanese_Sentiment
 		}
 		x = 52
 		y = 8
 
 	}
 	focus = {
-		id = 土地增产归公
+		id = Land_Production_to_Public
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 土地平权
+			focus = Land_Equalization
 		}
 		x = 58
 		y = 6
 
 	}
 	focus = {
-		id = 耕者有其田
+		id = Land_to_the_Tiller
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 土地增产归公
+			focus = Land_Production_to_Public
 		}
 		prerequisite = {
-			focus = 征收地价税
+			focus = Impose_Land_Value_Tax
 		}
 		x = 58
 		y = 7
 
 	}
 	focus = {
-		id = 走向民生主义国家
+		id = Towards_Livelihood_Nation
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 中国国民党的新生
+			focus = Rebirth_of_Kuomintang
 		}
 		prerequisite = {
-			focus = 耕者有其田
+			focus = Land_to_the_Tiller
 		}
 		prerequisite = {
-			focus = 振兴实业，开发富源
+			focus = Revitalize_Industry_Develop_Resources
 		}
 		x = 62
 		y = 8
 
 	}
 	focus = {
-		id = 农产调整委员会
+		id = Agricultural_Adjustment_Committee
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 控制国家经济
+			focus = Control_National_Economy
 		}
 		x = 72
 		y = 5
 
 	}
 	focus = {
-		id = 开设四联总处
+		id = Establish_Four_United_Bureau
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 经济改革
+			focus = Economic_Reforms
 		}
 		x = 78
 		y = 5
 
 	}
 	focus = {
-		id = 创立中央航空学校
+		id = Establish_Central_Aviation_School
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 军队现代化改革
+			focus = Modernize_Military_Reform
 		}
 		x = 0
 		y = 2
 
 	}
 	focus = {
-		id = 航空救国运动
+		id = Aviation_Salvation_Movement
 		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
-			focus = 创立中央航空学校
+			focus = Establish_Central_Aviation_School
 		}
 		x = 0
 		y = 3
 
 	}
 	focus = {
-		id = 规范培训体系
+		id = Standardize_Training_System
 		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		prerequisite = {
-			focus = 航空救国运动
+			focus = Aviation_Salvation_Movement
 		}
 		x = 0
 		y = 4
 
 	}
 	focus = {
-		id = 召开全国代表大会
+		id = Convene_National_Congress
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 总揽中华民国之治权
+			focus = Consolidate_Republics_Governance
 		}
 		prerequisite = {
-			focus = 国民经济之发展
+			focus = Development_of_National_Economy
 		}
 		prerequisite = {
-			focus = 国民素质之进步
+			focus = Progress_of_National_Quality
 		}
 		x = 102
 		y = 6
 
 	}
 	focus = {
-		id = 扩大地方影响力
+		id = Expand_Local_Influence
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 号令军阀围击
+			focus = Order_Warlords_to_Attack
 		}
 		x = 112
 		y = 4
 
 	}
 	focus = {
-		id = 通电张学良
+		id = Contact_Zhang_Xueliang
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 救国必先抗日
+			focus = Resistance_First_to_Save_Nation
 		}
 		x = 118
 		y = 3
 
 	}
 	focus = {
-		id = 运输抗日物资
+		id = Transport_Anti-Japanese_Supplies
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = 通电张学良
+			focus = Contact_Zhang_Xueliang
 		}
 		x = 118
 		y = 4
 
 	}
-}
 }
