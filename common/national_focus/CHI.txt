@@ -1,3 +1,4 @@
+#!gfx:interface\BFY_goals.gfx
 focus_tree = {
 	id = FocusTree_0
 	country = {
