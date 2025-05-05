@@ -1,3 +1,4 @@
+#!gfx:interface\BFY_goals.gfx
 focus_tree = {
 	id = CHI
 	country = {
@@ -423,7 +424,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Redraft_Party_Program
-		icon = GFX_goal_unknown
+		icon = GFX_kmt35
 		cost = 2.00
 		prerequisite = {
 			focus = Wang_Jingwei_Leadership
@@ -476,7 +477,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Land_Equalization
-		icon = GFX_goal_unknown
+		icon = GFX_kmt34
 		cost = 5.00
 		prerequisite = {
 			focus = Redraft_Party_Program
@@ -487,7 +488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Impose_Land_Value_Tax
-		icon = GFX_goal_unknown
+		icon = GFX_kmt36
 		cost = 5.00
 		prerequisite = {
 			focus = Land_Equalization
@@ -498,7 +499,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Reorganize_Kuomintang
-		icon = GFX_goal_unknown
+		icon = GFX_kmt39
 		cost = 5.00
 		prerequisite = {
 			focus = Redraft_Party_Program
@@ -509,7 +510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Crackdown_on_Corruption
-		icon = GFX_goal_unknown
+		icon = GFX_kmt40
 		cost = 5.00
 		prerequisite = {
 			focus = Reorganize_Kuomintang
@@ -520,7 +521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Strengthen_Party_Authority
-		icon = GFX_goal_unknown
+		icon = GFX_kmt41
 		cost = 5.00
 		prerequisite = {
 			focus = Reorganize_Kuomintang
@@ -531,7 +532,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Restore_Worker_Peasant_Policies
-		icon = GFX_goal_unknown
+		icon = GFX_kmt42
 		cost = 5.00
 		prerequisite = {
 			focus = Reorganize_Kuomintang
@@ -542,7 +543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Rebirth_of_Kuomintang
-		icon = GFX_goal_unknown
+		icon = GFX_kmt43
 		cost = 5.00
 		prerequisite = {
 			focus = Strengthen_Party_Authority
@@ -559,7 +560,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Regulate_Capital
-		icon = GFX_goal_unknown
+		icon = GFX_kmt46
 		cost = 5.00
 		prerequisite = {
 			focus = Redraft_Party_Program
@@ -570,7 +571,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Develop_National_Capital
-		icon = GFX_goal_unknown
+		icon = GFX_kmt45
 		cost = 5.00
 		prerequisite = {
 			focus = Regulate_Capital
@@ -581,7 +582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Restrict_Private_Capital
-		icon = GFX_goal_unknown
+		icon = GFX_kmt44
 		cost = 5.00
 		prerequisite = {
 			focus = Regulate_Capital
@@ -592,7 +593,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Revitalize_Industry_Develop_Resources
-		icon = GFX_goal_unknown
+		icon = GFX_kmt47
 		cost = 5.00
 		prerequisite = {
 			focus = Develop_National_Capital
@@ -1791,7 +1792,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Land_Production_to_Public
-		icon = GFX_goal_unknown
+		icon = GFX_kmt38
 		cost = 5.00
 		prerequisite = {
 			focus = Land_Equalization
@@ -1802,7 +1803,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Land_to_the_Tiller
-		icon = GFX_goal_unknown
+		icon = GFX_kmt37
 		cost = 5.00
 		prerequisite = {
 			focus = Land_Production_to_Public
@@ -1816,7 +1817,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Towards_Livelihood_Nation
-		icon = GFX_goal_unknown
+		icon = GFX_kmt48
 		cost = 5.00
 		prerequisite = {
 			focus = Rebirth_of_Kuomintang
