@@ -337,7 +337,7 @@ CHI_Encirclement_suppression_operation_category = {
 				has_country_flag = CHI_Encirclement4
 			} 
 		}
-		days_mission_timeout = 90
+		days_mission_timeout = 234
 		activation = {
 			AND={
 				tag = CHI
