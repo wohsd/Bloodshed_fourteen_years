@@ -27,6 +27,9 @@ recruit_character =PRC_LiuBoChen
 recruit_character =PRC_FangZhiMing
 recruit_character =PRC_ChenYun
 recruit_character =PRC_DengPing
+
+recruit_character =PRC_LiuTaoXi
+recruit_character =PRC_WangRuChi
 set_popularities = {
 	communism = 100
 }

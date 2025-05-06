@@ -64,16 +64,15 @@ focus_tree = {
 		cost = 1.00
 		x = 30
 		y = 5
-			available = {
-					date > 1933.1.15
-				}
-			completion_reward = {
-					country_event = {
-							id = PRC_focus.6
-					}
-					
-				}
-
+		available = {
+			date > 1933.1.15
+		}
+		completion_reward = {
+			country_event = {id = PRC_focus.6}
+			hidden_effect = {
+				country_event = {id = PRC_1935.7 days=200}
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus59
@@ -1291,7 +1290,9 @@ focus_tree = {
 					state = 131
 				 }
 			}
-			country_event = {id=PRC_1936.4 days=10}
+			hidden_effect = {
+				country_event = {id=PRC_1936.4 days=10}
+			}
 		}
 	}
 	focus = {

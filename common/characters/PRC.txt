@@ -592,5 +592,57 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 		}
-	}				
+	}
+	
+
+
+
+	PRC_LiuTaoXi={
+		name=PRC_LiuTaoXi
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_LiuTaoXi.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	PRC_LiuTaoXi={
+		name=PRC_LiuTaoXi
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_LiuTaoXi.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	PRC_WangRuChi={
+		name=PRC_WangRuChi
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_WangRuChi.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 	}

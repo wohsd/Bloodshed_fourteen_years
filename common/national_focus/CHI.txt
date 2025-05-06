@@ -74,7 +74,7 @@ focus_tree = {
 	}
 	focus = {
 		id = German_Military_Advisors
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_54
 		cost = 5.00
 		prerequisite = {
 			focus = Reorganize_National_Revolutionary_Army
@@ -96,7 +96,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Chinese_Hindenburg_Line
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_45
 		cost = 5.00
 		prerequisite = {
 			focus = German_Military_Advisors
@@ -223,7 +223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Stabilize_Political_Situation
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_42
 		cost = 5.00
 		prerequisite = {
 			focus = Unstable_Political_Situation
@@ -438,7 +438,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Special_Parliament_Leader_Hu_Hanmin
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_48
 		cost = 5.00
 		prerequisite = {
 			focus = Redraft_Party_Program
@@ -613,12 +613,12 @@ focus_tree = {
 			focus = Victory_of_the_National_Revolution
 		}
 		x = 72
-		y = 2
+		y = 2 
 
 	}
 	focus = {
 		id = Internal_Pacification_Before_Resistance
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_41
 		cost = 5.00
 		prerequisite = {
 			focus = National_Crisis
@@ -643,7 +643,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Organize_Expeditionary_Force
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_43
 		cost = 5.00
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
@@ -654,7 +654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = German_Positional_Tactics
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_54
 		cost = 5.00
 		prerequisite = {
 			focus = Organize_Expeditionary_Force
@@ -676,7 +676,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Resistance_First_to_Save_Nation
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_55
 		cost = 5.00
 		prerequisite = {
 			focus = National_Crisis
@@ -690,7 +690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Reconcile_with_Communists
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_60
 		cost = 5.00
 		prerequisite = {
 			focus = Resistance_First_to_Save_Nation
@@ -847,7 +847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Announce_Political_Tutelage
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_44
 		cost = 5.00
 		prerequisite = {
 			focus = Interests_of_Four_Families
@@ -858,7 +858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = National_Education
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_51
 		cost = 5.00
 		prerequisite = {
 			focus = Announce_Political_Tutelage
@@ -884,7 +884,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Build_Central_Research_Academy
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_44
 		cost = 5.00
 		prerequisite = {
 			focus = National_Education
@@ -976,7 +976,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Consolidate_Republics_Governance
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_50
 		cost = 5.00
 		prerequisite = {
 			focus = Define_Chairman_Authority
@@ -1113,7 +1113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Suppress_Anti_Japanese_Activities
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_56
 		cost = 5.00
 		prerequisite = {
 			focus = China_Revival_Society
@@ -1160,7 +1160,7 @@ focus_tree = {
 	}
 	focus = {
 		id = New_Life_Movement
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_52
 		cost = 5.00
 		prerequisite = {
 			focus = Central_Club
@@ -1577,7 +1577,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Chairman_Wangs_European_Tour
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_49
 		cost = 5.00
 		prerequisite = {
 			focus = Unstable_Political_Situation
@@ -1594,7 +1594,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Seek_League_of_Nations_Help
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_57
 		cost = 5.00
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
@@ -1649,7 +1649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Incite_Reorganization_Clique_Conflict
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_58
 		cost = 5.00
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
@@ -1660,7 +1660,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Peaceful_Resolution_to_Sino_Japanese_Conflict
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_53
 		cost = 5.00
 		prerequisite = {
 			focus = Seek_Overseas_Chinese_Support
@@ -1698,7 +1698,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Suppress_Anti_Japanese_Sentiment
 		}
-		x = 25
+		x = 38
 		y = 8
 
 	}
@@ -1747,50 +1747,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Peaceful_Resolution_to_Sino_Japanese_Conflict
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = Seek_Overseas_Chinese_Support
-		}
-		prerequisite = {
-			focus = Expand_US_UK_Interests_in_China
-		}
-		prerequisite = {
-			focus = Request_Soviet_Aid
-		}
-		prerequisite = {
-			focus = Recognize_Puppet_Manchukuo
-		}
-		prerequisite = {
-			focus = Accept_Japanese_Investment
-		}
-		prerequisite = {
-			focus = Suppress_Anti_Japanese_Sentiment
-		}
-		prerequisite = {
-			focus = Seek_Overseas_Chinese_Support
-		}
-		prerequisite = {
-			focus = Expand_US_UK_Interests_in_China
-		}
-		prerequisite = {
-			focus = Request_Soviet_Aid
-		}
-		prerequisite = {
-			focus = Recognize_Puppet_Manchukuo
-		}
-		prerequisite = {
-			focus = Accept_Japanese_Investment
-		}
-		prerequisite = {
-			focus = Suppress_Anti_Japanese_Sentiment
-		}
-		x = 52
-		y = 8
-
-	}
-	focus = {
 		id = Land_Production_to_Public
 		icon = GFX_kmt38
 		cost = 5.00
@@ -1834,7 +1790,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Convene_National_Congress
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_59
 		cost = 5.00
 		prerequisite = {
 			focus = Consolidate_Republics_Governance
