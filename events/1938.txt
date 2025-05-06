@@ -7,7 +7,10 @@ country_event = {
 	hidden = yes
 	fire_only_once = yes
 	trigger = {
-		date = 1936.1.1
+		date > 1937.1.1
+		246={
+			is_controlled_by = JAP
+		}
 	}
 	immediate = {
 		hidden_effect = {

@@ -12,7 +12,13 @@ state={
 			arms_factory = 3
 		}
 		victory_points = {
-			2141 35
+			2141 10
+		}
+		victory_points = {
+			3846 10
+		}
+		victory_points = {
+			3023 10
 		}
 		add_core_of = CHI
 		1939.1.1={

@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_ROC_1936_1"
+		texturefile = "gfx/event/ROC_1936_1.png"
+	}
+	spriteType = {
 		name = "GFX_ROG_1931_1"
 		texturefile = "gfx/event/ROG_1931_1.png"
 	}
