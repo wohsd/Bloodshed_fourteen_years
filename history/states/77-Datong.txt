@@ -12,6 +12,9 @@ state={
 		add_core_of = ROJ
 		add_core_of = CHI
 		victory_points = {
+			2640 5
+		}
+		victory_points = {
 			1868 5
 		}
 		1939.1.1={

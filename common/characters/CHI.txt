@@ -126,11 +126,11 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=2
 			defense_skill=2
 			planning_skill=1
-			logistics_skill=3
+			logistics_skill=2
 		}
 	}
 	CHI_TangShenZhi={
@@ -208,7 +208,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -225,7 +225,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -244,7 +244,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -261,7 +261,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -278,7 +278,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -295,7 +295,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -312,7 +312,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -329,7 +329,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -346,7 +346,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -363,7 +363,7 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
@@ -380,10 +380,44 @@ characters={
 		
 		corps_commander={
 			traits={ }
-			skill=3
+			skill=2
 			attack_skill=1
 			defense_skill=2
 			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	CHI_CaiTingKai={
+		name=CHI_CaiTingKai
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_CaiTingKai.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	CHI_JiangGuangDing={
+		name=CHI_JiangGuangDing
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_JiangGuangDing.png"
+			}
+		} 
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
 			logistics_skill=2
 		}
 	}

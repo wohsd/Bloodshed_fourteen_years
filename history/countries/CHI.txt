@@ -41,6 +41,8 @@ recruit_character = CHI_LuoZuoYing
 recruit_character = CHI_ZhangZiZhong
 recruit_character = CHI_LiuZhi
 recruit_character = CHI_LingSeng
+recruit_character = CHI_CaiTingKai
+recruit_character = CHI_JiangGuangDing
 add_ideas = {
 	Four_families
 	CHI_army_corruption_1

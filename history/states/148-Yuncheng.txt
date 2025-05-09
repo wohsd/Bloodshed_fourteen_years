@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			2008 5
+		}
 		1939.1.1={
 			owner = JAP
 		}

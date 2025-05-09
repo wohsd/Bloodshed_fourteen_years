@@ -2,24 +2,26 @@ state={
 	id=207
 	name="STATE_207"
 	resources={
-		steel = 2
-		aluminium=2 # was: 12
+		steel=2.000
+		aluminium=2.000
 	}
 	provinces={
-		1469 2290 2571 2755 3163 3810 3362 932 2907
+		932 1469 2290 2571 2755 2907 3163 3362 3810 
 	}
 	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
-		}
-		victory_points = {
-			3163 20
 		}
 		add_core_of = CHI
+		1939.1.1={
+			owner = JAP
+		}
+		1941.1.1={
+			owner = JDF
+		}
 	}
-	manpower=823000
+	manpower=323000
 	state_category = town
 	local_supplies = 0.0
 }

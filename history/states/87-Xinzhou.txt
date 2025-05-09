@@ -11,6 +11,12 @@ state={
 		}
 		add_core_of = ROJ
 		add_core_of = CHI
+		victory_points = {
+			3661 10
+		}
+		victory_points = {
+			2977 5
+		}
 		1939.1.1={
 			owner = JAP
 		}

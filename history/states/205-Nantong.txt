@@ -2,7 +2,7 @@ state={
 	id=205
 	name="STATE_205"
 	provinces={
-		2944 3264 3791 3795 3800 3804 
+		2944 3264 3791 3795 3800 3804 5256
 	}
 	history={
 		owner = CHI

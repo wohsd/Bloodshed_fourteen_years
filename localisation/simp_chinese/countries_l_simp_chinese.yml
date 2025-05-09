@@ -191,7 +191,9 @@ PRC_anti_chi: "反蒋同盟"
  ROT_DEF: "川系-田颂尧"
  ROT_ADJ: "川系-田颂尧"
 
-
+ NFA: "新四军"
+ NFA_DEF: "新四军"
+ NFA_ADJ: "新四军"
 
  RHC_fascism: "川系-刘厚存"
  RHC_fascism_DEF: "川系-刘厚存"
