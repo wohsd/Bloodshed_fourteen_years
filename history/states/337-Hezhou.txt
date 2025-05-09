@@ -15,7 +15,7 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = ROC
-		1931.2.1={
+		1933.1.1={
 			owner = ROC
 		}
 		victory_points = {

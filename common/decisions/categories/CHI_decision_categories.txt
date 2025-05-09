@@ -1,18 +1,26 @@
 
+CHI_Battle_China = {
+	icon = military_operation
+	picture = GFX_JiangJieShi_1
+	visible = { 
+		tag=CHI
+	}
+	visible_when_empty = yes
+}
 
 CHI_Encirclement_suppression_operation_category = {
 	icon = military_operation
 	picture = GFX_Encirclement_suppression_operation
-	visible = { 
+	visible = {  
 		tag=CHI
 	}
 }
-
+ 
 CHI_Purging_party_category = {
 	icon = military_operation
 	visible = { 
 		tag=CHI
-	}
+	} 
 } 
 
 CHI_Defend_against_enemy_category= {

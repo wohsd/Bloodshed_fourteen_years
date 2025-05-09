@@ -199,8 +199,8 @@ PRC_Buy_gun = {
 Long_march_decisions = {
 	Long_March_mobilization_meeting = {
 		available = {
-			#has_war = yes
-			#date > 1934.9.8
+			has_war = yes
+			date > 1934.9.8
 		}
 		visible = {
 			
@@ -215,6 +215,8 @@ Long_march_decisions = {
 			606 = { Long_march_battle = yes } 
 			hidden_effect = {
 				country_event = {id=PRC_1934.6 days=124}
+				country_event = {id=PRC_1935.10 days=182}
+				country_event = {id=PRC_1935.11 days=320}
 			}
 			YHC={
 				add_ideas = Negative_Encirclement

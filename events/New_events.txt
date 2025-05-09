@@ -415,7 +415,8 @@ country_event = {
     immediate = {
 		set_global_flag = 128songhu
 		CHI = {
-			country_event = {id=KanRi_1937.1 days=10}
+			country_event = {id=KanRi_1937.1 days=30}
+			set_country_flag = songhu
 		}
 		
     } 

@@ -22,8 +22,13 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = Regionalist_warlords
+1931.1.1={
+	set_cosmetic_tag = ROH_1931
+}
+
 1932.4.8={
 	retire_country_leader = yes
+	set_cosmetic_tag = ROH
 }
 1933.1.1={
 	set_oob = "ROH_1933"

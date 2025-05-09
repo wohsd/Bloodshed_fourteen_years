@@ -12,6 +12,9 @@ state={
 		victory_points = {
 			2251 5
 		}
+		1933.1.1={
+			owner = ROG
+		}
 		add_core_of = ROG
 		add_core_of = CHI
 		1941.1.1={

@@ -32,35 +32,35 @@ units = {
 		location = 2541
 		name = "甘军第一旅"
 		division_template = "国民革命军"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
 	}
 	division= {	
 		location = 2541
 		name = "甘军第二旅"
 		division_template = "国民革命军"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
 	}
 	division= {	
 		location = 441
 		name = "甘军第三旅"
 		division_template = "国民革命军"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
 	}
 	division= {	
 		location = 1698
 		name = "甘军独立团"
 		division_template = "国民革命军"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
 	}
 	division= {	
 		location = 1272
 		name = "甘军骑兵旅"
 		division_template = "国民革命军"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.2
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
 	}
 }

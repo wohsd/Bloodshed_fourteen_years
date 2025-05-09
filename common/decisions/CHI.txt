@@ -39,7 +39,85 @@ CHI_struggle_balance_category = {
 
 #########
 ######### 
- 
+###会战###
+CHI_Battle_China = {
+	Battle_ShangHai = {
+		available = {
+			CHI={
+				has_war_with = JAP
+			}
+			NOT={
+				JAP={
+					controls_province = 5246
+					controls_province = 5245
+					controls_province = 3285
+					controls_province = 5244
+					controls_province = 5242
+					controls_province = 5243
+				}
+			}
+			CHI={
+					controls_province = 5246
+					controls_province = 5245
+					controls_province = 3285
+					controls_province = 5244
+					controls_province = 5242
+					controls_province = 5243
+			}
+		}
+		days_mission_timeout = 90
+		cancel_trigger = {
+			JAP={
+				controls_province = 5246
+				controls_province = 5245
+				controls_province = 3285
+				controls_province = 5244
+				controls_province = 5242
+				controls_province = 5243
+			}
+		}
+		activation = {
+			has_country_flag = songhu  
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		cancel_effect = {
+			228={
+				set_state_controller_to = JAP
+			}
+			clr_country_flag = songhu
+			set_country_flag = songhu_lose  
+		}
+		timeout_effect = {
+			228={
+				set_state_controller_to = JAP
+			}
+			clr_country_flag = songhu
+			set_country_flag = songhu_lose  
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = songhu
+			set_country_flag = songhu_win
+		}
+	}
+	Battle_Taiyuan = {
+		available = {
+		}
+		days_mission_timeout = 60
+		activation = { 
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+		}
+		complete_effect = {
+		}
+	}
+}
 ######### 
 ######### 
 #########

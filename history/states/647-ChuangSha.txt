@@ -8,6 +8,9 @@ state={
 		owner = CHI
 		buildings = {
 		}
+		victory_points = {
+			5245 3
+		}
 		add_core_of = CHI
 		1933.1.1={
 			set_demilitarized_zone = yes

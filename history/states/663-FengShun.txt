@@ -9,7 +9,7 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		1936.1.1={
+		1933.1.1={
 			owner = ROG
 		}
 		1942.1.1={

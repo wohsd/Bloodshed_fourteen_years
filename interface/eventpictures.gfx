@@ -173,4 +173,17 @@ spriteTypes = {
 		name = "GFX_ROH1933_1"
 		texturefile = "gfx/event/ROH1933_1.png"
 	}
+
+	spriteType = {
+		name = "GFX_boy_1"
+		texturefile = "gfx/event/boy_1.png"
+	}
+	spriteType = {
+		name = "GFX_fat_boy_1"
+		texturefile = "gfx/event/fat_boy_1.png"
+	}
+	spriteType = {
+		name = "GFX_Surrender_2"
+		texturefile = "gfx/event/Surrender_2.png"
+	}
 }

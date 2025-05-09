@@ -76,6 +76,9 @@ country_event = {
 	desc =  PRC_1935.7.d
 	fire_only_once = yes
 	is_triggered_only = yes
+	trigger = {
+		date < 1935.10.10
+	}
 	option = {
 		name =  PRC_1935.7.a
 		hidden_effect = {
@@ -115,6 +118,40 @@ country_event = {
 		PRC_WangRuChi={
 			retire = yes
 		}
+	}
+}
+
+country_event = {
+	id =  PRC_1935.10
+	title = PRC_1935.10.t
+	desc =  PRC_1935.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.10.a
+		country_event = {id=PRC_1935.12 days=10}
+	}
+}
+
+country_event = {
+	id =  PRC_1935.11
+	title = PRC_1935.11.t
+	desc =  PRC_1935.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.11.a
+	}
+}
+
+country_event = {
+	id =  PRC_1935.12
+	title = PRC_1935.12.t
+	desc =  PRC_1935.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.12.a
 	}
 }
 ###四方面军

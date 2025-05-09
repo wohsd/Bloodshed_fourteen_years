@@ -297,6 +297,7 @@ country_event = {
     trigger = {
 		PRC = {
 			AND={
+				date < 1935.10.10
 				has_war = yes
 				NOT = {
 					controls_province = 3955
@@ -819,6 +820,33 @@ country_event = {
 			}
 		}
 		clr_global_flag = fall_of_2146
+	}		
+}
+
+
+country_event = {
+	id = PRC_1934Hidden.22
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 618
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_618
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.14
+			}
+		}
+		clr_global_flag = fall_of_618
 	}		
 }
 ###############################
