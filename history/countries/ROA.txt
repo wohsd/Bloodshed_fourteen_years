@@ -1,5 +1,7 @@
 ﻿capital = 119 
 
+oob = ROA_1931
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
