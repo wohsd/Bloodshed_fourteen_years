@@ -2,19 +2,18 @@ state={
 	id=74
 	name="STATE_74"
 	provinces={
-		141 1301 3625 3632 
+		141 1301 3625 3632 4951
 	}
 	history={
 		owner = ROD
 		buildings = {
 			infrastructure = 1
 			arms_factory = 2
+			air_base= 1
 		}
 		victory_points = {
 			141 50
 		}
-		add_core_of = ROD
-		add_core_of = CHI
 		1936.1.1={
 			owner = JDW
 		}

@@ -71,4 +71,25 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						AND={
+							NOT={
+								original_tag = PRC	
+							}
+						} 
+						OR={
+							date < 1931.2.1
+							date < 1933.2.1  
+						}
+						
+					}
+					country_event = game_start.1
+				}
+			}
+		}
+	}
 	}

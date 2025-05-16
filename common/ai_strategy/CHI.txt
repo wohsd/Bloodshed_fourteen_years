@@ -4,7 +4,7 @@ CHI_buffer_in_mainland = {
 		tag = CHI
 	}
 	enable = {
-		date < 1936.12.12
+		date < 1935.12.12
 	}
 	abort_when_not_enabled = yes
 	
@@ -30,6 +30,55 @@ CHI_buffer_in_mainland = {
 	ai_strategy = {
 		type = garrison
 		value = 5
+	}
+}
+
+
+
+CHI_buffer_in_mainland = {
+	allowed = {
+		tag = CHI
+	}
+	enable = {
+		date > 1935.12.14
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			216
+			237
+		}
+		ratio = 0.1
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	ai_strategy = {
+		type = garrison
+		value = 2
+	}
+}
+
+CHI_buffer_in_mainland = {
+	allowed = {
+		tag = CHI
+	}
+	enable = {
+		date > 1935.12.14
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			228
+		}
+		ratio = 0
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
 	}
 }
 

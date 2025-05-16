@@ -16,7 +16,9 @@ focus_tree = {
 		cost = 2.00
 		x = 72
 		y = 0
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = Modernize_Military_Reform

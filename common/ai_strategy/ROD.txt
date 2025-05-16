@@ -1,17 +1,17 @@
 
-ROD_buffer_in_mainland = {
+ROD_buffer_918 = {
 	allowed = {
 		tag = ROD
 	}
 	enable = {
-		date < 1936.12.12
+		date < 1932.12.12
 	}
 	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = JAP
-		value = 45
+		value = 100
 	}
 }
 

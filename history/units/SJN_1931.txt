@@ -18,15 +18,6 @@ division_template = {
 	}
 }
 division_template = {
-	name = "步兵团" 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-division_template = {
 	name = "骑兵旅" 			
 	division_names_group = JAP_CAV_01
 	regiments = {
@@ -41,91 +32,22 @@ division_template = {
 units = {
 	division= {	
 		location = 1113
+		name = "晋绥军第三十五军第七十二师"
 		division_template = "晋绥军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 1113
+		name = "晋绥军第三十五军第七十三师"
 		division_template = "晋绥军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 1113
-		division_template = "晋绥军"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 1113
-		division_template = "晋绥军"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 1113
-		division_template = "晋绥军"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 1113
-		division_template = "晋绥军"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 1110
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 3577
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 985
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 856
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 626
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 2687
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 1751
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 2521
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 2233
-		division_template = "步兵团"
+		name = "晋绥军第三十五军骑兵第一旅"
+		division_template = "骑兵旅"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}

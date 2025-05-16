@@ -1,0 +1,22 @@
+state={
+	id=671
+	name="STATE_671"
+	provinces={
+		5259 
+	}
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		1941.1.1={
+			owner = JDF
+		}
+	}
+	manpower=123000
+	state_category = town
+	local_supplies = 0.0
+}

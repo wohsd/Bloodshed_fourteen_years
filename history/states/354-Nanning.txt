@@ -8,6 +8,7 @@ state={
 		owner = ROC
 		buildings = {
 			infrastructure = 1
+			air_base= 1
 		}
 		victory_points = {
 			4169 20

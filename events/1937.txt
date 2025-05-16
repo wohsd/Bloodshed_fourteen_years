@@ -1,6 +1,8 @@
 ﻿add_namespace = KanRi_1937
+add_namespace = CHI_1937
 
-
+add_namespace = Fall_City
+add_namespace = ShangHai
 ###抗日
 country_event = {
 	id = KanRi_1937.1
@@ -36,4 +38,143 @@ news_event = {
 		name = KanRi_1937.2.a
 		
 	}
+}
+
+
+
+country_event = {
+	id = Fall_City.0
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		CHI = {
+			AND={
+				has_war_with = JAP
+			}
+		}
+		228={
+			is_controlled_by = JAP
+		}
+    }
+    immediate = {
+		CHI={
+			news_event = Fall_City.1
+		}
+		set_global_flag = fall_of_ShangHai
+    } 
+    
+	option = {
+		name = Fall_City.0.a
+		clr_global_flag = fall_of_ShangHai
+	}		
+}
+
+###上海
+news_event = {
+	id = Fall_City.1
+	title =Fall_City.1.t
+	desc = Fall_City.1.d
+	picture=GFX_Fall_City_1
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		216={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=35
+			}
+		}
+		669={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=35
+			}
+		}
+		219={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=35
+			}
+		}
+		215={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=35
+			}
+		}
+		213={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=35
+			}
+		}
+		}
+	}
+	option = {
+		name = Fall_City.1.a
+		
+	}
+}		
+
+
+
+country_event = {
+	id = ShangHai.1
+	title =ShangHai.1.t
+	desc = ShangHai.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		JAP={
+			transfer_state = 670
+			transfer_state = 671
+		}
+		670={
+			create_unit = {
+			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+			}
+		}
+		670={
+			create_unit = {
+			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+			}
+		}
+		670={
+			create_unit = {
+			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+			}
+		}
+		671={
+			create_unit = {
+			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+			}
+		}
+		671={
+			create_unit = {
+			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+			}
+		}
+
+		671={
+			create_unit = {
+			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+			}
+		}
+	}
+	option = {
+		name = ShangHai.1.a
+	}		
 }

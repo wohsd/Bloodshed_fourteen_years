@@ -17,152 +17,55 @@ division_template = {
         engineer = { x = 0 y = 2 }
 	}
 }
-division_template = {
-	name = "步兵团" 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "骑兵旅" 			
-	division_names_group = JAP_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
-}
 units = {
-    division= {	
+	 division= {	
 		location = 102
-		division_template = "骑兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "骑兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "骑兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "骑兵旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-    division= {	
-		location = 102
+		name = "晋军第三十二军第六十六师"
 		division_template = "晋绥军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
     division= {	
 		location = 102
+		name = "晋军第三十二军第六十七师"
 		division_template = "晋绥军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
-    division= {	
+	division= {	
 		location = 102
+		name = "晋军第三十三军第六十八师"
 		division_template = "晋绥军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
-    division= {	
+	division= {	
 		location = 102
+		name = "晋军第三十三军第六十九师"
 		division_template = "晋绥军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
-    division= {	
+	division= {	
 		location = 102
+		name = "晋军第三十四军第七十师"
 		division_template = "晋绥军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-    }
+	}
+	division= {	
+		location = 102
+		name = "晋军第三十四军第七十一师"
+		division_template = "晋绥军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 102
+		name = "晋军第三十四军暂编第一师"
+		division_template = "晋绥军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	
 }

@@ -1,4 +1,4 @@
-﻿
+﻿add_namespace = game_start
 add_namespace = PRC_1931
 add_namespace = PRC_1931Hidden
 add_namespace = ROC_1931
@@ -7,6 +7,26 @@ add_namespace = world1931
 add_namespace = world1931Hidden
 
 add_namespace = CHI_Encirclement
+
+country_event = {
+	id = game_start.1
+	title = game_start.1.t
+	desc = game_start.1.d
+	#picture = GFX_ROG_1931_1
+    is_triggered_only = yes 
+    immediate = {
+		
+    } 
+	option = {
+		name = game_start.1.a
+		
+		set_global_flag = start_of_ChangZheng
+	}
+	option = {
+		name = game_start.1.b
+		set_global_flag = end_of_ChangZheng
+	}
+}
 
 country_event = {
 	id = CHI_Encirclement.1

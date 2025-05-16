@@ -1,16 +1,12 @@
-
 state={
 	id=228
 	name="STATE_228"
-
 	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
-			5246={
-				air_base=2
-			}
+			air_base= 1
 			2946 = {
 				naval_base = 2
 				coastal_bunker = 2
@@ -44,9 +40,9 @@ state={
 	}
 
 	provinces={
-		5246 2946 3815 3828 3833 3841 5242 5243 5244 
+		5246 2946 3815 3828 3833 5242 5243 5244 
 	}
-	manpower=3350000
+	manpower=2350000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

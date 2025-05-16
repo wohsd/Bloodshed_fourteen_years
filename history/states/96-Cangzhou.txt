@@ -12,8 +12,6 @@ state={
 		1936.1.1={
 			owner = JDW
 		}
-		add_core_of = ROD
-		add_core_of = CHI
 		1939.1.1={
 			owner = JAP
 		}

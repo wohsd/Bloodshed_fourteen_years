@@ -1,27 +1,68 @@
-
-JAP_buffer_in_mainland = {
+JAP_buffer_918 = {
 	allowed = {
 		tag = JAP
 	}
 	enable = {
-		date < 1936.12.12
+		date < 1932.12.12
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+    	type = prepare_for_war
+    	id = ROD
+    	value = 100
+	}	
+}
+
+
+JAP_buffer_1212 = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date < 1938.12.12
 	}
 	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = prepare_for_war
-		id = ROD
+		id = CHI
 		value = 100
 	}
 	ai_strategy = {
 		type = front_unit_request
-		tag = ROD
+		tag = CHI
 		value = 100
 	}
+
 	ai_strategy = {
-		type = front_unit_request
-		tag = JAP
-		value = 50
+    	type = front_control
+    	state_trigger = {
+        	state = 214
+    	}
+    	ratio = 0.4
+   	 	ordertype = invasion
+    	execution_type = rush
+    	manual_attack = no
+	}
+	ai_strategy = {
+    	type = front_control
+    	state_trigger = {
+        	state = 104
+    	}
+    	ratio = 0.4
+   	 	ordertype = invasion
+    	execution_type = rush
+    	manual_attack = no
+	}
+	ai_strategy = {
+    	type = front_control
+    	state_trigger = {
+        	state = 104
+    	}
+    	ratio = 0.4
+   	 	ordertype = invasion
+    	execution_type = rush
+    	manual_attack = no
 	}
 }
 

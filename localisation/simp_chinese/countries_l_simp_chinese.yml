@@ -422,6 +422,10 @@ PRC_anti_chi: "反蒋同盟"
  JAP_DEF: "大日本帝国"
  JAP_ADJ: "大日本帝国"
 
+ HOL: "荷属印度尼西亚"
+ HOL_DEF: "荷属印度尼西亚"
+ HOL_ADJ: "荷属印度尼西亚"
+
  SOV_fascism: "苏维埃社会主义共和国联盟"
  SOV_fascism_DEF: "苏维埃社会主义共和国联盟"
  SOV_democratic: "苏维埃社会主义共和国联盟"

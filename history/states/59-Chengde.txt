@@ -28,7 +28,7 @@ state={
 	provinces={
 		203 237 572 1138 1498 1811 1958 1995 2014 2282 3147 3590 3593 3614 
 	}
-	manpower=234230
+	manpower=1234230
 	state_category = city
 	local_supplies = 0.0
 }

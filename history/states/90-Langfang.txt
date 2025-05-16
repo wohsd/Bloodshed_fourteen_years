@@ -2,15 +2,13 @@ state={
 	id=90
 	name="STATE_90"
 	provinces={
-		2406 4951
+		2406
 	}
 	history={
 		owner = ROD
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ROD
-		add_core_of = CHI
 		1936.1.1={
 			owner = JDW
 		}

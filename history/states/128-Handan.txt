@@ -10,8 +10,6 @@ state={
 			infrastructure = 1
 			arms_factory = 1
 		}
-		add_core_of = ROD
-		add_core_of = CHI
 		1936.1.1={
 			owner = JDW
 		}

@@ -1,0 +1,23 @@
+state={
+	id=670
+	name="STATE_670"
+	history = {
+		owner = CHI
+		1933.1.1={
+			set_demilitarized_zone = yes
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		1941.1.1={
+			owner = JDF
+		}
+	}
+	provinces={
+		3841 
+	}
+	manpower=122000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
