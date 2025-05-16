@@ -1,5 +1,8 @@
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_Zhao_Dengyu"
+		texturefile = "gfx/interface/ideas/Zhao_Dengyu.png"
+	} 
 	spriteType = {
 		name = "GFX_Morale_collapsed"
 		texturefile = "gfx/interface/ideas/Morale_collapsed.png"

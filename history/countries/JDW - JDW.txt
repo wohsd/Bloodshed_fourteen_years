@@ -1,7 +1,7 @@
 capital = 74
 #首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-#oob =
+oob = JDW_1931
 #军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
 set_technology = {
@@ -15,6 +15,8 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = JDW_SongZheYuan
+recruit_character = JDW_DongLingGe
+
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

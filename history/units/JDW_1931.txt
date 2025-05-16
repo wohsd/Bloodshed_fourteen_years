@@ -1,0 +1,48 @@
+division_template = {
+	name = "西北军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery= { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "骑兵旅" 			
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 141
+		name = "西北军第二十九军第一三二师"
+		division_template = "西北军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		officer = {
+            name = JDW_Zhao_Dengyu
+            portraits = {
+                army = {
+                    small = GFX_Zhao_Dengyu
+                }
+            }
+        }
+	}
+}
