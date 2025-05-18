@@ -1,4 +1,4 @@
-﻿capital = 36
+﻿capital = 50
 1931.1.1={
   set_oob = "ROD_1931"
 }
@@ -29,7 +29,7 @@ set_politics = {
 
 1933.1.1={
 	set_oob = "ROD_1933"
-
+	capital = 74
 	add_ideas = Not_resisting
 }
 1936.1.1={
