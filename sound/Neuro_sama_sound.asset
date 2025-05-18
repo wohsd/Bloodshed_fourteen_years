@@ -1,0 +1,210 @@
+
+
+
+
+
+
+category = {
+	name = "Voices"
+	soundeffects = {
+		ROG_infantry_idle
+		ROG_infantry_neutral_combat
+		ROG_infantry_positive_combat
+		ROG_infantry_retreat
+		ROG_infantry_move_out
+		RON_infantry_idle
+		RON_infantry_neutral_combat
+		RON_infantry_positive_combat
+		RON_infantry_retreat
+		RON_infantry_move_out
+	}
+}
+###粤军
+soundeffect = {
+	name = "ROG_infantry_idle"
+	sounds = {
+		sound = ROG_idle_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "ROG_infantry_neutral_combat"
+	sounds = {
+		sound = ROG_neutral_01	
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "ROG_infantry_positive_combat"
+	sounds = {
+		sound = ROG_positive_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "ROG_infantry_retreat"
+	sounds = {
+		sound = ROG_retreat_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "ROG_infantry_move_out"
+	sounds = {
+		sound = ROG_move_out_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+sound = 
+{
+	name = "ROG_idle_01"
+	file = "BFR_Sound/ROG_idle_01.wav"
+}
+sound = 
+{
+	name = "ROG_move_out_01"
+	file = "BFR_Sound/ROG_move_out_01.wav"
+}
+sound = 
+{
+	name = "ROG_neutral_01"
+	file = "BFR_Sound/ROG_neutral_01.wav"
+}
+sound = 
+{
+	name = "ROG_positive_01"
+	file = "BFR_Sound/ROG_positive_01.wav"
+}
+sound = 
+{
+	name = "ROG_retreat_01"
+	file = "BFR_Sound/ROG_retreat_01.wav"
+}
+
+
+
+
+
+###湘军
+soundeffect = {
+	name = "RON_infantry_idle"
+	sounds = {
+		sound = RON_idle_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "RON_infantry_neutral_combat"
+	sounds = {
+		sound = RON_neutral_01	
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "RON_infantry_positive_combat"
+	sounds = {
+		sound = RON_positive_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "RON_infantry_retreat"
+	sounds = {
+		sound = RON_retreat_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+soundeffect = {
+	name = "RON_infantry_move_out"
+	sounds = {
+		sound = RON_move_out_01
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 3.00
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+sound = 
+{
+	name = "RON_idle_01"
+	file = "BFR_Sound/RON_idle_01.wav"
+}
+sound = 
+{
+	name = "RON_move_out_01"
+	file = "BFR_Sound/RON_idle_01.wav"
+}
+sound = 
+{
+	name = "RON_neutral_01"
+	file = "BFR_Sound/RON_idle_01.wav"
+}
+sound = 
+{
+	name = "RON_positive_01"
+	file = "BFR_Sound/RON_idle_01.wav"
+}
+sound = 
+{
+	name = "RON_retreat_01"
+	file = "BFR_Sound/RON_idle_01.wav"
+}
