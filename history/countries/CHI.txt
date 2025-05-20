@@ -44,11 +44,28 @@ recruit_character = CHI_LingSeng
 recruit_character = CHI_CaiTingKai
 recruit_character = CHI_JiangGuangDing
 add_ideas = {
-	Four_families
 	CHI_army_corruption_1
 	Anti_hometown_group
 	The_winner_Central
 }
+#动态修正
+add_dynamic_modifier = {
+	modifier = Four_families
+}
+add_to_variable = {
+	CHI_consumer_goods_factor = 0.15
+}
+add_to_variable = {
+	CHI_political_power_gain = -0.2
+}
+add_to_variable = {
+	CHI_production_speed_buildings_factor = -0.05
+}
+add_to_variable = {
+	CHI_neutrality_drift = 0.1
+}
+
+
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -81,7 +98,6 @@ add_equipment_to_stockpile = {
 	set_oob = "CHI_1933"
 	add_ideas = {
 		Anti_Japanese_zeal
-		Four_families
 		CHI_army_corruption_1
 		The_Golden_Decade
 	}

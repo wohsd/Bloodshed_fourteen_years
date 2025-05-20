@@ -248,7 +248,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Committee_76
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_88
 		cost = 5.00
 		prerequisite = {
 			focus = Ensure_Party_Stability
@@ -259,7 +259,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Expand_Anti_Chiang_Coalition
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_89
 		cost = 5.00
 		prerequisite = {
 			focus = Ensure_Party_Stability
@@ -270,7 +270,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Win_Over_Grassroots_Officials
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_90
 		cost = 5.00
 		prerequisite = {
 			focus = Ensure_Party_Stability
@@ -358,7 +358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Pacify_Local_Warlords
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_83
 		cost = 5.00
 		prerequisite = {
 			focus = Warlords_Demands
@@ -369,7 +369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Necessity_of_National_Army
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_84
 		cost = 2.00
 		prerequisite = {
 			focus = Stabilize_Military_Morale
@@ -380,7 +380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Suppress_Chiang_Faction
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_85
 		cost = 5.00
 		prerequisite = {
 			focus = Necessity_of_National_Army
@@ -391,7 +391,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Win_Over_Neutral_Officers
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_87
 		cost = 5.00
 		prerequisite = {
 			focus = Necessity_of_National_Army
@@ -402,7 +402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Cultivate_Loyal_Officers
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_86
 		cost = 5.00
 		prerequisite = {
 			focus = Necessity_of_National_Army
@@ -766,6 +766,14 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = Chiang_Kai_shek_Consolidates_Power
+		}
+		completion_reward = {	
+			add_to_variable = {
+	        CHI_political_power_gain = 0.2
+            }
+			add_to_variable = {
+	        CHI_consumer_goods_factor = -0.05
+            }
 		}
 		x = 94
 		y = 2

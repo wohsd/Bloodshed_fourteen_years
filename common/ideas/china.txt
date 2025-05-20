@@ -109,28 +109,6 @@ ideas = {
 				dont_lose_dig_in_on_attack= 0.05
 			}
 		}
-		Four_families = {
-		
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor= 0.15
-				neutrality_drift = 0.10
-				political_power_cost = 0.10
-				party_popularity_stability_factor= -0.10
-				
-			}
-		}
 		Regionalist_warlords = {
 		    picture=chi_warlord_integration2
 			allowed = {
