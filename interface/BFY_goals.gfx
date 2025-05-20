@@ -1,5 +1,8 @@
 spriteTypes = {
-	
+spriteType = {
+name = "GFX_213"
+texturefile = "gfx\interface\goals\CHI/213.png"
+}
 spriteType = {
 name = "GFX_kmt01"
 texturefile = "gfx\interface\goals\CHI/kmt01.png"
@@ -177,171 +180,199 @@ name = "GFX_kmt48"
 texturefile = "gfx\interface\goals\CHI/kmt48.png"
 }
 spriteType = {
-	name = "GFX_kmt_41"
-	texturefile = "gfx\interface\goals\CHI\kmt_41.png"
-	}
+name = "GFX_kmt_41"
+texturefile = "gfx\interface\goals\CHI/kmt_41.png"
+}
 spriteType = {
-	name = "GFX_kmt_42"
-	texturefile = "gfx\interface\goals\CHI\kmt_42.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_43"
-	texturefile = "gfx\interface\goals\CHI\kmt_43.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_44"
-	texturefile = "gfx\interface\goals\CHI\kmt_44.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_45"
-	texturefile = "gfx\interface\goals\CHI\kmt_45.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_46"
-	texturefile = "gfx\interface\goals\CHI\kmt_46.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_47"
-	texturefile = "gfx\interface\goals\CHI\kmt_47.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_48"
-	texturefile = "gfx\interface\goals\CHI\kmt_48.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_49"
-	texturefile = "gfx\interface\goals\CHI\kmt_49.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_50"
-	texturefile = "gfx\interface\goals\CHI\kmt_50.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_51"
-	texturefile = "gfx\interface\goals\CHI\kmt_51.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_52"
-	texturefile = "gfx\interface\goals\CHI\kmt_52.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_53"
-	texturefile = "gfx\interface\goals\CHI\kmt_53.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_54"
-	texturefile = "gfx\interface\goals\CHI\kmt_54.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_55"
-	texturefile = "gfx\interface\goals\CHI\kmt_55.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_56"
-	texturefile = "gfx\interface\goals\CHI\kmt_56.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_57"
-	texturefile = "gfx\interface\goals\CHI\kmt_57.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_58"
-	texturefile = "gfx\interface\goals\CHI\kmt_58.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_59"
-	texturefile = "gfx\interface\goals\CHI\kmt_59.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_60"
-	texturefile = "gfx\interface\goals\CHI\kmt_60.png"
-	}
-	
+name = "GFX_kmt_42"
+texturefile = "gfx\interface\goals\CHI/kmt_42.png"
+}
 spriteType = {
-	name = "GFX_kmt_61"
-	texturefile = "gfx\interface\goals\CHI\kmt_61.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_62"
-	texturefile = "gfx\interface\goals\CHI\kmt_62.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_63"
-	texturefile = "gfx\interface\goals\CHI\kmt_63.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_64"
-	texturefile = "gfx\interface\goals\CHI\kmt_64.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_65"
-	texturefile = "gfx\interface\goals\CHI\kmt_65.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_66"
-	texturefile = "gfx\interface\goals\CHI\kmt_66.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_67"
-	texturefile = "gfx\interface\goals\CHI\kmt_67.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_68"
-	texturefile = "gfx\interface\goals\CHI\kmt_68.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_70"
-	texturefile = "gfx\interface\goals\CHI\kmt_70.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_71"
-	texturefile = "gfx\interface\goals\CHI\kmt_71.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_72"
-	texturefile = "gfx\interface\goals\CHI\kmt_72.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_73"
-	texturefile = "gfx\interface\goals\CHI\kmt_73.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_74"
-	texturefile = "gfx\interface\goals\CHI\kmt_74.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_75"
-	texturefile = "gfx\interface\goals\CHI\kmt_75.png"
-	}
-	spriteType = {
-	name = "GFX_kmt_76"
-	texturefile = "gfx\interface\goals\CHI\kmt_76.png"
-	}
-	
+name = "GFX_kmt_43"
+texturefile = "gfx\interface\goals\CHI/kmt_43.png"
+}
+spriteType = {
+name = "GFX_kmt_44"
+texturefile = "gfx\interface\goals\CHI/kmt_44.png"
+}
+spriteType = {
+name = "GFX_kmt_45"
+texturefile = "gfx\interface\goals\CHI/kmt_45.png"
+}
+spriteType = {
+name = "GFX_kmt_46"
+texturefile = "gfx\interface\goals\CHI/kmt_46.png"
+}
+spriteType = {
+name = "GFX_kmt_47"
+texturefile = "gfx\interface\goals\CHI/kmt_47.png"
+}
+spriteType = {
+name = "GFX_kmt_48"
+texturefile = "gfx\interface\goals\CHI/kmt_48.png"
+}
+spriteType = {
+name = "GFX_kmt_49"
+texturefile = "gfx\interface\goals\CHI/kmt_49.png"
+}
+spriteType = {
+name = "GFX_kmt_50"
+texturefile = "gfx\interface\goals\CHI/kmt_50.png"
+}
+spriteType = {
+name = "GFX_kmt_51"
+texturefile = "gfx\interface\goals\CHI/kmt_51.png"
+}
+spriteType = {
+name = "GFX_kmt_52"
+texturefile = "gfx\interface\goals\CHI/kmt_52.png"
+}
+spriteType = {
+name = "GFX_kmt_53"
+texturefile = "gfx\interface\goals\CHI/kmt_53.png"
+}
+spriteType = {
+name = "GFX_kmt_54"
+texturefile = "gfx\interface\goals\CHI/kmt_54.png"
+}
+spriteType = {
+name = "GFX_kmt_55"
+texturefile = "gfx\interface\goals\CHI/kmt_55.png"
+}
+spriteType = {
+name = "GFX_kmt_56"
+texturefile = "gfx\interface\goals\CHI/kmt_56.png"
+}
+spriteType = {
+name = "GFX_kmt_57"
+texturefile = "gfx\interface\goals\CHI/kmt_57.png"
+}
+spriteType = {
+name = "GFX_kmt_58"
+texturefile = "gfx\interface\goals\CHI/kmt_58.png"
+}
+spriteType = {
+name = "GFX_kmt_59"
+texturefile = "gfx\interface\goals\CHI/kmt_59.png"
+}
+spriteType = {
+name = "GFX_kmt_60"
+texturefile = "gfx\interface\goals\CHI/kmt_60.png"
+}
+spriteType = {
+name = "GFX_kmt_61"
+texturefile = "gfx\interface\goals\CHI/kmt_61.png"
+}
+spriteType = {
+name = "GFX_kmt_62"
+texturefile = "gfx\interface\goals\CHI/kmt_62.png"
+}
+spriteType = {
+name = "GFX_kmt_63"
+texturefile = "gfx\interface\goals\CHI/kmt_63.png"
+}
+spriteType = {
+name = "GFX_kmt_64"
+texturefile = "gfx\interface\goals\CHI/kmt_64.png"
+}
+spriteType = {
+name = "GFX_kmt_65"
+texturefile = "gfx\interface\goals\CHI/kmt_65.png"
+}
+spriteType = {
+name = "GFX_kmt_66"
+texturefile = "gfx\interface\goals\CHI/kmt_66.png"
+}
+spriteType = {
+name = "GFX_kmt_67"
+texturefile = "gfx\interface\goals\CHI/kmt_67.png"
+}
+spriteType = {
+name = "GFX_kmt_68"
+texturefile = "gfx\interface\goals\CHI/kmt_68.png"
+}
+spriteType = {
+name = "GFX_kmt_70"
+texturefile = "gfx\interface\goals\CHI/kmt_70.png"
+}
+spriteType = {
+name = "GFX_kmt_71"
+texturefile = "gfx\interface\goals\CHI/kmt_71.png"
+}
+spriteType = {
+name = "GFX_kmt_72"
+texturefile = "gfx\interface\goals\CHI/kmt_72.png"
+}
+spriteType = {
+name = "GFX_kmt_73"
+texturefile = "gfx\interface\goals\CHI/kmt_73.png"
+}
+spriteType = {
+name = "GFX_kmt_74"
+texturefile = "gfx\interface\goals\CHI/kmt_74.png"
+}
+spriteType = {
+name = "GFX_kmt_75"
+texturefile = "gfx\interface\goals\CHI/kmt_75.png"
+}
+spriteType = {
+name = "GFX_kmt_76"
+texturefile = "gfx\interface\goals\CHI/kmt_76.png"
+}
 spriteType = {
 name = "GFX_kmt_77"
-texturefile = "gfx\interface\goals\CHI\kmt_77.png"
+texturefile = "gfx\interface\goals\CHI/kmt_77.png"
 }
 spriteType = {
 name = "GFX_kmt_78"
-texturefile = "gfx\interface\goals\CHI\kmt_78.png"
+texturefile = "gfx\interface\goals\CHI/kmt_78.png"
 }
 spriteType = {
 name = "GFX_kmt_79"
-texturefile = "gfx\interface\goals\CHI\kmt_79.png"
+texturefile = "gfx\interface\goals\CHI/kmt_79.png"
 }
 spriteType = {
 name = "GFX_kmt_80"
-texturefile = "gfx\interface\goals\CHI\kmt_80.png"
+texturefile = "gfx\interface\goals\CHI/kmt_80.png"
 }
 spriteType = {
 name = "GFX_kmt_81"
-texturefile = "gfx\interface\goals\CHI\kmt_81.png"
+texturefile = "gfx\interface\goals\CHI/kmt_81.png"
 }
 spriteType = {
 name = "GFX_kmt_82"
-texturefile = "gfx\interface\goals\CHI\kmt_82.png"
+texturefile = "gfx\interface\goals\CHI/kmt_82.png"
 }
-
-
+spriteType = {
+name = "GFX_kmt_83"
+texturefile = "gfx\interface\goals\CHI/kmt_83.png"
+}
+spriteType = {
+name = "GFX_kmt_84"
+texturefile = "gfx\interface\goals\CHI/kmt_84.png"
+}
+spriteType = {
+name = "GFX_kmt_85"
+texturefile = "gfx\interface\goals\CHI/kmt_85.png"
+}
+spriteType = {
+name = "GFX_kmt_86"
+texturefile = "gfx\interface\goals\CHI/kmt_86.png"
+}
+spriteType = {
+name = "GFX_kmt_87"
+texturefile = "gfx\interface\goals\CHI/kmt_87.png"
+}
+spriteType = {
+name = "GFX_kmt_88"
+texturefile = "gfx\interface\goals\CHI/kmt_88.png"
+}
+spriteType = {
+name = "GFX_kmt_89"
+texturefile = "gfx\interface\goals\CHI/kmt_89.png"
+}
+spriteType = {
+name = "GFX_kmt_90"
+texturefile = "gfx\interface\goals\CHI/kmt_90.png"
+}
 }

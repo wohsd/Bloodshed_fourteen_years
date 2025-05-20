@@ -1,0 +1,5 @@
+guomin_geming_jun = {
+	enable = { always = yes }
+	icon = "GFX_idea_unknown"
+	
+}
