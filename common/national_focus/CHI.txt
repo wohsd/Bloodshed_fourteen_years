@@ -635,7 +635,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Order_Warlords_to_Attack
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_81
 		cost = 5.00
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
@@ -668,7 +668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Air_to_Ground_Support
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_78
 		cost = 5.00
 		prerequisite = {
 			focus = German_Positional_Tactics
@@ -726,7 +726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Contact_Zhang_Xueliang
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_77
 		cost = 5.00
 		prerequisite = {
 			focus = Resistance_First_to_Save_Nation
@@ -1138,7 +1138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Military_Statistics_Bureau
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_79
 		cost = 5.00
 		prerequisite = {
 			focus = Suppress_Anti_Japanese_Activities
@@ -1185,7 +1185,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Central_Statistics_Bureau
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_80
 		cost = 5.00
 		prerequisite = {
 			focus = New_Life_Movement
@@ -1641,7 +1641,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Win_Over_Moderates
-		icon = GFX_goal_unknown
+		icon = GFX_kmt_82
 		cost = 5.00
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour

@@ -28,7 +28,10 @@ spriteTypes = {
 		name = "GFX_idea_Rich_minerals"
 		texturefile = "gfx/interface/ideas/ROJ/Rich_minerals.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_The_winner_Central"
+		texturefile = "gfx/interface/ideas/CHI/The_winner_Central.png"
+	}
 	spriteType = {
 		name = "GFX_idea_Anti_Japanese_zeal"
 		texturefile = "gfx/interface/ideas/CHI/Anti_Japanese_zeal.dds"

@@ -1,4 +1,5 @@
 spriteTypes = {
+	
 spriteType = {
 name = "GFX_kmt01"
 texturefile = "gfx\interface\goals\CHI/kmt01.png"
@@ -317,4 +318,30 @@ spriteType = {
 	texturefile = "gfx\interface\goals\CHI\kmt_76.png"
 	}
 	
+spriteType = {
+name = "GFX_kmt_77"
+texturefile = "gfx\interface\goals\CHI\kmt_77.png"
+}
+spriteType = {
+name = "GFX_kmt_78"
+texturefile = "gfx\interface\goals\CHI\kmt_78.png"
+}
+spriteType = {
+name = "GFX_kmt_79"
+texturefile = "gfx\interface\goals\CHI\kmt_79.png"
+}
+spriteType = {
+name = "GFX_kmt_80"
+texturefile = "gfx\interface\goals\CHI\kmt_80.png"
+}
+spriteType = {
+name = "GFX_kmt_81"
+texturefile = "gfx\interface\goals\CHI\kmt_81.png"
+}
+spriteType = {
+name = "GFX_kmt_82"
+texturefile = "gfx\interface\goals\CHI\kmt_82.png"
+}
+
+
 }

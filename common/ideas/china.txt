@@ -1,5 +1,30 @@
 ideas = {
 	country = {
+		The_winner_Central = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor=-0.02
+				production_speed_buildings_factor=-0.05
+				production_lack_of_resource_penalty_factor=0.05
+				production_factory_max_efficiency_factor=-0.05
+				production_factory_efficiency_gain_factor=-0.05
+				political_power_gain=-0.05
+				stability_factor=-0.05 
+				enemy_declare_war_tension=0.1
+			}
+		}
 		#########抗日热情
 		Anti_Japanese_zeal = {
 		

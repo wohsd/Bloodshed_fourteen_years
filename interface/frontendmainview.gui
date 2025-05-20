@@ -584,7 +584,7 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=690 y =180}
+		position = { x=690 y =220}
 		size = { width = 400 height = 435 }
 		Orientation = CENTER
 		Origo = center		

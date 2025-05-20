@@ -47,6 +47,7 @@ add_ideas = {
 	Four_families
 	CHI_army_corruption_1
 	Anti_hometown_group
+	The_winner_Central
 }
 set_popularities = {
 	democratic = 0
