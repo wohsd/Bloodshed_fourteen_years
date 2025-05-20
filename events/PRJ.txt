@@ -5,6 +5,9 @@ country_event = {
 	title = PRJ.1.t
 	desc = PRJ.1.d
     #picture = 
+	trigger = {
+		date < 1935.1.1
+	}
 	fire_only_once = yes
 	is_triggered_only = yes
     immediate = {

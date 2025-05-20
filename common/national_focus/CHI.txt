@@ -1130,7 +1130,7 @@ focus_tree = {
 		icon = GFX_kmt_56
 		cost = 5.00
 		prerequisite = {
-			focus = China_Revival_Society
+			focus = China_Revival_Society 
 		}
 		x = 107
 		y = 5

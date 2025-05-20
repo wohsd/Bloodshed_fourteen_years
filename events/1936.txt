@@ -32,6 +32,13 @@ country_event = {
 			defender_modifier = -0.75
 			combat_width = 100
 		}
+		132={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = ROD
+				days=150
+			}
+		}
 	}		
 }
 
@@ -63,6 +70,13 @@ country_event = {
 			attacker_modifier = 0.75
 			defender_modifier = -0.75
 			combat_width = 100
+		}
+		114={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = ROD
+				days=150
+			}
 		}
 	}		
 }
@@ -161,11 +175,12 @@ country_event = {
 				}
 			}
 		}
-		
+		country_event = {id=PRC_1936.7 days=5}
 		PRH = {
 			PRH_HeLong = { set_nationality = PRC }
 			PRH_GuangXiangYing = { set_nationality = PRC }
 			PRH_XiaoKe = { set_nationality = PRC }
+			
 		}
 	}		
 }
@@ -204,6 +219,55 @@ country_event = {
 	}		
 }
 
+country_event = {
+	id =  PRC_1936.7
+	title = PRC_1936.7.t
+	desc =  PRC_1936.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.7.a
+		PRC={
+			declare_war_on = {
+				target = MBQ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROQ
+				type = annex_everything
+			}
+		}
+		country_event = {id= PRC_1936.8 days=15}
+	}		
+}
+country_event = {
+	id =  PRC_1936.8
+	title = PRC_1936.8.t
+	desc =  PRC_1936.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			132={
+			transfer_state_to = ROD
+			}
+			122={
+			transfer_state_to = ROD
+			}
+			625={
+			transfer_state_to = ROD
+			}
+		}
+		
+	}
+	option = {
+		name =  PRC_1936.8.a
+		hidden_effect = {
+			country_event = {id=PRC_1936.5 days=50}
+		}
+		
+	}		
+}
 
 country_event = {
 	id =  ROD_1936.1

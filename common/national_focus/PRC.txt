@@ -1144,6 +1144,13 @@ focus_tree = {
 				defender_modifier = -0.85
 				combat_width = 100
 			}
+			625={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = ROD
+				days=150
+			}
+			}
 			
 			start_border_war = {
 				change_state_after_war = yes
@@ -1165,6 +1172,13 @@ focus_tree = {
 				attacker_modifier= 0.75
 				defender_modifier = -0.75
 				combat_width = 100
+			}
+			122={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = ROD
+				days=150
+			}
 			}
 		}
 	}
