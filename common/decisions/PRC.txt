@@ -84,7 +84,7 @@ PRC_CHINA = {
 	}
 }
 
-PRC_Buy_gun = {
+PRC_Buy_gun = {    
 	PRC_Buy_gun_from = {          
 		available = {
 			check_variable = {
