@@ -1,3 +1,84 @@
+#######动态变量提示（例：抗日热情）
+Anti_JP_zeal_add = {
+	set_temp_variable = {
+		temp_old = Anti_JP_zeal
+	}
+	add_to_variable = {
+		var =  Anti_JP_zeal
+		value =  temp_Anti_JP_zeal
+	}
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	add_to_temp_variable = {
+		temp_new = temp_Anti_JP_zeal
+	}
+
+	clamp_temp_variable = {
+		var = temp_new
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_old
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_Anti_JP_zeal
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = Anti_JP_zeal
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = Anti_JP_zeal_tip
+}
+
+
+#######动态变量增长绑定（例：抗日热情）
+Anti_JP_zeal_var={
+	set_variable = {
+		var = temp_Anti_JP_var
+		value = temp_Anti_JP_zeal
+	}
+	divide_variable = {
+		var = temp_Anti_JP_var
+		value = 500
+	}
+	add_to_variable = {
+		Anti_JP_zeal_stability=temp_Anti_JP_var   #稳定度       
+	}
+	add_to_variable = {
+		Anti_JP_zeal_war_support=temp_Anti_JP_var      #战争支持度          
+	}
+	add_to_variable = {
+		Anti_JP_zeal_army_core_attack=temp_Anti_JP_var       
+	}
+	add_to_variable = {
+		Anti_JP_zeal_army_core_defence=temp_Anti_JP_var   
+	}
+	add_to_variable = {
+		Anti_JP_zeal_production_speed=temp_Anti_JP_var #建造速度         
+	}
+	add_to_variable = {
+		Anti_JP_zeal_production_factory_max=temp_Anti_JP_var  #生产效率上限
+	}
+	add_to_variable = {
+		Anti_JP_zeal_production_factory_efficiency=temp_Anti_JP_var#生产效率增长       
+	}
+	add_to_variable = {
+		Anti_JP_zeal_industrial_capacity=temp_Anti_JP_var #工厂产出       
+	}
+	custom_effect_tooltip = Anti_JP_zeal_effect
+}
+			
+
+
+
+
 
 Long_march_battle = {
 	custom_effect_tooltip = Long_march_effect_tt

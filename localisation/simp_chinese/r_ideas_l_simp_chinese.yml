@@ -2,7 +2,7 @@
 The_winner_Central:0 "中原大战的胜利者"
 The_winner_Central_desc:0 "虽然国民政府取得了最后的胜利，但“中原大战”历时7个月，双方动员兵力110万人以上，支出军费5亿元，死伤30万人，战火波及20多省。战祸所及，破坏严重。作为战场的中原人民，河南洛阳等27县严重受灾。"
 Anti_Japanese_zeal:0 "抗日热情"
-Anti_Japanese_zeal_desc:0 "目前的热情为：[?Anti_JP_zeal]\n 人民的抗日之心已经沸腾。高校学生开始自发动员组织抗日游行活动，动员全国人民抵抗日本的侵略。"
+Anti_Japanese_zeal_desc:0 "目前的热情：§H[?Anti_JP_zeal]§!\n人民的抗日之心已经沸腾。高校学生开始自发动员组织抗日游行活动，动员全国人民抵抗日本的侵略。\n\n§H效果：§!\n每当热情上升§H1§!点，各项增益将会增加§G0.02%§!的效果，但每§R丢失§!一个大型城市，§R投降派§!的势力将会增加，热情也随着§R减弱§!。"
 Encourage_enlistment_military:0 "十万青年十万军"
 The_Golden_Decade:0 "黄金十年"
 Militaristic_fervor:0 "军国主义狂热"

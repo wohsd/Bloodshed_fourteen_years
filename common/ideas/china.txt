@@ -25,25 +25,7 @@ ideas = {
 				enemy_declare_war_tension=0.1
 			}
 		}
-		#########抗日热情
-		Anti_Japanese_zeal = {
 		
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				
-			}
-		}
 		The_Golden_Decade = {
 		
 			allowed = {

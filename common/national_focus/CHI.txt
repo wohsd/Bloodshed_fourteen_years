@@ -17,7 +17,7 @@ focus_tree = {
 		x = 72
 		y = 0
 		completion_reward = {
-		
+			
 		}
 	}
 	focus = {
@@ -617,8 +617,14 @@ focus_tree = {
 		}
 		x = 72
 		y = 2 
-
-	}
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = 10
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}  
+	} 
 	focus = {
 		id = Internal_Pacification_Before_Resistance
 		icon = GFX_kmt_41

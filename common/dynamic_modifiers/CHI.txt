@@ -16,3 +16,19 @@ Four_families = {
 	neutrality_drift=CHI_neutrality_drift   #中立每日支持
 	supply_consumption_factor=CHI_supply_consumption_factor   #补给使用
 }
+
+Anti_Japanese_zeal = {
+	 
+	enable = { always = yes }
+
+	icon = "GFX_idea_Anti_Japanese_zeal"
+
+	stability_factor=Anti_JP_zeal_stability            #稳定度
+	war_support_factor=Anti_JP_zeal_war_support       #战争支持度
+	army_core_attack_factor=Anti_JP_zeal_army_core_attack 
+	army_core_defence_factor=Anti_JP_zeal_army_core_defence
+	production_speed_buildings_factor=Anti_JP_zeal_production_speed  #建造速度
+	production_factory_max_efficiency_factor=Anti_JP_zeal_production_factory_max   #生产效率上限
+	production_factory_efficiency_gain_factor=Anti_JP_zeal_production_factory_efficiency #生产效率增长
+	industrial_capacity_factory=Anti_JP_zeal_industrial_capacity  #工厂产出
+}
