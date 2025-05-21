@@ -619,7 +619,7 @@ focus_tree = {
 		y = 2 
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Anti_JP_zeal = 10
+				temp_Anti_JP_zeal = 30
 			}
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
@@ -637,7 +637,13 @@ focus_tree = {
 		}
 		x = 70
 		y = 3
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Order_Warlords_to_Attack
@@ -695,7 +701,13 @@ focus_tree = {
 		}
 		x = 74
 		y = 3
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = 5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Reconcile_with_Communists
@@ -706,7 +718,9 @@ focus_tree = {
 		}
 		x = 73
 		y = 4
-
+		completion_reward = {
+				white_peace = PRC
+		}
 	}
 	focus = {
 		id = Expand_Anti_Japanese_Propaganda
@@ -717,7 +731,13 @@ focus_tree = {
 		}
 		x = 73
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = 5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Establish_United_Front
@@ -728,7 +748,13 @@ focus_tree = {
 		}
 		x = 73
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = 15
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Contact_Zhang_Xueliang
@@ -1137,7 +1163,13 @@ focus_tree = {
 		}
 		x = 105
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Control_Media_Information
@@ -1728,7 +1760,13 @@ focus_tree = {
 		}
 		x = 52
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Recognize_Puppet_Manchukuo
@@ -1739,7 +1777,8 @@ focus_tree = {
 		}
 		x = 52
 		y = 7
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = Suppress_Anti_Japanese_Sentiment
@@ -1750,7 +1789,13 @@ focus_tree = {
 		}
 		x = 50
 		y = 7
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Accept_Japanese_Investment
@@ -1761,7 +1806,13 @@ focus_tree = {
 		}
 		x = 54
 		y = 7
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Land_Production_to_Public

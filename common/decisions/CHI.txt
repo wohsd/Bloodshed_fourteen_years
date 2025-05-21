@@ -86,6 +86,11 @@ CHI_Battle_China = {
 			228={
 				set_state_controller_to = JAP
 			}
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
 			clr_country_flag = songhu
 			set_country_flag = songhu_lose  
 		}
@@ -93,6 +98,11 @@ CHI_Battle_China = {
 			228={
 				set_state_controller_to = JAP
 			}
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
 			clr_country_flag = songhu
 			set_country_flag = songhu_lose  
 		}
@@ -105,16 +115,64 @@ CHI_Battle_China = {
 	}
 	Battle_Taiyuan = {
 		available = {
+			ROJ={
+				has_war_with = JAP
+			}
+		NOT={
+			JAP={
+				controls_province = 2640
+				controls_province = 1868
+				controls_province = 2977
+			}
 		}
-		days_mission_timeout = 60
-		activation = { 
-		}		
-		fixed_random_seed = no
-		fire_only_once = yes
-		is_good = no
+			ROJ={
+				controls_province = 2640
+				controls_province = 1868
+				controls_province = 2977
+			}
+		}
+		days_mission_timeout = 90
+		cancel_trigger = {
+			JAP={
+				controls_province = 2640
+				controls_province = 1868
+				controls_province = 2977
+			}
+		}
+		activation = {
+			JAP={
+				controls_province = 2640
+			}
+		}
+		cancel_effect = {
+			104={
+				set_state_controller_to = JAP
+			}
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Taiyuan
+			set_country_flag = Taiyuan_lose  
+		}
 		timeout_effect = {
+			104={
+				set_state_controller_to = JAP
+			}
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Taiyuan
+			set_country_flag = Taiyuan_lose  
 		}
 		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = Taiyuan
+			set_country_flag = Taiyuan_win
 		}
 	}
 }
