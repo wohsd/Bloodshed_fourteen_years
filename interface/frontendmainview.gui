@@ -591,7 +591,7 @@ guiTypes = {
 
 		positionType = {
 			name = "subscription_size"
-			position = { x = 320 y = 563 }
+			position = { x = 420 y = 553 }
 		}
 				
 		background = {
@@ -672,13 +672,13 @@ guiTypes = {
 
 		iconType = {
 			name = "subscription_divider"
-			position = { x = 4 y = 336 }
+			position = { x = 133 y = 436 }
 			spriteType = "GFX_main_lobby_divider"
 		}
 
 		containerWindowType = {
 			name = "subscription_widget"
-			position = { x = 100 y = 352 }
+			position = { x = 100 y = 452 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {

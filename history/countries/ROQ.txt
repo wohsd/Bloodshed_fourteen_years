@@ -10,6 +10,7 @@ set_technology = {
 }
 
 recruit_character = ROQ_MaQi
+recruit_character = ROQ_MaBuFang
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -21,4 +22,9 @@ set_politics = {
 	#last_election = "1936.11.11"
 	election_frequency = 72
 	elections_allowed = no
+}
+1936.1.1={
+	country_event = {
+		id = ROQ_1936.1 days = 180
+	}
 }
