@@ -64,7 +64,7 @@ add_to_variable = {
 add_to_variable = {
 	CHI_neutrality_drift = 0.1
 }
-
+puppet = CEN
 
 set_popularities = {
 	democratic = 0
