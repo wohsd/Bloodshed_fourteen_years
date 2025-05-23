@@ -519,10 +519,10 @@ guiTypes = {
 	### SINGLE PLAYER MENU
 	containerWindowType = {
 		name = "mainmenu_single_player"
-		position = { x=720 y =220}
+		position = { x = 0 y = 100}
 		size = { width = 500 height = 800 }
-		Orientation = CENTER
-		Origo = center	
+		Orientation = lower_right
+		Origo = lower_right
 				
 		background = {
 			name = "Background"		
@@ -531,7 +531,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_continue_button"
-			position = { x = 100 y = 100 }
+			position = { x = 95 y = 100 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CONTINUE"
 			buttonFont = "hoi_24header"
@@ -541,7 +541,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_new_button"
-			position = { x = 100 y = 150 }
+			position = { x = 95 y = 150 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
 			buttonFont = "hoi_24header"
@@ -551,7 +551,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_load_button"
-			position = {  x = 100 y = 200 }
+			position = {  x = 95 y = 200 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
 			buttonFont = "hoi_24header"
@@ -561,7 +561,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_tutorial_button"
-			position = { x = 100 y = 250}
+			position = { x = 95 y = 250}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_TUTORIAL"
 			buttonFont = "hoi_24header"
@@ -571,7 +571,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "sp_back_button"
-			position = { x = 100 y = 300 }
+			position = { x = 95 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
@@ -584,10 +584,10 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=720 y =220}
+		position = { x= 0 y =100}
 		size = { width = 500 height = 800 }
-		Orientation = CENTER
-		Origo = center		
+		Orientation = lower_right
+		Origo = lower_right	
 
 		positionType = {
 			name = "subscription_size"
@@ -601,7 +601,7 @@ guiTypes = {
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 100 y = 100 }
+			position = { x = 95 y = 100 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_SINGLE_PLAYER"				
@@ -611,7 +611,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 100 y = 150}
+			position = { x = 95 y = 150}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
@@ -634,7 +634,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 100 y = 200 }
+			position = { x = 95 y = 200 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -653,7 +653,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 100 y = 300 }
+			position = { x = 95 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
@@ -661,7 +661,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 100 y = 350 }
+			position = { x = 95 y = 350 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -678,7 +678,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "subscription_widget"
-			position = { x = 100 y = 452 }
+			position = { x = 95 y = 452 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
