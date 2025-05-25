@@ -159,14 +159,14 @@ country_event = {
 			change_state_after_war = yes
 			attacker = {
 				state = 601
-				num_provinces = 1
+				num_provinces = 2
 				modifier = 0.1
 				dig_in_factor = 0.7
 				terrain_factor = 0.7
 			}	
 			defender = {
 				state = 661
-				num_provinces = 3
+				num_provinces = 2
 				dig_in_factor = -0.85
 				terrain_factor = -0.85
 			}
@@ -175,15 +175,15 @@ country_event = {
 		start_border_war = {
 			change_state_after_war = yes
 			attacker = {
-				state = 342
-				num_provinces = 1
+				state = 345
+				num_provinces = 2
 				modifier = 0.1
 				dig_in_factor = 0.4
 				terrain_factor = 0.4
 			}	
 			defender = {
 				state = 665
-				num_provinces = 1
+				num_provinces = 2
 				dig_in_factor = -0.75
 				terrain_factor = -0.75
 			}
@@ -796,5 +796,54 @@ country_event = {
 	option = {
 		name = PRC_1931.9.a
 		
+	}		
+}
+
+country_event = {
+	id = PRC_1931.10
+	title = PRC_1931.10.t
+	desc = PRC_1931.10.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		date < 1932.1.1
+	}
+	option = {
+		name = PRC_1931.10.a
+		country_event = {id=PRC_1931.11 days=60}
+	}		
+}
+
+country_event = {
+	id = PRC_1931.11
+	title = PRC_1931.11.t
+	desc = PRC_1931.11.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.11.a
+		PRC={
+			kill_country_leader = yes
+		}
+		country_event = {id=PRC_1931.12 days=137}
+	}		
+}
+
+country_event = {
+	id = PRC_1931.12
+	title = PRC_1931.12.t
+	desc = PRC_1931.12.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.12.a
+		PRC_WangMing = {
+			set_nationality = SOV
+		}
 	}		
 }

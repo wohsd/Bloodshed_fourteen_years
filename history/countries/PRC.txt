@@ -6,7 +6,10 @@ set_technology = {
 	tech_engineers = 1
 }
 
+country_event = {id=PRC_1931.10 days= 122}
+
 recruit_character = PRC_XiangZhongFa
+recruit_character = PRC_WangMing
 recruit_character = PRC_BoGu
 recruit_character = PRC_ZhangWengTian
 recruit_character = PRC_LingBoQu
