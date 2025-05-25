@@ -15,7 +15,7 @@ state={
 		add_core_of = ROA
 		add_core_of = CHI
 		1939.1.1={
-			owner = JAP
+			owner = NAC
 		}
 	}
 	manpower=323000

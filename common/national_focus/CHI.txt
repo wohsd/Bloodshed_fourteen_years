@@ -831,7 +831,12 @@ focus_tree = {
 		}
 		x = 78
 		y = 4
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Agricultural_Adjustment_Committee
@@ -842,7 +847,12 @@ focus_tree = {
 		}
 		x = 77
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Establish_Trade_Committee
@@ -853,7 +863,12 @@ focus_tree = {
 		}
 		x = 79
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Economic_Reforms
@@ -864,7 +879,12 @@ focus_tree = {
 		}
 		x = 82
 		y = 4
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Establish_Four_United_Bureau
@@ -875,7 +895,12 @@ focus_tree = {
 		}
 		x = 81
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Issue_High_Interest_Loans
@@ -886,7 +911,12 @@ focus_tree = {
 		}
 		x = 83
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Announce_Political_Tutelage
@@ -897,7 +927,34 @@ focus_tree = {
 		}
 		x = 94
 		y = 3
-
+		completion_reward={ 
+			unlock_decision_category_tooltip = CHI_Discipline_government_category
+			custom_effect_tooltip = National_Education_tooltip
+			set_variable = {
+				Government_efficiency_var = 10
+			}
+			clamp_variable = {
+				var = Government_efficiency_var
+				min = 0
+				max = 100
+			}
+			set_variable = {
+				National_literacy_var = 5
+			}
+			clamp_variable = {
+				var = National_literacy_var
+				min = 0
+				max = 100
+			}
+			set_variable = {
+				National_economy_var = 8
+			}
+			clamp_variable = {
+				var = National_economy_var
+				min = 0
+				max = 100
+			}
+		}
 	}
 	focus = {
 		id = National_Education
@@ -907,8 +964,13 @@ focus_tree = {
 			focus = Announce_Political_Tutelage
 		}
 		x = 88
-		y = 4
-
+		y = 4 
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 3
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Improve_Education_System
@@ -923,7 +985,12 @@ focus_tree = {
 		}
 		x = 86
 		y = 5
-
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 3
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Build_Central_Research_Academy
@@ -938,7 +1005,12 @@ focus_tree = {
 		}
 		x = 90
 		y = 5
-
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 3
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Government_Organization
@@ -949,7 +1021,12 @@ focus_tree = {
 		}
 		x = 94
 		y = 4
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Announce_Political_Tutelage_Program
@@ -960,7 +1037,12 @@ focus_tree = {
 		}
 		x = 92
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Implement_Five_Power_System
@@ -971,7 +1053,12 @@ focus_tree = {
 		}
 		x = 94
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Define_Chairman_Authority
@@ -982,7 +1069,12 @@ focus_tree = {
 		}
 		x = 94
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = National_Government_Organization_Law
@@ -993,7 +1085,12 @@ focus_tree = {
 		}
 		x = 92
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Local_Equal_Authority_System
@@ -1004,7 +1101,12 @@ focus_tree = {
 		}
 		x = 96
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Draft_Local_Laws
@@ -1015,7 +1117,12 @@ focus_tree = {
 		}
 		x = 96
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Consolidate_Republics_Governance
@@ -1032,7 +1139,12 @@ focus_tree = {
 		}
 		x = 94
 		y = 7
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 10
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = National_Livelihood
@@ -1043,7 +1155,12 @@ focus_tree = {
 		}
 		x = 100
 		y = 4
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 3
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Large_scale_Transport_Construction
@@ -1054,7 +1171,12 @@ focus_tree = {
 		}
 		x = 98
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 3
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Unified_Tax_Reform
@@ -1065,7 +1187,12 @@ focus_tree = {
 		}
 		x = 100
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 3
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Agricultural_Development_Plan
@@ -1076,7 +1203,12 @@ focus_tree = {
 		}
 		x = 102
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 3
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Five_Year_Heavy_Industry_Plan
@@ -1089,7 +1221,12 @@ focus_tree = {
 		}
 		x = 98
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 3
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Restore_Tariff_Autonomy
@@ -1102,7 +1239,12 @@ focus_tree = {
 		}
 		x = 100
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 3
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Promote_New_Technologies
@@ -1116,7 +1258,12 @@ focus_tree = {
 		}
 		x = 102
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 3
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Development_of_National_Economy
@@ -1130,7 +1277,12 @@ focus_tree = {
 		}
 		x = 100
 		y = 7
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_economy_var = 10
+			}
+			National_economy_add = yes
+		}
 	}
 	focus = {
 		id = Chiangs_Rule_Chens_Party
@@ -1152,7 +1304,12 @@ focus_tree = {
 		}
 		x = 106
 		y = 4
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Suppress_Anti_Japanese_Activities
@@ -1194,7 +1351,12 @@ focus_tree = {
 		}
 		x = 106
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Central_Club
@@ -1205,7 +1367,12 @@ focus_tree = {
 		}
 		x = 110
 		y = 4
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = New_Life_Movement
@@ -1241,7 +1408,12 @@ focus_tree = {
 		}
 		x = 110
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Establish_Resources_Committee
@@ -1255,7 +1427,12 @@ focus_tree = {
 		}
 		x = 78
 		y = 6
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = 3
+			}
+			Government_efficiency_add = yes
+		}
 	}
 	focus = {
 		id = Implement_Currency_Reform
@@ -1269,7 +1446,12 @@ focus_tree = {
 		}
 		x = 82
 		y = 6
-
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 3
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Promote_Teacher_Colleges
@@ -1298,7 +1480,12 @@ focus_tree = {
 		}
 		x = 88
 		y = 6
-
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 3
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Implement_Compulsory_Education
@@ -1312,7 +1499,12 @@ focus_tree = {
 		}
 		x = 86
 		y = 6
-
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 3
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Reform_Higher_Education_System
@@ -1326,7 +1518,12 @@ focus_tree = {
 		}
 		x = 90
 		y = 6
-
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 3
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Progress_of_National_Quality
@@ -1339,7 +1536,12 @@ focus_tree = {
 		}
 		x = 88
 		y = 7
-
+		completion_reward={ 
+			add_to_temp_variable = {
+				temp_National_literacy_var = 10
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Party_Ruled_State

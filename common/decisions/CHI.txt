@@ -178,9 +178,132 @@ CHI_Battle_China = {
 }
 ######### 
 ######### 
+#########训政时期
 #########
-#########
-
+CHI_Discipline_government_category = { 
+	Falsification_satisfactory_reports = {
+		available = {
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			party_popularity_stability_factor = 0.1
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = -2
+			}
+			Government_efficiency_add = yes
+			add_to_temp_variable = {
+				temp_National_economy_var = -2
+			}
+			National_economy_add = yes
+		}
+	}
+	Tolerate_corruption_bribery = {
+		available = {
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = -2
+			}
+			Government_efficiency_add = yes
+			add_to_temp_variable = {
+				temp_National_economy_var = -2
+			}
+			National_economy_add = yes
+		}
+	}
+	Deregulation_tobacco = {
+		available = {
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = -2
+			}
+			Government_efficiency_add = yes
+			add_to_temp_variable = {
+				temp_National_economy_var = -2
+			}
+			National_economy_add = yes
+		}
+	}
+	Promote_New_Life_Movement = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			research_speed_factor = 0.02
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_National_literacy_var = 2
+			}
+			National_literacy_add = yes
+		}
+	}
+	Compulsory_education_introduced = {
+		available = {
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			research_speed_factor = 0.05
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_National_literacy_var = 2
+			}
+			National_literacy_add = yes
+		}
+	}
+}
 #########
 #########
 ######### 

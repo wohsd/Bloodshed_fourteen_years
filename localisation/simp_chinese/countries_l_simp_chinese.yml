@@ -199,6 +199,10 @@ PRC_anti_chi: "反蒋同盟"
  NFA_DEF: "新四军"
  NFA_ADJ: "新四军"
 
+ NAC: "华北抗日根据地"
+ NAC_DEF: "华北抗日根据地"
+ NAC_ADJ: "华北抗日根据地"
+
  RHC_fascism: "川系-刘厚存"
  RHC_fascism_DEF: "川系-刘厚存"
  RHC_democratic: "川系-刘厚存"

@@ -1,3 +1,118 @@
+#######动态变量提示（例：政府效率）
+Government_efficiency_add = {
+	set_temp_variable = {
+		temp_old = Government_efficiency_var
+	}
+	add_to_variable = {
+		var =  Government_efficiency_var
+		value =  temp_Government_efficiency_var
+	}
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	add_to_temp_variable = {
+		temp_new = temp_Government_efficiency_var
+	}
+
+	clamp_temp_variable = {
+		var = temp_new
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_old
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_Government_efficiency_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = Government_efficiency_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = Government_efficiency_var_tip
+}
+#######动态变量提示（例：国民素养）
+National_literacy_add = {
+	set_temp_variable = {
+		temp_old = National_literacy_var
+	}
+	add_to_variable = {
+		var =  National_literacy_var
+		value =  temp_National_literacy_var
+	}
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	add_to_temp_variable = {
+		temp_new = temp_National_literacy_var
+	}
+
+	clamp_temp_variable = {
+		var = temp_new
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_old
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_National_literacy_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = National_literacy_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = National_literacy_var_tip
+}
+
+#######动态变量提示（例：国民经济）
+National_economy_add = {
+	set_temp_variable = {
+		temp_old = National_economy_var
+	}
+	add_to_variable = {
+		var =  National_economy_var
+		value =  temp_National_economy_var
+	}
+	set_temp_variable = {
+		temp_new = temp_old
+	}
+	add_to_temp_variable = {
+		temp_new = temp_National_economy_var
+	}
+
+	clamp_temp_variable = {
+		var = temp_new
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_old
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = temp_National_economy_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = National_economy_var
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = National_economy_var_tip
+}
 #######动态变量提示（例：抗日热情）
 Anti_JP_zeal_add = {
 	set_temp_variable = {

@@ -1,9 +1,16 @@
-
-CHI_Battle_China = {
+CHI_Discipline_government_category= {
 	icon = military_operation
 	picture = GFX_JiangJieShi_1
 	visible = { 
 		tag=CHI
+	}
+	visible_when_empty = yes
+}
+CHI_Battle_China = {
+	icon = military_operation 
+	picture = GFX_JiangJieShi_1
+	visible = { 
+		tag=CHI    
 	}
 	visible_when_empty = yes
 }

@@ -1,0 +1,232 @@
+defined_text = { # Country
+	name = getGovernmentefficiencyvar
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = Government_efficiency_var
+					value = 0
+					compare = greater_than_or_equals
+				}
+				check_variable = { 
+					var = Government_efficiency_var
+					value = 30
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_30_efficiency_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = Government_efficiency_var
+					value = 30
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = Government_efficiency_var
+					value = 50
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_50_efficiency_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = Government_efficiency_var
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = Government_efficiency_var
+					value = 70
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_70_efficiency_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = Government_efficiency_var
+					value = 70
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = Government_efficiency_var
+					value = 100
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_100_efficiency_var
+	}
+}
+
+####国民素养
+
+
+defined_text = { # Country
+	name = getGovernmentefficiencyvar
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_literacy_var
+					value = 0
+					compare = greater_than_or_equals
+				}
+				check_variable = { 
+					var = National_literacy_var
+					value = 30
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_30_literacy_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_literacy_var
+					value = 30
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = National_literacy_var
+					value = 50
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_50_literacy_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_literacy_var
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = National_literacy_var
+					value = 70
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_70_literacy_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_literacy_var
+					value = 70
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = National_literacy_var
+					value = 100
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_100_literacy_var
+	}
+}
+
+####国民经济
+
+defined_text = { # Country
+	name = getGovernmentefficiencyvar
+	text = { 
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_economy_var
+					value = 0
+					compare = greater_than_or_equals
+				}
+				check_variable = { 
+					var = National_economy_var
+					value = 30
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_30_economy_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_economy_var
+					value = 30
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = National_economy_var
+					value = 50
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_50_economy_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_economy_var
+					value = 50
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = National_economy_var
+					value = 70
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_70_economy_var
+	}
+	text = {
+		trigger = {
+			original_tag = CHI
+			AND={
+				check_variable = {
+					var = National_economy_var
+					value = 70
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = National_economy_var
+					value = 100
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = CHI_100_economy_var
+	}
+}

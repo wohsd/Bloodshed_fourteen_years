@@ -93,3 +93,28 @@ NSD_Suppression_end: "提前终止肃反。"
 
 NSD_paranoia_value_text: "政治偏执度：§R[?NSD_paranoia]%§!"
 NSD_paranoia_bg_tooltip: "每§R25§!偏执度会发生清洗下层士兵事件，偏执度越高，且超过上述阈值的天数越多，会发生清洗高级将领的事件。\n\n某些国策、决议和效果可能导致期偏执度立即增加/减少，某些顾问和国家领导人特质也能缓慢增加偏执度。"
+
+CHI_Discipline_government_category: "训政时期"
+CHI_Discipline_government_category_desc: "孙中山把建立中华民国的程序分为军政、训政、宪政三个时期，训政即第二个时期。\n\n在国家统一完成（即中国国民革命成功结束）后，军政阶段即随之结束，训政开始。国民政府订定《训政时期约法》，在训政时期“约法”为国家基本法，起到宪法的作用，国民政府有完全的治理国家的权力。\n\n当前§H政府效率%§!：[?Government_efficiency_var]%[getGovernmentefficiencyvar]\n当前§H国民素养§!：[?National_literacy_var]%[getNationalliteracyvar]\n当前§H国民经济§!：[?National_economy_var]%[getNationaleconomyvar]\n"
+
+CHI_30_efficiency_var: "（一塌涂地）"
+CHI_50_efficiency_var: "（稍有改善）"
+CHI_70_efficiency_var: "（中规中矩）"
+CHI_100_efficiency_var: "（渐入佳境）"
+
+CHI_30_literacy_var: "（遍地文盲）"
+CHI_50_literacy_var: "（毫无起色）"
+CHI_70_literacy_var: "（略有改善）"
+CHI_100_literacy_var: "（缓慢普及）"
+
+
+CHI_30_economy_var: "（一蹶不振）"
+CHI_50_economy_var: "（依赖外国）"
+CHI_70_economy_var: "（稳中向好）"
+CHI_100_economy_var: "（自给自足）"
+
+Falsification_satisfactory_reports: "伪造令人满意的报告"
+Tolerate_corruption_bribery: "容忍贪污受贿"
+Deregulation_tobacco: "放松烟草管控"
+Promote_New_Life_Movement: "宣传新生活运动"
+Compulsory_education_introduced: "推广地方教育"
