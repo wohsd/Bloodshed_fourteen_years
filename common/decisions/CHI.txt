@@ -177,14 +177,113 @@ CHI_Battle_China = {
 	}
 }
 ######### 
-######### 
+######### 铁路
+
+CHI_Railroad_construction_category = { 
+	Construction_Sujia_Line = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+		}
+	}
+	Construction_Zhejiang_Jiangxi_line = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+		}
+	}
+	Construction_Xianggui_line = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+		}
+	}
+	Construction_Longhai_Railway = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+		}
+	}
+	Requisition_trains = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+		}
+	}
+	Wartime_Railroad_Employee_Reward_Punishment_Law = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+		}
+	}
+}
 #########训政时期
 #########
 CHI_Discipline_government_category = { 
 	Falsification_satisfactory_reports = {
 		available = {
 		} 
-		visible = {
+		visible = { 
 		}
 		cost = 20 
 		days_remove= 15

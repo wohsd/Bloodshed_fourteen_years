@@ -85,6 +85,9 @@ set_power_balance = {
 }
 1933.1.1={
 	retire_character = PRC_XiangZhongFa
+	PRC_WangMing = {
+		set_nationality = SOV
+	}
 	capital = 582 
 	set_oob = PRC_1933
 	set_variable = {

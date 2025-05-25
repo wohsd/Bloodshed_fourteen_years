@@ -97,6 +97,15 @@ NSD_paranoia_bg_tooltip: "每§R25§!偏执度会发生清洗下层士兵事件�
 CHI_Discipline_government_category: "训政时期"
 CHI_Discipline_government_category_desc: "孙中山把建立中华民国的程序分为军政、训政、宪政三个时期，训政即第二个时期。\n\n在国家统一完成（即中国国民革命成功结束）后，军政阶段即随之结束，训政开始。国民政府订定《训政时期约法》，在训政时期“约法”为国家基本法，起到宪法的作用，国民政府有完全的治理国家的权力。\n\n当前§H政府效率%§!：[?Government_efficiency_var]%[getGovernmentefficiencyvar]\n当前§H国民素养§!：[?National_literacy_var]%[getNationalliteracyvar]\n当前§H国民经济§!：[?National_economy_var]%[getNationaleconomyvar]\n"
 
+CHI_Railroad_construction_category: "铁道部"
+CHI_Railroad_construction_category_desc: "铁道部主导期间另一个重要业务是发展货运业。铁路货运收入大增，铁路形象也有所好转。铁道部在铁路建设上也下了大力气，铁路建设再次迎来新的高潮。"
+Construction_Sujia_Line: "修建苏嘉线"
+Construction_Zhejiang_Jiangxi_line: "修建浙赣线"
+Construction_Xianggui_line: "修建湘桂线"
+Construction_Longhai_Railway: "贯通陇海铁路"
+Requisition_trains: "征用火车"
+Wartime_Railroad_Employee_Reward_Punishment_Law: "发布《战时铁路员工奖惩法》"
+
 CHI_30_efficiency_var: "（一塌涂地）"
 CHI_50_efficiency_var: "（稍有改善）"
 CHI_70_efficiency_var: "（中规中矩）"

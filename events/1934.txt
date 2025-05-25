@@ -840,7 +840,10 @@ country_event = {
 		PRC = {
 			AND={
 				has_war = yes
-				controls_province = 618
+				NOT={
+					controls_province = 618
+				}
+				
 			}
 		}
     }

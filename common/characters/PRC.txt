@@ -340,7 +340,7 @@ characters={
 		name=PRC_LiuBoChen
 		portraits={
 			army = {
-				large="gfx/leaders/PRC/PRC_LiuBoChen.png"
+				large="gfx/leaders/PRC/PRC_LiuBoCheng.png"
 			}
 			civilian={
 				small = "gfx/interface/advisers/PRC_LiuBoChen.png"

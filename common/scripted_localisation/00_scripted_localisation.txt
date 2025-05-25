@@ -78,7 +78,7 @@ defined_text = { # Country
 
 
 defined_text = { # Country
-	name = getGovernmentefficiencyvar
+	name = getNationalliteracyvar
 	text = {
 		trigger = {
 			original_tag = CHI
@@ -156,7 +156,7 @@ defined_text = { # Country
 ####国民经济
 
 defined_text = { # Country
-	name = getGovernmentefficiencyvar
+	name = getNationaleconomyvar
 	text = { 
 		trigger = {
 			original_tag = CHI
