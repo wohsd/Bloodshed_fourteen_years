@@ -65,7 +65,7 @@ PRC_NEW_CHINA2: "收回租界"
 
 CHI_Purging_party_category: "清党计划"
 CHI_Purging_party_category_desc: "邓演达等国民党左派，意图联合共产党发起内战，我们必须赶在先前完成行动。"
-Assassination_Deng_Yanda: "刺杀邓演达"
+Assassination_Deng_Yanda: "除掉邓演达"
 
 CHI_Defend_against_enemy_category: "御敌政策"
 CHI_Defend_against_enemy_category_desc: "日军的攻势出乎我们意料，为了阻止日军前进，委员长电令，不惜一切代价阻止日军推进。"
@@ -104,6 +104,8 @@ Construction_Zhejiang_Jiangxi_line: "修建浙赣线"
 Construction_Xianggui_line: "修建湘桂线"
 Construction_Longhai_Railway: "贯通陇海铁路"
 Requisition_trains: "征用火车"
+Requisition_trains_desc: "商业铁路公司控制着我国基础设施。随着战争的临近，我们完全有权因国家需要而将其征收。"
+
 Wartime_Railroad_Employee_Reward_Punishment_Law: "发布《战时铁路员工奖惩法》"
 
 CHI_30_efficiency_var: "（一塌涂地）"
