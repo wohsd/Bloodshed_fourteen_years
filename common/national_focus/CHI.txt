@@ -790,7 +790,14 @@ focus_tree = {
 		}
 		x = 94
 		y = 1
-
+		completion_reward = {
+		CHI_JiangJieShi = {
+			add_trait = {
+				trait = Great_dictator
+			}
+		}
+		custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
+		}
 	}
 	focus = {
 		id = Interests_of_Four_Families

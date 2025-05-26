@@ -7,6 +7,22 @@ add_namespace = world1931
 add_namespace = world1931Hidden
 
 add_namespace = CHI_Encirclement
+add_namespace = Assassinate
+unit_leader_event = {
+	id = Assassinate.1
+	title = Assassinate.1.t
+	desc = Assassinate.1.d
+	#picture = GFX_report_event_military_planning
+    is_triggered_only = yes 
+    immediate = {
+	}
+	option = {
+		name = Assassinate.1.a
+		retire_character = CHI_DengYangDa
+		add_stability = -0.05
+	}
+}
+
 
 country_event = {
 	id = game_start.1

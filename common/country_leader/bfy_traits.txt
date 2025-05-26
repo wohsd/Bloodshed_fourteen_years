@@ -33,4 +33,16 @@ leader_traits = {
 			factor = 0
 		}
 	}
+	Great_dictator= {
+		random = no
+		sprite = 13
+		
+		stability_factor = 0.05
+		political_power_factor = 0.05
+		propaganda_mission_factor = 0.1
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

@@ -39,7 +39,7 @@ JAP_buffer_1212 = {
     	state_trigger = {
         	state = 214
     	}
-    	ratio = 0.4
+    	ratio = 0.9
    	 	ordertype = invasion
     	execution_type = rush
     	manual_attack = no
@@ -49,7 +49,7 @@ JAP_buffer_1212 = {
     	state_trigger = {
         	state = 104
     	}
-    	ratio = 0.4
+    	ratio = 0.6
    	 	ordertype = invasion
     	execution_type = rush
     	manual_attack = no

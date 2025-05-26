@@ -185,8 +185,8 @@ CHI_Railroad_construction_category = {
 		} 
 		visible = { 
 		}
-		cost = 20 
-		days_remove= 15
+		cost = 50
+		days_remove= 465
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -194,6 +194,21 @@ CHI_Railroad_construction_category = {
 		modifier = {
 		}
 		complete_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3821 3300 3840 2796 }	
+				start_province = 3821
+				target_province = 2796
+			}
 		}
 	}
 	Construction_Zhejiang_Jiangxi_line = {
@@ -201,15 +216,32 @@ CHI_Railroad_construction_category = {
 		} 
 		visible = { 
 		}
-		cost = 20 
-		days_remove= 15
+		cost = 50 
+		days_remove= 1345
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-		}
 		complete_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3321 612 3854 2546 3867 3866 2786 3882 
+				2127 3886 1444 2661 3380 3926 1748 1781 3922 2996 1217
+				3942 2250  1637 3954 2700 2889}	
+				start_province = 3321
+				target_province = 2889
+			}
+		}
+		modifier = {
 		}
 	}
 	Construction_Xianggui_line = {
@@ -217,8 +249,8 @@ CHI_Railroad_construction_category = {
 		} 
 		visible = { 
 		}
-		cost = 20 
-		days_remove= 15
+		cost = 50
+		days_remove= 1095
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -226,6 +258,21 @@ CHI_Railroad_construction_category = {
 		modifier = {
 		}
 		complete_effect = {
+		build_railway = {
+				level = 1
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3966 3971 2317 3197 1098 4013 2257 
+				2238 2897 3211 }	
+				start_province = 3966
+				target_province = 3211
+		}
 		}
 	}
 	Construction_Longhai_Railway = {
@@ -233,8 +280,8 @@ CHI_Railroad_construction_category = {
 		} 
 		visible = { 
 		}
-		cost = 20 
-		days_remove= 15
+		cost = 50 
+		days_remove= 975
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -242,10 +289,40 @@ CHI_Railroad_construction_category = {
 		modifier = {
 		}
 		complete_effect = {
+			build_railway = {
+				level = 1
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3091 3741 1415 2005 977}	
+				start_province = 3091
+				target_province = 977
+			}
+			build_railway = {
+				level = 1
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 2132 1832 238 3200 1809 3248 1482 880 2734 1312 2780}	
+				start_province = 2132 
+				target_province = 2780
+			}
 		}
 	}
 	Requisition_trains = {
 		available = {
+			has_war = yes
+			has_tech = basic_train
 		} 
 		visible = { 
 		}
@@ -258,20 +335,27 @@ CHI_Railroad_construction_category = {
 		modifier = {
 		}
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 15
+			}
+			add_stability = -0.05
 		}
 	}
 	Wartime_Railroad_Employee_Reward_Punishment_Law = {
 		available = {
+			has_war_with = JAP
 		} 
 		visible = { 
 		}
 		cost = 20 
-		days_remove= 15
-		fire_only_once = no
+		days_remove= 150
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
 		modifier = {
+			repair_speed_rail_way_factor = 0.1
 		}
 		complete_effect = {
 		}
@@ -412,16 +496,18 @@ CHI_Purging_party_category = {
 		available = {
 		} 
 		visible = {
-			date < 1931.11.29
+			date < 1931.11.29 
 		}
 		cost = 20 
-		days_remove= 15
+		days_remove= 3
 		fire_only_once = no
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
-
+			CHI_DengYangDa = {
+				unit_leader_event = {id=Assassinate.1 days=2}
+			}
 		}
 	}
 }
