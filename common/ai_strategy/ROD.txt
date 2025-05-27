@@ -1,17 +1,50 @@
-
 ROD_buffer_918 = {
 	allowed = {
 		tag = ROD
 	}
 	enable = {
+		tag = ROD
+		date > 1931.1.1
 		date < 1932.12.12
 	}
-	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = JAP
-		value = 100
+		value = 10000000000
+	}
+	#abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1
+		states = {
+			74 85 98 113 128 79 59
+		}
+		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1
+		states = {
+			74 85 98 113 128 79 59 62 63 37 
+		}
+		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1
+		states = {
+			74 85 98 113 128 79 59 62 63 37 
+		}
+		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 1
+		states = {
+			74 85 98 113 128 79 59 62 63 37 
+		}
+		subtract_fronts_from_need = yes
 	}
 }
 

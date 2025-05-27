@@ -6,8 +6,13 @@ state={
 	}
 	history={
 		owner = JAP
+		
 		buildings = {
 			infrastructure = 1
+			1423= {
+				naval_base = 1
+				coastal_bunker = 1
+			}
 		}
 		add_core_of = JAP
 		victory_points = {

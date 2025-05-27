@@ -79,6 +79,8 @@ country_event = {
     trigger = {
 		ROD = {
 			AND={
+				date > 1933.1.1
+				date < 1935.1.1
 				has_war = yes
 				surrender_progress > 0.19
 			}

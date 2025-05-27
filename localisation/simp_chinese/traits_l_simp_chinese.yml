@@ -498,7 +498,7 @@
  wounded: "负伤"
  wounded_desc: "§L这位指挥官严重的伤口需要花上一段时间来恢复。§!"
  reassigned: "重新调职"
- reassigned_desc: "§L为避免其加入密谋叛乱，这位指挥官被政府调到了刻意安排的偏远岗位。§!"
+ reassigned_desc: "§L这位指挥官被政府调到了刻意安排的偏远岗位。§!"
  disgruntled: "不满"
  disgruntled_desc: "§L此人不高兴并且毫不隐瞒他的情绪。§!"
  demoted: "贬职"

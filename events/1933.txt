@@ -642,6 +642,7 @@ country_event = {
     trigger = {
 		ROD = {
 			AND={
+				date > 1933.1.1
 				has_war = yes
 				surrender_progress > 0.27
 			}
@@ -662,6 +663,20 @@ country_event = {
 		}
 		654={
 			transfer_state_to = LSX
+		}
+		CAR={
+			declare_war_on = {
+				target = LSX
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROD
+				type = annex_everything
+			}
 		}
 		59={
 			set_demilitarized_zone = yes

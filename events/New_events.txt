@@ -480,6 +480,65 @@ country_event = {
 		clr_global_flag = Hidden_News_18
 	}		
 }
+
+
+
+
+country_event = {
+	id = Hidden_News.19
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1932.3.9
+		JAP = {
+			AND={
+				controls_state = 50
+				controls_state = 24
+				controls_state = 36
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = Hidden_News_19
+		MCK={
+			transfer_state = 8
+			transfer_state = 12
+			transfer_state = 13
+			transfer_state = 15
+			transfer_state = 21
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 24
+			transfer_state = 29
+			transfer_state = 41
+			transfer_state = 54
+			transfer_state = 40
+			transfer_state = 54
+			transfer_state = 51
+			transfer_state = 42
+			transfer_state = 60
+			transfer_state = 65
+			transfer_state = 73
+			transfer_state = 75
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 50
+			transfer_state = 64
+			transfer_state = 69
+			transfer_state = 44
+			transfer_state = 48
+			transfer_state = 42
+			transfer_state = 36
+			transfer_state = 24
+			transfer_state = 34
+		}
+		news_event = { id= WorldNew.5 days = 1} 
+	}
+	option = {
+		name = Hidden_News.19.a
+		clr_global_flag = Hidden_News_19
+	}		
+}
 #######
 
 
@@ -593,23 +652,9 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
-			name = WorldNew.5.a
-			ROD={
-				set_cosmetic_tag=ROP
-				set_popularities = {
-					fascism = 100
-				}
-				set_politics = {
-				  ruling_party = fascism
-			}
-			every_core_state = {
-				limit = { is_core_of = ROD }
-				transfer_to = ROD
-			}
-			}
-			
-			
-		}		
+		name = WorldNew.5.a
+
+	}		
 }
 news_event = {
 	id = WorldNew.6

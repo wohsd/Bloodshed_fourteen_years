@@ -5,7 +5,7 @@ JAP_buffer_918 = {
 	enable = {
 		date < 1932.12.12
 	}
-	abort_when_not_enabled = yes
+	
 	ai_strategy = {
     	type = prepare_for_war
     	id = ROD
@@ -21,7 +21,7 @@ JAP_buffer_1212 = {
 	enable = {
 		date < 1938.12.12
 	}
-	abort_when_not_enabled = yes
+	
 	
 	ai_strategy = {
 		type = prepare_for_war

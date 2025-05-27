@@ -4,6 +4,65 @@ add_namespace = RFC_1934
 add_namespace = CHI_1934
 add_namespace = CHI_1934
 add_namespace = CHI_1934Hidden
+add_namespace = PRC_Generals
+
+unit_leader_event = {
+	id = PRC_Generals.0
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1934.9.2
+			date < 1934.9.4
+		}
+    }
+    immediate = {
+		PRC_MaoZeDong = {
+			unit_leader_event = {id=PRC_Generals.1}
+		}
+    } 
+    
+	option = {
+		name = PRC_Generals.0.a
+	}		
+}
+unit_leader_event = {
+	id = PRC_Generals.1
+	title = PRC_Generals.1.t
+	desc = PRC_Generals.1.d
+	#picture = GFX_report_event_military_planning
+    is_triggered_only = yes 
+    immediate = {
+	}
+	option = {
+		name = PRC_Generals.1.a
+		PRC_MaoZeDong = {
+			unit_leader_event = {id=PRC_Generals.2 days=30}
+			add_trait = {
+				trait = sick
+			}
+		}
+		add_stability = -0.05
+	}
+}
+
+unit_leader_event = {
+	id = PRC_Generals.2
+	title = PRC_Generals.2.t
+	desc = PRC_Generals.2.d
+	#picture = GFX_report_event_military_planning
+    is_triggered_only = yes 
+	option = {
+		name = PRC_Generals.2.a
+		PRC_MaoZeDong = {
+			remove_trait = {
+				trait = sick
+			}
+		}
+		add_stability = 0.05
+	}
+}
 ###
 country_event = {
 	id = CHI_1934Hidden.1

@@ -8,6 +8,7 @@ set_technology = {
 
 country_event = {id=PRC_1931.10 days= 122}
 
+
 recruit_character = PRC_XiangZhongFa
 recruit_character = PRC_WangMing
 recruit_character = PRC_BoGu
@@ -84,6 +85,7 @@ set_power_balance = {
 	id =  PRC_struggle_balance0
 }
 1933.1.1={
+	
 	retire_character = PRC_XiangZhongFa
 	PRC_WangMing = {
 		set_nationality = SOV
