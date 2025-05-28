@@ -73,7 +73,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = German_Military_Advisors
@@ -84,7 +86,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-
+		completion_reward = {
+			add_ideas = CHI_Alexander_von_Falkenhausen_A
+		}
 	}
 	focus = {
 		id = German_style_Adjusted_Division
@@ -95,7 +99,76 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
+		completion_reward = {
+			custom_effect_tooltip = German_Division_tip
+			division_template = {
+				name = "德械师" 
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					artillery = { x = 2 y = 2 }
+					artillery = { x = 3 y = 0 }
+					light_armor = { x = 3 y = 0 }
+				}
+				support = {
+					artillery= { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+					anti_tank= { x = 0 y = 3 }
+					signal_company= { x = 0 y = 4 }
+				}
+			}
+			division_template = {
+				name = "教导总队" 
+				override_model = CHI_infantry_entity
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					artillery = { x = 1 y = 2 }
+					light_armor = { x = 2 y = 0 }
+					cavalry = { x = 3 y = 0 }
 
+				}
+				support = {
+					artillery= { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+					anti_tank= { x = 0 y = 3 }
+					signal_company= { x = 0 y = 4 }
+				}
+			}
+			hidden_effect = {
+				214={
+				create_unit = {
+						division = "name = \"国民革命军第八十七师\" division_template = \"德械师\" start_experience_factor = 0.8"
+						owner = CHI
+						prioritize_location = 2957
+				}
+				create_unit = {
+						division = "name = \"国民革命军第八十八师\" division_template = \"德械师\" start_experience_factor = 0.8"
+						owner = CHI
+						prioritize_location = 2957
+				}
+				create_unit = {
+						division = "name = \"国民革命军第三十六师\" division_template = \"德械师\" start_experience_factor = 0.8"
+						owner = CHI
+						prioritize_location = 2957
+				}
+			}
+			}
+			
+		}
 	}
 	focus = {
 		id = Chinese_Hindenburg_Line
@@ -732,6 +805,7 @@ focus_tree = {
 		x = 73
 		y = 5
 		completion_reward = {
+			add_war_support = 0.1
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = 5
 			}
@@ -749,6 +823,10 @@ focus_tree = {
 		x = 73
 		y = 6
 		completion_reward = {
+			CHI={
+				create_faction = China_Faction
+				add_to_faction = PRC
+			}
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = 15
 			}
@@ -765,7 +843,11 @@ focus_tree = {
 		}
 		x = 75
 		y = 4
-
+		completion_reward = {
+			ROD={
+				remove_ideas = Not_resisting
+			}
+		}
 	}
 	focus = {
 		id = Transport_Anti_Japanese_Supplies

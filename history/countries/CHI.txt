@@ -43,6 +43,8 @@ recruit_character = CHI_LiuZhi
 recruit_character = CHI_LingSeng
 recruit_character = CHI_CaiTingKai
 recruit_character = CHI_JiangGuangDing
+
+recruit_character = CHI_Alexander_von_Falkenhausen
 add_ideas = {
 	CHI_army_corruption_1
 	Anti_hometown_group
@@ -100,9 +102,11 @@ add_equipment_to_stockpile = {
 		CHI_army_corruption_1
 		The_Golden_Decade
 	}
+	retire_character = CHI_DengYangDa
 	add_dynamic_modifier = {
 		modifier = Anti_Japanese_zeal
 	}
+	add_ideas = CHI_Alexander_von_Falkenhausen_A
 	set_country_flag = CHI_Encirclement5
 }
 1936.1.1={

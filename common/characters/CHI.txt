@@ -4,7 +4,7 @@ characters={
 		portraits={ 
 			civilian={
 				large="gfx/leaders/CHI/CHI_JiangJieShi.png"
-				small = "gfx/leaders/advisers/CHI_JiangJieShi_small.png"
+				small = "gfx/interface/advisers/CHI_JiangJieShi_small.png"
 			}
 			army = {
 				large="gfx/leaders/CHI/CHI_JiangJieShi_army.png"
@@ -47,7 +47,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/CHI_LingSeng.png"
-				small = "gfx/leaders/advisers/CHI_LingSeng_small.png"
+				small = "gfx/interface/advisers/CHI_LingSeng_small.png"
 			}
 		}
 		country_leader={
@@ -427,5 +427,35 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 		}
+	}
+
+
+
+
+
+	 CHI_Alexander_von_Falkenhausen={
+		name=CHI_Alexander_von_Falkenhausen
+		portraits={ 
+			civilian={
+				small = "gfx/interface/advisers/CHI_Alexander_von_Falkenhausen.png"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_Alexander_von_Falkenhausen_A
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
 	}
 	}

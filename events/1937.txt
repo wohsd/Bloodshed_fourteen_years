@@ -95,7 +95,6 @@ country_event = {
 		CHI={
 			create_faction = China_Faction
 			add_to_faction = PRC
-			complete_national_focus = ROCfocus_27
 		}
 		}
 		

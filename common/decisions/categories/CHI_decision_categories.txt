@@ -22,7 +22,13 @@ CHI_Battle_China = {
 	}
 	visible_when_empty = yes
 }
-
+CHI_Chinese_Hindenburg_category {
+	icon = military_operation
+	picture = GFX_JiangJieShi_1
+	visible = { 
+		tag=CHI
+	}
+}
 CHI_Encirclement_suppression_operation_category = {
 	icon = military_operation
 	picture = GFX_Encirclement_suppression_operation

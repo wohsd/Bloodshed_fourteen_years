@@ -108,6 +108,14 @@ Requisition_trains_desc: "商业铁路公司控制着我国基础设施。随着
 
 Wartime_Railroad_Employee_Reward_Punishment_Law: "发布《战时铁路员工奖惩法》"
 
+
+CHI_Chinese_Hindenburg_category: "东方兴登堡防线"
+CHI_Chinese_Hindenburg_category_desc: "战争即将到来，德军顾问冯-法肯豪森将军建议我们模仿一战时期的兴登堡防线，修建一条横贯江浙沪的铜墙铁壁。"
+Jiangyin_Fortress: "修建江阴要塞"
+Shanghai_Defense_Line: "修建凇沪防线"
+WuFu_Defense_Line: "修建吴福防线"
+ChenYing_Defense_Line: "修建锡澄防线"
+
 CHI_30_efficiency_var: "（一塌涂地）"
 CHI_50_efficiency_var: "（稍有改善）"
 CHI_70_efficiency_var: "（中规中矩）"
