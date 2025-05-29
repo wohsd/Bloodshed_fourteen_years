@@ -17,7 +17,7 @@ focus_tree = {
 		x = 72
 		y = 0
 		completion_reward = {
-			
+			political_power_factor = 100
 		}
 	}
 	focus = {
@@ -890,11 +890,10 @@ focus_tree = {
 		}
 		completion_reward = {	
 			add_to_variable = {
-	        CHI_political_power_gain = 0.2
+	        CHI_political_power_gain = 0.1
             }
-			add_to_variable = {
-	        CHI_consumer_goods_factor = -0.05
-            }
+			political_power_factor = 1	
+stability_factor = 1	
 		}
 		x = 94
 		y = 2
@@ -906,6 +905,14 @@ focus_tree = {
 		cost = 2.00
 		prerequisite = {
 			focus = Interests_of_Four_Families
+		}
+		completion_reward = {	
+			add_to_variable = {
+	        CHI_political_power_gain = 0.1
+            }
+			add_to_variable = {
+	        CHI_consumer_goods_factor = -0.05
+            }
 		}
 		x = 80
 		y = 3
