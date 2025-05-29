@@ -498,17 +498,6 @@ guiTypes = {
 		origo = center
 		moveable = yes
 
-		instantTextBoxType = {
-			name = "title"
-			position = { x = 120 y = 14 }
-			textureFile = ""
-			font = "hoi_20b"
-			borderSize = {x = 0 y = 0}
-			text = "FE_SELECT_SCENARIO"
-			maxWidth = 340
-			maxHeight = 30
-			format = center
-		}
 
 		background = {
 			name = "single_player_date_bg"
@@ -553,11 +542,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 500 y = 500 }
+			position = { x = 500 y = 450 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 780
-			maxHeight = 30
+			maxHeight = 0
 			format = left
 		}
 

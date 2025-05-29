@@ -1,0 +1,7 @@
+spriteTypes = {
+spriteType = {
+		name = "GFX_1931book"
+		textureFile = "gfx/interface/book/1931book.dds"
+		legacy_lazy_load = no
+	}
+}

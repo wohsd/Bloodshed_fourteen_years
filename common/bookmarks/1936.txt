@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
+		name = "1936_NAME"
+		desc = "1936_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_1936"
 		default_country = "CHI"
