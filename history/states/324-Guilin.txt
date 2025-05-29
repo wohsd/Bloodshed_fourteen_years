@@ -1,8 +1,9 @@
-
 state={
 	id=324
 	name="STATE_324"
-
+	provinces={
+		724 2238 2257 2457 3101 4058 4075 
+	}
 	history={
 		owner = ROC
 		buildings = {
@@ -29,10 +30,6 @@ state={
 		add_core_of = ROC
 		add_core_of = CHI
 
-	}
-
-	provinces={
-		724 1098 2238 2257 2457 3101 4058 4075 
 	}
 	manpower=323000
 	buildings_max_level_factor=1.000

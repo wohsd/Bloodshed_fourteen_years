@@ -492,13 +492,13 @@ Long_march_decisions = {
 				PRC = {
 					AND={
 						has_war = yes
-						controls_province = 4029
+						controls_province = 3382
 					}
 				}
 				PRJ = {
 					AND={
 						has_war = yes
-						controls_province = 4029
+						controls_province = 3382
 					}
 				}
 			}

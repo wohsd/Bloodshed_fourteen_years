@@ -14,9 +14,9 @@ state={
 			owner = CHI
 		}
 		add_core_of = RON
-victory_points = {
-	4029 5
-}
+		victory_points = {
+			3382 5
+		}
 	}
 	manpower=23110
 	buildings_max_level_factor=1.000

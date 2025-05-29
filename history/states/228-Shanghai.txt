@@ -1,6 +1,9 @@
 state={
 	id=228
 	name="STATE_228"
+	provinces={
+		2946 3815 3828 3833 5242 5243 5244 5246 
+	}
 	history={
 		owner = CHI
 		buildings = {
@@ -37,10 +40,6 @@ state={
 		1941.1.1={
 			owner = JDF
 		}
-	}
-
-	provinces={
-		5246 2946 3815 3828 3833 5242 5243 5244 
 	}
 	manpower=2350000
 	buildings_max_level_factor=1.000

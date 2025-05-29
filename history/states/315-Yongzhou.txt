@@ -1,8 +1,9 @@
-
 state={
 	id=315
 	name="STATE_315"
-
+	provinces={
+		1506 1550 3996 
+	}
 	history={
 		owner = RON
 		buildings = {
@@ -14,11 +15,7 @@ state={
 			owner = CHI
 		}
 	}
-
-	provinces={
-		1506 1550 1824 2356 3996 4054 
-	}
-	manpower=323000
+	manpower=423000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=10.000
