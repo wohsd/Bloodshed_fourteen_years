@@ -16,3 +16,35 @@ spriteTypes = {
 		texturefile = "gfx/interface/1944.dds"
 	}
 }
+spriteTypes = {
+    spriteType = {
+		name = "GFX_1931book"
+		textureFile = "gfx/interface/book/1931book.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_1933book"
+		textureFile = "gfx/interface/book/1933book.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_1936book"
+		textureFile = "gfx/interface/book/1936book.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_1939book"
+		textureFile = "gfx/interface/book/1939book.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_1942book"
+		textureFile = "gfx/interface/book/1942book.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_1944book"
+		textureFile = "gfx/interface/book/1944book.dds"
+		legacy_lazy_load = no
+	}	
+}
