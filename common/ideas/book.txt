@@ -1,0 +1,28 @@
+ideas = {
+country = {
+		PRCBOOK0 = {
+			picture = PRCBOOK0
+		}
+		PRCBOOK1 = {
+			picture = PRCBOOK1
+		}
+		PRCBOOK2 = {
+			picture = PRCBOOK2
+		}
+		PRCBOOK3 = {
+			picture = PRCBOOK3
+		}
+		CHIBOOK0 = {
+			picture = CHIBOOK0
+		}
+		CHIBOOK1 = {
+			picture = CHIBOOK1
+		}
+		CHIBOOK2 = {
+			picture = CHIBOOK2
+		}
+		CHIBOOK3 = {
+			picture = CHIBOOK3
+		}
+	}
+}

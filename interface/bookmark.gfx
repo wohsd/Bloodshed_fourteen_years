@@ -16,6 +16,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/1944.dds"
 	}
 }
+#剧本配图
 spriteTypes = {
     spriteType = {
 		name = "GFX_1931book"
@@ -47,4 +48,88 @@ spriteTypes = {
 		textureFile = "gfx/interface/book/1944book.dds"
 		legacy_lazy_load = no
 	}	
+}
+#国家影像
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_PRCBOOK0"
+		texturefile = "gfx/interface/book/PRC/PRCBOOK0.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_PRCBOOK1"
+		texturefile = "gfx/interface/book/PRC/PRCBOOK1.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_PRCBOOK2"
+		texturefile = "gfx/interface/book/PRC/PRCBOOK2.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_PRCBOOK3"
+		texturefile = "gfx/interface/book/PRC/PRCBOOK3.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_CHIBOOK0"
+		texturefile = "gfx/interface/book/CHI/CHIBOOK0.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_CHIBOOK1"
+		texturefile = "gfx/interface/book/CHI/CHIBOOK1.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_CHIBOOK2"
+		texturefile = "gfx/interface/book/CHI/CHIBOOK2.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_CHIBOOK3"
+		texturefile = "gfx/interface/book/CHI/CHIBOOK3.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+
 }

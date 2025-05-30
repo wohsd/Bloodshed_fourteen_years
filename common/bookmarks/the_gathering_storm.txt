@@ -7,10 +7,22 @@ bookmarks = {
 		default_country = "CHI"
 		default = yes
 		"PRC"={
-			history = "PRC_STORM_DESC_1931"
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				PRCBOOK0
+				PRCBOOK1
+				PRCBOOK2
+				PRCBOOK3
+			}
 		}
 		"CHI"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				CHIBOOK0
+				CHIBOOK1
+				CHIBOOK2
+				CHIBOOK3
+			}
 		}
 		"JAP"={
 			history = "OTHER_GATHERING_STORM_DESC"
