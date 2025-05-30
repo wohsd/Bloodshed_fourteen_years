@@ -1,5 +1,28 @@
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_world1931_1"
+		texturefile = "gfx/event/world1931_1.png"
+	}
+	spriteType = {
+		name = "GFX_world1931_2"
+		texturefile = "gfx/event/world1931_2.png"
+	}
+	spriteType = {
+		name = "GFX_world1931_3"
+		texturefile = "gfx/event/world1931_3.png"
+	}
+	spriteType = {
+		name = "GFX_world1931_4"
+		texturefile = "gfx/event/world1931_4.png"
+	}
+	spriteType = {
+		name = "GFX_world1931_5"
+		texturefile = "gfx/event/world1931_5.png"
+	}
+	spriteType = {
+		name = "GFX_WorldNew_5"
+		texturefile = "gfx/event/WorldNew_5.png"
+	}
 	spriteType = {
 		name = "GFX_Fall_City_1"
 		texturefile = "gfx/event/Fall_City_1.png"

@@ -1,0 +1,119 @@
+﻿division_template = {
+	name = "桂军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "独立旅" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "广西民团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵旅" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {	
+		location = 2257
+		name = "桂军第七路军第十九师"
+		division_template = "桂军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 1700
+		name = "桂军第七路军第二十四师"
+		division_template = "桂军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 4157
+		name = "桂军第十五路军第四十五师"
+		division_template = "桂军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3198
+		name = "桂军第十五路军新编第一旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 2257
+		name = "桂军独立第一师"
+		division_template = "桂军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 2257
+		name = "广西民团"
+		division_template = "广西民团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3067
+		name = "广西民团"
+		division_template = "广西民团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 2457
+		name = "广西民团"
+		division_template = "广西民团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 344
+		name = "广西民团"
+		division_template = "广西民团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+}

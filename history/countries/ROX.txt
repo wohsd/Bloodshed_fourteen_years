@@ -22,3 +22,6 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
+1936.1.1={
+	retire_character = ROX_JingShuRen
+}

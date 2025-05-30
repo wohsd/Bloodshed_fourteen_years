@@ -3,6 +3,7 @@ add_namespace = PRC_1931
 add_namespace = PRC_1931Hidden
 add_namespace = ROC_1931
 add_namespace = ROG_1931
+add_namespace = ROD_1931
 add_namespace = world1931
 add_namespace = world1931Hidden
 
@@ -21,6 +22,67 @@ unit_leader_event = {
 		retire_character = CHI_DengYangDa
 		add_stability = -0.05
 	}
+}
+unit_leader_event = {
+	id = ROD_1931.1
+	title = ROD_1931.1.t
+	desc = ROD_1931.1.d
+	#picture = GFX_report_event_military_planning
+    is_triggered_only = yes 
+    immediate = {
+	hidden_effect = {
+		JAP={
+			transfer_state = 40
+		}
+		ROD_XiQia = {
+			set_nationality = JAP
+		}
+	}
+	}
+	option = {
+		name = ROD_1931.1.a
+
+	}
+}
+
+unit_leader_event = {
+	id = ROD_1931.2
+	title = ROD_1931.2.t
+	desc = ROD_1931.2.d
+	#picture = GFX_report_event_military_planning
+    is_triggered_only = yes 
+     immediate = {
+	hidden_effect = {
+		ROD_MaZhanShan = {
+			set_nationality = MCK
+		}
+	}
+	}
+	option = {
+		name = ROD_1931.2.a
+		hidden_effect = {
+			news_event = {id=ROD_1931.3 days=60}
+		}
+	}
+}
+
+news_event = {
+	id = ROD_1931.3
+	title = ROD_1931.3.t
+	desc = ROD_1931.3.d
+	picture = GFX_ROC_1931_1
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			MCK={
+			retire_character = ROD_MaZhanShan
+			}
+		}
+	}
+	option = {
+		name = ROD_1931.3.a
+	}		
 }
 
 
