@@ -24,5 +24,17 @@ country = {
 		CHIBOOK3 = {
 			picture = CHIBOOK3
 		}
+		RODBOOK0 = {
+			picture = RODBOOK0
+		}
+		RODBOOK1 = {
+			picture = RODBOOK1
+		}
+		RODBOOK2 = {
+			picture = RODBOOK2
+		}
+		RODBOOK3 = {
+			picture = RODBOOK3
+		}
 	}
 }

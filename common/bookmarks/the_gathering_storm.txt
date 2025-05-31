@@ -29,6 +29,12 @@ bookmarks = {
 		}
 		"ROD"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				RODBOOK0
+				RODBOOK1
+				RODBOOK2
+				RODBOOK3
+			}
 		}
 		"ROC"={
 			history = "OTHER_GATHERING_STORM_DESC"
