@@ -171,6 +171,86 @@ spriteTypes = {
 		pause_on_loop = 0.0
 		alwaystransparent = yes
 	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_JAPBOOK0"
+		texturefile = "gfx/interface/book/JAP/JAPBOOK0.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_JAPBOOK1"
+		texturefile = "gfx/interface/book/JAP/JAPBOOK1.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_JAPBOOK2"
+		texturefile = "gfx/interface/book/JAP/JAPBOOK2.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_JAPBOOK3"
+		texturefile = "gfx/interface/book/JAP/JAPBOOK3.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_OMOBOOK0"
+		texturefile = "gfx/interface/book/OMO/OMOBOOK0.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_OMOBOOK1"
+		texturefile = "gfx/interface/book/OMO/OMOBOOK1.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_OMOBOOK2"
+		texturefile = "gfx/interface/book/OMO/OMOBOOK2.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_OMOBOOK3"
+		texturefile = "gfx/interface/book/OMO/OMOBOOK3.dds"
+		noOfFrames = 129
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}
 	
 
 }

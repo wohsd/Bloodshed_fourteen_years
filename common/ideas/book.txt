@@ -36,5 +36,29 @@ country = {
 		RODBOOK3 = {
 			picture = RODBOOK3
 		}
+		JAPBOOK0 = {
+			picture = JAPBOOK0
+		}
+		JAPBOOK1 = {
+			picture = JAPBOOK1
+		}
+		JAPBOOK2 = {
+			picture = JAPBOOK2
+		}
+		JAPBOOK3 = {
+			picture = JAPBOOK3
+		}
+		OMOBOOK0 = {
+			picture = OMOBOOK0
+		}
+		OMOBOOK1 = {
+			picture = OMOBOOK1
+		}
+		OMOBOOK2 = {
+			picture = OMOBOOK2
+		}
+		OMOBOOK3 = {
+			picture = OMOBOOK3
+		}
 	}
 }

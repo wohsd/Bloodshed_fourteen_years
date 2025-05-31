@@ -26,6 +26,12 @@ bookmarks = {
 		}
 		"JAP"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				JAPBOOK0
+				JAPBOOK1
+				JAPBOOK2
+				JAPBOOK3
+			}
 		}
 		"ROD"={
 			history = "OTHER_GATHERING_STORM_DESC"
@@ -38,9 +44,21 @@ bookmarks = {
 		}
 		"ROC"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				OMOBOOK0
+				OMOBOOK1
+				OMOBOOK2
+				OMOBOOK3
+			}
 		}
 		"ROG"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				OMOBOOK0
+				OMOBOOK1
+				OMOBOOK2
+				OMOBOOK3
+			}
 		}
 	}
 }

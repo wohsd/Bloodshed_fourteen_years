@@ -7,23 +7,58 @@ bookmarks = {
 		default_country = "CHI"
 		default = yes
 		"PRC"={
-			
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				PRCBOOK0
+				PRCBOOK1
+				PRCBOOK2
+				PRCBOOK3
+			}
 		}
 		"CHI"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				CHIBOOK0
+				CHIBOOK1
+				CHIBOOK2
+				CHIBOOK3
+			}
 		}
 		"JAP"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				JAPBOOK0
+				JAPBOOK1
+				JAPBOOK2
+				JAPBOOK3
+			}
 		}
 		"ROD"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				RODBOOK0
+				RODBOOK1
+				RODBOOK2
+				RODBOOK3
+			}
 		}
 		"ROC"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				OMOBOOK0
+				OMOBOOK1
+				OMOBOOK2
+				OMOBOOK3
+			}
 		}
 		"ROG"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				OMOBOOK0
+				OMOBOOK1
+				OMOBOOK2
+				OMOBOOK3
+			}
 		}
 	}
 }
