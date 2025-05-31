@@ -843,7 +843,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history"
-			position = { x = 450 y = 500 }
+			position = { x = 450 y = 480 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 830
