@@ -7,7 +7,7 @@ bookmarks = {
 		default_country = "PRC"
 		default = yes
 		"PRC"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "PRC_STROM_DESC"
 			ideas={
 				PRCBOOK0
 				PRCBOOK1
@@ -25,7 +25,7 @@ bookmarks = {
 			}
 		}
 		"JAP"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "JAP_STREOM_DESC"
 			ideas={
 				JAPBOOK0
 				JAPBOOK1
@@ -34,7 +34,7 @@ bookmarks = {
 			}
 		}
 		"ROD"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "ROD_STREOM_DESC"
 			ideas={
 				RODBOOK0
 				RODBOOK1
