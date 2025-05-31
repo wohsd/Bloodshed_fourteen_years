@@ -14,9 +14,9 @@ guiTypes = {
 		clipping = no
 		fade_time = 500
 		fade_type = linear
-
+ 
 		background = {
-			name = "background"
+			name = "background" 
 			quadTextureSprite = "GFX_bookmark_entry_bg"
 			clicksound = click_checkbox
 		}
@@ -843,11 +843,11 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history"
-			position = { x = 450 y = 480 }
+			position = { x = 450 y = 500 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 800
-			maxHeight = 30
+			maxWidth = 830
+			maxHeight = 130
 			format = left
 		}
 	}
