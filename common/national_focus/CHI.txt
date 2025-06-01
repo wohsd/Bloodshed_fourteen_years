@@ -2010,40 +2010,16 @@ stability_factor = 1
 		icon = GFX_kmt_53
 		cost = 5.00
 		prerequisite = {
-			focus = Seek_Overseas_Chinese_Support
-		}
-		prerequisite = {
-			focus = Expand_US_UK_Interests_in_China
-		}
-		prerequisite = {
+			focus = Accept_Japanese_Investment
 			focus = Request_Soviet_Aid
 		}
 		prerequisite = {
-			focus = Recognize_Puppet_Manchukuo
-		}
-		prerequisite = {
-			focus = Accept_Japanese_Investment
-		}
-		prerequisite = {
+			focus = Expand_US_UK_Interests_in_China
 			focus = Suppress_Anti_Japanese_Sentiment
 		}
 		prerequisite = {
 			focus = Seek_Overseas_Chinese_Support
-		}
-		prerequisite = {
-			focus = Expand_US_UK_Interests_in_China
-		}
-		prerequisite = {
-			focus = Request_Soviet_Aid
-		}
-		prerequisite = {
 			focus = Recognize_Puppet_Manchukuo
-		}
-		prerequisite = {
-			focus = Accept_Japanese_Investment
-		}
-		prerequisite = {
-			focus = Suppress_Anti_Japanese_Sentiment
 		}
 		x = 38
 		y = 8
