@@ -17,7 +17,6 @@ focus_tree = {
 		x = 72
 		y = 0
 		completion_reward = {
-			political_power_factor = 100
 		}
 	}
 	focus = {
@@ -29,7 +28,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-
+		completion_reward = {
+			add_command_power = 50
+		}
 	}
 	focus = {
 		id = Establish_Central_Aviation_School
@@ -40,7 +41,15 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-
+		completion_reward = {
+			add_to_variable = {CHI_air_air_ace_generation_chance_factor= 0.05}
+			add_to_variable = {CHI_air_experience_gain_air_factor= 0.05}
+			add_to_variable = {CHI_air_air_training_xp_gain_factor = 0.05}
+			add_to_variable = {CHI_air_air_mission_xp_gain_factor= 0.05}
+			custom_effect_tooltip = Establish_Central_Aviation_School_tooltip
+					
+			
+		}
 	}
 	focus = {
 		id = Aviation_Salvation_Movement
@@ -51,7 +60,23 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+					name = fighter_command_focus
+					bonus = 1.0
+					uses = 2
+					category = light_fighter
+					category = cat_heavy_fighter
+			}
+			add_design_template_bonus = {
+					name = air_equipment
+					uses = 2
+					cost_factor = 0.75
+					equipment = small_plane_airframe
+					equipment = medium_plane_airframe
+					equipment = large_plane_airframe
+			}
+		}
 	}
 	focus = {
 		id = Standardize_Training_System
@@ -62,7 +87,9 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-
+		completion_reward = {
+			air_experience = 40
+		}
 	}
 	focus = {
 		id = Reorganize_National_Revolutionary_Army
@@ -74,7 +101,10 @@ focus_tree = {
 		x = 5
 		y = 2
 		completion_reward = {
+			add_to_variable = {CHI_army_army_army_org_factor=0.05}
+			add_to_variable = {CHI_army_org_loss_when_moving=-0.05}
 			
+			custom_effect_tooltip = Reorganize_National_Revolutionary_Army_tooltip
 		}
 	}
 	focus = {
@@ -179,7 +209,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
-
+		completion_reward = {
+			unlock_decision_category_tooltip = CHI_Chinese_Hindenburg_category
+		}
 	}
 	focus = {
 		id = Establish_Munitions_Department
@@ -201,7 +233,24 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			
+		}
 	}
 	focus = {
 		id = Establish_Central_Military_Academy
@@ -211,8 +260,13 @@ focus_tree = {
 			focus = Establish_Munitions_Department
 		}
 		x = 8
-		y = 4
-
+		y = 4 
+		completion_reward = {
+			add_to_variable = {CHI_army_experience_gain_factor=0.05}
+			add_to_variable = {CHI_army_army_army_org_factor=0.05}
+			
+			custom_effect_tooltip = Establish_Central_Military_Academy_tooltip
+		}
 	}
 	focus = {
 		id = Establish_Navy_Department
@@ -223,7 +277,12 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
-
+		completion_reward = {
+			add_to_variable = {CHI_navy_decryption_factor=0.05}
+			add_to_variable = { CHI_navy_naval_doctrine_cost_factor=-0.05 }#0.1
+			add_to_variable = {CHI_navy_naval_coordination=0.05}
+			custom_effect_tooltip = Establish_Navy_Department_tooltip
+		}
 	}
 	focus = {
 		id = Order_Warships
@@ -259,7 +318,9 @@ focus_tree = {
 		}
 		x = 27
 		y = 1
-
+		completion_reward = {
+			custom_effect_tooltip = Democracy_Over_Autocracy_tooltip
+		}
 	}
 	focus = {
 		id = Liao_Zhongkai_Issue
@@ -284,7 +345,21 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 50
+				neutrality = 15
+				fascism = 30
+				communism = 5
+			}
+			remove_ideas = The_winner_Central
+		}
 	}
 	focus = {
 		id = Unstable_Political_Situation
@@ -496,7 +571,9 @@ focus_tree = {
 		}
 		x = 62
 		y = 3
-
+		completion_reward = {
+			remove_ideas = The_winner_Central
+		}
 	}
 	focus = {
 		id = Redraft_Party_Program
@@ -749,7 +826,13 @@ focus_tree = {
 		}
 		x = 71
 		y = 5
-
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = Air_to_Ground_Support
@@ -760,7 +843,13 @@ focus_tree = {
 		}
 		x = 71
 		y = 6
-
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
 	}
 	focus = {
 		id = Resistance_First_to_Save_Nation
@@ -929,9 +1018,9 @@ stability_factor = 1
 		y = 4
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
+				temp_National_economy_var = 3
 			}
-			Government_efficiency_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
@@ -945,9 +1034,9 @@ stability_factor = 1
 		y = 5
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
+				temp_National_economy_var = 3
 			}
-			Government_efficiency_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
@@ -961,9 +1050,9 @@ stability_factor = 1
 		y = 5
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
+				temp_National_economy_var = 3
 			}
-			Government_efficiency_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
@@ -977,9 +1066,9 @@ stability_factor = 1
 		y = 4
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
+				temp_National_economy_var = 3
 			}
-			Government_efficiency_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
@@ -993,9 +1082,9 @@ stability_factor = 1
 		y = 5
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
+				temp_National_economy_var = 3
 			}
-			Government_efficiency_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
@@ -1009,9 +1098,9 @@ stability_factor = 1
 		y = 5
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
+				temp_National_economy_var = 3
 			}
-			Government_efficiency_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
@@ -1024,6 +1113,7 @@ stability_factor = 1
 		x = 94
 		y = 3
 		completion_reward={ 
+			remove_ideas = The_winner_Central
 			unlock_decision_category_tooltip = CHI_Discipline_government_category
 			custom_effect_tooltip = National_Education_tooltip
 			set_variable = {
@@ -1272,6 +1362,7 @@ stability_factor = 1
 				temp_National_economy_var = 3
 			}
 			National_economy_add = yes
+			unlock_decision_category_tooltip = CHI_Railroad_construction_category
 		}
 	}
 	focus = {
@@ -1433,7 +1524,10 @@ stability_factor = 1
 		}
 		x = 107
 		y = 5
-
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.1
+		}
 	}
 	focus = {
 		id = Establish_Military_Statistics_Bureau
@@ -1490,7 +1584,13 @@ stability_factor = 1
 		}
 		x = 111
 		y = 5
-
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
 	}
 	focus = {
 		id = Establish_Central_Statistics_Bureau
@@ -1513,7 +1613,7 @@ stability_factor = 1
 	}
 	focus = {
 		id = Establish_Resources_Committee
-		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		icon = GFX_focus_ARG_strengthening_the_concordancia
 		cost = 5.00
 		prerequisite = {
 			focus = Agricultural_Adjustment_Committee
@@ -1525,14 +1625,14 @@ stability_factor = 1
 		y = 6
 		completion_reward = {
 			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
+				temp_National_economy_var = 3
 			}
-			Government_efficiency_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
 		id = Implement_Currency_Reform
-		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		icon = GFX_focus_GER_customs_union
 		cost = 5.00
 		prerequisite = {
 			focus = Establish_Four_United_Bureau
@@ -1543,10 +1643,10 @@ stability_factor = 1
 		x = 82
 		y = 6
 		completion_reward={ 
-			add_to_temp_variable = {
-				temp_National_literacy_var = 3
+		add_to_temp_variable = {
+				temp_National_economy_var = 3
 			}
-			National_literacy_add = yes
+			National_economy_add = yes
 		}
 	}
 	focus = {
@@ -1562,7 +1662,12 @@ stability_factor = 1
 		}
 		x = 88
 		y = 5
-
+		completion_reward = {
+			add_to_temp_variable = {
+				temp_National_literacy_var = 10
+			}
+			National_literacy_add = yes
+		}
 	}
 	focus = {
 		id = Improve_Border_Teacher_Welfare
@@ -1633,10 +1738,7 @@ stability_factor = 1
 		x = 88
 		y = 7
 		completion_reward={ 
-			add_to_temp_variable = {
-				temp_National_literacy_var = 10
-			}
-			National_literacy_add = yes
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1648,7 +1750,9 @@ stability_factor = 1
 		}
 		x = 20
 		y = 4
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = Promote_Hu_Hanmin_Ideology

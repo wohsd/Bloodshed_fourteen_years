@@ -19,6 +19,13 @@ Regionalist_warlords:0 "地方主义军阀"
 Regionalist_warlords_desc:0 "自中原大战之后，虽然明面上蒋介石统一了中国，但是各地的军阀神貌离合，大多数人只关心自己的利益，安心当一个山大王。\n\n§R中央军队无法进入我们的防区§!"
 MoFang:0 "模范省"
 
+CHI_army:0 "中华民国陆军"
+CHI_army_desc:0 ""
+CHI_air:0 "中华民国空军"
+CHI_air_desc:0 ""
+CHI_navy:0 "中华民国海军"
+CHI_navy_desc:0 ""
+
 Rich_minerals:0 "矿产丰富"
 
 Regionalist_warlords_effect:0 "中央军队无法进入我们的防区"

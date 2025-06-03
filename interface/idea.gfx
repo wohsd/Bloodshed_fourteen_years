@@ -50,6 +50,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CHI/The_Golden_Decade.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_CHI_army"
+		texturefile = "gfx/interface/ideas/CHI/CHI_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_air"
+		texturefile = "gfx/interface/ideas/CHI/CHI_air.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_navy"
+		texturefile = "gfx/interface/ideas/CHI/CHI_navy.png"
+	}
+	spriteType = {
 		name = "GFX_idea_Mao_Jewish_coalition_army"
 		texturefile = "gfx/interface/ideas/YGC/Mao_Jewish_coalition_army.dds"
 	}

@@ -27,7 +27,7 @@ recruit_character = CHI_TangShenZhi
 recruit_character = CHI_GuZhuTong
 recruit_character = CHI_XueYue
 recruit_character = CHI_WeiLiHuang
-
+recruit_character = CHI_HuHanMing
 recruit_character = CHI_QiangDaJun
 recruit_character = CHI_SunLiRen
 recruit_character = CHI_ZhuSaoLiang
@@ -49,23 +49,44 @@ add_ideas = {
 	CHI_army_corruption_1
 	Anti_hometown_group
 	The_winner_Central
+	CHI_army
+	CHI_navy
+	CHI_air
 }
 #动态修正
-add_dynamic_modifier = {
-	modifier = Four_families
-}
-add_to_variable = {
-	CHI_consumer_goods_factor = 0.15
-}
-add_to_variable = {
-	CHI_political_power_gain = -0.2
-}
-add_to_variable = {
-	CHI_production_speed_buildings_factor = -0.05
-}
-add_to_variable = {
-	CHI_neutrality_drift = 0.1
-}
+add_dynamic_modifier = {modifier = Four_families}
+add_to_variable = {CHI_consumer_goods_factor = 0.15}
+add_to_variable = {CHI_political_power_gain = -0.2}
+add_to_variable = {CHI_production_speed_buildings_factor = -0.05}
+add_to_variable = {CHI_neutrality_drift = 0.1}
+
+
+add_dynamic_modifier = {modifier = CHI_army}
+add_to_variable = { CHI_army_army_max_dig_in_factor = 0.1 }
+add_to_variable = { CHI_army_land_doctrine_cost_factor = 0.1 }
+add_to_variable = { CHI_army_land_reinforce_rate = -0.05 }
+add_to_variable = { CHI_army_army_speed_factor = -0.1 }
+add_to_variable = { CHI_army_army_army_org_factor = -0.1 }
+add_to_variable = { CHI_army_org_loss_when_moving = 0.15 }
+#REGIA AERONAUTICA
+add_dynamic_modifier = {modifier = CHI_air}
+add_to_variable = { CHI_air_air_ace_generation_chance_factor = 0.1 }
+add_to_variable = { CHI_air_air_superiority_bonus_in_combat = 0.05 }
+add_to_variable = { CHI_air_air_doctrine_cost_factor = 0.1 }
+add_to_variable = { CHI_air_air_nav_efficiency = -0.1 }
+add_to_variable = { CHI_air_air_night_penalty = 0.15 }
+add_to_variable = { CHI_air_air_weather_penalty = 0.15 }
+add_to_variable = { CHI_air_air_accidents_factor= 0.05 }
+
+#REGIA MARINA
+add_dynamic_modifier = {modifier = CHI_navy}
+add_to_variable = { CHI_navy_naval_has_potf_in_combat_attack = 0.1 }
+add_to_variable = { CHI_navy_screening_efficiency = 0.05 }
+add_to_variable = { CHI_navy_naval_doctrine_cost_factor = 0.1 }
+add_to_variable = { CHI_navy_naval_coordination = -0.05 }
+add_to_variable = { CHI_navy_naval_detection = -0.1 }
+add_to_variable = { CHI_navy_spotting_chance = -0.1 }
+
 puppet = CEN
 
 set_popularities = {
@@ -164,3 +185,4 @@ add_equipment_to_stockpile = {
 	}
 	set_oob = "CHI_1944"
 }
+

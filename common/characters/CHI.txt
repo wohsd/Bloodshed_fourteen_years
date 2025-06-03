@@ -57,6 +57,21 @@ characters={
 			id=-1
 		}
 	}
+	CHI_HuHanMing={
+		name=CHI_HuHanMing
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_HuHanMing.png"
+				small = "gfx/interface/advisers/CHI_HuHanMing_small.png"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	CHI_DengYangDa={
 		name=CHI_DengYangDa
 		portraits={

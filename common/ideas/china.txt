@@ -172,8 +172,6 @@ ideas = {
 		}
 
 
-
-
 		german_advisors = {
 		
 			allowed = {
@@ -282,9 +280,9 @@ ideas = {
 			
 			modifier = {
 				planning_speed=-0.15
-				army_org_factor=-0.05 
-				org_loss_when_moving=0.1
-				army_speed_factor=-0.1
+				army_org_factor=-0.02
+				org_loss_when_moving=0.02
+				army_speed_factor=-0.03
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
 				mobilization_speed = -0.02
