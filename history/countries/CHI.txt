@@ -119,6 +119,10 @@ add_equipment_to_stockpile = {
 }
 1933.1.1={
 	set_oob = "CHI_1933"
+	complete_national_focus = Victory_of_the_National_Revolution
+	complete_national_focus = National_Crisis
+	complete_national_focus = Internal_Pacification_Before_Resistance
+	complete_national_focus = Chiang_Kai_shek_Consolidates_Power
 	add_ideas = {
 		CHI_army_corruption_1
 		The_Golden_Decade

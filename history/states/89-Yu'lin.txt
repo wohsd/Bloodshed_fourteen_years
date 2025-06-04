@@ -9,21 +9,16 @@ state={
 	}
 	history={
 		owner = YUL
-		add_core_of = YUL
-		
 		buildings = {
 		}
 		victory_points = {
 			1374 10
 		}
-		
-		add_core_of = PRC
-		add_core_of = CHI
 	}
 	provinces={
-		23 1374 2192 2580 3645 
+		1374 2192 3645 
 	}
-	manpower=223000
+	manpower=123000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

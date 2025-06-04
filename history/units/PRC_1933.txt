@@ -46,28 +46,28 @@ division_template = {
 units = {
 	division= {	
 		name = "游击支队"
-		location = 3926
+		location = 4000
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "游击支队"
-		location = 4042
+		location = 4023
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "游击支队"
-		location = 3926
+		location = 4000
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
 		name = "游击支队"
-		location = 2107
+		location = 3946
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
@@ -109,7 +109,7 @@ units = {
 	}
 	division= {	
 		name = "游击支队"
-		location = 4041
+		location = 1913
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
@@ -185,7 +185,7 @@ units = {
 
 	division= {	
 		name = "中国工农红军第6师"
-		location = 1748
+		location = 4000
 		division_template = "独立师"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1

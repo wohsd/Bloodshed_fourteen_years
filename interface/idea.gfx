@@ -1,4 +1,7 @@
 spriteTypes = {
+
+
+
 	spriteType = {
 		name = "GFX_Zhao_Dengyu"
 		texturefile = "gfx/interface/ideas/Zhao_Dengyu.png"
@@ -113,6 +116,43 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Death_in_March"
 		texturefile = "gfx/interface/ideas/JAP/Death_in_March.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_national_resource_council"
+		texturefile = "gfx/interface/ideas/CHI/national_resource_council.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_the_blueshirts"
+		texturefile = "gfx/interface/ideas/CHI/the_blueshirts.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_central_club"
+		texturefile = "gfx/interface/ideas/CHI/central_club.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_NBIS"
+		texturefile = "gfx/interface/ideas/CHI/NBIS.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_CBIS"
+		texturefile = "gfx/interface/ideas/CHI/CBIS.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_new_life"
+		texturefile = "gfx/interface/ideas/CHI/new_life.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Five_year_plan"
+		texturefile = "gfx/interface/ideas/CHI/Five_year_plan.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_SongMeiLing"
+		texturefile = "gfx/interface/ideas/CHI/SongMeiLing.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Continuation_White_Terror"
+		texturefile = "gfx/interface/ideas/CHI/Continuation_White_Terror.png"
 	}
 
 	spriteType = {

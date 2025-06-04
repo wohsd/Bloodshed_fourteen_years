@@ -1,0 +1,19 @@
+state={
+	id=677
+	name="STATE_677"
+	provinces={
+		23 2580 
+	}
+	history={
+		owner = YUL
+		buildings = {
+		}
+		1936.1.1={
+			owner = PRC
+			add_core_of = PRC
+		}
+	}
+	manpower=103300
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

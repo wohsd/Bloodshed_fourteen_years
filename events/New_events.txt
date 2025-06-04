@@ -16,9 +16,12 @@ country_event = {
     }
 immediate = {
 	news_event = WorldNew.1
+	ROD={
 	ROD_XiQia = {
 		unit_leader_event = {id=ROD_1931.1 days=1}
 	}
+	}
+	
 	JAP={
 		transfer_state = 67
 		transfer_state = 75
@@ -381,13 +384,14 @@ country_event = {
 	fire_only_once = yes
     trigger = {
 		AND={
-			date > 1937.8.13
-			date < 1937.8.15
+			date > 1937.8.8
+			date < 1937.8.10
 		}
     }
     immediate = {
 		set_global_flag = 128songhu
 		CHI = {
+			country_event = ShangHai.0 
 			country_event = {id=KanRi_1937.1 days=30}
 			set_country_flag = songhu
 		}
@@ -398,7 +402,7 @@ country_event = {
 		name = Hidden_News.14.a
 		
 		hidden_effect = {
-			news_event = WorldNew.20
+			news_event = {id=WorldNew.20 days=3}
 			CHI={
 				country_event = {id=ShangHai.1 days=90}
 			}
@@ -515,6 +519,64 @@ country_event = {
 	option = {
 		name = Hidden_News.19.a
 		clr_global_flag = Hidden_News_19
+	}		
+}
+
+
+country_event = {
+	id = Hidden_News.20
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1938.10.4
+		date < 1938.10.6
+    }
+    immediate = {
+		set_global_flag = Hidden_News_20
+		news_event = WorldNew.24
+		hidden_effect = {
+			JAP={
+			transfer_state = 676
+			676={
+				create_unit = {
+					division = "name = \"日军第五师团第九旅团第11联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第五师团第九旅团第41联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第五师团第二十一旅团第21联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第五师团第二十一旅团第42联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第十八师团第三十五旅团第114联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					}
+				create_unit = {
+					division = "name = \"日军第十八师团第三十五旅团第124联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					}
+				create_unit = {
+					division = "name = \"日军第十八师团第二十三旅团第55联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					}
+				create_unit = {
+					division = "name = \"日军第十八师团第二十三旅团第56联队\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					}
+			}
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.19.a
+		clr_global_flag = Hidden_News_20
 	}		
 }
 #######
@@ -746,6 +808,7 @@ news_event = {
 		hidden_effect = {
 		RFC={
 			transfer_state = 293
+			transfer_state = 666
 			transfer_state = 306
 			transfer_state = 313
 			transfer_state = 319
@@ -758,9 +821,15 @@ news_event = {
 			transfer_state = 526
 		}
 		CHI={
-			declare_war_on = {
+		declare_war_on = {
 			target = RFC
 			type = annex_everything
+		}
+		CHI_CaiTingKai = {
+			set_nationality = RFC
+		}
+		CHI_JiangGuangDing = {
+			set_nationality = RFC
 		}
 		}
 		}
@@ -1153,4 +1222,24 @@ news_event = {
 			}
 		}
 	}
+}
+
+
+news_event = {
+	id = WorldNew.24
+	title = WorldNew.24.t
+	desc = WorldNew.24.d
+
+	picture = GFX_WorldNew_24
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		
+		
+	}
+	option = {
+			name = WorldNew.24.a
+	}		
 }

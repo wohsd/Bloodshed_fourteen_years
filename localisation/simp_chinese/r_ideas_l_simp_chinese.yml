@@ -19,6 +19,23 @@ Regionalist_warlords:0 "地方主义军阀"
 Regionalist_warlords_desc:0 "自中原大战之后，虽然明面上蒋介石统一了中国，但是各地的军阀神貌离合，大多数人只关心自己的利益，安心当一个山大王。\n\n§R中央军队无法进入我们的防区§!"
 MoFang:0 "模范省"
 
+
+
+national_resource_council:0 "国家资源委员会"
+the_blueshirts:0 "蓝衣社"
+central_club:0 "中央俱乐部"
+
+NBIS:0 "军统局"
+CBIS:0 "中统局"
+new_life:0 "新生活运动"
+Five_year_plan:0 "五年计划"
+SongMeiLing:0 "第一夫人"
+Continuation_White_Terror:0 "白色恐怖的赓续"
+
+
+
+CHI_Ordnance_Industry_Administration:0 "兵工总署"
+
 CHI_army:0 "中华民国陆军"
 CHI_army_desc:0 ""
 CHI_air:0 "中华民国空军"

@@ -201,6 +201,24 @@ news_event = {
 }		
 
 
+country_event = {
+	id = ShangHai.0
+	title =ShangHai.0.t
+	desc = ShangHai.0.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = ShangHai.1.a
+		228={set_demilitarized_zone = no}
+		647={set_demilitarized_zone = no}
+		670={set_demilitarized_zone = no}
+		586={set_demilitarized_zone = no}
+		add_threat = 10
+	}		
+}
 
 country_event = {
 	id = ShangHai.1

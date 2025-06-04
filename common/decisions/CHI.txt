@@ -95,9 +95,6 @@ CHI_Battle_China = {
 			set_country_flag = songhu_lose  
 		}
 		timeout_effect = {
-			228={
-				set_state_controller_to = JAP
-			}
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = -5
 			}
@@ -157,9 +154,6 @@ CHI_Battle_China = {
 			set_country_flag = Taiyuan_lose  
 		}
 		timeout_effect = {
-			104={
-				set_state_controller_to = JAP
-			}
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = -5
 			}
@@ -173,6 +167,64 @@ CHI_Battle_China = {
 			add_political_power = 100
 			clr_country_flag = Taiyuan
 			set_country_flag = Taiyuan_win
+		}
+	}
+	Battle_XuZhou = {
+		available = {
+			ROA={
+				has_war_with = JAP
+			}
+		NOT={
+			JAP={
+				controls_province = 3091
+				controls_province = 2178
+				controls_province = 1680
+			}
+		}
+			ROA={
+				controls_province = 2178
+				controls_province = 1680
+			}
+			CHI={
+				controls_province = 3091
+			}
+		}
+		days_mission_timeout = 150
+		cancel_trigger = {
+			JAP={
+				controls_province = 3091
+				controls_province = 2178
+				controls_province = 1680
+			}
+		}
+		activation = {
+			JAP={
+				controls_province = 2178
+			}
+		}
+		cancel_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = XuZhou
+			set_country_flag = XuZhou_lose  
+		}
+		timeout_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = XuZhou
+			set_country_flag = XuZhou_lose  
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = XuZhou
+			set_country_flag = XuZhou_win
 		}
 	}
 }

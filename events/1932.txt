@@ -33,10 +33,9 @@ country_event = {
 			country_event = CHI_1932.1
 		}
 		228={set_demilitarized_zone = yes}
-		586={
-			transfer_state_to = CHI
-			set_demilitarized_zone = yes
-		}
+		647={set_demilitarized_zone = yes}
+		670={set_demilitarized_zone = yes}
+		586={set_demilitarized_zone = yes}
 		clr_global_flag = fall_of_Shanghai
 	}		
 }

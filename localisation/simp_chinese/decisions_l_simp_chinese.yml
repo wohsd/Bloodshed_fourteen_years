@@ -125,12 +125,13 @@ CHI_30_literacy_var: "（遍地文盲）"
 CHI_50_literacy_var: "（毫无起色）"
 CHI_70_literacy_var: "（略有改善）"
 CHI_100_literacy_var: "（缓慢普及）"
-
+literacy_var_tooltip: "国民素养大于80%"
 
 CHI_30_economy_var: "（一蹶不振）"
 CHI_50_economy_var: "（依赖外国）"
 CHI_70_economy_var: "（稳中向好）"
 CHI_100_economy_var: "（自给自足）"
+economy_var_tooltip: "国民经济大于80%"
 
 Falsification_satisfactory_reports: "伪造令人满意的报告"
 Tolerate_corruption_bribery: "容忍贪污受贿"
