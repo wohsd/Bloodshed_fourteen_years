@@ -12,6 +12,7 @@ set_technology = {
 }
 
 recruit_character = ROA_HangFuQu
+recruit_character = ROA_ShengHongLie
 set_popularities = {
 	democratic = 0
 	communism = 0

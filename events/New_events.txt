@@ -259,6 +259,7 @@ country_event = {
     }
 immediate = {
 	news_event = WorldNew.13
+	country_event = {id=ROD.4 days=91}
 }
 mean_time_to_happen = {
 	days = 2
@@ -454,9 +455,7 @@ country_event = {
 	option = {
 		name = Hidden_News.18.a
 		hidden_effect = {
-			CAR={
 				news_event = WorldNew.23
-			}
 		}
 		clr_global_flag = Hidden_News_18
 	}		
@@ -1001,10 +1000,19 @@ news_event = {
 
 	is_triggered_only = yes
 	immediate = {
-		
+		hidden_effect = {
+		}
 	}
 	option = {
 			name = WorldNew.17.a
+			if={
+				limit={
+					is_ai = no
+				}
+			PRC={
+				load_oob = "PRC_1936"
+			}
+			}
 		}		
 }
 
@@ -1044,6 +1052,18 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
+			SJN={
+				give_military_access = CHI
+			}
+			ROA={
+				give_military_access = CHI
+			}
+			JDW={
+				give_military_access = CHI
+			}
+			ROJ={
+				give_military_access = CHI
+			}
 			
 			JAP={
 				add_timed_idea = {

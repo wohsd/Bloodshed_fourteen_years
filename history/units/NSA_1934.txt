@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "中国工农红军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	
+}
+division_template = {
+	name = "独立师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+}
+division_template = {
+	name = "游击支队" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+	}
+}
+units = {
+	division= {	
+		name = "中国工农红军第二十六军第四十二师"
+		location = 680
+		division_template = "中国工农红军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "中国工农红军第二十七军第八十四师"
+		location = 680
+		division_template = "独立师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "游击支队"
+		location = 680
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "游击支队"
+		location = 680
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "游击支队"
+		location = 680
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "陕北赤卫军"
+		location = 680
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "陕北赤卫军"
+		location = 680
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "游击支队"
+		location = 680
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}

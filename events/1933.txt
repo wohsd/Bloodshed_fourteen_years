@@ -644,7 +644,7 @@ country_event = {
 			AND={
 				date > 1933.1.1
 				has_war = yes
-				surrender_progress > 0.27
+				surrender_progress > 0.21
 			}
 		}
     }

@@ -82,7 +82,7 @@ country_event = {
 				date > 1933.1.1
 				date < 1935.1.1
 				has_war = yes
-				surrender_progress > 0.19
+				surrender_progress > 0.17
 			}
 		}
     }
@@ -120,3 +120,51 @@ news_event = {
 			name = ROD.3.a
 	}		
 }
+
+
+
+country_event = {
+	id = ROD.4
+	title = ROD.4.t
+	desc = ROD.4.d
+    #picture = 
+
+	fire_only_once = yes
+	
+    is_triggered_only = yes
+    immediate = {
+	}
+    mean_time_to_happen = {
+      	days = 2
+    }
+	option = {
+		name = ROD.4.a
+		CAR={
+			CAR_JiHongchang={
+				promote_character = yes
+			}
+			set_cosmetic_tag = CAR_1933
+			delete_units = {
+				division_template = "东北边防军"
+				disband = yes
+			}
+			delete_units = {
+				division_template = "国民革命军"
+				disband = yes
+			}
+			delete_units = {
+				division_template = "游击师"
+				disband = yes
+			}
+			delete_units = {
+				division_template = "蒙古军"
+				disband = yes
+			}
+			delete_units = {
+				division_template = "骑兵师"
+				disband = yes
+			}
+		}
+		
+	}
+}		

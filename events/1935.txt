@@ -82,7 +82,7 @@ country_event = {
 	option = {
 		name =  PRC_1935.7.a
 		hidden_effect = {
-			country_event = {id=PRC_1935.8 days=240}
+			country_event = {id=PRC_1935.8 days=310}
 		}
 	}		
 }
@@ -96,7 +96,16 @@ country_event = {
 	option = {
 		name =  PRC_1935.8.a
 		hidden_effect = {
-			country_event = {id=PRC_1935.9 days=240}
+			country_event = {id=PRC_1935.9 days=310}
+		}
+		PRC_FangZhiMing={
+			retire = yes
+		}
+		PRC_LiuTaoXi={
+			retire = yes
+		}
+		PRC_WangRuChi={
+			retire = yes
 		}
 	}		
 }
@@ -109,15 +118,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name =  PRC_1935.9.a
-		PRC_FangZhiMing={
-			retire = yes
-		}
-		PRC_LiuTaoXi={
-			retire = yes
-		}
-		PRC_WangRuChi={
-			retire = yes
-		}
+		
 	}
 }
 
@@ -152,6 +153,226 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name =  PRC_1935.12.a
+	}
+}
+
+
+
+country_event = {
+	id =  PRC_1935.13
+	title = PRC_1935.13.t
+	desc =  PRC_1935.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.13.a
+			PRC={
+				country_event = {id=PRC_1935.14 days=42}
+			}
+		start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 656
+					num_provinces = 1
+					dig_in_factor = -1
+					terrain_factor = -1
+				}	
+				defender = {
+					state = 655
+					num_provinces = 1
+				}
+			} 
+			set_border_war_data = {
+				attacker = 656
+				defender = 655
+				attacker_modifier= -0.85
+				defender_modifier = 0.85
+				combat_width = 100
+			}
+		start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 630
+					num_provinces = 1
+					dig_in_factor = -1
+					terrain_factor = -1
+				}	
+				defender = {
+					state = 655
+					num_provinces = 1
+				}
+			} 
+			set_border_war_data = {
+				attacker = 630
+				defender = 655
+				attacker_modifier= -0.85
+				defender_modifier = 0.85
+				combat_width = 100
+			}
+	}
+}
+
+country_event = {
+	id =  PRC_1935.14
+	title = PRC_1935.14.t
+	desc =  PRC_1935.14.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.14.a
+		start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 655
+					num_provinces = 1
+					on_win = PRC_1935.15
+				}	
+				defender = {
+					state = 656
+					num_provinces = 1
+					dig_in_factor = -2
+					terrain_factor = -2
+				}
+			} 
+			set_border_war_data = {
+				attacker = 655
+				defender = 656
+				attacker_modifier= 0.85
+				defender_modifier = -1
+				combat_width = 120
+			}
+	}
+}
+
+
+country_event = {
+	id =  PRC_1935.15
+	title = PRC_1935.15.t
+	desc =  PRC_1935.15.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.15.a
+		
+		start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 655
+					num_provinces = 1
+					on_win = PRC_1935.16
+				}	
+				defender = {
+					state = 630
+					num_provinces = 1
+					dig_in_factor = -1
+					terrain_factor = -1
+				}
+		} 
+		set_border_war_data = {
+				attacker = 655
+				defender = 630
+				attacker_modifier= 0.55
+				defender_modifier = -0.55
+				combat_width = 100
+		}
+	}
+}
+
+
+country_event = {
+	id =  PRC_1935.16
+	title = PRC_1935.16.t
+	desc =  PRC_1935.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.16.a
+		start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 655
+					num_provinces = 1
+					on_win = PRC_1935.17
+				}	
+				defender = {
+					state = 629
+					num_provinces = 1
+					dig_in_factor = -2
+					terrain_factor = -2
+				}
+			} 
+			set_border_war_data = {
+				attacker = 655
+				defender = 629
+				attacker_modifier= 0.85
+				defender_modifier = -1
+				combat_width = 120
+			}
+	}
+}
+
+
+country_event = {
+	id =  PRC_1935.17
+	title = PRC_1935.17.t
+	desc =  PRC_1935.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.17.a
+		start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 655
+					num_provinces = 1
+					on_win = PRC_1935.18
+				}	
+				defender = {
+					state = 657
+					num_provinces = 1
+					dig_in_factor = -2
+					terrain_factor = -2
+				}
+			} 
+			set_border_war_data = {
+				attacker = 655
+				defender = 657
+				attacker_modifier= 0.85
+				defender_modifier = -1
+				combat_width = 120
+			}
+	}
+}
+
+
+country_event = {
+	id =  PRC_1935.18
+	title = PRC_1935.18.t
+	desc =  PRC_1935.18.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1935.18.a
+		start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 630
+					num_provinces = 1
+				}	
+				defender = {
+					state = 677
+					num_provinces = 1
+					dig_in_factor = -2
+					terrain_factor = -2
+				}
+			} 
+			set_border_war_data = {
+				attacker = 630
+				defender = 677
+				attacker_modifier= 0.85
+				defender_modifier = -1
+				combat_width = 120
+			}
 	}
 }
 ###四方面军

@@ -23,8 +23,9 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-1936.1.1={
+1939.1.1={
 	country_event = {
 		id = ROQ_1936.1 days = 180
 	}
+	retire_character = ROQ_MaQi
 }

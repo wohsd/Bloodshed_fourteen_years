@@ -32,6 +32,9 @@ set_politics = {
 add_ideas = Regionalist_warlords
 
 1933.1.1={
+	ROD_XiQia = {
+		set_nationality = MCK
+	}
 	set_oob = "ROD_1933"
 	capital = 74
 	add_ideas = Not_resisting

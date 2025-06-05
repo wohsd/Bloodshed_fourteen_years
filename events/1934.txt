@@ -136,22 +136,28 @@ country_event = {
 		date < 1937.1.1
 		OR={
 			AND={
+				PRC={
+					is_ai = yes
+				}
 				date > 1935.9.17
 				date < 1935.9.19
 				has_global_flag = start_of_ChangZheng
 			}
 			
-		YUL = {
-			AND={
-				has_war = yes
-				NOT = {
-					controls_province = 1829
+			YUL = {
+				AND={
+					has_war = yes
+					NOT = {
+						controls_province = 1829
+					}
 				}
 			}
 		}
-		}
     }
     immediate = {
+		PRC={
+			delete_unit = {}
+		}
 		set_global_flag = fall_of_ChangZheng
     } 
     
@@ -282,6 +288,42 @@ country_event = {
 			white_peace =ROS
 			#country_event = CHI_1932.1
 		}
+		263={
+			transfer_state_to = ROS
+		}
+		275={
+			transfer_state_to = ROS
+		}
+		261={
+			transfer_state_to = ROS
+		}
+		243={
+			transfer_state_to = ROS
+		}
+		223={
+			transfer_state_to = ROS
+		}
+		643={
+			transfer_state_to = ROS
+		}
+		644={
+			transfer_state_to = ROS
+		}
+		204={
+			transfer_state_to = ROS
+		}
+		638={
+			transfer_state_to = ROS
+		}
+		633={
+			transfer_state_to = ROS
+		}
+		174={
+			transfer_state_to = LDC
+		}
+		602={
+			transfer_state_to = ROS
+		}
 		616={
 			transfer_state_to = CHI
 		}
@@ -351,6 +393,9 @@ country_event = {
 		}
 		642={
 			transfer_state_to = NSD
+		}
+		116={
+			transfer_state_to = YHC
 		}
 		set_global_flag = fall_of_ChangZheng_end
 		clr_global_flag = fall_of_ChangZheng
@@ -1032,6 +1077,9 @@ country_event = {
 			655={
 				transfer_state_to = NSA
 				add_core_of = NSA
+			}
+			NSA={
+				country_event = {id=PRC_1935.13 days=20}
 			}
 		}
 	}

@@ -15,6 +15,7 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = CAR_FengYuXiang
+recruit_character = CAR_JiHongchang
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
@@ -28,18 +29,19 @@ set_politics = {
 	#是否允许公众选举（no或者yes）
 }
 set_popularities = {
-	communism = 0
+	communism = 20
 	fascism = 0
 	democratic = 0
-	neutrality = 100
+	neutrality = 80
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 add_manpower = 1500
 add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 500
+    amount = 400
     producer = CHI
 }
 add_ideas = {
+	Armies_from_world
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

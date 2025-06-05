@@ -134,7 +134,7 @@ ideas = {
 			picture = Revolutionary_base
 			
 			modifier = {
-				surrender_limit=10
+				surrender_limit=100
 				war_stability_factor=0.25
 				war_support_factor=0.25
 				compliance_growth=0.15
