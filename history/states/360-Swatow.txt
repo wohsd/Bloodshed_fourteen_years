@@ -16,7 +16,7 @@ state={
 			owner = ROG
 		}
 		add_core_of = ROG
-		add_core_of = CHI
+		
 		1941.1.1={
 			owner = JAP
 		}

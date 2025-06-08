@@ -26,13 +26,13 @@ state={
 			634 5 
 		}
 		add_core_of = ROH
-		add_core_of = CHI
+		
 		1933.1.1={
 			owner = JZZ
 		}
 		1936.1.1={
 			owner = CHI
-			add_core_of = CHI
+			
 		}
 	}
 

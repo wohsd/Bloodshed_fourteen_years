@@ -12,9 +12,9 @@ state={
 		victory_points = {
 			3981 5
 		}
-		add_core_of = ROW
-		add_core_of = ROS
-		add_core_of = CHI
+		
+		
+		
 
 	}
 

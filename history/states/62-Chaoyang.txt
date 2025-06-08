@@ -19,7 +19,7 @@ state={
 			owner = MCK
 		}
 		add_core_of = ROD
-		add_core_of = CHI
+		
 	}
 	manpower=323000
 	state_category = town

@@ -8,9 +8,7 @@ state={
 		owner = ROW
 		buildings = {
 		}
-		add_core_of = ROS
-		add_core_of = RDX
-		add_core_of = CHI
+		
 	}
 	manpower=113000
 	buildings_max_level_factor=1.000

@@ -10,7 +10,7 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = ROG
-		add_core_of = CHI
+		
 		1939.1.1={
 			owner = CHI
 		}

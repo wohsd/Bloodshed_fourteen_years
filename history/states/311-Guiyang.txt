@@ -14,7 +14,7 @@ state={
 			3138 10
 		}
 		add_core_of = ROH
-		add_core_of = CHI
+		
 		1933.1.1={
 			owner = YGC
 		}

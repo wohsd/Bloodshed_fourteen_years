@@ -24,8 +24,8 @@ state={
 		victory_points = {
 			3850 30
 		}
-		add_core_of = ROW
-		add_core_of = CHI
+		
+		
 		1933.1.1={
 			owner = ROS
 		}

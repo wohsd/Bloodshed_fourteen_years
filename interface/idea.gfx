@@ -1,11 +1,15 @@
 spriteTypes = {
 
 
-
+	
 	spriteType = {
 		name = "GFX_Zhao_Dengyu"
 		texturefile = "gfx/interface/ideas/Zhao_Dengyu.png"
 	} 
+	spriteType = {
+		name = "GFX_Eight_provincial_guerrillas"
+		texturefile = "gfx/interface/ideas/Eight_provincial_guerrillas.png"
+	}
 	spriteType = {
 		name = "GFX_Morale_collapsed"
 		texturefile = "gfx/interface/ideas/Morale_collapsed.png"

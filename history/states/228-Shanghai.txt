@@ -30,7 +30,7 @@ state={
 		victory_points = {
 			5246 3
 		}
-		add_core_of = CHI
+		
 		1933.1.1={
 			set_demilitarized_zone = yes
 		}

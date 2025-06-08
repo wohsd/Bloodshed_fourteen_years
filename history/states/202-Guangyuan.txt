@@ -9,9 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ROS
-				add_core_of = ROT
-		add_core_of = CHI
+		
+				
+		
 		1938.1.1={
 			owner = CHI
 		}

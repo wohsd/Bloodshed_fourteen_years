@@ -114,7 +114,7 @@ set_politics = {
 }
 add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 20000
+    amount = 60000
     producer = CHI
 }
 1933.1.1={

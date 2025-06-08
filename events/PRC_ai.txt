@@ -775,7 +775,7 @@ country_event = {
     trigger = {
 		PRC = {
 				is_ai = yes
-			}
+		}
     }
     immediate = {
 		set_global_flag = fall_of_ChangZheng

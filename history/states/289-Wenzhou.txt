@@ -12,7 +12,7 @@ state={
 		victory_points = {
 			2229 10
 		}
-		add_core_of = CHI
+		
 	}
 
 	provinces={

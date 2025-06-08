@@ -19,7 +19,7 @@ state={
 				bunker = 2
 			}
 		}
-		add_core_of = CHI
+		
 		victory_points = {
 			2096 15 
 		}

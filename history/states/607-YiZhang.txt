@@ -9,8 +9,6 @@ state={
 			infrastructure = 1
 
 		}
-		add_core_of = RON
-		add_core_of = PRC
 		victory_points = {
 			4020 5 
 		}
@@ -30,7 +28,7 @@ state={
 	provinces={
 		2324 3360 4020 4030 2970
 	}
-	manpower=0
+	manpower=213230
 	buildings_max_level_factor=1.000
 	local_supplies=20.000
 }

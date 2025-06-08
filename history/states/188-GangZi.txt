@@ -8,6 +8,9 @@ state={
 		owner = ROW
 		buildings = {
 		}
+		victory_points = {
+			895 5
+		}
 	}
 	manpower=613000
 	buildings_max_level_factor=1.000

@@ -34,7 +34,24 @@ set_popularities = {
 	neutrality = 100
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
-
+174={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = LDC
+	}
+}
+623={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = LDC
+	}
+}
+141={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = LDC
+	}
+}
 add_ideas = {
 	Regionalist_warlords
 }

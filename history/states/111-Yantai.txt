@@ -13,7 +13,7 @@ state={
 			2917 5
 		}
 		add_core_of = LZN
-		add_core_of = CHI
+		
 		1933.1.1={
 			owner = ROA
 		}

@@ -18,7 +18,7 @@ state={
 		victory_points = {
 			3886 5
 		}
-		add_core_of = CHI
+		
 
 	}
 	manpower=1323000

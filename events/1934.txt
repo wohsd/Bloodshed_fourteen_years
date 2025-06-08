@@ -163,43 +163,46 @@ country_event = {
     
 	option = {
 		name = PRC_1934Hidden.3.a
-		ROS={
-			annex_country = {
-				target = ROT
-			}
-			annex_country = {
-				target = ROW
-			}
-			annex_country = {
-				target = RDX
-			}
-			annex_country = {
-				target = RYS
-			}
-			annex_country = {
-				target = RHC
-			}
-		}
+		655={transfer_state_to = PRC}
+		599={transfer_state_to = CHI}
+		589={transfer_state_to = CHI}
+		598={transfer_state_to = CHI}
+		582={transfer_state_to = CHI}
+		593={transfer_state_to = CHI}
+		595={transfer_state_to = CHI}
+		661={transfer_state_to = CHI}
+		600={transfer_state_to = CHI}
+		161={transfer_state_to = YHC}
 		hidden_effect = {
 			PRC = {
 				complete_national_focus = PRC_focus43
 			}
 			NSA_LiuZhiDan = {
-				set_nationality = PRC
+				set_nationality = PRC 
 			}
 			news_event = WorldNew.17
 		}
-		every_controlled_state = {
+		every_core_state = {
 			if = {
 				limit = {
 					AND={
-						is_controlled_by = PRC
+						is_core_of = PRC
 						NOT = {
-							state=116
+							state=655
 						}
 					}
 				}
 				transfer_state_to = CHI
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROT
+					}
+				}
+				transfer_state_to = ROT
 			}
 		}
 		every_core_state = {
@@ -252,9 +255,44 @@ country_event = {
 				transfer_state_to = ROC
 			}
 		}
-		ROS={
-			annex_country = {
-				target = NSD
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROW
+					}
+				}
+				transfer_state_to = ROW
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = YHC
+					}
+				}
+				transfer_state_to = YHC
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = RDX
+					}
+				}
+				transfer_state_to = RDX
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = LDC
+					}
+				}
+				transfer_state_to = LDC
 			}
 		}
 		CHI={
@@ -276,6 +314,15 @@ country_event = {
 			annex_country = {
 				target = RON
 			}
+			annex_country = {
+				target = HZD
+			}
+			annex_country = {
+				target = SOX
+			}
+			annex_country = {
+				target = YGC
+			}
 		}
 		PRC={
 			white_peace =YHC
@@ -286,117 +333,12 @@ country_event = {
 			white_peace =ROY
 			white_peace =ROH
 			white_peace =ROS
+			white_peace =ROT
+			white_peace =ROW
+			white_peace =RDX
 			#country_event = CHI_1932.1
 		}
-		263={
-			transfer_state_to = ROS
-		}
-		275={
-			transfer_state_to = ROS
-		}
-		261={
-			transfer_state_to = ROS
-		}
-		243={
-			transfer_state_to = ROS
-		}
-		223={
-			transfer_state_to = ROS
-		}
-		643={
-			transfer_state_to = ROS
-		}
-		644={
-			transfer_state_to = ROS
-		}
-		204={
-			transfer_state_to = ROS
-		}
-		638={
-			transfer_state_to = ROS
-		}
-		633={
-			transfer_state_to = ROS
-		}
-		174={
-			transfer_state_to = LDC
-		}
-		602={
-			transfer_state_to = ROS
-		}
-		616={
-			transfer_state_to = CHI
-		}
-		615={
-			transfer_state_to = CHI
-		}
-		617={
-			transfer_state_to = CHI
-		}
-		280={
-			transfer_state_to = CHI
-		}
-		283={
-			transfer_state_to = CHI
-		}
-		648={
-			transfer_state_to = CHI
-		}
-		588={
-			transfer_state_to = ROC
-		}
-		592={
-			transfer_state_to = ROG
-		}
-		655={
-			transfer_state_to = PRC
-		}
-
-		262={
-			transfer_state_to = CHI
-		}
-		288={
-			transfer_state_to = CHI
-		}
-		599={
-			transfer_state_to = CHI
-		}
-		584={
-			transfer_state_to = CHI
-		}
-		589={
-			transfer_state_to = CHI
-		}
-		600={
-			transfer_state_to = CHI
-		}
-		598={
-			transfer_state_to = CHI
-		}
-		582={
-			transfer_state_to = CHI
-		}
-		593={
-			transfer_state_to = CHI
-		}
-		595={
-			transfer_state_to = CHI
-		}
-		624={
-			transfer_state_to = YHC
-		}
-		625={
-			transfer_state_to = YHC
-		}
-		183={
-			transfer_state_to = NSD
-		}
-		642={
-			transfer_state_to = NSD
-		}
-		116={
-			transfer_state_to = YHC
-		}
+		
 		set_global_flag = fall_of_ChangZheng_end
 		clr_global_flag = fall_of_ChangZheng
 	}		
@@ -1198,6 +1140,9 @@ country_event = {
     #picture = 
 	fire_only_once = yes
 	is_triggered_only = yes
+	trigger = {
+		date < 1936.12.12
+	}
 	immediate = {
 	}
 	option = {

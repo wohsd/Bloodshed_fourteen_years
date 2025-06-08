@@ -14,7 +14,7 @@ state={
 		1938.1.1={
 			owner = CHI
 		}
-		add_core_of = ROW
+		
 	}
 	manpower=113000
 	buildings_max_level_factor=1.000

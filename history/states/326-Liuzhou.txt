@@ -19,7 +19,7 @@ state={
 			3211 5
 		}
 		add_core_of = ROC
-		add_core_of = CHI
+		
 	}
 	manpower=323000
 	state_category = town

@@ -10,8 +10,8 @@ state={
 			infrastructure = 1
 
 		}
-		add_core_of = ROS
-		add_core_of = ROT
+		
+		
 		victory_points = {
 			1606 10
 		}

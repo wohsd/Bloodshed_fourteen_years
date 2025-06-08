@@ -11,7 +11,7 @@ state={
 
 		}
 		add_core_of = NHA
-		add_core_of = CHI
+		
         1933.1.1={
 			owner = NHA
 		}

@@ -13,7 +13,7 @@ state={
 			2688 5
 		}
 		add_core_of = ROA
-		add_core_of = CHI
+		
 		1939.1.1={
 			owner = JAP
 		}

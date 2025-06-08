@@ -10,10 +10,10 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-
+recruit_character = ROC_LiZongRen
 recruit_character = ROC_HuangShaoHong
 recruit_character = ROC_HuangXuChu
-recruit_character = ROC_LiZongRen
+
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -27,14 +27,9 @@ set_politics = {
 }
 add_ideas = Regionalist_warlords
 1932.12.29={
-	retire_country_leader = yes
 	add_ideas = Regionalist_warlords
 }
 1933.1.1={
-	retire_country_leader = yes
-	ROC_LiZongRen = {
-		promote_leader = yes
-	}
 	set_oob = "ROC_1933"
 }
 1944.1.1={

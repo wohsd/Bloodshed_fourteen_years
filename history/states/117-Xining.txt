@@ -13,7 +13,7 @@ state={
 			
 		}
 		add_core_of = ROQ
-		add_core_of = CHI
+		
 	}
 	manpower=323000
 	state_category = town

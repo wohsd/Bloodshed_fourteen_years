@@ -33,8 +33,6 @@ state={
 		victory_points = {
 			1913 5 
 		}
-		add_core_of = CHI
-		add_core_of = PRC
 		1936.1.1={
 			owner = CHI
 		}

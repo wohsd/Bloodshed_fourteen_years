@@ -14,7 +14,7 @@ state={
 		1941.1.1={
 			owner = JAP
 		}
-		add_core_of = CHI
+		
 	}
 	manpower=185000
 	state_category = town
