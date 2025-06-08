@@ -6,9 +6,9 @@ on_actions = {
 			every_state = {
 				if={
 					limit={
-						is_controlled_by = PRC
+						is_controlled_by = ROOT
 					}
-					set_state_owner_to = PRC
+					set_state_owner_to = ROOT
 				}
 			}
 			
