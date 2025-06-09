@@ -589,6 +589,18 @@ country_event = {
 				target = PRC
 				type = annex_everything
 			}
+			declare_war_on = {
+				target = PRH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NHA
+				type = annex_everything
+			}
 			add_timed_idea = {
 				idea = Fortress_tactics
 				days = 200
