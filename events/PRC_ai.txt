@@ -787,6 +787,11 @@ country_event = {
 				target = ROW
 			}
 		}
+		PRC={
+			annex_country = {
+				target = NSA
+			}
+		}
 		hidden_effect = {
 			complete_national_focus = PRC_focus43
 			news_event = WorldNew.17

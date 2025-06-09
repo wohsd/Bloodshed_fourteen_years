@@ -604,6 +604,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+				set_global_flag = define_of_ChangZheng
 					582 = {
 							add_building_construction = {
 									type = bunker
@@ -1123,6 +1124,8 @@ focus_tree = {
 		x = 32
 		y = 6
 			completion_reward = {
+				set_global_flag = start_of_ChangZheng
+
 			unlock_decision_category_tooltip = Long_march_decisions
 			PRC_MaoZeDong = {
 				remove_trait = {

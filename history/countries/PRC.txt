@@ -45,6 +45,8 @@ add_to_faction = PRJ
 add_to_faction = PRY
 add_to_faction = PRD
 
+add_manpower = 50000
+
 set_variable = {
 	Chi_Shui=0
 }

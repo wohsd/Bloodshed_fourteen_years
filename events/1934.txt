@@ -147,8 +147,14 @@ country_event = {
 			YUL = {
 				AND={
 					has_war = yes
+					PRC={
+						has_global_flag = start_of_ChangZheng
+					}
 					NOT = {
 						controls_province = 1829
+						PRC={
+							has_global_flag = define_of_ChangZheng
+						}
 					}
 				}
 			}
@@ -163,7 +169,8 @@ country_event = {
     
 	option = {
 		name = PRC_1934Hidden.3.a
-		655={transfer_state_to = PRC}
+
+		658={transfer_state_to = PRC}
 		599={transfer_state_to = CHI}
 		589={transfer_state_to = CHI}
 		598={transfer_state_to = CHI}
@@ -173,6 +180,103 @@ country_event = {
 		661={transfer_state_to = CHI}
 		600={transfer_state_to = CHI}
 		161={transfer_state_to = YHC}
+
+		###湖南
+		260={transfer_state_to = RON}
+		264={transfer_state_to = RON}
+		265={transfer_state_to = RON}
+		271={transfer_state_to = RON}
+		272={transfer_state_to = RON}
+		284={transfer_state_to = RON}
+		287={transfer_state_to = RON}
+		296={transfer_state_to = RON}
+		299={transfer_state_to = RON}
+		300={transfer_state_to = RON}
+		305={transfer_state_to = RON}
+		308={transfer_state_to = RON}
+		315={transfer_state_to = RON}
+		316={transfer_state_to = RON}
+		587={transfer_state_to = RON}
+		607={transfer_state_to = RON}
+		608={transfer_state_to = RON}
+		611={transfer_state_to = RON}
+		612={transfer_state_to = RON}
+		672={transfer_state_to = RON}
+		###广西
+		673={transfer_state_to = ROC}
+		610={transfer_state_to = ROC}
+		324={transfer_state_to = ROC}
+		326={transfer_state_to = ROC}
+		331={transfer_state_to = ROC}
+		###CHI
+		280={transfer_state_to = CHI}
+		283={transfer_state_to = CHI}
+		304={transfer_state_to = CHI}
+		307={transfer_state_to = CHI}
+		309={transfer_state_to = CHI}
+		311={transfer_state_to = CHI}
+		317={transfer_state_to = CHI}
+		320={transfer_state_to = CHI}
+		325={transfer_state_to = CHI}
+		613={transfer_state_to = CHI}
+		614={transfer_state_to = CHI}
+		615={transfer_state_to = CHI}
+		616={transfer_state_to = CHI}
+		617={transfer_state_to = CHI}
+		618={transfer_state_to = CHI}
+		648={transfer_state_to = CHI}
+		###四川
+		239={transfer_state_to = ROW}
+		263={transfer_state_to = ROW}
+		620={transfer_state_to = ROW}
+		310={transfer_state_to = ROW}
+		277={transfer_state_to = ROW}
+		636={transfer_state_to = ROW}
+		639={transfer_state_to = ROW}
+		188={transfer_state_to = ROW}
+		627={transfer_state_to = ROW}
+		635={transfer_state_to = ROW}
+		637={transfer_state_to = ROW}
+		###RDX
+		229={transfer_state_to = RDX}
+		223={transfer_state_to = RDX}
+		183={transfer_state_to = RDX}
+		631={transfer_state_to = RDX}
+		632={transfer_state_to = RDX}
+		633={transfer_state_to = RDX}
+		634={transfer_state_to = RDX}
+		635={transfer_state_to = RDX}
+		637={transfer_state_to = RDX}
+		638={transfer_state_to = RDX}
+		640={transfer_state_to = RDX}
+		641={transfer_state_to = RDX}
+		
+		643={transfer_state_to = RDX}
+		644={transfer_state_to = RDX}
+		###LDC
+		141={transfer_state_to = LDC}
+		174={transfer_state_to = LDC}
+		623={transfer_state_to = LDC}
+		###YHC
+		132={transfer_state_to = YHC}
+		161={transfer_state_to = YHC}
+		624={transfer_state_to = YHC}
+		162={transfer_state_to = YHC}
+		625={transfer_state_to = YHC}
+		122={transfer_state_to = YHC}
+		149={transfer_state_to = YHC}
+		162={transfer_state_to = YHC}
+		190={transfer_state_to = YHC}
+
+		642={transfer_state_to = NSD}
+
+		602={transfer_state_to = ROT}
+		204={transfer_state_to = RHC}
+		PRC = {
+			annex_country = {
+				target = NSA
+			}
+		}
 		hidden_effect = {
 			PRC = {
 				complete_national_focus = PRC_focus43
@@ -310,9 +414,6 @@ country_event = {
 			}
 			annex_country = {
 				target = PRJ
-			}
-			annex_country = {
-				target = RON
 			}
 			annex_country = {
 				target = HZD
@@ -1016,12 +1117,16 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			655={
+			656={
 				transfer_state_to = NSA
 				add_core_of = NSA
 			}
+			YHC={
+				add_ideas = Negative_Encirclement
+			}
 			NSA={
 				country_event = {id=PRC_1935.13 days=20}
+				load_oob = NSA_1934
 			}
 		}
 	}

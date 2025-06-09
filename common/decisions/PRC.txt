@@ -218,9 +218,6 @@ Long_march_decisions = {
 				country_event = {id=PRC_1935.10 days=182}
 				country_event = {id=PRC_1935.11 days=320}
 			}
-			YHC={
-				add_ideas = Negative_Encirclement
-			}
 			add_ideas = Chinese_red_army1
 			PRC={
 				declare_war_on = {

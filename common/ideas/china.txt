@@ -147,9 +147,15 @@ ideas = {
 			modifier = {
 				planning_speed=-0.25
 				army_speed_factor=-0.15
+				army_org_factor=-0.4
 			}
 			targeted_modifier = {
 				tag = PRC
+				attack_bonus_against=-0.75 
+                defense_bonus_against=-0.75
+			}
+			targeted_modifier = {
+				tag = NSA
 				attack_bonus_against=-0.75 
                 defense_bonus_against=-0.75
 			}
