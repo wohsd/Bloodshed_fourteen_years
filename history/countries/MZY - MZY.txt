@@ -40,5 +40,6 @@ set_popularities = {
 	retire_character = MZY_MaZhongYing
 }
 add_ideas = {
+	Regionalist_warlords
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

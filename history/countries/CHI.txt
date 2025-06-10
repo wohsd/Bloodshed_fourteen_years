@@ -104,7 +104,78 @@ add_intel = {
 
 puppet = RON
 
-
+293={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+666={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+306={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+313={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+319={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+327={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+328={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+330={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+336={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+343={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+525={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}
+526={
+	add_dynamic_modifier = {
+		modifier = Poorly_managed_areas
+		scope = JAP
+	}
+}	
 
 set_politics = {
 	ruling_party = neutrality

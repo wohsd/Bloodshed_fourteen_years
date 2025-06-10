@@ -161,35 +161,35 @@ news_event = {
 			add_dynamic_modifier = {
 				modifier = Morale_collapsed
 				scope = CHI
-				days=35
+				days=135
 			}
 		}
 		669={
 			add_dynamic_modifier = {
 				modifier = Morale_collapsed
 				scope = CHI
-				days=35
+				days=135
 			}
 		}
 		219={
 			add_dynamic_modifier = {
 				modifier = Morale_collapsed
 				scope = CHI
-				days=35
+				days=135
 			}
 		}
 		215={
 			add_dynamic_modifier = {
 				modifier = Morale_collapsed
 				scope = CHI
-				days=35
+				days=135
 			}
 		}
 		213={
 			add_dynamic_modifier = {
 				modifier = Morale_collapsed
 				scope = CHI
-				days=35
+				days=135
 			}
 		}
 		}

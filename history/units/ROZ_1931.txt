@@ -1,0 +1,80 @@
+﻿division_template = {
+	name = "马家军" 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "地方民团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵团" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 270
+		name = "马家军地方民团"
+		division_template = "骑兵团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 270
+		name = "马家军地方民团"
+		division_template = "地方民团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 2859
+		name = "马家军地方民团"
+		division_template = "地方民团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 2859
+		name = "马家军地方民团"
+		division_template = "地方民团"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 2859
+		name = "马家军骑兵第五师"
+		division_template = "马家军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+}

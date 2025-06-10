@@ -42,23 +42,23 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_speed_factor=0.1
-				breakthrough_factor=0.1			
+				army_speed_factor=0.05
+				breakthrough_factor=0.05			
 			}
 			targeted_modifier = {
 				tag=CHI
-				attack_bonus_against=0.75 
-                defense_bonus_against=0.75
+				attack_bonus_against=0.65
+                defense_bonus_against=0.65
 			}
 			targeted_modifier = {
 				tag=ROJ
-				attack_bonus_against=0.75 
-                defense_bonus_against=0.75
+				attack_bonus_against=0.65
+                defense_bonus_against=0.65
 			}
 			targeted_modifier = {
 				tag=ROA
-				attack_bonus_against=0.75 
-                defense_bonus_against=0.75
+				attack_bonus_against=0.65
+                defense_bonus_against=0.65
 			}
 			targeted_modifier = {
 				tag=JDW

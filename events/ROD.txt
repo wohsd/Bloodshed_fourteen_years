@@ -168,3 +168,30 @@ country_event = {
 		
 	}
 }		
+
+
+news_event = {
+	id = ROD.5
+	title = ROD.5.t
+	desc = ROD.5.d
+
+	picture = GFX_ROD_5
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			59={
+			set_demilitarized_zone = yes
+			}
+			654={
+				transfer_state_to = LSX
+			}
+		}
+		
+	}
+	option = {
+			name = ROD.5.a
+	}		
+}
