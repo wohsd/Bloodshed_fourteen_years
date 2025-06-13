@@ -6,8 +6,8 @@ add_namespace = ROG_1931
 add_namespace = ROD_1931
 add_namespace = world1931
 add_namespace = world1931Hidden
-
 add_namespace = CHI_Encirclement
+add_namespace = CHI_Encirclement_end
 add_namespace = Assassinate
 unit_leader_event = {
 	id = Assassinate.1
@@ -33,6 +33,48 @@ unit_leader_event = {
 	hidden_effect = {
 		JAP={
 			transfer_state = 40
+			division_template = {
+				name = "吉林剿匪军" 
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+				}
+				support = {
+				}
+			}
+		}
+		40={
+			create_unit = {
+					division = "name = \"吉林剿匪军一旅\" division_template = \"吉林剿匪军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 2797
+			}
+			create_unit = {
+					division = "name = \"吉林剿匪军二旅\" division_template = \"吉林剿匪军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 2797
+			}
+			create_unit = {
+					division = "name = \"吉林剿匪军三旅\" division_template = \"吉林剿匪军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 2797
+			}
+			create_unit = {
+					division = "name = \"吉林剿匪军四旅\" division_template = \"吉林剿匪军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 2797
+			}
+			create_unit = {
+					division = "name = \"吉林剿匪军五旅\" division_template = \"吉林剿匪军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 2797
+			}
 		}
 		ROD_XiQia = {
 			set_nationality = JAP
@@ -107,6 +149,54 @@ country_event = {
 }
 
 country_event = {
+	id = CHI_Encirclement_end.1
+	title = CHI_Encirclement_end.1.t
+	desc = CHI_Encirclement_end.1.d
+	#picture = GFX_ROG_1931_1
+	trigger = {
+		NOT={
+			has_country_flag = CHI_Encirclement_end_1
+			has_country_flag = CHI_Encirclement_end_2
+			has_country_flag = CHI_Encirclement_end_3
+			
+		}
+		date < 1933.1.1
+		original_tag = CHI
+		CHI={
+			has_war_with = PRC
+			casualties_inflicted_by = {
+				opponent = PRC
+				thousands > 10
+			}
+		}
+	}
+	fire_only_once = no
+    immediate = {
+		CHI={
+			white_peace = PRC
+		}
+		set_country_flag = CHI_Encirclement_end_1
+		every_state={
+			if = {
+				limit = {
+					is_core_of = PRC
+				 }
+				 transfer_state_to = PRC
+			}
+		}
+		593={
+			transfer_state_to = CHI
+		}
+		600={
+			transfer_state_to = PRC
+		}
+    } 
+	option = {
+		name = CHI_Encirclement.1.a
+	}
+}
+
+country_event = {
 	id = CHI_Encirclement.1
 	title = CHI_Encirclement.1.t
 	desc = CHI_Encirclement.1.d
@@ -116,218 +206,82 @@ country_event = {
 	fire_only_once = yes
     is_triggered_only = yes 
     immediate = {
-		hidden_effect = {
-		start_border_war = {
-			change_state_after_war = yes
-			attacker = {
-				state = 589
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = 0.4
-				terrain_factor = 0.4
-			}	
-			defender = {
-				state = 600
-				num_provinces = 3
-				dig_in_factor = -0.45
-				terrain_factor = -0.45
+		CHI={
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
 			}
 		}
-		set_border_war_data = {
-			attacker = 589
-			defender = 600
-			attacker_modifier = 0.75
-			defender_modifier = -0.75
-			combat_width = 100
+		start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 345
+					num_provinces = 1
+					#on_win = japan_border_conflict.2
+				}	
+				defender = {
+					state = 665
+					num_provinces = 1
+					dig_in_factor = -1
+					terrain_factor = -1
+				}
+			} 
+			set_border_war_data = {
+				attacker = 345
+				defender = 665
+				attacker_modifier= 0.85
+				defender_modifier = -0.85
+				combat_width = 100
 		}
 		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 302
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.3
-				terrain_factor = -0.3
-			}	
-			defender = {
-				state = 598
-				num_provinces = 2
-				dig_in_factor = 0.45
-				terrain_factor = 0.45
-			}
-		}
-		set_border_war_data = {
-			attacker = 302
-			defender = 598
-			attacker_modifier = -0.35
-			defender_modifier = 0.75
-			combat_width = 100
+				change_state_after_war = yes
+				attacker = {
+					state = 353
+					num_provinces = 1
+					#on_win = japan_border_conflict.2
+				}	
+				defender = {
+					state = 663
+					num_provinces = 1
+					dig_in_factor = -1
+					terrain_factor = -1
+				}
+			} 
+			set_border_war_data = {
+				attacker = 353
+				defender = 663
+				attacker_modifier= 0.85
+				defender_modifier = -0.85
+				combat_width = 100
 		}
 		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 327
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
-			}	
-			defender = {
-				state = 666
-				num_provinces = 3
-				dig_in_factor = 0.45
-				terrain_factor = 0.45
-			}
+				change_state_after_war = yes
+				attacker = {
+					state = 601
+					num_provinces = 1
+					#on_win = japan_border_conflict.2
+				}	
+				defender = {
+					state = 661
+					num_provinces = 1
+					dig_in_factor = -1
+					terrain_factor = -1
+				}
+			} 
+			set_border_war_data = {
+				attacker = 345
+				defender = 665
+				attacker_modifier= 0.1
+				defender_modifier = -0.1
+				combat_width = 50
 		}
-		set_border_war_data = {
-			attacker = 327
-			defender = 666
-			attacker_modifier = -0.75
-			defender_modifier = 0.75
-			combat_width = 100
-		}
-		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 312
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.2
-				terrain_factor = -0.2
-			}	
-			defender = {
-				state = 582
-				num_provinces = 3
-				dig_in_factor = 0.45
-				terrain_factor = 0.45
-			}
-		}
-		set_border_war_data = {
-			attacker = 312
-			defender = 582
-			attacker_modifier = -0.35
-			defender_modifier = 0.35
-			combat_width = 100
-		}
-		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 628
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
-			}	
-			defender = {
-				state = 251
-				num_provinces = 3
-				dig_in_factor = 0.45
-				terrain_factor = 0.45
-			}
-		}
-		set_border_war_data = {
-			attacker = 628
-			defender = 251
-			attacker_modifier = -0.75
-			defender_modifier = 0.75
-			combat_width = 100
-		}
-
-		start_border_war = {
-			change_state_after_war = yes
-			attacker = {
-				state = 601
-				num_provinces = 2
-				modifier = 0.1
-				dig_in_factor = 0.7
-				terrain_factor = 0.7
-			}	
-			defender = {
-				state = 661
-				num_provinces = 2
-				dig_in_factor = -0.85
-				terrain_factor = -0.85
-			}
-		}
-
-		start_border_war = {
-			change_state_after_war = yes
-			attacker = {
-				state = 345
-				num_provinces = 2
-				modifier = 0.1
-				dig_in_factor = 0.4
-				terrain_factor = 0.4
-			}	
-			defender = {
-				state = 665
-				num_provinces = 2
-				dig_in_factor = -0.75
-				terrain_factor = -0.75
-			}
-		}
-		set_border_war_data = {
-			attacker = 342
-			defender = 665
-			attacker_modifier = 0.75
-			defender_modifier = -0.75
-			combat_width = 100
-		}
-		start_border_war = {
-			change_state_after_war = yes
-			attacker = {
-				state = 353
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
-			}	
-			defender = {
-				state = 663
-				num_provinces = 3
-				dig_in_factor = 0.45
-				terrain_factor = 0.45
-			}
-		}
-		set_border_war_data = {
-			attacker = 601
-			defender = 661
-			attacker_modifier = 0.75
-			defender_modifier = -0.75
-			combat_width = 100
-		}
-
-		
-
-		start_border_war = {
-			change_state_after_war = yes
-			attacker = {
-				state = 353
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
-			}	
-			defender = {
-				state = 663
-				num_provinces = 3
-				dig_in_factor = 0.45
-				terrain_factor = 0.45
-			}
-		}
-		set_border_war_data = {
-			attacker = 353
-			defender = 663
-			attacker_modifier = -0.35
-			defender_modifier = 0.35
-			combat_width = 100
-		}
-	}
     } 
 	option = {
 		name = CHI_Encirclement.1.a
 	}
 }
+
+
 
 country_event = {
 	id = CHI_Encirclement.2
@@ -339,13 +293,61 @@ country_event = {
 	fire_only_once = yes
     is_triggered_only = yes 
     immediate = {
-		
+		CHI={
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+		}
     } 
 	option = {
 		name = CHI_Encirclement.2.a
 	}
 }
 
+
+country_event = {
+	id = CHI_Encirclement_end.2
+	title = CHI_Encirclement_end.1.t
+	desc = CHI_Encirclement_end.1.d
+	#picture = GFX_ROG_1931_1
+	trigger = {
+		has_country_flag = CHI_Encirclement_end_1
+		date < 1933.1.1
+		original_tag = CHI
+		CHI={
+			has_war_with = PRC
+			casualties_inflicted_by = {
+				opponent = PRC
+				thousands > 4
+			}
+		}
+	}
+	fire_only_once = no
+    immediate = {
+		CHI={
+			white_peace = PRC
+		}
+		set_country_flag = CHI_Encirclement_end_2
+		every_state={
+			if = {
+				limit = {
+					is_core_of = PRC
+				 }
+				 transfer_state_to = PRC
+			}
+		}
+		599={
+			transfer_state_to = CHI
+		}
+		593={
+			transfer_state_to = PRC
+		}
+    } 
+	option = {
+		name = CHI_Encirclement.1.a
+	}
+}
 
 country_event = {
 	id = CHI_Encirclement.3
@@ -357,13 +359,60 @@ country_event = {
 	fire_only_once = yes
     is_triggered_only = yes 
     immediate = {
-		
+		CHI={
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+		}
     } 
 	option = {
 		name = CHI_Encirclement.3.a
 	}
 }
 
+country_event = {
+	id = CHI_Encirclement_end.3
+	title = CHI_Encirclement_end.1.t
+	desc = CHI_Encirclement_end.1.d
+	#picture = GFX_ROG_1931_1
+	trigger = {
+		has_country_flag = CHI_Encirclement_end_2
+		date < 1933.1.1
+		original_tag = CHI
+		CHI={
+			has_war_with = PRC
+			casualties_inflicted_by = {
+				opponent = PRC
+				thousands > 8
+			} 
+		}
+	}
+	fire_only_once = no
+    immediate = {
+		CHI={
+			white_peace = PRC
+		}
+		set_country_flag = CHI_Encirclement_end_3
+		every_state={
+			if = {
+				limit = {
+					is_core_of = PRC
+				 }
+				 transfer_state_to = PRC
+			}
+		}
+		288={
+			transfer_state_to = CHI
+		}
+		584={
+			transfer_state_to = PRC
+		}
+    } 
+	option = {
+		name = CHI_Encirclement.1.a
+	}
+}
 country_event = {
 	id = CHI_Encirclement.4
 	title = CHI_Encirclement.4.t
@@ -374,6 +423,7 @@ country_event = {
 	fire_only_once = yes
     is_triggered_only = yes 
     immediate = {
+
     } 
 	option = {
 		name = CHI_Encirclement.3.a
@@ -493,6 +543,30 @@ news_event = {
 	}		
 }
 
+news_event = {
+	id = ROG_1931.4
+	title = ROG_1931.4.t
+	desc = ROG_1931.4.d
+	picture = GFX_ROG_1931_4
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			ROG={
+				white_peace = CHI
+				white_peace = RON
+			}
+			ROC={
+				white_peace = CHI
+				white_peace = RON
+			}
+		}
+	}
+	option = {
+		name = ROG_1931.4.a
+	}		
+}
 country_event = {
 	id = world1931Hidden.1
     hidden = yes
@@ -923,5 +997,50 @@ country_event = {
 		PRC_WangMing = {
 			set_nationality = SOV
 		}
+	}		
+}
+
+country_event = {
+	id = PRC_1931.13
+	title = PRC_1931.13.t
+	desc = PRC_1931.13.d
+	picture = GFX_PRC_1931_13
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = PRC_1931_13
+	}
+	option = {
+		name = PRC_1931.13.a
+		clr_country_flag = PRC_1931_13
+		news_event = PRC_1931.14
+		PRC={
+			promote_character = {
+				character = PRC_MaoZeDong
+				ideology = marxism
+			}
+		}
+		582={
+			set_state_name = "瑞京特区"
+		}
+		set_province_name = {
+			id = 618
+			name = "瑞京"
+		}
+	}		
+}
+
+
+news_event = {
+	id = PRC_1931.14
+	title = PRC_1931.14.t
+	desc = PRC_1931.14.d
+	picture = GFX_PRC_1931_14
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1931.14.a
 	}		
 }

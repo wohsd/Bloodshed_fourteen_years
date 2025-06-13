@@ -31,6 +31,13 @@ ideas = {
 				breakthrough_bonus_against=0.2
 				defense_bonus_against=0.2
 			}
+			targeted_modifier = {
+				tag = ROD
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
+				breakthrough_bonus_against=0.3
+				defense_bonus_against=0.3
+			}
 		}
 		Death_in_March = {
 			picture=Death_in_March

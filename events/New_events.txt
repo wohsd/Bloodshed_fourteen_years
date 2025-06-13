@@ -470,51 +470,22 @@ country_event = {
 	hidden = yes
 	fire_only_once = yes
     trigger = {
-		date > 1932.3.4
+		date > 1931.9.18
+		date < 1933.1.1
 		JAP = {
 			AND={
 				controls_state = 50
-				controls_state = 24
 				controls_state = 36
+				controls_state = 40
 			}
 		}
     }
     immediate = {
 		set_global_flag = Hidden_News_19
-		MCK={
-			transfer_state = 8
-			transfer_state = 12
-			transfer_state = 13
-			transfer_state = 15
-			transfer_state = 21
-			transfer_state = 17
-			transfer_state = 18
-			transfer_state = 24
-			transfer_state = 29
-			transfer_state = 41
-			transfer_state = 54
-			transfer_state = 40
-			transfer_state = 54
-			transfer_state = 51
-			transfer_state = 42
-			transfer_state = 60
-			transfer_state = 65
-			transfer_state = 73
-			transfer_state = 75
-			transfer_state = 66
-			transfer_state = 67
-			transfer_state = 50
-			transfer_state = 64
-			transfer_state = 69
-			transfer_state = 44
-			transfer_state = 48
-			transfer_state = 42
-			transfer_state = 36
-			transfer_state = 24
-			transfer_state = 34
-		}
+		
 		news_event = { id= WorldNew.4 }
-		news_event = { id= WorldNew.5 days = 5} 
+		news_event = {id=ROD.6 days=10}
+		news_event = { id= WorldNew.5 days = 100} 
 	}
 	option = {
 		name = Hidden_News.19.a
@@ -593,10 +564,11 @@ news_event = {
 
 	is_triggered_only = yes
 
-	option = {
-			name = WorldNew.1.a
+	immediate = {
+		hidden_effect = {
 			ROD={
 				add_ideas = Not_resisting
+				set_war_support = 0.1
 			}
 			JAP={
 				declare_war_on = {
@@ -604,7 +576,14 @@ news_event = {
 				type = annex_everything
 			}
 			}
-			
+		}
+	}
+
+	option = {
+		name = WorldNew.1.a
+		hidden_effect = {
+			news_event = {id=ROG_1931.4 days=15}
+		}
 			goto_state = 50
 		}		
 }
@@ -692,6 +671,39 @@ news_event = {
 
 	immediate = {
 	hidden_effect = {
+		MCK={
+			load_oob = "MCK_1932"
+			transfer_state = 8
+			transfer_state = 12
+			transfer_state = 13
+			transfer_state = 15
+			transfer_state = 21
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 24
+			transfer_state = 29
+			transfer_state = 41
+			transfer_state = 54
+			transfer_state = 40
+			transfer_state = 54
+			transfer_state = 51
+			transfer_state = 42
+			transfer_state = 60
+			transfer_state = 65
+			transfer_state = 73
+			transfer_state = 75
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 50
+			transfer_state = 64
+			transfer_state = 69
+			transfer_state = 44
+			transfer_state = 48
+			transfer_state = 42
+			transfer_state = 36
+			transfer_state = 24
+			transfer_state = 34
+		}
 		ROD_XiQia = {
 			set_nationality = MCK
 		}
@@ -736,9 +748,9 @@ news_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+			country_event = {id=JAP_1932.1 days=34}
 			JAP={
 				declare_war_on = {
-					
 				target = CHI
 				type = annex_everything
 			}
@@ -869,7 +881,12 @@ news_event = {
 	picture = GFX_WorldNew_11
 
 	major = yes
-
+	immediate = {
+		228={set_demilitarized_zone = yes}
+		647={set_demilitarized_zone = yes}
+		670={set_demilitarized_zone = yes}
+		586={set_demilitarized_zone = yes}
+	}
 	is_triggered_only = yes
 	immediate = {
 		
