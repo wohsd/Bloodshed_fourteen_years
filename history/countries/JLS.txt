@@ -1,7 +1,7 @@
-capital = 86
+capital = 20
 #首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
-oob =MBQ_1931
+#oob =
 #军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
 set_technology = {
@@ -14,7 +14,8 @@ set_stability = 0.7
 set_war_support = 0.7
 #设置战争支持度
 
-recruit_character = MBQ_MaBuQing
+recruit_character = JLS_LiDu
+recruit_character = JLS_DingCao
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {
@@ -36,6 +37,5 @@ set_popularities = {
 }
 
 add_ideas = {
-	Regionalist_warlords
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

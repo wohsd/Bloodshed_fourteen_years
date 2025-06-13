@@ -41,6 +41,7 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
+puppet = LSX
 puppet = MCK
 puppet = JDF
 puppet = MGJ

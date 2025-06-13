@@ -7,7 +7,7 @@ set_technology = {
 }
 
 country_event = {id=PRC_1931.10 days= 122}
-
+country_event = {id=PRC_1931.13 days= 317}
 
 recruit_character = PRC_XiangZhongFa
 recruit_character = PRC_WangMing

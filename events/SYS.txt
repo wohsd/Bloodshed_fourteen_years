@@ -15,6 +15,15 @@ country_event = {
     }
     immediate = {
 		news_event = {id=SYS_1933.1}
+		ROZ={
+			give_military_access = MBQ
+		}
+		ROZ={
+			give_military_access = ROQ
+		}
+		MBQ={
+			give_military_access = ROQ
+		}
 		97={
 			transfer_state_to = SYS
 		}
@@ -49,6 +58,7 @@ news_event = {
 	picture = GFX_SYS_1933_1
 	major = yes
 	is_triggered_only = yes
+
 	option = {
 		name = SYS_1933.1.a
 	}		

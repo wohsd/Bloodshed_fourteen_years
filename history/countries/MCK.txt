@@ -1,6 +1,6 @@
 ﻿capital = 36
 
-set_oob = "MCK_1932"
+oob = "MCK_1932"
 
 set_technology = {
 	infantry_weapons = 1

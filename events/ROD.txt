@@ -168,3 +168,94 @@ country_event = {
 		
 	}
 }		
+
+
+news_event = {
+	id = ROD.5
+	title = ROD.5.t
+	desc = ROD.5.d
+
+	picture = GFX_ROD_5
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			59={
+			set_demilitarized_zone = yes
+			}
+			654={
+				transfer_state_to = LSX
+			}
+		}
+		
+	}
+	option = {
+			name = ROD.5.a
+	}		
+}
+
+
+
+news_event = {
+	id = ROD.6
+	title = ROD.6.t
+	desc = ROD.6.d
+
+	picture = GFX_ROD_6
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			ROD={
+				white_peace = JAP
+				transfer_state = 26
+				transfer_state = 19
+				transfer_state = 30
+				transfer_state = 53
+				transfer_state = 72
+				transfer_state = 62
+				transfer_state = 78
+				transfer_state = 79
+				transfer_state = 59
+				transfer_state = 37
+			}
+			HLJ={
+				transfer_state = 9
+				transfer_state = 8
+				transfer_state = 12
+				transfer_state = 13
+				transfer_state = 15
+			}
+			JLS={
+				transfer_state = 17
+				transfer_state = 27
+				transfer_state = 16
+				transfer_state = 20
+				transfer_state = 25
+			}
+			JAP={
+				transfer_state = 21
+				transfer_state = 18
+				transfer_state = 24
+				transfer_state = 29
+				transfer_state = 41
+				declare_war_on = {
+					target = HLJ
+					type=annex_everything
+				}
+				declare_war_on = {
+					target = JLS
+					type=annex_everything
+				}
+			}
+		}
+		
+	}
+	option = {
+			name = ROD.6.a
+	}		
+}

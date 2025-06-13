@@ -276,91 +276,12 @@ country_event = {
 	is_triggered_only = yes
 
     immediate = {
-		hidden_effect={
-		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 302
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = -0.4
-				terrain_factor = -0.4
-			}	
-			defender = {
-				state = 598
-				num_provinces = 3
-				dig_in_factor = 0.35
-				terrain_factor = 0.35
+		CHI={
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
 			}
 		}
-		set_border_war_data = {
-			attacker = 302
-			defender = 598
-			defender_modifier = 0.4
-		}
-		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 313
-				num_provinces = 6
-				modifier = 0.1
-				dig_in_factor = 0
-				terrain_factor = 0
-			}	
-			defender = {
-				state = 600
-				num_provinces = 3
-				dig_in_factor = 0.25
-				terrain_factor = 0.25
-			}
-		}
-		set_border_war_data = {
-			attacker = 313
-			defender = 600
-			defender_modifier = 0.15
-		}
-		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 327
-				num_provinces = 1
-				modifier = 0.1
-				dig_in_factor = 0
-				terrain_factor = 0
-			}	
-			defender = {
-				state = 593
-				num_provinces = 2
-				dig_in_factor = 0.2
-				terrain_factor = 0.2
-			}
-		}
-		set_border_war_data = {
-			attacker = 327
-			defender = 593
-			defender_modifier = 0.15
-		}
-		start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 292
-				num_provinces = 1
-				modifier = 0.1
-				
-			}	
-			defender = {
-				state = 589
-				num_provinces = 1
-				dig_in_factor = 0.2
-				terrain_factor = 0.2
-			}
-		}
-		set_border_war_data = {
-			attacker = 292
-			defender = 589
-			defender_modifier = 0.25
-		}
-	}
 	}
 	option = {
 		name = PRC_1933.2.a

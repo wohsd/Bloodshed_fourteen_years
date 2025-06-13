@@ -14,8 +14,18 @@ on_actions = {
 			
 		}
 	}
-
-
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = CAR
+					FROM = { tag = ROD }
+				}
+				news_event = ROD.5
+			}
+    }
+	}
+	
 
 	on_daily_PRC = {
 		effect = {

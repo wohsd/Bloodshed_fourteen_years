@@ -25,12 +25,12 @@ JAP_buffer_1212 = {
 	
 	ai_strategy = {
 		type = prepare_for_war
-		id = CHI
+		id = JDW
 		value = 100
 	}
 	ai_strategy = {
 		type = front_unit_request
-		tag = CHI
+		tag = JDW
 		value = 100
 	}
 

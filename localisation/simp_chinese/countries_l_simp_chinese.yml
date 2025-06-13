@@ -114,6 +114,7 @@ PRC_anti_chi: "反蒋同盟"
  CAR_neutrality: "察哈尔民众抗日同盟军"
  CAR_neutrality_DEF: "察哈尔民众抗日同盟军"
  CAR_neutrality_ADJ: "察哈尔民众抗日同盟军"
+ CAR_1933: "抗日讨贼军"
 
  ROX_fascism: "新疆边防督办公署"
  ROX_fascism_DEF: "新疆边防督办公署"
@@ -597,6 +598,14 @@ ROJ_fascism: "晋系军阀"
  NSA_DEF: "陕甘苏区"
  NSA_ADJ: "陕甘苏区"
 
+
+ HLJ: "黑龙江自卫军"
+ HLJ_DEF: "黑龙江自卫军"
+ HLJ_ADJ: "黑龙江自卫军"
+
+ JLS: "吉林自卫军"
+ JLS_DEF: "吉林自卫军"
+ JLS_ADJ: "吉林自卫军"
 
  NEP: "尼泊尔王国"
  NEP_DEF: "尼泊尔王国"
