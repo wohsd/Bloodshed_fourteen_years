@@ -1,0 +1,26 @@
+state={
+	id=681
+	name="STATE_681"
+	provinces={
+		1199 1262 1563 1696 1868 3650 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		
+		victory_points = {
+			2640 5
+		}
+		victory_points = {
+			1868 5
+		}
+		1939.1.1={
+			owner = NAC
+		}
+	}
+	manpower=523320
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

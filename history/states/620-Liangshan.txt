@@ -2,20 +2,34 @@ state={
 	id=620
 	name="STATE_620"
 	provinces={
-		172 1734 2015 3915 
+		172 1734 2015 3915 5270 5271 5272 5273 5274
 	}
 	history={
 		owner = ROW
 		buildings = {
 			infrastructure = 1
-
+			
 		}
 		victory_points = {
-			1734 5
+			5270 3
 		}
-		
-
+		victory_points = {
+			5271 3
+		}
+		victory_points = {
+			5272 3
+		}
+		victory_points = {
+			3915 3
+		}
+		victory_points = {
+			5274 3
+		}
+		victory_points = {
+			5273 3
+		}
 	}
+
 	manpower=23110
 	buildings_max_level_factor=1.000
 	local_supplies=10.000

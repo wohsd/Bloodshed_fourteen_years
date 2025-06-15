@@ -2,7 +2,7 @@ state={
 	id=85
 	name="STATE_85"
 	provinces={
-		1199 1262 1563 1667 2471 2639 3650 
+		1667 2471 2639 
 	}
 	history={
 		owner = ROD
@@ -20,6 +20,7 @@ state={
 		}
 	}
 	manpower=323000
-	state_category = town
-	local_supplies = 0.0
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

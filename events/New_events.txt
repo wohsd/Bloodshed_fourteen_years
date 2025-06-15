@@ -550,6 +550,25 @@ country_event = {
 		clr_global_flag = Hidden_News_20
 	}		
 }
+
+
+
+
+country_event = {
+	id = Hidden_News.21
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1939.9.1
+		date < 1939.9.3
+    }
+    immediate = {
+		news_event = WorldNew.26
+	}
+	option = {
+		name = Hidden_News.21.a
+	}		
+}
 #######
 
 
@@ -582,7 +601,7 @@ news_event = {
 	option = {
 		name = WorldNew.1.a
 		hidden_effect = {
-			news_event = {id=ROG_1931.4 days=15}
+			news_event = {id=ROG_1931.4 days=5}
 		}
 			goto_state = 50
 		}		
@@ -882,10 +901,18 @@ news_event = {
 
 	major = yes
 	immediate = {
-		228={set_demilitarized_zone = yes}
-		647={set_demilitarized_zone = yes}
-		670={set_demilitarized_zone = yes}
-		586={set_demilitarized_zone = yes}
+		hidden_effect = {
+			228={set_demilitarized_zone = yes}
+			647={set_demilitarized_zone = yes}
+			670={set_demilitarized_zone = yes}
+			586={set_demilitarized_zone = yes}
+
+			228={transfer_state_to = CHI}
+			647={transfer_state_to = CHI}
+			670={transfer_state_to = CHI}
+			586={transfer_state_to = CHI}
+		}
+		
 	}
 	is_triggered_only = yes
 	immediate = {
@@ -1278,5 +1305,42 @@ news_event = {
 	}
 	option = {
 			name = WorldNew.24.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.25
+	title = WorldNew.25.t
+	desc = WorldNew.25.d
+
+	picture = GFX_WorldNew_25
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ROW={
+			white_peace = XZS
+		}
+	}
+	option = {
+		name = WorldNew.25.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.26
+	title = WorldNew.26.t
+	desc = WorldNew.26.d
+
+	picture =  GFX_news_event_003
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = WorldNew.26.a
 	}		
 }

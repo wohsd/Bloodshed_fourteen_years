@@ -205,6 +205,10 @@ country_event = {
 
 		619={transfer_state_to = ROY}
 		275={transfer_state_to = ROS}
+
+		261={transfer_state_to = RYS}
+		243={transfer_state_to = RYS}
+		234={transfer_state_to = RYS}
 		hidden_effect = {
 			PRC = {
 				complete_national_focus = PRC_focus43
@@ -921,9 +925,6 @@ country_event = {
     
 	option = {
 		hidden_effect = {
-			PRC={
-				country_event = PRC_1934.13
-			}
 		}
 		clr_global_flag = fall_of_2321
 	}		
@@ -964,12 +965,12 @@ country_event = {
 		PRC = {
 			AND={
 				has_war = yes
-				controls_province = 2146
+				controls_province = 3915
 			}
 		}
     }
     immediate = {
-		set_global_flag = fall_of_2146
+		set_global_flag = fall_of_3915
     } 
     
 	option = {
@@ -978,7 +979,7 @@ country_event = {
 				country_event = PRC_1934.13
 			}
 		}
-		clr_global_flag = fall_of_2146
+		clr_global_flag = fall_of_3915
 	}		
 }
 

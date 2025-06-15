@@ -20,6 +20,37 @@ CHI_struggle_balance_category = {
 			CHI_LingSeng={
 				promote_character = yes
 			}
+			set_country_flag = Rise_Chiang_Kai_shek
+		}
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+
+	CHI_Rise_Chiang_Kai_shek = {
+		available = {
+			AND={
+				date < 1932.2.2
+				has_completed_focus = Democracy_Over_Autocracy
+			}
+		}
+		days_mission_timeout = 40
+		activation = { 
+			AND={
+				date < 1932.2.2
+				has_country_flag = Rise_Chiang_Kai_shek
+			}
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			CHI={
+				promote_character = {
+					character = CHI_JiangJieShi
+					ideology = neutrality
+				}
+			}
 		}
 		complete_effect = {
 			add_political_power = 100

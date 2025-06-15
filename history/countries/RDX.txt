@@ -1,4 +1,4 @@
-capital = 229
+capital = 633
 set_oob = RDX_1933
 set_technology = {
 	infantry_weapons = 1

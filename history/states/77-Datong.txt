@@ -2,14 +2,13 @@ state={
 	id=77
 	name="STATE_77"
 	provinces={
-		920 1868 2640 
+		920 2640 
 	}
 	history={
 		owner = ROJ
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ROJ
 		
 		victory_points = {
 			2640 5
@@ -22,6 +21,7 @@ state={
 		}
 	}
 	manpower=323000
-	state_category = town
-	local_supplies = 0.0
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

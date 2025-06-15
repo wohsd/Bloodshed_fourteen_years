@@ -13,7 +13,7 @@ state={
 			1545 10
 		}
 		1939.1.1={
-			owner = JAP
+			owner = NAC
 		}
 		add_core_of = ROJ
 		

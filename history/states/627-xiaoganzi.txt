@@ -2,7 +2,7 @@ state={
 	id=627
 	name="STATE_627"
 	provinces={
-		243 1828 1255
+		243 1828 1255 3862
 	}
 
 	history={
@@ -20,6 +20,9 @@ state={
 		}
 		1938.1.1={
 			owner = ROW
+		}
+		victory_points = {
+			1255 3
 		}
 	}
 	manpower=122311

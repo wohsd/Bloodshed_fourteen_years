@@ -2,7 +2,7 @@ state={
 	id=63
 	name="STATE_63"
 	provinces={
-		544 607 818 1587 1696 1908 2482 3357 
+		544 607 818 1587 1908 2482 3357 
 	}
 	history={
 		owner = ROD
@@ -16,10 +16,11 @@ state={
 			owner = JAP
 		}
 		victory_points = {
-			544 5
+			2482 5
 		}
 	}
 	manpower=323000
-	state_category = town
-	local_supplies = 0.0
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -20,7 +20,9 @@ state={
 			owner = CHI
 		}
 		
-		
+		victory_points = {
+			3297 3
+		}
 		
 	}
 	manpower=323000

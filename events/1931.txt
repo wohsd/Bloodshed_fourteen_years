@@ -155,10 +155,8 @@ country_event = {
 	#picture = GFX_ROG_1931_1
 	trigger = {
 		NOT={
-			has_country_flag = CHI_Encirclement_end_1
 			has_country_flag = CHI_Encirclement_end_2
 			has_country_flag = CHI_Encirclement_end_3
-			
 		}
 		date < 1933.1.1
 		original_tag = CHI
@@ -550,7 +548,11 @@ news_event = {
 	picture = GFX_ROG_1931_4
 	major = yes
 	is_triggered_only = yes
-	fire_only_once = yes
+	trigger = {
+		NOT = {
+			has_country_flag = ROG_1931_4
+		}
+	}
 	immediate = {
 		hidden_effect = {
 			ROG={
@@ -561,7 +563,29 @@ news_event = {
 				white_peace = CHI
 				white_peace = RON
 			}
+			673={
+				transfer_state_to = ROC
+			}
+			662={
+				transfer_state_to = ROG
+			}
+			353={
+				transfer_state_to = ROG
+			}
+			604={
+				transfer_state_to = ROG
+			}
+			609={
+				transfer_state_to = ROG
+			}
+			661={
+				transfer_state_to = ROG
+			}
+			592={
+				transfer_state_to = ROG
+			}
 		}
+		set_country_flag =  ROG_1931_4
 	}
 	option = {
 		name = ROG_1931.4.a
