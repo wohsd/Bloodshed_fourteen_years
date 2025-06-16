@@ -39,5 +39,6 @@ set_popularities = {
 }
 
 add_ideas = {
+	Great_Purge_Western_Hunan_Hubei
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

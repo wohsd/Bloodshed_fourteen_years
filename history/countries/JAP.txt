@@ -2,6 +2,7 @@
 1931.1.1={
    set_oob = "JAP_1931"
    add_ideas=Militaristic_fervor
+
 }
 
 add_equipment_to_stockpile = {

@@ -1,6 +1,14 @@
 spriteTypes = {
 
 
+	spriteType = {
+		name = "GFX_idea_Great_Purge_Western_Hunan_Hubei"
+		texturefile = "gfx/interface/ideas/PRH/Great_Purge_Western_Hunan_Hubei.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Great_Purge_White_Sparrow_Garden"
+		texturefile = "gfx/interface/ideas/NHA/Great_Purge_White_Sparrow_Garden.png"
+	} 
 	
 	spriteType = {
 		name = "GFX_Zhao_Dengyu"
