@@ -15,11 +15,15 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = PRH_ZhouYiQun
+recruit_character = PRH_XiaXi
 recruit_character = PRH_GuangXiangYing
 recruit_character = PRH_HeLong
 recruit_character = PRH_XiaoKe
 #获取领导人，将领（在common\characters\你的国家tag）
 
+1933.1.1={
+	kill_country_leader = yes
+}
 set_politics = {
 	ruling_party = communism
 	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
@@ -30,6 +34,7 @@ set_politics = {
 	elections_allowed = no
 	#是否允许公众选举（no或者yes）
 }
+country_event = {id=PRH_leader.1 days=156}
 set_popularities = {
 	communism = 100
 	fascism = 0
@@ -39,6 +44,5 @@ set_popularities = {
 }
 
 add_ideas = {
-	Great_Purge_Western_Hunan_Hubei
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

@@ -8,6 +8,7 @@ set_technology = {
 
 country_event = {id=PRC_1931.10 days= 122}
 country_event = {id=PRC_1931.13 days= 317}
+country_event = {id=PRC_1931.15 days= 296}
 
 recruit_character = PRC_XiangZhongFa
 recruit_character = PRC_WangMing
@@ -68,12 +69,21 @@ create_intelligence_agency = {
     name = "中央特科"
     icon = GFX_Central_Special_Branch
 }
+
 create_operative_leader = {
-	name = "顾顺章"
-	GFX = GFX_PRC_GuSunZhang
-	traits = { }
-	bypass_recruitment = no
-	available_to_spy_master = yes
+	name = PRC_GuSunZhang
+	bypass_recruitment = no 
+	available_to_spy_master = yes 
+	gfx = GFX_PRC_GuSunZhang
+	traits = {operative_escape_artist}
+	nationalities = { PRC }
+}
+create_operative_leader = {
+	name = PRC_ZhouEngLai
+	bypass_recruitment = no 
+	available_to_spy_master = yes 
+	gfx = GFX_PRC_ZhouEngLai
+	traits = { operative_master_interrogator }
 	nationalities = { PRC }
 }
 add_intel = {

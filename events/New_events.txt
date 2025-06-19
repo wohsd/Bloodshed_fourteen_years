@@ -601,7 +601,9 @@ news_event = {
 	option = {
 		name = WorldNew.1.a
 		hidden_effect = {
-			news_event = {id=ROG_1931.4 days=5}
+			CHI={
+				news_event = {id=ROG_1931.4 days=5}
+			}
 		}
 			goto_state = 50
 		}		
@@ -1316,7 +1318,10 @@ news_event = {
 	picture = GFX_WorldNew_25
 
 	major = yes
-
+	trigger = {
+		date > 1931.1.1
+		date < 1932.12.1
+	}
 	is_triggered_only = yes
 	immediate = {
 		ROW={

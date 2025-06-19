@@ -139,12 +139,17 @@ country_event = {
     } 
 	option = {
 		name = game_start.1.a
-		
+		ai_chance = {
+    		base = 0 # Never pick this option.
+		}
 		set_global_flag = start_of_ChangZheng
 	}
 	option = {
 		name = game_start.1.b
 		set_global_flag = end_of_ChangZheng
+		ai_chance = {
+            base = 10        
+        }
 	}
 }
 
@@ -154,17 +159,14 @@ country_event = {
 	desc = CHI_Encirclement_end.1.d
 	#picture = GFX_ROG_1931_1
 	trigger = {
-		NOT={
-			has_country_flag = CHI_Encirclement_end_2
-			has_country_flag = CHI_Encirclement_end_3
-		}
-		date < 1933.1.1
+		date < 1931.7.1
+		date > 1931.1.1
 		original_tag = CHI
 		CHI={
 			has_war_with = PRC
 			casualties_inflicted_by = {
 				opponent = PRC
-				thousands > 10
+				thousands > 2
 			}
 		}
 	}
@@ -310,8 +312,8 @@ country_event = {
 	desc = CHI_Encirclement_end.1.d
 	#picture = GFX_ROG_1931_1
 	trigger = {
-		has_country_flag = CHI_Encirclement_end_1
-		date < 1933.1.1
+		date < 1932.12.1
+		date > 1931.7.1
 		original_tag = CHI
 		CHI={
 			has_war_with = PRC
@@ -375,14 +377,14 @@ country_event = {
 	desc = CHI_Encirclement_end.1.d
 	#picture = GFX_ROG_1931_1
 	trigger = {
-		has_country_flag = CHI_Encirclement_end_2
-		date < 1933.1.1
+		date > 1933.1.1
+		date < 1933.9.30
 		original_tag = CHI
 		CHI={
 			has_war_with = PRC
 			casualties_inflicted_by = {
 				opponent = PRC
-				thousands > 8
+				thousands > 5
 			} 
 		}
 	}
@@ -562,6 +564,9 @@ news_event = {
 			ROC={
 				white_peace = CHI
 				white_peace = RON
+			}
+			610={
+				transfer_state_to = ROC
 			}
 			673={
 				transfer_state_to = ROC
@@ -989,7 +994,7 @@ country_event = {
 		name = PRC_1931.10.a
 		country_event = {id=PRC_1931.11 days=60}
 	}		
-}
+}	
 
 country_event = {
 	id = PRC_1931.11
@@ -1031,6 +1036,10 @@ country_event = {
 	picture = GFX_PRC_1931_13
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		date > 1931.1.1
+		date < 1932.1.1
+	}
 	immediate = {
 		set_country_flag = PRC_1931_13
 	}
@@ -1051,6 +1060,9 @@ country_event = {
 			id = 618
 			name = "瑞京"
 		}
+		hidden_effect = {
+			country_event = {id=PRC_1931.16 days=30}
+		}
 	}		
 }
 
@@ -1062,9 +1074,92 @@ news_event = {
 	picture = GFX_PRC_1931_14
 	major = yes
 	is_triggered_only = yes
+	trigger = {
+		date > 1931.1.1
+		date < 1932.1.1
+	}
 	immediate = {
 	}
 	option = {
 		name = PRC_1931.14.a
+	}		
+}
+
+
+country_event = {
+	id = PRC_1931.15
+	title = PRC_1931.15.t
+	desc = PRC_1931.15.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.15.a
+		add_power_balance_value = {
+			id = PRC_struggle_balance
+			value = -0.1
+		}
+	}		
+}
+
+
+country_event = {
+	id = PRC_1931.16
+	title = PRC_1931.16.t
+	desc = PRC_1931.16.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_1931.16.a
+		set_country_flag = PRC_1931_16
+		custom_effect_tooltip = pick_advisor_role
+		custom_effect_tooltip = PRC_ZhouEngLai
+	}		
+}
+
+
+country_event = {
+	id = PRC_1931.17
+	title = PRC_1931.17.t
+	desc = PRC_1931.17.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		date > 1931.1.1
+		date < 1932.1.1
+	}
+	after = {
+		hidden_effect = {
+		ROC={
+			declare_war_on = {
+				target = PRY
+				type = annex_everything
+			}
+		}
+		}
+	}
+	option = {
+		name = PRC_1931.17.a
+		582={
+			create_unit = {
+				division = "name = \"中国工农红军红七军第十九师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+				owner = PRC
+				prioritize_location = 618
+			}
+			create_unit = {
+				division = "name = \"中国工农红军红七军第二十师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+				owner = PRC
+				prioritize_location = 618
+			}
+			create_unit = {
+				division = "name = \"中国工农红军红七军第二十一师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+				owner = PRC
+				prioritize_location = 618
+			}
+		}
 	}		
 }

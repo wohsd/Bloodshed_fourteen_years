@@ -126,7 +126,7 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
-				
+				has_country_flag = PRC_1931_16
 			}
 			traits  = {
 				labor_defense_organizer

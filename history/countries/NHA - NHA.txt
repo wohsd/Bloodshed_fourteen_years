@@ -15,7 +15,7 @@ set_stability = 0.7
 #设置稳定度，例如70%稳定度，则填入0.7
 set_war_support = 0.7
 #设置战争支持度
-
+recruit_character = NHA_ZengZhongSheng
 recruit_character = NHA_ZhangGuoTao
 recruit_character = NHA_ShengZeMing
 #获取领导人，将领（在common\characters\你的国家tag）
@@ -37,7 +37,7 @@ set_popularities = {
 	neutrality = 0
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
-
+country_event = {id=NHA_leader.1 days=152}
 add_ideas = {
 	Great_Purge_White_Sparrow_Garden
 }

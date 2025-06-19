@@ -88,7 +88,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_idea_unknown"
 			orientation = "CENTER"
 			centerPosition = yes
-			scale = 0.55
+			scale = 1
 		}
 
 		iconType = {

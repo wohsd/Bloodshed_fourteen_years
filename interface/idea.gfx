@@ -31,6 +31,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/operative/PRC_GuSunZhang.png"
 	}
 	spriteType = {
+		name = "GFX_PRC_ZhouEngLai"
+		texturefile = "gfx/interface/operative/PRC_ZhouEngLai.png"
+	}
+	spriteType = {
 		name = "GFX_MaoZeDong1"
 		texturefile = "gfx/leaders/PRC/PRC_MaoZeDong1.png"
 	}

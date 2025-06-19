@@ -12,5 +12,36 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}	
+	SOV_blyukher={
+		name=SOV_blyukher
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/SOV_blyukher.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = SOV_blyukher_A
+			allowed = {
+				#original_tag = SOV
+			}
+			available = {
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}		
 	}

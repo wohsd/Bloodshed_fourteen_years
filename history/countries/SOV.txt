@@ -10,7 +10,7 @@ set_technology = {
 }
 
 recruit_character = SOV_Stalin
-
+recruit_character = SOV_blyukher
 set_popularities = {
 	democratic = 0
 	communism = 100

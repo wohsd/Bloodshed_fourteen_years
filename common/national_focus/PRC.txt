@@ -449,9 +449,6 @@ focus_tree = {
 							598 = {
 									is_controlled_by = PRC
 								}
-							600 = {
-									is_controlled_by = PRC
-								}
 							593 = {
 									is_controlled_by = PRC
 								}
@@ -495,9 +492,6 @@ focus_tree = {
 							598 = {
 									is_controlled_by = PRC
 								}
-							600 = {
-									is_controlled_by = PRC
-								}
 							593 = {
 									is_controlled_by = PRC
 								}
@@ -528,9 +522,6 @@ focus_tree = {
 									is_controlled_by = PRC
 								}
 							598 = {
-									is_controlled_by = PRC
-								}
-							600 = {
 									is_controlled_by = PRC
 								}
 							593 = {
@@ -933,7 +924,15 @@ focus_tree = {
 		}
 		x = 27
 		y = 7
-
+		completion_reward = {
+			SOV={
+				send_equipment = {
+					equipment = fighter_equipment_0
+					amount = 20
+					target = PRC
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus80
@@ -942,9 +941,30 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus79
 		}
+		available = {
+			PRC={
+				any_controlled_state  = {
+					is_coastal = yes
+				}
+			}
+			
+		}
 		x = 26
 		y = 8
-
+		completion_reward = {
+			SOV={
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 5000
+					target = PRC
+				}
+			}
+			add_equipment_subsidy = {
+				cic = 1000
+				equipment_type = infantry_equipment
+				seller_tags = { SOV }
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus62
@@ -1004,14 +1024,20 @@ focus_tree = {
 		}
 		x = 28
 		y = 8
-
-	}
+		completion_reward = {
+			SOV={
+				SOV_blyukher = {
+					set_nationality = PRC
+				}
+			}
+		}
+	} 
 	focus = {
 		id = PRC_focus29
 		icon = GFX_goal_generic_consumer_goods
 		cost = 7.00
 		prerequisite = {
-			focus = PRC_focus22
+			focus = PRC_focus32
 		}
 		x = 29
 		y = 4
@@ -1030,11 +1056,13 @@ focus_tree = {
 		x = 30
 		y = 2
 			completion_reward = {
-					add_power_balance_value = {
-							id = PRC_struggle_balance
-							value = -0.05
-						}
+				remove_power_balance = {
+					id = PRC_struggle_balance0
 				}
+				set_power_balance = {
+					id = PRC_struggle_balance
+				}
+			}
 
 	}
 	focus = {
@@ -1084,7 +1112,7 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 7.00
 		prerequisite = {
-			focus = PRC_focus22
+			focus = PRC_focus32
 		}
 		x = 31
 		y = 4
@@ -1305,6 +1333,8 @@ focus_tree = {
 				attacker = {
 					state = 656
 					num_provinces = 1
+					dig_in_factor = 1
+					terrain_factor = 1
 					#on_win = japan_border_conflict.2
 				}	
 				defender = {
@@ -1319,7 +1349,7 @@ focus_tree = {
 				defender = 625
 				attacker_modifier= 0.85
 				defender_modifier = -0.85
-				combat_width = 100
+				combat_width = 60
 			}
 			625={
 			add_dynamic_modifier = {
@@ -1328,7 +1358,13 @@ focus_tree = {
 				days=150
 			}
 			}
-			
+			122={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = ROD
+				days=150
+			}
+			}
 			start_border_war = {
 				change_state_after_war = yes
 				attacker = {
@@ -1337,7 +1373,7 @@ focus_tree = {
 					on_win = PRC_1936.1
 				}	
 				defender = {
-					state = 122
+					state = 658
 					num_provinces = 1
 					dig_in_factor = -1
 					terrain_factor = -1
@@ -1345,7 +1381,7 @@ focus_tree = {
 			}
 			set_border_war_data = {
 				attacker = 657
-				defender = 122
+				defender = 658
 				attacker_modifier= 0.75
 				defender_modifier = -0.75
 				combat_width = 100

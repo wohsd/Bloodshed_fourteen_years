@@ -2,7 +2,7 @@ state={
 	id=593
 	name="STATE_593"
 	provinces={
-		4015 4021 
+		4015 4021 348 1402
 	}
 	history={
 		owner = PRC
