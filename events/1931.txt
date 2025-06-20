@@ -187,8 +187,38 @@ country_event = {
 		593={
 			transfer_state_to = CHI
 		}
+		312={
+			transfer_state_to = CHI
+		}
+		313={
+			transfer_state_to = CHI
+		}
+		288={
+			transfer_state_to = CHI
+		}
+		603={
+			transfer_state_to = CHI
+		}
+		292={
+			transfer_state_to = CHI
+		}
+		584={
+			transfer_state_to = CHI
+		}
+		302={
+			transfer_state_to = CHI
+		}
 		600={
 			transfer_state_to = PRC
+		}
+		661={
+			transfer_state_to = ROG
+		}
+		601={
+			transfer_state_to = ROG
+		}
+		353={
+			transfer_state_to = ROG
 		}
     } 
 	option = {

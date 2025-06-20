@@ -333,6 +333,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Chiang_Kai_shek_Consolidates_Power
 		}
+		ai_will_do = {
+				factor = 0
+		}
 		x = 27
 		y = 1
 		completion_reward = {
@@ -1027,6 +1030,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = Democracy_Over_Autocracy
+		}
+		ai_will_do = {
+				factor = 10
 		}
 		x = 94
 		y = 1

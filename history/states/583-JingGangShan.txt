@@ -8,10 +8,14 @@ state={
 		owner = PRJ
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = PRJ
-		
+		victory_points = {
+			2821 5
+		}
+		victory_points = {
+			2077 10
+		}
 		1936.1.1={
 			owner = CHI
 		}

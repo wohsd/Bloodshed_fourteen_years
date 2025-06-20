@@ -14,7 +14,7 @@ country_event = {
 			}
 		}
 		CHI={
-			country_event=ROA_1937.2
+			country_event = {id=ROA_1937.2 days=5}
 		}
 		
     }

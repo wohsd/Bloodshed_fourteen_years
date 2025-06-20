@@ -5,7 +5,7 @@ state={
 		1263 1686 2599 3680 
 	}
 	history={
-		owner = ROA
+		owner = LZN
 		buildings = {
 			infrastructure = 1
 			2599= {
@@ -15,6 +15,9 @@ state={
 		}
 		victory_points = {
 			2599 5
+		}
+		1933.1.1={
+			owner = ROA
 		}
 		1939.1.1={
 			owner = JAP

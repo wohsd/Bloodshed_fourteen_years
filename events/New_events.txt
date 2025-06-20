@@ -595,6 +595,7 @@ news_event = {
 				type = annex_everything
 			}
 			}
+			news_event = {id=ROA_1932.1 days=365}
 		}
 	}
 
@@ -778,10 +779,25 @@ news_event = {
 			set_province_controller = 5246
 			228={
 				create_unit = {
-				division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
-				owner = JAP
-				prioritize_location = 5246
-			}
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
+				create_unit = {
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
+				create_unit = {
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
+				create_unit = {
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
 			}
 			}
 			

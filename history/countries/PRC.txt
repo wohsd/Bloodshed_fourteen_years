@@ -78,14 +78,6 @@ create_operative_leader = {
 	traits = {operative_escape_artist}
 	nationalities = { PRC }
 }
-create_operative_leader = {
-	name = PRC_ZhouEngLai
-	bypass_recruitment = no 
-	available_to_spy_master = yes 
-	gfx = GFX_PRC_ZhouEngLai
-	traits = { operative_master_interrogator }
-	nationalities = { PRC }
-}
 add_intel = {
     target = CHI
     civilian_intel = 7
