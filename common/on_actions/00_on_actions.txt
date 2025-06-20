@@ -107,4 +107,38 @@ on_actions = {
 			}
 		}
 	}
+
+	on_capitulation_immediate = {
+    	effect = { 
+			if = {
+				limit = { 
+					ROOT={original_tag = HLJ}
+					FROM={original_tag =JAP}
+				}
+				MCK={
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+		 }
 	}
+
+	on_capitulation_immediate = {
+    	effect = { 
+			if = {
+				limit = { 
+					ROOT={original_tag = JLS}
+					FROM={original_tag =JAP}
+				}
+				MCK={
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+		 }
+	}
+
+	
+}

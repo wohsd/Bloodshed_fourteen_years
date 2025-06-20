@@ -139,9 +139,6 @@ news_event = {
 
 
 
-
-
-
 country_event = {
 	id = ROH1933.1
 	title = ROH1933.1.t

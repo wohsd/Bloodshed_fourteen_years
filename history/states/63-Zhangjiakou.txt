@@ -15,8 +15,11 @@ state={
 		1939.1.1={
 			owner = JAP
 		}
-		victory_points = {
-			2482 5
+		victory_points ={
+			2482 10
+		}
+		victory_points ={
+			544 5
 		}
 	}
 	manpower=323000

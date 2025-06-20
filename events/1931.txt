@@ -118,8 +118,21 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			MCK={
-			retire_character = ROD_MaZhanShan
+				retire_character = ROD_MaZhanShan
 			}
+			15={
+				transfer_state_to = HLJ
+			}
+			12={
+				transfer_state_to = HLJ
+			}
+			8={
+				transfer_state_to = HLJ
+			}
+			13={
+				transfer_state_to = HLJ
+			}
+			
 		}
 	}
 	option = {

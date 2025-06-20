@@ -1,4 +1,52 @@
 ﻿add_namespace = ROS
+add_namespace = ROSHidden
+country_event = {
+	id = ROSHidden.0
+    hidden = yes
+	fire_only_once = yes
+    trigger = {
+		AND={
+			date > 1932.8.1
+			date < 1932.8.3
+		}
+    }
+    immediate = {
+		ROS={
+			news_event = {id=ROS.0}
+		}
+    } 
+	option = {
+		name = ROSHidden.0.a
+	}
+}
+news_event = {
+	id = ROS.0
+	title = ROS.0.t
+	desc = ROS.0.d
+    picture = GFX_ROS_0
+
+	major = yes
+
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			ROS = {
+				declare_war_on = {
+					target = ROW
+					type = annex_everything
+				}
+				news_event = { id= ROS.4 days=120}
+			}
+		}
+	}
+    
+	option = {
+		name = ROS.0.a
+
+	}
+}
+
+
 news_event = {
 	id = ROS.1
 	title = ROS.1.t
@@ -78,5 +126,67 @@ news_event = {
 	}
 	option = {
 		name = ROS.3.a
+	}
+}
+
+
+news_event = {
+	id = ROS.4
+	title = ROS.4.t
+	desc = ROS.4.d
+    picture = GFX_ROS_4
+	
+	major = yes
+
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			ROW={
+				white_peace = ROS
+			}
+			set_capital = {
+				state = 238
+			}
+			243={
+				transfer_state_to = ROS
+			}
+			261={
+				transfer_state_to = ROS
+			}
+			270={
+				transfer_state_to = ROS
+			}
+			278={
+				transfer_state_to = ROS
+			}
+			275={
+				transfer_state_to = ROS
+			}
+			238={
+				transfer_state_to = ROS
+			}
+
+			253={
+				transfer_state_to = ROW
+			}
+			622={
+				transfer_state_to = ROW
+			}
+			223={
+				transfer_state_to = ROW
+			}
+			229={
+				transfer_state_to = ROW
+			}
+			239={
+				transfer_state_to = ROW
+			}
+			263={
+				transfer_state_to = ROW
+			}
+		}
+	}
+	option = {
+		name = ROS.4.a
 	}
 }

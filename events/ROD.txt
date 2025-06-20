@@ -188,6 +188,9 @@ news_event = {
 			654={
 				transfer_state_to = LSX
 			}
+			78={
+				transfer_state_to = MCK
+			}
 		}
 		
 	}
