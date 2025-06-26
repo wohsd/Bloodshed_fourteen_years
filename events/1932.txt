@@ -3,7 +3,232 @@ add_namespace = CHI_1932
 add_namespace = JAP_1932
 add_namespace = ROA_1932
 add_namespace = ROH_1932
+add_namespace = PRC_1932
+add_namespace = PRC_1932Hidden
 add_namespace = ROH_1932Hidden
+
+country_event = {
+	id = PRC_1932Hidden.1
+    hidden = yes
+	fire_only_once = yes
+    trigger = {
+		AND={
+			date > 1932.1.6
+			date < 1932.1.8
+		}
+    }
+    immediate = {
+		PRC={
+			country_event = {id=PRC_1932.1}
+		}
+    } 
+	option = {
+		name = PRC_1932Hidden.1.a
+	}
+}
+
+country_event = {
+	id = PRC_1932.1
+	title = PRC_1932.1.t
+	desc = PRC_1932.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		
+	} 
+	option = {
+		name = PRC_1932.1.a
+		country_event = {id=PRC_1932.2 days=2}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.2
+	title = PRC_1932.2.t
+	desc = PRC_1932.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.2.a
+		country_event = {id=PRC_1932.3 days=2}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.3
+	title = PRC_1932.3.t
+	desc = PRC_1932.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.3.a
+		country_event = {id=PRC_1932.4 days=2}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.4
+	title = PRC_1932.4.t
+	desc = PRC_1932.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.4.a
+		country_event = {id=PRC_1932.5 days=3}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.5
+	title = PRC_1932.5.t
+	desc = PRC_1932.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.5.a
+		country_event = {id=PRC_1932.6 days=8}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.6
+	title = PRC_1932.6.t
+	desc = PRC_1932.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.6.a
+		country_event = {id=PRC_1932.7 days=7}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.7
+	title = PRC_1932.7.t
+	desc = PRC_1932.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.7.a
+		country_event = {id=PRC_1932.8 days=18}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.8
+	title = PRC_1932.8.t
+	desc = PRC_1932.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.8.a
+		country_event = {id=PRC_1932.9 days=2}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.9
+	title = PRC_1932.9.t
+	desc = PRC_1932.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.9.a
+		country_event = {id=PRC_1932.10 days=25}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.10
+	title = PRC_1932.10.t
+	desc = PRC_1932.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.10.a
+		country_event = {id=PRC_1932.11 days=30}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.11
+	title = PRC_1932.11.t
+	desc = PRC_1932.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.11.a
+		country_event = {id=PRC_1932.12 days=77}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.12
+	title = PRC_1932.12.t
+	desc = PRC_1932.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.12.a
+		country_event = {id=PRC_1932.13 days=31}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.13
+	title = PRC_1932.13.t
+	desc = PRC_1932.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.13.a
+		country_event = {id=PRC_1932.14 days=163}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.14
+	title = PRC_1932.14.t
+	desc = PRC_1932.14.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.14.a
+		country_event = {id=PRC_1932.15 days=1}
+	}		
+}
+
+country_event = {
+	id = PRC_1932.15
+	title = PRC_1932.15.t
+	desc = PRC_1932.15.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {} 
+	option = {
+		name = PRC_1932.15.a
+	}		
+}
+
+
+
+
+
 news_event = {
 	id = ROA_1932.1
 	title = ROA_1932.1.t

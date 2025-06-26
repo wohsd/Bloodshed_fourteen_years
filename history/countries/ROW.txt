@@ -20,3 +20,8 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
+1936.1.1={
+	ROW={
+		white_peace = XZS
+	}
+}

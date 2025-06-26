@@ -59,6 +59,10 @@ spriteTypes = {
 		name = "GFX_modifiers_flood_effect"
 		texturefile = "gfx/interface/ideas/flood_effect.dds"
 	}
+	spriteType = {
+		name = "GFX_PRC_Economic_crisis_effect"
+		texturefile = "gfx/interface/PRC/PRC_Economic_crisis.png"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_Encourage_enlistment_military"

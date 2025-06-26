@@ -48,8 +48,26 @@ Long_march_mission10: "激战腊子口"
 Long_march_mission11: "吴起镇会师"
 
 
+War_Resistance_Behind_Enemy: "敌后抗战" 
+War_Resistance_Behind_Enemy_desc: "八路军一一五师主力南下，聂荣臻率一部分部队和军政人员留驻五台山，开展游击战争，创立了晋东北、察南、冀西三个游击区。"
+Battle_Hundred_Regiments: "发动百团大战"
+Destruction_infrastructure: "袭击基建"
+Infiltrate_city: "渗透城市"
+Develop_countryside: "发展乡村"
+Sabotage_railways: "破坏铁路"
+Sneak_attack_arsenal: "偷袭军火库"
+Assault_airport: "袭击机场"
+
+decision_cost_CP_15: "£command_power  §Y15§!"
+decision_cost_CP_15_blocked: "£command_power  §R15§!"
+decision_cost_CP_15_tooltip: "这将花费£command_power  §Y15§!"
+
+decision_cost_infantry_equipment_500: "£command_power  §Y500§!"
+decision_cost_infantry_equipment_500_blocked: "£command_power  §R500§!"
+decision_cost_infantry_equipment_500_tooltip: "这将花费£command_power  §Y500§!条枪"
+
 PRC_Buy_gun: "中华苏维埃国家银行" 
-PRC_Buy_gun_desc: "1932年3月，以江西工农银行为基础，并抽调闽西工农银行干部参加，在江西瑞金正式成立了中华苏维埃共和国国家银行，由毛泽民任行长。国家银行及其分支机构开始营业后，承办了代理金库、吸收存款、发放贷款和稳定市场等几方面的任务。£GFX_PRC_MaoZeMing\n\n\n银行行长：毛泽民\n目前银行有：[?Gold_bar]根金条"
+PRC_Buy_gun_desc: "1932年3月，以江西工农银行为基础，并抽调闽西工农银行干部参加，在江西瑞金正式成立了中华苏维埃共和国国家银行，由毛泽民任行长。国家银行及其分支机构开始营业后，承办了代理金库、吸收存款、发放贷款和稳定市场等几方面的任务。\n\n\n\n£GFX_PRC_MaoZeMing\n\n\n\n\n银行行长：毛泽民\n目前银行有：[?Gold_bar]根金条"
 PRC_Buy_gun_tt: "将从银行中扣除20根金条"
 PRC_Buy_gun_10tt: "将从中获得10根金条"
 PRC_Buy_gun_from: "以金条换枪"

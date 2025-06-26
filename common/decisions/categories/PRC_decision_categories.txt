@@ -54,6 +54,7 @@ Long_march_decisions = {
 		is_ai = no
 		NOT={
 			has_global_flag = fall_of_ChangZheng_end
+			has_completed_focus = PRC_focus43
 		}
 		has_completed_focus = PRC_focus38
 	}
@@ -91,5 +92,12 @@ Long_march_decisions = {
 		state = 624
 		state = 625
 		zoom = 650
+	}
+}
+War_Resistance_Behind_Enemy = {
+	icon = military_operation
+	picture = GFX_Buy_gun
+	visible = { 
+		tag=PRC
 	}
 }

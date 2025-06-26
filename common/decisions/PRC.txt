@@ -1,6 +1,215 @@
 ####AI
 ####
 
+War_Resistance_Behind_Enemy = {    
+	Destruction_infrastructure = {
+		available = {
+		}  
+		
+		visible = {
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			if = {
+				limit = { 
+						has_built = {
+							type = infrastructure
+							value > 0
+						}
+				}
+				every_state = {
+					limit = { 
+						is_controlled_by = JAP
+						any_neighbor_state = {
+							is_controlled_by = NAC
+						}
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 2
+					}
+				}
+
+			}
+		}
+	}
+	Infiltrate_city = {
+		available = {
+		}  
+		visible = {
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			intel_from_combat_factor =0.1
+			intel_network_gain=0.1
+			civilian_intel_factor=0.1
+			intel_from_operatives_factor=0.1
+		}
+		complete_effect = {
+			
+		}
+	}
+	Develop_countryside = {
+		available = {
+		}  
+		visible = {
+		}
+		cost = 0 
+		days_remove= 230
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.1
+		}
+		complete_effect = {
+			random_controlled_state = {
+				limit = {
+					has_state_category = rural
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	Sabotage_railways = {
+		available = {
+		}  
+		visible = {
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+				if = {
+				limit = { 
+						has_built = {
+							type = rail_way
+							value > 0
+						}
+				}
+				every_state = {
+					limit = { 
+						is_controlled_by = JAP
+						any_neighbor_state = {
+							is_controlled_by = NAC
+						} 
+					}
+					damage_building = {
+						type = rail_way
+						damage = 2
+					}
+				}
+
+			}
+		}
+	}
+	Sneak_attack_arsenal = {
+		available = {
+		}  
+		visible = {
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no 
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 400
+				producer = PRC
+			}
+		}
+	} 
+	Assault_airport = {
+		available = {
+		}  
+		visible = {
+		}
+		custom_cost_trigger = { 
+			has_equipment = { 
+				infantry_equipment > 500
+			}
+		} 
+		custom_cost_text = decision_cost_infantry_equipment_500
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			if = {
+				limit = { 
+						has_built = {
+							type = air_base
+							value > 0
+						}
+				}
+				every_state = {
+					limit = { 
+						is_controlled_by = JAP
+						any_neighbor_state = {
+							is_controlled_by = NAC
+						}
+					}
+					damage_building = {
+						type = air_base	
+						damage = 2
+					}
+				}
+
+			}
+		}
+	}
+	
+	Battle_Hundred_Regiments = {
+		available = {
+			date > 1940.1.1
+			681={
+				is_controlled_by = NAC
+			}
+		}  
+		visible = {
+		}
+		custom_cost_trigger = {
+			command_power > 15 
+		}
+		custom_cost_text = decision_cost_CP_15
+		cost = 0 
+		days_remove= 30
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			NAC={
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+
+
 PRC_CHINA = {
 	PRC_NEW_CHINA = {
 		available = {
@@ -86,7 +295,7 @@ PRC_CHINA = {
 
 PRC_Buy_gun = {    
 	PRC_Buy_gun_from = {          
-		available = {
+		available = {   
 			check_variable = {
 				Gold_bar > 20
 				tooltip = Gold_bar_available
@@ -1030,4 +1239,19 @@ PRC_struggle_balance_category = {
 		remove_effect = {
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

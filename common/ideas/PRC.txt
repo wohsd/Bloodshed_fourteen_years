@@ -220,6 +220,8 @@ ideas = {
 			picture = The_spirit_Nanniwan
 			
 			modifier = {
+				production_factory_max_efficiency_factor=0.1
+				production_factory_efficiency_gain_factor=0.1
 			}
 		}
 		
@@ -229,6 +231,8 @@ ideas = {
 			picture = The_spirit_Nanniwan
 			
 			modifier = {
+				production_speed_buildings_factor=0.1
+				license_tech_difference_speed=0.1
 			}
 		}
 
@@ -238,6 +242,9 @@ ideas = {
 			picture = Rent_interest_reductions
 			
 			modifier = {
+				party_popularity_stability_factor= 0.05
+				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -247,6 +254,9 @@ ideas = {
 			picture = Three_three_system_border_areas
 			
 			modifier = {
+				democratic_acceptance=10
+				communism_acceptance=10
+				neutrality_acceptance=10
 			}
 		}
 	}

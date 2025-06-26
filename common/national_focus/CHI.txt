@@ -987,6 +987,7 @@ focus_tree = {
 			CHI={
 				create_faction = China_Faction
 				add_to_faction = PRC
+				
 			}
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = 15

@@ -21,6 +21,7 @@ state={
 		}
 		1939.1.1={
 			owner = NAC
+			add_core_of = NAC
 		}
 	}
 	manpower=523320

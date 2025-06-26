@@ -8,7 +8,7 @@ Long_march_effect = {
 	army_morale_factor = 0.15
 }
 PRC_Economic_crisis_effect = {
-	icon = GFX_modifiers_generic_military_plans
+	icon = GFX_PRC_Economic_crisis_effect
 
 	enable = { always = yes }
 
