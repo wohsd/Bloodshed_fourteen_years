@@ -20,7 +20,8 @@ CHI_Battle_China = {
 	icon = military_operation 
 	picture = GFX_JiangJieShi_1
 	visible = { 
-		tag=CHI    
+		tag=CHI 
+		original_tag = CHI   
 		has_war_with = JAP
 	}
 	visible_when_empty = yes

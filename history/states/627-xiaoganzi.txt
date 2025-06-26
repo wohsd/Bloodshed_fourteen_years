@@ -14,10 +14,6 @@ state={
 		1933.1.1={
 			owner = ROW
 		}
-		1936.1.1={
-			owner = NSD
-			add_core_of = NSD
-		}
 		1938.1.1={
 			owner = ROW
 		}

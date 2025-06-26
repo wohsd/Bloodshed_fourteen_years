@@ -129,6 +129,9 @@ country_event = {
 	}
 	option = {
 		name = NSD_1938.1.a
+		remove_power_balance = {
+			id = PRC_struggle_balance1
+		}
 	}
 }
 

@@ -16,8 +16,12 @@ state={
 		victory_points = {
 			1868 5
 		}
+		1936.1.1={
+			owner = JDW
+		}
 		1939.1.1={
 			owner = NAC
+			add_core_of = NAC
 		}
 	}
 	manpower=523320

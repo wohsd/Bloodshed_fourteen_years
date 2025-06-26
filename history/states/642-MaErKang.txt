@@ -11,6 +11,13 @@ state={
 		
 		add_core_of = RDX
 		
+		1936.1.1={
+			owner = NSD
+			add_core_of = NSD
+		}
+		1937.1.1={
+			owner = CHI
+		}
 		1941.1.1={
 			owner = CHI
 		}
