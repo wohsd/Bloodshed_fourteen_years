@@ -767,12 +767,12 @@ country_event = {
 		PRC = {
 			AND={
 				has_war = yes
-				controls_province = 1734
+				controls_province = 5271
 			}
 		}
     }
     immediate = {
-		set_global_flag = fall_1734
+		set_global_flag = fall_5271
 		PRC = {
 			country_event = {id=PRC_1935.1}
 		}
@@ -780,7 +780,7 @@ country_event = {
     
 	option = {
 		name = PRC_1934Hidden.12.a
-		clr_global_flag = fall_1734
+		clr_global_flag = fall_5271
 	}		
 }
 
@@ -1018,6 +1018,35 @@ country_event = {
 			}
 		}
 		clr_global_flag = fall_of_618
+	}		
+}
+
+
+
+
+country_event = {
+	id = PRC_1934Hidden.23
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5270
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_5270
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.15
+			}
+		}
+		clr_global_flag = fall_of_5270
 	}		
 }
 ###############################
@@ -1263,11 +1292,36 @@ country_event = {
 		date > 1933.1.1
 	}
 	immediate = {
+		every_core_state = {
+			if = {
+				limit = { is_core_of=PRC }
+			}
+			add_dynamic_modifier = {
+				modifier = Eight_provincial_guerrillas
+				scope = CHI
+			}
+		}
 	}
 	option = {
 		name = PRC_1934.14.a
 	}
 }
+
+country_event = {
+	id = PRC_1934.15
+	title =PRC_1934.15.t
+	desc = PRC_1934.15.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.15.a
+	}
+}
+
+
 
 news_event = {
 	id = CHI_1934.1

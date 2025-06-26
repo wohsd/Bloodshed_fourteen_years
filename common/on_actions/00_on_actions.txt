@@ -27,26 +27,6 @@ on_actions = {
 	}
 	
 
-	on_daily_PRC = {
-		effect = {
-			every_core_state = {
-				if={
-					limit={
-						PRC = {
-							surrender_progress > 0.9
-						}
-						is_core_of = PRC
-					}
-					add_dynamic_modifier = {
-						modifier = Eight_provincial_guerrillas
-						scope = CHI
-					}
-				}
-			}
-			
-		}
-	}
-
 	on_startup = {
 		effect = {
 			every_country = {

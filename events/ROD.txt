@@ -232,6 +232,7 @@ news_event = {
 				transfer_state = 12
 				transfer_state = 13
 				transfer_state = 15
+				load_oob = HLJ_1931
 			}
 			JLS={
 				transfer_state = 17
@@ -239,6 +240,7 @@ news_event = {
 				transfer_state = 16
 				transfer_state = 20
 				transfer_state = 25
+				load_oob = JLS_1931
 			}
 			JAP={
 				transfer_state = 21

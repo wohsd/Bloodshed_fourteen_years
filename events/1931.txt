@@ -814,6 +814,7 @@ country_event = {
     }
     immediate = {
 		news_event = {id=PRC_1931.1}
+		country_event = {id=PRC_1931.18 days=365}
 		PRC={
 			582={
 				create_unit = {
@@ -1202,6 +1203,28 @@ country_event = {
 				division = "name = \"中国工农红军红七军第二十一师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
 				owner = PRC
 				prioritize_location = 618
+			}
+		}
+	}		
+}
+
+
+country_event = {
+	id = PRC_1931.18
+	title = PRC_1931.18.t
+	desc = PRC_1931.18.d
+	picture = GFX_PRC_1931_9
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = PRC_1931.17.a
+		PRC = {
+			promote_character = {
+				character = PRC_BoGu
+				ideology = marxism
 			}
 		}
 	}		
