@@ -5,7 +5,7 @@ state={
 		1272 1775 2541 3243 
 	}
 	history={
-		owner = LDC
+		owner = MTX
 		buildings = {
 			infrastructure = 1
 		}
