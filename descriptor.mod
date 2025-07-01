@@ -1,8 +1,10 @@
-version="1.16.9"
+version="1.15.4"
 tags={
-	"Map"
+	"Ideologies"
 	"National Focuses"
-	"Technologies"
+	"Translation"
+	"Historical"
+	"Events"
 }
 replace_path="common/ai_focuses"
 replace_path="common/ai_strategy"
@@ -21,7 +23,7 @@ replace_path="common/decisions"
 replace_path="gfx/loadingscreens"
 replace_path="events"
 replace_path="tests"
+name="Bloodshed_fourteen_years"
 picture="thumbnail.png"
-
-name="222"
 supported_version="1.16.9"
+remote_file_id="3412926094"
