@@ -20,15 +20,6 @@ PRC_struggle_balance_category = {
 		has_country_flag = SiFang
 	}
 }
-PRC_struggle_balance0_category = {
-	icon = military_operation
-	visible = {
-		AND = {
-			tag=PRC
-		} 
-		
-	}
-}
 PRC_struggle_balance1_category = {
 	icon = military_operation
 	visible = {

@@ -1090,46 +1090,6 @@ PRC_struggle_balance1_category = {
 }
 
 
-PRC_struggle_balance0_category = {
-	PRC_Maintain_intra_party_unity = {
-		available = {
-		}
-		visible = {
-		}
-		cost = 25
-		days_remove= 55
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			add_power_balance_value = {
-				id = PRC_struggle_balance0
-				value = -0.1
-			}
-		}
-		remove_effect = {
-		}
-	}
-	PRC_Execution_USSR_directives = {
-		available = {
-		}
-		visible = {
-		}
-		cost = 25
-		days_remove= 55
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			add_power_balance_value = {
-				id = PRC_struggle_balance0
-				value = -0.1
-			}
-		}
-		remove_effect = {
-		}
-	}
-}
 
 #########
 

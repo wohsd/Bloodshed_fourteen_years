@@ -126,6 +126,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PRC/AB_spirit.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_The_impact_Lisan_route"
+		texturefile = "gfx/interface/ideas/PRC/The_impact_Lisan_route.png"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_Revolutionary_base"
 		texturefile = "gfx/interface/ideas/PRC/Revolutionary_base.dds"
 	}

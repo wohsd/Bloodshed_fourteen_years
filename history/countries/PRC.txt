@@ -61,6 +61,7 @@ set_politics = {
 add_ideas={
 	Soviet_district_spirit
 	AB_spirit
+	The_impact_Lisan_route
 	Leftism
 	Revolutionary_base
 	PRC_Central_Special_Branch
@@ -86,7 +87,7 @@ add_intel = {
     airforce_intel = 2
 }
 set_power_balance = {
-	id =  PRC_struggle_balance0
+	id =  PRC_struggle_balance
 }
 1933.1.1={
 	
@@ -135,9 +136,6 @@ set_power_balance = {
 	}
 	set_cosmetic_tag = PRC_1931
 	add_to_faction = NSD
-	remove_power_balance = {
-		id = PRC_struggle_balance0
-	}
 	set_power_balance = {
 		id = PRC_struggle_balance
 	}

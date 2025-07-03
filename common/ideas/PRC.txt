@@ -147,7 +147,17 @@ ideas = {
 				max_dig_in_factor= 0.1
 			}
 		}
-
+		The_impact_Lisan_route= {
+			allowed = {
+			}
+			picture = The_impact_Lisan_route
+			
+			modifier = {
+				war_support_factor=0.05
+				war_stability_factor=-0.1
+				minimum_training_level=0.1
+			}
+		}
 		Local_outpost= {
 			allowed = {
 			}

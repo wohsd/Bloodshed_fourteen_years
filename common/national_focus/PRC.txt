@@ -1058,12 +1058,10 @@ focus_tree = {
 		x = 30
 		y = 2
 			completion_reward = {
-				remove_power_balance = {
-					id = PRC_struggle_balance0
-				}
 				set_power_balance = {
 					id = PRC_struggle_balance
 				}
+				remove_ideas = The_impact_Lisan_route
 			}
 
 	}
