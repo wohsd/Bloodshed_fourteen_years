@@ -169,6 +169,9 @@ CHI_Battle_China = {
 			}
 		}
 		activation = {
+			ROJ={
+				controls_province = 2640
+			}
 			JAP={
 				controls_province = 2640
 			}
