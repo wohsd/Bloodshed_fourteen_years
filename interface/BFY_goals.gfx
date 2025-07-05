@@ -1,5 +1,9 @@
 spriteTypes = {
 spriteType = {
+name = "GFX_PRC_focus85"
+texturefile = "gfx\interface\goals\PRC/PRC_focus85.png"
+}
+spriteType = {
 name = "GFX_213"
 texturefile = "gfx\interface\goals\CHI/213.png"
 }

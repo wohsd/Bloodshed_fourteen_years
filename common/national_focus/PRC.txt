@@ -14,7 +14,6 @@ focus_tree = {
 		cost = 7.00
 		x = 7
 		y = 0
-		
 			completion_reward = {
 					582 = {
 							add_building_construction = {
@@ -64,15 +63,21 @@ focus_tree = {
 		cost = 1.00
 		x = 30
 		y = 5
-		available = {
-			date > 1933.1.15
-		}
-		completion_reward = {
-			country_event = {id = PRC_focus.6}
-			hidden_effect = {
-				country_event = {id = PRC_1935.7 days=200}
-			}
-		}
+			available = {
+					date > 1933.1.15
+				}
+			completion_reward = {
+					country_event = {
+							id = PRC_focus.6
+						}
+					hidden_effect = {
+							country_event = {
+									id = PRC_1935.7
+									days = 200
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus59
@@ -80,11 +85,20 @@ focus_tree = {
 		cost = 7.00
 		x = 26
 		y = 12
-		available = {
-			114={
-				is_controlled_by = PRC
-			}
-		}
+			available = {
+					114 = {
+							is_controlled_by = PRC
+						}
+				}
+
+	}
+	focus = {
+		id = PRC_focus85
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 40
+		y = 14
+
 	}
 	focus = {
 		id = PRC_focus1
@@ -137,7 +151,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus0
 		}
-		available = {
+		x = 6
+		y = 1
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -156,8 +172,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 6
-		y = 1
 			completion_reward = {
 					589 = {
 							add_building_construction = {
@@ -181,7 +195,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus5
 		}
-		available = {
+		x = 6
+		y = 2
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -200,8 +216,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 6
-		y = 2
 			completion_reward = {
 					589 = {
 							add_extra_state_shared_building_slots = 2
@@ -219,7 +233,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus6
 		}
-		available = {
+		x = 5
+		y = 3
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -238,8 +254,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 5
-		y = 3
 			completion_reward = {
 					589 = {
 							add_building_construction = {
@@ -263,7 +277,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus0
 		}
-		available = {
+		x = 8
+		y = 1
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -282,8 +298,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 8
-		y = 1
 			completion_reward = {
 					589 = {
 							add_building_construction = {
@@ -302,7 +316,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus4
 		}
-		available = {
+		x = 8
+		y = 2
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -321,8 +337,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 8
-		y = 2
 			completion_reward = {
 					582 = {
 							add_building_construction = {
@@ -341,7 +355,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus7
 		}
-		available = {
+		x = 9
+		y = 3
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -360,8 +376,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 9
-		y = 3
 			completion_reward = {
 					589 = {
 							add_building_construction = {
@@ -427,9 +441,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-		completion_reward = {
-			add_political_power = 100
-		}
+			completion_reward = {
+					add_political_power = 100
+				}
+
 	}
 	focus = {
 		id = PRC_focus12
@@ -438,7 +453,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus0
 		}
-		available = {
+		x = 18
+		y = 1
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -454,8 +471,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 18
-		y = 1
 			completion_reward = {
 					582 = {
 							add_building_construction = {
@@ -481,7 +496,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus12
 		}
-		available = {
+		x = 18
+		y = 2
+			available = {
 					AND = {
 							582 = {
 									is_controlled_by = PRC
@@ -497,8 +514,6 @@ focus_tree = {
 								}
 						}
 				}
-		x = 18
-		y = 2
 			completion_reward = {
 					add_ideas = Local_outpost
 				}
@@ -595,7 +610,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-				set_global_flag = define_of_ChangZheng
+					set_global_flag = define_of_ChangZheng
 					582 = {
 							add_building_construction = {
 									type = bunker
@@ -677,7 +692,7 @@ focus_tree = {
 					add_political_power = 120
 				}
 
-	}   
+	}
 	focus = {
 		id = PRC_focus75
 		icon = GFX_focus_AUS_frontmiliz_focus
@@ -685,16 +700,17 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus37
 		}
-		available = {
-			country_exists = RFC
-		}
 		x = 22
 		y = 7
-		completion_reward = {
-			RFC={
-				country_event = common.1
-			}
-		}
+			available = {
+					country_exists = RFC
+				}
+			completion_reward = {
+					RFC = {
+							country_event = common.1
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus76
@@ -702,27 +718,28 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = PRC_focus75
-		} 
+		}
 		mutually_exclusive = {
 			focus = PRC_focus77
 		}
 		x = -4
 		y = 0
 		relative_position_id = PRC_focus77
-		completion_reward = {
-			create_wargoal = {
-				type = liberate_wargoal
-				target = ROG
-			}
-			create_wargoal = {
-				type = liberate_wargoal
-				target = ROC
-			}
-			create_wargoal = {
-				type = liberate_wargoal
-				target = RON
-			}
-		}
+			completion_reward = {
+					create_wargoal = {
+							type = liberate_wargoal
+							target = ROG
+						}
+					create_wargoal = {
+							type = liberate_wargoal
+							target = ROC
+						}
+					create_wargoal = {
+							type = liberate_wargoal
+							target = RON
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus77
@@ -733,20 +750,21 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = PRC_focus76
-		} 
+		}
 		x = 24
 		y = 8
-		completion_reward = {
-			ROG={
-				country_event = common.1
-			}
-			ROY={
-				country_event = common.1
-			}
-			ROC={ 
-				country_event = common.1
-			}
-		}
+			completion_reward = {
+					ROG = {
+							country_event = common.1
+						}
+					ROY = {
+							country_event = common.1
+						}
+					ROC = {
+							country_event = common.1
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus78
@@ -786,7 +804,7 @@ focus_tree = {
 		y = 2
 			completion_reward = {
 					add_ideas = PRC_LiDe_H
-			}
+				}
 
 	}
 	focus = {
@@ -798,10 +816,11 @@ focus_tree = {
 		}
 		x = 26
 		y = 13
-		completion_reward = {
-			gain_xp = 10
-			army_experience = 50
-		}
+			completion_reward = {
+					gain_xp = 10
+					army_experience = 50
+				}
+
 	}
 	focus = {
 		id = PRC_focus61
@@ -812,15 +831,26 @@ focus_tree = {
 		}
 		x = 25
 		y = 14
-		completion_reward = {
-			NSD = {
-				NSD_ChenChangHao = { set_nationality = PRC }
-				NSD_LiTe = { set_nationality = PRC }
-				NSD_HeWei = { set_nationality = PRC }
-				NSD_WangShuSeng = { set_nationality = PRC }
-				NSD_XuXianQiang = { set_nationality = PRC }
-			}
-		}
+			completion_reward = {
+					NSD = {
+							NSD_ChenChangHao = {
+									set_nationality = PRC
+								}
+							NSD_LiTe = {
+									set_nationality = PRC
+								}
+							NSD_HeWei = {
+									set_nationality = PRC
+								}
+							NSD_WangShuSeng = {
+									set_nationality = PRC
+								}
+							NSD_XuXianQiang = {
+									set_nationality = PRC
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus19
@@ -924,15 +954,16 @@ focus_tree = {
 		}
 		x = 27
 		y = 7
-		completion_reward = {
-			SOV={
-				send_equipment = {
-					equipment = fighter_equipment_0
-					amount = 20
-					target = PRC
+			completion_reward = {
+					SOV = {
+							send_equipment = {
+									equipment = fighter_equipment_0
+									amount = 20
+									target = PRC
+								}
+						}
 				}
-			}
-		}
+
 	}
 	focus = {
 		id = PRC_focus80
@@ -941,30 +972,30 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus79
 		}
-		available = {
-			PRC={
-				any_controlled_state  = {
-					is_coastal = yes
-				}
-			}
-			
-		}
 		x = 26
 		y = 8
-		completion_reward = {
-			SOV={
-				send_equipment = {
-					equipment = infantry_equipment
-					amount = 5000
-					target = PRC
+			available = {
+					PRC = {
+							any_controlled_state = {
+									is_coastal = yes
+								}
+						}
 				}
-			}
-			add_equipment_subsidy = {
-				cic = 1000
-				equipment_type = infantry_equipment
-				seller_tags = { SOV }
-			}
-		}
+			completion_reward = {
+					SOV = {
+							send_equipment = {
+									equipment = infantry_equipment
+									amount = 5000
+									target = PRC
+								}
+						}
+					add_equipment_subsidy = {
+							cic = 1000
+							equipment_type = infantry_equipment
+							seller_tags = { SOV }
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus62
@@ -975,10 +1006,11 @@ focus_tree = {
 		}
 		x = 27
 		y = 14
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.25
-		}
+			completion_reward = {
+					add_stability = 0.1
+					add_war_support = 0.25
+				}
+
 	}
 	focus = {
 		id = PRC_focus22
@@ -999,7 +1031,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_focus23
-		icon = GFX_focus_SOV_penal_battalions 
+		icon = GFX_focus_SOV_penal_battalions
 		cost = 7.00
 		prerequisite = {
 			focus = PRC_focus22
@@ -1025,27 +1057,13 @@ focus_tree = {
 		}
 		x = 28
 		y = 8
-		completion_reward = {
-			SOV={
-				SOV_blyukher = {
-					set_nationality = PRC
+			completion_reward = {
+					SOV = {
+							SOV_blyukher = {
+									set_nationality = PRC
+								}
+						}
 				}
-			}
-		}
-	} 
-	focus = {
-		id = PRC_focus29
-		icon = GFX_goal_generic_consumer_goods
-		cost = 7.00
-		prerequisite = {
-			focus = PRC_focus32
-		}
-		x = 29
-		y = 4
-		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.1
-		}
 
 	}
 	focus = {
@@ -1058,11 +1076,11 @@ focus_tree = {
 		x = 30
 		y = 2
 			completion_reward = {
-				set_power_balance = {
-					id = PRC_struggle_balance
+					set_power_balance = {
+							id = PRC_struggle_balance
+						}
+					remove_ideas = The_impact_Lisan_route
 				}
-				remove_ideas = The_impact_Lisan_route
-			}
 
 	}
 	focus = {
@@ -1075,19 +1093,34 @@ focus_tree = {
 		x = 30
 		y = 3
 			completion_reward = {
-			add_power_balance_value = {
-						id = PRC_struggle_balance
-						value = -0.1
+					add_power_balance_value = {
+							id = PRC_struggle_balance
+							value = -0.1
+						}
+					PRC_MaoZeDong = {
+							add_trait = {
+									trait = disgruntled
+								}
+							add_trait = {
+									trait = reassigned
+								}
+						}
 				}
-			PRC_MaoZeDong = {
-				add_trait = {
-					trait = disgruntled
+
+	}
+	focus = {
+		id = PRC_focus29
+		icon = GFX_goal_generic_consumer_goods
+		cost = 7.00
+		prerequisite = {
+			focus = PRC_focus32
+		}
+		x = 29
+		y = 4
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.1
 				}
-				add_trait = {
-					trait = reassigned
-				}
-			}		
-			}
 
 	}
 	focus = {
@@ -1132,12 +1165,12 @@ focus_tree = {
 		x = 32
 		y = 3
 			completion_reward = {
-				add_power_balance_value = {
-					id = PRC_struggle_balance
-					value = -0.05
+					add_power_balance_value = {
+							id = PRC_struggle_balance
+							value = -0.05
+						}
+					army_experience = 20
 				}
-				army_experience = 20
-			}
 
 	}
 	focus = {
@@ -1153,25 +1186,24 @@ focus_tree = {
 		x = 32
 		y = 6
 			completion_reward = {
-				set_global_flag = start_of_ChangZheng
-
-			unlock_decision_category_tooltip = Long_march_decisions
-			PRC_MaoZeDong = {
-				remove_trait = {
-					trait = disgruntled
-				}
-				remove_trait = {
-					trait = reassigned
-				}
-			}	
-			PRC = {
-					every_army_leader = {
-							add_planning = 1
-							add_attack = 1
-							add_skill_level = 1
+					set_global_flag = start_of_ChangZheng
+					unlock_decision_category_tooltip = Long_march_decisions
+					PRC_MaoZeDong = {
+							remove_trait = {
+									trait = disgruntled
+								}
+							remove_trait = {
+									trait = reassigned
+								}
+						}
+					PRC = {
+							every_army_leader = {
+									add_planning = 1
+									add_attack = 1
+									add_skill_level = 1
+								}
 						}
 				}
-			}
 
 	}
 	focus = {
@@ -1195,20 +1227,20 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus42
 		}
-		available = {
-			or={
-				has_country_flag = fall_of_ChangZheng_end
-				PRC = {
-					controls_state = 655
-				}
-			}
-			
-		}
 		x = 32
 		y = 9
-		completion_reward = {
-			add_political_power = 100
-		}
+			available = {
+					or = {
+							has_country_flag = fall_of_ChangZheng_end
+							PRC = {
+									controls_state = 655
+								}
+						}
+				}
+			completion_reward = {
+					add_political_power = 100
+				}
+
 	}
 	focus = {
 		id = PRC_focus45
@@ -1230,23 +1262,6 @@ focus_tree = {
 			#has_completed_focus = PRC_focus43
 			completion_reward = {
 					set_cosmetic_tag = PRC_1936
-			}
-
-	}
-	focus = {
-		id = PRC_focus49
-		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 7.00
-		prerequisite = {
-			focus = PRC_focus45
-		}
-		x = 29
-		y = 11
-			available = {
-
-}
-			completion_reward = {
-					add_research_slot = 1
 				}
 
 	}
@@ -1263,7 +1278,7 @@ focus_tree = {
 					country_event = PRC_focus.7
 				}
 
-	} 
+	}
 	focus = {
 		id = PRC_focus58
 		icon = GFX_focus_NOR_empower_sivorg
@@ -1273,12 +1288,13 @@ focus_tree = {
 		}
 		x = 28
 		y = 12
-		completion_reward = {
-			add_power_balance_value = {
-				id = PRC_struggle_balance1
-				value = 0.05
-			}
-		}
+			completion_reward = {
+					add_power_balance_value = {
+							id = PRC_struggle_balance1
+							value = 0.05
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus46
@@ -1308,12 +1324,15 @@ focus_tree = {
 		}
 		x = 32
 		y = 13
-		available = {
+			available = {
 
-		}
-		completion_reward = {
-			country_event = {id=PRC_1936.6 days=4}
-		}
+}
+			completion_reward = {
+					country_event = {
+							id = PRC_1936.6
+							days = 4
+						}
+				}
 
 	}
 	focus = {
@@ -1323,46 +1342,46 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus46
 		}
-		available = {
-			has_completed_focus = PRC_focus55
-		}
 		x = 30
 		y = 13
-		completion_reward = {
-			
-			start_border_war = {
-				change_state_after_war = yes
-				attacker = {
-					state = 658
-					num_provinces = 1
-					on_win = PRC_1936.1
-				}	
-				defender = {
-					state = 122
-					num_provinces = 1
-					dig_in_factor = -1
-					terrain_factor = -1
+			available = {
+					has_completed_focus = PRC_focus55
 				}
-			}
-			set_border_war_data = {
-				attacker = 658
-				defender = 122
-				attacker_modifier= 0.75
-				defender_modifier = -0.75
-				combat_width = 100
-			}
-			122={
-			add_dynamic_modifier = {
-				modifier = Morale_collapsed
-				scope = ROD
-				days=150
-			}
-			}
-		}
+			completion_reward = {
+					start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+									state = 658
+									num_provinces = 1
+									on_win = PRC_1936.1
+								}
+							defender = {
+									state = 122
+									num_provinces = 1
+									dig_in_factor = -1
+									terrain_factor = -1
+								}
+						}
+					set_border_war_data = {
+							attacker = 658
+							defender = 122
+							attacker_modifier = 0.75
+							defender_modifier = -0.75
+							combat_width = 100
+						}
+					122 = {
+							add_dynamic_modifier = {
+									modifier = Morale_collapsed
+									scope = ROD
+									days = 150
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus21
-		icon = GFX_focus_prc_maoism 
+		icon = GFX_focus_prc_maoism
 		cost = 7.00
 		prerequisite = {
 			focus = PRC_focus20
@@ -1373,17 +1392,17 @@ focus_tree = {
 		x = 35
 		y = 1
 			completion_reward = {
-				army_experience = 20
-				add_power_balance_value = {
-					id = PRC_struggle_balance
-					value = 0.1
+					army_experience = 20
+					add_power_balance_value = {
+							id = PRC_struggle_balance
+							value = 0.1
+						}
+					add_doctrine_cost_reduction = {
+							cost_reduction = 0.5
+							uses = 2
+							category = land_doctrine
+						}
 				}
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine
-				}	
-			}
 
 	}
 	focus = {
@@ -1396,12 +1415,12 @@ focus_tree = {
 		x = 33
 		y = 2
 			completion_reward = {
-				add_power_balance_value = {
+					add_power_balance_value = {
 							id = PRC_struggle_balance
 							value = 0.05
 						}
-				army_experience = 20
-			}
+					army_experience = 20
+				}
 
 	}
 	focus = {
@@ -1465,13 +1484,13 @@ focus_tree = {
 		y = 12
 			available = {
 
-		}
-		completion_reward = {
-			add_power_balance_value = {
-				id = PRC_struggle_balance1
-				value = 0.05
-			}
-		}
+}
+			completion_reward = {
+					add_power_balance_value = {
+							id = PRC_struggle_balance1
+							value = 0.05
+						}
+				}
 
 	}
 	focus = {
@@ -1483,20 +1502,27 @@ focus_tree = {
 		}
 		x = 34
 		y = 13
-		completion_reward = {
-			PRC={
-				declare_war_on = {
-					target = ROJ
-					type = annex_everything
+			completion_reward = {
+					PRC = {
+							declare_war_on = {
+									target = ROJ
+									type = annex_everything
+								}
+						}
+					hidden_effect = {
+							country_event = {
+									id = PRC_1936.4
+									days = 10
+								}
+						}
+					hidden_effect = {
+							country_event = {
+									id = PRC_1936.9
+									days = 130
+								}
+						}
 				}
-			}
-			hidden_effect = {
-				country_event = {id=PRC_1936.4 days=10}
-			}
-			hidden_effect = {
-				country_event = {id=PRC_1936.9 days=130}
-			}
-		}
+
 	}
 	focus = {
 		id = PRC_focus56
@@ -1513,18 +1539,19 @@ focus_tree = {
 		}
 		x = 32
 		y = 14
-		completion_reward = {
-			add_opinion_modifier = {
-				target = ROD
-				modifier = CHI_cooperation_with_the_nationalists_positive
-			}
-			ROD = {
-				add_opinion_modifier = {
-					target = PRC
-					modifier = CHI_cooperation_with_the_communists_positive
+			completion_reward = {
+					add_opinion_modifier = {
+							target = ROD
+							modifier = CHI_cooperation_with_the_nationalists_positive
+						}
+					ROD = {
+							add_opinion_modifier = {
+									target = PRC
+									modifier = CHI_cooperation_with_the_communists_positive
+								}
+						}
 				}
-			}
-		}
+
 	}
 	focus = {
 		id = PRC_focus57
@@ -1535,25 +1562,26 @@ focus_tree = {
 		}
 		x = 32
 		y = 15
-		completion_reward = {
-			PRC_LingBoQu={
-				promote_character = yes
-			}
-			set_cosmetic_tag = PRC_1937
-			add_dynamic_modifier = {
-				modifier = PRC_Economic_crisis_effect
-			}
-			add_to_variable = {
-				PRC_political_power_cost_M = -0.1
-			}
-			add_to_variable = {
-				PRC_consumer_goods_factor_M = 0.1
-			}
-			add_to_variable = {
-				PRC_min_export_M = -0.15
-			}
-		}
-	}
+			completion_reward = {
+					PRC_LingBoQu = {
+							promote_character = yes
+						}
+					set_cosmetic_tag = PRC_1937
+					add_dynamic_modifier = {
+							modifier = PRC_Economic_crisis_effect
+						}
+					add_to_variable = {
+							PRC_political_power_cost_M = -0.1
+						}
+					add_to_variable = {
+							PRC_consumer_goods_factor_M = 0.1
+						}
+					add_to_variable = {
+							PRC_min_export_M = -0.15
+						}
+				}
+ 
+	} 
 	focus = {
 		id = PRC_focus69
 		icon = GFX_focus_HUN_goulash_communism
@@ -1574,9 +1602,10 @@ focus_tree = {
 		}
 		x = 31
 		y = 16
-		completion_reward = {
-			add_ideas = Rent_interest_reductions
-		}
+			completion_reward = {
+					add_ideas = Rent_interest_reductions
+				}
+
 	}
 	focus = {
 		id = PRC_focus66
@@ -1598,13 +1627,13 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
-		completion_reward = {
-			add_power_balance_value = {
-				id = PRC_struggle_balance
-				value = 0.05
-			}
-			army_experience = 20
-		}
+			completion_reward = {
+					add_power_balance_value = {
+							id = PRC_struggle_balance
+							value = 0.05
+						}
+					army_experience = 20
+				}
 
 	}
 	focus = {
@@ -1622,6 +1651,98 @@ focus_tree = {
 							value = 0.05
 						}
 					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = PRC_focus86
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PRC_focus85
+		}
+		x = 40
+		y = 15
+
+	}
+	focus = {
+		id = PRC_focus87
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PRC_focus86
+		}
+		x = 37
+		y = 16
+
+	}
+	focus = {
+		id = PRC_focus88
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PRC_focus86
+		}
+		x = 39
+		y = 16
+
+	}
+	focus = {
+		id = PRC_focus89
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PRC_focus86
+		}
+		x = 41
+		y = 16
+
+	}
+	focus = {
+		id = PRC_focus90
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PRC_focus86
+		}
+		x = 43
+		y = 16
+
+	}
+	focus = {
+		id = PRC_focus91
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PRC_focus87
+		}
+		prerequisite = {
+			focus = PRC_focus88
+		}
+		prerequisite = {
+			focus = PRC_focus89
+		}
+		prerequisite = {
+			focus = PRC_focus90
+		}
+		x = 40
+		y = 17
+
+	}
+	focus = {
+		id = PRC_focus49
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		cost = 7.00
+		prerequisite = {
+			focus = PRC_focus45
+		}
+		x = 29
+		y = 11
+			available = {
+
+}
+			completion_reward = {
+					add_research_slot = 1
 				}
 
 	}
@@ -1659,12 +1780,13 @@ focus_tree = {
 		}
 		x = 29
 		y = 15
-		completion_reward = {
-			hidden_effect = {
-				load_oob = "PRC_1937"
-			}
-			custom_effect_tooltip = PRC_focus63_tool
-		}
+			completion_reward = {
+					hidden_effect = {
+							load_oob = "PRC_1937"
+						}
+					custom_effect_tooltip = PRC_focus63_tool
+				}
+
 	}
 	focus = {
 		id = PRC_focus64
@@ -1675,23 +1797,22 @@ focus_tree = {
 		}
 		x = 28
 		y = 16
-		completion_reward = {
+			completion_reward = {
+					add_ideas = Mass_production_movement
+					655 = {
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
-			add_ideas = Mass_production_movement
-			655={
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			
-		}
 	}
 	focus = {
 		id = PRC_focus67
@@ -1702,17 +1823,18 @@ focus_tree = {
 		}
 		x = 32
 		y = 17
-		completion_reward = {
-			add_ideas = Three_three_system_border_areas
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-		}
+			completion_reward = {
+					add_ideas = Three_three_system_border_areas
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.1
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.1
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus68
@@ -1756,9 +1878,10 @@ focus_tree = {
 		}
 		x = 26
 		y = 18
-		completion_reward = {
-			add_ideas = The_spirit_Nanniwan
-		}
+			completion_reward = {
+					add_ideas = The_spirit_Nanniwan
+				}
+
 	}
 	focus = {
 		id = PRC_focus73
@@ -1791,9 +1914,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 16
-		completion_reward = {
-			unlock_decision_category_tooltip = War_Resistance_Behind_Enemy
-		}
+			completion_reward = {
+					unlock_decision_category_tooltip = War_Resistance_Behind_Enemy
+				}
+
 	}
 	focus = {
 		id = PRC_focus83
@@ -1804,17 +1928,18 @@ focus_tree = {
 		}
 		x = 22
 		y = 17
-		completion_reward = {
-			681={
-				transfer_state_to = NAC
-			}
-			169={
-				transfer_state_to = NAC
-			}
-			125={
-				transfer_state_to = NAC
-			}
-		}
+			completion_reward = {
+					681 = {
+							transfer_state_to = NAC
+						}
+					169 = {
+							transfer_state_to = NAC
+						}
+					125 = {
+							transfer_state_to = NAC
+						}
+				}
+
 	}
 	focus = {
 		id = PRC_focus84
@@ -1825,16 +1950,17 @@ focus_tree = {
 		}
 		x = 24
 		y = 17
-		completion_reward = {
-			669={
-				transfer_state_to = NFA
-			}
-			668={
-				transfer_state_to = NFA
-			}
-			667={
-				transfer_state_to = NFA
-			}
-		}
+			completion_reward = {
+					669 = {
+							transfer_state_to = NFA
+						}
+					668 = {
+							transfer_state_to = NFA
+						}
+					667 = {
+							transfer_state_to = NFA
+						}
+				}
+
 	}
 }
