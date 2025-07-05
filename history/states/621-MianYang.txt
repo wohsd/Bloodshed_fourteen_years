@@ -2,7 +2,7 @@ state={
 	id=621
 	name="STATE_621"
 	provinces={
-		1606 3813 
+		385 2945 3813 5282 5283 5281
 	}
 	history={
 		owner = ROT
@@ -10,15 +10,11 @@ state={
 			infrastructure = 1
 
 		}
-		
-		
-		victory_points = {
-			1606 10
-		}
 		1938.1.1={
 			owner = CHI
 		}
 	}
+
 	manpower=23110
 	buildings_max_level_factor=1.000
 	local_supplies=10.000
