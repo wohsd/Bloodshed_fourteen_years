@@ -1,7 +1,26 @@
 spriteTypes = {
-
 	spriteType = {
+		name = "GFX_Yanan_Rectification_table"
+		texturefile = "gfx/interface/decisions/Yanan_Rectification_table.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_Zhou"
+		texturefile = "gfx/interface/decisions/PRC_Zhou.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_Wang"
+		texturefile = "gfx/interface/decisions/PRC_Wang.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_MAO"
+		texturefile = "gfx/interface/decisions/PRC_MAO.png"
+	}
+	spriteType = {
+		name = "GFX_Yanan_Rectification_back"
+		texturefile = "gfx/interface/decisions/Yanan_Rectification_back.png"
+	}    
+	spriteType = { 
 		name = "GFX_decision_NSD_Suppression"
 		texturefile = "gfx/interface/decisions/NSD_Suppression.png"
-	}
+	}    
 }

@@ -47,6 +47,31 @@ Long_march_mission9: "包座战役"
 Long_march_mission10: "激战腊子口"
 Long_march_mission11: "吴起镇会师"
 
+Yan_an_Rectification_Movement: "延安整风"
+Yan_an_Rectification_Movement_desc: "中国共产党在延安和各抗日根据地开展的整顿党的作风，进行马克思列宁主义教育的运动。为了提高全党的马列主义水平，纠正党内的各种非无产阶级思想\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+
+
+YananRectificationtip: "当前党内重心：开展整风学习\n\n党的总路线：左倾  \n\n党内的思想：团结\n\n苏联的态度：怀疑"
+
+Promote_Party_School: "开展党校宣传"
+Eliminating_Eight_legged_Communist_Party: "破除党八股"
+Wang_road: "亲近苏联"
+Wang_road1: "服从共产国际的安排"
+Wang_road2: "一切为了统一战线"
+
+Mao_road: "怀疑苏联"
+Mao_road1: "偷袭国统区"
+Mao_road2: "解决苏区时期“左”倾教条主义"
+Mao_road3: "解决抗战时期“右”倾教条主义"
+
+Zhou_road: "调节矛盾"
+Zhou_road1: "支持毛路线"
+Zhou_road2: "支持王路线"
+
+
+
+
+
 
 War_Resistance_Behind_Enemy: "敌后抗战" 
 War_Resistance_Behind_Enemy_desc: "八路军一一五师主力南下，聂荣臻率一部分部队和军政人员留驻五台山，开展游击战争，创立了晋东北、察南、冀西三个游击区。"

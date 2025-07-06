@@ -1,0 +1,30 @@
+scripted_gui = {
+	Yanan_Rectification_Movement = {
+		context_type = decision_category
+		window_name = "Yanan_Rectification_window"
+
+		effects = {
+			PRC_MAO_click = {
+				ROOT = {
+					set_country_flag = PRC_MAO_FLAG
+					clr_country_flag = PRC_Zhou_FLAG
+					clr_country_flag = PRC_Wang_FLAG
+				}
+			}
+			PRC_Zhou_click = {
+				ROOT = {
+					set_country_flag = PRC_Zhou_FLAG
+					clr_country_flag = PRC_MAO_FLAG
+					clr_country_flag = PRC_Wang_FLAG
+				}
+			}
+			PRC_Wang_click = {
+				ROOT = {
+					set_country_flag = PRC_Wang_FLAG
+					clr_country_flag = PRC_Zhou_FLAG
+					clr_country_flag = PRC_MAO_FLAG
+				}
+			} 
+	    } 
+} 
+}

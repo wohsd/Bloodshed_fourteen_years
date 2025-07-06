@@ -1,232 +1,67 @@
 defined_text = { # Country
-	name = getGovernmentefficiencyvar
+	name = YananRectificationtip
 	text = {
 		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = Government_efficiency_var
-					value = 0
-					compare = greater_than_or_equals
-				}
-				check_variable = { 
-					var = Government_efficiency_var
-					value = 30
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_30_efficiency_var
-	}
-	text = {
-		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = Government_efficiency_var
-					value = 30
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = Government_efficiency_var
-					value = 50
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_50_efficiency_var
-	}
-	text = {
-		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = Government_efficiency_var
-					value = 50
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = Government_efficiency_var
-					value = 70
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_70_efficiency_var
-	}
-	text = {
-		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = Government_efficiency_var
-					value = 70
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = Government_efficiency_var
-					value = 100
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_100_efficiency_var
+			original_tag = PRC
+			#has_completed_focus = 
+		} 
+		localization_key = YananRectificationtip
 	}
 }
-
-####国民素养
-
-
-defined_text = { # Country
-	name = getNationalliteracyvar
-	text = {
-		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_literacy_var
-					value = 0
-					compare = greater_than_or_equals
-				}
-				check_variable = { 
-					var = National_literacy_var
-					value = 30
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_30_literacy_var
-	}
-	text = {
-		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_literacy_var
-					value = 30
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = National_literacy_var
-					value = 50
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_50_literacy_var
-	}
-	text = {
-		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_literacy_var
-					value = 50
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = National_literacy_var
-					value = 70
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_70_literacy_var
-	}
-	text = {
-		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_literacy_var
-					value = 70
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = National_literacy_var
-					value = 100
-					compare = less_than_or_equals
-				}
-			}
-		}
-		localization_key = CHI_100_literacy_var
-	}
-}
-
-####国民经济
-
-defined_text = { # Country
-	name = getNationaleconomyvar
+################################
+  ########## TEXTS ###########
+################################
+defined_text = {
+	name = GetAscendedAdvisorTraitName1
 	text = { 
 		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_economy_var
-					value = 0
-					compare = greater_than_or_equals
-				}
-				check_variable = { 
-					var = National_economy_var
-					value = 30
-					compare = less_than_or_equals
-				}
-			}
+			check_variable = { CHI_ascended_advisor_1 = 0 }	
 		}
-		localization_key = CHI_30_economy_var
+		localization_key = HuangPu
 	}
-	text = {
+}
+defined_text = {
+	name = GetAscendedAdvisorTraitName2
+	text = { 
 		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_economy_var
-					value = 30
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = National_economy_var
-					value = 50
-					compare = less_than_or_equals
-				}
-			}
+			check_variable = { CHI_ascended_advisor_2 = 0 }	
 		}
-		localization_key = CHI_50_economy_var
+		localization_key = ZengXue
 	}
-	text = {
+}
+defined_text = {
+	name = GetAscendedAdvisorTraitName3
+	text = { 
 		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_economy_var
-					value = 50
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = National_economy_var
-					value = 70
-					compare = less_than_or_equals
-				}
-			}
+			check_variable = { CHI_ascended_advisor_3 = 0 }	
 		}
-		localization_key = CHI_70_economy_var
+		localization_key = CC
 	}
-	text = {
+}
+defined_text = {
+	name = GetAscendedAdvisorName1
+	text = { 
 		trigger = {
-			original_tag = CHI
-			AND={
-				check_variable = {
-					var = National_economy_var
-					value = 70
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = National_economy_var
-					value = 100
-					compare = less_than_or_equals
-				}
-			}
+			check_variable = { CHI_ascended_advisor_1 = 0 }	
 		}
-		localization_key = CHI_100_economy_var
+		localization_key = CHI_ChenCheng
+	}
+}
+defined_text = {
+	name = GetAscendedAdvisorName2
+	text = { 
+		trigger = {
+			check_variable = { CHI_ascended_advisor_2 = 0 }	
+		}
+		localization_key = CHI_YangYongTai
+	}
+}
+defined_text = {
+	name = GetAscendedAdvisorName3
+	text = { 
+		trigger = {
+			check_variable = { CHI_ascended_advisor_3 = 0 }	
+		}
+		localization_key = CHI_ChenGuoFu
 	}
 }

@@ -1,5 +1,190 @@
 ####AI
 ####
+Yan_an_Rectification_Movement= {
+	Promote_Party_School = {
+		available = {
+			has_completed_focus = PRC_focus87
+		}  
+		visible = {
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	}
+	Eliminating_Eight_legged_Communist_Party = {
+		available = {
+			has_completed_focus = PRC_focus90
+		}  
+		visible = {
+			
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	}
+	Wang_road = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Wang_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	}
+	Wang_road1 = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Wang_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}     
+	}    
+	Wang_road2 = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Wang_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	}      
+	Mao_road = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Mao_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	}
+	Mao_road1 = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Mao_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}     
+	}    
+	Mao_road2 = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Mao_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	} 
+	Mao_road3 = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Mao_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	}  
+	
+	Zhou_road = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Zhou_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	}
+	Zhou_road1 = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Zhou_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}     
+	}    
+	Zhou_road2 = {
+		available = {
+		}  
+		visible = {
+			has_country_flag = PRC_Zhou_FLAG
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}   
+	} 
+}                  
+#####      
 
 War_Resistance_Behind_Enemy = {    
 	Destruction_infrastructure = {
