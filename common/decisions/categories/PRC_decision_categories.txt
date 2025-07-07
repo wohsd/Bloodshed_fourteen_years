@@ -5,14 +5,21 @@ PRC_CHINA = {
 		tag=PRC
 	}
 }
-
- 
-PRC_border_clashes = {
+Yan_an_Rectification_Movement= {
 	icon = military_operation
+	picture = GFX_Yan_an_Rectification_Movement
+	scripted_gui = Yanan_Rectification_Movement
+	visible = { 
+		tag=PRC 
+	}               
+}                      
+         
+PRC_border_clashes = {
+	icon = military_operation 
 	allowed = {
 		is_potentially_communist_china = yes
 	} 
-}
+} 
 PRC_struggle_balance_category = {
 	icon = military_operation
 	visible = { 
