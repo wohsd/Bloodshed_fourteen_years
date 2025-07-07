@@ -1,4 +1,35 @@
 ####AI
+Liberate_White_Zone= {
+	Renovation_White_District = {
+		available = {
+			PRC={
+				any_controlled_state = {
+					is_core_of = CHI 
+				}
+			}
+			
+		}  
+		visible = {
+		} 
+		cost = 100 
+		days_remove= 90
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			
+		}   
+		remove_effect = {
+			every_owned_state={
+				limit = {
+					is_core_of = CHI 
+				}
+				add_core_of = PRC
+			}
+		}
+	}
+}
 ####
 Yan_an_Rectification_Movement= {
 	Promote_Party_School = {

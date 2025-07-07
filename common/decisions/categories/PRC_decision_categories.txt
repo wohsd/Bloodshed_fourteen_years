@@ -5,6 +5,13 @@ PRC_CHINA = {
 		tag=PRC
 	}
 }
+Liberate_White_Zone = {
+	icon = military_operation
+	picture = GFX_Buy_gun
+	visible = { 
+		tag=PRC
+	}
+}
 Yan_an_Rectification_Movement= {
 	icon = military_operation
 	picture = GFX_Yan_an_Rectification_Movement
