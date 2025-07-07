@@ -5,7 +5,7 @@ state={
 		2975 5251 
 	}
 	history={
-		owner = CGZ
+		owner = YHC
 		
 		buildings = {
 			infrastructure = 1

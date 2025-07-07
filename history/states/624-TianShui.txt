@@ -2,10 +2,10 @@ state={
 	id=624
 	name="STATE_624"
 	provinces={
-		1312 
+		1312 2710 
 	}
 	history={
-		owner = MTX
+		owner = YHC
 		buildings = {
 			infrastructure = 1
 
