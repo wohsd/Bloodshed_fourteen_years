@@ -6,7 +6,7 @@ state={
 		tungsten = 2.000
 	}
 	history={
-		owner = YHC
+		owner = YWQ
 		buildings = {
 			infrastructure = 1
 
@@ -27,7 +27,7 @@ state={
 	}
 
 	provinces={
-		160 1605 3713 
+		160 1605 2859 
 	}
 	manpower=243000
 	buildings_max_level_factor=1.000
