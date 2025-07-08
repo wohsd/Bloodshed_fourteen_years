@@ -1,0 +1,23 @@
+﻿add_namespace = SCR
+news_event = {
+	id = SCR.1
+	title = SCR.1.t
+	desc = SCR.1.d
+	major = yes
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+    immediate = {
+		
+	}
+	option = {
+		name = SCR.1.a
+		682={
+			transfer_state_to = SCR
+			add_core_of = SCR
+			set_demilitarized_zone = yes
+		}
+	}
+}

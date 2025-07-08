@@ -389,6 +389,9 @@ PRC_anti_chi: "反蒋同盟"
  NEW_CHINA_DEF: "中华人民共和国"
  NEW_CHINA_ADJ: "中华人民共和国"
 
+ SCR: "南市难民营"
+ SCR_DEF: "南市难民营"
+ SCR_ADJ: "南市难民营"
 
 
  PRD: "东江根据地"
@@ -435,9 +438,9 @@ PRC_anti_chi: "反蒋同盟"
  HOL_DEF: "荷属印度尼西亚"
  HOL_ADJ: "荷属印度尼西亚"
 
- NRC: "南京安全区"
- NRC_DEF: "南京安全区"
- NRC_ADJ: "南京安全区"
+ NRC: "南京国际安全区"
+ NRC_DEF: "南京国际安全区"
+ NRC_ADJ: "南京国际安全区"
 
  SOV_fascism: "苏维埃社会主义共和国联盟"
  SOV_fascism_DEF: "苏维埃社会主义共和国联盟"

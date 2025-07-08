@@ -1,0 +1,21 @@
+﻿add_namespace = NRC
+news_event = {
+	id = NRC.1
+	title = NRC.1.t
+	desc = NRC.1.d
+	major = yes
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+    immediate = {
+		
+	}
+	option = {
+		name = NRC.1.a
+		675={
+			transfer_state_to = NRC
+		}
+	}
+}

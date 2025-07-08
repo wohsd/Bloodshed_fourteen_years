@@ -1,0 +1,24 @@
+state={
+	id=682
+	name="STATE_682"
+	provinces={
+		5269 
+	}
+	history={
+		owner = CHI
+		buildings = {
+		}
+		1933.1.1={
+			set_demilitarized_zone = yes
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		1941.1.1={
+			owner = JDF
+		}
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

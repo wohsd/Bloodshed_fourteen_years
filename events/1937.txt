@@ -156,12 +156,15 @@ country_event = {
 			controls_province = 3815
 		}
     }
-    immediate = {
-		CHI={
-			news_event = Fall_City.1
+	immediate = {
+		hidden_effect = {
+			news_event = {id=SCR.1 days=10}
+			CHI={
+				news_event = Fall_City.1
+			}
+			set_global_flag = fall_of_ShangHai
 		}
-		set_global_flag = fall_of_ShangHai
-    } 
+	}
     
 	option = {
 		name = Fall_City.0.a
