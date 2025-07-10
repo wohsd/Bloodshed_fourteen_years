@@ -507,6 +507,10 @@ country_event = {
 		news_event = WorldNew.24
 		hidden_effect = {
 			JAP={
+				declare_war_on = {
+					target = ROG
+					type = annex_everything
+				}
 			transfer_state = 676
 			676={
 				create_unit = {
