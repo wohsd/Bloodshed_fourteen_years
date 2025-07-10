@@ -625,7 +625,7 @@ Long_march_decisions = {
 	Long_March_mobilization_meeting = {
 		available = {
 			has_war = yes
-			date > 1934.10.16
+			date > 1934.10.16 
 		}
 		visible = {
 			

@@ -92,6 +92,11 @@ spriteTypes = {
 		name = "GFX_idea_Fortress_tactics"
 		texturefile = "gfx/interface/ideas/CHI/Fortress_tactics.dds"
 	}
+	
+	spriteType = {
+	    name = "GFX_idea_Bethune"
+	    texturefile = "gfx/interface/ideas/PRC/Bethune.dds"
+    } 
 	spriteType = {
 	    name = "GFX_Central_Special_Branch"
 	    texturefile = "gfx/interface/ideas/Central_Special_Branch.dds"

@@ -1,6 +1,16 @@
 ideas = {
 
 	country = {
+		Bethune = {
+			allowed = {
+			}
+			picture = Bethune
+			
+			modifier = {
+				experience_loss_factor = -0.1
+				attrition= -0.05
+			}
+		}
 		Central_Special_Branch = {
 			allowed = {
 			}
