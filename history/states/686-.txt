@@ -1,0 +1,27 @@
+state={
+	id=686
+	name="STATE_686"
+	provinces={
+		818 1587 1908 2482 2587
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		1936.1.1={
+			owner = JDW
+		}
+		1939.1.1={
+			owner = YPQ
+		}
+		victory_points ={
+			2482 10
+		}
+
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -38,6 +38,12 @@ PRC_anti_chi: "反蒋同盟"
  MCK_fascism: "伪满洲国"
  MCK_fascism_DEF: "伪满洲国"
 
+ YPQ_fascism: "伪察南自治政府"
+ YPQ_fascism_DEF: "伪察南自治政府"
+
+ XIA_fascism: "伪晋北自治政府"
+ XIA_fascism_DEF: "伪晋北自治政府"
+
  ROD_democratic: "东北边防政府"
  ROD_democratic_DEF: "东北边防政府"
  ROD_neutrality: "东北边防政府"

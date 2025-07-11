@@ -10,7 +10,7 @@ state={
 			infrastructure = 1
 		}
 		1939.1.1={
-			owner = MGJ
+			owner = XIA
 		}
 		add_core_of = SJN
 	}

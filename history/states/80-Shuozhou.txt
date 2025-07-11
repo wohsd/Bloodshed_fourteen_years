@@ -2,7 +2,7 @@ state={
 	id=80
 	name="STATE_80"
 	provinces={
-		1075 2825 3637 
+		1075 
 	}
 	history={
 		owner = ROJ
@@ -11,9 +11,7 @@ state={
 		}
 		add_core_of = ROJ
 		
-		victory_points = {
-			2825 5
-		}
+
 		1939.1.1={
 			owner = JAP
 		}

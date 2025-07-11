@@ -2,7 +2,7 @@ state={
 	id=654
 	name="STATE_654"
 	provinces={
-		342 1438 1750 2587 3585 
+		342 1438 1750 3585 
 	}
 	history={
 		owner = ROD
@@ -14,9 +14,7 @@ state={
 		1936.1.1={
 			owner = MGJ
 		}
-		victory_points = {
-			544 5
-		}
+
 	}
 	manpower=323000
 	state_category = town
