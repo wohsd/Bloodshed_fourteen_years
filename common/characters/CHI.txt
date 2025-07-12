@@ -42,6 +42,20 @@ characters={
 			id=-1
 		}
 	}
+	CHI_WangJingWei={
+		name=CHI_WangJingWei
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_WangJingWei.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	CHI_LingSeng={
 		name=CHI_LingSeng
 		portraits={

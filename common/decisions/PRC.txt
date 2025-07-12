@@ -1206,6 +1206,12 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission8
 		}
 		complete_effect = {
+			687={
+				transfer_state_to = PRC
+			}
+			634={
+				transfer_state_to = NSD
+			}
 			add_manpower = 1000
 			add_war_support = 0.05
 			add_equipment_to_stockpile = {
