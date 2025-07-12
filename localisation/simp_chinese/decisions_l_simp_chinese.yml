@@ -47,8 +47,17 @@ Long_march_mission9: "包座战役"
 Long_march_mission10: "激战腊子口"
 Long_march_mission11: "吴起镇会师"
 
+Yan_an_Literature_Art_Association: "延安文艺演出"
+Yan_an_Literature_Art_Association_desc: "抗日战争爆发后，大批进步青年和文化人汇聚到延安，使这里很快成为全国著名的文化城。为了尽快培养源源不断来到延安的青年学生，中共中央陆续创办了抗日军政大学、陕北公学、延安女子大学等，尤其是创办了以培养艺术人才为目标的延安鲁迅艺术学院，又将奔赴延安的文艺工作者集合起来建立了抗日剧社、西北战地服务团等艺术团体。"
+
+Showing_anti_Japanese_war_films: "播放抗战电影"
+Performances_the_art_team: "文艺队展演"
+Unify_literary_artistic_thoughts: "统一文艺思想"
+Criticism_ancient_ocean: "批判“大洋古”"
+Criticism_ancient_ocean_desc: "延安文艺界忽视抗日和实际斗争的需要，文艺界不切实际、脱离群众、脱离抗战现实需要的“大洋古”（指演大戏、古戏、洋戏）的艺术倾向引来许多老干部尤其是军队干部的反感，也让延安的老百姓敬而远之。"
+
 Yan_an_Rectification_Movement: "延安整风"
-Yan_an_Rectification_Movement_desc: "中国共产党在延安和各抗日根据地开展的整顿党的作风，进行马克思列宁主义教育的运动。为了提高全党的马列主义水平，纠正党内的各种非无产阶级思想\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+Yan_an_Rectification_Movement_desc: "中国共产党在延安和各抗日根据地开展的整顿党的作风，进行马克思列宁主义教育的运动。为了提高全党的马列主义水平，纠正党内的各种非无产阶级思想\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 Liberate_White_Zone: "解放白区"
 Liberate_White_Zone_desc: ""白区"称谓源于政治色谱体系，"白"象征国民党统治的反革命性质，与象征革命的"红区"形成二元对立。中共中央自1927年8月后正式使用该术语指代国民党实际控制区域。随着国共对峙态势变化，衍生出"蒋管区"等替代称谓，但其核心内涵始终指涉政权性质而非单纯地理空间。"
@@ -95,7 +104,7 @@ decision_cost_infantry_equipment_500_blocked: "£command_power  §R500§!"
 decision_cost_infantry_equipment_500_tooltip: "这将花费£command_power  §Y500§!条枪"
 
 PRC_Buy_gun: "中华苏维埃国家银行" 
-PRC_Buy_gun_desc: "1932年3月，以江西工农银行为基础，并抽调闽西工农银行干部参加，在江西瑞金正式成立了中华苏维埃共和国国家银行，由毛泽民任行长。国家银行及其分支机构开始营业后，承办了代理金库、吸收存款、发放贷款和稳定市场等几方面的任务。\n\n\n\n£GFX_PRC_MaoZeMing\n\n\n\n\n银行行长：毛泽民\n目前银行有：[?Gold_bar]根金条"
+PRC_Buy_gun_desc: "1932年3月，以江西工农银行为基础，并抽调闽西工农银行干部参加，在江西瑞金正式成立了中华苏维埃共和国国家银行，由毛泽民任行长。国家银行及其分支机构开始营业后，承办了代理金库、吸收存款、发放贷款和稳定市场等几方面的任务。\n银行行长：毛泽民\n目前银行有：[?Gold_bar]根金条"
 PRC_Buy_gun_tt: "将从银行中扣除20根金条"
 PRC_Buy_gun_10tt: "将从中获得10根金条"
 PRC_Buy_gun_from: "以金条换枪"

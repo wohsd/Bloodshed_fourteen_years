@@ -60,8 +60,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/flood_effect.dds"
 	}
 	spriteType = {
-		name = "GFX_PRC_Economic_crisis_effect"
-		texturefile = "gfx/interface/PRC/PRC_Economic_crisis.png"
+		name = "GFX_modifiers_PRC_Economic_crisis"
+		texturefile = "gfx/interface/ideas/PRC/PRC_Economic_crisis.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Three_three_system_border_areas"
+		texturefile = "gfx/interface/ideas/PRC/Three_three_system_border_areas.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Rent_interest_reductions"
+		texturefile = "gfx/interface/ideas/PRC/Rent_interest_reductions.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Mass_production_movement"
+		texturefile = "gfx/interface/ideas/PRC/Mass_production_movement.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_spirit_Nanniwan"
+		texturefile = "gfx/interface/ideas/PRC/The_spirit_Nanniwan.png"
 	}
 	
 	spriteType = {

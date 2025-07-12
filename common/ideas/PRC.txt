@@ -248,7 +248,7 @@ ideas = {
 		Mass_production_movement= {
 			allowed = {
 			}
-			picture = The_spirit_Nanniwan
+			picture = Mass_production_movement
 			
 			modifier = {
 				production_speed_buildings_factor=0.1

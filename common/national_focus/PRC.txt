@@ -1567,17 +1567,21 @@ focus_tree = {
 							promote_character = yes
 						}
 					set_cosmetic_tag = PRC_1937
-					add_dynamic_modifier = {
-							modifier = PRC_Economic_crisis_effect
+					add_dynamic_modifier={
+						modifier=PRC_Economic_crisis_effect
+					}
+
+					add_to_variable = {
+							PRC_Economic_political_power_cost = 0.1
+							tooltip=political_power_cost_tt
 						}
 					add_to_variable = {
-							PRC_political_power_cost_M = -0.1
+							PRC_Economic_consumer_goods_factor = 0.3
+							tooltip=consumer_goods_factor_tt
 						}
 					add_to_variable = {
-							PRC_consumer_goods_factor_M = 0.1
-						}
-					add_to_variable = {
-							PRC_min_export_M = -0.15
+							PRC_Economic_min_export = -0.15
+							tooltip=min_export_tt
 						}
 				}
  
@@ -1591,7 +1595,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 17
-
+		completion_reward={
+			remove_ideas=Shortage_commanders_fighters
+		}
 	}
 	focus = {
 		id = PRC_focus65
@@ -1616,7 +1622,19 @@ focus_tree = {
 		}
 		x = 33
 		y = 16
-
+		
+		completion_reward={ 
+			custom_effect_tooltip=PRC_Economic_crisis_effect
+			custom_effect_tooltip=complete_effect
+			add_to_variable = {
+				PRC_Economic_political_power_cost = 0.05
+				tooltip=political_power_cost_tt
+			}
+			add_to_variable = {
+				PRC_Economic_consumer_goods_factor = -0.1
+				tooltip=consumer_goods_factor_tt
+			}
+		} 
 	}
 	focus = {
 		id = PRC_focus26
@@ -1845,7 +1863,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 17
-
+		completion_reward={
+			remove_ideas=Long_March_Trauma
+		}
 	}
 	focus = {
 		id = PRC_focus70
@@ -1867,7 +1887,18 @@ focus_tree = {
 		}
 		x = 28
 		y = 17
-
+		completion_reward={
+			custom_effect_tooltip=PRC_Economic_crisis_effect
+			custom_effect_tooltip=complete_effect
+			add_to_variable = {
+				PRC_Economic_consumer_goods_factor = -0.05
+				tooltip=consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				PRC_Economic_min_export = 0.1
+				tooltip=min_export_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus72
@@ -1892,7 +1923,18 @@ focus_tree = {
 		}
 		x = 28
 		y = 18
-
+		completion_reward={
+			custom_effect_tooltip=PRC_Economic_crisis_effect
+			custom_effect_tooltip=complete_effect
+			add_to_variable = {
+				PRC_Economic_political_power_cost = 0.05
+				tooltip=political_power_cost_tt
+			}
+			add_to_variable = {
+				PRC_Economic_consumer_goods_factor = -0.05
+				tooltip=consumer_goods_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus74
@@ -1903,7 +1945,18 @@ focus_tree = {
 		}
 		x = 30
 		y = 18
-
+		completion_reward={
+			custom_effect_tooltip=PRC_Economic_crisis_effect
+			custom_effect_tooltip=complete_effect
+			add_to_variable = {
+				PRC_Economic_political_power_cost = 0.05
+				tooltip=political_power_cost_tt
+			}
+			add_to_variable = {
+				PRC_Economic_consumer_goods_factor = -0.05
+				tooltip=consumer_goods_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus82

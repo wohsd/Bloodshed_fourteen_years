@@ -18,8 +18,16 @@ Yan_an_Rectification_Movement= {
 	scripted_gui = Yanan_Rectification_Movement
 	visible = { 
 		tag=PRC 
+	}                
+}   
+
+Yan_an_Literature_Art_Association= {
+	icon = military_operation
+	picture = GFX_Yan_an_Literature_Art_Association
+	visible = { 
+		tag=PRC 
 	}               
-}                      
+}  
          
 PRC_border_clashes = {
 	icon = military_operation 

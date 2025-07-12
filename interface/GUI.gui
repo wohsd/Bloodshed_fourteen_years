@@ -2,8 +2,8 @@ guiTypes = {
   
     containerWindowType = { 
 		name = "Yanan_Rectification_window"
-		position = { x = 110 y = 110} 	
-		moveable = yes
+		position = { x = 110 y = 310} 	
+		moveable = no
 		orientation = CENTER
 		origo = center
 		clipping = no 

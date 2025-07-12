@@ -30,6 +30,71 @@ Liberate_White_Zone= {
 		}
 	}
 }
+
+
+Yan_an_Literature_Art_Association= {
+	Showing_anti_Japanese_war_films = {
+		available = {
+		}  
+		visible = {
+		}
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			add_war_support=0.05
+		}   
+	}
+	Performances_the_art_team= {
+		available = {
+		}  
+		visible = {
+		} 
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			add_stability=0.05
+		}   
+	}
+	Unify_literary_artistic_thoughts= {
+		available = {
+		}  
+		visible = {
+		} 
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			add_stability=0.05
+		}   
+	}
+	Criticism_ancient_ocean= {
+		available = {
+		}  
+		visible = {
+		} 
+		cost = 0 
+		days_remove= 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			add_stability=0.05
+		}   
+	}
+}
+
 ####
 Yan_an_Rectification_Movement= {
 	Promote_Party_School = {
@@ -700,17 +765,17 @@ Long_march_decisions = {
 				declare_war_on = {
 					target = RHC
 					type = annex_everything
-				}
+				} 
 				declare_war_on = {
 					target = RDX
 					type = annex_everything
-				}
+				}   
 				declare_war_on = {
 					target = ROG
 					type = annex_everything
-				}
-			}
-			PRH={
+				} 
+			}   
+			PRH={  
 				add_to_war = {
 					targeted_alliance = ROOT
 					enemy = CHI

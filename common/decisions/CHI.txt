@@ -744,7 +744,7 @@ CHI_Defend_against_enemy_category = {
 			factor = 1
 		}
 		complete_effect = { 
-			  
+			set_country_flag=The_god_mouth_garden
 			every_state = {
 				limit = { 
 					OR = {

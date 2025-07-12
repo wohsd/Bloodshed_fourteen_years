@@ -8,13 +8,12 @@ Long_march_effect = {
 	army_morale_factor = 0.15
 }
 PRC_Economic_crisis_effect = {
-	icon = GFX_PRC_Economic_crisis_effect
+	icon = GFX_modifiers_PRC_Economic_crisis
 
 	enable = { always = yes }
-
-	political_power_cost = PRC_political_power_cost_M
-	consumer_goods_factor = PRC_consumer_goods_factor_M
-	min_export = PRC_min_export_M
+	political_power_cost = PRC_Economic_political_power_cost
+	consumer_goods_factor = PRC_Economic_consumer_goods_factor
+	min_export = PRC_Economic_min_export
 }
 
 

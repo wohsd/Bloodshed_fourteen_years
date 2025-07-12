@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_achievements_top_bar"
+		texturefile = "gfx/achievements/achievements_top_bar.dds"
+	}
+}

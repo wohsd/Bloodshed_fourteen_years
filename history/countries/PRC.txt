@@ -5,7 +5,6 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 }
-
 country_event = {id=PRC_1931.10 days= 122}
 country_event = {id=PRC_1931.13 days= 317}
 country_event = {id=PRC_1931.15 days= 296}
