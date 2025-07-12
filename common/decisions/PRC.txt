@@ -1117,7 +1117,7 @@ Long_march_decisions = {
 			PRC = {
 				AND={
 					has_war = yes
-					controls_province = 1734
+					controls_province = 5271
 				}
 			}
 		}
@@ -1152,7 +1152,7 @@ Long_march_decisions = {
 			PRC = {
 				AND={
 					has_war = yes
-					controls_province = 3875
+					controls_province = 1255
 				}
 			}
 		}
@@ -1187,7 +1187,7 @@ Long_march_decisions = {
 			PRC = {
 				AND={
 					has_war = yes
-					controls_province = 1479
+					controls_province = 1962
 				}
 			}
 		}

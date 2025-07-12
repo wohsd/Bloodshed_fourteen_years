@@ -1352,12 +1352,12 @@ focus_tree = {
 							change_state_after_war = yes
 							attacker = {
 									state = 658
-									num_provinces = 1
+									num_provinces = 2
 									on_win = PRC_1936.1
 								}
 							defender = {
 									state = 122
-									num_provinces = 1
+									num_provinces = 2
 									dig_in_factor = -1
 									terrain_factor = -1
 								}
@@ -1365,9 +1365,9 @@ focus_tree = {
 					set_border_war_data = {
 							attacker = 658
 							defender = 122
-							attacker_modifier = 0.75
-							defender_modifier = -0.75
-							combat_width = 100
+							attacker_modifier = 1
+							defender_modifier = -1
+							combat_width = 80
 						}
 					122 = {
 							add_dynamic_modifier = {
