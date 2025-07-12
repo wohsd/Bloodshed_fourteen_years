@@ -76,3 +76,5 @@ JLS = "countries/JLS.txt"#吉林自卫军
 CGZ = "countries/CGZ.txt"#陈珪璋部队
 YWQ = "countries/YWQ.txt"#杨万青部队
 MTX = "countries/MTX.txt"#马廷贤部队
+YPQ = "countries/YPQ.txt"#察南自治政府（于品卿）
+XIA = "countries/XIA.txt"#晋北自治政府（夏恭）

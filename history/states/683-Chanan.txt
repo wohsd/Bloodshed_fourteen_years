@@ -1,0 +1,22 @@
+state={
+	id=683
+	name="STATE_683"
+	provinces={
+		437 1751 2675 3236 
+	}
+	history={
+		owner = SJN
+		buildings = {
+			infrastructure = 1
+		}
+		
+
+		1939.1.1={
+			owner = XIA
+		}
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

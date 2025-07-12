@@ -2,7 +2,7 @@ state={
 	id=77
 	name="STATE_77"
 	provinces={
-		920 2640 
+		2640 
 	}
 	history={
 		owner = ROJ
@@ -17,7 +17,7 @@ state={
 			1868 5
 		}
 		1939.1.1={
-			owner = JAP
+			owner = YPQ
 		}
 	}
 	manpower=323000

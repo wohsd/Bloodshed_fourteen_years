@@ -1,0 +1,24 @@
+state={
+	id=685
+	name="STATE_685"
+	provinces={
+		920 2825 3637 
+	}
+	history={
+		owner = ROJ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROJ
+		
+		victory_points = {
+			2825 5
+		}
+		1939.1.1={
+			owner = XIA
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}
