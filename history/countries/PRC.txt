@@ -44,6 +44,7 @@ add_to_faction = PRQ
 add_to_faction = PRJ
 add_to_faction = PRY
 add_to_faction = PRD
+add_to_faction = JCJ
 
 add_manpower = 50000
 

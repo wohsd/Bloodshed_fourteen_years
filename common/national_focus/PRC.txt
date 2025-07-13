@@ -1983,8 +1983,11 @@ focus_tree = {
 		y = 17
 			completion_reward = {
 					681 = {
-							transfer_state_to = NAC
+							transfer_state_to = JCJ
 						}
+					85 = {
+						transfer_state_to = JCJ
+					}
 					169 = {
 							transfer_state_to = NAC
 						}

@@ -1,0 +1,18 @@
+characters={
+    PRC_NieRongZhen={
+		name=PRC_NieRongZhen
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_NieRongZhen.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ 
+				New_LuZhishen
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+}
