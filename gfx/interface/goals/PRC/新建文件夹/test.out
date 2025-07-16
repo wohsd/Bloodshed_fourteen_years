@@ -1,0 +1,18 @@
+spriteTypes = {
+spriteType = {
+name = "GFX_PRC_focus109"
+texturefile = "gfx\interface\goals\PRC\新建文件夹/PRC_focus109.png"
+}
+spriteType = {
+name = "GFX_PRC_focus110"
+texturefile = "gfx\interface\goals\PRC\新建文件夹/PRC_focus110.png"
+}
+spriteType = {
+name = "GFX_PRC_focus111"
+texturefile = "gfx\interface\goals\PRC\新建文件夹/PRC_focus111.png"
+}
+spriteType = {
+name = "GFX_PRC_focus113"
+texturefile = "gfx\interface\goals\PRC\新建文件夹/PRC_focus113.png"
+}
+}

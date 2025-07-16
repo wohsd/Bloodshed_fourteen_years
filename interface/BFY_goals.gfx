@@ -1,4 +1,20 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_PRC_focus109"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus109.png"
+		}
+		spriteType = {
+		name = "GFX_PRC_focus110"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus110.png"
+		}
+		spriteType = {
+		name = "GFX_PRC_focus111"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus111.png"
+		}
+		spriteType = {
+		name = "GFX_PRC_focus113"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus113.png"
+		}
 spriteType = {
 name = "GFX_PRC_focus85"
 texturefile = "gfx\interface\goals\PRC/PRC_focus85.png"
