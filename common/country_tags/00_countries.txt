@@ -78,3 +78,4 @@ YWQ = "countries/YWQ.txt"#杨万青部队
 MTX = "countries/MTX.txt"#马廷贤部队
 YPQ = "countries/YPQ.txt"#察南自治政府（于品卿）
 XIA = "countries/XIA.txt"#晋北自治政府（夏恭）
+JCJ = "countries/JCJ.txt"#晋察冀根据地

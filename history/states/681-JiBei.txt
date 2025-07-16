@@ -20,8 +20,8 @@ state={
 			owner = JDW
 		}
 		1939.1.1={
-			owner = NAC
-			add_core_of = NAC
+			owner = JCJ
+			add_core_of = JCJ
 		}
 	}
 	manpower=523320
