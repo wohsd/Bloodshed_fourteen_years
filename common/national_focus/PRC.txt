@@ -1941,9 +1941,9 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
+	focus = { 
 		id = PRC_focus109
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown 
 		cost = 10.00
 		prerequisite = {
 			focus = PRC_focus108

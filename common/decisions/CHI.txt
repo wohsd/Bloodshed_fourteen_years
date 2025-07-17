@@ -1,3 +1,64 @@
+Hump_route = { 
+	Transportation_strategic_goods = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = CHI
+			}
+		}
+		complete_effect = {
+		
+		}
+	}
+	Transportation_essential_goods={
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+		complete_effect = {
+		
+		}
+	}
+	Transportation_fuel_replenishment={
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			add_fuel = 100
+		}
+	}
+}
 CHI_struggle_balance_category = {
 	CHI_impeach_Jiangjieshi = {
 		available = {

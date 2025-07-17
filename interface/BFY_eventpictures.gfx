@@ -215,6 +215,10 @@ spriteTypes = {
 		texturefile = "gfx/event/JiangJieShi.dds"
 	}
 	spriteType = {
+		name = "GFX_Hump_route"
+		texturefile = "gfx/event/Hump_route.dds"
+	}
+	spriteType = {
 		name = "GFX_ROS_1"
 		texturefile = "gfx/event/ROS_1.png"
 	}

@@ -393,6 +393,13 @@
 
  CHI_Rise_Chiang_Kai_shek: "蒋介石复出"
 
+ Hump_route: "驼峰航线"
+ Hump_route_desc: "“驼峰”位于喜马拉雅山脉南麓的一个形似骆驼背脊凹处的一个山口，这里是中国至印度航线的必经之处。通过这条运输航线，中国向印度运送派往境外对日作战的远征军士兵，再从印度运回汽油、器械等战争物资。航线全长500英里，地势海拔均在4500～5500米上下，最高海拔达7000米，山峰起伏连绵，犹如骆驼的峰背，故而得名“驼峰航线”。"
+ Transportation_strategic_goods: "运输战略物资"
+ Transportation_essential_goods: "运输民生物资"
+ Transportation_essential_goods_desc: "运送民生物资能够极大提升军民的士气，所以哪怕一条丝袜，一台钢琴，我们都得尽全力去护送至中国内陆"
+ Transportation_fuel_replenishment: "运输燃油补给"
+
  CHI_Encirclement_suppression_operation_category: "围剿共产党"
  CHI_Encirclement_suppression_operation_category_desc: "蒋介石手令：“燬平匪区办法应切实计划，派员负责监督，分区施行。大小各村庄务全烧燬，勿遗。然后移动可也。凡我军所到之处，为匪化太深，不易防守者，皆可焚燬。对匪巢只有焚烧，乃能解决，请派飞机设法暂停轰炸，而专用火油在欲烧之区域内，使皮带或分水壶分布火油。如此分划区域，每区约焚二三日，使匪恐慌，不能立足。”"
  PRC_Massacre1:"清剿中央苏区"
