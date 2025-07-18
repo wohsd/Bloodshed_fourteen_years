@@ -31,7 +31,7 @@ set_popularities = {
 	communism = 100
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
-
 add_ideas = {
+	Revolutionary_base
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

@@ -2,7 +2,7 @@ state={
 	id=125
 	name="STATE_125"
 	provinces={
-		1022 1545 2681 3693 
+		1022 1545 3693 
 	}
 	history={
 		owner = ROJ
@@ -10,16 +10,16 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			1545 10
+			2891 5
 		}
+		add_core_of = ROJ
+		
 		1939.1.1={
 			owner = NAC
 			add_core_of = NAC
 		}
-		add_core_of = ROJ
-		
 	}
 	manpower=323000
 	state_category = town
-	local_supplies = 0.0
+	local_supplies=0.000
 }
