@@ -1,8 +1,8 @@
 state={
-	id=41
-	name="STATE_41"
+	id=689
+	name="STATE_689"
 	provinces={
-		718 1243 1997 2032 2188 2666 2861 3015 3222 3570 3581 3582 
+		621 737 1457 1520 1685 2679 3021 3349 3358 3540 3552 3554 3572
 	}
 	history={
 		owner = ROD
@@ -12,7 +12,7 @@ state={
 		add_core_of = ROD
 		
 		1933.1.1={
-			owner = MCK
+			owner = WDL
 		}
 	}
 	manpower=323000
