@@ -3,9 +3,19 @@ JAP_buffer_918 = {
 		tag = JAP
 	}
 	enable = {
+		tag = JAP
 		date < 1932.12.12
 	}
-	
+	ai_strategy = {
+		type = prepare_for_war
+		id = JLS
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = HLJ
+		value = 100
+	}
 	ai_strategy = {
     	type = prepare_for_war
     	id = ROD
@@ -19,6 +29,7 @@ JAP_buffer_1212 = {
 		tag = JAP
 	}
 	enable = {
+		tag = JAP
 		date < 1938.12.12
 	}
 	
@@ -42,7 +53,7 @@ JAP_buffer_1212 = {
     	ratio = 0.9
    	 	ordertype = invasion
     	execution_type = rush
-    	manual_attack = no
+    	manual_attack = yes
 	}
 	ai_strategy = {
     	type = front_control
@@ -52,17 +63,47 @@ JAP_buffer_1212 = {
     	ratio = 0.6
    	 	ordertype = invasion
     	execution_type = rush
-    	manual_attack = no
+    	manual_attack = yes
 	}
 	ai_strategy = {
     	type = front_control
     	state_trigger = {
-        	state = 104
+        	state = 246
     	}
-    	ratio = 0.4
+    	ratio = 1
    	 	ordertype = invasion
     	execution_type = rush
-    	manual_attack = no
+    	manual_attack = yes
+	}
+	ai_strategy = {
+    	type = front_control
+    	state_trigger = {
+        	state = 258
+    	}
+    	ratio = 0
+   	 	ordertype = invasion
+    	execution_type = rush
+    	manual_attack = yes
+	}
+	ai_strategy = {
+    	type = front_control
+    	state_trigger = {
+        	state = 268
+    	}
+    	ratio = 0
+   	 	ordertype = invasion
+    	execution_type = rush
+    	manual_attack = yes
+	}
+	ai_strategy = {
+    	type = front_control
+    	state_trigger = {
+        	state = 273
+    	}
+    	ratio = 0
+   	 	ordertype = invasion
+    	execution_type = rush
+    	manual_attack = yes
 	}
 }
 

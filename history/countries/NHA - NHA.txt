@@ -6,6 +6,9 @@ oob = NHA_1931
 1933.1.1={
 	retire_character = NHA_ZengZhongSheng
 	retire_character = NHA_ZhangGuoTao
+	add_ideas = {
+		Great_Purge_White_Sparrow_Garden
+	}
 }
 set_technology = {
 	infantry_weapons = 1
@@ -46,6 +49,6 @@ set_popularities = {
 }
 country_event = {id=NHA_leader.1 days=152}
 add_ideas = {
-	Great_Purge_White_Sparrow_Garden
+	Revolutionary_base
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）

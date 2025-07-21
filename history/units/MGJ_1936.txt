@@ -1,0 +1,39 @@
+﻿division_template = {
+	name = "蒙古方面军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 123
+		name = "蒙古方面军第1师"
+		division_template = "蒙古方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 123
+		name = "蒙古方面军第2师"
+		division_template = "蒙古方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 123
+		name = "蒙古方面军第3师"
+		division_template = "蒙古方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 123
+		name = "蒙古方面军第4师"
+		division_template = "蒙古方面军"
+		start_experience_factor = 0.6
+	}
+}

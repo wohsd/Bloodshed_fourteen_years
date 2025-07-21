@@ -407,7 +407,6 @@ country_event = {
 			CHI={
 				country_event = {id=ShangHai.1 days=90}
 			}
-			
 		}
 		clr_global_flag = 128songhu
 	}		
@@ -1189,48 +1188,32 @@ news_event = {
 					target = CHI
 					type = annex_everything
 				}
-			transfer_state = 586
-			transfer_state = 647
-			647={
-				create_unit = {
-				division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-				owner = JAP
-				}
-				create_unit = {
-					division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-					owner = JAP
-				}
-				create_unit = {
-					division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-					owner = JAP
+				transfer_state = 586
+				transfer_state = 647
+				647={
+					create_unit = {
+						division = "name = \"华中方面军第3师团第5旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
 					}
-				create_unit = {
-				division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-				owner = JAP
-				}	
-				create_unit = {
-					division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-					owner = JAP
+					create_unit = {
+						division = "name = \"华中方面军第3师团第29旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
 					}
-			}
-			586={
-				create_unit = {
-				division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
-				owner = JAP
 				}
-				create_unit = {
-					division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-					owner = JAP
-				}
-				create_unit = {
-					division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-					owner = JAP
-				}
-				create_unit = {
-					division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-					owner = JAP
+				586={
+					create_unit = {
+						division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
 					}
-			}
+					create_unit = {
+						division = "name = \"华中方面军第11师团第10旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"华中方面军第11师团第22旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+				}
 			}
 		}
 		

@@ -5,8 +5,9 @@ state={
 		352 1140 1293 1306 2079 2607 2702 2922 2924 3266 3338 3681 3688 3696 3702 3704 3707 3712 
 	}
 	resources={
-		steel = 2
-		aluminium=2 # was: 12
+		steel = 25
+		aluminium=5 # was: 12
+		
 	}
 	history={
 		owner = JAP

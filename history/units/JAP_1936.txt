@@ -1,0 +1,597 @@
+﻿division_template = {
+	name = "华北方面军" 
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "华中方面军" 
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "华南方面军" 
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "守备军" 
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "坦克联队" 
+	is_locked = yes			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "骑兵联队" 
+	is_locked = yes
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "海军陆战队"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+	is_locked = yes
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
+division_template = {
+	name = "关东军" 
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery= { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+
+
+units = {
+	#第1师团所属旅团
+	division = {	
+		location = 3707
+		name = "守备军第1师团"
+		division_template = "守备军"
+		start_experience_factor = 0.9
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第2师团"
+		division_template = "守备军"
+		start_experience_factor = 0.8
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第3师团"
+		division_template = "守备军"
+		start_experience_factor = 0.6
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第4师团"
+		division_template = "守备军"
+		start_experience_factor = 0.7
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第5师团"
+		division_template = "守备军"
+		start_experience_factor = 0.75
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第6师团"
+		division_template = "守备军"
+		start_experience_factor = 0.7
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第7师团"
+		division_template = "守备军"
+		start_experience_factor = 1.0
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第8师团"
+		division_template = "守备军"
+		start_experience_factor = 0.6
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第9师团"
+		division_template = "守备军"
+		start_experience_factor = 0.5
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第10师团"
+		division_template = "守备军"
+		start_experience_factor = 0.7
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第11师团"
+		division_template = "守备军"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第12师团"
+		division_template = "守备军"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第13师团"
+		division_template = "守备军"
+		start_experience_factor = 0.3
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第14师团"
+		division_template = "守备军"
+		start_experience_factor = 0.4
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第15师团"
+		division_template = "守备军"
+		start_experience_factor = 0.4
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第16师团"
+		division_template = "守备军"
+		start_experience_factor = 0.6
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第17师团"
+		division_template = "守备军"
+		start_experience_factor = 0.6
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第18师团"
+		division_template = "守备军"
+		start_experience_factor = 0.7
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第19师团"
+		division_template = "守备军"
+		start_experience_factor = 0.6
+	}
+	
+	division = {	
+		location = 3707
+		name = "守备军第20师团"
+		division_template = "守备军"
+		start_experience_factor = 0.7
+	}
+
+	division = {	
+		location = 148
+		name = "关东军第1师团第1旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+	division = {	
+		location = 148
+		name = "关东军第1师团第2旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+#第2师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第2师团第3旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+	division = {	
+		location = 148
+		name = "关东军第2师团第15旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+#第4师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第4师团第7旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+	division = {	
+		location = 148
+		name = "关东军第4师团第32旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+#第7师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第7师团第13旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+	division = {	
+		location = 148
+		name = "关东军第7师团第14旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+#第8师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第8师团第16旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+	division = {	
+		location = 148
+		name = "关东军第8师团第32旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+#第12师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第12师团第12旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+	division = {	
+		location = 148
+		name = "关东军第12师团第24旅团"
+		division_template = "关东军"
+		start_experience_factor = 1
+	}
+
+#第23师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第23师团第23旅团"
+		division_template = "关东军"
+		start_experience_factor = 0.7
+	}
+
+#第104师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第104师团第107旅团"
+		division_template = "关东军"
+		start_experience_factor = 0.8
+	}
+
+#第116师团所属旅团
+	division = {	
+		location = 148
+		name = "关东军第116师团第119旅团"
+		division_template = "关东军"
+		start_experience_factor = 0.8
+	}
+
+#骑兵旅团
+	division = {	
+		location = 148
+		name = "关东军骑兵第1旅团"
+		division_template = "关东军骑兵"
+		start_experience_factor = 0.9
+	}
+
+	division = {	
+		location = 148
+		name = "关东军骑兵第3旅团"
+		division_template = "关东军骑兵"
+		start_experience_factor = 0.9
+	}
+
+	division = {	
+		location = 148
+		name = "关东军骑兵第4旅团"
+		division_template = "关东军骑兵"
+		start_experience_factor = 0.9
+	}
+
+#独立混成旅团
+	division = {	
+		location = 148
+		name = "关东军独立混成第1旅团"
+		division_template = "关东军混成"
+		start_experience_factor = 0.85
+	}
+
+	division = {	
+		location = 148
+		name = "关东军独立混成第2旅团"
+		division_template = "关东军混成"
+		start_experience_factor = 0.85
+	}
+
+	division = {	
+		location = 148
+		name = "关东军独立混成第11旅团"
+		division_template = "关东军混成"
+		start_experience_factor = 0.85
+	}
+
+	division = {	
+		location = 148
+		name = "关东军独立混成第12旅团"
+		division_template = "关东军混成"
+		start_experience_factor = 0.85
+	}
+	division= {	
+		location = 148
+		name = "关东军战车第1联队"
+		division_template = "坦克联队"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 148
+		name = "关东军战车第3联队"
+		division_template = "坦克联队"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 148
+		name = "关东军独立战车第4大队"
+		division_template = "坦克联队"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		location = 572
+		name = "华北方面军战车第2大队"
+		division_template = "坦克联队"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第6师团第11旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第6师团第36旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第14师团第27旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第14师团第28旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第20师团第39旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第20师团第40旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		location = 572
+		name = "华北方面军第10师团第8旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第10师团第33旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第16师团第19旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第16师团第30旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		location = 572
+		name = "华北方面军第108师团第25旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第108师团第104旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第109师团第31旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第5师团第9旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第5师团第21旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		location = 572
+		name = "中国驻屯混成旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立混成第1旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立混成第2旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立混成第11旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+}
