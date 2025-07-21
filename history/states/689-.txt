@@ -1,0 +1,21 @@
+state={
+	id=689
+	name="STATE_689"
+	provinces={
+		621 737 1457 1520 1685 2679 3021 3349 3358 3540 3552 3554 3572
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = WDL
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}
