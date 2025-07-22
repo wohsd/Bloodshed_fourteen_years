@@ -594,6 +594,7 @@ country_event = {
 		654={
 			transfer_state_to = LSX
 		}
+		
 		CAR={
 			declare_war_on = {
 				target = LSX
@@ -610,6 +611,9 @@ country_event = {
 		}
 		59={
 			set_demilitarized_zone = yes
+			transfer_state_to = MCK
+		}
+		53={
 			transfer_state_to = MCK
 		}
 		37={

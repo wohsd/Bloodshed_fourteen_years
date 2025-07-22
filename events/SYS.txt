@@ -14,6 +14,11 @@ country_event = {
 		}
     }
     immediate = {
+		SYS={
+			retire_character = SYS_ShiYouSan
+			set_cosmetic_tag = SYS_1933
+		}
+		
 		news_event = {id=SYS_1933.1}
 		ROZ={
 			give_military_access = MBQ

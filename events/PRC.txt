@@ -109,3 +109,127 @@ country_event = {
 		add_political_power = 50
 	}
 }
+
+
+country_event = {
+	id = PRC_focus.8
+	title = PRC_focus.8.t
+	desc = PRC_focus.8.d
+
+	fire_only_once = yes
+    trigger = {
+		ROQ={
+			has_war_with = PRC
+		}
+		OR={
+			ROQ={
+				controls_province = 941
+			}
+			MBQ={
+				controls_province = 941
+			}
+			ROZ={
+				controls_province = 941
+			}
+		}
+    }
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fall_of_941
+			MBQ={
+				white_peace = PRC
+			}
+			ROZ={
+				white_peace = PRC
+			}
+			ROQ={
+				white_peace = PRC
+			}
+			91={
+				transfer_state_to = MBQ
+			}
+			114={
+				transfer_state_to = ROD
+			}
+			86={
+				transfer_state_to = MBQ
+			}
+			55={
+				transfer_state_to = MBQ
+			}
+			86={
+				transfer_state_to = MBQ
+			}
+			31={
+				transfer_state_to = MBQ
+			}
+			95={
+				transfer_state_to = MBQ
+			}
+		}
+	}
+    
+	option = {
+		name = PRC_focus.8.a
+		clr_global_flag = fall_of_941
+	}		
+}
+
+
+
+
+
+country_event = {
+	id = PRC_focus.9
+	title = PRC_focus.9.t
+	desc = PRC_focus.9.d
+
+	fire_only_once = yes
+    trigger = {
+		ROQ={
+			has_war_with = PRC
+		}
+		OR={
+			PRC={
+				controls_province = 666
+			}
+		}
+    }
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fall_of_666
+			MBQ={
+				white_peace = PRC
+			}
+			ROZ={
+				white_peace = PRC
+			}
+			ROQ={
+				white_peace = PRC
+			}
+			91={
+				transfer_state_to = PRC
+			}
+			114={
+				transfer_state_to = PRC
+			}
+			86={
+				transfer_state_to = PRC
+			}
+			31={
+				transfer_state_to = PRC
+			}
+			95={
+				transfer_state_to = PRC
+			}
+			55={
+				transfer_state_to = PRC
+			}
+		}
+	}
+    
+	option = {
+		name = PRC_focus.9.a
+		clr_global_flag = fall_of_666
+	}		
+}

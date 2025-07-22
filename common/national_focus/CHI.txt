@@ -592,6 +592,22 @@ focus_tree = {
 		x = 62
 		y = 3
 		completion_reward = {
+			promote_character = {
+				character = CHI_WangJingWei
+				ideology = democratic
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 50
+				neutrality = 15
+				fascism = 30
+				communism = 5
+			}
 			remove_ideas = The_winner_Central
 		}
 	}

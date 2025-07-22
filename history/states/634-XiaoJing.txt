@@ -2,7 +2,7 @@ state={
 	id=634
 	name="STATE_634"
 	provinces={
-		1479 1962 
+		1479 
 	}
 	history={
 		owner = RDX

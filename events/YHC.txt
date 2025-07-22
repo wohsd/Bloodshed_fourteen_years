@@ -1,0 +1,74 @@
+﻿add_namespace = YHC_1931
+add_namespace = YHC_1931Hidden
+country_event = {
+	id = YHC_1931.1
+	title = YHC_1931.1.t
+	desc = YHC_1931.1.d
+    #picture = 
+	fire_only_once = yes
+	trigger = {
+		date > 1931.6.21
+		date < 1931.6.23
+	}
+    immediate = {
+		hidden_effect = {
+			YHC = {
+				annex_country = {
+					target = YWQ
+				}
+			}
+			YWQ={
+				YWQ_Yang_wanqing = {
+					set_nationality = YHC
+				}
+			}
+			country_event = {id=YHC_1931.2 days=182}
+		}
+	}
+	option = {
+		name = YHC_1931.1.a
+	}
+}
+country_event = {
+	id = YHC_1931.2
+	title = YHC_1931.2.t
+	desc = YHC_1931.2.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			YHC={
+				declare_war_on = {
+					target = MTX
+					type = annex_everything
+				}
+			}
+			country_event = {id=YHC_1931.3 days=15}
+		}
+	}
+	option = {
+		name = YHC_1931.2.a
+	}
+}
+country_event = {
+	id = YHC_1931.3
+	title = YHC_1931.3.t
+	desc = YHC_1931.3.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			YHC={
+				declare_war_on = {
+					target = CGZ
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = YHC_1931.3.a
+	}
+}

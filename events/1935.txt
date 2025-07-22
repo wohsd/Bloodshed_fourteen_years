@@ -389,6 +389,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = PRC_SiFang.5.a
+		642={
+			transfer_state_to=NSD
+		}
 		country_event = {id=PRC_SiFang.6 days=2}
 	}		
 }
@@ -421,6 +424,13 @@ country_event = {
 	}
 	option = {
 		name = PRC_SiFang.7.b
+		PRC={
+			annex_country={
+				target=NSD
+			}
+			set_country_flag = fall_of_ChangZheng_end
+		}
+		custom_effect_tooltip = fall_of_ChangZheng_end
 	}				
 }
 country_event = {
@@ -516,6 +526,8 @@ news_event = {
 				transfer_state = 113
 				transfer_state = 128
 				transfer_state = 137
+				transfer_state = 681
+				transfer_state = 686
 			}
 		}
 	}

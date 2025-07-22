@@ -1,4 +1,57 @@
 spriteTypes = {
+	
+spriteType = {
+	name = "GFX_PRC_focus100"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus100.png"
+	}
+	spriteType = {
+	name = "GFX_PRC_focus116"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus116.png"
+	}
+	spriteType = {
+	name = "GFX_PRC_focus87"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus87.png"
+	}
+	spriteType = {
+	name = "GFX_PRC_focus89"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus89.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_focus90"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus90.png"
+		}
+	spriteType = {
+	name = "GFX_PRC_focus93"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus93.png"
+	}
+	spriteType = {
+	name = "GFX_PRC_focus92"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus92.png"
+	}
+	spriteType = {
+	name = "GFX_PRC_focus98"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus98.png"
+	}
+	spriteType = {
+	name = "GFX_PRC_focus99"
+	texturefile = "gfx\interface\goals\PRC\PRC_focus99.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_focus109"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus109.png"
+		}
+		spriteType = {
+		name = "GFX_PRC_focus110"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus110.png"
+		}
+		spriteType = {
+		name = "GFX_PRC_focus111"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus111.png"
+		}
+		spriteType = {
+		name = "GFX_PRC_focus113"
+		texturefile = "gfx\interface\goals\PRC\PRC_focus113.png"
+		}
 spriteType = {
 name = "GFX_PRC_focus85"
 texturefile = "gfx\interface\goals\PRC/PRC_focus85.png"

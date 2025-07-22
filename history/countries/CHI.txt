@@ -22,6 +22,7 @@ set_technology = {
 
 recruit_character = CHI_JiangJieShi
 recruit_character = CHI_ChenCheng
+recruit_character = CHI_WangJingWei
 recruit_character = CHI_HeYingQing
 recruit_character = CHI_TangShenZhi
 recruit_character = CHI_GuZhuTong

@@ -69,6 +69,7 @@ NSD={
 }
 
 add_ideas = {
+	Revolutionary_base
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
 1934.1.1={

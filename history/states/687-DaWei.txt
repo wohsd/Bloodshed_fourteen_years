@@ -1,0 +1,24 @@
+state={
+	id=687
+	name="STATE_687"
+	provinces={
+		1962 
+	}
+	history={
+		owner = RDX
+		buildings = {
+		}
+		victory_points = {
+			1962 1
+		}
+		add_core_of = RDX
+		
+		1941.1.1={
+			owner = CHI
+		}
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

@@ -754,12 +754,12 @@ country_event = {
 		PRC = {
 			AND={
 				has_war = yes
-				controls_province = 1479
+				controls_province = 1962
 			}
 		}
     }
     immediate = {
-		set_global_flag = fall_1479
+		set_global_flag = fall_1962
 		PRC = {
 			country_event = {id=PRC_SiFang.1}
 		}
@@ -767,7 +767,7 @@ country_event = {
     
 	option = {
 		name = PRC_1934Hidden.12.a
-		clr_global_flag = fall_1479
+		clr_global_flag = fall_1962
 	}		
 }
 

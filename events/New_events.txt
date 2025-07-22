@@ -932,7 +932,7 @@ news_event = {
 			647={set_demilitarized_zone = yes}
 			670={set_demilitarized_zone = yes}
 			586={set_demilitarized_zone = yes}
-
+			682={set_demilitarized_zone = yes}
 			228={transfer_state_to = CHI}
 			647={transfer_state_to = CHI}
 			670={transfer_state_to = CHI}
@@ -985,7 +985,7 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			news_event = ROS.1
-			63={
+			686={
 				transfer_state_to = CAR
 			}
 			CAR={

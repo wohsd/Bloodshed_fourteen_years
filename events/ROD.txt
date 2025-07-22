@@ -103,6 +103,30 @@ country_event = {
 		clr_global_flag = ROD_3_flag
 	}		
 }
+
+
+country_event = {
+	id = ROD_hidden.2
+	title = ROD_hidden.2.t
+	desc = ROD_hidden.2.d
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1935.10.2
+		date < 1935.10.4
+    }
+    immediate = {
+		hidden_effect = {
+			CHI={
+				news_event = ROD.7
+			}
+		}
+    } 
+	option = {
+		name = ROD_hidden.1.a
+	}		
+}
+
 news_event = {
 	id = ROD.3
 	title = ROD.3.t
@@ -268,5 +292,30 @@ news_event = {
 	}
 	option = {
 			name = ROD.6.a
+	}		
+}
+
+
+news_event = {
+	id = ROD.7
+	title = ROD.7.t
+	desc = ROD.7.d
+
+	picture = GFX_ROD_7
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			ROD={
+				annex_country = {
+					target = YHC
+				}
+			}
+		}
+	}
+	option = {
+			name = ROD.7.a
 	}		
 }
