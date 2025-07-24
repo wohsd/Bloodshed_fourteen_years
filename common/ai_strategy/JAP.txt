@@ -30,10 +30,15 @@ JAP_buffer_1212 = {
 	}
 	enable = {
 		tag = JAP
-		date < 1938.12.12
 	}
-	
-	
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -100
+	}
 	ai_strategy = {
 		type = prepare_for_war
 		id = JDW
@@ -44,66 +49,137 @@ JAP_buffer_1212 = {
 		tag = JDW
 		value = 100
 	}
-
 	ai_strategy = {
-    	type = front_control
-    	state_trigger = {
-        	state = 214
+		type = front_control
+		state_trigger = {
+        	state = 215
     	}
-    	ratio = 0.9
-   	 	ordertype = invasion
-    	execution_type = rush
-    	manual_attack = yes
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
 	}
 	ai_strategy = {
-    	type = front_control
-    	state_trigger = {
+		type = front_control
+		state_trigger = {
+        	state = 219
+    	}
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+        	state = 119
+    	}
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
         	state = 104
     	}
-    	ratio = 0.6
-   	 	ordertype = invasion
-    	execution_type = rush
-    	manual_attack = yes
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
 	}
 	ai_strategy = {
-    	type = front_control
-    	state_trigger = {
+		type = front_control
+		state_trigger = {
+        	state = 168
+    	}
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
         	state = 246
     	}
-    	ratio = 1
-   	 	ordertype = invasion
-    	execution_type = rush
-    	manual_attack = yes
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
 	}
 	ai_strategy = {
-    	type = front_control
-    	state_trigger = {
-        	state = 258
+		type = front_control
+		state_trigger = {
+        	state = 214
     	}
-    	ratio = 0
-   	 	ordertype = invasion
-    	execution_type = rush
-    	manual_attack = yes
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
 	}
 	ai_strategy = {
-    	type = front_control
-    	state_trigger = {
-        	state = 268
+		type = front_control
+		state_trigger = {
+        	state = 126
     	}
-    	ratio = 0
-   	 	ordertype = invasion
-    	execution_type = rush
-    	manual_attack = yes
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
 	}
 	ai_strategy = {
-    	type = front_control
-    	state_trigger = {
-        	state = 273
+		type = front_control
+		state_trigger = {
+        	state = 228
     	}
-    	ratio = 0
-   	 	ordertype = invasion
-    	execution_type = rush
-    	manual_attack = yes
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+        	state = 248
+    	}
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+        	state = 237
+    	}
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+        	state = 216
+    	}
+		priority = 1
+		ratio = 1
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
 	}
 }
 

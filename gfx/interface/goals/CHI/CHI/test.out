@@ -1,26 +1,18 @@
 spriteTypes = {
 spriteType = {
-name = "GFX_kmt_77"
-texturefile = "gfx\interface\goals\CHI\CHI/kmt_77.png"
+name = "GFX_CHIFocus_29"
+texturefile = "gfx\interface\goals\CHI\CHI/CHIFocus_29.png"
 }
 spriteType = {
-name = "GFX_kmt_78"
-texturefile = "gfx\interface\goals\CHI\CHI/kmt_78.png"
+name = "GFX_CHIFocus_30"
+texturefile = "gfx\interface\goals\CHI\CHI/CHIFocus_30.png"
 }
 spriteType = {
-name = "GFX_kmt_79"
-texturefile = "gfx\interface\goals\CHI\CHI/kmt_79.png"
+name = "GFX_CHIFocus_31"
+texturefile = "gfx\interface\goals\CHI\CHI/CHIFocus_31.png"
 }
 spriteType = {
-name = "GFX_kmt_80"
-texturefile = "gfx\interface\goals\CHI\CHI/kmt_80.png"
-}
-spriteType = {
-name = "GFX_kmt_81"
-texturefile = "gfx\interface\goals\CHI\CHI/kmt_81.png"
-}
-spriteType = {
-name = "GFX_kmt_82"
-texturefile = "gfx\interface\goals\CHI\CHI/kmt_82.png"
+name = "GFX_CHIFocus_32"
+texturefile = "gfx\interface\goals\CHI\CHI/CHIFocus_32.png"
 }
 }

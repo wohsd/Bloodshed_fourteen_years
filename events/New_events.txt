@@ -404,9 +404,6 @@ country_event = {
 		
 		hidden_effect = {
 			news_event = {id=WorldNew.20 days=3}
-			CHI={
-				country_event = {id=ShangHai.1 days=90}
-			}
 		}
 		clr_global_flag = 128songhu
 	}		
@@ -1239,6 +1236,7 @@ news_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+			country_event = {id=ShangHai.1 days=90}
 			JAP={
 				declare_war_on = {
 					target = CHI

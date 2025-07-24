@@ -26,17 +26,31 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = CHI
-				attack_bonus_against=0.2
-                defense_bonus_against=0.2
-				breakthrough_bonus_against=0.2
-				defense_bonus_against=0.2
+				attack_bonus_against=0.5
+                defense_bonus_against=0.5
+				breakthrough_bonus_against=0.5
+				defense_bonus_against=0.5
+			}
+			targeted_modifier = {
+				tag = ROA
+				attack_bonus_against=0.5
+                defense_bonus_against=0.5
+				breakthrough_bonus_against=0.5
+				defense_bonus_against=0.5
 			}
 			targeted_modifier = {
 				tag = ROD
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-				breakthrough_bonus_against=0.3
-				defense_bonus_against=0.3
+				attack_bonus_against=0.5
+                defense_bonus_against=0.5
+				breakthrough_bonus_against=0.5
+				defense_bonus_against=0.5
+			}
+			targeted_modifier = {
+				tag = ROJ
+				attack_bonus_against=0.5
+                defense_bonus_against=0.5
+				breakthrough_bonus_against=0.5
+				defense_bonus_against=0.5
 			}
 		}
 		Death_in_March = {

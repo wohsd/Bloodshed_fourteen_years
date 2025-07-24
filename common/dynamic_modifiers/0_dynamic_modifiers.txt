@@ -75,3 +75,17 @@ Eight_provincial_guerrillas = {
 	resistance_decay=-0.5
 	resistance_growth=0.2
 }
+
+
+
+Combat_direction_effect = {
+	icon = GFX_modifiers_Combat_direction
+
+	enable = { always = yes }
+	army_attack_speed_factor=0.5
+	army_attack_factor=0.5
+	army_org_factor=0.5
+	breakthrough_factor=0.5
+	planning_speed=1
+	supply_consumption_factor=-1
+}

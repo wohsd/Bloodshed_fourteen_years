@@ -113,4 +113,13 @@ CHI_Define = {
 		}
 		value = 100
 	}
+
+	ai_strategy = {
+		type = garrison
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100
+	}
 }
