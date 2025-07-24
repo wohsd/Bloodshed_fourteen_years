@@ -1,3 +1,5 @@
+#!gfx:interface\BFY_goals.gfx
+#!gfx:interface\goals.gfx
 focus_tree = {
 	id = CHI
 	country = {
