@@ -20,7 +20,7 @@
  ADD_DAYS_TO_MISSION: "任务$MISSION|H$添加$DAYS|H$日时长"
  REMOVE_DAYS_TO_MISSION: "任务$MISSION|H$中减少$DAYS|H$日时长"
  CLICK_TO_TOGGLE_ALL_CATEGORY_DECISION_TRACKING: "§G点击§!切换该类别下所有决议的通知状态。"
-  
+CHI_research_speed_effect: "遍地文盲"
 Long_march_effect_tt:0 "添加修正：§Y$Long_march_battle$§!（[ROOT.GetFlag]§Y[ROOT.GetNameDef]§!在这些地区的陆军组织度：§G+15.0%§!，陆军组织度恢复：§G+15.0%§!，堑壕速度：§G+15.0%§!）"
 Long_march_decisions: "长征"
 Long_march_decisions_desc: "博古和李德先是实行冒险主义的进攻战略，后又实行保守主义的防御战略，致使红军屡战失利，苏区日渐缩小。党内长期的分裂导致我们的第五次反围剿彻底失败，在苏区内打破国民党军的“围剿”已无可能，我们必须进行战略转移。"

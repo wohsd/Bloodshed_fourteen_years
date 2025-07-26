@@ -60,6 +60,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/flood_effect.dds"
 	}
 	spriteType = {
+		name = "GFX_modifiers_CHI_research_speed"
+		texturefile = "gfx/interface/ideas/CHI_research_speed.png"
+	}
+	spriteType = {
 		name = "GFX_modifiers_PRC_Economic_crisis"
 		texturefile = "gfx/interface/ideas/PRC/PRC_Economic_crisis.png"
 	} 

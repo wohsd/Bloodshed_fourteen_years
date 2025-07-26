@@ -31,9 +31,21 @@ on_actions = {
 		effect = {
 			every_country = {
 				set_rule = {
-					desc = TAG_my_rule_description
 					can_create_factions = no
 					can_join_factions = no
+				}
+				limit = {
+					NOT = {
+						original_tag = SOV
+						original_tag = JAP
+					}
+				}
+				
+				add_dynamic_modifier = {
+					modifier = CHI_research_speed_effect
+				}
+				set_variable = {
+					 CHI_research_speed_factor = -0.8
 				}
 			}
 		}

@@ -13,34 +13,37 @@ ideas = {
 				war_support_weekly=0.01
 				pocket_penalty = -0.2
 				offensive_war_stability_factor=0.1
-				army_speed_factor=0.1
-				breakthrough_factor=0.1	
-				army_org_regain= 0.1	
 				ai_focus_military_equipment_factor= 0.5
 				ai_focus_aggressive_factor = 1
 				ai_focus_naval_factor = 0.5
 				ai_focus_naval_air_factor= 0.5
 				land_night_attack= 0.1
-				
 				ai_focus_military_equipment_factor = 0.5
-			}
-			targeted_modifier = {
-				tag = CHI
-				attack_bonus_against=0.2
-                defense_bonus_against=0.2
-				breakthrough_bonus_against=0.2
-				defense_bonus_against=0.2
-			}
-			targeted_modifier = {
-				tag = ROD
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-				breakthrough_bonus_against=0.3
-				defense_bonus_against=0.3
+				supply_consumption_factor= -0.15
+				supply_factor= 0.15
+				supply_node_range= 0.15
 			}
 		}
 		Death_in_March = {
 			picture=Death_in_March
+			allowed = {
+				always = yes
+			} 
+			modifier={
+				army_speed_factor=0.3
+				army_attack_factor=0.3
+				army_defence_factor=0.3
+				breakthrough_factor=0.3
+				army_org_regain= 0.2
+				terrain_penalty_reduction= 0.5
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			
+		}
+		China_Offensive = {
+			picture=Militaristic_fervor
 			allowed = {
 				always = yes
 			}
@@ -48,29 +51,35 @@ ideas = {
 			allowed_civil_war = {
 			}
 			removal_cost = -1
-			modifier = {
-				army_speed_factor=0.05
-				breakthrough_factor=0.05			
-			}
 			targeted_modifier = {
 				tag=CHI
-				attack_bonus_against=0.65
-                defense_bonus_against=0.65
+				attack_bonus_against=0.4
+                defense_bonus_against=0.4
 			}
 			targeted_modifier = {
 				tag=ROJ
-				attack_bonus_against=0.65
-                defense_bonus_against=0.65
+				attack_bonus_against=0.4
+                defense_bonus_against=0.4
+			}
+			targeted_modifier = {
+				tag=ROC
+				attack_bonus_against=0.4
+                defense_bonus_against=0.4
+			}
+			targeted_modifier = {
+				tag=ROY
+				attack_bonus_against=0.4
+                defense_bonus_against=0.4
 			}
 			targeted_modifier = {
 				tag=ROA
-				attack_bonus_against=0.65
-                defense_bonus_against=0.65
+				attack_bonus_against=0.4
+                defense_bonus_against=0.4
 			}
 			targeted_modifier = {
 				tag=JDW
-				attack_bonus_against=0.75 
-                defense_bonus_against=0.75
+				attack_bonus_against=0.4
+                defense_bonus_against=0.4
 			}
 		}
 	}
