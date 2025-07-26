@@ -21,7 +21,7 @@ ideas = {
 				ai_focus_military_equipment_factor = 0.5
 				supply_consumption_factor= -0.15
 				supply_factor= 0.15
-				supply_node_range= 0.15
+				supply_node_range= 0.15	
 			}
 		}
 		Death_in_March = {

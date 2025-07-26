@@ -11,6 +11,7 @@ state={
 			2647= {
 				naval_base = 2
 				coastal_bunker = 1
+				air_base= 1
 			}
 		}
 		1933.1.1={

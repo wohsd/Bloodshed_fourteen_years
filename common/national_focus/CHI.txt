@@ -1,3 +1,5 @@
+#!gfx:interface\BFY_goals.gfx
+#!gfx:interface\goals.gfx
 focus_tree = {
 	id = CHI
 	country = {
@@ -22,7 +24,7 @@ focus_tree = {
 	focus = {
 		id = Modernize_Military_Reform
 		icon = GFX_kmt_66
-		cost = 5.00
+		cost = 7.00
 		x = 45
 		y = 11
 			completion_reward = {
@@ -41,7 +43,7 @@ focus_tree = {
 	focus = {
 		id = Democracy_Over_Autocracy
 		icon = GFX_kmt02
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
@@ -101,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = Unstable_Political_Situation
 		icon = GFX_focus_AUS_disregard_the_treaties
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Liao_Zhongkai_Issue
 		}
@@ -112,7 +114,7 @@ focus_tree = {
 	focus = {
 		id = Stabilize_Political_Situation
 		icon = GFX_kmt_42
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Unstable_Political_Situation
 		}
@@ -123,7 +125,7 @@ focus_tree = {
 	focus = {
 		id = Ensure_Party_Stability
 		icon = GFX_focus_ARG_defense_and_democracy
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Stabilize_Political_Situation
 		}
@@ -134,7 +136,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Committee_76
 		icon = GFX_kmt_88
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Ensure_Party_Stability
 		}
@@ -145,7 +147,7 @@ focus_tree = {
 	focus = {
 		id = Expand_Anti_Chiang_Coalition
 		icon = GFX_kmt_89
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Ensure_Party_Stability
 		}
@@ -156,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = Win_Over_Grassroots_Officials
 		icon = GFX_kmt_90
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Ensure_Party_Stability
 		}
@@ -167,7 +169,7 @@ focus_tree = {
 	focus = {
 		id = Gain_Public_Support
 		icon = GFX_focus_FIN_socialist_welfare
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Stabilize_Political_Situation
 		}
@@ -178,7 +180,7 @@ focus_tree = {
 	focus = {
 		id = Strengthen_Media_Censorship
 		icon = GFX_focus_BRA_repeale_national_security_law
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Gain_Public_Support
 		}
@@ -189,7 +191,7 @@ focus_tree = {
 	focus = {
 		id = Expand_Anti_Chiang_Propaganda
 		icon = GFX_focus_prc_remove_chiang_kai_shek
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Gain_Public_Support
 		}
@@ -200,7 +202,7 @@ focus_tree = {
 	focus = {
 		id = Fate_of_the_Four_Families
 		icon = GFX_focus_GER_strengthen_the_proletarian_international
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Unstable_Political_Situation
 		}
@@ -211,7 +213,7 @@ focus_tree = {
 	focus = {
 		id = Stabilize_Military_Morale
 		icon = GFX_focus_generic_advanced_military_studies
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Unstable_Political_Situation
 		}
@@ -233,7 +235,7 @@ focus_tree = {
 	focus = {
 		id = Strengthen_Cooperation_with_Yue_Gui
 		icon = GFX_kmt_62
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Warlords_Demands
 		}
@@ -244,7 +246,7 @@ focus_tree = {
 	focus = {
 		id = Pacify_Local_Warlords
 		icon = GFX_kmt_83
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Warlords_Demands
 		}
@@ -255,7 +257,7 @@ focus_tree = {
 	focus = {
 		id = Reorganize_National_Revolutionary_Army
 		icon = GFX_kmt_67
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Modernize_Military_Reform
 		}
@@ -275,7 +277,7 @@ focus_tree = {
 	focus = {
 		id = German_Military_Advisors
 		icon = GFX_kmt_54
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Reorganize_National_Revolutionary_Army
 		}
@@ -289,7 +291,7 @@ focus_tree = {
 	focus = {
 		id = German_style_Adjusted_Division
 		icon = GFX_kmt_61
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = German_Military_Advisors
 		}
@@ -466,7 +468,7 @@ focus_tree = {
 	focus = {
 		id = Suppress_Chiang_Faction
 		icon = GFX_kmt_85
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Necessity_of_National_Army
 		}
@@ -477,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = Chinese_Hindenburg_Line
 		icon = GFX_focus_BEL_better_than_maginot
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = German_Military_Advisors
 		}
@@ -491,7 +493,7 @@ focus_tree = {
 	focus = {
 		id = Win_Over_Neutral_Officers
 		icon = GFX_kmt_87
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Necessity_of_National_Army
 		}
@@ -502,7 +504,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Munitions_Department
 		icon = GFX_focus_CONGO_copper_cartridges
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Reorganize_National_Revolutionary_Army
 		}
@@ -516,7 +518,7 @@ focus_tree = {
 	focus = {
 		id = Open_Military_Research_Institute
 		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Establish_Munitions_Department
 		}
@@ -544,7 +546,7 @@ focus_tree = {
 	focus = {
 		id = Cultivate_Loyal_Officers
 		icon = GFX_kmt_86
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Necessity_of_National_Army
 		}
@@ -555,7 +557,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Central_Military_Academy
 		icon = GFX_kmt_65
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Establish_Munitions_Department
 		}
@@ -574,7 +576,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_2
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_democratic_europe
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_1
@@ -596,7 +598,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_12
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_subdue_the_wehrmacht
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_7
@@ -639,7 +641,7 @@ focus_tree = {
 	focus = {
 		id = Special_Parliament_Leader_Hu_Hanmin
 		icon = GFX_kmt_48
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
@@ -656,7 +658,7 @@ focus_tree = {
 	focus = {
 		id = Support_from_the_Gun
 		icon = GFX_focus_focus_fra_maquis
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
@@ -667,7 +669,7 @@ focus_tree = {
 	focus = {
 		id = Power_of_the_Pen
 		icon = GFX_focus_GER_rally_the_industrialists
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
@@ -678,7 +680,7 @@ focus_tree = {
 	focus = {
 		id = Land_Equalization
 		icon = GFX_kmt34
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
@@ -689,7 +691,7 @@ focus_tree = {
 	focus = {
 		id = Impose_Land_Value_Tax
 		icon = GFX_kmt36
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Land_Equalization
 		}
@@ -700,7 +702,7 @@ focus_tree = {
 	focus = {
 		id = Reorganize_Kuomintang
 		icon = GFX_kmt39
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
@@ -711,7 +713,7 @@ focus_tree = {
 	focus = {
 		id = Crackdown_on_Corruption
 		icon = GFX_kmt40
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Reorganize_Kuomintang
 		}
@@ -722,7 +724,7 @@ focus_tree = {
 	focus = {
 		id = Strengthen_Party_Authority
 		icon = GFX_kmt41
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Reorganize_Kuomintang
 		}
@@ -733,7 +735,7 @@ focus_tree = {
 	focus = {
 		id = Restore_Worker_Peasant_Policies
 		icon = GFX_kmt42
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Reorganize_Kuomintang
 		}
@@ -744,7 +746,7 @@ focus_tree = {
 	focus = {
 		id = Rebirth_of_Kuomintang
 		icon = GFX_kmt43
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Strengthen_Party_Authority
 		}
@@ -760,7 +762,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_2
@@ -771,7 +773,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_8
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_cas_aircraft
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_4
@@ -782,7 +784,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_9
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_the_road_of_life
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_4
@@ -793,7 +795,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_13
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_8
@@ -808,7 +810,7 @@ focus_tree = {
 	focus = {
 		id = Regulate_Capital
 		icon = GFX_kmt46
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
@@ -819,7 +821,7 @@ focus_tree = {
 	focus = {
 		id = Develop_National_Capital
 		icon = GFX_kmt45
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Regulate_Capital
 		}
@@ -830,7 +832,7 @@ focus_tree = {
 	focus = {
 		id = Restrict_Private_Capital
 		icon = GFX_kmt44
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Regulate_Capital
 		}
@@ -841,7 +843,7 @@ focus_tree = {
 	focus = {
 		id = Revitalize_Industry_Develop_Resources
 		icon = GFX_kmt47
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Develop_National_Capital
 		}
@@ -855,7 +857,7 @@ focus_tree = {
 	focus = {
 		id = National_Crisis
 		icon = GFX_focus_ETH_the_lion_and_the_sun
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
@@ -876,7 +878,7 @@ focus_tree = {
 	focus = {
 		id = Internal_Pacification_Before_Resistance
 		icon = GFX_kmt_41
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Crisis
 		}
@@ -897,7 +899,7 @@ focus_tree = {
 	focus = {
 		id = Order_Warlords_to_Attack
 		icon = GFX_kmt_81
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
 		}
@@ -911,7 +913,7 @@ focus_tree = {
 	focus = {
 		id = Organize_Expeditionary_Force
 		icon = GFX_kmt_43
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
 		}
@@ -968,7 +970,7 @@ focus_tree = {
 	focus = {
 		id = German_Positional_Tactics
 		icon = GFX_kmt_54
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Organize_Expeditionary_Force
 		}
@@ -987,7 +989,7 @@ focus_tree = {
 	focus = {
 		id = Air_to_Ground_Support
 		icon = GFX_kmt_78
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = German_Positional_Tactics
 		}
@@ -1006,7 +1008,7 @@ focus_tree = {
 	focus = {
 		id = Resistance_First_to_Save_Nation
 		icon = GFX_kmt_55
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Crisis
 		}
@@ -1027,7 +1029,7 @@ focus_tree = {
 	focus = {
 		id = Reconcile_with_Communists
 		icon = GFX_kmt_60
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Resistance_First_to_Save_Nation
 		}
@@ -1041,7 +1043,7 @@ focus_tree = {
 	focus = {
 		id = Expand_Anti_Japanese_Propaganda
 		icon = GFX_kmt16
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Reconcile_with_Communists
 		}
@@ -1060,7 +1062,7 @@ focus_tree = {
 	focus = {
 		id = Establish_United_Front
 		icon = GFX_kmt_75
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Expand_Anti_Japanese_Propaganda
 		}
@@ -1082,7 +1084,7 @@ focus_tree = {
 	focus = {
 		id = Contact_Zhang_Xueliang
 		icon = GFX_kmt_77
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Resistance_First_to_Save_Nation
 		}
@@ -1098,7 +1100,7 @@ focus_tree = {
 	focus = {
 		id = Transport_Anti_Japanese_Supplies
 		icon = GFX_focus_AUS_raid_military_storages
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Contact_Zhang_Xueliang
 		}
@@ -1130,7 +1132,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_18
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_kdf_wagen
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_20
@@ -1141,7 +1143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_21
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FIN_motti_tactics
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_20
@@ -1175,7 +1177,7 @@ focus_tree = {
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
 		icon = GFX_kmt03
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
@@ -1240,7 +1242,7 @@ focus_tree = {
 	focus = {
 		id = Control_National_Economy
 		icon = GFX_focus_CHL_silverworking
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Soong_Sisters_Kong_Family_Wealth
 		}
@@ -1258,7 +1260,7 @@ focus_tree = {
 	focus = {
 		id = Agricultural_Adjustment_Committee
 		icon = GFX_focus_CHL_focus_on_cattle_and_wool
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Control_National_Economy
 		}
@@ -1297,7 +1299,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Trade_Committee
 		icon = GFX_focus_BRA_rio_protocol
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Control_National_Economy
 		}
@@ -1314,7 +1316,7 @@ focus_tree = {
 	focus = {
 		id = Economic_Reforms
 		icon = GFX_focus_ETH_adopt_the_lira
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Soong_Sisters_Kong_Family_Wealth
 		}
@@ -1332,7 +1334,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Four_United_Bureau
 		icon = GFX_focus_DEN_heavy_regulations
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Economic_Reforms
 		}
@@ -1349,7 +1351,7 @@ focus_tree = {
 	focus = {
 		id = Issue_High_Interest_Loans
 		icon = GFX_focus_DEN_no_regulations
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Economic_Reforms
 		}
@@ -1374,7 +1376,7 @@ focus_tree = {
 	focus = {
 		id = Announce_Political_Tutelage
 		icon = GFX_kmt_44
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Interests_of_Four_Families
 		}
@@ -1414,7 +1416,7 @@ focus_tree = {
 	focus = {
 		id = National_Education
 		icon = GFX_kmt_51
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Announce_Political_Tutelage
 		}
@@ -1431,7 +1433,7 @@ focus_tree = {
 	focus = {
 		id = Improve_Education_System
 		icon = GFX_focus_generic_university_3
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Education
 			focus = National_Education
@@ -1453,7 +1455,7 @@ focus_tree = {
 	focus = {
 		id = Build_Central_Research_Academy
 		icon = GFX_kmt_44
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Education
 			focus = National_Education
@@ -1474,7 +1476,7 @@ focus_tree = {
 	focus = {
 		id = Government_Organization
 		icon = GFX_focus_ARG_keep_it_in_the_party
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Announce_Political_Tutelage
 		}
@@ -1492,7 +1494,7 @@ focus_tree = {
 	focus = {
 		id = Announce_Political_Tutelage_Program
 		icon = GFX_focus_BRA_tribunal
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Government_Organization
 		}
@@ -1514,7 +1516,7 @@ focus_tree = {
 	focus = {
 		id = Implement_Five_Power_System
 		icon = GFX_focus_AUS_lawmaking_leniency
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Government_Organization
 		}
@@ -1536,7 +1538,7 @@ focus_tree = {
 	focus = {
 		id = Define_Chairman_Authority
 		icon = GFX_kmt_68
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Implement_Five_Power_System
 		}
@@ -1562,7 +1564,7 @@ focus_tree = {
 	focus = {
 		id = National_Government_Organization_Law
 		icon = GFX_focus_ETH_re-convene_the_parliament
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Announce_Political_Tutelage_Program
 		}
@@ -1584,7 +1586,7 @@ focus_tree = {
 	focus = {
 		id = Local_Equal_Authority_System
 		icon = GFX_focus_BEL_government_resigns
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Government_Organization
 		}
@@ -1609,7 +1611,7 @@ focus_tree = {
 	focus = {
 		id = Draft_Local_Laws
 		icon = GFX_focus_generic_court
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Local_Equal_Authority_System
 		}
@@ -1631,7 +1633,7 @@ focus_tree = {
 	focus = {
 		id = Consolidate_Republics_Governance
 		icon = GFX_kmt_50
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Define_Chairman_Authority
 		}
@@ -1658,7 +1660,7 @@ focus_tree = {
 	focus = {
 		id = National_Livelihood
 		icon = GFX_focus_BRA_coffee_crisis
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Announce_Political_Tutelage
 		}
@@ -1675,7 +1677,7 @@ focus_tree = {
 	focus = {
 		id = Large_scale_Transport_Construction
 		icon = GFX_focus_BEL_engine_of_the_economy
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Livelihood
 		}
@@ -1693,7 +1695,7 @@ focus_tree = {
 	focus = {
 		id = Unified_Tax_Reform
 		icon = GFX_focus_ARG_anti_corruption_policies
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Livelihood
 		}
@@ -1714,7 +1716,7 @@ focus_tree = {
 	focus = {
 		id = Agricultural_Development_Plan
 		icon = GFX_focus_BRA_amazon_colonization
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Livelihood
 		}
@@ -1753,7 +1755,7 @@ focus_tree = {
 	focus = {
 		id = Five_Year_Heavy_Industry_Plan
 		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Unified_Tax_Reform
 			focus = Agricultural_Development_Plan
@@ -1776,7 +1778,7 @@ focus_tree = {
 	focus = {
 		id = Restore_Tariff_Autonomy
 		icon = GFX_focus_BRA_cafe_com_leite_politics
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Unified_Tax_Reform
 			focus = Large_scale_Transport_Construction
@@ -1803,7 +1805,7 @@ focus_tree = {
 	focus = {
 		id = Promote_New_Technologies
 		icon = GFX_focus_BEL_poudreries_reunies_de_belgique
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Agricultural_Development_Plan
 			focus = Agricultural_Development_Plan
@@ -1832,7 +1834,7 @@ focus_tree = {
 	focus = {
 		id = Development_of_National_Economy
 		icon = GFX_focus_generic_agricultural_subsidies
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Restore_Tariff_Autonomy
 			focus = Restore_Tariff_Autonomy
@@ -1881,7 +1883,7 @@ focus_tree = {
 	focus = {
 		id = China_Revival_Society
 		icon = GFX_kmt_70
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Chiangs_Rule_Chens_Party
 		}
@@ -1899,7 +1901,7 @@ focus_tree = {
 	focus = {
 		id = Suppress_Anti_Japanese_Activities
 		icon = GFX_focus_FIN_parmis_devils
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = China_Revival_Society
 		}
@@ -1917,7 +1919,7 @@ focus_tree = {
 	focus = {
 		id = Control_Media_Information
 		icon = GFX_kmt_56
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = China_Revival_Society
 		}
@@ -1932,7 +1934,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Military_Statistics_Bureau
 		icon = GFX_kmt_79
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Suppress_Anti_Japanese_Activities
 		}
@@ -1953,7 +1955,7 @@ focus_tree = {
 	focus = {
 		id = Central_Club
 		icon = GFX_kmt_71
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Chiangs_Rule_Chens_Party
 		}
@@ -1971,7 +1973,7 @@ focus_tree = {
 	focus = {
 		id = New_Life_Movement
 		icon = GFX_kmt_52
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Central_Club
 		}
@@ -1985,7 +1987,7 @@ focus_tree = {
 	focus = {
 		id = Chinese_Cultural_Construction_Movement
 		icon = GFX_kmt_73
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Central_Club
 		}
@@ -2003,7 +2005,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Central_Statistics_Bureau
 		icon = GFX_kmt_80
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = New_Life_Movement
 		}
@@ -2024,7 +2026,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Central_Aviation_School
 		icon = GFX_focus_generic_air_bases
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Modernize_Military_Reform
 		}
@@ -2050,7 +2052,7 @@ focus_tree = {
 	focus = {
 		id = Aviation_Salvation_Movement
 		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Establish_Central_Aviation_School
 		}
@@ -2078,7 +2080,7 @@ focus_tree = {
 	focus = {
 		id = Standardize_Training_System
 		icon = GFX_goal_generic_build_airforce
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Aviation_Salvation_Movement
 		}
@@ -2092,7 +2094,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Navy_Department
 		icon = GFX_goal_generic_alliance
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Modernize_Military_Reform
 		}
@@ -2115,7 +2117,7 @@ focus_tree = {
 	focus = {
 		id = Order_Warships
 		icon = GFX_goal_generic_amphibious_assault
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Establish_Navy_Department
 		}
@@ -2126,7 +2128,7 @@ focus_tree = {
 	focus = {
 		id = 600000_Tonnage_Plan
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Order_Warships
 		}
@@ -2153,7 +2155,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Resources_Committee
 		icon = GFX_focus_ARG_strengthening_the_concordancia
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Agricultural_Adjustment_Committee
 		}
@@ -2174,7 +2176,7 @@ focus_tree = {
 	focus = {
 		id = Implement_Currency_Reform
 		icon = GFX_focus_GER_customs_union
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Establish_Four_United_Bureau
 		}
@@ -2194,7 +2196,7 @@ focus_tree = {
 	focus = {
 		id = Promote_Teacher_Colleges
 		icon = GFX_focus_generic_university_2
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Education
 			focus = National_Education
@@ -2215,7 +2217,7 @@ focus_tree = {
 	focus = {
 		id = Improve_Border_Teacher_Welfare
 		icon = GFX_focus_generic_university_1
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Promote_Teacher_Colleges
 			focus = Promote_Teacher_Colleges
@@ -2237,7 +2239,7 @@ focus_tree = {
 	focus = {
 		id = Implement_Compulsory_Education
 		icon = GFX_focus_generic_military_academy
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Improve_Education_System
 			focus = Promote_Teacher_Colleges
@@ -2261,7 +2263,7 @@ focus_tree = {
 	focus = {
 		id = Reform_Higher_Education_System
 		icon = GFX_focus_generic_printing_press
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Build_Central_Research_Academy
 			focus = Promote_Teacher_Colleges
@@ -2285,7 +2287,7 @@ focus_tree = {
 	focus = {
 		id = Progress_of_National_Quality
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Implement_Compulsory_Education
 			focus = Improve_Border_Teacher_Welfare
@@ -2325,7 +2327,7 @@ focus_tree = {
 	focus = {
 		id = Promote_Hu_Hanmin_Ideology
 		icon = GFX_kmt10
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Strengthen_Party_Leadership
 		}
@@ -2336,7 +2338,7 @@ focus_tree = {
 	focus = {
 		id = Party_Representative_System_in_Army
 		icon = GFX_kmt11
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Strengthen_Party_Leadership
 		}
@@ -2347,7 +2349,7 @@ focus_tree = {
 	focus = {
 		id = Promote_Party_based_Education
 		icon = GFX_kmt06
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Party_Ruled_State
 		}
@@ -2358,7 +2360,7 @@ focus_tree = {
 	focus = {
 		id = Strengthen_Party_Leadership
 		icon = GFX_kmt09
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Promote_Party_based_Education
 		}
@@ -2369,7 +2371,7 @@ focus_tree = {
 	focus = {
 		id = Expand_Local_Party_Committees
 		icon = GFX_kmt12
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Strengthen_Party_Leadership
 		}
@@ -2380,7 +2382,7 @@ focus_tree = {
 	focus = {
 		id = Establish_Party_Ruled_Nation
 		icon = GFX_kmt13
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Expand_Local_Party_Committees
 		}
@@ -2397,7 +2399,7 @@ focus_tree = {
 	focus = {
 		id = Revolutionary_Elder_Chu_Lu
 		icon = GFX_kmt14
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Establish_Party_Ruled_Nation
 		}
@@ -2411,7 +2413,7 @@ focus_tree = {
 	focus = {
 		id = Implement_Land_Reform
 		icon = GFX_kmt15
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Revolutionary_Elder_Chu_Lu
 		}
@@ -2422,7 +2424,7 @@ focus_tree = {
 	focus = {
 		id = Party_Supremacy
 		icon = GFX_kmt17
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Revolutionary_Elder_Chu_Lu
 		}
@@ -2433,7 +2435,7 @@ focus_tree = {
 	focus = {
 		id = Support_Anti_Japanese_Salvation
 		icon = GFX_kmt16
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Revolutionary_Elder_Chu_Lu
 		}
@@ -2444,7 +2446,7 @@ focus_tree = {
 	focus = {
 		id = New_Political_Tutelage
 		icon = GFX_kmt18
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Party_Supremacy
 		}
@@ -2461,7 +2463,7 @@ focus_tree = {
 	focus = {
 		id = Promote_Canton_Governance
 		icon = GFX_kmt20
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Party_Ruled_State
 		}
@@ -2472,7 +2474,7 @@ focus_tree = {
 	focus = {
 		id = Government_Asset_Management
 		icon = GFX_kmt21
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Promote_Canton_Governance
 		}
@@ -2483,7 +2485,7 @@ focus_tree = {
 	focus = {
 		id = Promote_Educational_Reform
 		icon = GFX_kmt22
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Government_Asset_Management
 		}
@@ -2494,7 +2496,7 @@ focus_tree = {
 	focus = {
 		id = Infrastructure_Construction_Plan
 		icon = GFX_kmt23
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Government_Asset_Management
 		}
@@ -2505,7 +2507,7 @@ focus_tree = {
 	focus = {
 		id = Innovate_Municipal_System
 		icon = GFX_kmt24
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Government_Asset_Management
 		}
@@ -2516,7 +2518,7 @@ focus_tree = {
 	focus = {
 		id = National_Government_for_the_People
 		icon = GFX_kmt25
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Infrastructure_Construction_Plan
 		}
@@ -2533,7 +2535,7 @@ focus_tree = {
 	focus = {
 		id = National_Legitimacy_Sun_Ke
 		icon = GFX_kmt33
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Government_for_the_People
 		}
@@ -2547,7 +2549,7 @@ focus_tree = {
 	focus = {
 		id = Focus_on_Urban_Development
 		icon = GFX_kmt26
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Legitimacy_Sun_Ke
 		}
@@ -2558,7 +2560,7 @@ focus_tree = {
 	focus = {
 		id = Reconcile_with_Chiang_Faction
 		icon = GFX_kmt30
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Legitimacy_Sun_Ke
 		}
@@ -2569,7 +2571,7 @@ focus_tree = {
 	focus = {
 		id = Expand_Foreign_Investment
 		icon = GFX_kmt31
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = National_Legitimacy_Sun_Ke
 		}
@@ -2580,7 +2582,7 @@ focus_tree = {
 	focus = {
 		id = Transition_to_Constitutional_Government
 		icon = GFX_kmt32
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Reconcile_with_Chiang_Faction
 		}
@@ -2597,7 +2599,7 @@ focus_tree = {
 	focus = {
 		id = Chairman_Wangs_European_Tour
 		icon = GFX_kmt_49
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Unstable_Political_Situation
 		}
@@ -2614,7 +2616,7 @@ focus_tree = {
 	focus = {
 		id = Seek_League_of_Nations_Help
 		icon = GFX_kmt_57
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
 		}
@@ -2625,7 +2627,7 @@ focus_tree = {
 	focus = {
 		id = Seek_Overseas_Chinese_Support
 		icon = GFX_kmt_63
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Seek_League_of_Nations_Help
 		}
@@ -2636,7 +2638,7 @@ focus_tree = {
 	focus = {
 		id = Expand_US_UK_Interests_in_China
 		icon = GFX_focus_ARG_join_the_allies
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Seek_League_of_Nations_Help
 		}
@@ -2647,7 +2649,7 @@ focus_tree = {
 	focus = {
 		id = Request_Soviet_Aid
 		icon = GFX_focus_por_workers_of_iberia
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Seek_League_of_Nations_Help
 		}
@@ -2658,7 +2660,7 @@ focus_tree = {
 	focus = {
 		id = Win_Over_Moderates
 		icon = GFX_kmt_82
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
 		}
@@ -2669,7 +2671,7 @@ focus_tree = {
 	focus = {
 		id = Incite_Reorganization_Clique_Conflict
 		icon = GFX_kmt_58
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
 		}
@@ -2680,7 +2682,7 @@ focus_tree = {
 	focus = {
 		id = Peaceful_Resolution_to_Sino_Japanese_Conflict
 		icon = GFX_kmt_53
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Accept_Japanese_Investment
 			focus = Request_Soviet_Aid
@@ -2700,7 +2702,7 @@ focus_tree = {
 	focus = {
 		id = Negotiate_with_Japan
 		icon = GFX_focus_generic_surrender
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
@@ -2718,7 +2720,7 @@ focus_tree = {
 	focus = {
 		id = Recognize_Puppet_Manchukuo
 		icon = GFX_kmt_76
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Negotiate_with_Japan
 		}
@@ -2732,7 +2734,7 @@ focus_tree = {
 	focus = {
 		id = Suppress_Anti_Japanese_Sentiment
 		icon = GFX_focus_GER_liberate_exploited_colonial_workers
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Negotiate_with_Japan
 		}
@@ -2750,7 +2752,7 @@ focus_tree = {
 	focus = {
 		id = Accept_Japanese_Investment
 		icon = GFX_focus_GER_customs_union
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Negotiate_with_Japan
 		}
@@ -2768,7 +2770,7 @@ focus_tree = {
 	focus = {
 		id = Land_Production_to_Public
 		icon = GFX_kmt38
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Land_Equalization
 		}
@@ -2779,7 +2781,7 @@ focus_tree = {
 	focus = {
 		id = Land_to_the_Tiller
 		icon = GFX_kmt37
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Land_Production_to_Public
 		}
@@ -2793,7 +2795,7 @@ focus_tree = {
 	focus = {
 		id = Towards_Livelihood_Nation
 		icon = GFX_kmt48
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Rebirth_of_Kuomintang
 		}
@@ -2810,7 +2812,7 @@ focus_tree = {
 	focus = {
 		id = Convene_National_Congress
 		icon = GFX_kmt_59
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Consolidate_Republics_Governance
 		}
@@ -2827,7 +2829,7 @@ focus_tree = {
 	focus = {
 		id = Expand_Local_Influence
 		icon = GFX_focus_BRA_ethical_internationalism
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = Order_Warlords_to_Attack
 		}
@@ -2841,7 +2843,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_befriend_usa
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_2
@@ -2852,7 +2854,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_5
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_road_investment
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_3
@@ -2874,7 +2876,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_10
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_copy_plane_designs
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_5
@@ -2924,7 +2926,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_16
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_anti_tank_guns
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_14
@@ -2935,7 +2937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_19
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_kriegslokomotive
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_18
@@ -2946,7 +2948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_22
-		icon = GFX_goal_unknown
+		icon = GFX_focus_GER_wirtschaftswunder
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_20
@@ -2965,15 +2967,15 @@ focus_tree = {
 		x = 79
 		y = 14
 
-	}
+	} 
 	focus = {
 		id = CHIFocus_24
-		icon = GFX_goal_unknown
+		icon = GFX_goal_unknown 
 		cost = 10.00
 		prerequisite = {
 			focus = CHIFocus_21
 		}
-		x = 69
+		x = 70
 		y = 15
 
 	}
@@ -2990,16 +2992,68 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_28
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_japan
 		cost = 10.00
+		prerequisite = {
+			focus = CHIFocus_24
+		}
 		prerequisite = {
 			focus = CHIFocus_25
 		}
 		prerequisite = {
 			focus = CHIFocus_26
 		}
+		prerequisite = {
+			focus = CHIFocus_27
+		}
 		x = 75
 		y = 16
+
+	}
+
+	focus = {
+		id = CHIFocus_29
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = CHIFocus_1
+		}
+		x = 72
+		y = 12
+
+	}
+	focus = {
+		id = CHIFocus_30
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = CHIFocus_1
+		}
+		x = 68
+		y = 11
+
+	}
+	focus = { 
+		id = CHIFocus_31
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = CHIFocus_30
+		}
+		x = 68
+		y = 12
+
+	}
+
+	focus = {
+		id = CHIFocus_32
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = CHIFocus_28
+		}
+		x = 75 
+		y = 17
 
 	}
 }

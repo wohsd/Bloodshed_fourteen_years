@@ -4,6 +4,9 @@ state={
 	provinces={
 		295 393 430 604 926 947 1197 1728 1740 2713 2717 2778 2848 2955 3152 
 	}
+	resources = {
+		tungsten=5
+	}
 	history={
 		owner = JAP
 		buildings = {

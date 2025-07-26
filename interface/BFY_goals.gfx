@@ -1,5 +1,76 @@
 spriteTypes = {
-	
+	spriteType = {
+		name = "GFX_CHIFocus_15"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_15.png"
+		}
+	spriteType = {
+		name = "GFX_CHIFocus_29"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_29.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_30"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_30.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_31"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_31.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_32"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_32.png"
+		}
+		
+		
+	spriteType = {
+		name = "GFX_CHIFocus_1"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_1.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_11"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_11.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_14"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_14.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_17"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_17.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_20"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_20.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_23"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_23.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_24"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_24.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_25"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_25.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_26"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_26.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_27"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_27.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_6"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_6.png"
+		}
+		spriteType = {
+		name = "GFX_CHIFocus_7"
+		texturefile = "gfx\interface\goals\CHI\CHIFocus_7.png"
+		}
+		
+			
 spriteType = {
 	name = "GFX_PRC_focus100"
 	texturefile = "gfx\interface\goals\PRC\PRC_focus100.png"

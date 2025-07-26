@@ -1,0 +1,46 @@
+Take_Northeast= {
+	Take_over_Northeast = {
+		available = {
+			9={
+				is_owned_by = JAP
+			}
+			17={
+				is_owned_by = JAP
+			}
+			16={
+				is_owned_by = JAP
+			}
+			20={
+				is_owned_by = JAP
+			}
+			25={
+				is_owned_by = JAP
+			}
+			12={
+				is_owned_by = JAP
+			}
+			8={
+				is_owned_by = JAP
+			}
+		}  
+		visible = {
+		} 
+		cost = 0
+		days_remove= 1
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			MCK={
+				transfer_state = 9
+				transfer_state = 17
+				transfer_state = 16
+				transfer_state = 20
+				transfer_state = 25
+				transfer_state = 12
+				transfer_state = 8
+			}
+		}   
+	}
+}

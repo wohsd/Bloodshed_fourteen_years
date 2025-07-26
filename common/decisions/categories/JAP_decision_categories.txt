@@ -1,0 +1,8 @@
+Combat_direction= {
+	icon = military_operation
+	picture = GFX_WuHan_attack
+	visible = { 
+		tag=JAP
+	}
+	visible_when_empty = yes
+}

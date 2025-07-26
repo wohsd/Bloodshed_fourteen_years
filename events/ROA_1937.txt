@@ -1,4 +1,44 @@
 ﻿add_namespace = ROA_1937
+
+country_event = {
+	id = ROA_1937.0
+	title = ROA_1937.0.t
+	desc = ROA_1937.0.d
+	fire_only_once = yes
+	#picture = GFX_ROG_1931_1
+	trigger = {
+		JAP={
+			controls_state = 96
+			controls_state = 103
+		}
+	}
+    immediate = {
+		hidden_effect = {
+			every_state = {
+				if = {
+					limit = { 
+						is_core_of = ROA
+					}
+					add_dynamic_modifier = {
+						modifier = Morale_collapsed
+						scope = ROA
+						days = 150
+					}
+					add_dynamic_modifier = {
+						modifier = Morale_collapsed
+						scope = CHI
+						days = 150
+					}
+				}
+			}
+		}
+    } 
+	option = {
+		name = ROA_1937.0.a
+	}		
+}
+
+
 country_event = {
 	id = ROA_1937.1
 	fire_only_once = yes
@@ -28,11 +68,12 @@ country_event = {
 		clr_global_flag = fall_of_JiNan
 	}		
 }
+
 country_event = {
 	id = ROA_1937.2
 	title = ROA_1937.2.t
 	desc = ROA_1937.2.d
-	hidden = yes
+	fire_only_once = yes
 	#picture = GFX_ROG_1931_1
 	is_triggered_only = yes
     immediate = {

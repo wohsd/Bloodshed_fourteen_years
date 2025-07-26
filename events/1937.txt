@@ -42,14 +42,14 @@ unit_leader_event = {
 	option = {
 		name = Generals.1.a
 		random_list = {
-			1={
-				CHI_TangShenZhi={
-					unit_leader_event = {id=Generals.2 days=20}
-				}
-			}
 			99={
 				CHI_TangShenZhi={
-					unit_leader_event = {id=Generals.3 days=20}
+					unit_leader_event = {id=Generals.2 days=10}
+				}
+			}
+			1={
+				CHI_TangShenZhi={
+					unit_leader_event = {id=Generals.3 days=10}
 				}
 			}
 		}
@@ -115,6 +115,14 @@ country_event = {
 			add_to_faction = ROW
 			add_to_faction = XZS
 			add_to_faction = YUL
+			add_to_faction = MBQ
+			add_to_faction = ROD
+			add_to_faction = NSD
+			add_to_faction = ZOT
+			add_to_faction = DOT
+			add_to_faction = TOH
+			add_to_faction = XZS
+			add_to_faction = PRQ
 		}
 		}
 		
@@ -276,39 +284,43 @@ country_event = {
 		}
 		670={
 			create_unit = {
-			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-			owner = JAP
+				division = "name = \"华中方面军第6师团第11旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = JAP
 			}
-		}
-		670={
 			create_unit = {
-			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-			owner = JAP
+				division = "name = \"华中方面军第6师团第36旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = JAP
 			}
-		}
-		670={
 			create_unit = {
-			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-			owner = JAP
+				division = "name = \"华中方面军第18师团第23旅团\" division_template = \"华中方面军\" start_experience_factor = 0.75 start_equipment_factor = 0.9"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第18师团第35旅团\" division_template = \"华中方面军\" start_experience_factor = 0.75 start_equipment_factor = 0.9"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第114师团第127旅团\" division_template = \"华中方面军\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第114师团第128旅团\" division_template = \"华中方面军\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				owner = JAP
 			}
 		}
+		
 		671={
 			create_unit = {
-			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-			owner = JAP
+				division = "name = \"华中方面军第16师团第19旅团\" division_template = \"华中方面军\" start_experience_factor = 0.9 start_equipment_factor = 1"
+				owner = JAP
 			}
-		}
-		671={
 			create_unit = {
-			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-			owner = JAP
+				division = "name = \"华中方面军第16师团第30旅团\" division_template = \"华中方面军\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = JAP
 			}
-		}
-
-		671={
 			create_unit = {
-			division = "name = \"甲种师团\" division_template = \"甲种师团\" start_experience_factor = 0.8 start_equipment_factor = 1"
-			owner = JAP
+				division = "name = \"华中方面军第11师团浅间支队\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = JAP
 			}
 		}
 	}

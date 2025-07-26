@@ -32,6 +32,27 @@ division_template = {
 units = {
 	division= {	
 		location = 141
+		name = "西北军骑兵第一旅"
+		division_template = "骑兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 141
+		name = "西北军骑兵第二旅"
+		division_template = "骑兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 141
+		name = "西北军骑兵第十三旅"
+		division_template = "骑兵旅"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 141
 		name = "西北军第二十九军第一三二师"
 		division_template = "西北军"
 		start_experience_factor = 0.3
@@ -45,4 +66,26 @@ units = {
             }
         }
 	}
+	division= {	
+		location = 141
+		name = "西北军第二十九军第三十七师"
+		division_template = "西北军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 141
+		name = "西北军第二十九军第三十八师"
+		division_template = "西北军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 141
+		name = "西北军第二十九军第一四三师"
+		division_template = "西北军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	
 }

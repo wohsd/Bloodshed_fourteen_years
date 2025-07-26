@@ -1212,6 +1212,12 @@ Long_march_decisions = {
 			634={
 				transfer_state_to = NSD
 			}
+			602={
+				transfer_state_to = ROT
+			}
+			204={
+				transfer_state_to = RHC
+			}
 			add_manpower = 1000
 			add_war_support = 0.05
 			add_equipment_to_stockpile = {

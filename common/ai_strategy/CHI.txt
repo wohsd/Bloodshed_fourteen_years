@@ -82,3 +82,44 @@ CHI_buffer_in_mainland = {
 	}
 }
 
+
+CHI_Define = {
+	allowed = {
+		tag = CHI
+	}
+	enable = {
+		has_war_with = JAP
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			state = 268
+		}
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			state = 258
+		}
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			state = 273
+		}
+		value = 100
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100
+	}
+}

@@ -97,11 +97,11 @@ ideas = {
 				always = yes 
 			}
 
-			removal_cost = -1
+			removal_cost = -1 
 
 			modifier = {
 				army_intel_factor=-0.15
-				army_org_factor=-0.1
+				army_org=-20
 				recon_factor=-0.05
 				org_loss_when_moving=0.1
 				army_defence_factor=-0.1
