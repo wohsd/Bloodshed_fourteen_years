@@ -8,6 +8,171 @@ defined_text = { # Country
 		localization_key = YananRectificationtip
 	}
 }
+#重心
+defined_text = { # Country
+	name = YananRectification_effect
+	text = {
+		trigger = {
+			original_tag = PRC
+			NOT={
+				has_country_flag = YananRectification_effect_1
+				has_country_flag = YananRectification_effect_2
+				has_country_flag = YananRectification_effect_3
+				has_country_flag = YananRectification_effect_4
+			}
+			
+		} 
+		localization_key = YananRectification_effect
+	}
+	text = {
+		trigger = {
+			original_tag = PRC
+			NOT={
+				has_country_flag = YananRectification_effect
+				has_country_flag = YananRectification_effect_2
+				has_country_flag = YananRectification_effect_3
+				has_country_flag = YananRectification_effect_4
+			}
+			has_country_flag = YananRectification_effect_1
+		} 
+		localization_key = YananRectification_effect_1
+	}
+	text = {
+		trigger = {
+			original_tag = PRC
+			NOT={
+				has_country_flag = YananRectification_effect
+				has_country_flag = YananRectification_effect_1
+				has_country_flag = YananRectification_effect_3
+				has_country_flag = YananRectification_effect_4
+			}
+			has_country_flag = YananRectification_effect_2 
+		} 
+		localization_key = YananRectification_effect_2
+	}
+	text = {
+		trigger = {
+			original_tag = PRC
+			NOT={
+				has_country_flag = YananRectification_effect
+				has_country_flag = YananRectification_effect_1
+				has_country_flag = YananRectification_effect_2
+				has_country_flag = YananRectification_effect_4
+			}
+			has_country_flag = YananRectification_effect_3
+		} 
+		localization_key = YananRectification_effect_3
+	}
+	text = {
+		trigger = {
+			original_tag = PRC
+			NOT={
+				has_country_flag = YananRectification_effect
+				has_country_flag = YananRectification_effect_2
+				has_country_flag = YananRectification_effect_3
+				has_country_flag = YananRectification_effect_1
+			}
+			has_country_flag = YananRectification_effect_4
+		} 
+		localization_key = YananRectification_effect_4
+	}
+}
+
+###路线
+defined_text = {
+	name = PRC_Road
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_Road
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_Road_1
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_Road_2
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_Road_3
+	}
+}
+
+
+###团结
+defined_text = {
+	name = PRC_thought
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_thought_1
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key =  PRC_thought
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_thought_2
+	}
+}
+
+
+
+
+###态度
+defined_text = {
+	name = PRC_attitude
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_attitude
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key =  PRC_attitude_1
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			#has_country_flag = 
+		}
+		localization_key = PRC_attitude_2
+	}
+}
+
+
+
+
+
+
+
 ################################
   ########## TEXTS ###########
 ################################

@@ -1,7 +1,43 @@
+Rectification_movement = {
+	icon = GFX_modifiers_Rectification_movement
+
+	enable = { always = yes }
+	army_org_factor=PRC_army_org_factor
+	army_morale_factor=PRC_army_morale_factor
+	planning_speed=PRC_planning_speed
+	pocket_penalty=PRC_pocket_penalty
+	army_strength_factor=PRC_army_strength_factor
+	max_command_power=PRC_max_command_power
+	drift_defence_factor=PRC_drift_defence_factor
+	intelligence_agency_defense=PRC_intelligence_agency_defense
+	experience_loss_factor=PRC_experience_loss_factor
+	forced_surrender_limit=PRC_forced_surrender_limit
+	political_power_factor=PRC_political_power_factor
+	research_speed_factor=PRC_research_speed_factor
+	stability_weekly_factor=PRC_stability_weekly_factor
+	war_stability_factor=PRC_war_stability_factor
+	war_support_factor=PRC_war_support_factor
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 CHI_research_speed_effect = {
 	icon = GFX_modifiers_CHI_research_speed
 
 	enable = { always = yes }
+	unit_upkeep_attrition_factor=0.01
 	research_speed_factor = CHI_research_speed_factor
 }
 

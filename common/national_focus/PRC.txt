@@ -98,7 +98,27 @@ focus_tree = {
 		cost = 10.00
 		x = 44
 		y = 14
+		completion_reward = {
 
+			add_dynamic_modifier = {
+				modifier = Rectification_movement
+			}
+			add_to_variable = {PRC_army_morale_factor=0.01}
+			add_to_variable = {PRC_planning_speed=0.01}
+			add_to_variable = {PRC_pocket_penalty=-0.01}
+			add_to_variable = {PRC_army_strength_factor=0.01}
+			add_to_variable = {PRC_max_command_power=0.01}
+			add_to_variable = {PRC_drift_defence_factor=0.01}
+			add_to_variable = {PRC_intelligence_agency_defense=0.01}
+			add_to_variable = {PRC_experience_loss_factor=-0.01}
+			add_to_variable = {PRC_forced_surrender_limit=0.01}
+			add_to_variable = {PRC_political_power_factor=0.01}
+			add_to_variable = {PRC_research_speed_factor=0.01}
+			add_to_variable = {PRC_stability_weekly_factor=0.01}
+			add_to_variable = {PRC_war_stability_factor=0.01}
+			add_to_variable = {PRC_war_support_factor=0.01}
+
+		}
 	}
 	focus = {
 		id = PRC_focus108
@@ -106,7 +126,9 @@ focus_tree = {
 		cost = 10.00
 		x = 53
 		y = 14
-
+		completion_reward = {
+			army_experience = 50
+		}
 	}
 	focus = {
 		id = PRC_focus1
@@ -1354,6 +1376,7 @@ focus_tree = {
 		y = 13
 			available = {
 					has_completed_focus = PRC_focus55
+					has_war = no
 				}
 			completion_reward = {
 					start_border_war = {
@@ -1750,7 +1773,13 @@ focus_tree = {
 		}
 		x = 44
 		y = 15
-
+		completion_reward = {
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {
+				PRC_political_power_factor=0.02
+				tooltip = political_power_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus97
@@ -1764,7 +1793,12 @@ focus_tree = {
 		}
 		x = 38
 		y = 16
-
+		completion_reward = {
+			add_to_variable = {
+				CHI_research_speed_factor = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus98
@@ -1775,7 +1809,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 17
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = PRC_focus99
@@ -1786,7 +1822,12 @@ focus_tree = {
 		}
 		x = 38
 		y = 18
-
+		completion_reward = {
+			add_to_variable = {
+				CHI_research_speed_factor = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus100
@@ -1797,7 +1838,12 @@ focus_tree = {
 		}
 		x = 38
 		y = 19
-
+		completion_reward = {
+			add_to_variable = {
+				CHI_research_speed_factor = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus115
@@ -1808,7 +1854,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 17
-
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = PRC_focus116
@@ -1819,8 +1867,10 @@ focus_tree = {
 		}
 		x = 40
 		y = 18
-
-	}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	} 
 	focus = {
 		id = PRC_focus87
 		icon = GFX_focus_yug_pan_slavic_congress
@@ -1830,7 +1880,37 @@ focus_tree = {
 		}
 		x = 41
 		y = 16
+		completion_reward = {
+			set_country_flag = YananRectification_effect_1
+			clr_country_flag = YananRectification_effect_2
+			clr_country_flag = YananRectification_effect_3
+			clr_country_flag = YananRectification_effect_4
+			custom_effect_tooltip = unlock_YananRectification
+			custom_effect_tooltip = PRC_focus87
+			custom_effect_tooltip = YananRectification_effect_tip
 
+			add_to_variable = {
+				PRC_drift_defence_factor=0.05
+				tooltip = drift_defence_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_morale_factor=0.05
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				PRC_max_command_power=10
+				tooltip = max_command_power_tt
+			}
+			add_to_variable = {
+				PRC_pocket_penalty=-0.05 
+				tooltip = Pocket_penalty_tt
+			}
+			add_to_variable = {
+				PRC_experience_loss_factor=-0.05 
+				tooltip = experience_loss_factor_tt
+			}
+			
+		}
 	}
 	focus = {
 		id = PRC_focus88
@@ -1841,7 +1921,38 @@ focus_tree = {
 		}
 		x = 43
 		y = 16
+		completion_reward = {
+			set_country_flag = YananRectification_effect_2
+			clr_country_flag = YananRectification_effect_1
+			clr_country_flag = YananRectification_effect_3
+			clr_country_flag = YananRectification_effect_4
+			custom_effect_tooltip = unlock_YananRectification
+			custom_effect_tooltip = PRC_focus88
+			custom_effect_tooltip = YananRectification_effect_tip
+			add_to_variable = {
+				PRC_drift_defence_factor=0.02
+				tooltip = drift_defence_factor_tt
+			}
+			add_to_variable = {
+				PRC_intelligence_agency_defense=0.1
+				tooltip = intelligence_agency_defense_tt
+			}
 
+
+			add_to_variable = {
+				PRC_forced_surrender_limit=0.02 
+				tooltip = forced_surrender_limit_tt
+			}
+			add_to_variable = {
+				PRC_planning_speed=0.02
+				tooltip = planning_speed_factor_tt
+			}
+			add_to_variable = { 
+				PRC_army_strength_factor=0.02
+				tooltip = army_strength_factor_tt
+			}
+			
+		}
 	}
 	focus = {
 		id = PRC_focus89
@@ -1852,7 +1963,27 @@ focus_tree = {
 		}
 		x = 45
 		y = 16
-
+		completion_reward = {
+			set_country_flag = YananRectification_effect_3
+			clr_country_flag = YananRectification_effect_1
+			clr_country_flag = YananRectification_effect_2
+			clr_country_flag = YananRectification_effect_4
+			custom_effect_tooltip = unlock_YananRectification
+			custom_effect_tooltip = PRC_focus89
+			custom_effect_tooltip = YananRectification_effect_tip
+			add_to_variable = {
+				PRC_political_power_factor=0.02
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				PRC_war_stability_factor=0.02
+				tooltip = war_stability_factor_tt
+			}
+			add_to_variable = {
+				PRC_war_support_factor=0.02
+				tooltip = war_support_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus90
@@ -1863,7 +1994,31 @@ focus_tree = {
 		}
 		x = 47
 		y = 16
-
+		completion_reward = {
+			set_country_flag = YananRectification_effect_4
+			clr_country_flag = YananRectification_effect_1
+			clr_country_flag = YananRectification_effect_3
+			clr_country_flag = YananRectification_effect_2
+			custom_effect_tooltip = unlock_YananRectification
+			custom_effect_tooltip = PRC_focus90
+			custom_effect_tooltip = YananRectification_effect_tip
+			add_to_variable = {
+				PRC_political_power_factor=0.02
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				PRC_research_speed_factor=0.02
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				PRC_war_stability_factor=0.01
+				tooltip = war_stability_factor_tt
+			}
+			add_to_variable = {
+				PRC_war_support_factor=0.02
+				tooltip = war_support_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus91
@@ -1883,7 +2038,17 @@ focus_tree = {
 		}
 		x = 43
 		y = 17
-
+		completion_reward = {
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {
+				PRC_war_stability_factor=0.01
+				tooltip = war_stability_factor_tt
+			}
+			add_to_variable = {
+				PRC_war_support_factor=0.01
+				tooltip = war_support_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus92
@@ -1903,7 +2068,13 @@ focus_tree = {
 		}
 		x = 45
 		y = 17
-
+		completion_reward = {
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {
+				PRC_drift_defence_factor=0.02
+				tooltip = drift_defence_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus93
@@ -1926,9 +2097,21 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus108
 		}
+		available = {
+			116={
+				is_controlled_by = PRC
+			}
+		}
 		x = 50
 		y = 15
-
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus114
@@ -2291,7 +2474,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 18
-
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = PRC_focus106
@@ -2330,17 +2515,6 @@ focus_tree = {
 		}
 		x = 55
 		y = 16
-
-	}
-	focus = {
-		id = PRC_focus111
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = PRC_focus110
-		}
-		x = 55
-		y = 17
 
 	}
 }

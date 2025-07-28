@@ -96,7 +96,8 @@ PRC_struggle_balance1 = {
 		min = -0.25
 		max = 0.25
 		modifier = {
-			war_support_weekly = -0.01
+			war_support_weekly = -0.001
+			stability_weekly = -0.001
 			political_power_cost = 0.05
 		}
 	}
