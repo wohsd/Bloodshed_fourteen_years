@@ -14,10 +14,6 @@ state={
 		}
 		add_core_of = ROJ
 		
-		1939.1.1={
-			owner = NAC
-			add_core_of = NAC
-		}
 	}
 	manpower=323000
 	state_category = town

@@ -9,11 +9,11 @@ Liberate_White_Zone= {
 			}
 			
 		}  
-		visible = {
+		visible = {  
 		} 
 		cost = 100 
 		days_remove= 90
-		fire_only_once = no
+		fire_only_once = no 
 		ai_will_do = {
 			factor = 1
 		}
@@ -109,6 +109,9 @@ Yan_an_Rectification_Movement= {
 		ai_will_do = {
 			factor = 1
 		}
+		modifier = {
+			war_support_weekly_factor = 0.04
+		}
 		complete_effect = {
 		}   
 	}
@@ -124,6 +127,9 @@ Yan_an_Rectification_Movement= {
 		fire_only_once = no
 		ai_will_do = {
 			factor = 1
+		}
+		modifier = {
+			war_support_weekly_factor = 0.04
 		}
 		complete_effect = {
 		}   

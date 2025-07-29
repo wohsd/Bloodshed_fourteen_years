@@ -64,7 +64,34 @@ Liberate_White_Zone: "解放白区"
 Liberate_White_Zone_desc: ""白区"称谓源于政治色谱体系，"白"象征国民党统治的反革命性质，与象征革命的"红区"形成二元对立。中共中央自1927年8月后正式使用该术语指代国民党实际控制区域。随着国共对峙态势变化，衍生出"蒋管区"等替代称谓，但其核心内涵始终指涉政权性质而非单纯地理空间。"
 Renovation_White_District: "在白区进行改造"
 
-YananRectificationtip: "当前党内重心：开展整风学习\n\n党的总路线：左倾  \n\n党内的思想：团结\n\n苏联的态度：怀疑"
+Rectification_movement: "整风运动"
+
+unlock_YananRectification: "选择§Y整风重心§!："
+YananRectification_effect_tip: "当这个§Y整风重心§!被选择后，生效的§Y效果§!："
+
+
+YananRectificationtip: "当前党内重心：[YananRectification_effect]\n\n党的总路线：[PRC_Road]  \n\n党内的思想：[PRC_thought]\n\n苏联的态度：[PRC_attitude]"
+
+YananRectification_effect: "未选择重心"
+YananRectification_effect_1: "高级干部先行"
+YananRectification_effect_2: "党的自我革命"
+YananRectification_effect_3: "全党作风教育"
+YananRectification_effect_4: "反对党八股"
+
+PRC_Road: "过于左倾"
+PRC_Road_1: "完全左倾"
+PRC_Road_2: "过于右倾"
+PRC_Road_3: "完全右倾"
+
+PRC_thought: "分外团结" 
+PRC_thought_1: "相对团结"
+PRC_thought_2: "毫无团结"
+
+PRC_attitude: "极度相信"
+PRC_attitude_1: "格外相信"
+PRC_attitude_2: "保持怀疑"
+
+
 
 Promote_Party_School: "开展党校宣传"
 Eliminating_Eight_legged_Communist_Party: "破除党八股"

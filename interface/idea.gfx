@@ -1,5 +1,8 @@
 spriteTypes = {
-
+	spriteType = {
+		name = "GFX_modifiers_Rectification_movement"
+		texturefile = "gfx/interface/ideas/PRC/Rectification_movement.png"
+	} 
 
 	spriteType = {
 		name = "GFX_idea_Great_Purge_Western_Hunan_Hubei"
