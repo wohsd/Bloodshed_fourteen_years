@@ -59,12 +59,12 @@ Morale_collapsed = {
 
 	enable = { always = yes }
 
-	army_org = -30
-	army_attack_factor = -0.3
-	army_defence_factor =-0.3
+	army_org = -35
+	army_attack_factor = -0.5
+	army_defence_factor =-0.5
 	army_speed_factor=0.1
-	breakthrough_factor=-0.3
-	army_org_regain=-0.3
+	breakthrough_factor=-0.5
+	army_org_regain=-0.5
 	
 }
 

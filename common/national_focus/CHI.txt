@@ -583,7 +583,27 @@ focus_tree = {
 		}
 		x = 61
 		y = 11
-
+		completion_reward = {
+			RAJ={
+				add_opinion_modifier = {
+					target = CHI
+					modifier = supported_the_chinese		
+				}
+			}
+			USA={
+				add_opinion_modifier = {
+					target = CHI
+					modifier = supported_the_chinese		
+				}
+			}
+			SOV={
+				add_opinion_modifier = {
+					target = CHI
+					modifier = supported_the_chinese		
+				}
+			}
+			
+		}
 	}
 	focus = {
 		id = CHIFocus_7
@@ -605,7 +625,14 @@ focus_tree = {
 		}
 		x = 61
 		y = 13
-
+		completion_reward = {
+			CHI={
+				add_opinion_modifier = {
+					target = GER
+					modifier = condemn_aggression
+				}
+			}
+		}
 	}
 	focus = {
 		id = Wang_Jingwei_Leadership
@@ -769,7 +796,14 @@ focus_tree = {
 		}
 		x = 64
 		y = 12
-
+		completion_reward = {
+			CHI={
+				add_opinion_modifier = {
+					target = USA
+					modifier = YUG_sold_planes
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_8
@@ -1449,6 +1483,10 @@ focus_tree = {
 							temp_National_literacy_var = 3
 						}
 					National_literacy_add = yes
+					add_to_variable = {
+						CHI_research_speed_factor = 0.02
+						tooltip = research_speed_factor_tt
+					}
 				}
 
 	}
@@ -1470,6 +1508,10 @@ focus_tree = {
 							temp_National_literacy_var = 3
 						}
 					National_literacy_add = yes
+					add_to_variable = {
+						CHI_research_speed_factor = 0.02
+						tooltip = research_speed_factor_tt
+					}
 				}
 
 	}
@@ -2211,6 +2253,10 @@ focus_tree = {
 							temp_National_literacy_var = 10
 						}
 					National_literacy_add = yes
+					add_to_variable = {
+						CHI_research_speed_factor = 0.02
+						tooltip = research_speed_factor_tt
+					}
 				}
 
 	}
@@ -2233,6 +2279,10 @@ focus_tree = {
 							temp_National_literacy_var = 3
 						}
 					National_literacy_add = yes
+					add_to_variable = {
+						CHI_research_speed_factor = 0.02
+						tooltip = research_speed_factor_tt
+					}
 				}
 
 	}
@@ -2257,6 +2307,10 @@ focus_tree = {
 							temp_National_literacy_var = 3
 						}
 					National_literacy_add = yes
+					add_to_variable = {
+						CHI_research_speed_factor = 0.02
+						tooltip = research_speed_factor_tt
+					}
 				}
 
 	}
@@ -2281,6 +2335,10 @@ focus_tree = {
 							temp_National_literacy_var = 3
 						}
 					National_literacy_add = yes
+					add_to_variable = {
+						CHI_research_speed_factor = 0.02
+						tooltip = research_speed_factor_tt
+					}
 				}
 
 	}
@@ -2850,7 +2908,14 @@ focus_tree = {
 		}
 		x = 58
 		y = 12
-
+		completion_reward = {
+			CHI={
+				add_opinion_modifier = {
+					target = USA
+					modifier = YUG_sold_planes
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_5
@@ -2894,7 +2959,9 @@ focus_tree = {
 		}
 		x = 58
 		y = 14
-
+		completion_reward = {
+			unlock_decision_category_tooltip = Hump_route
+		}
 	}
 	focus = {
 		id = CHIFocus_14
@@ -2966,7 +3033,12 @@ focus_tree = {
 		}
 		x = 79
 		y = 14
-
+		completion_reward = {
+			add_to_variable = {
+						CHI_research_speed_factor = 0.1
+						tooltip = research_speed_factor_tt
+					}
+		}
 	} 
 	focus = {
 		id = CHIFocus_24

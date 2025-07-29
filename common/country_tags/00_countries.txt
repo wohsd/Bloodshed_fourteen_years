@@ -1,3 +1,4 @@
+GER = "countries/GER.txt"#德国
 CHI = "countries/CHI.txt"#民国（含南京国民政府、改组派）
 ROD = "countries/ROD.txt"#东北军（含伪满、西安绥靖公署）
 ROX = "countries/ROX.txt"#新疆

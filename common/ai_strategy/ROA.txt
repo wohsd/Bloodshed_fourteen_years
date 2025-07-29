@@ -9,6 +9,6 @@ ROA_buffer_77 = {
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = JAP
-		value = 100
+		value = 10
 	} 
 }

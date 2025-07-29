@@ -1262,6 +1262,10 @@ news_event = {
 						owner = JAP
 					}
 					create_unit = {
+						division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+					create_unit = {
 						division = "name = \"华中方面军第11师团第10旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
 						owner = JAP
 					}

@@ -106,6 +106,7 @@ CHI_Define = {
 		}
 		value = 100
 	}
+
 	ai_strategy = {
 		type = front_unit_request
 		state_trigger = {
@@ -121,5 +122,21 @@ CHI_Define = {
 	ai_strategy = {
 		type = garrison_reinforcement_priority
 		value = 100
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			212
+			255
+			285
+			306
+			166
+			168
+		}
+		ratio = 1
+		area = asia
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
 	}
 }

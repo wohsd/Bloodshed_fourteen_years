@@ -12,13 +12,11 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
         artillery= { x = 0 y = 1 }
-        engineer = { x = 0 y = 2 }
 	}
 }
 division_template = {
-	name = "步兵团" 
+	name = "地方民团" 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -42,61 +40,55 @@ units = {
     division= {	
 		location = 2178
 		division_template = "骑兵旅"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "骑兵旅"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		location = 2178
-		division_template = "步兵团"
-		start_experience_factor = 0.3
+		division_template = "地方民团"
+		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {	
@@ -116,7 +108,14 @@ units = {
 		division_template = "鲁军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-	}division= {	
+	}
+	division= {	
+		location = 2178
+		division_template = "鲁军"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
 		location = 2178
 		division_template = "鲁军"
 		start_experience_factor = 0.3

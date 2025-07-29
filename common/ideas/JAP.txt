@@ -22,6 +22,7 @@ ideas = {
 				supply_consumption_factor= -0.15
 				supply_factor= 0.15
 				supply_node_range= 0.15	
+				terrain_penalty_reduction= 0.2	5	
 			}
 		}
 		Death_in_March = {
