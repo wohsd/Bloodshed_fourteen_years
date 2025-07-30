@@ -1169,6 +1169,9 @@
  MODIFIER_INDUSTRIAL_REFIT_IC_COST_FACTOR_DESC: "改装一艘舰艇所需的产能花费"
  MODIFIER_EQUIPMENT_UPGRADE_XP_COST: "装备经验花费"
  MODIFIER_EQUIPMENT_UPGRADE_XP_COST_DESC: "更换装备的经验花费"
+
+ equipment_upgrade_xp_cost_tt: "$MODIFIER_EQUIPMENT_UPGRADE_XP_COST$：$RIGHT|-=%1$"
+
  MODIFIER_NAVAL_EQUIPMENT_UPGRADE_XP_COST: "海军装备经验花费"
  MODIFIER_NAVAL_EQUIPMENT_UPGRADE_XP_COST_DESC: "更换海军装备经验花费"
  naval_equipment_upgrade_xp_cost_tt: "$MODIFIER_NAVAL_EQUIPMENT_UPGRADE_XP_COST$：$RIGHT|-=%1$"
@@ -2138,6 +2141,7 @@
  experience_gain_artillery_combat_factor_tt: "$modifier_experience_gain_artillery_combat_factor$：$RIGHT|+=%1$"
  modifier_production_cost_supply_node_factor: "§Y补给中心§!建造花费"
  modifier_production_cost_supply_node_factor_desc: "改变补给中心建造花费"
+ production_cost_supply_node_factor_tt: "$modifier_production_cost_supply_node_factor$：$RIGHT|-=%1$"
  MODIFIER_SUPPLY_PENALTY_ON_CORE: "核心领土战斗补给耗尽惩罚"
  supply_combat_penalties_on_core_factor: "核心领土战斗补给耗尽惩罚"
  supply_combat_penalties_on_core_factor_tt: " $supply_combat_penalties_on_core_factor$：$RIGHT|-=%1$"

@@ -99,24 +99,72 @@ focus_tree = {
 		x = 44
 		y = 14
 		completion_reward = {
-
+			set_country_flag = PRC_Road
+			set_country_flag = PRC_attitude_2
+			set_country_flag = PRC_thought_1
+			set_power_balance = {
+				id = PRC_struggle_balance
+			}
+			unlock_decision_category_tooltip = Yan_an_Rectification_Movement
 			add_dynamic_modifier = {
 				modifier = Rectification_movement
-			}
-			add_to_variable = {PRC_army_morale_factor=0.01}
-			add_to_variable = {PRC_planning_speed=0.01}
-			add_to_variable = {PRC_pocket_penalty=-0.01}
-			add_to_variable = {PRC_army_strength_factor=0.01}
-			add_to_variable = {PRC_max_command_power=0.01}
-			add_to_variable = {PRC_drift_defence_factor=0.01}
-			add_to_variable = {PRC_intelligence_agency_defense=0.01}
-			add_to_variable = {PRC_experience_loss_factor=-0.01}
-			add_to_variable = {PRC_forced_surrender_limit=0.01}
-			add_to_variable = {PRC_political_power_factor=0.01}
-			add_to_variable = {PRC_research_speed_factor=0.01}
-			add_to_variable = {PRC_stability_weekly_factor=0.01}
-			add_to_variable = {PRC_war_stability_factor=0.01}
-			add_to_variable = {PRC_war_support_factor=0.01}
+			} 
+			add_to_variable = {  
+				PRC_army_morale_factor = 0.01  
+				tooltip = army_morale_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_planning_speed = 0.01  
+				tooltip = planning_speed_factor_tt 
+			}  
+			add_to_variable = {  
+				PRC_pocket_penalty = -0.01  
+				tooltip = Pocket_penalty_tt  
+			}  
+			add_to_variable = {  
+				PRC_army_strength_factor = 0.01  
+				tooltip = army_strength_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_max_command_power = 0.01  
+				tooltip = max_command_power_tt  
+			}  
+			add_to_variable = {  
+				PRC_drift_defence_factor = 0.01  
+				tooltip = drift_defence_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_intelligence_agency_defense = 0.01  
+				tooltip = intelligence_agency_defense_tt  
+			}  
+			add_to_variable = {  
+				PRC_experience_loss_factor = -0.01  
+				tooltip = experience_loss_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_forced_surrender_limit = 0.01  
+				tooltip = forced_surrender_limit_tt  
+			}  
+			add_to_variable = {  
+				PRC_political_power_factor = 0.01  
+				tooltip = political_power_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_research_speed_factor = 0.01  
+				tooltip = research_speed_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_stability_weekly_factor = 0.01  
+				tooltip = stability_weekly_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_war_stability_factor = 0.01  
+				tooltip = war_stability_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_war_support_factor = 0.01  
+				tooltip = war_support_factor_tt  
+			}  
 
 		}
 	}
@@ -128,6 +176,80 @@ focus_tree = {
 		y = 14
 		completion_reward = {
 			army_experience = 50
+			remove_ideas = Long_March_Trauma
+
+			add_to_variable = {
+				PRC_army_attack_factor = 0.01
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_org_factor = 0.01
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				PRC_breakthrough_factor = 0.01
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_morale_factor = 0.01
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				PRC_max_planning_factor = 0.01
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				PRC_org_loss_when_moving = -0.01
+				tooltip = org_loss_when_moving_tt
+			}
+			add_to_variable = {
+				PRC_planning_speed = 0.01
+				tooltip = planning_speed_factor_tt
+			}
+			add_to_variable = {
+				PRC_pocket_penalty = -0.01
+				tooltip = Pocket_penalty_tt
+			}
+			add_to_variable = {
+				PRC_supply_consumption_factor = -0.01
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_attack_speed_factor = 0.01
+				tooltip = army_attack_speed_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_defence_factor = 0.01
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				PRC_command_power_gain_mult = 0.01
+				tooltip = command_power_gain_mult_tt
+			}
+			add_to_variable = {
+				PRC_dig_in_speed_factor = 0.01
+				tooltip = dig_in_speed_factor_tt
+			}
+			add_to_variable = {
+				PRC_experience_gain_army_factor = 0.01
+				tooltip = experience_gain_army_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_core_attack_factor = 0.01
+				tooltip = army_core_attack_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_core_defence_factor = 0.01
+				tooltip = army_core_defence_factor_tt
+			}
+			add_to_variable = {
+				PRC_recruitable_population_factor = 0.01
+				tooltip = recruitable_population_factor_tt
+			}
+			add_to_variable = {
+				PRC_conscription_factor = 0.01
+				tooltip = conscription_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1625,9 +1747,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 17
-			completion_reward = {
-					remove_ideas = Long_March_Trauma
-				}
+		completion_reward = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}	
+		}
 
 	}
 	focus = {
@@ -1684,9 +1811,14 @@ focus_tree = {
 		}
 		x = 35
 		y = 17
-			completion_reward = {
-					remove_ideas = Shortage_commanders_fighters
-				}
+		completion_reward = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}		
+		}
 
 	}
 	focus = {
@@ -1704,7 +1836,16 @@ focus_tree = {
 		}
 		x = 34
 		y = 18
-
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus101
@@ -1713,9 +1854,22 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus94
 		}
-		x = 34
+		x = 34 
 		y = 19
-
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = SOV_supported_china_good
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = SOV_supported_china_good
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus103
@@ -1794,6 +1948,7 @@ focus_tree = {
 		x = 38
 		y = 16
 		completion_reward = {
+			custom_effect_tooltip = complete_effect
 			add_to_variable = {
 				CHI_research_speed_factor = 0.05
 				tooltip = research_speed_factor_tt
@@ -1823,6 +1978,7 @@ focus_tree = {
 		x = 38
 		y = 18
 		completion_reward = {
+			custom_effect_tooltip = complete_effect
 			add_to_variable = {
 				CHI_research_speed_factor = 0.05
 				tooltip = research_speed_factor_tt
@@ -1839,6 +1995,7 @@ focus_tree = {
 		x = 38
 		y = 19
 		completion_reward = {
+			custom_effect_tooltip = complete_effect
 			add_to_variable = {
 				CHI_research_speed_factor = 0.05
 				tooltip = research_speed_factor_tt
@@ -1951,7 +2108,8 @@ focus_tree = {
 				PRC_army_strength_factor=0.02
 				tooltip = army_strength_factor_tt
 			}
-			
+			clr_country_flag = PRC_Road
+			set_country_flag = PRC_Road_4
 		}
 	}
 	focus = {
@@ -1983,6 +2141,9 @@ focus_tree = {
 				PRC_war_support_factor=0.02
 				tooltip = war_support_factor_tt
 			}
+
+			clr_country_flag = PRC_thought_1
+			set_country_flag = PRC_thought
 		}
 	}
 	focus = {
@@ -2088,7 +2249,11 @@ focus_tree = {
 		}
 		x = 44
 		y = 18
-
+		completion_reward = {
+			remove_dynamic_modifier = {
+				modifier = Rectification_movement
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus112
@@ -2122,7 +2287,17 @@ focus_tree = {
 		}
 		x = 50
 		y = 16
-
+		completion_reward = {
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {
+				PRC_equipment_upgrade_xp_cost=-0.05
+				tooltip = equipment_upgrade_xp_cost_tt
+			}
+			add_to_variable = {
+				PRC_equipment_capture_factor=0.1
+				tooltip = equipment_capture_factor_tt
+			}  
+		}
 	}
 	focus = { 
 		id = PRC_focus109
@@ -2133,7 +2308,15 @@ focus_tree = {
 		}
 		x = 53
 		y = 15
-
+		completion_reward = {
+			gain_xp = 50
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus113
@@ -2144,7 +2327,9 @@ focus_tree = {
 		}
 		x = 53
 		y = 16
-
+		completion_reward = {
+			remove_ideas = Shortage_commanders_fighters
+		}
 	}
 	focus = {
 		id = PRC_focus65
@@ -2229,7 +2414,60 @@ focus_tree = {
 		x = 28
 		y = 16
 			completion_reward = {
-					add_ideas = Mass_production_movement
+					add_dynamic_modifier = {
+						modifier = Mass_production_movement
+					}
+
+					add_to_variable = {  
+						PRC_production_cost_supply_node_factor =-0.01 
+						tooltip = production_cost_supply_node_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_production_speed_arms_factory_factor =0.01 
+						tooltip = production_speed_arms_factory_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_production_speed_industrial_complex_factor =0.01 
+						tooltip = production_speed_industrial_complex_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_production_speed_infrastructure_factor =0.01 
+						tooltip = production_speed_infrastructure_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_production_speed_supply_node_factor =0.01 
+						tooltip = production_speed_supply_node_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_supply_factor =0.01 
+						tooltip = supply_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_production_factory_start_efficiency_factor =0.01 
+						tooltip = production_factory_start_efficiency_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_production_factory_max_efficiency_factor =0.01 
+						tooltip = production_factory_max_efficiency_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_production_factory_efficiency_gain_factor =0.01 
+						tooltip = production_factory_efficiency_gain_factor_tt  
+					}  
+
+					add_to_variable = {  
+						PRC_line_change_production_efficiency_factor =0.01 
+						tooltip = line_change_production_efficiency_factor_tt  
+					}  
+					
 					655 = {
 							add_building_construction = {
 									type = arms_factory
@@ -2254,7 +2492,14 @@ focus_tree = {
 		}
 		x = 26
 		y = 17
-
+		completion_reward = {
+			unlock_decision_category_tooltip = Yan_an_Literature_Art_Association
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {
+				CHI_research_speed_factor = 0.05
+				tooltip = research_speed_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus71
@@ -2290,6 +2535,13 @@ focus_tree = {
 		y = 18
 			completion_reward = {
 					add_ideas = The_spirit_Nanniwan
+					116={
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+					
 				}
 
 	}
@@ -2366,13 +2618,10 @@ focus_tree = {
 					681 = {
 							transfer_state_to = JCJ
 						}
-					85 = {
-						transfer_state_to = JCJ
-					}
-					169 = {
+					688 = {
 							transfer_state_to = NAC
 						}
-					125 = {
+					94 = {
 							transfer_state_to = NAC
 						}
 				}
@@ -2415,7 +2664,22 @@ focus_tree = {
 		}
 		x = 24
 		y = 19
-
+		completion_reward = {
+			custom_effect_tooltip = PRC_focus64
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {  
+				PRC_production_cost_supply_node_factor =-0.05 
+				tooltip = production_cost_supply_node_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_production_speed_supply_node_factor =0.05 
+				tooltip = production_speed_supply_node_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_supply_factor =0.05 
+				tooltip = supply_factor_tt  
+			}  
+		}
 	}
 	focus = {
 		id = PRC_focus96
@@ -2432,6 +2696,33 @@ focus_tree = {
 		}
 		x = 26
 		y = 19
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = PRC_focus64
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {  
+				PRC_production_factory_start_efficiency_factor =0.01 
+				tooltip = production_factory_start_efficiency_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_production_factory_max_efficiency_factor =0.01 
+				tooltip = production_factory_max_efficiency_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_production_factory_efficiency_gain_factor =0.01 
+				tooltip = production_factory_efficiency_gain_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_line_change_production_efficiency_factor =0.01 
+				tooltip = line_change_production_efficiency_factor_tt  
+			}
+		}
 
 	}
 	focus = {
@@ -2449,7 +2740,31 @@ focus_tree = {
 		}
 		x = 30
 		y = 19
+		completion_reward = {
+			add_stability = 0.03
+			custom_effect_tooltip = PRC_focus64
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {  
+				PRC_production_factory_start_efficiency_factor =0.04 
+				tooltip = production_factory_start_efficiency_factor_tt  
+			}  
 
+			add_to_variable = {  
+				PRC_production_factory_max_efficiency_factor =0.04 
+				tooltip = production_factory_max_efficiency_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_production_factory_efficiency_gain_factor =0.04 
+				tooltip = production_factory_efficiency_gain_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_line_change_production_efficiency_factor =0.04
+				tooltip = line_change_production_efficiency_factor_tt  
+			}  
+								
+		}
 	}
 	focus = {
 		id = PRC_focus104
@@ -2463,7 +2778,18 @@ focus_tree = {
 		}
 		x = 28
 		y = 20
-
+		completion_reward = {
+			custom_effect_tooltip = PRC_focus64
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {  
+				PRC_line_change_production_efficiency_factor =0.05
+				tooltip = line_change_production_efficiency_factor_tt  
+			}  
+			add_to_variable = {  
+				PRC_production_factory_max_efficiency_factor =0.05 
+				tooltip = production_factory_max_efficiency_factor_tt  
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus105
@@ -2475,6 +2801,7 @@ focus_tree = {
 		x = 32
 		y = 18
 		completion_reward = {
+			add_political_power = 100
 			add_stability = 0.05
 		}
 	}
@@ -2487,7 +2814,26 @@ focus_tree = {
 		}
 		x = 28
 		y = 21
+		completion_reward = {
+			remove_ideas = Closed_economy
+			custom_effect_tooltip = PRC_focus64
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {  
+				PRC_production_speed_arms_factory_factor =0.04
+				tooltip = production_speed_arms_factory_factor_tt  
+			}  
 
+			add_to_variable = {  
+				PRC_production_speed_industrial_complex_factor =0.04 
+				tooltip = production_speed_industrial_complex_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_production_speed_infrastructure_factor =0.04 
+				tooltip = production_speed_infrastructure_factor_tt  
+			}
+			
+		}
 	}
 	focus = {
 		id = PRC_focus107
@@ -2504,7 +2850,29 @@ focus_tree = {
 		}
 		x = 25
 		y = 21
+		completion_reward = {
+			custom_effect_tooltip = PRC_focus64
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {  
+				PRC_production_factory_start_efficiency_factor =0.03 
+				tooltip = production_factory_start_efficiency_factor_tt  
+			}  
 
+			add_to_variable = {  
+				PRC_production_factory_max_efficiency_factor =0.03 
+				tooltip = production_factory_max_efficiency_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_production_factory_efficiency_gain_factor =0.03 
+				tooltip = production_factory_efficiency_gain_factor_tt  
+			}  
+
+			add_to_variable = {  
+				PRC_line_change_production_efficiency_factor =0.03 
+				tooltip = line_change_production_efficiency_factor_tt  
+			}  			
+		}
 	}
 	focus = {
 		id = PRC_focus110
@@ -2515,6 +2883,81 @@ focus_tree = {
 		}
 		x = 55
 		y = 16
-
+		completion_reward = {
+			custom_effect_tooltip = People_red_Army
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {
+				PRC_army_attack_factor = 0.1
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_org_factor = 0.15
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				PRC_breakthrough_factor = 0.1
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_morale_factor = 0.1
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				PRC_max_planning_factor = 0.1
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				PRC_org_loss_when_moving = -0.1
+				tooltip = org_loss_when_moving_tt
+			}
+			add_to_variable = {
+				PRC_planning_speed = 0.2
+				tooltip = planning_speed_factor_tt
+			}
+			add_to_variable = {
+				PRC_pocket_penalty = -0.2
+				tooltip = Pocket_penalty_tt
+			}
+			add_to_variable = {
+				PRC_supply_consumption_factor = -0.1
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_attack_speed_factor = 0.15
+				tooltip = army_attack_speed_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_defence_factor = 0.1
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				PRC_command_power_gain_mult = 0.05
+				tooltip = command_power_gain_mult_tt
+			}
+			add_to_variable = {
+				PRC_dig_in_speed_factor = 0.05
+				tooltip = dig_in_speed_factor_tt
+			}
+			add_to_variable = {
+				PRC_experience_gain_army_factor = 0.1
+				tooltip = experience_gain_army_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_core_attack_factor = 0.35
+				tooltip = army_core_attack_factor_tt
+			}
+			add_to_variable = {
+				PRC_army_core_defence_factor = 0.35
+				tooltip = army_core_defence_factor_tt
+			}
+			add_to_variable = {
+				PRC_recruitable_population_factor = 0.15
+				tooltip = recruitable_population_factor_tt
+			}
+			add_to_variable = {
+				PRC_conscription_factor = 0.1
+				tooltip = conscription_factor_tt
+			}
+		}
 	}
 }

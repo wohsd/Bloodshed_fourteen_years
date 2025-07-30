@@ -84,30 +84,37 @@ defined_text = {
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_Road
 		}
 		localization_key = PRC_Road
 	}
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_Road_1
 		}
 		localization_key = PRC_Road_1
 	}
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_Road_2
 		}
 		localization_key = PRC_Road_2
 	}
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_Road_3
 		}
 		localization_key = PRC_Road_3
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			has_country_flag = PRC_Road_4
+		}
+		localization_key = PRC_Road_4
 	}
 }
 
@@ -118,21 +125,21 @@ defined_text = {
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_thought_1
 		}
 		localization_key = PRC_thought_1
 	}
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_thought
 		}
 		localization_key =  PRC_thought
 	}
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_thought_2
 		}
 		localization_key = PRC_thought_2
 	}
@@ -147,23 +154,30 @@ defined_text = {
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_attitude
 		}
 		localization_key = PRC_attitude
 	}
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_attitude_1
 		}
 		localization_key =  PRC_attitude_1
 	}
 	text = { 
 		trigger = {
 			original_tag = PRC
-			#has_country_flag = 
+			has_country_flag = PRC_attitude_2
 		}
 		localization_key = PRC_attitude_2
+	}
+	text = { 
+		trigger = {
+			original_tag = PRC
+			has_country_flag = PRC_attitude_3
+		}
+		localization_key = PRC_attitude_3
 	}
 }
 

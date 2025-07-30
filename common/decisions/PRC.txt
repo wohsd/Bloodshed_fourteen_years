@@ -136,6 +136,9 @@ Yan_an_Rectification_Movement= {
 	}
 	Wang_road = {
 		available = {
+			NOT = {
+				has_country_flag = PRC_attitude_3
+			}
 		}  
 		visible = {
 			has_country_flag = PRC_Wang_FLAG
@@ -147,10 +150,19 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.1
+			}
+			set_country_flag = PRC_attitude_1
+			clr_country_flag = PRC_attitude_2
 		}   
 	}
 	Wang_road1 = {
 		available = {
+			NOT = {
+				has_country_flag = PRC_attitude_3
+			}
 		}  
 		visible = {
 			has_country_flag = PRC_Wang_FLAG
@@ -162,10 +174,18 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
-		}     
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.1
+			}
+		}      
 	}    
 	Wang_road2 = {
 		available = {
+			NOT = {
+				has_country_flag = PRC_attitude_3
+			}
+			has_country_flag = PRC_attitude_1
 		}  
 		visible = {
 			has_country_flag = PRC_Wang_FLAG
@@ -177,25 +197,39 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
-		}   
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.1
+			}
+			set_country_flag = PRC_attitude
+			clr_country_flag = PRC_attitude_1
+		}    
 	}      
 	Mao_road = {
 		available = {
+			has_country_flag = PRC_attitude
 		}  
 		visible = {
 			has_country_flag = PRC_Mao_FLAG
 		}
 		cost = 0 
 		days_remove= 30
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
+			set_country_flag = PRC_attitude_2
+			clr_country_flag = PRC_attitude
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.1
+			}
 		}   
-	}
+	} 
 	Mao_road1 = {
-		available = {
+		available = { 
+			has_country_flag = PRC_attitude_3
 		}  
 		visible = {
 			has_country_flag = PRC_Mao_FLAG
@@ -207,6 +241,12 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
+			PRC = {
+				declare_war_on = {
+					target = CHI
+					type = annex_everything
+				}
+			}
 		}     
 	}    
 	Mao_road2 = {
@@ -222,6 +262,10 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.1
+			}
 		}   
 	} 
 	Mao_road3 = {
@@ -237,6 +281,10 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.1
+			}
 		}   
 	}  
 	
@@ -252,8 +300,13 @@ Yan_an_Rectification_Movement= {
 		ai_will_do = {
 			factor = 1
 		}
+		modifier = {
+			political_power_cost = -0.05
+		}
 		complete_effect = {
+			
 		}   
+
 	}
 	Zhou_road1 = {
 		available = {
@@ -268,6 +321,10 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.1
+			}
 		}     
 	}    
 	Zhou_road2 = {
@@ -283,6 +340,10 @@ Yan_an_Rectification_Movement= {
 			factor = 1
 		}
 		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.1
+			}
 		}   
 	} 
 }                  

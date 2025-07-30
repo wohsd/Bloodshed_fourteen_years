@@ -70,7 +70,7 @@ unlock_YananRectification: "选择§Y整风重心§!："
 YananRectification_effect_tip: "当这个§Y整风重心§!被选择后，生效的§Y效果§!："
 
 
-YananRectificationtip: "当前党内重心：[YananRectification_effect]\n\n党的总路线：[PRC_Road]  \n\n党内的思想：[PRC_thought]\n\n苏联的态度：[PRC_attitude]"
+YananRectificationtip: "当前党内重心：[YananRectification_effect]\n\n党的总路线：[PRC_Road]  \n\n党内的思想：[PRC_thought]\n\n对国民党的态度：[PRC_attitude]"
 
 YananRectification_effect: "未选择重心"
 YananRectification_effect_1: "高级干部先行"
@@ -82,6 +82,7 @@ PRC_Road: "过于左倾"
 PRC_Road_1: "完全左倾"
 PRC_Road_2: "过于右倾"
 PRC_Road_3: "完全右倾"
+PRC_Road_4: "符合预期"
 
 PRC_thought: "分外团结" 
 PRC_thought_1: "相对团结"
@@ -90,16 +91,16 @@ PRC_thought_2: "毫无团结"
 PRC_attitude: "极度相信"
 PRC_attitude_1: "格外相信"
 PRC_attitude_2: "保持怀疑"
-
+PRC_attitude_3: "彻底决裂"
 
 
 Promote_Party_School: "开展党校宣传"
 Eliminating_Eight_legged_Communist_Party: "破除党八股"
-Wang_road: "亲近苏联"
+Wang_road: "亲近国民党"
 Wang_road1: "服从共产国际的安排"
 Wang_road2: "一切为了统一战线"
 
-Mao_road: "怀疑苏联"
+Mao_road: "怀疑国民党"
 Mao_road1: "偷袭国统区"
 Mao_road2: "解决苏区时期“左”倾教条主义"
 Mao_road3: "解决抗战时期“右”倾教条主义"
