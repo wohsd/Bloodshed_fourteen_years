@@ -72,11 +72,27 @@ create_intelligence_agency = {
 }
 
 create_operative_leader = {
-	name = PRC_GuSunZhang
+	name = PRC_ZhouEngLai
 	bypass_recruitment = no 
 	available_to_spy_master = yes 
-	gfx = GFX_PRC_GuSunZhang
-	traits = {operative_escape_artist}
+	gfx = GFX_PRC_ZhouEngLai
+	traits = {}
+	nationalities = { PRC }
+}
+create_operative_leader = {
+	name = PRC_GuoRuKui
+	bypass_recruitment = no 
+	available_to_spy_master = yes 
+	gfx = GFX_PRC_GuoRuKui
+	traits = {}
+	nationalities = { PRC }
+}
+create_operative_leader = {
+	name = PRC_LiKeNong
+	bypass_recruitment = no 
+	available_to_spy_master = yes 
+	gfx = GFX_PRC_LiKeNong
+	traits = {}
 	nationalities = { PRC }
 }
 add_intel = {

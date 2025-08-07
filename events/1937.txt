@@ -274,7 +274,7 @@ country_event = {
 		
 	}
 	option = {
-		name = ShangHai.1.a
+		name = ShangHai.0.a
 		228={set_demilitarized_zone = no}
 		647={set_demilitarized_zone = no}
 		670={set_demilitarized_zone = no}

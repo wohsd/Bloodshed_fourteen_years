@@ -587,19 +587,19 @@ focus_tree = {
 			RAJ={
 				add_opinion_modifier = {
 					target = CHI
-					modifier = supported_the_chinese		
+					modifier = SOV_supported_china_good		
 				}
 			}
 			USA={
 				add_opinion_modifier = {
 					target = CHI
-					modifier = supported_the_chinese		
+					modifier = SOV_supported_china_good		
 				}
 			}
 			SOV={
 				add_opinion_modifier = {
 					target = CHI
-					modifier = supported_the_chinese		
+					modifier = SOV_supported_china_good		
 				}
 			}
 			
@@ -629,7 +629,13 @@ focus_tree = {
 			CHI={
 				add_opinion_modifier = {
 					target = GER
-					modifier = condemn_aggression
+					modifier = attitude_hostile
+				}
+			}
+			GER={
+				add_opinion_modifier = {
+					target = CHI
+					modifier = attitude_hostile
 				}
 			}
 		}
@@ -800,7 +806,7 @@ focus_tree = {
 			CHI={
 				add_opinion_modifier = {
 					target = USA
-					modifier = YUG_sold_planes
+					modifier = SOV_supported_china_good
 				}
 			}
 		}
@@ -1151,7 +1157,15 @@ focus_tree = {
 		}
 		x = 75
 		y = 11
-
+		completion_reward = {
+			add_stability = 0.3
+			add_war_support = 0.5
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = 20
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = CHIFocus_20
@@ -2912,7 +2926,7 @@ focus_tree = {
 			CHI={
 				add_opinion_modifier = {
 					target = USA
-					modifier = YUG_sold_planes
+					modifier = SOV_supported_china_good
 				}
 			}
 		}
@@ -2948,7 +2962,15 @@ focus_tree = {
 		}
 		x = 56
 		y = 14
-
+		completion_reward = {
+			USA = {
+				send_equipment = {
+					equipment = transport_plane_equipment_2
+					amount = 30
+					target = CHI
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_11
@@ -3092,7 +3114,10 @@ focus_tree = {
 		}
 		x = 72
 		y = 12
-
+		completion_reward = {
+			
+			
+		}
 	}
 	focus = {
 		id = CHIFocus_30

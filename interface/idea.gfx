@@ -25,17 +25,21 @@ spriteTypes = {
 		name = "GFX_Morale_collapsed"
 		texturefile = "gfx/interface/ideas/Morale_collapsed.png"
 	} 
-	spriteType = {
+	spriteType = { 
 		name = "GFX_PRC_MaoZeMing"
 		texturefile = "gfx/interface/ideas/PRC_MaoZeMing.png"
 	} 
 	spriteType = {
-		name = "GFX_PRC_GuSunZhang"
-		texturefile = "gfx/interface/operative/PRC_GuSunZhang.png"
-	}
-	spriteType = {
 		name = "GFX_PRC_ZhouEngLai"
 		texturefile = "gfx/interface/operative/PRC_ZhouEngLai.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_GuoRuKui"
+		texturefile = "gfx/interface/operative/PRC_GuoRuKui.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_LiKeNong"
+		texturefile = "gfx/interface/operative/PRC_LiKeNong.png"
 	}
 	spriteType = {
 		name = "GFX_MaoZeDong1"

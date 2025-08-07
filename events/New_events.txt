@@ -1156,6 +1156,9 @@ news_event = {
 		PRC = {
 			country_event = {id=ROD_1936.1 days=6}
 		}
+
+		news_event = { id=ROD.8 days=35 }
+		news_event = { id=ROD.9 days=55 }
 		}
 		
 	}
@@ -1369,8 +1372,6 @@ news_event = {
 
 	is_triggered_only = yes
 	immediate = {
-		
-		
 	}
 	option = {
 			name = WorldNew.24.a
@@ -1383,17 +1384,20 @@ news_event = {
 	desc = WorldNew.25.d
 
 	picture = GFX_WorldNew_25
-
-	major = yes
 	trigger = {
 		date > 1931.1.1
-		date < 1932.12.1
+		date < 1933.12.1
 	}
+	major = yes
+	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		ROW={
-			white_peace = XZS
+		hidden_effect = {
+			ROW={
+				white_peace = XZS
+			}
 		}
+	
 	}
 	option = {
 		name = WorldNew.25.a

@@ -80,7 +80,6 @@ CHI_research_speed_effect = {
 	icon = GFX_modifiers_CHI_research_speed
 
 	enable = { always = yes }
-	unit_upkeep_attrition_factor=0.01
 	research_speed_factor = CHI_research_speed_factor
 }
 
