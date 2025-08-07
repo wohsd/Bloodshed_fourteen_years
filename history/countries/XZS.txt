@@ -8,14 +8,20 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-XZS={
-	declare_war_on={
-		target=ROW
-		type=annex_everything
+1931.1.1={
+	XZS={
+		declare_war_on={
+			target=ROW
+			type=annex_everything
+		}
+	}
+	every_country = {
+		news_event = {id=WorldNew.25 days = 673}#673
 	}
 }
 
-news_event = {id=WorldNew.25 days = 673 }
+
+
 recruit_character = XZS_TuDengJiaChuo
 set_popularities = {
 	democratic = 0

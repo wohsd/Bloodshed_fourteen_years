@@ -21,8 +21,7 @@ replace_path="common/decisions"
 replace_path="gfx/loadingscreens"
 replace_path="events"
 replace_path="tests"
-
-
 name="222"
 supported_version="1.16.9"
 path="C:/Users/ZhenJiuZhe/Documents/Paradox Interactive/Hearts of Iron IV/mod/Bloodshed_fourteen_years"
+remote_file_id="3412926094"

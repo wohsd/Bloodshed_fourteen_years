@@ -141,6 +141,88 @@ news_event = {
 }
 
 
+
+country_event = {
+		id = ROD_1931.4
+		hidden = yes
+
+		fire_only_once = yes
+	
+		trigger = {
+			AND={
+				date > 1932.2.7
+				date < 1932.2.9
+			}
+		}
+		immediate = {
+			news_event = ROD_1931.5
+		}
+		mean_time_to_happen = {
+			days = 2
+		}
+}
+	
+
+news_event = {
+	id = ROD_1931.5
+	title = ROD_1931.5.t
+	desc = ROD_1931.5.d
+	picture = GFX_ROC_1931_5
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			WDL = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			689={
+				transfer_state_to = WDL
+			}
+		}
+	}
+	option = {
+		name = ROD_1931.5.a
+	}		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 country_event = {
 	id = game_start.1
 	title = game_start.1.t

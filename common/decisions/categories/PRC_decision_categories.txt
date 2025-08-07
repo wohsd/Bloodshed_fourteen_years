@@ -10,6 +10,8 @@ Liberate_White_Zone = {
 	picture = GFX_Buy_gun
 	visible = { 
 		tag=PRC
+		date > 1931.1.1
+		date < 1936.1.1
 	}
 }
 Yan_an_Rectification_Movement= {
@@ -18,6 +20,7 @@ Yan_an_Rectification_Movement= {
 	scripted_gui = Yanan_Rectification_Movement
 	visible = { 
 		tag=PRC 
+		has_country_flag = PRC_focus85
 	}                
 }   
 
@@ -26,6 +29,7 @@ Yan_an_Literature_Art_Association= {
 	picture = GFX_Yan_an_Literature_Art_Association
 	visible = { 
 		tag=PRC 
+		has_country_flag = PRC_focus70
 	}               
 }  
          
@@ -57,6 +61,11 @@ PRC_Buy_gun = {
 	picture = GFX_Buy_gun
 	visible = { 
 		tag=PRC
+		date > 1931.1.1
+		date < 1936.1.1
+	}
+	available = {
+		
 	}
 }
 Long_march_decisions = {
@@ -112,5 +121,6 @@ War_Resistance_Behind_Enemy = {
 	picture = GFX_Buy_gun
 	visible = { 
 		tag=PRC
+		has_country_flag = PRC_focus82
 	}
 }

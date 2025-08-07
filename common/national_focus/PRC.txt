@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus0
 		icon = GFX_goal_generic_construction2
-		cost = 7.00
+		cost = 6.00
 		x = 7
 		y = 0
 			completion_reward = {
@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus8
 		icon = GFX_goal_generic_major_alliance
-		cost = 7.00
+		cost = 6.00
 		x = 13
 		y = 0
 
@@ -35,7 +35,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus17
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
-		cost = 7.00
+		cost = 6.00
 		x = 25
 		y = 0
 			completion_reward = {
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus59
 		icon = GFX_focus_URG_turmoil_of_paso_morlan
-		cost = 7.00
+		cost = 6.00
 		x = 26
 		y = 12
 			available = {
@@ -95,10 +95,11 @@ focus_tree = {
 	focus = {
 		id = PRC_focus85
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		x = 44
 		y = 14
 		completion_reward = {
+			set_country_flag = PRC_focus85
 			set_country_flag = PRC_Road
 			set_country_flag = PRC_attitude_2
 			set_country_flag = PRC_thought_1
@@ -171,7 +172,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus108
 		icon = GFX_focus_ETH_peacekeeping_forces
-		cost = 10.00
+		cost = 8.00
 		x = 53
 		y = 14
 		completion_reward = {
@@ -255,7 +256,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus1
 		icon = GFX_focus_por_workers_of_iberia
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus0
 		}
@@ -269,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus2
 		icon = GFX_goal_generic_cavalry
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus1
 		}
@@ -285,7 +286,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus3
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus2
 		}
@@ -299,7 +300,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus5
 		icon = GFX_goal_generic_production
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus0
 		}
@@ -343,7 +344,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus6
 		icon = GFX_goal_generic_military_sphere
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus5
 		}
@@ -381,7 +382,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus15
 		icon = GFX_goal_generic_build_tank
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus6
 		}
@@ -425,7 +426,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus4
 		icon = GFX_goal_generic_production2
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus0
 		}
@@ -464,7 +465,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus7
 		icon = GFX_goal_generic_production
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus4
 		}
@@ -503,7 +504,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus16
 		icon = GFX_goal_generic_build_tank
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus7
 		}
@@ -549,7 +550,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus9
 		icon = GFX_goal_generic_major_war
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus8
 		}
@@ -569,7 +570,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus10
 		icon = GFX_goal_generic_military_deal
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus8
 		}
@@ -586,7 +587,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus11
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus9
 			focus = PRC_focus10
@@ -601,7 +602,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus37
 		icon = GFX_focus_generic_soviet_politics
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus35
 		}
@@ -667,7 +668,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus40
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus37
 		}
@@ -686,7 +687,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus12
 		icon = GFX_goal_generic_defence
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus0
 		}
@@ -729,7 +730,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus13
 		icon = GFX_goal_generic_construct_military
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus12
 		}
@@ -759,7 +760,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus14
 		icon = GFX_goal_generic_build_tank
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus13
 		}
@@ -818,7 +819,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus75
 		icon = GFX_focus_AUS_frontmiliz_focus
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus37
 		}
@@ -837,7 +838,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus76
 		icon = GFX_focus_AUS_disregard_the_treaties
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus75
 		}
@@ -866,7 +867,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus77
 		icon = GFX_focus_chi_proclaim_rival_government
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus75
 		}
@@ -891,7 +892,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus78
 		icon = GFX_focus_attack_china
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus76
 			focus = PRC_focus77
@@ -903,7 +904,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus50
 		icon = GFX_focus_ARG_legitimize_the_PCA
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus20
 		}
@@ -918,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus53
 		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus50
 		}
@@ -933,7 +934,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus79
 		icon = GFX_focus_SOV_support_spanish_poum
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus37
 		}
@@ -953,7 +954,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus80
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus79
 		}
@@ -985,7 +986,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus52
 		icon = GFX_focus_AUS_union_of_danubian_socialist_republics
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus50
 		}
@@ -1000,7 +1001,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus81
 		icon = GFX_focus_ARG_centralize_power
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus79
 		}
@@ -1018,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus18
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus17
 		}
@@ -1032,7 +1033,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus60
 		icon = GFX_focus_prc_maoism
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus59
 		}
@@ -1047,7 +1048,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus61
 		icon = GFX_focus_generic_advanced_military_studies
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus60
 		}
@@ -1077,7 +1078,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus19
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus17
 		}
@@ -1105,7 +1106,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus28
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus18
 		}
@@ -1122,7 +1123,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus41
 		icon = GFX_focus_prc_infiltration
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus28
 		}
@@ -1170,7 +1171,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus62
 		icon = GFX_focus_CHL_union_of_hispanic_republics
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus60
 		}
@@ -1185,7 +1186,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus22
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus20
 		}
@@ -1202,7 +1203,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus23
 		icon = GFX_focus_SOV_penal_battalions
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus22
 		}
@@ -1221,7 +1222,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus31
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus22
 		}
@@ -1238,7 +1239,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus32
 		icon = GFX_focus_SOV_the_supreme_soviet
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus31
 		}
@@ -1263,7 +1264,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus29
 		icon = GFX_goal_generic_consumer_goods
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus32
 		}
@@ -1295,7 +1296,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus30
 		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus32
 		}
@@ -1310,7 +1311,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus24
 		icon = GFX_focus_POL_beck_ribbentrop
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus22
 		}
@@ -1375,7 +1376,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus43
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus42
 		}
@@ -1470,7 +1471,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus48
 		icon = GFX_focus_generic_china1
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus44
 		}
@@ -1535,7 +1536,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus21
 		icon = GFX_focus_prc_maoism
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus20
 		}
@@ -1561,7 +1562,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus25
 		icon = GFX_focus_SWE_bofors_fly_swatter
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus21
 		}
@@ -1579,7 +1580,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus27
 		icon = GFX_focus_SWE_varnplikt
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus21
 		}
@@ -1594,7 +1595,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus33
 		icon = GFX_goal_rhineland
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus27
 		}
@@ -1612,7 +1613,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus36
 		icon = GFX_focus_ITA_corpo_volontari_della_liberta
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus38
 		}
@@ -1680,7 +1681,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus56
 		icon = GFX_focus_ARG_march_to_la_casa_rosada
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus54
 		}
@@ -1709,7 +1710,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus57
 		icon = GFX_focus_AUS_danubian_socialist_communes
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus56
 		}
@@ -1741,7 +1742,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus68
 		icon = GFX_focus_GER_proletarian_solidarity
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus57
 		}
@@ -1760,7 +1761,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus66
 		icon = GFX_focus_generic_advanced_military_studies
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus57
 		}
@@ -1783,7 +1784,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus67
 		icon = GFX_focus_ICE_embrace_the_workers_revolution
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus57
 		}
@@ -1805,7 +1806,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus69
 		icon = GFX_focus_HUN_goulash_communism
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus57
 		}
@@ -1824,7 +1825,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus94
 		icon = GFX_focus_GER_expand_gestapo
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus68
 		}
@@ -1850,7 +1851,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus101
 		icon = GFX_focus_generic_league_of_nations
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus94
 		}
@@ -1874,18 +1875,25 @@ focus_tree = {
 	focus = {
 		id = PRC_focus103
 		icon = GFX_focus_generic_government_in_exile
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus101
 		}
 		x = 34
 		y = 20
-
+		completion_reward = {
+			custom_effect_tooltip = PRC_Economic_crisis_effect
+			custom_effect_tooltip = complete_effect
+			add_to_variable = {
+				PRC_Economic_consumer_goods_factor = -0.02
+				tooltip = consumer_goods_factor_tt
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus26
 		icon = GFX_focus_SOV_the_road_of_life
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus21
 		}
@@ -1903,7 +1911,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus34
 		icon = GFX_focus_SOV_womens_fascist_movement
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus27
 		}
@@ -1921,7 +1929,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus86
 		icon = GFX_focus_CHL_the_patagonian_giants
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus85
 		}
@@ -1938,7 +1946,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus97
 		icon = GFX_focus_AUS_womens_education_initiative
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus57
 		}
@@ -1958,7 +1966,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus98
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus97
 		}
@@ -1971,7 +1979,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus99
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus98
 		}
@@ -1988,7 +1996,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus100
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus99
 		}
@@ -2005,7 +2013,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus115
 		icon = GFX_focus_eng_liberate_the_home_of_marx
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus97
 		}
@@ -2018,7 +2026,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus116
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus115
 		}
@@ -2031,7 +2039,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus87
 		icon = GFX_focus_yug_pan_slavic_congress
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus86
 		}
@@ -2072,7 +2080,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus88
 		icon = GFX_focus_BUL_destroy_the_zveno
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus86
 		}
@@ -2115,7 +2123,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus89
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus86
 		}
@@ -2149,7 +2157,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus90
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus86
 		}
@@ -2184,7 +2192,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus91
 		icon = GFX_focus_FIN_parmis_devils
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus87
 		}
@@ -2214,7 +2222,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus92
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus87
 		}
@@ -2240,7 +2248,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus93
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 21.00
 		prerequisite = {
 			focus = PRC_focus91
 		}
@@ -2258,7 +2266,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus112
 		icon = GFX_focus_CONGO_copper_cartridges
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus108
 		}
@@ -2281,7 +2289,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus114
 		icon = GFX_focus_FIN_oy_alkoholiliike
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus112
 		}
@@ -2302,7 +2310,7 @@ focus_tree = {
 	focus = { 
 		id = PRC_focus109
 		icon = GFX_goal_unknown 
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus108
 		}
@@ -2321,7 +2329,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus113
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus109
 		}
@@ -2334,7 +2342,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus65
 		icon = GFX_focus_AUS_lawmaking_leniency
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus57
 		}
@@ -2348,7 +2356,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus49
 		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus45
 		}
@@ -2365,7 +2373,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus51
 		icon = GFX_focus_generic_currency_reforms
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus50
 		}
@@ -2387,7 +2395,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus63
 		icon = GFX_focus_chi_united_front
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus60
 		}
@@ -2407,7 +2415,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus64
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus57
 		}
@@ -2486,13 +2494,14 @@ focus_tree = {
 	focus = {
 		id = PRC_focus70
 		icon = GFX_focus_BEL_the_grand_place
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus64
 		}
 		x = 26
 		y = 17
 		completion_reward = {
+			set_country_flag = PRC_focus70
 			unlock_decision_category_tooltip = Yan_an_Literature_Art_Association
 			custom_effect_tooltip = complete_effect
 			add_to_variable = {
@@ -2504,7 +2513,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus71
 		icon = GFX_focus_ARG_defense_and_democracy
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus64
 		}
@@ -2527,7 +2536,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus72
 		icon = GFX_focus_FIN_weapon_caches
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus70
 		}
@@ -2548,7 +2557,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus73
 		icon = GFX_focus_BRA_ethical_internationalism
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus71
 		}
@@ -2571,7 +2580,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus74
 		icon = GFX_focus_BRA_coffee_crisis
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus71
 		}
@@ -2594,21 +2603,22 @@ focus_tree = {
 	focus = {
 		id = PRC_focus82
 		icon = GFX_focus_ITA_grande_rivolta_rurale
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus63
 		}
 		x = 22
 		y = 16
-			completion_reward = {
-					unlock_decision_category_tooltip = War_Resistance_Behind_Enemy
-				}
+		completion_reward = {
+			set_country_flag = PRC_focus82
+			unlock_decision_category_tooltip = War_Resistance_Behind_Enemy
+		}
 
 	}
 	focus = {
 		id = PRC_focus83
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus82
 		}
@@ -2630,7 +2640,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus84
 		icon = GFX_focus_NOR_approach_kretsen
-		cost = 7.00
+		cost = 6.00
 		prerequisite = {
 			focus = PRC_focus82
 		}
@@ -2652,7 +2662,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus95
 		icon = GFX_focus_generic_reinforcing_the_supply_network
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus73
 		}
@@ -2684,7 +2694,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus96
 		icon = GFX_focus_generic_national_security
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus73
 		}
@@ -2728,7 +2738,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus102
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus72
 		}
@@ -2769,7 +2779,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus104
 		icon = GFX_focus_FIN_jaeger_movement
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus96
 		}
@@ -2794,7 +2804,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus105
 		icon = GFX_focus_CONGO_ruanda_urundi
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus68
 		}
@@ -2808,7 +2818,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus106
 		icon = GFX_focus_generic_full_employment
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus104
 		}
@@ -2838,7 +2848,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus107
 		icon = GFX_focus_generic_social_democracy
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus95
 		}
@@ -2877,7 +2887,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus110
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = PRC_focus109
 		}
