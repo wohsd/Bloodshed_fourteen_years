@@ -1,14 +1,22 @@
 ROA_buffer_77 = {
 	allowed = {
-		tag = ROA
+		original_tag = ROA
 	}
 	enable = {
 		always = yes
 	}
-	
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100
+	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = JAP
 		value = 10
 	} 
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 7
+		id = 123
+	}
 }
