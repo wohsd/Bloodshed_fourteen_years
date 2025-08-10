@@ -13,12 +13,12 @@ focus_tree = {
 	focus = {
 		id = Victory_of_the_National_Revolution
 		icon = GFX_kmt01
-		cost = 2.00
+		cost = 5.00
 		x = 72
 		y = 0
 			completion_reward = {
-
-}
+				add_political_power = 50
+			}
 
 	}
 	focus = {
@@ -43,9 +43,19 @@ focus_tree = {
 	focus = {
 		id = Democracy_Over_Autocracy
 		icon = GFX_kmt02
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
+		}
+		available = {
+			has_war = no
+			ROG = {
+						has_country_leader = {
+							character = ROG_WangJingWei
+							ruling_only = yes
+						}
+					}
+			
 		}
 		mutually_exclusive = {
 			focus = Chiang_Kai_shek_Consolidates_Power
@@ -57,6 +67,27 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = Democracy_Over_Autocracy_tooltip
+					create_country_leader = {
+		                name = "林森"
+						ideology = despotism
+		            }
+					create_faction = ninghan_lianhe
+					ROG = { 
+					country_event = { id = ROG.1 hour = 1 }               
+                    set_rule = {
+						can_join_factions = yes
+						can_join_opposite_factions = yes 
+					    }
+					add_to_faction = CHI
+                    }
+					ROC = { 
+					country_event = { id = ROC.1 hour = 1 }               
+                    set_rule = {
+						can_join_factions = yes
+						can_join_opposite_factions = yes 
+					    }
+					add_to_faction = CHI
+                    }
 				}
 
 	}
@@ -1225,7 +1256,7 @@ focus_tree = {
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
 		icon = GFX_kmt03
-		cost = 7.00
+		cost = 5.00
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}

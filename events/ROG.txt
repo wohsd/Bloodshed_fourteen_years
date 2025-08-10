@@ -1,0 +1,12 @@
+﻿add_namespace = ROG
+country_event = {
+	id = ROG.1
+	title =  ROG.1.t
+	desc = ROG.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ROG.1.a
+	}
+	}
