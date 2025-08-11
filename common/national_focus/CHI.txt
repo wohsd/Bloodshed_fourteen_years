@@ -72,21 +72,15 @@ focus_tree = {
 						ideology = despotism
 		            }
 					create_faction = ninghan_lianhe
+					CHI = { 
+			        add_to_faction = ROG 
+			        add_to_faction = ROC
+	            	}
 					ROG = { 
 					country_event = { id = ROG.1 hour = 1 }               
-                    set_rule = {
-						can_join_factions = yes
-						can_join_opposite_factions = yes 
-					    }
-					add_to_faction = CHI
                     }
 					ROC = { 
 					country_event = { id = ROC.1 hour = 1 }               
-                    set_rule = {
-						can_join_factions = yes
-						can_join_opposite_factions = yes 
-					    }
-					add_to_faction = CHI
                     }
 				}
 

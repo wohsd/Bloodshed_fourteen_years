@@ -1,0 +1,9 @@
+leader_traits = {
+	trait_chi_huang_pu = {
+		type = { land navy }
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

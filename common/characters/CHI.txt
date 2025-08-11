@@ -13,7 +13,8 @@ characters={
 		field_marshal = {
 			traits = {
 				old_guard
-			}
+				trait_chi_huang_pu
+	        }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1

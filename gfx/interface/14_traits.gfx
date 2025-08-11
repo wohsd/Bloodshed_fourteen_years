@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_trait_chi_huang_pu"
+		texturefile = "gfx/interface/traits/trait_chi_huang_pu.png"
+		legacy_lazy_load = no
+	}
+	#template for new entries
+	#spriteType = {
+	#	name = "GFX_trait_"
+	#	texturefile = "gfx/interface/traits/trait_.png"
+	#}
+}

@@ -8,5 +8,11 @@ country_event = {
 
 	option = {
 		name = ROG.1.a
+
+		CHI = { 
+			add_to_faction = ROG 
+			add_to_faction = ROC
+		}
+
 	}
 	}
