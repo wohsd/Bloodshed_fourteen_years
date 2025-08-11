@@ -1,7 +1,7 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_trait_trait_chi_huang_pu"
-		texturefile = "gfx/interface/traits/trait_chi_huang_pu.png"
+		name = "GFX_trait_CHI_Central_Army"
+		texturefile = "gfx/interface/traits/CHI_Central_Army.png"
 		legacy_lazy_load = no
 	}
 	#template for new entries

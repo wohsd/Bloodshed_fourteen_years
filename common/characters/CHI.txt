@@ -13,7 +13,7 @@ characters={
 		field_marshal = {
 			traits = {
 				old_guard
-				trait_chi_huang_pu
+				CHI_Central_Army
 	        }
 			skill = 2
 			attack_skill = 1
@@ -224,7 +224,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+			}
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -244,7 +246,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -280,7 +284,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -331,7 +337,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -399,7 +407,10 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
+			traits={ 
+				old_guard
+				CHI_Central_Army
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -416,7 +427,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
