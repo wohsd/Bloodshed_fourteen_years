@@ -98,6 +98,11 @@ focus_tree = {
 		cost = 8.00
 		x = 44
 		y = 14
+		available={
+			date > 1940.1.1
+			has_completed_focus = PRC_focus57
+		}
+
 		completion_reward = {
 			set_country_flag = PRC_focus85
 			set_country_flag = PRC_Road
@@ -175,6 +180,10 @@ focus_tree = {
 		cost = 8.00
 		x = 53
 		y = 14
+		available={
+			date > 1940.1.1
+			has_completed_focus = PRC_focus57
+		}
 		completion_reward = {
 			army_experience = 50
 			remove_ideas = Long_March_Trauma
@@ -1439,14 +1448,27 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus44
 		}
+		available = {
+			NSD={
+				exists = yes
+			}
+		}
 		x = 28
 		y = 12
 			completion_reward = {
-					add_power_balance_value = {
-							id = PRC_struggle_balance1
-							value = 0.05
-						}
+				PRC={
+				add_opinion_modifier = {
+					target = NSD
+					modifier = TUR_traitors_of_the_revolution
 				}
+				}
+				NSD={
+				add_opinion_modifier = {
+					target = PRC
+					modifier = TUR_traitors_of_the_revolution
+				}
+				}
+			}
 
 	}
 	focus = {
@@ -1456,15 +1478,20 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_focus44
 		}
+		bypass = {
+			has_country_flag = PRC_1936_1_03
+		}
 		x = 30
 		y = 12
 			available = {
 
 }
 			completion_reward = {
-					NSD = {
-							set_cosmetic_tag = NSD_1936
-						}
+				
+					add_power_balance_value = {
+							id = PRC_struggle_balance1
+							value = 0.05
+						}	
 				}
 
 	}

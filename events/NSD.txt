@@ -89,15 +89,17 @@ country_event = {
 	is_triggered_only = yes
     immediate = {
 		hidden_effect = {
-			add_opinion_modifier = {
-				target = PRC
-				modifier = faction_traitor
+			PRC={
+				country_event = {id=PRC_1936_1.00 days=1}
 			}
 			country_event = {id=NSD_1935.6 days=10}
 		}
 	}
 	option = {
 		name = NSD_1935.5.a
+		NSD = {
+			set_cosmetic_tag = NSD_1936
+		}
 	}
 }
 country_event = {
@@ -113,6 +115,7 @@ country_event = {
 	}
 	option = {
 		name = NSD_1935.6.a
+		
 	}
 }
 

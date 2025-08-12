@@ -9,16 +9,16 @@ focus_tree = {
 			tag = CHI
 		}
 	}
-	default = no
+	default = no 
 	focus = {
 		id = Victory_of_the_National_Revolution
 		icon = GFX_kmt01
-		cost = 2.00
+		cost = 2.00  
 		x = 72
 		y = 0
-			completion_reward = {
-
-}
+		completion_reward = { 
+			add_stability = var:ECO1
+		}
 
 	}
 	focus = {
@@ -38,7 +38,17 @@ focus_tree = {
 		cost = 10.00
 		x = 72
 		y = 10
-
+		available = {
+			
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = 25
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+		}
 	}
 	focus = {
 		id = Democracy_Over_Autocracy
@@ -437,16 +447,19 @@ focus_tree = {
 									create_unit = {
 											division = "name = \"国民革命军第八十七师\" division_template = \"德械师\" start_experience_factor = 0.8"
 											owner = CHI
+add_core_of = CHI
 											prioritize_location = 2957
 										}
 									create_unit = {
 											division = "name = \"国民革命军第八十八师\" division_template = \"德械师\" start_experience_factor = 0.8"
 											owner = CHI
+add_core_of = CHI
 											prioritize_location = 2957
 										}
 									create_unit = {
 											division = "name = \"国民革命军第三十六师\" division_template = \"德械师\" start_experience_factor = 0.8"
 											owner = CHI
+add_core_of = CHI
 											prioritize_location = 2957
 										}
 								}
@@ -614,7 +627,14 @@ focus_tree = {
 		}
 		x = 61
 		y = 12
-
+		completion_reward = {
+			CHI={
+				add_opinion_modifier = {
+					target = JAP
+					modifier = GRE_underhanded_rogues
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_12
@@ -629,13 +649,13 @@ focus_tree = {
 			CHI={
 				add_opinion_modifier = {
 					target = GER
-					modifier = attitude_hostile
+					modifier = GRE_strategic_enemy
 				}
 			}
 			GER={
 				add_opinion_modifier = {
 					target = CHI
-					modifier = attitude_hostile
+					modifier = GRE_strategic_enemy
 				}
 			}
 		}
@@ -820,7 +840,15 @@ focus_tree = {
 		}
 		x = 64
 		y = 13
-
+		completion_reward = {
+			SOV = {
+				send_equipment = {
+					equipment = fighter_equipment_1
+					amount = 500
+					target = CHI
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_9
@@ -1185,20 +1213,202 @@ focus_tree = {
 		prerequisite = {
 			focus = CHIFocus_20
 		}
+		available = {
+			has_war_with = JAP
+			has_equipment = { train_equipment > 59 } #20 trains per factory
+			OR = {
+				threat > 0.35
+				any_enemy_country = {
+					capital_scope = {
+						is_on_continent = asia
+					}
+				}
+			}
+		}
 		x = 71
 		y = 13
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = SOV_industrial_relocation_trains_focus_negative
+				producer = SOV
+			}
+			214 = { 
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 228
+				}
+				228 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 248
+				}
+				248 = { 
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = SOV_industrial_relocation_trains_focus
+					producer = SOV
+				}
+			}
+			custom_effect_tooltip = SOV_focus_select_effect_tt
+			effect_tooltip = {
+				214 = { 
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 228
+					}
+					228 = { 
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 248
+					}
+					248 = { 
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = CHI_move_industry_trains_tt
 
+			custom_effect_tooltip = SOV_focus_complete_effect_tt
+
+			238 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			
+				hidden_effect = {
+					damage_building = { type = arms_factory damage = 0.5 }
+					damage_building = { type = industrial_complex damage = 0.5 }
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_full_control_of_state = 228 } 
+				}
+				287 = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				
+					hidden_effect = {
+						damage_building = { type = arms_factory damage = 0.5 }
+						damage_building = { type = industrial_complex damage = 0.5 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_full_control_of_state = 248 } 
+				}
+				323 = { 
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				
+					hidden_effect = {
+						damage_building = { type = arms_factory damage = 0.5 }
+						damage_building = { type = industrial_complex damage = 0.5 }
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_relocate_industry_repair_tt
+		}
 	}
 	focus = {
 		id = CHIFocus_21
 		icon = GFX_focus_FIN_motti_tactics
 		cost = 10.00
+		available = {
+			
+		}
 		prerequisite = {
 			focus = CHIFocus_20
 		}
 		x = 75
 		y = 14
-
+		
 	}
 	focus = {
 		id = CHIFocus_25
@@ -1209,7 +1419,50 @@ focus_tree = {
 		}
 		x = 74
 		y = 15
-
+completion_reward = {
+			every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							any_country = {
+								is_subject_of = ROOT
+								controls_state = PREV
+							}
+						}
+						OR = {
+							state = 260  
+							state = 264  
+							state = 265  
+							state = 271  
+							state = 272  
+							state = 284  
+							state = 287  
+							state = 296  
+							state = 299  
+							state = 300  
+							state = 305  
+							state = 308  
+							state = 315  
+							state = 316  
+							state = 587  
+							state = 607  
+							state = 608  
+							state = 611  
+							state = 612  
+							state = 672
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = JAP
+						}
+					}
+				}
+		}
 	}
 	focus = {
 		id = CHIFocus_26
@@ -1220,7 +1473,42 @@ focus_tree = {
 		}
 		x = 76
 		y = 15
-
+	completion_reward = {
+			every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							any_country = {
+								is_subject_of = ROOT
+								controls_state = PREV
+							}
+						}
+						OR = {
+							state = 293  
+							state = 306  
+							state = 313  
+							state = 319  
+							state = 327  
+							state = 328  
+							state = 330  
+							state = 336  
+							state = 343  
+							state = 599  
+							state = 600  
+							state = 603
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = JAP
+						}
+					}
+				}
+		}
 	}
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
@@ -2951,7 +3239,15 @@ focus_tree = {
 		}
 		x = 58
 		y = 13
-
+		completion_reward = {
+			USA = {
+				send_equipment = {
+					equipment = fighter_equipment_1
+					amount = 100
+					target = CHI
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_10
@@ -3000,7 +3296,22 @@ focus_tree = {
 		}
 		x = 61
 		y = 15
-
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = {
+					target = USA
+					modifier = DEN_deepening_partnership
+				}
+				add_opinion_modifier = {
+					target = RAJ
+					modifier = DEN_deepening_partnership
+				}
+				add_opinion_modifier = {
+					target = SOV
+					modifier = DEN_deepening_partnership
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_15
@@ -3011,7 +3322,11 @@ focus_tree = {
 		}
 		x = 59
 		y = 16
-
+		completion_reward = {
+			562={
+				transfer_state_to = CEN
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_16
@@ -3033,7 +3348,38 @@ focus_tree = {
 		}
 		x = 71
 		y = 14
-
+		completion_reward = {
+			615={
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			323={
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_22
@@ -3044,7 +3390,27 @@ focus_tree = {
 		}
 		x = 79
 		y = 13
-
+		available = {
+			NOT={
+				214={
+					is_controlled_by = CHI
+				}
+			}
+		}
+		completion_reward = {
+			246={
+				set_victory_points = {
+					province = 3846
+					value = 45
+				}
+			}
+			238={
+				set_victory_points = {
+					province = 3850
+					value = 40
+				}
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_23
@@ -3071,23 +3437,107 @@ focus_tree = {
 		}
 		x = 70
 		y = 15
-
+completion_reward = {
+			every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							any_country = {
+								is_subject_of = ROOT
+								controls_state = PREV
+							}
+						}
+						OR = {
+							state = 135  
+							state = 137  
+							state = 146  
+							state = 159  
+							state = 160  
+							state = 164  
+							state = 165  
+							state = 166  
+							state = 167  
+							state = 169  
+							state = 177  
+							state = 178  
+							state = 179  
+							state = 180  
+							state = 184  
+							state = 192  
+							state = 646  
+							state = 194  
+							state = 206  
+							state = 652  
+							state = 659
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = JAP
+						}
+					}
+				}
+		}
 	}
 	focus = {
 		id = CHIFocus_27
 		icon = GFX_goal_unknown
 		cost = 10.00
+		available = {
+		}
 		prerequisite = {
 			focus = CHIFocus_21
 		}
 		x = 80
 		y = 15
-
+		completion_reward = {
+			every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = ROOT
+							any_country = {
+								is_subject_of = ROOT
+								controls_state = PREV
+							}
+						}
+						OR = {
+							state = 235  
+							state = 237  
+							state = 248  
+							state = 255  
+							state = 256  
+							state = 258  
+							state = 268  
+							state = 273  
+							state = 276  
+							state = 285  
+							state = 289  
+							state = 591
+						}
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border_country = JAP
+						}
+					}
+				}
+		}
 	}
 	focus = {
 		id = CHIFocus_28
 		icon = GFX_focus_attack_japan
 		cost = 10.00
+		available = {
+			date > 1943.1.1 
+		}
 		prerequisite = {
 			focus = CHIFocus_24
 		}
@@ -3115,8 +3565,25 @@ focus_tree = {
 		x = 72
 		y = 12
 		completion_reward = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = ROOT
+						not = { is_controlled_by = ROOT }
+						infrastructure < 3
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+					add_resistance_target = {
+						amount = 10
+						tooltip = FRA_the_maquis
+					}
+				}
+			}
 			
-			
+		
 		}
 	}
 	focus = {
@@ -3139,7 +3606,47 @@ focus_tree = {
 		}
 		x = 68
 		y = 12
-
+		completion_reward = {
+					every_state = {
+							limit = {
+								OR = {
+									is_controlled_by = ROOT
+									any_country = {
+										is_subject_of = ROOT
+										controls_state = PREV
+									}
+								}
+								OR = {
+									state = 89  
+									state = 116  
+									state = 655  
+									state = 656  
+									state = 657  
+									state = 658  
+									state = 147  
+									state = 154  
+									state = 157  
+									state = 162  
+									state = 170  
+									state = 175  
+									state = 190  
+									state = 191  
+									state = 629  
+									state = 630  
+									state = 677
+								}
+							}
+							add_building_construction = {
+								type = bunker
+								level = 4
+								instant_build = yes
+								province = {
+									all_provinces = yes
+									limit_to_border_country = PRC
+								}
+							}
+						}
+				}
 	}
 
 	focus = {

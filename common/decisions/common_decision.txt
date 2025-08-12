@@ -76,3 +76,43 @@ DEBUG = {
 		}
 	}
 }
+
+
+Eeconomic_system = {
+	Increase_plant_allocations = {
+		visible = {
+		}
+		cost = 0 
+		days_remove= 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+	}
+	Increase_military_spending = {
+		visible = {
+		}
+		cost = 0 
+		days_remove= 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+	}
+	Printed_banknotes = {
+		visible = {
+		}
+		cost = 0  
+		days_remove= 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+		}
+	}
+}

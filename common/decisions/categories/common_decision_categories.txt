@@ -3,6 +3,14 @@ DEBUG = {
 	visible = { 
 		is_ai = no
 		is_debug = yes
-		
+		 
 	}
 }
+ 
+Eeconomic_system = {
+	icon = generic_economy
+	picture = GFX_Eeconomic_system
+	visible = {   
+	} 
+	priority = 1000
+} 

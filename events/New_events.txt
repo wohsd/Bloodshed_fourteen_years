@@ -88,6 +88,7 @@ country_event = {
 	fire_only_once = yes
 	
     trigger = {
+		date < 1939.1.1
 		214={
 			is_controlled_by = JAP
 		}
@@ -623,6 +624,32 @@ country_event = {
 	}
 	option = {
 		name = Hidden_News.23.a
+	}		
+}
+
+
+##刘湘死亡
+country_event = {
+	id = Hidden_News.24
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1938.1.19
+		date < 1938.1.21
+    }
+    immediate = {
+		set_global_flag = Hidden_News_23
+		news_event = WorldNew.29
+		hidden_effect = {
+			CHI={
+				annex_country = {
+					target = ROS
+				}
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.24.a
 	}		
 }
 #######
@@ -1452,5 +1479,22 @@ news_event = {
 	}
 	option = {
 		name = WorldNew.28.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.29
+	title = WorldNew.29.t
+	desc = WorldNew.29.d
+
+	picture =  GFX_news_event_007
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = WorldNew.29.a
 	}		
 }

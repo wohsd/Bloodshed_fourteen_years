@@ -6,6 +6,7 @@ state={
 	}
 	history={
 		owner = CHI
+add_core_of = CHI
 		buildings = {
 			infrastructure = 1
 		}
@@ -16,7 +17,9 @@ state={
 		1941.1.1={
 			owner = JDF
 		}
+		set_state_flag=ZheJiang
 	}
+	
 	manpower=323000
 	state_category = town
 	local_supplies = 0.0

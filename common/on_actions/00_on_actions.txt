@@ -1,6 +1,84 @@
 on_actions = {
 	# country 
-	
+	on_daily = {
+		effect = {
+			every_country = {
+				set_variable = {
+					ECO = num_of_factories
+				}
+				multiply_variable = {
+					ECO = 25000
+				}
+				add_to_variable = {
+					ECO_ARMY = manpower_k
+				}
+				
+				set_variable = {
+					ECO_FAC = num_of_factories
+				}
+				multiply_variable = {
+					ECO_FAC = 2500
+				}
+				set_variable = {
+					ECO_ARMY = manpower_k
+				}
+				multiply_variable = {
+					ECO_ARMY = 200
+				}
+				set_variable = {
+					ECO_INF = num_of_factories
+				}
+				divide_variable = {
+					ECO_INF = 5
+				}
+				subtract_from_variable = {
+					ECO = ECO_ARMY
+				}
+				subtract_from_variable = {
+					ECO = ECO_FAC
+				}
+				set_temp_variable = {
+					ECO_INF1 = ECO_INF
+				}
+
+				multiply_variable = {
+					ECO_INF1 = 1500
+				}
+
+				subtract_from_variable = {
+					ECO = ECO_INF1
+				}
+			####挂钩
+				set_variable = {
+					ECO1=ECO
+				}
+				multiply_variable = {
+					ECO1 = -0.001
+				}
+				multiply_variable = {
+					ECO1 = 0.001
+				}
+				multiply_variable = {
+					ECO1 = 0.01
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			ROOT = {
+				add_stability = var:ECO1
+				add_war_support = var:ECO1
+				add_popularity = {
+					ideology = highest_party_ideology
+					popularity = var:ECO1
+				}
+				
+			}
+		}
+	}
+
 	on_daily = {
 		effect = {
 			every_state = {
@@ -132,5 +210,29 @@ on_actions = {
 		 }
 	}
 
-	
+	on_startup = {
+		effect = {
+			every_state = {
+				if={
+					limit = {
+						state =235
+						state =237
+						state =248
+						state =255
+						state =256
+						state =258
+						state =268
+						state =273
+						state =276
+						state =285
+						state =289
+						state =591
+					}
+				}
+			}
+		}
+	}
+
+
+
 }
