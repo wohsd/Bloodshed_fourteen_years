@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_CHI_Central_Army"
+		texturefile = "gfx/interface/traits/CHI_Central_Army.png"
+		legacy_lazy_load = no
+	}
+	#template for new entries
+	#spriteType = {
+	#	name = "GFX_trait_"
+	#	texturefile = "gfx/interface/traits/trait_.png"
+	#}
+}
