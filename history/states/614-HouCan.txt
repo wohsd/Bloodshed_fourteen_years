@@ -13,6 +13,7 @@ state={
 		}
 		1936.1.1={
 			owner = CHI
+add_core_of = CHI
 		}
 		victory_points = {
 			2321 3

@@ -11,6 +11,7 @@ state={
 		}
 		1933.1.1={
 			owner = CHI
+add_core_of = CHI
 		}
 	}
 	manpower=121320

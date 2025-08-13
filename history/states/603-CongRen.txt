@@ -6,6 +6,7 @@ state={
 	}
 	history={
 		owner = CHI
+add_core_of = CHI
 		buildings = {
 			industrial_complex = 1
 		}
@@ -14,6 +15,7 @@ state={
 		}
 		1933.1.1={
 			owner = CHI
+add_core_of = CHI
 		}
 	}
 	manpower=324001

@@ -1,0 +1,9 @@
+leader_traits = {
+	CHI_Central_Army = {
+		type = { land navy }
+		trait_type = personality_trait
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

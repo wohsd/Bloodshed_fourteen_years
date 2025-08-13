@@ -66,6 +66,8 @@ unit_leader_event = {
 		214={
 			add_dynamic_modifier = {
 				modifier = Morale_collapsed
+				scope = CHI
+				days=135
 			}
 		}
 	}		
