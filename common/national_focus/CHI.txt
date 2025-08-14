@@ -88,6 +88,9 @@ focus_tree = {
 					CHI = { 
 			        add_to_faction = ROG 
 			        add_to_faction = ROC
+					set_power_balance = {
+				    id = CHI_struggle_balance_00
+			        }
 	            	}
 					ROG = { 
 					country_event = { id = ROG.1 hour = 1 }               

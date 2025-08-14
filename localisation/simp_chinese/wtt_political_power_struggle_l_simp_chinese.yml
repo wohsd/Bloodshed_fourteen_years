@@ -388,6 +388,15 @@
  CHI_right_side_range_Low: "蒋介石支持度较低"
  CHI_right_side_range_High: "蒋介石支持度较高"
 
+ CHI_struggle_balance_00: "心怀各异的民主同盟"
+ CHI_struggle_00_mid_range: "局势紧张"
+ CHI_struggle_00_left_side: "执政派掌握政局"
+ CHI_struggle_00_right_side: "再一次的分裂"
+ CHI_00_left_side_range_Low: "执政派略有优势"
+ CHI_00_left_side_range_High: "执政派突飞猛进"
+ CHI_00_right_side_range_Low: "反对派略有优势"
+ CHI_00_right_side_range_High: "反对派声势浩大"
+
  CHI_impeach_Jiangjieshi: "弹劾蒋介石"
  impeach_Jiangjieshi: "汤山事件已解决"
 
