@@ -12,8 +12,8 @@ characters={
 		}
 		field_marshal = {
 			traits = {
-				old_guard
 				CHI_Central_Army
+				old_guard
 	        }
 			skill = 2
 			attack_skill = 1
@@ -154,7 +154,7 @@ characters={
 			available = {
 			}
 			traits = {
-				army_chief_offensive_1
+				CHI_Central_Army
 			}
 			cost = 100
 			ai_will_do = {
@@ -356,7 +356,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -408,8 +410,8 @@ characters={
 		
 		corps_commander={
 			traits={ 
-				old_guard
 				CHI_Central_Army
+				old_guard
 			}
 			skill=2
 			attack_skill=1
