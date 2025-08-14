@@ -751,7 +751,7 @@ news_event = {
 	title = WorldNew.4.t
 	desc = WorldNew.4.d
 
-	picture = GFX_Nanjing_Massacre
+	picture = GFX_news_event_civil_war_turkey
 
 	major = yes
 
@@ -1002,7 +1002,7 @@ news_event = {
 	title = WorldNew.11.t
 	desc = WorldNew.11.d
 
-	picture = GFX_WorldNew_11
+	picture = GFX_news_event_046
 
 	major = yes
 	immediate = {

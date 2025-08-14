@@ -1,0 +1,44 @@
+﻿add_namespace = RFC_NEW
+add_namespace = RFC_country
+news_event = {
+	id = RFC_NEW.1
+	title = RFC_NEW.1.t
+	desc = RFC_NEW.1.d
+	major = yes
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+    immediate = {
+		hidden_effect = {
+			CHI = {
+				country_event = RFC_country.1
+			}
+		}
+	}
+	option = {
+		name = RFC_NEW.1.a
+	}
+}
+country_event = {
+	id = RFC_country.1
+	title = RFC_country.1.t
+	desc = RFC_country.1.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+    immediate = {
+		
+	}
+	option = {
+		name = RFC_country.1.a
+		RFC = { change_tag_from = CHI }
+		
+	}
+	option = {
+		name = RFC_country.1.b
+	}
+}

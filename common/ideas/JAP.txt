@@ -1,5 +1,23 @@
 ideas = {
 	country = {
+		Death_in_March={
+			picture=Death_in_March
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			modifier={
+				army_speed_factor=0.3
+				army_attack_factor=0.3
+				army_defence_factor=0.3
+				breakthrough_factor=0.3
+				army_org_regain= 0.2
+				terrain_penalty_reduction= 0.5
+			}
+		}
 		Militaristic_fervor = {
 			picture=Militaristic_fervor
 			allowed = {
@@ -25,24 +43,6 @@ ideas = {
 				terrain_penalty_reduction= 0.2	5	
 			}
 		}
-		Death_in_March = {
-			picture=Death_in_March
-			allowed = {
-				always = yes
-			} 
-			modifier={
-				army_speed_factor=0.3
-				army_attack_factor=0.3
-				army_defence_factor=0.3
-				breakthrough_factor=0.3
-				army_org_regain= 0.2
-				terrain_penalty_reduction= 0.5
-			}
-			allowed_civil_war = {
-			}
-			removal_cost = -1
-			
-		}
 		China_Offensive = {
 			picture=Militaristic_fervor
 			allowed = {
@@ -54,34 +54,37 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag=CHI
-				attack_bonus_against=0.4
-                defense_bonus_against=0.4
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
 			}
 			targeted_modifier = {
 				tag=ROJ
-				attack_bonus_against=0.4
-                defense_bonus_against=0.4
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
 			}
 			targeted_modifier = {
 				tag=ROC
-				attack_bonus_against=0.4
-                defense_bonus_against=0.4
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
 			}
 			targeted_modifier = {
 				tag=ROY
-				attack_bonus_against=0.4
-                defense_bonus_against=0.4
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
 			}
 			targeted_modifier = {
 				tag=ROA
-				attack_bonus_against=0.4
-                defense_bonus_against=0.4
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
 			}
 			targeted_modifier = {
 				tag=JDW
-				attack_bonus_against=0.4
-                defense_bonus_against=0.4
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
 			}
 		}
+
+		
 	}
+	
 }

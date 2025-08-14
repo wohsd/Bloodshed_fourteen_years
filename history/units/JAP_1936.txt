@@ -569,6 +569,197 @@ units = {
 		division_template = "华北方面军"
 		start_experience_factor = 0.6
 	}
+	division= {	
+		location = 572
+		name = "华北方面军第35师团第219联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第35师团第220联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第36师团第221联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第36师团第225旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第36师团第222旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	# 第21师团（四单位制，1942年前在华北）
+	division = {
+		location = 572
+		name = "华北方面军第21师团第21旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第21师团第42旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	# 第32师团（1942年前为四单位制）
+	division = {
+		location = 572
+		name = "华北方面军第32师团第210旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第32师团第212旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	# 第37师团（三单位制，无旅团）
+	division = {
+		location = 572
+		name = "华北方面军第37师团第225联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第37师团第226联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第37师团第227联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	# 第41师团（三单位制，无旅团）
+	division = {
+		location = 572
+		name = "华北方面军第41师团第237联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第41师团第238联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第41师团第239联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	# 第110师团（三单位制，无旅团）
+	division = {
+		location = 572
+		name = "华北方面军第110师团第139联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第110师团第140联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division = {
+		location = 572
+		name = "华北方面军第110师团第163联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军独立混成旅第57旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军独立混成第128旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		location = 572
+		name = "华北方面军独立混成旅第57旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军独立混成第128旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		location = 572
+		name = "华北方面军第79师团第289联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第79师团第290联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第79师团第291联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+
+
+	division= {	
+		location = 572
+		name = "华北方面军第112师团第246联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第112师团第247联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "华北方面军第112师团第248联队"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+
+
+
+
+
+
+
+
+
 
 	division= {	
 		location = 572
@@ -588,6 +779,55 @@ units = {
 		division_template = "华北方面军"
 		start_experience_factor = 0.6
 	}
+	division= {	
+		location = 572
+		name = "独立步兵第3旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立步兵第5旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立步兵第7旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立步兵第8旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立步兵第9旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立步兵第15旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立步兵第10旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		location = 572
+		name = "独立步兵第14旅团"
+		division_template = "华北方面军"
+		start_experience_factor = 0.6
+	}
+	
 	division= {	
 		location = 572
 		name = "独立混成第11旅团"

@@ -3,6 +3,7 @@ Hump_route= {
 	picture = GFX_Hump_route
 	visible = { 
 		tag=CHI
+		has_completed_focus = CHIFocus_11
 	}
 	visible_when_empty = yes
 }

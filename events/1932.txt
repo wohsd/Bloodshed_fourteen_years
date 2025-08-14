@@ -292,6 +292,26 @@ country_event = {
 		JAP={
 			white_peace = CHI
 		}
+		670 = {
+			transfer_state_to = CHI
+			set_demilitarized_zone = yes
+		}
+		682 = {
+			transfer_state_to = CHI
+			set_demilitarized_zone = yes
+		}
+		586 = {
+			transfer_state_to = CHI
+			set_demilitarized_zone = yes
+		}
+		647 = {
+			transfer_state_to = CHI
+			set_demilitarized_zone = yes
+		}
+		228 = {
+			transfer_state_to = CHI
+			set_demilitarized_zone = yes
+		}
 		news_event = {id=WorldNew.11 days=60}
 	}		
 }

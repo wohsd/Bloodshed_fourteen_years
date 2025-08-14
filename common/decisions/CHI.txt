@@ -755,14 +755,58 @@ CHI_Purging_party_category = {
 		}
 		cost = 20 
 		days_remove= 3
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
+		} 
 		complete_effect = {
 			CHI_DengYangDa = {
 				unit_leader_event = {id=Assassinate.1 days=2}
 			}
+			set_country_flag = CHI_DengYangDa1
+		}
+	}
+
+	The_uprising_underway = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_DengYangDa1
+			} 
+		}
+		days_mission_timeout = 60
+		activation = {
+			AND={
+				tag = CHI
+				date < 1931.11.29
+			}
+			#has_country_flag = Long_march_mission0
+		}
+		visible = { 
+			
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			news_event = RFC_NEW.1
+			RFC={
+				transfer_state = 600
+				transfer_state = 262
+				transfer_state = 269
+				transfer_state = 281
+				transfer_state = 292
+				declare_war_on = {
+					target = CHI
+					type = annex_everything
+				}
+				set_capital = {
+					state = 281
+				}
+			}
+		}
+		complete_effect = {
+
 		}
 	}
 }
@@ -800,9 +844,9 @@ CHI_Defend_against_enemy_category = {
 		}
 		cost = 20 
 		days_remove= 15
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
-			factor = 1
+			factor = 1000
 		}
 		complete_effect = { 
 			set_country_flag=The_god_mouth_garden
@@ -864,7 +908,7 @@ CHI_Defend_against_enemy_category = {
 		}
 		cost = 20 
 		days_remove= 15
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
@@ -920,7 +964,7 @@ CHI_Defend_against_enemy_category = {
 		}
 		cost = 20 
 		days_remove= 15
-		fire_only_once = no
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}

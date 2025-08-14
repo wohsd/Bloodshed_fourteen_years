@@ -41,6 +41,9 @@ focus_tree = {
 		available = {
 			
 		}
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_war_support = 0.1
 			add_to_temp_variable = {
@@ -1210,6 +1213,9 @@ add_core_of = CHI
 		}
 		x = 75
 		y = 11
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_stability = 0.3
 			add_war_support = 0.5

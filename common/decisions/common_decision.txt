@@ -75,6 +75,69 @@ DEBUG = {
 			}
 		}
 	}
+
+
+	DEBUG5 = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0 
+		days_remove= 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			news_event = WorldNew.20
+		}
+	}
+	DEBUG6 = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0 
+		days_remove= 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = KanRi_1937.1
+		}
+	}
+	DEBUG7 = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0 
+		days_remove= 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			news_event = WorldNew.19
+			add_timed_idea = {
+				idea = Death_in_March
+				days = 90
+			}  
+			add_ideas = China_Offensive
+		}
+	}
+	DEBUG8 = { 
+		visible = {
+			is_debug = yes
+		} 
+		cost = 0 
+		days_remove= 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1  
+		}
+		complete_effect = {
+			country_event = Hidden_News.1
+		}
+	}
 }
 
 
@@ -86,7 +149,7 @@ Eeconomic_system = {
 		days_remove= 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		complete_effect = {
 		}
@@ -98,7 +161,7 @@ Eeconomic_system = {
 		days_remove= 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		complete_effect = {
 		}
@@ -110,7 +173,7 @@ Eeconomic_system = {
 		days_remove= 0
 		fire_only_once = no
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		complete_effect = {
 		}

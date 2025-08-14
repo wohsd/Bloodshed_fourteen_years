@@ -16,7 +16,7 @@ state={
 			owner = JAP
 		}
 		victory_points ={
-			2482 10
+			2482 5
 		}
 		victory_points ={
 			544 5

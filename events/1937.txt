@@ -90,8 +90,7 @@ country_event = {
 	desc = KanRi_1937.1.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = {
-		name = KanRi_1937.1.a
+	immediate = {
 		hidden_effect = {
 			news_event = {id=KanRi_1937.2}
 		CHI={
@@ -127,6 +126,10 @@ country_event = {
 			add_to_faction = PRQ
 		}
 		}
+	}
+	option = {
+		name = KanRi_1937.1.a
+		
 		
 	}		
 }
