@@ -500,6 +500,14 @@ spriteType = {
 		texturefile = "gfx/interface/bop/bop_CHI_KMT.dds"
 	}
 spriteType = {
+		name = "GFX_bop_CHI_split"
+		texturefile = "gfx/interface/bop/bop_CHI_split.png"
+	}
+spriteType = {
+		name = "GFX_bop_CHI_unite"
+		texturefile = "gfx/interface/bop/bop_CHI_unite.png"
+	}
+spriteType = {
 		name = "GFX_bop_CHI_JiangJieShi"
 		texturefile = "gfx/interface/bop/bop_CHI_JiangJieShi.dds"
 	}

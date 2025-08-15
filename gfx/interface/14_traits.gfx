@@ -4,6 +4,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/CHI_Central_Army.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_trait_Ambitious"
+		texturefile = "gfx/interface/traits/Ambitious.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_CHI_Provisional_committee"
+		texturefile = "gfx/interface/traits/CHI_Provisional_committee.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_CHI_Restructuring_meeting"
+		texturefile = "gfx/interface/traits/CHI_Restructuring_meeting.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_CHI_Right"
+		texturefile = "gfx/interface/traits/CHI_Right.png"
+		legacy_lazy_load = no
+	}
 	#template for new entries
 	#spriteType = {
 	#	name = "GFX_trait_"
