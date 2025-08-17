@@ -101,6 +101,9 @@ characters={
 			id=-1
 		}
 		corps_commander = {
+			traits={ 
+				CHI_Provisional_committee
+			}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
