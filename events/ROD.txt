@@ -363,6 +363,15 @@ news_event = {
 					target = ROD
 				}
 			}
+			every_core_state = {
+				if = {
+					limit = { 
+						is_core_of = ROD
+					}
+				}
+				add_core_of = CHI
+			}
+			
 		}
 	}
 	option = {

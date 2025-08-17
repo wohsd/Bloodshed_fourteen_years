@@ -225,7 +225,7 @@ Promote_New_Life_Movement: "宣传新生活运动"
 Compulsory_education_introduced: "推广地方教育"
 
 Eeconomic_system: "经济系统" 
-Eeconomic_system_desc: "经济乃国之根本，民生之所系。自古以来，富国强兵必以经济为先。若经济凋敝，则社会动荡，民生困顿，虽有雄图亦难施展。\n\n经济生产总值：[?ROOT.ECO|*Y]\n工厂开支：[?ROOT.ECO_FAC|*Y]\n军费开支：[?ROOT.ECO_ARMY|*Y]\n通货膨胀：[?ROOT.ECO_INF|-%%]\n\n经济数值直接影响到工厂的产出效率、党派支持度乃至稳定度。过高的军费和工厂开支会产生严重的经济压力，通过裁减工厂/军队能够有效的缓解，部分国策需要满足足够的经济数值才能实行。\n\n每月影响：\n稳定度：[?ROOT.ECO1|2R%]\n党派支持度：[?ROOT.ECO1|2R%]\n战争支持度：[?ROOT.ECO1|2R%]"
+Eeconomic_system_desc: "经济乃国之根本，民生之所系。自古以来，富国强兵必以经济为先。若经济凋敝，则社会动荡，民生困顿，虽有雄图亦难施展。\n\n产值剩余：[?ROOT.ECO|*Y]\n工厂开支：[?ROOT.ECO_FAC|*Y]\n军费开支：[?ROOT.ECO_ARMY|*Y]\n通货膨胀：[?ROOT.ECO_INF|-%%]\n\n经济数值直接影响到工厂的产出效率、党派支持度乃至稳定度。过高的军费和工厂开支会产生严重的经济压力，通过裁减工厂/军队能够有效的缓解，部分国策需要满足足够的经济数值才能实行。\n\n每月影响：\n稳定度：[?ROOT.ECO1|2R%]\n党派支持度：[?ROOT.ECO1|2R%]\n战争支持度：[?ROOT.ECO1|2R%]"
 Increase_plant_allocations: "增加工厂开支" 
 Increase_military_spending: "增加军费开支"   
 Printed_banknotes: "印刷纸币"    

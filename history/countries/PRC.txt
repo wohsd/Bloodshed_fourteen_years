@@ -5,6 +5,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 }
+retire_character = CHI_Alexander_von_Falkenhausen
 country_event = {id=PRC_1931.10 days= 122}
 country_event = {id=PRC_1931.13 days= 317}
 country_event = {id=PRC_1931.15 days= 296}
@@ -137,6 +138,8 @@ set_power_balance = {
 	complete_national_focus = PRC_focus52
 	complete_national_focus = PRC_focus51
 	complete_national_focus = PRC_focus53
+	complete_national_focus = PRC_focus10
+	complete_national_focus = PRC_focus11
 	add_ideas={
 		Soviet_district_spirit
 		Leftism
@@ -174,6 +177,17 @@ set_power_balance = {
 	set_power_balance = {
 		id = PRC_struggle_balance1
 	}
+	complete_national_focus = PRC_focus2
+	complete_national_focus = PRC_focus3
+	complete_national_focus = PRC_focus4
+	complete_national_focus = PRC_focus5
+	complete_national_focus = PRC_focus6
+	complete_national_focus = PRC_focus7
+	complete_national_focus = PRC_focus13
+	complete_national_focus = PRC_focus14
+	complete_national_focus = PRC_focus15
+	complete_national_focus = PRC_focus16
+
 	complete_national_focus = PRC_focus35
 	complete_national_focus = PRC_focus38
 	complete_national_focus = PRC_focus36
@@ -181,7 +195,13 @@ set_power_balance = {
 	complete_national_focus = PRC_focus43
 	complete_national_focus = PRC_focus44
 	complete_national_focus = PRC_focus45
+	complete_national_focus = PRC_focus39
 	retire_character = PRC_BoGu
+	retire_character = PRC_FangZhiMing
+	retire_character = PRC_XunHuaiZhou
+	retire_character = PRC_WangRuChi
+	retire_character = PRC_LiuTaoXi
+	retire_character = PRC_DengPing
 	add_country_leader_role = {
 		character = PRC_ZhangWengTian
 		promote_leader = yes

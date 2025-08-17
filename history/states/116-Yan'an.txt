@@ -12,6 +12,8 @@ state={
 		owner = YUL
 		
 		buildings = {
+			infrastructure = 1
+			arms_factory = 1
 		}
 		1935.1.1={
 			owner = ROD

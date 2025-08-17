@@ -65,6 +65,11 @@ country_event = {
 	option = {
 		name = PRC_1936_1.04.a
 		country_event = {id=PRC_1936_1.05 days=15}
+		RDX = {
+			annex_country = {
+				target = NSD
+			}
+		}
 	}		
 }
 
@@ -368,6 +373,9 @@ country_event = {
 				target = MBQ
 				type = annex_everything
 			}
+			MBQ = {
+				give_military_access = ROQ
+			}
 			declare_war_on = {
 				target = ROQ
 				type = annex_everything
@@ -386,13 +394,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			132={
-			transfer_state_to = ROD
-			}
-			122={
-			transfer_state_to = ROD
+				transfer_state_to = ROD
 			}
 			625={
-			transfer_state_to = ROD
+				transfer_state_to = PRC
 			}
 			114={
 				add_dynamic_modifier = {
@@ -406,7 +411,7 @@ country_event = {
 	option = {
 		name =  PRC_1936.8.a
 		hidden_effect = {
-			country_event = {id=PRC_1936.5 days=50}
+			country_event = {id=PRC_1936.5 days=30}
 		}
 		
 	}		
@@ -472,8 +477,8 @@ country_event = {
     hidden = yes
 	fire_only_once = yes
     trigger = {
-		date > 1936.1.11
-		date < 1936.1.13
+		date > 1936.5.11
+		date < 1936.5.13
     }
     immediate = {
 		hidden_effect = {
@@ -514,6 +519,7 @@ news_event = {
 	picture = GFX_ROC_1936_2
 	major = yes
 	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
 			news_event = {

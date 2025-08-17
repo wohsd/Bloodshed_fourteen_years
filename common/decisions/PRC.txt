@@ -769,6 +769,9 @@ Long_march_decisions = {
 			factor = 1
 		}
 		complete_effect = {
+			ROOT = {
+				become_exiled_in = { target = NSA legitimacy = 100}
+			}
 			606 = { Long_march_battle = yes } 
 			hidden_effect = {
 				country_event = {id=PRC_1934.6 days=124}

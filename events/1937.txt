@@ -93,6 +93,9 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			news_event = {id=KanRi_1937.2}
+		PRC = {
+			white_peace = MBQ
+		}
 		CHI={
 			create_faction = China_Faction
 			add_to_faction = PRC
@@ -122,7 +125,6 @@ country_event = {
 			add_to_faction = ZOT
 			add_to_faction = DOT
 			add_to_faction = TOH
-			add_to_faction = XZS
 			add_to_faction = PRQ
 		}
 		}

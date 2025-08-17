@@ -39,7 +39,7 @@ focus_tree = {
 		x = 72
 		y = 10
 		available = {
-			
+			date = 1937.7.7
 		}
 		ai_will_do = {
 			factor = 10

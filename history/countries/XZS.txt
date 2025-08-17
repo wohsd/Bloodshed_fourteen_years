@@ -20,7 +20,14 @@ set_technology = {
 	}
 }
 
-
+1935.1.1={
+	XZS = {
+		white_peace = ROW
+	}
+	ROW = {
+		white_peace = XZS
+	}
+}
 
 recruit_character = XZS_TuDengJiaChuo
 set_popularities = {

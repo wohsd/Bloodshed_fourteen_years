@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			666 2
+		}
 		1936.1.1={
 			owner = MBQ
 		}

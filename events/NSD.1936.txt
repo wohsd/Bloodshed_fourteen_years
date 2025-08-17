@@ -1,4 +1,23 @@
 ﻿add_namespace = NSD_1936
+add_namespace = Hidden_NSD_1936
+country_event = {
+	id = Hidden_NSD_1936.1
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1936.6.21
+		date < 1936.6.23
+    }
+    immediate = {
+		set_global_flag = Hidden_NSD_1936.1
+		PRC = {
+			country_event = NSD_1936.0
+		}
+	}
+	option = {
+		name = Hidden_NSD_1936.1.a
+	}		
+}
 country_event = {
 	id =  NSD_1936.0
 	title = NSD_1936.0.t
@@ -7,8 +26,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name =  NSD_1936.0.a
-		ROW={
-			transfer_state = 627
+		RDX={
+			transfer_state = 642
 		}
 	}		
 }

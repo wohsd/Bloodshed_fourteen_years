@@ -129,6 +129,7 @@ Gold_bar_tooltip: "当前金条：$USRNAME|Y$增加$NAME|Y$根金条"
 
 PRC_focus54: "发起西征" 
 PRC_focus54_desc: ""
+PRC_focus54_tt: "§G西路军§!将向西发起进攻，请注意§Y宁夏战役§!开始后，必须要在§Y1937年3月份§!之前打通§Y星星峡§!，否则西征将会以§R失败§!告终。"
 PRC_focus55: "发起东征"
 PRC_focus55_desc: ""
 PRC_focus56: "三位一体"

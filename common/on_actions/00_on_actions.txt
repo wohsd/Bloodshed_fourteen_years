@@ -3,27 +3,28 @@ on_actions = {
 	on_daily = {
 		effect = {
 			every_country = {
-				set_variable = {
+				set_temp_variable = {
+					temp_manpower_k = manpower_k
+				}
+				set_variable = { 
 					ECO = num_of_factories
 				}
-				multiply_variable = {
-					ECO = 25000
-				}
 				add_to_variable = {
-					ECO_ARMY = manpower_k
+					ECO_ARMY = temp_manpower_k
 				}
+				
 				
 				set_variable = {
 					ECO_FAC = num_of_factories
 				}
 				multiply_variable = {
-					ECO_FAC = 2500
+					ECO_FAC = 25000
 				}
 				set_variable = {
-					ECO_ARMY = manpower_k
+					ECO_ARMY = temp_manpower_k
 				}
 				multiply_variable = {
-					ECO_ARMY = 200
+					ECO_ARMY = 1500
 				}
 				set_variable = {
 					ECO_INF = num_of_factories
@@ -39,7 +40,7 @@ on_actions = {
 				}
 				set_temp_variable = {
 					ECO_INF1 = ECO_INF
-				}
+				}  
 
 				multiply_variable = {
 					ECO_INF1 = 1500
