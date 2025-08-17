@@ -154,7 +154,6 @@ characters={
 			available = {
 			}
 			traits = {
-				CHI_Central_Army
 			}
 			cost = 100
 			ai_will_do = {
@@ -162,7 +161,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+				Ambitious
+			}
 			skill=2
 			attack_skill=2
 			defense_skill=2

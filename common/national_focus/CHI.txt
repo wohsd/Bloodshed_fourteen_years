@@ -61,7 +61,7 @@ focus_tree = {
 			focus = Victory_of_the_National_Revolution
 		}
 		available = {
-			has_war = no
+			date > 1931.9.17
 			ROG = {
 						has_country_leader = {
 							character = ROG_WangJingWei
@@ -75,29 +75,26 @@ focus_tree = {
 		}
 		x = 27
 		y = 1
-			ai_will_do = {
-					factor = 0
-				}
-			completion_reward = {
-					custom_effect_tooltip = Democracy_Over_Autocracy_tooltip
-					create_country_leader = {
-		                name = "林森"
-						ideology = despotism
-		            }
-					create_faction = ninghan_lianhe
-					CHI = { 
-			        add_to_faction = ROG 
-			        add_to_faction = ROC
-					set_power_balance = {
-				    id = CHI_struggle_balance_00
-			        }
-	            	}
-					ROG = { 
-					country_event = { id = ROG.1 hour = 1 }               
-                    }
-					ROC = { 
-					country_event = { id = ROC.1 hour = 1 }               
-                    }
+		ai_will_do = {
+				factor = 0
+			}
+		select_effect = {
+		    country_event = { id = CHI.1 }
+		}
+		completion_reward = {
+				custom_effect_tooltip = Democracy_Over_Autocracy_tooltip
+				create_country_leader = {
+		            name = "林森"
+						deology = despotism
+		        }
+				create_faction = ninghan_lianhe
+				CHI = { 
+			    add_to_faction = ROG 
+			    add_to_faction = ROC
+				set_power_balance = {
+				id = CHI_struggle_balance_00
+			    }
+	            }
 				}
 
 	}
