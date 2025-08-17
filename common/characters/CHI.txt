@@ -12,8 +12,8 @@ characters={
 		}
 		field_marshal = {
 			traits = {
-				old_guard
 				CHI_Central_Army
+				old_guard
 	        }
 			skill = 2
 			attack_skill = 1
@@ -101,6 +101,9 @@ characters={
 			id=-1
 		}
 		corps_commander = {
+			traits={ 
+				CHI_Provisional_committee
+			}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -154,7 +157,6 @@ characters={
 			available = {
 			}
 			traits = {
-				army_chief_offensive_1
 			}
 			cost = 100
 			ai_will_do = {
@@ -162,7 +164,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+				Ambitious
+			}
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -356,7 +361,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
+			traits={ 
+				CHI_Central_Army
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -408,8 +415,8 @@ characters={
 		
 		corps_commander={
 			traits={ 
-				old_guard
 				CHI_Central_Army
+				old_guard
 			}
 			skill=2
 			attack_skill=1
