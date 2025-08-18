@@ -1133,6 +1133,13 @@ news_event = {
 			target = RFC
 			type = annex_everything
 		}
+	}
+		ROG={
+		declare_war_on = {
+			target = RFC
+			type = annex_everything
+		}
+	}
 		CHI_CaiTingKai = {
 			set_nationality = RFC
 		}
@@ -1149,7 +1156,6 @@ news_event = {
 	option = {
 			name = WorldNew.9.a
 		}		
-}
 
 news_event = {
 	id = WorldNew.10
