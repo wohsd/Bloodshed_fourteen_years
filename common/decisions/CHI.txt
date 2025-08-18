@@ -790,16 +790,29 @@ CHI_Purging_party_category = {
 		is_good = no
 		timeout_effect = {
 			news_event = RFC_NEW.1
-			RFC={
+            random_unit_leader = {
+					limit = { is_character = CHI_DengYangDa }
+					set_nationality = RFC
+					add_country_leader_role = {
+		            country_leader = {
+					    ideology = despotism
+						traits = {}
+						expire = "1965.1.1.1"
+					    }
+					promote_leader = yes
+				}
+			}
+            RFC = {
 				transfer_state = 600
 				transfer_state = 262
 				transfer_state = 269
 				transfer_state = 281
 				transfer_state = 292
-				declare_war_on = {
-					target = CHI
-					type = annex_everything
-				}
+				600 = { add_core_of = RFC }
+				262 = { add_core_of = RFC }
+				269 = { add_core_of = RFC }
+				281 = { add_core_of = RFC }
+				292 = { add_core_of = RFC }
 				set_capital = {
 					state = 281
 				}

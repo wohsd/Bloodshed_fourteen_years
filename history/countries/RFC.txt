@@ -15,7 +15,7 @@ set_popularities = {
 	neutrality = 100
 }
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	#last_election = "1936.11.11"
 	election_frequency = 72
 	elections_allowed = no

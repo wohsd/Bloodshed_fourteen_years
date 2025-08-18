@@ -85,7 +85,7 @@ focus_tree = {
 				custom_effect_tooltip = Democracy_Over_Autocracy_tooltip
 				create_country_leader = {
 		            name = "林森"
-						deology = despotism
+						ideology = despotism
 		        }
 				create_faction = ninghan_lianhe
 				CHI = { 
@@ -94,8 +94,8 @@ focus_tree = {
 				set_power_balance = {
 				id = CHI_struggle_balance_00
 			    }
-	            }
-				}
+	        }
+		}
 
 	}
 	focus = {

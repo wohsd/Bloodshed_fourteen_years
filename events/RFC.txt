@@ -11,11 +11,7 @@ news_event = {
 	trigger = {
 	}
     immediate = {
-		hidden_effect = {
-			CHI = {
-				country_event = RFC_country.1
-			}
-		}
+        CHI = { country_event = RFC_country.1 } 
 	}
 	option = {
 		name = RFC_NEW.1.a
@@ -35,10 +31,29 @@ country_event = {
 	}
 	option = {
 		name = RFC_country.1.a
-		RFC = { change_tag_from = CHI }
-		
+		RFC = { 
+			set_rule = { 
+                can_not_declare_war=no
+            }
+			create_wargoal = {
+					target = CHI
+					type = annex_everything
+					caller = RFC
+				}
+			change_tag_from = CHI
+		}
 	}
 	option = {
 		name = RFC_country.1.b
+		RFC = { 
+			set_rule = { 
+                can_not_declare_war=no
+            }
+			create_wargoal = {
+					target = CHI
+					type = annex_everything
+					caller = RFC
+				}
+		}
 	}
 }
