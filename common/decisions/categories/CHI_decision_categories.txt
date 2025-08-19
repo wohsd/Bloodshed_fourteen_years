@@ -8,6 +8,15 @@ Hump_route= {
 	visible_when_empty = yes
 }
 
+CHI_struggle_balance_00_category= {
+	icon = military_operation
+	picture = GFX_Hump_route
+	visible = { 
+		tag=CHI
+		has_completed_focus = Democracy_Over_Autocracy
+	}
+	visible_when_empty = yes
+}
 
 
 

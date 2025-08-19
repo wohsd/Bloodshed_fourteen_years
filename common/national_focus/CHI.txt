@@ -63,11 +63,11 @@ focus_tree = {
 		available = {
 			date > 1931.9.17
 			ROG = {
-						has_country_leader = {
-							character = ROG_WangJingWei
-							ruling_only = yes
-						}
-					}
+				has_country_leader = {
+					character = ROG_WangJingWei
+					ruling_only = yes
+				}
+			}
 			
 		}
 		mutually_exclusive = {
