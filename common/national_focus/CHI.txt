@@ -105,6 +105,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Democracy_Over_Autocracy
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
+			    }
 		x = 27
 		y = 2
 
@@ -122,19 +128,11 @@ focus_tree = {
 		x = 20
 		y = 3
 			completion_reward = {
-					set_politics = {
-							ruling_party = democratic
-							elections_allowed = no
-							last_election = "1935.12.17"
-							election_frequency = 48
-						}
-					set_popularities = {
-							democratic = 50
-							neutrality = 15
-							fascism = 30
-							communism = 5
-						}
 					remove_ideas = The_winner_Central
+					add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.2
+				    }
 				}
 
 	}
@@ -145,6 +143,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Liao_Zhongkai_Issue
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.1
+				    }
+			    }
 		x = 38
 		y = 4
 
@@ -156,6 +160,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Unstable_Political_Situation
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = -0.05
+				    }
+			    }
 		x = 34
 		y = 5
 
@@ -255,6 +265,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Unstable_Political_Situation
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = -0.05
+				    }
+			    }
 		x = 43
 		y = 5
 
@@ -701,8 +717,18 @@ add_core_of = CHI
 		x = 62
 		y = 3
 			completion_reward = {
-					remove_ideas = The_winner_Central
-				}
+				set_politics = {
+							ruling_party = democratic
+							elections_allowed = no
+							last_election = "1935.12.17"
+							election_frequency = 48
+						}
+				remove_ideas = The_winner_Central
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.2
+				    }
+			    }
 
 	}
 	focus = {
@@ -715,6 +741,12 @@ add_core_of = CHI
 		prerequisite = {
 			focus = Wang_Jingwei_Leadership
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.1
+				    }
+			    }
 		x = 62
 		y = 4
 
@@ -2708,11 +2740,14 @@ completion_reward = {
 		prerequisite = {
 			focus = Hu_Hanmin_Leadership
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.1
+				    }
+			    }
 		x = 20
 		y = 4
-			completion_reward = {
-
-}
 
 	}
 	focus = {
@@ -3011,6 +3046,12 @@ completion_reward = {
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
+			    }
 		x = 25
 		y = 6
 
@@ -3033,6 +3074,12 @@ completion_reward = {
 		prerequisite = {
 			focus = Seek_League_of_Nations_Help
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
+			    }
 		x = 27
 		y = 7
 
@@ -3044,6 +3091,12 @@ completion_reward = {
 		prerequisite = {
 			focus = Seek_League_of_Nations_Help
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
+			    }
 		x = 23
 		y = 7
 
@@ -3105,6 +3158,11 @@ completion_reward = {
 						}
 					Anti_JP_zeal_add = yes
 					Anti_JP_zeal_var = yes
+			    	add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
+
 				}
 
 	}
@@ -3115,12 +3173,14 @@ completion_reward = {
 		prerequisite = {
 			focus = Negotiate_with_Japan
 		}
+		completion_reward = {
+				add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.1
+				    }
+			    }
 		x = 52
 		y = 7
-			completion_reward = {
-
-}
-
 	}
 	focus = {
 		id = Suppress_Anti_Japanese_Sentiment
@@ -3137,6 +3197,10 @@ completion_reward = {
 						}
 					Anti_JP_zeal_add = yes
 					Anti_JP_zeal_var = yes
+				    add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
 				}
 
 	}
@@ -3155,6 +3219,10 @@ completion_reward = {
 						}
 					Anti_JP_zeal_add = yes
 					Anti_JP_zeal_var = yes
+				    add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
 				}
 
 	}
