@@ -1429,3 +1429,31 @@ CHI_Encirclement_suppression_operation_category = {
 		}
 	}
 }
+###架空线权力平衡 
+CHI_struggle_balance_00_category = {
+    The_opposition_is_in_action = {
+        available = {
+			OR = {
+            NOT = { has_completed_focus = Chairman_Wangs_European_Tour }  
+            NOT = { has_completed_focus = Special_Parliament_Leader_Hu_Hanmin }  
+			}
+        }
+        activation = {
+            OR = {
+            NOT = { has_completed_focus = Chairman_Wangs_European_Tour }  
+            NOT = { has_completed_focus = Special_Parliament_Leader_Hu_Hanmin }  
+			}
+        }
+		fire_only_once = no
+        days_mission_timeout = 30
+        timeout_effect = {
+            add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.05
+				    }
+        }
+		complete_effect = {
+            add_political_power = 50
+        }
+    }
+}
