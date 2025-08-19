@@ -774,7 +774,7 @@ CHI_Purging_party_category = {
 				has_country_flag = CHI_DengYangDa1
 			} 
 		}
-		days_mission_timeout = 60
+		days_mission_timeout =235
 		activation = {
 			AND={
 				tag = CHI
