@@ -89,6 +89,7 @@ DEBUG = {
 		}
 		complete_effect = {
 			news_event = WorldNew.20
+			country_event = Hidden_News.16
 		}
 	}
 	DEBUG6 = {
@@ -117,11 +118,14 @@ DEBUG = {
 		}
 		complete_effect = {
 			news_event = WorldNew.19
-			add_timed_idea = {
-				idea = Death_in_March
-				days = 90
-			}  
-			add_ideas = China_Offensive
+			JAP={
+				add_timed_idea = {
+					idea = Death_in_March
+					days = 90
+				}  
+				add_ideas = China_Offensive
+			}
+			
 		}
 	}
 	DEBUG8 = { 

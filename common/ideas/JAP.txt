@@ -1,5 +1,45 @@
 ideas = {
 	country = {
+		China_Offensive = {
+			picture=Militaristic_fervor
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag=CHI
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
+			}
+			targeted_modifier = {
+				tag=ROJ
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
+			}
+			targeted_modifier = {
+				tag=ROC
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
+			}
+			targeted_modifier = {
+				tag=ROY
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
+			}
+			targeted_modifier = {
+				tag=ROA
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
+			}
+			targeted_modifier = {
+				tag=JDW
+				attack_bonus_against=0.3
+                defense_bonus_against=0.3
+			}
+		}
 		Death_in_March={
 			picture=Death_in_March
 			allowed = {
@@ -43,46 +83,7 @@ ideas = {
 				terrain_penalty_reduction= 0.2	5	
 			}
 		}
-		China_Offensive = {
-			picture=Militaristic_fervor
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-			}
-			removal_cost = -1
-			targeted_modifier = {
-				tag=CHI
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-			}
-			targeted_modifier = {
-				tag=ROJ
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-			}
-			targeted_modifier = {
-				tag=ROC
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-			}
-			targeted_modifier = {
-				tag=ROY
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-			}
-			targeted_modifier = {
-				tag=ROA
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-			}
-			targeted_modifier = {
-				tag=JDW
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
-			}
-		}
+		
 
 		
 	}

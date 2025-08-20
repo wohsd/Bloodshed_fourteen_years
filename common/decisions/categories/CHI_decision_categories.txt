@@ -46,6 +46,7 @@ CHI_Battle_China = {
 		original_tag = CHI   
 		has_war_with = JAP
 	}
+	priority = 111
 	visible_when_empty = yes
 }
 CHI_Chinese_Hindenburg_category {

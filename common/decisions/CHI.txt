@@ -135,7 +135,6 @@ CHI_struggle_balance_category = {
 CHI_Battle_China = {
 	Battle_ShangHai = {
 		available = {
-			
 			CHI={
 				has_war_with = JAP
 			}
@@ -170,18 +169,24 @@ CHI_Battle_China = {
 			}
 		}
 		activation = {
+			NOT = {
+				has_country_flag = songhu_lose
+				has_country_flag = songhu_win
+			}
 			has_country_flag = songhu  
 		}		
 		fixed_random_seed = no
 		fire_only_once = yes
 		is_good = no
 		cancel_effect = {
+			
 			228={
 				set_state_controller_to = JAP
 			}
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = -5
 			}
+			add_political_power = -30
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 			clr_country_flag = songhu
@@ -191,6 +196,7 @@ CHI_Battle_China = {
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = -5
 			}
+			add_political_power = -20
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 			clr_country_flag = songhu
@@ -199,6 +205,7 @@ CHI_Battle_China = {
 		complete_effect = {
 			add_stability = 0.1
 			add_political_power = 100
+			news_event = Win_City.1
 			clr_country_flag = songhu
 			set_country_flag = songhu_win
 		}
@@ -230,8 +237,9 @@ CHI_Battle_China = {
 			}
 		}
 		activation = {
-			ROJ={
-				controls_province = 2640
+			NOT = {
+				has_country_flag = Taiyuan_lose
+				has_country_flag = Taiyuan_win
 			}
 			JAP={
 				controls_province = 2640
@@ -247,7 +255,8 @@ CHI_Battle_China = {
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 			clr_country_flag = Taiyuan
-			set_country_flag = Taiyuan_lose  
+			set_country_flag = Taiyuan_lose 
+			news_event = Fall_City.3
 		}
 		timeout_effect = {
 			add_to_temp_variable = {
@@ -257,14 +266,96 @@ CHI_Battle_China = {
 			Anti_JP_zeal_var = yes
 			clr_country_flag = Taiyuan
 			set_country_flag = Taiyuan_lose  
+			news_event = Fall_City.3
 		}
 		complete_effect = {
 			add_stability = 0.1
 			add_political_power = 100
 			clr_country_flag = Taiyuan
 			set_country_flag = Taiyuan_win
+			news_event = Win_City.2
 		}
 	}
+
+	Battle_XuZhou = {
+		available = {
+			CHI={
+				has_war_with = JAP
+			}
+		NOT={
+			JAP={
+				controls_province = 2827
+				controls_province = 3091
+				controls_province = 1919
+			}
+		}
+			CHI={
+				controls_province = 2827
+				controls_province = 3091
+				controls_province = 1919
+			}
+		}
+		days_mission_timeout = 90
+		cancel_trigger = {
+			JAP={
+				controls_province = 2827
+				controls_province = 3091
+				controls_province = 1919
+			}
+		}
+		activation = {
+			NOT = {
+				has_country_flag = Xuzhou_lose
+				has_country_flag = Xuzhou_win
+			}
+			JAP={
+				controls_province = 1680
+			}
+		}
+		cancel_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Xuzhou
+			set_country_flag = Xuzhou_lose 
+			news_event = Fall_City.4
+		}
+		timeout_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Xuzhou
+			set_country_flag = Xuzhou_lose  
+			news_event = Fall_City.4
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = Xuzhou
+			set_country_flag = Xuzhou_win
+			news_event = Win_City.3
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 ######### 
 ######## 

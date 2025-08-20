@@ -2,6 +2,7 @@
 add_namespace = CHI_1937
 add_namespace = CHI_1937_hidden
 add_namespace = Fall_City
+add_namespace = Win_City
 add_namespace = ShangHai
 add_namespace = Generals
 
@@ -271,6 +272,91 @@ news_event = {
 		
 	}
 }		
+
+
+
+
+news_event = {
+	id = Fall_City.3
+	title =Fall_City.3.t
+	desc = Fall_City.3.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Fall_City.3.a
+	}
+}		
+
+
+
+news_event = {
+	id = Fall_City.4
+	title =Fall_City.4.t
+	desc = Fall_City.4.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Fall_City.4.a
+	}
+}		
+
+
+
+
+
+news_event = {
+	id = Win_City.1
+	title =Win_City.1.t
+	desc = Win_City.1.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Win_City.1.a
+	}
+}	
+
+news_event = {
+	id = Win_City.2
+	title =Win_City.2.t
+	desc = Win_City.2.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Win_City.2.a
+	}
+}	
+
+
+news_event = {
+	id = Win_City.3
+	title =Win_City.3.t
+	desc = Win_City.3.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Win_City.3.a
+	}
+}	
+
+
+
+
+
 country_event = {
 	id = ShangHai.0
 	title =ShangHai.0.t
