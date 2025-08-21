@@ -283,6 +283,7 @@ news_event = {
 	picture=GFX_Fall_City_2
 	major = yes
 	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
 	}
 	option = {
@@ -352,6 +353,202 @@ news_event = {
 		name = Win_City.3.a
 	}
 }	
+
+
+news_event = {
+	id = Win_City.4
+	title = Win_City.4.t
+	desc = Win_City.4.d
+	picture = GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.4.a
+	}
+}
+	
+news_event = {
+	id = Win_City.5
+	title = Win_City.5.t
+	desc = Win_City.5.d
+	picture = GFX_Fall_City_3
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.5.a
+	}
+}
+	
+news_event = {
+	id = Win_City.6
+	title = Win_City.6.t
+	desc = Win_City.6.d
+	picture = GFX_Fall_City_4
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.6.a
+	}
+}
+	
+news_event = {
+	id = Win_City.7
+	title = Win_City.7.t
+	desc = Win_City.7.d
+	picture = GFX_Fall_City_5
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.7.a
+	}
+}
+	
+news_event = {
+	id = Win_City.8
+	title = Win_City.8.t
+	desc = Win_City.8.d
+	picture = GFX_Fall_City_6
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.8.a
+	}
+}
+	
+news_event = {
+	id = Win_City.9
+	title = Win_City.9.t
+	desc = Win_City.9.d
+	picture = GFX_Fall_City_7
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.9.a
+	}
+}
+	
+news_event = {
+	id = Win_City.10
+	title = Win_City.10.t
+	desc = Win_City.10.d
+	picture = GFX_Fall_City_8
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.10.a
+	}
+}
+	
+news_event = {
+	id = Win_City.11
+	title = Win_City.11.t
+	desc = Win_City.11.d
+	picture = GFX_Fall_City_9
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.11.a
+	}
+}
+	
+news_event = {
+	id = Win_City.12
+	title = Win_City.12.t
+	desc = Win_City.12.d
+	picture = GFX_Fall_City_10
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.12.a
+	}
+}
+	
+news_event = {
+	id = Win_City.13
+	title = Win_City.13.t
+	desc = Win_City.13.d
+	picture = GFX_Fall_City_11
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.13.a
+	}
+}
+	
+news_event = {
+	id = Win_City.14
+	title = Win_City.14.t
+	desc = Win_City.14.d
+	picture = GFX_Fall_City_12
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.14.a
+	}
+}
+	
+news_event = {
+	id = Win_City.15
+	title = Win_City.15.t
+	desc = Win_City.15.d
+	picture = GFX_Fall_City_13
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.15.a
+	}
+}
+	
+news_event = {
+	id = Win_City.16
+	title = Win_City.16.t
+	desc = Win_City.16.d
+	picture = GFX_Fall_City_14
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.16.a
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

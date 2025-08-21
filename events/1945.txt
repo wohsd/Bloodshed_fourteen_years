@@ -8,6 +8,12 @@ country_event = {
 	
     trigger = {
 		AND={
+			CHI = {
+				exists = yes
+			}
+			CHI_JiangJieShi = {
+				is_country_leader = yes
+			}
 			date = 1945.8.6
 		}
     }
@@ -33,6 +39,12 @@ country_event = {
 	
     trigger = {
 		AND={
+			CHI = {
+				exists = yes
+			}
+			CHI_JiangJieShi = {
+				is_country_leader = yes
+			}
 			date = 1945.8.9
 		}
     }
