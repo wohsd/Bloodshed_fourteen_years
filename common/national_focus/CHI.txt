@@ -62,6 +62,7 @@ focus_tree = {
 		}
 		available = {
 			date > 1931.9.17
+			NOT = { has_war_with = ROG }
 			ROG = {
 				has_country_leader = {
 					character = ROG_WangJingWei
@@ -82,6 +83,7 @@ focus_tree = {
 		    country_event = { id = CHI.1 }
 		}
 		completion_reward = {
+			    add_popularity = { ideology = democratic popularity = 0.2 } 
 				custom_effect_tooltip = Democracy_Over_Autocracy_tooltip
 				create_country_leader = {
 		            name = "林森"
