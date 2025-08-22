@@ -62,7 +62,9 @@ CHI_Encirclement_suppression_operation_category = {
 	picture = GFX_Encirclement_suppression_operation
 	visible = {  
 		tag=CHI
+		date < 1936.1.1
 	}
+	
 }
  
 CHI_Purging_party_category = {

@@ -13,10 +13,7 @@ state={
 		
 		1939.1.1={
 			owner = CHI
-add_core_of = CHI
-		}
-		1941.1.1={
-			owner = JAP
+			add_core_of = CHI
 		}
 	}
 

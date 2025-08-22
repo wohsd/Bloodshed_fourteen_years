@@ -150,24 +150,56 @@ Eeconomic_system = {
 		visible = {
 		}
 		cost = 0 
-		days_remove= 0
+		days_remove= 10
 		fire_only_once = no
 		ai_will_do = {
 			factor = 0
 		}
 		complete_effect = {
+			add_to_variable = {
+				ECO_FAC = 5
+				tooltip = ECO_FAC_5
+			}
+			add_to_variable = {
+				ECO = -5
+				tooltip = ECO_-5
+			}
+		}
+		modifier = {
+			line_change_production_efficiency_factor =0.05
+			production_factory_efficiency_gain_factor=0.05
+			production_factory_max_efficiency_factor =0.05
+			industrial_capacity_factory = 0.05
 		}
 	}
 	Increase_military_spending = {
 		visible = {
 		}
 		cost = 0 
-		days_remove= 0
+		days_remove= 10
 		fire_only_once = no
 		ai_will_do = {
 			factor = 0
+		} 
+		complete_effect = {
+			
 		}
 		complete_effect = {
+			add_to_variable = {
+				ECO_ARMY = 5
+				tooltip = ECO_ARMY_5
+			}
+			add_to_variable = {
+				ECO = -5
+				tooltip = ECO_-5
+			}
+		}
+		modifier = {
+			training_time_factor = -0.05
+			experience_gain_army_factor=0.05
+			experience_gain_air_factor=0.05
+			experience_gain_navy_factor=0.05
+			command_power_gain_mult=0.05
 		}
 	}
 	Printed_banknotes = {
@@ -180,6 +212,25 @@ Eeconomic_system = {
 			factor = 0
 		}
 		complete_effect = {
+			add_to_variable = {
+				ECO = 5
+			}
+			add_to_variable = {
+				ECO_INF = 0.5
+				tooltip = ECO_INF_05
+			}
+			add_to_variable = {
+				ECO_INF_temp = -0.1
+			}
+			add_to_variable = {
+				ECO1 = -0.001
+			}
+			add_stability = var:ECO1
+			add_war_support = var:ECO1
+			add_popularity = {
+				ideology = var:highest_party_ideology
+				popularity = var:ECO1
+			}
 		}
 	}
 }

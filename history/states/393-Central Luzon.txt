@@ -12,6 +12,9 @@ state={
 		victory_points = {
 			2677 15
 		}
+		1941.1.1={
+			owner = JAP
+		}
 		add_core_of = USA
 	}
 	manpower=323000

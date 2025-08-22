@@ -1,84 +1,85 @@
 on_actions = {
 	# country 
-	on_daily = {
+	on_startup = {
 		effect = {
 			every_country = {
-				set_temp_variable = {
-					temp_manpower_k = manpower_k
-				}
-				set_variable = { 
+				add_to_variable = {
 					ECO = num_of_factories
 				}
 				add_to_variable = {
-					ECO_ARMY = temp_manpower_k
+					ECO = manpower
 				}
-				
-				
-				set_variable = {
-					ECO_FAC = num_of_factories
+				add_to_variable = {
+					ECO_ARMY=max_available_manpower_k
 				}
-				multiply_variable = {
-					ECO_FAC = 25000
-				}
-				set_variable = {
-					ECO_ARMY = temp_manpower_k
-				}
-				multiply_variable = {
-					ECO_ARMY = 1500
-				}
-				set_variable = {
-					ECO_INF = num_of_factories
+				add_to_variable = {
+					ECO_FAC=num_of_factories
 				}
 				divide_variable = {
-					ECO_INF = 5
+					ECO = 1000
 				}
-				subtract_from_variable = {
-					ECO = ECO_ARMY
-				}
-				subtract_from_variable = {
-					ECO = ECO_FAC
-				}
-				set_temp_variable = {
-					ECO_INF1 = ECO_INF
-				}  
-
 				multiply_variable = {
-					ECO_INF1 = 1500
+					ECO_FAC = 2
+				}
+				divide_variable = {
+					ECO_ARMY = 10
 				}
 
-				subtract_from_variable = {
-					ECO = ECO_INF1
+				divide_variable = {
+					ECO = 10
 				}
-			####挂钩
+				divide_variable = {
+					ECO_FAC = 10
+				}
+				divide_variable = {
+					ECO_ARMY = 10
+				}
+
+
+
+
+
 				set_variable = {
-					ECO1=ECO
+					ECO_INF = ECO
+				}
+				divide_variable = {
+					ECO_INF = 8
+				}
+
+				set_variable = {
+					ECO1 = ECO_INF
 				}
 				multiply_variable = {
 					ECO1 = -0.001
 				}
-				multiply_variable = {
-					ECO1 = 0.001
+
+
+				set_variable = {
+					ECO_INF_temp= ECO_INF
 				}
 				multiply_variable = {
-					ECO1 = 0.01
+					ECO_INF_temp = -0.1
+				}
+
+
+				every_country  = {
+					add_stability = var:ECO1
+					add_war_support = var:ECO1
+					add_popularity = {
+						ideology = highest_party_ideology
+						popularity = var:ECO1
+					}
 				}
 			}
+
+
 		}
 	}
 
-	on_monthly = {
-		effect = {
-			ROOT = {
-				add_stability = var:ECO1
-				add_war_support = var:ECO1
-				add_popularity = {
-					ideology = highest_party_ideology
-					popularity = var:ECO1
-				}
-				
-			}
-		}
-	}
+
+
+
+
 
 	on_daily = {
 		effect = {
@@ -93,6 +94,8 @@ on_actions = {
 			
 		}
 	}
+
+	
 	on_capitulation = {
 		effect = {
 			if = {

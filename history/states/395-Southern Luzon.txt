@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		1941.1.1={
+			owner = JAP
+		}
 		add_core_of = USA
 	}
 	manpower=323000

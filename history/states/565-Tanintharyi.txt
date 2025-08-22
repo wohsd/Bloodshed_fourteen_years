@@ -5,11 +5,14 @@ state={
 		826 1122 3002 5201
 	}
 	history={
-		owner = SIA
+		owner = RAJ
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = SIA
+		1941.1.1={
+			owner = JAP
+		}
+		add_core_of = RAJ
 	}
 	manpower=323000
 	state_category = town
