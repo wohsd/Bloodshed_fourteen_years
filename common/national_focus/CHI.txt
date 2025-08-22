@@ -79,9 +79,6 @@ focus_tree = {
 		ai_will_do = {
 				factor = 0
 			}
-		select_effect = {
-		    country_event = { id = CHI.1 }
-		}
 		completion_reward = {
 			    add_popularity = { ideology = democratic popularity = 0.2 } 
 				custom_effect_tooltip = Democracy_Over_Autocracy_tooltip
