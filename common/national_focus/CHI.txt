@@ -61,15 +61,7 @@ focus_tree = {
 			focus = Victory_of_the_National_Revolution
 		}
 		available = {
-			date > 1931.9.17
-			NOT = { has_war_with = ROG }
-			ROG = {
-				has_country_leader = {
-					character = ROG_WangJingWei
-					ruling_only = yes
-				}
-			}
-			
+			has_country_flag = jiangjieshi_gg
 		}
 		mutually_exclusive = {
 			focus = Chiang_Kai_shek_Consolidates_Power
