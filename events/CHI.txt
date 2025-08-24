@@ -1,32 +1,38 @@
 ﻿add_namespace = CHI
 country_event = {
-	id = CHI.1
-	title =  CHI.1.t
-	desc = CHI.1.d
-
+	id = CHI.91
+	hidden = yes
     fire_only_once = yes
-	is_triggered_only = no
 
 	trigger = {
 		AND={
-			tag = CHI
-            date > 1931.6.13
-		    date < 1931.6.15
+            date > 1931.6.1
+		    date < 1931.6.3
 		}
     }
-
-	mean_time_to_happen = {
-		days = 1
+	immediate = {
+		CHI =  { country_event = { id = CHI.1 } }
 	}
+	mean_time_to_happen = { days = 2 }
+	option = { name = CHI.01 }
+}
+country_event = {
+	id = CHI.1
+	title =  CHI.1.t
+	desc = CHI.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = CHI.1.a
-		CHI =  { country_event = { id = CHI.2 } }
+		CHI =  { country_event = { id = CHI.2  days = 3 } }
 	}
 	option = {
 		name = CHI.1.b
-		CHI =  { country_event = { id = CHI.3 } }
-		retire_character = CHI_CHI_JiangJieShi
+		CHI =  { 
+			country_event = { id = CHI.3  days = 3 } 
+		    retire_character = CHI_JiangJieShi
+		}
 		set_country_flag = jiangjieshi_gg
 	}
 }
@@ -34,26 +40,23 @@ country_event = {
 	id = CHI.2
 	title =  CHI.2.t
 	desc = CHI.2.d
-    fire_only_once = yes  
-    is_triggered_only = YES
+    is_triggered_only = yes  
 
 	option = {
 		name = CHI.2.a
 		custom_effect_tooltip = CHI.2.a.d
-		set_country_flag = diaocha_wang
+		set_country_flag = diaocha
 	}
 	option = {
 		name = CHI.2.b
 		custom_effect_tooltip = CHI.2.b.d
-		set_country_flag = diaocha_deng
 	}
 }
 country_event = {
 	id = CHI.3
 	title =  CHI.3.t
 	desc = CHI.3.d
-    fire_only_once = yes  
-    is_triggered_only = YES
+    is_triggered_only = yes
 
 	option = {
 		name = CHI.3.a
@@ -62,16 +65,37 @@ country_event = {
 		name = CHI.3.b
 	}
 }
+
+country_event = {
+	id = CHI.92
+	hidden = yes
+    fire_only_once = yes
+
+	trigger = {
+		AND={
+            date > 1931.7.1
+		    date < 1931.7.3
+		}
+    }
+	immediate = {
+		if = {
+			limit = { CHI = { has_country_flag = diaocha } }
+		    CHI =  { country_event = { id = CHI.4 } }
+	    }
+		else_if = {
+		    CHI =  { country_event = { id = CHI.5 } } 
+	    }
+	}
+	mean_time_to_happen = { days = 2 }
+	option = { name = CHI.02 }
+}
+
 country_event = {
 	id = CHI.4
 	title =  CHI.4.t
 	desc = CHI.4.d
-	trigger = {
-        date > 1931.6.25
-		has_country_flag = diaocha_wang
-    }
     fire_only_once = yes  
-    is_triggered_only = no
+    is_triggered_only = yes
 
 	option = {
 		name = CHI.4.a
@@ -81,12 +105,8 @@ country_event = {
 	id = CHI.5
 	title =  CHI.5.t
 	desc = CHI.5.d
-	trigger = {
-        date > 1931.6.25
-		has_country_flag = diaocha_deng
-    }
     fire_only_once = yes  
-    is_triggered_only = no
+    is_triggered_only = yes
 
 	option = {
 		name = CHI.5.a
