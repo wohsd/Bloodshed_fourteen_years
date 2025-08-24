@@ -13,9 +13,6 @@ state={
 		victory_points = {
 			1886 10
 		}
-		1939.1.1={
-			owner = JAP
-		}
 		1941.1.1={
 			owner = JDF
 		}

@@ -17,8 +17,16 @@ CHI_struggle_balance_00_category= {
 	}
 	visible_when_empty = yes
 }
-
-
+ 
+Scorched_earth_policy = {
+	icon = military_operation
+	picture = GFX_Hump_route
+	visible = { 
+		tag=CHI
+		has_completed_focus = CHIFocus_29
+	}
+	visible_when_empty = yes
+}
 
 CHI_Discipline_government_category= {
 	icon = military_operation

@@ -701,13 +701,11 @@ characters={
 			logistics_skill=1
 		}
 	}
-
-
-	CHI_YuJiShi={
-		name=CHI_YuJiShi
+	CHI_XuTingYao={
+		name=CHI_XuTingYao
 		portraits={
 			army={
-				large="gfx/leaders/CHI/CHI_YuJiShi.png"
+				large="gfx/leaders/CHI/CHI_XuTingYao.png"
 			}
 		}
 		corps_commander={
@@ -720,12 +718,31 @@ characters={
 		}
 	}
 
+	CHI_HuZongNan={
+		name=CHI_HuZongNan
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_HuZongNan.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
 	CHI_SunKe={
 		name=CHI_SunKe
 		portraits={
 			civilian={
 				large="gfx/leaders/CHI/CHI_SunKe.png"
+				small = "gfx/interface/advisers/CHI_SunKe.png"
 			}
+
 		}
 		country_leader={
 			ideology=liberalism
@@ -735,6 +752,7 @@ characters={
 		}
 		advisor={	
 			slot = political_advisor
+			idea_token = CHI_SunKe_P
 			allowed = {
 				original_tag = CHI
 			}
@@ -749,5 +767,133 @@ characters={
 		}
 	}
 
+	CHI_KongXiangXi={
+		name=CHI_KongXiangXi
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_KongXiangXi.png"
+			}
 
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_KongXiangXi_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				the_banker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
+
+	CHI_HuangFu={
+		name=CHI_HuangFu
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_HuangFu.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_HuangFu_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				BRA_distinguished_diplomat
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_LingSeng={
+		name=CHI_LingSeng
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_LingSeng.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_LingSeng_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				old_figurehead
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_JiangJingGuo={
+		name=CHI_JiangJingGuo
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_JiangJingGuo.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_JiangJingGuo_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				soviet_thaw
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_ZhangQun={
+		name=CHI_ZhangQun
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_ZhangQun.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_ZhangQun_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				BRA_political_fox
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}
