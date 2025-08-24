@@ -891,6 +891,26 @@ add_core_of = CHI
 					modifier = SOV_supported_china_good
 				}
 			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = support_equipment
+				seller_tags = { SOV }
+			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = infantry_equipment
+				seller_tags = { SOV }
+			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = anti_tank_equipment
+				seller_tags = { SOV }
+			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = anti_air_equipment
+				seller_tags = { SOV }
+			}
 		}
 	}
 	focus = {
@@ -905,9 +925,9 @@ add_core_of = CHI
 		completion_reward = {
 			SOV = {
 				send_equipment = {
-					equipment = fighter_equipment_1
+					type = small_plane_airframe
 					amount = 500
-					target = CHI
+					target = ROOT
 				}
 			}
 		}
@@ -935,7 +955,27 @@ add_core_of = CHI
 		}
 		x = 64
 		y = 14
+		completion_reward = {
+			SOV = {
+				send_equipment = {
+					type = artillery_equipment
+					amount = 160
+					target = ROOT
+				}
+				send_equipment = {
+					type = anti_tank_equipment
+					amount = 80
+					target = ROOT
+				}
+				send_equipment = {
+					type = anti_air_equipment
+					amount = 40
+					target = ROOT
+				}
+			}
 
+			
+		}
 	}
 	focus = {
 		id = Regulate_Capital
@@ -3318,6 +3358,26 @@ completion_reward = {
 					modifier = SOV_supported_china_good
 				}
 			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = support_equipment
+				seller_tags = { USA }
+			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = infantry_equipment
+				seller_tags = { USA }
+			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = anti_tank_equipment
+				seller_tags = { USA }
+			}
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = anti_air_equipment
+				seller_tags = { USA }
+			}
 		}
 	}
 	focus = {
@@ -3438,7 +3498,13 @@ completion_reward = {
 		}
 		x = 63
 		y = 16
-
+		completion_reward = {
+			add_equipment_subsidy = {
+				cic = 300
+				equipment_type = support_equipment
+				seller_tags = { USA RAJ }
+			}
+		}
 	}
 	focus = {
 		id = CHIFocus_19
@@ -3666,88 +3732,78 @@ completion_reward = {
 		x = 72
 		y = 12
 		completion_reward = {
-			hidden_effect = {
-				every_state = {
-					limit = {
-						is_core_of = ROOT
-						not = { is_controlled_by = ROOT }
-						infrastructure < 3
-					}
-					damage_building = {
-						type = infrastructure
-						damage = 1
-					}
-					add_resistance_target = {
-						amount = 10
-						tooltip = FRA_the_maquis
-					}
-				}
-			}
+			unlock_decision_category_tooltip = Scorched_earth_policy
 			
 		
 		}
-	}
+	} 
 	focus = {
 		id = CHIFocus_30
 		icon = GFX_focus_attack_japan
 		cost = 10.00
-		prerequisite = {
+		prerequisite = { 
 			focus = CHIFocus_1
 		}
 		x = 68
 		y = 11
-
+		completion_reward = {
+			
+		}
 	}
 	focus = { 
 		id = CHIFocus_31
 		icon = GFX_focus_attack_japan
 		cost = 10.00
 		prerequisite = {
-			focus = CHIFocus_30
+			focus = CHIFocus_30 
+		}
+		available = {
+			is_neighbor_of = PRC
 		}
 		x = 68
 		y = 12
 		completion_reward = {
-					every_state = {
-							limit = {
-								OR = {
-									is_controlled_by = ROOT
-									any_country = {
-										is_subject_of = ROOT
-										controls_state = PREV
-									}
-								}
-								OR = {
-									state = 89  
-									state = 116  
-									state = 655  
-									state = 656  
-									state = 657  
-									state = 658  
-									state = 147  
-									state = 154  
-									state = 157  
-									state = 162  
-									state = 170  
-									state = 175  
-									state = 190  
-									state = 191  
-									state = 629  
-									state = 630  
-									state = 677
-								}
-							}
-							add_building_construction = {
-								type = bunker
-								level = 4
-								instant_build = yes
-								province = {
-									all_provinces = yes
-									limit_to_border_country = PRC
-								}
-							}
+			send_embargo = PRC
+			custom_effect_tooltip = CHIFocus_31_tt
+			every_state = {
+				limit = {
+					OR = {
+						is_controlled_by = ROOT
+						any_country = {
+							is_subject_of = ROOT
+							controls_state = PREV
+						}
+					}
+				OR = {
+						state = 89  
+						state = 116  
+						state = 655  
+						state = 656  
+						state = 657  
+						state = 658  
+						state = 147  
+						state = 154  
+						state = 157  
+						state = 162  
+						state = 170  
+						state = 175  
+						state = 190  
+						state = 191  
+						state = 629  
+						state = 630  
+						state = 677
+					}
+				}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							limit_to_border_country = PRC
 						}
 				}
+			}
+		}
 	}
 
 	focus = {

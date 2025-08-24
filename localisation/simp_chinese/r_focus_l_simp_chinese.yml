@@ -516,9 +516,12 @@ CHIFocus_28: "战略反攻阶段"
 CHIFocus_28_desc: ""
 CHIFocus_29: "焦土政策"
 CHIFocus_29_desc: ""
-CHIFocus_30: "怀疑国共合作"
+CHIFocus_30: "准备反共行动"
 CHIFocus_30_desc: ""
 CHIFocus_31: "封锁陕甘宁"
 CHIFocus_31_desc: ""
+CHIFocus_31_tt: "当我们与[PRC.getflag][PRC.getname]邻近时，立即修建防御工事"
+
+
 CHIFocus_32: "十万青年十万军"
 CHIFocus_32_desc: ""

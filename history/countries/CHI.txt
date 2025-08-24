@@ -42,7 +42,7 @@ recruit_character = CHI_SunLianZhong
 recruit_character = CHI_ShangGuanYunXiang
 recruit_character = CHI_JiangDingWen
 recruit_character = CHI_JiangBaiLi
-recruit_character = CHI_HuZongNan
+
 recruit_character = CHI_HuangWei
 recruit_character = CHI_HuangBaiTao
 recruit_character = CHI_GuanLinZheng
@@ -60,8 +60,11 @@ recruit_character = CHI_LingSeng
 recruit_character = CHI_CaiTingKai
 recruit_character = CHI_JiangGuangDing
 
-
-
+recruit_character = CHI_KongXiangXi
+recruit_character = CHI_HuangFu
+recruit_character = CHI_JiangJingGuo
+recruit_character = CHI_ZhangQun
+recruit_character = CHI_HuZongNan
 recruit_character = CHI_Alexander_von_Falkenhausen
 add_ideas = {
 	CHI_army_corruption_1
