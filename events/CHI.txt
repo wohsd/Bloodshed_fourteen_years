@@ -3,53 +3,73 @@ country_event = {
 	id = CHI.1
 	title =  CHI.1.t
 	desc = CHI.1.d
+	trigger = {
+        date > 1931.6.13
+		tag = CHI
+    }
     fire_only_once = yes  
-    is_triggered_only = yes
+    is_triggered_only = no
 
 	option = {
 		name = CHI.1.a
-		CHI = {
-			country_event = { id = CHI.2  } 
-		}
+		CHI =  { country_event = { id = CHI.2 } }
 	}
+	option = {
+		name = CHI.1.c
+		CHI =  { country_event = { id = CHI.3 } }
 	}
+}
 country_event = {
 	id = CHI.2
 	title =  CHI.2.t
 	desc = CHI.2.d
-
-	is_triggered_only = yes
+    fire_only_once = yes  
+    is_triggered_only = YES
 
 	option = {
 		name = CHI.2.a
-        CHI =  {
-		country_event = { id = CHI.3  } 
-	}
+		custom_effect_tooltip = CHI.2.a.d
+		hidden_effect = { CHI =  { country_event = { id = CHI.4 } } }
 	}
 	option = {
 		name = CHI.2.b
-	    CHI = {
-			country_event = { id = CHI.3  } 
-		}
+		custom_effect_tooltip = CHI.2.b.d
+		hidden_effect = { CHI =  { country_event = { id = CHI.5 } } }
 	}
-	}
-	country_event = {
+}
+country_event = {
 	id = CHI.3
 	title =  CHI.3.t
 	desc = CHI.3.d
-
-	is_triggered_only = yes
+    fire_only_once = yes  
+    is_triggered_only = YES
 
 	option = {
 		name = CHI.3.a
-        CHI = {
-			complete_national_focus = Democracy_Over_Autocracy
-		}
 	}
 	option = {
 		name = CHI.3.b
-		CHI = {
-            complete_national_focus = Democracy_Over_Autocracy
-	 }
+	}
+}
+country_event = {
+	id = CHI.4
+	title =  CHI.4.t
+	desc = CHI.4.d
+    fire_only_once = yes  
+    is_triggered_only = YES
+
+	option = {
+		name = CHI.4.a
+	}
+}
+country_event = {
+	id = CHI.5
+	title =  CHI.5.t
+	desc = CHI.5.d
+    fire_only_once = yes  
+    is_triggered_only = YES
+
+	option = {
+		name = CHI.5.a
 	}
 }
