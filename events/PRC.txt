@@ -403,5 +403,3 @@ country_event = {
 		add_political_power = 50
 	}
 }
-
-

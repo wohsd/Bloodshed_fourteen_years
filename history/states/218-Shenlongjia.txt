@@ -5,19 +5,19 @@ state={
 		919 3809
 	}
 	history={
-		owner = NSD
+		owner = CHI
 		buildings = {
 			infrastructure = 1
 		}
 		
-        add_core_of = NSD
+        add_core_of = CHI
 		1933.1.1={
-			owner = CHI
-add_core_of = CHI
+			owner = NSD
+			add_core_of = NSD
 		}
 		1936.1.1={
 			owner = CHI
-add_core_of = CHI
+			add_core_of = CHI
 		}
 	}
 	manpower=123000
