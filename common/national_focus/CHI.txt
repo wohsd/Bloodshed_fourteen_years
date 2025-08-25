@@ -17,7 +17,7 @@ focus_tree = {
 		x = 72
 		y = 0
 		completion_reward = { 
-			add_stability = var:ECO1
+			add_political_power = 200
 		}
 
 	}
@@ -27,9 +27,9 @@ focus_tree = {
 		cost = 7.00
 		x = 45
 		y = 11
-			completion_reward = {
-					add_command_power = 50
-				}
+		completion_reward = {
+			add_command_power = 50
+		}
 
 	}
 	focus = {
@@ -40,11 +40,16 @@ focus_tree = {
 		y = 10
 		available = {
 			date = 1937.7.7
+			has_country_leader = {
+				ruling_only = yes
+				character = CHI_JiangJieShi  
+			}
 		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
+			news_event = {id=CHIFocus.1 days=10}
 			add_war_support = 0.1
 			add_to_temp_variable = {
 				temp_Anti_JP_zeal = 25
@@ -2286,7 +2291,7 @@ completion_reward = {
 							tooltip = economy_var_tooltip
 							check_variable = {
 									var = National_economy_var
-									value = 80
+									value = 60
 									compare = greater_than_or_equals
 								}
 						}
@@ -2754,14 +2759,14 @@ completion_reward = {
 							tooltip = literacy_var_tooltip
 							check_variable = {
 									var = National_literacy_var
-									value = 80
+									value = 60
 									compare = greater_than_or_equals
 								}
 						}
 				}
-			completion_reward = {
-					add_research_slot = 1
-				}
+		completion_reward = {
+			add_research_slot = 1
+		}
 
 	}
 	focus = {
@@ -3804,6 +3809,8 @@ completion_reward = {
 		}
 		x = 75 
 		y = 17
-
+		completion_reward = {
+			add_ideas = Encourage_enlistment_military
+		}
 	}
 }

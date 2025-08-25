@@ -1,4 +1,18 @@
 spriteTypes = {
+
+	
+	spriteType = {
+		name = "GFX_SCR_1"
+		texturefile = "gfx/event/SCR_1.png"
+	}
+	spriteType = {
+		name = "GFX_NRC_1"
+		texturefile = "gfx/event/NRC_1.png"
+	}
+	spriteType = {
+		name = "GFX_CHIFocus_1"
+		texturefile = "gfx/event/CHIFocus_1.png"
+	}
 	spriteType = {
 		name = "GFX_Yan_an_Rectification_Movement"
 		texturefile = "gfx/event/Yan_an_Rectification_Movement.png"

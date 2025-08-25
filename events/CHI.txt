@@ -1,33 +1,16 @@
 ﻿add_namespace = CHI
 add_namespace = CHI_hidden
+add_namespace = CHIFocus
+
 country_event = {
 	id = CHI_hidden.1
-	hidden = yes
-	trigger = {
-		date = 1931.6.14
-	}
-    fire_only_once = yes  
-	option = {
-		name = CHI_hidden.1.a
-		CHI = {
-			country_event = CHI.1
-		}
-		
-	}
-}
-
-
-
-
-country_event = {
-	id = CHI.91
 	hidden = yes
     fire_only_once = yes
 
 	trigger = {
 		AND={
-            date > 1931.6.1
-		    date < 1931.6.3
+            date > 1931.6.2
+			date < 1931.6.4
 		}
     }
 	immediate = {
@@ -36,6 +19,8 @@ country_event = {
 	mean_time_to_happen = { days = 2 }
 	option = { name = CHI.01 }
 }
+
+
 country_event = {
 	id = CHI.1
 	title =  CHI.1.t
@@ -46,12 +31,21 @@ country_event = {
 	option = {
 		name = CHI.1.a
 		CHI =  { country_event = { id = CHI.2  days = 3 } }
+		ai_chance = {
+            base = 20     
+        }
 	}
 	option = {
 		name = CHI.1.b
+		ai_chance = {
+            base = 0     
+        }
 		CHI =  { 
 			country_event = { id = CHI.3  days = 3 } 
 		    retire_character = CHI_JiangJieShi
+		}
+		remove_power_balance = {
+			id = CHI_struggle_balance
 		}
 		set_country_flag = jiangjieshi_gg
 	}
@@ -134,5 +128,18 @@ country_event = {
 
 	option = {
 		name = CHI.5.a
+	}
+}
+
+news_event = {
+	id = CHIFocus.1
+	title =  CHIFocus.1.t
+	desc = CHIFocus.1.d
+	picture = GFX_CHIFocus_1
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHIFocus.1.a
 	}
 }

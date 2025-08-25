@@ -1378,11 +1378,13 @@ news_event = {
 
 	picture = GFX_WorldNew_19
 
+
 	major = yes
 
 	is_triggered_only = yes
 
 	immediate = {
+		complete_national_focus = CHIFocus_1
 		hidden_effect = {
 			SJN={
 				give_military_access = CHI
@@ -1430,6 +1432,7 @@ news_event = {
 	}
 	option = {
 			name = WorldNew.19.a
+			
 	}	
 }
 

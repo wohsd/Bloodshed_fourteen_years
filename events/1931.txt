@@ -347,7 +347,7 @@ country_event = {
 				}	
 				defender = {
 					state = 665
-					num_provinces = 1
+					num_provinces = 3
 					dig_in_factor = -1
 					terrain_factor = -1
 				}
@@ -368,7 +368,7 @@ country_event = {
 				}	
 				defender = {
 					state = 663
-					num_provinces = 1
+					num_provinces = 3
 					dig_in_factor = -1
 					terrain_factor = -1
 				}
