@@ -65,6 +65,7 @@ recruit_character = CHI_HuangFu
 recruit_character = CHI_JiangJingGuo
 recruit_character = CHI_ZhangQun
 recruit_character = CHI_HuZongNan
+recruit_character = CHI_FengZhiAng
 recruit_character = CHI_Alexander_von_Falkenhausen
 add_ideas = {
 	CHI_army_corruption_1
