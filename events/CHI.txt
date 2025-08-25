@@ -73,6 +73,7 @@ country_event = {
 
 	trigger = {
 		AND={
+			CHI = { not = {has_country_flag = jiangjieshi_gg} }
             date > 1931.7.1
 		    date < 1931.7.3
 		}
@@ -110,5 +111,17 @@ country_event = {
 
 	option = {
 		name = CHI.5.a
+		set_country_flag = chi_hencheng_01
+	}
+}
+country_event = {
+	id = CHI.6
+	title =  CHI.6.t
+	desc = CHI.6.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.6.a
 	}
 }
