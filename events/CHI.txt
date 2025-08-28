@@ -57,6 +57,7 @@ country_event = {
 	id = CHI.2
 	title =  CHI.2.t
 	desc = CHI.2.d
+	picture = GFX_jiang_dai
     is_triggered_only = yes  
 
 	option = {
@@ -73,6 +74,7 @@ country_event = {
 	id = CHI.3
 	title =  CHI.3.t
 	desc = CHI.3.d
+	picture = GFX_wangjingwei_01
     is_triggered_only = yes
 
 	option = {
