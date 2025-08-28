@@ -49,20 +49,6 @@ characters={
 			logistics_skill=5
 		}
 	}
-	PRC_LingBoQu={
-		name=PRC_LingBoQu
-		portraits={
-			civilian={
-				large="gfx/leaders/PRC/PRC_LingBoQu.png"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			traits={}
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 	PRC_ZhangWengTian={
 		name=PRC_ZhangWengTian
 		portraits={
@@ -275,12 +261,13 @@ characters={
 			idea_token = PRC_GuZuoLing_P
 			allowed  = {
 				original_tag  = PRC
+				date < 1935.1.1
 			}
 			available  = {
 				
 			}
 			traits  = {
-				strong_party_discipline
+				partisans_organizer
 			}
 			ai_will_do  = {
 				factor  = 0.000
@@ -305,7 +292,7 @@ characters={
 				
 			}
 			traits  = {
-				strong_party_discipline
+				modernizer_and_diplomat
 			}
 			ai_will_do  = {
 				factor  = 0.000
@@ -330,6 +317,7 @@ characters={
 				
 			}
 			traits  = {
+				ecomonist_publicist
 			}
 			ai_will_do  = {
 				factor  = 0.000
@@ -363,6 +351,7 @@ characters={
 				
 			}
 			traits  = {
+				army_chief_organizational_2
 			}
 			ai_will_do  = {
 				factor  = 0.000
@@ -404,6 +393,189 @@ characters={
 	}
 
 
+	PRC_WuYuZhang={
+		name=PRC_WuYuZhang
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_WuYuZhang.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_WuYuZhang_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				has_completed_focus = PRC_focus97
+			}
+			traits  = {
+				cultural_preserver
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+	PRC_lingboqu={
+		name=PRC_lingboqu
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_lingboqu.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_lingboqu_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+				connected_citizen
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+	PRC_XuTeLi={
+		name=PRC_XuTeLi
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_XuTeLi.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_XuTeLi_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+				propaganda_expert
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+	PRC_DongBiWu={
+		name=PRC_DongBiWu
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_DongBiWu.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_DongBiWu_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				has_completed_focus = PRC_focus86
+			}
+			traits  = {
+				labor_defense_organizer
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+	PRC_KangSheng={
+		name=PRC_KangSheng
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_KangSheng.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_KangSheng_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				has_completed_focus = PRC_focus96
+			}
+			traits  = {
+				Anti_counterinsurgency_expert
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+	PRC_XieJueZai={
+		name=PRC_XieJueZai
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_XieJueZai.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_XieJueZai_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				has_completed_focus = PRC_focus105
+			}
+			traits  = {
+				BRA_supreme_court_justice
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -437,6 +609,7 @@ characters={
 				
 			}
 			traits  = {
+				army_chief_maneuver_2
 			}
 			ai_will_do  = {
 				factor  = 0.000
@@ -505,6 +678,7 @@ characters={
 				
 			}
 			traits  = {
+				army_chief_offensive_3
 			}
 			ai_will_do  = {
 				factor  = 0.000

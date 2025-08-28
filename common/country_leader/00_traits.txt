@@ -42,6 +42,20 @@
 ###Todo remove commented advisor experience gains
 
 leader_traits = {
+	Anti_counterinsurgency_expert = {
+		random = no
+        political_power_gain = 0.05
+		stability_factor=-0.1
+		encryption_factor=0.2
+		enemy_operative_detection_chance=0.2
+		enemy_operative_capture_chance_factor=0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
 	Talented_conductor = {
 		random = no
 		army_core_attack_factor=0.25

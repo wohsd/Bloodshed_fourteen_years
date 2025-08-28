@@ -1970,6 +1970,8 @@ focus_tree = {
 		x = 44
 		y = 15
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = PRC_DongBiWu_P
 			custom_effect_tooltip = complete_effect
 			add_to_variable = {
 				PRC_political_power_factor=0.02
@@ -1990,6 +1992,8 @@ focus_tree = {
 		x = 38
 		y = 16
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = PRC_WuYuZhang_P
 			custom_effect_tooltip = complete_effect
 			add_to_variable = {
 				CHI_research_speed_factor = 0.05
@@ -2312,6 +2316,11 @@ focus_tree = {
 		x = 50
 		y = 15
 		completion_reward = {
+			add_cic = 100
+			mio:PRC_yanan_arsenal_organization = {
+				add_mio_funds = 1000
+				
+			}
 			capital_scope = {
 				add_building_construction = {
 					type = arms_factory
@@ -2330,6 +2339,9 @@ focus_tree = {
 		x = 50
 		y = 16
 		completion_reward = {
+			mio:PRC_yanan_arsenal_organization = {
+				add_mio_design_team_change_cost = -0.3
+			}
 			custom_effect_tooltip = complete_effect
 			add_to_variable = {
 				PRC_equipment_upgrade_xp_cost=-0.05
@@ -2745,27 +2757,8 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.05
 			}
-			custom_effect_tooltip = PRC_focus64
-			custom_effect_tooltip = complete_effect
-			add_to_variable = {  
-				PRC_production_factory_start_efficiency_factor =0.01 
-				tooltip = production_factory_start_efficiency_factor_tt  
-			}  
-
-			add_to_variable = {  
-				PRC_production_factory_max_efficiency_factor =0.01 
-				tooltip = production_factory_max_efficiency_factor_tt  
-			}  
-
-			add_to_variable = {  
-				PRC_production_factory_efficiency_gain_factor =0.01 
-				tooltip = production_factory_efficiency_gain_factor_tt  
-			}  
-
-			add_to_variable = {  
-				PRC_line_change_production_efficiency_factor =0.01 
-				tooltip = line_change_production_efficiency_factor_tt  
-			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = PRC_KangSheng_P
 		}
 
 	}
@@ -2847,6 +2840,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = PRC_XieJueZai_P
 		}
 	}
 	focus = {

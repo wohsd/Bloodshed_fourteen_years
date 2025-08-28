@@ -1,0 +1,14 @@
+
+PRC_yanan_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {	
+		OR = {
+			#is_literally_china = yes
+			tag = PRC 
+		} 
+	}
+	available = {
+		owner = { controls_state = 116 }
+	}
+}
