@@ -120,9 +120,58 @@ news_event = {
 
 	option = {
 		name = Surrender.2.a
+		CHI = {
+			annex_country = {target = JDF}
+			annex_country = {target = MGJ}
+			annex_country = {target = LSX}
+			annex_country = {target = YPQ}
+			annex_country = {target = XIA}
+			annex_country = {target = MCK}
+		}
 		JAP={
 			white_peace = CHI
 			white_peace = USA
 		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND = {
+						is_core_of = CHI
+						is_owned_and_controlled_by = JAP
+					}
+					
+				}
+				transfer_state_to = CHI
+			}
+			if = {
+				limit = {
+					AND = {
+						is_core_of = ROJ
+						is_owned_and_controlled_by = JAP
+					}
+			}
+			transfer_state_to = ROJ
+			}
+			if = {
+				limit = {
+					AND = {
+						is_core_of = ROG
+						is_owned_and_controlled_by = JAP
+					}
+			}
+			transfer_state_to = ROG
+			}
+			if = {
+				limit = {
+					AND = {
+						is_core_of = USA
+					is_owned_and_controlled_by = JAP
+					}
+					
+				}
+			transfer_state_to = USA
+			}
+		}
+		
 	}		
 }

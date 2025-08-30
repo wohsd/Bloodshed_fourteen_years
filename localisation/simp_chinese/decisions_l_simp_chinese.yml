@@ -242,3 +242,23 @@ Printed_banknotes: "印刷纸币"
 Take_over_Northeast: "接管占领区" 
 Take_Northeast: "接管占领区" 
 The_opposition_is_in_action: "反对派在行动"
+
+
+
+# 赣南新政政策本地化代码
+Gannan_New_Deal: "赣南新政"
+Gannan_New_Deal_desc: "此地为湘浙赣闽粤五省的战略后方，担负着为第三、七、九战区输送人力、物力的艰巨任务，其在东南抗战中的战略地位凸显。蒋经国凭借其特殊的家庭背景和个人努力，推行了一系列革故鼎新的“新政”，在此地大刀阔斧查禁烟赌娼，修明吏治，发展经济，兴办教育……"
+Bandit_suppression_campaign: "清剿土匪"
+Bandit_suppression_campaign_desc: "通过军事行动彻底清除赣南地区的土匪势力，恢复社会秩序，保障人民生命财产安全。建立民兵组织和地方保安体系，防止土匪死灰复燃。"
+
+Three_prohibitions_policy: "三禁运动"
+Three_prohibitions_policy_desc: "严格执行禁烟、禁赌、禁娼三大禁令，净化社会风气，提高民众道德水平。设立专门稽查队伍，严厉打击违法犯罪活动，重建社会公序良俗。"
+
+Rationing_by_population: "计口授粮"
+Rationing_by_population_desc: "实行按人口定量配给粮食制度，确保基本生活物资公平分配。建立粮食储备体系，稳定市场价格，防止饥荒和投机倒把行为。"
+
+Support_self_cultivating_farmers: "扶植自耕农"
+Support_self_cultivating_farmers_desc: "推行'耕者有其田'政策，向贫苦农民分配土地，提供农具和种子贷款。设立农业合作社，推广先进耕作技术，提高农业生产效率。"
+
+Severe_corruption_punishment: "严惩贪污"
+Severe_corruption_punishment_desc: "建立严格的廉政监督体系，对贪污腐败行为实行零容忍政策。设立特别法庭快速审理腐败案件，重拳打击官场腐败，重建政府公信力。"

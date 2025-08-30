@@ -1299,7 +1299,10 @@ add_core_of = CHI
 		}
 		x = 75
 		y = 12
-
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CHI_BaiCongXi_H
+		}
 	}
 	focus = {
 		id = CHIFocus_18
@@ -1503,7 +1506,10 @@ add_core_of = CHI
 		}
 		x = 75
 		y = 14
-		
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CHI_XueYue_H
+		}
 	}
 	focus = {
 		id = CHIFocus_25
@@ -2141,6 +2147,9 @@ completion_reward = {
 		x = 100
 		y = 5
 			completion_reward = {
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = CHI_KongXiangXi_P
+
 					capital_scope = {
 							add_extra_state_shared_building_slots = 2
 						}
@@ -2329,6 +2338,8 @@ completion_reward = {
 		x = 106
 		y = 4
 			completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CHI_DaiLi_P
 					add_ideas = the_blueshirts
 					add_to_temp_variable = {
 							temp_Government_efficiency_var = 3
@@ -2401,6 +2412,8 @@ completion_reward = {
 		x = 110
 		y = 4
 			completion_reward = {
+				custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CHI_ChenLiFu_P
 					add_ideas = central_club
 					add_to_temp_variable = {
 							temp_Government_efficiency_var = 3
@@ -2472,6 +2485,14 @@ completion_reward = {
 		x = 40
 		y = 12
 			completion_reward = {
+				add_design_template_bonus = {
+					name = air_equipment
+					uses = 1
+					cost_factor = 0.75
+					equipment = small_plane_airframe
+					equipment = medium_plane_airframe
+					equipment = large_plane_airframe
+				  }
 					add_to_variable = {
 							CHI_air_air_ace_generation_chance_factor = 0.05
 						}
@@ -2562,7 +2583,9 @@ completion_reward = {
 		}
 		x = 50
 		y = 13
-
+		completion_reward = {
+			add_cic = 500
+		}
 	}
 	focus = {
 		id = 600000_Tonnage_Plan
@@ -3444,6 +3467,9 @@ completion_reward = {
 		}
 		prerequisite = {
 			focus = CHIFocus_12
+		}
+		available = {
+			date > 1942.1.1
 		}
 		x = 61
 		y = 15

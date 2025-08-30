@@ -233,4 +233,116 @@ Eeconomic_system = {
 			}
 		}
 	}
+
+
+
+	
+}
+
+
+Gannan_New_Deal = {
+	# 赣南新政政策代码实现
+
+# 1. 清剿土匪
+Bandit_suppression_campaign = {
+    visible = {
+    }
+    cost = 40
+    days_remove = 90
+    fire_only_once = yes
+    ai_will_do = {
+        factor = 0
+    }
+    complete_effect = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -200
+			producer = CHI
+		}
+    }
+	remove_effect = {
+		add_political_power = 100
+	}
+    modifier = {
+    }
+}
+
+# 2. 三禁（禁烟、禁赌、禁娼）
+Three_prohibitions_policy = {
+    visible = {
+    }
+    cost = 45
+    days_remove = 75
+    fire_only_once = yes
+    ai_will_do = {
+        factor = 0
+    }
+    complete_effect = {
+    }
+    modifier = {
+		stability_factor = 0.05
+    }
+	remove_effect = {
+		add_political_power = 50
+	}
+}
+
+# 3. 计口授粮
+Rationing_by_population = {
+    visible = {
+    }
+    cost = 50
+    days_remove = 85
+    fire_only_once = yes
+    ai_will_do = {
+        factor = 0
+    }
+    complete_effect = {
+    }
+	remove_effect = {
+		add_political_power = 50
+	}
+    modifier = {
+		stability_factor = 0.1
+    }
+}
+
+# 4. 扶植自耕农
+Support_self_cultivating_farmers = {
+    visible = {
+    }
+    cost = 80
+    days_remove = 100
+    fire_only_once = yes
+    ai_will_do = {
+        factor = 0
+    }
+    complete_effect = {
+    }
+    modifier = {
+		consumer_goods_expected_value = -0.05
+		production_speed_buildings_factor = 0.1
+    }
+}
+
+# 5. 严惩贪污
+Severe_corruption_punishment = {
+    visible = {
+    }
+    cost = 65
+    days_remove = 95
+    fire_only_once = yes
+    ai_will_do = {
+        factor = 0
+    }
+    complete_effect = {
+    }
+    modifier = { 
+		consumer_goods_factor = -0.05
+    }
+	remove_effect = {
+		add_political_power = 100
+		add_stability = 0.05
+	}
+}
 }

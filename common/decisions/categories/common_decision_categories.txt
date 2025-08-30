@@ -14,3 +14,12 @@ Eeconomic_system = {
 	} 
 	priority = 1000
 } 
+
+Gannan_New_Deal = {
+	icon = generic_economy
+	picture = GFX_Gannan_New_Deal 
+	visible = {   
+		has_idea = CHI_JiangJingGuo_P
+	} 
+	priority = 888
+} 

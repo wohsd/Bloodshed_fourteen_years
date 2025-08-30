@@ -116,7 +116,9 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/CHI/CHI_ChenCheng.png"
+				small ="gfx/interface/advisers/CHI_ChenCheng.png"
 			}
+
 		}
 		advisor={	
 			slot = army_chief
@@ -126,7 +128,7 @@ characters={
 			available = {
 			}
 			traits = {
-				army_chief_offensive_1
+				army_chief_planning_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -248,8 +250,27 @@ characters={
 			army={
 				large="gfx/leaders/CHI/CHI_XueYue.png"
 			}
+			civilian={
+				small = "gfx/interface/advisers/CHI_XueYue.png"
+			}
 		}
-		
+		advisor={	
+			slot = high_command
+			idea_token = CHI_XueYue_H
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHIFocus_21
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={
 			traits={ 
 				CHI_Central_Army
@@ -493,6 +514,92 @@ characters={
 		
 	}
 
+
+
+
+	CHI_BaiCongXi={
+		name=CHI_BaiCongXi
+		portraits={ 
+			civilian={
+				small = "gfx/interface/advisers/CHI_BaiCongXi.png"
+			}
+		}
+		
+		advisor={	
+			slot = high_command
+			idea_token = CHI_BaiCongXi_H
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHIFocus_20
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	CHI_YuJiShi={
+		name=CHI_YuJiShi
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_YuJiShi.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+
+
+
+
+
+
+
 	CHI_GuanLinZheng={
 		name=CHI_GuanLinZheng
 		portraits={
@@ -504,7 +611,7 @@ characters={
 			traits={ }
 			skill=1
 			attack_skill=1
-			defense_skill=1
+			defense_skill=3
 			planning_skill=1
 			logistics_skill=1
 		}
@@ -520,7 +627,7 @@ characters={
 		corps_commander={
 			traits={ }
 			skill=1
-			attack_skill=1
+			attack_skill=2
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
@@ -537,9 +644,9 @@ characters={
 		corps_commander={
 			traits={ }
 			skill=1
-			attack_skill=1
+			attack_skill=2
 			defense_skill=1
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 		}
 	}
@@ -553,11 +660,11 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=1
-			attack_skill=1
+			skill=4
+			attack_skill=2
 			defense_skill=1
 			planning_skill=1
-			logistics_skill=1
+			logistics_skill=2
 		}
 	}
 
@@ -570,10 +677,10 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=1
-			attack_skill=1
+			skill=3
+			attack_skill=2
 			defense_skill=1
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 		}
 	}
@@ -588,10 +695,10 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=1
-			attack_skill=1
+			skill=2
+			attack_skill=3
 			defense_skill=1
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 		}
 	}
@@ -624,15 +731,13 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
 			logistics_skill=1
 		}
 	}
-
-
 	CHI_WangYaoWu={
 		name=CHI_WangYaoWu
 		portraits={
@@ -642,11 +747,11 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 
@@ -660,9 +765,9 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
+			skill=3
+			attack_skill=2
+			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
 		}
@@ -678,26 +783,10 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=1
-			attack_skill=1
+			skill=2
+			attack_skill=2
 			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-		}
-	}
-	CHI_XuTingYao={
-		name=CHI_XuTingYao
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_XuTingYao.png"
-			}
-		}
-		corps_commander={
-			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 		}
 	}
@@ -766,6 +855,7 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				has_completed_focus = Unified_Tax_Reform
 			}
 			traits = {
 				the_banker
@@ -776,6 +866,92 @@ characters={
 			}
 		}
 	}
+
+
+	CHI_DaiLi={
+		name=CHI_DaiLi
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_DaiLi.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_DaiLi_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = China_Revival_Society
+			}
+			traits = {
+				prince_of_terror
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_ChenLiFu={
+		name=CHI_ChenLiFu
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_ChenLiFu.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_ChenLiFu_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = Central_Club
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	CHI_HuangFu={
 		name=CHI_HuangFu
@@ -844,6 +1020,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				date > 1939.1.1
+				custom_trigger_tooltip = {
+					tooltip = CHI_JiangJingGuo_C
+				}
 			}
 			traits = {
 				soviet_thaw

@@ -225,6 +225,10 @@ spriteTypes = {
 		texturefile = "gfx/event/Eeconomic_system.png"
 	}
 	spriteType = {
+		name = "GFX_Gannan_New_Deal"
+		texturefile = "gfx/event/Gannan_New_Deal.png"
+	}
+	spriteType = {
 		name = "GFX_Encirclement_suppression_operation"
 		texturefile = "gfx/event/Encirclement_suppression_operation.dds"
 	}
