@@ -5,6 +5,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
+interwar_antitank = 1
 }
 
 recruit_character = ROW_LiuWengHui

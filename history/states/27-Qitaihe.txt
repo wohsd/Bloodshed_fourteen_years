@@ -16,6 +16,7 @@ state={
 		}
 		1934.1.1={
 			owner = NAF
+			add_core_of = NAF
 		}
 	}
 	manpower=323000

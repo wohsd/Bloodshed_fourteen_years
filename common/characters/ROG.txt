@@ -41,12 +41,18 @@ characters={
 			id=-1
 		}
 	}			
-	ROG_LingJiZhong={
-		name=ROG_LingJiZhong
+	ROG_Yuhanmou={
+		name=ROG_Yuhanmou
 		portraits={
 			civilian={
-				large="gfx/leaders/ROG/ROG_LingJiZhong.png"
+				large="gfx/leaders/ROG/ROG_Yuhanmou.png"
 			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}			
 	}

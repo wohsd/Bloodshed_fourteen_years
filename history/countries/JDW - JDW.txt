@@ -16,7 +16,8 @@ set_war_support = 0.7
 
 recruit_character = JDW_SongZheYuan
 recruit_character = JDW_DongLingGe
-
+recruit_character = JDW_FengZhiAng
+recruit_character = JDW_ZhangZiZhong
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

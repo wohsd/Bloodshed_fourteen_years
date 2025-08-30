@@ -10,7 +10,7 @@ spriteTypes = {
 		texturefile = "gfx/event/NRC_1.png"
 	}
 	spriteType = {
-		name = "GFX_CHIFocus_1"
+		name = "GFX_CHIevent_1"
 		texturefile = "gfx/event/CHIFocus_1.png"
 	}
 	spriteType = {

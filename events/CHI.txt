@@ -150,7 +150,7 @@ news_event = {
 	id = CHIFocus.1
 	title =  CHIFocus.1.t
 	desc = CHIFocus.1.d
-	picture = GFX_CHIFocus_1
+	picture = GFX_CHIevent_1
 	major = yes
 	is_triggered_only = yes
 

@@ -59,3 +59,21 @@ country_event = {
 		name = common.3.a
 	}
 }
+
+
+
+
+
+
+unit_leader_event = {
+	id = common.4
+	title = common.4.t
+	desc = common.4.d
+    #picture = 
+	is_triggered_only = yes
+    trigger = {
+    }
+	option = {
+		name = common.4.a
+	}
+}

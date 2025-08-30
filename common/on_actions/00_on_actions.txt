@@ -76,7 +76,20 @@ on_actions = {
 		}
 	}
 
-
+	on_capitulation = { 
+		effect = { 
+			every_country = {
+				if = {
+					limit = { 
+						tag = JDW
+					}
+					every_army_leader = {
+						set_nationality = CHI
+					}
+				}
+			}
+		} 
+	}
 
 
 

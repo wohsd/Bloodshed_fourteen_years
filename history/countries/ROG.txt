@@ -5,14 +5,16 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
+interwar_antitank = 1
 	early_fighter = 1
 	fuel_silos = 1
 }
 
 recruit_character = ROG_ChenMingQu
 recruit_character = ROG_ChenJiTang
-recruit_character = ROG_LingJiZhong
+
 recruit_character = ROG_WangJingWei
+recruit_character = ROG_Yuhanmou
 set_popularities = {
 	democratic = 0
 	communism = 0

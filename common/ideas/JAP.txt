@@ -11,33 +11,33 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag=CHI
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
+				attack_bonus_against=0.2
+                defense_bonus_against=0.2
 			}
 			targeted_modifier = {
 				tag=ROJ
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
+				attack_bonus_against=0.2
+                defense_bonus_against=0.2
 			}
 			targeted_modifier = {
 				tag=ROC
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
+				attack_bonus_against=0.2
+                defense_bonus_against=0.2
 			}
 			targeted_modifier = {
 				tag=ROY
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
+				attack_bonus_against=0.2
+                defense_bonus_against=0.2
 			}
 			targeted_modifier = {
 				tag=ROA
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
+				attack_bonus_against=0.2
+                defense_bonus_against=0.2
 			}
 			targeted_modifier = {
 				tag=JDW
-				attack_bonus_against=0.3
-                defense_bonus_against=0.3
+				attack_bonus_against=0.2
+                defense_bonus_against=0.2
 			}
 		}
 		Death_in_March={
@@ -50,10 +50,10 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier={
-				army_speed_factor=0.3
-				army_attack_factor=0.3
-				army_defence_factor=0.3
-				breakthrough_factor=0.3
+				army_speed_factor=0.2
+				army_attack_factor=0.2
+				army_defence_factor=0.2
+				breakthrough_factor=0.2
 				army_org_regain= 0.2
 				terrain_penalty_reduction= 0.5
 			}

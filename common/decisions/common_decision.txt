@@ -149,8 +149,8 @@ Eeconomic_system = {
 	Increase_plant_allocations = {
 		visible = {
 		}
-		cost = 0 
-		days_remove= 10
+		cost = 50 
+		days_remove= 60
 		fire_only_once = no
 		ai_will_do = {
 			factor = 0
@@ -175,8 +175,8 @@ Eeconomic_system = {
 	Increase_military_spending = {
 		visible = {
 		}
-		cost = 0 
-		days_remove= 10
+		cost = 50 
+		days_remove= 60
 		fire_only_once = no
 		ai_will_do = {
 			factor = 0
@@ -205,8 +205,8 @@ Eeconomic_system = {
 	Printed_banknotes = {
 		visible = {
 		}
-		cost = 0  
-		days_remove= 0
+		cost = 50  
+		days_remove= 60
 		fire_only_once = no
 		ai_will_do = {
 			factor = 0

@@ -373,6 +373,9 @@ country_event = {
     immediate = {
 		set_global_flag = 77
 		news_event = WorldNew.19
+		JDW_DongLingGe  = {
+			unit_leader_event = {id=common.4 days=20}
+		}
 		CHI={
 			complete_national_focus = CHIFocus_1
 		}

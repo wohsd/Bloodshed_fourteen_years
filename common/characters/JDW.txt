@@ -69,4 +69,41 @@ characters={
 			logistics_skill = 1
 		}
 	}
+
+
+
+	JDW_ZhangZiZhong={
+		name=JDW_ZhangZiZhong
+		portraits={
+			army={
+				large="gfx/leaders/JDW/JDW_ZhangZiZhong.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	JDW_FengZhiAng={
+		name=JDW_FengZhiAng
+		portraits={
+			army={
+				large="gfx/leaders/JDW/JDW_FengZhiAng.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
 }

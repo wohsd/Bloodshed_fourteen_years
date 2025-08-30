@@ -1,0 +1,68 @@
+﻿division_template = {
+	name = "游击支队" 			
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+		militia = { x = 3 y = 0 }
+		militia = { x = 3 y = 1 }
+		militia = { x = 3 y = 2 }
+	}
+}
+units = {
+	division= {	
+		name = "东北人民革命军第一军独立师"
+		location = 1411
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "东北人民革命军第二军独立师"
+		location = 1411
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "东北人民革命军第三军独立师"
+		location = 1411
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "东北抗日同盟军第四军一师"
+		location = 1411
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "东北反日联合军第五军一师"
+		location = 1411
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "东北反日联合军第五军二师"
+		location = 1411
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "东北反日联合军第六军二师"
+		location = 1411
+		division_template = "游击支队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}

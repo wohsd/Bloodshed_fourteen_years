@@ -388,23 +388,7 @@ characters={
 			logistics_skill=2
 		}
 	}
-	CHI_ZhangZiZhong={
-		name=CHI_ZhangZiZhong
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_ZhangZiZhong.png"
-			}
-		}
-		
-		corps_commander={
-			traits={ }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-		}
-	}
+	
 	CHI_LiuZhi={
 		name=CHI_LiuZhi
 		portraits={
@@ -734,22 +718,7 @@ characters={
 			logistics_skill=2
 		}
 	}
-	CHI_FengZhiAng={
-		name=CHI_FengZhiAng
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_FengZhiAng.png"
-			}
-		}
-		corps_commander={
-			traits={ }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-		}
-	}
+	
 	CHI_SunKe={
 		name=CHI_SunKe
 		portraits={
