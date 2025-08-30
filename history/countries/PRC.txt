@@ -121,7 +121,9 @@ set_power_balance = {
 	id =  PRC_struggle_balance
 }
 1933.1.1={
-	
+	set_stability = 0.9
+	set_war_support = 0.9
+	set_political_power = 230
 	retire_character = PRC_XiangZhongFa
 	PRC_WangMing = {
 		set_nationality = SOV
@@ -174,6 +176,9 @@ set_power_balance = {
 	}
 }
 1936.1.1={
+	set_stability = 0.75
+	set_war_support = 0.7
+	set_political_power = 330
 	capital = 655
 	set_oob = PRC_1936
 	NSA={

@@ -213,6 +213,9 @@ add_equipment_to_stockpile = {
     producer = CHI
 }
 1933.1.1={
+	set_stability = 0.7
+	set_war_support = 0.6
+	set_political_power = 330
 	set_oob = "CHI_1933"
 	complete_national_focus = Victory_of_the_National_Revolution
 	complete_national_focus = National_Crisis
@@ -234,12 +237,20 @@ add_equipment_to_stockpile = {
 	add_to_faction = ROD
 	add_to_faction = JDW
 	
-	
+	set_stability = 0.7
+	set_war_support = 0.8
+	set_political_power = 430
 }
 1937.1.1={
+	set_stability = 0.7
+	set_war_support = 0.8
+	set_political_power = 430
 	set_oob = "CHI_1937"
 }
 1944.1.1={
+	set_stability = 0.7
+	set_war_support = 0.8
+	set_political_power = 430
 	capital = 238
 	CHI = {
 		retire_character = CHI_ZhangZiZhong
