@@ -468,6 +468,57 @@ characters={
 		}
 	}
 
+
+	PRC_LiuShaoQi={
+		name=PRC_LiuShaoQi
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_LiuShaoQi.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_LiuShaoQi_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+				appeaser
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+	PRC_RaoShuShi={
+		name=PRC_RaoShuShi
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/PRC_RaoShuShi.png"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_RaoShuShi_P
+			allowed  = {
+				original_tag  = PRC
+			}
+			available  = {
+				
+			}
+			traits  = {
+				partisans_organizer
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	}
+
+
 	PRC_DongBiWu={
 		name=PRC_DongBiWu
 		portraits={

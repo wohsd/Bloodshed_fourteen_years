@@ -21,6 +21,8 @@ spriteTypes = {
 		name = "GFX_DaiLi_available_small"
 		texturefile = "gfx/interface/advisers/CHI_DaiLi.png"
 	}
+
+
 	spriteType = { 
 		name = "GFX_ChenLiFu_available_small"
 		texturefile = "gfx/interface/advisers/CHI_ChenLiFu.png"

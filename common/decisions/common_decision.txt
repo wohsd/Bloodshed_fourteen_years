@@ -241,8 +241,7 @@ Eeconomic_system = {
 
 
 Gannan_New_Deal = {
-	# 赣南新政政策代码实现
-
+# 赣南新政政策代码实现
 # 1. 清剿土匪
 Bandit_suppression_campaign = {
     visible = {

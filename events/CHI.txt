@@ -158,3 +158,17 @@ news_event = {
 		name = CHIFocus.1.a
 	}
 }
+
+news_event = {
+	id = CHIFocus.30
+	title =  CHIFocus.30.t
+	desc = CHIFocus.30.d
+	picture = GFX_CHIevent_30
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHIFocus.30.a
+	}
+}
+

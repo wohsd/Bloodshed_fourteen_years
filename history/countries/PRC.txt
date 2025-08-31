@@ -49,6 +49,9 @@ recruit_character =PRC_WuYuZhang
 
 recruit_character =PRC_KangSheng
 
+recruit_character = PRC_LiuShaoQi
+recruit_character = PRC_RaoShuShi
+
 set_popularities = {
 	communism = 100
 }

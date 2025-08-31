@@ -29,9 +29,14 @@ spriteTypes = {
 		name = "GFX_PRC_MaoZeMing"
 		texturefile = "gfx/interface/ideas/PRC_MaoZeMing.png"
 	} 
+	spriteType = { 
+		name = "GFX_PRC_MaoZeMing"
+		texturefile = "gfx/interface/ideas/PRC_MaoZeMing.png"
+	} 
+
 	spriteType = {
-		name = "GFX_PRC_ZhouEngLai"
-		texturefile = "gfx/interface/operative/PRC_ZhouEngLai.png"
+		name = "GFX_PRC_LiuShaoQi"
+		texturefile = "gfx/interface/operative/PRC_LiuShaoQi.png"
 	}
 	spriteType = {
 		name = "GFX_PRC_GuoRuKui"

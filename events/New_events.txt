@@ -375,6 +375,7 @@ country_event = {
 		news_event = WorldNew.19
 		JDW_DongLingGe  = {
 			unit_leader_event = {id=common.4 days=20}
+			retire = yes 
 		}
 		CHI={
 			complete_national_focus = CHIFocus_1
@@ -1415,7 +1416,6 @@ news_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		complete_national_focus = CHIFocus_1
 		hidden_effect = {
 			SJN={
 				give_military_access = CHI

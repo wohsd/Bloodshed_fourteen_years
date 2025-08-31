@@ -18,8 +18,8 @@ Eeconomic_system = {
 Gannan_New_Deal = {
 	icon = generic_economy
 	picture = GFX_Gannan_New_Deal 
-	visible = {   
-		has_idea = CHI_JiangJingGuo_P
+	visible = { 
+		  has_completed_focus = CHIFocus_33
 	} 
 	priority = 888
 } 

@@ -19,7 +19,10 @@ spriteTypes = {
 		name = "GFX_CHIFocus_32"
 		texturefile = "gfx\interface\goals\CHI\CHIFocus_32.png"
 		}
-		
+		spriteType = {
+			name = "GFX_CHIFocus_33"
+			texturefile = "gfx\interface\goals\CHI\CHIFocus_33.png"
+			}
 		
 	spriteType = {
 		name = "GFX_CHIFocus_1"

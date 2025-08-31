@@ -1020,13 +1020,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
-				date > 1939.1.1
-				custom_trigger_tooltip = {
-					tooltip = CHI_JiangJingGuo_C
-				}
+				has_completed_focus = CHIFocus_33
 			}
 			traits = {
-				soviet_thaw
+				political_reformer_1
 			}
 			cost = 100
 			ai_will_do = {

@@ -92,8 +92,6 @@ on_actions = {
 	}
 
 
-
-
 	on_daily = {
 		effect = {
 			every_state = {

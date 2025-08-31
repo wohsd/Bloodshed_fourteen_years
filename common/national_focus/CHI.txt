@@ -1279,7 +1279,7 @@ add_core_of = CHI
 		y = 11
 		ai_will_do = {
 			factor = 10
-		}
+		} 
 		completion_reward = {
 			add_stability = 0.3
 			add_war_support = 0.5
@@ -3760,10 +3760,29 @@ completion_reward = {
 		prerequisite = { 
 			focus = CHIFocus_1
 		}
+		available = {
+			OR={
+				232 = {
+					is_controlled_by = CHI
+				}
+				249 = {
+					is_controlled_by = CHI
+				}
+				690 = {
+					is_controlled_by = CHI
+				}
+			}
+			
+		}
 		x = 68
 		y = 11
 		completion_reward = {
-			
+			add_stability = -0.05
+			add_political_power = 100
+			news_event = CHIFocus.30
+			NFA={
+				add_manpower = -10000
+			}
 		}
 	}
 	focus = { 
@@ -3833,6 +3852,21 @@ completion_reward = {
 		y = 17
 		completion_reward = {
 			add_ideas = Encourage_enlistment_military
+		}
+	}
+	focus = {
+		id = CHIFocus_33
+		icon = GFX_CHIFocus_33
+		cost = 10.00
+		prerequisite = {
+			focus = CHIFocus_20
+		}
+		x = 74
+		y = 13
+		completion_reward = {
+			unlock_decision_category_tooltip = Gannan_New_Deal
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = CHI_JiangJingGuo_P
 		}
 	}
 }
