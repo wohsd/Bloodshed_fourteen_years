@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_BFY_music"
+		texturefile = "gfx/BFY_music.dds"
+		noOfFrames = 2
+	}	
+
+
+}
