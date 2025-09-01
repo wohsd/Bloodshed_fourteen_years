@@ -5,7 +5,7 @@ state={
 		626 856 985 1110 2350 2521 2687 2788 3573 3577 3602 
 	}
 	history={
-		owner = MGJ
+		owner = ROD
 		buildings = {
 			infrastructure = 1
 		}
