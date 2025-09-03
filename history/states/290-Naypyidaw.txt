@@ -1,0 +1,17 @@
+state={
+	id=290
+	name="STATE_290"
+	provinces={
+		657 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RAJ
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

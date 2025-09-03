@@ -1,0 +1,16 @@
+characters={
+    XZS_TuDengJiaChuo={
+		name=XZS_TuDengJiaChuo
+		portraits={
+			civilian={
+				large="gfx/leaders/XZS/XZS_TuDengJiaChuo.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

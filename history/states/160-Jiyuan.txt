@@ -1,0 +1,24 @@
+state={
+	id=160
+	name="STATE_160"
+	provinces={
+		1817 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1817 5
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

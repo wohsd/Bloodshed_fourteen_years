@@ -1,0 +1,18 @@
+state={
+	id=120
+	name="STATE_120"
+	provinces={
+		562 1051 1549 1717 2368 2516 2923 3063 
+	}
+	history={
+		owner = ROQ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROQ
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

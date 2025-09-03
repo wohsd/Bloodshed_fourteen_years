@@ -1,0 +1,49 @@
+
+state={
+	id=582
+	name="STATE_582"
+	resources={
+		steel = 2
+		aluminium=2 # was: 12
+	}
+	history={
+		owner = PRC
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			2281 5 
+		}
+		victory_points = {
+			4000 5 
+		}
+		victory_points = {
+			4033 5 
+		}
+		victory_points = {
+			4043 5 
+		}
+		victory_points = {
+			2757 5 
+		}
+		victory_points = {
+			935 5 
+		}
+		victory_points = {
+			1913 5 
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+
+	provinces={
+		618 935 1546 1913 2281 2337 2757 3989 4000 4014 4023 
+	}
+	manpower=725000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

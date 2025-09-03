@@ -1,0 +1,16 @@
+state={
+	id=97
+	name="STATE_97"
+	provinces={
+		474 3656 3671 
+	}
+	history={
+		owner = ROZ
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,16 @@
+characters={
+    FRA_Pierre_Marie_Antoine_Pasquier={
+		name=FRA_Pierre_Marie_Antoine_Pasquier
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/FRA_Pierre_Marie_Antoine_Pasquier.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

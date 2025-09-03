@@ -1,0 +1,17 @@
+state={
+	id=504
+	name="STATE_504"
+	provinces={
+		260 1052 2210
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RAJ
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

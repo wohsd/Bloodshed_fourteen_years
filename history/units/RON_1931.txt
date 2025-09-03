@@ -1,0 +1,105 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "独立旅" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵旅" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+#湖南
+division= {	
+	location = 1657
+	name = "国民革命军第28军15师"
+	division_template = "国民革命军"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+division= {	
+	location = 3375
+	name = "国民革命军第28军16师"
+	division_template = "国民革命军"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+division= {	
+	location = 2037
+	name = "国民革命军第28军19师"
+	division_template = "国民革命军"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+division= {	
+	location = 2037
+	name = "国民革命军新编31师"
+	division_template = "国民革命军"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+division= {	
+	location = 2037
+	name = "国民革命军新编32师"
+	division_template = "国民革命军"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+division= {	
+	location = 3966
+	name = "国民革命军独立一旅"
+	division_template = "独立旅"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+division= {	
+	location = 3966
+	name = "国民革命军独立二旅"
+	division_template = "独立旅"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+division= {	
+	location = 3966
+	name = "国民革命军独立三旅"
+	division_template = "独立旅"
+	start_experience_factor = 0.5
+	start_equipment_factor = 0.5
+}
+}

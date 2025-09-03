@@ -1,0 +1,16 @@
+characters={
+    POR_Joao_Carlos_Craveiro_Lopes={
+		name=POR_Joao_Carlos_Craveiro_Lopes
+		portraits={
+			civilian={
+				large="gfx/leaders/POR/POR_Joao_Carlos_Craveiro_Lopes.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

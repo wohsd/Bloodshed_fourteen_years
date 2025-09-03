@@ -1,0 +1,35 @@
+state={
+	id=364
+	name="STATE_364"
+	provinces={
+		964 2561 4158 4167 4168 
+	}
+	history={
+		owner = PRD
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			964 5
+		}
+		victory_points = {
+			4158 2
+		}
+		victory_points = {
+			4168 2
+		}
+		1933.1.1={
+			owner = ROG
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		1940.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

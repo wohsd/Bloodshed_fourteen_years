@@ -1,0 +1,17 @@
+state={
+	id=402
+	name="STATE_402"
+	provinces={
+		711 821 877 881 1091 1281 1465 1532 1652 2123 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = USA
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

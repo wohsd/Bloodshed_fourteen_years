@@ -1,0 +1,34 @@
+state={
+	id=121
+	name="STATE_121"
+	provinces={
+		352 1140 1293 1306 2079 2607 2702 2922 2924 3266 3338 3681 3688 3696 3702 3704 3707 3712 
+	}
+	resources={
+		steel = 25
+		aluminium=5 # was: 12
+		
+	}
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 3
+			dockyard= 3
+			air_base= 1
+			3707= {
+				naval_facility = 1
+				naval_base = 2
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {
+			3707 50
+		}
+		add_core_of = JAP
+	}
+	manpower=13773000
+	state_category = large_city
+	local_supplies = 0.0
+}

@@ -1,0 +1,29 @@
+state={
+	id=169
+	name="STATE_169"
+	provinces={
+		1336 1632 1762 3745 
+	}
+	resources={
+		steel = 2
+		aluminium=2 # was: 12
+		tungsten = 2
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3745 5
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

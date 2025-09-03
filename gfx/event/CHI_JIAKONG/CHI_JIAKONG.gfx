@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_wangjingwei_01"
+		texturefile = "gfx/event/CHI_JIAKONG/wangjingwei_01.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jiang_dai"
+		texturefile = "gfx/event/CHI_JIAKONG/jiang_dai.png"
+		legacy_lazy_load = no
+	}
+}

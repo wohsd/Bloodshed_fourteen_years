@@ -1,0 +1,1060 @@
+characters={
+    CHI_JiangJieShi={
+		name=CHI_JiangJieShi
+		portraits={ 
+			civilian={
+				large="gfx/leaders/CHI/CHI_JiangJieShi.png"
+				small = "gfx/interface/advisers/CHI_JiangJieShi_small.png"
+			}
+			army = {
+				large="gfx/leaders/CHI/CHI_JiangJieShi_army.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+				CHI_Central_Army
+				old_guard
+	        }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_WangJingWei={
+		name=CHI_WangJingWei
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_WangJingWei.png"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_LingSeng={
+		name=CHI_LingSeng
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_LingSeng.png"
+				small = "gfx/interface/advisers/CHI_LingSeng_small.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_HuHanMing={
+		name=CHI_HuHanMing
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_HuHanMing.png"
+				small = "gfx/interface/advisers/CHI_HuHanMing_small.png"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_DengYangDa={
+		name=CHI_DengYangDa
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_DengYangDa.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1965.1.1.1"
+			id=19318
+		}
+		corps_commander = {
+			traits={ 
+				CHI_Provisional_committee
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	CHI_ChenCheng={
+		name=CHI_ChenCheng
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_ChenCheng.png"
+				small ="gfx/interface/advisers/CHI_ChenCheng.png"
+			}
+
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={offensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	CHI_HeYingQing={
+		name=CHI_HeYingQing
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_HeYingQing.png"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+				Ambitious
+			}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	CHI_TangShenZhi={
+		name=CHI_TangShenZhi
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_TangShenZhi.png"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	CHI_GuZhuTong={
+		name=CHI_GuZhuTong
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_GuZhuTong.png"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+
+
+	CHI_XueYue={
+		name=CHI_XueYue
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_XueYue.png"
+			}
+			civilian={
+				small = "gfx/interface/advisers/CHI_XueYue.png"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = CHI_XueYue_H
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHIFocus_21
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	CHI_WeiLiHuang={
+		name=CHI_WeiLiHuang
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_WeiLiHuang.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}	
+
+
+	CHI_QiangDaJun={
+		name=CHI_QiangDaJun
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_QiangDaJun.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}		
+	CHI_SunLiRen={
+		name=CHI_SunLiRen
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_SunLiRen.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}	
+	CHI_ZhuSaoLiang={
+		name=CHI_ZhuSaoLiang
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_ZhuSaoLiang.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	CHI_DaiAngLang={
+		name=CHI_DaiAngLang
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_DaiAngLang.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}	
+	CHI_ZhangZhiZhong={
+		name=CHI_ZhangZhiZhong
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_ZhangZhiZhong.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}	
+	CHI_ChenQiang={
+		name=CHI_ChenQiang
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_ChenQiang.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	CHI_LiuZhi={
+		name=CHI_LiuZhi
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_LiuZhi.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+				old_guard
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	CHI_LuoZuoYing={
+		name=CHI_LuoZuoYing
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_LuoZuoYing.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ 
+				CHI_Central_Army
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	CHI_CaiTingKai={
+		name=CHI_CaiTingKai
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_CaiTingKai.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	CHI_JiangGuangDing={
+		name=CHI_JiangGuangDing
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_JiangGuangDing.png"
+			}
+		} 
+		
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+
+
+
+
+	 CHI_Alexander_von_Falkenhausen={
+		name=CHI_Alexander_von_Falkenhausen
+		portraits={ 
+			civilian={
+				small = "gfx/interface/advisers/CHI_Alexander_von_Falkenhausen.png"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_Alexander_von_Falkenhausen_A
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+	}
+
+
+
+
+	CHI_BaiCongXi={
+		name=CHI_BaiCongXi
+		portraits={ 
+			civilian={
+				small = "gfx/interface/advisers/CHI_BaiCongXi.png"
+			}
+		}
+		
+		advisor={	
+			slot = high_command
+			idea_token = CHI_BaiCongXi_H
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHIFocus_20
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	CHI_YuJiShi={
+		name=CHI_YuJiShi
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_YuJiShi.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+
+
+
+
+
+
+
+	CHI_GuanLinZheng={
+		name=CHI_GuanLinZheng
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_GuanLinZheng.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	CHI_HuangBaiTao={
+		name=CHI_HuangBaiTao
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_HuangBaiTao.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	CHI_HuangWei={
+		name=CHI_HuangWei
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_HuangWei.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	CHI_JiangBaiLi={
+		name=CHI_JiangBaiLi
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_JiangBaiLi.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+	CHI_JiangDingWen={
+		name=CHI_JiangDingWen
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_JiangDingWen.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+
+	CHI_ShangGuanYunXiang={
+		name=CHI_ShangGuanYunXiang
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_ShangGuanYunXiang.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+
+	CHI_SunLianZhong={
+		name=CHI_SunLianZhong
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_SunLianZhong.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+
+	CHI_TangEnBo={
+		name=CHI_TangEnBo
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_TangEnBo.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	CHI_WangYaoWu={
+		name=CHI_WangYaoWu
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_WangYaoWu.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+
+	CHI_XiongShiHui={
+		name=CHI_XiongShiHui
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_XiongShiHui.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+
+	CHI_XuTingYao={
+		name=CHI_XuTingYao
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_XuTingYao.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	CHI_HuZongNan={
+		name=CHI_HuZongNan
+		portraits={
+			army={
+				large="gfx/leaders/CHI/CHI_HuZongNan.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	CHI_SunKe={
+		name=CHI_SunKe
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_SunKe.png"
+				small = "gfx/interface/advisers/CHI_SunKe.png"
+			}
+
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_SunKe_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_KongXiangXi={
+		name=CHI_KongXiangXi
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_KongXiangXi.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_KongXiangXi_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = Unified_Tax_Reform
+			}
+			traits = {
+				the_banker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	CHI_DaiLi={
+		name=CHI_DaiLi
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_DaiLi.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_DaiLi_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = China_Revival_Society
+			}
+			traits = {
+				prince_of_terror
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_ChenLiFu={
+		name=CHI_ChenLiFu
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_ChenLiFu.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_ChenLiFu_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = Central_Club
+			}
+			traits = {
+				backroom_backstabber
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	CHI_HuangFu={
+		name=CHI_HuangFu
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_HuangFu.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_HuangFu_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				BRA_distinguished_diplomat
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_LingSeng={
+		name=CHI_LingSeng
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_LingSeng.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_LingSeng_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				old_figurehead
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_JiangJingGuo={
+		name=CHI_JiangJingGuo
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_JiangJingGuo.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_JiangJingGuo_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_completed_focus = CHIFocus_33
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_ZhangQun={
+		name=CHI_ZhangQun
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_ZhangQun.png"
+			}
+
+		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_ZhangQun_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+			}
+			traits = {
+				BRA_political_fox
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

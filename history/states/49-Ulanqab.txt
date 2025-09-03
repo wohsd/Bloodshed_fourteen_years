@@ -1,0 +1,19 @@
+state={
+	id=49
+	name="STATE_49"
+	provinces={
+		626 856 985 1110 2350 2521 2687 2788 3573 3577 3602 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		1936.1.1={
+			owner = MGJ
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

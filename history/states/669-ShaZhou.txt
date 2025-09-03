@@ -1,0 +1,26 @@
+state={
+	id=669
+	name="STATE_669"
+	provinces={
+		5255 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+		}
+		
+		1939.1.1={
+			owner = NFA
+			add_core_of = NFA
+		}
+		1941.1.1={
+			owner = NFA
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

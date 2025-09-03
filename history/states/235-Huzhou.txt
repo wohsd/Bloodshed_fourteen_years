@@ -1,0 +1,26 @@
+state={
+	id=235
+	name="STATE_235"
+	provinces={
+		2026 2070 2082 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		
+		1939.1.1={
+			owner = JAP
+		}
+		1941.1.1={
+			owner = JDF
+		}
+		set_state_flag=ZheJiang
+	}
+	
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

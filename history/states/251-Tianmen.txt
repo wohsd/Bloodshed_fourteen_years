@@ -1,0 +1,33 @@
+
+state={
+	id=251
+	name="STATE_251"
+
+	history={
+		owner = PRH
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			3917 5
+		}
+		add_core_of = PRH
+		
+		1933.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		1940.1.1={
+			owner = JAP
+		}
+	}
+
+	provinces={
+		2260 3917 
+	}
+	manpower=233000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

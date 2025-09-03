@@ -1,0 +1,25 @@
+state={
+	id=327
+	name="STATE_327"
+	provinces={
+		2534 3182 3282 4027 4039 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+
+		}
+		victory_points = {
+			3182 5
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=10.000
+}

@@ -1,0 +1,34 @@
+unique_id = BFY_achievements
+
+Vic_Day = {
+    possible = {
+        has_start_date > 1931.01.01
+		NOT={
+			is_ai=yes
+		}
+        OR={
+            original_tag=CHI
+            original_tag=PRC
+            is_in_faction_with=CHI
+        }
+    }
+ 
+    happened = {
+        has_country_flag = JAP_LOSS
+    } 
+}
+The_god_mouth_garden = {
+    possible = {
+        has_start_date > 1931.01.01
+		NOT={
+			is_ai=yes
+		}
+        OR={
+            original_tag=CHI
+        }
+    }
+ 
+    happened = {
+        has_country_flag = The_god_mouth_garden
+    } 
+}

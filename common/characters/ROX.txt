@@ -1,0 +1,30 @@
+characters={
+    ROX_ShengShiCai={
+		name=ROX_ShengShiCai
+		portraits={
+			civilian={
+				large="gfx/leaders/ROX/ROX_ShengShiCai.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	ROX_JingShuRen={
+		name=ROX_JingShuRen
+		portraits={
+			civilian={
+				large="gfx/leaders/ROX/ROX_JingShuRen.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

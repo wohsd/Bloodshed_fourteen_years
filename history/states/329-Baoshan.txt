@@ -1,0 +1,18 @@
+state={
+	id=329
+	name="STATE_329"
+	provinces={
+		480 2263 2754 3005 3306 
+	}
+	history={
+		owner = ROY
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROY
+		
+	}	
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

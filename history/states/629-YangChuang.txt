@@ -1,0 +1,25 @@
+state={
+	id=629
+	name="STATE_629"
+	provinces={
+		2410 2416 
+	}
+	history={
+		owner = YUL
+		
+		buildings = {
+		}
+		1935.1.1={
+			owner = PRC
+		}
+		victory_points = {
+			2416 3
+		}
+		victory_points = {
+			2410 3
+		}
+	}
+	manpower=203000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

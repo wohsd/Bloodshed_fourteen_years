@@ -1,0 +1,25 @@
+state={
+	id=380
+	name="STATE_380"
+	provinces={
+		1505 2067 4205 4206 
+	}
+	history={
+		owner = ROG
+		add_core_of = ROG
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4206 5
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

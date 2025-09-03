@@ -1,0 +1,31 @@
+state={
+	id=204
+	name="STATE_204"
+	provinces={
+		227 622 2039 2296 
+	}
+	history={
+		owner = RHC
+		buildings = {
+			infrastructure = 1
+		}
+		
+		add_core_of = RHC
+		
+		1933.1.1={
+			owner = NSD
+			add_core_of = NSD
+		    
+		}
+		1936.1.1={
+			owner = RYS
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

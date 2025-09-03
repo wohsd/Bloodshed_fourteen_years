@@ -1,0 +1,16 @@
+characters={
+    XIA_xia_gong={
+		name=XIA_xia_gong
+		portraits={
+			civilian={
+				large="gfx/leaders/XIA/XIA_xia_gong.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

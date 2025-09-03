@@ -1,0 +1,131 @@
+﻿division_template = {
+	name = "东北边防军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "骑兵师" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 1809
+		name = "东北军骑兵第3师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1809
+		name = "东北军骑兵第6师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1809
+		name = "东北军骑兵第10师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1809
+		name = "东北军67军第107师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1809
+		name = "东北军67军第110师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1809
+		name = "东北军67军第117师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2710
+		name = "东北军57军第109师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2710
+		name = "东北军57军第111师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2710
+		name = "东北军57军第115师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2710
+		name = "东北军57军第105师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2779
+		name = "东北军51军第113师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2779
+		name = "东北军51军第114师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2779
+		name = "东北军51军第118师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		location = 1809
+		name = "东北军53军第116师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1809
+		name = "东北军53军第119师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1809
+		name = "独立第106师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+}

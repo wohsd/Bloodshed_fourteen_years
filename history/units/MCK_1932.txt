@@ -1,0 +1,114 @@
+﻿division_template = {
+	name = "独立混成旅" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵联队" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 3114
+		name = "满洲国第1骑兵混成旅"
+		division_template = "骑兵联队"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第2骑兵混成旅"
+		division_template = "骑兵联队"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第3骑兵混成旅"
+		division_template = "骑兵联队"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第4骑兵混成旅"
+		division_template = "骑兵联队"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第1独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第2独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第3独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第4独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第5独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第6独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第7独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第8独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第9独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "满洲国第10独立混成旅"
+		division_template = "独立混成旅"
+		start_experience_factor = 0.4
+	}
+}

@@ -1,0 +1,18 @@
+state={
+	id=526
+	name="STATE_526"
+	provinces={
+		5092 5093
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

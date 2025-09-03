@@ -1,0 +1,27 @@
+state={
+	id=627
+	name="STATE_627"
+	provinces={
+		243 1828 1255 3862
+	}
+
+	history={
+		owner = ROW
+		buildings = {
+			infrastructure = 1
+
+		}
+		1933.1.1={
+			owner = ROW
+		}
+		1938.1.1={
+			owner = ROW
+		}
+		victory_points = {
+			1255 3
+		}
+	}
+	manpower=122311
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

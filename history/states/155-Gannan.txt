@@ -1,0 +1,27 @@
+state={
+	id=155
+	name="STATE_155"
+	provinces={
+		390 652  2567 2586 
+	}
+	history={
+		owner = ZOT
+		add_core_of = ZOT
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			2567 10
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=53000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

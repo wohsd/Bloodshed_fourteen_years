@@ -1,0 +1,18 @@
+state={
+	id=279
+	name="STATE_279"
+	provinces={
+		1424 1766 2748 3076 3123 
+	}
+	history={
+		owner = ROY
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROY
+		
+	}	
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,31 @@
+state={
+	id=360
+	name="STATE_360"
+	provinces={
+		2251 
+	}
+	history={
+		owner = PRD
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2251 5
+		}
+		1933.1.1={
+			owner = ROG
+		}
+		add_core_of = ROG
+		
+		1941.1.1={
+			owner = JAP
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

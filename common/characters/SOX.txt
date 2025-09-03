@@ -1,0 +1,67 @@
+characters={
+#角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
+SOX_SongXing={
+		name=SOX_SongXing
+
+		#肖像选择（平民状态和军事状态）
+		portraits={
+
+			#平民状态
+			civilian={
+				large="gfx//leaders//SOX//SOX_SongXing.png"
+			}
+
+			#军事状态
+			army={
+				large="gfx//leaders//SOX//SOX_SongXing.png"
+				small="gfx//leaders//SOX//SOX_SongXing.png"
+			}
+
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SOX_MaoGuangXiang={
+		name=SOX_MaoGuangXiang
+
+		#肖像选择（平民状态和军事状态）
+		portraits={
+
+			#平民状态
+			civilian={
+				large="gfx//leaders//SOX//SOX_MaoGuangXiang.png"
+			}
+
+			#军事状态
+			army={
+				large="gfx//leaders//SOX//SOX_MaoGuangXiang.png"
+				small="gfx//leaders//SOX//SOX_MaoGuangXiang.png"
+			}
+
+		}
+			#担任党派领导人时的数据
+			country_leader={
+				#意识形态
+				ideology=despotism
+				#特质
+				traits={ }
+				#不可用日期（死亡日期）
+				expire="1965.1.1.1"
+				#我也不知道这个是什么，但最好不要碰这个
+				id=-1
+			}
+		field_marshal = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+}

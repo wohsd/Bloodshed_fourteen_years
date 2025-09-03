@@ -1,0 +1,94 @@
+CHI_struggle_balance_00 = {
+	initial_value = 1
+	left_side = CHI_struggle_00_left_side
+	right_side = CHI_struggle_00_right_side
+	decision_category = CHI_struggle_balance_00_category
+	range = {
+		id = CHI_struggle_00_mid_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			political_power_gain = -0.1
+			command_power_gain = -0.5
+			stability_weekly = -0.01
+			production_speed_buildings_factor = -0.05
+		}
+	}
+	side = {
+		id = CHI_struggle_00_left_side
+		icon = GFX_bop_CHI_unite
+		range = {
+			id = CHI_00_left_side_range_Low
+			min = -0.4
+			max = -0.1
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+		id = CHI_struggle_00_left_side
+		icon = GFX_bop_CHI_unite
+		range = {
+			id = CHI_00_left_side_range_mid
+			min = -0.9
+			max = -0.4
+			modifier = {
+				political_power_gain = 0.25
+				stability_weekly = 0.02
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		range = {
+			id = CHI_00_left_side_range_High
+			min = -1
+			max = -0.9
+			modifier = {
+				political_power_gain = 0.5
+				command_power_gain = 0.5
+				stability_weekly = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+	side = {
+		id = CHI_struggle_00_right_side
+		icon = GFX_bop_CHI_split
+		range = {
+			id = CHI_00_right_side_range_Low
+			min = 0.1
+			max = 0.4
+			modifier = {
+				political_power_gain = -0.25
+				command_power_gain = -1
+				stability_weekly = -0.02
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		id = CHI_struggle_00_right_side
+		icon = GFX_bop_CHI_split
+		range = {
+			id = CHI_00_right_side_range_mid
+			min = 0.4
+			max = 0.9
+			modifier = {
+				political_power_gain = -0.5
+				command_power_gain = -1.5
+				stability_weekly = -0.05
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		range = {
+			id = CHI_00_right_side_range_High
+			min = 0.9
+			max = 1
+			modifier = {
+				political_power_gain = -0.75
+				command_power_gain = -0.5
+				stability_weekly = -0.05
+				stability_factor = -0.2
+				production_speed_buildings_factor = -0.2
+		    }
+		}
+	}
+}
+
+

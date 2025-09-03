@@ -1,0 +1,24 @@
+ideas = {
+#不要动
+
+	country = {
+	#不要动	
+	YGC_Mao_Jewish_coalition_army = {
+		picture=Mao_Jewish_coalition_army
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+		}
+		removal_cost = -1
+		modifier = {
+		}
+		targeted_modifier = {
+			tag = ROH
+			army_attack_factor	= -0.35			
+			army_defence_factor	= -0.35	
+		}
+	}
+	}
+}

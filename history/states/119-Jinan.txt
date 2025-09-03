@@ -1,0 +1,26 @@
+state={
+	id=119
+	name="STATE_119"
+	provinces={
+		1636 2178 3683 5183 5279
+	}
+	history={
+		owner = ROA
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			air_base= 1
+		}
+		victory_points = {
+			2178 40
+		}
+		add_core_of = ROA
+		
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

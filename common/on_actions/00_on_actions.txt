@@ -1,0 +1,253 @@
+on_actions = {
+	# country 
+	on_startup = {
+		effect = {
+			every_country = {
+				add_to_variable = {
+					ECO = num_of_factories
+				}
+				add_to_variable = {
+					ECO = manpower
+				}
+				add_to_variable = {
+					ECO_ARMY=max_available_manpower_k
+				}
+				add_to_variable = {
+					ECO_FAC=num_of_factories
+				}
+				divide_variable = {
+					ECO = 1000
+				}
+				multiply_variable = {
+					ECO_FAC = 2
+				}
+				divide_variable = {
+					ECO_ARMY = 10
+				}
+
+				divide_variable = {
+					ECO = 10
+				}
+				divide_variable = {
+					ECO_FAC = 10
+				}
+				divide_variable = {
+					ECO_ARMY = 10
+				}
+
+
+
+
+
+				set_variable = {
+					ECO_INF = ECO
+				}
+				divide_variable = {
+					ECO_INF = 8
+				}
+
+				set_variable = {
+					ECO1 = ECO_INF
+				}
+				multiply_variable = {
+					ECO1 = -0.001
+				}
+
+
+				set_variable = {
+					ECO_INF_temp= ECO_INF
+				}
+				multiply_variable = {
+					ECO_INF_temp = -0.1
+				}
+
+
+				every_country  = {
+					add_stability = var:ECO1
+					add_war_support = var:ECO1
+					add_popularity = {
+						ideology = highest_party_ideology
+						popularity = var:ECO1
+					}
+				}
+			}
+
+
+		}
+	}
+
+	on_capitulation = { 
+		effect = { 
+			every_country = {
+				if = {
+					limit = { 
+						tag = JDW
+					}
+					every_army_leader = {
+						set_nationality = CHI
+					}
+				}
+			}
+		} 
+	}
+
+
+	on_daily = {
+		effect = {
+			every_state = {
+				if={
+					limit={
+						is_controlled_by = ROOT
+					}
+					set_state_owner_to = ROOT
+				}
+			}
+			
+		}
+	}
+
+	
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = CAR
+					FROM = { tag = ROD }
+				}
+				news_event = ROD.5
+			}
+    }
+	}
+	
+
+	on_startup = {
+		effect = {
+			every_country = {
+				set_rule = {
+					can_create_factions = no
+					can_join_factions = no
+				}
+				limit = {
+					NOT = {
+						original_tag = SOV
+						original_tag = JAP
+					}
+				}
+				
+				add_dynamic_modifier = {
+					modifier = CHI_research_speed_effect
+				}
+				set_variable = {
+					 CHI_research_speed_factor = -0.8
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = { 
+						has_idea = Regionalist_warlords
+					}
+					diplomatic_relation = {
+						country = CHI
+						relation = military_access
+						active = no
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			CHI = {
+				if = {
+					limit = { 
+						date > 1943.12.29 
+					}
+					country_event = RTS_1944.1
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						AND={
+							NOT={
+								original_tag = PRC	
+							}
+						} 
+						OR={
+							date < 1931.2.1
+							date < 1933.2.1  
+						}
+						
+					}
+					country_event = game_start.1
+				}
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+    	effect = { 
+			if = {
+				limit = { 
+					ROOT={original_tag = HLJ}
+					FROM={original_tag =JAP}
+				}
+				MCK={
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+		 }
+	}
+
+	on_capitulation_immediate = {
+    	effect = { 
+			if = {
+				limit = { 
+					ROOT={original_tag = JLS}
+					FROM={original_tag =JAP}
+				}
+				MCK={
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+		 }
+	}
+
+	on_startup = {
+		effect = {
+			every_state = {
+				if={
+					limit = {
+						state =235
+						state =237
+						state =248
+						state =255
+						state =256
+						state =258
+						state =268
+						state =273
+						state =276
+						state =285
+						state =289
+						state =591
+					}
+				}
+			}
+		}
+	}
+
+
+
+}

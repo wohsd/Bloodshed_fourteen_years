@@ -1,0 +1,21 @@
+state={
+	id=222
+	name="STATE_222"
+	provinces={
+		161 164 220 281 627 649 795 1308 1431 1432 1562 2195 2242 2287 2424 2705 3308 3361 3890 
+	}
+	history={
+		owner = XZS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = XZS
+		
+		victory_points = {
+			1308 1
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

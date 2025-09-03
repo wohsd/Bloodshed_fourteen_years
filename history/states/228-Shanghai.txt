@@ -1,0 +1,58 @@
+state={
+	id=228
+	name="STATE_228"
+	provinces={
+		2946 3815 3828 3833 5242 5243 5244 5246 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base= 1
+			2946 = {
+				naval_base = 2
+				coastal_bunker = 2
+			}
+			5244={
+				bunker = 2
+			}
+			5242={
+				bunker = 2
+			}
+			5246={
+				bunker = 2
+			}
+		}
+		victory_points={
+			5244 5
+		}
+		victory_points={
+			5243 3
+		}
+		victory_points={
+			5242 3
+		}
+		victory_points={
+			3828 3
+		}
+		victory_points = {
+			5246 3
+		}
+		
+		1933.1.1={
+			set_demilitarized_zone = yes
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		1941.1.1={
+			owner = JDF
+		}
+	}
+	manpower=2350000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

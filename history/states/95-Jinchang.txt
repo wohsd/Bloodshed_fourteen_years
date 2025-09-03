@@ -1,0 +1,20 @@
+state={
+	id=95
+	name="STATE_95"
+	provinces={
+		1743 
+	}
+	history={
+		owner = MBQ
+		buildings = {
+			infrastructure = 1
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

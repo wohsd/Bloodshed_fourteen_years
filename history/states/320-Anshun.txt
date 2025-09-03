@@ -1,0 +1,32 @@
+state={
+	id=320
+	name="STATE_320"
+	provinces={
+		1885 
+	}
+	resources={
+		steel = 2
+		aluminium=2 # was: 12
+		tungsten = 2
+	}
+	history={
+		owner = ROH
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = ROH
+		
+		1933.1.1={
+			owner = YGC
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}
+

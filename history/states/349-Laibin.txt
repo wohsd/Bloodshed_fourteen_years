@@ -1,0 +1,25 @@
+state={
+	id=349
+	name="STATE_349"
+	resources={
+		steel = 3
+		aluminium=4 # was: 12
+	}
+	provinces={
+		 1567 2245 2395 3185 4129
+	}
+	history={
+		owner = ROC
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3185 5
+		}
+		add_core_of = ROC
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

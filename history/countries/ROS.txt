@@ -1,0 +1,30 @@
+﻿capital = 238 
+set_oob = "ROS_1931"
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+interwar_antitank = 1
+	early_fighter = 1
+	basic_train = 1
+	early_ship_hull_light = 1
+}
+
+recruit_character = ROS_LiuXiang
+set_popularities = {
+	democratic = 0
+	communism = 0
+    neutrality = 100
+}
+add_ideas = Regionalist_warlords
+set_politics = {
+	ruling_party = neutrality
+	#last_election = "1936.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+1933.1.1={
+	set_oob = "ROS_1933"
+	set_naval_oob = "ROS_1933_Naval"
+}

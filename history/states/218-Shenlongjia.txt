@@ -1,0 +1,26 @@
+state={
+	id=218
+	name="STATE_218"
+	provinces={
+		919 3809
+	}
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		
+        add_core_of = CHI
+		1933.1.1={
+			owner = NSD
+			add_core_of = NSD
+		}
+		1936.1.1={
+			owner = CHI
+			add_core_of = CHI
+		}
+	}
+	manpower=123000
+	state_category = town
+	local_supplies = 0.0
+}

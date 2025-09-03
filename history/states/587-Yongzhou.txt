@@ -1,0 +1,27 @@
+state={
+	id=587
+	name="STATE_587"
+	provinces={
+		2317 3197
+	}
+	history={
+		owner = RON
+		add_core_of = RON
+		buildings = {
+		}
+		victory_points = {
+			2317 5
+		}
+		add_core_of = PRJ
+		1936.1.1={
+			owner = RON
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=23000
+	state_category = town
+	local_supplies = 0.0
+}

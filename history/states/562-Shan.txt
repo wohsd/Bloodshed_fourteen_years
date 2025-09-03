@@ -1,0 +1,20 @@
+state={
+	id=562
+	name="STATE_562"
+	provinces={
+		44 112 136 158 189 411 744 1177 1807 2122 2574 3374 4220 5194 5195 5196
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RAJ
+		1942.2.1={
+			owner = CEN
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,57 @@
+music = {
+	name = "gongxigongxi"
+	file = "gongxigongxi.ogg"
+	volume = 1
+}
+music = {
+	name = "Lige"
+	file = "Lige.ogg"
+	volume = 1
+}
+music = {
+	name = "shengli"
+	file = "shengli.ogg"
+	volume = 1
+}
+music = {
+	name = "dadao"
+	file = "dadao.ogg"
+	volume = 1
+}
+music = {
+	name = "qizhengpiaopiao"
+	file = "qizhengpiaopiao.ogg"
+	volume = 1
+}
+music = {
+	name = "taihangshang"
+	file = "taihangshang.ogg"
+	volume = 1
+}
+music = {
+	name = "baoweihuanghe"
+	file = "baoweihuanghe.ogg"
+	volume = 1
+}
+music = {
+	name = "guoge"
+	file = "guoge.ogg"
+	volume = 1
+}
+music= {
+	name = "balujun"
+	file = "balujun.ogg"
+	volume = 1
+}
+
+music= {
+	name = "xiangzhange"
+	file = "xiangzhange.ogg"
+	volume = 1
+}
+music= {
+	name = "kangrijunzheng"
+	file = "kangrijunzheng.ogg"
+	volume = 1
+}
+

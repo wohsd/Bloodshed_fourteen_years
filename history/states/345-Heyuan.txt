@@ -1,0 +1,30 @@
+state={
+	id=345
+	name="STATE_345"
+	provinces={
+		1185 1421 1634 1782 1945 1964 2183 2624 2765 3074 4073 4085 4102 4106 4112 4117 4123 4125 4141 
+	}
+	resources={
+		tungsten=10 # was: 20
+		steel= 10 # was: 20
+		chromium = 3 # was: 4
+	}
+	history={
+		owner = ROG
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4117 5
+		}
+		add_core_of = ROG
+		
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

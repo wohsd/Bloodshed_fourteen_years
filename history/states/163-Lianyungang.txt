@@ -1,0 +1,27 @@
+state={
+	id=163
+	name="STATE_163"
+	provinces={
+		977 1931 2005 3740 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			977 5
+		}
+		
+		1939.1.1={
+			owner = JAP
+		}
+		1941.1.1={
+			owner = JDF
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

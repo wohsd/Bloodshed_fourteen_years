@@ -1,0 +1,16 @@
+characters={
+    ROY_LongYun={
+		name=ROY_LongYun
+		portraits={
+			civilian={
+				large="gfx/leaders/ROY/ROY_LongYun.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

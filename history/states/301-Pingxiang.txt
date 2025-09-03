@@ -1,0 +1,22 @@
+state={
+	id=301
+	name="STATE_301"
+	provinces={
+		2700 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2700 5
+		}
+		
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

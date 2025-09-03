@@ -1,0 +1,30 @@
+state={
+	id=624
+	name="STATE_624"
+	provinces={
+		1312 
+	}
+	history={
+		owner = MTX
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			2710 5
+		}
+		1933.1.1 = {
+			owner = YHC
+		}
+		1936.1.1={
+			owner = ROD
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=33110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

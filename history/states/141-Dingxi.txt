@@ -1,0 +1,27 @@
+state={
+	id=141
+	name="STATE_141"
+	provinces={
+		441 3708 3737 
+	}
+	history={
+		owner = LDC
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3708 10
+		}
+		
+		1936.1.1={
+			owner = LDC
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=83000
+	state_category = town
+	local_supplies = 0.0
+}

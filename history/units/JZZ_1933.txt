@@ -1,0 +1,27 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	
+}
+units = {
+	division= {	
+		location = 3938
+		name = "滇军第二十五军第三师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+}

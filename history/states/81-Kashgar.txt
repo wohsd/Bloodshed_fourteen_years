@@ -1,0 +1,18 @@
+state={
+	id=81
+	name="STATE_81"
+	provinces={
+		48 406 624 850 1158 1170 1341 1888 2309 3705 4784
+	}
+	history={
+		owner = ROX
+		buildings = {
+			infrastructure = 1
+		}
+		
+		add_core_of = ROX
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

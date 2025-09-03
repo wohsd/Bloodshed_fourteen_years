@@ -1,0 +1,32 @@
+state={
+	id=625
+	name="STATE_625"
+	provinces={
+		636 1387 
+	}
+	resources = {
+		tungsten = 2.000
+	}
+	history={
+		owner = CGZ
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			1387 5
+		}
+		1933.1.1 = {
+			owner = YHC
+		}
+		1936.1.1={
+			owner = ROD
+		}
+		1938.1.1={
+			owner = PRC
+		}
+	}
+	manpower=123110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

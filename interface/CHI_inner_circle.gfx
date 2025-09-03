@@ -1,0 +1,50 @@
+spriteTypes = {	
+
+	### Fhurer Assets ###
+	spriteType = { 
+		name = "GFX_JiangJieShi"
+		texturefile = "gfx/interface/inner_circle/CHI_JiangJieShi.png"
+	}
+	spriteType = { 
+		name = "GFX_ChenCheng"
+		texturefile = "gfx/interface/inner_circle/CHI_ChenCheng.png"
+	}
+	spriteType = { 
+		name = "GFX_ChenGuoFu"
+		texturefile = "gfx/interface/inner_circle/CHI_ChenGuoFu.png"
+	}
+	spriteType = { 
+		name = "GFX_YangYongTai"
+		texturefile = "gfx/interface/inner_circle/CHI_YangYongTai.png"
+	}
+	spriteType = { 
+		name = "GFX_DaiLi_available_small"
+		texturefile = "gfx/interface/advisers/CHI_DaiLi.png"
+	}
+
+
+	spriteType = { 
+		name = "GFX_ChenLiFu_available_small"
+		texturefile = "gfx/interface/advisers/CHI_ChenLiFu.png"
+	}
+	spriteType = { 
+		name = "GFX_ZhangQun_available_small"
+		texturefile = "gfx/interface/advisers/CHI_ZhangQun.png"
+	}
+	spriteType = { 
+		name = "GFX_HeYingQing_available_small"
+		texturefile = "gfx/interface/advisers/CHI_HeYingQing.png"
+	}
+	spriteType = { 
+		name = "GFX_HuangFu_available_small"
+		texturefile = "gfx/interface/advisers/CHI_HuangFu.png"
+	}
+	spriteType = { 
+		name = "GFX_LingSeng_available_small"
+		texturefile = "gfx/interface/advisers/CHI_LingSeng.png"
+	}
+	spriteType = { 
+		name = "GFX_DaiJiTao_available_small"
+		texturefile = "gfx/interface/advisers/CHI_DaiJiTao.png"
+	}
+}

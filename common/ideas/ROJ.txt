@@ -1,0 +1,30 @@
+ideas = {
+#不要动
+	country = {
+
+	MoFang = {
+			name = MoFang
+			#国家tag_精神名字，如USA_123
+			allowed = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor=0.05
+				political_power_factor=0.05
+			}
+	}
+	Rich_minerals= {
+		name = Rich_minerals
+		#国家tag_精神名字，如USA_123
+		allowed = { always = yes }
+
+		removal_cost = -1
+
+		modifier = {
+			local_resources_factor=0.1
+		}
+	}
+
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=355
+	name="STATE_355"
+	provinces={
+		1428 2144 2284 2774 2849 3089 3276 3284 4122 4130 4140 4147 
+	}
+	history={
+		owner = ROG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			2849 5
+		}
+		add_core_of = ROG
+		
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

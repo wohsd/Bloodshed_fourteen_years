@@ -1,0 +1,632 @@
+﻿add_namespace = KanRi_1937
+add_namespace = CHI_1937
+add_namespace = CHI_1937_hidden
+add_namespace = Fall_City
+add_namespace = Win_City
+add_namespace = ShangHai
+add_namespace = Generals
+
+
+country_event = {
+	id = CHI_1937_hidden.1
+	title = CHI_1937_hidden.1.t
+	desc = CHI_1937_hidden.1.d
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		JAP={
+			controls_province = 2634
+		}
+    }
+    immediate = {
+		set_global_flag = state_2634
+		
+		CHI={
+			CHI_TangShenZhi = {
+				unit_leader_event = Generals.1
+			}
+		}
+    } 
+	option = {
+		name = CHI_1937_hidden.1.a
+		clr_global_flag = state_2634
+
+	}		
+}
+
+unit_leader_event = {
+	id = Generals.1
+	title =Generals.1.t
+	desc = Generals.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = Generals.1.a
+		random_list = {
+			99={
+				CHI_TangShenZhi={
+					unit_leader_event = {id=Generals.2 days=10}
+				}
+			}
+			1={
+				CHI_TangShenZhi={
+					unit_leader_event = {id=Generals.3 days=10}
+				}
+			}
+		}
+	}		
+}
+unit_leader_event = {
+	id = Generals.2
+	title =Generals.2.t
+	desc = Generals.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = Generals.2.a
+		214={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=135
+			}
+		}
+	}		
+}
+unit_leader_event = {
+	id = Generals.3
+	title =Generals.3.t
+	desc = Generals.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = Generals.3.a
+		retire_character = CHI_TangShenZhi
+	}		
+}
+###抗日
+country_event = {
+	id = KanRi_1937.1
+	title =KanRi_1937.1.t
+	desc = KanRi_1937.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = {id=KanRi_1937.2}
+		PRC = {
+			white_peace = MBQ
+		}
+		CHI={
+			create_faction = China_Faction
+			add_to_faction = PRC
+			add_to_faction = ROG
+			add_to_faction = ROC
+			add_to_faction = ROJ
+			add_to_faction = SJN
+			add_to_faction = BTF
+			add_to_faction = ROS
+			add_to_faction = ROY
+			add_to_faction = PRC
+			add_to_faction = ROQ
+			add_to_faction = ROZ
+			add_to_faction = LDC
+			add_to_faction = ROX
+			add_to_faction = MZY
+			add_to_faction = RYS
+			add_to_faction = ROT
+			add_to_faction = RDX
+			add_to_faction = PRC
+			add_to_faction = ROW
+			add_to_faction = XZS
+			add_to_faction = YUL
+			add_to_faction = MBQ
+			add_to_faction = ROD
+			add_to_faction = NSD
+			add_to_faction = ZOT
+			add_to_faction = DOT
+			add_to_faction = TOH
+			add_to_faction = PRQ
+		}
+		}
+	}
+	option = {
+		name = KanRi_1937.1.a
+		
+		
+	}		
+}
+news_event = {
+	id = KanRi_1937.2
+	title =KanRi_1937.2.t
+	desc = KanRi_1937.2.d
+    picture = GFX_KanRi_1937_2
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = KanRi_1937.2.a
+		
+	}
+}
+
+
+
+country_event = {
+	id = Fall_City.0
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1932.1.1
+		CHI = {
+			AND={
+				has_war_with = JAP
+			}
+		}
+		JAP={
+			controls_province = 3828
+			controls_province = 3841
+			controls_province = 3815
+		}
+    }
+	immediate = {
+		hidden_effect = {
+			news_event = {id=SCR.1 days=10}
+			CHI={
+				news_event = Fall_City.1
+			}
+			set_global_flag = fall_of_ShangHai
+		}
+	}
+    
+	option = {
+		name = Fall_City.0.a
+		clr_global_flag = fall_of_ShangHai
+	}		
+}
+
+###上海
+news_event = {
+	id = Fall_City.1
+	title =Fall_City.1.t
+	desc = Fall_City.1.d
+	picture=GFX_Fall_City_1
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		216={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=135
+			}
+		}
+		669={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=135
+			}
+		}
+		219={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=135
+			}
+		}
+		215={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=135
+			}
+		}
+		213={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = CHI
+				days=135
+			}
+		}
+		}
+	}
+	option = {
+		name = Fall_City.1.a
+		
+	}
+}		
+
+
+news_event = {
+	id = Fall_City.2
+	title =Fall_City.2.t
+	desc = Fall_City.2.d
+	picture=GFX_Fall_City_2
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_state = {
+				if = {
+					limit = {
+						is_core_of = ROA
+					}
+					add_dynamic_modifier = {
+						modifier = Morale_collapsed
+						scope = ROA
+						days = 200
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = Fall_City.2.a
+		
+	}
+}		
+
+
+
+
+news_event = {
+	id = Fall_City.3
+	title =Fall_City.3.t
+	desc = Fall_City.3.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = Fall_City.3.a
+	}
+}		
+
+
+
+news_event = {
+	id = Fall_City.4
+	title =Fall_City.4.t
+	desc = Fall_City.4.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Fall_City.4.a
+	}
+}		
+
+
+
+
+
+news_event = {
+	id = Win_City.1
+	title =Win_City.1.t
+	desc = Win_City.1.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Win_City.1.a
+	}
+}	
+
+news_event = {
+	id = Win_City.2
+	title =Win_City.2.t
+	desc = Win_City.2.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Win_City.2.a
+	}
+}	
+
+
+news_event = {
+	id = Win_City.3
+	title =Win_City.3.t
+	desc = Win_City.3.d
+	picture=GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = Win_City.3.a
+	}
+}	
+
+
+news_event = {
+	id = Win_City.4
+	title = Win_City.4.t
+	desc = Win_City.4.d
+	picture = GFX_Fall_City_2
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.4.a
+	}
+}
+	
+news_event = {
+	id = Win_City.5
+	title = Win_City.5.t
+	desc = Win_City.5.d
+	picture = GFX_Fall_City_3
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.5.a
+	}
+}
+	
+news_event = {
+	id = Win_City.6
+	title = Win_City.6.t
+	desc = Win_City.6.d
+	picture = GFX_Fall_City_4
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.6.a
+	}
+}
+	
+news_event = {
+	id = Win_City.7
+	title = Win_City.7.t
+	desc = Win_City.7.d
+	picture = GFX_Fall_City_5
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.7.a
+	}
+}
+	
+news_event = {
+	id = Win_City.8
+	title = Win_City.8.t
+	desc = Win_City.8.d
+	picture = GFX_Fall_City_6
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.8.a
+	}
+}
+	
+news_event = {
+	id = Win_City.9
+	title = Win_City.9.t
+	desc = Win_City.9.d
+	picture = GFX_Fall_City_7
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.9.a
+	}
+}
+	
+news_event = {
+	id = Win_City.10
+	title = Win_City.10.t
+	desc = Win_City.10.d
+	picture = GFX_Fall_City_8
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.10.a
+	}
+}
+	
+news_event = {
+	id = Win_City.11
+	title = Win_City.11.t
+	desc = Win_City.11.d
+	picture = GFX_Fall_City_9
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.11.a
+	}
+}
+	
+news_event = {
+	id = Win_City.12
+	title = Win_City.12.t
+	desc = Win_City.12.d
+	picture = GFX_Fall_City_10
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.12.a
+	}
+}
+	
+news_event = {
+	id = Win_City.13
+	title = Win_City.13.t
+	desc = Win_City.13.d
+	picture = GFX_Fall_City_11
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.13.a
+	}
+}
+	
+news_event = {
+	id = Win_City.14
+	title = Win_City.14.t
+	desc = Win_City.14.d
+	picture = GFX_Fall_City_12
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.14.a
+	}
+}
+	
+news_event = {
+	id = Win_City.15
+	title = Win_City.15.t
+	desc = Win_City.15.d
+	picture = GFX_Fall_City_13
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.15.a
+	}
+}
+	
+news_event = {
+	id = Win_City.16
+	title = Win_City.16.t
+	desc = Win_City.16.d
+	picture = GFX_Fall_City_14
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	name = Win_City.16.a
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = ShangHai.0
+	title =ShangHai.0.t
+	desc = ShangHai.0.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = ShangHai.0.a
+		228={set_demilitarized_zone = no}
+		647={set_demilitarized_zone = no}
+		670={set_demilitarized_zone = no}
+		586={set_demilitarized_zone = no}
+		add_threat = 10
+	}		
+}
+
+country_event = {
+	id = ShangHai.1
+	title =ShangHai.1.t
+	desc = ShangHai.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		JAP={
+			transfer_state = 670
+			transfer_state = 671
+		}
+		670={
+			create_unit = {
+				division = "name = \"华中方面军第6师团第11旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第6师团第36旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第18师团第23旅团\" division_template = \"华中方面军\" start_experience_factor = 0.75 start_equipment_factor = 0.9"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第18师团第35旅团\" division_template = \"华中方面军\" start_experience_factor = 0.75 start_equipment_factor = 0.9"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第114师团第127旅团\" division_template = \"华中方面军\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第114师团第128旅团\" division_template = \"华中方面军\" start_experience_factor = 0.7 start_equipment_factor = 0.8"
+				owner = JAP
+			}
+		}
+		
+		671={
+			create_unit = {
+				division = "name = \"华中方面军第16师团第19旅团\" division_template = \"华中方面军\" start_experience_factor = 0.9 start_equipment_factor = 1"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第16师团第30旅团\" division_template = \"华中方面军\" start_experience_factor = 0.85 start_equipment_factor = 1"
+				owner = JAP
+			}
+			create_unit = {
+				division = "name = \"华中方面军第11师团浅间支队\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = JAP
+			}
+		}
+	}
+	option = {
+		name = ShangHai.1.a
+	}		
+}

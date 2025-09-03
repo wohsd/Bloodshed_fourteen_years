@@ -1,0 +1,18 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		677 859 945 956 1269 1568 3148 3536 3549 
+	}
+	history={
+		owner = ROX
+		buildings = {
+			infrastructure = 1
+		}
+		
+		add_core_of = ROX
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

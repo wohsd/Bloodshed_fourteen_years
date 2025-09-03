@@ -1,0 +1,74 @@
+Combat_direction = { 
+	WuHan_attack = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			231={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			242={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			233={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			226={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			266={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			220={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			259={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			
+			246={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			257={
+				add_dynamic_modifier = {
+					modifier = Combat_direction_effect
+					scope = JAP
+				}
+			}
+			
+		}
+	}
+}

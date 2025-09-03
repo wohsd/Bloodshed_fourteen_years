@@ -1,0 +1,164 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "独立旅" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+	division= {	
+		location = 1383 # 2537
+		name = "川军第11旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 379
+		name = "川军第12旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 3850
+		name = "川军第13旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 3850
+		name = "川军第14旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 1257
+		name = "川军第15旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 1151
+		name = "川军第16旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 1785
+		name = "川军第17旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 1383
+		name = "川军第145师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 3297
+		name = "川军第146师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 3850
+		name = "川军第162师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 3344
+		name = "川军第147师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		location = 1383 # 1713
+		name = "川军第148师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 2655
+		name = "川军第164师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 379
+		name = "川军第149师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 1776
+		name = "川军第150师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+
+	division= {	
+		location = 1383 # 3344
+		name = "川军第165师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 2461
+		name = "川军第144师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		location = 1383 # 1120
+		name = "川军第161师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+}

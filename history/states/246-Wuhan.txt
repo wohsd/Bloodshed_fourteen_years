@@ -1,0 +1,33 @@
+state={
+	id=246
+	name="STATE_246"
+	provinces={
+		2141 3023 3846
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 3
+			air_base= 1
+		}
+		victory_points = {
+			2141 10
+		}
+		victory_points = {
+			3846 10
+		}
+		victory_points = {
+			3023 10
+		}
+		
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=1323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,51 @@
+﻿division_template = {
+	name = "游击支队" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+	}
+}
+units = {
+	division= {	
+		name = "东江游击队"
+		location = 3220
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "东江游击队"
+		location = 4096
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "东江游击队"
+		location = 4168
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "东江游击队"
+		location = 2251
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "东江游击队"
+		location = 1669
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+}

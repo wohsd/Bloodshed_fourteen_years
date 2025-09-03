@@ -1,0 +1,21 @@
+state={
+	id=333
+	name="STATE_333"
+	provinces={
+		2319 
+	}
+	history={
+		owner = ROY
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2319 5
+		}
+		add_core_of = ROY
+		
+	}	
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,272 @@
+ideas = {
+
+	country = {
+		Bethune = {
+			allowed = {
+			}
+			picture = Bethune
+			
+			modifier = {
+				experience_loss_factor = -0.1
+				attrition= -0.05
+			}
+		}
+		Central_Special_Branch = {
+			allowed = {
+			}
+			picture = GFX_Central_Special_Branch
+			
+			modifier = {
+				intelligence_agency_defense=0.1
+				decryption_power=10
+				intel_network_gain=0.1
+				intel_from_operatives_factor=0.1
+				propaganda_mission_factor=0.1
+			}
+		}
+		Chinese_red_army1 = {
+			allowed = {
+			}
+			picture = Chinese_red_army
+			
+			modifier = {
+				ai_focus_aggressive_factor = 1
+				army_attack_factor=0.05	
+                army_defence_factor=0.05
+				army_speed_factor=0.1
+				army_org_factor=0.25
+				breakthrough_factor=0.1
+				river_crossing_factor=-0.15			
+                terrain_penalty_reduction=0.15	
+                pocket_penalty=-0.15				
+                fortification_damage=0.05
+				land_night_attack=0.05
+				
+			}
+		}
+		Chinese_red_army2 = {
+			allowed = {
+			}
+			picture = Chinese_red_army
+			
+			modifier = {
+				ai_focus_aggressive_factor = 1
+				army_attack_factor=0.1	
+                army_defence_factor=0.1
+				army_speed_factor=0.6
+				army_org_factor=0.25
+				breakthrough_factor=0.3
+				river_crossing_factor=-0.3			
+                terrain_penalty_reduction=0.3	
+                pocket_penalty=-0.1				
+                fortification_damage=0.2
+				land_night_attack=0.5
+				
+			}
+		}
+		Chinese_red_army3 = {
+			allowed = {
+			}
+			picture = Chinese_red_army
+			
+			modifier = {
+				ai_focus_aggressive_factor = 1
+				army_attack_factor=0.1	
+                army_defence_factor=0.1
+				army_speed_factor=1
+				army_org_factor=0.25
+				breakthrough_factor=0.3
+				river_crossing_factor=-0.3			
+                terrain_penalty_reduction=0.3	
+                pocket_penalty=-0.1				
+                fortification_damage=0.2
+				land_night_attack=0.2
+			}
+		}
+		Soviet_district_spirit = {
+			allowed = {
+			}
+			picture = Soviet_district_spirit
+			
+			modifier = {
+				research_speed_factor=-0.6
+				recruitable_population_factor=0.1
+				global_building_slots_factor=-0.05
+				production_speed_buildings_factor=-0.1
+				repair_speed_infrastructure_factor=-0.1
+				production_lack_of_resource_penalty_factor=0.1
+				
+			}
+			
+		}
+		Leftism = {
+			allowed = {
+			}
+			picture = Leftism
+			
+			modifier = {
+				political_power_cost=2
+				ai_get_ally_desire_factor=10
+				opinion_gain_monthly_same_ideology=5
+				war_support_factor=0.05
+				party_popularity_stability_factor=-0.1
+				org_loss_when_moving=0.02
+				attrition_for_controller=0.05
+			}
+		}
+		AB_spirit = {
+			allowed = {
+			}
+			picture = AB_spirit
+			
+			modifier = {
+				political_power_cost=0.05
+				encryption_factor=-0.1
+				stability_weekly_factor=-0.02
+				ntelligence_agency_defense=-0.05
+			}
+		}
+		AB_spirit1 = {
+			allowed = {
+			}
+			picture = AB_spirit
+			
+			modifier = {
+				political_power_cost=0.1
+				encryption_factor=-0.05
+				stability_weekly_factor=-0.01
+				ntelligence_agency_defense=-0.1
+			}
+		}
+		Revolutionary_base = {
+			allowed = {
+			}
+			picture = Revolutionary_base
+			
+			modifier = {
+				surrender_limit=100
+				war_stability_factor=0.25
+				war_support_factor=0.25
+				compliance_growth=0.15
+				compliance_growth_on_our_occupied_states=-0.15
+				supply_consumption_factor=-0.15
+				out_of_supply_factor=-0.1
+				supply_consumption_factor= -0.1
+				recon_factor= 0.2
+				army_core_defence_factor = 0.2
+				max_dig_in_factor= 0.1
+			}
+		}
+		The_impact_Lisan_route= {
+			allowed = {
+			}
+			picture = The_impact_Lisan_route
+			
+			modifier = {
+				war_support_factor=0.05
+				war_stability_factor=-0.1
+				minimum_training_level=0.1
+			}
+		}
+		Local_outpost= {
+			allowed = {
+			}
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				max_dig_in=10
+				recon_factor_while_entrenched=0.1
+				defensive_war_stability_factor=0.1
+			}
+		}
+		Extensive_conscription= {
+			allowed = {
+			}
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+
+		Long_March_Trauma= {
+			allowed = {
+			}
+			picture = prc_the_long_march2
+			
+			modifier = {
+				army_attack_factor = -0.10     
+    			army_defence_factor = -0.10    
+				training_time_factor = 0.1
+				army_org_factor= -0.1     # 训练时间 +10%
+			}
+		}
+		Shortage_commanders_fighters= {
+			allowed = {
+			}
+			picture = saf_soviet_advisers
+			
+			modifier = {
+				experience_gain_factor=-0.03
+				army_chief_cost_factor=0.3
+			}
+		}
+		Closed_economy= {
+			allowed = {
+			}
+			picture = saf_history_of_segregation_2
+			
+			modifier = {
+				political_power_cost=0.1
+				stability_factor=-0.05
+				consumer_goods_factor=0.2
+			}
+		}
+		Challenged_authority= {
+			allowed = {
+			}
+			picture = anti_soviet_pact 
+			
+			modifier = {
+				political_power_factor=-0.1
+				political_advisor_cost_factor=0.25
+				stability_factor=-0.05
+			}
+		}
+
+		The_spirit_Nanniwan= {
+			allowed = {
+			}
+			picture = The_spirit_Nanniwan
+			
+			modifier = {
+				production_factory_max_efficiency_factor=0.1
+				production_factory_efficiency_gain_factor=0.1
+			}
+		}
+
+		Rent_interest_reductions= {
+			allowed = {
+			}
+			picture = Rent_interest_reductions
+			
+			modifier = {
+				party_popularity_stability_factor= 0.05
+				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+		Three_three_system_border_areas= {
+			allowed = {
+			}
+			picture = Three_three_system_border_areas
+			
+			modifier = {
+				democratic_acceptance=10
+				communism_acceptance=10
+				neutrality_acceptance=10
+			}
+		}
+	}
+}

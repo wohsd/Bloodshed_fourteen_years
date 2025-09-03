@@ -1,0 +1,20 @@
+state={
+	id=684
+	name="STATE_684"
+	provinces={
+		2233 3623
+	}
+	history={
+		owner = SJN
+		buildings = {
+			infrastructure = 1
+		}
+		1939.1.1={
+			owner = YPQ
+		}
+		add_core_of = SJN
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

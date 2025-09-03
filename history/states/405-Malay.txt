@@ -1,0 +1,20 @@
+state={
+	id=405
+	name="STATE_405"
+	provinces={
+		310 490 570 589 803 1827 2099 2271 2658 2927 4266 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		1941.1.1={
+			owner = JAP
+		}
+		add_core_of = RAJ
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

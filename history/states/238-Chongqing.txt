@@ -1,0 +1,47 @@
+state={
+	id=238
+	name="STATE_238"
+	resources={
+		steel=22.000
+		aluminium=12.000
+	}
+	history={
+		owner = ROW
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			supply_node = 1
+			industrial_complex = 2
+			anti_air_building= 1
+			air_base= 1
+			3850={
+				naval_base = 2
+				coastal_bunker = 1
+			}
+		}
+
+		
+		victory_points = {
+			3850 30
+		}
+		
+		
+		1933.1.1={
+			owner = ROS
+		}
+		1936.1.1={
+			owner = ROS
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	provinces={
+		1201 1322 1776 2461 2761 3850 3881 
+	}
+	manpower=1223000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

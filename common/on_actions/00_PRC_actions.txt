@@ -1,0 +1,13 @@
+on_actions = {
+	# country
+	on_startup= { 
+		effect = {
+		
+		CHI = { 
+			set_power_balance = {
+				id = CHI_struggle_balance
+			}
+		} 
+	} 
+}
+}

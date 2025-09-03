@@ -1,0 +1,174 @@
+﻿add_namespace = CHI
+add_namespace = CHI_hidden
+add_namespace = CHIFocus
+
+country_event = {
+	id = CHI_hidden.1
+	hidden = yes
+    fire_only_once = yes
+
+	trigger = {
+		AND={
+            date > 1931.6.2
+			date < 1931.6.4
+		}
+    }
+	immediate = {
+		CHI =  { country_event = { id = CHI.1 } }
+	}
+	mean_time_to_happen = { days = 2 }
+	option = { name = CHI.01 }
+}
+
+
+country_event = {
+	id = CHI.1
+	title =  CHI.1.t
+	desc = CHI.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHI.1.a
+		CHI =  { country_event = { id = CHI.2  days = 3 } }
+		ai_chance = {
+            base = 20     
+        }
+	}
+	option = {
+		name = CHI.1.b
+		ai_chance = {
+            base = 0     
+        }
+		CHI =  { 
+			country_event = { id = CHI.3  days = 3 } 
+		    retire_character = CHI_JiangJieShi
+		}
+		remove_power_balance = {
+			id = CHI_struggle_balance
+		}
+		set_country_flag = jiangjieshi_gg
+	}
+}
+
+
+
+country_event = {
+	id = CHI.2
+	title =  CHI.2.t
+	desc = CHI.2.d
+	picture = GFX_jiang_dai
+    is_triggered_only = yes  
+
+	option = {
+		name = CHI.2.a
+		custom_effect_tooltip = CHI.2.a.d
+		set_country_flag = diaocha
+	}
+	option = {
+		name = CHI.2.b
+		custom_effect_tooltip = CHI.2.b.d
+	}
+}
+country_event = {
+	id = CHI.3
+	title =  CHI.3.t
+	desc = CHI.3.d
+	picture = GFX_wangjingwei_01
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.3.a
+	}
+	option = {
+		name = CHI.3.b
+	}
+}
+
+country_event = {
+	id = CHI.92
+	hidden = yes
+    fire_only_once = yes
+
+	trigger = {
+		AND={
+			CHI = { not = {has_country_flag = jiangjieshi_gg} }
+            date > 1931.7.1
+		    date < 1931.7.3
+		}
+    }
+	immediate = {
+		if = {
+			limit = { CHI = { has_country_flag = diaocha } }
+		    CHI =  { country_event = { id = CHI.4 } }
+			else = {
+				CHI =  { country_event = { id = CHI.5 } } 
+			}
+	    }
+		
+	}
+	mean_time_to_happen = { days = 2 }
+	option = { name = CHI.02 }
+}
+
+country_event = {
+	id = CHI.4
+	title =  CHI.4.t
+	desc = CHI.4.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.4.a
+	}
+}
+country_event = {
+	id = CHI.5
+	title =  CHI.5.t
+	desc = CHI.5.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.5.a
+		set_country_flag = chi_hencheng_01
+	}
+}
+country_event = {
+	id = CHI.6
+	title =  CHI.6.t
+	desc = CHI.6.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.6.a
+	}
+}
+
+news_event = {
+	id = CHIFocus.1
+	title =  CHIFocus.1.t
+	desc = CHIFocus.1.d
+	picture = GFX_CHIevent_1
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHIFocus.1.a
+	}
+}
+
+news_event = {
+	id = CHIFocus.30
+	title =  CHIFocus.30.t
+	desc = CHIFocus.30.d
+	picture = GFX_CHIevent_30
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = CHIFocus.30.a
+	}
+}
+

@@ -1,0 +1,12 @@
+﻿add_namespace = ROC
+country_event = {
+	id = ROC.1
+	title =  ROC.1.t
+	desc = ROC.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ROC.1.a
+	}
+	}

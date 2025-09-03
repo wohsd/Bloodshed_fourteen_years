@@ -1,0 +1,26 @@
+state={
+	id=608
+	name="STATE_608"
+	provinces={
+		2152 2505 4026 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+
+		}
+		1933.1.1={
+			owner = PRJ
+			add_core_of = PRJ
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=212130
+	buildings_max_level_factor=1.000
+	local_supplies=10.000
+}

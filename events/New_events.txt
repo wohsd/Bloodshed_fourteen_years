@@ -1,0 +1,1839 @@
+add_namespace = WorldNew
+add_namespace = Hidden_News
+
+country_event = {
+	id = Hidden_News.1
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1931.9.17
+			date < 1931.9.19
+		}
+		
+    }
+immediate = {
+	news_event = WorldNew.1
+	ROD={
+	ROD_XiQia = {
+		unit_leader_event = {id=ROD_1931.1 days=1}
+	}
+	}
+	
+	JAP={
+		transfer_state = 67
+		transfer_state = 75
+		transfer_state = 66
+		transfer_state = 48
+		67={
+			create_unit = {
+			division = "name = \"关东军第2师第3旅\" division_template = \"关东军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+		}
+		}
+		75={
+			create_unit = {
+			division = "name = \"关东军第2师第1旅\" division_template = \"关东军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+		}
+		}
+		48={
+			create_unit = {
+			division = "name = \"关东军第2师第3旅\" division_template = \"关东军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+		}
+		}
+		66={
+			create_unit = {
+			division = "name = \"关东军第2师第3旅\" division_template = \"关东军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+			owner = JAP
+		}
+		}
+		
+	}
+	
+	
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.1.a
+		}		
+}
+country_event = {
+	id = Hidden_News.2
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+    }
+immediate = {
+	#news_event = WorldNew.2
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+		name = Hidden_News.2.a
+	}		
+}
+country_event = {
+	id = Hidden_News.3
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		date < 1939.1.1
+		214={
+			is_controlled_by = JAP
+		}
+    }
+immediate = {
+	news_event = WorldNew.3
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.3.a
+		}		
+}
+
+country_event = {
+	id = Hidden_News.4
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		
+    }
+immediate = {
+	
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.4.a
+	}		
+}
+country_event = {
+	id = Hidden_News.5
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1931.6.27
+			date < 1931.6.29
+		}
+    }
+immediate = {
+	news_event = WorldNew.6
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.5.a
+		}		
+}
+country_event = {
+	id = Hidden_News.6
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1932.1.27
+			date < 1932.1.29
+		}
+    }
+immediate = {
+	news_event = WorldNew.7
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.6.a
+		}		
+}
+
+
+country_event = {
+	id = Hidden_News.7
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.1.1
+			date < 1933.1.3
+		}
+    }
+immediate = {
+	news_event = WorldNew.8
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.7.a
+		}		
+}
+
+
+
+
+country_event = {
+	id = Hidden_News.8
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.11.19
+			date < 1933.11.21
+		}
+    }
+immediate = {
+	news_event = WorldNew.9
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.8.a
+		}		
+}
+
+
+
+
+
+
+country_event = {
+	id = Hidden_News.9
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.1.29
+			date < 1933.1.31
+		}
+    }
+immediate = {
+	news_event = WorldNew.12
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.9.a
+		}		
+}
+
+country_event = {
+	id = Hidden_News.10
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.5.25
+			date < 1933.5.27
+		}
+    }
+immediate = {
+	news_event = WorldNew.13
+	country_event = {id=ROD.4 days=91}
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.10.a
+		}		
+}
+country_event = {
+	id = Hidden_News.11
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.6.25
+			date < 1933.6.27
+		}
+    }
+immediate = {
+	news_event = WorldNew.14
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.11.a
+		}		
+}
+country_event = {
+	id = Hidden_News.12
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1934.2.16
+			date < 1934.2.18
+		}
+    }
+immediate = {
+	news_event = WorldNew.15
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.12.a
+		}		
+}
+country_event = {
+	id = Hidden_News.13
+    hidden = yes
+
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1934.5.23
+			date < 1934.5.25
+		}
+    }
+immediate = {
+	news_event = WorldNew.16
+}
+mean_time_to_happen = {
+	days = 2
+}
+	option = {
+			name = Hidden_News.13.a
+		}		
+}
+
+
+
+country_event = {
+	id = Hidden_News.14
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		AND={
+			date > 1936.12.11
+			date < 1936.12.13
+		}
+    }
+    immediate = {
+		set_global_flag = XiAn
+    } 
+    
+	option = {
+		name = Hidden_News.14.a
+		hidden_effect = {
+			news_event = WorldNew.18
+		}
+		clr_global_flag = XiAn
+	}		
+}
+country_event = {
+	id = Hidden_News.15
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		AND={
+			date > 1937.7.6
+			date < 1937.7.8
+		}
+    }
+    immediate = {
+		set_global_flag = 77
+		news_event = WorldNew.19
+		JDW_DongLingGe  = {
+			unit_leader_event = {id=common.4 days=20}
+			retire = yes 
+		}
+		CHI={
+			complete_national_focus = CHIFocus_1
+		}
+		every_state = {
+			if = {
+				limit = {
+					OR={
+						state = 293  
+						state = 306  
+						state = 313  
+						state = 319  
+						state = 327  
+						state = 328  
+						state = 330  
+						state = 336  
+						state = 343  
+						state = 599  
+						state = 600  
+						state = 603
+
+						state = 262  
+						state = 266  
+						state = 269  
+						state = 660  
+						state = 281  
+						state = 282  
+						state = 288  
+						state = 292  
+						state = 298  
+						state = 301  
+						state = 302  
+						state = 312  
+						state = 582  
+						state = 583  
+						state = 584  
+						state = 585  
+						state = 589  
+						state = 595  
+						state = 598  
+						state = 593  
+						state = 606  
+						state = 609  
+						state = 666
+
+						state = 89  
+						state = 116  
+						state = 655  
+						state = 656  
+						state = 657  
+						state = 658  
+						state = 147  
+						state = 154  
+						state = 157  
+						state = 162  
+						state = 170  
+						state = 175  
+						state = 190  
+						state = 191  
+						state = 629  
+						state = 630  
+						state = 677
+					}
+				 }
+				 add_dynamic_modifier = {
+					modifier = Poorly_managed_areas
+					scope = JAP
+				 }
+			}
+		}
+    } 
+    
+	option = {
+		name = Hidden_News.15.a
+		clr_global_flag = 77
+	}		
+}
+country_event = {
+	id = Hidden_News.16
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		AND={
+			date > 1937.8.8
+			date < 1937.8.10
+		}
+    }
+    immediate = {
+		set_global_flag = 128songhu
+		CHI = {
+			country_event = ShangHai.0 
+			country_event = {id=KanRi_1937.1 days=30}
+			set_country_flag = songhu
+		}
+		
+    } 
+    
+	option = {
+		name = Hidden_News.14.a
+		
+		hidden_effect = {
+			news_event = {id=WorldNew.20 days=3}
+		}
+		clr_global_flag = 128songhu
+	}		
+}
+
+#country_event = {
+#	id = Hidden_News.17
+#	hidden = yes
+#	fire_only_once = yes
+#    trigger = {
+#		AND={
+#			date > 1935.11.23
+#			date < 1935.11.25
+#		}
+#    }
+#    immediate = {
+#		set_global_flag = 1124beiping
+#    } 
+#    
+#	option = {
+#		name = Hidden_News.17.a
+#		hidden_effect = {
+#			news_event = WorldNew.21
+#		}
+#		clr_global_flag = 1124beiping
+#	}		
+#}
+
+####
+country_event = {
+	id = Hidden_News.18
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		CAR = {
+			AND={
+				controls_province = 342
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = Hidden_News_18
+		hidden_effect = {
+			news_event = WorldNew.23
+		}
+    } 
+    
+	option = {
+		name = Hidden_News.18.a
+		
+		clr_global_flag = Hidden_News_18
+	}		
+}
+
+
+
+
+country_event = {
+	id = Hidden_News.19
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1931.9.18
+		date < 1933.1.1
+		JAP = {
+			AND={
+				controls_state = 50
+				controls_state = 36
+				controls_state = 40
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = Hidden_News_19
+		
+		news_event = { id= WorldNew.4 }
+		news_event = {id=ROD.6 days=10}
+		news_event = { id= WorldNew.5 days = 100} 
+	}
+	option = {
+		name = Hidden_News.19.a
+		clr_global_flag = Hidden_News_19
+	}		
+}
+
+
+country_event = {
+	id = Hidden_News.20
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1938.10.4
+		date < 1938.10.6
+    }
+    immediate = {
+		set_global_flag = Hidden_News_20
+		news_event = WorldNew.24
+		hidden_effect = {
+			JAP={
+				declare_war_on = {
+					target = ROG
+					type = annex_everything
+				}
+			transfer_state = 676
+			676={
+				create_unit = {
+					division = "name = \"日军第五师团第九旅团\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第五师团第二十一旅团\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第十八师团第三十五旅团\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					}
+				create_unit = {
+					division = "name = \"日军第十八师团第二十三旅团\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					}
+			}
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.19.a
+		clr_global_flag = Hidden_News_20
+	}		
+}
+
+
+
+
+country_event = {
+	id = Hidden_News.21
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1939.9.1
+		date < 1939.9.3
+    }
+    immediate = {
+		news_event = WorldNew.26
+	}
+	option = {
+		name = Hidden_News.21.a
+	}		
+}
+
+###海南战役
+country_event = {
+	id = Hidden_News.22
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1939.2.9
+		date < 1939.2.11
+    }
+    immediate = {
+		set_global_flag = Hidden_News_22
+		news_event = WorldNew.27
+		hidden_effect = {
+			JAP={
+			transfer_state = 388
+			transfer_state = 391
+			388={
+				create_unit = {
+					division = "name = \"台湾混成旅团第一联队\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+			}
+			391={
+				create_unit = {
+					division = "name = \"台湾混成旅团第二联队\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+			}
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.22.a
+	}		
+}
+##桂南
+country_event = {
+	id = Hidden_News.23
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1939.11.14
+		date < 1939.11.16
+    }
+    immediate = {
+		set_global_flag = Hidden_News_23
+		news_event = WorldNew.28
+		hidden_effect = {
+			JAP={
+			transfer_state = 380
+			380={
+				create_unit = {
+					division = "name = \"日军第五师团\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第五师团\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+				create_unit = {
+					division = "name = \"日军第五师团\" division_template = \"华南方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+				}
+			}
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.23.a
+	}		
+}
+
+
+##刘湘死亡
+country_event = {
+	id = Hidden_News.24
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1938.1.19
+		date < 1938.1.21
+    }
+    immediate = {
+		set_global_flag = Hidden_News_24
+		news_event = WorldNew.29
+		hidden_effect = {
+			CHI={
+				annex_country = {
+					target = ROS
+				}
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.24.a
+	}		
+}
+
+##苏德战争
+country_event = {
+	id = Hidden_News.24
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1941.6.21
+		date < 1941.1.23
+    }
+    immediate = {
+		set_global_flag = Hidden_News_24
+		news_event = WorldNew.30
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = Hidden_News.24.a
+	}		
+}
+##偷袭珍珠港
+country_event = {
+	id = Hidden_News.25
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1941.12.6
+		date < 1941.12.8
+    }
+    immediate = {
+		set_global_flag = Hidden_News_25
+		news_event = WorldNew.31
+		news_event = WorldNew.32
+		news_event = WorldNew.33
+		hidden_effect = {
+
+			390={
+				transfer_state_to = JAP
+				create_unit = {
+					division = "name = \"华南方面军第48师团田中支队\" division_template = \"华南方面军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 2184
+				}
+				create_unit = {
+					division = "name = \"华南方面军第48师团菅野支队\" division_template = \"华南方面军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 2184
+				}
+			}
+			395={
+				transfer_state_to = JAP
+				create_unit = {
+					division = "name = \"华南方面军第16师团木村支队\" division_template = \"华南方面军\" start_experience_factor = 0.8"
+					owner = JAP
+					prioritize_location = 1427
+				}
+			}
+			JAP = {
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+			}
+			JAP = {
+				declare_war_on = {
+					target = RAJ
+					type = annex_everything
+				}
+			}
+			JAP = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.25.a
+	}		
+}
+country_event = {
+	id = Hidden_News.25
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1940.6.21
+		date < 1940.6.23
+    }
+    immediate = {
+		set_global_flag = Hidden_News_25
+		news_event = WorldNew.34
+		news_event = WorldNew.35
+		hidden_effect = {
+			FRA = {
+				give_military_access = JAP
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.25.a
+	}		
+}
+
+country_event = {
+	id = Hidden_News.26
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1942.1.1
+		date < 1942.1.3
+    }
+    immediate = {
+		set_global_flag = Hidden_News_26
+		news_event = WorldNew.36
+		hidden_effect = {
+			USA = {
+				create_faction = Central_Powers
+			}
+			RAJ = {
+				add_to_faction = USA
+			}
+			HOL = {
+				add_to_faction = USA
+			}
+		}
+	}
+	option = {
+		name = Hidden_News.26.a
+	}		
+}
+#######
+
+
+news_event = {
+	id = WorldNew.1
+	title = WorldNew.1.t
+	desc = WorldNew.1.d
+
+	picture = GFX_Mukden_Incident
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ROD={
+				add_ideas = Not_resisting
+				set_war_support = 0.1
+			}
+			JAP={
+				declare_war_on = {
+				target = ROD
+				type = annex_everything
+			}
+			}
+			news_event = {id=ROA_1932.1 days=365}
+		}
+	}
+
+	option = {
+		name = WorldNew.1.a
+		hidden_effect = {
+			CHI={
+				news_event = {id=ROG_1931.4 days=5}
+			}
+		}
+			goto_state = 50
+		}		
+}
+news_event = {
+	id = WorldNew.2
+	title = WorldNew.2.t
+	desc = WorldNew.2.d
+
+	picture = GFX_news_event_001
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = WorldNew.2.a
+			every_country = {
+				if={
+				limit = {
+					has_idea = Regionalist_warlords
+				}
+				diplomatic_relation = {
+					country = CHI
+					relation = military_access
+					active = no
+				}
+			}
+			}
+			
+		}		
+}
+news_event = {
+	id = WorldNew.3
+	title = WorldNew.3.t
+	desc = WorldNew.3.d
+
+	picture = GFX_Nanjing_Massacre
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = {id=NRC.1 days=10}
+		}
+	}
+	option = {
+			name = WorldNew.3.a
+			JAP={
+				add_political_power = -50
+			}
+			CHI={
+				add_stability = -0.05
+				add_political_power = 50
+			}
+		}		
+}
+news_event = {
+	id = WorldNew.4
+	title = WorldNew.4.t
+	desc = WorldNew.4.d
+
+	picture = GFX_news_event_civil_war_turkey
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = WorldNew.4.a
+			JAP={
+				add_political_power = -50
+			}
+			CHI={
+				add_stability = -0.05
+				add_political_power = 50
+			}
+		}		
+}
+news_event = {
+	id = WorldNew.5
+	title = WorldNew.5.t
+	desc = WorldNew.5.d
+
+	picture = GFX_WorldNew_5
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	hidden_effect = {
+		MCK={
+			load_oob = "MCK_1932"
+			transfer_state = 8
+			transfer_state = 12
+			transfer_state = 13
+			transfer_state = 15
+			transfer_state = 21
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 24
+			transfer_state = 29
+			transfer_state = 41
+			transfer_state = 54
+			transfer_state = 40
+			transfer_state = 54
+			transfer_state = 51
+			transfer_state = 42
+			transfer_state = 60
+			transfer_state = 65
+			transfer_state = 73
+			transfer_state = 75
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 50
+			transfer_state = 64
+			transfer_state = 69
+			transfer_state = 44
+			transfer_state = 48
+			transfer_state = 42
+			transfer_state = 36
+			transfer_state = 24
+			transfer_state = 34
+		}
+		ROD_XiQia = {
+			set_nationality = MCK
+		}
+		ROD_MaZhanShan = {
+			unit_leader_event = {
+				id = ROD_1931.2
+				days = 10
+			}
+		}
+	}
+	}
+
+	option = {
+		name = WorldNew.5.a
+
+	}		
+}
+news_event = {
+	id = WorldNew.6
+	title = WorldNew.6.t
+	desc = WorldNew.6.d
+
+	picture = GFX_China_flood
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+			name = WorldNew.6.a
+		}		
+}
+news_event = {
+	id = WorldNew.7
+	title = WorldNew.7.t
+	desc = WorldNew.7.d
+
+	picture = GFX_128_shanghai
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {id=JAP_1932.1 days=34}
+			JAP={
+				declare_war_on = {
+				target = CHI
+				type = annex_everything
+			}
+			set_province_controller = 5246
+			228={
+				create_unit = {
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
+				create_unit = {
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
+				create_unit = {
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
+				create_unit = {
+					division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = JAP
+					prioritize_location = 5246
+				}
+			}
+			}
+			
+		}
+	}
+
+	option = {
+			name = WorldNew.7.a
+			goto_state = 228
+		}		
+}
+news_event = {
+	id = WorldNew.8
+	title = WorldNew.8.t
+	desc = WorldNew.8.d
+
+	picture = GFX_WorldNew_8
+
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			JAP={
+				declare_war_on = {
+				target = ROD
+				type = annex_everything
+			}
+			}
+			MCK={
+				declare_war_on = {
+				target = ROD
+				type = annex_everything
+			}
+			}
+		}
+		
+	}
+
+	is_triggered_only = yes
+
+	option = {
+			name = WorldNew.8.a
+			
+		}		
+}
+news_event = {
+	id = WorldNew.9
+	title = WorldNew.9.t
+	desc = WorldNew.9.d
+
+	picture = GFX_WorldNew_9
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		RFC={
+			transfer_state = 293
+			transfer_state = 666
+			transfer_state = 306
+			transfer_state = 313
+			transfer_state = 319
+			transfer_state = 327
+			transfer_state = 328
+			transfer_state = 330
+			transfer_state = 336
+			transfer_state = 343
+			transfer_state = 525
+			transfer_state = 526
+		}
+		CHI={
+		declare_war_on = {
+			target = RFC
+			type = annex_everything
+		}
+	}
+		ROG={
+		declare_war_on = {
+			target = RFC
+			type = annex_everything
+		}
+	}
+		CHI_CaiTingKai = {
+			set_nationality = RFC
+		}
+		CHI_JiangGuangDing = {
+			set_nationality = RFC
+		}
+		}
+		}
+		
+		
+		
+	}
+
+	option = {
+			name = WorldNew.9.a
+		}		
+
+news_event = {
+	id = WorldNew.10
+	title = WorldNew.10.t
+	desc = WorldNew.10.d
+
+	picture = GFX_WorldNew_10
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+			name = WorldNew.10.a
+		}		
+}
+
+news_event = {
+	id = WorldNew.11
+	title = WorldNew.11.t
+	desc = WorldNew.11.d
+
+	picture = GFX_news_event_046
+
+	major = yes
+	immediate = {
+		hidden_effect = {
+			228={set_demilitarized_zone = yes}
+			647={set_demilitarized_zone = yes}
+			670={set_demilitarized_zone = yes}
+			586={set_demilitarized_zone = yes}
+			682={set_demilitarized_zone = yes}
+			228={transfer_state_to = CHI}
+			647={transfer_state_to = CHI}
+			670={transfer_state_to = CHI}
+			586={transfer_state_to = CHI}
+		}
+		
+	}
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+
+	option = {
+			name = WorldNew.11.a
+		}		
+}
+
+
+
+
+news_event = {
+	id = WorldNew.12
+	title = WorldNew.12.t
+	desc = WorldNew.12.d
+
+	picture = GFX_WorldNew_12
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+
+	option = {
+			name = WorldNew.12.a
+		}		
+}
+
+news_event = {
+	id = WorldNew.13
+	title = WorldNew.13.t
+	desc = WorldNew.13.d
+
+	picture = GFX_WorldNew_13
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = ROS.1
+			686={
+				transfer_state_to = CAR
+			}
+			CAR={
+				load_oob = "CAR_1933"
+				declare_war_on = {
+					target = LSX
+					type = annex_everything
+				}
+				give_military_access = ROD
+			}
+			
+		}
+		
+	}
+
+	option = {
+		name = WorldNew.13.a
+		
+	}		
+}
+
+news_event = {
+	id = WorldNew.14
+	title = WorldNew.14.t
+	desc = WorldNew.14.d
+
+	picture = GFX_WorldNew_14
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+			name = WorldNew.14.a
+		}		
+}
+
+news_event = {
+	id = WorldNew.15
+	title = WorldNew.15.t
+	desc = WorldNew.15.d
+
+	picture = GFX_WorldNew_15
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+			name = WorldNew.15.a
+		}		
+}
+news_event = {
+	id = WorldNew.16
+	title = WorldNew.16.t
+	desc = WorldNew.16.d
+
+	picture = GFX_WorldNew_16
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+			name = WorldNew.16.a
+		}		
+}
+
+
+news_event = {
+	id = WorldNew.17
+	title = WorldNew.17.t
+	desc = WorldNew.17.d
+
+	picture = GFX_WorldNew_17
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+			name = WorldNew.17.a
+			if={
+				limit={
+					is_ai = no
+				}
+			PRC={
+				load_oob = "PRC_1936"
+			}
+			}
+		}		
+}
+
+
+news_event = {
+	id = WorldNew.18
+	title = WorldNew.18.t
+	desc = WorldNew.18.d
+
+	picture = GFX_WorldNew_18
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+		PRC = {
+			country_event = {id=ROD_1936.1 days=6}
+		}
+
+		news_event = { id=ROD.8 days=35 }
+		news_event = { id=ROD.9 days=55 }
+		}
+		
+	}
+	option = {
+		name = WorldNew.18.a
+	}		
+}
+news_event = {
+	id = WorldNew.19
+	title = WorldNew.19.t
+	desc = WorldNew.19.d
+
+	picture = GFX_WorldNew_19
+
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			SJN={
+				give_military_access = CHI
+			}
+			ROA={
+				give_military_access = CHI
+			}
+			JDW={
+				give_military_access = CHI
+			}
+			ROJ={
+				give_military_access = CHI
+			}
+			 
+			JAP={
+				add_timed_idea = {
+					idea = Death_in_March
+					days = 90
+				}
+				add_ideas = China_Offensive
+				
+				declare_war_on = {
+					target = SJN
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CHI
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = JDW
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ROJ
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ROA
+					type = annex_everything
+				}
+			}
+		}
+		
+	}
+	option = {
+			name = WorldNew.19.a
+			
+	}	
+}
+
+
+news_event = {
+	id = WorldNew.20
+	title = WorldNew.20.t
+	desc = WorldNew.20.d
+
+	picture = GFX_WorldNew_20
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			
+			CHI={
+				set_country_flag = songhu
+				country_event = {id=ShangHai.1 days=90}
+			}
+			
+			JAP={
+				declare_war_on = {
+					target = CHI
+					type = annex_everything
+				}
+				transfer_state = 586
+				transfer_state = 647
+				647={
+					create_unit = {
+						division = "name = \"华中方面军第3师团第5旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"华中方面军第3师团第29旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+				}
+				586={
+					create_unit = {
+						division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"海军陆战队\" division_template = \"海军陆战队\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"华中方面军第11师团第10旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"华中方面军第11师团第22旅团\" division_template = \"华中方面军\" start_experience_factor = 0.8 start_equipment_factor = 1"
+						owner = JAP
+					}
+				}
+			}
+		}
+		
+	}
+	option = {
+			name = WorldNew.20.a
+	}		
+}
+
+
+
+
+
+
+
+
+news_event = {
+	id = WorldNew.21
+	title = WorldNew.21.t
+	desc = WorldNew.21.d
+
+	picture = GFX_WorldNew_21
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			JAP={
+			transfer_state = 586
+			}
+		}
+	}
+	option = {
+		name = WorldNew.21.a
+		hidden_effect = {
+			news_event = {id=WorldNew.22 days=15}
+		}
+	}		
+}
+
+news_event = {
+	id = WorldNew.22
+	title = WorldNew.22.t
+	desc = WorldNew.22.d
+
+	picture = GFX_WorldNew_22
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+			name = WorldNew.22.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.23
+	title = WorldNew.23.t
+	desc = WorldNew.23.d
+
+	picture = GFX_WorldNew_23
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = WorldNew.23.a
+		hidden_effect = {
+			ROD={
+				country_event = {id=ROD.2 days = 2}	
+			}
+		}
+	}
+}
+
+
+news_event = {
+	id = WorldNew.24
+	title = WorldNew.24.t
+	desc = WorldNew.24.d
+
+	picture = GFX_WorldNew_24
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+			name = WorldNew.24.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.25
+	title = WorldNew.25.t
+	desc = WorldNew.25.d
+
+	picture = GFX_WorldNew_25
+	trigger = {
+		date > 1931.1.1
+		date < 1933.12.1
+	}
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			ROW={
+				white_peace = XZS
+			}
+		}
+	
+	}
+	option = {
+		name = WorldNew.25.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.26
+	title = WorldNew.26.t
+	desc = WorldNew.26.d
+
+	picture =  GFX_news_event_003
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = WorldNew.26.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.27
+	title = WorldNew.27.t
+	desc = WorldNew.27.d
+
+	picture =  GFX_news_event_005
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = WorldNew.27.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.28
+	title = WorldNew.28.t
+	desc = WorldNew.28.d
+
+	picture =  GFX_news_event_007
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = WorldNew.28.a
+	}		
+}
+
+news_event = {
+	id = WorldNew.29
+	title = WorldNew.29.t
+	desc = WorldNew.29.d
+
+	picture =  GFX_news_event_007
+
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = WorldNew.29.a
+	}		
+}
+
+
+
+
+	news_event = {
+		id = WorldNew.30
+		title = WorldNew.30.t
+		desc = WorldNew.30.d
+
+		picture =  GFX_news_event_stalin_meeting
+
+		major = yes
+
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.30.a
+		}		
+	}
+	news_event = {
+		id = WorldNew.31
+		title = WorldNew.31.t
+		desc = WorldNew.31.d
+	
+		picture = GFX_news_event_generic_south_american_dreadnought_race
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.31.a
+		}		
+	}
+	
+	news_event = {
+		id = WorldNew.32
+		title = WorldNew.32.t
+		desc = WorldNew.32.d
+	
+		picture = GFX_news_event_civil_war_turkey
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.32.a
+		}		
+	}
+	
+	news_event = {
+		id = WorldNew.33
+		title = WorldNew.33.t
+		desc = WorldNew.33.d
+	
+		picture = GFX_news_event_bulgarian_soldiers
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.33.a
+		}		
+	}
+	
+	news_event = {
+		id = WorldNew.34
+		title = WorldNew.34.t
+		desc = WorldNew.34.d
+	
+		picture = GFX_news_event_003
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.34.a
+		}		
+	}
+	
+	news_event = {
+		id = WorldNew.35
+		title = WorldNew.35.t
+		desc = WorldNew.35.d
+	
+		picture = GFX_news_event_generic_sign_treaty1
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.35.a
+		}		
+	}
+
+		
+	news_event = {
+		id = WorldNew.36
+		title = WorldNew.36.t
+		desc = WorldNew.36.d
+	
+		picture = GFX_news_event_generic_sign_treaty1
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.36.a
+		}		
+	}

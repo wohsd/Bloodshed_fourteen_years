@@ -1,0 +1,75 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "独立旅" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "骑兵团" 		
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 1809
+		name = "陕军第十七路军第17师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 880
+		name = "陕军第十七路军第42师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 3248
+		name = "陕西警备第1旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 277
+		name = "陕西警备第2旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 2689
+		name = "陕西警备第3旅"
+		division_template = "独立旅"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 1809
+		name = "陕西警备第3旅"
+		division_template = "骑兵团"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+}

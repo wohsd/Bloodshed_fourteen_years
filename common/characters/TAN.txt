@@ -1,0 +1,16 @@
+characters={
+    TAN_Donduk_Kuular={
+		name=TAN_Donduk_Kuular
+		portraits={
+			civilian={
+				large="gfx/leaders/TAN/TAN_Donduk_Kuular.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

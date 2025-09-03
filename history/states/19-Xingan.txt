@@ -1,0 +1,22 @@
+state={
+	id=19
+	name="STATE_19"
+	provinces={
+		186 600 665 750 887 957 990 1959 2218 2277 2443 2545 2699 2965 3491 3509 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1936.1.1={
+			owner = MCK
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 5.0
+}

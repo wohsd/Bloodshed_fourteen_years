@@ -1,0 +1,111 @@
+﻿l_simp_chinese:
+The_winner_Central:0 "中原大战的胜利者"
+The_winner_Central_desc:0 "虽然国民政府取得了最后的胜利，但“中原大战”历时7个月，双方动员兵力110万人以上，支出军费5亿元，死伤30万人，战火波及20多省。战祸所及，破坏严重。作为战场的中原人民，河南洛阳等27县严重受灾。"
+Armies_from_world:0 "五湖四海的军队"
+Armies_from_world_desc:0 "冯玉祥所组建的抗日同盟军来自不同地区的部队，其士气和作战能力都不能与正规军相提及。"
+Anti_Japanese_zeal:0 "抗日热情"
+Anti_Japanese_zeal_desc:0 "目前的热情：§H[?Anti_JP_zeal]§!\n人民的抗日之心已经沸腾。高校学生开始自发动员组织抗日游行活动，动员全国人民抵抗日本的侵略。\n\n§H效果：§!\n每当热情上升§H1§!点，各项增益将会增加§G0.02%§!的效果，但每§R丢失§!一个大型城市，§R投降派§!的势力将会增加，热情也随着§R减弱§!。"
+Encourage_enlistment_military:0 "十万青年十万军"
+The_Golden_Decade:0 "黄金十年"
+Militaristic_fervor:0 "军国主义狂热"
+Morale_collapsed:0 "士气崩溃"
+Eight_provincial_guerrillas:0 "南方八省游击队"
+Poorly_managed_areas:0 "战略重视度低的地区"
+Four_families:0 "四大家族"
+YGC_Mao_Jewish_coalition_army:0 "毛犹联军"
+Not_resisting:0 "不抵抗政策"
+Negative_Encirclement:0 "消极剿共"
+Fortress_tactics:0 "碉堡战术"
+Fortress_tactics_desc:0 "蒋介石采纳国民党将军柳维垣、戴岳等和外国军事顾问的建议，确定“战略攻势，战术守势”和“步步为营，节节推进，碉堡公路，连绵不断，经济封锁，滴水不漏”的策略。同时，对部队进行整编，师以下撒销旅一级建制，每师直辖3个团，并在师、团两级增设侦察队，扩充运输队。军事力量方面，在保定等处招募新兵，扩编10余个师，并从各省抽调部队入赣，同时购进大批新式武器装备部队。"
+Anti_hometown_group:0 "地方乡团"
+Anti_hometown_group_desc:0 "在对红军农村革命根据地的大小围剿中，不熟悉农村地理的国民党通常都会让熟悉当地的地主、乡绅作“向导”，来帮助找到根据地位置所在。作为回报，会在攻克革命根据地后，默许地主、乡绅恢复此前在当地的土地权利，甚至以加重赋税、霸占更多土地的方式，来对农民进行“反攻倒算”。"
+Regionalist_warlords:0 "地方主义军阀"
+Regionalist_warlords_desc:0 "自中原大战之后，虽然明面上蒋介石统一了中国，但是各地的军阀神貌离合，大多数人只关心自己的利益，安心当一个山大王。\n\n§R中央军队无法进入我们的防区§!"
+MoFang:0 "模范省"
+
+
+
+national_resource_council:0 "国家资源委员会"
+the_blueshirts:0 "蓝衣社"
+central_club:0 "中央俱乐部"
+
+NBIS:0 "军统局"
+CBIS:0 "中统局"
+new_life:0 "新生活运动"
+Five_year_plan:0 "五年计划"
+SongMeiLing:0 "第一夫人"
+Continuation_White_Terror:0 "白色恐怖的赓续"
+
+
+
+CHI_Ordnance_Industry_Administration:0 "兵工总署"
+
+CHI_army:0 "中华民国陆军"
+CHI_army_desc:0 ""
+CHI_air:0 "中华民国空军"
+CHI_air_desc:0 ""
+CHI_navy:0 "中华民国海军"
+CHI_navy_desc:0 ""
+
+Rich_minerals:0 "矿产丰富"
+
+Regionalist_warlords_effect:0 "中央军队无法进入我们的防区"
+
+Bethune:0 "白求恩医生"
+Chinese_red_army1:0 "中国工农红军"
+Chinese_red_army2:0 "中国工农红军"
+Chinese_red_army3:0 "中国工农红军"
+Soviet_district_spirit:0 "落后的根据地"
+Soviet_district_spirit_desc:0 "虽然我们深得苏区民意，但现实问题是我们的根据地缺乏基础的工业设备，以至于能批量生产枪支的工厂都寥寥无几。大部分枪支和弹药需要从外界购买以及战斗中缴获取得。"
+AB_spirit:0 "AB团"
+AB_spirit_desc:0 "AB团全称Anti-BolslovK League，反布尔什维克，是1926年11月底至12月间国民党右派在南昌秘密成立的一个组织，AB团的主要目的和任务是与共产党争夺国民党党内领导权，并从事一系列反共活动。"
+AB_spirit1:0 "AB团"
+AB_spirit1_desc:0 "AB团全称Anti-BolslovK League，反布尔什维克，是1926年11月底至12月间国民党右派在南昌秘密成立的一个组织，AB团的主要目的和任务是与共产党争夺国民党党内领导权，并从事一系列反共活动。"
+The_impact_Lisan_route:0 "立三路线的影响"
+The_impact_Lisan_route_desc:0 "尽管立三同志引咎辞职后前往苏联，但其立三路线的影响仍存在于军中。"
+Leftism:0 "左倾冒险主义"
+Leftism_desc:0 "莫斯科派来的王明、博古等人提出，党内的主要危险不是“左”，而是“右倾”。强调要实行“进攻路线”，主张在湘鄂赣各省“真正实现一省或几省的首先胜利，进而推进与争取全国范围内的胜利”。"
+Revolutionary_base:0 "苏区精神"
+Revolutionary_base_desc:0 "大革命失败后，进入民主革命阶段最长的土地革命战争时期。中国共产党领导的武装起义如火如荼，遍及全国12个省、约150个县的广大地区，建立了一个又一个革命根据地，即苏区。影响甚大的苏区达13个，其鼎盛时期的面积共约40余万平方公里、辖人口3000万，星星之火成燎原之势。"
+Local_outpost:0 "地方哨站"
+Local_outpost_desc:0 "得益于强大的群众基础，这使得百姓可以在敌军来临前及时向我们汇报。"
+Extensive_conscription:0 "动员群众"
+Extensive_conscription_desc:0 "动员群众"
+Death_in_March:0 "三月亡华论"
+China_Offensive:0 "对华作战计划"
+
+Great_Purge_Western_Hunan_Hubei:0 "湘鄂西肃反"
+Great_Purge_Western_Hunan_Hubei_desc:0 "湘鄂西肃反是夏曦发起的一项肃反运动，毫不夸张地说，红三军上下没有人愿意担任军官，因为当了军官就要随时面对夏曦的盘查，以致于给自己带来杀身之祸，所以士兵们宁愿混日子也不愿当军官。"
+
+Great_Purge_White_Sparrow_Garden:0 "白雀园大肃反"
+Great_Purge_White_Sparrow_Garden_desc:0 "张国焘以“审干锄奸”为由，首先将苏区保卫局从曾中生手中接了过来，并在很短的时间里，将原先仅有几十人的保卫局扩编到营级规模。并仿照苏联“全俄肃反委员会”的组织结构和纪律条令，将苏区保卫局的职能明确为：消灭和制止一切可能危及革命的个人和组织，用一切非常手段，同一切异已分子作斗争。"
+
+Long_March_Trauma:0 "长征的创伤"
+Long_March_Trauma_desc:0 "长征出发时中央红军约8.6万人，到达陕北时仅剩约7000人。部队减员严重，伤病员多，武器装备匮乏，战斗力亟待恢复。"
+Shortage_commanders_fighters:0 "指战员人才缺失"
+Shortage_commanders_fighters_desc:0 "几次重大战役下来，红军的不少高级指战员牺牲在了长征路途中，我们急需更多的指挥型人才"
+Closed_economy:0 "封闭经济"
+Closed_economy_desc:0 "转战陕北后，国民党军依旧不依不饶，接连开展了几次大范围的围剿活动，意图将红军困死在陕北"
+Challenged_authority:0 "受到挑战的权威"
+Challenged_authority_desc:0 "尽管长征的胜利确立的毛泽东等人的领导方向是准确无误的，但党内还有不少人仍旧质疑毛派的权威。"
+
+
+The_spirit_Nanniwan:0 "南泥湾精神"
+The_spirit_Nanniwan_desc:0 ""
+
+Mass_production_movement:0 "大生产运动"
+Mass_production_movement_desc:0 ""
+
+Rent_interest_reductions:0 "减租减息"
+Rent_interest_reductions_desc:0 ""
+
+Three_three_system_border_areas:0 "边区三三制"
+Three_three_system_border_areas_desc:0 ""
+
+PRC_Economic_crisis_effect:0 "入不敷出的经济"
+PRC_Economic_crisis_effect_desc:0 "我们边区的经济完全依赖蒋介石政府所给予的军饷，大多数情况都得依靠自给自足。"
+
+People_red_Army:0 "人民军队"
+
+
+PRC_yanan_arsenal_organization:0 "延安兵工厂"

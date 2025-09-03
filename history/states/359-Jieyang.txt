@@ -1,0 +1,33 @@
+
+state={
+	id=359
+	name="STATE_359"
+
+	history={
+		owner = PRD
+		buildings = {
+			infrastructure = 1
+
+		}
+		1933.1.1={
+			owner = ROG
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		add_core_of = ROG
+		
+victory_points = {
+	4136 5
+}
+	}
+
+	provinces={
+		2029 2913 4136 
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

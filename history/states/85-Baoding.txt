@@ -1,0 +1,26 @@
+state={
+	id=85
+	name="STATE_85"
+	provinces={
+		1667 2471 2639 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		1936.1.1={
+			owner = JDW
+		}
+		victory_points = {
+			1667 10
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

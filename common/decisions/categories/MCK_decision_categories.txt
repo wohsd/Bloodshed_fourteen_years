@@ -1,0 +1,6 @@
+Take_Northeast = {
+	icon = military_operation
+	visible = { 
+		original_tag = MCK
+	}
+}

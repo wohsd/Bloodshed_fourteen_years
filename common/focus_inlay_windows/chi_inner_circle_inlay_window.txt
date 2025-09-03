@@ -1,0 +1,64 @@
+CHI_circle_inlay_window = {
+
+    window_name = CHI_circle_ui_window
+ 
+    internal = yes  
+    visible = { 
+              
+    }      
+         
+    scripted_images = {
+        #FUHRER
+        fuhrer_portrait = {
+            GFX_JiangJieShi = { 
+                has_country_leader = {
+    				ruling_only = yes
+				    character = CHI_JiangJieShi  
+			    }
+            }
+        }
+        ascended_advisor_1_portrait = {  
+            #GFX_blank_leader_portrait = {
+            #    check_variable = { GER_ascended_advisor_1 = 0 }
+            #}
+            GFX_ChenCheng = {
+                check_variable = { CHI_ascended_advisor_1 = 0 }	
+            }
+        }
+        ascended_advisor_2_portrait = {
+            GFX_YangYongTai = {
+                check_variable = { CHI_ascended_advisor_2 = 0 }
+            }
+        }
+        ascended_advisor_3_portrait = {
+            GFX_ChenGuoFu = {
+                check_variable = { CHI_ascended_advisor_3 = 0 }
+            }
+        }
+        #ADVISOR 
+        advisor_DaiLi_portrait = {
+            GFX_DaiLi_available_small = yes 
+        }
+        advisor_ChenLiFu_portrait = {
+            GFX_ChenLiFu_available_small = yes
+        }
+        advisor_ZhangQun_portrait = {
+            GFX_ZhangQun_available_small = yes
+        }
+        advisor_HeYingQing_portrait = {
+           GFX_HeYingQing_available_small = yes
+        }
+        advisor_HuangFu_portrait = {
+            #trigger={
+             #   has_country_flag = advisor_HuangFu_dead
+            #}
+            GFX_HuangFu_available_small = yes
+        }
+        advisor_LingSeng_portrait = {
+            GFX_LingSeng_available_small = yes
+        }
+        advisor_JiangJingGuo_portrait = {
+            GFX_JiangJingGuo_available_small = yes
+        }
+    }
+}

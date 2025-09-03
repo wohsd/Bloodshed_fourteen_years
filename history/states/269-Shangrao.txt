@@ -1,0 +1,30 @@
+state={
+	id=269
+	name="STATE_269"
+	provinces={
+		1444 2661 2932 3380 3886 3894 3908 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+        add_core_of = RFC
+		buildings = {
+			infrastructure = 1
+			3380={
+				bunker = 2
+			}
+		}
+		victory_points = {
+			1444 10
+		}
+		victory_points = {
+			3886 5
+		}
+		
+
+	}
+	manpower=1323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=10.000
+}

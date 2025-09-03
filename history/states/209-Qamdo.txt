@@ -1,0 +1,18 @@
+state={
+	id=209
+	name="STATE_209"
+	provinces={
+		591 727 728 1176 1215 1531 1673 1755 1942 1994 2023 2383 2888 2968 3796 3806 3832 3834 3845 
+	}
+	history={
+		owner = XZS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = XZS
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,23 @@
+state={
+	id=336
+	name="STATE_336"
+	provinces={
+		360 1048 1872 1998 2276 2959 3146 3205 4062 4078 4089 4099 4105 4116 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			1048 5
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,58 @@
+characters={
+	ROC_LiZongRen={
+		name=ROC_LiZongRen
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/ROC_LiZongRen.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+    ROC_HuangShaoHong={
+		name=ROC_HuangShaoHong
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/ROC_HuangShaoHong.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}	
+	ROC_HuangXuChu={
+		name=ROC_HuangXuChu
+		portraits={
+			civilian={
+				large="gfx/leaders/ROC/ROC_HuangXuChu.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

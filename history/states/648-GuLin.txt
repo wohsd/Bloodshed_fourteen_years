@@ -1,0 +1,38 @@
+state={
+	id=648
+	name="STATE_648"
+	provinces={
+		1596 3923 
+	}
+	history={
+		owner = ROH
+		1933.1.1={
+			owner = HZD
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1596 5
+		}
+		victory_points = {
+			900 5
+		}
+		victory_points = {
+			3913 5
+		}
+		victory_points = {
+			3923 5
+		}
+		add_core_of = ROH
+	}
+	manpower=823000
+	state_category = town
+	local_supplies=0.000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

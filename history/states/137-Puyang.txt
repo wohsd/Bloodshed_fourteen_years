@@ -1,0 +1,30 @@
+state={
+	id=137
+	name="STATE_137"
+	provinces={
+		3331 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		victory_points = {
+			3331 5
+		}
+		1933.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		1936.1.1={
+			owner = JDW
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,38 @@
+state={
+	id=324
+	name="STATE_324"
+	provinces={
+		724 2238 2257 2457 3101 4058 4075 
+	}
+	history={
+		owner = ROC
+		buildings = {
+			infrastructure = 1
+			3101={
+				bunker = 2
+			}
+			2257={
+				bunker = 2
+			}
+			724={
+				bunker = 2
+			}
+		}
+		victory_points = {
+			4013 5 
+		}
+		victory_points = {
+			3101 5 
+		}
+		victory_points = {
+			2257 30
+		}
+		add_core_of = ROC
+		
+
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

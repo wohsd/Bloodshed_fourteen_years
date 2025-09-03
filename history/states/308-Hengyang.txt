@@ -1,0 +1,29 @@
+state={
+	id=308
+	name="STATE_308"
+	resources={
+		steel = 5
+		aluminium=6 # was: 12
+	}
+	provinces={
+		1802 1966 1999 2009 2288 3960 3966 3971 3975 
+	}
+	history={
+		owner = RON
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			3966 10
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		add_core_of = RON
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

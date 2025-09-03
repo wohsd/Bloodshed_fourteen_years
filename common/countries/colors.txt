@@ -1,0 +1,8 @@
+CHI = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+ROP = {
+	color = rgb { 203  163  115 }
+	color_ui = rgb { 203  163  115 }
+}

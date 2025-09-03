@@ -1,0 +1,28 @@
+state={
+	id=645
+	name="STATE_645"
+	provinces={
+		372 508 1120 1383 1785 2174 3050 3883 
+	}
+	history={
+		owner = ROS
+		buildings = {
+			infrastructure = 1
+		}
+		
+		
+		1933.1.1={
+			owner = ROS
+		}
+		1936.1.1={
+			owner = ROS
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=238800
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

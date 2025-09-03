@@ -1,0 +1,22 @@
+state={
+	id=316
+	name="STATE_316"
+	provinces={
+		1029 1739 2630 3079 3170 3997 3998 4010 
+	}
+	history={
+		owner = RON
+		buildings = {
+			infrastructure = 1
+
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

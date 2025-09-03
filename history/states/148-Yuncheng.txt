@@ -1,0 +1,24 @@
+state={
+	id=148
+	name="STATE_148"
+	provinces={
+		1502 2008 3721 
+	}
+	history={
+		owner = ROJ
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2008 5
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		add_core_of = ROJ
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

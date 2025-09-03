@@ -1,0 +1,21 @@
+state={
+	id=60
+	name="STATE_60"
+	provinces={
+		806 833 1325 1897 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = MCK
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

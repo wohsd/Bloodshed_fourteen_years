@@ -1,0 +1,30 @@
+state={
+	id=618
+	name="STATE_618"
+	provinces={
+		2248 103 1214 16 3316
+	}
+	history={
+		owner = ROH
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = ROH
+		1933.1.1={
+			owner = SOX
+		}
+		victory_points = {
+			3316 5
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+			
+		}
+	}
+	manpower=133110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

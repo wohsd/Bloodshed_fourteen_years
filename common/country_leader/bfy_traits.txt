@@ -1,0 +1,48 @@
+leader_traits = {
+
+
+	Unprepared_individuals = {
+		random = no
+
+		surrender_limit = -0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Positional_warfare = {
+		random = no
+		sprite = 13
+		
+		army_attack_factor = -0.05
+		army_core_defence_factor = 0.03
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	Puppet_leader = {
+		random = no
+		sprite = 13
+		
+		political_power_cost = 0.05
+		stability_factor = -0.02
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	Great_dictator= {
+		random = no
+		sprite = 13
+		
+		stability_factor = 0.05
+		political_power_factor = 0.05
+		propaganda_mission_factor = 0.1
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

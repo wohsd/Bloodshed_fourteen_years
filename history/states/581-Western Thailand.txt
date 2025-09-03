@@ -1,0 +1,17 @@
+state={
+	id=581
+	name="STATE_581"
+	provinces={
+		47 1221 1294 2002 2653 2747 4257 5238 5239
+	}
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SIA
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

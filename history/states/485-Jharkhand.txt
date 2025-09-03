@@ -1,0 +1,17 @@
+state={
+	id=485
+	name="STATE_485"
+	provinces={
+		81 989 1004 1188 2225 2649 3150 4104 4110 4877 4878 4879 4880 4881
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RAJ
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

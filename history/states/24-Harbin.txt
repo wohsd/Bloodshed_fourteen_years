@@ -1,0 +1,26 @@
+state={
+	id=24
+	name="STATE_24"
+	provinces={
+		95 148 501 599 640 668 1178 1268 1404 1462 1954 2134 2199 2201 2899 2994 3126 3500 3512 3516 3518 3519 3535 3539 3543 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+			arms_factory = 3
+			air_base= 2
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = MCK
+		}
+		victory_points = {
+			148 15
+		}
+	}
+	manpower=2323000
+	state_category = town
+	local_supplies = 0.0
+}

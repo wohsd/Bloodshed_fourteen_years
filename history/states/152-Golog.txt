@@ -1,0 +1,18 @@
+state={
+	id=152
+	name="STATE_152"
+	provinces={
+		143 576 1842 1935 1988 2191 2272 2374 2883 3093 3275 3372 3715 3747 3784 
+	}
+	history={
+		owner = ROQ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROQ
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

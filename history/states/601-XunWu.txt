@@ -1,0 +1,30 @@
+state={
+	id=601
+	name="STATE_601"
+	provinces={
+		1598 4065 
+	}
+	history={
+		owner = ROG
+		buildings = {
+			infrastructure = 1
+			4065={
+				bunker = 2
+			}
+			1823={
+				bunker = 2
+			}
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		victory_points = {
+			4092 10
+		}
+	}
+	manpower=330000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

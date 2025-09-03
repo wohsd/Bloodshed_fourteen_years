@@ -1,0 +1,67 @@
+characters={
+    ROD_ZhangXueLiang={
+		name=ROD_ZhangXueLiang
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_ZhangXueLiang.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROD_YuXueZhong={
+		name=ROD_YuXueZhong
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_YuXueZhong.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ROD_XiQia={
+		name=ROD_XiQia
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_XiQia.png"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROD_MaZhanShan={
+		name=ROD_MaZhanShan
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_MaZhanShan.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	}

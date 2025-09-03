@@ -1,0 +1,20 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 1885
+		name = "滇军第2师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+}

@@ -1,0 +1,64 @@
+ideas = {
+country = {
+		PRCBOOK0 = {
+			picture = PRCBOOK0
+		}
+		PRCBOOK1 = {
+			picture = PRCBOOK1
+		}
+		PRCBOOK2 = {
+			picture = PRCBOOK2
+		}
+		PRCBOOK3 = {
+			picture = PRCBOOK3
+		}
+		CHIBOOK0 = {
+			picture = CHIBOOK0
+		}
+		CHIBOOK1 = {
+			picture = CHIBOOK1
+		}
+		CHIBOOK2 = {
+			picture = CHIBOOK2
+		}
+		CHIBOOK3 = {
+			picture = CHIBOOK3
+		}
+		RODBOOK0 = {
+			picture = RODBOOK0
+		}
+		RODBOOK1 = {
+			picture = RODBOOK1
+		}
+		RODBOOK2 = {
+			picture = RODBOOK2
+		}
+		RODBOOK3 = {
+			picture = RODBOOK3
+		}
+		JAPBOOK0 = {
+			picture = JAPBOOK0
+		}
+		JAPBOOK1 = {
+			picture = JAPBOOK1
+		}
+		JAPBOOK2 = {
+			picture = JAPBOOK2
+		}
+		JAPBOOK3 = {
+			picture = JAPBOOK3
+		}
+		OMOBOOK0 = {
+			picture = OMOBOOK0
+		}
+		OMOBOOK1 = {
+			picture = OMOBOOK1
+		}
+		OMOBOOK2 = {
+			picture = OMOBOOK2
+		}
+		OMOBOOK3 = {
+			picture = OMOBOOK3
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=597
+	name="STATE_597"
+	provinces={
+		1767 2485 3807 
+	}
+	history={
+		owner = NHA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NHA
+		
+        1933.1.1={
+			owner = NHA
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=13320
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

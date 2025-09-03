@@ -1,0 +1,27 @@
+characters={
+#角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
+	RON_HeJian={
+		name=RON_HeJian
+		portraits={
+			civilian={
+				large="gfx//leaders//RON//RON_HeJian.png"
+			}
+
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

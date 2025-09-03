@@ -1,0 +1,26 @@
+state={
+	id=154
+	name="STATE_154"
+	provinces={
+		1256 2632 5252
+	}
+	history={
+		owner = YHC
+		
+		buildings = {
+			infrastructure = 1
+		}
+		1936.1.1={
+			owner = PRC
+		}
+		1938.1.1={
+			owner = PRC
+		}
+		victory_points = {
+			2632 3
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

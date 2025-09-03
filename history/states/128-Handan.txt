@@ -1,0 +1,26 @@
+state={
+	id=128
+	name="STATE_128"
+	provinces={
+		1464 2378 2613 3689 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		1936.1.1={
+			owner = JDW
+		}
+		victory_points = {
+			2378 5
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

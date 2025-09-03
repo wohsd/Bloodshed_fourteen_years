@@ -1,0 +1,20 @@
+state={
+	id=653
+	name="STATE_653"
+	provinces={
+		609 911 2031 2691 2730 3545 
+	}
+	history={
+		owner = ROX
+		buildings = {
+			infrastructure = 1
+		}
+		1936.1.1={
+			owner = MZY
+		}
+		add_core_of = ROX
+	}
+	manpower=323000
+	state_category = town
+	local_supplies=0.000
+}

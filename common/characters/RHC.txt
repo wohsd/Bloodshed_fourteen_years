@@ -1,0 +1,16 @@
+characters={
+    RHC_LiuChunHou={
+		name=RHC_LiuChunHou
+		portraits={
+			civilian={
+				large="gfx/leaders/RHC/RHC_LiuChunHou.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

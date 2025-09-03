@@ -1,0 +1,18 @@
+state={
+	id=93
+	name="STATE_93"
+	provinces={
+		930 1588 1744 2340 2407 2422 
+	}
+	history={
+		owner = ROQ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROQ
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

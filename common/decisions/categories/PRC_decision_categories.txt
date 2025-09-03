@@ -1,0 +1,126 @@
+PRC_CHINA = {
+	icon = military_operation
+	picture = GFX_Buy_gun
+	visible = { 
+		tag=PRC
+	}
+}
+Liberate_White_Zone = {
+	icon = military_operation
+	picture = GFX_Buy_gun
+	visible = { 
+		tag=PRC
+		date > 1931.1.1
+		date < 1936.1.1
+	}
+}
+Yan_an_Rectification_Movement= {
+	icon = military_operation
+	picture = GFX_Yan_an_Rectification_Movement
+	scripted_gui = Yanan_Rectification_Movement
+	visible = { 
+		tag=PRC 
+		has_country_flag = PRC_focus85
+	}                
+}   
+
+Yan_an_Literature_Art_Association= {
+	icon = military_operation
+	picture = GFX_Yan_an_Literature_Art_Association
+	visible = { 
+		tag=PRC 
+		has_country_flag = PRC_focus70
+	}               
+}  
+         
+PRC_border_clashes = {
+	icon = military_operation 
+	allowed = {
+		is_potentially_communist_china = yes
+	} 
+} 
+PRC_struggle_balance_category = {
+	icon = military_operation
+	visible = { 
+		tag=PRC
+		has_country_flag = SiFang
+	}
+}
+PRC_struggle_balance1_category = {
+	icon = military_operation
+	visible = {
+		AND = {
+			tag=PRC
+			#has_country_flag = SiFang
+		} 
+		
+	}
+}
+PRC_Buy_gun = {
+	icon = military_operation
+	picture = GFX_Buy_gun
+	visible = { 
+		tag=PRC
+		date > 1931.1.1
+		date < 1936.1.1
+	}
+	available = {
+		
+	}
+}
+Long_march_decisions = {
+	icon = military_operation
+	picture = GFX_Long_march
+	visible = {
+		tag=PRC
+		is_ai = no
+		NOT={
+			has_global_flag = fall_of_ChangZheng_end
+			has_completed_focus = PRC_focus43
+		}
+		has_completed_focus = PRC_focus38
+	}
+	on_map_area = {
+		name = Long_march_decisions_map
+		state = 606
+		state = 608
+		state = 607
+		state = 611
+		state = 610
+		state = 612
+		state = 613
+		state = 614
+		state = 615
+		state = 616
+		state = 617
+		state = 317
+		state = 619
+		state = 620
+		state = 309
+		state = 320
+		state = 325
+		state = 263
+		state = 239
+		state = 634
+		state = 631
+		state = 644
+		state = 633
+		state = 643
+		state = 640
+		state = 641
+		state = 638
+		state = 174
+		state = 623
+		state = 624
+		state = 625
+		zoom = 650
+	}
+}
+War_Resistance_Behind_Enemy = {
+	icon = military_operation
+	picture = GFX_Buy_gun
+	visible = { 
+		tag=PRC
+		has_country_flag = PRC_focus82
+	}
+}

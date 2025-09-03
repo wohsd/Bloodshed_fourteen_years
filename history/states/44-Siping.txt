@@ -1,0 +1,24 @@
+state={
+	id=44
+	name="STATE_44"
+	provinces={
+		747 1156 2999 3557 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = MCK
+		}
+		victory_points = {
+			2999 5
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

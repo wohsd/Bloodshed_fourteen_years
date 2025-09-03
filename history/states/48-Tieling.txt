@@ -1,0 +1,25 @@
+state={
+	id=48
+	name="STATE_48"
+	provinces={
+		1192 2140 2453 3568 3580 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = MCK
+		}
+		1936.1.1={
+			owner = MCK
+		}
+	}
+
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

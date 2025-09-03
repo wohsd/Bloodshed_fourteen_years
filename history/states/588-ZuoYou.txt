@@ -1,0 +1,23 @@
+state={
+	id=588
+	name="STATE_588"
+	provinces={
+		2528 615 4080 
+	}
+	history={
+		owner = PRY
+		buildings = {
+		}
+		add_core_of = PRY
+		victory_points = {
+			4080 10
+		}
+		1933.1.1={
+			owner = ROC
+		}
+	}
+	
+	manpower=230000
+	state_category = town
+	local_supplies = 0.0
+}

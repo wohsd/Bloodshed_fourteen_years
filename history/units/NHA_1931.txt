@@ -1,0 +1,92 @@
+﻿division_template = {
+	name = "中国工农红军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	
+}
+division_template = {
+	name = "独立师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	
+}
+division_template = {
+	name = "游击支队" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		name = "游击支队"
+		location = 1767
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "游击支队"
+		location = 1767
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军红四军第十师"
+		location = 1767
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军红四军第十一师"
+		location = 1767
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军红四军第十二师"
+		location = 1767
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "中国工农红军红二十五军第七十三师"
+		location = 476
+		division_template = "中国工农红军"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "游击支队"
+		location = 476
+		division_template = "游击支队"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+}

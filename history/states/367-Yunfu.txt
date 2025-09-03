@@ -1,0 +1,27 @@
+state={
+	id=367
+	name="STATE_367"
+	provinces={
+		2492 2870 2892 2974 3172 4162 4165 4176 
+	}
+	history={
+		owner = ROG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			4162 5
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		add_core_of = ROG
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

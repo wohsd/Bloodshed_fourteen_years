@@ -1,0 +1,21 @@
+state={
+	id=268
+	name="STATE_268"
+	provinces={
+		2170 2638 2787 3062 3861 3868 3876 3877 3887 3888 3889 3892 3893 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3892 5
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

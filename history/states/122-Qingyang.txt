@@ -1,0 +1,33 @@
+
+state={
+	id=122
+	name="STATE_122"
+
+	history={
+		owner = CGZ
+		buildings = {
+			infrastructure = 1
+
+		}
+		1933.1.1 = {
+			owner = YHC
+		}
+		1936.1.1={
+			owner = ROD
+		}
+		1938.1.1={
+			owner = PRC
+		}
+		victory_points = {
+			1934 5
+		}
+	}
+
+	provinces={
+		1934 
+	}
+	manpower=423000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+state={
+	id=323
+	name="STATE_323"
+	provinces={
+		1663 1675 2094 
+	}
+	history={
+		owner = ROY
+		buildings = {
+			infrastructure = 1
+			1663={
+				bunker = 2
+			}
+		}
+		victory_points = {
+			1675 20
+		}
+		add_core_of = ROY
+		
+	}	
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

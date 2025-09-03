@@ -1,0 +1,16 @@
+characters={
+    ROS_LiuXiang={
+		name=ROS_LiuXiang
+		portraits={
+			civilian={
+				large="gfx/leaders/ROS/ROS_LiuXiang.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

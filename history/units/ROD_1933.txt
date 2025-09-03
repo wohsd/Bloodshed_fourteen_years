@@ -1,0 +1,163 @@
+﻿division_template = {
+	name = "东北边防军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "西北军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "骑兵师" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {	
+		location = 1438
+		name = "骑兵第一挺进师"
+		division_template = "骑兵师"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1438
+		name = "东北军第51军第113师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 416
+		name = "东北军第51军第114师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 194
+		name = "东北军第51军第118师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		location = 2545
+		name = "东北军第51军第116师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1127
+		name = "东北军第51军第119师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 6
+		name = "东北军第51军第129师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+
+
+	division= {	
+		location = 225
+		name = "东北军第51军第108师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1499
+		name = "东北军第51军第109师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3550
+		name = "东北军第51军第120师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 972
+		name = "东北军第51军第107师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1974
+		name = "东北军第51军第110师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 141
+		name = "东北军第51军第117师"
+		division_template = "东北边防军"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		location = 1104
+		name = "西北军第29军第37师"
+		division_template = "西北军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 141
+		name = "西北军第29军第38师"
+		division_template = "西北军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2282
+		name = "西北军第29军第132师"
+		division_template = "西北军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 572
+		name = "西北军第29军暂编第2师"
+		division_template = "西北军"
+		start_experience_factor = 0.4
+	}
+	
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=263
+	name="STATE_263"
+
+	history={
+		owner = ROW
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			1525 3
+		}
+		
+		
+	}
+
+	provinces={
+		3875 839 1525
+	}
+	manpower=323000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

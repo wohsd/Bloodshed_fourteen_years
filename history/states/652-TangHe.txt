@@ -1,0 +1,26 @@
+state={
+	id=652
+	name="STATE_652"
+	provinces={
+		410 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		1933.1.1={
+			owner = NHA
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		add_core_of = NHA
+	}
+	manpower=19000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

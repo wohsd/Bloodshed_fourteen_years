@@ -1,0 +1,26 @@
+state={
+	id=21
+	name="STATE_21"
+	provinces={
+		594 2090 2298 2312 2782 2842 3040 3498 3510 
+	}
+	resources={
+		steel = 2
+		aluminium=2 # was: 12
+		tungsten = 2
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = MCK
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

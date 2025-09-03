@@ -1,0 +1,30 @@
+characters={
+    ROA_HangFuQu={
+		name=ROA_HangFuQu
+		portraits={
+			civilian={
+				large="gfx/leaders/ROA/ROA_HangFuQu.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROA_ShengHongLie={
+		name=ROA_ShengHongLie
+		portraits={
+			civilian={
+				large="gfx/leaders/ROA/ROA_ShengHongLie.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}	
+	}

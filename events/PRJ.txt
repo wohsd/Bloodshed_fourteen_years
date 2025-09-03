@@ -1,0 +1,70 @@
+﻿
+add_namespace = PRJ
+country_event = {
+	id = PRJ.1
+	title = PRJ.1.t
+	desc = PRJ.1.d
+    #picture = 
+	trigger = {
+		date < 1935.1.1
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+    
+	option = {
+		name = PRJ.1.a
+		country_event = {id=PRJ.2 days=362}
+	}
+}
+country_event = {
+	id = PRJ.2
+	title = PRJ.2.t
+	desc = PRJ.2.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+    
+	option = {
+		name = PRJ.2.a
+		country_event = {id=PRJ.4 days=362}
+	}
+	option = {
+		name = PRJ.2.b
+		country_event = {id=PRJ.3 days=362}
+	}
+}
+country_event = {
+	id = PRJ.3
+	title = PRJ.3.t
+	desc = PRJ.3.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+    
+	option = {
+		name = PRJ.3.a
+	}
+}
+country_event = {
+	id = PRJ.4
+	title = PRJ.4.t
+	desc = PRJ.4.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+	}
+    
+	option = {
+		name = PRJ.4.a
+		PRJ={
+			retire_character = PRJ_YuanDeSheng
+		}
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=87
+	name="STATE_87"
+	provinces={
+		568 822 1204 1738 2592 2977 3646 3661 
+	}
+	history={
+		owner = ROJ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROJ
+		
+		victory_points = {
+			3661 10
+		}
+		victory_points = {
+			2977 5
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

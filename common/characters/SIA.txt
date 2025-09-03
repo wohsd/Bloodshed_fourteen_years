@@ -1,0 +1,16 @@
+characters={
+    SIA_Bachatipu={
+		name=SIA_Bachatipu
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/SIA_Bachatipu.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

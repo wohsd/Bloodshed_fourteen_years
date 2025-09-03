@@ -1,0 +1,28 @@
+add_namespace = HET
+news_event = {
+	id = HET.1
+	title = HET.1.t
+	desc = HET.1.d
+    picture = GFX_HET_1
+
+	major = yes
+
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			58={
+				transfer_state_to = HET
+			}
+			88={
+				transfer_state_to = HET
+			}
+			47={
+				transfer_state_to = HET
+			}
+		}
+	}
+    
+	option = {
+		name = HET.1.a
+	}
+}

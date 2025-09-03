@@ -1,0 +1,30 @@
+state={
+	id=40
+	name="STATE_40"
+	provinces={
+		762 1054 1481 1500 1625 2181 2797 3118 3179 3183 3542 3562 3569 
+	}
+	resources={
+		steel = 2
+		aluminium=10 # was: 12
+		tungsten = 2
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = MCK
+		}
+		victory_points = {
+			2797 10
+		}
+	}
+	manpower=823000
+	state_category = town
+	local_supplies = 0.0
+}

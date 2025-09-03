@@ -1,0 +1,22 @@
+state={
+	id=55
+	name="STATE_55"
+	provinces={
+		185 199 294 454 479 666 815 844 915 963 986 1485 1619 1770 2379 2515 2695 2988 3274 3303 3633 3638 
+	}
+	history={
+		owner = MZY
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			666 2
+		}
+		1936.1.1={
+			owner = MBQ
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies=0.000
+}

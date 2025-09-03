@@ -1,0 +1,24 @@
+state={
+	id=602
+	name="STATE_602"
+	provinces={
+		2931 
+	}
+	history={
+		owner = ROT
+		buildings = {
+			infrastructure = 1
+		}
+		
+		1933.1.1={
+			owner = ROT
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=23400
+	state_category = rural
+	local_supplies = 0.0
+}

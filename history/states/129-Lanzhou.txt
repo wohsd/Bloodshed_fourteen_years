@@ -1,0 +1,27 @@
+state={
+	id=129
+	name="STATE_129"
+	provinces={
+		277 2690 2779 3692 
+	}
+	history={
+		owner = YHC
+		buildings = {
+			infrastructure = 1
+		}
+		1936.1.1={
+			owner = ROD
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		victory_points = {
+			2779 20
+		}
+		
+	}
+	manpower=823000
+	state_category = town
+	local_supplies = 0.0
+}

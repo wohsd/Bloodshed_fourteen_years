@@ -1,0 +1,16 @@
+characters={
+    AFG_mohammed_nadir_shah={
+		name=AFG_mohammed_nadir_shah
+		portraits={
+			civilian={
+				large="gfx/leaders/AFG/AFG_mohammed_nadir_shah.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

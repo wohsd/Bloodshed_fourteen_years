@@ -1,0 +1,21 @@
+state={
+	id=295
+	name="STATE_295"
+	provinces={
+		59 4005 
+	}
+	history={
+		owner = ROY
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROY
+		
+		victory_points = {
+			4005 5
+		}
+	}	
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

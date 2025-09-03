@@ -1,0 +1,144 @@
+﻿division_template = {
+	name = "国民革命军甲种师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		field_hospital= { x = 0 y = 2 }
+		military_police= { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "国民革命军乙种师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "国民革命军丙种师" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	
+}
+division_template = {
+	name = "骑兵旅" 		
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+units = {
+	#广西桂林
+	division= {	
+		location = 2257
+		name = "桂军第31军第131师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 2257
+		name = "桂军第31军第135师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 2257
+		name = "桂军第31军第188师"
+		division_template = "国民革命军甲种师"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	#广西柳州
+	division= {	
+		location = 3211
+		name = "桂军第46军第170师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	division= {	
+		location = 3211
+		name = "桂军第46军第175师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	division= {	
+		location = 3211
+		name = "桂军第46军新19师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	#广西南宁
+	division= {	
+		location = 4169
+		name = "桂军第62军第151师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 4169
+		name = "桂军第62军第157师"
+		division_template = "国民革命军丙种师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	#广西梧州
+	division= {	
+		location = 2759
+		name = "桂军第64军第155师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	division= {	
+		location = 2759
+		name = "桂军第64军第156师"
+		division_template = "国民革命军乙种师"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+}

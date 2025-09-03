@@ -1,0 +1,21 @@
+state={
+	id=619
+	name="STATE_619"
+	provinces={
+		1020 1055 2620
+	}
+	history={
+		owner = ROY
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ROY
+		victory_points = {
+			2620 5
+		}
+	}
+	manpower=23110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,19 @@
+state={
+	id=46
+	name="STATE_46"
+	provinces={
+		145 608 611 1414 2185 2430 2444 
+	}
+	history={
+		owner = MZY
+		buildings = {
+			infrastructure = 1
+		}
+		1936.1.1={
+			owner = ROX
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

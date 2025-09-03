@@ -1,0 +1,20 @@
+state={
+	id=395
+	name="STATE_395"
+	provinces={
+		796 1224 1427 2635 4300 4301
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+		}
+		1941.1.1={
+			owner = JAP
+		}
+		add_core_of = USA
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

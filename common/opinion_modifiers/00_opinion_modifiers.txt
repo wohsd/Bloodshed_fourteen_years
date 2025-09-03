@@ -1,0 +1,26 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	Anti_Japanese_Front = {
+		value = 50
+	}
+
+	National_scum = {
+		value = -100
+	}
+	CHI_cooperation_with_the_communists_positive= {
+		value = 20
+	}
+	CHI_cooperation_with_the_nationalists_positive= {
+		value = 20
+	}
+}

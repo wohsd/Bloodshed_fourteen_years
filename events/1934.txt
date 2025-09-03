@@ -1,0 +1,1382 @@
+﻿add_namespace = PRC_1934Hidden
+add_namespace = PRC_1934
+add_namespace = RFC_1934
+add_namespace = CHI_1934
+add_namespace = CHI_1934
+add_namespace = CHI_1934Hidden
+add_namespace = PRC_Generals
+
+unit_leader_event = {
+	id = PRC_Generals.0
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1934.9.2
+			date < 1934.9.4
+		}
+    }
+    immediate = {
+		PRC_MaoZeDong = {
+			unit_leader_event = {id=PRC_Generals.1}
+		}
+    } 
+    
+	option = {
+		name = PRC_Generals.0.a
+	}		
+}
+unit_leader_event = {
+	id = PRC_Generals.1
+	title = PRC_Generals.1.t
+	desc = PRC_Generals.1.d
+	#picture = GFX_report_event_military_planning
+    is_triggered_only = yes 
+    immediate = {
+	}
+	option = {
+		name = PRC_Generals.1.a
+		PRC_MaoZeDong = {
+			unit_leader_event = {id=PRC_Generals.2 days=30}
+			add_trait = {
+				trait = sick
+			}
+		}
+		add_stability = -0.05
+	}
+}
+
+unit_leader_event = {
+	id = PRC_Generals.2
+	title = PRC_Generals.2.t
+	desc = PRC_Generals.2.d
+	#picture = GFX_report_event_military_planning
+    is_triggered_only = yes 
+	option = {
+		name = PRC_Generals.2.a
+		PRC_MaoZeDong = {
+			remove_trait = {
+				trait = sick
+			}
+		}
+		add_stability = 0.05
+	}
+}
+###
+country_event = {
+	id = CHI_1934Hidden.1
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1934.4.14
+			date < 1934.4.16
+		}
+    }
+    immediate = {
+		news_event = {id=CHI_1934.1}
+    } 
+    
+	option = {
+		name = CHI_1934Hidden.1.a
+	}		
+}
+
+####
+
+country_event = {
+	id = PRC_1934Hidden.1
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1934.7.14
+			date < 1934.7.16
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1934.1}
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.1.a
+	}		
+}
+country_event = {
+	id = PRC_1934Hidden.2
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1934.1.14
+			date < 1934.1.16
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1934.2}
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.1.a
+	}		
+}
+country_event = {
+	id = PRC_1934Hidden.3
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date < 1937.1.1
+		OR={
+			AND={
+				PRC={
+					is_ai = yes
+				}
+				date > 1935.9.17
+				date < 1935.9.19
+				has_global_flag = end_of_ChangZheng
+			}
+			
+			YUL = {
+				AND={
+					has_war = yes
+					PRC={
+						has_global_flag = end_of_ChangZheng
+					}
+					NOT = {
+						controls_province = 1829
+						PRC={
+							has_global_flag = define_of_ChangZheng
+						}
+					}
+				}
+			}
+		}
+    }
+    immediate = {
+		PRC={
+			delete_unit = {}
+		}
+		set_global_flag = fall_of_ChangZheng
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.3.a
+		PRC = {
+			annex_country = {
+				target = NSA
+			}
+		}
+		
+		###湖南
+		260={transfer_state_to = RON}
+		264={transfer_state_to = RON}
+		265={transfer_state_to = RON}
+		271={transfer_state_to = RON}
+		272={transfer_state_to = RON}
+		284={transfer_state_to = RON}
+		287={transfer_state_to = RON}
+		296={transfer_state_to = RON}
+		299={transfer_state_to = RON}
+		300={transfer_state_to = RON}
+		305={transfer_state_to = RON}
+		308={transfer_state_to = RON}
+		315={transfer_state_to = RON}
+		316={transfer_state_to = RON}
+		587={transfer_state_to = RON}
+		607={transfer_state_to = RON}
+		608={transfer_state_to = RON}
+		611={transfer_state_to = RON}
+		612={transfer_state_to = RON}
+		672={transfer_state_to = RON}
+		###广西
+		673={transfer_state_to = ROC}
+		610={transfer_state_to = ROC}
+		324={transfer_state_to = ROC}
+		326={transfer_state_to = ROC}
+		331={transfer_state_to = ROC}
+
+		619={transfer_state_to = ROY}
+		275={transfer_state_to = ROS}
+
+		261={transfer_state_to = RYS}
+		243={transfer_state_to = RYS}
+		234={transfer_state_to = RYS}
+
+		606={transfer_state_to = CHI}
+		666={transfer_state_to = CHI}
+		593={transfer_state_to = CHI}
+		609={transfer_state_to = ROG}
+		661={transfer_state_to = ROG}
+
+		211={transfer_state_to = LHC}
+		hidden_effect = {
+			PRC = {
+				complete_national_focus = PRC_focus43
+			}
+			NSA_LiuZhiDan = {
+				set_nationality = PRC 
+			}
+			news_event = WorldNew.17
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = PRC
+						NOT = {
+							state=655
+						}
+					}
+				}
+				transfer_state_to = CHI
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROT
+					}
+				}
+				transfer_state_to = ROT
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROS
+					}
+				}
+				transfer_state_to = ROS
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROH
+					}
+				}
+				transfer_state_to = ROH
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROY
+					}
+				}
+				transfer_state_to = ROY
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = RON
+					}
+				}
+				transfer_state_to = RON
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROC
+					}
+				}
+				transfer_state_to = ROC
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = ROW
+					}
+				}
+				transfer_state_to = ROW
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = YHC
+					}
+				}
+				transfer_state_to = YHC
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = RDX
+					}
+				}
+				transfer_state_to = RDX
+			}
+		}
+		every_core_state = {
+			if = {
+				limit = {
+					AND={
+						is_core_of = LDC
+					}
+				}
+				transfer_state_to = LDC
+			}
+		}
+		
+		PRC={
+			white_peace =YHC
+			white_peace =YUL
+			white_peace =CHI
+			white_peace =LDC
+			white_peace =ROC
+			white_peace =ROY
+			white_peace =ROH
+			white_peace =ROS
+			white_peace =ROT
+			white_peace =ROW
+			white_peace =RDX
+			#country_event = CHI_1932.1
+		}
+		602={transfer_state_to = ROT}
+		204={transfer_state_to = RHC}
+		658={transfer_state_to = PRC}
+		592={transfer_state_to = ROG}
+		
+		599={transfer_state_to = CHI}
+		589={transfer_state_to = CHI}
+		598={transfer_state_to = CHI}
+		582={transfer_state_to = CHI}
+		597={transfer_state_to = CHI}
+		593={transfer_state_to = CHI}
+		595={transfer_state_to = CHI}
+		661={transfer_state_to = CHI}
+		600={transfer_state_to = CHI}
+		161={transfer_state_to = YHC}
+
+		###CHI
+		280={transfer_state_to = CHI}
+		283={transfer_state_to = CHI}
+		304={transfer_state_to = CHI}
+		307={transfer_state_to = CHI}
+		309={transfer_state_to = CHI}
+		311={transfer_state_to = CHI}
+		317={transfer_state_to = CHI}
+		320={transfer_state_to = CHI}
+		325={transfer_state_to = CHI}
+		613={transfer_state_to = CHI}
+		614={transfer_state_to = CHI}
+		615={transfer_state_to = CHI}
+		616={transfer_state_to = CHI}
+		617={transfer_state_to = CHI}
+		618={transfer_state_to = CHI}
+		648={transfer_state_to = CHI}
+		###四川
+		239={transfer_state_to = ROW}
+		263={transfer_state_to = ROW}
+		620={transfer_state_to = ROW}
+		310={transfer_state_to = ROW}
+		277={transfer_state_to = ROW}
+		636={transfer_state_to = ROW}
+		639={transfer_state_to = ROW}
+		188={transfer_state_to = ROW}
+		627={transfer_state_to = ROW}
+		635={transfer_state_to = ROW}
+		637={transfer_state_to = ROW}
+		###RDX
+		229={transfer_state_to = RDX}
+		223={transfer_state_to = RDX}
+		183={transfer_state_to = RDX}
+		631={transfer_state_to = RDX}
+		632={transfer_state_to = RDX}
+		633={transfer_state_to = RDX}
+		634={transfer_state_to = RDX}
+		635={transfer_state_to = RDX}
+		637={transfer_state_to = RDX}
+		638={transfer_state_to = RDX}
+		640={transfer_state_to = RDX}
+		641={transfer_state_to = RDX}
+		
+		643={transfer_state_to = RDX}
+		644={transfer_state_to = RDX}
+		###LDC
+		141={transfer_state_to = LDC}
+		174={transfer_state_to = LDC}
+		623={transfer_state_to = LDC}
+		###YHC
+		132={transfer_state_to = YHC}
+		161={transfer_state_to = YHC}
+		624={transfer_state_to = YHC}
+		162={transfer_state_to = YHC}
+		625={transfer_state_to = YHC}
+		122={transfer_state_to = YHC}
+		149={transfer_state_to = YHC}
+		162={transfer_state_to = YHC}
+		190={transfer_state_to = YHC}
+
+		642={transfer_state_to = NSD}
+		CHI={
+			annex_country = {
+				target = JZZ
+			}
+			annex_country = {
+				target = ROH
+			}
+			annex_country = {
+				target = NHA
+			}
+			annex_country = {
+				target = PRH
+			}
+			annex_country = {
+				target = PRJ
+			}
+			annex_country = {
+				target = HZD
+			}
+			annex_country = {
+				target = SOX
+			}
+			annex_country = {
+				target = YGC
+			}
+		}
+		set_global_flag = fall_of_ChangZheng_end
+		clr_global_flag = fall_of_ChangZheng
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.4
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				date > 1933.1.1
+				date < 1935.10.10
+				has_war = yes
+				NOT = {
+					controls_province = 3955
+				}
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_GuangCan
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.4.a
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.3
+			}
+			
+		}
+		clr_global_flag = fall_of_GuangCan
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.5
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3938
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_ZunYi
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.5.a
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.4
+			}
+		}
+		clr_global_flag = fall_of_ZunYi
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.6
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1934.1.15
+		date < 1934.1.17
+    }
+    immediate = {
+		set_global_flag = fall_of_Liu
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.6.a
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.6
+			}
+		}
+		clr_global_flag = fall_of_Liu
+	}		
+}
+
+
+
+
+country_event = {
+	id = PRC_1934Hidden.7
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		RFC = {
+			AND={
+				has_war = yes
+				NOT = {
+					controls_province = 1286
+				}
+				
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_FuJiang
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.7.a
+		hidden_effect = {
+			CHI={
+				annex_country = {
+					target = RFC
+				}
+			}
+			news_event = RFC_1934.1
+		}
+		clr_global_flag = fall_of_FuJiang
+	}		
+}
+
+
+
+country_event = {
+	id = PRC_1934Hidden.8
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		check_variable = {
+			Chi_Shui > 1
+			tooltip = Chi_Shui
+		}
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3923
+				has_active_mission = Long_march_mission5
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_3923
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.8.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.7
+			}
+		}
+		clr_global_flag = fall_3923
+	}		
+}
+
+
+
+country_event = {
+	id = PRC_1934Hidden.9
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		check_variable = {
+			Chi_Shui < 2
+			tooltip = Chi_Shui
+		}
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5250
+			 	has_active_mission = Long_march_mission5
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_5250
+		add_to_variable = {
+			Chi_Shui = 1
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.9.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.8
+			}
+		}
+		clr_global_flag = fall_5250
+	}		
+}
+
+
+
+
+
+
+country_event = {
+	id = PRC_1934Hidden.10
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		check_variable = {
+			Chi_Shui > 2
+			tooltip = Chi_Shui
+		}
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5248
+				has_active_mission = Long_march_mission5
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_5248
+		add_to_variable = {
+			Chi_Shui = 1
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.10.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.9
+			}
+		}
+		clr_global_flag = fall_5248
+	}		
+}
+
+
+country_event = {
+	id = PRC_1934Hidden.11
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		check_variable = {
+			Chi_Shui > 3
+			tooltip = Chi_Shui
+		}
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5249
+				NOT = {
+					controls_province = 3938
+				}
+			#has_active_mission = Long_march_mission5
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_5249
+		add_to_variable = { 
+			Chi_Shui = 1
+		}
+    } 
+     
+	option = {
+		name = PRC_1934Hidden.11.a
+		hidden_effect = {
+			PRC={
+				add_to_variable = {
+					Chi_Shui = 1
+				}
+				country_event = PRC_1934.10
+			}
+		}
+		clr_global_flag = fall_5249
+	}		
+}
+
+
+
+
+
+
+country_event = {
+	id = PRC_1934Hidden.12
+	hidden = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 1962
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_1962
+		PRC = {
+			country_event = {id=PRC_SiFang.1}
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.12.a
+		clr_global_flag = fall_1962
+	}		
+}
+
+
+
+
+
+
+
+
+country_event = {
+	id = PRC_1934Hidden.13
+	hidden = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5271
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_5271
+		PRC = {
+			country_event = {id=PRC_1935.1}
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.12.a
+		clr_global_flag = fall_5271
+	}		
+}
+
+
+country_event = {
+	id = PRC_1934Hidden.14
+	hidden = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3875
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_3875
+		PRC = {
+			country_event = {id=PRC_1935.2}
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.14.a
+		clr_global_flag = fall_3875
+	}		
+}
+
+
+
+country_event = {
+	id = PRC_1934Hidden.15
+	hidden = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 1962
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_1962
+		PRC = {
+			country_event = {id=PRC_1935.3}
+			country_event = {id=PRC_1935.4 days=2}
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.15.a
+		clr_global_flag = fall_1962
+	}		
+}
+
+
+
+country_event = {
+	id = PRC_1934Hidden.16
+	hidden = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3766
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_3766
+		PRC = {
+			country_event = {id=PRC_1935.5 days=2}
+		}
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.16.a
+		clr_global_flag = fall_3766
+	}		
+}
+
+
+country_event = {
+	id = PRC_1934Hidden.17
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 1670
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_1670
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.11
+			}
+		}
+		clr_global_flag = fall_of_1670
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.18
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3255
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_3255
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.12
+			}
+		}
+		clr_global_flag = fall_of_3255
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.19
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 2321
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_2321
+    } 
+    
+	option = {
+		hidden_effect = {
+		}
+		clr_global_flag = fall_of_2321
+	}		
+}
+
+
+country_event = {
+	id = PRC_1934Hidden.20
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 2970
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_2970
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.12
+			}
+		}
+		clr_global_flag = fall_of_2970
+	}		
+}
+
+country_event = {
+	id = PRC_1934Hidden.21
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 3915
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_3915
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.13
+			}
+		}
+		clr_global_flag = fall_of_3915
+	}		
+}
+
+
+country_event = {
+	id = PRC_1934Hidden.22
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				NOT={
+					controls_province = 618
+				}
+				
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_618
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.14
+			}
+		}
+		clr_global_flag = fall_of_618
+	}		
+}
+
+
+
+
+country_event = {
+	id = PRC_1934Hidden.23
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		PRC = {
+			AND={
+				has_war = yes
+				controls_province = 5270
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_5270
+    } 
+    
+	option = {
+		hidden_effect = {
+			PRC={
+				country_event = PRC_1934.15
+			}
+		}
+		clr_global_flag = fall_of_5270
+	}		
+}
+###############################
+###############################
+
+####HIDDEN####
+
+####################################
+###############################
+
+
+
+
+
+country_event = {
+	id = PRC_1934.1
+	title = PRC_1934.1.t
+	desc = PRC_1934.1.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+   
+	option = {
+		name = PRC_1934.1.a
+		add_stability = 0.02
+	}
+}
+country_event = {
+	id = PRC_1934.2
+	title = PRC_1934.2.t
+	desc = PRC_1934.2.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+		
+	}
+   
+	option = {
+		name =PRC_1934.2.a
+	}
+}
+country_event = {
+	id = PRC_1934.3
+	title =PRC_1934.3.t
+	desc = PRC_1934.3.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+   
+	option = {
+		name = PRC_1934.3.a
+		add_stability = -0.2
+	}
+}
+country_event = {
+	id = PRC_1934.4
+	title =PRC_1934.4.t
+	desc = PRC_1934.4.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+   
+	option = {
+		name = PRC_1934.4.a
+		remove_power_balance = {
+			id = PRC_struggle_balance
+		}
+	    retire_character = PRC_BoGu
+		add_country_leader_role = {
+			character = PRC_ZhangWengTian
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism
+				expire = "1965.1.1.1"
+				traits = {  }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PRC_1934.5
+	title =PRC_1934.5.t
+	desc = PRC_1934.5.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+   
+	option = {
+		name = PRC_1934.5.a
+		ROG={
+			white_peace = PRC
+			give_military_access = PRC
+		}
+		PRC={
+			white_peace = ROG
+			give_military_access = ROG
+		}
+	}
+}
+
+country_event = {
+	id = PRC_1934.6
+	title =PRC_1934.6.t
+	desc = PRC_1934.6.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			656={
+				transfer_state_to = NSA
+				add_core_of = NSA
+			}
+			YHC={
+				add_ideas = Negative_Encirclement
+			}
+			NSA={
+				country_event = {id=PRC_1935.13 days=20}
+				load_oob = NSA_1934
+			}
+		}
+	}
+	option = {
+		name = PRC_1934.6.a
+	}
+}
+
+
+country_event = {
+	id = PRC_1934.7
+	title =PRC_1934.7.t
+	desc = PRC_1934.7.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.7.a
+		country_event = {id=PRC_1934.11 days=5}
+	}
+}
+
+country_event = {
+	id = PRC_1934.8
+	title =PRC_1934.8.t
+	desc = PRC_1934.8.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.8.a
+	}
+}
+
+country_event = {
+	id = PRC_1934.9
+	title =PRC_1934.9.t
+	desc = PRC_1934.9.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.9.a
+	}
+}
+
+country_event = {
+	id = PRC_1934.10
+	title =PRC_1934.10.t
+	desc = PRC_1934.10.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.10.a
+	}
+}
+
+
+country_event = {
+	id = PRC_1934.11
+	title =PRC_1934.11.t
+	desc = PRC_1934.11.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.11.a
+		PRC = {
+			retire_character = PRC_DengPing
+		}
+	}
+}
+
+
+country_event = {
+	id = PRC_1934.12
+	title =PRC_1934.12.t
+	desc = PRC_1934.12.d
+    #picture = 
+	fire_only_once = yes
+    is_triggered_only = yes
+	option = {
+		name = PRC_1934.12.a
+	}
+}
+
+
+country_event = {
+	id = PRC_1934.13
+	title =PRC_1934.13.t
+	desc = PRC_1934.13.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1934.13.a
+	}
+}
+
+
+country_event = {
+	id = PRC_1934.14
+	title =PRC_1934.14.t
+	desc = PRC_1934.14.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		date < 1936.1.1
+		date > 1933.1.1
+	}
+	immediate = {
+		every_core_state = {
+			if = {
+				limit = { is_core_of=PRC }
+			}
+			add_dynamic_modifier = {
+				modifier = Eight_provincial_guerrillas
+				scope = CHI
+			}
+		}
+	}
+	option = {
+		name = PRC_1934.14.a
+	}
+}
+
+country_event = {
+	id = PRC_1934.15
+	title =PRC_1934.15.t
+	desc = PRC_1934.15.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = PRC_1934.15.a
+	}
+}
+
+
+
+news_event = {
+	id = CHI_1934.1
+	title =CHI_1934.1.t
+	desc = CHI_1934.1.d
+    picture = GFX_CHI_1934_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			MGJ={
+				transfer_state = 23
+			}
+		}
+	}
+	option = {
+		name = CHI_1934.1.a
+	}
+}
+
+
+news_event = {
+	id = RFC_1934.1
+	title =RFC_1934.1.t
+	desc = RFC_1934.1.d
+    picture = GFX_RFC_1934_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = RFC_1934.1.a
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+characters={
+    PCN_Concession={
+		name=PCN_Concession
+		portraits={
+			civilian={
+				large="gfx/leaders/PCN/Concession.png"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

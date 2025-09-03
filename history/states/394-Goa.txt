@@ -1,0 +1,17 @@
+state={
+	id=394
+	name="STATE_394"
+	provinces={
+		1451 
+	}
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = POR
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

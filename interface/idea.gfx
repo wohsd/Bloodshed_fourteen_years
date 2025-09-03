@@ -1,0 +1,233 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_modifiers_Rectification_movement"
+		texturefile = "gfx/interface/ideas/PRC/Rectification_movement.png"
+	} 
+
+	spriteType = {
+		name = "GFX_idea_Great_Purge_Western_Hunan_Hubei"
+		texturefile = "gfx/interface/ideas/PRH/Great_Purge_Western_Hunan_Hubei.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Great_Purge_White_Sparrow_Garden"
+		texturefile = "gfx/interface/ideas/NHA/Great_Purge_White_Sparrow_Garden.png"
+	} 
+	
+	spriteType = {
+		name = "GFX_Zhao_Dengyu"
+		texturefile = "gfx/interface/ideas/Zhao_Dengyu.png"
+	} 
+	spriteType = {
+		name = "GFX_Eight_provincial_guerrillas"
+		texturefile = "gfx/interface/ideas/Eight_provincial_guerrillas.png"
+	}
+	spriteType = {
+		name = "GFX_Morale_collapsed"
+		texturefile = "gfx/interface/ideas/Morale_collapsed.png"
+	} 
+	spriteType = { 
+		name = "GFX_PRC_MaoZeMing"
+		texturefile = "gfx/interface/ideas/PRC_MaoZeMing.png"
+	} 
+	spriteType = { 
+		name = "GFX_PRC_MaoZeMing"
+		texturefile = "gfx/interface/ideas/PRC_MaoZeMing.png"
+	} 
+
+	spriteType = {
+		name = "GFX_PRC_LiuShaoQi"
+		texturefile = "gfx/interface/operative/PRC_LiuShaoQi.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_GuoRuKui"
+		texturefile = "gfx/interface/operative/PRC_GuoRuKui.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_LiKeNong"
+		texturefile = "gfx/interface/operative/PRC_LiKeNong.png"
+	}
+	spriteType = {
+		name = "GFX_MaoZeDong1"
+		texturefile = "gfx/leaders/PRC/PRC_MaoZeDong1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_MoFang"
+		texturefile = "gfx/interface/ideas/ROJ/MoFang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Rich_minerals"
+		texturefile = "gfx/interface/ideas/ROJ/Rich_minerals.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_The_winner_Central"
+		texturefile = "gfx/interface/ideas/CHI/The_winner_Central.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Anti_Japanese_zeal"
+		texturefile = "gfx/interface/ideas/CHI/Anti_Japanese_zeal.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_flood_effect"
+		texturefile = "gfx/interface/ideas/flood_effect.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_CHI_research_speed"
+		texturefile = "gfx/interface/ideas/CHI_research_speed.png"
+	}
+	spriteType = {
+		name = "GFX_modifiers_PRC_Economic_crisis"
+		texturefile = "gfx/interface/ideas/PRC/PRC_Economic_crisis.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Three_three_system_border_areas"
+		texturefile = "gfx/interface/ideas/PRC/Three_three_system_border_areas.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Rent_interest_reductions"
+		texturefile = "gfx/interface/ideas/PRC/Rent_interest_reductions.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Mass_production_movement"
+		texturefile = "gfx/interface/ideas/PRC/Mass_production_movement.png"
+	}
+	spriteType = {
+		name = "GFX_idea_The_spirit_Nanniwan"
+		texturefile = "gfx/interface/ideas/PRC/The_spirit_Nanniwan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Encourage_enlistment_military"
+		texturefile = "gfx/interface/ideas/CHI/Encourage_enlistment_military.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_The_Golden_Decade"
+		texturefile = "gfx/interface/ideas/CHI/The_Golden_Decade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_army"
+		texturefile = "gfx/interface/ideas/CHI/CHI_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_air"
+		texturefile = "gfx/interface/ideas/CHI/CHI_air.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_navy"
+		texturefile = "gfx/interface/ideas/CHI/CHI_navy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Mao_Jewish_coalition_army"
+		texturefile = "gfx/interface/ideas/YGC/Mao_Jewish_coalition_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Fortress_tactics"
+		texturefile = "gfx/interface/ideas/CHI/Fortress_tactics.dds"
+	}
+	
+	spriteType = {
+	    name = "GFX_idea_Bethune"
+	    texturefile = "gfx/interface/ideas/PRC/Bethune.dds"
+    } 
+	spriteType = {
+	    name = "GFX_Central_Special_Branch"
+	    texturefile = "gfx/interface/ideas/Central_Special_Branch.dds"
+		noOfFrames =2
+    } 
+	spriteType = {
+		name = "GFX_idea_Four_families"
+		texturefile = "gfx/interface/ideas/CHI/Four_families.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Not_resisting"
+		texturefile = "gfx/interface/ideas/CHI/Not_resisting.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Negative_Encirclement"
+		texturefile = "gfx/interface/ideas/ROD/Negative_Encirclement.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Chinese_red_army"
+		texturefile = "gfx/interface/ideas/PRC/Chinese_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Soviet_district_spirit"
+		texturefile = "gfx/interface/ideas/PRC/Soviet_district_spirit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Leftism"
+		texturefile = "gfx/interface/ideas/PRC/Leftism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AB_spirit"
+		texturefile = "gfx/interface/ideas/PRC/AB_spirit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_The_impact_Lisan_route"
+		texturefile = "gfx/interface/ideas/PRC/The_impact_Lisan_route.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Revolutionary_base"
+		texturefile = "gfx/interface/ideas/PRC/Revolutionary_base.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Militaristic_fervor"
+		texturefile = "gfx/interface/ideas/JAP/Militaristic_fervor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Death_in_March"
+		texturefile = "gfx/interface/ideas/JAP/Death_in_March.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_national_resource_council"
+		texturefile = "gfx/interface/ideas/CHI/national_resource_council.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_the_blueshirts"
+		texturefile = "gfx/interface/ideas/CHI/the_blueshirts.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_central_club"
+		texturefile = "gfx/interface/ideas/CHI/central_club.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_NBIS"
+		texturefile = "gfx/interface/ideas/CHI/NBIS.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_CBIS"
+		texturefile = "gfx/interface/ideas/CHI/CBIS.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_new_life"
+		texturefile = "gfx/interface/ideas/CHI/new_life.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Five_year_plan"
+		texturefile = "gfx/interface/ideas/CHI/Five_year_plan.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_SongMeiLing"
+		texturefile = "gfx/interface/ideas/CHI/SongMeiLing.png"
+	} 
+	spriteType = {
+		name = "GFX_idea_Continuation_White_Terror"
+		texturefile = "gfx/interface/ideas/CHI/Continuation_White_Terror.png"
+	}
+
+	spriteType = {
+		name = "GFX_NSD_photo"
+		texturefile = "gfx/interface/NSD/paranoia_portrait_strip.png"
+		legacy_lazy_load = no
+		noOfFrames = 7
+	}
+	spriteType = {
+		name = "GFX_NSD_paranoia_needle"
+		texturefile = "gfx/interface/NSD/NSD_paranoia_needle.png"
+		legacy_lazy_load = no
+		noOfFrames = 5
+	}
+	
+}

@@ -1,0 +1,23 @@
+state={
+	id=606
+	name="STATE_606"
+	provinces={
+		2268 2358 2836 4035 
+	}
+               history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+
+		}
+		
+		victory_points = {
+			2268 5 
+		}
+		set_state_flag = Key_areas
+	}
+	manpower=210000
+	buildings_max_level_factor=1.000
+	local_supplies=20.000
+}

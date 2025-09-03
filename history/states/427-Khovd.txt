@@ -1,0 +1,17 @@
+state={
+	id=427
+	name="STATE_427"
+	provinces={
+		261 555 1026 1233 1380 1580 2256 2509 3064 4748
+	}
+	history={
+		owner = MEG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MEG
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

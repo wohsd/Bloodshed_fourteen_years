@@ -1,0 +1,26 @@
+state={
+	id=157
+	name="STATE_157"
+	provinces={
+		3248 
+	}
+	history={
+		owner = YHC
+		
+		buildings = {
+			infrastructure = 1
+
+		}
+		1936.1.1 = {
+			owner = ROD
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=423000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

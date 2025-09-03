@@ -1,0 +1,35 @@
+
+state={
+	id=607
+	name="STATE_607"
+
+	history={
+		owner = RON
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			4020 5 
+		}
+		victory_points = {
+			4030 5 
+		}
+		victory_points = {
+			2970 5 
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		set_state_flag = Key_areas
+
+	}
+
+	provinces={
+		2324 3360 4020 4030 2970
+	}
+	manpower=213230
+	buildings_max_level_factor=1.000
+	local_supplies=20.000
+}

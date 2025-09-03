@@ -1,0 +1,29 @@
+state={
+	id=283
+	name="STATE_283"
+	provinces={
+		1495 1771 2001 2611 2814 3919 3949 
+	}
+	history={
+		owner = ROH
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2611 5
+		}
+		1933.1.1={
+			owner = JZZ
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+			
+		}
+		add_core_of = ROH
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

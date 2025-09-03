@@ -1,0 +1,17 @@
+state={
+	id=456
+	name="STATE_456"
+	provinces={
+		797 1840 4795
+	}
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = JAP
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

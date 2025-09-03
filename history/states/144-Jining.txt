@@ -1,0 +1,29 @@
+state={
+	id=144
+	name="STATE_144"
+	provinces={
+		647 1680 2020 
+	}
+	resources={
+		steel = 2
+		aluminium=2 # was: 12
+		tungsten = 2
+	}
+	history={
+		owner = ROA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1680 5
+		}
+		add_core_of = ROA
+		
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

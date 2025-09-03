@@ -1,0 +1,24 @@
+state={
+	id=255
+	name="STATE_255"
+	provinces={
+		1460 1886 2193 3319 3874 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1886 10
+		}
+		1941.1.1={
+			owner = JDF
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

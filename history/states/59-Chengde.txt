@@ -1,0 +1,35 @@
+state={
+	id=59
+	name="STATE_59"
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+			air_base= 1
+		}
+		add_core_of = ROD
+		
+		victory_points = {
+			1811 10
+		}
+		victory_points = {
+			237 5
+		}
+		victory_points = {
+			3593 5
+		}
+		victory_points = {
+			2282 5
+		}
+		set_state_flag = Key_areas
+		1936.1.1={
+			owner = JAP
+		}
+	}
+	provinces={
+		203 237 572 1138 1498 1811 1958 1995 2014 2282 3147 3590 3593 3614 
+	}
+	manpower=1234230
+	state_category = city
+	local_supplies = 0.0
+}

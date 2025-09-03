@@ -1,0 +1,29 @@
+﻿add_namespace = MZY
+news_event = {
+	id = MZY.1
+	title = MZY.1.t
+	desc = MZY.1.d
+    picture = GFX_MZY_1
+
+	major = yes
+	trigger = {
+		date > 1933.1.2
+		date < 1933.2.2 
+	}
+	is_triggered_only = yes
+    immediate = {
+		hidden_effect = {
+			MZY={
+				declare_war_on = {
+					target = ROX
+					type =  annex_everything
+				}
+			}
+			news_event = {id=HET.1 days = 45}
+		}
+	}
+    
+	option = {
+		name = MZY.1.a
+	}
+}

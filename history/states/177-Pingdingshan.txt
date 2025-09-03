@@ -1,0 +1,24 @@
+state={
+	id=177
+	name="STATE_177"
+	provinces={
+		395 554 3760 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+			3760={
+				bunker = 2
+			}
+			554={
+				bunker = 2
+			}
+		}
+		
+	}
+	manpower=1323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,23 @@
+state={
+	id=654
+	name="STATE_654"
+	provinces={
+		342 1438 1750 3585 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1936.1.1={
+			owner = LSX
+		}
+
+	}
+	manpower=323000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,27 @@
+state={
+	id=111
+	name="STATE_111"
+	provinces={
+		2781 2917 3679 3685 
+	}
+	history={
+		owner = LZN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2917 5
+		}
+		add_core_of = LZN
+		
+		1933.1.1={
+			owner = ROA
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

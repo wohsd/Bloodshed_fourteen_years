@@ -1,0 +1,17 @@
+state={
+	id=463
+	name="STATE_463"
+	provinces={
+		2153 3280 4807 4808 4809
+	}
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = JAP
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

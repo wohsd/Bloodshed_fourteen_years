@@ -1,0 +1,487 @@
+ideas = {
+	country = {
+		The_winner_Central = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor=-0.02
+				production_speed_buildings_factor=-0.05
+				production_lack_of_resource_penalty_factor=0.05
+				production_factory_max_efficiency_factor=-0.05
+				production_factory_efficiency_gain_factor=-0.05
+				political_power_gain=-0.05
+				stability_factor=-0.05 
+				enemy_declare_war_tension=0.1
+			}
+		}
+		
+		The_Golden_Decade = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots=1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = -0.05
+				stability_factor = -0.03
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		Encourage_enlistment_military = {
+		
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit=10
+				conscription_factor= 0.1
+				war_support_weekly_factor = 0.05
+				training_time_factor = -0.05
+			}
+		}
+		#########
+		Fortress_tactics = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against_cores= 0.05	
+				army_attack_factor= 0.05		
+				defense_bonus_against= 0.05	
+				army_speed_factor= 0.05	
+				breakthrough_bonus_against= 0.05
+				dig_in_speed= 10
+				dont_lose_dig_in_on_attack= 0.05
+			}
+		}
+		Regionalist_warlords = {
+		    picture=chi_warlord_integration2
+			allowed = {
+				always = yes 
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				army_intel_factor=-0.15
+				army_org=-20
+				recon_factor=-0.05
+				org_loss_when_moving=0.1
+				army_defence_factor=-0.1
+				army_attack_factor=-0.1
+				breakthrough_factor=-0.1
+				planning_speed=-0.05
+				terrain_penalty_reduction=-0.1
+				river_crossing_factor=0.15
+				army_speed_factor=-0.02
+
+			}
+		}
+
+
+		Not_resisting = {
+		
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed=-0.25
+				army_speed_factor=-0.25
+			}
+			targeted_modifier = {
+				tag=JAP
+					attack_bonus_against=-0.75 
+                    defense_bonus_against=-0.75
+				}
+		}
+
+
+		Negative_Encirclement = {
+			picture=Negative_Encirclement
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed=-0.25
+				army_speed_factor=-0.15
+				army_org_factor=-0.4
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against=-0.75 
+                defense_bonus_against=-0.75
+			}
+			targeted_modifier = {
+				tag = NSA
+				attack_bonus_against=-0.75 
+                defense_bonus_against=-0.75
+			}
+		}
+
+
+		Anti_hometown_group= {
+			picture=generic_oppression
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				local_org_regain=-0.03
+				local_supplies=-0.03
+			}
+		}
+
+
+		german_advisors = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				land_doctrine_cost_factor = -0.10
+			}
+		}
+
+		
+
+		
+
+		#####################
+		##### WTT IDEAS #####
+		#####################
+
+
+		CHI_army_corruption_1 = {
+
+			picture = chi_army_corruption
+
+			name = CHI_army_corruption
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed=-0.15
+				army_org_factor=-0.02
+				org_loss_when_moving=0.02
+				army_speed_factor=-0.03
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				mobilization_speed = -0.02
+				ai_focus_aggressive_factor = 0.1
+				terrain_penalty_reduction=-0.1
+			}
+			
+		}
+		the_blueshirts = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			modifier = {
+				resistance_activity = -0.1
+				fascism_acceptance = 15
+				stability_factor = 0.05
+			}
+		}
+		central_club = {
+			removal_cost = -1
+			allowed = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			modifier = {
+				resistance_target = -0.1	
+				drift_defence_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+		NBIS = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				resistance_growth = -0.15
+				political_power_factor = 0.05
+				
+				army_intel_factor = 0.1
+			}
+		}
+		CBIS = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.2
+				political_power_factor = 0.05
+				civilian_intel_factor = 0.1
+			}
+		}
+		national_resource_council = {
+			removal_cost = -1
+			picture = resource_commitee
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			modifier = {
+				local_resources_factor = 0.07
+			}
+		}
+		CHI_Ordnance_Industry_Administration = {
+			picture = HUN_secret_rearmament
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		new_life = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.15
+				#fascism_acceptance = 15
+				neutrality_drift = 0.05 #0.02
+				drift_defence_factor = 0.2
+				conscription = 0.02
+			}
+		}
+		Five_year_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory= 0.15
+				line_change_production_efficiency_factor= -0.1
+				production_factory_efficiency_gain_factor= 0.15
+				production_factory_start_efficiency_factor= 0.1
+			}
+		}
+		SongMeiLing = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			cancel ={
+				NOT={
+					has_country_leader = {
+						character = CHI_JiangJieShi
+						ruling_only = yes
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_acceptance=20
+				stability_factor=0.02
+				political_power_factor=0.01
+			}
+		}
+		Continuation_White_Terror= {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			cancel ={
+				NOT={
+					has_country_leader = {
+						character = CHI_JiangJieShi
+						ruling_only = yes
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor=-0.15
+				political_power_gain=-0.2
+				party_popularity_stability_factor=0.02
+			}
+		}
+	# TECHNOLOGY
+	
+	aircraft_manufacturer = { #
+			
+		designer = yes
+		
+		camco = {
+
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				NOT = { has_dlc = "Waking the Tiger" }
+				original_tag = CHI
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	industrial_concern = {
+
+		CHI_mining_commission = {
+
+			picture = generic_industrial_concern_3		
+			 
+			available = {
+				has_completed_focus = CHI_mining_commission
+			}
+
+			allowed = {
+				has_dlc = "Waking the Tiger"
+				original_tag = CHI
+			}
+
+			cost = 5 # ai doesnt like free ones. but lets fix this later
+			
+			ai_will_do = {
+				factor = 200
+			}
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+	}
+}
+}

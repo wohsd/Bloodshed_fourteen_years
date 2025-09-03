@@ -1,0 +1,42 @@
+﻿add_namespace = ROJ_1932
+add_namespace = ROJ_1932Hidden
+country_event = {
+	id = ROJ_1932Hidden.1
+	title = ROJ_1932Hidden.1.t
+	desc = ROJ_1932Hidden.1.d
+    #picture = 
+	fire_only_once = yes
+	trigger = {
+		date > 1932.2.9 
+		date < 1932.2.11 
+	}
+    immediate = {
+		
+	}
+	option = {
+		name = ROJ_1932Hidden.1.a
+		ROJ={
+			news_event = ROJ_1932.1
+		}
+	}
+}
+news_event = {
+	id = ROJ_1932.1
+	title = ROJ_1932.1.t
+	desc = ROJ_1932.1.d
+    #picture = 
+	is_major = yes
+	is_triggered_only = yes
+    immediate = {
+		ROJ={
+			promote_character = {
+				character = ROJ_YanXiShan
+				ideology = neutrality
+			}
+		}
+	}
+	option = {
+		name = ROJ_1932.1.a
+		
+	}
+}

@@ -1,0 +1,179 @@
+Rectification_movement = {
+	icon = GFX_modifiers_Rectification_movement
+
+	enable = { always = yes }
+	army_org_factor=PRC_army_org_factor
+	army_morale_factor=PRC_army_morale_factor
+	planning_speed=PRC_planning_speed
+	pocket_penalty=PRC_pocket_penalty
+	army_strength_factor=PRC_army_strength_factor
+	max_command_power=PRC_max_command_power
+	drift_defence_factor=PRC_drift_defence_factor
+	intelligence_agency_defense=PRC_intelligence_agency_defense
+	experience_loss_factor=PRC_experience_loss_factor
+	forced_surrender_limit=PRC_forced_surrender_limit
+	political_power_factor=PRC_political_power_factor
+	research_speed_factor=PRC_research_speed_factor
+	stability_weekly_factor=PRC_stability_weekly_factor
+	war_stability_factor=PRC_war_stability_factor
+	war_support_factor=PRC_war_support_factor
+}
+
+
+Mass_production_movement = {
+	icon = GFX_idea_Mass_production_movement
+
+	enable = { always = yes }
+
+	cic_construction_boost = PRC_cic_construction_boost
+	production_cost_supply_node_factor = PRC_production_cost_supply_node_factor
+	production_speed_arms_factory_factor = PRC_production_speed_arms_factory_factor
+	production_speed_industrial_complex_factor = PRC_production_speed_industrial_complex_factor
+	production_speed_infrastructure_factor = PRC_production_speed_infrastructure_factor
+	production_speed_supply_node_factor = PRC_production_speed_supply_node_factor
+	supply_factor = PRC_supply_factor
+	production_factory_start_efficiency_factor = PRC_production_factory_start_efficiency_factor
+	production_factory_max_efficiency_factor = PRC_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = PRC_production_factory_efficiency_gain_factor
+	line_change_production_efficiency_factor = PRC_line_change_production_efficiency_factor
+
+}
+
+
+People_red_Army = {
+	icon = GFX_idea_People_red_Army
+
+	enable = { always = yes }
+
+	army_attack_factor = PRC_army_attack_factor
+	army_org_factor = PRC_army_org_factor
+	breakthrough_factor = PRC_breakthrough_factor
+	army_morale_factor = PRC_army_morale_factor
+	max_planning_factor = PRC_max_planning_factor
+	org_loss_when_moving = PRC_org_loss_when_moving
+	planning_speed = PRC_planning_speed
+	pocket_penalty = PRC_pocket_penalty
+	supply_consumption_factor = PRC_supply_consumption_factor
+	army_attack_speed_factor = PRC_army_attack_speed_factor
+	army_defence_factor = PRC_army_defence_factor
+	command_power_gain_mult = PRC_command_power_gain_mult
+	dig_in_speed_factor = PRC_dig_in_speed_factor
+	experience_gain_army_factor = PRC_experience_gain_army_factor
+	army_core_attack_factor = PRC_army_core_attack_factor
+	army_core_defence_factor = PRC_army_core_defence_factor
+	recruitable_population_factor = PRC_recruitable_population_factor
+	conscription_factor = PRC_conscription_factor
+
+	equipment_upgrade_xp_cost = PRC_refit_ic_cost
+	equipment_capture_factor = PRC_equipment_capture_factor
+}
+
+
+
+
+
+
+
+
+
+CHI_research_speed_effect = {
+	icon = GFX_modifiers_CHI_research_speed
+
+	enable = { always = yes }
+	research_speed_factor = CHI_research_speed_factor
+}
+
+
+Long_march_effect = {
+	icon = GFX_modifiers_generic_military_plans
+
+	enable = { always = yes }
+
+	dig_in_speed_factor = 0.15
+	army_org_factor = 0.15
+	army_morale_factor = 0.15
+}
+PRC_Economic_crisis_effect = {
+	icon = GFX_modifiers_PRC_Economic_crisis
+
+	enable = { always = yes }
+	political_power_cost = PRC_Economic_political_power_cost
+	consumer_goods_factor = PRC_Economic_consumer_goods_factor
+	min_export = PRC_Economic_min_export
+}
+
+
+flood_effect = {
+	icon = GFX_modifiers_flood_effect
+
+	enable = { always = yes }
+
+	local_manpower=-0.3
+	local_non_core_manpower=-0.3
+	local_supplies=-0.7
+	state_resources_factor=-0.7
+	local_org_regain=-1
+	disable_strategic_redeployment=1
+	army_attack_factor=-1
+	breakthrough_factor=-1
+	army_defence_factor=-1
+}
+
+Poorly_managed_areas = {
+	icon = GFX_Morale_collapsed
+
+	enable = { always = yes }
+
+	army_org = -15
+	army_attack_factor = -0.3
+	army_defence_factor =-0.3
+	army_speed_factor=-0.3
+	breakthrough_factor=-0.3
+	army_org_regain=-0.3
+	terrain_penalty_reduction=-0.9
+}
+
+
+Morale_collapsed = {
+	icon = GFX_Morale_collapsed
+
+	enable = { always = yes }
+
+	army_org = -35
+	army_attack_factor = -0.5
+	army_defence_factor =-0.5
+	army_speed_factor=0.1
+	breakthrough_factor=-0.5
+	army_org_regain=-0.5
+	
+}
+
+Eight_provincial_guerrillas = {
+	icon = GFX_Eight_provincial_guerrillas
+
+	enable = { always = yes }
+
+	army_org = -20
+	army_attack_factor = -0.95
+	army_defence_factor =-0.15
+	army_speed_factor=-0.75
+	breakthrough_factor=-0.95
+	army_org_regain=-0.4
+	resistance_activity=0.5
+	resistance_decay=-0.5
+	resistance_growth=0.2
+}
+
+
+
+Combat_direction_effect = {
+	icon = GFX_modifiers_Combat_direction
+
+	enable = { always = yes }
+	army_attack_speed_factor=0.5
+	army_attack_factor=0.5
+	army_org_factor=0.5
+	breakthrough_factor=0.5
+	planning_speed=1
+	supply_consumption_factor=-1
+}

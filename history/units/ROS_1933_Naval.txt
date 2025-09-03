@@ -1,0 +1,16 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	fleet = {
+		name = "长江舰队"			
+		naval_base = 3850 # Scapa Flow
+		task_force = {
+			name = "川江公安舰队"
+			location = 3850 # Scapa Flow
+		
+			ship = { name = "巴渝" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "S Class"} } }
+			ship = { name = "长江" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "S Class"} } }
+			ship = { name = "嵯峨" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "S Class"} } }
+		}
+	}
+}

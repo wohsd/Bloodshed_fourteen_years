@@ -1,0 +1,29 @@
+state={
+	id=203
+	name="STATE_203"
+	provinces={
+		1867 2315 3817 
+	}
+	history={
+		owner = NHA
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			2315 5
+		}
+		1933.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=1275000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

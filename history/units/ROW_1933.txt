@@ -1,0 +1,61 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "川康边防军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 1097
+		name = "川康边防军第一师"
+		division_template = "川康边防军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 2164
+		name = "川康边防军第二师"
+		division_template = "川康边防军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division= {	
+		location = 3857
+		name = "川军第二十四军一师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 229
+		name = "川军第二十四军二师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		location = 1733
+		name = "川军第二十四军三师"
+		division_template = "国民革命军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

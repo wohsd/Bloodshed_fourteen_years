@@ -1,0 +1,2077 @@
+Hump_route = { 
+	Transportation_strategic_goods = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = CHI
+			}
+		}
+		complete_effect = {
+		
+		}
+	}
+	Transportation_essential_goods={
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+		complete_effect = {
+		
+		}
+	}
+	Transportation_fuel_replenishment={
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			add_fuel = 100
+		}
+	}
+}
+CHI_struggle_balance_category = {
+	CHI_impeach_Jiangjieshi = {
+		available = {
+			AND={
+				date < 1931.12.30 
+				has_country_flag = impeach_Jiangjieshi
+			}
+		}
+		days_mission_timeout = 292
+		activation = { 
+			AND={
+				date < 1931.12.30 
+				has_country_flag = impeach_Jiangjieshi_end
+			}
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			CHI_LingSeng={
+				promote_character = yes
+			}
+			set_country_flag = Rise_Chiang_Kai_shek
+		}
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+
+	CHI_Rise_Chiang_Kai_shek = {
+		available = {
+			AND={
+				date < 1932.2.2
+				has_completed_focus = Democracy_Over_Autocracy
+			}
+		}
+		days_mission_timeout = 40
+		activation = { 
+			AND={
+				date < 1932.2.2
+				has_country_flag = Rise_Chiang_Kai_shek
+			}
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			CHI={
+				promote_character = {
+					character = CHI_JiangJieShi
+					ideology = neutrality
+				}
+			}
+		}
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+#########
+######### 
+###会战###
+CHI_Battle_China = {
+	Battle_ShangHai = {
+		available = {
+			CHI={
+				has_war_with = JAP
+			}
+			NOT={
+				JAP={
+					controls_province = 5246
+					controls_province = 5245
+					controls_province = 3285
+					controls_province = 5244
+					controls_province = 5242
+					controls_province = 5243
+					controls_province = 3841
+				}
+			}
+			CHI={
+					controls_province = 5246
+					controls_province = 5245
+					controls_province = 3285
+					controls_province = 5244
+					controls_province = 5242
+					controls_province = 5243
+					controls_province = 3841
+			}
+		}
+		days_mission_timeout = 90
+		cancel_trigger = {
+			JAP={
+				controls_province = 5246
+				controls_province = 5245
+				controls_province = 3285
+				controls_province = 5244
+				controls_province = 5242
+				controls_province = 5243
+				controls_province = 3841
+			}
+		}
+		activation = {
+			NOT = {
+				has_country_flag = songhu_lose
+				has_country_flag = songhu_win
+			}
+			has_country_flag = songhu  
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		cancel_effect = {
+			
+			228={
+				set_state_controller_to = JAP
+			}
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			add_political_power = -30
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = songhu
+			set_country_flag = songhu_lose  
+		}
+		timeout_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			add_political_power = -20
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = songhu
+			set_country_flag = songhu_lose  
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			news_event = Win_City.1
+			clr_country_flag = songhu
+			set_country_flag = songhu_win
+		}
+	}
+	Battle_Taiyuan = {
+		available = {
+			ROJ={
+				has_war_with = JAP
+			}
+		NOT={
+			JAP={
+				controls_province = 2640
+				controls_province = 1868
+				controls_province = 2977
+			}
+		}
+			ROJ={
+				controls_province = 2640
+				controls_province = 1868
+				controls_province = 2977
+			}
+		}
+		days_mission_timeout = 90
+		cancel_trigger = {
+			JAP={
+				controls_province = 2640
+				controls_province = 1868
+				controls_province = 2977
+			}
+		}
+		activation = {
+			NOT = {
+				has_country_flag = Taiyuan_lose
+				has_country_flag = Taiyuan_win
+			}
+			JAP={
+				controls_province = 2640
+			}
+		}
+		cancel_effect = {
+			104={
+				set_state_controller_to = JAP
+			}
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Taiyuan
+			set_country_flag = Taiyuan_lose 
+		}
+		timeout_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Taiyuan
+			set_country_flag = Taiyuan_lose  
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = Taiyuan
+			set_country_flag = Taiyuan_win
+			news_event = Win_City.2
+		}
+	}
+
+	Battle_XuZhou = {
+		available = {
+			CHI={
+				has_war_with = JAP
+			}
+		NOT={
+			JAP={
+				controls_province = 2827
+				controls_province = 3091
+				controls_province = 1919
+			}
+		}
+			CHI={
+				controls_province = 2827
+				controls_province = 3091
+				controls_province = 1919
+			}
+		}
+		days_mission_timeout = 90
+		cancel_trigger = {
+			JAP={
+				controls_province = 2827
+				controls_province = 3091
+				controls_province = 1919
+			}
+		}
+		activation = {
+			NOT = {
+				has_country_flag = Xuzhou_lose
+				has_country_flag = Xuzhou_win
+			}
+			JAP={
+				controls_province = 1680
+			}
+		}
+		cancel_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Xuzhou
+			set_country_flag = Xuzhou_lose 
+			#news_event = Fall_City.4
+		}
+		timeout_effect = {
+			add_to_temp_variable = {
+				temp_Anti_JP_zeal = -5
+			}
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = Xuzhou
+			set_country_flag = Xuzhou_lose  
+			#news_event = Fall_City.4
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = Xuzhou
+			set_country_flag = Xuzhou_win
+			news_event = Win_City.3
+		}
+	}
+
+	Battle_WuHan = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { 
+				has_country_flag = WuHan_lose 
+				has_country_flag = WuHan_win 
+			}
+			JAP = { controls_province = 1830 } 
+		}
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = WuHan
+			set_country_flag = WuHan_lose 
+			#news_event = Fall_City.5
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = WuHan
+			set_country_flag = WuHan_lose  
+			#news_event = Fall_City.5
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_countos_flag = WuHan
+			set_country_flag = WuHan_win
+			news_event = Win_City.4
+		}
+	}
+	
+	Battle_SuiZao = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = SuiZao_lose has_country_flag = SuiZao_win }
+			JAP = { } 
+		}
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = SuiZao
+			set_country_flag = SuiZao_lose
+			#news_event = Fall_City.6
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = SuiZao
+			set_country_flag = SuiZao_lose
+			#news_event = Fall_City.6
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = SuiZao
+			set_country_flag = SuiZao_win
+			news_event = Win_City.5
+		}
+	}
+	
+	Battle_ChangSha1 = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = ChangSha1_lose has_country_flag = ChangSha1_win }
+			JAP = { } 
+		}
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_osP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ChangSha1
+			set_country_flag = ChangSha1_lose
+			#news_event = Fall_City.7
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ChangSha1
+			set_country_flag = ChangSha1_lose
+			#news_event = Fall_City.7
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = ChangSha1
+			set_country_flag = ChangSha1_win
+			news_event = Win_City.6
+		}
+	}
+	
+	Battle_ZaoYi = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = ZaoYi_lose has_country_flag = ZaoYi_win }
+			JAP = { } 
+		}
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ZaoYi
+			set_country_flag = ZaoYi_lose
+			#news_event = Fall_City.8
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ZaoYi
+			set_country_flag = ZaoYi_lose
+			#news_event = Fall_City.8
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = ZaoYi
+			set_country_flag = ZaoYi_win
+			news_event = Win_City.7
+		}
+	}
+	
+	Battle_YuNan = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = YuNan_lose has_country_flag = YuNan_win }
+			JAP = { } 
+		}
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = YuNan
+			set_country_flag = YuNan_lose
+			#news_event = Fall_City.9
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = YuNan
+			set_country_flag = YuNan_lose
+			#news_event = Fall_City.9
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = YuNan
+			set_country_flag = YuNan_win
+			news_event = Win_City.8
+		} 
+	}
+	
+	Battle_ShangGao = {
+		available = {
+			CHos = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = ShangGao_lose has_country_flag = ShangGao_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ShangGao
+			set_country_flag = ShangGao_lose
+			#news_event = Fall_City.10
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ShangGao
+			set_country_flag = ShangGao_lose
+			#news_event = Fall_City.10
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = ShangGao
+			set_country_flag = ShangGao_win
+			news_event = Win_City.9
+		}
+	}
+	
+	Battle_ZheGan = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = ZheGan_lose has_country_flag = ZheGan_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ZheGan
+			set_country_flag = ZheGan_lose
+			#news_event = Fall_City.11
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ZheGan
+			set_country_flag = ZheGan_lose
+			#news_event = Fall_City.11
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = ZheGan
+			set_country_flag = ZheGan_win
+			news_event = Win_City.10
+		}
+	}
+	
+	Battle_EXi = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = EXi_lose has_country_flag = EXi_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = EXi
+			set_country_flag = EXi_lose
+			#news_event = Fall_City.12
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = EXi
+			set_country_flag = EXi_lose
+			#news_event = Fall_City.12
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = EXi
+			set_country_flag = EXi_win
+			news_event = Win_City.11
+		}
+	}
+	
+	Battle_ChangDe = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = ChangDe_lose has_country_flag = ChangDe_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ChangDe
+			set_country_flag = ChangDe_lose
+			#news_event = Fall_City.13
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ChangDe
+			set_country_flag = ChangDe_lose
+			#news_event = Fall_City.13
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = Changose
+			set_country_flag = ChangDe_win
+			news_event = Win_City.12
+		}
+	}
+	
+	Battle_YuZhong = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = YuZhong_lose has_country_flag = YuZhong_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = YuZhong
+			set_country_flag = YuZhong_lose
+			#news_event = Fall_City.14
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = YuZhong
+			set_country_flag = YuZhong_lose
+			news_event = Fallosity.14
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = YuZhong
+			set_country_flag = YuZhong_win
+			news_event = Win_City.13
+		}
+	}
+	
+	Battle_ChangHeng = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = ChangHeng_lose has_country_flag = ChangHeng_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ChangHeng
+			set_country_flag = ChangHeng_lose
+			#news_event = Fall_City.15
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = ChangHeng
+			set_country_flag = ChangHeng_lose
+			#news_event = Fall_City.15
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = ChangHeng
+			set_country_flag = ChangHeng_win
+			news_event = Win_City.14
+		}
+	}
+	
+	Battle_GuiLiu = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = GuiLiu_lose has_country_flag = GuiLiu_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = GuiLiu
+			set_country_flag = GuiLiu_lose
+			#news_event = Fall_City.16
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = GuiLiu
+			set_country_flag = GuiLiu_lose
+			#news_event = Fall_City.16
+		}
+		complete_effect = {
+			add_stability = os.1
+			add_political_power = 100
+			clr_country_flag = GuiLiu
+			set_country_flag = GuiLiu_win
+			news_event = Win_City.15
+		}
+	}
+	
+	Battle_XiangXi = {
+		available = {
+			CHI = { has_war_with = JAP }
+			
+		}
+		days_mission_timeout = 90
+		cancel_trigger = { JAP = { } }
+		activation = { 
+			NOT = { has_country_flag = XiangXi_lose has_country_flag = XiangXi_win }
+			JAP = { } }
+		cancel_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = XiangXi
+			set_country_flag = XiangXi_lose
+			#news_event = Fall_City.17
+		}
+		timeout_effect = {
+			add_to_temp_variable = { temp_Anti_JP_zeal = -5 }
+			Anti_JP_zeal_add = yes
+			Anti_JP_zeal_var = yes
+			clr_country_flag = XiangXi
+			set_country_flag = XiangXi_lose
+			#news_event = Fall_City.17
+		}
+		complete_effect = {
+			add_stability = 0.1
+			add_political_power = 100
+			clr_country_flag = XiangXi
+			set_country_flag = XiangXi_win
+			news_event = Win_City.16
+		}
+	}
+
+
+
+
+
+}
+######### 
+######## 
+######### 要塞
+
+CHI_Chinese_Hindenburg_category = { 
+	Jiangyin_Fortress = {
+		available = {
+		} 
+		visible = { 
+		}
+		highlight_states = {
+			highlight_state_targets = { state =  219 }
+		}
+		cost = 60
+		days_remove= 320
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			219={
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+					province = 3216
+				}
+				
+			}
+		}
+	}
+	Shanghai_Defense_Line = {
+		available = {
+		} 
+		visible = { 
+		}
+		highlight_states = {
+			highlight_state_targets = { state =  237 }
+			highlight_state_targets = { state =  670 }
+			highlight_state_targets = { state =  671 }
+			highlight_state_targets = { state =  228 }
+		}
+		cost = 60
+		days_remove= 500
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			237={
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3840
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3128
+				}
+			}
+			670={
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3841
+				}
+			}
+			671={
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 5259
+				}
+			}
+			228={
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3815
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3828
+				}
+			}
+		}
+	}
+	WuFu_Defense_Line = {
+		available = {
+		} 
+		visible = { 
+		}
+		highlight_states = {
+			highlight_state_targets = { state =  216 }
+		}
+		cost = 60
+		days_remove= 500
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			216={
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 5260
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3821
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3300
+				}
+			}
+		}
+	}
+	ChenYing_Defense_Line = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 60
+		days_remove= 300
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		highlight_states = {
+			highlight_state_targets = { state =  219 }
+		}
+		complete_effect = {
+			219={
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3216
+				}
+			}
+		}
+	}
+	}
+######### 铁路
+
+CHI_Railroad_construction_category = { 
+	Construction_Sujia_Line = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 465
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3821 3300 3840 2796 }	
+				start_province = 3821
+				target_province = 2796
+			}
+		}
+	}
+	Construction_Zhejiang_Jiangxi_line = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50 
+		days_remove= 1345
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3321 612 3854 2546 3867 3866 2786 3882 
+				2127 3886 1444 2661 3380 3926 1748 1781 3922 2996 1217
+				3942 2250  1637 3954 2700 2889}	
+				start_province = 3321
+				target_province = 2889
+			}
+		}
+		modifier = {
+		}
+	}
+	Construction_Xianggui_line = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50
+		days_remove= 1095
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+		build_railway = {
+				level = 1
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3966 3971 2317 3197 1098 4013 2257 
+				2238 2897 3211 }	
+				start_province = 3966
+				target_province = 3211
+		}
+		}
+	}
+	Construction_Longhai_Railway = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 50 
+		days_remove= 975
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			build_railway = {
+				level = 1
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 3091 3741 1415 2005 977}	
+				start_province = 3091
+				target_province = 977
+			}
+			build_railway = {
+				level = 1
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = CHI
+					add = 2
+				}
+			}
+				fallback = yes
+				path = { 2132 1832 238 3200 1809 3248 1482 880 2734 1312 2780}	
+				start_province = 2132 
+				target_province = 2780
+			}
+		}
+	}
+	Requisition_trains = {
+		available = {
+			has_war = yes
+			has_tech = basic_train
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 15
+			}
+			add_stability = -0.05
+		}
+	}
+	Wartime_Railroad_Employee_Reward_Punishment_Law = {
+		available = {
+			has_war_with = JAP
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			repair_speed_rail_way_factor = 0.1
+		}
+		complete_effect = {
+		}
+	}
+}
+#########训政时期
+#########
+CHI_Discipline_government_category = { 
+	Falsification_satisfactory_reports = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			party_popularity_stability_factor = 0.1
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = -2
+			}
+			Government_efficiency_add = yes
+			add_to_temp_variable = {
+				temp_National_economy_var = -2
+			}
+			National_economy_add = yes
+		}
+	}
+	Tolerate_corruption_bribery = {
+		available = {
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = -2
+			}
+			Government_efficiency_add = yes
+			add_to_temp_variable = {
+				temp_National_economy_var = -2
+			}
+			National_economy_add = yes
+		}
+	}
+	Deregulation_tobacco = {
+		available = {
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_Government_efficiency_var = -2
+			}
+			Government_efficiency_add = yes
+			add_to_temp_variable = {
+				temp_National_economy_var = -2
+			}
+			National_economy_add = yes
+		}
+	}
+	Promote_New_Life_Movement = {
+		available = {
+		} 
+		visible = { 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			research_speed_factor = 0.02
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_National_literacy_var = 2
+			}
+			National_literacy_add = yes
+		}
+	}
+	Compulsory_education_introduced = {
+		available = {
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			research_speed_factor = 0.05
+		}
+		complete_effect = {
+			add_political_power = 50
+			add_to_temp_variable = {
+				temp_National_literacy_var = 2
+			}
+			National_literacy_add = yes
+		}
+	}
+}
+#########
+#########
+######### 	清党计划
+
+CHI_Purging_party_category = { 
+	Assassination_Deng_Yanda = {
+		available = {
+		} 
+		visible = {
+			date < 1931.11.29 
+		}
+		cost = 20 
+		days_remove= 3
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		} 
+		complete_effect = {
+			CHI_DengYangDa = {
+				unit_leader_event = {id=Assassinate.1 days=2}
+			}
+			set_country_flag = CHI_DengYangDa1
+		}
+	}
+
+	ChenCheng_under_house_arrest = {
+		available = {
+			hidden_effect = {
+			not = { has_country_flag = CHI_DengYangDa1 }
+			}
+		} 
+		visible = { 
+			chi = {has_country_flag = chi_chencheng_01}
+			date < 1931.11.29 
+		 }
+		cost = 20 
+		days_remove= 3
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		} 
+		complete_effect = {
+			chi = {country_event = { id = CHI.6 }}
+			hidden_effect = {
+			random_unit_leader = {
+					limit = { is_character = CHI_ChenCheng }
+					set_nationality = RFC
+			}
+			}
+		}
+
+	}
+
+	The_uprising_underway = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_DengYangDa1
+			} 
+		}
+		days_mission_timeout =235
+		activation = {
+			AND={
+				tag = CHI
+				date < 1931.11.29
+			}
+			#has_country_flag = Long_march_mission0
+		}
+		visible = { 
+			
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			news_event = RFC_NEW.1
+            random_unit_leader = {
+					limit = { is_character = CHI_DengYangDa }
+					set_nationality = RFC
+					add_country_leader_role = {
+		            country_leader = {
+					    ideology = despotism
+						traits = {}
+						expire = "1965.1.1.1"
+					    }
+					promote_leader = yes
+				}
+			}
+            RFC = {
+				transfer_state = 600
+				transfer_state = 262
+				transfer_state = 269
+				transfer_state = 281
+				transfer_state = 292
+				600 = { add_core_of = RFC }
+				262 = { add_core_of = RFC }
+				269 = { add_core_of = RFC }
+				281 = { add_core_of = RFC }
+				292 = { add_core_of = RFC }
+				set_capital = {
+					state = 281
+				}
+			}
+		}
+		complete_effect = {
+
+		}
+	}
+}
+
+
+#########  
+
+CHI_Defend_against_enemy_category = { 
+	Embankment_mouth_garden_bursts = {
+		available = {
+			JAP={
+				controls_state = 167
+			}
+		} 
+		highlight_states = {
+			highlight_state_targets = { state =  165 }
+			highlight_state_targets = { state =  178 }
+			highlight_state_targets = { state =  180 }
+			highlight_state_targets = { state =  194 }
+			highlight_state_targets = { state =  169 }
+			highlight_state_targets = { state =  184 }
+			highlight_state_targets = { state =  186 }
+			highlight_state_targets = { state =  193 }
+			highlight_state_targets = { state =  196 }
+			highlight_state_targets = { state =  185 }
+			highlight_state_targets = { state =  172 }
+			highlight_state_targets = { state =  173 }
+			highlight_state_targets = { state =  168 }
+			highlight_state_targets = { state =  181 }
+			highlight_state_targets = { state =  163 }
+			highlight_state_targets = { state =  187 }
+			highlight_state_targets = { state =  176 }
+		}
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = { 
+			set_country_flag=The_god_mouth_garden
+			every_state = {
+				limit = { 
+					OR = {
+						state =  165
+						state =  178
+						state =  184
+						state =  193
+						state =  173
+						state =  196
+						state =  181
+					}  
+				}
+				custom_effect_tooltip = garden_bursts
+				set_state_flag = garden_bursts
+				hidden_effect = {
+					set_border_war = yes
+				}
+			}
+			every_state = {
+				limit = { 
+					OR = {
+						state =  165
+						state =  178
+						state =  180
+						state =  194
+						state =  169
+						state =  184
+						state =  186
+						state =  193
+						state =  196
+						state =  185
+						state =  172
+						state =  173
+						state =  168
+						state =  181
+						state =  163
+						state =  187
+						state =  176
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = flood_effect
+					days = 120
+				}
+			}
+
+		}
+	}
+	Incineration_ChangSha = {
+		available = {
+			JAP={
+				controls_state = 265
+			}
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_manpower = -30000
+			add_stability = -0.1
+			287={
+				custom_effect_tooltip = 287_fire
+				hidden_effect = {
+					damage_building = {
+						type = anti_air_building
+						damage = 2
+						repair_speed_modifier = -0.8
+					}
+					damage_building = {
+						type = supply_node
+						damage = 2
+						repair_speed_modifier = -0.8
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+						repair_speed_modifier = -0.8
+					}  
+					damage_building = {
+						type = arms_factory
+						damage = 2
+						repair_speed_modifier = -0.8
+					}
+					damage_building = {
+						type = air_base
+						damage = 2
+						repair_speed_modifier = -0.8
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 2
+						repair_speed_modifier = -0.8
+					}
+				}
+			}
+			
+		} 
+	}
+	Martial_law_Chongqing = {
+		available = {
+			238={
+				has_state_flag = JPN_bombing
+			}
+			
+		} 
+		visible = {
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_stability = -0.1
+		}
+	}
+}
+
+######### 
+
+CHI_Encirclement_suppression_operation_category = {
+	####二剿
+	CHI_Encirclement1 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement1
+			} 
+		}
+		days_mission_timeout = 60
+		activation = {
+			AND={
+				tag = CHI
+				date < 1931.7.1
+			}
+			#has_country_flag = Long_march_mission0
+		}
+		visible = { 
+			
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.1}
+			set_country_flag = CHI_Encirclement1 
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####三剿
+	CHI_Encirclement2 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement2
+			} 
+		}
+		days_mission_timeout = 100
+		activation = {
+			AND={
+				tag = CHI
+				date < 1931.10.1
+				has_country_flag = CHI_Encirclement1
+			}
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.2}
+			set_country_flag = CHI_Encirclement2
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####四剿1931的四剿决议
+	CHI_Encirclement3 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement3
+			} 
+		}
+		days_mission_timeout = 515
+		activation = {
+			AND={
+				tag = CHI
+				date < 1933.3.1
+				NOT={
+					has_country_flag = CHI_Encirclement5
+				}
+				has_country_flag = CHI_Encirclement2
+			}
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.3}
+			set_country_flag = CHI_Encirclement3
+		}
+		complete_effect = {
+		}
+	}
+	
+	####
+	####五剿
+	CHI_Encirclement4 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement4
+			} 
+		}
+		days_mission_timeout = 234
+		activation = {
+			AND={
+				tag = CHI
+				date < 1933.10.1
+				has_country_flag = CHI_Encirclement3
+			}
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.4}
+
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####
+	####四剿1933的四剿决议
+	CHI_Encirclement5 = {
+		icon = generic_civil_support
+		available = {
+			hidden_trigger = { 
+				has_country_flag = CHI_Encirclement77
+			} 
+		}
+		days_mission_timeout = 34
+		activation = {
+			AND={
+				tag = CHI
+				date < 1933.3.1
+				has_country_flag = CHI_Encirclement5
+			}
+		}
+		visible = { 
+			tag = CHI
+		}		
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			country_event = {id=CHI_Encirclement.3}
+			set_country_flag = CHI_Encirclement3
+		}
+		complete_effect = {
+		}
+	}
+	####
+	####五剿
+	PRC_Massacre1 = {
+		available = {
+			PRC = {
+				any_controlled_state = {
+					is_controlled_by = CHI
+				}
+			}
+		} 
+		visible = {
+			 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			PRC={
+				random_core_state = {
+					add_resistance_target = 5
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				random_list = {
+					20={
+						add_manpower = -40
+					}
+					20={
+						add_manpower = -100
+					}
+					20={
+						add_manpower = -50
+					}
+					20={
+						add_manpower = -80
+					}
+					20={
+						add_manpower = -40
+					}
+				}
+			}
+		}
+	}
+	PRC_Massacre2 = {
+		available = {
+			PRH = {
+				any_controlled_state = {
+					is_controlled_by = CHI
+				}
+			}
+			
+		} 
+		visible = {
+			 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			PRH={
+				random_core_state = {
+					add_resistance_target = 5
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				random_list = {
+					20={
+						add_manpower = -40
+					}
+					20={
+						add_manpower = -100
+					}
+					20={
+						add_manpower = -50
+					}
+					20={
+						add_manpower = -80
+					}
+					20={
+						add_manpower = -40
+					}
+				}
+			}
+		}
+	}
+	PRC_Massacre3 = {
+		available = {
+			NHA = {
+				any_controlled_state = {
+					is_controlled_by = CHI
+				}
+			}
+			
+		} 
+		visible = {
+			 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			NHA={
+				random_core_state = {
+					add_resistance_target = 5
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				random_list = {
+					20={
+						add_manpower = -40
+					}
+					20={
+						add_manpower = -100
+					}
+					20={
+						add_manpower = -50
+					}
+					20={
+						add_manpower = -80
+					}
+					20={
+						add_manpower = -40
+					}
+				}
+			}
+		}
+	}
+	PRC_Massacre4 = {
+		available = {
+			PRJ = {
+				any_controlled_state = {
+					is_controlled_by = CHI
+				}
+			}
+			
+		} 
+		visible = {
+			 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			PRJ={
+				random_core_state = {
+					add_resistance_target = 5
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				random_list = {
+					20={
+						add_manpower = -40
+					}
+					20={
+						add_manpower = -100
+					}
+					20={
+						add_manpower = -50
+					}
+					20={
+						add_manpower = -80
+					}
+					20={
+						add_manpower = -40
+					}
+				}
+			}
+		}
+	}
+	PRC_Massacre5 = {
+		available = {
+			NSD = {
+				any_controlled_state = {
+					is_controlled_by = CHI
+				}
+			}
+			
+		} 
+		visible = {
+			 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			NSD={
+				random_core_state = {
+					add_resistance_target = 5
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				random_list = {
+					20={
+						add_manpower = -40
+					}
+					20={
+						add_manpower = -100
+					}
+					20={
+						add_manpower = -50
+					}
+					20={
+						add_manpower = -80
+					}
+					20={
+						add_manpower = -40
+					}
+				}
+			}
+		}
+	}
+	PRC_Massacre6 = {
+		available = {
+			PRQ = {
+				any_controlled_state = {
+					is_controlled_by = CHI
+				}
+			}
+			
+		} 
+		visible = {
+			 
+		}
+		cost = 20 
+		days_remove= 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			PRQ={
+				random_core_state = {
+					add_resistance_target = 5
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				random_list = {
+					20={
+						add_manpower = -40
+					}
+					20={
+						add_manpower = -100
+					}
+					20={
+						add_manpower = -50
+					}
+					20={
+						add_manpower = -80
+					}
+					20={
+						add_manpower = -40
+					}
+				}
+			}
+		}
+	}
+}
+###架空线权力平衡 
+CHI_struggle_balance_00_category = {
+    The_opposition_is_in_action = {
+        available = {
+			OR = {
+				has_completed_focus = Chairman_Wangs_European_Tour 
+				has_completed_focus = Special_Parliament_Leader_Hu_Hanmin  
+			}
+        }
+        activation = {
+            OR = {
+				NOT = { has_completed_focus = Chairman_Wangs_European_Tour }  
+				NOT = { has_completed_focus = Special_Parliament_Leader_Hu_Hanmin }  
+			}
+        }
+		fire_only_once = no
+        days_mission_timeout = 30
+        timeout_effect = {
+            add_power_balance_value = {
+						id = CHI_struggle_balance_00
+						value = 0.001
+				    }
+        }
+		complete_effect = {
+            add_political_power = 50
+        }
+    }
+}
+
+Scorched_earth_policy = {
+
+	CHI_scorched_earth_tactics = {
+		icon = generic_scorched_earth
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				infrastructure > 0
+				any_neighbor_state = {
+					NOT = { is_fully_controlled_by = ROOT }
+					controller = { has_war_with = CHI }
+				}
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {			
+			
+		}
+
+		days_re_enable = 30
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					infrastructure > 0
+					any_neighbor_state = {
+						NOT = { is_fully_controlled_by = ROOT }
+						controller = { has_war_with = CHI }
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}		
+		}
+	}
+}

@@ -1,0 +1,107 @@
+﻿division_template = {
+	name = "国民革命军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "骑兵旅" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "炮兵团" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		artillery = { x = 0 y = 2 }
+		artillery = { x = 1 y = 0 }
+		artillery = { x = 1 y = 1 }
+		artillery = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+	division= {	
+		location = 4192
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3025
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3025
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 1918
+		division_template = "骑兵旅"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 2960
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 394
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3220
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3220
+		division_template = "炮兵团"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 3220
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		location = 1823
+		division_template = "国民革命军"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.6
+	}
+}

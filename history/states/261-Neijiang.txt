@@ -1,0 +1,30 @@
+state={
+	id=261
+	name="STATE_261"
+	provinces={
+		3864 
+	}
+	history={
+		owner = ROW
+
+		1933.1.1={
+			owner = RYS
+		}
+		1936.1.1={
+			owner = ROS
+		}
+		1938.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		
+				
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

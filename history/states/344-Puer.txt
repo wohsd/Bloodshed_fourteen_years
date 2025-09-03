@@ -1,0 +1,21 @@
+state={
+	id=344
+	name="STATE_344"
+	provinces={
+		954 1617 2045 2179 2499 3283 3330 4163 4174 
+	}
+	history={
+		owner = ROY
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2179 5
+		}
+		add_core_of = ROY
+		
+	}	
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,25 @@
+state={
+	id=383
+	name="STATE_383"
+	provinces={
+		3217 4201 4204 
+	}
+	history={
+		owner = ROG
+		add_core_of = ROG
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3217 5
+		}
+		1939.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

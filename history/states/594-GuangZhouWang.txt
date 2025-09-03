@@ -1,0 +1,24 @@
+state={
+	id=594
+	name="STATE_594"
+	provinces={
+		1790 4212 4213 4214 
+	}
+	history={
+		owner = FRA
+		buildings = {
+		}
+		victory_points = {
+			1790 5
+		}
+		1941.1.1={
+			owner = JAP
+		}
+		
+	}
+	manpower=185000
+	state_category = town
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

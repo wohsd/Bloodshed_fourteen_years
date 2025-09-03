@@ -1,0 +1,16 @@
+characters={
+    MEG_Anand_Amal={
+		name=MEG_Anand_Amal
+		portraits={
+			civilian={
+				large="gfx/leaders/MEG/MEG_Anand_Amal.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

@@ -1,0 +1,24 @@
+state={
+	id=630
+	name="STATE_630"
+	provinces={
+		1724 2173 
+	}
+	history={
+		owner = YUL
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			1724 5
+		}
+		1935.1.1={
+			owner = PRC
+		}
+	}
+	manpower=101000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

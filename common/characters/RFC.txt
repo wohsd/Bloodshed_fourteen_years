@@ -1,0 +1,16 @@
+characters={
+	RFC_LiJiSheng={
+		name=RFC_LiJiSheng
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_LiJiSheng.png"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ Unprepared_individuals }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

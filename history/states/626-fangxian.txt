@@ -1,0 +1,27 @@
+state={
+	id=626
+	name="STATE_626"
+	provinces={
+		3363
+	}
+
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+
+		}
+		1933.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+		}
+	}
+	manpower=2311
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

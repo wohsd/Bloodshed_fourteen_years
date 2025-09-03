@@ -1,0 +1,21 @@
+state={
+	id=371
+	name="STATE_371"
+	provinces={
+		4177 4178 
+	}
+	history={
+		owner = ROG
+		buildings = {
+			infrastructure = 1
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		add_core_of = ROG
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

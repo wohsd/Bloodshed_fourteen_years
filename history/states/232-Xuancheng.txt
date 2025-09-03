@@ -1,0 +1,25 @@
+state={
+	id=232
+	name="STATE_232"
+	provinces={
+		1235 1537 2033 2375 2429 2618 2745 3838 3843 
+	}
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		
+		victory_points = {
+			2033 5
+		}
+		1941.1.1={
+			owner = JDF
+		}
+	}
+	manpower=1323000
+	state_category = town
+	local_supplies = 0.0
+}

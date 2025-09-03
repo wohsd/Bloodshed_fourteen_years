@@ -1,0 +1,19 @@
+state={
+	id=639
+	name="STATE_639"
+	provinces={
+		909 
+	}
+	history={
+		owner = ROW
+		buildings = {
+			infrastructure = 1
+		}
+		
+		
+		
+	}
+	manpower=323000
+	state_category = rural
+	local_supplies=0.000
+}

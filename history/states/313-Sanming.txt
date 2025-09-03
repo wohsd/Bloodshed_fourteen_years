@@ -1,0 +1,46 @@
+
+state={
+	id=313
+	name="STATE_313"
+
+	history={
+		owner = CHI
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+			3969={
+				bunker = 2
+			}
+			2329={
+				bunker = 2
+			}
+			3977={
+				bunker = 2
+			}
+			3995={
+				bunker = 2
+			}
+			4001={
+				bunker = 2
+			}
+		}
+		
+		victory_points = {
+			1005 5
+		}
+		victory_points = {
+			3965 5
+		}
+		victory_points = {
+			3936 5
+		}
+	}
+
+	provinces={
+		1005 1344 2010 2329 3281 3969 3977 3985 3987 3990 3991 3993 3995 4001 
+	}
+	manpower=823000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=10.000
+}

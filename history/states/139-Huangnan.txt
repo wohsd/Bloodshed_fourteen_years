@@ -1,0 +1,20 @@
+state={
+	id=139
+	name="STATE_139"
+	provinces={
+		819 1956 2222 3743  1939 3752 
+	}
+	history={
+		owner = ROQ
+		add_core_of = ROQ
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	manpower=113000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

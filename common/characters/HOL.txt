@@ -1,0 +1,16 @@
+characters={
+    HOL_bonifacius_cornelis_de_jonge={
+		name=HOL_bonifacius_cornelis_de_jonge
+		portraits={
+			civilian={
+				large="gfx/leaders/HOL/HOL_bonifacius_cornelis_de_jonge.png"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

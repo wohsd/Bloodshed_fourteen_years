@@ -1,0 +1,117 @@
+
+music_station = "BFY"
+
+music = {
+	song = "gongxigongxi"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "Lige"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "shengli"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "dadao"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music= {
+	song = "qizhengpiaopiao"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music= {
+	song = "taihangshang"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music= {
+	song = "baoweihuanghe"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+
+music= {
+	song = "guoge"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+
+music= {
+	song = "balujun"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+
+music= {
+	song = "xiangzhange"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+
+music= {
+	song = "kangrijunzheng"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}	
+	}
+}

@@ -1,0 +1,31 @@
+state={
+	id=655
+	name="STATE_655"
+	provinces={
+		680 2078 
+	}
+	history={
+		owner = YUL
+		
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		1935.1.1={
+			owner = PRC
+		}
+		victory_points = {
+			2078 5
+		}
+		victory_points = {
+			680 5
+		}
+		victory_points = {
+			1256 5
+		}
+	}
+	manpower=423000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

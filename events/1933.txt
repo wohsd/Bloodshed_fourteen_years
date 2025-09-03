@@ -1,0 +1,648 @@
+﻿
+add_namespace = PRC_1933
+add_namespace = ROX_1933
+add_namespace = PRC_1933Hidden
+add_namespace = ROX_1933Hidden
+add_namespace = ROH_1933Hidden
+add_namespace = CHI1933
+add_namespace = ROH1933
+country_event = {
+	id = PRC_1933Hidden.0
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.1.16
+			date < 1933.1.18
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1933.0}
+		}
+    } 
+    
+	option = {
+		name = PRC_1933Hidden.1.a
+	}		
+}
+country_event = {
+	id = PRC_1933.0
+	title = PRC_1933.0.t
+	desc = PRC_1933.0.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+	}
+   
+	option = {
+		name = PRC_1933.0.a
+	}
+}
+
+country_event = {
+	id = PRC_1933Hidden.1
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.1.14
+			date < 1933.1.16
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1933.1}
+		}
+    } 
+    
+	option = {
+		name = PRC_1933Hidden.1.a
+	}		
+}
+
+#######
+
+country_event = {
+	id = ROX_1933Hidden.1
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.4.11
+			date < 1933.4.13
+		}
+    }
+    immediate = {
+		news_event = {id=ROX_1933.1}
+    } 
+    
+	option = {
+		name = ROX_1933Hidden.1.a
+	}		
+}
+
+news_event = {
+	id = ROX_1933.1
+	title = ROX_1933.1.t
+	desc = ROX_1933.1.d
+
+	picture = GFX_ROX_1933_1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ROX_1933_1
+			ROX={
+				retire_character = ROX_JingShuRen
+				ROX_ShengShiCai={
+					promote_character = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ROX_1933.1.a
+		clr_country_flag = ROX_1933_1
+	}		
+}
+
+
+
+
+
+
+############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = ROH1933.1
+	title = ROH1933.1.t
+	desc = ROH1933.1.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+		ROH={
+			declare_war_on = {
+				target = YGC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SOX
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = ROH1933.1.a
+	}
+}
+
+news_event = {
+	id = ROH1933.2
+	title = ROH1933.2.t
+	desc = ROH1933.2.d
+
+	picture = GFX_ROH1933_2
+
+	major = yes
+
+	trigger = {
+		AND={
+			date > 1933.1.1 
+			date < 1934.1.1
+			YGC={ 
+				NOT = {
+					has_global_flag = fall_of_GuiYan
+					controls_province = 3138
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+		set_global_flag = fall_of_GuiYan
+		FROM = {
+			save_global_event_target_as = fall_of_GuiYan_owner
+		}
+		ROOT = {
+			save_global_event_target_as = fall_of_GuiYan_controller
+		}
+		ROH={
+			annex_country = {
+				target = YGC
+			}
+			annex_country = {
+				target = SOX
+			}
+		}
+	}
+	}
+	
+	option = {
+		name = ROH1933.2.a
+	}		
+}
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = PRC_1933.1
+	title = PRC_1933.1.t
+	desc = PRC_1933.1.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+		hidden_effect={
+		602={
+			transfer_state_to = NSD
+			add_core_of=NSD
+		}
+	}
+	}
+   
+	option = {
+		name = PRC_1933.1.a
+	}
+}
+
+country_event = {
+	id = PRC_1933Hidden.2
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.2.5
+			date < 1933.2.7
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1933.2}
+		}
+    } 
+    
+	option = {
+		name = PRC_1933Hidden.1.a
+	}		
+}
+country_event = {
+	id = PRC_1933.2
+	title = PRC_1933.2.t
+	desc = PRC_1933.2.d
+    #picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+		CHI={
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = PRC_1933.2.a
+		country_event=PRC_1933.3
+	}
+}
+
+country_event = {
+	id = PRC_1933.3
+	title = PRC_1933.3.t
+	desc = PRC_1933.3.d
+    #picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+		hidden_effect={
+		    hidden_effect={
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 598
+						num_provinces = 2
+						#on_win = japan_border_conflict.2
+						on_lose = japan_border_conflict.3
+						#on_cancel = japan_border_conflict.4
+						modifier = 0.1
+						dig_in_factor = 0
+						terrain_factor = 0
+					}	
+					defender = {
+						state = 589
+						num_provinces = 2
+						
+						#on_lose = japan_border_conflict.2
+						#on_cancel = japan_border_conflict.4
+					}
+				}
+			}
+	    }
+	}
+	option = {
+		name = PRC_1933.3.a
+		
+		country_event = {id=PRC_1933.4 days=28}
+	}
+}
+
+
+country_event = {
+	id = PRC_1933.4
+	title = PRC_1933.4.t
+	desc = PRC_1933.4.d
+    #picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+		
+	}
+	option = {
+		name = PRC_1933.4.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 235
+			producer = PRC
+		}
+		country_event = {id=PRC_1933.5 days=5}
+	}
+}
+
+country_event = {
+	id = PRC_1933.5
+	title = PRC_1933.5.t
+	desc = PRC_1933.5.d
+    #picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+		
+	}
+	option = {
+		name = PRC_1933.5.a
+		cancel_border_war = {
+			dont_fire_events = yes
+			defender = 589
+			attacker = 292
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 300
+			producer = PRC
+		}
+	}
+}
+
+country_event = {
+	id = PRC_1933Hidden.3
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.8.11
+			date < 1933.8.13
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1933.6}
+		}
+    } 
+    
+	option = {
+		name = PRC_1933Hidden.3.a
+	}		
+}
+
+
+country_event = {
+	id = PRC_1933.6
+	title = PRC_1933.6.t
+	desc = PRC_1933.6.d
+    #picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+		hidden_effect={
+		    hidden_effect={
+				start_border_war = {
+					change_state_after_war = yes
+					attacker = {
+						state = 217
+						num_provinces = 2
+						#on_win = japan_border_conflict.2
+						on_lose = japan_border_conflict.3
+						#on_cancel = japan_border_conflict.4
+						modifier = 0.1
+						dig_in_factor = 0
+						terrain_factor = 0
+					}	
+					defender = {
+						state = 202
+						num_provinces = 2
+						
+						#on_lose = japan_border_conflict.2
+						#on_cancel = japan_border_conflict.4
+					}
+				}
+			}
+	    }
+	}
+	option = {
+		name = PRC_1933.6.a
+	}
+}
+
+
+
+
+
+
+
+country_event = {
+	id = PRC_1933Hidden.4
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.9.24
+			date < 1933.9.26
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1933.7}
+		}
+    } 
+    
+	option = {
+		name = PRC_1933Hidden.4.a
+	}		
+}
+country_event = {
+	id = PRC_1933Hidden.5
+    hidden = yes
+	fire_only_once = yes
+	
+    trigger = {
+		AND={
+			date > 1933.8.12
+			date < 1933.8.14
+		}
+    }
+    immediate = {
+	    PRC={
+			country_event = {id=PRC_1933.8}
+		}
+    } 
+    
+	option = {
+		name = PRC_1933Hidden.4.a
+	}		
+}
+
+country_event = {
+	id = PRC_1933.7
+	title = PRC_1933.7.t 
+	desc = PRC_1933.7.d
+    #picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		CHI={
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NHA
+				type = annex_everything
+			}
+			add_timed_idea = {
+				idea = Fortress_tactics
+				days = 200
+			}
+		}
+		RON={
+			add_to_war = {
+				targeted_alliance = CHI
+				enemy = PRC
+			}
+		}
+		
+	}
+	}
+    
+	option = {
+		name = PRC_1933.7.a
+		
+	}
+}
+
+
+
+country_event = {
+	id = PRC_1933.8
+	title = PRC_1933.8.t
+	desc = PRC_1933.8.d
+    #picture = 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+	
+	}
+	option = {
+		name = PRC_1933.8.a
+		add_political_power = 100
+	}
+}
+
+
+
+
+country_event = {
+	id = CHI1933.1
+	title = CHI1933.1.t
+	desc = CHI1933.1.d
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		ROD = {
+			AND={
+				date > 1933.1.1
+				has_war = yes
+				surrender_progress > 0.21
+			}
+		}
+    }
+    immediate = {
+		set_global_flag = fall_of_Changcheng
+    } 
+    
+	option = {
+		name = CHI1932.1.a
+		hidden_effect = {
+			news_event = WorldNew.10
+		}
+		JAP={
+			white_peace =ROD
+			#country_event = CHI_1932.1
+		}
+		654={
+			transfer_state_to = LSX
+		}
+		
+		CAR={
+			declare_war_on = {
+				target = LSX
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROD
+				type = annex_everything
+			}
+		}
+		59={
+			set_demilitarized_zone = yes
+			transfer_state_to = MCK
+		}
+		53={
+			transfer_state_to = MCK
+		}
+		37={
+			transfer_state_to = MCK
+		}
+		62={
+			transfer_state_to = MCK
+		}
+		72={
+			transfer_state_to = MCK
+		}
+		19={
+			transfer_state_to = MCK
+		}
+		30={
+			transfer_state_to = MCK
+		}
+		26={
+			transfer_state_to = MCK
+		}
+		clr_global_flag = fall_of_Changcheng
+	}		
+}
+
+
+
+
+
+
+
+
+

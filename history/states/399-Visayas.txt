@@ -1,0 +1,17 @@
+state={
+	id=399
+	name="STATE_399"
+	provinces={
+		150 1332 1780 3159 4302
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = USA
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,21 @@
+state={
+	id=117
+	name="STATE_117"
+	provinces={
+		1990 
+	}
+	history={
+		owner = ROQ
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			
+		}
+		add_core_of = ROQ
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

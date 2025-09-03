@@ -1,0 +1,25 @@
+state={
+	id=690
+	name="STATE_690"
+	provinces={
+		2239 2535 2546 2786 3036 3854 3856 3866 3867 
+	}
+	history={
+		owner = CHI 
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			2239 5
+		}
+		1941.1.1={
+			owner = JDF
+		}
+		
+	}
+	manpower=563000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

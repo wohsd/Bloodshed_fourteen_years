@@ -1,0 +1,23 @@
+state={
+	id=393
+	name="STATE_393"
+	provinces={
+		37 871 2573 2677
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			2677 15
+		}
+		1941.1.1={
+			owner = JAP
+		}
+		add_core_of = USA
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,244 @@
+﻿division_template = {
+	name = "甲种师团" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "骑兵联队" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "海军陆战队"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+	division_names_group = JAP_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
+division_template = {
+	name = "关东军" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery= { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+units = {
+	division= {	
+		location = 2729
+		division_template = "骑兵联队"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2729
+		division_template = "海军陆战队"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3728
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3716
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2660
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2729
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2474
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1143
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3707
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3707
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 604
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 604
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3772
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3726
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2247
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2647
+		division_template = "关东军"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1840
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 4791
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1987
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 748
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2063
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3571
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1423
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 656
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1749
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 4789
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		location = 1749
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1651
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 4794
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 4794
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 748
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 797
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3313
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 4799
+		division_template = "甲种师团"
+		start_experience_factor = 0.4
+	}
+}

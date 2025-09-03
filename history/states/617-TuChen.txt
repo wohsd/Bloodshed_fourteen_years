@@ -1,0 +1,30 @@
+state={
+	id=617
+	name="STATE_617"
+	provinces={
+		900 3913 5250
+	}
+	history={
+		owner = ROH
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			5250 3
+		}
+		add_core_of = ROH
+		add_core_of = ROH
+		1933.1.1={
+			owner = HZD
+		}
+		1936.1.1={
+			owner = CHI
+add_core_of = CHI
+			
+		}
+	}
+	manpower=23110
+	buildings_max_level_factor=1.000
+	local_supplies=10.000
+}

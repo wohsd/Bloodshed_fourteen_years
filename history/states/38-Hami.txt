@@ -1,0 +1,16 @@
+state={
+	id=38
+	name="STATE_38"
+	provinces={
+		151 633 754 1135 1223 1973 2244 2866 2995 3143 3567 
+	}
+	history={
+		owner = MZY
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies=0.000
+}

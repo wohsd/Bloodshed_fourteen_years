@@ -1,0 +1,21 @@
+state={
+	id=8
+	name="STATE_8"
+	provinces={
+		265 302 714 847 940 966 1497 1504 1582 1910 2208 2307 2585 2884 3259 3416 3421 3426
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		1933.1.1={
+			owner = MCK
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

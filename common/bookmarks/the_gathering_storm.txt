@@ -1,0 +1,64 @@
+bookmarks = {
+	bookmark = {
+		name = "1931_NAME"
+		desc = "1931_DESC"
+		date = 1931.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CHI"
+		default = yes
+		"PRC"={
+			history = "PRC_STROM_DESC"
+			ideas={
+				PRCBOOK0
+				PRCBOOK1
+				PRCBOOK2
+				PRCBOOK3
+			}
+		}
+		"CHI"={
+			history = "CHI_STORM_DESC"
+			ideas={
+				CHIBOOK0
+				CHIBOOK1
+				CHIBOOK2
+				CHIBOOK3
+			}
+		}
+		"JAP"={
+			history = "JAP_STREOM_DESC"
+			ideas={
+				JAPBOOK0
+				JAPBOOK1
+				JAPBOOK2
+				JAPBOOK3
+			}
+		}
+		"ROD"={
+			history = "ROD_STREOM_DESC"
+			ideas={
+				RODBOOK0
+				RODBOOK1
+				RODBOOK2
+				RODBOOK3
+			}
+		}
+		"ROC"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				OMOBOOK0
+				OMOBOOK1
+				OMOBOOK2
+				OMOBOOK3
+			}
+		}
+		"ROG"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideas={
+				OMOBOOK0
+				OMOBOOK1
+				OMOBOOK2
+				OMOBOOK3
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+state={
+	id=372
+	name="STATE_372"
+	provinces={
+		1612 4180 
+	}
+	history={
+		owner = ROG
+		buildings = {
+			infrastructure = 1
+			1612= {
+				naval_base = 2
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {
+			1612 5
+		}
+		1939.1.1={
+			owner = JAP
+		}
+		add_core_of = ROG
+		
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,24 @@
+capital = 633
+set_oob = RDX_1933
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+interwar_antitank = 1
+}
+
+recruit_character = RDX_DengXiHou
+
+set_popularities = {
+	democratic = 0
+	communism = 0
+    neutrality = 100
+}
+add_ideas = Regionalist_warlords
+set_politics = {
+	ruling_party = neutrality
+	#last_election = "1936.11.11"
+	election_frequency = 72
+	elections_allowed = no
+}

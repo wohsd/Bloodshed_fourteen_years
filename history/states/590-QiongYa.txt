@@ -1,0 +1,24 @@
+state={
+	id=590
+	name="STATE_590"
+	provinces={
+		2466 3187 3207 4235 4239 4241 
+	}
+    history={
+		owner = PRQ
+		add_core_of = PRQ
+		victory_points = {
+			4235 10
+		}
+		1936.1.1={
+			owner = PRQ
+		}
+		1941.1.1={
+			owner = JAP
+		}
+	}
+	manpower=83350
+    state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

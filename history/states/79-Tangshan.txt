@@ -1,0 +1,27 @@
+state={
+	id=79
+	name="STATE_79"
+	provinces={
+		194 1794 3111 3629 
+	}
+	history={
+		owner = ROD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROD
+		
+		victory_points = {
+			194 5
+		}
+		1935.11.24={
+			owner = JDF
+		}
+		1939.1.1={
+			owner = JAP
+		}
+	}
+	manpower=323000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,16 @@
+characters={
+	MCK_PuYi={
+		name=MCK_PuYi
+		portraits={
+			civilian={
+				large="gfx/leaders/MCK/MCK_PuYi.png"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}		
+	}

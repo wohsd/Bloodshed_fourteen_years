@@ -1,0 +1,646 @@
+﻿add_namespace = PRC_1936Hidden
+add_namespace = PRC_1936
+add_namespace = PRC_1936_1
+add_namespace = ROC_1936
+add_namespace = ROC_1936_hidden
+add_namespace = ROD_1936
+add_namespace = CHI_1936
+country_event = {
+	id =  PRC_1936_1.00
+	title = PRC_1936_1.00.t
+	desc =  PRC_1936_1.00.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936_1.00.a
+		complete_national_focus = PRC_focus58
+		country_event = {id=PRC_1936_1.01 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.01
+	title = PRC_1936_1.01.t
+	desc = PRC_1936_1.01.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.01.a
+		country_event = {id=PRC_1936_1.02 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.02
+	title = PRC_1936_1.02.t
+	desc = PRC_1936_1.02.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.02.a
+		country_event = {id=PRC_1936_1.03 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.03
+	title = PRC_1936_1.03.t
+	desc = PRC_1936_1.03.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.03.a
+		country_event = {id=PRC_1936_1.04 days=15}
+		set_country_flag = PRC_1936_1_03
+		complete_national_focus = PRC_focus46
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.04
+	title = PRC_1936_1.04.t
+	desc = PRC_1936_1.04.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.04.a
+		country_event = {id=PRC_1936_1.05 days=15}
+		RDX = {
+			annex_country = {
+				target = NSD
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.05
+	title = PRC_1936_1.05.t
+	desc = PRC_1936_1.05.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.05.a
+		country_event = {id=PRC_1936_1.06 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.06
+	title = PRC_1936_1.06.t
+	desc = PRC_1936_1.06.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.06.a
+		country_event = {id=PRC_1936_1.07 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.07
+	title = PRC_1936_1.07.t
+	desc = PRC_1936_1.07.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.07.a
+		country_event = {id=PRC_1936_1.08 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.08
+	title = PRC_1936_1.08.t
+	desc = PRC_1936_1.08.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.08.a
+		country_event = {id=PRC_1936_1.09 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.09
+	title = PRC_1936_1.09.t
+	desc = PRC_1936_1.09.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.09.a
+		country_event = {id=PRC_1936_1.010 days=15}
+	}		
+}
+
+country_event = {
+	id = PRC_1936_1.010
+	title = PRC_1936_1.010.t
+	desc = PRC_1936_1.010.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = PRC_1936_1.010.a
+	}		
+}
+
+country_event = {
+	id =  PRC_1936.1
+	title = PRC_1936.1.t
+	desc =  PRC_1936.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.1.a
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 122
+				num_provinces = 1
+				on_win = PRC_1936.2
+			}	
+			defender = {
+				state = 132
+				num_provinces = 1
+				dig_in_factor = -1
+				terrain_factor = -1
+			}
+		}
+		set_border_war_data = {
+			attacker = 122
+			defender = 132
+			attacker_modifier = 0.75
+			defender_modifier = -0.75
+			combat_width = 100
+		}
+		132={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = ROD
+				days=150
+			}
+		}
+	}		
+}
+
+country_event = {
+	id =  PRC_1936.2
+	title = PRC_1936.2.t
+	desc =  PRC_1936.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.2.a
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 132
+				num_provinces = 1
+				on_win = PRC_1936.3
+			}	
+			defender = {
+				state = 114
+				num_provinces = 1
+				dig_in_factor = -1
+				terrain_factor = -1
+			}
+		}
+		set_border_war_data = {
+			attacker = 132
+			defender = 114
+			attacker_modifier = 0.75
+			defender_modifier = -0.75
+			combat_width = 100
+		}
+		114={
+			add_dynamic_modifier = {
+				modifier = Morale_collapsed
+				scope = ROD
+				days=150
+			}
+		}
+	}		
+}
+
+country_event = {
+	id =  PRC_1936.3
+	title = PRC_1936.3.t
+	desc =  PRC_1936.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.3.a
+		complete_national_focus = PRC_focus59
+		
+		hidden_effect = {
+			114={
+				create_unit = {
+					division = "name = \"中国工农红军2军第4师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军2军第6师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军6军第16师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军6军第17师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军6军第18师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军4军第10师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军4军第11师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军4军第12师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军5军第13师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军5军第15师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军9军第25师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军9军第27师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军30军第88师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军30军第89师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军31军第91师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+				create_unit = {
+					division = "name = \"中国工农红军31军第93师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					owner = PRC
+					prioritize_location = 2030
+				}
+			}
+		}
+		country_event = {id=PRC_1936.7 days=5}
+		PRH = {
+			PRH_HeLong = { set_nationality = PRC }
+			PRH_GuangXiangYing = { set_nationality = PRC }
+			PRH_XiaoKe = { set_nationality = PRC }
+			
+		}
+	}		
+}
+
+country_event = {
+	id =  PRC_1936.4
+	title = PRC_1936.4.t
+	desc =  PRC_1936.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.4.a
+		retire_character = NSA_LiuZhiDan
+	}		
+}
+country_event = {
+	id =  PRC_1936.5
+	title = PRC_1936.5.t
+	desc =  PRC_1936.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.5.a
+		retire_character = PRC_DongZhenTang
+	}		
+}
+
+country_event = {
+	id =  PRC_1936.6
+	title = PRC_1936.6.t
+	desc =  PRC_1936.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.6.a
+	}		
+}
+
+country_event = {
+	id =  PRC_1936.7
+	title = PRC_1936.7.t
+	desc =  PRC_1936.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  PRC_1936.7.a
+		PRC={
+			declare_war_on = {
+				target = MBQ
+				type = annex_everything
+			}
+			MBQ = {
+				give_military_access = ROQ
+			}
+			declare_war_on = {
+				target = ROQ
+				type = annex_everything
+			}
+			country_event = {id= PRC_1936.8 days=15}
+		}
+		
+	}		
+}
+country_event = {
+	id =  PRC_1936.8
+	title = PRC_1936.8.t
+	desc =  PRC_1936.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			132={
+				transfer_state_to = ROD
+			}
+			625={
+				transfer_state_to = PRC
+			}
+			114={
+				add_dynamic_modifier = {
+					modifier = Poorly_managed_areas
+					scope = PRC
+				}
+			}
+		}
+		
+	}
+	option = {
+		name =  PRC_1936.8.a
+		hidden_effect = {
+			country_event = {id=PRC_1936.5 days=30}
+		}
+		
+	}		
+}
+
+
+country_event = {
+	id =  PRC_1936.9
+	title = PRC_1936.9.t
+	desc =  PRC_1936.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			PRC = {
+				white_peace = ROJ
+			}
+			677={
+				transfer_state_to = PRC
+			}
+			629={
+				transfer_state_to = PRC
+			}
+			148={
+				transfer_state_to = ROJ
+			}
+			99={
+				transfer_state_to = ROJ
+			}
+			131={
+				transfer_state_to = ROJ
+			}
+		}
+	}
+	option = {
+		name =  PRC_1936.9.a
+		
+	}		
+}
+
+country_event = {
+	id =  ROD_1936.1
+	title = ROD_1936.1.t
+	desc =  ROD_1936.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			116={
+				transfer_state_to = PRC
+			}
+		}
+	}
+	option = {
+		name =  ROD_1936.1.a
+		
+	}		
+}
+
+
+country_event = {
+	id = ROC_1936_hidden.1
+    hidden = yes
+	fire_only_once = yes
+    trigger = {
+		date > 1936.5.11
+		date < 1936.5.13
+    }
+    immediate = {
+		hidden_effect = {
+			news_event = {id=ROC_1936.1}
+		}
+    } 
+	option = {
+		name = ROC_1936_hidden.1.a
+	}
+}
+
+news_event = {
+	id = ROC_1936.1
+	title = ROC_1936.1.t
+	desc = ROC_1936.1.d
+	picture = GFX_ROC_1936_1
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id=ROC_1936.2 days=19
+			}
+		}
+	}
+	option = {
+		name = ROC_1936.1.a
+		news_event = {
+			id=ROC_1936.2 days=19
+		}
+	}		
+}
+
+news_event = {
+	id = ROC_1936.2
+	title = ROC_1936.2.t
+	desc = ROC_1936.2.d
+	picture = GFX_ROC_1936_2
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id=ROC_1936.3 days=1
+			}
+		}
+	}
+	option = {
+		name = ROC_1936.2.a
+		
+	}		
+}
+
+news_event = {
+	id = ROC_1936.3
+	title = ROC_1936.3.t
+	desc = ROC_1936.3.d
+	picture = GFX_ROC_1936_3
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROC_1936.3.a
+		CHI = {
+			country_event = CHI_1936.1
+		}
+	}		
+}
+
+
+country_event = {
+	id =  CHI_1936.1
+	title = CHI_1936.1.t
+	desc =  CHI_1936.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  CHI_1936.1.a
+		country_event = {id=CHI_1936.2 days=10}
+		316={
+			set_state_controller_to = ROG
+		}
+		607={
+			set_state_controller_to = ROG
+		}
+		587={
+			set_state_controller_to = ROC
+		}
+		315={
+			set_state_controller_to = ROC
+		}
+		611={
+			set_state_controller_to = ROC
+		}
+		672={
+			set_state_controller_to = ROC
+		}
+	}		
+}
+
+country_event = {
+	id =  CHI_1936.2
+	title = CHI_1936.2.t
+	desc =  CHI_1936.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  CHI_1936.2.a
+		ROG = {
+			send_equipment = {
+					equipment = fighter_equipment_0
+					amount = 100
+					target = CHI
+				}
+		}
+		
+		316={
+			set_state_controller_to = RON
+		}
+		607={
+			set_state_controller_to = RON
+		}
+		587={
+			set_state_controller_to = RON
+		}
+		315={
+			set_state_controller_to = RON
+		}
+		611={
+			set_state_controller_to = RON
+		}
+		672={
+			set_state_controller_to = RON
+		}
+		country_event = {id=CHI_1936.3 days=15}
+	}	
+	option = {
+		name =  CHI_1936.2.b
+		CHI = {
+			declare_war_on = {
+				target = ROG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROC
+				type = annex_everything
+			}
+		}
+	}	
+}
+
+country_event = {
+	id =  CHI_1936.3
+	title = CHI_1936.3.t
+	desc =  CHI_1936.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name =  CHI_1936.3.a
+		ROG = {
+			promote_character = ROG_Yuhanmou
+		}
+	}	
+}
