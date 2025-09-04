@@ -97,6 +97,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Democracy_Over_Autocracy
 		}
+		immediate = {
+		CHI =  { country_event = { id = CHI.1 } }
+	}
 		completion_reward = {
 				add_power_balance_value = {
 						id = CHI_struggle_balance_00
