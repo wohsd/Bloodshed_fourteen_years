@@ -131,7 +131,7 @@ country_event = {
 
 	option = {
 		name = CHI.5.a
-		set_country_flag = chi_hencheng_01
+		chi = { set_country_flag = chi_hencheng_01 }
 	}
 }
 country_event = {
@@ -168,7 +168,7 @@ country_event = {
     is_triggered_only = yes
 
 	option = {
-		name = CHI8.a
+		name = CHI.8.a
 		CHI =  { country_event = { id = CHI.9  days = 3 } }
 	}
 }

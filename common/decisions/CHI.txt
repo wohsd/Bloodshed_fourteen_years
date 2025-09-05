@@ -1311,18 +1311,17 @@ CHI_Purging_party_category = {
 		}
 	}
 
+
 	ChenCheng_under_house_arrest = {
 		available = {
-			hidden_effect = {
 				AND={
-			        not = { chi = { has_country_flag = CHI_DengYangDa1 }}
-			        chi = {has_country_flag = chi_chencheng_01}
+			        not = { has_country_flag = CHI_DengYangDa1 }
+			        has_country_flag = chi_chencheng_01
 				}
-			}
-		} 
+				}
 		visible = { 
 			AND={
-			    chi = {has_country_flag = chi_chencheng_01}
+			    has_country_flag = chi_chencheng_01
 			    date < 1931.11.29 
 			}
 		 }
@@ -1333,7 +1332,7 @@ CHI_Purging_party_category = {
 			factor = 0
 		} 
 		complete_effect = {
-			chi = {country_event = { id = CHI.6 }}
+			chi = { country_event = { id = CHI.6} }
 			hidden_effect = {
 			random_unit_leader = {
 					limit = { is_character = CHI_ChenCheng }
@@ -1341,7 +1340,6 @@ CHI_Purging_party_category = {
 			}
 			}
 		}
-
 	}
 
 	The_uprising_underway = {
@@ -1357,7 +1355,7 @@ CHI_Purging_party_category = {
 				tag = CHI
 				date < 1931.11.29
 			}
-			#has_country_flag = Long_march_mission0
+
 		}
 		visible = { 
 			
