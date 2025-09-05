@@ -1314,12 +1314,17 @@ CHI_Purging_party_category = {
 	ChenCheng_under_house_arrest = {
 		available = {
 			hidden_effect = {
-			not = { has_country_flag = CHI_DengYangDa1 }
+				AND={
+			        not = { chi = { has_country_flag = CHI_DengYangDa1 }}
+			        chi = {has_country_flag = chi_chencheng_01}
+				}
 			}
 		} 
 		visible = { 
-			chi = {has_country_flag = chi_chencheng_01}
-			date < 1931.11.29 
+			AND={
+			    chi = {has_country_flag = chi_chencheng_01}
+			    date < 1931.11.29 
+			}
 		 }
 		cost = 20 
 		days_remove= 3

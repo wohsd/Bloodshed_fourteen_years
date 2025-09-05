@@ -157,6 +157,30 @@ country_event = {
 
 	option = {
 		name = CHI.7.a
+		CHI =  { country_event = { id = CHI.8  days = 3 } }
+	}
+}
+country_event = {
+	id = CHI.8
+	title =  CHI.8.t
+	desc = CHI.8.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI8.a
+		CHI =  { country_event = { id = CHI.9  days = 3 } }
+	}
+}
+country_event = {
+	id = CHI.9
+	title =  CHI.9.t
+	desc = CHI.9.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.9.a
 	}
 }
 
