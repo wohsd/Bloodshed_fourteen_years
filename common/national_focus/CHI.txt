@@ -1621,6 +1621,9 @@ completion_reward = {
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
+		available = {
+			not = { has_country_flag = jiangjieshi_gg }
+		}
 		mutually_exclusive = {
 			focus = Democracy_Over_Autocracy
 		}
