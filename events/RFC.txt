@@ -32,8 +32,9 @@ country_event = {
 	option = {
 		name = RFC_country.1.a
 		RFC = { 
+			load_oob = "RFC_1931"
 			set_rule = { 
-                can_not_declare_war=no
+                can_not_declare_war = no
             }
 			create_wargoal = {
 					target = CHI
@@ -46,8 +47,9 @@ country_event = {
 	option = {
 		name = RFC_country.1.b
 		RFC = { 
+			load_oob = "RFC_1931"
 			set_rule = { 
-                can_not_declare_war=no
+                can_not_declare_war = no
             }
 			create_wargoal = {
 					target = CHI
