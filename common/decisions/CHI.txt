@@ -1339,7 +1339,7 @@ CHI_Purging_party_category = {
 					set_nationality = RFC
 					add_country_leader_role = {
 		            country_leader = {
-					    ideology = despotism
+					    ideology = socialism
 						traits = {}
 						expire = "1965.1.1.1"
 					    }
@@ -1352,11 +1352,11 @@ CHI_Purging_party_category = {
 				transfer_state = 269
 				transfer_state = 281
 				transfer_state = 292
-				600 = { add_core_of = RFC }
-				262 = { add_core_of = RFC }
-				269 = { add_core_of = RFC }
-				281 = { add_core_of = RFC }
-				292 = { add_core_of = RFC }
+				add_state_core = 600
+				add_state_core = 262
+				add_state_core = 269
+				add_state_core = 281
+				add_state_core = 292
 				set_capital = {
 					state = 281
 				}

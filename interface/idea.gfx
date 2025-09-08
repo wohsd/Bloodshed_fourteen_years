@@ -229,5 +229,9 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 5
 	}
-	
+	spriteType = {
+		name = "GFX_idea_Provisional_Committee_Uprising"
+		texturefile = "gfx/interface/ideas/CHI/Provisional_Committee_Uprising.png"
+	}
+
 }

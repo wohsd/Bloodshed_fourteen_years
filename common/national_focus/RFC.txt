@@ -171,7 +171,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Contact_the_old_warlords.
+		id = Contact_the_old_warlords
 		icon = GFX_focus_RAJ_a_private_military
 		cost = 10
 		x = 21
