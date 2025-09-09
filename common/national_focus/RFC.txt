@@ -134,7 +134,7 @@ focus_tree = {
 			focus = Contact_the_anti_Chiang_forces
 		}
 		mutually_exclusive = {
-			focus = Contact_the_old_warlords.
+			focus = Contact_the_old_warlords
 		}
 	}
 	focus = {
@@ -190,7 +190,7 @@ focus_tree = {
 		x = 19
 		y = 3
 		prerequisite = {
-			focus = Contact_the_old_warlords.
+			focus = Contact_the_old_warlords
 		}
 	}
 	focus = {
@@ -200,7 +200,7 @@ focus_tree = {
 		x = 23
 		y = 3
 		prerequisite = {
-			focus = Contact_the_old_warlords.
+			focus = Contact_the_old_warlords
 		}
 	}
 	focus = {
