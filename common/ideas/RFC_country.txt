@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+
+		{RFC}_Provisional_Committee_Uprising = {
+
+			name = {RFC}_Provisional_Committee_Uprising
+
+			picture = GFX_idea_Provisional_Committee_Uprising
+			allowed = { always = yes }
+			removal_cost = -
+
+			modifier = {
+				political_power_cost = 0.5
+				supply_consumption_factor = -0.25
+                breakthrough_factor = 0.5
+				army_infantry_attack_factor = 0.5
+	            army_infantry_defence_factor = 0.5
+                surrender_limit = -0.4
+
+			}
+			#该国家精神提供的buff或debuff，可以上网查询id
+		}
+	}
+}

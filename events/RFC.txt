@@ -32,9 +32,13 @@ country_event = {
 	option = {
 		name = RFC_country.1.a
 		RFC = { 
+			hidden_effect = {
+			load_oob = "RFC_1931"
+			load_focus_tree = RFC
 			set_rule = { 
-                can_not_declare_war=no
+                can_not_declare_war = no
             }
+		}
 			create_wargoal = {
 					target = CHI
 					type = annex_everything
@@ -46,9 +50,13 @@ country_event = {
 	option = {
 		name = RFC_country.1.b
 		RFC = { 
+			hidden_effect = {
+			load_oob = "RFC_1931"
+			load_focus_tree = RFC
 			set_rule = { 
-                can_not_declare_war=no
+                can_not_declare_war = no
             }
+		}
 			create_wargoal = {
 					target = CHI
 					type = annex_everything

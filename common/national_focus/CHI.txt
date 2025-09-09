@@ -91,12 +91,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Liao_Zhongkai_Issue
-		icon = GFX_kmt05
+		id = The_Fourth_National_Congress
+		icon = GFX_focus_AUS_disregard_the_treaties
 		cost = 2.00
 		prerequisite = {
 			focus = Democracy_Over_Autocracy
 		}
+		select_effect = {
+		CHI =  { country_event = { id = CHI.7 } }
+	}
 		completion_reward = {
 				add_power_balance_value = {
 						id = CHI_struggle_balance_00
@@ -112,7 +115,7 @@ focus_tree = {
 		icon = GFX_kmt04
 		cost = 2.00
 		prerequisite = {
-			focus = Liao_Zhongkai_Issue
+			focus = The_Fourth_National_Congress
 		}
 		mutually_exclusive = {
 			focus = Wang_Jingwei_Leadership
@@ -129,11 +132,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = The_Fourth_National_Congress
-		icon = GFX_focus_AUS_disregard_the_treaties
+		id = Liao_Zhongkai_Issue
+		icon = GFX_kmt05
 		cost = 7.00
 		prerequisite = {
-			focus = Liao_Zhongkai_Issue
+			focus = The_Fourth_National_Congress
 		}
 		completion_reward = {
 				add_power_balance_value = {
@@ -150,7 +153,7 @@ focus_tree = {
 		icon = GFX_kmt_42
 		cost = 7.00
 		prerequisite = {
-			focus = The_Fourth_National_Congress
+			focus = Liao_Zhongkai_Issue
 		}
 		completion_reward = {
 				add_power_balance_value = {
@@ -244,7 +247,7 @@ focus_tree = {
 		icon = GFX_focus_GER_strengthen_the_proletarian_international
 		cost = 7.00
 		prerequisite = {
-			focus = The_Fourth_National_Congress
+			focus = Liao_Zhongkai_Issue
 		}
 		x = 38
 		y = 5
@@ -255,7 +258,7 @@ focus_tree = {
 		icon = GFX_focus_generic_advanced_military_studies
 		cost = 7.00
 		prerequisite = {
-			focus = The_Fourth_National_Congress
+			focus = Liao_Zhongkai_Issue
 		}
 		completion_reward = {
 				add_power_balance_value = {
@@ -701,7 +704,7 @@ add_core_of = CHI
 		icon = GFX_kmt07
 		cost = 2.00
 		prerequisite = {
-			focus = Liao_Zhongkai_Issue
+			focus = The_Fourth_National_Congress
 		}
 		mutually_exclusive = {
 			focus = Hu_Hanmin_Leadership
@@ -751,7 +754,7 @@ add_core_of = CHI
 			focus = Redraft_Party_Program
 		}
 		prerequisite = {
-			focus = The_Fourth_National_Congress
+			focus = Liao_Zhongkai_Issue
 		}
 		prerequisite = {
 			focus = Redraft_Party_Program
@@ -1617,6 +1620,9 @@ completion_reward = {
 		cost = 5.00
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
+		}
+		available = {
+			not = { has_country_flag = jiangjieshi_gg }
 		}
 		mutually_exclusive = {
 			focus = Democracy_Over_Autocracy
@@ -3082,7 +3088,7 @@ completion_reward = {
 		icon = GFX_kmt_49
 		cost = 7.00
 		prerequisite = {
-			focus = The_Fourth_National_Congress
+			focus = Liao_Zhongkai_Issue
 		}
 		prerequisite = {
 			focus = Party_Ruled_State
@@ -3192,7 +3198,7 @@ completion_reward = {
 		}
 		prerequisite = {
 			focus = Seek_Overseas_Chinese_Support
-			focus = Recognize_Puppet_Manchukuo
+			focus = Pan_Asianist_propaganda
 		}
 		x = 38
 		y = 8
@@ -3222,7 +3228,7 @@ completion_reward = {
 
 	}
 	focus = {
-		id = Recognize_Puppet_Manchukuo
+		id = Pan_Asianist_propaganda
 		icon = GFX_kmt_76
 		cost = 7.00
 		prerequisite = {

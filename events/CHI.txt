@@ -37,6 +37,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.1.b
+		trigger = { not= { has_completed_focus = Chiang_Kai_shek_Consolidates_Power } } 
 		ai_chance = {
             base = 0     
         }
@@ -67,6 +68,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.2.b
+		trigger = { not= { has_country_flag = CHI_DengYangDa1 } } 
 		custom_effect_tooltip = CHI.2.b.d
 	}
 }
@@ -86,7 +88,7 @@ country_event = {
 }
 
 country_event = {
-	id = CHI.92
+	id = CHI_hidden.2
 	hidden = yes
     fire_only_once = yes
 
@@ -131,7 +133,14 @@ country_event = {
 
 	option = {
 		name = CHI.5.a
-		set_country_flag = chi_hencheng_01
+		custom_effect_tooltip = CHI.5.a.d
+		hidden_effect = {
+			random_unit_leader = {
+					limit = { is_character = CHI_ChenCheng }
+					set_nationality = RFC
+			}
+		CHI =  { country_event = { id = CHI.6  days = 30 } }
+		}
 	}
 }
 country_event = {
@@ -143,6 +152,41 @@ country_event = {
 
 	option = {
 		name = CHI.6.a
+	}
+}
+country_event = {
+	id = CHI.7
+	title =  CHI.7.t
+	desc = CHI.7.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.7.a
+		CHI =  { country_event = { id = CHI.8  days = 3 } }
+	}
+}
+country_event = {
+	id = CHI.8
+	title =  CHI.8.t
+	desc = CHI.8.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.8.a
+		CHI =  { country_event = { id = CHI.9  days = 3 } }
+	}
+}
+country_event = {
+	id = CHI.9
+	title =  CHI.9.t
+	desc = CHI.9.d
+    fire_only_once = yes  
+    is_triggered_only = yes
+
+	option = {
+		name = CHI.9.a
 	}
 }
 

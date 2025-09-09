@@ -1311,34 +1311,6 @@ CHI_Purging_party_category = {
 		}
 	}
 
-	ChenCheng_under_house_arrest = {
-		available = {
-			hidden_effect = {
-			not = { has_country_flag = CHI_DengYangDa1 }
-			}
-		} 
-		visible = { 
-			chi = {has_country_flag = chi_chencheng_01}
-			date < 1931.11.29 
-		 }
-		cost = 20 
-		days_remove= 3
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 0
-		} 
-		complete_effect = {
-			chi = {country_event = { id = CHI.6 }}
-			hidden_effect = {
-			random_unit_leader = {
-					limit = { is_character = CHI_ChenCheng }
-					set_nationality = RFC
-			}
-			}
-		}
-
-	}
-
 	The_uprising_underway = {
 		icon = generic_civil_support
 		available = {
@@ -1352,7 +1324,7 @@ CHI_Purging_party_category = {
 				tag = CHI
 				date < 1931.11.29
 			}
-			#has_country_flag = Long_march_mission0
+
 		}
 		visible = { 
 			
@@ -1367,7 +1339,7 @@ CHI_Purging_party_category = {
 					set_nationality = RFC
 					add_country_leader_role = {
 		            country_leader = {
-					    ideology = despotism
+					    ideology = socialism
 						traits = {}
 						expire = "1965.1.1.1"
 					    }
@@ -1380,11 +1352,11 @@ CHI_Purging_party_category = {
 				transfer_state = 269
 				transfer_state = 281
 				transfer_state = 292
-				600 = { add_core_of = RFC }
-				262 = { add_core_of = RFC }
-				269 = { add_core_of = RFC }
-				281 = { add_core_of = RFC }
-				292 = { add_core_of = RFC }
+				add_state_core = 600
+				add_state_core = 262
+				add_state_core = 269
+				add_state_core = 281
+				add_state_core = 292
 				set_capital = {
 					state = 281
 				}
