@@ -31,17 +31,11 @@ country_event = {
 	}
 	option = {
 		name = RFC_country.1.a
-		RFC = { 
-			hidden_effect = {
-			load_oob = "RFC_1931"
-			load_focus_tree = RFC
-			set_rule = { 
-                can_not_declare_war = no
-            }
-		}
+		RFC = {
+		    complete_national_focus = The_Third_Road
 			create_wargoal = {
 					target = CHI
-					type = annex_everything
+					type = topple_government
 					caller = RFC
 				}
 			change_tag_from = CHI
@@ -50,16 +44,10 @@ country_event = {
 	option = {
 		name = RFC_country.1.b
 		RFC = { 
-			hidden_effect = {
-			load_oob = "RFC_1931"
-			load_focus_tree = RFC
-			set_rule = { 
-                can_not_declare_war = no
-            }
-		}
+		    complete_national_focus = The_Third_Road
 			create_wargoal = {
 					target = CHI
-					type = annex_everything
+					type = topple_government
 					caller = RFC
 				}
 		}

@@ -1295,7 +1295,7 @@ CHI_Purging_party_category = {
 		available = {
 		} 
 		visible = {
-			date < 1931.11.29 
+			date < 1931.8.23
 		}
 		cost = 20 
 		days_remove= 3
@@ -1347,6 +1347,12 @@ CHI_Purging_party_category = {
 				}
 			}
             RFC = {
+				hidden_effect = {
+			        load_focus_tree = RFC
+			    set_rule = { 
+                    can_not_declare_war = no
+                }
+					add_popularity = { ideology = democratic popularity = 0.7 }
 				transfer_state = 600
 				transfer_state = 262
 				transfer_state = 269
@@ -1357,8 +1363,19 @@ CHI_Purging_party_category = {
 				add_state_core = 269
 				add_state_core = 281
 				add_state_core = 292
+			}
 				set_capital = {
 					state = 281
+				}
+				load_oob = "RFC_1931"
+			}
+			CHI = {
+				hidden_effect = {
+					remove_state_core = 600
+					remove_state_core = 262
+					remove_state_core = 269
+					remove_state_core = 281
+					remove_state_core = 292
 				}
 			}
 		}
