@@ -11,7 +11,10 @@ news_event = {
 	trigger = {
 	}
     immediate = {
-        CHI = { country_event = RFC_country.1 } 
+		hidden_effect = {
+			CHI = { country_event = RFC_country.1 } 
+		}
+        
 	}
 	option = {
 		name = RFC_NEW.1.a
