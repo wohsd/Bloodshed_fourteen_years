@@ -33,11 +33,7 @@ country_event = {
 		name = RFC_country.1.a
 		RFC = {
 		    complete_national_focus = The_Third_Road
-			create_wargoal = {
-					target = CHI
-					type = topple_government
-					caller = RFC
-				}
+			declare_war_on = { target = CHI type = topple_government }
 			change_tag_from = CHI
 		}
 	}
@@ -45,11 +41,7 @@ country_event = {
 		name = RFC_country.1.b
 		RFC = { 
 		    complete_national_focus = The_Third_Road
-			create_wargoal = {
-					target = CHI
-					type = topple_government
-					caller = RFC
-				}
+			declare_war_on = { target = CHI type = topple_government }
 		}
 	}
 }

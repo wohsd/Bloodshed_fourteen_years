@@ -554,9 +554,13 @@ country_event = {
     trigger = {
 		RFC = {
 			AND={
+				has_country_leader = { 
+					ruling_only = yes 
+					name = RFC_LiJiSheng
+				}
 				has_war = yes
 				NOT = {
-					controls_province = 1286
+					   controls_province = 1286
 				}
 				
 			}

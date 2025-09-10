@@ -111,15 +111,14 @@ units = {
 	}
 
 
-	#建宁
 	division= {	
-		location = 2273
+		location = 3884
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division= {	
-		location = 3961
+		location = 2186
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
