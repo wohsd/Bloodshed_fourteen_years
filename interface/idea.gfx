@@ -231,7 +231,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Provisional_Committee_Uprising"
-		texturefile = "gfx/interface/ideas/CHI/Provisional_Committee_Uprising.png"
+		texturefile = "gfx/interface/ideas/RFC/Provisional_Committee_Uprising.png"
 	}
 
 }

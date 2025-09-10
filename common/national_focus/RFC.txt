@@ -12,6 +12,9 @@ focus_tree = {
 		id = The_Third_Road
 		icon = GFX_focus_GER_the_peoples_victory
 		cost = 10
+		completion_reward = { 
+			add_ideas = Provisional_Committee_Uprising
+		}
 		x = 10
 		y = 0
 	}

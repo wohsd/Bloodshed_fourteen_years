@@ -26,7 +26,7 @@ units = {
 
     #南昌
 	division= {	
-		location = 2010
+		location = 2101
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
@@ -50,10 +50,10 @@ units = {
 		start_equipment_factor = 1
 	}
 	division= {	
-		location = 2010
+		location = 2101
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 
 	###福州
@@ -61,13 +61,13 @@ units = {
 		location = 2819
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division= {	
 		location = 3922
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	
     #上饶
@@ -75,25 +75,25 @@ units = {
 		location = 1444
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2661
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2932
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division= {	
 		location = 3380
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 
 	##景德镇
@@ -101,27 +101,26 @@ units = {
 		location = 831
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division= {	
 		location = 2560
 		division_template = "地方部队"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 
 
-	#建宁
 	division= {	
-		location = 2273
+		location = 3884
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division= {	
-		location = 3961
+		location = 2186
 		division_template = "国民革命军"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 	}
 }
