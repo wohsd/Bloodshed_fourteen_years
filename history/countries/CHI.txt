@@ -51,7 +51,8 @@ recruit_character = CHI_GuanLinZheng
 recruit_character = CHI_SunKe
 
 
-recruit_character = CHI_DengYangDa
+recruit_character = RFC_DengYangDa
+recruit_character = RFC_huangqixiang
 
 recruit_character = CHI_ChenQiang
 recruit_character = CHI_ZhangZhiZhong
@@ -231,7 +232,7 @@ add_equipment_to_stockpile = {
 		CHI_army_corruption_1
 		The_Golden_Decade
 	}
-	retire_character = CHI_DengYangDa
+	retire_character = RFC_DengYangDa
 	add_dynamic_modifier = {
 		modifier = Anti_Japanese_zeal
 	}

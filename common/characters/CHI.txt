@@ -87,11 +87,11 @@ characters={
 			id=-1
 		}
 	}
-	CHI_DengYangDa={
-		name=CHI_DengYangDa
+	RFC_DengYangDa={
+		name=RFC_DengYangDa
 		portraits={
 			civilian={
-				large="gfx/leaders/CHI/CHI_DengYangDa.png"
+				large="gfx/leaders/RFC/RFC_DengYangDa.png"
 			}
 		}
 		country_leader={
@@ -99,6 +99,24 @@ characters={
 			traits={ }
 			expire="1965.1.1.1"
 			id=19318
+		}
+		corps_commander = {
+			traits={ 
+				CHI_Provisional_committee
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	RFC_huangqixiang={
+		name=RFC_huangqixiang
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_huangqixiang.png"
+			}
 		}
 		corps_commander = {
 			traits={ 
@@ -168,7 +186,6 @@ characters={
 		corps_commander={
 			traits={ 
 				CHI_Central_Army
-				Ambitious
 			}
 			skill=2
 			attack_skill=2
