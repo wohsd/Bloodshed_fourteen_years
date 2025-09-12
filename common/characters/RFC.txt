@@ -1,4 +1,28 @@
 characters={
+		RFC_DengYangDa={
+		name=RFC_DengYangDa
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_DengYangDa.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		corps_commander = {
+			traits={ 
+				Leftist_Kuomintang
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
 	RFC_LiJiSheng={
 		name=RFC_LiJiSheng
 		portraits={
@@ -12,5 +36,33 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		corps_commander = {
+			traits={ 
+				Leftist_Kuomintang
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
 	}		
+		RFC_huangqixiang={
+		name=RFC_huangqixiang
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_huangqixiang.png"
+			}
+		}
+		corps_commander = {
+			traits={ 
+				Leftist_Kuomintang
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
 	}
+}

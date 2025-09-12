@@ -51,8 +51,8 @@ recruit_character = CHI_GuanLinZheng
 recruit_character = CHI_SunKe
 
 
-recruit_character = RFC_DengYangDa
 recruit_character = RFC_huangqixiang
+recruit_character = RFC_LiJiSheng
 
 recruit_character = CHI_ChenQiang
 recruit_character = CHI_ZhangZhiZhong
@@ -233,6 +233,8 @@ add_equipment_to_stockpile = {
 		The_Golden_Decade
 	}
 	retire_character = RFC_DengYangDa
+	retire_character = RFC_LiJiSheng
+	retire_character = RFC_huangqixiang
 	add_dynamic_modifier = {
 		modifier = Anti_Japanese_zeal
 	}
@@ -247,6 +249,8 @@ add_equipment_to_stockpile = {
 	set_stability = 0.7
 	set_war_support = 0.8
 	set_political_power = 430
+
+	recruit_character = RFC_huangqixiang
 }
 1937.1.1={
 	set_stability = 0.7

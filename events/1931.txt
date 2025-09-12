@@ -19,7 +19,7 @@ unit_leader_event = {
 	}
 	option = {
 		name = Assassinate.1.a
-		retire_character = RFC_DengYangDa
+		RFC = { retire_character = RFC_DengYangDa }
 		add_stability = -0.05
 	}
 }

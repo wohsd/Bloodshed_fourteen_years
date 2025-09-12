@@ -1332,19 +1332,9 @@ CHI_Purging_party_category = {
 		timeout_effect = {
 			news_event = RFC_NEW.1
             random_unit_leader = {
-					limit = { is_character = RFC_DengYangDa }
-					set_nationality = RFC
-					add_country_leader_role = {
-		            country_leader = {
-					    ideology = socialism
-						expire = "1965.1.1.1"
-					}
-					promote_leader = yes
-				}
-			}
-			random_unit_leader = {
 					limit = { is_character = RFC_huangqixiang }
 					set_nationality = RFC
+				
 			}
 			CHI = {
 				declare_war_on = {
