@@ -1336,19 +1336,14 @@ CHI_Purging_party_category = {
 					set_nationality = RFC
 				
 			}
-			CHI = {
-				declare_war_on = {
-					target = RFC
-					type = annex_everything
-				}
-			}
             RFC = {
 				hidden_effect = {
-			        load_focus_tree = RFC
+				set_politics = { ruling_party = communism }
+			    load_focus_tree = RFC
 			    set_rule = { 
                     can_not_declare_war = no
                 }
-					add_popularity = { ideology = democratic popularity = 0.7 }
+					add_popularity = { ideology = communism popularity = 0.5 }
 				transfer_state = 262
 				transfer_state = 269
 				transfer_state = 281
