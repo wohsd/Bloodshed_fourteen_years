@@ -32,14 +32,40 @@ country_event = {
 		name = CHI.1.a
 		CHI =  { country_event = { id = CHI.2  days = 3 } }
 		ai_chance = {
-            base = 20     
+            base = 100  
+			modifier = {
+				or={
+			        has_game_rule = {
+				        rule = Restructuring_meeting_win
+			        	option = Restructuring_meeting_win
+			        }
+			        has_game_rule = {
+				        rule = Kuomintang_Rightists_win
+				        option = Kuomintang_Rightists_win
+			        }
+		            }
+			factor = 0
+			}
         }
 	}
 	option = {
 		name = CHI.1.b
 		trigger = { not= { has_completed_focus = Chiang_Kai_shek_Consolidates_Power } } 
 		ai_chance = {
-            base = 0     
+            base = 0 
+			modifier = {
+				or={
+			        has_game_rule = {
+				        rule = Restructuring_meeting_win
+			        	option = Restructuring_meeting_win
+			        }
+			        has_game_rule = {
+				        rule = Kuomintang_Rightists_win
+				        option = Kuomintang_Rightists_win
+			        }
+		            }
+			factor = 100
+			}   
         }
 		CHI =  { 
 			country_event = { id = CHI.3  days = 3 } 

@@ -1295,6 +1295,12 @@ CHI_Purging_party_category = {
 		available = {
 		} 
 		visible = {
+			not={
+				has_game_rule = {
+				        rule = Leftist_Kuomintang_win
+			        	option = Leftist_Kuomintang_win
+			        }
+			}
 			date < 1931.8.23
 		}
 		cost = 20 
