@@ -6,27 +6,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_trait_CHI_Central_Army"
-		texturefile = "gfx/interface/traits/trait_CHI_Central_Army.png"
+		texturefile = "gfx/interface/traits/trait_CHI_Central_Army.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_trait_Ambitious"
-		texturefile = "gfx/interface/traits/trait_Ambitious.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_trait_CHI_Provisional_committee"
-		texturefile = "gfx/interface/traits/trait_CHI_Provisional_committee.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_trait_CHI_Restructuring_meeting"
-		texturefile = "gfx/interface/traits/trait_CHI_Restructuring_meeting.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_trait_CHI_Right"
-		texturefile = "gfx/interface/traits/trait_CHI_Right.png"
+		name = "GFX_trait_Leftist_Kuomintang"
+		texturefile = "gfx/interface/traits/trait_Leftist_Kuomintang.dds"
 		legacy_lazy_load = no
 	}
 	#template for new entries

@@ -1304,10 +1304,10 @@ CHI_Purging_party_category = {
 			factor = 1
 		} 
 		complete_effect = {
-			CHI_DengYangDa = {
+			RFC_DengYangDa = {
 				unit_leader_event = {id=Assassinate.1 days=2}
 			}
-			set_country_flag = CHI_DengYangDa1
+			set_country_flag = RFC_DengYangDa1
 		}
 	}
 
@@ -1315,7 +1315,7 @@ CHI_Purging_party_category = {
 		icon = generic_civil_support
 		available = {
 			hidden_trigger = { 
-				has_country_flag = CHI_DengYangDa1
+				has_country_flag = RFC_DengYangDa1
 			} 
 		}
 		days_mission_timeout =235
@@ -1332,29 +1332,18 @@ CHI_Purging_party_category = {
 		timeout_effect = {
 			news_event = RFC_NEW.1
             random_unit_leader = {
-					limit = { is_character = CHI_DengYangDa }
+					limit = { is_character = RFC_huangqixiang }
 					set_nationality = RFC
-					add_country_leader_role = {
-		            country_leader = {
-					    ideology = socialism
-						expire = "1965.1.1.1"
-					}
-					promote_leader = yes
-				}
-			}
-			CHI = {
-				declare_war_on = {
-					target = RFC
-					type = annex_everything
-				}
+				
 			}
             RFC = {
 				hidden_effect = {
-			        load_focus_tree = RFC
+				set_politics = { ruling_party = communism }
+			    load_focus_tree = RFC
 			    set_rule = { 
                     can_not_declare_war = no
                 }
-					add_popularity = { ideology = democratic popularity = 0.7 }
+					add_popularity = { ideology = communism popularity = 0.5 }
 				transfer_state = 262
 				transfer_state = 269
 				transfer_state = 281

@@ -48,3 +48,22 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = RFC_country.2
+	title = RFC_country.2.t
+	desc = RFC_country.2.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+    immediate = {	
+	}
+	option = {
+		name = RFC_country.2.a
+	}
+	option = {
+		name = RFC_country.2.b
+	}
+}

@@ -68,7 +68,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.2.b
-		trigger = { not= { has_country_flag = CHI_DengYangDa1 } } 
+		trigger = { not= { has_country_flag = RFC_DengYangDa1 } } 
 		custom_effect_tooltip = CHI.2.b.d
 	}
 }

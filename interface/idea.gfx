@@ -233,5 +233,8 @@ spriteTypes = {
 		name = "GFX_idea_Provisional_Committee_Uprising"
 		texturefile = "gfx/interface/ideas/RFC/Provisional_Committee_Uprising.png"
 	}
-
+	spriteType = {
+		name = "GFX_idea_Political_Department"
+		texturefile = "gfx/interface/ideas/RFC/Political_Department.png"
+	}
 }

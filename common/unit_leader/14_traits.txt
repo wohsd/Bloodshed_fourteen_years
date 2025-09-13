@@ -40,28 +40,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	Ambitious = {
-		type = { land navy }
-		trait_type = personality_trait
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	CHI_Provisional_committee = {
-		type = { land navy }
-		trait_type = personality_trait
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	CHI_Restructuring_meeting = {
-		type = { land navy }
-		trait_type = personality_trait
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	CHI_Right = {
+	Leftist_Kuomintang = {
 		type = { land navy }
 		trait_type = personality_trait
 		new_commander_weight = {

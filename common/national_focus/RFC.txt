@@ -14,6 +14,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { 
 			add_ideas = Provisional_Committee_Uprising
+			declare_war_on = { target = CHI type = annex_everything  }
 		}
 		x = 10
 		y = 0
@@ -21,7 +22,7 @@ focus_tree = {
 	focus = {
 		id = Revolutionar_Military_Academy
 		icon = GFX_goal_rhineland
-		cost = 10
+		cost = 5
 		x = 5
 		y = 1
 		prerequisite = {
@@ -51,9 +52,24 @@ focus_tree = {
 	focus = {
 		id = Reconstruct_the_Political_Department
 		icon = GFX_focus_prc_agrarian_socialism
-		cost = 10
+		cost = 5
 		x = 10
 		y = 1
+		completion_reward = { 
+			RFC = { country_event = { id = RFC_country.2 } }
+		    add_dynamic_modifier = {
+				modifier = Political_Department
+			}
+			add_to_variable = {
+				RFC_army_org_factor = 0.04
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.1
+			}
+			add_to_variable = { 
+				RFC_political_power_gain = 0.2 
+			}   
+		}
 		prerequisite = {
 			focus = The_Third_Road
 		}

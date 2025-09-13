@@ -87,30 +87,6 @@ characters={
 			id=-1
 		}
 	}
-	CHI_DengYangDa={
-		name=CHI_DengYangDa
-		portraits={
-			civilian={
-				large="gfx/leaders/CHI/CHI_DengYangDa.png"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			traits={ }
-			expire="1965.1.1.1"
-			id=19318
-		}
-		corps_commander = {
-			traits={ 
-				CHI_Provisional_committee
-			}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 3
-		}
-	}
 	CHI_ChenCheng={
 		name=CHI_ChenCheng
 		portraits={
@@ -168,7 +144,6 @@ characters={
 		corps_commander={
 			traits={ 
 				CHI_Central_Army
-				Ambitious
 			}
 			skill=2
 			attack_skill=2
