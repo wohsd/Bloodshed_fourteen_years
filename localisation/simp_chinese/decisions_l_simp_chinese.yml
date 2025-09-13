@@ -260,3 +260,11 @@ Support_self_cultivating_farmers_desc: "推行'耕者有其田'政策，向贫�
 
 Severe_corruption_punishment: "严惩贪污"
 Severe_corruption_punishment_desc: "建立严格的廉政监督体系，对贪污腐败行为实行零容忍政策。设立特别法庭快速审理腐败案件，重拳打击官场腐败，重建政府公信力。"
+
+
+Yunnan_Burma_Highway_category: "滇缅公路"
+Yunnan_Burma_Highway_category_desc: "日军可能会切断中国的国际交通线，香港和越南的国际运输必会受到影响，云南省政府主席龙云提出《建设滇缅公路和滇缅铁路计划》，建议修一条从昆明出发经云南西部到缅甸北部最后直通印度洋的铁路和公路，确保西南对外交通畅通无阻，并表示：公路由地方负责，中央补助；铁路由中央负责，云南地方政府协助修筑。\n\n当前修筑进度：[?Yunnan_Burma_var]"
+
+Conscript_laborers: "征召民夫"
+Mobilize_the_masses: "动员群众"
+Under_construction: "施工中"
