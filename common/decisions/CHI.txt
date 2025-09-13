@@ -2061,3 +2061,90 @@ Scorched_earth_policy = {
 		}
 	}
 }
+
+
+
+
+
+
+Yunnan_Burma_Highway_category = { 
+	Under_construction= {
+		available = {
+			always = no
+		}
+		days_mission_timeout = 60
+		activation = { 
+			always = yes
+			has_completed_focus = CHIFocus_5
+		}		
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = yes
+		timeout_effect = {
+			add_political_power = 20
+			add_to_variable = {
+				Yunnan_Burma_var = 10
+			}
+			clamp_variable = {
+				var = Yunnan_Burma_var
+				min = 0
+				max = 100
+			}
+		} 
+		complete_effect = {
+		}
+	}
+	Conscript_laborers = {
+		icon = generic_scorched_earth
+		available = {
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+		visible = {			
+		}
+
+		days_re_enable = 30
+
+		complete_effect = {
+			add_to_variable = {
+				Yunnan_Burma_var = 10
+			}
+			clamp_variable = {
+				var = Yunnan_Burma_var
+				min = 0
+				max = 100
+			}
+		}
+	}
+
+	Mobilize_the_masses = {
+		icon = generic_scorched_earth
+		available = {
+		}
+  
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+		visible = {			 
+		}
+
+		days_re_enable = 30
+
+		complete_effect = {
+			add_to_variable = {
+				Yunnan_Burma_var = 10
+			}
+			clamp_variable = {
+				var = Yunnan_Burma_var
+				min = 0
+				max = 100
+			}
+		}
+	}
+}

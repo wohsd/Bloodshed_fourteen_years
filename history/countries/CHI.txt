@@ -307,3 +307,6 @@ add_equipment_to_stockpile = {
 	set_oob = "CHI_1944"
 }
 
+1931.1.1={
+	add_political_power = 1000
+}

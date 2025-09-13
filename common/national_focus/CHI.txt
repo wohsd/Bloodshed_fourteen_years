@@ -3408,7 +3408,9 @@ completion_reward = {
 		}
 		x = 56
 		y = 13
-
+		completion_reward = {
+			unlock_decision_category_tooltip = Yunnan_Burma_Highway_category
+		}
 	}
 	focus = {
 		id = CHIFocus_6
