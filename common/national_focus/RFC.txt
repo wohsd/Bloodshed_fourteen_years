@@ -61,13 +61,16 @@ focus_tree = {
 				modifier = Political_Department
 			}
 			add_to_variable = {
-				RFC_army_org_factor = 0.04
+				RFC_army_org_factor = 0.4
 			}
 			add_to_variable = { 
                 RFC_supply_consumption_factor = -0.1
 			}
 			add_to_variable = { 
-				RFC_political_power_gain = 0.2 
+				RFC_political_power_gain = 0.3
+			}   
+			add_to_variable = { 
+				RFC_experience_loss_factor = 0.1
 			}   
 		}
 		prerequisite = {
@@ -152,6 +155,14 @@ focus_tree = {
 		prerequisite = {
 			focus = Contact_the_anti_Chiang_forces
 		}
+		available = {
+		    NOT = { PRC = { has_idea = Leftism }}
+	    }
+		completion_reward = { 
+			PRC = {
+				add_to_faction = RFC
+			}
+		}
 		mutually_exclusive = {
 			focus = Contact_the_old_warlords
 		}
@@ -165,6 +176,27 @@ focus_tree = {
 		prerequisite = {
 			focus = Contact_the_Communist_Party
 		}
+		completion_reward = { 
+			add_to_variable = {
+				RFC_army_org_factor = 0.02
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.05
+			}
+			add_to_variable = { 
+                RFC_army_morale_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_army_defence_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_army_attack_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_communism_drift  = 0.01
+			}
+		}
+        
 	}
 	focus = {
 		id = Expanded_Political_Department
@@ -177,6 +209,29 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Revolutionar_Education
+		}
+		completion_reward = { 
+			add_to_variable = {
+				RFC_army_org_factor = 0.02
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.05
+			}
+			add_to_variable = { 
+                RFC_army_morale_factor = 0.05
+			}
+			add_to_variable = { 
+				RFC_political_power_gain = 0.1 
+			}
+			add_to_variable = { 
+                RFC_army_defence_factor = 0.05
+			}
+			add_to_variable = { 
+                RFC_army_attack_factor = 0.05
+			}
+			add_to_variable = { 
+				RFC_experience_loss_factor = 0.05
+			}     
 		}
 	}
 	focus = {

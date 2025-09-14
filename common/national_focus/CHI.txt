@@ -84,7 +84,10 @@ focus_tree = {
 			    add_to_faction = ROG 
 			    add_to_faction = ROC
 				hidden_effect = {
-				set_power_balance = { id = CHI_struggle_balance_00 }
+				set_power_balance = { 
+					id = CHI_struggle_balance_00
+					set_default =yes
+				}
 			    }
 	        }
 		}
