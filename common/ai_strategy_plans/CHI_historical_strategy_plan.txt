@@ -6,14 +6,22 @@ CHI_default_plan = {
 		original_tag = CHI
 	}
 	enable = {
-
+        OR = {
+	    	has_country_flag = CHI_AI_RANDOM_14_RULE_OPTION_DEFAULT
+		    has_game_rule = {
+		        rule = CHI_AI_behavior
+			    option = 14_RULE_OPTION_DEFAULT
+		    }
+    	}
 	}
 	abort = {
 		always = no
 	}
 
 	focus_factors = {
-	
+	Chiang_Kai_shek_Consolidates_Power = 20
+	Democracy_Over_Autocracy = 0
+	Resistance_First_to_Save_Nation = 0
 	}
 
 	research = {

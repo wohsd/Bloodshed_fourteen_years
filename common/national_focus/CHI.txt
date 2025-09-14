@@ -1629,17 +1629,14 @@ completion_reward = {
 		}
 		x = 94
 		y = 1
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_trait = {
-							character = CHI_JiangJieShi
-							ideology = despotism
-							trait = dictator
-						}
-					custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
-				}
+		completion_reward = {
+			add_trait = {
+					character = CHI_JiangJieShi
+					ideology = despotism
+					trait = dictator
+			}
+			custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
+		}
 
 	}
 	focus = {

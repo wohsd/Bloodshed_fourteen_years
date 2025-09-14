@@ -1837,3 +1837,20 @@ news_event = {
 			name = WorldNew.36.a
 		}		
 	}
+news_event = {
+		id = WorldNew.37
+		title = WorldNew.37.t
+		desc = WorldNew.37.d
+	
+		picture = GFX_news_event_generic_sign_treaty1
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.37.a
+		}		
+	}
+

@@ -597,19 +597,34 @@ CHI_ai_behavior = {
 		desc = "14_RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = Leftist_Kuomintang_win
-		text = "Leftist_Kuomintang_win"
-		desc = "Leftist_Kuomintang_win_AI_DESC"
-	}
-	option = {
 		name = Restructuring_meeting_win
 		text = "Restructuring_meeting_win"
 		desc = "Restructuring_meeting_win_AI_DESC"
+		allow_achievements = yes
 	}
 	option = {
 		name = Kuomintang_Rightists_win
 		text = "Kuomintang_Rightists_win"
 		desc = "Kuomintang_Rightists_win_AI_DESC"
+		allow_achievements = yes
+	}
+		option = {
+		name = Leftist_Kuomintang_win
+		text = "Leftist_Kuomintang_win"
+		desc = "Leftist_Kuomintang_win_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = The_Struggle_of_the_Left_Wing
+		text = "The_Struggle_of_the_Left_Wing"
+		desc = "The_Struggle_of_the_Left_Wing_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = The_struggle_between_left_and_right
+		text = "The_struggle_between_left_and_right"
+		desc = "The_struggle_between_left_and_right_AI_DESC"
+		allow_achievements = yes
 	}
 }
 

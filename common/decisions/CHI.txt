@@ -1296,10 +1296,20 @@ CHI_Purging_party_category = {
 		} 
 		visible = {
 			not={
-				has_game_rule = {
-				        rule = Leftist_Kuomintang_win
-			        	option = Leftist_Kuomintang_win
+				or={
+				    has_game_rule = {
+				            rule = CHI_AI_behavior
+			        	    option = Leftist_Kuomintang_win
 			        }
+					has_game_rule = {
+				            rule = CHI_AI_behavior
+			        	    option = The_Struggle_of_the_Left_Wing
+			        }
+					has_game_rule = {
+				            rule = HI_AI_behavior
+			        	    option = The_struggle_between_left_and_right
+			        }
+				}
 			}
 			date < 1931.8.23
 		}
