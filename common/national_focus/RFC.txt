@@ -136,11 +136,18 @@ focus_tree = {
 	focus = {
 		id = Contact_the_anti_Chiang_forces
 		icon = GFX_goal_tripartite_pact
-		cost = 10
+		cost = 5
 		x = 18
 		y = 1
 		prerequisite = {
 			focus = The_Third_Road
+		}
+		completion_reward = { 
+		   add_equipment_to_stockpile = {
+		   type = infantry_equipment
+		   amount = 1000
+		   producer = RFC
+	       }
 		}
 	}
 	focus = {
@@ -159,6 +166,7 @@ focus_tree = {
 		    NOT = { PRC = { has_idea = Leftism }}
 	    }
 		completion_reward = { 
+			add_popularity = { ideology = communism popularity = 0.1 }
 			PRC = {
 				add_to_faction = RFC
 			}
@@ -243,6 +251,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Contact_the_Communist_Party
 		}
+        completion_reward = { 
+		    add_to_variable = { 
+				RFC_MODIFIER_TERRAIN_PENALTY_REDUCTION = 0.15
+			}  
+		}
+
 	}
 	focus = {
 		id = Contact_the_old_warlords
@@ -256,6 +270,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Contact_the_Communist_Party
 		}
+		completion_reward = {
+            ROG = {
+		    	add_to_faction = RFC
+			}
+		}
 	}
 	focus = {
 		id = Communication_positional_warfare
@@ -265,6 +284,11 @@ focus_tree = {
 		y = 3
 		prerequisite = {
 			focus = Contact_the_old_warlords
+		}
+		completion_reward = {
+		    add_to_variable = { 
+				RFC_max_dig_in = 5
+			}  
 		}
 	}
 	focus = {
@@ -276,25 +300,38 @@ focus_tree = {
 		prerequisite = {
 			focus = Contact_the_old_warlords
 		}
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 2000
+		    producer = RFC
+	        }
+		}
 	}
 	focus = {
 		id = Build_military_factory
 		icon = GFX_focus_generic_reorient_production
-		cost = 10
+		cost = 5
 		x = 21
 		y = 4
 		prerequisite = {
 			focus = Accepting_assistance
 		}
+		completion_reward = {
+		    add_offsite_building = { type = arms_factory level = 1 }
+		}
 	}
 	focus = {
 		id = Inspire_private_enterprises
 		icon = GFX_focus_generic_industry_1
-		cost = 10
+		cost = 5
 		x = 25
 		y = 4
 		prerequisite = {
 			focus = Accepting_assistance
+		}
+		completion_reward = {
+		    add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
 	focus = {
@@ -308,6 +345,23 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Inspire_private_enterprises
+		}
+		281 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes  #立刻完成 no反之
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes  #立刻完成 no反之
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes  #立刻完成 no反之
+			}
 		}
 	}
 }

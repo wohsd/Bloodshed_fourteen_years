@@ -16,3 +16,42 @@ ideas = {
 		}
 	}
 }
+
+ideas = {
+	economy = {	 #有如下几种类型 economy（经济法案） trade_laws（贸易法案） mobilization_laws（兵役【动员】法案） 
+	    law = yes
+		use_list_view = yes
+		
+	    Revolutionary_Three_Principles_of_the_People_Economy = {
+		    allowed = {
+				RFC = { has_completed_focus = { The_place_where_the_revolution_originated } }
+			}
+			cost = 150
+		    removal_cost = -1 #更换该经济法案的花费（不是切换花费，一般为-1）
+
+		    available = { #启用条件
+		    }
+
+		    on_add = { #添加时的效果（瞬时触发）
+		    }	
+
+		    on_remove = { #移除时的效果（瞬时触发）
+		    }
+
+		    modifier = { #效果（修正）
+                consumer_goods_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				conversion_cost_civ_to_mil_factor= -0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+                local_resources_factor = 0.25
+		    }
+
+		    ai_will_do = { #AI选择该经济法案的倾向
+		    }
+
+		    default = no #是否为默认经济法案
+
+		    cancel_if_invalid = no #如果该经济法案的条件不被满足，则no为不取消，yes为取消
+		}	
+	}
+}
