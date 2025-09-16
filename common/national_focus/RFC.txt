@@ -15,6 +15,9 @@ focus_tree = {
 		completion_reward = { 
 			add_ideas = Provisional_Committee_Uprising
 			declare_war_on = { target = CHI type = annex_everything  }
+			add_dynamic_modifier = {
+				modifier = Political_Department
+			}
 		}
 		x = 10
 		y = 0
@@ -32,9 +35,13 @@ focus_tree = {
 	focus = {
 		id = Establish_weapon_workshop
 		icon = GFX_focus_generic_spur_communist_revolutions
-		cost = 10
+		cost = 5
 		x = 3
 		y = 2
+		completion_reward = {
+			add_ideas = Revolutionary_Armed_Forces
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
 		prerequisite = {
 			focus = Revolutionar_Military_Academy
 		}
@@ -42,9 +49,13 @@ focus_tree = {
 	focus = {
 		id = Requisitioned_factory
 		icon = GFX_focus_spr_class_war
-		cost = 10
+		cost = 5
 		x = 3
 		y = 3
+		completion_reward = {
+            stability_factor = -0.1
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
 		prerequisite = {
 			focus = Establish_weapon_workshop
 		}
@@ -57,9 +68,6 @@ focus_tree = {
 		y = 1
 		completion_reward = { 
 			RFC = { country_event = { id = RFC_country.2 } }
-		    add_dynamic_modifier = {
-				modifier = Political_Department
-			}
 			add_to_variable = {
 				RFC_army_org_factor = 0.4
 			}
@@ -83,6 +91,13 @@ focus_tree = {
 		cost = 10
 		x = 7
 		y = 2
+		completion_reward = { 
+			add_war_support = -0.1
+			add_stability = 0.1 
+			add_to_variable = { 
+				RFC_political_power_gain = 0.05
+			}  
+		}
 		prerequisite = {
 			focus = Reconstruct_the_Political_Department
 		}
@@ -96,6 +111,9 @@ focus_tree = {
 		cost = 10
 		x = 7
 		y = 3
+		completion_reward = { 
+		   add_ideas = Extensive_conscription
+		}
 		prerequisite = {
 			focus = Regulate_military_discipline
 		}
@@ -106,6 +124,17 @@ focus_tree = {
 		cost = 10
 		x = 5
 		y = 4
+		completion_reward = { 
+		   add_to_variable = { 
+                RFC_army_defence_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_army_attack_factor = 0.1
+			}
+			add_to_variable = { 
+                RFC_supply_consumption_factor = -0.1
+			}
+		}
 		prerequisite = {
 			focus = Mobiliz_the_people
 		}
@@ -119,6 +148,9 @@ focus_tree = {
 		cost = 10
 		x = 10
 		y = 2
+		completion_reward = { 
+
+		}
 		prerequisite = {
 			focus = Reconstruct_the_Political_Department
 		}
@@ -129,6 +161,10 @@ focus_tree = {
 		cost = 10
 		x = 10
 		y = 3
+		completion_reward = { 
+			add_research_slot = 1
+
+		}
 		prerequisite = {
 			focus = Carry_out_land_reform
 		}
@@ -195,10 +231,10 @@ focus_tree = {
                 RFC_army_morale_factor = 0.1
 			}
 			add_to_variable = { 
-                RFC_army_defence_factor = 0.1
+                RFC_army_defence_factor = 0.05
 			}
 			add_to_variable = { 
-                RFC_army_attack_factor = 0.1
+                RFC_army_attack_factor = 0.05
 			}
 			add_to_variable = { 
                 RFC_communism_drift  = 0.01
@@ -253,7 +289,10 @@ focus_tree = {
 		}
         completion_reward = { 
 		    add_to_variable = { 
-				RFC_MODIFIER_TERRAIN_PENALTY_REDUCTION = 0.15
+				RFC_terrain_penalty_reduction = 0.15
+			}  
+			add_to_variable = { 
+				RFC_recon_factor = 0.15
 			}  
 		}
 
@@ -287,8 +326,14 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_to_variable = { 
-				RFC_max_dig_in = 5
+				RFC_max_dig_in_factor = 0.15
 			}  
+			add_to_variable = { 
+				RFC_dig_in_speed_factor = 0.15
+			}
+			add_to_variable = { 
+				RFC_recon_factor_while_entrenched = 0.15
+			} 
 		}
 	}
 	focus = {
@@ -318,7 +363,7 @@ focus_tree = {
 			focus = Accepting_assistance
 		}
 		completion_reward = {
-		    add_offsite_building = { type = arms_factory level = 1 }
+		    add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
 	focus = {
@@ -331,7 +376,7 @@ focus_tree = {
 			focus = Accepting_assistance
 		}
 		completion_reward = {
-		    add_offsite_building = { type = industrial_complex level = 1 }
+		    add_offsite_building = { type = industrial_complex level = 2 }
 		}
 	}
 	focus = {
@@ -346,6 +391,8 @@ focus_tree = {
 		prerequisite = {
 			focus = Inspire_private_enterprises
 		}
+		completion_reward = {
+        add_ideas = revolutionary_three_principles_of_the_people_economy 
 		281 = {
 			add_building_construction = {
 				type = infrastructure
@@ -363,5 +410,6 @@ focus_tree = {
 				instant_build = yes  #立刻完成 no反之
 			}
 		}
+	    }
 	}
 }

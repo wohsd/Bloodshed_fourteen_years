@@ -12,6 +12,9 @@ Political_Department = {
 	army_defence_factor = RFC_army_defence_factor #陆军防御
 	communism_drift = RFC_communism_drift #共产主义每日增加
 	experience_loss_factor = RFC_experience_loss_factor #有经验的士兵损失
-	max_dig_in = RFC_max_dig_in  #堑壕上线
-	MODIFIER_TERRAIN_PENALTY_REDUCTION = RFC_MODIFIER_TERRAIN_PENALTY_REDUCTION #地形惩罚
+	max_dig_in_factor = RFC_max_dig_in_factor  #堑壕上线
+	dig_in_speed_factor = RFC_dig_in_speed_factor #堑壕速度
+	terrain_penalty_reduction = RFC_terrain_penalty_reduction #地形适应
+	recon_factor = RFC_recon_factor #侦查 
+	recon_factor_while_entrenched = RFC_recon_factor_while_entrenched #堑壕侦查
 }

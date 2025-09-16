@@ -238,7 +238,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/RFC/Political_Department.png"
 	}
     spriteType = {
-		name = "GFX_idea_Revolutionary_Three_Principles_of_the_People_Economy"
+		name = "GFX_idea_revolutionary_three_principles_of_the_people_economy"
 		texturefile = "gfx/interface/ideas/RFC/Revolutionary_Three_Principles_of_the_People_Economy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Revolutionary_Armed_Forces"
+		texturefile = "gfx/interface/ideas/RFC/Revolutionary_Armed_Forces.dds"	
 	}
 }

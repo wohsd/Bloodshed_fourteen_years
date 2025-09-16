@@ -14,6 +14,24 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
+
+		Revolutionary_Armed_Forces = {
+        
+        allowed = { 
+				always = yes 
+		}
+		
+		removal_cost = -1
+
+		modifier = {
+            equipment_bonus = {
+	        	infantry_equipment = {
+			    build_cost_ic = -0.1
+			    instant = yes
+		        }
+	        }
+		}
+		}
 	}
 }
 
@@ -22,15 +40,27 @@ ideas = {
 	    law = yes
 		use_list_view = yes
 		
-	    Revolutionary_Three_Principles_of_the_People_Economy = {
-		    allowed = {
-				RFC = { has_completed_focus = { The_place_where_the_revolution_originated } }
+	    revolutionary_three_principles_of_the_people_economy = {
+
+			visible = {
+				if = {
+					limit = {
+						tag = RFC
+					}
+					NOT = { has_completed_focus = The_place_where_the_revolution_originated }
+				}
 			}
+
+			allowed = {
+
+			}
+
+			available = { #启用条件
+			
+		    }
+
 			cost = 150
 		    removal_cost = -1 #更换该经济法案的花费（不是切换花费，一般为-1）
-
-		    available = { #启用条件
-		    }
 
 		    on_add = { #添加时的效果（瞬时触发）
 		    }	
