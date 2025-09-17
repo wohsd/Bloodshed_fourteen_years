@@ -23,7 +23,7 @@ CHI_Leftist_Kuomintang_win_strategy_plan = {
 	focus_factors = {
         Democracy_Over_Autocracy = 0
 		Resistance_First_to_Save_Nation = 0
-		Chiang_Kai_shek_Consolidates_Power =20
+		Chiang_Kai_shek_Consolidates_Power =100
 	}
 
 	research = {
@@ -70,11 +70,11 @@ CHI_Restructuring_meeting_win_strategy_plan = {
     Chiang_Kai_shek_Consolidates_Power = 0
 	Resistance_First_to_Save_Nation = 0
 	Hu_Hanmin_Leadership = 0
-	Democracy_Over_Autocracy = 20
-	Wang_Jingwei_Leadership = 20
-	Liao_Zhongkai_Issue = 10
+	Democracy_Over_Autocracy = 100
+	Wang_Jingwei_Leadership = 100
+	Liao_Zhongkai_Issue = 100
 	Redraft_Party_Program = 10
-	Special_Parliament_Leader_Hu_Hanmin = 20
+	Special_Parliament_Leader_Hu_Hanmin = 100
 	Chairman_Wangs_European_Tour = 0
 	}
 
@@ -120,13 +120,13 @@ CHI_Kuomintang_Rightists_win_strategy_plan = {
 	focus_factors = {
     Chiang_Kai_shek_Consolidates_Power = 0
 	Resistance_First_to_Save_Nation = 0
-	Hu_Hanmin_Leadership = 10
-	Democracy_Over_Autocracy = 20
+	Hu_Hanmin_Leadership = 100
+	Democracy_Over_Autocracy = 100
 	Wang_Jingwei_Leadership = 0
-	Liao_Zhongkai_Issue = 10
-	Redraft_Party_Program = 10
+	Liao_Zhongkai_Issue = 100
+	Redraft_Party_Program = 100
 	Special_Parliament_Leader_Hu_Hanmin = 0
-	Chairman_Wangs_European_Tour = 20
+	Chairman_Wangs_European_Tour = 100
 	}
 
 	research = {
@@ -172,11 +172,11 @@ CHI_The_Struggle_of_the_Left_Wing_strategy_plan = {
     Chiang_Kai_shek_Consolidates_Power = 0
 	Resistance_First_to_Save_Nation = 0
 	Hu_Hanmin_Leadership = 0
-	Democracy_Over_Autocracy = 20
-	Wang_Jingwei_Leadership = 20
+	Democracy_Over_Autocracy = 100
+	Wang_Jingwei_Leadership = 100
 	Liao_Zhongkai_Issue = 10
 	Redraft_Party_Program = 10
-	Special_Parliament_Leader_Hu_Hanmin = 20
+	Special_Parliament_Leader_Hu_Hanmin = 100
 	Chairman_Wangs_European_Tour = 0
 	}
 
@@ -222,13 +222,13 @@ CHI_The_struggle_between_left_and_right_strategy_plan = {
 	focus_factors = {
     Chiang_Kai_shek_Consolidates_Power = 0
 	Resistance_First_to_Save_Nation = 0
-	Hu_Hanmin_Leadership = 10
-	Democracy_Over_Autocracy = 20
+	Hu_Hanmin_Leadership = 100
+	Democracy_Over_Autocracy = 100
 	Wang_Jingwei_Leadership = 0
 	Liao_Zhongkai_Issue = 10
-	Redraft_Party_Program = 10
+	Redraft_Party_Program = 100
 	Special_Parliament_Leader_Hu_Hanmin = 0
-	Chairman_Wangs_European_Tour = 20
+	Chairman_Wangs_European_Tour = 100
 	}
 
 	research = {

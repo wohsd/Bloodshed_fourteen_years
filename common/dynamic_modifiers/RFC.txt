@@ -14,7 +14,6 @@ Political_Department = {
 	experience_loss_factor = RFC_experience_loss_factor #有经验的士兵损失
 	max_dig_in_factor = RFC_max_dig_in_factor  #堑壕上线
 	dig_in_speed_factor = RFC_dig_in_speed_factor #堑壕速度
-	terrain_penalty_reduction = RFC_terrain_penalty_reduction #地形适应
 	recon_factor = RFC_recon_factor #侦查 
 	recon_factor_while_entrenched = RFC_recon_factor_while_entrenched #堑壕侦查
 }
