@@ -50,10 +50,6 @@ recruit_character = CHI_HuangBaiTao
 recruit_character = CHI_GuanLinZheng
 recruit_character = CHI_SunKe
 
-
-recruit_character = RFC_huangqixiang
-recruit_character = RFC_LiJiSheng
-
 recruit_character = CHI_ChenQiang
 recruit_character = CHI_ZhangZhiZhong
 recruit_character = CHI_LuoZuoYing
@@ -71,8 +67,9 @@ recruit_character = CHI_ZhangQun
 recruit_character = CHI_HuZongNan
 recruit_character = CHI_Alexander_von_Falkenhausen
 
-
 recruit_character = CHI_BaiCongXi
+
+recruit_character = RFC_huangqixiang
 
 add_ideas = {
 	CHI_army_corruption_1
