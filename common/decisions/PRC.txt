@@ -1157,7 +1157,7 @@ Long_march_decisions = {
 		}
 		days_mission_timeout = 245
 		activation = {
-		has_country_flag = Long_march_mission3
+			#has_country_flag = Long_march_mission3
 		}
 		visible = {
 		}		

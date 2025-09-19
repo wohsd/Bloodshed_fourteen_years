@@ -1,0 +1,62 @@
+default = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	#army = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+
+	operative = {
+		male = {
+			"GFX_portrait_operative_unknown"
+		}
+		female = {
+			"GFX_portrait_operative_unknown"
+		}
+	}
+
+	male = {
+		"GFX_portrait_unknown"
+	}
+	female = {
+		"GFX_portrait_unknown_female"
+	}
+}
+#【PRC】新增随机师长肖像
+PRC = {
+	army = {
+		male = {
+			"GFX_portrait_PRC_generic1"
+			"GFX_portrait_PRC_generic2"
+			"GFX_portrait_PRC_generic3"
+			"GFX_portrait_PRC_generic4"
+		}
+		
+	}
+	
+	navy = {
+		male = {
+		}
+	}
+}
+
+#【CHI】新增随机师长肖像
+CHI = {
+	army = {
+		male = {
+		}
+	}
+	
+	navy = {
+		male = {
+		}
+	}
+}
+

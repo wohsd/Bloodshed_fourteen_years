@@ -82,6 +82,7 @@ Long_march_decisions = {
 	}
 	on_map_area = {
 		name = Long_march_decisions_map
+		state = 149
 		state = 606
 		state = 608
 		state = 607

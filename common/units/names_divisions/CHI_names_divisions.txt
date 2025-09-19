@@ -1,0 +1,1166 @@
+T_INF_1011 = {
+	name = "国民革命军步兵师"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d步兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军第%d步兵师" }			# Chinese "corps" were division-strength units (2-3 Chinese "divisions" = 2-3 HOI4 regiments)
+		2 = { "国民革命军第%d步兵师" }
+		3 = { "国民革命军第%d步兵师" }
+		4 = { "国民革命军第%d步兵师" }
+		9 = { "国民革命军第%d步兵师" }
+		12 = { "国民革命军第%d步兵师" }
+		13 = { "国民革命军第%d步兵师" }
+		14 = { "国民革命军第%d步兵师" }
+		17 = { "国民革命军第%d步兵师" }
+		18 = { "国民革命军第%d步兵师" }
+		25 = { "国民革命军第%d步兵师" }
+		39 = { "国民革命军第%d步兵师" }
+		40 = { "国民革命军第%d步兵师" }
+		43 = { "国民革命军第%d步兵师" }
+		52 = { "国民革命军第%d步兵师" }
+		54 = { "国民革命军第%d步兵师" }
+		73 = { "国民革命军第%d步兵师" }
+		74 = { "国民革命军第%d步兵师" }
+		403 = { "国民革命军第3步兵师" }		# German-trained divisions (traditional division strength)
+		406 = { "国民革命军第6步兵师" }		
+		409 = { "国民革命军第9步兵师" }		
+		414 = { "国民革命军第14步兵师" }		
+		436 = { "国民革命军第36步兵师" }		
+		487 = { "国民革命军第87步兵师" }		
+		488 = { "国民革命军第88步兵师" }		
+		498 = { "国民革命军中央军校教导总队" }		
+		402 = { "国民革命军第2步兵师" }		
+		404 = { "国民革命军第4步兵师" }		
+		410 = { "国民革命军第10步兵师" }		
+		411 = { "国民革命军第11步兵师" }		
+		425 = { "国民革命军第25步兵师" }		
+		427 = { "国民革命军第27步兵师" }		
+		457 = { "国民革命军第57步兵师" }		
+		467 = { "国民革命军第%d步兵师" }		
+		480 = { "国民革命军第80步兵师" }		
+		483 = { "国民革命军第83步兵师" }		
+		489 = { "国民革命军第89步兵师" }		
+		499 = { "国民革命军中央税警团" }		
+		6 = { "国民革命军第%d步兵师" }
+		7 = { "国民革命军第%d步兵师" }
+		8 = { "国民革命军第%d步兵师" }
+		10 = { "国民革命军第%d步兵师" }
+		15 = { "国民革命军第%d步兵师" }
+		16 = { "国民革命军第%d步兵师" }
+		19 = { "国民革命军第%d步兵师" }
+		20 = { "国民革命军第%d步兵师" }
+		21 = { "国民革命军第%d步兵师" }
+		22 = { "国民革命军第%d步兵师" }
+		23 = { "国民革命军第%d步兵师" }
+		26 = { "国民革命军第%d步兵师" }
+		28 = { "国民革命军第%d步兵师" }
+		29 = { "国民革命军第%d步兵师" }
+		30 = { "国民革命军第%d步兵师" }
+		31 = { "国民革命军第%d步兵师" }
+		32 = { "国民革命军第%d步兵师" }
+		33 = { "国民革命军第%d步兵师" }
+		34 = { "国民革命军第%d步兵师" }
+		35 = { "国民革命军第%d步兵师" }
+		37 = { "国民革命军第%d步兵师" }
+		38 = { "国民革命军第%d步兵师" }
+		41 = { "国民革命军第%d步兵师" }
+		42 = { "国民革命军第%d步兵师" }
+		44 = { "国民革命军第%d步兵师" }
+		45 = { "国民革命军第%d步兵师" }
+		46 = { "国民革命军第%d步兵师" }
+		47 = { "国民革命军第%d步兵师" }
+		48 = { "国民革命军第%d步兵师" }
+		49 = { "国民革命军第%d步兵师" }
+		51 = { "国民革命军第%d步兵师" }
+		53 = { "国民革命军第%d步兵师" }
+		55 = { "国民革命军第%d步兵师" }
+		56 = { "国民革命军第%d步兵师" }
+		57 = { "国民革命军第%d步兵师" }
+		59 = { "国民革命军第%d步兵师" }
+		60 = { "国民革命军第%d步兵师" }
+		61 = { "国民革命军第%d步兵师" }
+		62 = { "国民革命军第%d步兵师" }
+		63 = { "国民革命军第%d步兵师" }
+		64 = { "国民革命军第%d步兵师" }
+		65 = { "国民革命军第%d步兵师" }
+		66 = { "国民革命军第%d步兵师" }
+		67 = { "国民革命军第%d步兵师" }
+		68 = { "国民革命军第%d步兵师" }
+		70 = { "国民革命军第%d步兵师" }
+		71 = { "国民革命军第%d步兵师" }
+		72 = { "国民革命军第%d步兵师" }
+		75 = { "国民革命军第%d步兵师" }
+		76 = { "国民革命军第%d步兵师" }
+		77 = { "国民革命军第%d步兵师" }
+		78 = { "国民革命军第%d步兵师" }
+		79 = { "国民革命军第%d步兵师" }
+		80 = { "国民革命军第%d步兵师" }
+		81 = { "国民革命军第%d步兵师" }
+		82 = { "国民革命军第%d步兵师" }
+		83 = { "国民革命军第%d步兵师" }
+		84 = { "国民革命军第%d步兵师" }
+		85 = { "国民革命军第%d步兵师" }
+		86 = { "国民革命军第%d步兵师" }
+		87 = { "国民革命军第%d步兵师" }
+		89 = { "国民革命军第%d步兵师" }
+		92 = { "国民革命军第%d步兵师" }
+		93 = { "国民革命军第%d步兵师" }
+		94 = { "国民革命军第%d步兵师" }
+		98 = { "国民革命军第%d步兵师" }
+		201 = { "国民革命军新1军" }
+		5 = { "国民革命军第%d步兵师" }
+		27 = { "国民革命军第%d步兵师" }
+		50 = { "国民革命军第%d步兵师" }
+		58 = { "国民革命军第%d步兵师" }
+		69 = { "国民革命军第%d步兵师" }
+		90 = { "国民革命军第%d步兵师" }
+		91 = { "国民革命军第%d步兵师" }
+		96 = { "国民革命军第%d步兵师" }
+		99 = { "国民革命军第%d步兵师" }
+		100 = { "国民革命军第%d步兵师" }
+		202 = { "国民革命军新2军" }
+		203 = { "国民革命军新3军" }
+		205 = { "国民革命军新5军" }
+		206 = { "国民革命军新6军" }
+		36 = { "国民革命军第%d步兵师" }
+		301 = { "国民革命军第1暂编师" }
+		302 = { "国民革命军第2暂编师" }
+		430 = { "国民革命军新30步兵师" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "国民革命军新38步兵师" }		
+		422 = { "国民革命军新22步兵师" }		
+		450 = { "国民革命军第50步兵师" }		
+		88 = { "国民革命军第%d步兵师" }
+		207 = { "国民革命军新7军" }
+		304 = { "国民革命军第4暂编师" }
+		305 = { "国民革命军第5暂编师" }
+		309 = { "国民革命军第9暂编师" }
+		11 = { "国民革命军第%d步兵师" }
+		95 = { "国民革命军第%d步兵师" }
+		208 = { "国民革命军新8军" }
+		303 = { "国民革命军第3暂编师" }
+		315 = { "国民革命军第15暂编师" }
+		209 = { "国民革命军新9军" }			# fictional additional corps here
+		210 = { "国民革命军新10军" }
+		211 = { "国民革命军新11军" }
+		212 = { "国民革命军新12军" }
+		213 = { "国民革命军新13军" }
+		214 = { "国民革命军新14军" }
+		215 = { "国民革命军新15军" }
+		306 = { "国民革命军第6暂编师" }
+		307 = { "国民革命军第7暂编师" }
+		308 = { "国民革命军第8暂编师" }
+		310 = { "国民革命军第9暂编师" }
+		311 = { "国民革命军第10暂编师" }
+		312 = { "国民革命军第11暂编师" }
+		313 = { "国民革命军第12暂编师" }
+		314 = { "国民革命军第13暂编师" }
+	}
+}
+
+
+T_INF_1012 = {
+	name = "国民革命军骑兵独立旅"
+	for_countries = { CHI JSJ }
+
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d骑兵独立旅"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		
+		3 = { "国民革命军第%d骑兵独立旅" }
+		
+	}
+}
+T_INF_1013 = {
+	name = "国民革命军摩步师"
+
+
+	for_countries = { CHI JSJ }
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d摩步师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		500 = { "国民革命军第%d摩步师" }		# only historical motorized division for NRA
+		430 = { "国民革命军第%d摩步师" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "国民革命军第%d摩步师" }		
+		422 = { "国民革命军第%d摩步师" }		
+		414 = { "国民革命军第%d摩步师" }		
+		450 = { "国民革命军第%d摩步师" }		
+		403 = { "国民革命军第%d摩步师" }			# German-trained divisions (traditional division strength)
+		406 = { "国民革命军第%d摩步师" }		
+		409 = { "国民革命军第%d摩步师" }		
+		436 = { "国民革命军第%d摩步师" }		
+		487 = { "国民革命军第%d摩步师" }		
+		488 = { "国民革命军第%d摩步师" }		
+		402 = { "国民革命军第%d摩步师" }		
+		404 = { "国民革命军第%d摩步师" }		
+		410 = { "国民革命军第%d摩步师" }		
+		411 = { "国民革命军第%d摩步师" }		
+		425 = { "国民革命军第%d摩步师" }		
+		427 = { "国民革命军第%d摩步师" }		
+		457 = { "国民革命军第%d摩步师" }		
+		467 = { "国民革命军第%d摩步师" }		
+		480 = { "国民革命军第%d摩步师" }		
+		483 = { "国民革命军第%d摩步师 " }		
+		489 = { "国民革命军第%d摩步师" }		
+		5 = { "国民革命军第%d摩步师" }						# fictional names for motorized corps
+		1 = { "国民革命军第%d摩步师" }						
+		2 = { "国民革命军第%d摩步师" }
+		3 = { "国民革命军第%d摩步师" }
+		4 = { "国民革命军第%d摩步师" }
+		9 = { "国民革命军第%d摩步师" }
+		12 = { "国民革命军第%d摩步师" }
+		13 = { "国民革命军第%d摩步师" }
+		14 = { "国民革命军第%d摩步师" }
+		17 = { "国民革命军第%d摩步师" }
+		18 = { "国民革命军第%d摩步师" }
+		6 = { "国民革命军第%d摩步师" }
+		7 = { "国民革命军第%d摩步师" }
+		8 = { "国民革命军第%d摩步师" }
+		10 = { "国民革命军第%d摩步师" }
+		15 = { "国民革命军第%d摩步师" }
+		16 = { "国民革命军第%d摩步师" }
+		19 = { "国民革命军第%d摩步师" }
+		20 = { "国民革命军第%d摩步师" }
+		11 = { "国民革命军第%d摩步师" }
+	}
+}
+
+T_INFC_1014 = {
+	name = "国民革命军机步师"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d机步师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		500 = { "国民革命军第%d机步师" }
+		430 = { "国民革命军第%d机步师" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "国民革命军第%d机步师" }		
+		422 = { "国民革命军第%d机步师" }		
+		414 = { "国民革命军第%d机步师" }		
+		450 = { "国民革命军第%d机步师" }		
+		403 = { "国民革命军第%d机步师" }			# German-trained divisions (traditional division strength)
+		406 = { "国民革命军第%d机步师" }		
+		409 = { "国民革命军第%d机步师" }		
+		436 = { "国民革命军第%d机步师" }		
+		487 = { "国民革命军第%d机步师" }		
+		488 = { "国民革命军第%d机步师" }		
+		402 = { "国民革命军第%d机步师" }		
+		404 = { "国民革命军第%d机步师" }		
+		410 = { "国民革命军第%d机步师" }		
+		411 = { "国民革命军第%d机步师" }		
+		425 = { "国民革命军第%d机步师" }		
+		427 = { "国民革命军第%d机步师" }		
+		457 = { "国民革命军第%d机步师" }		
+		467 = { "国民革命军第%d机步师" }		
+		480 = { "国民革命军第%d机步师" }		
+		483 = { "国民革命军第%d机步师师" }		
+		489 = { "国民革命军第%d机步师" }		
+		5 = { "国民革命军第%d机步师" }				# fictional names for mechanized corps
+		1 = { "国民革命军第%d机步师" }						
+		2 = { "国民革命军第%d机步师" }
+		3 = { "国民革命军第%d机步师" }
+		4 = { "国民革命军第%d机步师" }
+		9 = { "国民革命军第%d机步师" }
+		12 = { "国民革命军第%d机步师" }
+		13 = { "国民革命军第%d机步师" }
+		14 = { "国民革命军第%d机步师" }
+		17 = { "国民革命军第%d机步师" }
+		18 = { "国民革命军第%d机步师" }
+		6 = { "国民革命军第%d机步师" }
+		7 = { "国民革命军第%d机步师" }
+		8 = { "国民革命军第%d机步师" }
+		10 = { "国民革命军第%d机步师" }
+		15 = { "国民革命军第%d机步师" }
+		16 = { "国民革命军第%d机步师" }
+		19 = { "国民革命军第%d机步师" }
+		20 = { "国民革命军第%d机步师" }
+		11 = { "国民革命军第%d机步师" }
+	}
+}
+
+T_INF_1015 = {
+	name = "国民革命军装甲师"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d装甲师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军委员长卫队" }
+		2 = { "国民革命军南京装甲师" }
+		3 = { "国民革命军戴安澜装甲师" }
+		4 = { "国民革命军武汉装甲师" }
+		5 = { "国民革命军长沙第一装甲师" }
+		6 = { "国民革命军长沙第二装甲师" }
+		7 = { "国民革命军长沙第三装甲师" }
+		8 = { "国民革命军宜昌装甲师" }
+		9 = { "国民革命军枣宜装甲师" }
+		10 = { "国民革命军随枣装甲师" }
+		11 = { "国民革命军咸菜装甲师" }
+		12 = { "国民革命军川军第一装甲师" }
+		13 = { "国民革命军川军第二装甲师" }
+		14 = { "国民革命军第%d装甲师" }
+		15 = { "国民革命军第%d装甲师" }
+	}
+}
+
+T_INF_1016 = {
+	name = "国民革命军伞兵部队"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d伞兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军伞兵一师" }
+		2 = { "国民革命军第%d伞兵师" }
+		3 = { "国民革命军第%d伞兵师" }
+		4 = { "国民革命军第%d伞兵师" }
+		5 = { "国民革命军第%d伞兵师" }
+		6 = { "国民革命军第%d伞兵师" }
+		7 = { "国民革命军第%d伞兵师" }
+		8 = { "国民革命军第%d伞兵师" }
+		9 = { "国民革命军第%d伞兵师" }
+		10 = { "国民革命军第%d伞兵师" }
+	}
+}
+
+T_INF_1017 = {
+	name = "国民革命军海军陆战队"
+
+	for_countries = { CHI JSJ }
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军陆战%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军陆战一师" }
+		2 = { "国民革命军陆战%d师" }
+		3 = { "国民革命军陆战%d师" }
+		4 = { "国民革命军陆战%d师" }
+		5 = { "国民革命军陆战%d师" }
+		6 = { "国民革命军陆战%d师" }
+		7 = { "国民革命军陆战%d师" }
+		8 = { "国民革命军陆战%d师" }
+		9 = { "国民革命军陆战%d师" }
+		10 = { "国民革命军陆战%d师" }
+	}
+}
+
+T_INF_1018 = {
+	name = "国民革命军山地师"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d山地师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		430 = { "国民革命军北方山地师" }		# American-trained (full) divisions of historical 'X Force'
+		438 = { "国民革命军南方山地师" }		
+		422 = { "国民革命军山地一师" }		
+		414 = { "国民革命军西北山地师" }		
+		450 = { "国民革命军西北山地师" }		
+		403 = { "国民革命军南宁山地师" }		# German-trained divisions (traditional division strength)
+		406 = { "国民革命军第%d山地师" }		
+		409 = { "国民革命军第%d山地师" }		
+		436 = { "国民革命军第%d山地师" }		
+		487 = { "国民革命军第%d山地师" }		
+		488 = { "国民革命军山地二师" }		
+		498 = { "国民革命军第%d山地师" }		
+		402 = { "国民革命军第%d山地师" }		
+		404 = { "国民革命军第%d山地师" }		
+		410 = { "国民革命军江西山地师" }		
+		411 = { "国民革命军第%d山地师" }		
+		425 = { "国民革命军第%d山地师" }		
+		427 = { "国民革命军昆明山地师" }		
+		457 = { "国民革命军第%d山地师" }		
+		467 = { "国民革命军第%d山地师" }		
+		480 = { "国民革命军云南d山地师" }		
+		483 = { "国民革命军黑色山地师" }		
+		489 = { "国民革命军第%d山地师" }		
+		499 = { "国民革命军第%d山地师" }		
+		1 = { "国民革命军腾冲山地师" }			# Chinese "corps" were division-strength units (2-3 Chinese "divisions" = 2-3 HOI4 regiments)
+		2 = { "国民革命军湘西山地师" }
+		3 = { "国民革命军第%d山地师" }
+		4 = { "国民革命军第%d山地师" }
+		9 = { "国民革命军第%d山地师" }
+		12 = { "国民革命军第%d山地师" }
+		13 = { "国民革命军第%d山地师" }
+		14 = { "国民革命军红色山地师" }
+		17 = { "国民革命军第%d山地师" }
+		18 = { "国民革命军第%d山地师" }
+		25 = { "国民革命军第%d山地师" }
+		39 = { "国民革命军蓝色山地师" }
+		40 = { "国民革命军第%d山地师" }
+		43 = { "国民革命军山地三师" }
+		52 = { "国民革命军第%d山地师" }
+		54 = { "国民革命军第%d山地师" }
+		73 = { "国民革命军第%d山地师" }
+		74 = { "国民革命军第%d山地师" }
+		6 = { "国民革命军第%d山地师" }
+		7 = { "国民革命军第%d山地师" }
+		8 = { "国民革命军第%d山地师" }
+		10 = { "国民革命军第%d山地师" }
+		15 = { "国民革命军第%山地师" }
+		16 = { "国民革命军第%d山地师" }
+		19 = { "国民革命军第%d山地" }
+		20 = { "国民革命军第%d山地师" }
+		21 = { "国民革命军第%d山地师" }
+		22 = { "国民革命军第%d山地师" }
+		23 = { "国民革命军第%d山地师" }
+		26 = { "国民革命军第%d山地师" }
+		28 = { "国民革命军第%d山地师" }
+		29 = { "国民革命军第%d山地师" }
+		30 = { "国民革命军第%d山地师" }
+		31 = { "国民革命军第%d山地师" }
+		32 = { "国民革命军第%d山地师" }
+		33 = { "国民革命军第%d山地师" }
+		34 = { "国民革命军第%d山地师" }
+		35 = { "国民革命军第%d山地师" }
+		37 = { "国民革命军第%d山地师" }
+		38 = { "国民革命军第%d山地师" }
+		41 = { "国民革命军第%d山地师" }
+		42 = { "国民革命军第%d山地师" }
+		44 = { "国民革命军第%d山地师" }
+		45 = { "国民革命军第%d山地师" }
+		46 = { "国民革命军第%d山地师" }
+		47 = { "国民革命军第%d山地师" }
+		48 = { "国民革命军第%d山地师" }
+		49 = { "国民革命军第%d山地师" }
+		51 = { "国民革命军第%d山地师" }
+		53 = { "国民革命军第%d山地师" }
+		55 = { "国民革命军第%d山地师" }
+		56 = { "国民革命军第%d山地师" }
+		57 = { "国民革命军第%d山地师" }
+		59 = { "国民革命军第%d山地师" }
+		60 = { "国民革命军第%d山地师" }
+		61 = { "国民革命军第%d山地师" }
+		62 = { "国民革命军第%d山地师" }
+		63 = { "国民革命军第%d山地师" }
+		64 = { "国民革命军第%d山地师" }
+		65 = { "国民革命军第%d山地师" }
+		66 = { "国民革命军第%d山地师" }
+		67 = { "国民革命军第%d山地师" }
+		68 = { "国民革命军第%d山地师" }
+		70 = { "国民革命军第%d山地师" }
+		71 = { "国民革命军第%d山地师" }
+		72 = { "国民革命军第%d山地师" }
+		75 = { "国民革命军第%d山地师" }
+		76 = { "国民革命军第%d山地师" }
+		77 = { "国民革命军第%d山地师" }
+		78 = { "国民革命军第%d山地师" }
+		79 = { "国民革命军第%d山地师" }
+		80 = { "国民革命军第%d山地师" }
+		81 = { "国民革命军第%d山地师" }
+		82 = { "国民革命军第%d山地师" }
+		83 = { "国民革命军第%d山地师" }
+		84 = { "国民革命军第%d山地师" }
+		85 = { "国民革命军第%d山地师" }
+		86 = { "国民革命军第%d山地师" }
+		87 = { "国民革命军第%d山地师" }
+		89 = { "国民革命军第%d山地师" }
+		92 = { "国民革命军第%d山地师" }
+		93 = { "国民革命军第%d山地师" }
+		94 = { "国民革命军第%d山地师" }
+		98 = { "国民革命军第%d山地师" }
+		201 = { "国民革命军第%d山地师" }
+		5 = { "国民革命军第%d山地师" }
+		27 = { "国民革命军第%d山地师" }
+		50 = { "国民革命军第%d山地师" }
+		58 = { "国民革命军第%d山地师" }
+		69 = { "国民革命军第%d山地师" }
+		90 = { "国民革命军第%d山地师" }
+		91 = { "国民革命军第%d山地师" }
+		96 = { "国民革命军第%d山地师" }
+		99 = { "国民革命军第%d山地师" }
+		100 = { "国民革命军第%d山地师" }
+		202 = { "国民革命军第%d山地师" }
+		203 = { "国民革命军第%d山地师" }
+		205 = { "国民革命军第%d山地师" }
+		206 = { "国民革命军第%d山地师" }
+		36 = { "国民革命军第%d山地师" }
+		88 = { "国民革命军第%d山地师" }
+		207 = { "国民革命军第%d山地师" }
+		11 = { "国民革命军第%d山地师" }
+		95 = { "国民革命军第%d山地师" }
+		208 = { "国民革命军第%d山地师" }
+		209 = { "国民革命军第%d山地师" }			# fictional additional corps here
+		210 = { "国民革命军第%d山地师" }
+		211 = { "国民革命军第%d山地师" }
+		212 = { "国民革命军第%d山地师" }
+		213 = { "国民革命军第%d山地师" }
+		214 = { "国民革命军第%d山地师" }
+		215 = { "国民革命军第%d山地师" }
+	}
+}
+
+
+T_INF_1019 = {
+	name = "国民革命军暂编师"
+
+	for_countries = { CHI JSJ }	
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军暂编第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# Its okay to have gaps in numbering.
+	ordered =
+	{
+		77 = { "国民革命军暂编第%d师" }
+		90 = { "国民革命军暂编第%d师" }
+		85 = { "国民革命军暂编第%d师" }
+		93 = { "国民革命军暂编第%d师" }
+		23 = { "国民革命军暂编第%d师" }
+		76 = { "国民革命军暂编第%d师" }
+		79 = { "国民革命军暂编第%d师" }
+		81 = { "国民革命军暂编第%d师" }
+		80 = { "国民革命军暂编第%d师" }
+		88 = { "国民革命军暂编第%d师" }
+		89 = { "国民革命军暂编第%d师" }
+		95 = { "国民革命军暂编第%d师" }
+		78 = { "国民革命军暂编第%d师" }
+		83 = { "国民革命军暂编第%d师" }
+		91 = { "国民革命军暂编第%d师" }
+		96 = { "国民革命军暂编第%d师" }
+		
+	}
+}
+
+
+T_INF_1020 = {
+	name = "国民革命军整编师"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d整编师"
+
+	# Names with numbers (only one number per entry). 
+	# Its okay to have gaps in numbering.
+	ordered =
+	{
+		77 = { "国民革命军整编第%d师" }
+		90 = { "国民革命军整编第%d师" }
+		85 = { "国民革命军整编第%d师" }
+		93 = { "国民革命军整编第%d师" }
+		23 = { "国民革命军整编第%d师" }
+		76 = { "国民革命军整编第%d师" }
+		79 = { "国民革命军整编第%d师" }
+		81 = { "国民革命军整编第%d师" }
+		80 = { "国民革命军整编第%d师" }
+		88 = { "国民革命军整编第%d师" }
+		89 = { "国民革命军整编第%d师" }
+		95 = { "国民革命军整编第%d师" }
+		78 = { "国民革命军整编第%d师" }
+		83 = { "国民革命军整编第%d师" }
+		91 = { "国民革命军整编第%d师" }
+		96 = { "国民革命军整编第%d师" }
+		
+	}
+}
+
+T_INF_1021 = {
+	name = "国民革命军新编师"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军新编第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# Its okay to have gaps in numbering.
+	ordered =
+	{
+		77 = { "国民革命军新编第%d师" }
+		90 = { "国民革命军新编第%d师" }
+		85 = { "国民革命军新编第%d师" }
+		93 = { "国民革命军新编第%d师" }
+		23 = { "国民革命军新编第%d师" }
+		76 = { "国民革命军新编第%d师" }
+		79 = { "国民革命军新编第%d师" }
+		81 = { "国民革命军新编第%d师" }
+		80 = { "国民革命军新编第%d师" }
+		88 = { "国民革命军新编第%d师" }
+		89 = { "国民革命军新编第%d师" }
+		95 = { "国民革命军新编第%d师" }
+		78 = { "国民革命军新编第%d师" }
+		83 = { "国民革命军新编第%d师" }
+		91 = { "国民革命军新编第%d师" }
+		96 = { "国民革命军新编第%d师" }
+		
+	}
+}
+
+T_INF_1022 = {
+	name = "国民革命军独立师"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军独立第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# Its okay to have gaps in numbering.
+	ordered =
+	{
+		
+		1 = { "国民革命军独立第%d师" }
+		
+		
+	}
+}
+
+T_INF_1023 = {
+	name = "国民革命军“青年军”"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军“青年军”第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# Its okay to have gaps in numbering.
+	ordered =
+	{
+		201 = { "国民革命军“青年军”第%d师" }
+		202 = { "国民革命军“青年军”第%d师" }
+		203 = { "国民革命军“青年军”第%d师" }
+		204 = { "国民革命军“青年军”第%d师" }
+		205 = { "国民革命军“青年军”第%d师" }
+		206 = { "国民革命军“青年军”第%d师" }
+		207 = { "国民革命军“青年军”第%d师" }
+		208 = { "国民革命军“青年军”第%d师" }
+		209 = { "国民革命军“青年军”第%d师" }
+		
+		
+	}
+}
+
+
+
+T_INF_1024 = {
+	name = "国民革命军预备役师"
+	for_countries = { CHI JSJ }
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d预备役师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		101 = { "国民革命军上海预备役师" }		# All fictional names for local militias
+		102 = { "国民革命军福建第一预备役师" }
+		103 = { "国民革命军南京第一预备役师" }
+		104 = { "国民革命军武汉预备役师" }
+		105 = { "国民革命军青岛预备役师" }
+		106 = { "国民革命军河南省预备役总队" }
+		107 = { "国民革命军安微省预备役总队" }
+		108 = { "国民革命军甘肃省预备役总队" }
+		109 = { "国民革命军山东省预备役总队" }
+		110 = { "国民革命军江苏省预备役总队" }
+		111 = { "国民革命军湖北省预备役总队" }
+		112 = { "国民革命军南京第二预备役师" }
+		113 = { "国民革命军福建第二预备役师" }
+		114 = { "国民革命军福建第三预备役师" }
+		115 = { "国民革命军江西省预备役总队" }
+		116 = { "国民革命军镇江省预备役总队" }
+		117 = { "国民革命军湖北省预备役总队" }
+		118 = { "国民革命军福建省预备役总队" }
+		119 = { "国民革命军南京第二预备役师" }
+		126 = { "国民革命军南京第三预备役师" }
+		127 = { "国民革命军南京第四预备役师" }
+		120 = { "国民革命军天南预备役师" }
+		121 = { "国民革命军合肥预备役师" }
+		122 = { "国民革命军察哈尔预备役师" }
+		123 = { "国民革命军淳安预备役师" }
+		124 = { "国民革命军湖南预备役师" }
+		125 = { "国民革命军湖北预备役师" }
+	}
+}
+
+T_INF_1025 = {
+	name = "国军中央军部队"
+	for_countries = { CHI JSJ }
+	
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国军中央军第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国军中央军第%d师" }
+		
+		
+	}
+}
+T_INF_1026 = {
+	name = "国民革命军警察大队"
+	for_countries = { CHI JSJ }
+	
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军第%d警察大队"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军第%d警察大队" }
+		
+		
+	}
+}
+
+
+
+T_INF_1028 = {
+	name = "国民革命军甲种师"
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军甲种第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军甲种第%d师" }
+		
+		
+	}
+}
+
+T_INF_1029 = {
+	name = "国民革命军乙种师"
+	for_countries = { CHI JSJ }
+	
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军乙种第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军乙种第%d师" }
+		
+		
+	}
+}
+
+
+T_INF_1030 = {
+	name = "国民革命军丙种师"
+
+	for_countries = { CHI JSJ }	
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军丙种第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军丙种第%d师" }
+		
+		
+	}
+}
+
+T_INF_1031 = {
+	name = "中国陆军部队"
+
+	
+	can_use = {
+	  
+		has_completed_focus = CHN_buzuo_lizicheng_focus
+		
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "中国陆军部队第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "中国陆军部队第%d师" }
+		
+		
+	}
+}
+
+T_INF_1032 = {
+	name = "国军精锐部队"
+
+	for_countries = { CHI JSJ }	
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "国民革命军精锐第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军“千里驹”师" }##独立师
+		2 = { "国民革命军“虎头”师" }##独立师
+		3 = { "国民革命军“赵子龙”师" }##独立师
+		4 = { "国民革命军“鹰扬”师" }
+		5 = { "国民革命军“虎威”师" }
+		6 = { "国民革命军“天下第一”师" }
+		7 = { "国民革命军“钢军”师" }##桂系
+		8 = { "国民革命军“铁军”师" }##粤系
+		9 = { "国民革命军“抗战建国”师" }
+		10 = { "国民革命军“抗日铁军”师" }
+		11 = { "国民革命军“辉煌”师" }
+		12 = { "国民革命军“前茅”师" }
+		13 = { "国民革命军“虎贲”师" }
+		14 = { "国民革命军“激扬”师" }
+		15 = { "国民革命军“加钢黄鳝”师" }
+		16 = { "国民革命军“发扬光大”师" }
+		17 = { "国民革命军“攻击王牌”师" }
+		18 = { "国民革命军“广西狼兵”师" }
+		19 = { "国民革命军“精锐种子”师" }
+		20 = { "国民革命军“攻守双料”师" }
+		21 = { "国民革命军“铁甲机械”师" }
+		22 = { "国民革命军“魔头乱世”师" }
+		23 = { "国民革命军“新锐实力”师" }
+		24 = { "国民革命军“虎贲御林”师" }
+		25 = { "国民革命军“杂牌强悍”师" }
+		26 = { "国民革命军“野战凶悍”师" }
+		27 = { "国民革命军“倚海剑”师" }
+		28 = { "国民革命军“王冠上的珍珠”师" }
+		29 = { "国民革命军“泰山”师" }
+	    30 = { "国民革命军“老虎”师" }
+		31 = { "国民革命军“海燕”师" }####土木系
+		32 = { "国民革命军“海鹏”师" }####土木系
+		32 = { "国民革命军“虎军”师" }####土木系
+		33 = { "国民革命军“湘涛”师" }####土木系，相比其他部队，很文雅
+		34 = { "国民革命军“铁拳”师" }
+		35 = { "国民革命军“光海”师" }###200，源自--杜律明字光亭，戴安澜字海鸥
+		36 = { "国民革命军“大庸”师" }
+		37 = { "国民革命军“铜军”师" }
+		38 = { "国民革命军“金刚钻”师" }
+		39 = { "国民革命军“土木支柱”师" }###土木系
+		40 = { "国民革命军“罗店铁壁”师" }###土木系
+	}
+}
+T_INF_1037 = 
+{
+	name = "国军西北军"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { XBJ_INF_01 }
+
+	fallback_name = "国军西北军第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国军西北军第%d师" }
+		
+}
+}
+
+T_INF_1038 = 
+{
+	name = "国军滇军"
+	for_countries = { CHI JSJ }
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YUN_INF_01 }
+
+	fallback_name = "国军滇军第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国军滇军第%d师" }
+		
+}
+}
+T_INF_1039 = 
+{
+	name = "国军粤军"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { YXC_INF_01 }
+
+	fallback_name = "国军粤军第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国军粤军第%d师" }
+		
+}
+}
+
+T_INF_1040 = 
+{
+	name = "国民革命军新疆军"
+
+	for_countries = { SIK }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SIK_INF_01 }
+
+	fallback_name = "国民革命军新疆军第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军新疆军第%d师" }
+		
+}
+}
+T_INF_1041 = 
+{
+	name = "国民革命军晋绥军"
+
+	for_countries = { CHI JSJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SHX_INF_01 }
+
+	fallback_name = "国民革命军晋绥军第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国民革命军晋绥军第%d师" }
+}
+}
+
+DBJ_INF_01A = 
+{
+	name = "国军东北军新编步兵师"
+
+	for_countries = { CHI DBJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { DBJ_INF_01 }
+
+	fallback_name = "国军东北军新编第%d步兵师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国军东北军新编第%d步兵师" }
+		
+}
+T_INF_1042 = 
+{
+	name = "国军川军"
+
+	for_countries = { CHI CXC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { XXC_INF_01 }
+
+	fallback_name = "国军川军第%d师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "国军川军第%d师" }
+		
+}
+}
+

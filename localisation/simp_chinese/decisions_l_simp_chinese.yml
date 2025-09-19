@@ -37,7 +37,7 @@ Long_march_mission2: "突破第三道封锁线"
 Long_march_mission3: "夺取道县"
 Long_march_mission4: "血战湘江"
 Long_march_mission5: "四渡赤水"
-Chi_Shui: "渡河次数:[?Chi_Shui]\n\n渡过赤水县\n渡过古籣\n渡过茅台镇\n攻克娄山关"
+Chi_Shui: "渡河次数:§Y[?Chi_Shui]§!\n\n按照下列依次攻占§Y重要胜利点§!可完成：\n如果先前攻占的胜利点未被占领，仍然看作完成一次\n\n渡过赤水§Y（赤水）§!\n重返遵义§Y（遵义）§!\n抢占茅台§Y（茅台）§!\n兵临贵阳§Y（打鼓新场）§!"
 Chi_Shui_tooltip: "渡河次数大于等于4"
 ##新增
 Long_march_mission6: "巧渡金沙江"
