@@ -34,7 +34,7 @@ ideas = {
 				army_attack_factor=0.05	
                 army_defence_factor=0.05
 				army_speed_factor=0.1
-				army_org_factor=0.25
+				army_org_factor=0.15
 				breakthrough_factor=0.1
 				river_crossing_factor=-0.15			
                 terrain_penalty_reduction=0.15	
@@ -54,13 +54,13 @@ ideas = {
 				army_attack_factor=0.1	
                 army_defence_factor=0.1
 				army_speed_factor=0.6
-				army_org_factor=0.25
-				breakthrough_factor=0.3
+				army_org_factor=0.15
+				breakthrough_factor=0.15
 				river_crossing_factor=-0.3			
                 terrain_penalty_reduction=0.3	
                 pocket_penalty=-0.1				
                 fortification_damage=0.2
-				land_night_attack=0.5
+				land_night_attack=0.1
 				
 			}
 		}
@@ -74,8 +74,8 @@ ideas = {
 				army_attack_factor=0.1	
                 army_defence_factor=0.1
 				army_speed_factor=1
-				army_org_factor=0.25
-				breakthrough_factor=0.3
+				army_org_factor=0.2
+				breakthrough_factor=0.2
 				river_crossing_factor=-0.3			
                 terrain_penalty_reduction=0.3	
                 pocket_penalty=-0.1				

@@ -125,3 +125,16 @@ War_Resistance_Behind_Enemy = {
 		has_country_flag = PRC_focus82
 	}
 }
+
+Expand_Shaanxi_Gansu_Ningxia = {
+	icon = military_operation
+	picture = GFX_Expand_Shaanxi_Gansu_Ningxia
+	visible = { 
+		tag=PRC
+		OR={
+			has_completed_focus = PRC_focus55
+			has_completed_focus = PRC_focus54
+		}
+	}
+	priority = 111
+}

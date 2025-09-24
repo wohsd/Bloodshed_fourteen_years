@@ -104,6 +104,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 200
 			set_country_flag = PRC_focus85
 			set_country_flag = PRC_Road
 			set_country_flag = PRC_attitude_2
@@ -1423,8 +1424,9 @@ focus_tree = {
 			#}
 			#has_completed_focus = PRC_focus43
 			completion_reward = {
-					set_cosmetic_tag = PRC_1936
-				}
+				set_cosmetic_tag = PRC_1936
+				add_political_power = 100
+			}
 
 	}
 	focus = {
@@ -1533,6 +1535,7 @@ focus_tree = {
 				}
 			completion_reward = {
 				custom_effect_tooltip = PRC_focus54_tt
+				unlock_decision_tooltip = Western_Expedition_Ma_Family_Army
 					start_border_war = {
 							change_state_after_war = yes
 							attacker = {
@@ -1696,17 +1699,12 @@ focus_tree = {
 									target = ROJ
 									type = annex_everything
 								}
-						}
+					}
+					unlock_decision_tooltip = The_Eastern_Expedition_against_Yan_Xishan
 					hidden_effect = {
 							country_event = {
 									id = PRC_1936.4
 									days = 10
-								}
-						}
-					hidden_effect = {
-							country_event = {
-									id = PRC_1936.9
-									days = 130
 								}
 						}
 				}
@@ -2410,9 +2408,10 @@ focus_tree = {
 		y = 11
 			available = {
 
-}
+			}
 			completion_reward = {
 					add_research_slot = 1
+					add_political_power = 50
 				}
 
 	}

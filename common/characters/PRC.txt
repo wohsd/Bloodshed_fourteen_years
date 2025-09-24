@@ -163,7 +163,9 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
-				
+				NOT = {
+					has_country_flag = PRC_1934_4
+				}
 			}
 			traits  = {
 				headstrong
@@ -196,6 +198,7 @@ characters={
 			}
 			available  = {
 				
+				
 			}
 			traits  = {
 				proletariat_internationalist
@@ -212,7 +215,9 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
-				
+				NOT = {
+					has_country_flag = PRC_1934_4
+				}
 			}
 			traits  = {
 				headstrong
@@ -374,21 +379,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
-		}
-		advisor={
-			slot = high_command
-			idea_token = PRC_DengPing_H
-			allowed  = {
-				original_tag  = PRC
-			}
-			available  = {
-				
-			}
-			traits  = {
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
 		}
 	}
 

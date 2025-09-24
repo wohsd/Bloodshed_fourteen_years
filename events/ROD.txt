@@ -315,7 +315,14 @@ news_event = {
 				annex_country = {
 					target = YHC
 				}
+				declare_war_on = {
+					target = PRC
+					type = annex_country
+				}
 			}
+			175={transfer_state_to = CHI}
+			190={transfer_state_to = CHI}
+			191={transfer_state_to = CHI}
 		}
 	}
 	option = {

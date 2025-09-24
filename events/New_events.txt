@@ -1016,6 +1016,7 @@ news_event = {
 			transfer_state = 36
 			transfer_state = 24
 			transfer_state = 34
+			transfer_state = 689
 		}
 		ROD_XiQia = {
 			set_nationality = MCK
@@ -1274,7 +1275,7 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			news_event = ROS.1
-			686={
+			63={
 				transfer_state_to = CAR
 			}
 			CAR={

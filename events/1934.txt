@@ -173,8 +173,15 @@ country_event = {
 			annex_country = {
 				target = NSA
 			}
-		}
 		
+		}
+		630={add_core_of=PRC}
+		655={add_core_of=PRC}
+		657={add_core_of=PRC}
+		677={add_core_of=PRC}
+		658={add_core_of=PRC}
+		629={add_core_of=PRC}
+
 		###湖南
 		260={transfer_state_to = RON}
 		264={transfer_state_to = RON}
@@ -216,7 +223,8 @@ country_event = {
 		609={transfer_state_to = ROG}
 		661={transfer_state_to = ROG}
 
-		211={transfer_state_to = LHC}
+		211={transfer_state_to = RHC}
+
 		hidden_effect = {
 			PRC = {
 				complete_national_focus = PRC_focus43
@@ -225,6 +233,7 @@ country_event = {
 				set_nationality = PRC 
 			}
 			news_event = WorldNew.17
+
 		}
 		every_core_state = {
 			if = {
@@ -341,6 +350,7 @@ country_event = {
 		}
 		
 		PRC={
+			white_peace =RHC
 			white_peace =YHC
 			white_peace =YUL
 			white_peace =CHI
@@ -352,11 +362,13 @@ country_event = {
 			white_peace =ROT
 			white_peace =ROW
 			white_peace =RDX
+			white_peace =ROD
 			#country_event = CHI_1932.1
 		}
 		602={transfer_state_to = ROT}
 		204={transfer_state_to = RHC}
 		658={transfer_state_to = PRC}
+		687={transfer_state_to = RDX}
 		592={transfer_state_to = ROG}
 		
 		599={transfer_state_to = CHI}
@@ -1100,6 +1112,7 @@ country_event = {
    
 	option = {
 		name = PRC_1934.4.a
+		set_country_flag = PRC_1934_4
 		remove_power_balance = {
 			id = PRC_struggle_balance
 		}
