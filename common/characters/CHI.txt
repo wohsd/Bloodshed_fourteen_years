@@ -1049,8 +1049,8 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command 
-			idea_token = CHI_ChenShaoKuang_H
+			slot = navy_chief
+			idea_token = CHI_ChenShaoKuang_N
             ledger = navy
 			visible = {
 			}
@@ -1083,8 +1083,8 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command 
-			idea_token = CHI_ChenJiLiang_H
+			slot = navy_chief 
+			idea_token = CHI_ChenJiLiang_N
             ledger = navy
 			visible = {
 			}
@@ -1113,8 +1113,8 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command 
-			idea_token = CHI_ChenCe_H
+			slot = navy_chief
+			idea_token = CHI_ChenCe_N
             ledger = navy
 			visible = {
 			}

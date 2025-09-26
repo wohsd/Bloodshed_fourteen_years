@@ -11,7 +11,7 @@ state={
 			infrastructure = 1
 		}
 		1936.1.1={
-			owner = ROD
+			owner = CHI
 		}
 		1938.1.1={
 			owner = CHI

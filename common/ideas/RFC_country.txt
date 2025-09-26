@@ -43,20 +43,16 @@ ideas = {
 	    revolutionary_three_principles_of_the_people_economy = {
 
 			visible = {
-				if = {
-					limit = {
-						tag = RFC
-					}
-					NOT = { has_completed_focus = The_place_where_the_revolution_originated }
-				}
+				original_tag= RFC
+				NOT = { has_completed_focus = The_place_where_the_revolution_originated }
 			}
 
 			allowed = {
-
+				original_tag= RFC
 			}
 
 			available = { #启用条件
-			
+			 original_tag= RFC
 		    }
 
 			cost = 150
