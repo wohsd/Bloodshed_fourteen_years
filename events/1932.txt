@@ -352,6 +352,18 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
+			ROH={
+				retire_character = ROH_MaoGuangXing
+				add_country_leader_role = {
+					character = ROH_WangJiaLie
+					promote_leader = yes
+					country_leader = {
+						ideology = despotism
+						expire = "1965.1.1.1"
+						traits = {  }
+					}
+				}
+			}
 			280={
 				transfer_state_to = JZZ
 			}
@@ -395,5 +407,6 @@ news_event = {
 	
 	option = {
 		name = ROH_1932.0.a
+		
 	}		
 }
