@@ -152,18 +152,18 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				army_intel_factor=-0.15
+				army_intel_factor=-0.1
 				army_org=-20
 				recon_factor=-0.05
 				org_loss_when_moving=0.1
-				army_defence_factor=-0.1
-				army_attack_factor=-0.1
-				breakthrough_factor=-0.1
+				army_defence_factor=-0.05
+				army_attack_factor=-0.05
+				breakthrough_factor=-0.05
 				planning_speed=-0.05
 				terrain_penalty_reduction=-0.1
-				river_crossing_factor=0.15
+				river_crossing_factor=0.1
 				army_speed_factor=-0.02
-
+				army_core_defence_factor=0.25
 			}
 		}
 

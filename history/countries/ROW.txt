@@ -7,7 +7,12 @@ set_technology = {
 	gw_artillery = 1
 interwar_antitank = 1
 }
-
+add_manpower=20000
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 3000
+    producer = CHI
+}
 recruit_character = ROW_LiuWengHui
 set_popularities = {
 	democratic = 0
@@ -22,7 +27,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas={
-	Sichuan_Army
+	#Sichuan_Army
 }
 1935.1.1={
 	XZS = {

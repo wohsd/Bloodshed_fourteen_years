@@ -331,6 +331,7 @@ country_event = {
     immediate = {
 		ROH={
 			news_event = {id=ROH_1932.0}
+			country_event = {id= ROH1933.1 days=270}
 		}
     } 
 	option = {
@@ -363,6 +364,8 @@ news_event = {
 						traits = {  }
 					}
 				}
+				load_oob = "ROH_1933"
+				set_cosmetic_tag = ROH
 			}
 			280={
 				transfer_state_to = JZZ

@@ -7,8 +7,14 @@ set_technology = {
 	gw_artillery = 1
 interwar_antitank = 1
 }
+add_manpower=20000
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 3000
+    producer = CHI
+}
 add_ideas={
-	Sichuan_Army
+	#Sichuan_Army
 }
 recruit_character = RDX_DengXiHou
 
