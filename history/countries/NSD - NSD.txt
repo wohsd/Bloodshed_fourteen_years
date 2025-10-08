@@ -80,6 +80,7 @@ add_ideas = {
 	retire_character = NSD_YuTianYun
 }
 1936.1.1={
+	oob =NSD_1936
 	declare_war_on = {
 		target = ROW
 		type = annex_everything

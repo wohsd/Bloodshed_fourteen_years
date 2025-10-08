@@ -158,6 +158,150 @@ add_intel = {
 }
 
 puppet = RON
+#河南
+167={set_state_flag = HENAN}
+135={set_state_flag = HENAN}
+137={set_state_flag = HENAN}
+146={set_state_flag = HENAN}
+159={set_state_flag = HENAN}
+160={set_state_flag = HENAN}
+164={set_state_flag = HENAN}
+165={set_state_flag = HENAN}
+166={set_state_flag = HENAN}
+169={set_state_flag = HENAN}
+177={set_state_flag = HENAN}
+178={set_state_flag = HENAN}
+179={set_state_flag = HENAN}
+180={set_state_flag = HENAN}
+184={set_state_flag = HENAN}
+192={set_state_flag = HENAN}
+646={set_state_flag = HENAN}
+194={set_state_flag = HENAN}
+206={set_state_flag = HENAN}
+652={set_state_flag = HENAN}
+659={set_state_flag = HENAN}
+#湖北
+198={set_state_flag = HUBEI}
+208={set_state_flag = HUBEI}
+626={set_state_flag = HUBEI}
+210={set_state_flag = HUBEI}
+218={set_state_flag = HUBEI}
+220={set_state_flag = HUBEI}
+224={set_state_flag = HUBEI}
+225={set_state_flag = HUBEI}
+226={set_state_flag = HUBEI}
+240={set_state_flag = HUBEI}
+244={set_state_flag = HUBEI}
+246={set_state_flag = HUBEI}
+247={set_state_flag = HUBEI}
+250={set_state_flag = HUBEI}
+251={set_state_flag = HUBEI}
+254={set_state_flag = HUBEI}
+257={set_state_flag = HUBEI}
+259={set_state_flag = HUBEI}
+651={set_state_flag = HUBEI}
+628={set_state_flag = HUBEI}
+#安徽
+172={set_state_flag = ANHUI}
+173={set_state_flag = ANHUI}
+185={set_state_flag = ANHUI}
+186={set_state_flag = ANHUI}
+193={set_state_flag = ANHUI}
+196={set_state_flag = ANHUI}
+199={set_state_flag = ANHUI}
+203={set_state_flag = ANHUI}
+207={set_state_flag = ANHUI}
+667={set_state_flag = ANHUI}
+597={set_state_flag = ANHUI}
+212={set_state_flag = ANHUI}
+230={set_state_flag = ANHUI}
+231={set_state_flag = ANHUI}
+232={set_state_flag = ANHUI}
+233={set_state_flag = ANHUI}
+242={set_state_flag = ANHUI}
+249={set_state_flag = ANHUI}
+
+#福建
+293={set_state_flag = FUJIAN}
+306={set_state_flag = FUJIAN}
+313={set_state_flag = FUJIAN}
+319={set_state_flag = FUJIAN}
+327={set_state_flag = FUJIAN}
+328={set_state_flag = FUJIAN}
+330={set_state_flag = FUJIAN}
+336={set_state_flag = FUJIAN}
+343={set_state_flag = FUJIAN}
+599={set_state_flag = FUJIAN}
+600={set_state_flag = FUJIAN}
+603={set_state_flag = FUJIAN}
+#江西
+262={set_state_flag = JIANGXI}
+266={set_state_flag = JIANGXI}
+269={set_state_flag = JIANGXI}
+660={set_state_flag = JIANGXI}
+281={set_state_flag = JIANGXI}
+282={set_state_flag = JIANGXI}
+288={set_state_flag = JIANGXI}
+292={set_state_flag = JIANGXI}
+298={set_state_flag = JIANGXI}
+301={set_state_flag = JIANGXI}
+302={set_state_flag = JIANGXI}
+312={set_state_flag = JIANGXI}
+582={set_state_flag = JIANGXI}
+583={set_state_flag = JIANGXI}
+584={set_state_flag = JIANGXI}
+585={set_state_flag = JIANGXI}
+589={set_state_flag = JIANGXI}
+595={set_state_flag = JIANGXI}
+598={set_state_flag = JIANGXI}
+593={set_state_flag = JIANGXI}
+606={set_state_flag = JIANGXI}
+609={set_state_flag = JIANGXI}
+666={set_state_flag = JIANGXI}
+#浙江
+235={set_state_flag = ZHEJIANG}
+237={set_state_flag = ZHEJIANG}
+248={set_state_flag = ZHEJIANG}
+690={set_state_flag = ZHEJIANG}
+255={set_state_flag = ZHEJIANG}
+256={set_state_flag = ZHEJIANG}
+258={set_state_flag = ZHEJIANG}
+268={set_state_flag = ZHEJIANG}
+273={set_state_flag = ZHEJIANG}
+276={set_state_flag = ZHEJIANG}
+285={set_state_flag = ZHEJIANG}
+289={set_state_flag = ZHEJIANG}
+591={set_state_flag = ZHEJIANG}
+#江苏
+163={set_state_flag = JIANGSU}
+168={set_state_flag = JIANGSU}
+176={set_state_flag = JIANGSU}
+181={set_state_flag = JIANGSU}
+187={set_state_flag = JIANGSU}
+197={set_state_flag = JIANGSU}
+200={set_state_flag = JIANGSU}
+205={set_state_flag = JIANGSU}
+213={set_state_flag = JIANGSU}
+214={set_state_flag = JIANGSU}
+215={set_state_flag = JIANGSU}
+216={set_state_flag = JIANGSU}
+219={set_state_flag = JIANGSU}
+668={set_state_flag = JIANGSU}
+669={set_state_flag = JIANGSU}
+671={set_state_flag = JIANGSU}
+674={set_state_flag = JIANGSU}
+675={set_state_flag = JIANGSU}
+#贵州
+280={set_state_flag = GUIZHOU}
+283={set_state_flag = GUIZHOU}
+304={set_state_flag = GUIZHOU}
+307={set_state_flag = GUIZHOU}
+309={set_state_flag = GUIZHOU}
+311={set_state_flag = GUIZHOU}
+317={set_state_flag = GUIZHOU}
+320={set_state_flag = GUIZHOU}
+325={set_state_flag = GUIZHOU}
+
 
 1939.1.1={
 293={

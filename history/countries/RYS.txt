@@ -7,7 +7,9 @@ set_technology = {
 	gw_artillery = 1
 interwar_antitank = 1
 }
-
+add_ideas={
+	Sichuan_Army
+}
 recruit_character = RYS_YangSen
 set_popularities = {
 	democratic = 0

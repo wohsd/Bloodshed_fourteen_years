@@ -11,7 +11,7 @@ Liberate_White_Zone = {
 	visible = { 
 		tag=PRC
 		date > 1931.1.1
-		date < 1936.1.1
+		date < 1949.1.1
 	}
 }
 Yan_an_Rectification_Movement= {

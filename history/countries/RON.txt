@@ -38,3 +38,24 @@ set_popularities = {
 add_ideas = {
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
+
+260={set_state_flag = HUNAN}
+264={set_state_flag = HUNAN}
+265={set_state_flag = HUNAN}
+271={set_state_flag = HUNAN}
+272={set_state_flag = HUNAN}
+284={set_state_flag = HUNAN}
+287={set_state_flag = HUNAN}
+296={set_state_flag = HUNAN}
+299={set_state_flag = HUNAN}
+300={set_state_flag = HUNAN}
+305={set_state_flag = HUNAN}
+308={set_state_flag = HUNAN}
+315={set_state_flag = HUNAN}
+316={set_state_flag = HUNAN}
+587={set_state_flag = HUNAN}
+607={set_state_flag = HUNAN}
+608={set_state_flag = HUNAN}
+611={set_state_flag = HUNAN}
+612={set_state_flag = HUNAN}
+672={set_state_flag = HUNAN}

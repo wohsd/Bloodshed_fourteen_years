@@ -224,6 +224,10 @@ spriteTypes = {
 		texturefile = "gfx/event/Buy_gun.dds"
 	}
 	spriteType = {
+		name = "GFX_New_Military_Service_Law_category"
+		texturefile = "gfx/event/New_Military_Service_Law_category.png"
+	}
+	spriteType = {
 		name = "GFX_Eeconomic_system"
 		texturefile = "gfx/event/Eeconomic_system.png"
 	}

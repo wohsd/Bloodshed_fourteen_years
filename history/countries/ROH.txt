@@ -25,6 +25,7 @@ set_politics = {
 add_ideas = Regionalist_warlords
 1931.1.1={
 	set_cosmetic_tag = ROH_1931
+	country_event = {id= ROH1933.1 days=370}
 }
 
 1932.4.8={
@@ -33,7 +34,16 @@ add_ideas = Regionalist_warlords
 }
 1933.1.1={
 	set_oob = "ROH_1933"
-	country_event = {id= ROH1933.1 days=5}
+	ROH={
+		declare_war_on = {
+			target = YGC
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SOX
+			type = annex_everything
+		}
+	}
 }
 
 

@@ -90,6 +90,14 @@ create_intelligence_agency = {
 }
 
 create_operative_leader = {
+	name = PRC_PangHangNian
+	bypass_recruitment = no 
+	available_to_spy_master = yes 
+	gfx = GFX_PRC_PangHangNian
+	traits = {}
+	nationalities = { PRC }
+}
+create_operative_leader = {
 	name = PRC_ZhouEngLai
 	bypass_recruitment = no 
 	available_to_spy_master = yes 
