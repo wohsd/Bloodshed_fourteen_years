@@ -1360,33 +1360,17 @@ CHI_Purging_party_category = {
                     can_not_declare_war = no
                 }
 					add_popularity = { ideology = communism popularity = 0.5 }
-				transfer_state = 262
-				transfer_state = 269
-				transfer_state = 281
+				transfer_state = 603
 				transfer_state = 292
-				transfer_state = 660
-				transfer_state = 288
-				add_state_core = 262
-				add_state_core = 269
-				add_state_core = 281
+				transfer_state = 281
+				add_state_core = 603
 				add_state_core = 292
-				add_state_core = 660
-				add_state_core = 288
+				add_state_core = 281
 			}
 				set_capital = {
 					state = 281
 				}
 				load_oob = "RFC_1931"
-			}
-			CHI = {
-				hidden_effect = {
-					remove_state_core = 262
-					remove_state_core = 269
-					remove_state_core = 281
-					remove_state_core = 292
-					remove_state_core = 660
-					remove_state_core = 288
-				}
 			}
 		}
 	}
