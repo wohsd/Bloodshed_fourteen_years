@@ -10,6 +10,11 @@ focus_tree = {
 		cost = 5
 		x = 14
 		y = 0
+		completion_reward = {
+			add_dynamic_modifiers = {
+				modifier = Provisional_Committee_Uprising
+			}
+		}
 	}
 	focus = {
 		id = Establish_a_provisional_government

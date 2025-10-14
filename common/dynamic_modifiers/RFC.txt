@@ -14,7 +14,7 @@ Provisional_Committee_Uprising = {
 	
 	enable = { always = yes }
 
-	icon = GFX_idea_Political_Department
+	icon = GFX_idea_Provisional_Committee_Uprising
 
 	supply_consumption_factor= RFC_supply_consumption_factor   #补给使用
 	army_org_factor = RFC_army_org_factor #陆军组织度
