@@ -13,6 +13,20 @@ characters={
 			id=-1
 		}
 	}
+	PRC_ChenDuXiu={
+		name=PRC_ChenDuXiu
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_ChenDuXiu.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	PRC_WangMing={
 		name=PRC_WangMing
 		portraits={

@@ -593,18 +593,6 @@ focus_tree = {
 							582 = {
 									is_controlled_by = PRC
 								}
-							589 = {
-									is_controlled_by = PRC
-								}
-							598 = {
-									is_controlled_by = PRC
-								}
-							600 = {
-									is_controlled_by = PRC
-								}
-							593 = {
-									is_controlled_by = PRC
-								}
 						}
 				}
 			completion_reward = {
@@ -711,7 +699,11 @@ focus_tree = {
 		}
 		x = 12
 		y = 10
-
+		completion_reward={
+			remove_power_balance = {
+				id = PRC_struggle_balance
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus_137
@@ -727,7 +719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_focus_120
-		text = “一切服务莫斯科”
+		text = 一切服务莫斯科
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -803,7 +795,23 @@ focus_tree = {
 		}
 		x = 13
 		y = 12
-
+		completion_reward={
+			add_resource = {
+				type = tungsten
+				amount = 3
+				state = 582
+			}
+			add_resource = {
+				type = aluminium
+				amount = 3
+				state = 582
+			}
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 582
+			}
+		}
 	}
 	focus = {
 		id = PRC_focus_133
@@ -1084,7 +1092,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 11
-
+		completion_reward={
+			add_research_slot = 1 
+		}
 	}
 	focus = {
 		id = PRC_focus_141
@@ -1096,7 +1106,10 @@ focus_tree = {
 		}
 		x = 19
 		y = 12
-
+		completion_reward={
+			add_to_variable={CHI_research_speed_factor=0.2}
+			custom_effect_tooltip= PRC_focus_141_tool
+		}
 	}
 	focus = {
 		id = PRC_focus77
@@ -3393,5 +3406,20 @@ focus_tree = {
 		x = 10
 		y = 13
 
+	}
+	focus = {
+		id = PRC_focus_147
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PRC_focus_118
+		} 
+		x = 13
+		y = 11
+		completion_reward = {
+			PRC_ChenDuXiu = {
+				promote_character = yes
+			}
+		}
 	}
 }
