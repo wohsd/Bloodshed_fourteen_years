@@ -1,0 +1,28 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Tunnel_Warfare_medium"
+		texturefile = "gfx/interface/tech/Tunnel_Warfare.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sabotage_Warfare_medium"
+		texturefile = "gfx/interface/tech/Sabotage_Warfare.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sparrow_Warfare_medium"
+		texturefile = "gfx/interface/tech/Sparrow_Warfare.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Mine_Warfare_medium"
+		texturefile = "gfx/interface/tech/Mine_Warfare.png"
+		legacy_lazy_load = no
+	}
+
+	#template for new entries
+	#spriteType = {
+	#	name = "GFX_trait_"
+	#	texturefile = "gfx/interface/traits/trait_.png"
+	#}
+}

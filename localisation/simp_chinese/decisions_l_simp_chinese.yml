@@ -37,7 +37,7 @@ Long_march_mission2: "突破第三道封锁线"
 Long_march_mission3: "夺取道县"
 Long_march_mission4: "血战湘江"
 Long_march_mission5: "四渡赤水"
-Chi_Shui: "渡河次数:[?Chi_Shui]\n\n渡过赤水县\n渡过古籣\n渡过茅台镇\n攻克娄山关"
+Chi_Shui: "渡河次数:§Y[?Chi_Shui]§!\n\n按照下列依次攻占§Y重要胜利点§!可完成：\n如果先前攻占的胜利点未被占领，仍然看作完成一次\n\n渡过赤水§Y（赤水）§!\n重返遵义§Y（遵义）§!\n抢占茅台§Y（茅台）§!\n兵临贵阳§Y（打鼓新场）§!"
 Chi_Shui_tooltip: "渡河次数大于等于4"
 ##新增
 Long_march_mission6: "巧渡金沙江"
@@ -109,9 +109,10 @@ Zhou_road: "调节矛盾"
 Zhou_road1: "支持毛路线"
 Zhou_road2: "支持王路线"
 
-
-
-
+Expand_Shaanxi_Gansu_Ningxia: "扩大陕甘宁" 
+Expand_Shaanxi_Gansu_Ningxia_desc: "红军的军事部署和作战行动，应确定地放在“打通抗日路线”与“巩固、扩大现有苏区”这个基点上。把国内战争同民族战争结合起来；准备对日作战；扩大红军。"
+The_Eastern_Expedition_against_Yan_Xishan: "东征阎锡山" 
+Western_Expedition_Ma_Family_Army: "西征马家军" 
 
 
 War_Resistance_Behind_Enemy: "敌后抗战" 
@@ -225,6 +226,38 @@ Promote_New_Life_Movement: "宣传新生活运动"
 Compulsory_education_introduced: "推广地方教育"
 
 Scorched_earth_policy: "焦土政策"
+Shortage_personnel: "兵员匮乏"
+
+New_Military_Service_Law_category: "新兵役法"
+New_Military_Service_Law_category_desc: "国民政府于1930年代初开始酝酿兵役制度的改革，决心推行“征兵制”。这一制度的核心在于，要求所有符合条件的成年男性公民履行兵役义务，不再以金钱作为诱饵，而是强调公民对国家安全的责任与担当。《中华民国兵役法》正式出台，标志着中国兵役制度由“募”向“征”的历史性转变。该法规定，男性公民达到一定年龄后，均需进行兵役登记，并根据国家需要随时准备应征入伍。"
+ Recruit_new_soldiers_henan: "在河南募集新丁"
+ Recruit_new_soldiers_henan_desc:0 "在河南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+ 
+ Recruit_new_soldiers_hunan:0 "在湖南募集新丁"
+ Recruit_new_soldiers_hunan_desc:0 "在湖南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+
+ Recruit_new_soldiers_hubei:0 "在湖北募集新丁"
+ Recruit_new_soldiers_hubei_desc:0 "在湖北地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+ 
+ Recruit_new_soldiers_anhui:0 "在安徽募集新丁"
+ Recruit_new_soldiers_anhui_desc:0 "在安徽地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+ 
+ Recruit_new_soldiers_fujian:0 "在福建募集新丁"
+ Recruit_new_soldiers_fujian_desc:0 "在福建地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+ 
+ Recruit_new_soldiers_jiangxi:0 "在江西募集新丁"
+ Recruit_new_soldiers_jiangxi_desc:0 "在江西地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+ 
+ Recruit_new_soldiers_zhejiang:0 "在浙江募集新丁"
+ Recruit_new_soldiers_zhejiang_desc:0 "在浙江地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+ 
+ Recruit_new_soldiers_jiangsu:0 "在江苏募集新丁"
+ Recruit_new_soldiers_jiangsu_desc:0 "在江苏地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+ 
+ Recruit_new_soldiers_guizhou:0 "在贵州募集新丁"
+ Recruit_new_soldiers_guizhou_desc:0 "在贵州地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+
+
 
 Eeconomic_system: "经济系统" 
 Eeconomic_system_desc: "经济乃国之根本，民生之所系。自古以来，富国强兵必以经济为先。若经济凋敝，则社会动荡，民生困顿，虽有雄图亦难施展。\n\n产值剩余：§Y[?ROOT.ECO|]M§!\n工厂开支：§Y[?ROOT.ECO_FAC|]M§!\n军费开支：§Y[?ROOT.ECO_ARMY|]M§!\n通货膨胀：[?ROOT.ECO_INF|-%%]\n\n经济数值直接影响到工厂的产出效率、党派支持度乃至稳定度。过高的军费和工厂开支会产生严重的经济压力，通过裁减工厂/军队能够有效的缓解，部分国策需要满足足够的经济数值才能实行。\n\n固定影响：\n稳定度：[?ROOT.ECO_INF_temp|R]\n党派支持度：[?ROOT.ECO_INF_temp|R]\n战争支持度：[?ROOT.ECO_INF_temp|R]"
@@ -260,3 +293,21 @@ Support_self_cultivating_farmers_desc: "推行'耕者有其田'政策，向贫�
 
 Severe_corruption_punishment: "严惩贪污"
 Severe_corruption_punishment_desc: "建立严格的廉政监督体系，对贪污腐败行为实行零容忍政策。设立特别法庭快速审理腐败案件，重拳打击官场腐败，重建政府公信力。"
+
+
+Yunnan_Burma_Highway_category: "滇缅公路"
+Yunnan_Burma_Highway_category_desc: "日军可能会切断中国的国际交通线，香港和越南的国际运输必会受到影响，云南省政府主席龙云提出《建设滇缅公路和滇缅铁路计划》，建议修一条从昆明出发经云南西部到缅甸北部最后直通印度洋的铁路和公路，确保西南对外交通畅通无阻，并表示：公路由地方负责，中央补助；铁路由中央负责，云南地方政府协助修筑。\n\n当前修筑进度：[?Yunnan_Burma_var]"
+
+China_Soviet_Road_category: "中苏公路"
+China_Soviet_Road_category_desc: "在努力打通西南国际交通线的同时，国民政府还组织人力补修和改善从甘肃兰州直中苏边境霍尔果斯（伊犁境内）的中苏公路。大批苏联援助的武器装备、弹药油料等战争物资的西北国际交通线渊源运入。\n\n当前修筑进度：[?China_Soviet_var]"
+
+
+Conscript_laborers: "征召民夫"
+Mobilize_the_masses: "动员群众"
+Under_construction: "施工中"
+
+S_Conscript_laborers: "征召民夫"
+S_Mobilize_the_masses: "动员群众"
+S_Under_construction: "施工中"
+
+

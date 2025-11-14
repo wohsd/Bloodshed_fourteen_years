@@ -97,3 +97,48 @@ CHI_struggle_balance_category = {
 		tag=CHI
 	}
 }
+
+
+Yunnan_Burma_Highway_category= {
+	icon = military_operation
+	picture = GFX_JiangJieShi_1
+	visible = { 
+		tag=CHI
+		NOT = {
+			check_variable = {
+				Yunnan_Burma_var = 100
+			}
+		}
+		has_completed_focus = CHIFocus_5
+	} 
+	visible_when_empty = yes
+}
+
+China_Soviet_Road_category= {
+	icon = military_operation
+	picture = GFX_JiangJieShi_1
+	visible = { 
+		tag=CHI
+		NOT = {
+			check_variable = {
+				China_Soviet_var = 100
+			}
+		}
+		has_completed_focus = CHIFocus_9
+	} 
+	
+	visible_when_empty = yes
+}
+
+
+
+New_Military_Service_Law_category= {
+	icon = generic_propaganda
+	picture = GFX_New_Military_Service_Law_category 
+	visible = { 
+		tag=CHI
+		#has_completed_focus = CHIFocus_9
+	} 
+	
+	visible_when_empty = yes
+}

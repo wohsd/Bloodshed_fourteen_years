@@ -18,6 +18,7 @@ set_popularities = {
     neutrality = 100
 }
 add_ideas = Regionalist_warlords
+add_ideas = Sichuan_Army
 set_politics = {
 	ruling_party = neutrality
 	#last_election = "1936.11.11"

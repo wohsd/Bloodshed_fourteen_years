@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+ CHI_AI_behavior: "@CHI 南京国民政府"
+ 14_RULE_OPTION_DEFAULT: "历史路线"
+ 14_RULE_OPTION_DEFAULT_AI_DESC: "AI尽可能的保持历史路线"
+ Leftist_Kuomintang_win: "临委会起义"
+ Leftist_Kuomintang_win_AI_DESC: "邓演达不会被杀,临委会必然发动起义！"
+ Restructuring_meeting_win: "改组会掌权"
+ Restructuring_meeting_win_AI_DESC: "蒋介石被暗杀后，改组会在反蒋同盟的权力斗争中获得胜利"
+ Kuomintang_Rightists_win: "国民党右派掌权"
+ Kuomintang_Rightists_win_AI_DESC: "蒋介石被暗杀后，右派在反蒋同盟的权力斗争中获得胜利"
+The_Struggle_of_the_Left_Wing: "左派之争"
+The_Struggle_of_the_Left_Wing_AI_DESC: "在改组会夺权后，临委会发动起义"
+The_struggle_between_left_and_right: "左右之争"
+The_struggle_between_left_and_right_AI_DESC: "在右派夺权后，临委会发动起义"
+
+
+
+
+
+
+
+
+

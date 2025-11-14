@@ -11,7 +11,10 @@ news_event = {
 	trigger = {
 	}
     immediate = {
-        CHI = { country_event = RFC_country.1 } 
+		hidden_effect = {
+			CHI = { country_event = RFC_country.1 } 
+		}
+        
 	}
 	option = {
 		name = RFC_NEW.1.a
@@ -31,37 +34,36 @@ country_event = {
 	}
 	option = {
 		name = RFC_country.1.a
-		RFC = { 
-			hidden_effect = {
-			load_oob = "RFC_1931"
-			load_focus_tree = RFC
-			set_rule = { 
-                can_not_declare_war = no
-            }
-		}
-			create_wargoal = {
-					target = CHI
-					type = annex_everything
-					caller = RFC
-				}
+		RFC = {
+		    complete_national_focus = The_Third_Road
+			declare_war_on = { target = CHI type = topple_government }
 			change_tag_from = CHI
 		}
 	}
 	option = {
 		name = RFC_country.1.b
 		RFC = { 
-			hidden_effect = {
-			load_oob = "RFC_1931"
-			load_focus_tree = RFC
-			set_rule = { 
-                can_not_declare_war = no
-            }
+		    complete_national_focus = The_Third_Road
+			declare_war_on = { target = CHI type = topple_government }
 		}
-			create_wargoal = {
-					target = CHI
-					type = annex_everything
-					caller = RFC
-				}
-		}
+	}
+}
+
+country_event = {
+	id = RFC_country.2
+	title = RFC_country.2.t
+	desc = RFC_country.2.d
+    #picture = 
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+    immediate = {	
+	}
+	option = {
+		name = RFC_country.2.a
+	}
+	option = {
+		name = RFC_country.2.b
 	}
 }

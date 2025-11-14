@@ -10,14 +10,14 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = RFC_LiJiSheng
+recruit_character = RFC_DengYangDa
 set_popularities = {
 	democratic = 50
 	neutrality = 25
 	communism = 25
 }
 set_politics = {
-	ruling_party = socialism
+	ruling_party = neutrality
 	#last_election = "1936.11.11"
 	election_frequency = 72
 	elections_allowed = no
@@ -28,4 +28,8 @@ set_rule = {
 	can_join_factions = no
 	can_join_opposite_factions = no  
 	can_create_factions = no
+}
+1933.1.1 = {
+	recruit_character = RFC_LiJiSheng
+	recruit_character = RFC_huangqixiang
 }

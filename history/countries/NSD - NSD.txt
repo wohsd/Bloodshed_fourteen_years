@@ -71,10 +71,30 @@ NSD={
 add_ideas = {
 	Revolutionary_base
 }
+
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
 1934.1.1={
 	retire_character = NSD_KuanJiXun
 }
 1936.4.1={
 	retire_character = NSD_YuTianYun
+}
+1936.1.1={
+	oob =NSD_1936
+	declare_war_on = {
+		target = ROW
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = RDX
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = RDX
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = ROS
+		type = annex_everything
+	}
 }

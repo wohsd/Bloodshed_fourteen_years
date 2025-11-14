@@ -121,14 +121,7 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-		date > 1937.3.1
-		PRC = {
-			NOT = {
-				controls_province = 666
-			}
-		}
-    }
+    is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
 			set_global_flag = fall_of_941

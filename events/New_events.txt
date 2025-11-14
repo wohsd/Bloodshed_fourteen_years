@@ -1016,6 +1016,7 @@ news_event = {
 			transfer_state = 36
 			transfer_state = 24
 			transfer_state = 34
+			transfer_state = 689
 		}
 		ROD_XiQia = {
 			set_nationality = MCK
@@ -1274,7 +1275,7 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			news_event = ROS.1
-			686={
+			63={
 				transfer_state_to = CAR
 			}
 			CAR={
@@ -1837,3 +1838,20 @@ news_event = {
 			name = WorldNew.36.a
 		}		
 	}
+news_event = {
+		id = WorldNew.37
+		title = WorldNew.37.t
+		desc = WorldNew.37.d
+	
+		picture = GFX_news_event_generic_sign_treaty1
+	
+		major = yes
+	
+		is_triggered_only = yes
+		immediate = {
+		}
+		option = {
+			name = WorldNew.37.a
+		}		
+	}
+

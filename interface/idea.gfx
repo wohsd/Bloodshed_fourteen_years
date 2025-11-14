@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_idea_Sichuan_Army"
+		texturefile = "gfx/interface/ideas/ROS/Sichuan_Army.png"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_Shortage_personnel"
+		texturefile = "gfx/interface/ideas/Shortage_personnel.png"
+	} 
+
+
+
+	spriteType = {
 		name = "GFX_modifiers_Rectification_movement"
 		texturefile = "gfx/interface/ideas/PRC/Rectification_movement.png"
 	} 
@@ -37,6 +49,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_PRC_LiuShaoQi"
 		texturefile = "gfx/interface/operative/PRC_LiuShaoQi.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_ZhouEngLai"
+		texturefile = "gfx/interface/operative/PRC_ZhouEngLai.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_PangHangNian"
+		texturefile = "gfx/interface/operative/PRC_PangHangNian.png"
 	}
 	spriteType = {
 		name = "GFX_PRC_GuoRuKui"
@@ -231,7 +251,18 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Provisional_Committee_Uprising"
-		texturefile = "gfx/interface/ideas/CHI/Provisional_Committee_Uprising.png"
+		texturefile = "gfx/interface/ideas/RFC/Provisional_Committee_Uprising.png"
 	}
-
+	spriteType = {
+		name = "GFX_idea_Political_Department"
+		texturefile = "gfx/interface/ideas/RFC/Political_Department.png"
+	}
+    spriteType = {
+		name = "GFX_idea_revolutionary_three_principles_of_the_people_economy"
+		texturefile = "gfx/interface/ideas/RFC/Revolutionary_Three_Principles_of_the_People_Economy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Revolutionary_Armed_Forces"
+		texturefile = "gfx/interface/ideas/RFC/Revolutionary_Armed_Forces.dds"	
+	}
 }
