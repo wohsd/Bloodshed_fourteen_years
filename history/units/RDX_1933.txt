@@ -54,14 +54,14 @@ units = {
 		start_equipment_factor = 0.2
 	}
 	division= {	
-		location = 3766
+		location = 3844
 		name = "川军第二十八军第四师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
 	}
 	division= {	
-		location = 3766
+		location = 692
 		name = "川军第二十八军第七师"
 		division_template = "国民革命军"
 		start_experience_factor = 0.2

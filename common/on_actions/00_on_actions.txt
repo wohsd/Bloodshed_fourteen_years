@@ -193,29 +193,34 @@ on_actions = {
 		}
 	}
 
-	on_capitulation = {
+	on_capitulation_immediate = {
     	effect = { 
 			if = {
 				limit = { 
 					ROOT={original_tag = HLJ}
 					FROM={original_tag =JAP}
 				}
-				MCK={transfer_state = 9}
+				MCK={
+					annex_country = {
+						target = ROOT
+					}
+				}
 			}
 		 }
 	}
 
-	on_capitulation = {
+	on_capitulation_immediate = {
     	effect = { 
 			if = {
 				limit = { 
 					ROOT={original_tag = JLS}
 					FROM={original_tag =JAP}
 				}
-				MCK={transfer_state = 16}
-				MCK={transfer_state = 20}
-				MCK={transfer_state = 25}
-				MCK={transfer_state = 27}
+				MCK={
+					annex_country = {
+						target = ROOT
+					}
+				}
 			}
 		 }
 	}

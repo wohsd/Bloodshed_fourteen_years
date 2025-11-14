@@ -11,7 +11,7 @@ Liberate_White_Zone = {
 	visible = { 
 		tag=PRC
 		date > 1931.1.1
-		date < 1949.1.1
+		date < 1936.1.1
 	}
 }
 Yan_an_Rectification_Movement= {
@@ -82,7 +82,6 @@ Long_march_decisions = {
 	}
 	on_map_area = {
 		name = Long_march_decisions_map
-		state = 149
 		state = 606
 		state = 608
 		state = 607
@@ -124,17 +123,4 @@ War_Resistance_Behind_Enemy = {
 		tag=PRC
 		has_country_flag = PRC_focus82
 	}
-}
-
-Expand_Shaanxi_Gansu_Ningxia = {
-	icon = military_operation
-	picture = GFX_Expand_Shaanxi_Gansu_Ningxia
-	visible = { 
-		tag=PRC
-		OR={
-			has_completed_focus = PRC_focus55
-			has_completed_focus = PRC_focus54
-		}
-	}
-	priority = 111
 }

@@ -14,7 +14,8 @@ state={
 			3331 5
 		}
 		1933.1.1={
-			owner = ROD
+			owner = CHI
+add_core_of = CHI
 		}
 		1936.1.1={
 			owner = JDW

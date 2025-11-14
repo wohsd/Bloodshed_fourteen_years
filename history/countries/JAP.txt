@@ -1,8 +1,7 @@
 ﻿capital = 121 
-set_naval_oob = "JAP_1936_naval"
 1931.1.1={
    set_oob = "JAP_1931"
-   add_ideas=Militaristic_fervor 
+   add_ideas=Militaristic_fervor
 
 }
 create_import = {

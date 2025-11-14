@@ -16,10 +16,6 @@ state={
 			industrial_complex = 3
 			arms_factory = 3
 			dockyard= 3
-			3720= {
-				naval_base = 2
-				coastal_bunker = 1
-			}
 		}
 		add_core_of = JAP
 	}

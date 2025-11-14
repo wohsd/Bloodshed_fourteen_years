@@ -87,6 +87,30 @@ characters={
 			id=-1
 		}
 	}
+	CHI_DengYangDa={
+		name=CHI_DengYangDa
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_DengYangDa.png"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1965.1.1.1"
+			id=19318
+		}
+		corps_commander = {
+			traits={ 
+				CHI_Provisional_committee
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
 	CHI_ChenCheng={
 		name=CHI_ChenCheng
 		portraits={
@@ -144,6 +168,7 @@ characters={
 		corps_commander={
 			traits={ 
 				CHI_Central_Army
+				Ambitious
 			}
 			skill=2
 			attack_skill=2
@@ -688,11 +713,11 @@ characters={
 		}
 		corps_commander={
 			traits={ }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 
@@ -705,12 +730,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ Resisting_the_teacher }
+			traits={ }
 			skill=3
 			attack_skill=2
 			defense_skill=3
 			planning_skill=2
-			logistics_skill=2
+			logistics_skill=1
 		}
 	}
 	CHI_WangYaoWu={
@@ -1032,105 +1057,4 @@ characters={
 			}
 		}
 	}
-
-
-
-
-
-
-
-
-	CHI_ChenShaoKuang={
-		name=CHI_ChenShaoKuang #陈绍宽#
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_ChenShaoKuang.png"
-                small = "gfx/interface/advisers/CHI_ChenShaoKuang_small.png"		
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = CHI_ChenShaoKuang_N
-            ledger = navy
-			visible = {
-			}
-			allowed = {
-			}
-			traits = { navy_capital_ship_2 }
-			cost = 100				
-		}		
-		navy_leader={
-			traits={ bold naval_lineage }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=2
-			legacy_id=-1
-		}
-	}
-
-
-
-
-
-	CHI_ChenJiLiang={
-		name=CHI_ChenJiLiang #陳季良#
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_ChenJiLiang.png"
-                small = "gfx/interface/advisers/CHI_ChenJiLiang_small.png"		
-			}
-		}
-		advisor={
-			slot = navy_chief 
-			idea_token = CHI_ChenJiLiang_N
-            ledger = navy
-			visible = {
-			}
-			allowed = {
-			}
-			traits = { navy_capital_ship_2 }
-			cost = 100				
-		}		
-		navy_leader={
-			traits={ bold naval_lineage }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=2
-			legacy_id=-1
-		}
-	}
-	
-	CHI_ChenCe={
-		name=CHI_ChenCe #陳策# 
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_ChenCe.png"
-				small = "gfx/interface/advisers/CHI_ChenCe_small.png"		
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = CHI_ChenCe_N
-            ledger = navy
-			visible = {
-			}
-			allowed = {
-			}
-			traits = { navy_screen_2 }
-			cost = 100				
-		}		
-		navy_leader={
-			traits={ bold }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}	
 }

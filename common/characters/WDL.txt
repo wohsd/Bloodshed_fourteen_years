@@ -8,13 +8,13 @@ characters={
 
 			#平民状态
 			civilian={
-				large="gfx\leaders\WDL\WDL_WangDeLing.png"
+				large="gfx//leaders//WangDeLing.png"
 			}
 
 			#军事状态
 			army={
-				large="gfx\leaders\WDL\WDL_WangDeLing.png"
-				small="gfx\leaders\WDL\WDL_WangDeLing.png"
+				large="gfx//leaders//WangDeLing.png"
+				small="gfx//leaders//WangDeLing.png"
 			}
 
 		}

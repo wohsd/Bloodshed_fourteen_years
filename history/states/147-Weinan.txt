@@ -10,7 +10,7 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		1935.1.1={
+		1936.1.1={
 			owner = ROD
 		}
 		victory_points = {
@@ -18,7 +18,7 @@ state={
 		}
 		1938.1.1={
 			owner = CHI
-			add_core_of = CHI
+add_core_of = CHI
 		}
 	}
 	manpower=323000

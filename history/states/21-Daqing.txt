@@ -15,9 +15,7 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = ROD
-		victory_points = {
-			2842 5
-		}
+		
 		1933.1.1={
 			owner = MCK
 		}

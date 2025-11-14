@@ -177,11 +177,3 @@ Combat_direction_effect = {
 	planning_speed=1
 	supply_consumption_factor=-1
 }
-
-Shortage_personnel = {
-	icon = GFX_modifiers_Shortage_personnel
-
-	enable = { always = yes }
-
-	local_manpower=-0.15
-}

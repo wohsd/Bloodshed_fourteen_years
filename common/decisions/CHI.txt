@@ -1295,23 +1295,7 @@ CHI_Purging_party_category = {
 		available = {
 		} 
 		visible = {
-			not={
-				or={
-				    has_game_rule = {
-				            rule = CHI_AI_behavior
-			        	    option = Leftist_Kuomintang_win
-			        }
-					has_game_rule = {
-				            rule = CHI_AI_behavior
-			        	    option = The_Struggle_of_the_Left_Wing
-			        }
-					has_game_rule = {
-				            rule = HI_AI_behavior
-			        	    option = The_struggle_between_left_and_right
-			        }
-				}
-			}
-			date < 1931.8.23
+			date < 1931.11.29 
 		}
 		cost = 20 
 		days_remove= 3
@@ -1320,10 +1304,10 @@ CHI_Purging_party_category = {
 			factor = 1
 		} 
 		complete_effect = {
-			RFC_DengYangDa = {
+			CHI_DengYangDa = {
 				unit_leader_event = {id=Assassinate.1 days=2}
 			}
-			set_country_flag = RFC_DengYangDa1
+			set_country_flag = CHI_DengYangDa1
 		}
 	}
 
@@ -1331,7 +1315,7 @@ CHI_Purging_party_category = {
 		icon = generic_civil_support
 		available = {
 			hidden_trigger = { 
-				has_country_flag = RFC_DengYangDa1
+				has_country_flag = CHI_DengYangDa1
 			} 
 		}
 		days_mission_timeout =235
@@ -1341,37 +1325,45 @@ CHI_Purging_party_category = {
 				date < 1931.11.29
 			}
 
-		}	
+		}
+		visible = { 
+			
+		}		
 		fixed_random_seed = no
 		fire_only_once = yes
 		is_good = no
 		timeout_effect = {
 			news_event = RFC_NEW.1
             random_unit_leader = {
-					limit = { is_character = RFC_huangqixiang }
+					limit = { is_character = CHI_DengYangDa }
 					set_nationality = RFC
-				
+					add_country_leader_role = {
+		            country_leader = {
+					    ideology = socialism
+						traits = {}
+						expire = "1965.1.1.1"
+					    }
+					promote_leader = yes
+				}
 			}
             RFC = {
-				hidden_effect = {
-				set_politics = { ruling_party = communism }
-			    load_focus_tree = RFC
-			    set_rule = { 
-                    can_not_declare_war = no
-                }
-					add_popularity = { ideology = communism popularity = 0.5 }
-				transfer_state = 603
-				transfer_state = 292
+				transfer_state = 600
+				transfer_state = 262
+				transfer_state = 269
 				transfer_state = 281
-				add_state_core = 603
-				add_state_core = 292
+				transfer_state = 292
+				add_state_core = 600
+				add_state_core = 262
+				add_state_core = 269
 				add_state_core = 281
-			}
+				add_state_core = 292
 				set_capital = {
 					state = 281
 				}
-				load_oob = "RFC_1931"
 			}
+		}
+		complete_effect = {
+
 		}
 	}
 }
@@ -2013,7 +2005,7 @@ CHI_struggle_balance_00_category = {
 Scorched_earth_policy = {
 
 	CHI_scorched_earth_tactics = {
-		icon = eng_blackshirt_march
+		icon = generic_scorched_earth
 		available = {
 			any_owned_state = {
 				is_controlled_by = ROOT
@@ -2052,653 +2044,6 @@ Scorched_earth_policy = {
 					damage = 3
 				}
 			}		
-		}
-	}
-}
-
-
-
-
-
-
-Yunnan_Burma_Highway_category = { 
-	Under_construction= {
-		available = {
-			always = no
-		}
-		days_mission_timeout = 60
-		activation = { 
-			always = yes
-			has_completed_focus = CHIFocus_5
-		}		
-		fixed_random_seed = no
-		fire_only_once = no
-		is_good = yes
-		timeout_effect = {
-			add_political_power = 20
-			add_to_variable = {
-				Yunnan_Burma_var = 10
-			}
-			clamp_variable = {
-				var = Yunnan_Burma_var
-				min = 0
-				max = 100
-			}
-		} 
-		complete_effect = {
-		}
-	}
-	Conscript_laborers = {
-		icon = eng_blackshirt_march
-		available = {
-		}
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-		}
-
-		days_re_enable = 30
-
-		complete_effect = {
-			add_to_variable = {
-				Yunnan_Burma_var = 10
-			}
-			clamp_variable = {
-				var = Yunnan_Burma_var
-				min = 0
-				max = 100
-			}
-		}
-	}
-
-	Mobilize_the_masses = {
-		icon = eng_blackshirt_march
-		available = {
-		}
-  
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			 
-		}
-
-		days_re_enable = 30
-
-		complete_effect = {
-			add_to_variable = {
-				Yunnan_Burma_var = 10
-			}
-			clamp_variable = {
-				var = Yunnan_Burma_var
-				min = 0
-				max = 100
-			}
-		}
-	}
-}
-
-
-
-
-
-
-
-New_Military_Service_Law_category = {
-
-	Recruit_new_soldiers_henan = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = HENAN
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = HENAN
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-			
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = HENAN
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	Recruit_new_soldiers_hubei = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = HUBEI
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = HUBEI
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = HUBEI
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	
-	Recruit_new_soldiers_anhui = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = ANHUI
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = ANHUI
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = ANHUI
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	
-	Recruit_new_soldiers_fujian = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = FUJIAN
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = FUJIAN
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = FUJIAN
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	
-	Recruit_new_soldiers_jiangxi = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = JIANGXI
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = JIANGXI
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = JIANGXI
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	
-	Recruit_new_soldiers_zhejiang = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = ZHEJIANG
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = ZHEJIANG
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = ZHEJIANG
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	
-	Recruit_new_soldiers_jiangsu = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = JIANGSU
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = JIANGSU
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = JIANGSU
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	Recruit_new_soldiers_hunan = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = HUNAN
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			any_owned_state = {
-				has_state_flag = HUNAN
-				is_controlled_by = ROOT
-			}
-		}
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = HUNAN
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = HUNAN
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-	Recruit_new_soldiers_guizhou = {
-		icon = eng_blackshirt_march
-		available = {
-			any_owned_state = {
-				has_state_flag = GUIZHOU
-				is_controlled_by = ROOT
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = Shortage_personnel
-					}
-				}
-			}
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-			any_owned_state = {
-				has_state_flag = GUIZHOU
-				is_controlled_by = ROOT
-			}
-		} 
-		fire_only_once = no
-		days_remove= 120
-		modifier = {
-			weekly_manpower = 500
-		}
-		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = GUIZHOU
-				}
-				add_dynamic_modifier = {
-					modifier = Shortage_personnel
-					days = 180
-				}
-			}	
-			add_stability = -0.005
-			add_manpower = -4000
-random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = GUIZHOU
-				}
-				create_unit = {
-					division = "name = \"抗日义勇军\" division_template = \"抗日义勇军\" start_experience_factor = 0.1"
-					owner = CHI
-				}
-			}	
-		}
-	}
-}
-
-
-
-
-
-
-
-
-
-China_Soviet_Road_category = { 
-	S_Under_construction= {
-		available = {
-			always = no
-		}
-		days_mission_timeout = 60
-		activation = { 
-			always = yes
-			has_completed_focus = CHIFocus_9
-		}		
-		fixed_random_seed = no
-		fire_only_once = no
-		is_good = yes
-		timeout_effect = {
-			add_political_power = 20
-			add_to_variable = {
-				China_Soviet_var = 10
-			}
-			clamp_variable = {
-				var = China_Soviet_var
-				min = 0
-				max = 100
-			}
-		} 
-	}
-	S_Conscript_laborers = {
-		icon = eng_blackshirt_march
-		available = {
-		}
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			
-		}
-
-		days_re_enable = 30
-
-		complete_effect = {
-			add_to_variable = {
-				China_Soviet_var = 10
-			}
-			clamp_variable = {
-				var = China_Soviet_var
-				min = 0
-				max = 100
-			}
-		}
-	}
-
-	S_Mobilize_the_masses = {
-		icon = eng_blackshirt_march
-		available = {
-		}
-  
-		cost = 25
-
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {			 
-		}
-
-		days_re_enable = 30
-
-		complete_effect = {
-			add_to_variable = {
-				China_Soviet_var = 10
-			}
-			clamp_variable = {
-				var = China_Soviet_var
-				min = 0
-				max = 100
-			}
 		}
 	}
 }

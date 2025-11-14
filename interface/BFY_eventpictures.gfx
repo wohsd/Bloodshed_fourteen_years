@@ -1,9 +1,6 @@
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_Expand_Shaanxi_Gansu_Ningxia"
-		texturefile = "gfx/event/Expand_Shaanxi_Gansu_Ningxia.png"
-	}
+	
 	spriteType = {
 		name = "GFX_SCR_1"
 		texturefile = "gfx/event/SCR_1.png"
@@ -222,10 +219,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Buy_gun"
 		texturefile = "gfx/event/Buy_gun.dds"
-	}
-	spriteType = {
-		name = "GFX_New_Military_Service_Law_category"
-		texturefile = "gfx/event/New_Military_Service_Law_category.png"
 	}
 	spriteType = {
 		name = "GFX_Eeconomic_system"

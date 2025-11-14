@@ -32,7 +32,7 @@ recruit_character =PRC_LiuBoChen
 recruit_character =PRC_FangZhiMing
 recruit_character =PRC_ChenYun
 recruit_character =PRC_DengPing
-recruit_character =PRC_ChenDuXiu
+
 recruit_character =PRC_LiuTaoXi
 recruit_character =PRC_WangRuChi
 
@@ -89,14 +89,6 @@ create_intelligence_agency = {
     icon = GFX_Central_Special_Branch
 }
 
-create_operative_leader = {
-	name = PRC_PangHangNian
-	bypass_recruitment = no 
-	available_to_spy_master = yes 
-	gfx = GFX_PRC_PangHangNian
-	traits = {}
-	nationalities = { PRC }
-}
 create_operative_leader = {
 	name = PRC_ZhouEngLai
 	bypass_recruitment = no 

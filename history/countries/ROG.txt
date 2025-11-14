@@ -9,12 +9,7 @@ interwar_antitank = 1
 	early_fighter = 1
 	fuel_silos = 1
 }
-add_manpower=20000
-add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = 3000
-    producer = CHI
-}
+
 recruit_character = ROG_ChenMingQu
 recruit_character = ROG_ChenJiTang
 

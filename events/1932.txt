@@ -331,7 +331,6 @@ country_event = {
     immediate = {
 		ROH={
 			news_event = {id=ROH_1932.0}
-			country_event = {id= ROH1933.1 days=270}
 		}
     } 
 	option = {
@@ -353,20 +352,6 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-			ROH={
-				retire_character = ROH_MaoGuangXing
-				add_country_leader_role = {
-					character = ROH_WangJiaLie
-					promote_leader = yes
-					country_leader = {
-						ideology = despotism
-						expire = "1965.1.1.1"
-						traits = {  }
-					}
-				}
-				load_oob = "ROH_1933"
-				set_cosmetic_tag = ROH
-			}
 			280={
 				transfer_state_to = JZZ
 			}
@@ -410,6 +395,5 @@ news_event = {
 	
 	option = {
 		name = ROH_1932.0.a
-		
 	}		
 }
