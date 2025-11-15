@@ -24,10 +24,17 @@ country_event = {
 	desc =  NSD_1936.0.d
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			PRC = {
+				white_peace = ROS
+				white_peace = RDX
+				white_peace = ROW
+			}
+		}
+		
+	}
 	option = {
 		name =  NSD_1936.0.a
-		RDX={
-			transfer_state = 642
-		}
 	}		
 }

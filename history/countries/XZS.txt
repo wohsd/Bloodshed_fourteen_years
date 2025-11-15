@@ -21,7 +21,7 @@ interwar_antitank = 1
 	}
 }
 
-1935.1.1={
+1933.1.1={
 	XZS = {
 		white_peace = ROW
 	}

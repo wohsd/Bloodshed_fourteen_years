@@ -134,6 +134,11 @@ country_event = {
 	fire_only_once = yes
     trigger = {
 		date < 1937.1.1
+		NOT={
+			PRC={
+				has_completed_focus = PRC_focus37
+			}
+		}
 		OR={
 			AND={
 				PRC={
@@ -173,8 +178,15 @@ country_event = {
 			annex_country = {
 				target = NSA
 			}
-		}
 		
+		}
+		630={add_core_of=PRC}
+		655={add_core_of=PRC}
+		657={add_core_of=PRC}
+		677={add_core_of=PRC}
+		658={add_core_of=PRC}
+		629={add_core_of=PRC}
+
 		###湖南
 		260={transfer_state_to = RON}
 		264={transfer_state_to = RON}
@@ -216,7 +228,8 @@ country_event = {
 		609={transfer_state_to = ROG}
 		661={transfer_state_to = ROG}
 
-		211={transfer_state_to = LHC}
+		211={transfer_state_to = RHC}
+
 		hidden_effect = {
 			PRC = {
 				complete_national_focus = PRC_focus43
@@ -225,6 +238,7 @@ country_event = {
 				set_nationality = PRC 
 			}
 			news_event = WorldNew.17
+
 		}
 		every_core_state = {
 			if = {
@@ -341,6 +355,7 @@ country_event = {
 		}
 		
 		PRC={
+			white_peace =RHC
 			white_peace =YHC
 			white_peace =YUL
 			white_peace =CHI
@@ -352,11 +367,13 @@ country_event = {
 			white_peace =ROT
 			white_peace =ROW
 			white_peace =RDX
+			white_peace =ROD
 			#country_event = CHI_1932.1
 		}
 		602={transfer_state_to = ROT}
 		204={transfer_state_to = RHC}
 		658={transfer_state_to = PRC}
+		687={transfer_state_to = RDX}
 		592={transfer_state_to = ROG}
 		
 		599={transfer_state_to = CHI}
@@ -554,9 +571,13 @@ country_event = {
     trigger = {
 		RFC = {
 			AND={
+				has_country_leader = { 
+					ruling_only = yes 
+					name = RFC_LiJiSheng
+				}
 				has_war = yes
 				NOT = {
-					controls_province = 1286
+					   controls_province = 1286
 				}
 				
 			}
@@ -582,41 +603,30 @@ country_event = {
 
 
 
+
+
 country_event = {
 	id = PRC_1934Hidden.8
 	hidden = yes
 	fire_only_once = yes
     trigger = {
-		check_variable = {
-			Chi_Shui > 1
-			tooltip = Chi_Shui
-		}
 		PRC = {
-			AND={
-				has_war = yes
-				controls_province = 3923
-				has_active_mission = Long_march_mission5
-			}
+			controls_province = 5250
 		}
     }
     immediate = {
-		set_global_flag = fall_3923
+		PRC = {
+			country_event = {id=PRC_1934.7}
+			add_to_variable = {
+				Chi_Shui = 1
+			}
+		}
     } 
     
 	option = {
 		name = PRC_1934Hidden.8.a
-		hidden_effect = {
-			PRC={
-				add_to_variable = {
-					Chi_Shui = 1
-				}
-				country_event = PRC_1934.7
-			}
-		}
-		clr_global_flag = fall_3923
 	}		
 }
-
 
 
 country_event = {
@@ -624,42 +634,26 @@ country_event = {
 	hidden = yes
 	fire_only_once = yes
     trigger = {
-		check_variable = {
-			Chi_Shui < 2
-			tooltip = Chi_Shui
-		}
 		PRC = {
-			AND={
-				has_war = yes
-				controls_province = 5250
-			 	has_active_mission = Long_march_mission5
+			check_variable={
+				Chi_Shui > 0
 			}
+			controls_province = 3938
 		}
     }
     immediate = {
-		set_global_flag = fall_5250
-		add_to_variable = {
-			Chi_Shui = 1
+		PRC = {
+			country_event = {id=PRC_1934.8}
+			add_to_variable = {
+				Chi_Shui = 1
+			}
 		}
     } 
     
 	option = {
 		name = PRC_1934Hidden.9.a
-		hidden_effect = {
-			PRC={
-				add_to_variable = {
-					Chi_Shui = 1
-				}
-				country_event = PRC_1934.8
-			}
-		}
-		clr_global_flag = fall_5250
 	}		
 }
-
-
-
-
 
 
 country_event = {
@@ -667,80 +661,72 @@ country_event = {
 	hidden = yes
 	fire_only_once = yes
     trigger = {
-		check_variable = {
-			Chi_Shui > 2
-			tooltip = Chi_Shui
-		}
 		PRC = {
-			AND={
-				has_war = yes
-				controls_province = 5248
-				has_active_mission = Long_march_mission5
+			check_variable={
+				Chi_Shui > 1
 			}
+			controls_province = 5248
 		}
     }
     immediate = {
-		set_global_flag = fall_5248
-		add_to_variable = {
-			Chi_Shui = 1
+		PRC = {
+			country_event = {id=PRC_1934.9}
+			add_to_variable = {
+				Chi_Shui = 1
+			}
 		}
     } 
     
 	option = {
 		name = PRC_1934Hidden.10.a
-		hidden_effect = {
-			PRC={
-				add_to_variable = {
-					Chi_Shui = 1
-				}
-				country_event = PRC_1934.9
-			}
-		}
-		clr_global_flag = fall_5248
 	}		
 }
-
 
 country_event = {
 	id = PRC_1934Hidden.11
 	hidden = yes
 	fire_only_once = yes
     trigger = {
-		check_variable = {
-			Chi_Shui > 3
-			tooltip = Chi_Shui
-		}
 		PRC = {
-			AND={
-				has_war = yes
-				controls_province = 5249
-				NOT = {
-					controls_province = 3938
-				}
-			#has_active_mission = Long_march_mission5
+			check_variable={
+				Chi_Shui > 2
 			}
+			controls_province = 3316
 		}
     }
     immediate = {
-		set_global_flag = fall_5249
-		add_to_variable = { 
-			Chi_Shui = 1
-		}
-    } 
-     
-	option = {
-		name = PRC_1934Hidden.11.a
-		hidden_effect = {
-			PRC={
-				add_to_variable = {
-					Chi_Shui = 1
-				}
-				country_event = PRC_1934.10
+		PRC = {
+			country_event = {id=PRC_1934.10}
+			add_to_variable = {
+				Chi_Shui = 1
 			}
 		}
-		clr_global_flag = fall_5249
+    } 
+    
+	option = {
+		name = PRC_1934Hidden.11.a
 	}		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1131,6 +1117,7 @@ country_event = {
    
 	option = {
 		name = PRC_1934.4.a
+		set_country_flag = PRC_1934_4
 		remove_power_balance = {
 			id = PRC_struggle_balance
 		}
@@ -1207,7 +1194,10 @@ country_event = {
 	}
 	option = {
 		name = PRC_1934.7.a
-		country_event = {id=PRC_1934.11 days=5}
+		hidden_effect={
+			country_event = {id=PRC_1934.11 days=5}
+		}
+		
 	}
 }
 

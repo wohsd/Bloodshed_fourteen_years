@@ -114,6 +114,9 @@ country_event = {
     trigger = {
 		date > 1935.10.2
 		date < 1935.10.4
+		NOT = {
+			74={is_controlled_by = ROD}
+		}
     }
     immediate = {
 		hidden_effect = {
@@ -312,10 +315,37 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			ROD={
-				annex_country = {
-					target = YHC
+				declare_war_on = {
+					target = PRC
+					type = annex_everything
 				}
 			}
+			175={transfer_state_to = CHI}
+			190={transfer_state_to = CHI}
+			191={transfer_state_to = CHI}
+
+			122={transfer_state_to = ROD}
+			625={transfer_state_to = ROD}
+			656={transfer_state_to = ROD}
+			149={transfer_state_to = ROD}
+			
+			132={transfer_state_to = ROD}
+			161={transfer_state_to = ROD}
+			114={transfer_state_to = ROD}
+			129={transfer_state_to = ROD}
+			140={transfer_state_to = ROD}
+
+			116={transfer_state_to = ROD}
+			154={transfer_state_to = ROD}
+			147={transfer_state_to = ROD}
+			170={transfer_state_to = ROD}
+			162={transfer_state_to = ROD}
+			624={transfer_state_to = ROD}
+			157={transfer_state_to = ROD}
+			ROD={
+				set_cosmetic_tag = ROD_1936
+			}
+			
 		}
 	}
 	option = {

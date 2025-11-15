@@ -33,7 +33,6 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1

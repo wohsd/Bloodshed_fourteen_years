@@ -615,6 +615,9 @@ country_event = {
 			set_state_controller_to = RON
 		}
 		country_event = {id=CHI_1936.3 days=15}
+		ai_chance = {
+			factor = 100
+		}
 	}	
 	option = {
 		name =  CHI_1936.2.b

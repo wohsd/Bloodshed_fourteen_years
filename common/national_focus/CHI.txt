@@ -84,7 +84,10 @@ focus_tree = {
 			    add_to_faction = ROG 
 			    add_to_faction = ROC
 				hidden_effect = {
-				set_power_balance = { id = CHI_struggle_balance_00 }
+				set_power_balance = { 
+					id = CHI_struggle_balance_00
+					set_default =yes
+				}
 			    }
 	        }
 		}
@@ -934,7 +937,9 @@ add_core_of = CHI
 		}
 		x = 66
 		y = 13
-
+		completion_reward = {
+			unlock_decision_category_tooltip = China_Soviet_Road_category
+		}
 	}
 	focus = {
 		id = CHIFocus_13
@@ -1629,17 +1634,14 @@ completion_reward = {
 		}
 		x = 94
 		y = 1
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					add_trait = {
-							character = CHI_JiangJieShi
-							ideology = despotism
-							trait = dictator
-						}
-					custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
-				}
+		completion_reward = {
+			add_trait = {
+					character = CHI_JiangJieShi
+					ideology = despotism
+					trait = dictator
+			}
+			custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
+		}
 
 	}
 	focus = {
@@ -3408,7 +3410,9 @@ completion_reward = {
 		}
 		x = 56
 		y = 13
-
+		completion_reward = {
+			unlock_decision_category_tooltip = Yunnan_Burma_Highway_category
+		}
 	}
 	focus = {
 		id = CHIFocus_6
@@ -3778,7 +3782,7 @@ completion_reward = {
 					is_controlled_by = CHI
 				}
 			}
-			
+			country_exists = NFA
 		}
 		x = 68
 		y = 11
