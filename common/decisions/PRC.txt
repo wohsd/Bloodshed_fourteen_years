@@ -565,9 +565,6 @@ PRC_CHINA = {
 				214={
 					is_controlled_by = PRC
 				}
-				246={
-					is_controlled_by = PRC
-				} 
 				74={
 					is_controlled_by = PRC
 				}
@@ -623,9 +620,12 @@ PRC_CHINA = {
 					is_controlled_by = PRC
 				}
 			}
-			
 		}  
 		visible = {
+			605 ={
+				is_controlled_by = PCN
+			}
+			
 		}
 		cost = 0 
 		days_remove= 30

@@ -8,6 +8,7 @@ state={
 		steel = 2
 		aluminium=2 # was: 12
 		tungsten = 2
+		coal = 2
 	}
 	history={
 		owner = ROD

@@ -3,6 +3,10 @@ state={
 	name="STATE_125"
 	provinces={
 		1022 1545 3693 
+
+	}
+	resources={
+		coal = 4
 	}
 	history={
 		owner = ROJ
