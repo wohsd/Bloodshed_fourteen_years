@@ -318,7 +318,7 @@ country_event = {
 		}
     } 
 	option = {
-		name = CHI_Encirclement.1.a
+		name = CHI_Encirclement_end.1.a
 	}
 }
 
@@ -337,69 +337,6 @@ country_event = {
 				target = PRC
 				type = annex_everything
 			}
-		}
-		start_border_war = {
-				change_state_after_war = yes
-				attacker = {
-					state = 345
-					num_provinces = 1
-					#on_win = japan_border_conflict.2
-				}	
-				defender = {
-					state = 665
-					num_provinces = 3
-					dig_in_factor = -1
-					terrain_factor = -1
-				}
-			} 
-			set_border_war_data = {
-				attacker = 345
-				defender = 665
-				attacker_modifier= 0.85
-				defender_modifier = -0.85
-				combat_width = 100
-		}
-		start_border_war = {
-				change_state_after_war = yes
-				attacker = {
-					state = 353
-					num_provinces = 1
-					#on_win = japan_border_conflict.2
-				}	
-				defender = {
-					state = 663
-					num_provinces = 3
-					dig_in_factor = -1
-					terrain_factor = -1
-				}
-			} 
-			set_border_war_data = {
-				attacker = 353
-				defender = 663
-				attacker_modifier= 0.85
-				defender_modifier = -0.85
-				combat_width = 100
-		}
-		start_border_war = {
-				change_state_after_war = yes
-				attacker = {
-					state = 601
-					num_provinces = 1
-					#on_win = japan_border_conflict.2
-				}	
-				defender = {
-					state = 661
-					num_provinces = 1
-					dig_in_factor = -1
-					terrain_factor = -1
-				}
-			} 
-			set_border_war_data = {
-				attacker = 345
-				defender = 665
-				attacker_modifier= 0.1
-				defender_modifier = -0.1
-				combat_width = 50
 		}
     } 
 	option = {
