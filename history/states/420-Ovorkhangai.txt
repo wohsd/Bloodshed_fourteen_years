@@ -4,6 +4,11 @@ state={
 	provinces={
 		74 89 99 240 328 653 999 1496 3215 3485 3487
 	}
+	
+	
+	resources={
+		coal = 5
+	}
 	history={
 		owner = MEG
 		buildings = {

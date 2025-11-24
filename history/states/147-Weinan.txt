@@ -3,6 +3,11 @@ state={
 	name="STATE_147"
 	provinces={
 		238 1832 
+
+	}
+	
+	resources={
+		coal = 3
 	}
 	history={
 		owner = YHC

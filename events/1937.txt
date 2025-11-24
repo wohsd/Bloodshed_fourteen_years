@@ -98,7 +98,7 @@ country_event = {
 			white_peace = MBQ
 		}
 		CHI={
-			create_faction = China_Faction
+			create_faction_from_template = faction_template_chinese_united_front
 			add_to_faction = PRC
 			add_to_faction = ROG
 			add_to_faction = ROC

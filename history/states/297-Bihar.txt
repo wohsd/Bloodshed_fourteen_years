@@ -4,6 +4,11 @@ state={
 	provinces={
 		45 183 545 903 1245 1326 1386 4046 
 	}
+	
+	
+	resources={
+		coal = 5
+	}
 	history={
 		owner = RAJ
 		buildings = {

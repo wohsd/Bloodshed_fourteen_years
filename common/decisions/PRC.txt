@@ -565,9 +565,6 @@ PRC_CHINA = {
 				214={
 					is_controlled_by = PRC
 				}
-				246={
-					is_controlled_by = PRC
-				} 
 				74={
 					is_controlled_by = PRC
 				}
@@ -592,7 +589,7 @@ PRC_CHINA = {
 					add_core_of = PRC
 				}
 			}
-			
+			news_event = NEW_china.1
 		}
 	}
 	PRC_NEW_CHINA1 = {

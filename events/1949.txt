@@ -1,0 +1,19 @@
+﻿
+add_namespace = NEW_china
+
+news_event = {
+	id = NEW_china.1
+	title = NEW_china.1.t
+	desc = NEW_china.1.d
+
+	picture = GFX_NEW_china_1
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	immediate={
+	}
+
+	option = {
+		name = NEW_china.1.a
+	}		
+}

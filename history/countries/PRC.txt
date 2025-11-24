@@ -55,15 +55,14 @@ recruit_character = PRC_RaoShuShi
 set_popularities = {
 	communism = 100
 }
-create_faction = PRC_faction
-add_to_faction = PRH
-add_to_faction = NHA
-add_to_faction = PRQ
-add_to_faction = PRJ
-add_to_faction = PRY
-add_to_faction = PRD
-add_to_faction = JCJ
-
+puppet = PRQ
+puppet = PRH
+puppet = PRD
+puppet = PRQ
+puppet = PRJ
+puppet = NHA
+puppet = PRQ
+puppet = NSD
 add_manpower = 50000
 
 set_variable = {

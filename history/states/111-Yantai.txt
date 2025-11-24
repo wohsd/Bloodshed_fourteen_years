@@ -4,6 +4,10 @@ state={
 	provinces={
 		2781 2917 3679 3685 
 	}
+	
+	resources={
+		coal = 3
+	}
 	history={
 		owner = LZN
 		buildings = {

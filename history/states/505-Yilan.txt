@@ -4,6 +4,10 @@ state={
 	provinces={
 		3129 4072 4954 4955
 	}
+	
+	resources={
+		coal = 5
+	}
 	history={
 		owner = JAP
 		buildings = {

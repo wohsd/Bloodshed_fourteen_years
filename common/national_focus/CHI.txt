@@ -1238,7 +1238,7 @@ add_core_of = CHI
 		y = 6
 			completion_reward = {
 					CHI = {
-							create_faction = China_Faction
+							create_faction_from_template = faction_template_chinese_united_front
 							add_to_faction = PRC
 						}
 					add_to_temp_variable = {

@@ -7,7 +7,7 @@ state={
 	resources={
 		steel = 25
 		aluminium=5 # was: 12
-		
+		coal = 5
 	}
 	history={
 		owner = JAP

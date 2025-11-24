@@ -4,6 +4,10 @@ state={
 	provinces={
 		634 1364 1631 5248 5247 3950
 	}
+	
+	resources={
+		coal = 2
+	}
 	history={
 		owner = ROH
 		buildings = {

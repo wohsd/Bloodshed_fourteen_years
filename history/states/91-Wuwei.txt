@@ -4,6 +4,10 @@ state={
 	provinces={
 		598 787 1858 2935 3648 3649 3673 
 	}
+	
+	resources={
+		coal = 10
+	}
 	history={
 		owner = MBQ
 		buildings = {

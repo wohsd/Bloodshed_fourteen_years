@@ -4,6 +4,10 @@ state={
 	provinces={
 		1307 2071 
 	}
+	
+	resources={
+		coal = 3
+	}
 	history={
 		owner = ROD
 		buildings = {
