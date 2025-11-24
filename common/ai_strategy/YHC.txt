@@ -1,0 +1,29 @@
+
+YHC_buffer_in_mainland = {
+	allowed = {
+		tag = YHC
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			170
+			157
+			162
+			190
+		}
+		ratio = 0.8
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PRC
+		value = 10
+	}
+}
+

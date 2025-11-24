@@ -1,0 +1,70 @@
+no_invasions = {
+	allowed = {
+		NOT = {
+			tag = ENL
+			tag = UBS
+			tag = JPN
+			tag = ITE
+			tag = SHW
+		}
+	}
+	enable = {
+		always = yes
+	}
+	abort = { always = no }
+	ai_strategy = {
+        type = invasion_unit_request
+        country_trigger = { always = yes }
+        value = -200
+    }
+	
+}
+
+GER_dont_join_wars = {
+	allowed = {
+		OR={
+		original_tag = AGC
+		original_tag = LSB
+		original_tag = DHD
+		original_tag = DON
+		original_tag = DOF
+		original_tag = DOB
+		original_tag = DOR
+		original_tag = BXM
+		original_tag = DOL
+		original_tag = DOH
+		original_tag = DOA
+		original_tag = DOM
+		original_tag = DOS
+		original_tag = WWS
+		original_tag = SAD
+		original_tag = SAA
+		original_tag = SAB
+		original_tag = SAC
+		original_tag = SAE
+		original_tag = SAF
+		original_tag = SAG
+		}
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = AOX
+		value = -100
+		target_country = KOH
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = AOX
+		value = -100
+		target_country = XYL
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = AOX
+		value = -100
+		target_country = HUN
+	}
+}

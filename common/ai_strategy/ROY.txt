@@ -1,0 +1,41 @@
+
+ROY_buffer_in_mainland = {
+	allowed = {
+		tag = ROY
+	}
+	enable = {
+		check_variable = {
+			Chi_Shui=4
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			619
+		}
+		ratio = 0
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			341
+			321
+			286
+		}
+		ratio = 0.8
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PRC
+		value = 10
+	}
+}
+

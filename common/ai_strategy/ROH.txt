@@ -1,0 +1,27 @@
+
+ROY_buffer_in_mainland = {
+	allowed = {
+		tag = ROH
+	}
+	enable = {
+		check_variable = {
+			Chi_Shui=2
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			615
+			614
+			309
+			283
+		}
+		ratio = 0.8
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+}
+

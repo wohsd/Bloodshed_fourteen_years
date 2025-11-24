@@ -637,7 +637,7 @@ guiTypes = {
 
 			ButtonType = {
 				name = "show_subscription"
-				position = { x = 0 y = 0 }
+				position = { x = -30 y = 100 }
 				quadTextureSprite ="GFX_subscription_widget_active"
 				frame = 1
 				buttonText = "SUBSCRIPTION_WIDGET_SUBSCRIBED"

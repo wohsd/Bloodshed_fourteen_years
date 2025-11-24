@@ -14,8 +14,7 @@ country_event = {
 			CHI_JiangJieShi = {
 				is_country_leader = yes
 			}
-			date > 1945.8.5
-			date < 1945.8.7
+			date = 1945.8.6
 		}
     }
     immediate = {
@@ -46,8 +45,7 @@ country_event = {
 			CHI_JiangJieShi = {
 				is_country_leader = yes
 			}
-			date > 1945.8.8
-			date < 1945.8.10
+			date = 1945.8.9
 		}
     }
     immediate = {
@@ -114,7 +112,6 @@ news_event = {
 
 	major = yes
 	is_triggered_only = yes
-	fire_only_once = yes
 	immediate={
 		hidden_effect={
 			set_country_flag = JAP_LOSS

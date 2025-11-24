@@ -1,0 +1,142 @@
+
+CHI_buffer_in_mainland = {
+	allowed = {
+		tag = CHI
+	}
+	enable = {
+		date < 1935.12.12
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			312 
+			302
+			313
+			327
+			281
+			292
+			269
+			302
+			214
+			170
+		}
+		ratio = 0.2
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	ai_strategy = {
+		type = garrison
+		value = 5
+	}
+}
+
+
+
+CHI_buffer_in_mainland = {
+	allowed = {
+		tag = CHI
+	}
+	enable = {
+		date > 1935.12.14
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			216
+			237
+		}
+		ratio = 0.1
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	ai_strategy = {
+		type = garrison
+		value = 2
+	}
+}
+
+CHI_buffer_in_mainland = {
+	allowed = {
+		tag = CHI
+	}
+	enable = {
+		date > 1935.12.14
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			228
+		}
+		ratio = 0
+		area = asia
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+}
+
+
+CHI_Define = {
+	allowed = {
+		tag = CHI
+	}
+	enable = {
+		has_war_with = JAP
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			state = 268
+		}
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			state = 258
+		}
+		value = 100
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			state = 273
+		}
+		value = 100
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		states = {
+			212
+			255
+			285
+			306
+			166
+			168
+		}
+		ratio = 1
+		area = asia
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+}
