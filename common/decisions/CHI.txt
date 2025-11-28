@@ -1334,7 +1334,7 @@ CHI_Purging_party_category = {
 				has_country_flag = RFC_DengYangDa1
 			} 
 		}
-		days_mission_timeout =235
+		days_mission_timeout =15
 		activation = {
 			AND={
 				tag = CHI
@@ -1355,7 +1355,7 @@ CHI_Purging_party_category = {
             RFC = {
 				hidden_effect = {
 				set_politics = { ruling_party = communism }
-			    load_focus_tree = RFC
+			    #load_focus_tree = RFC
 			    set_rule = { 
                     can_not_declare_war = no
                 }

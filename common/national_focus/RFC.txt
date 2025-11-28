@@ -2,13 +2,17 @@ focus_tree = {
 	id = RFC
 	country = {
 		factor = 0
+		modifier = {
+			add = 10
+			tag = RFC 
+		}
 	}
 	default = yes
 	focus = {
 		id = The_Third_Road
 		icon = GFX_focus_GER_the_peoples_victory
 		cost = 5
-		x = 14
+		x = 14 
 		y = 0
 		completion_reward = {
 			add_dynamic_modifiers = {
@@ -30,7 +34,7 @@ focus_tree = {
 		id = Speed_is_of_the_essence_in_military_operations
 		icon = GFX_focus_prc_infiltration
 		cost = 5
-		x = 5
+		x = 5 
 		y = 2
 		prerequisite = {
 			focus = Establish_a_provisional_government
@@ -39,7 +43,7 @@ focus_tree = {
 			focus = Make_steady_and_solid_progress
 		}
 	}
-	focus = {
+	focus = { 
 		id = Requisition_factory
 		icon = GFX_focus_eng_crush_the_dream
 		cost = 5
@@ -147,8 +151,8 @@ focus_tree = {
 		icon = GFX_focus_generic_limited_social_mobilization
 		cost = 5
 		x = 13
-		y = 4
-		prerequisite = {
+		y = 4  
+		prerequisite = {  
 			focus = Revolutionar_Education
 		}
 	}
@@ -191,10 +195,10 @@ focus_tree = {
 		cost = 5
 		x = 17
 		y = 3
-		prerequisite = {
+		prerequisite = { 
 			focus = Contact_the_Communist_Party
 		}
-	}
+	} 
 	focus = {
 		id = Learn_guerrilla_warfare
 		icon = GFX_goal_support_communism
