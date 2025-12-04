@@ -1,6 +1,8 @@
+#!gfx:interface\BFY_goals.gfx
+#!gfx:interface\goals.gfx
 focus_tree = {
 	id = RFC
-	country = {
+	country = { 
 		factor = 0
 		modifier = {
 			add = 10
@@ -10,11 +12,12 @@ focus_tree = {
 	default = yes
 	focus = {
 		id = The_Third_Road
-		icon = GFX_focus_GER_the_peoples_victory
+		icon = GFX_focus_CHI_glorify_deng_yanda
 		cost = 5
 		x = 14 
 		y = 0
 		completion_reward = {
+			add_political_power = 50
 			add_dynamic_modifiers = {
 				modifier = Provisional_Committee_Uprising
 			}
@@ -22,12 +25,16 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_a_provisional_government
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_CHI_registry_of_property
 		cost = 2
 		x = 14
 		y = 1
 		prerequisite = {
 			focus = The_Third_Road
+		}
+		completion_reward = {
+			add_stability = 0.02
+			add_war_support = 0.02
 		}
 	}
 	focus = {
@@ -51,6 +58,12 @@ focus_tree = {
 		y = 3
 		prerequisite = {
 			focus = Speed_is_of_the_essence_in_military_operations
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
 		}
 	}
 	focus = {
@@ -95,6 +108,10 @@ focus_tree = {
 		prerequisite = {
 			focus = Make_steady_and_solid_progress
 		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
 	}
 	focus = {
 		id = Production_Self_Help_Movement
@@ -135,6 +152,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Establish_a_provisional_government
 		}
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = Revolutionar_Education
@@ -145,6 +165,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Reconstruct_the_Political_Department
 		}
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = Expanded_Political_Department
@@ -154,6 +177,12 @@ focus_tree = {
 		y = 4  
 		prerequisite = {  
 			focus = Revolutionar_Education
+		}
+		completion_reward = {
+			every_unit_leader = {
+				random_select_amount = 4
+				gain_xp = 200
+			}
 		}
 	}
 	focus = {
@@ -168,7 +197,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Carry_out_land_reform
-		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		icon = GFX_focus_PRC_rural_region_development_two
 		cost = 5
 		x = 15
 		y = 4
@@ -178,10 +207,15 @@ focus_tree = {
 	}
 	focus = {
 		id = Contact_the_Communist_Party
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_prc_social_democracy
 		cost = 5
 		x = 18
 		y = 2
+		available = {
+			PRC = {
+				exists = yes
+			}
+		}
 		prerequisite = {
 			focus = Establish_a_provisional_government
 		}
@@ -191,50 +225,89 @@ focus_tree = {
 	}
 	focus = {
 		id = Learn_from_the_political_commissar_system
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_PRC_appoint_xiao_jianguang
 		cost = 5
 		x = 17
 		y = 3
 		prerequisite = { 
 			focus = Contact_the_Communist_Party
 		}
+		completion_reward = {
+			every_unit_leader = {
+				random_select_amount = 4
+				gain_xp = 200
+			}
+		}
 	} 
 	focus = {
 		id = Learn_guerrilla_warfare
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_PRC_eastward_expansion
 		cost = 5
 		x = 17
 		y = 4
 		prerequisite = {
 			focus = Learn_from_the_political_commissar_system
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRC_master_the_terrain
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech 
+			}
+			add_mastery_bonus = {
+				bonus = 0.25
+				days = 365
+				name = PRC_supreme_infiltration
+				sub_doctrine = guerilla_war
+			}
+			
+		}
 	}
 	focus = {
 		id = Recognize_the_status_of_the_Soviet_area
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_PRC_restore_the_old_republic
 		cost = 5
 		x = 19
 		y = 3
 		prerequisite = {
 			focus = Contact_the_Communist_Party
-		}
+		} 
 	}
 	focus = {
 		id = Leftist_United_Front
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_PRC_hundred_regiments_offensive
 		cost = 5
 		x = 19
 		y = 4
 		prerequisite = {
 			focus = Recognize_the_status_of_the_Soviet_area
 		}
+		completion_reward = {
+			add_mastery_bonus = {
+				bonus = 0.1
+				days = 365
+				name = PRC_supreme_infiltration
+
+				track = operations
+			}
+		}
 	}
 	focus = {
 		id = Contact_the_old_warlords
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CHI_mend_the_rift_with_hu
 		cost = 5
 		x = 22
 		y = 2
+		available = {
+			ROG = {
+				exists = yes
+				has_country_leader = {
+					character = ROG_WangJingWei
+					ruling_only = yes
+				}
+			}
+		}
 		prerequisite = {
 			focus = Establish_a_provisional_government
 		}
@@ -244,7 +317,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Accepting_assistance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
 		cost = 5
 		x = 21
 		y = 3
@@ -254,12 +327,21 @@ focus_tree = {
 	}
 	focus = {
 		id = Communication_positional_warfare
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CHI_decisive_battles
 		cost = 5
 		x = 21
 		y = 4
 		prerequisite = {
 			focus = Accepting_assistance
+		}
+		completion_reward = {
+			add_mastery_bonus = {
+				bonus = 0.25
+				days = 365
+				name = PRC_supreme_infiltration
+
+				sub_doctrine = last_stand
+			}
 		}
 	}
 	focus = {
@@ -271,10 +353,16 @@ focus_tree = {
 		prerequisite = {
 			focus = Requisition_factory
 		}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
 	}
 	focus = {
 		id = The_Final_Battle
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_CHI_weaponise_the_faithful
 		cost = 5
 		x = 5
 		y = 5
@@ -300,17 +388,22 @@ focus_tree = {
 	}
 	focus = {
 		id = Acknowledge_its_leadership_position
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CHI_second_father_of_the_nation
 		cost = 5
 		x = 23
 		y = 3
 		prerequisite = {
 			focus = Contact_the_old_warlords
 		}
+		completion_reward = {
+			ROG = {
+				puppet = RFC
+			}
+		}
 	}
 	focus = {
 		id = The_Second_United_Front
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_PRC_dissent_in_the_united_front
 		cost = 5
 		x = 18
 		y = 5
@@ -323,7 +416,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Join_the_Democratic_Front
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
 		cost = 5
 		x = 23
 		y = 4
@@ -333,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_National_Revolution_Unite_in_Sincerity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CHI_unify_as_the_china_democratic_league
 		cost = 5
 		x = 22
 		y = 5

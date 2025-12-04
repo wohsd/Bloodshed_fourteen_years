@@ -263,6 +263,66 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_country_selection_entry_shine"
+		texturefile = "gfx/interface/country_selection_entry.tga"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 2
+		animation = {
+			animationmaskfile = "gfx/interface/country_selection_entry.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 3.0				# in seconds
+			animationdelay = 0.1			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "pulsing"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_mini_country_selector_shine"
+		texturefile = "gfx/interface/diplo_countrylist_flag_frame_mini.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 2
+		animation = {
+			animationmaskfile = "gfx/interface/diplo_countrylist_flag_frame_mini.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 2.0				# in seconds
+			animationdelay = 0.1			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "pulsing"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_minor_country_selector_shine"
+		texturefile = "gfx/interface/country_selection_minor_entry.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 2
+		animation = {
+			animationmaskfile = "gfx/interface/country_selection_minor_entry.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 2.0				# in seconds
+			animationdelay = 0.1			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "pulsing"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
 	name = "GFX_goal_generic_attack_allies"
 	texturefile = "gfx/interface/goals/goal_generic_attack_allies.dds"			
 	}	
@@ -1217,7 +1277,7 @@ spriteTypes = {
 	
 	SpriteType = { 
 		name = "GFX_focus_prc_social_democracy"
-		texturefile = "gfx/interface/goals/focus_prc_social_democracy.dds"
+		texturefile = "gfx/interface/goals/focus_prc_sociaL_democracy.dds"
 	}
 	
 	SpriteType = { 
@@ -1234,6 +1294,20 @@ spriteTypes = {
 		name = "GFX_focus_generic_china1"
 		texturefile = "gfx/interface/goals/focus_generic_china1.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_PRC_heritage_site"
+		texturefile = "gfx/interface/goals/focus_PRC_heritage_site.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_move_capital"
+		texturefile = "gfx/interface/goals/focus_PRC_move_capital.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_the_first_premier"
+		texturefile = "gfx/interface/goals/focus_PRC_the_first_premier.dds"
+	}
+
 	
 	### JAP
 	
@@ -6488,7 +6562,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_SOV_the_old_enemy_ccp_2d_sov_compatibility" 
-		texturefile = "gfx/interface/goals/goal_generic_occypy_states_ongoing_war.dds"	
+		texturefile = "gfx/interface/goals/focus_generic_attack_sweden.dds"	
 	}	
 
 	SpriteType = {
@@ -6568,7 +6642,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_SOV_nkvd_primacy_ccp_2d_sov_compatibility"
-		texturefile = "gfx/interface/goals/goal_generic_military_deal.dds"			
+		texturefile = "gfx/interface/goals/focus_JAP_learn_from_the_nkvd.dds"		
 	}
 
 	SpriteType = {
@@ -6633,17 +6707,17 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_SOV_secure_finland_ccp_2d_sov_compatibility" 
-		texturefile = "gfx/interface/goals/goal_generic_occypy_states_ongoing_war.dds"	
+		texturefile = "gfx/interface/goals/focus_generic_attack_finland.dds"	
 	}	
 
 	SpriteType = {
 		name = "GFX_SOV_secure_the_baltics_ccp_2d_sov_compatibility" 
-		texturefile = "gfx/interface/goals/goal_generic_occypy_states_ongoing_war.dds"	
+		texturefile = "gfx/interface/goals/focus_generic_attack_baltics.dds"	
 	}	
 
 	SpriteType = {
 		name = "GFX_SOV_the_fate_of_romania_ccp_2d_sov_compatibility" 
-		texturefile = "gfx/interface/goals/goal_generic_occypy_states_ongoing_war.dds"	
+		texturefile = "gfx/interface/goals/focus_generic_attack_romania.dds"
 	}
 
 	SpriteType = {
@@ -9319,10 +9393,22 @@ spriteTypes = {
 		name = "GFX_focus_AFG_graveyard_of_empires"
 		texturefile = "gfx/interface/goals/focus_AFG_graveyard_of_empires.dds"
 	}
-
-
-
-
+	SpriteType = {
+		name = "GFX_focus_AFG_second_afghan_empire"
+		texturefile = "gfx/interface/goals/focus_AFG_second_afghan_empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_saqqawists"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_saqqawists.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_waziristan"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_waziristan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_islamic_propaganda"
+		texturefile = "gfx/interface/goals/focus_generic_islamic_propaganda.dds"
+	}
 
 
 	################
@@ -9783,7 +9869,6 @@ spriteTypes = {
 		name = "GFX_focus_PER_we_will_survive"
 		texturefile = "gfx/interface/goals/focus_PER_we_will_survive.dds"
 	}
-
 
 	################
 	###   IRAQ   ###
@@ -10311,10 +10396,6 @@ spriteTypes = {
 	}
 
 
-
-
-
-
 	################
 	####  MISC  ####
 	################
@@ -10362,6 +10443,2085 @@ spriteTypes = {
 
 
 
+
+			####	#####	 ###
+		   #   		#		#	#
+			####	###		#####
+				#	#		#	#
+		   #####	#####	#	#
+
+
+
+
+		#### JAP ####
+	SpriteType = {
+		name = "GFX_focus_JAP_reorganized_national_government"
+		texturefile = "gfx/interface/goals/focus_JAP_reorganized_national_government.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_fund_propaganda_films"
+		texturefile = "gfx/interface/goals/focus_JAP_fund_propaganda_films.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_strenghten_manchukuo_imperial_airforce"
+		texturefile = "gfx/interface/goals/focus_JAP_strenghten_manchukuo_imperial_airforce.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_occupy_macau"
+		texturefile = "gfx/interface/goals/focus_JAP_occupy_macau.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_reinforce_the_east_hebei_garrisons"
+		texturefile = "gfx/interface/goals/focus_JAP_reinforce_the_east_hebei_garrisons.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_pacific_soviet_union"
+		texturefile = "gfx/interface/goals/focus_JAP_pacific_soviet_union.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_strenghten_manchukuo_imperial_army"
+		texturefile = "gfx/interface/goals/focus_JAP_strenghten_manchukuo_imperial_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_danganressha"
+		texturefile = "gfx/interface/goals/focus_JAP_danganressha.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_approach_yasuda"
+		texturefile = "gfx/interface/goals/focus_JAP_approach_yasuda.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_approach_sumitomo"
+		texturefile = "gfx/interface/goals/focus_JAP_approach_sumitomo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ministry_of_colonial_affairs"
+		texturefile = "gfx/interface/goals/focus_JAP_ministry_of_colonial_affairs.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_shinkansen"
+		texturefile = "gfx/interface/goals/focus_JAP_shinkansen.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ministry_of_commerce_and_industry"
+		texturefile = "gfx/interface/goals/focus_JAP_ministry_of_commerce_and_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_develop_the_yen_block"
+		texturefile = "gfx/interface/goals/focus_JAP_develop_the_yen_block.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_balanced_naval_approach"
+		texturefile = "gfx/interface/goals/focus_JAP_balanced_naval_approach.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_large_navy"
+		texturefile = "gfx/interface/goals/focus_generic_large_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_jungle_troops"
+		texturefile = "gfx/interface/goals/focus_generic_jungle_troops.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_strengthen_the_kido_butai"
+		texturefile = "gfx/interface/goals/focus_JAP_strengthen_the_kido_butai.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_mountain_troops"
+		texturefile = "gfx/interface/goals/focus_generic_mountain_troops.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_upgrade_the_oriental_development_company"
+		texturefile = "gfx/interface/goals/focus_JAP_upgrade_the_oriental_development_company.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_greater_east_asian_co_properity_sphere"
+		texturefile = "gfx/interface/goals/focus_JAP_greater_east_asian_co_properity_sphere.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_imperial_defense_plan"
+		texturefile = "gfx/interface/goals/focus_JAP_the_imperial_defense_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_f_go_nuclear_project"
+		texturefile = "gfx/interface/goals/focus_JAP_f_go_nuclear_project.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_end_the_interservice_rivalry"
+		texturefile = "gfx/interface/goals/focus_JAP_end_the_interservice_rivalry.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_flying_geese"
+		texturefile = "gfx/interface/goals/focus_JAP_the_flying_geese.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_build_up_korean_industries"
+		texturefile = "gfx/interface/goals/focus_JAP_build_up_korean_industries.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_develop_the_south_seas_mandate"
+		texturefile = "gfx/interface/goals/focus_JAP_develop_the_south_seas_mandate.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_shuilikeng_power_plant"
+		texturefile = "gfx/interface/goals/focus_JAP_the_shuilikeng_power_plant.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_imperial_rule_assistance_association"
+		texturefile = "gfx/interface/goals/focus_JAP_imperial_rule_assistance_association.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_expand_the_showa_research_association"
+		texturefile = "gfx/interface/goals/focus_JAP_expand_the_showa_research_association.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_sea_tripartite_pact"
+		texturefile = "gfx/interface/goals/focus_JAP_sea_tripartite_pact.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_EST_house_buxhoevden"
+		texturefile = "gfx/interface/goals/focus_EST_house_buxhoevden.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_EST_house_dohna"
+		texturefile = "gfx/interface/goals/focus_EST_house_dohna.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_focus_generic_build_dam"
+		texturefile = "gfx/interface/goals/focus_focus_generic_build_dam.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_modernizing_agriculture"
+		texturefile = "gfx/interface/goals/focus_generic_modernizing_agriculture.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_advance_one_hundred_million_fireballs"
+		texturefile = "gfx/interface/goals/focus_JAP_advance_one_hundred_million_fireballs.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ally_afghanistan"
+		texturefile = "gfx/interface/goals/focus_JAP_ally_afghanistan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ally_the_dragon_king"
+		texturefile = "gfx/interface/goals/focus_JAP_ally_the_dragon_king.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ally_the_gorkhas"
+		texturefile = "gfx/interface/goals/focus_JAP_ally_the_gorkhas.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_approach_mitsubishi"
+		texturefile = "gfx/interface/goals/focus_JAP_approach_mitsubishi.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_approach_mitsui"
+		texturefile = "gfx/interface/goals/focus_JAP_approach_mitsui.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_assure_superior_naval_quality"
+		texturefile = "gfx/interface/goals/focus_JAP_assure_superior_naval_quality.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_a_green_persimmon"
+		texturefile = "gfx/interface/goals/focus_JAP_a_green_persimmon.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_a_worthy_succssor_of_meiji"
+		texturefile = "gfx/interface/goals/focus_JAP_a_worthy_succssor_of_meiji.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_central_agricultural_association"
+		texturefile = "gfx/interface/goals/focus_JAP_central_agricultural_association.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_claim_the_raven_crown"
+		texturefile = "gfx/interface/goals/focus_JAP_claim_the_raven_crown.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_claim_the_scripech"
+		texturefile = "gfx/interface/goals/focus_JAP_claim_the_scripech.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_embrace_kokutai"
+		texturefile = "gfx/interface/goals/focus_JAP_embrace_kokutai.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_establish_the_mongol_military_government"
+		texturefile = "gfx/interface/goals/focus_JAP_establish_the_mongol_military_government.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_expand_coal_islands"
+		texturefile = "gfx/interface/goals/focus_JAP_expand_coal_islands.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_expand_the_irago_proving_ground"
+		texturefile = "gfx/interface/goals/focus_JAP_expand_the_irago_proving_ground.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_form_the_dai_nippon_fujinkai"
+		texturefile = "gfx/interface/goals/focus_JAP_form_the_dai_nippon_fujinkai.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_form_the_yokusan_sonendan"
+		texturefile = "gfx/interface/goals/focus_JAP_form_the_yokusan_sonendan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_hokushin_ron"
+		texturefile = "gfx/interface/goals/focus_JAP_hokushin_ron.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_integrate_the_great_japan_youth_party"
+		texturefile = "gfx/interface/goals/focus_JAP_integrate_the_great_japan_youth_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_isolate_oceania"
+		texturefile = "gfx/interface/goals/focus_JAP_isolate_oceania.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_jet_prototypes"
+		texturefile = "gfx/interface/goals/focus_JAP_jet_prototypes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_konoes_first_cabinet"
+		texturefile = "gfx/interface/goals/focus_JAP_konoes_first_cabinet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_manchuria_airplane_manufacturing_company"
+		texturefile = "gfx/interface/goals/focus_JAP_manchuria_airplane_manufacturing_company.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_mengjiang_united_autonomous_government"
+		texturefile = "gfx/interface/goals/focus_JAP_mengjiang_united_autonomous_government.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_mine_warfare_force"
+		texturefile = "gfx/interface/goals/focus_JAP_mine_warfare_force.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_mountain_village_operation_units"
+		texturefile = "gfx/interface/goals/focus_JAP_mountain_village_operation_units.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_nanshin_ron"
+		texturefile = "gfx/interface/goals/focus_JAP_nanshin_ron.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_national_defense_brotherhood"
+		texturefile = "gfx/interface/goals/focus_JAP_national_defense_brotherhood.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_national_spiritual_mobilization_movement"
+		texturefile = "gfx/interface/goals/focus_JAP_national_spiritual_mobilization_movement.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_new_order_in_east_asia"
+		texturefile = "gfx/interface/goals/focus_JAP_new_order_in_east_asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_new_order_movement"
+		texturefile = "gfx/interface/goals/focus_JAP_new_order_movement.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_occupy_indochina"
+		texturefile = "gfx/interface/goals/focus_JAP_occupy_indochina.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_okadas_military_purge_speech"
+		texturefile = "gfx/interface/goals/focus_JAP_okadas_military_purge_speech.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_operation_take_australia"
+		texturefile = "gfx/interface/goals/focus_JAP_operation_take_australia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_promote_pan_asianism"
+		texturefile = "gfx/interface/goals/focus_JAP_promote_pan_asianism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_purge_the_kodoha_faction"
+		texturefile = "gfx/interface/goals/focus_JAP_purge_the_kodoha_faction.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_raise_the_red_flag_high"
+		texturefile = "gfx/interface/goals/focus_JAP_raise_the_red_flag_high.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_rely_on_infantry_charges"
+		texturefile = "gfx/interface/goals/focus_JAP_rely_on_infantry_charges.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_reorganize_the_united_autonomous_government"
+		texturefile = "gfx/interface/goals/focus_JAP_reorganize_the_united_autonomous_government.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_reprimand_hamada_kunimatsu"
+		texturefile = "gfx/interface/goals/focus_JAP_reprimand_hamada_kunimatsu.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_resource_security"
+		texturefile = "gfx/interface/goals/focus_JAP_resource_security.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_revere_the_emperor_destroy_the_traitors"
+		texturefile = "gfx/interface/goals/focus_JAP_revere_the_emperor_destroy_the_traitors.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_sea_the_showa_restoration"
+		texturefile = "gfx/interface/goals/focus_JAP_sea_the_showa_restoration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_secretly_rebuild_the_party"
+		texturefile = "gfx/interface/goals/focus_JAP_secretly_rebuild_the_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_crysanthemum_throne"
+		texturefile = "gfx/interface/goals/focus_JAP_the_crysanthemum_throne.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_divine_wind"
+		texturefile = "gfx/interface/goals/focus_JAP_the_divine_wind.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_eternal_kingdom"
+		texturefile = "gfx/interface/goals/focus_JAP_the_eternal_kingdom.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_fate_of_the_imperial_family"
+		texturefile = "gfx/interface/goals/focus_JAP_the_fate_of_the_imperial_family.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_five_great_cities"
+		texturefile = "gfx/interface/goals/focus_JAP_the_five_great_cities.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_harakiri_debate"
+		texturefile = "gfx/interface/goals/focus_JAP_the_harakiri_debate.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_labor_farmer_group_ascendant"
+		texturefile = "gfx/interface/goals/focus_JAP_the_labor_farmer_group_ascendant.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_lecture_group_ascendant"
+		texturefile = "gfx/interface/goals/focus_JAP_the_lecture_group_ascendant.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_modern_ashigaru"
+		texturefile = "gfx/interface/goals/focus_JAP_the_modern_ashigaru.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_persimmon_has_ripened"
+		texturefile = "gfx/interface/goals/focus_JAP_the_persimmon_has_ripened.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_red_sun_rises_for_a_new_era"
+		texturefile = "gfx/interface/goals/focus_JAP_the_red_sun_rises_for_a_new_era.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_ultimate_tank"
+		texturefile = "gfx/interface/goals/focus_JAP_the_ultimate_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_tojos_premiership"
+		texturefile = "gfx/interface/goals/focus_JAP_tojos_premiership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_unify_the_air_forces"
+		texturefile = "gfx/interface/goals/focus_JAP_unify_the_air_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_utilize_ainu_expertise"
+		texturefile = "gfx/interface/goals/focus_JAP_utilize_ainu_expertise.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_yamamotos_premiership"
+		texturefile = "gfx/interface/goals/focus_JAP_yamamotos_premiership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_z_bomber_project"
+		texturefile = "gfx/interface/goals/focus_JAP_z_bomber_project.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_battleship_guns"
+		texturefile = "gfx/interface/goals/focus_generic_battleship_guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_army_weapons_administration_hq"
+		texturefile = "gfx/interface/goals/focus_JAP_army_weapons_administration_hq.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_expand_navy_technical_department"
+		texturefile = "gfx/interface/goals/focus_JAP_expand_navy_technical_department.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_joshi_teishin_tai"
+		texturefile = "gfx/interface/goals/focus_JAP_joshi_teishin_tai.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_naval_armaments_program"
+		texturefile = "gfx/interface/goals/focus_JAP_naval_armaments_program.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ni_go_nuclear_project"
+		texturefile = "gfx/interface/goals/focus_JAP_ni_go_nuclear_project.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_promote_japanese_settlement"
+		texturefile = "gfx/interface/goals/focus_JAP_promote_japanese_settlement.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_reform_the_army"
+		texturefile = "gfx/interface/goals/focus_JAP_reform_the_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_supreme_council_for_direction_of_war"
+		texturefile = "gfx/interface/goals/focus_JAP_supreme_council_for_direction_of_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_abe_isoos_premiership"
+		texturefile = "gfx/interface/goals/focus_JAP_abe_isoos_premiership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_align_the_concordia_association"
+		texturefile = "gfx/interface/goals/focus_JAP_align_the_concordia_association.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_anti_militarist_speeches_in_the_diet"
+		texturefile = "gfx/interface/goals/focus_JAP_anti_militarist_speeches_in_the_diet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_a_pan_asian_diet"
+		texturefile = "gfx/interface/goals/focus_JAP_a_pan_asian_diet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_a_red_dawn_over_asia"
+		texturefile = "gfx/interface/goals/focus_JAP_a_red_dawn_over_asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_crush_the_internal_factions"
+		texturefile = "gfx/interface/goals/focus_JAP_crush_the_internal_factions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_crush_the_spirit_of_gekokujo"
+		texturefile = "gfx/interface/goals/focus_JAP_crush_the_spirit_of_gekokujo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_form_the_ldp"
+		texturefile = "gfx/interface/goals/focus_JAP_form_the_ldp.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_hasten_the_integration_of_taiwan"
+		texturefile = "gfx/interface/goals/focus_JAP_hasten_the_integration_of_taiwan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ichiro_hatayomas_premiership"
+		texturefile = "gfx/interface/goals/focus_JAP_ichiro_hatayomas_premiership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ignite_the_korean_peninsula"
+		texturefile = "gfx/interface/goals/focus_JAP_ignite_the_korean_peninsula.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_incorporate_buddhist_socialism"
+		texturefile = "gfx/interface/goals/focus_JAP_incorporate_buddhist_socialism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_integrate_the_government_general"
+		texturefile = "gfx/interface/goals/focus_JAP_integrate_the_government_general.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_korean_volunteer_army"
+		texturefile = "gfx/interface/goals/focus_JAP_korean_volunteer_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_learn_from_the_nkvd"
+		texturefile = "gfx/interface/goals/focus_JAP_learn_from_the_nkvd.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_machida_chujis_premiership"
+		texturefile = "gfx/interface/goals/focus_JAP_machida_chujis_premiership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_minpon_shugi"
+		texturefile = "gfx/interface/goals/focus_JAP_minpon_shugi.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_minshu_shugi"
+		texturefile = "gfx/interface/goals/focus_JAP_minshu_shugi.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_mitsumasa_yonais_premiership"
+		texturefile = "gfx/interface/goals/focus_JAP_mitsumasa_yonais_premiership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_nationalize_zaibatsus"
+		texturefile = "gfx/interface/goals/focus_JAP_nationalize_zaibatsus.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_oppose_zaibatsus"
+		texturefile = "gfx/interface/goals/focus_JAP_oppose_zaibatsus.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_prepare_for_peninsular_war"
+		texturefile = "gfx/interface/goals/focus_JAP_prepare_for_peninsular_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_propaganda"
+		texturefile = "gfx/interface/goals/focus_JAP_propaganda.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_protect_the_manchurians"
+		texturefile = "gfx/interface/goals/focus_JAP_protect_the_manchurians.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_reclaim_the_lost_territories"
+		texturefile = "gfx/interface/goals/focus_JAP_reclaim_the_lost_territories.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_return_of_the_machukuo_exiles"
+		texturefile = "gfx/interface/goals/focus_JAP_return_of_the_machukuo_exiles.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_rikken_seiyukai_victory"
+		texturefile = "gfx/interface/goals/focus_JAP_rikken_seiyukai_victory.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_spread_the_revolutionary_flame_to_south_asia"
+		texturefile = "gfx/interface/goals/focus_JAP_spread_the_revolutionary_flame_to_south_asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_spread_the_revolutionary_flame_to_west_asia"
+		texturefile = "gfx/interface/goals/focus_JAP_spread_the_revolutionary_flame_to_west_asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_supremacy_of_will"
+		texturefile = "gfx/interface/goals/focus_JAP_supremacy_of_will.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_greater_east_asian_federation"
+		texturefile = "gfx/interface/goals/focus_JAP_the_greater_east_asian_federation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_indochinese_soviet"
+		texturefile = "gfx/interface/goals/focus_JAP_the_indochinese_soviet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_national_police_reserve"
+		texturefile = "gfx/interface/goals/focus_JAP_the_national_police_reserve.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_oceanian_soviet"
+		texturefile = "gfx/interface/goals/focus_JAP_the_oceanian_soviet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_south_pacific_soviet"
+		texturefile = "gfx/interface/goals/focus_JAP_the_south_pacific_soviet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_tohokai"
+		texturefile = "gfx/interface/goals/focus_JAP_the_tohokai.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_tokugawa_iesatos_premiership"
+		texturefile = "gfx/interface/goals/focus_JAP_tokugawa_iesatos_premiership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_uplift_ainu_revolution_theory"
+		texturefile = "gfx/interface/goals/focus_JAP_uplift_ainu_revolution_theory.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_yatagarasus_guidance"
+		texturefile = "gfx/interface/goals/focus_JAP_yatagarasus_guidance.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_MAN_manchurian_navy"
+		texturefile = "gfx/interface/goals/focus_MAN_manchurian_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_modernize_agriculture_2"
+		texturefile = "gfx/interface/goals/focus_generic_modernize_agriculture_2.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_sway_navy"
+		texturefile = "gfx/interface/goals/focus_generic_sway_navy.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_an_integrated_union"
+		texturefile = "gfx/interface/goals/focus_JAP_an_integrated_union.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_a_free_asia_pacific"
+		texturefile = "gfx/interface/goals/focus_JAP_a_free_asia_pacific.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_a_functionalist_housing_policy"
+		texturefile = "gfx/interface/goals/focus_JAP_a_functionalist_housing_policy.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_contact_the_masterless_samurai"
+		texturefile = "gfx/interface/goals/focus_JAP_contact_the_masterless_samurai.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_draft_the_showa_constitution"
+		texturefile = "gfx/interface/goals/focus_JAP_draft_the_showa_constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_embodying_empress_jingu"
+		texturefile = "gfx/interface/goals/focus_JAP_embodying_empress_jingu.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_empower_the_emperor"
+		texturefile = "gfx/interface/goals/focus_JAP_empower_the_emperor.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_empower_the_shogun"
+		texturefile = "gfx/interface/goals/focus_JAP_empower_the_shogun.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_foreign_exchange_allocation_policy"
+		texturefile = "gfx/interface/goals/focus_JAP_foreign_exchange_allocation_policy.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_form_pioneer_organizations"
+		texturefile = "gfx/interface/goals/focus_JAP_form_pioneer_organizations.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_free_colonised_asian_countries"
+		texturefile = "gfx/interface/goals/focus_JAP_free_colonised_asian_countries.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_further_urban_investments"
+		texturefile = "gfx/interface/goals/focus_JAP_further_urban_investments.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ganbarou"
+		texturefile = "gfx/interface/goals/focus_JAP_ganbarou.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_gather_royal_pacifists_support"
+		texturefile = "gfx/interface/goals/focus_JAP_gather_royal_pacifists_support.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_give_it_your_all_for_the_emperor"
+		texturefile = "gfx/interface/goals/focus_JAP_give_it_your_all_for_the_emperor.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_hakko_ichiu"
+		texturefile = "gfx/interface/goals/focus_JAP_hakko_ichiu.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_ikki_kitas_state_socialist_ideals"
+		texturefile = "gfx/interface/goals/focus_JAP_ikki_kitas_state_socialist_ideals.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_implement_army_reforms"
+		texturefile = "gfx/interface/goals/focus_JAP_implement_army_reforms.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_integrate_the_great_manchurian_empire"
+		texturefile = "gfx/interface/goals/focus_JAP_integrate_the_great_manchurian_empire.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_kikues_new_model"
+		texturefile = "gfx/interface/goals/focus_JAP_kikues_new_model.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_launch_the_income_doubling_plan"
+		texturefile = "gfx/interface/goals/focus_JAP_launch_the_income_doubling_plan.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_organize_the_student_movements"
+		texturefile = "gfx/interface/goals/focus_JAP_organize_the_student_movements.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_politicize_the_education_system"
+		texturefile = "gfx/interface/goals/focus_JAP_politicize_the_education_system.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_push_to_limit_military_power"
+		texturefile = "gfx/interface/goals/focus_JAP_push_to_limit_military_power.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_put_an_end_to_chinese_feudalism"
+		texturefile = "gfx/interface/goals/focus_JAP_put_an_end_to_chinese_feudalism.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_radio_guided_missiles"
+		texturefile = "gfx/interface/goals/focus_JAP_radio_guided_missiles.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_remove_the_weeds_from_the_crop"
+		texturefile = "gfx/interface/goals/focus_JAP_remove_the_weeds_from_the_crop.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_return_to_sakoku_ron"
+		texturefile = "gfx/interface/goals/focus_JAP_return_to_sakoku_ron.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_revoke_the_peace_preservation_law"
+		texturefile = "gfx/interface/goals/focus_JAP_revoke_the_peace_preservation_law.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_rikken_minseito_victory"
+		texturefile = "gfx/interface/goals/focus_JAP_rikken_minseito_victory.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_seek_yakuza_support"
+		texturefile = "gfx/interface/goals/focus_JAP_seek_yakuza_support.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_social_and_cultural_revolution"
+		texturefile = "gfx/interface/goals/focus_JAP_social_and_cultural_revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_sonno_joi"
+		texturefile = "gfx/interface/goals/focus_JAP_sonno_joi.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_taiheiyo_belt"
+		texturefile = "gfx/interface/goals/focus_JAP_taiheiyo_belt.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_tennoheika_banzai"
+		texturefile = "gfx/interface/goals/focus_JAP_tennoheika_banzai.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_footsteps_of_jimmu"
+		texturefile = "gfx/interface/goals/focus_JAP_the_footsteps_of_jimmu.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_great_spiritual_evil"
+		texturefile = "gfx/interface/goals/focus_JAP_the_great_spiritual_evil.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_jeweled_spear_has_struck"
+		texturefile = "gfx/interface/goals/focus_JAP_the_jeweled_spear_has_struck.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_koiso_administration"
+		texturefile = "gfx/interface/goals/focus_JAP_the_koiso_administration.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_spirit_of_the_imperial_nation"
+		texturefile = "gfx/interface/goals/focus_JAP_the_spirit_of_the_imperial_nation.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_the_uno_school_of_economics"
+		texturefile = "gfx/interface/goals/focus_JAP_the_uno_school_of_economics.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_JAP_women_in_industry"
+		texturefile = "gfx/interface/goals/focus_JAP_women_in_industry.png"
+	}
+
+
+
+		#### CHI ####
+
+		
+	SpriteType = {
+		name = "GFX_focus_CHI_initiate_gung_ho_movement"
+		texturefile = "gfx/interface/goals/focus_CHI_initiate_gung_ho_movement.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_worker_expansion"
+		texturefile = "gfx/interface/goals/focus_generic_worker_expansion.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_worker_administration"
+		texturefile = "gfx/interface/goals/focus_generic_worker_administration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_education"
+		texturefile = "gfx/interface/goals/focus_generic_education.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_found_fertiliser_plant"
+		texturefile = "gfx/interface/goals/focus_CHI_found_fertiliser_plant.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_import_fertilisers"
+		texturefile = "gfx/interface/goals/focus_CHI_import_fertilisers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_air_force"
+		texturefile = "gfx/interface/goals/focus_CHI_air_force.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_northern_naval_logistics"
+		texturefile = "gfx/interface/goals/focus_CHI_northern_naval_logistics.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_southern_naval_logistics"
+		texturefile = "gfx/interface/goals/focus_CHI_southern_naval_logistics.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_avoid_another_crisis"
+		texturefile = "gfx/interface/goals/focus_CHI_avoid_another_crisis.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_close_whampoa"
+		texturefile = "gfx/interface/goals/focus_CHI_close_whampoa.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_crackdown_on_illicit_goods"
+		texturefile = "gfx/interface/goals/focus_CHI_crackdown_on_illicit_goods.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_dang_guo"
+		texturefile = "gfx/interface/goals/focus_CHI_dang_guo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_empower_mtac"
+		texturefile = "gfx/interface/goals/focus_CHI_empower_mtac.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_popular_army"
+		texturefile = "gfx/interface/goals/focus_CHI_popular_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_tongzi_jun"
+		texturefile = "gfx/interface/goals/focus_CHI_tongzi_jun.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_asia_liberation"
+		texturefile = "gfx/interface/goals/focus_generic_asia_liberation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_expropriate_industrialist"
+		texturefile = "gfx/interface/goals/focus_generic_expropriate_industrialist.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_200th_division"
+		texturefile = "gfx/interface/goals/focus_CHI_200th_division.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_commemorate_labour_corp"
+		texturefile = "gfx/interface/goals/focus_CHI_commemorate_labour_corp.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_decisive_battles"
+		texturefile = "gfx/interface/goals/focus_CHI_decisive_battles.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_effectivize_ground_crew_usage"
+		texturefile = "gfx/interface/goals/focus_CHI_effectivize_ground_crew_usage.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_fund_marine_corp"
+		texturefile = "gfx/interface/goals/focus_CHI_fund_marine_corp.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_guerrilla_warfare"
+		texturefile = "gfx/interface/goals/focus_CHI_guerrilla_warfare.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_military_affairs_commission"
+		texturefile = "gfx/interface/goals/focus_CHI_military_affairs_commission.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_prepare_war_zones"
+		texturefile = "gfx/interface/goals/focus_CHI_prepare_war_zones.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_promote_national_currency"
+		texturefile = "gfx/interface/goals/focus_CHI_promote_national_currency.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_protracted_warfare"
+		texturefile = "gfx/interface/goals/focus_CHI_protracted_warfare.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_registry_of_property"
+		texturefile = "gfx/interface/goals/focus_CHI_registry_of_property.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Republic_of_china_navy"
+		texturefile = "gfx/interface/goals/focus_CHI_Republic_of_china_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_river_crossing_studies"
+		texturefile = "gfx/interface/goals/focus_CHI_river_crossing_studies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_utilize_the_terrain"
+		texturefile = "gfx/interface/goals/focus_CHI_utilize_the_terrain.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_vtol_experiments"
+		texturefile = "gfx/interface/goals/focus_CHI_vtol_experiments.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_industrial_experts"
+		texturefile = "gfx/interface/goals/focus_generic_industrial_experts.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_weaponise_the_hongmen"
+		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_appropriate_design"
+		texturefile = "gfx/interface/goals/focus_CHI_appropriate_design.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_students_to_the_countryside"
+		texturefile = "gfx/interface/goals/focus_CHI_students_to_the_countryside.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_land_redistribution"
+		texturefile = "gfx/interface/goals/focus_generic_land_redistribution.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_planned_economy"
+		texturefile = "gfx/interface/goals/focus_CHI_planned_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_stockpile_currency"
+		texturefile = "gfx/interface/goals/focus_generic_stockpile_currency.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_formalise_training_regime"
+		texturefile = "gfx/interface/goals/focus_CHI_formalise_training_regime.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_positional_advantage"
+		texturefile = "gfx/interface/goals/focus_CHI_positional_advantage.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_an_alternative_rooted_in_tradition"
+		texturefile = "gfx/interface/goals/focus_CHI_an_alternative_rooted_in_tradition.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_invoke_the_nine_powers"
+		texturefile = "gfx/interface/goals/focus_CHI_invoke_the_nine_powers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_lay_the_foundation_for_a_united_china"
+		texturefile = "gfx/interface/goals/focus_CHI_lay_the_foundation_for_a_united_china.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_military_mission"
+		texturefile = "gfx/interface/goals/focus_CHI_military_mission.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_negotiate_the_nine_powers_treaty"
+		texturefile = "gfx/interface/goals/focus_CHI_negotiate_the_nine_powers_treaty.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_reject_the_nine_powers"
+		texturefile = "gfx/interface/goals/focus_CHI_reject_the_nine_powers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_the_greater_game"
+		texturefile = "gfx/interface/goals/focus_CHI_the_greater_game.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_the_northern_mandate"
+		texturefile = "gfx/interface/goals/focus_CHI_the_northern_mandate.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_the_southern_mandate"
+		texturefile = "gfx/interface/goals/focus_CHI_the_southern_mandate.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_tour_the_north"
+		texturefile = "gfx/interface/goals/focus_CHI_tour_the_north.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_tour_the_south"
+		texturefile = "gfx/interface/goals/focus_CHI_tour_the_south.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_tour_the_west"
+		texturefile = "gfx/interface/goals/focus_CHI_tour_the_west.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_weaponise_the_faithful"
+		texturefile = "gfx/interface/goals/focus_CHI_weaponise_the_faithful.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_crush_the_military"
+		texturefile = "gfx/interface/goals/focus_generic_crush_the_military.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_camco_primacy"
+		texturefile = "gfx/interface/goals/focus_CHI_camco_primacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_democratic_asia"
+		texturefile = "gfx/interface/goals/focus_generic_democratic_asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_a_second_empire_of_china"
+		texturefile = "gfx/interface/goals/focus_CHI_a_second_empire_of_china.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_MAN_reestablish_the_imperial_army"
+		texturefile = "gfx/interface/goals/focus_MAN_reestablish_the_imperial_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_MAN_the_new_fengtian_army"
+		texturefile = "gfx/interface/goals/focus_MAN_the_new_fengtian_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_arrest_the_seven_gentlemen"
+		texturefile = "gfx/interface/goals/focus_CHI_arrest_the _seven_gentlemen.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_a_chapter_in_every_village"
+		texturefile = "gfx/interface/goals/focus_CHI_a_chapter_in_every_village.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_ban_immoral_entertainment"
+		texturefile = "gfx/interface/goals/focus_CHI_ban_immoral_entertainment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_baojia_system"
+		texturefile = "gfx/interface/goals/focus_CHI_baojia_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_change_in_leadership"
+		texturefile = "gfx/interface/goals/focus_CHI_change_in_leadership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_clear_out_sycophants"
+		texturefile = "gfx/interface/goals/focus_CHI_clear_out_sycophants.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_connections_with_shanghai_elites"
+		texturefile = "gfx/interface/goals/focus_CHI_connections_with_shanghai_elites.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_demonstrate_our_resolve"
+		texturefile = "gfx/interface/goals/focus_CHI_demonstrate_our_resolve.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_denounce_feudalism"
+		texturefile = "gfx/interface/goals/focus_CHI_denounce_feudalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_enforce_virtues"
+		texturefile = "gfx/interface/goals/focus_CHI_enforce_virtues.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_first_lady_abroad"
+		texturefile = "gfx/interface/goals/focus_CHI_first_lady_abroad.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_generalissimo_for_all_of_china"
+		texturefile = "gfx/interface/goals/focus_CHI_generalissimo_for_all_of_china.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_Legitimise_du"
+		texturefile = "gfx/interface/goals/focus_CHI_Legitimise_du.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_meritocratic_principles"
+		texturefile = "gfx/interface/goals/focus_CHI_meritocratic_principles.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_operation_zet"
+		texturefile = "gfx/interface/goals/focus_CHI_operation_zet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_reshuffle_green_gang"
+		texturefile = "gfx/interface/goals/focus_CHI_reshuffle_green_gang.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_revise_the_national_curriculum"
+		texturefile = "gfx/interface/goals/focus_CHI_revise_the_national_curriculum.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_second_father_of_the_nation" 
+		texturefile = "gfx/interface/goals/focus_CHI_second_father_of_the nation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_start_looking_outwards"
+		texturefile = "gfx/interface/goals/focus_CHI_start_looking_outwards.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_the_4_defence_areas"
+		texturefile = "gfx/interface/goals/focus_CHI_the_4_defence_areas.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_the_hump"
+		texturefile = "gfx/interface/goals/focus_CHI_the_hump.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_utilize_german_contacts"
+		texturefile = "gfx/interface/goals/focus_CHI_utilize_german_contacts.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_utmost_loyalty"
+		texturefile = "gfx/interface/goals/focus_CHI_utmost_loyalty.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_victory_over_the_invaders"
+		texturefile = "gfx/interface/goals/focus_CHI_victory_over_the_invaders.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_weaponise_the_hongmen"
+		texturefile = "gfx/interface/goals/focus_CHI_weaponise_the_hongmen.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_daytime_bombing"
+		texturefile = "gfx/interface/goals/focus_generic_daytime_bombing.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_flight_instructors"
+		texturefile = "gfx/interface/goals/focus_generic_flight_instructors.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_money_for_equipment"
+		texturefile = "gfx/interface/goals/focus_generic_money_for_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_nighttime_bombing"
+		texturefile = "gfx/interface/goals/focus_generic_nighttime_bombing.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_pilot_training"
+		texturefile = "gfx/interface/goals/focus_generic_pilot_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_swooping_falcon"
+		texturefile = "gfx/interface/goals/focus_generic_swooping_falcon.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_sympathetic_judges"
+		texturefile = "gfx/interface/goals/focus_generic_sympathetic_judges.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_turning_a_blind_eye"
+		texturefile = "gfx/interface/goals/focus_generic_turning_a_blind_eye.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_a_new_middle_kingdom"
+		texturefile = "gfx/interface/goals/focus_CHI_a_new_middle_kingdom.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_co_opt_the_koh_hsin_movement"
+		texturefile = "gfx/interface/goals/focus_CHI_co_opt_the_koh_hsin_movement.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_cradle_of_civilization"
+		texturefile = "gfx/interface/goals/focus_CHI_cradle_of_civilization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_mend_the_rift_with_hu"
+		texturefile = "gfx/interface/goals/focus_CHI_mend_the_rift_with_hu.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_political_advisors_in_every_division"
+		texturefile = "gfx/interface/goals/focus_CHI_political_advisors_in_every_division.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_punish_the_signatories"
+		texturefile = "gfx/interface/goals/focus_CHI_punish_the_signatories.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_revive_the_western_hills_group"
+		texturefile = "gfx/interface/goals/focus_CHI_revive_the_western_hills_group.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_strengthening_our_resolve"
+		texturefile = "gfx/interface/goals/focus_CHI_strengthening_our_resolve.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_escort_efficiency"
+		texturefile = "gfx/interface/goals/focus_generic_escort_efficiency.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_combined_logistics_command"
+		texturefile = "gfx/interface/goals/focus_CHI_combined_logistics_command.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_glorify_deng_yanda"
+		texturefile = "gfx/interface/goals/focus_CHI_glorify_deng_yanda.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_unify_as_the_china_democratic_league"
+		texturefile = "gfx/interface/goals/focus_CHI_unify_as_the_china_democratic_league.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_retake_the_coastal_cities"
+		texturefile = "gfx/interface/goals/focus_CHI_retake_the_coastal_cities.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_ally_taiwanese_peoples_party"
+		texturefile = "gfx/interface/goals/focus_CHI_ally_taiwanese_peoples_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_ally_the_young_china_party"
+		texturefile = "gfx/interface/goals/focus_CHI_ally_the_young_china_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_invite_carsun_chang"
+		texturefile = "gfx/interface/goals/focus_CHI_invite_carsun_chang.dds"
+	}
+
+
+
+		#### PRC ####
+
+
+	SpriteType = {
+		name = "GFX_focus_PRC_allow_special_goods_trade"
+		texturefile = "gfx/interface/goals/focus_PRC_allow_special_goods_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_anti_air_effort"
+		texturefile = "gfx/interface/goals/focus_PRC_anti_air_effort.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_appoint_chang_qiankun"
+		texturefile = "gfx/interface/goals/focus_PRC_appoint_chang_qiankun.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_appoint_xiao_jianguang"
+		texturefile = "gfx/interface/goals/focus_PRC_appoint_xiao_jianguang.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_arms_recovery_efforts"
+		texturefile = "gfx/interface/goals/focus_PRC_arms_recovery_efforts.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_army_doctrines"
+		texturefile = "gfx/interface/goals/focus_PRC_army_doctrines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_ban_special_goods_trade"
+		texturefile = "gfx/interface/goals/focus_PRC_ban_special_goods_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_construct_the_banqiao_dam"
+		texturefile = "gfx/interface/goals/focus_PRC_construct_the_banqiao_dam.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_controlled_growth"
+		texturefile = "gfx/interface/goals/focus_PRC_controlled_growth.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_develop_the_army"
+		texturefile = "gfx/interface/goals/focus_PRC_develop_the_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_establish_domestic_aircraft_production"
+		texturefile = "gfx/interface/goals/focus_PRC_establish_domestic_aircraft_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_establish_pla_air_force"
+		texturefile = "gfx/interface/goals/focus_PRC_establish_pla_air_force.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_establish_pla_navy"
+		texturefile = "gfx/interface/goals/focus_PRC_establish_pla_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_form_the_yanan_university"
+		texturefile = "gfx/interface/goals/focus_PRC_form_the_yanan_university.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_immediate_response_to_lack_of_army"
+		texturefile = "gfx/interface/goals/focus_PRC_immediate_response_to_lack_of_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_long_march_to_recovery"
+		texturefile = "gfx/interface/goals/focus_PRC_long_march_to_recovery.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_naval_capstone"
+		texturefile = "gfx/interface/goals/focus_PRC_naval_capstone.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_peoples_liberation_army"
+		texturefile = "gfx/interface/goals/focus_PRC_peoples_liberation_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_request_for_aid"
+		texturefile = "gfx/interface/goals/focus_PRC_request_for_aid.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_role_of_kangda"
+		texturefile = "gfx/interface/goals/focus_PRC_role_of_kangda.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_submarines"
+		texturefile = "gfx/interface/goals/focus_PRC_submarines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_the_northeast_aviation_university_sea"
+		texturefile = "gfx/interface/goals/focus_PRC_the_northeast_aviation_university_sea.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_the_pla_naval_school"
+		texturefile = "gfx/interface/goals/focus_PRC_the_pla_naval_school.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_three_rules_of_discipline"
+		texturefile = "gfx/interface/goals/focus_PRC_three_rules_of_discipline.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_eight_points_for_attention"
+		texturefile = "gfx/interface/goals/focus_PRC_eight_points_for_attention.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_establish_shorter_market_plans"
+		texturefile = "gfx/interface/goals/focus_PRC_establish_shorter_market_plans.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_rural_region_development"
+		texturefile = "gfx/interface/goals/focus_PRC_rural_region_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_rural_region_development_two"
+		texturefile = "gfx/interface/goals/focus_PRC_rural_region_development_two.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_urbanization"
+		texturefile = "gfx/interface/goals/focus_PRC_urbanization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_equipment_from_copper_coins"
+		texturefile = "gfx/interface/goals/focus_PRC_equipment_from_copper_coins.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_land_revolution_expedited"
+		texturefile = "gfx/interface/goals/focus_PRC_land_revolution_expedited.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_land_revolution_halted"
+		texturefile = "gfx/interface/goals/focus_PRC_land_revolution_halted.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_promote_paper_bills"
+		texturefile = "gfx/interface/goals/focus_PRC_promote_paper_bills.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_promote_the_silver_dollar"
+		texturefile = "gfx/interface/goals/focus_PRC_promote_the_silver_dollar.dds"
+	}
+		SpriteType = {
+		name = "GFX_focus_generic_invade_korea"
+		texturefile = "gfx/interface/goals/focus_generic_invade_korea.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_invade_taiwan"
+		texturefile = "gfx/interface/goals/focus_generic_invade_taiwan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_air_force_capstone"
+		texturefile = "gfx/interface/goals/focus_PRC_air_force_capstone.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_autonomous_regions"
+		texturefile = "gfx/interface/goals/focus_PRC_autonomous_regions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_a_modern_army"
+		texturefile = "gfx/interface/goals/focus_PRC_a_modern_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_bolshevik_urbanization"
+		texturefile = "gfx/interface/goals/focus_PRC_bolshevik_urbanization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_bolshevik_urbanization_completed"
+		texturefile = "gfx/interface/goals/focus_PRC_bolshevik_urbanization_completed.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_central_military_commision"
+		texturefile = "gfx/interface/goals/focus_PRC_central_military_commision.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_consolidate_politcal_power"
+		texturefile = "gfx/interface/goals/focus_PRC_consolidate_politcal_power.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_dissent_in_the_united_front"
+		texturefile = "gfx/interface/goals/focus_PRC_dissent_in_the_united_front.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_embrace_stalinism"
+		texturefile = "gfx/interface/goals/focus_PRC_embrace_stalinism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_form_central_social_affairs_department"
+		texturefile = "gfx/interface/goals/focus_PRC_form_central_social_affairs_department.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_he_long_second_army"
+		texturefile = "gfx/interface/goals/focus_PRC_he_long_second_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_invite_soviet_general"
+		texturefile = "gfx/interface/goals/focus_PRC_invite_soviet_general.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_join_comintern"
+		texturefile = "gfx/interface/goals/focus_PRC_join_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_pavel_mif"
+		texturefile = "gfx/interface/goals/focus_PRC_pavel_mif.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_peaceful_reunification"
+		texturefile = "gfx/interface/goals/focus_PRC_peaceful_reunification.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_petition_for_freedom"
+		texturefile = "gfx/interface/goals/focus_PRC_petition_for_freedom.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_pilot_training"
+		texturefile = "gfx/interface/goals/focus_PRC_pilot_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_rebuild_28_bolshevik"
+		texturefile = "gfx/interface/goals/focus_PRC_rebuild_28_bolshevik.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_reclaim_tibet"
+		texturefile = "gfx/interface/goals/focus_PRC_reclaim_tibet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_reestablish_moscow_sun_yat_sen_university"
+		texturefile = "gfx/interface/goals/focus_PRC_reestablish_moscow_sun_yat_sen_university.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_reorganize_divisions"
+		texturefile = "gfx/interface/goals/focus_PRC_reorganize_divisions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_restore_territorial_integrity"
+		texturefile = "gfx/interface/goals/focus_PRC_restore_territorial_integrity.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_revolutionary_war_of_the_masses"
+		texturefile = "gfx/interface/goals/focus_PRC_revolutionary_war_of_the_masses.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_stoke_the_flames"
+		texturefile = "gfx/interface/goals/focus_PRC_stoke_the_flames.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_the_central_committee"
+		texturefile = "gfx/interface/goals/focus_PRC_the_central_committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_towards_one_china"
+		texturefile = "gfx/interface/goals/focus_PRC_towards_one_china.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_urbanization_two"
+		texturefile = "gfx/interface/goals/focus_PRC_urbanization_two.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_invite_otto_braun"
+		texturefile = "gfx/interface/goals/focus_PRC_invite_otto_braun.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_rally_the_28_bolsheviks"
+		texturefile = "gfx/interface/goals/focus_PRC_rally_the_28_bolsheviks.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_sabotage"
+		texturefile = "gfx/interface/goals/focus_generic_sabotage.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_behind_enemy_lines"
+		texturefile = "gfx/interface/goals/focus_PRC_behind_enemy_lines.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_burn_the_paper_tigers"
+		texturefile = "gfx/interface/goals/focus_PRC_burn_the_paper_tigers.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_develop_yanan_soviet"
+		texturefile = "gfx/interface/goals/focus_PRC_develop_yanan_soviet.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_eastward_expansion"
+		texturefile = "gfx/interface/goals/focus_PRC_eastward_expansion.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_embrace_change_in_leadership"
+		texturefile = "gfx/interface/goals/focus_PRC_embrace_change_in_leadership.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_hundred_regiments_offensive"
+		texturefile = "gfx/interface/goals/focus_PRC_hundred_regiments_offensive.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_raid_weapon_depots"
+		texturefile = "gfx/interface/goals/focus_PRC_raid_weapon_depots.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_rally_the_women"
+		texturefile = "gfx/interface/goals/focus_PRC_rally_the_women.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_recaim_the_grasp_of_power"
+		texturefile = "gfx/interface/goals/focus_PRC_recaim_the_grasp_of_power.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_usurp_control_over_yanan"
+		texturefile = "gfx/interface/goals/focus_PRC_usurp_control_over_yanan.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_westward_expansion"
+		texturefile = "gfx/interface/goals/focus_PRC_westward_expansion.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_yanan_rectification_movement"
+		texturefile = "gfx/interface/goals/focus_PRC_yanan_rectification_movement.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_germany_democratic"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_germany_democratic.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_the_chinese_soviet"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_the_chinese_soviet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_communist_asia"
+		texturefile = "gfx/interface/goals/focus_generic_communist_asia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_MAN_persuade_the_imprp"
+		texturefile = "gfx/interface/goals/focus_MAN_persuade_the_imprp.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_cooperate_with_ulanhu"
+		texturefile = "gfx/interface/goals/focus_PRC_cooperate_with_ulanhu.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_the_chinese_century"
+		texturefile = "gfx/interface/goals/focus_PRC_the_chinese_century.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_guotao_ascends"
+		texturefile = "gfx/interface/goals/focus_PRC_guotao_ascends.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_dare_to_struggle"
+		texturefile = "gfx/interface/goals/focus_PRC_dare_to_struggle.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_dare_to_win"
+		texturefile = "gfx/interface/goals/focus_PRC_dare_to_win.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_army_attack"
+		texturefile = "gfx/interface/goals/focus_generic_army_attack.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_adopt_sun_yat_sens_principles"
+		texturefile = "gfx/interface/goals/focus_PRC_adopt_sun_yat_sens_principles.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_army_command"
+		texturefile = "gfx/interface/goals/focus_PRC_army_command.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_bolshevik_urbanization_1"
+		texturefile = "gfx/interface/goals/focus_PRC_bolshevik_urbanization_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_crush_capitalism"
+		texturefile = "gfx/interface/goals/focus_generic_crush_capitalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHI_restore_the_old_republic"
+		texturefile = "gfx/interface/goals/focus_CHI_restore_the_old_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_assume_leadership"
+		texturefile = "gfx/interface/goals/focus_PRC_assume_leadership.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_approach_the_west"
+		texturefile = "gfx/interface/goals/focus_generic_approach_the_west.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_intimidate_warlords"
+		texturefile = "gfx/interface/goals/focus_PRC_intimidate_warlords.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_restore_the_old_republic"
+		texturefile = "gfx/interface/goals/focus_PRC_restore_the_old_republic.dds"
+	}
+
+
+		#### PHI ####
+
+
+	SpriteType = {
+		name = "GFX_focus_PHI_partido_komunista_ng_pilipinas_coup"
+		texturefile = "gfx/interface/goals/focus_PHI_partido_komunista_ng_pilipinas_coup.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_develop_japanese_trade_connections"
+		texturefile = "gfx/interface/goals/focus_PHI_develop_japanese_trade_connections.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_agricultural_migrants_to_hawaii"
+		texturefile = "gfx/interface/goals/focus_PHI_agricultural_migrants_to_hawaii.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_mineral_prospecting"
+		texturefile = "gfx/interface/goals/focus_generic_mineral_prospecting.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_improve_the_administration_2"
+		texturefile = "gfx/interface/goals/focus_generic_improve_the_administration_2.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_10_year_training_plan"
+		texturefile = "gfx/interface/goals/focus_PHI_10_year_training_plan.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_war_for_the_oceans"
+		texturefile = "gfx/interface/goals/focus_PHI_war_for_the_oceans.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_piracy"
+		texturefile = "gfx/interface/goals/focus_generic_piracy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_japanese_advisors"
+		texturefile = "gfx/interface/goals/focus_PHI_japanese_advisors.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_japanese_observers"
+		texturefile = "gfx/interface/goals/focus_PHI_japanese_observers.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_malayo_polynesia"
+		texturefile = "gfx/interface/goals/focus_PHI_malayo_polynesia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_war_for_oceania"
+		texturefile = "gfx/interface/goals/focus_PHI_war_for_oceania.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_take_pacific_islands"
+		texturefile = "gfx/interface/goals/focus_PHI_take_pacific_islands.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_reunite_madagascar"
+		texturefile = "gfx/interface/goals/focus_PHI_reunite_madagascar.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_economic_nationalism"
+		texturefile = "gfx/interface/goals/focus_PHI_economic_nationalism.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_bell_trade_act"
+		texturefile = "gfx/interface/goals/focus_PHI_bell_trade_act.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_military_requisitions"
+		texturefile = "gfx/interface/goals/focus_PHI_military_requisitions.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_investment_fund"
+		texturefile = "gfx/interface/goals/focus_PHI_investment_fund.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_aircraft_requisition"
+		texturefile = "gfx/interface/goals/focus_PHI_aircraft_requisition.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_united_states_asiatic_fleet"
+		texturefile = "gfx/interface/goals/focus_PHI_united_states_asiatic_fleet.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_infiltrate_chinese_ports"
+		texturefile = "gfx/interface/goals/focus_PHI_infiltrate_chinese_ports.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_pro_hacendados"
+		texturefile = "gfx/interface/goals/focus_PHI_pro_hacendados.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_trucks_and_transport_requisition"
+		texturefile = "gfx/interface/goals/focus_PHI_trucks_and_transport_requisition.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_open_borders"
+		texturefile = "gfx/interface/goals/focus_PHI_open_borders.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_anti_hacendados"
+		texturefile = "gfx/interface/goals/focus_PHI_anti_hacendados.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_small_arms_and_artillery_requisition"
+		texturefile = "gfx/interface/goals/focus_PHI_small_arms_and_artillery_requisition.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_assassination_of_quezon"
+		texturefile = "gfx/interface/goals/focus_PHI_assassination_of_quezon.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_reconquista"
+		texturefile = "gfx/interface/goals/focus_PHI_reconquista.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_makapili"
+		texturefile = "gfx/interface/goals/focus_PHI_makapili.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_uncouple_the_peso_and_dollar"
+		texturefile = "gfx/interface/goals/focus_PHI_uncouple_the_peso_and_dollar.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_leverage_the_peso"
+		texturefile = "gfx/interface/goals/focus_PHI_leverage_the_peso.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_conquest_of_japan"
+		texturefile = "gfx/interface/goals/focus_PHI_conquest_of_japan.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_conference"
+		texturefile = "gfx/interface/goals/focus_generic_conference.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_smugglers"
+		texturefile = "gfx/interface/goals/focus_generic_smugglers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_army_air_corps"
+		texturefile = "gfx/interface/goals/focus_PHI_army_air_corps.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_army_of_the_philippines"
+		texturefile = "gfx/interface/goals/focus_PHI_army_of_the_philippines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_battalion_combat_teams"
+		texturefile = "gfx/interface/goals/focus_PHI_battalion_combat_teams.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_beach_defense_strategy"
+		texturefile = "gfx/interface/goals/focus_PHI_beach_defense_strategy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_bill_of_rights_for_veterans"
+		texturefile = "gfx/interface/goals/focus_PHI_bill_of_rights_for_veterans.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_declare_military_emergency"
+		texturefile = "gfx/interface/goals/focus_PHI_declare_military_emergency.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_far_east_air_force"
+		texturefile = "gfx/interface/goals/focus_PHI_far_east_air_force.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_gunboat_diplomacy"
+		texturefile = "gfx/interface/goals/focus_PHI_gunboat_diplomacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_militarize_the_constabulary"
+		texturefile = "gfx/interface/goals/focus_PHI_militarize_the_constabulary.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_national_defense_act"
+		texturefile = "gfx/interface/goals/focus_PHI_national_defense_act.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_philippine_air_force"
+		texturefile = "gfx/interface/goals/focus_PHI_philippine_air_force.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_philippine_army_orchestra"
+		texturefile = "gfx/interface/goals/focus_PHI_philippine_army_orchestra.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_philippine_division"
+		texturefile = "gfx/interface/goals/focus_PHI_philippine_division.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_philippine_scouts"
+		texturefile = "gfx/interface/goals/focus_PHI_philippine_scouts.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_thalassocracy"
+		texturefile = "gfx/interface/goals/focus_PHI_thalassocracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_the_concrete_battleship"
+		texturefile = "gfx/interface/goals/focus_PHI_the_concrete_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_war_plan_orange"
+		texturefile = "gfx/interface/goals/focus_PHI_war_plan_orange.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_commission"
+		texturefile = "gfx/interface/goals/focus_generic_commission.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_happy_cheer"
+		texturefile = "gfx/interface/goals/focus_generic_happy_cheer.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_reduce_unneccessary_expenditure"
+		texturefile = "gfx/interface/goals/focus_generic_reduce_unneccessary_expenditure.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_anti_intervention_strategies"
+		texturefile = "gfx/interface/goals/focus_PHI_anti_intervention_strategies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_appoint_macarthur"
+		texturefile = "gfx/interface/goals/focus_PHI_appoint_macarthur.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_cobalt_supremacy"
+		texturefile = "gfx/interface/goals/focus_PHI_cobalt_supremacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_commonwealth_of_the_philippines"
+		texturefile = "gfx/interface/goals/focus_PHI_commonwealth_of_the_philippines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_devil_boats"
+		texturefile = "gfx/interface/goals/focus_PHI_devil_boats.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_encourage_chinese_immigration"
+		texturefile = "gfx/interface/goals/focus_PHI_encourage_chinese_immigration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_encourage_japanese_investment"
+		texturefile = "gfx/interface/goals/focus_PHI_encourage_japanese_investment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_fortify_corregidor"
+		texturefile = "gfx/interface/goals/focus_PHI_fortify_corregidor.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_i_shall_return"
+		texturefile = "gfx/interface/goals/focus_PHI_i_shall_return.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_juramentado"
+		texturefile = "gfx/interface/goals/focus_PHI_juramentado.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_luzon_transport"
+		texturefile = "gfx/interface/goals/focus_PHI_luzon_transport.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_marine_corps"
+		texturefile = "gfx/interface/goals/focus_PHI_marine_corps.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_maritime_communism"
+		texturefile = "gfx/interface/goals/focus_PHI_maritime_communism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_mindanao_transport"
+		texturefile = "gfx/interface/goals/focus_PHI_mindanao_transport.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_mosquito_fleet"
+		texturefile = "gfx/interface/goals/focus_PHI_mosquito_fleet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_philippine_independent_church"
+		texturefile = "gfx/interface/goals/focus_PHI_philippine_independent_church.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_philippine_naval_patrol"
+		texturefile = "gfx/interface/goals/focus_PHI_philippine_naval_patrol.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_preemptive_strikes"
+		texturefile = "gfx/interface/goals/focus_PHI_preemptive_strikes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_rally_the_fisherfolk"
+		texturefile = "gfx/interface/goals/focus_PHI_rally_the_fisherfolk.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_rebuild_sakdalistas"
+		texturefile = "gfx/interface/goals/focus_PHI_rebuild_sakdalistas.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_return_of_the_exiles"
+		texturefile = "gfx/interface/goals/focus_PHI_return_of_the_exiles.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_san_miguel"
+		texturefile = "gfx/interface/goals/focus_PHI_san_miguel.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_second_philippine_republic"
+		texturefile = "gfx/interface/goals/focus_PHI_second_philippine_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_subordinate_philippine_department"
+		texturefile = "gfx/interface/goals/focus_PHI_subordinate_philippine_department.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_thats_not_an_island"
+		texturefile = "gfx/interface/goals/focus_PHI_thats_not_an_island.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_treaty_of_manila"
+		texturefile = "gfx/interface/goals/focus_PHI_treaty_of_manila.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_united_states_army_forces_in_the_far_east"
+		texturefile = "gfx/interface/goals/focus_PHI_united_states_army_forces_in_the_far_east.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_usaffe_headquarters"
+		texturefile = "gfx/interface/goals/focus_PHI_usaffe_headquarters.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_utang_na_loob"
+		texturefile = "gfx/interface/goals/focus_PHI_utang_na_loob.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_bring_in_eisenhower"
+		texturefile = "gfx/interface/goals/focus_PHI_bring_in_eisenhower.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_filipino_polynesian_reunification"
+		texturefile = "gfx/interface/goals/focus_PHI_filipino_polynesian_reunification.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_expand_gold_mining"
+		texturefile = "gfx/interface/goals/focus_generic_expand_gold_mining.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_police_chief_eisenhower"
+		texturefile = "gfx/interface/goals/focus_PHI_police_chief_eisenhower.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_the_red_sun_over_manila"
+		texturefile = "gfx/interface/goals/focus_PHI_the_red_sun_over_manila.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_pearl_of_the_orient_seas"
+		texturefile = "gfx/interface/goals/focus_PHI_pearl_of_the_orient_seas.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_immigration"
+		texturefile = "gfx/interface/goals/focus_generic_immigration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_reino_de_filipinas"
+		texturefile = "gfx/interface/goals/focus_PHI_reino_de_filipinas.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_hispanidad_filipina"
+		texturefile = "gfx/interface/goals/focus_PHI_hispanidad_filipina.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_PHI_reconciliation_with_spain"
+		texturefile = "gfx/interface/goals/focus_PHI_reconciliation_with_spain.dds"
+	}
+
+	
+	# Fast overlays
+	SpriteType = {
+		name = "GFX_focus_fast_overlay_america"
+		texturefile = "gfx/interface/goals/focus_fast_overlay_america.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_fast_overlay_japan"
+		texturefile = "gfx/interface/goals/focus_fast_overlay_japan.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_fast_overlay_japan_clock"
+		texturefile = "gfx/interface/goals/focus_fast_overlay_japan_clock.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_fast_overlay_generic_clock"
+		texturefile = "gfx/interface/goals/focus_fast_overlay_generic_clock.dds"			
+	}
+
+
+		#### MISC ####
+
+
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_ethiopia"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_ethiopia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_indochina"
+		texturefile = "gfx/interface/goals/focus_generic_attack_indochina.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_kuomintang"
+		texturefile = "gfx/interface/goals/focus_generic_attack_kuomintang.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_timor"
+		texturefile = "gfx/interface/goals/focus_generic_attack_timor.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_siam"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_siam.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_siam"
+		texturefile = "gfx/interface/goals/focus_generic_attack_siam.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_desert_training"
+		texturefile = "gfx/interface/goals/focus_generic_desert_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_mountain_training"
+		texturefile = "gfx/interface/goals/focus_generic_mountain_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_chinese_soviets"
+		texturefile = "gfx/interface/goals/focus_generic_attack_chinese_soviets.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_manchukuo"
+		texturefile = "gfx/interface/goals/focus_generic_attack_manchukuo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_tannu_tuva"
+		texturefile = "gfx/interface/goals/focus_generic_attack_tannu_tuva.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_mongolia"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_mongolia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_tannu_tuva"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_tannu_tuva.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SOV_found_the_warsaw_pact"
+		texturefile = "gfx/interface/goals/focus_SOV_found_the_warsaw_pact.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_philippines"
+		texturefile = "gfx/interface/goals/focus_generic_attack_philippines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_philippines"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_philippines.dds"
+	}
+
+
+
 	################
 	##PLACEHOLDER###
 	################
@@ -10371,4 +12531,5 @@ spriteTypes = {
 		name = "GFX_focus_PLACEHOLDER"
 		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
 	}
+	
 }
