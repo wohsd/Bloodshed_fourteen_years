@@ -1334,7 +1334,7 @@ CHI_Purging_party_category = {
 				has_country_flag = RFC_DengYangDa1
 			} 
 		}
-		days_mission_timeout =15
+		days_mission_timeout =245
 		activation = {
 			AND={
 				tag = CHI
