@@ -7,12 +7,14 @@ characters={
 			}
 		}
 		country_leader={
+			desc = RFC_DengYangDa_leader_desc
 			ideology=marxism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
 		corps_commander = {
+			desc = RFC_DengYangDa_leader_desc
 			traits={ 
 				Leftist_Kuomintang
 			}
