@@ -37,6 +37,7 @@ characters={
 			}
 		}
 		country_leader={
+			desc = CHI_JiangJieShi_leader_desc
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
