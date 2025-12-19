@@ -1,6 +1,6 @@
 characters={
     CHI_JiangJieShi={
-		name=CHI_JiangJieShi
+		name = CHI_JiangJieShi
 		portraits={ 
 			civilian={
 				large="gfx/leaders/CHI/CHI_JiangJieShi.png"
@@ -11,6 +11,7 @@ characters={
 			}
 		}
 		field_marshal = {
+			desc = CHI_JiangJieShi_leader_desc
 			traits = {
 				CHI_Central_Army
 				old_guard
