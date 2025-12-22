@@ -10,6 +10,13 @@ characters={
 				large="gfx/leaders/CHI/CHI_JiangJieShi_army.png"
 			}
 		}
+		country_leader={
+			desc = CHI_JiangJieShi_leader_desc
+			ideology=despotism
+			traits={
+
+			}
+		}
 		field_marshal = {
 			traits = {
 				CHI_Central_Army
@@ -35,13 +42,6 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-		}
-		country_leader={
-			desc = CHI_JiangJieShi_leader_desc
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	CHI_WangJingWei={
