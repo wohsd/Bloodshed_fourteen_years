@@ -7,6 +7,7 @@ characters={
 			}
 		}
 		country_leader={
+			desc=PRC_XiangZhongFa_leader_desc
 			ideology=marxism
 			traits={Puppet_leader}
 			expire="1965.1.1.1"
