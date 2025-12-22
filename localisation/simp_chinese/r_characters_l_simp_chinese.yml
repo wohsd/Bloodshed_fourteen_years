@@ -38,10 +38,17 @@ CHI_ChenJiLiang: "陈季良"
 CHI_ChenJiLiang_leader_desc: "§Y$CHI_ChenJiLiang_birth_info$\n§Y背景：§!§L$CHI_ChenJiLiang_bio$\n\n"
 CHI_ChenJiLiang_birth_info: "生于：§!§L1883年9月13日；福建福州§!\n§Y派系：§!§C海军系§!"
 CHI_ChenJiLiang_bio: "陈季良，原名陈世英，字季良。1897年考入南京江南水师学堂第四届驾驶班，毕业后在“海容”舰任职。1911年武昌起义时，他积极主张海军反正支持革命。\n1919年，陈世英任“江亨”舰长兼黑龙江江防舰队分舰队领队长，在庙街（今尼古拉耶夫斯克）护航。因同情苏联十月革命，他将舰上两门舰炮及弹药资助红军对抗日军干涉部队，引发震惊中外的“庙街事件”。事后，北洋政府迫于日本压力，将其革职并“永不叙用”。幸得海军同仁掩护，他改名为陈季良，继续在海军服役。\n1925年2月，陈季良升任海军第一舰队司令，兼任厦门警备司令。1926年冬，为配合北伐，他率舰队迫使福州城防司令李生春投降，正式加入国民革命军。1927年，他率部参加龙潭战役，同年10月出任国民政府军事委员会委员。\n1928年，他担任国军编遣委员会海军编遣办事处委员。1929年，陈季良出任海军部常务次长，同时仍兼任第一舰队司令。至1930年4月，他又兼任了海军陆战队总指挥。此时，他已成为国民党海军系统中一位兼具实战经验、统率舰队与行政部门职务的重要将领。"
+
+
+
 CHI_JiangJieShi: "蒋介石"
 CHI_JiangJieShi_leader_desc: "§Y$CHI_JiangJieShi_birth_info$\n§Y背景：§!§L$CHI_JiangJieShi_bio$\n\n“一个主义，一个党，一个领袖。”"
-CHI_JiangJieShi_birth_info: "生于：§!§L1887年10月31日；浙江奉化§!\n§Y派系：§!§B国民党右派——新右派§!"
+CHI_JiangJieShi_birth_info: "生于：§!§L1887年10月31日；浙江奉化§!\n§Y派系：§!§K国民党右派——新右派§!"
 CHI_JiangJieShi_bio: "蒋介石，原名瑞元，学名志清，后改名中正，字介石。早年留学日本，就读于东京振武学校，期间加入中国同盟会，投身反清革命。辛亥革命爆发后，他回国参与光复浙江和上海的战役。此后，他追随孙中山，在粤军中担任职务，并多次参与讨伐陈炯明等战役。1924年，孙中山创办黄埔军校，蒋介石被任命为校长，借此培养嫡系军事力量，奠定其政治基础。1926年，他出任国民革命军总司令，誓师北伐，旨在推翻北洋军阀，统一中国。北伐途中，1927年4月，他在上海发动“四一二”政变，清剿共产党人，与武汉国民政府决裂，在南京另立国民政府。1928年，北伐军占领北京，张学良东北易帜，南京政府名义上统一全国。此后，蒋介石通过编遣会议和军事手段，巩固个人权威，但党内反对声音不断。1930年，他与阎锡山、冯玉祥、李宗仁等爆发中原大战，最终取胜，进一步强化了其统治地位。"
+
+
+
+
 CHI_BaiCongXi: "白崇禧"
 CHI_BaiCongXi_leader_desc: "§Y$CHI_BaiCongXi_birth_info$\n§Y背景：§!§L$CHI_BaiCongXi_bio$\n\n"
 CHI_BaiCongXi_birth_info: "生于：§!§L1893年3月18日；广西桂林§!\n§Y派系：§!§g桂系§!"
@@ -772,18 +779,22 @@ PRQ_FengBaiJu: "冯白驹"
 PRQ_FengBaiJu_leader_desc: "§Y$PRQ_FengBaiJu_birth_info$\n§Y背景：§!§L$PRQ_FengBaiJu_bio$\n\n"
 PRQ_FengBaiJu_birth_info: "生于：§!§L1903年；广东琼山（今海南海口）§!\n§Y派系：§!§R中国共产党§!"
 PRQ_FengBaiJu_bio: "冯白驹，原名冯裕球，学名冯继周[citation:1][citation:3]。1925年，他在上海大夏大学预科读书期间接触革命思想[citation:1][citation:8]。1926年（一说9月[citation:1]，一说11月[citation:3]）加入中国共产党，自此投身革命[citation:1]。1927年，在琼崖“四二二”事变后，他奉命组建中共琼山县委并担任书记，开始创建革命武装[citation:1]。同年7月，任琼崖讨逆革命军第六路军党代表，并于9月率部参加全琼武装总暴动[citation:1]。1929年初，他被派往澄迈县组建县委并任县委书记[citation:1]。1930年1月，在琼崖革命的关键时刻，冯白驹接任中共琼崖特别委员会书记，开始全面领导琼崖地区的革命斗争[citation:8]。"
+
 NSA_LiuZhiDan: "刘志丹"
 NSA_LiuZhiDan_leader_desc: "§Y$NSA_LiuZhiDan_birth_info$\n§Y背景：§!§L$NSA_LiuZhiDan_bio$\n\n"
 NSA_LiuZhiDan_birth_info: "生于：§!§L1903年10月4日；陕西保安（今志丹县）§!\n§Y派系：§!§R中国共产党§!"
 NSA_LiuZhiDan_bio: "刘志丹，名景桂，字子丹，陕西保安（今志丹县）人[citation:2][citation:9]。1924年冬加入中国社会主义青年团[citation:2]。1925年春转为中国共产党党员[citation:2]，同年秋受党指派进入黄埔军校第四期学习[citation:2]。1926年秋毕业后参加北伐战争[citation:2]。\n1927年大革命失败后，他担任中共陕西省委的秘密交通工作[citation:2]。1928年4月，他参与领导了渭华起义，并担任西北工农革命军军事委员会主席[citation:1][citation:2]。同年秋，他担任中共陕北特委军事委员会书记，开始在陕甘边地区从事兵运工作[citation:2][citation:8]。1930年10月，他组建起一支约100人的南梁游击队，由此揭开了陕甘边区武装斗争的序幕[citation:3][citation:4]。至1930年底，刘志丹已成为中共在西北地区开展军事斗争的核心领导者之一，为日后创建红军和根据地奠定了初步基础。"
-PRJ_TangYuBao: “谭余保”
-PRJ_TangYuBao_leader_desc: “§Y$PRJ_TangYuBao_birth_info$\n§Y背景：§!§L$PRJ_TangYuBao_bio$\n\n”
-PRJ_TangYuBao_birth_info: “生于：§!§L1899年12月；湖南茶陵§!\n§Y派系：§!§R中国共产党§!”
-PRJ_TangYuBao_bio: “谭余保，湖南茶陵人。出身贫农家庭，曾为裁缝学徒。1926年参加农民运动。1927年2月加入中国共产党。大革命失败后，于1927年底返回茶陵组织农民武装斗争。1929年，任中共茶陵县第六区、第七区区委书记。1930年，他参与领导茶陵地方武装，配合红军作战，并当选为茶陵县苏维埃政府常委，开始在湘赣边区崭露头角。”
+
 PRC_LiuTaoXi: “刘畴西”
 PRC_LiuTaoXi_leader_desc: “§Y$PRC_LiuTaoXi_birth_info$\n§Y背景：§!§L$PRC_LiuTaoXi_bio$\n\n”
 PRC_LiuTaoXi_birth_info: “生于：§!§L1897年；湖南长沙§!\n§Y派系：§!§R中国共产党§!”
 PRC_LiuTaoXi_bio: “刘畴西，原名刘梓荣，字武生，湖南长沙人。1919年就读于长沙长郡中学。1920年考入湖南省立第一师范学校。1922年加入中国共产党。1924年考入黄埔军校第一期，毕业后留校任教导一团三连党代表。1925年参加第一次东征，在棉湖战役中左臂重伤截肢。1927年参加南昌起义，任第二十四师营长、团参谋长。1929年赴苏联，入伏龙芝军事学院学习。1930年夏从苏联回国，被派往中央苏区工作。”
+ 
+PRJ_TangYuBao: “谭余保”
+PRJ_TangYuBao_leader_desc: “§Y$PRJ_TangYuBao_birth_info$\n§Y背景：§!§L$PRJ_TangYuBao_bio$\n\n”
+PRJ_TangYuBao_birth_info: “生于：§!§L1899年12月；湖南茶陵§!\n§Y派系：§!§R中国共产党§!”
+PRJ_TangYuBao_bio: “谭余保，湖南茶陵人。出身贫农家庭，曾为裁缝学徒。1926年参加农民运动。1927年2月加入中国共产党。大革命失败后，于1927年底返回茶陵组织农民武装斗争。1929年，任中共茶陵县第六区、第七区区委书记。1930年，他参与领导茶陵地方武装，配合红军作战，并当选为茶陵县苏维埃政府常委，开始在湘赣边区崭露头角。”
+
 PRC_WangRuChi: “王如痴”
 PRC_WangRuChi_leader_desc: “§Y$PRC_WangRuChi_birth_info$\n§Y背景：§!§L$PRC_WangRuChi_bio$\n\n”
 PRC_WangRuChi_birth_info: “生于：§!§L1903年；湖南祁东§!\n§Y派系：§!§R中国共产党§!”

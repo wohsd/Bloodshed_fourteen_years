@@ -32,6 +32,7 @@ NSA_LiuZhiDan={
 		#担任陆军将军时的数据
 		corps_commander={
 			#特质（如堑壕大师）
+			desc = NSA_LiuZhiDan_leader_desc
 			traits={ }
 			#等级
 			skill=2
