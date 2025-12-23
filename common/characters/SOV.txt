@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/SOV/SOV_Stalin.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = SOV_Stalin_leader_desc
+
 			ideology=marxism
 			traits={ }
 			expire="1965.1.1.1"
@@ -27,7 +28,8 @@ characters={
 			planning_skill = 3
 			logistics_skill = 2
 		}
-		advisor={	
+		advisor={	desc = SOV_Stalin_leader_desc
+	
 			slot = army_chief
 			idea_token = SOV_blyukher_A
 			allowed = {

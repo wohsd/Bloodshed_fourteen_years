@@ -21,7 +21,8 @@ characters={
 				large="gfx/leaders/ROD/ROD_YuXueZhong.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROD_YuXueZhong_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

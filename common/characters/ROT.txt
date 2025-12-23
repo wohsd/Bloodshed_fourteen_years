@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROT/ROT_TianSongYao.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROT_TianSongYao_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROH/ROH_WangJiaLie.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROH_WangJiaLie_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -20,7 +21,8 @@ characters={
 				large="gfx/leaders/ROH/ROH_MaoGuangXing.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROH_MaoGuangXing_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

@@ -19,7 +19,8 @@ characters={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = MZY_MaZhongYing_leader_desc
+
 			#意识形态
 			ideology=despotism
 			#特质
@@ -30,7 +31,8 @@ characters={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		field_marshal={
+		field_marshal={	desc = MZY_MaZhongYing_leader_desc
+
 			#特质（如堑壕大师）
 			traits={ }
 			#等级
@@ -66,7 +68,8 @@ characters={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = MZY_YaoLeBoShi_leader_desc
+
 			#意识形态
 			ideology=despotism
 			#特质
@@ -77,7 +80,8 @@ characters={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		field_marshal={
+		field_marshal={	desc = MZY_YaoLeBoShi_leader_desc
+
 			#特质（如堑壕大师）
 			traits={ }
 			#等级

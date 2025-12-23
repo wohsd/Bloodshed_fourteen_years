@@ -19,7 +19,8 @@ YUL_JingYueXiu={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = YUL_JingYueXiu_leader_desc
+
 			#意识形态
 			ideology=despotism
 			#特质
@@ -30,7 +31,8 @@ YUL_JingYueXiu={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		field_marshal={
+		field_marshal={	desc = YUL_JingYueXiu_leader_desc
+
 			#特质（如堑壕大师）
 			traits={ }
 			#等级
@@ -62,7 +64,8 @@ YUL_JingYueXiu={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = YUL_GaoShuangChen_leader_desc
+
 			#意识形态
 			ideology=despotism
 			#特质
@@ -72,7 +75,8 @@ YUL_JingYueXiu={
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
 		}
-		field_marshal={
+		field_marshal={	desc = YUL_GaoShuangChen_leader_desc
+
 			#特质（如堑壕大师）
 			traits={ }
 			#等级

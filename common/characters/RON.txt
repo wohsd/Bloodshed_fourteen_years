@@ -8,13 +8,15 @@ characters={
 			}
 
 		}
-		country_leader={
+		country_leader={	desc = RON_HeJian_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
-		field_marshal={
+		field_marshal={	desc = RON_HeJian_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=2

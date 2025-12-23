@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/TAN/TAN_Donduk_Kuular.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = TAN_Donduk_Kuular_leader_desc
+
 			ideology=marxism
 			traits={ }
 			expire="1965.1.1.1"

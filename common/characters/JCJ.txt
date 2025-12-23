@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_NieRongZhen.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = PRC_NieRongZhen_leader_desc
+
 			ideology=marxism
 			traits={ 
 				New_LuZhishen

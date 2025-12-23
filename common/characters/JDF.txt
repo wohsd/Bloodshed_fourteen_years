@@ -13,7 +13,8 @@ characters={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = JDF_YingRuGeng_leader_desc
+
 			#意识形态
 			ideology=fascism_ideology
 			#特质
@@ -38,7 +39,8 @@ characters={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = JDF_WangJingWei_leader_desc
+
 			#意识形态
 			ideology=fascism_ideology
 			#特质

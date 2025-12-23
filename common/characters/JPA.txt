@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/JAP/JAP_Hirohito.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = JAP_Hirohito_leader_desc
+
 			ideology=fascism_ideology
 			traits={ }
 			expire="1965.1.1.1"

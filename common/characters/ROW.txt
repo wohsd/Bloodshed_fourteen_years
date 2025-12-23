@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROW/ROW_LiuWengHui.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROW_LiuWengHui_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

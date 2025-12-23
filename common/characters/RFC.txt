@@ -32,7 +32,8 @@ characters={
 				large="gfx/leaders/RFC/RFC_LiJiSheng.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = RFC_LiJiSheng_leader_desc
+
 			ideology=despotism
 			traits={
 				

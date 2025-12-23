@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/HOL/HOL_bonifacius_cornelis_de_jonge.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = HOL_bonifacius_cornelis_de_jonge_leader_desc
+
 			ideology=liberalism
 			traits={ }
 			expire="1965.1.1.1"

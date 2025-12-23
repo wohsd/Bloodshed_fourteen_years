@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROS/ROS_LiuXiang.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROS_LiuXiang_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

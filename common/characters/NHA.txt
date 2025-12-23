@@ -12,7 +12,8 @@ characters={
 			}
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = NHA_ZengZhongSheng_leader_desc
+
 			#意识形态
 			ideology=marxism
 			#特质
@@ -35,7 +36,8 @@ characters={
 			}
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = NHA_ShengZeMing_leader_desc
+
 			#意识形态
 			ideology=marxism
 			#特质
@@ -65,7 +67,8 @@ characters={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = NHA_ZhangGuoTao_leader_desc
+
 			#意识形态
 			ideology=marxism
 			#特质
@@ -76,7 +79,8 @@ characters={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		field_marshal={
+		field_marshal={	desc = NHA_ZengZhongSheng_leader_desc
+
 			#特质（如堑壕大师）
 			traits={ }
 			#等级

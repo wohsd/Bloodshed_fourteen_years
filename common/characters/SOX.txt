@@ -45,7 +45,8 @@ SOX_SongXing={
 
 		}
 			#担任党派领导人时的数据
-			country_leader={
+			country_leader={	desc = SOX_SongXing_leader_desc
+
 				#意识形态
 				ideology=despotism
 				#特质

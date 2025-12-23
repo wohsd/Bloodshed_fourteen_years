@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/YPQ/YPQ_yu_pinqing.dds"
 			}
 		}
-		country_leader={
+		country_leader={	desc = YPQ_yu_pinqing_leader_desc
+
 			ideology=fascism_ideology
 			traits={ }
 			expire="1965.1.1.1"

@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_XiangZhongFa.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = PRC_XiangZhongFa_leader_desc
+
 			desc=PRC_XiangZhongFa_leader_desc
 			ideology=marxism
 			traits={Puppet_leader}
@@ -21,7 +22,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_ChenDuXiu.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = PRC_ChenDuXiu_leader_desc
+
 			ideology=marxism
 			traits={}
 			expire="1965.1.1.1"
@@ -35,7 +37,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_WangMing.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = PRC_WangMing_leader_desc
+
 			ideology=marxism
 			traits={}
 			expire="1965.1.1.1"
@@ -49,13 +52,15 @@ characters={
 				large="gfx/leaders/PRC/PRC_MaoZeDong.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = PRC_MaoZeDong_leader_desc
+
 			ideology=marxism
 			traits={Talented_conductor}
 			expire="1965.1.1.1"
 			id=-1
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_XiangZhongFa_leader_desc
+
 			traits={trickster fast_planner inspirational_leader thorough_planner }
 			skill=5
 			attack_skill=5
@@ -71,7 +76,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_ZhangWengTian.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = PRC_ZhangWengTian_leader_desc
+
 			ideology=marxism
 			traits={}
 			expire="1965.1.1.1"
@@ -86,7 +92,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_ZhuDe.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_XiangZhongFa_leader_desc
+
 			slot = high_command
 			idea_token = PRC_ZhuDe_H
 			allowed  = {
@@ -103,7 +110,8 @@ characters={
 				factor  = 0.000
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_ZhangWengTian_leader_desc
+
 			traits={ }
 			skill=4
 			attack_skill=5
@@ -120,7 +128,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_ZhouEngLai.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_ZhouEngLai_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_ZhouEngLai_P
 			allowed  = {
@@ -137,7 +146,8 @@ characters={
 				factor  = 0.000
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_ZhouEngLai_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=2
@@ -154,7 +164,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_BoGu.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_BoGu_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_BoGu_P
 			allowed  = {
@@ -190,7 +201,8 @@ characters={
 				factor  = 0.000
 			}
 		}
-		country_leader={
+		country_leader={	desc = PRC_ZhuDe_leader_desc
+
 			ideology=marxism
 			traits={ }
 			expire="1965.1.1.1"
@@ -205,7 +217,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_LiDe.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_LiDe_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_LiDe_P
 			allowed  = {
@@ -251,7 +264,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_WangJiaXiang.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_WangJiaXiang_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_WangJiaXiang_P
 			allowed  = {
@@ -276,7 +290,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_GuZuoLing.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_GuZuoLing_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_GuZuoLing_P
 			allowed  = {
@@ -302,7 +317,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_RenBiShi.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_RenBiShi_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_RenBiShi_P
 			allowed  = {
@@ -327,7 +343,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_ChenYun.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_ChenYun_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_ChenYun_P
 			allowed  = {
@@ -361,7 +378,8 @@ characters={
 			planning_skill = 2
 			logistics_skill = 2
 		}
-		advisor={
+		advisor={	desc = PRC_LiuBoChen_leader_desc
+
 			slot = high_command
 			idea_token = PRC_LiuBoChen_H
 			allowed  = {
@@ -405,7 +423,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_WuYuZhang.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_DengPing_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_WuYuZhang_P
 			allowed  = {
@@ -430,7 +449,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_lingboqu.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_lingboqu_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_lingboqu_P
 			allowed  = {
@@ -455,7 +475,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_XuTeLi.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_XuTeLi_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_XuTeLi_P
 			allowed  = {
@@ -481,7 +502,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_LiuShaoQi.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_LiuShaoQi_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_LiuShaoQi_P
 			allowed  = {
@@ -505,7 +527,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_RaoShuShi.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_RaoShuShi_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_RaoShuShi_P
 			allowed  = {
@@ -531,7 +554,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_DongBiWu.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_DongBiWu_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_DongBiWu_P
 			allowed  = {
@@ -555,7 +579,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_KangSheng.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_KangSheng_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_KangSheng_P
 			allowed  = {
@@ -580,7 +605,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_XieJueZai.png"
 			}
 		}
-		advisor={
+		advisor={	desc = PRC_XieJueZai_leader_desc
+
 			slot = political_advisor
 			idea_token = PRC_XieJueZai_P
 			allowed  = {
@@ -647,7 +673,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_PengDeHuai.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_BoGu_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=3
@@ -655,7 +682,8 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
+		advisor={	desc = PRC_PengDeHuai_leader_desc
+
 			slot = high_command
 			idea_token = PRC_PengDeHuai_H
 			allowed  = {
@@ -681,7 +709,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_FangZhiMing.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_FangZhiMing_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=3
@@ -689,7 +718,8 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 		}
-		advisor={
+		advisor={	desc = PRC_FangZhiMing_leader_desc
+
 			slot = high_command
 			idea_token = PRC_FangZhiMing_H
 			allowed  = {
@@ -716,7 +746,8 @@ characters={
 				small = "gfx/interface/advisers/PRC_LingBiao.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_LingBiao_leader_desc
+
 			traits={ }
 			skill=5
 			attack_skill=4
@@ -724,7 +755,8 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 		}
-		advisor={
+		advisor={	desc = PRC_LingBiao_leader_desc
+
 			slot = high_command
 			idea_token = PRC_PengDeHuai_H
 			allowed  = {
@@ -748,7 +780,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_HeLong.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_HeLong_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=4
@@ -764,7 +797,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_XuXianQian.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_XuXianQian_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=4
@@ -780,7 +814,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_DongZhenTang.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_DongZhenTang_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=3
@@ -796,7 +831,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_XunHuaiZhou.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_XunHuaiZhou_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=3
@@ -812,7 +848,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_ZhouKun.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_ZhouKun_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -828,7 +865,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_LuoBinHui.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_LuoBinHui_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -848,7 +886,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_LiuTaoXi.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_LiuTaoXi_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -880,7 +919,8 @@ characters={
 				large="gfx/leaders/PRC/PRC_WangRuChi.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = PRC_WangRuChi_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2

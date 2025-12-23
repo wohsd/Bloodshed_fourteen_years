@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROX/ROX_ShengShiCai.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROX_ShengShiCai_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -20,7 +21,8 @@ characters={
 				large="gfx/leaders/ROX/ROX_JingShuRen.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROX_JingShuRen_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

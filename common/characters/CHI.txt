@@ -28,7 +28,8 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 		}
-		advisor={	
+		advisor={	desc = CHI_JiangJieShi_leader_desc
+	
 			slot = army_chief
 			allowed = {
 				original_tag = CHI
@@ -51,7 +52,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_WangJingWei.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = CHI_WangJingWei_leader_desc
+
 			ideology=socialism
 			traits={ }
 			expire="1965.1.1.1"
@@ -66,7 +68,8 @@ characters={
 				small = "gfx/interface/advisers/CHI_LingSeng_small.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = CHI_LingSeng_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -81,7 +84,8 @@ characters={
 				small = "gfx/interface/advisers/CHI_HuHanMing_small.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = CHI_HuHanMing_leader_desc
+
 			ideology=conservatism
 			traits={ }
 			expire="1965.1.1.1"
@@ -97,7 +101,8 @@ characters={
 			}
 
 		}
-		advisor={	
+		advisor={	desc = CHI_WangJingWei_leader_desc
+	
 			slot = army_chief
 			allowed = {
 				original_tag = CHI
@@ -112,7 +117,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_JiangJieShi_leader_desc
+
 			traits={offensive_doctrine }
 			skill=2
 			attack_skill=1
@@ -128,7 +134,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_HeYingQing.png"
 			}
 		}
-		advisor={	
+		advisor={	desc = CHI_HeYingQing_leader_desc
+	
 			slot = army_chief
 			allowed = {
 				original_tag = CHI
@@ -142,7 +149,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_HeYingQing_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 			}
@@ -160,7 +168,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_TangShenZhi.png"
 			}
 		}
-		advisor={	
+		advisor={	desc = CHI_TangShenZhi_leader_desc
+	
 			slot = army_chief
 			allowed = {
 				original_tag = CHI
@@ -175,7 +184,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_TangShenZhi_leader_desc
+
 			traits={ }
 			skill=1
 			attack_skill=1
@@ -191,7 +201,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_GuZhuTong.png"
 			}
 		}
-		advisor={	
+		advisor={	desc = CHI_GuZhuTong_leader_desc
+	
 			slot = army_chief
 			allowed = {
 				original_tag = CHI
@@ -206,7 +217,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_GuZhuTong_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 			}
@@ -230,7 +242,8 @@ characters={
 				small = "gfx/interface/advisers/CHI_XueYue.png"
 			}
 		}
-		advisor={	
+		advisor={	desc = CHI_XueYue_leader_desc
+	
 			slot = high_command
 			idea_token = CHI_XueYue_H
 			allowed = {
@@ -247,7 +260,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_XueYue_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 			}
@@ -266,7 +280,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_WeiLiHuang_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=1
@@ -285,7 +300,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_QiangDaJun_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 			}
@@ -304,7 +320,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_SunLiRen_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=1
@@ -321,7 +338,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_ZhuSaoLiang_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=1
@@ -338,7 +356,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_DaiAngLang_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 			}
@@ -357,7 +376,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_ZhangZhiZhong_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 			}
@@ -376,7 +396,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_ChenQiang_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=1
@@ -394,7 +415,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_LiuZhi_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 				old_guard
@@ -414,7 +436,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_LuoZuoYing_leader_desc
+
 			traits={ 
 				CHI_Central_Army
 			}
@@ -433,7 +456,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = CHI_CaiTingKai_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=2
@@ -450,7 +474,8 @@ characters={
 			}
 		} 
 		
-		corps_commander={
+		corps_commander={	desc = CHI_JiangGuangDing_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=2
@@ -471,7 +496,8 @@ characters={
 				small = "gfx/interface/advisers/CHI_Alexander_von_Falkenhausen.png"
 			}
 		}
-		advisor={	
+		advisor={	desc = CHI_WeiLiHuang_leader_desc
+	
 			slot = army_chief
 			idea_token = CHI_Alexander_von_Falkenhausen_A
 			allowed = {
@@ -501,7 +527,8 @@ characters={
 			}
 		}
 		
-		advisor={	
+		advisor={	desc = CHI_BaiCongXi_leader_desc
+	
 			slot = high_command
 			idea_token = CHI_BaiCongXi_H
 			allowed = {
@@ -559,7 +586,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_YuJiShi.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_Alexander_von_Falkenhausen_leader_desc
+
 			traits={ }
 			skill=1
 			attack_skill=1
@@ -583,7 +611,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_GuanLinZheng.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_GuanLinZheng_leader_desc
+
 			traits={ }
 			skill=1
 			attack_skill=1
@@ -600,7 +629,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_HuangBaiTao.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_HuangBaiTao_leader_desc
+
 			traits={ }
 			skill=1
 			attack_skill=2
@@ -617,7 +647,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_HuangWei.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_HuangWei_leader_desc
+
 			traits={ }
 			skill=1
 			attack_skill=2
@@ -634,7 +665,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_JiangBaiLi.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_JiangBaiLi_leader_desc
+
 			traits={ }
 			skill=4
 			attack_skill=2
@@ -651,7 +683,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_JiangDingWen.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_JiangDingWen_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -669,7 +702,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_ShangGuanYunXiang.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_ShangGuanYunXiang_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=3
@@ -687,7 +721,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_SunLianZhong.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_SunLianZhong_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -705,7 +740,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_TangEnBo.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_TangEnBo_leader_desc
+
 			traits={ Resisting_the_teacher }
 			skill=3
 			attack_skill=2
@@ -721,7 +757,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_WangYaoWu.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_WangYaoWu_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -739,7 +776,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_XiongShiHui.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_XiongShiHui_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -757,7 +795,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_XuTingYao.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_XuTingYao_leader_desc
+
 			traits={ }
 			skill=2
 			attack_skill=2
@@ -774,7 +813,8 @@ characters={
 				large="gfx/leaders/CHI/CHI_HuZongNan.png"
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = CHI_HuZongNan_leader_desc
+
 			traits={ }
 			skill=3
 			attack_skill=2
@@ -793,13 +833,15 @@ characters={
 			}
 
 		}
-		country_leader={
+		country_leader={	desc = CHI_ChenCheng_leader_desc
+
 			ideology=liberalism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
-		advisor={	
+		advisor={	desc = CHI_YuJiShi_leader_desc
+	
 			slot = political_advisor
 			idea_token = CHI_SunKe_P
 			allowed = {
@@ -824,7 +866,8 @@ characters={
 			}
 
 		}
-		advisor={	
+		advisor={	desc = CHI_KongXiangXi_leader_desc
+	
 			slot = political_advisor
 			idea_token = CHI_KongXiangXi_P
 			allowed = {
@@ -852,7 +895,8 @@ characters={
 			}
 
 		}
-		advisor={	
+		advisor={	desc = CHI_DaiLi_leader_desc
+	
 			slot = political_advisor
 			idea_token = CHI_DaiLi_P
 			allowed = {
@@ -879,7 +923,8 @@ characters={
 			}
 
 		}
-		advisor={	
+		advisor={	desc = CHI_ChenLiFu_leader_desc
+	
 			slot = political_advisor
 			idea_token = CHI_ChenLiFu_P
 			allowed = {
@@ -937,7 +982,8 @@ characters={
 			}
 
 		}
-		advisor={	
+		advisor={	desc = CHI_HuangFu_leader_desc
+	
 			slot = political_advisor
 			idea_token = CHI_HuangFu_P
 			allowed = {
@@ -989,7 +1035,8 @@ characters={
 			}
 
 		}
-		advisor={	
+		advisor={	desc = CHI_JiangJingGuo_leader_desc
+	
 			slot = political_advisor
 			idea_token = CHI_JiangJingGuo_P
 			allowed = {
@@ -1016,7 +1063,8 @@ characters={
 			}
 
 		}
-		advisor={	
+		advisor={	desc = CHI_ZhangQun_leader_desc
+	
 			slot = political_advisor
 			idea_token = CHI_ZhangQun_P
 			allowed = {
@@ -1049,7 +1097,8 @@ characters={
                 small = "gfx/interface/advisers/CHI_ChenShaoKuang_small.png"		
 			}
 		}
-		advisor={
+		advisor={	desc = CHI_ChenShaoKuang_leader_desc
+
 			slot = navy_chief
 			idea_token = CHI_ChenShaoKuang_N
             ledger = navy
@@ -1060,7 +1109,8 @@ characters={
 			traits = { navy_capital_ship_2 }
 			cost = 100				
 		}		
-		navy_leader={
+		navy_leader={	desc = CHI_JiangJieShi_leader_desc
+
 			traits={ bold naval_lineage }
 			skill=2
 			attack_skill=2
@@ -1083,7 +1133,8 @@ characters={
                 small = "gfx/interface/advisers/CHI_ChenJiLiang_small.png"		
 			}
 		}
-		advisor={
+		advisor={	desc = CHI_ChenJiLiang_leader_desc
+
 			slot = navy_chief 
 			idea_token = CHI_ChenJiLiang_N
             ledger = navy
@@ -1094,7 +1145,8 @@ characters={
 			traits = { navy_capital_ship_2 }
 			cost = 100				
 		}		
-		navy_leader={
+		navy_leader={	desc = CHI_ChenJiLiang_leader_desc
+
 			traits={ bold naval_lineage }
 			skill=2
 			attack_skill=2
@@ -1113,7 +1165,8 @@ characters={
 				small = "gfx/interface/advisers/CHI_ChenCe_small.png"		
 			}
 		}
-		advisor={
+		advisor={	desc = CHI_ChenCe_leader_desc
+
 			slot = navy_chief
 			idea_token = CHI_ChenCe_N
             ledger = navy
@@ -1124,7 +1177,8 @@ characters={
 			traits = { navy_screen_2 }
 			cost = 100				
 		}		
-		navy_leader={
+		navy_leader={	desc = CHI_ChenCe_leader_desc
+
 			traits={ bold }
 			skill=2
 			attack_skill=2

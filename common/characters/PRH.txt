@@ -15,7 +15,8 @@ characters={
 			}
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = PRH_ZhouYiQun_leader_desc
+
 			#意识形态
 			ideology=marxism
 			#特质
@@ -42,7 +43,8 @@ characters={
 			}
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = PRH_XiaXi_leader_desc
+
 			#意识形态
 			ideology=marxism
 			#特质

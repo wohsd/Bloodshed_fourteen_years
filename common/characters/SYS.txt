@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/SYS/SYS_ShiYouSan.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = SYS_ShiYouSan_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -20,7 +21,8 @@ characters={
 				large="gfx/leaders/SYS/SYS_SunDianYing.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = SYS_SunDianYing_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

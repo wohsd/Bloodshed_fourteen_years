@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROA/ROA_HangFuQu.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROA_HangFuQu_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -20,7 +21,8 @@ characters={
 				large="gfx/leaders/ROA/ROA_ShengHongLie.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROA_ShengHongLie_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

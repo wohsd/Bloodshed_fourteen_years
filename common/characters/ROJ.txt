@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROJ/ROJ_YanXiShan.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROJ_YanXiShan_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

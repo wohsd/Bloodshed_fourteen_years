@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/XIA/XIA_xia_gong.dds"
 			}
 		}
-		country_leader={
+		country_leader={	desc = XIA_xia_gong_leader_desc
+
 			ideology=fascism_ideology
 			traits={ }
 			expire="1965.1.1.1"

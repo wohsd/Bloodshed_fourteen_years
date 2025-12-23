@@ -13,7 +13,8 @@ characters={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = LSX_LiShouXing_leader_desc
+
 			#意识形态
 			ideology=fascism_ideology
 			#特质
@@ -24,7 +25,8 @@ characters={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		field_marshal={
+		field_marshal={	desc = LSX_LiShouXing_leader_desc
+
 			#特质（如堑壕大师）
 			traits={ }
 			#等级

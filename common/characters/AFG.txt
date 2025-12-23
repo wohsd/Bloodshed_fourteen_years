@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/AFG/AFG_mohammed_nadir_shah.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = AFG_mohammed_nadir_shah_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

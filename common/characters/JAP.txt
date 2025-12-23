@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/JAP/JAP_Hirohito.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = JAP_Hirohito_leader_desc
+
 			ideology=fascism_ideology
 			traits={ }
 			expire="1965.1.1.1"
@@ -23,7 +24,8 @@ characters={
 				large="GFX_Portrait_kyuichi_tokuda"
 			}
 		}
-		country_leader={
+		country_leader={	desc = JAP_kyuichi_tokuda_leader_desc
+
 			ideology=marxism
 			expire="1989.1.1.1"
 			id=-1
@@ -37,7 +39,8 @@ characters={
 				large="GFX_Portrait_tetsu_katayama"
 			}
 		}
-		country_leader={
+		country_leader={	desc = JAP_tetsu_katayama_leader_desc
+
 			ideology=liberalism
 			expire="1989.1.1.1"
 			id=-1
@@ -52,7 +55,8 @@ characters={
 				large=GFX_portrait_JAP_tomoyuki_yamashita
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_Hirohito_leader_desc
+
 			cost = 150
 			slot = theorist
 			idea_token = tomoyuki_yamashita
@@ -65,7 +69,8 @@ characters={
 			}
 		}
 
-		corps_commander={
+		corps_commander={	desc = JAP_Hirohito_leader_desc
+
 			traits={ brilliant_strategist politically_connected trickster trait_engineer }
 			skill=5
 			attack_skill=4
@@ -84,7 +89,8 @@ characters={
 				large=GFX_portrait_JAP_hisaichi_terauchi
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_hisaichi_terauchi_leader_desc
+
 			cost = 100
 			slot = theorist
 			idea_token = hisaichi_terauchi
@@ -97,7 +103,8 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		field_marshal={	desc = JAP_Hirohito_leader_desc
+
 			traits={ politically_connected JAP_samurai_lineage offensive_doctrine }
 			skill=4
 			attack_skill=4
@@ -116,7 +123,8 @@ characters={
 				large=GFX_portrait_JAP_shunroku_hata
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_shunroku_hata_leader_desc
+
 			slot = high_command
 			idea_token = shunroku_hata
 			ledger = army
@@ -132,7 +140,8 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		field_marshal={	desc = JAP_shunroku_hata_leader_desc
+
 			traits={ JAP_samurai_lineage offensive_doctrine }
 			skill=4
 			attack_skill=3
@@ -151,7 +160,8 @@ characters={
 				small=GFX_portrait_JAP_akira_muto_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_hisaichi_terauchi_leader_desc
+
 			traits={ career_officer }
 			skill=2
 			attack_skill=2
@@ -170,7 +180,8 @@ characters={
 				small=GFX_portrait_JAP_kanji_ishiwara_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_kanji_ishiwara_leader_desc
+
 			traits={ JAP_samurai_lineage }
 			skill=1
 			attack_skill=1
@@ -189,7 +200,8 @@ characters={
 				small=GFX_portrait_JAP_shizuichi_tanaka_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_shizuichi_tanaka_leader_desc
+
 			traits={ career_officer infantry_officer trickster }
 			skill=4
 			attack_skill=4
@@ -208,7 +220,8 @@ characters={
 				large=GFX_portrait_JAP_yasuji_okamura
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_akira_muto_leader_desc
+
 			slot = high_command
 			idea_token = yasuji_okamura
 			ledger = army
@@ -232,7 +245,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = JAP_yasuji_okamura_leader_desc
+
 			traits={ trait_reckless }
 			skill=1
 			attack_skill=1
@@ -251,7 +265,8 @@ characters={
 				small=GFX_portrait_JAP_toshizo_nishio_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_toshizo_nishio_leader_desc
+
 			traits={ brilliant_strategist infantry_officer }
 			skill=3
 			attack_skill=3
@@ -270,7 +285,8 @@ characters={
 				small=GFX_portrait_JAP_rikichi_ando_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_rikichi_ando_leader_desc
+
 			traits={ career_officer }
 			skill=3
 			attack_skill=1
@@ -289,7 +305,8 @@ characters={
 				small=GFX_portrait_JAP_naruhiko_higashikuni_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_naruhiko_higashikuni_leader_desc
+
 			traits={ politically_connected JAP_samurai_lineage }
 			skill=3
 			attack_skill=3
@@ -308,7 +325,8 @@ characters={
 				small=GFX_portrait_JAP_seishiro_itagaki_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_seishiro_itagaki_leader_desc
+
 			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
 			skill=3
 			attack_skill=3
@@ -327,7 +345,8 @@ characters={
 				small=GFX_portrait_JAP_takashi_sakai_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_takashi_sakai_leader_desc
+
 			traits={ trait_reckless infantry_officer }
 			skill=3
 			attack_skill=2
@@ -346,7 +365,8 @@ characters={
 				large=GFX_portrait_JAP_kenji_doihara
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_toshizo_nishio_leader_desc
+
 			slot = air_chief
 			idea_token = kenji_doihara
 			allowed = {
@@ -361,7 +381,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = JAP_kenji_doihara_leader_desc
+
 			traits={ career_officer substance_abuser }
 			skill=1
 			attack_skill=1
@@ -380,7 +401,8 @@ characters={
 				small=GFX_portrait_JAP_kenkichi_ueda_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_kenkichi_ueda_leader_desc
+
 			traits={ old_guard trait_reckless cavalry_officer }
 			skill=4
 			attack_skill=3
@@ -399,7 +421,8 @@ characters={
 				small=GFX_portrait_JAP_shigeru_honjo_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_shigeru_honjo_leader_desc
+
 			traits={ old_guard war_hero }
 			skill=1
 			attack_skill=1
@@ -418,7 +441,8 @@ characters={
 				small=GFX_portrait_JAP_yoshijiro_umezu_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_yoshijiro_umezu_leader_desc
+
 			traits={ trait_cautious politically_connected }
 			skill=3
 			attack_skill=3
@@ -437,7 +461,8 @@ characters={
 				small=GFX_portrait_JAP_otozo_yamada_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_otozo_yamada_leader_desc
+
 			traits={ career_officer cavalry_officer }
 			skill=3
 			attack_skill=3
@@ -456,7 +481,8 @@ characters={
 				small=GFX_portrait_JAP_hatazo_adachi_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_hatazo_adachi_leader_desc
+
 			traits={ trait_reckless infantry_officer JAP_samurai_lineage trickster }
 			skill=2
 			attack_skill=1
@@ -475,7 +501,8 @@ characters={
 				small=GFX_portrait_JAP_iwane_matsui_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_iwane_matsui_leader_desc
+
 			traits={ old_guard trait_reckless }
 			skill=1
 			attack_skill=1
@@ -494,7 +521,8 @@ characters={
 				small=GFX_portrait_JAP_sadao_araki_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_sadao_araki_leader_desc
+
 			traits={ JAP_samurai_lineage }
 			skill=2
 			attack_skill=1
@@ -513,7 +541,8 @@ characters={
 				small=GFX_portrait_JAP_keisuke_fujie_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_keisuke_fujie_leader_desc
+
 			traits={ career_officer politically_connected fortress_buster }
 			skill=3
 			attack_skill=1
@@ -532,7 +561,8 @@ characters={
 				small=GFX_portrait_JAP_kiichiro_higuchi_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_kiichiro_higuchi_leader_desc
+
 			traits={ career_officer trait_cautious }
 			skill=2
 			attack_skill=2
@@ -551,7 +581,8 @@ characters={
 				small=GFX_portrait_JAP_masaharu_homma_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_masaharu_homma_leader_desc
+
 			traits={ trait_cautious media_personality }
 			skill=2
 			attack_skill=2
@@ -570,7 +601,8 @@ characters={
 				small=GFX_portrait_JAP_harukichi_hyakutake_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_harukichi_hyakutake_leader_desc
+
 			traits={ infantry_officer }
 			skill=3
 			attack_skill=2
@@ -589,7 +621,8 @@ characters={
 				small=GFX_portrait_JAP_jo_iimura_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_jo_iimura_leader_desc
+
 			traits={ career_officer }
 			skill=2
 			attack_skill=1
@@ -610,7 +643,8 @@ characters={
 				large=GFX_portrait_JAP_hitoshi_imamura
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_kenkichi_ueda_leader_desc
+
 			slot = high_command
 			idea_token = hitoshi_imamura
 			ledger = army
@@ -626,7 +660,8 @@ characters={
 			}
 		}
 		
-		corps_commander={
+		corps_commander={	desc = JAP_hitoshi_imamura_leader_desc
+
 			traits={ career_officer infantry_officer commando }
 			skill=3
 			attack_skill=3
@@ -645,7 +680,8 @@ characters={
 				small=GFX_portrait_JAP_masatane_kanda_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_masatane_kanda_leader_desc
+
 			traits={ trait_cautious }
 			skill=2
 			attack_skill=2
@@ -664,7 +700,8 @@ characters={
 				small=GFX_portrait_JAP_kuniaki_koiso_small
 			}
 		}
-		corps_commander={
+		corps_commander={	desc = JAP_kuniaki_koiso_leader_desc
+
 			traits={ old_guard politically_connected JAP_samurai_lineage }
 			skill=2
 			attack_skill=2
@@ -727,7 +764,8 @@ characters={
 				small=GFX_portrait_JAP_mineichi_koga_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_Hirohito_leader_desc
+
 			traits={ bold battleship_adherent superior_tactician spotter }
 			skill=4
 			attack_skill=4
@@ -746,7 +784,8 @@ characters={
 				small=GFX_portrait_JAP_kiyoshi_hasegawa_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_kiyoshi_hasegawa_leader_desc
+
 			traits={ gentlemanly }
 			skill=2
 			attack_skill=2
@@ -765,7 +804,8 @@ characters={
 				small=GFX_portrait_JAP_shigeyoshi_inoue_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_shigeyoshi_inoue_leader_desc
+
 			traits={ navy_career_officer aviation_enthusiast }
 			skill=2
 			attack_skill=2
@@ -784,7 +824,8 @@ characters={
 				small=GFX_portrait_JAP_nobutake_kondo_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_nobutake_kondo_leader_desc
+
 			traits={ battleship_adherent naval_lineage fly_swatter }
 			skill=3
 			attack_skill=4
@@ -803,7 +844,8 @@ characters={
 				small=GFX_portrait_JAP_takeo_takagi_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_takeo_takagi_leader_desc
+
 			traits={ spotter }
 			skill=3
 			attack_skill=3
@@ -824,7 +866,8 @@ characters={
 				large=GFX_portrait_JAP_soemu_toyoda
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_masatane_kanda_leader_desc
+
 			slot = high_command
 			idea_token = soemu_toyoda
 			ledger = navy
@@ -840,7 +883,8 @@ characters={
 			}
 		}
 		
-		navy_leader={
+		navy_leader={	desc = JAP_soemu_toyoda_leader_desc
+
 			traits={ old_guard_navy bold ironside }
 			skill=3
 			attack_skill=5
@@ -859,7 +903,8 @@ characters={
 				small=GFX_portrait_JAP_jisaburo_ozawa_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_jisaburo_ozawa_leader_desc
+
 			traits={ bold navy_career_officer aviation_enthusiast blockade_runner superior_tactician }
 			skill=5
 			attack_skill=5
@@ -878,7 +923,8 @@ characters={
 				small=GFX_portrait_JAP_zengo_yoshida_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_zengo_yoshida_leader_desc
+
 			traits={ old_guard_navy }
 			skill=2
 			attack_skill=2
@@ -897,7 +943,8 @@ characters={
 				small=GFX_portrait_JAP_hiroaki_abe_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_hiroaki_abe_leader_desc
+
 			traits={ battleship_adherent }
 			skill=2
 			attack_skill=3
@@ -916,7 +963,8 @@ characters={
 				small=GFX_portrait_JAP_tadashige_daigo_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_tadashige_daigo_leader_desc
+
 			traits={ navy_career_officer seawolf }
 			skill=1
 			attack_skill=1
@@ -935,7 +983,8 @@ characters={
 				small=GFX_portrait_JAP_gengo_hyakutake_small
 			}
 		}
-		navy_leader={
+		navy_leader={	desc = JAP_gengo_hyakutake_leader_desc
+
 			traits={ gentlemanly }
 			skill=2
 			attack_skill=1
@@ -962,7 +1011,8 @@ characters={
 				small="GFX_idea_minoru_genda"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_jisaburo_ozawa_leader_desc
+
 		cost = 100
 		slot = theorist
 		idea_token = minoru_genda
@@ -981,7 +1031,8 @@ characters={
 				small="GFX_idea_yoshitoshi_tokugawa"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_yoshitoshi_tokugawa_leader_desc
+
 			cost = 150
 			slot = theorist
 			idea_token = yoshitoshi_tokugawa
@@ -1002,7 +1053,8 @@ characters={
 				small="GFX_idea_hino_kumazo"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_hino_kumazo_leader_desc
+
 			cost = 100
 			slot = theorist
 			idea_token = hino_kumazo
@@ -1023,7 +1075,8 @@ characters={
 				small="GFX_idea_kanin_kotohito"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_kanin_kotohito_leader_desc
+
 			slot = army_chief
 			idea_token = kanin_kotohito
 			allowed = {
@@ -1046,7 +1099,8 @@ characters={
 				small="GFX_idea_hajime_sugiyama"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_hajime_sugiyama_leader_desc
+
 			slot = army_chief
 			idea_token = hajime_sugiyama
 			allowed = {
@@ -1072,7 +1126,8 @@ characters={
 				small="GFX_idea_hideki_tojo"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_hideki_tojo_leader_desc
+
 			slot = army_chief
 			idea_token = hideki_tojo
 			allowed = {
@@ -1097,7 +1152,8 @@ characters={
 				small="GFX_idea_fushimi_hiroyasu"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_fushimi_hiroyasu_leader_desc
+
 			slot = navy_chief
 			idea_token = fushimi_hiroyasu
 			allowed = {
@@ -1120,7 +1176,8 @@ characters={
 				small="GFX_idea_osami_nagano"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_osami_nagano_leader_desc
+
 			slot = navy_chief
 			idea_token = osami_nagano
 			allowed = {
@@ -1143,7 +1200,8 @@ characters={
 				small="GFX_idea_shigetaro_shimada"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_shigetaro_shimada_leader_desc
+
 			slot = navy_chief
 			idea_token = shigetaro_shimada
 			allowed = {
@@ -1171,7 +1229,8 @@ characters={
 				small="GFX_idea_torashiro_kawabe"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_torashiro_kawabe_leader_desc
+
 			slot = air_chief
 			idea_token = torashiro_kawabe
 			allowed = {
@@ -1194,7 +1253,8 @@ characters={
 				small="GFX_idea_korechika_anami"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_korechika_anami_leader_desc
+
 			slot = air_chief
 			idea_token = korechika_anami
 			allowed = {
@@ -1228,7 +1288,8 @@ characters={
 				small="GFX_idea_mitsuo_fuchida"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_mitsuo_fuchida_leader_desc
+
 			slot = high_command
 			idea_token = mitsuo_fuchida
 			ledger = air
@@ -1252,7 +1313,8 @@ characters={
 				small="GFX_idea_nishizo_tsukahara"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_nishizo_tsukahara_leader_desc
+
 			slot = high_command
 			idea_token = nishizo_tsukahara
 			ledger = navy
@@ -1276,7 +1338,8 @@ characters={
 				small="GFX_idea_tateo_kato"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_tateo_kato_leader_desc
+
 			slot = high_command
 			idea_token = tateo_kato
 			ledger = air
@@ -1300,7 +1363,8 @@ characters={
 				small="GFX_idea_matome_ugaki"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_matome_ugaki_leader_desc
+
 			slot = high_command
 			idea_token = matome_ugaki
 			ledger = navy
@@ -1324,7 +1388,8 @@ characters={
 				small="GFX_idea_chuichi_nagumo"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_chuichi_nagumo_leader_desc
+
 			slot = high_command
 			idea_token = chuichi_nagumo
 			ledger = air
@@ -1351,7 +1416,8 @@ characters={
 				small="GFX_idea_sanzo_nosaka"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_sanzo_nosaka_leader_desc
+
 			slot = political_advisor
 			idea_token = sanzo_nosaka
 			available = {
@@ -1394,7 +1460,8 @@ characters={
 				small="GFX_idea_kijuro_shidehara"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_kijuro_shidehara_leader_desc
+
 			slot = political_advisor
 			idea_token = kijuro_shidehara
 			available = {
@@ -1437,7 +1504,8 @@ characters={
 				small="GFX_idea_kingoro_hashimoto"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_kingoro_hashimoto_leader_desc
+
 			slot = political_advisor
 			idea_token = kingoro_hashimoto
 			allowed = {
@@ -1474,7 +1542,8 @@ characters={
 				small="GFX_idea_generic_political_advisor_asia_2"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_mitsumasa_yonai_leader_desc
+
 			slot = political_advisor
 			idea_token = JAP_mitsumasa_yonai
 			allowed = {
@@ -1493,7 +1562,8 @@ characters={
 				small="GFX_idea_generic_political_advisor_asia_1"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_hiroshi_oshima_leader_desc
+
 			slot = political_advisor
 			idea_token = JAP_hiroshi_oshima
 			allowed = {
@@ -1515,7 +1585,8 @@ characters={
 				small="GFX_idea_generic_political_advisor_asia_3"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_chiune_sugihara_leader_desc
+
 			slot = political_advisor
 			idea_token = JAP_chiune_sugihara
 			allowed = {
@@ -1537,7 +1608,8 @@ characters={
 				small="GFX_idea_takuo_godo"
 			}
 		}
-		advisor={
+		advisor={	desc = JAP_takuo_godo_leader_desc
+
 			slot = political_advisor
 			idea_token = takuo_godo
 			allowed = {

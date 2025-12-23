@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/PCN/Concession.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = PCN_Concession_leader_desc
+
 			ideology=liberalism
 			traits={ }
 			expire="1965.1.1.1"

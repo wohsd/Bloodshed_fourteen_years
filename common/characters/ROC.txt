@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROC/ROC_LiZongRen.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROC_LiZongRen_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -27,7 +28,8 @@ characters={
 				large="gfx/leaders/ROC/ROC_HuangShaoHong.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROC_HuangShaoHong_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"
@@ -48,7 +50,8 @@ characters={
 				large="gfx/leaders/ROC/ROC_HuangXuChu.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROC_HuangXuChu_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

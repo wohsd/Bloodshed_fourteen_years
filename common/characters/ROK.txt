@@ -6,7 +6,8 @@ characters={
 				large="gfx/leaders/ROK/ROK_MaHongKui.png"
 			}
 		}
-		country_leader={
+		country_leader={	desc = ROK_MaHongKui_leader_desc
+
 			ideology=despotism
 			traits={ }
 			expire="1965.1.1.1"

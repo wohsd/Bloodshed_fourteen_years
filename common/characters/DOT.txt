@@ -19,7 +19,8 @@ characters={
 
 		}
 		#担任党派领导人时的数据
-		country_leader={
+		country_leader={	desc = DOT_Descending_Yang_Bohm_leader_desc
+
 			#意识形态
 			ideology=despotism
 			#特质
