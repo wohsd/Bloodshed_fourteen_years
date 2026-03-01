@@ -18,6 +18,7 @@ characters={
 			}
 		}
 		field_marshal = {
+			desc = CHI_JiangJieShi_leader_desc
 			traits = {
 				CHI_Central_Army
 				old_guard
@@ -28,7 +29,8 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 		}
-		advisor={	desc = CHI_JiangJieShi_leader_desc
+		advisor={	
+			desc = CHI_JiangJieShi_leader_desc
 	
 			slot = army_chief
 			allowed = {
@@ -101,7 +103,8 @@ characters={
 			}
 
 		}
-		advisor={	desc = CHI_WangJingWei_leader_desc
+		advisor={	
+			desc = CHI_ChenCheng_leader_desc
 	
 			slot = army_chief
 			allowed = {
@@ -117,7 +120,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = CHI_JiangJieShi_leader_desc
+		corps_commander={	
+			desc = CHI_ChenCheng_leader_desc
 
 			traits={offensive_doctrine }
 			skill=2
@@ -242,8 +246,8 @@ characters={
 				small = "gfx/interface/advisers/CHI_XueYue.png"
 			}
 		}
-		advisor={	desc = CHI_XueYue_leader_desc
-	
+		advisor={	
+			desc = CHI_XueYue_leader_desc
 			slot = high_command
 			idea_token = CHI_XueYue_H
 			allowed = {
@@ -260,8 +264,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = CHI_XueYue_leader_desc
-
+		corps_commander={	
+			desc = CHI_XueYue_leader_desc
 			traits={ 
 				CHI_Central_Army
 			}
@@ -1109,7 +1113,7 @@ characters={
 			traits = { navy_capital_ship_2 }
 			cost = 100				
 		}		
-		navy_leader={	desc = CHI_JiangJieShi_leader_desc
+		navy_leader={	CHI_ChenShaoKuang_leader_desc
 
 			traits={ bold naval_lineage }
 			skill=2
