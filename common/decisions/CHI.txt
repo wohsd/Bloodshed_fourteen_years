@@ -1334,13 +1334,12 @@ CHI_Purging_party_category = {
 				has_country_flag = RFC_DengYangDa1
 			} 
 		}
-		days_mission_timeout =1
+		days_mission_timeout =365
 		activation = {
 			AND={
-				tag = CHI
+				tag = CHI 
 				date < 1931.11.29
 			}
-
 		}	
 		fixed_random_seed = no
 		fire_only_once = yes
@@ -1359,7 +1358,7 @@ CHI_Purging_party_category = {
 			    set_rule = { 
                     can_not_declare_war = no
                 }
-					add_popularity = { ideology = communism popularity = 0.5 }
+				add_popularity = { ideology = communism popularity = 0.5 }
 				transfer_state = 603
 				transfer_state = 292
 				transfer_state = 281
