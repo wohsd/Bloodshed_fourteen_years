@@ -504,6 +504,7 @@ ideas = {
 				air_wing_xp_loss_when_killed_factor = 0.45
 				sickness_chance =  0.2
 				monthly_population = -0.6
+				license_infantry_eq_production_speed_factor = 0.5
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
