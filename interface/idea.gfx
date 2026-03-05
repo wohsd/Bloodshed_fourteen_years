@@ -265,4 +265,150 @@ spriteTypes = {
 		name = "GFX_idea_Revolutionary_Armed_Forces"
 		texturefile = "gfx/interface/ideas/RFC/Revolutionary_Armed_Forces.dds"	
 	}
+
+	spriteType = {
+		name = "GFX_idea_laws_medical_development"
+		texturefile = "gfx/interface/law_development/laws_medical_development.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_medical_development1"
+		texturefile = "gfx/interface/law_development/laws_medical_development1.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_medical_development2"
+		texturefile = "gfx/interface/law_development/laws_medical_development2.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_medical_development3"
+		texturefile = "gfx/interface/law_development/laws_medical_development3.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_medical_development4"
+		texturefile = "gfx/interface/law_development/laws_medical_development4.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_medical_development5"
+		texturefile = "gfx/interface/law_development/laws_medical_development5.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_military_development"
+		texturefile = "gfx/interface/law_development/laws_military_development.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_military_development1"
+		texturefile = "gfx/interface/law_development/laws_military_development1.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_military_development2"
+		texturefile = "gfx/interface/law_development/laws_military_development2.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_military_development3"
+		texturefile = "gfx/interface/law_development/laws_military_development3.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_military_development4"
+		texturefile = "gfx/interface/law_development/laws_military_development4.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_military_development5"
+		texturefile = "gfx/interface/law_development/laws_military_development5.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_industry_development"
+		texturefile = "gfx/interface/law_development/laws_industry_development.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_industry_development1"
+		texturefile = "gfx/interface/law_development/laws_industry_development1.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_industry_development2"
+		texturefile = "gfx/interface/law_development/laws_industry_development2.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_industry_development3"
+		texturefile = "gfx/interface/law_development/laws_industry_development3.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_industry_development4"
+		texturefile = "gfx/interface/law_development/laws_industry_development4.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_industry_development5"
+		texturefile = "gfx/interface/law_development/laws_industry_development5.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_social_development"
+		texturefile = "gfx/interface/law_development/laws_social_development.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_social_development1"
+		texturefile = "gfx/interface/law_development/laws_social_development1.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_social_development2"
+		texturefile = "gfx/interface/law_development/laws_social_development2.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_social_development3"
+		texturefile = "gfx/interface/law_development/laws_social_development3.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_social_development4"
+		texturefile = "gfx/interface/law_development/laws_social_development4.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_social_development5"
+		texturefile = "gfx/interface/law_development/laws_social_development5.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_farming_development"
+		texturefile = "gfx/interface/law_development/laws_farming_development.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_farming_development1"
+		texturefile = "gfx/interface/law_development/laws_farming_development1.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_farming_development2"
+		texturefile = "gfx/interface/law_development/laws_farming_development2.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_farming_development3"
+		texturefile = "gfx/interface/law_development/laws_farming_development3.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_farming_development4"
+		texturefile = "gfx/interface/law_development/laws_farming_development4.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_farming_development5"
+		texturefile = "gfx/interface/law_development/laws_farming_development5.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_education_development"
+		texturefile = "gfx/interface/law_development/laws_education_development.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_education_development1"
+		texturefile = "gfx/interface/law_development/laws_education_development1.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_education_development2"
+		texturefile = "gfx/interface/law_development/laws_education_development2.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_education_development3"
+		texturefile = "gfx/interface/law_development/laws_education_development3.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_education_development4"
+		texturefile = "gfx/interface/law_development/laws_education_development4.png"	
+	}
+	spriteType = {
+		name = "GFX_idea_laws_education_development5"
+		texturefile = "gfx/interface/law_development/laws_education_development5.png"	
+	}
+	
 }
