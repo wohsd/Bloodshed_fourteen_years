@@ -12,7 +12,7 @@ focus_tree = {
 	default = yes
 	focus = {
 		id = The_Third_Road
-		x = 11
+		x = 9
 		y = 0
 		cost = 5
 		icon = GFX_focus_CHI_glorify_deng_yanda
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_a_provisional_government
-		x = 11
+		x = 9
 		y = 1
 		cost = 2
 		icon = GFX_focus_CHI_registry_of_property
@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Speed_is_of_the_essence_in_military_operations
-		x = 5
+		x = 12
 		y = 2
 		cost = 5
 		icon = GFX_focus_prc_infiltration
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Requisition_factory
-		x = 4
+		x = 12
 		y = 3
 		cost = 5
 		icon = GFX_focus_eng_crush_the_dream
@@ -76,7 +76,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Suicide_Squad
-		x = 6
+		x = 13
 		y = 3
 		cost = 5
 		icon = GFX_focus_FIN_parmis_devils
@@ -88,7 +88,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Military_Industry_Award
-		x = 6
+		x = 13
 		y = 4
 		cost = 5
 		icon = GFX_goal_generic_improve_relations
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Make_steady_and_solid_progress
-		x = 9
+		x = 6
 		y = 2
 		cost = 5
 		icon = GFX_goal_generic_construct_military
@@ -115,7 +115,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Aid_refugees
-		x = 8
+		x = 5
 		y = 3
 		cost = 5
 		icon = GFX_goal_generic_consumer_goods
@@ -131,7 +131,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Production_Self_Help_Movement
-		x = 8
+		x = 5
 		y = 4
 		cost = 5
 		icon = GFX_goal_generic_air_production
@@ -143,7 +143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Militia_Armory
-		x = 10
+		x = 6
 		y = 3
 		cost = 5
 		icon = GFX_goal_generic_small_arms
@@ -155,7 +155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Military_Crash_Course
-		x = 10
+		x = 6
 		y = 4
 		cost = 5
 		icon = GFX_goal_generic_military_sphere
@@ -167,8 +167,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Reconstruct_the_Political_Department
-		x = 14
-		y = 2
+		x = 9
+		y = 3
 		cost = 5
 		icon = GFX_focus_prc_agrarian_socialism
 		continue_if_invalid = no
@@ -182,8 +182,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Revolutionar_Education
-		x = 14
-		y = 3
+		x = 9
+		y = 4
 		cost = 5
 		icon = GFX_focus_por_workers_of_iberia
 		continue_if_invalid = no
@@ -194,8 +194,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Pilot_reduction_of_rent_and_interest
-		x = 14
-		y = 4
+		x = 9
+		y = 5
 		cost = 5
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		continue_if_invalid = no
@@ -206,8 +206,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Learn_guerrilla_warfare
-		x = 12
-		y = 4
+		x = 7
+		y = 5
 		cost = 5
 		icon = GFX_focus_PRC_eastward_expansion
 		continue_if_invalid = no
@@ -232,8 +232,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Recognize_the_status_of_the_Soviet_area
-		x = 12
-		y = 3
+		x = 7
+		y = 4
 		cost = 5
 		icon = GFX_focus_PRC_restore_the_old_republic
 		continue_if_invalid = no
@@ -243,36 +243,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Leftist_United_Front
-		x = 12
-		y = 5
-		cost = 5
-		icon = GFX_focus_PRC_hundred_regiments_offensive
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = Join_the_Democratic_Front
-			focus = The_Second_United_Front
-		}
-		prerequisite = {
-			focus = Pilot_reduction_of_rent_and_interest
-		}
-		prerequisite = {
-			focus = Learn_guerrilla_warfare
-		}
-		completion_reward = {
-			add_mastery_bonus = {
-				bonus = 0.1
-				days = 365
-				name = PRC_supreme_infiltration
-				track = operations
-			}
-		}
-	}
-	focus = {
 		id = Contact_the_old_warlords
-		x = 16
-		y = 3
+		x = 11
+		y = 4
 		cost = 5
 		icon = GFX_focus_CHI_mend_the_rift_with_hu
 		continue_if_invalid = no
@@ -292,8 +265,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Accepting_assistance
-		x = 16
-		y = 4
+		x = 11
+		y = 5
 		cost = 5
 		icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
 		continue_if_invalid = no
@@ -304,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Forced_labor
-		x = 4
+		x = 12
 		y = 4
 		cost = 5
 		icon = GFX_focus_generic_reinforcing_the_supply_network
@@ -322,45 +295,59 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Final_Battle
-		x = 5
-		y = 5
+		x = 12
+		y = 6
 		cost = 5
 		icon = GFX_focus_CHI_weaponise_the_faithful
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Left_wing_stronghold
+			focus = The_Second_United_Front
+		}
 		prerequisite = {
 			focus = Military_Industry_Award
 		}
 		prerequisite = {
 			focus = Forced_labor
 		}
+		prerequisite = {
+			focus = Accepting_assistance
+		}
 	}
 	focus = {
 		id = Left_wing_stronghold
-		x = 9
-		y = 5
+		x = 6
+		y = 6
 		cost = 5
 		icon = GFX_goal_generic_construct_military
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = The_Final_Battle
+			focus = The_Second_United_Front
+		}
 		prerequisite = {
 			focus = Military_Crash_Course
 		}
 		prerequisite = {
 			focus = Production_Self_Help_Movement
 		}
+		prerequisite = {
+			focus = Learn_guerrilla_warfare
+		}
 	}
 	focus = {
 		id = The_Second_United_Front
-		x = 14
-		y = 5
+		x = 9
+		y = 6
 		cost = 5
 		icon = GFX_focus_PRC_dissent_in_the_united_front
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = Join_the_Democratic_Front
-			focus = Leftist_United_Front
+			focus = Left_wing_stronghold
+			focus = The_Final_Battle
 		}
 		prerequisite = {
 			focus = Pilot_reduction_of_rent_and_interest
@@ -370,25 +357,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Accepting_assistance
-		}
-	}
-	focus = {
-		id = Join_the_Democratic_Front
-		x = 16
-		y = 5
-		cost = 5
-		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = Leftist_United_Front
-			focus = The_Second_United_Front
-		}
-		prerequisite = {
-			focus = Accepting_assistance
-		}
-		prerequisite = {
-			focus = Pilot_reduction_of_rent_and_interest
 		}
 	}
 	focus = {
@@ -613,6 +581,424 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = 废除留守处
+		}
+	}
+	focus = {
+		id = new_focus_18
+		x = 20
+		y = 7
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = new_focus_28
+		x = 19
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_18
+		}
+	}
+	focus = {
+		id = new_focus_31
+		x = 19
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_28
+		}
+	}
+	focus = {
+		id = new_focus_30
+		x = 20
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_31
+		}
+		prerequisite = {
+			focus = new_focus_29
+		}
+	}
+	focus = {
+		id = new_focus_27
+		x = 21
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_18
+		}
+	}
+	focus = {
+		id = new_focus_29
+		x = 21
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_27
+		}
+	}
+	focus = {
+		id = new_focus_32
+		x = 23
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_26
+		}
+	}
+	focus = {
+		id = new_focus_25
+		x = 17
+		y = 8
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_26
+		}
+		prerequisite = {
+			focus = new_focus_18
+		}
+	}
+	focus = {
+		id = new_focus_26
+		x = 23
+		y = 8
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_25
+		}
+		prerequisite = {
+			focus = new_focus_18
+		}
+	}
+	focus = {
+		id = 整编运动
+		x = 17
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_25
+		}
+	}
+	focus = {
+		id = new_focus_33
+		x = 17
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_36
+		}
+	}
+	focus = {
+		id = new_focus_34
+		x = 23
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_32
+		}
+	}
+	focus = {
+		id = new_focus_35
+		x = 23
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_34
+		}
+	}
+	focus = {
+		id = new_focus_36
+		x = 17
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = 整编运动
+		}
+	}
+	focus = {
+		id = 现代国民革命军
+		x = 18
+		y = 12
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_30
+		}
+		prerequisite = {
+			focus = new_focus_33
+		}
+	}
+	focus = {
+		id = new_focus_37
+		x = 22
+		y = 12
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_35
+		}
+		prerequisite = {
+			focus = new_focus_30
+		}
+	}
+	focus = {
+		id = new_focus_38
+		x = 20
+		y = 0
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = new_focus_19
+		x = 22
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_20
+		}
+		prerequisite = {
+			focus = new_focus_38
+		}
+	}
+	focus = {
+		id = new_focus_20
+		x = 18
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_19
+		}
+		prerequisite = {
+			focus = new_focus_38
+		}
+	}
+	focus = {
+		id = new_focus_21
+		x = 17
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_22
+		}
+		prerequisite = {
+			focus = new_focus_23
+		}
+		prerequisite = {
+			focus = new_focus_39
+		}
+	}
+	focus = {
+		id = new_focus_22
+		x = 19
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_21
+		}
+		prerequisite = {
+			focus = new_focus_23
+		}
+	}
+	focus = {
+		id = new_focus_23
+		x = 18
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_40
+		}
+	}
+	focus = {
+		id = new_focus_24
+		x = 16
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_20
+		}
+	}
+	focus = {
+		id = new_focus_39
+		x = 16
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_24
+		}
+	}
+	focus = {
+		id = new_focus_40
+		x = 20
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_19
+		}
+		prerequisite = {
+			focus = new_focus_20
+		}
+	}
+	focus = {
+		id = new_focus_41
+		x = 23
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_52
+		}
+	}
+	focus = {
+		id = new_focus_51
+		x = 21
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_50
+		}
+	}
+	focus = {
+		id = new_focus_43
+		x = 24
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_19
+		}
+	}
+	focus = {
+		id = 基层宪政制度
+		x = 24
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_43
+		}
+	}
+	focus = {
+		id = new_focus_55
+		x = 16
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_21
+		}
+	}
+	focus = {
+		id = new_focus_50
+		x = 22
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_40
+		}
+	}
+	focus = {
+		id = new_focus_52
+		x = 23
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_50
+		}
+		prerequisite = {
+			focus = 基层宪政制度
+		}
+	}
+	focus = {
+		id = new_focus_53
+		x = 20
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_51
+		}
+		prerequisite = {
+			focus = new_focus_22
+		}
+	}
+	focus = {
+		id = new_focus_54
+		x = 18
+		y = 5
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_21
+		}
+	}
+	focus = {
+		id = new_focus_49
+		x = 20
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_40
 		}
 	}
 }
