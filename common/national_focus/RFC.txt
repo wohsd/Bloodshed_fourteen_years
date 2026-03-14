@@ -2,20 +2,22 @@
 #!gfx:interface\goals.gfx
 focus_tree = {
 	id = RFC
-	country = { 
+	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = RFC 
+			tag = RFC
 		}
 	}
 	default = yes
 	focus = {
 		id = The_Third_Road
-		icon = GFX_focus_CHI_glorify_deng_yanda
-		cost = 5
-		x = 14 
+		x = 11
 		y = 0
+		cost = 5
+		icon = GFX_focus_CHI_glorify_deng_yanda
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		completion_reward = {
 			add_political_power = 50
 			add_dynamic_modifiers = {
@@ -25,10 +27,12 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_a_provisional_government
-		icon = GFX_focus_CHI_registry_of_property
-		cost = 2
-		x = 14
+		x = 11
 		y = 1
+		cost = 2
+		icon = GFX_focus_CHI_registry_of_property
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_Third_Road
 		}
@@ -39,23 +43,27 @@ focus_tree = {
 	}
 	focus = {
 		id = Speed_is_of_the_essence_in_military_operations
-		icon = GFX_focus_prc_infiltration
-		cost = 5
-		x = 5 
+		x = 5
 		y = 2
-		prerequisite = {
-			focus = Establish_a_provisional_government
-		}
+		cost = 5
+		icon = GFX_focus_prc_infiltration
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		mutually_exclusive = {
 			focus = Make_steady_and_solid_progress
 		}
+		prerequisite = {
+			focus = Establish_a_provisional_government
+		}
 	}
-	focus = { 
+	focus = {
 		id = Requisition_factory
-		icon = GFX_focus_eng_crush_the_dream
-		cost = 5
 		x = 4
 		y = 3
+		cost = 5
+		icon = GFX_focus_eng_crush_the_dream
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Speed_is_of_the_essence_in_military_operations
 		}
@@ -68,43 +76,51 @@ focus_tree = {
 	}
 	focus = {
 		id = Suicide_Squad
-		icon = GFX_focus_FIN_parmis_devils
-		cost = 5
 		x = 6
 		y = 3
+		cost = 5
+		icon = GFX_focus_FIN_parmis_devils
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Speed_is_of_the_essence_in_military_operations
 		}
 	}
 	focus = {
 		id = Military_Industry_Award
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
 		x = 6
 		y = 4
+		cost = 5
+		icon = GFX_goal_generic_improve_relations
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Suicide_Squad
 		}
 	}
 	focus = {
 		id = Make_steady_and_solid_progress
-		icon = GFX_goal_generic_construct_military
-		cost = 5
-		x = 10
+		x = 9
 		y = 2
-		prerequisite = {
-			focus = Establish_a_provisional_government
-		}
+		cost = 5
+		icon = GFX_goal_generic_construct_military
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		mutually_exclusive = {
 			focus = Speed_is_of_the_essence_in_military_operations
+		}
+		prerequisite = {
+			focus = Establish_a_provisional_government
 		}
 	}
 	focus = {
 		id = Aid_refugees
-		icon = GFX_goal_generic_consumer_goods
-		cost = 5
-		x = 9
+		x = 8
 		y = 3
+		cost = 5
+		icon = GFX_goal_generic_consumer_goods
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Make_steady_and_solid_progress
 		}
@@ -115,40 +131,48 @@ focus_tree = {
 	}
 	focus = {
 		id = Production_Self_Help_Movement
-		icon = GFX_goal_generic_air_production
-		cost = 5
-		x = 9
+		x = 8
 		y = 4
+		cost = 5
+		icon = GFX_goal_generic_air_production
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Aid_refugees
 		}
 	}
 	focus = {
 		id = Militia_Armory
-		icon = GFX_goal_generic_small_arms
-		cost = 5
-		x = 11
+		x = 10
 		y = 3
+		cost = 5
+		icon = GFX_goal_generic_small_arms
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Make_steady_and_solid_progress
 		}
 	}
 	focus = {
 		id = Military_Crash_Course
-		icon = GFX_goal_generic_military_sphere
-		cost = 5
-		x = 11
+		x = 10
 		y = 4
+		cost = 5
+		icon = GFX_goal_generic_military_sphere
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Militia_Armory
 		}
 	}
 	focus = {
 		id = Reconstruct_the_Political_Department
-		icon = GFX_focus_prc_agrarian_socialism
-		cost = 5
 		x = 14
 		y = 2
+		cost = 5
+		icon = GFX_focus_prc_agrarian_socialism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Establish_a_provisional_government
 		}
@@ -158,102 +182,45 @@ focus_tree = {
 	}
 	focus = {
 		id = Revolutionar_Education
-		icon = GFX_focus_por_workers_of_iberia
-		cost = 5
-		x = 13
+		x = 14
 		y = 3
+		cost = 5
+		icon = GFX_focus_por_workers_of_iberia
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Reconstruct_the_Political_Department
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = Expanded_Political_Department
-		icon = GFX_focus_generic_limited_social_mobilization
-		cost = 5
-		x = 13
-		y = 4  
-		prerequisite = {  
-			focus = Revolutionar_Education
-		}
-		completion_reward = {
-			every_unit_leader = {
-				random_select_amount = 4
-				gain_xp = 200
-			}
 		}
 	}
 	focus = {
 		id = Pilot_reduction_of_rent_and_interest
-		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		cost = 5
-		x = 15
-		y = 3
-		prerequisite = {
-			focus = Reconstruct_the_Political_Department
-		}
-	}
-	focus = {
-		id = Carry_out_land_reform
-		icon = GFX_focus_PRC_rural_region_development_two
-		cost = 5
-		x = 15
+		x = 14
 		y = 4
+		cost = 5
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Pilot_reduction_of_rent_and_interest
+			focus = Revolutionar_Education
 		}
 	}
-	focus = {
-		id = Contact_the_Communist_Party
-		icon = GFX_focus_prc_social_democracy
-		cost = 5
-		x = 18
-		y = 2
-		available = {
-			PRC = {
-				exists = yes
-			}
-		}
-		prerequisite = {
-			focus = Establish_a_provisional_government
-		}
-		mutually_exclusive = {
-			focus = Contact_the_old_warlords
-		}
-	}
-	focus = {
-		id = Learn_from_the_political_commissar_system
-		icon = GFX_focus_PRC_appoint_xiao_jianguang
-		cost = 5
-		x = 17
-		y = 3
-		prerequisite = { 
-			focus = Contact_the_Communist_Party
-		}
-		completion_reward = {
-			every_unit_leader = {
-				random_select_amount = 4
-				gain_xp = 200
-			}
-		}
-	} 
 	focus = {
 		id = Learn_guerrilla_warfare
-		icon = GFX_focus_PRC_eastward_expansion
-		cost = 5
-		x = 17
+		x = 12
 		y = 4
+		cost = 5
+		icon = GFX_focus_PRC_eastward_expansion
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Learn_from_the_political_commissar_system
+			focus = Recognize_the_status_of_the_Soviet_area
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = PRC_master_the_terrain
 				bonus = 1
 				uses = 1
-				category = mountaineers_tech 
+				category = mountaineers_tech
 			}
 			add_mastery_bonus = {
 				bonus = 0.25
@@ -261,44 +228,55 @@ focus_tree = {
 				name = PRC_supreme_infiltration
 				sub_doctrine = guerilla_war
 			}
-			
 		}
 	}
 	focus = {
 		id = Recognize_the_status_of_the_Soviet_area
-		icon = GFX_focus_PRC_restore_the_old_republic
-		cost = 5
-		x = 19
+		x = 12
 		y = 3
+		cost = 5
+		icon = GFX_focus_PRC_restore_the_old_republic
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Contact_the_Communist_Party
-		} 
+			focus = Reconstruct_the_Political_Department
+		}
 	}
 	focus = {
 		id = Leftist_United_Front
-		icon = GFX_focus_PRC_hundred_regiments_offensive
+		x = 12
+		y = 5
 		cost = 5
-		x = 19
-		y = 4
+		icon = GFX_focus_PRC_hundred_regiments_offensive
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Join_the_Democratic_Front
+			focus = The_Second_United_Front
+		}
 		prerequisite = {
-			focus = Recognize_the_status_of_the_Soviet_area
+			focus = Pilot_reduction_of_rent_and_interest
+		}
+		prerequisite = {
+			focus = Learn_guerrilla_warfare
 		}
 		completion_reward = {
 			add_mastery_bonus = {
 				bonus = 0.1
 				days = 365
 				name = PRC_supreme_infiltration
-
 				track = operations
 			}
 		}
 	}
 	focus = {
 		id = Contact_the_old_warlords
-		icon = GFX_focus_CHI_mend_the_rift_with_hu
+		x = 16
+		y = 3
 		cost = 5
-		x = 22
-		y = 2
+		icon = GFX_focus_CHI_mend_the_rift_with_hu
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		available = {
 			ROG = {
 				exists = yes
@@ -309,47 +287,29 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = Establish_a_provisional_government
-		}
-		mutually_exclusive = {
-			focus = Contact_the_Communist_Party
+			focus = Reconstruct_the_Political_Department
 		}
 	}
 	focus = {
 		id = Accepting_assistance
-		icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
+		x = 16
+		y = 4
 		cost = 5
-		x = 21
-		y = 3
+		icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Contact_the_old_warlords
 		}
 	}
 	focus = {
-		id = Communication_positional_warfare
-		icon = GFX_focus_CHI_decisive_battles
-		cost = 5
-		x = 21
-		y = 4
-		prerequisite = {
-			focus = Accepting_assistance
-		}
-		completion_reward = {
-			add_mastery_bonus = {
-				bonus = 0.25
-				days = 365
-				name = PRC_supreme_infiltration
-
-				sub_doctrine = last_stand
-			}
-		}
-	}
-	focus = {
 		id = Forced_labor
-		icon = GFX_focus_generic_reinforcing_the_supply_network
-		cost = 5
 		x = 4
 		y = 4
+		cost = 5
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Requisition_factory
 		}
@@ -362,10 +322,12 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Final_Battle
-		icon = GFX_focus_CHI_weaponise_the_faithful
-		cost = 5
 		x = 5
 		y = 5
+		cost = 5
+		icon = GFX_focus_CHI_weaponise_the_faithful
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Military_Industry_Award
 		}
@@ -375,10 +337,12 @@ focus_tree = {
 	}
 	focus = {
 		id = Left_wing_stronghold
-		icon = GFX_goal_generic_construct_military
-		cost = 5
-		x = 10
+		x = 9
 		y = 5
+		cost = 5
+		icon = GFX_goal_generic_construct_military
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Military_Crash_Course
 		}
@@ -387,56 +351,268 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Acknowledge_its_leadership_position
-		icon = GFX_focus_CHI_second_father_of_the_nation
-		cost = 5
-		x = 23
-		y = 3
-		prerequisite = {
-			focus = Contact_the_old_warlords
-		}
-		completion_reward = {
-			ROG = {
-				puppet = RFC
-			}
-		}
-	}
-	focus = {
 		id = The_Second_United_Front
-		icon = GFX_focus_PRC_dissent_in_the_united_front
-		cost = 5
-		x = 18
+		x = 14
 		y = 5
-		prerequisite = {
+		cost = 5
+		icon = GFX_focus_PRC_dissent_in_the_united_front
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Join_the_Democratic_Front
 			focus = Leftist_United_Front
+		}
+		prerequisite = {
+			focus = Pilot_reduction_of_rent_and_interest
 		}
 		prerequisite = {
 			focus = Learn_guerrilla_warfare
 		}
+		prerequisite = {
+			focus = Accepting_assistance
+		}
 	}
 	focus = {
 		id = Join_the_Democratic_Front
-		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
+		x = 16
+		y = 5
 		cost = 5
-		x = 23
-		y = 4
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Leftist_United_Front
+			focus = The_Second_United_Front
+		}
 		prerequisite = {
-			focus = Acknowledge_its_leadership_position
+			focus = Accepting_assistance
+		}
+		prerequisite = {
+			focus = Pilot_reduction_of_rent_and_interest
 		}
 	}
 	focus = {
-		id = The_National_Revolution_Unite_in_Sincerity
-		icon = GFX_focus_CHI_unify_as_the_china_democratic_league
-		cost = 5
-		x = 22
-		y = 5
+		id = new_focus_7
+		x = 5
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Join_the_Democratic_Front
+			focus = new_focus_6
+		}
+	}
+	focus = {
+		id = new_focus_6
+		x = 5
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_4
+		}
+	}
+	focus = {
+		id = new_focus_4
+		x = 5
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_2
+		}
+	}
+	focus = {
+		id = new_focus_5
+		x = 3
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_4
+		}
+	}
+	focus = {
+		id = new_focus_2
+		x = 5
+		y = 8
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_3
 		}
 		prerequisite = {
-			focus = Communication_positional_warfare
+			focus = new_focus_1
+		}
+	}
+	focus = {
+		id = new_focus_3
+		x = 11
+		y = 8
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_2
+		}
+		prerequisite = {
+			focus = new_focus_1
+		}
+	}
+	focus = {
+		id = new_focus_1
+		x = 8
+		y = 7
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+	}
+	focus = {
+		id = new_focus_8
+		x = 3
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_5
+		}
+	}
+	focus = {
+		id = 推行革命军公司
+		x = 5
+		y = 12
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_7
+		}
+		prerequisite = {
+			focus = new_focus_8
+		}
+		prerequisite = {
+			focus = new_focus_10
+		}
+	}
+	focus = {
+		id = new_focus_9
+		x = 7
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_4
+		}
+	}
+	focus = {
+		id = new_focus_10
+		x = 7
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_9
+		}
+	}
+	focus = {
+		id = new_focus_11
+		x = 13
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_15
+		}
+	}
+	focus = {
+		id = new_focus_12
+		x = 11
+		y = 9
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_3
+		}
+	}
+	focus = {
+		id = new_focus_13
+		x = 11
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_16
+		}
+	}
+	focus = {
+		id = 废除留守处
+		x = 9
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_14
+		}
+	}
+	focus = {
+		id = new_focus_14
+		x = 9
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_12
+		}
+	}
+	focus = {
+		id = new_focus_15
+		x = 13
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_12
+		}
+	}
+	focus = {
+		id = new_focus_16
+		x = 11
+		y = 10
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_12
+		}
+	}
+	focus = {
+		id = new_focus_17
+		x = 11
+		y = 12
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_11
+		}
+		prerequisite = {
+			focus = new_focus_13
+		}
+		prerequisite = {
+			focus = 废除留守处
 		}
 	}
 }
-
-
