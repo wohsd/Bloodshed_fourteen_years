@@ -12,8 +12,8 @@ focus_tree = {
 	default = no
 	focus = {
 		id = Victory_of_the_National_Revolution
-		x = 94
-		y = 10
+		x = 81
+		y = 1
 		cost = 2
 		icon = GFX_kmt01
 		continue_if_invalid = no
@@ -1153,8 +1153,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Organize_Expeditionary_Force
-		x = 92
-		y = 15
+		x = 1
+		y = 3
 		cost = 7
 		icon = GFX_kmt_43
 		continue_if_invalid = no
@@ -1208,6 +1208,7 @@ focus_tree = {
 				set_garrison_strength = 0.5
 			}
 		}
+		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = German_Positional_Tactics
@@ -1727,7 +1728,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
-		x = 100
+		x = 103
 		y = 1
 		cost = 5
 		icon = GFX_kmt03
@@ -1749,8 +1750,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Interests_of_Four_Families
-		x = 0
-		y = 1
+		x = 103
+		y = 2
 		cost = 2
 		icon = GFX_focus_GER_ally_chiang_kai_shek
 		continue_if_invalid = no
@@ -1767,12 +1768,11 @@ focus_tree = {
 			}
 			custom_effect_tooltip = Interests_of_Four_Families_tooltip
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
 	}
 	focus = {
 		id = Soong_Sisters_Kong_Family_Wealth
-		x = -14
-		y = 2
+		x = -13
+		y = 1
 		cost = 2
 		icon = GFX_kmt_74
 		continue_if_invalid = no
@@ -1789,7 +1789,7 @@ focus_tree = {
 				CHI_consumer_goods_factor = -0.05
 			}
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Interests_of_Four_Families
 	}
 	focus = {
 		id = Control_National_Economy
@@ -2482,7 +2482,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Chiangs_Rule_Chens_Party
-		x = 14
+		x = 13
 		y = 2
 		cost = 2
 		icon = GFX_kmt_72
@@ -2498,8 +2498,8 @@ focus_tree = {
 	}
 	focus = {
 		id = China_Revival_Society
-		x = 12
-		y = 3
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_70
 		continue_if_invalid = no
@@ -2516,12 +2516,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = Suppress_Anti_Japanese_Activities
-		x = 11
-		y = 4
+		x = -3
+		y = 2
 		cost = 7
 		icon = GFX_focus_FIN_parmis_devils
 		continue_if_invalid = no
@@ -2536,12 +2536,12 @@ focus_tree = {
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = Control_Media_Information
-		x = 13
-		y = 4
+		x = -1
+		y = 2
 		cost = 7
 		icon = GFX_kmt_56
 		continue_if_invalid = no
@@ -2553,12 +2553,12 @@ focus_tree = {
 			add_stability = 0.1
 			add_war_support = -0.1
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = Establish_Military_Statistics_Bureau
-		x = 12
-		y = 5
+		x = -2
+		y = 3
 		cost = 7
 		icon = GFX_kmt_79
 		continue_if_invalid = no
@@ -2576,12 +2576,12 @@ focus_tree = {
 			Government_efficiency_add = yes
 			add_ideas = NBIS
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = Central_Club
-		x = 16
-		y = 3
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_71
 		continue_if_invalid = no
@@ -2598,12 +2598,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = New_Life_Movement
-		x = 15
-		y = 4
+		x = 1
+		y = 2
 		cost = 7
 		icon = GFX_kmt_52
 		continue_if_invalid = no
@@ -2614,12 +2614,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = new_life
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = Chinese_Cultural_Construction_Movement
-		x = 17
-		y = 4
+		x = 3
+		y = 2
 		cost = 7
 		icon = GFX_kmt_73
 		continue_if_invalid = no
@@ -2634,12 +2634,12 @@ focus_tree = {
 				popularity = 0.1
 			}
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = Establish_Central_Statistics_Bureau
-		x = 16
-		y = 5
+		x = 2
+		y = 3
 		cost = 7
 		icon = GFX_kmt_80
 		continue_if_invalid = no
@@ -2657,7 +2657,7 @@ focus_tree = {
 			Government_efficiency_add = yes
 			add_ideas = CBIS
 		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
+		relative_position_id = Chiangs_Rule_Chens_Party
 	}
 	focus = {
 		id = Establish_Central_Aviation_School
@@ -4170,8 +4170,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_focus_6
-		x = 94
-		y = 14
+		x = -2
+		y = 3
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -4181,6 +4181,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_focus_8
 		}
+		relative_position_id = CHI_focus_3
 	}
 	focus = {
 		id = CHI_focus_7
@@ -4190,8 +4191,8 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = CHI_focus_9
 			focus = CHI_focus_8
+			focus = CHI_focus_9
 		}
 		prerequisite = {
 			focus = CHI_focus_3
@@ -4206,8 +4207,8 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = CHI_focus_9
 			focus = CHI_focus_7
+			focus = CHI_focus_9
 		}
 		prerequisite = {
 			focus = CHI_focus_3
@@ -4274,41 +4275,44 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_focus_13
-		x = 90
-		y = 13
+		x = -1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
 		}
+		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = CHI_focus_14
-		x = 82
-		y = 13
+		x = -2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Resistance_First_to_Save_Nation
 		}
+		relative_position_id = Resistance_First_to_Save_Nation
 	}
 	focus = {
 		id = CHI_focus_15
-		x = 84
-		y = 14
+		x = 0
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Reconcile_with_Communists
 		}
+		relative_position_id = Resistance_First_to_Save_Nation
 	}
 	focus = {
 		id = CHI_focus_16
-		x = 91
-		y = 16
+		x = 0
+		y = 4
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -4318,51 +4322,54 @@ focus_tree = {
 		prerequisite = {
 			focus = Expand_Local_Influence
 		}
+		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = CHI_focus_3
 		x = 2
 		y = 1
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
-		relative_position_id = Victory_of_the_National_Revolution
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
+		relative_position_id = Victory_of_the_National_Revolution
 	}
 	focus = {
 		id = CHI_focus_2
 		x = -6
 		y = 1
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
-		relative_position_id = Victory_of_the_National_Revolution
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
+		relative_position_id = Victory_of_the_National_Revolution
 	}
 	focus = {
 		id = CHI_focus_4
-		x = 92
-		y = 14
+		x = 1
+		y = 2
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_focus_5
 		}
+		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = CHI_focus_5
-		x = 92
-		y = 13
+		x = 1
+		y = 1
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
 		}
+		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 }
