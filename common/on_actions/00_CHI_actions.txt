@@ -1,0 +1,30 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            # 直接指定国家 CHI 作为作用域（最可靠的方式）
+            CHI = {
+                # 初始化变量
+                set_variable = { heyingqinxi = 0 }
+                
+                # 使用 every_character 遍历所有角色（包括所有类型的指挥官）
+                every_character = {
+                    limit = {
+                        is_commander = yes          # 是军事指挥官
+                        owner = ROOT                # 属于当前国家
+                        has_trait = heyingqinxi     # 拥有保守派特质
+                    }
+                    # 累加技能等级
+                    ROOT = {
+                        add_to_variable = { heyingqinxi = THIS.skill }
+                    }
+                }
+                
+                # 输出日志到 error.log，用于验证
+                log = "[CHI Startup] 保守派将领等级总和 = [ROOT.GetVariable:heyingqinxi]"
+                
+                # 可选：弹出一个初始事件显示结果（需要定义事件文件）
+                # country_event = { id = leader_stats_result.1 }
+            }
+        }
+    }
+}
