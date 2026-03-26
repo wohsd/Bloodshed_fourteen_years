@@ -4328,6 +4328,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
+		completion_reward = {
+			
+		}
 		relative_position_id = Victory_of_the_National_Revolution
 	}
 	focus = {

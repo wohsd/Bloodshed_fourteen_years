@@ -18,6 +18,17 @@ guiTypes = {
 			scale = 0.8
 			alwaystransparent = yes
 		}
+		instantTextBoxType = {
+			name = "CHI_he_power_tt" 
+			position = { x = 160 y = 5 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_he_power_tt" 
+			maxWidth = 280 
+			maxHeight = 24 
+			fixedsize = yes 
+			format = left
+		}
 		iconType = {
 			name  = "CHI_chen_clique_1"
 			spriteType = "GFX_CHI_chencheng"
@@ -31,6 +42,17 @@ guiTypes = {
 			position = { x = 63 y = 103 }
 			scale = 0.8
 			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "CHI_chen_power_tt" 
+			position = { x = 160 y = 105 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_chen_power_tt" 
+			maxWidth = 280 
+			maxHeight = 24 
+			fixedsize = yes 
+			format = left
 		}
 		iconType = {
 			name  = "CHI_hu_clique_1"
@@ -46,6 +68,17 @@ guiTypes = {
 			scale = 0.8
 			alwaystransparent = yes
 		}
+		instantTextBoxType = {
+			name = "CHI_hu_power_tt" 
+			position = { x = 160 y = 205 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_hu_power_tt" 
+			maxWidth = 280 
+			maxHeight = 24 
+			fixedsize = yes 
+			format = left
+		}
 		iconType = {
 			name  = "CHI_tang_clique_1"
 			spriteType = "GFX_CHI_TangEnBo"
@@ -60,6 +93,16 @@ guiTypes = {
 			scale = 0.8
 			alwaystransparent = yes
 		}
-		
+		instantTextBoxType = {
+			name = "CHI_tang_power_tt" 
+			position = { x = 160 y = 305 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_tang_power_tt" 
+			maxWidth = 280 
+			maxHeight = 24 
+			fixedsize = yes 
+			format = left
+		}
 	}
 }

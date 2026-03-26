@@ -19,4 +19,24 @@ spriteTypes = {
 	#	name = "GFX_trait_"
 	#	texturefile = "gfx/interface/traits/trait_.png"
 	#}
+	spriteType = {
+		name = "GFX_heyingqinxi"
+		texturefile = "gfx/interface/traits/heyingqinxi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chenchengxi"
+		texturefile = "gfx/interface/traits/chenchengxi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_huzongnanxi"
+		texturefile = "gfx/interface/traits/huzongnanxi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_tangenboxi"
+		texturefile = "gfx/interface/traits/tangenboxi.png"
+		legacy_lazy_load = no
+	}
 }

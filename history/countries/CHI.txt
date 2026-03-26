@@ -143,6 +143,9 @@ add_to_variable = { CHI_navy_naval_coordination = -0.05 }
 add_to_variable = { CHI_navy_naval_detection = -0.1 }
 add_to_variable = { CHI_navy_spotting_chance = -0.1 }
 
+#huangpu
+add_dynamic_modifier = {modifier = Republic_of_China_Military_Academy}
+
 puppet = CEN
 add_manpower=321450
 set_popularities = {
