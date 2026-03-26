@@ -52,7 +52,10 @@ country_event = {
 		        }
 			} 
 		} 
-		CHI =  { country_event = { id = CHI.2  days = 3 } }
+		CHI =  { 
+			country_event = { id = CHI.2  days = 3 } 
+			
+		}
 		
 	}
 	option = {

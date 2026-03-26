@@ -230,32 +230,32 @@ Shortage_personnel: "兵员匮乏"
 
 New_Military_Service_Law_category: "新兵役法"
 New_Military_Service_Law_category_desc: "国民政府于1930年代初开始酝酿兵役制度的改革，决心推行“征兵制”。这一制度的核心在于，要求所有符合条件的成年男性公民履行兵役义务，不再以金钱作为诱饵，而是强调公民对国家安全的责任与担当。《中华民国兵役法》正式出台，标志着中国兵役制度由“募”向“征”的历史性转变。该法规定，男性公民达到一定年龄后，均需进行兵役登记，并根据国家需要随时准备应征入伍。"
- Recruit_new_soldiers_henan: "在河南募集新丁"
- Recruit_new_soldiers_henan_desc:0 "在河南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_henan: "在河南募集新丁
+Recruit_new_soldiers_henan_desc: 0 "在河南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
- Recruit_new_soldiers_hunan:0 "在湖南募集新丁"
- Recruit_new_soldiers_hunan_desc:0 "在湖南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_hunan: 0 "在湖南募集新丁"
+Recruit_new_soldiers_hunan_desc: 0 "在湖南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
 
- Recruit_new_soldiers_hubei:0 "在湖北募集新丁"
- Recruit_new_soldiers_hubei_desc:0 "在湖北地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_hubei: 0 "在湖北募集新丁"
+Recruit_new_soldiers_hubei_desc: 0 "在湖北地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
- Recruit_new_soldiers_anhui:0 "在安徽募集新丁"
- Recruit_new_soldiers_anhui_desc:0 "在安徽地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_anhui: 0 "在安徽募集新丁"
+Recruit_new_soldiers_anhui_desc: 0 "在安徽地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
- Recruit_new_soldiers_fujian:0 "在福建募集新丁"
- Recruit_new_soldiers_fujian_desc:0 "在福建地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_fujian: 0 "在福建募集新丁"
+Recruit_new_soldiers_fujian_desc: 0 "在福建地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
- Recruit_new_soldiers_jiangxi:0 "在江西募集新丁"
- Recruit_new_soldiers_jiangxi_desc:0 "在江西地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_jiangxi: 0 "在江西募集新丁"
+Recruit_new_soldiers_jiangxi_desc: 0 "在江西地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
- Recruit_new_soldiers_zhejiang:0 "在浙江募集新丁"
- Recruit_new_soldiers_zhejiang_desc:0 "在浙江地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_zhejiang: 0 "在浙江募集新丁"
+Recruit_new_soldiers_zhejiang_desc: 0 "在浙江地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
- Recruit_new_soldiers_jiangsu:0 "在江苏募集新丁"
- Recruit_new_soldiers_jiangsu_desc:0 "在江苏地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_jiangsu: 0 "在江苏募集新丁"
+Recruit_new_soldiers_jiangsu_desc: 0 "在江苏地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
- Recruit_new_soldiers_guizhou:0 "在贵州募集新丁"
- Recruit_new_soldiers_guizhou_desc:0 "在贵州地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_guizhou: 0 "在贵州募集新丁"
+Recruit_new_soldiers_guizhou_desc: 0 "在贵州地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
 
 
 
@@ -310,4 +310,19 @@ S_Conscript_laborers: "征召民夫"
 S_Mobilize_the_masses: "动员群众"
 S_Under_construction: "施工中"
 
-
+###黄埔派系
+CHI_he_clique_tt: 0 "§t何应钦系§!§L，由大部分中央军高级将领与陆军官校毕业生组成，是势力最大同时也最松散的中央军派系。作为原陆军官校总教官，何应钦在中央军内地位仅次于蒋中正，他用自己的方式维持着这支庞大而腐败的军队，反对任何激进的改革。§!\n--------------\n成员包括：[!CHI_he_clique_1_click]"
+CHI_he_power_tt: 0 "[?CHI_he_power|t]"
+CHI_chen_clique_tt:  0 "§3陈诚系§!§L，以土木系为基干，并会聚陈诚的私交好友与中央军旁系将领组成。作风清廉干练的陈诚深受蒋中正信任，又因任人唯贤在中下级军官中颇具威望，他主张革除政府与军队中的腐败，但强硬的手段引起了中央军其他派系的反对。§!\n--------------\n成员包括：[!CHI_chen_clique_1_click]"
+CHI_chen_power_tt: 0 "[?CHI_chen_power|3]"
+CHI_hu_clique_tt: 0 "§8胡宗南系§!§L，以第一军为基干，成员主要以陆官毕业、浙江籍贯、陆大学历或第一军出身为羁绊聚拢组成。作为陆军官校毕业生中最受蒋中正宠爱的一位，胡宗南对部下官兵也多有优待，形成了较强的内部凝聚力，也因此反对陈诚的改革。§!\n--------------\n成员包括：[!CHI_hu_clique_1_click]"
+CHI_hu_power_tt: 0 "[?CHI_hu_power|8]"
+CHI_tang_clique_tt: 0 "§O汤恩伯系§!§L，以第十三军为基干，主要由陆军官校毕业生组成，是中央军内的新兴派系。汤恩伯作为后起之秀，直到中原大战才崭露头角，他主张广泛地收编杂牌部队并支持军队经商，辖下的主力部队具有较强的战斗力，但军纪并不理想。§!\n--------------\n成员包括：[!CHI_tang_clique_1_click]"
+CHI_tang_power_tt: 0 "[?CHI_tang_power|O]"
+CHI_power_of_every_clique_tt: 0 "§t何应钦系§!              §3陈诚系§!               §8胡宗南系§!            §O汤恩伯系§!\n    [?CHI_he_power|%t0..1]                   §3[?CHI_chen_power|%0..1]§!                    §8[?CHI_hu_power|%0..1]§!                     [?CHI_tang_power|%O0..1]"
+CHI_power_of_progressive_and_conservative_tt: 0 "§3改革派§!集团：[GetProgressiveList]\n§t保守派§!集团：[GetConservativeList]\n\n改革派影响力：§3[?CHI_progressive_power|%0..1]§!               保守派影响力：[?CHI_conservative_power|%t0..1]"
+CHI_he_clique: 0 "§t何应钦系§!"
+CHI_chen_clique: 0 "§3陈诚系§!"
+CHI_hu_clique: 0 "§8胡宗南系§!"
+CHI_tang_clique: 0 "§O汤恩伯系§!"
+CHI_he_hu_tang_clique: 0 "§t何应钦系§!、§8胡宗南系§!、§O汤恩伯系§!"

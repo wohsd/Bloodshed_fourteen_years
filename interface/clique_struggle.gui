@@ -1,0 +1,106 @@
+guiTypes = {
+	containerWindowType = {
+		name = "clique_struggle_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 210 }
+
+		iconType = {
+			name  = "CHI_he_clique_1"
+			spriteType = "GFX_CHI_HeYingQing"
+			position = { x = 65 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_he_clique_tt"
+		}
+		iconType = {
+			name  = "CHI_he_clique_2"
+			spriteType = "GFX_CHI_HeYingQing"
+			position = { x = 65 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_he_clique_tt"
+		}
+		iconType = {
+			name = "clique_leader_frame_1"
+			quadTextureSprite = "GFX_land_battle_leader_frame"
+			position = { x = 63 y = 3 }
+			scale = 0.8
+			alwaystransparent = yes
+		}
+		iconType = {
+			name  = "CHI_chen_clique_1"
+			spriteType = "GFX_CHI_chencheng"
+			position = { x = 165 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_chen_clique_tt"
+		}
+		iconType = {
+			name  = "CHI_chen_clique_2"
+			spriteType = "GFX_CHI_chencheng"
+			position = { x = 165 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_chen_clique_tt"
+		}
+		iconType = {
+			name = "clique_leader_frame_2"
+			quadTextureSprite = "GFX_land_battle_leader_frame"
+			position = { x = 163 y = 3 }
+			scale = 0.8
+			alwaystransparent = yes
+		}
+		iconType = {
+			name  = "CHI_hu_clique_1"
+			spriteType = "GFX_CHI_HuZongNan"
+			position = { x = 265 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_hu_clique_tt"
+		}
+		iconType = {
+			name  = "CHI_hu_clique_2"
+			spriteType = "GFX_CHI_HuZongNan"
+			position = { x = 265 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_hu_clique_tt"
+		}
+		iconType = {
+			name = "clique_leader_frame_3"
+			quadTextureSprite = "GFX_land_battle_leader_frame"
+			position = { x = 263 y = 3 }
+			scale = 0.8
+			alwaystransparent = yes
+		}
+		iconType = {
+			name  = "CHI_tang_clique_1"
+			spriteType = "GFX_CHI_TangEnBo"
+			position = { x = 365 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_tang_clique_tt"
+		}
+		iconType = {
+			name  = "CHI_tang_clique_2"
+			spriteType = "GFX_CHI_TangEnBo"
+			position = { x = 365 y = 5 }
+			scale = 0.4
+			pdx_tooltip = "CHI_tang_clique_tt"
+		}
+		iconType = {
+			name = "clique_leader_frame_4"
+			quadTextureSprite = "GFX_land_battle_leader_frame"
+			position = { x = 363 y = 3 }
+			scale = 0.8
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = CHI_power_of_every_clique
+			position = { x = 65 y = 90 }
+			text = CHI_power_of_every_clique_tt
+			font = "hoi_18mbs"
+			maxWidth = 1000
+		}
+		instantTextBoxType = {
+			name = CHI_power_of_progressive_and_conservative
+			position = { x = 65 y = 135 }
+			text = CHI_power_of_progressive_and_conservative_tt
+			font = "hoi_18mbs"
+			maxWidth = 1000
+		}
+	}
+}

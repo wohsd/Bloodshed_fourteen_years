@@ -518,31 +518,25 @@ focus_tree = {
 			hidden_effect = {
 				214 = {
 					create_unit = {
-						division = "name = "
-						国民革命军第八十七师
-						"division_template = "
-						德械师
-						"start_experience_factor = 0.8"
+						division =  "国民革命军第八十七师"
+						division_template = "德械师"
+						start_experience_factor = 0.8
 						owner = CHI
 						add_core_of = CHI
 						prioritize_location = 2957
 					}
 					create_unit = {
-						division = "name = "
-						国民革命军第八十八师
-						"division_template = "
-						德械师
-						"start_experience_factor = 0.8"
+						division = "国民革命军第八十八师"
+						division_template = "德械师"
+						start_experience_factor = 0.8
 						owner = CHI
 						add_core_of = CHI
 						prioritize_location = 2957
 					}
 					create_unit = {
-						division = "name = "
-						国民革命军第三十六师
-						"division_template = "
-						德械师
-						"start_experience_factor = 0.8"
+						division = "国民革命军第三十六师"
+						division_template = "德械师"
+					    start_experience_factor = 0.8
 						owner = CHI
 						add_core_of = CHI
 						prioritize_location = 2957

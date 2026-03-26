@@ -17,7 +17,20 @@ CHI_struggle_balance_00_category= {
 	}
 	visible_when_empty = yes
 }
- 
+
+CHI_clique_struggle = {
+	icon = power_struggle
+	allowed = {
+		tag = CHI
+	}
+	visible = {
+		tag = CHI
+	}
+	visible_when_empty = yes
+	priority = 146
+	scripted_gui = clique_struggle
+} 
+
 Scorched_earth_policy = {
 	icon = military_operation
 	picture = GFX_Hump_route

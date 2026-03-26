@@ -1343,6 +1343,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_army_asia_1.dds"
 	}
 
+	spriteType = {
+		name = "GFX_CHI_chencheng"
+		texturefile = "gfx/leaders/CHI/CHI_ChenCheng.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_HuZongNan"
+		texturefile = "gfx/leaders/CHI/CHI_HuZongNan.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_HeYingQing"
+		texturefile = "gfx/leaders/CHI/CHI_HeYingQing.png"
+	}
+	spriteType = {
+		name = "GFX_CHI_TangEnBo"
+		texturefile = "gfx/leaders/CHI/CHI_TangEnBo.png"
+	}
+
 	
 
 
