@@ -107,6 +107,7 @@ add_ideas = {
 	CHI_army
 	CHI_navy
 	CHI_air
+	Republic_of_China_Military_Academy
 }
 #动态修正
 add_dynamic_modifier = {modifier = Four_families}

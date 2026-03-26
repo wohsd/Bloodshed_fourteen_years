@@ -230,32 +230,32 @@ Shortage_personnel: "兵员匮乏"
 
 New_Military_Service_Law_category: "新兵役法"
 New_Military_Service_Law_category_desc: "国民政府于1930年代初开始酝酿兵役制度的改革，决心推行“征兵制”。这一制度的核心在于，要求所有符合条件的成年男性公民履行兵役义务，不再以金钱作为诱饵，而是强调公民对国家安全的责任与担当。《中华民国兵役法》正式出台，标志着中国兵役制度由“募”向“征”的历史性转变。该法规定，男性公民达到一定年龄后，均需进行兵役登记，并根据国家需要随时准备应征入伍。"
-Recruit_new_soldiers_henan: "在河南募集新丁
-Recruit_new_soldiers_henan_desc: 0 "在河南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_henan: "在河南募集新丁"
+Recruit_new_soldiers_henan_desc: "在河南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
-Recruit_new_soldiers_hunan: 0 "在湖南募集新丁"
-Recruit_new_soldiers_hunan_desc: 0 "在湖南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_hunan: "在湖南募集新丁"
+Recruit_new_soldiers_hunan_desc: "在湖南地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
 
-Recruit_new_soldiers_hubei: 0 "在湖北募集新丁"
-Recruit_new_soldiers_hubei_desc: 0 "在湖北地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_hubei: "在湖北募集新丁"
+Recruit_new_soldiers_hubei_desc: "在湖北地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
-Recruit_new_soldiers_anhui: 0 "在安徽募集新丁"
-Recruit_new_soldiers_anhui_desc: 0 "在安徽地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_anhui: "在安徽募集新丁"
+Recruit_new_soldiers_anhui_desc: "在安徽地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
-Recruit_new_soldiers_fujian: 0 "在福建募集新丁"
-Recruit_new_soldiers_fujian_desc: 0 "在福建地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_fujian: "在福建募集新丁"
+Recruit_new_soldiers_fujian_desc: "在福建地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
-Recruit_new_soldiers_jiangxi: 0 "在江西募集新丁"
-Recruit_new_soldiers_jiangxi_desc: 0 "在江西地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_jiangxi: "在江西募集新丁"
+Recruit_new_soldiers_jiangxi_desc: "在江西地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
-Recruit_new_soldiers_zhejiang: 0 "在浙江募集新丁"
-Recruit_new_soldiers_zhejiang_desc: 0 "在浙江地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_zhejiang: "在浙江募集新丁"
+Recruit_new_soldiers_zhejiang_desc: "在浙江地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
-Recruit_new_soldiers_jiangsu: 0 "在江苏募集新丁"
-Recruit_new_soldiers_jiangsu_desc: 0 "在江苏地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_jiangsu: "在江苏募集新丁"
+Recruit_new_soldiers_jiangsu_desc: "在江苏地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
  
-Recruit_new_soldiers_guizhou: 0 "在贵州募集新丁"
-Recruit_new_soldiers_guizhou_desc: 0 "在贵州地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
+Recruit_new_soldiers_guizhou: "在贵州募集新丁"
+Recruit_new_soldiers_guizhou_desc: "在贵州地区实施征兵计划，短期内获得大量人力，但会导致当地劳动力短缺。"
 
 
 
@@ -311,18 +311,11 @@ S_Mobilize_the_masses: "动员群众"
 S_Under_construction: "施工中"
 
 ###黄埔派系
-CHI_he_clique_tt: 0 "§t何应钦系§!§L，由大部分中央军高级将领与陆军官校毕业生组成，是势力最大同时也最松散的中央军派系。作为原陆军官校总教官，何应钦在中央军内地位仅次于蒋中正，他用自己的方式维持着这支庞大而腐败的军队，反对任何激进的改革。§!\n--------------\n成员包括：[!CHI_he_clique_1_click]"
-CHI_he_power_tt: 0 "[?CHI_he_power|t]"
-CHI_chen_clique_tt:  0 "§3陈诚系§!§L，以土木系为基干，并会聚陈诚的私交好友与中央军旁系将领组成。作风清廉干练的陈诚深受蒋中正信任，又因任人唯贤在中下级军官中颇具威望，他主张革除政府与军队中的腐败，但强硬的手段引起了中央军其他派系的反对。§!\n--------------\n成员包括：[!CHI_chen_clique_1_click]"
-CHI_chen_power_tt: 0 "[?CHI_chen_power|3]"
-CHI_hu_clique_tt: 0 "§8胡宗南系§!§L，以第一军为基干，成员主要以陆官毕业、浙江籍贯、陆大学历或第一军出身为羁绊聚拢组成。作为陆军官校毕业生中最受蒋中正宠爱的一位，胡宗南对部下官兵也多有优待，形成了较强的内部凝聚力，也因此反对陈诚的改革。§!\n--------------\n成员包括：[!CHI_hu_clique_1_click]"
-CHI_hu_power_tt: 0 "[?CHI_hu_power|8]"
-CHI_tang_clique_tt: 0 "§O汤恩伯系§!§L，以第十三军为基干，主要由陆军官校毕业生组成，是中央军内的新兴派系。汤恩伯作为后起之秀，直到中原大战才崭露头角，他主张广泛地收编杂牌部队并支持军队经商，辖下的主力部队具有较强的战斗力，但军纪并不理想。§!\n--------------\n成员包括：[!CHI_tang_clique_1_click]"
-CHI_tang_power_tt: 0 "[?CHI_tang_power|O]"
-CHI_power_of_every_clique_tt: 0 "§t何应钦系§!              §3陈诚系§!               §8胡宗南系§!            §O汤恩伯系§!\n    [?CHI_he_power|%t0..1]                   §3[?CHI_chen_power|%0..1]§!                    §8[?CHI_hu_power|%0..1]§!                     [?CHI_tang_power|%O0..1]"
-CHI_power_of_progressive_and_conservative_tt: 0 "§3改革派§!集团：[GetProgressiveList]\n§t保守派§!集团：[GetConservativeList]\n\n改革派影响力：§3[?CHI_progressive_power|%0..1]§!               保守派影响力：[?CHI_conservative_power|%t0..1]"
-CHI_he_clique: 0 "§t何应钦系§!"
-CHI_chen_clique: 0 "§3陈诚系§!"
-CHI_hu_clique: 0 "§8胡宗南系§!"
-CHI_tang_clique: 0 "§O汤恩伯系§!"
-CHI_he_hu_tang_clique: 0 "§t何应钦系§!、§8胡宗南系§!、§O汤恩伯系§!"
+CHI_he_clique_tt: "§t何应钦系§!§L，何应钦作为长期担任军政部长、参谋总长的人物，他建立了一套覆盖全国军队（含杂牌军）的参谋、后勤、军令体系，是国民党军队名义上的“大管家”。依靠黄埔军校总教官的资历，形成了以他为核心的松散将领联盟。何应钦重视正规化的参谋体系和陆军大学教育，强调“稳扎稳打”。"
+CHI_he_power_tt: "[?CHI_he_power|t]"
+CHI_chen_clique_tt:  "§3陈诚系§!§L，因中原大战功勋卓著，陈诚得到了蒋介石在资源和政策上的全力支持，负责陆军整理工作。陈诚是国民党军队现代化的主要推手。陈诚注重军官的素质与部队的装备，该系主张推行现代化军事改以及建立系统的军官培养体系，在一定程度上提升了中央军的专业化和技术化水平。"
+CHI_chen_power_tt: "[?CHI_chen_power|3]"
+CHI_hu_clique_tt: "§8胡宗南系§!§L，国民革命军第一军是蒋介石的“起家血本”，被称为“天下第一军”。其领导人胡宗南是黄埔一期生中的佼佼者，被称为“天子第一门生”。蒋介石特别注意培养这支部队对自己的忠诚，甚至到了“忽视能力、只看忠心”的地步。第一军的“天下第一”称号，与其说是战斗力，不如说是对蒋介石的忠诚度。"
+CHI_hu_power_tt: "[?CHI_hu_power|8]"
+CHI_tang_clique_tt: "§O汤恩伯系§!§L，汤恩伯并非黄埔出身，但凭借战功和蒋介石的赏识，在中原大战后开始崛起。他代表了中央军中较为“实用主义”的一支。在财政上，由于得不到中央预算的充分倾斜，其部队往往依赖驻地供给，这导致了严重的部队经商和掠夺民财现象。为扩充势力，汤恩伯大量收编地方部队和土匪武装，导致部队成分复杂，军纪废弛。"
+CHI_tang_power_tt: "[?CHI_tang_power|O]"
