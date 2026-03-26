@@ -20,6 +20,74 @@ country_event = {
 	option = { name = CHI.01 }
 }
 
+country_event = {
+	id = CHI_clique_struggle.1
+	hidden = yes
+    fire_only_once = yes
+
+	trigger = {
+        date > 1931.1.2
+    }
+	immediate = {
+		every_owned_leader = {
+            limit = {
+                is_advisor = no          
+                is_commander = yes        
+                has_character_trait = heyingqinxi   
+            }
+			set_variable = { 
+                temp_level1 = skill_level
+            }
+			set_variable = { 
+                CHI_he_power = prev.temp_level1 
+			}
+            clr_temp_var = temp_level1 
+        }
+		every_owned_leader = {
+            limit = {
+                is_advisor = no        
+                is_commander = yes        
+                has_character_trait = chenchengxi   
+            }
+			set_variable = { 
+                temp_level2 = character:THIS.skill_level
+            }
+			set_variable = { 
+                CHI_chen_power = prev.temp_level2 
+			}
+            clr_temp_var = temp_level2 
+        }
+		every_owned_leader = {
+            limit = {
+                is_advisor = no         
+                is_commander = yes       
+                has_character_trait = huzongnanxi   
+            }
+			set_variable = { 
+                temp_level3 = character:THIS.skill  
+            }
+			set_variable = { 
+                CHI_hu_power = prev.temp_level3 
+			}
+            clr_temp_var = temp_level3 
+        }
+		every_owned_leader = {
+            limit = {
+                is_advisor = no          # 不是顾问？
+                is_commander = yes        # 是将领
+                has_character_trait = tangenboxi   # 特质
+            }
+			set_variable = { 
+                temp_level4 = THIS.skill_level   # 获取将领技能等级
+            }
+			set_variable = { 
+                CHI_tang_power = prev.temp_level4 
+			}
+            clr_temp_var = temp_level4 # 清理临时变量（可选）
+        }
+	}
+	option = { name = CHI.01 }
+}
 
 country_event = {
 	id = CHI.1
@@ -52,7 +120,10 @@ country_event = {
 		        }
 			} 
 		} 
-		CHI =  { country_event = { id = CHI.2  days = 3 } }
+		CHI =  { 
+			country_event = { id = CHI.2  days = 3 } 
+			
+		}
 		
 	}
 	option = {

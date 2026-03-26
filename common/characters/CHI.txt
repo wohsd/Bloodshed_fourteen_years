@@ -123,7 +123,10 @@ characters={
 		corps_commander={	
 			desc = CHI_ChenCheng_leader_desc
 
-			traits={offensive_doctrine }
+			traits={
+				chenchengxi
+				offensive_doctrine 
+			}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -147,6 +150,7 @@ characters={
 			available = {
 			}
 			traits = {
+				
 			}
 			cost = 100
 			ai_will_do = {
@@ -156,7 +160,7 @@ characters={
 		corps_commander={	desc = CHI_HeYingQing_leader_desc
 
 			traits={ 
-				CHI_Central_Army
+				heyingqinxi
 			}
 			skill=2
 			attack_skill=2
@@ -746,7 +750,10 @@ characters={
 		}
 		corps_commander={	desc = CHI_TangEnBo_leader_desc
 
-			traits={ Resisting_the_teacher }
+			traits={ 
+				tangenboxi
+				Resisting_the_teacher
+			 }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -819,7 +826,9 @@ characters={
 		}
 		corps_commander={	desc = CHI_HuZongNan_leader_desc
 
-			traits={ }
+			traits={ 
+				huzongnanxi
+			}
 			skill=3
 			attack_skill=2
 			defense_skill=2

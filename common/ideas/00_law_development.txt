@@ -6,6 +6,9 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			picture = laws_education_development
+			available = {
+				education_development_var < 100
+		    }
 			modifier = {
 				research_speed_factor = -0.25
 				custom_modifier_tooltip = education_development_modifier_tooltip
@@ -19,6 +22,10 @@ ideas = {
 			level = 5
 			picture = laws_education_development1
 			default = yes
+			available = {
+				education_development_var > 99
+				education_development_var < 200
+		    }
 			modifier = {
 				research_speed_factor = -0.15
 				custom_modifier_tooltip = education_development_modifier_tooltip
@@ -31,6 +38,10 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			picture = laws_education_development2
+			available = {
+				education_development_var > 199
+				education_development_var < 300
+		    }
 			modifier = {
 				research_speed_factor = -0.05
 				custom_modifier_tooltip = education_development_modifier_tooltip
@@ -43,6 +54,10 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			picture = laws_education_development3
+			available = {
+				education_development_var > 299
+				education_development_var < 400
+		    }
 			modifier = {
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
@@ -54,6 +69,10 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			picture = laws_education_development4
+			available = {
+				education_development_var > 399
+				education_development_var < 500
+		    }
 			modifier = {
 				research_speed_factor = 0.1
 				custom_modifier_tooltip = education_development_modifier_tooltip
@@ -66,6 +85,9 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			picture = laws_education_development5
+			available = {
+				education_development_var > 499
+		    }
 			modifier = {
 				research_speed_factor = 0.25
 				air_ace_generation_chance_factor = 0.2
@@ -85,6 +107,9 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			picture = laws_farming_development
+			available = {
+				farming_development_var < 100
+			}
 			modifier = {
 				consumer_goods_factor = 0.15
 				MONTHLY_POPULATION = -0.5
@@ -101,6 +126,10 @@ ideas = {
 			level = 5
 			picture = laws_farming_development1
 			default = yes
+			available = {
+				farming_development_var > 99
+				farming_development_var < 200
+			}
 			modifier = {
 				consumer_goods_factor = 0.1
 				MONTHLY_POPULATION = -0.3
@@ -116,6 +145,10 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			picture = laws_farming_development2
+			available = {
+				farming_development_var > 199
+				farming_development_var < 300
+			}
 			modifier = {
 				consumer_goods_factor = 0.05
 				MONTHLY_POPULATION = -0.1
@@ -130,6 +163,10 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			picture = laws_farming_development3
+			available = {
+				farming_development_var > 299
+				farming_development_var < 400
+			}
 			modifier = {
 				MONTHLY_POPULATION = 0.1
 				local_resources_factor = 0.1
@@ -144,6 +181,10 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			picture = laws_farming_development4
+			available = {
+				farming_development_var > 399
+				farming_development_var < 500
+			}
 			modifier = {
 				consumer_goods_factor = -0.05
 				MONTHLY_POPULATION = 0.3
@@ -159,6 +200,9 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			picture = laws_farming_development5
+			available = {
+				farming_development_var > 499
+			}
 			modifier = {
 				consumer_goods_factor = -0.1
 				MONTHLY_POPULATION = 0.5
@@ -178,6 +222,9 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			picture = laws_social_development
+			available = {
+				social_development_var < 100
+			}
 			modifier = {
 				stability_factor = -0.2
 				production_speed_industrial_complex_factor = -0.05
@@ -193,6 +240,10 @@ ideas = {
 			level = 5
 			picture = laws_social_development1
 			default = yes
+			available = {
+				social_development_var > 99
+				social_development_var < 200
+			}
 			modifier = {
 				stability_factor = -0.15
 				custom_modifier_tooltip = social_development_modifier_tooltip
@@ -205,6 +256,10 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			picture = laws_social_development2
+			available = {
+				social_development_var > 199
+				social_development_var < 300
+			}
 			modifier = {
 				stability_factor = -0.1
 				production_speed_industrial_complex_factor = 0.05
@@ -219,6 +274,10 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			picture = laws_social_development3
+			available = {
+				social_development_var > 299
+				social_development_var < 400
+			}
 			modifier = {
 				stability_factor = -0.05
 				neutrality_drift = -0.05
@@ -234,6 +293,10 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			picture = laws_social_development4
+			available = {
+				social_development_var > 399
+				social_development_var < 500
+			}
 			modifier = {
 				neutrality_drift = -0.10
 				production_speed_industrial_complex_factor = 0.15
@@ -248,6 +311,9 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			picture = laws_social_development5
+			available = {
+				social_development_var > 499
+			}
 			modifier = {
 				stability_weekly = 0.01
 				neutrality_drift = -0.15
@@ -269,6 +335,9 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			picture = laws_industry_development
+			available = {
+				industrial_development_var < 100
+			}
 			modifier = {
 				production_speed_rail_way_factor = -0.2
 				production_speed_infrastructure_factor = -0.2
@@ -289,6 +358,10 @@ ideas = {
 			level = 5
 			picture = laws_industry_development1
 			default = yes
+			available = {
+				industrial_development_var > 99
+				industrial_development_var < 200
+			}
 			modifier = {
 				production_speed_rail_way_factor = -0.15
 				production_speed_infrastructure_factor = -0.15
@@ -308,6 +381,10 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			picture = laws_industry_development2
+			available = {
+				industrial_development_var > 199
+				industrial_development_var < 300
+			}
 			modifier = {
 				production_speed_rail_way_factor = -0.1
 				production_speed_infrastructure_factor = -0.1
@@ -327,6 +404,10 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			picture = laws_industry_development3
+			available = {
+				industrial_development_var > 299
+				industrial_development_var < 400
+			}
 			modifier = {
 				production_speed_rail_way_factor = -0.05
 				production_speed_infrastructure_factor = -0.05
@@ -346,6 +427,10 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			picture = laws_industry_development4
+			available = {
+				industrial_development_var > 399
+				industrial_development_var < 500
+			}
 			modifier = {
 				
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
@@ -358,6 +443,9 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			picture = laws_industry_development5
+			available = {
+				industrial_development_var > 499
+			}
 			modifier = {
 				production_speed_rail_way_factor = 0.05
 				production_speed_infrastructure_factor = 0.05
@@ -381,6 +469,9 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			picture = laws_military_development
+			available = {
+				military_development_var < 100
+			}
 			modifier = {
 				conscription_total_factor = 0.2
 				training_time_army_factor = -0.2
@@ -400,6 +491,10 @@ ideas = {
 			level = 5
 			picture = laws_military_development1
 			default = yes
+			available = {
+				military_development_var > 99
+				military_development_var < 200
+			}
 			modifier = {
 				conscription_total_factor = 0.1
 				training_time_army_factor = -0.1
@@ -418,6 +513,10 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			picture = laws_military_development2
+			available = {
+				military_development_var > 199
+				military_development_var < 300
+			}
 			modifier = {
 				training_time_army_factor = 0.1
 				army_attack_factor = 0.05
@@ -432,6 +531,10 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			picture = laws_military_development3
+			available = {
+				military_development_var > 299
+				military_development_var < 400
+			}
 			modifier = {
 				training_time_army_factor = 0.2
 				army_org_factor = 0.4
@@ -447,6 +550,10 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			picture = laws_military_development4
+			available = {
+				military_development_var > 399
+				military_development_var < 500
+			}
 			allowed_to_remove = {
 				development = yes
 			}
@@ -471,6 +578,9 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			picture = laws_military_development5
+			available = {
+				military_development_var > 499
+			}
 			allowed_to_remove = {
 				development = yes
 			}
@@ -499,12 +609,15 @@ ideas = {
 			removal_cost = -1
 			level = 6
 			picture = laws_medical_development
+			available = {
+				medical_development_var < 100
+			}
 			modifier = {
 				experience_loss_factor = 0.45
 				air_wing_xp_loss_when_killed_factor = 0.45
 				sickness_chance =  0.2
 				monthly_population = -0.6
-				license_tech_difference_speed = 0.2
+				license_infantry_eq_production_speed_factor = 0.5
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -515,7 +628,11 @@ ideas = {
 			removal_cost = -1
 			level = 5
 			picture = laws_medical_development1
-			default = yes 
+			default = yes
+			available = {
+				medical_development_var > 99
+				medical_development_var < 200
+			}
 			modifier = {
 				experience_loss_factor = 0.30
 				air_wing_xp_loss_when_killed_factor = 0.30
@@ -531,11 +648,14 @@ ideas = {
 			removal_cost = -1
 			level = 4
 			picture = laws_medical_development2
+			available = {
+				medical_development_var > 199
+				medical_development_var < 300
+			}
 			modifier = {
 				experience_loss_factor = 0.15
 				air_wing_xp_loss_when_killed_factor = 0.15
 				monthly_population = -0.2
-				license_infantry_eq_production_speed_factor = -0.5
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -546,8 +666,11 @@ ideas = {
 			removal_cost = -1
 			level = 3
 			picture = laws_medical_development3
+			available = {
+				medical_development_var > 299
+				medical_development_var < 400
+			}
 			modifier = {
-				license_infantry_eq_production_speed_factor = -0.5
 				sickness_chance =  -0.1
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
@@ -559,6 +682,10 @@ ideas = {
 			removal_cost = -1
 			level = 2
 			picture = laws_medical_development4
+			available = {
+				medical_development_var > 399
+				medical_development_var < 500
+			}
 			modifier = {
 				experience_loss_factor = -0.15
 				air_wing_xp_loss_when_killed_factor = -0.15
@@ -574,6 +701,9 @@ ideas = {
 			removal_cost = -1
 			level = 1
 			picture = laws_medical_development5
+			available = {
+				medical_development_var > 499
+			}
 			modifier = {
 				experience_loss_factor = -0.3
 				air_wing_xp_loss_when_killed_factor = -0.3

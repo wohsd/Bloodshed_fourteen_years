@@ -137,6 +137,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CHI/CHI_navy.png"
 	}
 	spriteType = {
+		name = "GFX_idea_Republic_of_China_Military_Academy"
+		texturefile = "gfx/interface/ideas/CHI/Republic_of_China_Military_Academy.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_Mao_Jewish_coalition_army"
 		texturefile = "gfx/interface/ideas/YGC/Mao_Jewish_coalition_army.dds"
 	}

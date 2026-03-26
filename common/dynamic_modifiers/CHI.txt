@@ -156,3 +156,32 @@ CHI_navy= {
 	naval_invasion_prep_speed = CHI_navy_naval_invasion_prep_speed #0.15
 
 }
+Republic_of_China_Military_Academy= {
+	icon = "GFX_idea_Republic_of_China_Military_Academy"
+	enable = {
+		always = yes
+	}
+	#何应钦（保守官僚，长期稳定战线）
+	supply_consumption_factor = Republic_of_China_Military_Academy_supply_consumption_factor #补给消耗
+	supply_node_range = Republic_of_China_Military_Academy_supply_node_range #补给范围
+	max_dig_in = Republic_of_China_Military_Academy_max_dig_in #堑壕上限
+	high_command_cost_factor = Republic_of_China_Military_Academy_high_command_cost_factor #总司令（官僚体系固化，debuff）
+    #陈诚（军改与反腐，发展与建设）
+	experience_gain_army_factor = Republic_of_China_Military_Academy_experience_gain_army_factor #陆军经验增长（百分比）
+	consumer_goods_factor = Republic_of_China_Military_Academy_consumer_goods_factor #生活消费品
+	political_power_factor = Republic_of_China_Military_Academy_political_power_factor #政治点（百分比）（受到其他派系施压，debuff）
+	#胡宗南（忠诚与统一，统一战争）
+	targeted_modifier = {
+		tag = JAP
+		attack_bonus_against = -Republic_of_China_Military_Academy_army_factor #我国对日攻击修正
+		defense_bonus_against = -Republic_of_China_Military_Academy_army_factor #我国对日防御修正
+	}
+	army_attack_factor =Republic_of_China_Military_Academy_army_factor #单位攻击
+    army_defence_factor =Republic_of_China_Military_Academy_army_factor #单位防御
+	experience_gain_factor = Republic_of_China_Military_Academy_experience_gain_factor #将领经验增长（注重忠诚而非能力，debuff）
+	#汤恩伯（非正规部队，爆兵短期稳定战线）
+	modifier_army_sub_unit_irregular_infantry_attack_factor = Republic_of_China_Military_Academy_irregular_infantry
+	modifier_army_sub_unit_irregular_infantry_defence_factor = Republic_of_China_Military_Academy_irregular_infantry
+	modifier_army_sub_unit_irregular_infantry_max_org_factor = Republic_of_China_Military_Academy_irregular_infantry_org
+	production_speed_buildings_factor = production_speed_buildings_factor #建造速度（土匪部队破坏发展，debuff）
+}

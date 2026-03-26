@@ -1,0 +1,57 @@
+scripted_gui = {
+	clique_struggle = {
+		window_name = "clique_struggle_gui"
+		context_type = decision_category
+		effects = {
+			CHI_he_clique_1_click = {
+				character_list_tooltip = {
+					limit = { has_character_flag = chi_he_clique_flag }
+				}
+			}
+			CHI_chen_clique_1_click = {
+				character_list_tooltip = {
+					limit = { has_character_flag = chi_chen_clique_flag }
+				}
+			}
+			CHI_hu_clique_1_click = {
+				character_list_tooltip = {
+					limit = { has_character_flag = chi_hu_clique_flag }
+				}
+			}
+			CHI_tang_clique_1_click = {
+				character_list_tooltip = {
+					limit = { has_character_flag = chi_tang_clique_flag }
+				}
+			}
+		}
+		triggers = {
+			CHI_he_clique_1_visible = {
+				NOT = { has_global_flag = chi_recruitment_before_civil_war_flag }
+			}
+			CHI_he_clique_2_visible = {
+				has_global_flag = chi_recruitment_before_civil_war_flag
+			}
+			CHI_chen_clique_1_visible = {
+				NOT = { has_global_flag = chi_recruitment_before_civil_war_flag }
+			}
+			CHI_chen_clique_2_visible = {
+				has_global_flag = chi_recruitment_before_civil_war_flag
+			}
+			CHI_hu_clique_1_visible = {
+				NOT = { has_global_flag = chi_recruitment_before_civil_war_flag }
+			}
+			CHI_hu_clique_2_visible = {
+				has_global_flag = chi_recruitment_before_civil_war_flag
+			}
+			CHI_tang_clique_1_visible = {
+				NOT = { has_global_flag = chi_recruitment_before_civil_war_flag }
+			}
+			CHI_tang_clique_2_visible = {
+				has_global_flag = chi_recruitment_before_civil_war_flag
+			}
+		}
+		ai_enabled = {
+			always = no
+		}
+	}
+}
