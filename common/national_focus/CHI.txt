@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = Victory_of_the_National_Revolution
-		x = 81
+		x = 74
 		y = 1
 		cost = 2
 		icon = GFX_kmt01
@@ -24,7 +24,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Modernize_Military_Reform
-		x = 41
+		x = 48
 		y = 10
 		cost = 7
 		icon = GFX_kmt_66
@@ -36,8 +36,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_1
-		x = 72
-		y = 10
+		x = 52
+		y = 15
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -67,7 +67,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Democracy_Over_Autocracy
-		x = 27
+		x = 29
 		y = 1
 		cost = 5
 		icon = GFX_kmt02
@@ -100,8 +100,8 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Fourth_National_Congress
-		x = 27
-		y = 2
+		x = 0
+		y = 1
 		cost = 2
 		icon = GFX_focus_AUS_disregard_the_treaties
 		continue_if_invalid = no
@@ -122,11 +122,12 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		relative_position_id = Democracy_Over_Autocracy
 	}
 	focus = {
 		id = Hu_Hanmin_Leadership
-		x = 20
-		y = 3
+		x = -19
+		y = 1
 		cost = 2
 		icon = GFX_kmt04
 		continue_if_invalid = no
@@ -144,11 +145,12 @@ focus_tree = {
 				value = 0.2
 			}
 		}
+		relative_position_id = The_Fourth_National_Congress
 	}
 	focus = {
 		id = Liao_Zhongkai_Issue
-		x = 38
-		y = 4
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt05
 		continue_if_invalid = no
@@ -162,11 +164,12 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		relative_position_id = The_Fourth_National_Congress
 	}
 	focus = {
 		id = Stabilize_Political_Situation
-		x = 34
-		y = 5
+		x = -4
+		y = 1
 		cost = 7
 		icon = GFX_kmt_42
 		continue_if_invalid = no
@@ -180,11 +183,12 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		relative_position_id = Liao_Zhongkai_Issue
 	}
 	focus = {
 		id = Ensure_Party_Stability
-		x = 32
-		y = 6
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_focus_ARG_defense_and_democracy
 		continue_if_invalid = no
@@ -192,11 +196,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Stabilize_Political_Situation
 		}
+		relative_position_id = Stabilize_Political_Situation
 	}
 	focus = {
 		id = Establish_Committee_76
-		x = 29
-		y = 7
+		x = -5
+		y = 2
 		cost = 7
 		icon = GFX_kmt_88
 		continue_if_invalid = no
@@ -204,11 +209,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Ensure_Party_Stability
 		}
+		relative_position_id = Stabilize_Political_Situation
 	}
 	focus = {
 		id = Expand_Anti_Chiang_Coalition
-		x = 31
-		y = 7
+		x = -3
+		y = 2
 		cost = 7
 		icon = GFX_kmt_89
 		continue_if_invalid = no
@@ -216,11 +222,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Ensure_Party_Stability
 		}
+		relative_position_id = Stabilize_Political_Situation
 	}
 	focus = {
 		id = Win_Over_Grassroots_Officials
-		x = 33
-		y = 7
+		x = -1
+		y = 2
 		cost = 7
 		icon = GFX_kmt_90
 		continue_if_invalid = no
@@ -228,11 +235,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Ensure_Party_Stability
 		}
+		relative_position_id = Stabilize_Political_Situation
 	}
 	focus = {
 		id = Gain_Public_Support
-		x = 36
-		y = 6
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_focus_FIN_socialist_welfare
 		continue_if_invalid = no
@@ -240,11 +248,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Stabilize_Political_Situation
 		}
+		relative_position_id = Stabilize_Political_Situation
 	}
 	focus = {
 		id = Strengthen_Media_Censorship
-		x = 35
-		y = 7
+		x = 1
+		y = 2
 		cost = 7
 		icon = GFX_focus_BRA_repeale_national_security_law
 		continue_if_invalid = no
@@ -252,11 +261,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Gain_Public_Support
 		}
+		relative_position_id = Stabilize_Political_Situation
 	}
 	focus = {
 		id = Expand_Anti_Chiang_Propaganda
-		x = 37
-		y = 7
+		x = 3
+		y = 2
 		cost = 7
 		icon = GFX_focus_prc_remove_chiang_kai_shek
 		continue_if_invalid = no
@@ -264,11 +274,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Gain_Public_Support
 		}
+		relative_position_id = Stabilize_Political_Situation
 	}
 	focus = {
 		id = Fate_of_the_Four_Families
-		x = 38
-		y = 5
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_focus_GER_strengthen_the_proletarian_international
 		continue_if_invalid = no
@@ -276,11 +287,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Liao_Zhongkai_Issue
 		}
+		relative_position_id = Liao_Zhongkai_Issue
 	}
 	focus = {
 		id = Stabilize_Military_Morale
-		x = 43
-		y = 5
+		x = 4
+		y = 1
 		cost = 7
 		icon = GFX_focus_generic_advanced_military_studies
 		continue_if_invalid = no
@@ -294,11 +306,12 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		relative_position_id = Liao_Zhongkai_Issue
 	}
 	focus = {
 		id = Warlords_Demands
-		x = 41
-		y = 6
+		x = -2
+		y = 1
 		cost = 2
 		icon = GFX_focus_GER_support_the_proletarian_uprising
 		continue_if_invalid = no
@@ -306,11 +319,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Stabilize_Military_Morale
 		}
+		relative_position_id = Stabilize_Military_Morale
 	}
 	focus = {
 		id = Strengthen_Cooperation_with_Yue_Gui
-		x = 40
-		y = 7
+		x = -3
+		y = 2
 		cost = 7
 		icon = GFX_kmt_62
 		continue_if_invalid = no
@@ -318,11 +332,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Warlords_Demands
 		}
+		relative_position_id = Stabilize_Military_Morale
 	}
 	focus = {
 		id = Pacify_Local_Warlords
-		x = 42
-		y = 7
+		x = -1
+		y = 2
 		cost = 7
 		icon = GFX_kmt_83
 		continue_if_invalid = no
@@ -330,6 +345,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Warlords_Demands
 		}
+		relative_position_id = Stabilize_Military_Morale
 	}
 	focus = {
 		id = Reorganize_National_Revolutionary_Army
@@ -518,7 +534,7 @@ focus_tree = {
 			hidden_effect = {
 				214 = {
 					create_unit = {
-						division =  "国民革命军第八十七师"
+						division = "国民革命军第八十七师"
 						division_template = "德械师"
 						start_experience_factor = 0.8
 						owner = CHI
@@ -536,7 +552,7 @@ focus_tree = {
 					create_unit = {
 						division = "国民革命军第三十六师"
 						division_template = "德械师"
-					    start_experience_factor = 0.8
+						start_experience_factor = 0.8
 						owner = CHI
 						add_core_of = CHI
 						prioritize_location = 2957
@@ -548,8 +564,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Necessity_of_National_Army
-		x = 46
-		y = 6
+		x = 3
+		y = 1
 		cost = 2
 		icon = GFX_kmt_84
 		continue_if_invalid = no
@@ -557,11 +573,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Stabilize_Military_Morale
 		}
+		relative_position_id = Stabilize_Military_Morale
 	}
 	focus = {
 		id = Suppress_Chiang_Faction
-		x = 44
-		y = 7
+		x = 1
+		y = 2
 		cost = 7
 		icon = GFX_kmt_85
 		continue_if_invalid = no
@@ -569,6 +586,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Necessity_of_National_Army
 		}
+		relative_position_id = Stabilize_Military_Morale
 	}
 	focus = {
 		id = Chinese_Hindenburg_Line
@@ -588,8 +606,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Win_Over_Neutral_Officers
-		x = 46
-		y = 7
+		x = 3
+		y = 2
 		cost = 7
 		icon = GFX_kmt_87
 		continue_if_invalid = no
@@ -597,6 +615,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Necessity_of_National_Army
 		}
+		relative_position_id = Stabilize_Military_Morale
 	}
 	focus = {
 		id = Establish_Munitions_Department
@@ -646,8 +665,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Cultivate_Loyal_Officers
-		x = 48
-		y = 7
+		x = 5
+		y = 2
 		cost = 7
 		icon = GFX_kmt_86
 		continue_if_invalid = no
@@ -655,6 +674,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Necessity_of_National_Army
 		}
+		relative_position_id = Stabilize_Military_Morale
 	}
 	focus = {
 		id = Establish_Central_Military_Academy
@@ -680,8 +700,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_2
-		x = 61
-		y = 11
+		x = -11
+		y = 1
 		cost = 10
 		icon = GFX_focus_generic_democratic_europe
 		continue_if_invalid = no
@@ -709,11 +729,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_1
 	}
 	focus = {
 		id = CHIFocus_7
-		x = 61
-		y = 12
+		x = 0
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -729,11 +750,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_2
 	}
 	focus = {
 		id = CHIFocus_12
-		x = 61
-		y = 13
+		x = 0
+		y = 1
 		cost = 10
 		icon = GFX_focus_GER_subdue_the_wehrmacht
 		continue_if_invalid = no
@@ -755,11 +777,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_7
 	}
 	focus = {
 		id = Wang_Jingwei_Leadership
-		x = 62
-		y = 3
+		x = 23
+		y = 1
 		cost = 2
 		icon = GFX_kmt07
 		continue_if_invalid = no
@@ -783,11 +806,12 @@ focus_tree = {
 				value = 0.2
 			}
 		}
+		relative_position_id = The_Fourth_National_Congress
 	}
 	focus = {
 		id = Redraft_Party_Program
-		x = 62
-		y = 4
+		x = 0
+		y = 1
 		cost = 2
 		icon = GFX_kmt35
 		continue_if_invalid = no
@@ -804,11 +828,12 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		relative_position_id = Wang_Jingwei_Leadership
 	}
 	focus = {
 		id = Special_Parliament_Leader_Hu_Hanmin
-		x = 52
-		y = 5
+		x = -10
+		y = 2
 		cost = 7
 		icon = GFX_kmt_48
 		continue_if_invalid = no
@@ -822,11 +847,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
+		relative_position_id = Wang_Jingwei_Leadership
 	}
 	focus = {
 		id = Support_from_the_Gun
-		x = 50
-		y = 6
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_focus_focus_fra_maquis
 		continue_if_invalid = no
@@ -834,11 +860,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
+		relative_position_id = Special_Parliament_Leader_Hu_Hanmin
 	}
 	focus = {
 		id = Power_of_the_Pen
-		x = 54
-		y = 6
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_focus_GER_rally_the_industrialists
 		continue_if_invalid = no
@@ -846,11 +873,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Special_Parliament_Leader_Hu_Hanmin
 		}
+		relative_position_id = Special_Parliament_Leader_Hu_Hanmin
 	}
 	focus = {
 		id = Land_Equalization
-		x = 58
-		y = 5
+		x = -4
+		y = 1
 		cost = 7
 		icon = GFX_kmt34
 		continue_if_invalid = no
@@ -858,11 +886,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Impose_Land_Value_Tax
-		x = 56
-		y = 6
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_kmt36
 		continue_if_invalid = no
@@ -870,11 +899,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Land_Equalization
 		}
+		relative_position_id = Land_Equalization
 	}
 	focus = {
 		id = Reorganize_Kuomintang
-		x = 62
-		y = 5
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt39
 		continue_if_invalid = no
@@ -882,11 +912,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Crackdown_on_Corruption
-		x = 60
-		y = 6
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_kmt40
 		continue_if_invalid = no
@@ -894,11 +925,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Reorganize_Kuomintang
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Strengthen_Party_Authority
-		x = 62
-		y = 6
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt41
 		continue_if_invalid = no
@@ -906,11 +938,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Reorganize_Kuomintang
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Restore_Worker_Peasant_Policies
-		x = 64
-		y = 6
+		x = 2
+		y = 2
 		cost = 7
 		icon = GFX_kmt42
 		continue_if_invalid = no
@@ -918,11 +951,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Reorganize_Kuomintang
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Rebirth_of_Kuomintang
-		x = 62
-		y = 7
+		x = 0
+		y = 3
 		cost = 7
 		icon = GFX_kmt43
 		continue_if_invalid = no
@@ -936,11 +970,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Crackdown_on_Corruption
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = CHIFocus_4
-		x = 64
-		y = 12
+		x = 3
+		y = 1
 		cost = 10
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		continue_if_invalid = no
@@ -984,11 +1019,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_2
 	}
 	focus = {
 		id = CHIFocus_8
-		x = 64
-		y = 13
+		x = 0
+		y = 1
 		cost = 10
 		icon = GFX_focus_generic_cas_aircraft
 		continue_if_invalid = no
@@ -1005,11 +1041,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_4
 	}
 	focus = {
 		id = CHIFocus_9
-		x = 66
-		y = 13
+		x = 2
+		y = 1
 		cost = 10
 		icon = GFX_focus_SOV_the_road_of_life
 		continue_if_invalid = no
@@ -1020,11 +1057,12 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = China_Soviet_Road_category
 		}
+		relative_position_id = CHIFocus_4
 	}
 	focus = {
 		id = CHIFocus_13
-		x = 64
-		y = 14
+		x = 0
+		y = 2
 		cost = 10
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		continue_if_invalid = no
@@ -1054,11 +1092,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_4
 	}
 	focus = {
 		id = Regulate_Capital
-		x = 66
-		y = 5
+		x = 4
+		y = 1
 		cost = 7
 		icon = GFX_kmt46
 		continue_if_invalid = no
@@ -1066,11 +1105,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Redraft_Party_Program
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Develop_National_Capital
-		x = 66
-		y = 6
+		x = 4
+		y = 2
 		cost = 7
 		icon = GFX_kmt45
 		continue_if_invalid = no
@@ -1078,11 +1118,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Regulate_Capital
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Restrict_Private_Capital
-		x = 68
-		y = 6
+		x = 6
+		y = 2
 		cost = 7
 		icon = GFX_kmt44
 		continue_if_invalid = no
@@ -1090,11 +1131,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Regulate_Capital
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Revitalize_Industry_Develop_Resources
-		x = 66
-		y = 7
+		x = 4
+		y = 3
 		cost = 7
 		icon = GFX_kmt47
 		continue_if_invalid = no
@@ -1105,6 +1147,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Restrict_Private_Capital
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Internal_Pacification_Before_Resistance
@@ -1131,7 +1174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Order_Warlords_to_Attack
-		x = -1
+		x = -3
 		y = 2
 		cost = 7
 		icon = GFX_kmt_81
@@ -1146,74 +1189,15 @@ focus_tree = {
 		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
-		id = Organize_Expeditionary_Force
-		x = 1
-		y = 3
-		cost = 7
-		icon = GFX_kmt_43
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		available = {
-			582 = {
-				is_controlled_by = CHI
-			}
-			583 = {
-				is_controlled_by = CHI
-			}
-			585 = {
-				is_controlled_by = CHI
-			}
-			595 = {
-				is_controlled_by = CHI
-			}
-			589 = {
-				is_controlled_by = CHI
-			}
-			598 = {
-				is_controlled_by = CHI
-			}
-		}
-		prerequisite = {
-			focus = CHI_focus_4
-		}
-		completion_reward = {
-			582 = {
-				add_resistance = -10
-				set_garrison_strength = 0.5
-			}
-			583 = {
-				add_resistance = -10
-				set_garrison_strength = 0.5
-			}
-			585 = {
-				add_resistance = -10
-				set_garrison_strength = 0.5
-			}
-			595 = {
-				add_resistance = -10
-				set_garrison_strength = 0.5
-			}
-			589 = {
-				add_resistance = -10
-				set_garrison_strength = 0.5
-			}
-			598 = {
-				add_resistance = -10
-				set_garrison_strength = 0.5
-			}
-		}
-		relative_position_id = Internal_Pacification_Before_Resistance
-	}
-	focus = {
 		id = German_Positional_Tactics
-		x = -3
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt_54
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_focus_13
+			focus = Internal_Pacification_Before_Resistance
 		}
 		completion_reward = {
 			add_command_power = 20
@@ -1348,8 +1332,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_17
-		x = 75
-		y = 11
+		x = 3
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -1369,11 +1353,12 @@ focus_tree = {
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 		}
+		relative_position_id = CHIFocus_1
 	}
 	focus = {
 		id = CHIFocus_20
-		x = 75
-		y = 12
+		x = 3
+		y = 2
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -1385,11 +1370,12 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_BaiCongXi_H
 		}
+		relative_position_id = CHIFocus_1
 	}
 	focus = {
 		id = CHIFocus_18
-		x = 71
-		y = 13
+		x = -4
+		y = 1
 		cost = 10
 		icon = GFX_focus_GER_kdf_wagen
 		continue_if_invalid = no
@@ -1597,11 +1583,12 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_relocate_industry_repair_tt
 		}
+		relative_position_id = CHIFocus_20
 	}
 	focus = {
 		id = CHIFocus_21
-		x = 75
-		y = 14
+		x = 0
+		y = 2
 		cost = 10
 		icon = GFX_focus_FIN_motti_tactics
 		continue_if_invalid = no
@@ -1615,11 +1602,12 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_XueYue_H
 		}
+		relative_position_id = CHIFocus_20
 	}
 	focus = {
 		id = CHIFocus_25
-		x = 74
-		y = 15
+		x = -1
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -1671,11 +1659,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_21
 	}
 	focus = {
 		id = CHIFocus_26
-		x = 76
-		y = 15
+		x = 1
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -1719,11 +1708,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_21
 	}
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
-		x = 103
-		y = 1
+		x = 0
+		y = 4
 		cost = 5
 		icon = GFX_kmt03
 		continue_if_invalid = no
@@ -1733,6 +1723,18 @@ focus_tree = {
 				has_country_flag = jiangjieshi_gg
 			}
 		}
+		mutually_exclusive = {
+			focus = Convene_National_Congress
+		}
+		prerequisite = {
+			focus = CHI_focus_6
+		}
+		prerequisite = {
+			focus = CHI_focus_4
+		}
+		prerequisite = {
+			focus = Expand_Local_Influence
+		}
 		completion_reward = {
 			add_trait = {
 				character = CHI_JiangJieShi
@@ -1741,206 +1743,18 @@ focus_tree = {
 			}
 			custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
 		}
-	}
-	focus = {
-		id = Interests_of_Four_Families
-		x = 103
-		y = 2
-		cost = 2
-		icon = GFX_focus_GER_ally_chiang_kai_shek
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Chiang_Kai_shek_Consolidates_Power
-		}
-		completion_reward = {
-			add_to_variable = {
-				CHI_political_power_gain = 0.1
-			}
-			add_to_variable = {
-				CHI_consumer_goods_factor = -0.05
-			}
-			custom_effect_tooltip = Interests_of_Four_Families_tooltip
-		}
-	}
-	focus = {
-		id = Soong_Sisters_Kong_Family_Wealth
-		x = -13
-		y = 1
-		cost = 2
-		icon = GFX_kmt_74
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Interests_of_Four_Families
-		}
-		completion_reward = {
-			add_ideas = SongMeiLing
-			add_to_variable = {
-				CHI_political_power_gain = 0.1
-			}
-			add_to_variable = {
-				CHI_consumer_goods_factor = -0.05
-			}
-		}
-		relative_position_id = Interests_of_Four_Families
-	}
-	focus = {
-		id = Control_National_Economy
-		x = -2
-		y = 1
-		cost = 7
-		icon = GFX_focus_CHL_silverworking
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Soong_Sisters_Kong_Family_Wealth
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
-	}
-	focus = {
-		id = Agricultural_Adjustment_Committee
-		x = -3
-		y = 2
-		cost = 7
-		icon = GFX_focus_CHL_focus_on_cattle_and_wool
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Control_National_Economy
-		}
-		completion_reward = {
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-			random_core_state = {
-				if = {
-					limit = {
-						has_state_category = rural
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			random_core_state = {
-				if = {
-					limit = {
-						has_state_category = rural
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
-	}
-	focus = {
-		id = Establish_Trade_Committee
-		x = -1
-		y = 2
-		cost = 7
-		icon = GFX_focus_BRA_rio_protocol
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Control_National_Economy
-		}
-		completion_reward = {
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
-	}
-	focus = {
-		id = Economic_Reforms
-		x = 2
-		y = 1
-		cost = 7
-		icon = GFX_focus_ETH_adopt_the_lira
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Soong_Sisters_Kong_Family_Wealth
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
-	}
-	focus = {
-		id = Establish_Four_United_Bureau
-		x = 1
-		y = 2
-		cost = 7
-		icon = GFX_focus_DEN_heavy_regulations
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Economic_Reforms
-		}
-		completion_reward = {
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
-	}
-	focus = {
-		id = Issue_High_Interest_Loans
-		x = 3
-		y = 2
-		cost = 7
-		icon = GFX_focus_DEN_no_regulations
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Economic_Reforms
-		}
-		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 2
-			}
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
+		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = Announce_Political_Tutelage
-		x = 0
+		x = 8
 		y = 1
 		cost = 7
 		icon = GFX_kmt_44
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Interests_of_Four_Families
+			focus = Victory_of_the_National_Revolution
 		}
 		completion_reward = {
 			remove_ideas = The_winner_Central
@@ -1971,12 +1785,12 @@ focus_tree = {
 				max = 100
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Victory_of_the_National_Revolution
 	}
 	focus = {
 		id = National_Education
 		x = -6
-		y = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_51
 		continue_if_invalid = no
@@ -1990,12 +1804,12 @@ focus_tree = {
 			}
 			National_literacy_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Announce_Political_Tutelage
 	}
 	focus = {
 		id = Improve_Education_System
-		x = -8
-		y = 3
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_focus_generic_university_3
 		continue_if_invalid = no
@@ -2018,12 +1832,12 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Education
 	}
 	focus = {
 		id = Build_Central_Research_Academy
-		x = -4
-		y = 3
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_44
 		continue_if_invalid = no
@@ -2045,12 +1859,12 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Education
 	}
 	focus = {
 		id = Government_Organization
 		x = 0
-		y = 2
+		y = 1
 		cost = 7
 		icon = GFX_focus_ARG_keep_it_in_the_party
 		continue_if_invalid = no
@@ -2065,12 +1879,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Announce_Political_Tutelage
 	}
 	focus = {
 		id = Announce_Political_Tutelage_Program
 		x = -2
-		y = 3
+		y = 1
 		cost = 7
 		icon = GFX_focus_BRA_tribunal
 		continue_if_invalid = no
@@ -2089,12 +1903,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Government_Organization
 	}
 	focus = {
 		id = Implement_Five_Power_System
 		x = 0
-		y = 3
+		y = 1
 		cost = 7
 		icon = GFX_focus_AUS_lawmaking_leniency
 		continue_if_invalid = no
@@ -2113,12 +1927,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Government_Organization
 	}
 	focus = {
 		id = Define_Chairman_Authority
 		x = 0
-		y = 4
+		y = 2
 		cost = 7
 		icon = GFX_kmt_68
 		continue_if_invalid = no
@@ -2141,12 +1955,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Government_Organization
 	}
 	focus = {
 		id = National_Government_Organization_Law
 		x = -2
-		y = 4
+		y = 2
 		cost = 7
 		icon = GFX_focus_ETH_re-convene_the_parliament
 		continue_if_invalid = no
@@ -2165,12 +1979,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Government_Organization
 	}
 	focus = {
 		id = Local_Equal_Authority_System
 		x = 2
-		y = 3
+		y = 1
 		cost = 7
 		icon = GFX_focus_BEL_government_resigns
 		continue_if_invalid = no
@@ -2192,12 +2006,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Government_Organization
 	}
 	focus = {
 		id = Draft_Local_Laws
 		x = 2
-		y = 4
+		y = 2
 		cost = 7
 		icon = GFX_focus_generic_court
 		continue_if_invalid = no
@@ -2216,12 +2030,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Government_Organization
 	}
 	focus = {
 		id = Consolidate_Republics_Governance
 		x = 0
-		y = 5
+		y = 3
 		cost = 7
 		icon = GFX_kmt_50
 		continue_if_invalid = no
@@ -2245,12 +2059,12 @@ focus_tree = {
 			}
 			Government_efficiency_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Government_Organization
 	}
 	focus = {
 		id = National_Livelihood
 		x = 6
-		y = 2
+		y = 1
 		cost = 7
 		icon = GFX_focus_BRA_coffee_crisis
 		continue_if_invalid = no
@@ -2264,12 +2078,12 @@ focus_tree = {
 			}
 			National_economy_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Announce_Political_Tutelage
 	}
 	focus = {
 		id = Large_scale_Transport_Construction
-		x = 4
-		y = 3
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_focus_BEL_engine_of_the_economy
 		continue_if_invalid = no
@@ -2284,12 +2098,12 @@ focus_tree = {
 			National_economy_add = yes
 			unlock_decision_category_tooltip = CHI_Railroad_construction_category
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Livelihood
 	}
 	focus = {
 		id = Unified_Tax_Reform
-		x = 6
-		y = 3
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_focus_ARG_anti_corruption_policies
 		continue_if_invalid = no
@@ -2309,12 +2123,12 @@ focus_tree = {
 			}
 			National_economy_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Livelihood
 	}
 	focus = {
 		id = Agricultural_Development_Plan
-		x = 8
-		y = 3
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_focus_BRA_amazon_colonization
 		continue_if_invalid = no
@@ -2350,12 +2164,12 @@ focus_tree = {
 				}
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Livelihood
 	}
 	focus = {
 		id = Five_Year_Heavy_Industry_Plan
-		x = 4
-		y = 4
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
 		continue_if_invalid = no
@@ -2375,12 +2189,12 @@ focus_tree = {
 			}
 			National_economy_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Livelihood
 	}
 	focus = {
 		id = Restore_Tariff_Autonomy
-		x = 6
-		y = 4
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_focus_BRA_cafe_com_leite_politics
 		continue_if_invalid = no
@@ -2404,12 +2218,12 @@ focus_tree = {
 				level = 1
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Livelihood
 	}
 	focus = {
 		id = Promote_New_Technologies
-		x = 8
-		y = 4
+		x = 2
+		y = 2
 		cost = 7
 		icon = GFX_focus_BEL_poudreries_reunies_de_belgique
 		continue_if_invalid = no
@@ -2435,12 +2249,12 @@ focus_tree = {
 			}
 			National_economy_add = yes
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Livelihood
 	}
 	focus = {
 		id = Development_of_National_Economy
-		x = 6
-		y = 5
+		x = 0
+		y = 3
 		cost = 7
 		icon = GFX_focus_generic_agricultural_subsidies
 		continue_if_invalid = no
@@ -2472,186 +2286,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
-	}
-	focus = {
-		id = Chiangs_Rule_Chens_Party
-		x = 13
-		y = 2
-		cost = 2
-		icon = GFX_kmt_72
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Interests_of_Four_Families
-		}
-		completion_reward = {
-			add_ideas = Continuation_White_Terror
-		}
-		relative_position_id = Chiang_Kai_shek_Consolidates_Power
-	}
-	focus = {
-		id = China_Revival_Society
-		x = -2
-		y = 1
-		cost = 7
-		icon = GFX_kmt_70
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Chiangs_Rule_Chens_Party
-		}
-		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = CHI_DaiLi_P
-			add_ideas = the_blueshirts
-			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
-			}
-			Government_efficiency_add = yes
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
-	}
-	focus = {
-		id = Suppress_Anti_Japanese_Activities
-		x = -3
-		y = 2
-		cost = 7
-		icon = GFX_focus_FIN_parmis_devils
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = China_Revival_Society
-		}
-		completion_reward = {
-			add_to_temp_variable = {
-				temp_Anti_JP_zeal = -5
-			}
-			Anti_JP_zeal_add = yes
-			Anti_JP_zeal_var = yes
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
-	}
-	focus = {
-		id = Control_Media_Information
-		x = -1
-		y = 2
-		cost = 7
-		icon = GFX_kmt_56
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = China_Revival_Society
-		}
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = -0.1
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
-	}
-	focus = {
-		id = Establish_Military_Statistics_Bureau
-		x = -2
-		y = 3
-		cost = 7
-		icon = GFX_kmt_79
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Suppress_Anti_Japanese_Activities
-		}
-		prerequisite = {
-			focus = Control_Media_Information
-		}
-		completion_reward = {
-			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
-			}
-			Government_efficiency_add = yes
-			add_ideas = NBIS
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
-	}
-	focus = {
-		id = Central_Club
-		x = 2
-		y = 1
-		cost = 7
-		icon = GFX_kmt_71
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Chiangs_Rule_Chens_Party
-		}
-		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = CHI_ChenLiFu_P
-			add_ideas = central_club
-			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
-			}
-			Government_efficiency_add = yes
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
-	}
-	focus = {
-		id = New_Life_Movement
-		x = 1
-		y = 2
-		cost = 7
-		icon = GFX_kmt_52
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Central_Club
-		}
-		completion_reward = {
-			add_ideas = new_life
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
-	}
-	focus = {
-		id = Chinese_Cultural_Construction_Movement
-		x = 3
-		y = 2
-		cost = 7
-		icon = GFX_kmt_73
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Central_Club
-		}
-		completion_reward = {
-			add_stability = 0.1
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
-	}
-	focus = {
-		id = Establish_Central_Statistics_Bureau
-		x = 2
-		y = 3
-		cost = 7
-		icon = GFX_kmt_80
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = New_Life_Movement
-		}
-		prerequisite = {
-			focus = Chinese_Cultural_Construction_Movement
-		}
-		completion_reward = {
-			add_to_temp_variable = {
-				temp_Government_efficiency_var = 3
-			}
-			Government_efficiency_add = yes
-			add_ideas = CBIS
-		}
-		relative_position_id = Chiangs_Rule_Chens_Party
+		relative_position_id = National_Livelihood
 	}
 	focus = {
 		id = Establish_Central_Aviation_School
@@ -2806,54 +2441,9 @@ focus_tree = {
 		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
-		id = Establish_Resources_Committee
-		x = -2
-		y = 3
-		cost = 7
-		icon = GFX_focus_ARG_strengthening_the_concordancia
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Agricultural_Adjustment_Committee
-		}
-		prerequisite = {
-			focus = Establish_Trade_Committee
-		}
-		completion_reward = {
-			add_ideas = national_resource_council
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
-	}
-	focus = {
-		id = Implement_Currency_Reform
-		x = 2
-		y = 3
-		cost = 7
-		icon = GFX_focus_GER_customs_union
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Establish_Four_United_Bureau
-		}
-		prerequisite = {
-			focus = Issue_High_Interest_Loans
-		}
-		completion_reward = {
-			add_to_temp_variable = {
-				temp_National_economy_var = 3
-			}
-			National_economy_add = yes
-		}
-		relative_position_id = Soong_Sisters_Kong_Family_Wealth
-	}
-	focus = {
 		id = Promote_Teacher_Colleges
-		x = -6
-		y = 3
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_focus_generic_university_2
 		continue_if_invalid = no
@@ -2875,12 +2465,12 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Education
 	}
 	focus = {
 		id = Improve_Border_Teacher_Welfare
-		x = -6
-		y = 4
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_focus_generic_university_1
 		continue_if_invalid = no
@@ -2903,12 +2493,12 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Education
 	}
 	focus = {
 		id = Implement_Compulsory_Education
-		x = -8
-		y = 4
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_focus_generic_military_academy
 		continue_if_invalid = no
@@ -2933,12 +2523,12 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Education
 	}
 	focus = {
 		id = Reform_Higher_Education_System
-		x = -4
-		y = 4
+		x = 2
+		y = 2
 		cost = 7
 		icon = GFX_focus_generic_printing_press
 		continue_if_invalid = no
@@ -2963,12 +2553,12 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Education
 	}
 	focus = {
 		id = Progress_of_National_Quality
-		x = -6
-		y = 5
+		x = 0
+		y = 3
 		cost = 7
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		continue_if_invalid = no
@@ -2991,12 +2581,12 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = National_Education
 	}
 	focus = {
 		id = Party_Ruled_State
-		x = 20
-		y = 4
+		x = 0
+		y = 1
 		cost = 2
 		icon = GFX_kmt08
 		continue_if_invalid = no
@@ -3010,11 +2600,12 @@ focus_tree = {
 				value = -0.05
 			}
 		}
+		relative_position_id = Hu_Hanmin_Leadership
 	}
 	focus = {
 		id = Promote_Hu_Hanmin_Ideology
-		x = 11
-		y = 7
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_kmt10
 		continue_if_invalid = no
@@ -3022,11 +2613,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Strengthen_Party_Leadership
 		}
+		relative_position_id = Promote_Party_based_Education
 	}
 	focus = {
 		id = Party_Representative_System_in_Army
-		x = 15
-		y = 7
+		x = 2
+		y = 2
 		cost = 7
 		icon = GFX_kmt11
 		continue_if_invalid = no
@@ -3034,11 +2626,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Strengthen_Party_Leadership
 		}
+		relative_position_id = Promote_Party_based_Education
 	}
 	focus = {
 		id = Promote_Party_based_Education
-		x = 13
-		y = 5
+		x = -7
+		y = 1
 		cost = 7
 		icon = GFX_kmt06
 		continue_if_invalid = no
@@ -3046,11 +2639,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Party_Ruled_State
 		}
+		relative_position_id = Party_Ruled_State
 	}
 	focus = {
 		id = Strengthen_Party_Leadership
-		x = 13
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt09
 		continue_if_invalid = no
@@ -3058,11 +2652,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Promote_Party_based_Education
 		}
+		relative_position_id = Promote_Party_based_Education
 	}
 	focus = {
 		id = Expand_Local_Party_Committees
-		x = 13
-		y = 7
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt12
 		continue_if_invalid = no
@@ -3070,11 +2665,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Strengthen_Party_Leadership
 		}
+		relative_position_id = Promote_Party_based_Education
 	}
 	focus = {
 		id = Establish_Party_Ruled_Nation
-		x = 13
-		y = 8
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt13
 		continue_if_invalid = no
@@ -3088,11 +2684,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Promote_Hu_Hanmin_Ideology
 		}
+		relative_position_id = Expand_Local_Party_Committees
 	}
 	focus = {
 		id = Revolutionary_Elder_Chu_Lu
-		x = 13
-		y = 9
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt14
 		continue_if_invalid = no
@@ -3103,11 +2700,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Establish_Party_Ruled_Nation
 		}
+		relative_position_id = Establish_Party_Ruled_Nation
 	}
 	focus = {
 		id = Implement_Land_Reform
-		x = 11
-		y = 10
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_kmt15
 		continue_if_invalid = no
@@ -3115,11 +2713,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Revolutionary_Elder_Chu_Lu
 		}
+		relative_position_id = Revolutionary_Elder_Chu_Lu
 	}
 	focus = {
 		id = Party_Supremacy
-		x = 13
-		y = 10
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt17
 		continue_if_invalid = no
@@ -3127,11 +2726,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Revolutionary_Elder_Chu_Lu
 		}
+		relative_position_id = Revolutionary_Elder_Chu_Lu
 	}
 	focus = {
 		id = Support_Anti_Japanese_Salvation
-		x = 15
-		y = 10
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt16
 		continue_if_invalid = no
@@ -3139,11 +2739,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Revolutionary_Elder_Chu_Lu
 		}
+		relative_position_id = Revolutionary_Elder_Chu_Lu
 	}
 	focus = {
 		id = New_Political_Tutelage
-		x = 13
-		y = 11
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt18
 		continue_if_invalid = no
@@ -3157,11 +2758,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Implement_Land_Reform
 		}
+		relative_position_id = Revolutionary_Elder_Chu_Lu
 	}
 	focus = {
 		id = Promote_Canton_Governance
-		x = 19
-		y = 5
+		x = -1
+		y = 1
 		cost = 7
 		icon = GFX_kmt20
 		continue_if_invalid = no
@@ -3169,11 +2771,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Party_Ruled_State
 		}
+		relative_position_id = Party_Ruled_State
 	}
 	focus = {
 		id = Government_Asset_Management
-		x = 19
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt21
 		continue_if_invalid = no
@@ -3181,11 +2784,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Promote_Canton_Governance
 		}
+		relative_position_id = Promote_Canton_Governance
 	}
 	focus = {
 		id = Promote_Educational_Reform
-		x = 17
-		y = 7
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_kmt22
 		continue_if_invalid = no
@@ -3193,11 +2797,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Government_Asset_Management
 		}
+		relative_position_id = Promote_Canton_Governance
 	}
 	focus = {
 		id = Infrastructure_Construction_Plan
-		x = 19
-		y = 7
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt23
 		continue_if_invalid = no
@@ -3205,11 +2810,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Government_Asset_Management
 		}
+		relative_position_id = Promote_Canton_Governance
 	}
 	focus = {
 		id = Innovate_Municipal_System
-		x = 21
-		y = 7
+		x = 2
+		y = 2
 		cost = 7
 		icon = GFX_kmt24
 		continue_if_invalid = no
@@ -3217,11 +2823,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Government_Asset_Management
 		}
+		relative_position_id = Promote_Canton_Governance
 	}
 	focus = {
 		id = National_Government_for_the_People
-		x = 19
-		y = 8
+		x = 0
+		y = 3
 		cost = 7
 		icon = GFX_kmt25
 		continue_if_invalid = no
@@ -3235,11 +2842,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Promote_Educational_Reform
 		}
+		relative_position_id = Promote_Canton_Governance
 	}
 	focus = {
 		id = National_Legitimacy_Sun_Ke
-		x = 19
-		y = 9
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt33
 		continue_if_invalid = no
@@ -3250,11 +2858,12 @@ focus_tree = {
 		prerequisite = {
 			focus = National_Government_for_the_People
 		}
+		relative_position_id = National_Government_for_the_People
 	}
 	focus = {
 		id = Focus_on_Urban_Development
-		x = 17
-		y = 10
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_kmt26
 		continue_if_invalid = no
@@ -3262,11 +2871,12 @@ focus_tree = {
 		prerequisite = {
 			focus = National_Legitimacy_Sun_Ke
 		}
+		relative_position_id = National_Legitimacy_Sun_Ke
 	}
 	focus = {
 		id = Reconcile_with_Chiang_Faction
-		x = 19
-		y = 10
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt30
 		continue_if_invalid = no
@@ -3274,11 +2884,12 @@ focus_tree = {
 		prerequisite = {
 			focus = National_Legitimacy_Sun_Ke
 		}
+		relative_position_id = National_Legitimacy_Sun_Ke
 	}
 	focus = {
 		id = Expand_Foreign_Investment
-		x = 21
-		y = 10
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt31
 		continue_if_invalid = no
@@ -3286,11 +2897,12 @@ focus_tree = {
 		prerequisite = {
 			focus = National_Legitimacy_Sun_Ke
 		}
+		relative_position_id = National_Legitimacy_Sun_Ke
 	}
 	focus = {
 		id = Transition_to_Constitutional_Government
-		x = 19
-		y = 11
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt32
 		continue_if_invalid = no
@@ -3304,11 +2916,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Expand_Foreign_Investment
 		}
+		relative_position_id = National_Legitimacy_Sun_Ke
 	}
 	focus = {
 		id = Chairman_Wangs_European_Tour
-		x = 25
-		y = 5
+		x = 5
+		y = 1
 		cost = 7
 		icon = GFX_kmt_49
 		continue_if_invalid = no
@@ -3322,11 +2935,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Party_Ruled_State
 		}
+		relative_position_id = Party_Ruled_State
 	}
 	focus = {
 		id = Seek_League_of_Nations_Help
-		x = 25
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt_57
 		continue_if_invalid = no
@@ -3340,11 +2954,12 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		relative_position_id = Chairman_Wangs_European_Tour
 	}
 	focus = {
 		id = Seek_Overseas_Chinese_Support
-		x = 25
-		y = 7
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt_63
 		continue_if_invalid = no
@@ -3352,11 +2967,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Seek_League_of_Nations_Help
 		}
+		relative_position_id = Chairman_Wangs_European_Tour
 	}
 	focus = {
 		id = Expand_US_UK_Interests_in_China
-		x = 27
-		y = 7
+		x = 2
+		y = 2
 		cost = 7
 		icon = GFX_focus_ARG_join_the_allies
 		continue_if_invalid = no
@@ -3370,11 +2986,12 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		relative_position_id = Chairman_Wangs_European_Tour
 	}
 	focus = {
 		id = Request_Soviet_Aid
-		x = 23
-		y = 7
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_focus_por_workers_of_iberia
 		continue_if_invalid = no
@@ -3388,11 +3005,12 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		relative_position_id = Chairman_Wangs_European_Tour
 	}
 	focus = {
 		id = Win_Over_Moderates
-		x = 23
-		y = 6
+		x = -2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_82
 		continue_if_invalid = no
@@ -3400,11 +3018,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
 		}
+		relative_position_id = Chairman_Wangs_European_Tour
 	}
 	focus = {
 		id = Incite_Reorganization_Clique_Conflict
-		x = 27
-		y = 6
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_58
 		continue_if_invalid = no
@@ -3412,11 +3031,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Chairman_Wangs_European_Tour
 		}
+		relative_position_id = Chairman_Wangs_European_Tour
 	}
 	focus = {
 		id = Peaceful_Resolution_to_Sino_Japanese_Conflict
-		x = 38
-		y = 8
+		x = 0
+		y = 4
 		cost = 7
 		icon = GFX_kmt_53
 		continue_if_invalid = no
@@ -3433,11 +3053,12 @@ focus_tree = {
 			focus = Seek_Overseas_Chinese_Support
 			focus = Pan_Asianist_propaganda
 		}
+		relative_position_id = Liao_Zhongkai_Issue
 	}
 	focus = {
 		id = Negotiate_with_Japan
-		x = 52
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_focus_generic_surrender
 		continue_if_invalid = no
@@ -3456,11 +3077,12 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		relative_position_id = Special_Parliament_Leader_Hu_Hanmin
 	}
 	focus = {
 		id = Pan_Asianist_propaganda
-		x = 52
-		y = 7
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt_76
 		continue_if_invalid = no
@@ -3474,11 +3096,12 @@ focus_tree = {
 				value = 0.1
 			}
 		}
+		relative_position_id = Special_Parliament_Leader_Hu_Hanmin
 	}
 	focus = {
 		id = Suppress_Anti_Japanese_Sentiment
-		x = 50
-		y = 7
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_focus_GER_liberate_exploited_colonial_workers
 		continue_if_invalid = no
@@ -3497,11 +3120,12 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		relative_position_id = Special_Parliament_Leader_Hu_Hanmin
 	}
 	focus = {
 		id = Accept_Japanese_Investment
-		x = 54
-		y = 7
+		x = 2
+		y = 2
 		cost = 7
 		icon = GFX_focus_GER_customs_union
 		continue_if_invalid = no
@@ -3520,11 +3144,12 @@ focus_tree = {
 				value = 0.05
 			}
 		}
+		relative_position_id = Special_Parliament_Leader_Hu_Hanmin
 	}
 	focus = {
 		id = Land_Production_to_Public
-		x = 58
-		y = 6
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt38
 		continue_if_invalid = no
@@ -3532,11 +3157,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Land_Equalization
 		}
+		relative_position_id = Land_Equalization
 	}
 	focus = {
 		id = Land_to_the_Tiller
-		x = 58
-		y = 7
+		x = 0
+		y = 2
 		cost = 7
 		icon = GFX_kmt37
 		continue_if_invalid = no
@@ -3547,11 +3173,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Impose_Land_Value_Tax
 		}
+		relative_position_id = Land_Equalization
 	}
 	focus = {
 		id = Towards_Livelihood_Nation
-		x = 62
-		y = 8
+		x = 0
+		y = 4
 		cost = 7
 		icon = GFX_kmt48
 		continue_if_invalid = no
@@ -3565,15 +3192,19 @@ focus_tree = {
 		prerequisite = {
 			focus = Revitalize_Industry_Develop_Resources
 		}
+		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Convene_National_Congress
 		x = 0
-		y = 6
+		y = 1
 		cost = 7
 		icon = GFX_kmt_59
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Chiang_Kai_shek_Consolidates_Power
+		}
 		prerequisite = {
 			focus = Consolidate_Republics_Governance
 		}
@@ -3583,7 +3214,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Progress_of_National_Quality
 		}
-		relative_position_id = Interests_of_Four_Families
+		relative_position_id = Consolidate_Republics_Governance
 	}
 	focus = {
 		id = Expand_Local_Influence
@@ -3604,8 +3235,8 @@ focus_tree = {
 	}
 	focus = {
 		id = CHIFocus_3
-		x = 58
-		y = 12
+		x = -3
+		y = 1
 		cost = 10
 		icon = GFX_focus_generic_befriend_usa
 		continue_if_invalid = no
@@ -3649,11 +3280,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_2
 	}
 	focus = {
 		id = CHIFocus_5
-		x = 56
-		y = 13
+		x = -2
+		y = 1
 		cost = 10
 		icon = GFX_focus_generic_road_investment
 		continue_if_invalid = no
@@ -3664,11 +3296,12 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = Yunnan_Burma_Highway_category
 		}
+		relative_position_id = CHIFocus_3
 	}
 	focus = {
 		id = CHIFocus_6
-		x = 58
-		y = 13
+		x = 0
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -3685,11 +3318,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_3
 	}
 	focus = {
 		id = CHIFocus_10
-		x = 56
-		y = 14
+		x = -2
+		y = 2
 		cost = 10
 		icon = GFX_focus_generic_copy_plane_designs
 		continue_if_invalid = no
@@ -3706,11 +3340,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_3
 	}
 	focus = {
 		id = CHIFocus_11
-		x = 58
-		y = 14
+		x = 0
+		y = 2
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -3721,11 +3356,12 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = Hump_route
 		}
+		relative_position_id = CHIFocus_3
 	}
 	focus = {
 		id = CHIFocus_14
-		x = 61
-		y = 15
+		x = 0
+		y = 4
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -3758,11 +3394,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_2
 	}
 	focus = {
 		id = CHIFocus_15
-		x = 59
-		y = 16
+		x = -2
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -3775,11 +3412,12 @@ focus_tree = {
 				transfer_state_to = CEN
 			}
 		}
+		relative_position_id = CHIFocus_14
 	}
 	focus = {
 		id = CHIFocus_16
-		x = 63
-		y = 16
+		x = 2
+		y = 1
 		cost = 10
 		icon = GFX_focus_generic_anti_tank_guns
 		continue_if_invalid = no
@@ -3797,11 +3435,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_14
 	}
 	focus = {
 		id = CHIFocus_19
-		x = 71
-		y = 14
+		x = -4
+		y = 2
 		cost = 10
 		icon = GFX_focus_GER_kriegslokomotive
 		continue_if_invalid = no
@@ -3841,11 +3480,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 			}
 		}
+		relative_position_id = CHIFocus_20
 	}
 	focus = {
 		id = CHIFocus_22
-		x = 79
-		y = 13
+		x = 4
+		y = 1
 		cost = 10
 		icon = GFX_focus_GER_wirtschaftswunder
 		continue_if_invalid = no
@@ -3874,11 +3514,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_20
 	}
 	focus = {
 		id = CHIFocus_23
-		x = 79
-		y = 14
+		x = 4
+		y = 2
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -3892,11 +3533,12 @@ focus_tree = {
 				tooltip = research_speed_factor_tt
 			}
 		}
+		relative_position_id = CHIFocus_20
 	}
 	focus = {
 		id = CHIFocus_24
-		x = 70
-		y = 15
+		x = -5
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -3949,11 +3591,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_21
 	}
 	focus = {
 		id = CHIFocus_27
-		x = 80
-		y = 15
+		x = 5
+		y = 1
 		cost = 10
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
@@ -3999,11 +3642,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_21
 	}
 	focus = {
 		id = CHIFocus_28
-		x = 75
-		y = 16
+		x = 0
+		y = 2
 		cost = 10
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
@@ -4023,11 +3667,12 @@ focus_tree = {
 		prerequisite = {
 			focus = CHIFocus_27
 		}
+		relative_position_id = CHIFocus_21
 	}
 	focus = {
 		id = CHIFocus_29
-		x = 72
-		y = 12
+		x = 0
+		y = 2
 		cost = 10
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
@@ -4038,11 +3683,12 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = Scorched_earth_policy
 		}
+		relative_position_id = CHIFocus_1
 	}
 	focus = {
 		id = CHIFocus_30
-		x = 68
-		y = 11
+		x = -4
+		y = 1
 		cost = 10
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
@@ -4072,11 +3718,12 @@ focus_tree = {
 				add_manpower = -10000
 			}
 		}
+		relative_position_id = CHIFocus_1
 	}
 	focus = {
 		id = CHIFocus_31
-		x = 68
-		y = 12
+		x = 0
+		y = 1
 		cost = 10
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
@@ -4129,11 +3776,12 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = CHIFocus_30
 	}
 	focus = {
 		id = CHIFocus_32
-		x = 75
-		y = 17
+		x = 0
+		y = 1
 		cost = 10
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
@@ -4144,11 +3792,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = Encourage_enlistment_military
 		}
+		relative_position_id = CHIFocus_28
 	}
 	focus = {
 		id = CHIFocus_33
-		x = 74
-		y = 13
+		x = -1
+		y = 1
 		cost = 10
 		icon = GFX_CHIFocus_33
 		continue_if_invalid = no
@@ -4161,115 +3810,53 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CHI_JiangJingGuo_P
 		}
+		relative_position_id = CHIFocus_20
 	}
 	focus = {
 		id = CHI_focus_6
-		x = -2
-		y = 3
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = CHI_focus_5
-		}
-		prerequisite = {
-			focus = CHI_focus_8
-		}
-		relative_position_id = CHI_focus_3
-	}
-	focus = {
-		id = CHI_focus_7
-		x = 4
-		y = 2
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = CHI_focus_8
-			focus = CHI_focus_9
-		}
-		prerequisite = {
-			focus = CHI_focus_3
-		}
-		relative_position_id = Victory_of_the_National_Revolution
-	}
-	focus = {
-		id = CHI_focus_8
-		x = 0
-		y = 2
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = CHI_focus_7
-			focus = CHI_focus_9
-		}
-		prerequisite = {
-			focus = CHI_focus_3
-		}
-		relative_position_id = Victory_of_the_National_Revolution
-	}
-	focus = {
-		id = CHI_focus_9
-		x = 2
-		y = 2
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = CHI_focus_8
-			focus = CHI_focus_7
-		}
-		prerequisite = {
-			focus = CHI_focus_3
-		}
-		relative_position_id = Victory_of_the_National_Revolution
-	}
-	focus = {
-		id = CHI_focus_10
 		x = 1
-		y = 3
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		prerequisite = {
-			focus = CHI_focus_8
+		mutually_exclusive = {
+			focus = CHI_focus_11
 		}
 		prerequisite = {
-			focus = CHI_focus_9
+			focus = Fascist_theory
 		}
-		relative_position_id = Victory_of_the_National_Revolution
+		relative_position_id = German_Positional_Tactics
 	}
 	focus = {
 		id = CHI_focus_11
-		x = 3
-		y = 3
+		x = -1
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		prerequisite = {
-			focus = CHI_focus_7
+		mutually_exclusive = {
+			focus = CHI_focus_6
 		}
 		prerequisite = {
-			focus = CHI_focus_9
+			focus = German_military_tactics
 		}
-		relative_position_id = Victory_of_the_National_Revolution
+		relative_position_id = German_Positional_Tactics
 	}
 	focus = {
 		id = CHI_focus_12
-		x = 5
-		y = 3
+		x = 3
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_focus_7
+			focus = Internal_Pacification_Before_Resistance
 		}
-		relative_position_id = Victory_of_the_National_Revolution
+		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = CHI_focus_13
-		x = -1
+		x = -3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -4304,38 +3891,8 @@ focus_tree = {
 		relative_position_id = Resistance_First_to_Save_Nation
 	}
 	focus = {
-		id = CHI_focus_16
-		x = 0
-		y = 4
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Organize_Expeditionary_Force
-		}
-		prerequisite = {
-			focus = Expand_Local_Influence
-		}
-		relative_position_id = Internal_Pacification_Before_Resistance
-	}
-	focus = {
-		id = CHI_focus_3
-		x = 2
-		y = 1
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Victory_of_the_National_Revolution
-		}
-		completion_reward = {
-			
-		}
-		relative_position_id = Victory_of_the_National_Revolution
-	}
-	focus = {
 		id = CHI_focus_2
-		x = -6
+		x = -8
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -4347,26 +3904,53 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_focus_4
-		x = 1
+		x = 3
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Fascist_theory
+		}
+		prerequisite = {
+			focus = Campaign_to_Purge_the_Party
+		}
+		relative_position_id = Internal_Pacification_Before_Resistance
+	}
+	focus = {
+		id = Campaign_to_Purge_the_Party
+		x = 3
 		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = CHI_focus_5
+			focus = CHI_focus_12
 		}
 		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
-		id = CHI_focus_5
+		id = Fascist_theory
 		x = 1
 		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Internal_Pacification_Before_Resistance
+			focus = German_Positional_Tactics
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
+		relative_position_id = German_Positional_Tactics
+	}
+	focus = {
+		id = German_military_tactics
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = German_Positional_Tactics
+		}
+		relative_position_id = German_Positional_Tactics
 	}
 }
