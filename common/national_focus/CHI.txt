@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = Victory_of_the_National_Revolution
-		x = 74
+		x = 68
 		y = 1
 		cost = 2
 		icon = GFX_kmt01
@@ -24,15 +24,19 @@ focus_tree = {
 	}
 	focus = {
 		id = Modernize_Military_Reform
-		x = 48
-		y = 10
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_66
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_focus_2
+		}
 		completion_reward = {
 			add_command_power = 50
 		}
+		relative_position_id = CHI_focus_2
 	}
 	focus = {
 		id = CHIFocus_1
@@ -68,7 +72,7 @@ focus_tree = {
 	focus = {
 		id = Democracy_Over_Autocracy
 		x = 29
-		y = 1
+		y = 2
 		cost = 5
 		icon = GFX_kmt02
 		continue_if_invalid = no
@@ -79,6 +83,12 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 0
+		}
+		mutually_exclusive = {
+			focus = Chiang_Kai_shek_Consolidates_Power
+		}
+		prerequisite = {
+			focus = Victory_of_the_National_Revolution
 		}
 		completion_reward = {
 			add_popularity = {
@@ -349,14 +359,14 @@ focus_tree = {
 	}
 	focus = {
 		id = Reorganize_National_Revolutionary_Army
-		x = 0
-		y = 1
+		x = -2
+		y = 3
 		cost = 7
 		icon = GFX_kmt_67
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Modernize_Military_Reform
+			focus = German_military_tactics
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -370,31 +380,15 @@ focus_tree = {
 		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
-		id = German_Military_Advisors
-		x = -2
-		y = 2
-		cost = 7
-		icon = GFX_kmt_54
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Reorganize_National_Revolutionary_Army
-		}
-		completion_reward = {
-			add_ideas = CHI_Alexander_von_Falkenhausen_A
-		}
-		relative_position_id = Modernize_Military_Reform
-	}
-	focus = {
 		id = German_style_Adjusted_Division
-		x = -3
+		x = 0
 		y = 3
 		cost = 7
 		icon = GFX_kmt_61
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = German_Military_Advisors
+			focus = Reorganize_National_Revolutionary_Army
 		}
 		completion_reward = {
 			custom_effect_tooltip = German_Division_tip
@@ -560,7 +554,7 @@ focus_tree = {
 				}
 			}
 		}
-		relative_position_id = Modernize_Military_Reform
+		relative_position_id = German_Positional_Tactics
 	}
 	focus = {
 		id = Necessity_of_National_Army
@@ -591,18 +585,18 @@ focus_tree = {
 	focus = {
 		id = Chinese_Hindenburg_Line
 		x = -1
-		y = 3
+		y = 4
 		cost = 7
 		icon = GFX_focus_BEL_better_than_maginot
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = German_Military_Advisors
+			focus = German_style_Adjusted_Division
 		}
 		completion_reward = {
 			unlock_decision_category_tooltip = CHI_Chinese_Hindenburg_category
 		}
-		relative_position_id = Modernize_Military_Reform
+		relative_position_id = German_Positional_Tactics
 	}
 	focus = {
 		id = Win_Over_Neutral_Officers
@@ -619,8 +613,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Munitions_Department
-		x = 2
-		y = 2
+		x = 0
+		y = 4
 		cost = 7
 		icon = GFX_focus_CONGO_copper_cartridges
 		continue_if_invalid = no
@@ -635,8 +629,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Open_Military_Research_Institute
-		x = 1
-		y = 3
+		x = -1
+		y = 5
 		cost = 7
 		icon = GFX_focus_ARG_develop_the_electricity_sector
 		continue_if_invalid = no
@@ -678,8 +672,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Central_Military_Academy
-		x = 3
-		y = 3
+		x = 1
+		y = 5
 		cost = 7
 		icon = GFX_kmt_65
 		continue_if_invalid = no
@@ -1151,7 +1145,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Internal_Pacification_Before_Resistance
-		x = 3
+		x = -7
 		y = 1
 		cost = 7
 		icon = GFX_kmt_41
@@ -1174,8 +1168,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Order_Warlords_to_Attack
-		x = -3
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt_81
 		continue_if_invalid = no
@@ -1186,18 +1180,18 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = Order_Warlords_to_Attack_effect
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
+		relative_position_id = CHI_focus_13
 	}
 	focus = {
 		id = German_Positional_Tactics
-		x = 0
+		x = -4
 		y = 1
 		cost = 7
 		icon = GFX_kmt_54
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Internal_Pacification_Before_Resistance
+			focus = Modernize_Military_Reform
 		}
 		completion_reward = {
 			add_command_power = 20
@@ -1207,11 +1201,11 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
+		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Resistance_First_to_Save_Nation
-		x = -4
+		x = 10
 		y = 1
 		cost = 7
 		icon = GFX_kmt_55
@@ -1250,12 +1244,15 @@ focus_tree = {
 	}
 	focus = {
 		id = Expand_Anti_Japanese_Propaganda
-		x = -2
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_kmt16
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Introduce_surface_ship_technology
+		}
 		prerequisite = {
 			focus = CHI_focus_14
 		}
@@ -1267,12 +1264,12 @@ focus_tree = {
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 		}
-		relative_position_id = Resistance_First_to_Save_Nation
+		relative_position_id = CHI_focus_14
 	}
 	focus = {
 		id = Establish_United_Front
-		x = 0
-		y = 3
+		x = 2
+		y = 1
 		cost = 7
 		icon = GFX_kmt_75
 		continue_if_invalid = no
@@ -1297,7 +1294,7 @@ focus_tree = {
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 		}
-		relative_position_id = Resistance_First_to_Save_Nation
+		relative_position_id = Expand_Anti_Japanese_Propaganda
 	}
 	focus = {
 		id = Contact_Zhang_Xueliang
@@ -1319,8 +1316,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Transport_Anti_Japanese_Supplies
-		x = 2
-		y = 2
+		x = 0
+		y = 1
 		cost = 7
 		icon = GFX_focus_AUS_raid_military_storages
 		continue_if_invalid = no
@@ -1328,7 +1325,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Contact_Zhang_Xueliang
 		}
-		relative_position_id = Resistance_First_to_Save_Nation
+		relative_position_id = Contact_Zhang_Xueliang
 	}
 	focus = {
 		id = CHIFocus_17
@@ -1712,8 +1709,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
-		x = 0
-		y = 4
+		x = 68
+		y = 2
 		cost = 5
 		icon = GFX_kmt03
 		continue_if_invalid = no
@@ -1724,16 +1721,10 @@ focus_tree = {
 			}
 		}
 		mutually_exclusive = {
-			focus = Convene_National_Congress
+			focus = Democracy_Over_Autocracy
 		}
 		prerequisite = {
-			focus = CHI_focus_6
-		}
-		prerequisite = {
-			focus = CHI_focus_4
-		}
-		prerequisite = {
-			focus = Expand_Local_Influence
+			focus = Victory_of_the_National_Revolution
 		}
 		completion_reward = {
 			add_trait = {
@@ -1743,19 +1734,15 @@ focus_tree = {
 			}
 			custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = Announce_Political_Tutelage
-		x = 8
+		x = 0
 		y = 1
 		cost = 7
 		icon = GFX_kmt_44
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Victory_of_the_National_Revolution
-		}
 		completion_reward = {
 			remove_ideas = The_winner_Central
 			unlock_decision_category_tooltip = CHI_Discipline_government_category
@@ -1785,7 +1772,7 @@ focus_tree = {
 				max = 100
 			}
 		}
-		relative_position_id = Victory_of_the_National_Revolution
+		relative_position_id = Chiang_Kai_shek_Consolidates_Power
 	}
 	focus = {
 		id = National_Education
@@ -2290,14 +2277,14 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Central_Aviation_School
-		x = -5
-		y = 1
+		x = -2
+		y = 2
 		cost = 7
 		icon = GFX_focus_generic_air_bases
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Modernize_Military_Reform
+			focus = Aviation_Salvation_Movement
 		}
 		completion_reward = {
 			add_design_template_bonus = {
@@ -2326,14 +2313,14 @@ focus_tree = {
 	}
 	focus = {
 		id = Aviation_Salvation_Movement
-		x = -5
-		y = 2
+		x = 88
+		y = 4
 		cost = 7
 		icon = GFX_goal_generic_air_bomber
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Establish_Central_Aviation_School
+			focus = Modernize_Military_Reform
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -2352,12 +2339,11 @@ focus_tree = {
 				equipment = large_plane_airframe
 			}
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Standardize_Training_System
-		x = -5
-		y = 3
+		x = 89
+		y = 5
 		cost = 7
 		icon = GFX_goal_generic_build_airforce
 		continue_if_invalid = no
@@ -2368,59 +2354,35 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 40
 		}
-		relative_position_id = Modernize_Military_Reform
-	}
-	focus = {
-		id = Establish_Navy_Department
-		x = 5
-		y = 1
-		cost = 7
-		icon = GFX_goal_generic_alliance
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Modernize_Military_Reform
-		}
-		completion_reward = {
-			add_to_variable = {
-				CHI_navy_decryption_factor = 0.05
-			}
-			add_to_variable = {
-				CHI_navy_naval_doctrine_cost_factor = -0.05
-			}
-			add_to_variable = {
-				CHI_navy_naval_coordination = 0.05
-			}
-			custom_effect_tooltip = Establish_Navy_Department_tooltip
-		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Order_Warships
-		x = 5
-		y = 2
+		x = 91
+		y = 5
 		cost = 7
 		icon = GFX_goal_generic_amphibious_assault
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Establish_Navy_Department
+			focus = 600000_Tonnage_Plan
+		}
+		prerequisite = {
+			focus = German_Positional_Tactics
 		}
 		completion_reward = {
 			add_cic = 500
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = 600000_Tonnage_Plan
-		x = 5
-		y = 3
+		x = 92
+		y = 4
 		cost = 7
 		icon = GFX_goal_generic_construct_naval_dockyard
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Order_Warships
+			focus = Modernize_Military_Reform
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -2438,7 +2400,6 @@ focus_tree = {
 				equipment = ship_hull_light
 			}
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Promote_Teacher_Colleges
@@ -3202,9 +3163,6 @@ focus_tree = {
 		icon = GFX_kmt_59
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = Chiang_Kai_shek_Consolidates_Power
-		}
 		prerequisite = {
 			focus = Consolidate_Republics_Governance
 		}
@@ -3219,7 +3177,7 @@ focus_tree = {
 	focus = {
 		id = Expand_Local_Influence
 		x = 0
-		y = 1
+		y = 2
 		cost = 7
 		icon = GFX_focus_BRA_ethical_internationalism
 		continue_if_invalid = no
@@ -3231,7 +3189,7 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.05
 		}
-		relative_position_id = Order_Warlords_to_Attack
+		relative_position_id = CHI_focus_13
 	}
 	focus = {
 		id = CHIFocus_3
@@ -3814,7 +3772,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_focus_6
-		x = 1
+		x = -3
 		y = 2
 		cost = 0
 		continue_if_invalid = no
@@ -3844,27 +3802,25 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_focus_12
-		x = 3
-		y = 1
+		x = 80
+		y = 4
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = CHI_focus_13
-		x = -3
-		y = 1
+		x = 78
+		y = 4
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
 		id = CHI_focus_14
@@ -3881,31 +3837,30 @@ focus_tree = {
 	focus = {
 		id = CHI_focus_15
 		x = 0
-		y = 2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Reconcile_with_Communists
 		}
-		relative_position_id = Resistance_First_to_Save_Nation
+		relative_position_id = Reconcile_with_Communists
 	}
 	focus = {
 		id = CHI_focus_2
-		x = -8
-		y = 1
+		x = 87
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
-		relative_position_id = Victory_of_the_National_Revolution
 	}
 	focus = {
 		id = CHI_focus_4
-		x = 3
-		y = 3
+		x = 0
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3915,23 +3870,23 @@ focus_tree = {
 		prerequisite = {
 			focus = Campaign_to_Purge_the_Party
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
+		relative_position_id = CHI_focus_12
 	}
 	focus = {
 		id = Campaign_to_Purge_the_Party
-		x = 3
-		y = 2
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = CHI_focus_12
 		}
-		relative_position_id = Internal_Pacification_Before_Resistance
+		relative_position_id = CHI_focus_12
 	}
 	focus = {
 		id = Fascist_theory
-		x = 1
+		x = -3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3943,7 +3898,7 @@ focus_tree = {
 	}
 	focus = {
 		id = German_military_tactics
-		x = -1
+		x = 0
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3952,5 +3907,103 @@ focus_tree = {
 			focus = German_Positional_Tactics
 		}
 		relative_position_id = German_Positional_Tactics
+	}
+	focus = {
+		id = He_Bu_Lou_Agreement
+		x = 86
+		y = 8
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = German_style_Adjusted_Division
+		}
+	}
+	focus = {
+		id = Introduce_surface_ship_technology
+		x = 93
+		y = 5
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		mutually_exclusive = {
+			focus = Expand_Anti_Japanese_Propaganda
+		}
+		prerequisite = {
+			focus = 600000_Tonnage_Plan
+		}
+	}
+	focus = {
+		id = Split_and_Revive_Society
+		x = 83
+		y = 7
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = CHI_focus_11
+		}
+		prerequisite = {
+			focus = CHI_focus_4
+		}
+	}
+	focus = {
+		id = Lushan_Military_Officer_Training_Class
+		x = 77
+		y = 7
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = CHI_focus_4
+		}
+		prerequisite = {
+			focus = Expand_Local_Influence
+		}
+	}
+	focus = {
+		id = Establish_a_secret_service_office
+		x = 81
+		y = 7
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = CHI_focus_6
+		}
+		prerequisite = {
+			focus = CHI_focus_4
+		}
+	}
+	focus = {
+		id = Establish_a _Do_Not_Move_Squad_
+		x = 79
+		y = 7
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = CHI_focus_4
+		}
+		prerequisite = {
+			focus = Expand_Local_Influence
+		}
+	}
+	focus = {
+		id = Unify_will_gather_strength
+		x = 79
+		y = 8
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = Establish_a_secret_service_office
+		}
+		prerequisite = {
+			focus = Establish_a _Do_Not_Move_Squad_
+		}
+		prerequisite = {
+			focus = Lushan_Military_Officer_Training_Class
+		}
 	}
 }
