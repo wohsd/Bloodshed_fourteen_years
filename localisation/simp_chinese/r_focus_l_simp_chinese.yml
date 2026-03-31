@@ -608,3 +608,109 @@ Learn_guerrilla_warfare_desc: ""
 
 Requisition_factory: "征用工厂"
 Requisition_factory_desc: ""
+
+ROD_focus_0: "听命中央"
+  ROD_focus_0_desc: "服从国民政府的领导，维护国家统一。"
+  
+  ROD_focus_2: "与日军谈判"
+  ROD_focus_2_desc: "尝试通过外交途径解决与日本的冲突。"
+  
+  ROD_focus_3: "通电下野"
+  ROD_focus_3_desc: "暂时退出政治舞台，以平息各方争议。"
+  
+  ROD_focus_4: "赴任北平绥靖公署"
+  ROD_focus_4_desc: "接受新的职务，继续为国家服务。"
+  
+  ROD_focus_5: "建立东北情报网"
+  ROD_focus_5_desc: "收集关于东北局势的重要情报。"
+  
+  ROD_focus_6: "复校东北大学"
+  ROD_focus_6_desc: "恢复教育事业，培养国家人才。"
+  
+  ROD_focus_7: "长城抗战"
+  ROD_focus_7_desc: "组织军队抵抗日本侵略。"
+  
+  ROD_focus_8: "释放政治犯"
+  ROD_focus_8_desc: "展现政治宽容，促进国内和解。"
+  
+  ROD_focus_9: "回国复出"
+  ROD_focus_9_desc: "重返政治舞台，继续领导抗日事业。"
+  
+  ROD_focus_10: "建立四维学会"
+  ROD_focus_10_desc: "组织政治团体，宣扬国家理念。"
+  
+  ROD_focus_11: "重组东北军"
+  ROD_focus_11_desc: "重建军队，增强国防力量。"
+  
+  ROD_focus_12: "赴任西北剿总"
+  ROD_focus_12_desc: "前往西北地区执行剿匪任务。"
+  
+  ROD_focus_13: "接触共产党"
+  ROD_focus_13_desc: "与中共建立联系，探讨合作可能。"
+  
+  ROD_focus_14: "逼蒋抗日"
+  ROD_focus_14_desc: "迫使蒋介石领导全国抗日。"
+  
+  ROD_focus_15: "为蒋剿共"
+  ROD_focus_15_desc: "继续执行剿共政策，维护国民政府权威。"
+  
+  ROD_focus_16: "（未命名）"
+  ROD_focus_16_desc: ""
+  
+  ROD_focus_17: "取缔复会"
+  ROD_focus_17_desc: "解散复东会等政治组织。"
+  
+  ROD_focus_18: "宣扬法西斯理念"
+  ROD_focus_18_desc: "宣传法西斯主义思想。"
+  
+  # 右主线（联共抗日线）
+  ROD_focus_1: "联共抗日"
+  ROD_focus_1_desc: "与共产党合作，共同抵抗日本侵略。"
+  
+  ROD_focus_19: "组织抗日义勇军"
+  ROD_focus_19_desc: "动员民众组建抗日武装力量。"
+  
+  ROD_focus_20: "与中共建立联系"
+  ROD_focus_20_desc: "派遣代表与共产党进行秘密接触。"
+  
+  ROD_focus_21: "联合东北抗日联军"
+  ROD_focus_21_desc: "与东北抗日联军合作，共同作战。"
+  
+  ROD_focus_22: "发动群众抗日"
+  ROD_focus_22_desc: "动员广大民众参与抗日斗争。"
+  
+  ROD_focus_23: "建立敌后根据地"
+  ROD_focus_23_desc: "在敌后建立抗日根据地。"
+  
+  ROD_focus_24: "接纳共产主义军官"
+  ROD_focus_24_desc: "我们必须接受中国共产党的政治指导。"
+  
+  ROD_focus_25: "建立抗日同盟"
+  ROD_focus_25_desc: "与共产党建立正式的抗日同盟关系。"
+  
+  ROD_focus_26: "整编东北军"
+  ROD_focus_26_desc: "将东北军改编为抗日联军。"
+  
+  ROD_focus_27: "深化国共合作"
+  ROD_focus_27_desc: "进一步加强与共产党的合作关系。"
+  
+  ROD_focus_28: "寻求苏联援助"
+  ROD_focus_28_desc: "向苏联请求军事和经济援助。"
+  
+  ROD_focus_29: "巩固统一战线"
+  ROD_focus_29_desc: "巩固抗日民族统一战线。"
+  
+  ROD_focus_30: "抗日民族统一战线"
+  ROD_focus_30_desc: "建立广泛的抗日民族统一战线，团结一切可以团结的力量。"
+  
+  # 意见修正器
+  ROD_follows_central_gov: "服从中央政府"
+  ROD_negotiates_with_japan: "与日本谈判"
+  ROD_resigned: "通电下野"
+  ROD_united_front: "统一战线"
+  ROD_cooperates_with_communists: "与共产党合作"
+  ROD_communist_liaison: "中共联络"
+  ROD_anti_japanese_alliance: "抗日同盟"
+  ROD_communist_cooperation: "国共合作"
+  ROD_seeks_soviet_aid: "寻求苏联援助"
+  ROD_united_front_leader: "统一战线领袖"

@@ -23,4 +23,61 @@ opinion_modifiers = {
 	CHI_cooperation_with_the_nationalists_positive= {
 		value = 20
 	}
+
+	# ROD Opinion Modifiers
+	ROD_follows_central_gov = {
+		value = 25
+	}
+
+	ROD_negotiates_with_japan = {
+		value = 15
+	}
+
+	ROD_resigned = {
+		value = -20
+	}
+
+	ROD_united_front = {
+		value = 30
+	}
+
+	ROD_cooperates_with_communists = {
+		value = -30
+	}
+
+	ROD_communist_liaison = {
+		value = 25
+	}
+
+	ROD_anti_japanese_alliance = {
+		value = 35
+	}
+
+	ROD_communist_cooperation = {
+		value = 40
+	}
+
+	ROD_seeks_soviet_aid = {
+		value = 20
+	}
+
+	ROD_united_front_leader = {
+		value = 50
+	}
+
+	ROD_contacts_communists = {
+		value = 20
+	}
+
+	ROD_forces_anti_japanese = {
+		value = -25
+	}
+
+	ROD_anti_japanese = {
+		value = -40
+	}
+
+	ROD_suppresses_communists = {
+		value = 15
+	}
 }
