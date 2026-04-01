@@ -1,0 +1,504 @@
+focus_tree = {
+    id = ROD
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = ROD
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 10000 y = 10000 }
+
+    # ========== 左主线（听命中央线）==========
+    # 第0行 - 听命中央
+    focus = {
+        id = ROD_focus_0
+        icon = GFX_focus_BEL_independent_neutral_and_loyal
+        x = 2
+        y = 0
+        cost = 10
+        ai_will_do = { factor = 1 }
+        mutually_exclusive = { focus = ROD_focus_1 }
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
+        }
+    }
+
+    # 第1行 - 与日军谈判
+    focus = {
+        id = ROD_focus_2
+        icon = GFX_focus_AUS_diplomatic_effort
+        x = 2
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_0 }
+        completion_reward = {
+            add_political_power = 30
+            JAP = { add_opinion_modifier = { target = ROD modifier = ROD_negotiates_with_japan } }
+            add_stability = -0.03
+        }
+    }
+
+    # 第2行 - 通电下野
+    focus = {
+        id = ROD_focus_3
+        icon = GFX_focus_BEL_government_resigns
+        x = 2
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_2 }
+        completion_reward = {
+            add_political_power = -50
+            add_stability = -0.05
+            add_war_support = -0.03
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_resigned } }
+        }
+    }
+
+    # 第3行 - 赴任北平绥靖公署
+    focus = {
+        id = ROD_focus_4
+        icon = GFX_focus_BEL_engine_of_the_economy
+        x = 2
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_3 }
+        completion_reward = {
+            add_political_power = 40
+            608 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+
+    # 第4行 - 两个分支
+    focus = {
+        id = ROD_focus_5
+        icon = GFX_focus_AUS_the_evidenzburo
+        x = 0
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_4 }
+        completion_reward = {
+            add_intel_network_strength = { target = MAN value = 20 }
+            add_intel_network_strength = { target = JAP value = 10 }
+        }
+    }
+
+    focus = {
+        id = ROD_focus_6
+        icon = GFX_focus_ARG_universidad_de_buenos_aires
+        x = 4
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_4 }
+        completion_reward = {
+            add_research_slot = 1
+            add_political_power = 25
+        }
+    }
+
+    # 第5行 - 长城抗战
+    focus = {
+        id = ROD_focus_7
+        icon = GFX_focus_BEL_resist_and_bite
+        x = 2
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_5 }
+        prerequisite = { focus = ROD_focus_6 }
+        completion_reward = {
+            add_war_support = 0.05
+            add_stability = 0.03
+            add_manpower = 5000
+            army_experience = 10
+        }
+    }
+
+    # 第6行 - 释放政治犯
+    focus = {
+        id = ROD_focus_8
+        icon = GFX_focus_AUS_release_imprisoned_leaders
+        x = 4
+        y = 6
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_7 }
+        completion_reward = {
+            add_stability = 0.03
+            add_political_power = 20
+        }
+    }
+
+    # 第7行 - 回国复出
+    focus = {
+        id = ROD_focus_9
+        icon = GFX_focus_BEL_leopolds_return
+        x = 2
+        y = 7
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_7 }
+        completion_reward = {
+            add_political_power = 60
+            add_stability = 0.05
+            add_popularity = { ideology = neutrality popularity = 0.03 }
+        }
+    }
+
+    # 第8行 - 两个分支
+    focus = {
+        id = ROD_focus_10
+        icon = GFX_focus_BEL_expression_of_belgian_unity
+        x = 0
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_9 }
+        completion_reward = {
+            add_political_power = 30
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = ROD_focus_11
+        icon = GFX_focus_ARG_army
+        x = 4
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_9 }
+        completion_reward = {
+            add_manpower = 10000
+            add_war_support = 0.05
+            army_experience = 5
+        }
+    }
+
+    # 第9行 - 建立四维学会分支
+    focus = {
+        id = ROD_focus_17
+        icon = GFX_focus_BEL_multi_language_courses
+        x = -2
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_10 }
+        completion_reward = {
+            add_stability = 0.03
+            add_political_power = 20
+        }
+    }
+
+    focus = {
+        id = ROD_focus_18
+        icon = GFX_focus_BEL_burgundy_rising
+        x = 0
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_10 }
+        completion_reward = {
+            add_war_support = 0.05
+            add_popularity = { ideology = fascism popularity = 0.05 }
+        }
+    }
+
+    # 第9行 - 重组东北军分支
+    focus = {
+        id = ROD_focus_12
+        icon = GFX_focus_ARG_recruitment_drive
+        x = 4
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_11 }
+        completion_reward = {
+            add_manpower = 15000
+            add_war_support = 0.05
+            army_experience = 10
+        }
+    }
+
+    # 第10行 - 赴任西北剿总
+    focus = {
+        id = ROD_focus_13
+        icon = GFX_focus_BEL_koningshooikt_wavre_line
+        x = 4
+        y = 10
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_12 }
+        completion_reward = {
+            add_political_power = 40
+            620 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            621 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+
+    # 第11行 - 接触共产党
+    focus = {
+        id = ROD_focus_14
+        icon = GFX_focus_AUS_austromarxism
+        x = 4
+        y = 11
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_13 }
+        completion_reward = {
+            PRC = { add_opinion_modifier = { target = ROD modifier = ROD_contacts_communists } }
+            add_stability = -0.03
+            add_war_support = 0.05
+        }
+    }
+
+    # 第12行 - 两个分支
+    focus = {
+        id = ROD_focus_15
+        icon = GFX_focus_attack_japan
+        x = 2
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_14 }
+        completion_reward = {
+            add_war_support = 0.1
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_forces_anti_japanese } }
+            JAP = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese } }
+        }
+    }
+
+    focus = {
+        id = ROD_focus_16
+        icon = GFX_focus_AUS_disregard_the_treaties
+        x = 6
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_14 }
+        completion_reward = {
+            add_war_support = 0.05
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_suppresses_communists } }
+            add_popularity = { ideology = neutrality popularity = 0.05 }
+        }
+    }
+
+    # ========== 右主线（联共抗日线）==========
+    # 第0行 - 联共抗日
+    focus = {
+        id = ROD_focus_1
+        icon = GFX_focus_AUS_danubian_socialist_communes
+        x = 8
+        y = 0
+        cost = 10
+        ai_will_do = { factor = 1 }
+        mutually_exclusive = { focus = ROD_focus_0 }
+        completion_reward = {
+            add_war_support = 0.15
+            add_stability = -0.03
+            add_manpower = 3000
+            PRC = { add_opinion_modifier = { target = ROD modifier = ROD_united_front } }
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_cooperates_with_communists } }
+        }
+    }
+
+    # 第1行 - 三个分支
+    focus = {
+        id = ROD_focus_19
+        icon = GFX_ROD_focus_19
+        x = 8
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_1 }
+        completion_reward = {
+            add_manpower = 5000
+            army_experience = 10
+            add_war_support = 0.05
+        }
+    }
+
+    focus = {
+        id = ROD_focus_20
+        icon = GFX_focus_AUS_unexpected_alliances
+        x = 10
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_1 }
+        completion_reward = {
+            add_political_power = 40
+            PRC = { add_opinion_modifier = { target = ROD modifier = ROD_communist_liaison } }
+            add_stability = -0.02
+        }
+    }
+
+    focus = {
+        id = ROD_focus_21
+        icon = GFX_ROD_focus_21
+        x = 12
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_1 }
+        completion_reward = {
+            add_war_support = 0.08
+            add_manpower = 8000
+            army_experience = 5
+        }
+    }
+
+    # 第2行
+    focus = {
+        id = ROD_focus_22
+        icon = GFX_ROD_focus_22
+        x = 8
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_19 }
+        completion_reward = {
+            add_stability = 0.03
+            add_war_support = 0.05
+            add_manpower = 3000
+        }
+    }
+
+    focus = {
+        id = ROD_focus_23
+        icon = GFX_focus_BEL_eben_emael_fortress
+        x = 12
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_21 }
+        completion_reward = {
+            add_war_support = 0.1
+            add_stability = 0.02
+            add_manpower = 5000
+        }
+    }
+
+    # 第3行
+    focus = {
+        id = ROD_focus_24
+        icon = GFX_focus_AUS_union_of_danubian_socialist_republics
+        x = 7
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_22 }
+        completion_reward = {
+            add_political_power = 30
+            add_stability = 0.02
+            add_popularity = { ideology = communism popularity = 0.03 }
+        }
+    }
+
+    focus = {
+        id = ROD_focus_25
+        icon = GFX_focus_AUS_inviting_the_observers
+        x = 9
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_22 }
+        prerequisite = { focus = ROD_focus_20 }
+        completion_reward = {
+            add_political_power = 25
+            add_war_support = 0.05
+            PRC = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese_alliance } }
+        }
+    }
+
+    focus = {
+        id = ROD_focus_26
+        icon = GFX_focus_ARG_the_war_machine
+        x = 12
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_23 }
+        completion_reward = {
+            add_political_power = 35
+            add_stability = 0.03
+            add_manpower = 4000
+        }
+    }
+
+    # 第4行
+    focus = {
+        id = ROD_focus_27
+        icon = GFX_focus_AUS_for_a_better_future
+        x = 8
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_24 }
+        prerequisite = { focus = ROD_focus_25 }
+        completion_reward = {
+            add_war_support = 0.12
+            add_popularity = { ideology = communism popularity = 0.05 }
+            PRC = { add_opinion_modifier = { target = ROD modifier = ROD_communist_cooperation } }
+        }
+    }
+
+    focus = {
+        id = ROD_focus_28
+        icon = GFX_focus_befriend_italy
+        x = 10
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_26 }
+        completion_reward = {
+            SOV = { add_opinion_modifier = { target = ROD modifier = ROD_seeks_soviet_aid } }
+            add_political_power = 40
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = ROD_focus_29
+        icon = GFX_focus_BEL_belgian_renaissance
+        x = 14
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_26 }
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    # 第5行 - 抗日民族统一战线
+    focus = {
+        id = ROD_focus_30
+        icon = GFX_focus_AUS_the_danubian_federation
+        x = 12
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_focus_28 }
+        prerequisite = { focus = ROD_focus_29 }
+        completion_reward = {
+            add_political_power = 80
+            add_stability = 0.08
+            add_war_support = 0.15
+            add_popularity = { ideology = communism popularity = 0.08 }
+            PRC = { add_opinion_modifier = { target = ROD modifier = ROD_united_front_leader } }
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_united_front_leader } }
+        }
+    }
+
+}
