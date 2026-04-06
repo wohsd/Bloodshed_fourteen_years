@@ -23,22 +23,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Modernize_Military_Reform
-		x = 2
-		y = 1
-		cost = 7
-		icon = GFX_kmt_66
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = CHI_focus_2
-		}
-		completion_reward = {
-			add_command_power = 50
-		}
-		relative_position_id = CHI_focus_2
-	}
-	focus = {
 		id = CHIFocus_1
 		x = 17
 		y = 1
@@ -153,8 +137,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Reorganize_National_Revolutionary_Army
-		x = 0
-		y = 3
+		x = 75
+		y = 6
 		cost = 7
 		icon = GFX_kmt_67
 		continue_if_invalid = no
@@ -171,7 +155,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = Reorganize_National_Revolutionary_Army_tooltip
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = German_style_Adjusted_Division
@@ -368,8 +351,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Munitions_Department
-		x = 2
-		y = 4
+		x = 77
+		y = 7
 		cost = 7
 		icon = GFX_focus_CONGO_copper_cartridges
 		continue_if_invalid = no
@@ -380,12 +363,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = CHI_Ordnance_Industry_Administration
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Open_Military_Research_Institute
-		x = 1
-		y = 5
+		x = 76
+		y = 8
 		cost = 7
 		icon = GFX_focus_ARG_develop_the_electricity_sector
 		continue_if_invalid = no
@@ -410,12 +392,11 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Establish_Central_Military_Academy
-		x = 3
-		y = 5
+		x = 78
+		y = 8
 		cost = 7
 		icon = GFX_kmt_65
 		continue_if_invalid = no
@@ -432,7 +413,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = Establish_Central_Military_Academy_tooltip
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = CHIFocus_2
@@ -874,14 +854,15 @@ focus_tree = {
 	}
 	focus = {
 		id = German_Positional_Tactics
-		x = -5
-		y = 1
+		x = 70
+		y = 4
 		cost = 7
 		icon = GFX_kmt_54
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Modernize_Military_Reform
+			focus = Internal_Pacification_Before_Resistance
+			focus = Resistance_First_to_Save_Nation
 		}
 		completion_reward = {
 			add_command_power = 20
@@ -891,7 +872,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Resistance_First_to_Save_Nation
@@ -1055,7 +1035,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = CHI_BaiCongXi_H
+			show_ideas_tooltip = CHI_BaiChongXi_H
 		}
 		relative_position_id = CHIFocus_1
 	}
@@ -1959,8 +1939,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_Central_Aviation_School
-		x = -3
-		y = 2
+		x = 72
+		y = 5
 		cost = 7
 		icon = GFX_focus_generic_air_bases
 		continue_if_invalid = no
@@ -1991,18 +1971,18 @@ focus_tree = {
 			}
 			custom_effect_tooltip = Establish_Central_Aviation_School_tooltip
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Aviation_Salvation_Movement
-		x = -2
-		y = 1
+		x = 73
+		y = 4
 		cost = 7
 		icon = GFX_goal_generic_air_bomber
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Modernize_Military_Reform
+			focus = Internal_Pacification_Before_Resistance
+			focus = Resistance_First_to_Save_Nation
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -2021,7 +2001,6 @@ focus_tree = {
 				equipment = large_plane_airframe
 			}
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Standardize_Training_System
@@ -2060,14 +2039,15 @@ focus_tree = {
 	}
 	focus = {
 		id = 600000_Tonnage_Plan
-		x = 2
-		y = 1
+		x = 77
+		y = 4
 		cost = 7
 		icon = GFX_goal_generic_construct_naval_dockyard
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Modernize_Military_Reform
+			focus = Resistance_First_to_Save_Nation
+			focus = Internal_Pacification_Before_Resistance
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -2085,7 +2065,6 @@ focus_tree = {
 				equipment = ship_hull_light
 			}
 		}
-		relative_position_id = Modernize_Military_Reform
 	}
 	focus = {
 		id = Promote_Teacher_Colleges
@@ -3312,7 +3291,6 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		_Do_Not_Move_Squad_
 		prerequisite = {
 			focus = Lushan_Military_Officer_Training_Class
 		}
@@ -3644,7 +3622,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Fascist_propaganda
-		x = 88
+		x = 68
 		y = 5
 		cost = 0
 		continue_if_invalid = no
@@ -3675,8 +3653,8 @@ focus_tree = {
 		x = 68
 		y = 10
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Infiltrate_the_army
 		}
@@ -3689,14 +3667,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
-		relative_position_id = German_military_tactics
+		cancel_if_invalid = yes
 		mutually_exclusive = {
 			focus = CHI_focus_6
 		}
 		prerequisite = {
 			focus = German_military_tactics
 		}
+		relative_position_id = German_military_tactics
 	}
 }

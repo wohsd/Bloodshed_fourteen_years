@@ -94,7 +94,7 @@ recruit_character = CHI_ZhangQun
 recruit_character = CHI_HuZongNan
 recruit_character = CHI_Alexander_von_Falkenhausen
 
-recruit_character = CHI_BaiCongXi
+recruit_character = CHI_BaiChongXi
 
 recruit_character = RFC_huangqixiang
 recruit_character = CHI_ChenShaoKuang 

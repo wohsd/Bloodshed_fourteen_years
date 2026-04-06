@@ -1,52 +1,35 @@
 characters={
     CHI_JiangJieShi={
-		name = CHI_JiangJieShi
-		portraits={ 
-			civilian={
-				large="gfx/leaders/CHI/CHI_JiangJieShi.png"
-				small = "gfx/interface/advisers/CHI_JiangJieShi_small.png"
-			}
-			army = {
-				large="gfx/leaders/CHI/CHI_JiangJieShi_army.png"
-			}
+	name = CHI_JiangJieShi
+	portraits={ 
+		civilian={
+			large="gfx/leaders/CHI/CHI_JiangJieShi.png"
+			small = "gfx/interface/advisers/CHI_JiangJieShi_small.png"
 		}
-		country_leader={
-			desc = CHI_JiangJieShi_leader_desc
-			ideology=despotism
-			traits={
-
-			}
-		}
-		field_marshal = {
-			desc = CHI_JiangJieShi_leader_desc
-			traits = {
-				CHI_Central_Army
-				old_guard
-	        }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-		advisor={	
-			desc = CHI_JiangJieShi_leader_desc
-	
-			slot = army_chief
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-			}
-			traits = {
-				army_logistics_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+		army = {
+			large="gfx/leaders/CHI/CHI_JiangJieShi_army.png"
 		}
 	}
+	country_leader={
+		desc = CHI_JiangJieShi_leader_desc
+		ideology=despotism
+		traits={
+
+		}
+	}
+	field_marshal = {
+		desc = CHI_JiangJieShi_leader_desc
+		traits = {
+			CHI_Central_Army
+			old_guard
+	    }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+}
 	CHI_WangJingWei={
 		name=CHI_WangJingWei
 		portraits={
@@ -95,80 +78,260 @@ characters={
 		}
 	}
 	CHI_ChenCheng={
-		name=CHI_ChenCheng
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_ChenCheng.png"
-				small ="gfx/interface/advisers/CHI_ChenCheng.png"
-			}
+	name=CHI_ChenCheng
+	portraits={
+		army={
+			large="gfx/leaders/CHI/CHI_ChenCheng.png"
+			small ="gfx/interface/advisers/CHI_ChenCheng.png"
+		}
 
-		}
-		advisor={	
-			desc = CHI_ChenCheng_leader_desc
-	
-			slot = army_chief
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-			}
-			traits = {
-				army_chief_planning_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		corps_commander={	
-			desc = CHI_ChenCheng_leader_desc
-
-			traits={
-				chenchengxi
-				offensive_doctrine 
-			}
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-		}
 	}
-	CHI_HeYingQing={
-		name=CHI_HeYingQing
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_HeYingQing.png"
+	advisor={	
+		desc = CHI_ChenCheng_leader_desc
+
+		slot = army_chief
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			NOT = {
+				has_advisor = {
+					character = CHI_ChenCheng
+				}
+			}
+			custom_tooltip = {
+				title = "只能同时担任一个职位"
+				desc = "该人物已经在其他部门任职"
+				is_valid = {
+					NOT = {
+						has_advisor = {
+							character = CHI_ChenCheng
+						}
+					}
+				}
 			}
 		}
-		advisor={	desc = CHI_HeYingQing_leader_desc
-	
-			slot = army_chief
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-			}
-			traits = {
+		traits = {
+			army_chief_reform_2
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+		on_add = {
+			CHI = {
+				add_to_variable = { CHI_chen_power = 5 }
 				
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
 			}
 		}
-		corps_commander={	desc = CHI_HeYingQing_leader_desc
-
-			traits={ 
-				heyingqinxi
+		on_remove = {
+			CHI = {
+				add_to_variable = { CHI_chen_power = -5 }
+				
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
 			}
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
 		}
 	}
+	corps_commander={	
+		desc = CHI_ChenCheng_leader_desc
+
+		traits={
+			chenchengxi
+			offensive_doctrine 
+		}
+		skill=2
+		attack_skill=1
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+	CHI_HeYingQing={
+	name=CHI_HeYingQing
+	portraits={
+		army={
+			large="gfx/leaders/CHI/CHI_HeYingQing.png"
+		}
+	}
+	advisor={	desc = CHI_HeYingQing_leader_desc
+
+		slot = army_chief
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			NOT = {
+				has_advisor = {
+					character = CHI_HeYingQing
+				}
+			}
+			custom_tooltip = {
+				title = "只能同时担任一个职位"
+				desc = "该人物已经在其他部门任职"
+				is_valid = {
+					NOT = {
+						has_advisor = {
+							character = CHI_HeYingQing
+						}
+					}
+				}
+			}
+		}
+		traits = {
+			army_chief_old_guard
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+		on_add = {
+			CHI = {
+				add_to_variable = { CHI_he_power = 5 }
+				
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
+			}
+		}
+		on_remove = {
+			CHI = {
+				add_to_variable = { CHI_he_power = -5 }
+				
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
+			}
+		}
+	}
+	corps_commander={	desc = CHI_HeYingQing_leader_desc
+
+		traits={ 
+			heyingqinxi
+		}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=2
+	}
+}
 	CHI_TangShenZhi={
 		name=CHI_TangShenZhi
 		portraits={
@@ -183,9 +346,9 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				army_chief_offensive_2
 			}
 			traits = {
-				army_chief_offensive_1
 			}
 			cost = 100
 			ai_will_do = {
@@ -218,7 +381,7 @@ characters={
 			available = {
 			}
 			traits = {
-				army_chief_offensive_1
+				army_chief_morale_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -241,45 +404,61 @@ characters={
 
 
 	CHI_XueYue={
-		name=CHI_XueYue
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_XueYue.png"
-			}
-			civilian={
-				small = "gfx/interface/advisers/CHI_XueYue.png"
-			}
+	name=CHI_XueYue
+	portraits={
+		army={
+			large="gfx/leaders/CHI/CHI_XueYue.png"
 		}
-		advisor={	
-			desc = CHI_XueYue_leader_desc
-			slot = high_command
-			idea_token = CHI_XueYue_H
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				has_completed_focus = CHIFocus_21
-			}
-			traits = {
-				army_chief_defensive_3
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		corps_commander={	
-			desc = CHI_XueYue_leader_desc
-			traits={ 
-				CHI_Central_Army
-			}
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
+		civilian={
+			small = "gfx/interface/advisers/CHI_XueYue.png"
 		}
 	}
+	advisor={	
+		desc = CHI_XueYue_leader_desc
+		slot = army_chief
+		idea_token = CHI_XueYue_H
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_completed_focus = CHIFocus_21
+			NOT = {
+				has_advisor = {
+					character = CHI_XueYue
+				}
+			}
+			custom_tooltip = {
+				title = "只能同时担任一个职位"
+				desc = "该人物已经在其他部门任职"
+				is_valid = {
+					NOT = {
+						has_advisor = {
+							character = CHI_XueYue
+						}
+					}
+				}
+			}
+		}
+		traits = {
+			army_chief_offensive_3
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	corps_commander={	
+		desc = CHI_XueYue_leader_desc
+		traits={ 
+			CHI_Central_Army
+		}
+		skill=2
+		attack_skill=1
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=2
+	}
+}
 	CHI_WeiLiHuang={
 		name=CHI_WeiLiHuang
 		portraits={
@@ -527,33 +706,49 @@ characters={
 
 
 
-	CHI_BaiCongXi={
-		name=CHI_BaiCongXi
-		portraits={ 
-			civilian={
-				small = "gfx/interface/advisers/CHI_BaiCongXi.png"
-			}
-		}
-		
-		advisor={	desc = CHI_BaiCongXi_leader_desc
-	
-			slot = high_command
-			idea_token = CHI_BaiCongXi_H
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				has_completed_focus = CHIFocus_20
-			}
-			traits = {
-				army_chief_reform_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+	CHI_BaiChongXi={
+	name=CHI_BaiChongXi
+	portraits={ 
+		civilian={
+			small = "gfx/interface/advisers/CHI_BaiChongXi.png"
 		}
 	}
+	
+	advisor={	desc = CHI_BaiChongXi_leader_desc
+
+		slot = army_chief
+		idea_token = CHI_BaiChongXi_H
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_completed_focus = CHIFocus_20
+			NOT = {
+				has_advisor = {
+					character = CHI_BaiChongXi
+				}
+			}
+			custom_tooltip = {
+				title = "只能同时担任一个职位"
+				desc = "该人物已经在其他部门任职"
+				is_valid = {
+					NOT = {
+						has_advisor = {
+							character = CHI_BaiChongXi
+						}
+					}
+				}
+			}
+		}
+		traits = {
+			army_chief_defensive_3
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+}
 
 
 
@@ -742,25 +937,131 @@ characters={
 
 
 	CHI_TangEnBo={
-		name=CHI_TangEnBo
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_TangEnBo.png"
-			}
-		}
-		corps_commander={	desc = CHI_TangEnBo_leader_desc
-
-			traits={ 
-				tangenboxi
-				Resisting_the_teacher
-			 }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+	name=CHI_TangEnBo
+	portraits={
+		army={
+			large="gfx/leaders/CHI/CHI_TangEnBo.png"
 		}
 	}
+	advisor={
+		desc = CHI_TangEnBo_leader_desc
+		slot = army_chief
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			NOT = {
+				has_advisor = {
+					character = CHI_TangEnBo
+				}
+			}
+			custom_tooltip = {
+				title = "只能同时担任一个职位"
+				desc = "该人物已经在其他部门任职"
+				is_valid = {
+					NOT = {
+						has_advisor = {
+							character = CHI_TangEnBo
+						}
+					}
+				}
+			}
+		}
+		traits = {
+			army_chief_morale_2
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+		on_add = {
+			CHI = {
+				add_to_variable = { CHI_tang_power = 5 }
+				
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
+			}
+		}
+		on_remove = {
+			CHI = {
+				add_to_variable = { CHI_tang_power = -5 }
+				
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
+			}
+		}
+	}
+	corps_commander={	desc = CHI_TangEnBo_leader_desc
+
+		traits={ 
+			tangenboxi
+			Resisting_the_teacher
+		 }
+		skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
 	CHI_WangYaoWu={
 		name=CHI_WangYaoWu
 		portraits={
@@ -818,24 +1119,130 @@ characters={
 	}
 
 	CHI_HuZongNan={
-		name=CHI_HuZongNan
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_HuZongNan.png"
-			}
-		}
-		corps_commander={	desc = CHI_HuZongNan_leader_desc
-
-			traits={ 
-				huzongnanxi
-			}
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
+	name=CHI_HuZongNan
+	portraits={
+		army={
+			large="gfx/leaders/CHI/CHI_HuZongNan.png"
 		}
 	}
+	advisor={
+		desc = CHI_HuZongNan_leader_desc
+		slot = army_chief
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			NOT = {
+				has_advisor = {
+					character = CHI_HuZongNan
+				}
+			}
+			custom_tooltip = {
+				title = "只能同时担任一个职位"
+				desc = "该人物已经在其他部门任职"
+				is_valid = {
+					NOT = {
+						has_advisor = {
+							character = CHI_HuZongNan
+						}
+					}
+				}
+			}
+		}
+		traits = {
+			army_chief_organizational_2
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+		on_add = {
+			CHI = {
+				add_to_variable = { CHI_hu_power = 5 }
+				
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
+			}
+		}
+		on_remove = {
+			CHI = {
+				add_to_variable = { CHI_hu_power = -5 }
+				
+				# 重新计算总影响力和百分比
+				set_variable = { CHI_total_clique_power = 0 }
+				add_to_variable = { CHI_total_clique_power = CHI_he_power }
+				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+				
+				if = {
+					limit = { check_variable = { CHI_total_clique_power > 0 } }
+					set_variable = { CHI_he_power_percent = CHI_he_power }
+					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_he_power_percent = 100 }
+					
+					set_variable = { CHI_chen_power_percent = CHI_chen_power }
+					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_chen_power_percent = 100 }
+					
+					set_variable = { CHI_hu_power_percent = CHI_hu_power }
+					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_hu_power_percent = 100 }
+					
+					set_variable = { CHI_tang_power_percent = CHI_tang_power }
+					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+					multiply_variable = { CHI_tang_power_percent = 100 }
+				}
+				else = {
+					set_variable = { CHI_he_power_percent = 25 }
+					set_variable = { CHI_chen_power_percent = 25 }
+					set_variable = { CHI_hu_power_percent = 25 }
+					set_variable = { CHI_tang_power_percent = 25 }
+				}
+			}
+		}
+	}
+	corps_commander={	desc = CHI_HuZongNan_leader_desc
+
+		traits={ 
+			huzongnanxi
+		}
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=2
+	}
+}
 	
 	CHI_SunKe={
 		name=CHI_SunKe

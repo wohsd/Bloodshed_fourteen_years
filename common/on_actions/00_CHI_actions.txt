@@ -77,56 +77,33 @@ on_actions = {
         }
     }
     
-    on_monthly = {
+    on_leader_promoted = {
         effect = {
             CHI = {
-                set_variable = { CHI_he_power = 0 }
-                set_variable = { CHI_chen_power = 0 }
-                set_variable = { CHI_hu_power = 0 }
-                set_variable = { CHI_tang_power = 0 }
+                if = {
+                    limit = { has_trait = heyingqinxi }
+                    add_to_variable = { CHI_he_power = 1 }
+                }
+                if = {
+                    limit = { has_trait = chenchengxi }
+                    add_to_variable = { CHI_chen_power = 1 }
+                }
+                if = {
+                    limit = { has_trait = huzongnanxi }
+                    add_to_variable = { CHI_hu_power = 1 }
+                }
+                if = {
+                    limit = { has_trait = tangenboxi }
+                    add_to_variable = { CHI_tang_power = 1 }
+                }
+                
+                # 重新计算总影响力和百分比
                 set_variable = { CHI_total_clique_power = 0 }
-                
-                every_army_leader = {
-                    limit = { has_trait = heyingqinxi }
-                    add_to_variable = { PREV.CHI_he_power = skill }
-                }
-                every_army_leader = {
-                    limit = { has_trait = chenchengxi }
-                    add_to_variable = { PREV.CHI_chen_power = skill }
-                }
-                every_army_leader = {
-                    limit = { has_trait = huzongnanxi }
-                    add_to_variable = { PREV.CHI_hu_power = skill }
-                }
-                every_army_leader = {
-                    limit = { has_trait = tangenboxi }
-                    add_to_variable = { PREV.CHI_tang_power = skill }
-                }
-                
-                every_navy_leader = {
-                    limit = { has_trait = heyingqinxi }
-                    add_to_variable = { PREV.CHI_he_power = skill }
-                }
-                every_navy_leader = {
-                    limit = { has_trait = chenchengxi }
-                    add_to_variable = { PREV.CHI_chen_power = skill }
-                }
-                every_navy_leader = {
-                    limit = { has_trait = huzongnanxi }
-                    add_to_variable = { PREV.CHI_hu_power = skill }
-                }
-                every_navy_leader = {
-                    limit = { has_trait = tangenboxi }
-                    add_to_variable = { PREV.CHI_tang_power = skill }
-                }
-                
-                # 计算总影响力
                 add_to_variable = { CHI_total_clique_power = CHI_he_power }
                 add_to_variable = { CHI_total_clique_power = CHI_chen_power }
                 add_to_variable = { CHI_total_clique_power = CHI_hu_power }
                 add_to_variable = { CHI_total_clique_power = CHI_tang_power }
                 
-                # 转换为百分比（避免除以0）
                 if = {
                     limit = { check_variable = { CHI_total_clique_power > 0 } }
                     set_variable = { CHI_he_power_percent = CHI_he_power }
@@ -155,3 +132,5 @@ on_actions = {
         }
     }
 }
+
+
