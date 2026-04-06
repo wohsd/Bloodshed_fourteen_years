@@ -332,14 +332,14 @@ characters={
 		logistics_skill=2
 	}
 }
-	CHI_TangShenZhi={
-		name=CHI_TangShenZhi
+	CHI_TangShengZhi={
+		name=CHI_TangShengZhi
 		portraits={
 			army={
-				large="gfx/leaders/CHI/CHI_TangShenZhi.png"
+				large="gfx/leaders/CHI/CHI_TangShengZhi.png"
 			}
 		}
-		advisor={	desc = CHI_TangShenZhi_leader_desc
+		advisor={	desc = CHI_TangShengZhi_leader_desc
 	
 			slot = army_chief
 			allowed = {
@@ -355,7 +355,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = CHI_TangShenZhi_leader_desc
+		corps_commander={	desc = CHI_TangShengZhi_leader_desc
 
 			traits={ }
 			skill=1
