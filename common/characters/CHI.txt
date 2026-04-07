@@ -99,17 +99,6 @@ characters={
 					character = CHI_ChenCheng
 				}
 			}
-			custom_tooltip = {
-				title = "只能同时担任一个职位"
-				desc = "该人物已经在其他部门任职"
-				is_valid = {
-					NOT = {
-						has_advisor = {
-							character = CHI_ChenCheng
-						}
-					}
-				}
-			}
 		}
 		traits = {
 			army_chief_reform_2
@@ -226,17 +215,6 @@ characters={
 					character = CHI_HeYingQing
 				}
 			}
-			custom_tooltip = {
-				title = "只能同时担任一个职位"
-				desc = "该人物已经在其他部门任职"
-				is_valid = {
-					NOT = {
-						has_advisor = {
-							character = CHI_HeYingQing
-						}
-					}
-				}
-			}
 		}
 		traits = {
 			army_chief_old_guard
@@ -333,38 +311,44 @@ characters={
 	}
 }
 	CHI_TangShengZhi={
-		name=CHI_TangShengZhi
-		portraits={
-			army={
-				large="gfx/leaders/CHI/CHI_TangShengZhi.png"
-			}
-		}
-		advisor={	desc = CHI_TangShengZhi_leader_desc
-	
-			slot = army_chief
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-				army_chief_offensive_2
-			}
-			traits = {
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		corps_commander={	desc = CHI_TangShengZhi_leader_desc
-
-			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+	name=CHI_TangShengZhi
+	portraits={
+		army={
+			large="gfx/leaders/CHI/CHI_TangShengZhi.png"
 		}
 	}
+	advisor={	desc = CHI_TangShengZhi_leader_desc
+
+		slot = army_chief
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			NOT = {
+				has_advisor = {
+					character = CHI_TangShengZhi
+				}
+			}
+		}
+		traits = {
+			army_chief_offensive_2
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	corps_commander={	desc = CHI_TangShengZhi_leader_desc
+
+		traits={ }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
 	CHI_GuZhuTong={
 		name=CHI_GuZhuTong
 		portraits={
@@ -425,17 +409,6 @@ characters={
 			NOT = {
 				has_advisor = {
 					character = CHI_XueYue
-				}
-			}
-			custom_tooltip = {
-				title = "只能同时担任一个职位"
-				desc = "该人物已经在其他部门任职"
-				is_valid = {
-					NOT = {
-						has_advisor = {
-							character = CHI_XueYue
-						}
-					}
 				}
 			}
 		}
@@ -728,17 +701,6 @@ characters={
 					character = CHI_BaiChongXi
 				}
 			}
-			custom_tooltip = {
-				title = "只能同时担任一个职位"
-				desc = "该人物已经在其他部门任职"
-				is_valid = {
-					NOT = {
-						has_advisor = {
-							character = CHI_BaiChongXi
-						}
-					}
-				}
-			}
 		}
 		traits = {
 			army_chief_defensive_3
@@ -936,7 +898,7 @@ characters={
 	}
 
 
-	CHI_TangEnBo={
+CHI_TangEnBo={
 	name=CHI_TangEnBo
 	portraits={
 		army={
@@ -953,17 +915,6 @@ characters={
 			NOT = {
 				has_advisor = {
 					character = CHI_TangEnBo
-				}
-			}
-			custom_tooltip = {
-				title = "只能同时担任一个职位"
-				desc = "该人物已经在其他部门任职"
-				is_valid = {
-					NOT = {
-						has_advisor = {
-							character = CHI_TangEnBo
-						}
-					}
 				}
 			}
 		}
@@ -1135,17 +1086,6 @@ characters={
 			NOT = {
 				has_advisor = {
 					character = CHI_HuZongNan
-				}
-			}
-			custom_tooltip = {
-				title = "只能同时担任一个职位"
-				desc = "该人物已经在其他部门任职"
-				is_valid = {
-					NOT = {
-						has_advisor = {
-							character = CHI_HuZongNan
-						}
-					}
 				}
 			}
 		}

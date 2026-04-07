@@ -146,6 +146,12 @@ add_to_variable = { CHI_navy_spotting_chance = -0.1 }
 #huangpu
 add_dynamic_modifier = {modifier = Republic_of_China_Military_Academy}
 
+#领袖权威
+add_dynamic_modifier = {modifier = Leader_Authority}
+add_to_variable = {Leader_Authority_political_power_factor = 0.1}
+add_to_variable = {Leader_Authority_stability_factor = 0.1}
+add_to_variable = {Leader_Authority_war_support_factor = 0.1}
+
 puppet = CEN
 add_manpower=321450
 set_popularities = {

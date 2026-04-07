@@ -1379,7 +1379,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
-		x = 11
+		x = 10
 		y = 1
 		cost = 5
 		icon = GFX_kmt03
@@ -3115,7 +3115,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_focus_12
-		x = -2
+		x = -3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3130,7 +3130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_focus_13
-		x = 0
+		x = -1
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3245,12 +3245,12 @@ focus_tree = {
 	focus = {
 		id = Split_and_Revive_Society
 		x = 0
-		y = 4
+		y = 5
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Continue_political_training
+			focus = Factional_Revival_Society
 		}
 		prerequisite = {
 			focus = Support_Chen_Chengs_reforms
@@ -3274,7 +3274,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_a_secret_service_office
-		x = 4
+		x = 5
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3322,7 +3322,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Continue_political_training
-		x = 5
+		x = 4
 		y = 2
 		cost = 0
 		continue_if_invalid = no
@@ -3352,7 +3352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Solve_the_economic_crisis
-		x = -9
+		x = -10
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3528,21 +3528,6 @@ focus_tree = {
 		relative_position_id = Coping_with_inflation
 	}
 	focus = {
-		id = Launch_the_tiger_hunting_campaign
-		x = -1
-		y = 1
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = Sheltering_the_four_major_families
-		}
-		prerequisite = {
-			focus = Issue_the_Gold_Yuan_Note
-		}
-		relative_position_id = Issue_the_Gold_Yuan_Note
-	}
-	focus = {
 		id = Increase_agricultural_taxes
 		x = 0
 		y = 2
@@ -3582,21 +3567,6 @@ focus_tree = {
 		relative_position_id = Increase_agricultural_taxes
 	}
 	focus = {
-		id = Sheltering_the_four_major_families
-		x = 1
-		y = 1
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = Launch_the_tiger_hunting_campaign
-		}
-		prerequisite = {
-			focus = Issue_the_Gold_Yuan_Note
-		}
-		relative_position_id = Issue_the_Gold_Yuan_Note
-	}
-	focus = {
 		id = Decentralization_of_the_Five_Yuan
 		x = 0
 		y = 1
@@ -3610,7 +3580,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Basically_implemented
-		x = -5
+		x = -4
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3633,7 +3603,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Infiltrate_the_army
-		x = 68
+		x = 69
 		y = 9
 		cost = 0
 		continue_if_invalid = no
@@ -3646,20 +3616,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Establish_a
-		}
-	}
-	focus = {
-		id = Faction_Revival_Society
-		x = 68
-		y = 10
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Infiltrate_the_army
-		}
-		prerequisite = {
-			focus = Continue_political_training
 		}
 	}
 	focus = {
@@ -3676,5 +3632,77 @@ focus_tree = {
 			focus = German_military_tactics
 		}
 		relative_position_id = German_military_tactics
+	}
+	focus = {
+		id = Anti_corruption_campaign
+		x = 69
+		y = 13
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = Central_Reconstruction_Committee
+		}
+	}
+	focus = {
+		id = Control_the_warlords
+		x = 67
+		y = 4
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = Internal_Pacification_Before_Resistance
+		}
+	}
+	focus = {
+		id = Factional_Revival_Society
+		x = 66
+		y = 10
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = Continue_political_training
+		}
+	}
+	focus = {
+		id = Establish_the_Central_Bureau
+		x = 66
+		y = 11
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = Factional_Revival_Society
+		}
+	}
+	focus = {
+		id = Establish_the_Military_Statistics_Bureau
+		x = 68
+		y = 11
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = Factional_Revival_Society
+		}
+	}
+	focus = {
+		id = Central_Reconstruction_Committee
+		x = 69
+		y = 12
+		cost = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = {
+			focus = Split_and_Revive_Society
+		}
+		prerequisite = {
+			focus = Establish_the_Military_Statistics_Bureau
+		}
+		prerequisite = {
+			focus = Infiltrate_the_army
+		}
 	}
 }
