@@ -1,30 +1,136 @@
 on_actions = {
     on_startup = {
         effect = {
-            # 直接指定国家 CHI 作为作用域（最可靠的方式）
             CHI = {
-                # 初始化变量
-                set_variable = { heyingqinxi = 0 }
+                set_variable = { CHI_he_power = 0 }
+                set_variable = { CHI_chen_power = 0 }
+                set_variable = { CHI_hu_power = 0 }
+                set_variable = { CHI_tang_power = 0 }
+                set_variable = { CHI_total_clique_power = 0 }
                 
-                # 使用 every_character 遍历所有角色（包括所有类型的指挥官）
-                every_character = {
-                    limit = {
-                        is_commander = yes          # 是军事指挥官
-                        owner = ROOT                # 属于当前国家
-                        has_trait = heyingqinxi     # 拥有保守派特质
-                    }
-                    # 累加技能等级
-                    ROOT = {
-                        add_to_variable = { heyingqinxi = THIS.skill }
-                    }
+                every_army_leader = {
+                    limit = { has_trait = heyingqinxi }
+                    add_to_variable = { PREV.CHI_he_power = skill }
+                }
+                every_army_leader = {
+                    limit = { has_trait = chenchengxi }
+                    add_to_variable = { PREV.CHI_chen_power = skill }
+                }
+                every_army_leader = {
+                    limit = { has_trait = huzongnanxi }
+                    add_to_variable = { PREV.CHI_hu_power = skill }
+                }
+                every_army_leader = {
+                    limit = { has_trait = tangenboxi }
+                    add_to_variable = { PREV.CHI_tang_power = skill }
                 }
                 
-                # 输出日志到 error.log，用于验证
-                log = "[CHI Startup] 保守派将领等级总和 = [ROOT.GetVariable:heyingqinxi]"
+                every_navy_leader = {
+                    limit = { has_trait = heyingqinxi }
+                    add_to_variable = { PREV.CHI_he_power = skill }
+                }
+                every_navy_leader = {
+                    limit = { has_trait = chenchengxi }
+                    add_to_variable = { PREV.CHI_chen_power = skill }
+                }
+                every_navy_leader = {
+                    limit = { has_trait = huzongnanxi }
+                    add_to_variable = { PREV.CHI_hu_power = skill }
+                }
+                every_navy_leader = {
+                    limit = { has_trait = tangenboxi }
+                    add_to_variable = { PREV.CHI_tang_power = skill }
+                }
                 
-                # 可选：弹出一个初始事件显示结果（需要定义事件文件）
-                # country_event = { id = leader_stats_result.1 }
+                # 计算总影响力
+                add_to_variable = { CHI_total_clique_power = CHI_he_power }
+                add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+                add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+                add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+                
+                # 转换为百分比（避免除以0）
+                if = {
+                    limit = { check_variable = { CHI_total_clique_power > 0 } }
+                    set_variable = { CHI_he_power_percent = CHI_he_power }
+                    divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_he_power_percent = 100 }
+                    
+                    set_variable = { CHI_chen_power_percent = CHI_chen_power }
+                    divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_chen_power_percent = 100 }
+                    
+                    set_variable = { CHI_hu_power_percent = CHI_hu_power }
+                    divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_hu_power_percent = 100 }
+                    
+                    set_variable = { CHI_tang_power_percent = CHI_tang_power }
+                    divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_tang_power_percent = 100 }
+                }
+                else = {
+                    set_variable = { CHI_he_power_percent = 25 }
+                    set_variable = { CHI_chen_power_percent = 25 }
+                    set_variable = { CHI_hu_power_percent = 25 }
+                    set_variable = { CHI_tang_power_percent = 25 }
+                }
+            }
+        }
+    }
+    
+    on_leader_promoted = {
+        effect = {
+            CHI = {
+                if = {
+                    limit = { has_trait = heyingqinxi }
+                    add_to_variable = { CHI_he_power = 1 }
+                }
+                if = {
+                    limit = { has_trait = chenchengxi }
+                    add_to_variable = { CHI_chen_power = 1 }
+                }
+                if = {
+                    limit = { has_trait = huzongnanxi }
+                    add_to_variable = { CHI_hu_power = 1 }
+                }
+                if = {
+                    limit = { has_trait = tangenboxi }
+                    add_to_variable = { CHI_tang_power = 1 }
+                }
+                
+                # 重新计算总影响力和百分比
+                set_variable = { CHI_total_clique_power = 0 }
+                add_to_variable = { CHI_total_clique_power = CHI_he_power }
+                add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+                add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+                add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+                
+                if = {
+                    limit = { check_variable = { CHI_total_clique_power > 0 } }
+                    set_variable = { CHI_he_power_percent = CHI_he_power }
+                    divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_he_power_percent = 100 }
+                    
+                    set_variable = { CHI_chen_power_percent = CHI_chen_power }
+                    divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_chen_power_percent = 100 }
+                    
+                    set_variable = { CHI_hu_power_percent = CHI_hu_power }
+                    divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_hu_power_percent = 100 }
+                    
+                    set_variable = { CHI_tang_power_percent = CHI_tang_power }
+                    divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+                    multiply_variable = { CHI_tang_power_percent = 100 }
+                }
+                else = {
+                    set_variable = { CHI_he_power_percent = 25 }
+                    set_variable = { CHI_chen_power_percent = 25 }
+                    set_variable = { CHI_hu_power_percent = 25 }
+                    set_variable = { CHI_tang_power_percent = 25 }
+                }
             }
         }
     }
 }
+
+

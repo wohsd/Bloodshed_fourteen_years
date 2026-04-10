@@ -185,3 +185,14 @@ Republic_of_China_Military_Academy= {
 	modifier_army_sub_unit_irregular_infantry_max_org_factor = Republic_of_China_Military_Academy_irregular_infantry_org
 	production_speed_buildings_factor = production_speed_buildings_factor #建造速度（土匪部队破坏发展，debuff）
 }
+
+Leader_Authority= {
+	icon = "GFX_idea_Leader_Authority"
+	enable = {
+		always = yes
+	}
+	#领袖权威
+	political_power_factor = Leader_Authority_political_power_factor #政治点数（百分比）
+	stability_factor = Leader_Authority_stability_factor #稳定度
+	war_support_factor = Leader_Authority_war_support_factor #战争支持度
+}

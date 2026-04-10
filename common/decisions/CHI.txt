@@ -2702,26 +2702,5 @@ China_Soviet_Road_category = {
 	}
 }
 CHI_clique_struggle = {
-    calc_heyingqinxi = {
-        icon = GFX_decision_ideology_democratic
-        allowed = { always = yes }
-        available = { tag = CHI }
-        cost = 0
-        ai_will_do = 0
 
-        effect = {
-            set_variable = { heyingqinxi = 0 }
-            every_character = {
-                limit = {
-                    is_commander = yes
-                    owner = ROOT
-                    has_trait = heyingqinxi
-                }
-                ROOT = {
-                    add_to_variable = { heyingqinxi = THIS.skill }
-                }
-            }
-            custom_effect_tooltip = "当前保守派将领等级总和: [ROOT.GetVariable:heyingqinxi]"
-        }
-    }
 }

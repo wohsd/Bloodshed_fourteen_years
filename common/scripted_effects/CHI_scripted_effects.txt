@@ -7501,8 +7501,9 @@ estimate_power_of_every_clique = {
 	add_to_variable = { CHI_total_influence = CHI_hu_influence }
 	add_to_variable = { CHI_total_influence = CHI_tang_influence }
 	#Power of Every Clique
-	set_variable = { CHI_he_power = CHI_he_influence }
-	divide_variable = { CHI_he_power = CHI_total_influence }
+	# 保留我们在on_actions中计算的CHI_he_power值
+	# set_variable = { CHI_he_power = CHI_he_influence }
+	# divide_variable = { CHI_he_power = CHI_total_influence }
 	set_variable = { CHI_chen_power = CHI_chen_influence }
 	divide_variable = { CHI_chen_power = CHI_total_influence }
 	set_variable = { CHI_hu_power = CHI_hu_influence }

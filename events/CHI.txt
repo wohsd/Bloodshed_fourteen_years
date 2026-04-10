@@ -70,6 +70,9 @@ country_event = {
 			id = CHI_struggle_balance
 		}
 		set_country_flag = jiangjieshi_gg
+		# 移除领袖权威
+		remove_dynamic_modifier = { modifier = Leader_Authority }
+		set_country_flag = leader_authority_removed
 	}
 }
 
