@@ -14,7 +14,7 @@ focus_tree = {
     # 第0行 - 听命中央
     focus = {
         id = ROD_focus_0
-        icon = GFX_focus_BEL_independent_neutral_and_loyal
+        icon = GFX_focus_GER_ally_chiang_kai_shek
         x = 2
         y = 0
         cost = 10
@@ -23,6 +23,7 @@ focus_tree = {
         completion_reward = {
             add_stability = 0.05
             add_political_power = 50
+            set_country_flag = ROD_follows_central
             CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
         }
     }
@@ -30,7 +31,7 @@ focus_tree = {
     # 第1行 - 与日军谈判
     focus = {
         id = ROD_focus_2
-        icon = GFX_focus_AUS_diplomatic_effort
+        icon = GFX_focus_CHI_avoid_another_crisis
         x = 2
         y = 1
         cost = 10
@@ -46,7 +47,7 @@ focus_tree = {
     # 第2行 - 通电下野
     focus = {
         id = ROD_focus_3
-        icon = GFX_focus_BEL_government_resigns
+        icon = GFX_focus_ARG_balancing_act
         x = 2
         y = 2
         cost = 10
@@ -78,7 +79,7 @@ focus_tree = {
     # 第4行 - 两个分支
     focus = {
         id = ROD_focus_5
-        icon = GFX_focus_AUS_the_evidenzburo
+        icon = GFX_focus_CHI_the_northern_mandate
         x = 0
         y = 4
         cost = 10
@@ -92,7 +93,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_6
-        icon = GFX_focus_ARG_universidad_de_buenos_aires
+        icon = GFX_focus_CHI_tongzi_jun
         x = 4
         y = 4
         cost = 10
@@ -107,7 +108,7 @@ focus_tree = {
     # 第5行 - 长城抗战
     focus = {
         id = ROD_focus_7
-        icon = GFX_focus_BEL_resist_and_bite
+        icon = GFX_focus_CHI_start_looking_outwards
         x = 2
         y = 5
         cost = 10
@@ -125,7 +126,7 @@ focus_tree = {
     # 第6行 - 释放政治犯
     focus = {
         id = ROD_focus_8
-        icon = GFX_focus_AUS_release_imprisoned_leaders
+        icon = GFX_focus_CHI_arrest_the_seven_gentlemen
         x = 4
         y = 6
         cost = 10
@@ -140,7 +141,7 @@ focus_tree = {
     # 第7行 - 回国复出
     focus = {
         id = ROD_focus_9
-        icon = GFX_focus_BEL_leopolds_return
+        icon = GFX_focus_CHI_appropriate_design
         x = 2
         y = 7
         cost = 10
@@ -156,7 +157,7 @@ focus_tree = {
     # 第8行 - 两个分支
     focus = {
         id = ROD_focus_10
-        icon = GFX_focus_BEL_expression_of_belgian_unity
+        icon = GFX_focus_CHI_military_mission
         x = 0
         y = 8
         cost = 10
@@ -170,7 +171,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_11
-        icon = GFX_focus_ARG_army
+        icon = GFX_focus_CHI_weaponise_the_faithful
         x = 4
         y = 8
         cost = 10
@@ -186,7 +187,7 @@ focus_tree = {
     # 第9行 - 建立四维学会分支
     focus = {
         id = ROD_focus_17
-        icon = GFX_focus_BEL_multi_language_courses
+        icon = GFX_focus_CHI_reject_the_nine_powers
         x = -2
         y = 9
         cost = 10
@@ -200,7 +201,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_18
-        icon = GFX_focus_BEL_burgundy_rising
+        icon = GFX_focus_CHI_utilize_german_contacts
         x = 0
         y = 9
         cost = 10
@@ -215,7 +216,7 @@ focus_tree = {
     # 第9行 - 重组东北军分支
     focus = {
         id = ROD_focus_12
-        icon = GFX_focus_ARG_recruitment_drive
+        icon = GFX_focus_CHI_decisive_battles
         x = 4
         y = 9
         cost = 10
@@ -231,23 +232,23 @@ focus_tree = {
     # 第10行 - 赴任西北剿总
     focus = {
         id = ROD_focus_13
-        icon = GFX_focus_BEL_koningshooikt_wavre_line
+        icon = GFX_focus_chi_cooperation_with_the_communists
         x = 4
         y = 10
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_12 }
-        completion_reward = {
-            add_political_power = 40
+        completion_reward = { 
+            add_political_power = 40 
             620 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
             621 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-        }
+        } 
     }
 
     # 第11行 - 接触共产党
     focus = {
         id = ROD_focus_14
-        icon = GFX_focus_AUS_austromarxism
+        icon = GFX_focus_CHI_generalissimo_for_all_of_china
         x = 4
         y = 11
         cost = 10
@@ -265,12 +266,12 @@ focus_tree = {
         id = ROD_focus_15
         icon = GFX_focus_attack_japan
         x = 2
-        y = 12
+        y = 12 
         cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_14 }
+        ai_will_do = { factor = 1 } 
+        prerequisite = { focus = ROD_focus_14 } 
         completion_reward = {
-            add_war_support = 0.1
+            add_war_support = 0.1 
             CHI = { add_opinion_modifier = { target = ROD modifier = ROD_forces_anti_japanese } }
             JAP = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese } }
         }
@@ -278,7 +279,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_16
-        icon = GFX_focus_AUS_disregard_the_treaties
+        icon = GFX_focus_generic_attack_chinese_soviets
         x = 6
         y = 12
         cost = 10
@@ -295,7 +296,7 @@ focus_tree = {
     # 第0行 - 联共抗日
     focus = {
         id = ROD_focus_1
-        icon = GFX_focus_AUS_danubian_socialist_communes
+        icon = GFX_focus_AFG_against_kabul
         x = 8
         y = 0
         cost = 10
@@ -305,6 +306,7 @@ focus_tree = {
             add_war_support = 0.15
             add_stability = -0.03
             add_manpower = 3000
+            set_country_flag = ROD_united_front
             PRC = { add_opinion_modifier = { target = ROD modifier = ROD_united_front } }
             CHI = { add_opinion_modifier = { target = ROD modifier = ROD_cooperates_with_communists } }
         }
@@ -328,7 +330,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_20
-        icon = GFX_focus_AUS_unexpected_alliances
+        icon = GFX_focus_AFG_defender_of_central_asia
         x = 10
         y = 2
         cost = 10
@@ -374,7 +376,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_23
-        icon = GFX_focus_BEL_eben_emael_fortress
+        icon = GFX_focus_CHI_guerrilla_warfare
         x = 12
         y = 2
         cost = 10
@@ -405,7 +407,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_25
-        icon = GFX_focus_AUS_inviting_the_observers
+        icon = GFX_focus_generic_befriend_the_chinese_soviet
         x = 9
         y = 3
         cost = 10
@@ -421,7 +423,7 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_26
-        icon = GFX_focus_ARG_the_war_machine
+        icon = GFX_focus_RAJ_enrollment_of_dali_children
         x = 12
         y = 3
         cost = 10
@@ -430,14 +432,14 @@ focus_tree = {
         completion_reward = {
             add_political_power = 35
             add_stability = 0.03
-            add_manpower = 4000
+            add_manpower = 4000 
         }
     }
 
     # 第4行
     focus = {
         id = ROD_focus_27
-        icon = GFX_focus_AUS_for_a_better_future
+        icon = GFX_focus_SOV_the_supreme_soviet
         x = 8
         y = 4
         cost = 10
@@ -453,38 +455,38 @@ focus_tree = {
 
     focus = {
         id = ROD_focus_28
-        icon = GFX_focus_befriend_italy
+        icon = GFX_focus_chi_mission_to_the_soviet_union
         x = 10
         y = 4
         cost = 10
-        ai_will_do = { factor = 1 }
+        ai_will_do = { factor = 1 } 
         prerequisite = { focus = ROD_focus_26 }
         completion_reward = {
             SOV = { add_opinion_modifier = { target = ROD modifier = ROD_seeks_soviet_aid } }
             add_political_power = 40
-            add_stability = 0.02
-        }
+            add_stability = 0.02 
+        }  
     }
-
-    focus = {
-        id = ROD_focus_29
-        icon = GFX_focus_BEL_belgian_renaissance
-        x = 14
-        y = 4
+   
+    focus = {   
+        id = ROD_focus_29 
+        icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+        x = 14 
+        y = 4 
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_26 }
         completion_reward = {
             add_political_power = 50
-            add_stability = 0.05
+            add_stability = 0.05  
             add_war_support = 0.05
-        }
-    }
+        } 
+    }  
 
     # 第5行 - 抗日民族统一战线
     focus = {
         id = ROD_focus_30
-        icon = GFX_focus_AUS_the_danubian_federation
+        icon = GFX_focus_CHI_victory_over_the_invaders
         x = 12
         y = 5
         cost = 10

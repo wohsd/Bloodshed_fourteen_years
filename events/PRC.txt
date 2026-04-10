@@ -1,4 +1,4 @@
-﻿
+
 add_namespace = PRC_focus
 country_event = {
 	id = PRC_focus.1
@@ -397,5 +397,269 @@ country_event = {
 	option = {
 		name = PRC_focus.20.a
 		add_political_power = 50
+	}
+}
+
+# 政治平衡事件：王明路线争论爆发
+country_event = {
+	id = PRC_political.1
+	title = PRC_political.1.t
+	desc = PRC_political.1.d
+	picture = GFX_anti_japanese_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRC
+		has_country_flag = PRC_focus85
+		power_balance_value = {
+			id = PRC_struggle_balance
+			value < -0.5
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = PRC_political.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_country_flag = PRC_Wang_FLAG
+		}
+	}
+	
+	option = {
+		name = PRC_political.1.b
+		trigger = { is_ai = yes }
+		hidden_effect = {
+			set_country_flag = PRC_Wang_FLAG
+		}
+	}
+}
+
+# 政治平衡事件：毛泽东思想得到认可
+country_event = {
+	id = PRC_political.2
+	title = PRC_political.2.t
+	desc = PRC_political.2.d
+	picture = GFX_anti_japanese_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRC
+		has_country_flag = PRC_focus85
+		power_balance_value = {
+			id = PRC_struggle_balance
+			value > 0.5
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = PRC_political.2.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_country_flag = PRC_Mao_FLAG
+		}
+	}
+	
+	option = {
+		name = PRC_political.2.b
+		trigger = { is_ai = yes }
+		hidden_effect = {
+			set_country_flag = PRC_Mao_FLAG
+		}
+	}
+}
+
+# 政治平衡事件：党内分裂危机
+country_event = {
+	id = PRC_political.3
+	title = PRC_political.3.t
+	desc = PRC_political.3.d
+	picture = GFX_anti_japanese_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRC
+		has_country_flag = PRC_focus85
+		OR = {
+			AND = {
+				power_balance_value = {
+					id = PRC_struggle_balance
+					value < -0.8
+				}
+				has_country_flag = PRC_Mao_FLAG
+			}
+			AND = {
+				power_balance_value = {
+					id = PRC_struggle_balance
+					value > 0.8
+				}
+				has_country_flag = PRC_Wang_FLAG
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	option = {
+		name = PRC_political.3.a
+		add_stability = -0.1
+		add_war_support = -0.05
+		add_power_balance_value = {
+			id = PRC_struggle_balance
+			value = -0.1
+		}
+	}
+}
+
+# 政治平衡事件：整风运动开始
+country_event = {
+	id = PRC_political.4
+	title = PRC_political.4.t
+	desc = PRC_political.4.d
+	picture = GFX_anti_japanese_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRC
+		has_country_flag = PRC_focus85
+		power_balance_value = {
+			id = PRC_struggle_balance
+			value > 0.3
+		}
+		date > 1942.1.1
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = PRC_political.4.a
+		add_power_balance_value = {
+			id = PRC_struggle_balance
+			value = 0.15
+		}
+		add_political_power = 25
+	}
+}
+
+# 政治平衡事件：共产国际解散影响
+country_event = {
+	id = PRC_political.5
+	title = PRC_political.5.t
+	desc = PRC_political.5.d
+	picture = GFX_anti_japanese_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRC
+		date > 1943.5.15
+		power_balance_value = {
+			id = PRC_struggle_balance
+			value < 0
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = PRC_political.5.a
+		add_power_balance_value = {
+			id = PRC_struggle_balance
+			value = 0.2
+		}
+		add_stability = 0.03
+	}
+}
+
+# 政治平衡事件：王明投降主义批判
+country_event = {
+	id = PRC_political.6
+	title = PRC_political.6.t
+	desc = PRC_political.6.d
+	picture = GFX_anti_japanese_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRC
+		has_country_flag = PRC_focus85
+		power_balance_value = {
+			id = PRC_struggle_balance
+			value > 0.6
+		}
+		date > 1938.1.1
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	
+	option = {
+		name = PRC_political.6.a
+		add_power_balance_value = {
+			id = PRC_struggle_balance
+			value = 0.1
+		}
+		add_war_support = 0.05
+	}
+}
+
+# 政治平衡事件：统一战线策略分歧
+country_event = {
+	id = PRC_political.7
+	title = PRC_political.7.t
+	desc = PRC_political.7.d
+	picture = GFX_anti_japanese_speech
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRC
+		has_country_flag = PRC_focus85
+		OR = {
+			CHI = { is_at_war_with = JAP }
+			any_country = {
+				is_in_faction_with = PRC
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 45
+	}
+	
+	option = {
+		name = PRC_political.7.a
+		trigger = { has_country_flag = PRC_Mao_FLAG }
+		add_power_balance_value = {
+			id = PRC_struggle_balance
+			value = 0.08
+		}
+	}
+	
+	option = {
+		name = PRC_political.7.b
+		trigger = { has_country_flag = PRC_Wang_FLAG }
+		add_power_balance_value = {
+			id = PRC_struggle_balance
+			value = -0.08
+		}
 	}
 }
