@@ -138,3 +138,13 @@ Expand_Shaanxi_Gansu_Ningxia = {
 	}
 	priority = 111
 }
+
+# 政治平衡决策分类（包含毛泽东路线和王明路线）
+PRC_mao_political_line = {
+	icon = military_operation
+	picture = GFX_Yan_an_Rectification_Movement
+	visible = { 
+		tag = PRC
+	}
+	priority = 100
+}

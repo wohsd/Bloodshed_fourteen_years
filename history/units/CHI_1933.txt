@@ -106,18 +106,21 @@ units = {
 	#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京
 	
 	division= {	
+		name = "国民革命军第3师"
 		location = 2957
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第4师"
 		location = 2957
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第9师"
 		location = 2957
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
@@ -126,12 +129,14 @@ units = {
 	#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京#南京
 	#上海
 	division= {	
+		name = "国民革命军第87师"
 		location = 3828
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第88师"
 		location = 3821
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
@@ -140,138 +145,161 @@ units = {
 
     #江西
 	division= {	
+		name = "国民革命军第18师"
 		location = 3195
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第52师"
 		location = 4048
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第59师"
 		location = 4001
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第60师"
 		location = 1217
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第61师"
 		location = 2025
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第78师"
 		location = 277
 		division_template = "国民革命军甲种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第80师"
 		location = 4018
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第84师"
 		location = 1444
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第89师"
 		location = 3984
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第90师"
 		location = 3922
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第91师"
 		location = 2101
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第92师"
 		location = 2843
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第93师"
 		location = 3380
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第94师"
 		location = 1267
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第95师"
 		location = 1637
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第96师"
 		location = 1338
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第97师"
 		location = 4048
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第98师"
 		location = 1217
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第99师"
 		location = 1005
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第100师"
 		location = 2025
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第101师"
 		location = 277
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第102师"
 		location = 2010
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第103师"
 		location = 2096
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -279,60 +307,70 @@ units = {
 	}
 	
 	division= {	
+		name = "国民革命军第104师"
 		location = 3964
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第105师"
 		location = 1989
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第106师"
 		location = 3962
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第107师"
 		location = 3979
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第108师"
 		location = 3942
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第109师"
 		location = 3922
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第110师"
 		location = 3380
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第111师"
 		location = 1444
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第112师"
 		location = 3962
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第113师"
 		location = 3979
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -341,6 +379,7 @@ units = {
 	###福建
 	
 	division= {	
+		name = "国民革命军第114师"
 		location = 4053
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -348,12 +387,14 @@ units = {
 	}
 
 	division= {	
+		name = "国民革命军第115师"
 		location = 4001
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第116师"
 		location = 3977
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
@@ -362,12 +403,14 @@ units = {
 
 
 	division= {	
+		name = "国民革命军第117师"
 		location = 2519
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第118师"
 		location = 4002
 		division_template = "国民革命军乙种师"
 		start_experience_factor = 0.3
@@ -375,12 +418,14 @@ units = {
 	}
 
 	division= {	
+		name = "国民革命军第119师"
 		location = 2010
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第120师"
 		location = 2534
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -388,24 +433,28 @@ units = {
 	}
     #河南
 	division= {	
+		name = "国民革命军第121师"
 		location = 816
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第122师"
 		location = 3738
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第123师"
 		location = 3760
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第124师"
 		location = 1762
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -414,18 +463,21 @@ units = {
 
 	##西安
 	division= {	
+		name = "国民革命军第125师"
 		location = 1053
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第126师"
 		location = 2819
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第127师"
 		location = 2101
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -434,30 +486,35 @@ units = {
 
 	#湖北
 	division= {	
+		name = "国民革命军第128师"
 		location = 2011
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第129师"
 		location = 2403
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第130师"
 		location = 1912
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第131师"
 		location = 29571
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第132师"
 		location = 3846
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -465,24 +522,28 @@ units = {
 	}
 	#湖南
 	division= {	
+		name = "国民革命军第133师"
 		location = 874
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第134师"
 		location = 3793
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第135师"
 		location = 2700
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第136师"
 		location = 2141
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -491,18 +552,21 @@ units = {
 
 	#安徽
 	division= {	
+		name = "国民革命军第137师"
 		location = 2141
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第138师"
 		location = 3777
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第139师"
 		location = 3826
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
@@ -511,54 +575,63 @@ units = {
 
 	#江苏
 	division= {	
+		name = "国民革命军第140师"
 		location = 2957
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第141师"
 		location = 2957
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第142师"
 		location = 1300
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第143师"
 		location = 2941
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第144师"
 		location = 2671
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第145师"
 		location = 2121
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第146师"
 		location = 3744
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第147师"
 		location = 495
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 	}
 	division= {	
+		name = "国民革命军第148师"
 		location = 1415
 		division_template = "国民革命军丙种师"
 		start_experience_factor = 0.3

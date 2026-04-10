@@ -1,4 +1,4 @@
-﻿add_namespace = PRC_1934Hidden
+add_namespace = PRC_1934Hidden
 add_namespace = PRC_1934
 add_namespace = RFC_1934
 add_namespace = CHI_1934
@@ -1146,11 +1146,9 @@ country_event = {
 		name = PRC_1934.5.a
 		ROG={
 			white_peace = PRC
-			give_military_access = PRC
 		}
 		PRC={
 			white_peace = ROG
-			give_military_access = ROG
 		}
 	}
 }
