@@ -242,7 +242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Wang_Jingwei_Leadership
-		x = -7
+		x = -3
 		y = 1
 		cost = 2
 		icon = GFX_kmt07
@@ -292,32 +292,6 @@ focus_tree = {
 		relative_position_id = Wang_Jingwei_Leadership
 	}
 	focus = {
-		id = Land_Equalization
-		x = -5
-		y = 1
-		cost = 7
-		icon = GFX_kmt34
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Redraft_Party_Program
-		}
-		relative_position_id = Redraft_Party_Program
-	}
-	focus = {
-		id = Impose_Land_Value_Tax
-		x = -1
-		y = 1
-		cost = 7
-		icon = GFX_kmt36
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Land_Equalization
-		}
-		relative_position_id = Land_Equalization
-	}
-	focus = {
 		id = Reorganize_Kuomintang
 		x = 0
 		y = 1
@@ -359,25 +333,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Crack_down_on_localism
-		}
-		relative_position_id = Redraft_Party_Program
-	}
-	focus = {
-		id = Rebirth_of_Kuomintang
-		x = 0
-		y = 4
-		cost = 7
-		icon = GFX_kmt43
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Revitalize_Industry_Develop_Resources
-		}
-		prerequisite = {
-			focus = Land_to_the_Tiller
-		}
-		prerequisite = {
-			focus = Strengthen_Party_Authority
 		}
 		relative_position_id = Redraft_Party_Program
 	}
@@ -467,61 +422,6 @@ focus_tree = {
 			unlock_decision_category_tooltip = China_Soviet_Road_category
 		}
 		relative_position_id = Purchase_Su_style_weapons
-	}
-	focus = {
-		id = Regulate_Capital
-		x = 5
-		y = 1
-		cost = 7
-		icon = GFX_kmt46
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Redraft_Party_Program
-		}
-		relative_position_id = Redraft_Party_Program
-	}
-	focus = {
-		id = Develop_National_Capital
-		x = 4
-		y = 2
-		cost = 7
-		icon = GFX_kmt45
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Regulate_Capital
-		}
-		relative_position_id = Redraft_Party_Program
-	}
-	focus = {
-		id = Restrict_Private_Capital
-		x = 6
-		y = 2
-		cost = 7
-		icon = GFX_kmt44
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Regulate_Capital
-		}
-		relative_position_id = Redraft_Party_Program
-	}
-	focus = {
-		id = Revitalize_Industry_Develop_Resources
-		x = 5
-		y = 3
-		cost = 7
-		icon = GFX_kmt47
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Develop_National_Capital
-		}
-		prerequisite = {
-			focus = Restrict_Private_Capital
-		}
-		relative_position_id = Redraft_Party_Program
 	}
 	focus = {
 		id = Internal_Pacification_Before_Resistance
@@ -1286,6 +1186,16 @@ focus_tree = {
 				temp_Government_efficiency_var = 3
 			}
 			Government_efficiency_add = yes
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
 		}
 		relative_position_id = Government_Organization
 	}
@@ -1314,6 +1224,16 @@ focus_tree = {
 				temp_Government_efficiency_var = 3
 			}
 			Government_efficiency_add = yes
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
 		}
 		relative_position_id = Government_Organization
 	}
@@ -1779,6 +1699,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
 		}
 		relative_position_id = National_Education
 	}
@@ -1952,6 +1882,21 @@ focus_tree = {
 		prerequisite = {
 			focus = Convene_National_Congress
 		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_negative
+			}
+		}
 		relative_position_id = Convene_National_Congress
 	}
 	focus = {
@@ -1996,35 +1941,6 @@ focus_tree = {
 			}
 		}
 		relative_position_id = common_prosperity
-	}
-	focus = {
-		id = Land_Production_to_Public
-		x = 1
-		y = 1
-		cost = 7
-		icon = GFX_kmt38
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Land_Equalization
-		}
-		relative_position_id = Land_Equalization
-	}
-	focus = {
-		id = Land_to_the_Tiller
-		x = 0
-		y = 2
-		cost = 7
-		icon = GFX_kmt37
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Land_Production_to_Public
-		}
-		prerequisite = {
-			focus = Impose_Land_Value_Tax
-		}
-		relative_position_id = Land_Equalization
 	}
 	focus = {
 		id = Convene_National_Congress
@@ -2540,6 +2456,21 @@ focus_tree = {
 		prerequisite = {
 			focus = Fascist_propaganda
 		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
+		}
 		relative_position_id = German_Positional_Tactics
 	}
 	focus = {
@@ -2617,6 +2548,21 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Fascist_propaganda
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
 		}
 		relative_position_id = CHI_focus_12
 	}
@@ -2749,6 +2695,21 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_focus_4
 		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
+		}
 		relative_position_id = Consolidate_Republics_Governance
 	}
 	focus = {
@@ -2765,7 +2726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Solve_the_economic_crisis
-		x = -12
+		x = -15
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -2829,9 +2790,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Solve_the_economic_crisis
-		}
-		prerequisite = {
-			focus = Rebirth_of_Kuomintang
 		}
 		relative_position_id = Solve_the_economic_crisis
 	}
@@ -2982,7 +2940,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Decentralization_of_the_Five_Yuan
-		x = 0
+		x = -5
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3001,6 +2959,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = German_Positional_Tactics
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
 		}
 	}
 	focus = {
@@ -3107,6 +3080,21 @@ focus_tree = {
 		prerequisite = {
 			focus = Continue_political_training
 		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
+		}
 	}
 	focus = {
 		id = Establish_the_Presidential_System
@@ -3120,6 +3108,21 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Reorganize_National_Revolutionary_Army
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
 		}
 		relative_position_id = Continue_political_training
 	}
@@ -3162,6 +3165,21 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Establish_the_Presidential_System
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
 		}
 	}
 	focus = {
@@ -3282,7 +3300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_Five_Year_Plan
-		x = -5
+		x = -3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3430,7 +3448,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Build_international_channels
-		x = -2
+		x = -3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3500,6 +3518,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Intelligence_sharing
 			focus = Ensure_the_loyalty_of_the_army
+		}
+		prerequisite = {
+			focus = The_Shaping_of_National_Will
 		}
 	}
 	focus = {
@@ -3947,7 +3968,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Highway_construction
-		x = 0
+		x = -1
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3959,7 +3980,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Airport_construction
-		x = 2
+		x = 1
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3971,7 +3992,7 @@ focus_tree = {
 	}
 	focus = {
 		id = National_Radio_Communication_Network_Plan
-		x = 4
+		x = 3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3986,10 +4007,693 @@ focus_tree = {
 		x = 72
 		y = 5
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = German_Positional_Tactics
 		}
+	}
+	focus = {
+		id = The_Shaping_of_National_Will
+		x = 63
+		y = 13
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = National_Monthly_Meeting
+		}
+		prerequisite = {
+			focus = Promulgate_the_Program_for_War_of_Resistance_an_Nation_Building
+		}
+	}
+	focus = {
+		id = Constitution_of_the_Republic_of_China
+		x = -3
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Decentralization_of_the_Five_Yuan
+		}
+		relative_position_id = Decentralization_of_the_Five_Yuan
+	}
+	focus = {
+		id = Implement_the_Five_Power_Constitution
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Constitution_of_the_Republic_of_China
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_negative
+			}
+		}
+		relative_position_id = Constitution_of_the_Republic_of_China
+	}
+	focus = {
+		id = Improve_the_examination_and_personnel_evaluation_system
+		x = -2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Implement_the_Five_Power_Constitution
+		}
+		relative_position_id = Implement_the_Five_Power_Constitution
+	}
+	focus = {
+		id = Improve_the_audit_functions_of_the_supervisory_institute
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Implement_the_Five_Power_Constitution
+		}
+		relative_position_id = Implement_the_Five_Power_Constitution
+	}
+	focus = {
+		id = Strengthen_the_judiciarys_independent_trial
+		x = 2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Implement_the_Five_Power_Constitution
+		}
+		relative_position_id = Implement_the_Five_Power_Constitution
+	}
+	focus = {
+		id = Elect_representatives_to_the_National_Assembly
+		x = 2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Decentralization_of_the_Five_Yuan
+		}
+		relative_position_id = Decentralization_of_the_Five_Yuan
+	}
+	focus = {
+		id = Expand_suffrage
+		x = -2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Elect_representatives_to_the_National_Assembly
+		}
+		relative_position_id = Elect_representatives_to_the_National_Assembly
+	}
+	focus = {
+		id = Improve_the_Electoral_Law
+		x = 2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Elect_representatives_to_the_National_Assembly
+		}
+		relative_position_id = Elect_representatives_to_the_National_Assembly
+	}
+	focus = {
+		id = Implement_local_self_government
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Elect_representatives_to_the_National_Assembly
+		}
+		relative_position_id = Elect_representatives_to_the_National_Assembly
+	}
+	focus = {
+		id = Establish_local_councils
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Implement_local_self_government
+		}
+		relative_position_id = Implement_local_self_government
+	}
+	focus = {
+		id = Strengthen_public_opinio_supervision
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Establish_local_councils
+		}
+		relative_position_id = Establish_local_councils
+	}
+	focus = {
+		id = Restructure_the_Executive_Yuan
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Establish_the_Presidential_Office
+		}
+		prerequisite = {
+			focus = Strengthen_the_judiciarys_independent_trial
+		}
+		prerequisite = {
+			focus = Improve_the_audit_functions_of_the_supervisory_institute
+		}
+		prerequisite = {
+			focus = Improve_the_examination_and_personnel_evaluation_system
+		}
+		completion_reward = {
+			# 移除领袖权威
+			remove_dynamic_modifier = { modifier = Leader_Authority }
+			set_country_flag = leader_authority_removed
+		}
+		relative_position_id = Improve_the_audit_functions_of_the_supervisory_institute
+	}
+	focus = {
+		id = Establish_the_Presidential_Office
+		x = 1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Restructure_the_Executive_Yuan
+		}
+		prerequisite = {
+			focus = Strengthen_the_judiciarys_independent_trial
+		}
+		prerequisite = {
+			focus = Improve_the_audit_functions_of_the_supervisory_institute
+		}
+		prerequisite = {
+			focus = Improve_the_examination_and_personnel_evaluation_system
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
+		}
+		relative_position_id = Improve_the_audit_functions_of_the_supervisory_institute
+	}
+	focus = {
+		id = Lift_the_ban_on_political_parties
+		x = -3
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Rebuilding_the_Republic_of_China
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_negative
+			}
+		}
+		relative_position_id = Rebuilding_the_Republic_of_China
+	}
+	focus = {
+		id = Rebuilding_the_Republic_of_China
+		x = 4
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Restructure_the_Executive_Yuan
+			focus = Establish_the_Presidential_Office
+		}
+		prerequisite = {
+			focus = Strengthen_public_opinio_supervision
+		}
+		relative_position_id = Restructure_the_Executive_Yuan
+	}
+	focus = {
+		id = Party_government_relations
+		x = 3
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Rebuilding_the_Republic_of_China
+		}
+		relative_position_id = Rebuilding_the_Republic_of_China
+	}
+	focus = {
+		id = Restrict_the_partys_conservatives
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Party_government_relations
+		}
+		relative_position_id = Party_government_relations
+	}
+	focus = {
+		id = Establish_an_Anti_Corruptio_Commission
+		x = -2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Restrict_the_partys_conservatives
+		}
+		prerequisite = {
+			focus = Streamlin_party_organization
+		}
+		relative_position_id = Restrict_the_partys_conservatives
+	}
+	focus = {
+		id = Democratization_reform_within_the_party
+		x = 2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Party_government_relations
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_negative
+			}
+		}
+		relative_position_id = Party_government_relations
+	}
+	focus = {
+		id = Clean_up_the_CC_system
+		x = 1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Establish_an_Anti_Corruptio_Commission
+			focus = Taking_advantage_of_internal_party_conflicts
+		}
+		prerequisite = {
+			focus = Media_depoliticization_reform
+		}
+		relative_position_id = Establish_an_Anti_Corruptio_Commission
+	}
+	focus = {
+		id = Ensure_freedom_of_speech
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Lift_the_ban_on_political_parties
+		}
+		relative_position_id = Lift_the_ban_on_political_parties
+	}
+	focus = {
+		id = Streamlin_party_organization
+		x = 1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Restrict_the_partys_conservatives
+		}
+		relative_position_id = Restrict_the_partys_conservatives
+	}
+	focus = {
+		id = Set_things_right
+		x = -2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Stick_to_a_right_wing_stance
+		}
+		prerequisite = {
+			focus = Ensure_freedom_of_speech
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_negative
+			}
+		}
+		relative_position_id = Ensure_freedom_of_speech
+	}
+	focus = {
+		id = Stick_to_a_right_wing_stance
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Set_things_right
+		}
+		prerequisite = {
+			focus = Ensure_freedom_of_speech
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = 0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = 0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = 0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
+		}
+		relative_position_id = Ensure_freedom_of_speech
+	}
+	focus = {
+		id = Land_reform0
+		x = 45
+		y = 16
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Land_reform
+		}
+		prerequisite = {
+			focus = Establish_the_Land_Finance_Department_of_the_China_Farmers_Bank
+		}
+	}
+	focus = {
+		id = Cadastral_survey
+		x = 45
+		y = 12
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHI_Five_Year_Plan
+		}
+	}
+	focus = {
+		id = Limiting_land_rent_and_protecting_tenant_rights
+		x = 43
+		y = 13
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Cadastral_survey
+		}
+	}
+	focus = {
+		id = Rebuild_the_farmers_associations
+		x = 45
+		y = 13
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Cadastral_survey
+		}
+	}
+	focus = {
+		id = Twenty_Five_Percent_Rent_Reduction
+		x = 45
+		y = 14
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Tenant_Farmer_Protection_Law
+		}
+		prerequisite = {
+			focus = Rebuild_the_farmers_associations
+		}
+		prerequisite = {
+			focus = Limiting_land_rent_and_protecting_tenant_rights
+		}
+	}
+	focus = {
+		id = Tenant_Farmer_Protection_Law
+		x = 47
+		y = 13
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Cadastral_survey
+		}
+	}
+	focus = {
+		id = Establish_the_Land_Finance_Department_of_the_China_Farmers_Bank
+		x = 44
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Twenty_Five_Percent_Rent_Reduction
+		}
+	}
+	focus = {
+		id = Establish_an_intra_party_proposal_system
+		x = 2
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Democratization_reform_within_the_party
+		}
+		relative_position_id = Party_government_relations
+	}
+	focus = {
+		id = Restore_the_three_major_policies
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Set_things_right
+		}
+		relative_position_id = Set_things_right
+	}
+	focus = {
+		id = Uphold_an_anti_Communist_stance
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Stick_to_a_right_wing_stance
+		}
+		relative_position_id = Stick_to_a_right_wing_stance
+	}
+	focus = {
+		id = Realize_democratization_within_the_party
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Clean_up_the_CC_system
+		}
+		prerequisite = {
+			focus = Establish_an_intra_party_proposal_system
+		}
+		prerequisite = {
+			focus = Uphold_an_anti_Communist_stance
+			focus = Restore_the_three_major_policies
+		}
+		prerequisite = {
+			focus = Establish_the_Political_Work_Committee_of_the_National_Revolutionary_Army
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_negative
+			}
+		}
+		relative_position_id = Establish_the_Political_Work_Committee_of_the_National_Revolutionary_Army
+	}
+	focus = {
+		id = Taking_advantage_of_internal_party_conflicts
+		x = -2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Disband_the_military_party_committee
+		}
+		prerequisite = {
+			focus = Party_government_relations
+		}
+		relative_position_id = Party_government_relations
+	}
+	focus = {
+		id = Nationalization_of_the_military
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Rebuilding_the_Republic_of_China
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = leader_authority_removed
+					}
+				}
+				add_to_variable = { Leader_Authority_political_power_factor = -0.05 }
+				add_to_variable = { Leader_Authority_stability_factor = -0.05 }
+				add_to_variable = { Leader_Authority_war_support_factor = -0.05 }
+			}
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_negative
+			}
+		}
+		relative_position_id = Rebuilding_the_Republic_of_China
+	}
+	focus = {
+		id = Disband_the_military_party_committee
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = Taking_advantage_of_internal_party_conflicts
+		}
+		prerequisite = {
+			focus = Nationalization_of_the_military
+		}
+		relative_position_id = Nationalization_of_the_military
+	}
+	focus = {
+		id = Establish_the_Political_Work_Committee_of_the_National_Revolutionary_Army
+		x = 0
+		y = 4
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Nationalization_of_the_military
+		}
+		relative_position_id = Rebuilding_the_Republic_of_China
+	}
+	focus = {
+		id = Land_reform
+		x = 46
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Twenty_Five_Percent_Rent_Reduction
+		}
+	}
+	focus = {
+		id = Media_depoliticization_reform
+		x = 2
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Ensure_freedom_of_speech
+		}
+		relative_position_id = Ensure_freedom_of_speech
 	}
 }
