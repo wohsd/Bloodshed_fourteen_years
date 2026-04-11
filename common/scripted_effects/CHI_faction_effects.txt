@@ -1,0 +1,276 @@
+# 计算派系影响力并更新修正效果
+CHI_update_faction_effects = {
+    # 确保基础影响力变量存在
+    if = {
+        limit = { NOT = { has_variable = CHI_he_power_base } }
+        set_variable = { CHI_he_power_base = 0 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_chen_power_base } }
+        set_variable = { CHI_chen_power_base = 0 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_power_base } }
+        set_variable = { CHI_hu_power_base = 0 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_power_base } }
+        set_variable = { CHI_tang_power_base = 0 }
+    }
+    
+    # 确保效果变量存在
+    if = {
+        limit = { NOT = { has_variable = CHI_he_supply_consumption } }
+        set_variable = { CHI_he_supply_consumption = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_he_supply_range } }
+        set_variable = { CHI_he_supply_range = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_he_planning_speed } }
+        set_variable = { CHI_he_planning_speed = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_chen_army_exp } }
+        set_variable = { CHI_chen_army_exp = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_chen_political_power } }
+        set_variable = { CHI_chen_political_power = -0.05 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_army_org } }
+        set_variable = { CHI_hu_army_org = 1.0 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_commander_exp } }
+        set_variable = { CHI_hu_commander_exp = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_industrial } }
+        set_variable = { CHI_tang_industrial = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_irregular_attack } }
+        set_variable = { CHI_tang_irregular_attack = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_irregular_defence } }
+        set_variable = { CHI_tang_irregular_defence = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_irregular_org } }
+        set_variable = { CHI_tang_irregular_org = 0.1 }
+    }
+    
+    # 直接设置技能影响力为相应将领的等级（只计算陆军将领）
+    set_variable = { CHI_he_power_skill = 0 }
+    set_variable = { CHI_chen_power_skill = 0 }
+    set_variable = { CHI_hu_power_skill = 0 }
+    set_variable = { CHI_tang_power_skill = 0 }
+    
+    # 计算陆军将领的技能影响力
+    every_army_leader = {
+        limit = { has_trait = heyingqinxi }
+        add_to_variable = { PREV.CHI_he_power_skill = skill }
+    }
+    every_army_leader = {
+        limit = { has_trait = chenchengxi }
+        add_to_variable = { PREV.CHI_chen_power_skill = skill }
+    }
+    every_army_leader = {
+        limit = { has_trait = huzongnanxi }
+        add_to_variable = { PREV.CHI_hu_power_skill = skill }
+    }
+    every_army_leader = {
+        limit = { has_trait = tangenboxi }
+        add_to_variable = { PREV.CHI_tang_power_skill = skill }
+    }
+    
+    # 计算总影响力 = 基础影响力 + 技能影响力
+    set_variable = { CHI_he_power = CHI_he_power_base }
+    add_to_variable = { CHI_he_power = CHI_he_power_skill }
+    
+    set_variable = { CHI_chen_power = CHI_chen_power_base }
+    add_to_variable = { CHI_chen_power = CHI_chen_power_skill }
+    
+    set_variable = { CHI_hu_power = CHI_hu_power_base }
+    add_to_variable = { CHI_hu_power = CHI_hu_power_skill }
+    
+    set_variable = { CHI_tang_power = CHI_tang_power_base }
+    add_to_variable = { CHI_tang_power = CHI_tang_power_skill }
+    
+    # 计算总派系影响力
+    set_variable = { CHI_total_clique_power = 0 }
+    add_to_variable = { CHI_total_clique_power = CHI_he_power }
+    add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+    add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+    add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+    
+    # 确保总派系影响力变量存在
+    if = {
+        limit = { NOT = { has_variable = CHI_total_clique_power } }
+        set_variable = { CHI_total_clique_power = 0 }
+    }
+    
+    # 确保影响力百分比变量存在
+    if = {
+        limit = { NOT = { has_variable = CHI_he_power_percent } }
+        set_variable = { CHI_he_power_percent = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_chen_power_percent } }
+        set_variable = { CHI_chen_power_percent = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_power_percent } }
+        set_variable = { CHI_hu_power_percent = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_power_percent } }
+        set_variable = { CHI_tang_power_percent = 25 }
+    }
+    
+    # 计算影响力百分比
+    if = {
+        limit = { CHI_total_clique_power > 0 }
+        set_variable = { CHI_he_power_percent = CHI_he_power }
+        divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_he_power_percent = 100 }
+        
+        set_variable = { CHI_chen_power_percent = CHI_chen_power }
+        divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_chen_power_percent = 100 }
+        
+        set_variable = { CHI_hu_power_percent = CHI_hu_power }
+        divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_hu_power_percent = 100 }
+        
+        set_variable = { CHI_tang_power_percent = CHI_tang_power }
+        divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_tang_power_percent = 100 }
+    }
+    else {
+        set_variable = { CHI_he_power_percent = 25 }
+        set_variable = { CHI_chen_power_percent = 25 }
+        set_variable = { CHI_hu_power_percent = 25 }
+        set_variable = { CHI_tang_power_percent = 25 }
+    }
+    
+    # 应用派系影响力效果
+    # 清除旧的修正
+    remove_modifier = chi_he_faction_high
+    remove_modifier = chi_he_faction_medium
+    remove_modifier = chi_he_faction_low
+    remove_modifier = chi_chen_faction_high
+    remove_modifier = chi_chen_faction_medium
+    remove_modifier = chi_chen_faction_low
+    remove_modifier = chi_hu_faction_high
+    remove_modifier = chi_hu_faction_medium
+    remove_modifier = chi_hu_faction_low
+    remove_modifier = chi_tang_faction_high
+    remove_modifier = chi_tang_faction_medium
+    remove_modifier = chi_tang_faction_low
+    
+    # 何应钦派系
+    if = {
+        limit = { CHI_he_power_percent > 50 }
+        # 高影响力 - 更好的buff和更严重的debuff
+        add_modifier = {
+            modifier = chi_he_faction_high
+            days = -1
+        }
+    }
+    else_if = {
+        limit = { CHI_he_power_percent >= 25 }
+        # 中影响力
+        add_modifier = {
+            modifier = chi_he_faction_medium
+            days = -1
+        }
+    }
+    else {
+        # 低影响力
+        add_modifier = {
+            modifier = chi_he_faction_low
+            days = -1
+        }
+    }
+    
+    # 陈诚派系
+    if = {
+        limit = { CHI_chen_power_percent > 50 }
+        # 高影响力
+        add_modifier = {
+            modifier = chi_chen_faction_high
+            days = -1
+        }
+    }
+    else_if = {
+        limit = { CHI_chen_power_percent >= 25 }
+        # 中影响力
+        add_modifier = {
+            modifier = chi_chen_faction_medium
+            days = -1
+        }
+    }
+    else {
+        # 低影响力
+        add_modifier = {
+            modifier = chi_chen_faction_low
+            days = -1
+        }
+    }
+    
+    # 胡宗南派系
+    if = {
+        limit = { CHI_hu_power_percent > 50 }
+        # 高影响力
+        add_modifier = {
+            modifier = chi_hu_faction_high
+            days = -1
+        }
+    }
+    else_if = {
+        limit = { CHI_hu_power_percent >= 25 }
+        # 中影响力
+        add_modifier = {
+            modifier = chi_hu_faction_medium
+            days = -1
+        }
+    }
+    else {
+        # 低影响力
+        add_modifier = {
+            modifier = chi_hu_faction_low
+            days = -1
+        }
+    }
+    
+    # 汤恩伯派系
+    if = {
+        limit = { CHI_tang_power_percent > 50 }
+        # 高影响力
+        add_modifier = {
+            modifier = chi_tang_faction_high
+            days = -1
+        }
+    }
+    else_if = {
+        limit = { CHI_tang_power_percent >= 25 }
+        # 中影响力
+        add_modifier = {
+            modifier = chi_tang_faction_medium
+            days = -1
+        }
+    }
+    else {
+        # 低影响力
+        add_modifier = {
+            modifier = chi_tang_faction_low
+            days = -1
+        }
+    }
+
+}

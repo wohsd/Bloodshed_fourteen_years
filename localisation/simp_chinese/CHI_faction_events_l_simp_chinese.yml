@@ -1,0 +1,4 @@
+l_simp_chinese:
+    CHI_faction.1.title: "派系影响力变化"
+    CHI_faction.1.desc: "派系影响力发生了变化，正在更新相关效果。"
+    CHI_faction.1.option: "了解"

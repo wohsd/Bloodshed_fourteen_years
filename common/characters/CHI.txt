@@ -108,79 +108,21 @@ characters={
 			factor = 1.000
 		}
 		on_add = {
-			CHI = {
-				add_to_variable = { CHI_chen_power = 5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+				CHI = {
+					add_to_variable = { CHI_chen_power_base = 5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
-		on_remove = {
-			CHI = {
-				add_to_variable = { CHI_chen_power = -5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+			on_remove = {
+				CHI = {
+					add_to_variable = { CHI_chen_power_base = -5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
 	}
 	corps_commander={	
 		desc = CHI_ChenCheng_leader_desc
@@ -224,79 +166,21 @@ characters={
 			factor = 1.000
 		}
 		on_add = {
-			CHI = {
-				add_to_variable = { CHI_he_power = 5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+				CHI = {
+					add_to_variable = { CHI_he_power_base = 5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
-		on_remove = {
-			CHI = {
-				add_to_variable = { CHI_he_power = -5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+			on_remove = {
+				CHI = {
+					add_to_variable = { CHI_he_power_base = -5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
 	}
 	corps_commander={	desc = CHI_HeYingQing_leader_desc
 
@@ -926,79 +810,21 @@ CHI_TangEnBo={
 			factor = 1.000
 		}
 		on_add = {
-			CHI = {
-				add_to_variable = { CHI_tang_power = 5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+				CHI = {
+					add_to_variable = { CHI_tang_power_base = 5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
-		on_remove = {
-			CHI = {
-				add_to_variable = { CHI_tang_power = -5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+			on_remove = {
+				CHI = {
+					add_to_variable = { CHI_tang_power_base = -5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
 	}
 	corps_commander={	desc = CHI_TangEnBo_leader_desc
 
@@ -1097,79 +923,21 @@ CHI_TangEnBo={
 			factor = 1.000
 		}
 		on_add = {
-			CHI = {
-				add_to_variable = { CHI_hu_power = 5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+				CHI = {
+					add_to_variable = { CHI_hu_power_base = 5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
-		on_remove = {
-			CHI = {
-				add_to_variable = { CHI_hu_power = -5 }
-				
-				# 重新计算总影响力和百分比
-				set_variable = { CHI_total_clique_power = 0 }
-				add_to_variable = { CHI_total_clique_power = CHI_he_power }
-				add_to_variable = { CHI_total_clique_power = CHI_chen_power }
-				add_to_variable = { CHI_total_clique_power = CHI_hu_power }
-				add_to_variable = { CHI_total_clique_power = CHI_tang_power }
-				
-				if = {
-					limit = { check_variable = { CHI_total_clique_power > 0 } }
-					set_variable = { CHI_he_power_percent = CHI_he_power }
-					divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_he_power_percent = 100 }
+			on_remove = {
+				CHI = {
+					add_to_variable = { CHI_hu_power_base = -5 }
 					
-					set_variable = { CHI_chen_power_percent = CHI_chen_power }
-					divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_chen_power_percent = 100 }
-					
-					set_variable = { CHI_hu_power_percent = CHI_hu_power }
-					divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_hu_power_percent = 100 }
-					
-					set_variable = { CHI_tang_power_percent = CHI_tang_power }
-					divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
-					multiply_variable = { CHI_tang_power_percent = 100 }
-				}
-				else = {
-					set_variable = { CHI_he_power_percent = 25 }
-					set_variable = { CHI_chen_power_percent = 25 }
-					set_variable = { CHI_hu_power_percent = 25 }
-					set_variable = { CHI_tang_power_percent = 25 }
+					# 重新计算派系影响力并更新修正效果
+					CHI_update_faction_effects = yes
 				}
 			}
-		}
 	}
 	corps_commander={	desc = CHI_HuZongNan_leader_desc
 

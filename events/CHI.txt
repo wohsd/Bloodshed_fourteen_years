@@ -1,4 +1,4 @@
-﻿add_namespace = CHI
+add_namespace = CHI
 add_namespace = CHI_hidden
 add_namespace = CHIFocus
 
@@ -240,6 +240,29 @@ news_event = {
 
 	option = {
 		name = CHIFocus.30.a
+	}
+}
+
+# 定期更新派系影响力的事件
+country_event = {
+	id = CHI_hidden.100
+	hidden = yes
+	persistent = yes
+
+	trigger = {
+		tag = CHI
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		CHI_update_faction_effects = yes
+	}
+
+	option = {
+		name = CHI_hidden.100.a
 	}
 }
 
