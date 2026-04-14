@@ -108,7 +108,9 @@ CHI_struggle_balance_category = {
 	icon = military_operation
 	visible = { 
 		tag=CHI
+		has_completed_focus = CHI_focus_4
 	}
+	visible_when_empty = yes
 }
 
 

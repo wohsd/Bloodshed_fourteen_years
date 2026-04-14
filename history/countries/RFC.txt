@@ -10,7 +10,7 @@ set_technology = {
 	fuel_silos = 1
 }
 
-recruit_character = RFC_DengYangDa
+recruit_character = RFC_DengYanDa
 set_popularities = {
 	democratic = 50
 	neutrality = 25
@@ -31,5 +31,5 @@ set_rule = {
 }
 1933.1.1 = {
 	recruit_character = RFC_LiJiSheng
-	recruit_character = RFC_huangqixiang
+	recruit_character = RFC_HuangQiXiang
 }

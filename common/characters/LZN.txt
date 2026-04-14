@@ -1,25 +1,25 @@
 characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
-LZN_LiuZengNian={
-		name=LZN_LiuZengNian
+LZN_LiuZhenNian={
+		name=LZN_LiuZhenNian
 
 		#肖像选择（平民状态和军事状态）
 		portraits={
 
 			#平民状态
 			civilian={
-				large="gfx//leaders//LZN//LZN_LiuZengNian.png"
+				large="gfx//leaders//LZN//LZN_LiuZhenNian.png"
 			}
 
 			#军事状态
 			army={
-				large="gfx//leaders//LZN//LZN_LiuZengNian.png"
-				small="gfx//leaders//LZN//LZN_LiuZengNian.png"
+				large="gfx//leaders//LZN//LZN_LiuZhenNian.png"
+				small="gfx//leaders//LZN//LZN_LiuZhenNian.png"
 			}
 
 		}
 		#担任党派领导人时的数据
-		country_leader={	desc = LZN_LiuZengNian_leader_desc
+		country_leader={	desc = LZN_LiuZhenNian_leader_desc
 
 			#意识形态
 			ideology=despotism
@@ -31,7 +31,7 @@ LZN_LiuZengNian={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		field_marshal={	desc = LZN_LiuZengNian_leader_desc
+		field_marshal={	desc = LZN_LiuZhenNian_leader_desc
 
 			#特质（如堑壕大师）
 			traits={ }

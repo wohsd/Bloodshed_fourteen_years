@@ -20,12 +20,23 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "CHI_he_power_tt" 
-			position = { x = 160 y = 5 } 
+			position = { x = 160 y = 15 } 
 			font = "hoi_18mbs" 
 			borderSize = {x = 0 y = 0} 
 			text = "CHI_he_power_tt" 
 			maxWidth = 280 
 			maxHeight = 24 
+			fixedsize = yes 
+			format = left
+		}
+		instantTextBoxType = {
+			name = "CHI_he_effect_tt" 
+			position = { x = 160 y = 35 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_he_effect_tt" 
+			maxWidth = 350 
+			maxHeight = 80
 			fixedsize = yes 
 			format = left
 		}
@@ -45,12 +56,23 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "CHI_chen_power_tt" 
-			position = { x = 160 y = 105 } 
+			position = { x = 160 y = 115 } 
 			font = "hoi_18mbs" 
 			borderSize = {x = 0 y = 0} 
 			text = "CHI_chen_power_tt" 
 			maxWidth = 280 
 			maxHeight = 24 
+			fixedsize = yes 
+			format = left
+		}
+		instantTextBoxType = {
+			name = "CHI_chen_effect_tt" 
+			position = { x = 160 y = 135 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_chen_effect_tt" 
+			maxWidth = 350 
+			maxHeight = 80
 			fixedsize = yes 
 			format = left
 		}
@@ -70,12 +92,23 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "CHI_hu_power_tt" 
-			position = { x = 160 y = 205 } 
+			position = { x = 160 y = 215 } 
 			font = "hoi_18mbs" 
 			borderSize = {x = 0 y = 0} 
 			text = "CHI_hu_power_tt" 
 			maxWidth = 280 
 			maxHeight = 24 
+			fixedsize = yes 
+			format = left
+		}
+		instantTextBoxType = {
+			name = "CHI_hu_effect_tt" 
+			position = { x = 160 y = 235 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_hu_effect_tt" 
+			maxWidth = 350 
+			maxHeight = 80
 			fixedsize = yes 
 			format = left
 		}
@@ -95,12 +128,23 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "CHI_tang_power_tt" 
-			position = { x = 160 y = 305 } 
+			position = { x = 160 y = 315 } 
 			font = "hoi_18mbs" 
 			borderSize = {x = 0 y = 0} 
 			text = "CHI_tang_power_tt" 
 			maxWidth = 280 
 			maxHeight = 24 
+			fixedsize = yes 
+			format = left
+		}
+		instantTextBoxType = {
+			name = "CHI_tang_effect_tt" 
+			position = { x = 160 y = 335 } 
+			font = "hoi_18mbs" 
+			borderSize = {x = 0 y = 0} 
+			text = "CHI_tang_effect_tt" 
+			maxWidth = 350 
+			maxHeight = 80
 			fixedsize = yes 
 			format = left
 		}

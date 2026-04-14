@@ -14,7 +14,7 @@ set_stability = 0.7
 set_war_support = 0.7
 #设置战争支持度
 
-recruit_character = YHC_YangHuChen
+recruit_character = YHC_YangHuCheng
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

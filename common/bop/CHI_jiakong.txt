@@ -1,5 +1,5 @@
 CHI_struggle_balance_00 = {
-	initial_value = 1
+	initial_value = 0
 	left_side = CHI_struggle_00_left_side
 	right_side = CHI_struggle_00_right_side
 	decision_category = CHI_struggle_balance_00_category

@@ -33,14 +33,14 @@
 
 
 
- CHI_struggle_balance: "中华民国国民政府"
- CHI_struggle_mid_range: "党内平衡"
- CHI_struggle_left_side: "偏向中央监委"
- CHI_struggle_right_side: "蒋介石独大"
- CHI_left_side_range_Low: "中央监委支持度较低"
- CHI_left_side_range_High: "中央监委支持度较高"
- CHI_right_side_range_Low: "蒋介石支持度较低"
- CHI_right_side_range_High: "蒋介石支持度较高"
+ CHI_struggle_balance: "党政系统"
+ CHI_struggle_mid_range: "派系平衡"
+ CHI_struggle_left_side: "CC系"
+ CHI_struggle_right_side: "蓝衣社"
+ CHI_left_side_range_Low: "CC系优势巨大"
+ CHI_left_side_range_High: "CC系屹立不倒"
+ CHI_right_side_range_Low: "复兴社半公开活动"
+ CHI_right_side_range_High: "复兴社脱离控制"
 
  CHI_struggle_balance_00: "心怀各异的民主同盟"
  CHI_struggle_00_mid_range: "局势紧张"
