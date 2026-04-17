@@ -164,7 +164,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Not_resisting"
-		texturefile = "gfx/interface/ideas/CHI/Not_resisting.dds"
+		texturefile = "gfx/interface/ideas/CHI/Not_resisting.dds" 
 	}
 	spriteType = {
 		name = "GFX_idea_Negative_Encirclement"

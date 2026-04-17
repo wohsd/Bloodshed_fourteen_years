@@ -126,7 +126,7 @@ division_template = {
 	}
 }
 units = {
-
+ 
 	#上海
 	division= {	
 		name = "国民革命军第87师"
