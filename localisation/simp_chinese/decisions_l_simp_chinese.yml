@@ -373,3 +373,7 @@ CHI_hu_clique_tt: "§B胡宗南系§!§L，国民革命军第一军是蒋介石�
 CHI_hu_power_tt: "§B胡宗南系§!§L影响力目前为：[?CHI_hu_power_percent|0]%（[?CHI_hu_power|0]级）"
 CHI_tang_clique_tt: "§O汤恩伯系§!§L，汤恩伯并非黄埔出身，但凭借战功和蒋介石的赏识，在中原大战后开始崛起。他代表了中央军中较为实用主义的一支。在财政上，由于得不到中央预算的充分倾斜，其部队往往依赖驻地供给，这导致了严重的部队经商和掠夺民财现象。为扩充势力，汤恩伯大量收编地方部队和土匪武装，导致部队成分复杂，军纪废弛。"
 CHI_tang_power_tt: "§O汤恩伯系§!§L影响力目前为：[?CHI_tang_power_percent|0]%（[?CHI_tang_power|0]级）"
+CHI_he_effect_tt: "补给消耗 §G[?CHI_he_supply_consumption|]§!\n补给范围 §G[?CHI_he_supply_range|]§!\n计划速度 §R[?CHI_he_planning_speed|]§!"
+CHI_chen_effect_tt: "陆军经验获取 §G[?CHI_chen_army_exp|]§!\n政治点数获取 §R[?CHI_chen_political_power|]§!"
+CHI_hu_effect_tt: "陆军组织度 §G[?CHI_hu_army_org|]§!\n指挥官经验获取 §R[?CHI_hu_commander_exp|]§!" 
+CHI_tang_effect_tt: "非正规步兵攻防 §G[?CHI_tang_irregular_attack|]§!\n工厂产出 §R[?CHI_tang_industrial|]§!"

@@ -83,12 +83,7 @@ focus_tree = {
 			CHI = {
 				add_to_faction = ROG
 				add_to_faction = ROC
-				hidden_effect = {
-					set_power_balance = {
-						id = CHI_struggle_balance_00
-						set_default = yes
-					}
-				}
+
 			}
 		}
 		relative_position_id = Victory_of_the_National_Revolution
@@ -109,10 +104,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = The_winner_Central
-			add_power_balance_value = {
-				id = CHI_struggle_balance_00
-				value = 0.2
-			}
 		}
 		relative_position_id = Liao_Zhongkai_Issue
 	}
@@ -128,10 +119,7 @@ focus_tree = {
 			focus = Democracy_Over_Autocracy
 		}
 		completion_reward = {
-			add_power_balance_value = {
-				id = CHI_struggle_balance_00
-				value = -0.05
-			}
+
 		}
 		relative_position_id = Democracy_Over_Autocracy
 	}
@@ -262,10 +250,6 @@ focus_tree = {
 				election_frequency = 48
 			}
 			remove_ideas = The_winner_Central
-			add_power_balance_value = {
-				id = CHI_struggle_balance_00
-				value = 0.2
-			}
 		}
 		relative_position_id = Liao_Zhongkai_Issue
 	}
@@ -284,10 +268,7 @@ focus_tree = {
 			focus = Wang_Jingwei_Leadership
 		}
 		completion_reward = {
-			add_power_balance_value = {
-				id = CHI_struggle_balance_00
-				value = -0.05
-			}
+
 		}
 		relative_position_id = Wang_Jingwei_Leadership
 	}
@@ -1154,10 +1135,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 40
-			add_power_balance_value = {
-				id = CHI_struggle_balance
-				value = 0.03
-			}
 			add_to_temp_variable = {
 				temp_Government_efficiency_var = 3
 			}
@@ -1178,10 +1155,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 40
-			add_power_balance_value = {
-				id = CHI_struggle_balance
-				value = 0.03
-			}
 			add_to_temp_variable = {
 				temp_Government_efficiency_var = 3
 			}
@@ -1222,10 +1195,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.05
 			}
-			add_power_balance_value = {
-				id = CHI_struggle_balance
-				value = 0.03
-			}
+
 			add_to_temp_variable = {
 				temp_Government_efficiency_var = 3
 			}
@@ -1262,10 +1232,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 40
-			add_power_balance_value = {
-				id = CHI_struggle_balance
-				value = 0.03
-			}
 			add_to_temp_variable = {
 				temp_Government_efficiency_var = 3
 			}
@@ -1289,10 +1255,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
-			add_power_balance_value = {
-				id = CHI_struggle_balance
-				value = -0.05
-			}
+
 			add_to_temp_variable = {
 				temp_Government_efficiency_var = 3
 			}
@@ -1313,10 +1276,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 40
-			add_power_balance_value = {
-				id = CHI_struggle_balance
-				value = 0.03
-			}
 			add_to_temp_variable = {
 				temp_Government_efficiency_var = 3
 			}
@@ -1342,10 +1301,7 @@ focus_tree = {
 			focus = National_Government_Organization_Law
 		}
 		completion_reward = {
-			add_power_balance_value = {
-				id = CHI_struggle_balance
-				value = 0.1
-			}
+
 			add_to_temp_variable = {
 				temp_Government_efficiency_var = 10
 			}
@@ -1935,10 +1891,7 @@ focus_tree = {
 			focus = common_prosperity
 		}
 		completion_reward = {
-			add_power_balance_value = {
-				id = CHI_struggle_balance_00
-				value = 0.1
-			}
+
 		}
 		relative_position_id = common_prosperity
 	}
@@ -1959,10 +1912,7 @@ focus_tree = {
 			}
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
-			add_power_balance_value = {
-				id = CHI_struggle_balance_00
-				value = 0.05
-			}
+
 		}
 		relative_position_id = common_prosperity
 	}
@@ -2595,6 +2545,23 @@ focus_tree = {
 				add_to_variable = {
 					Leader_Authority_war_support_factor = 0.05
 				}
+			}
+			add_dynamic_modifier = {
+				modifier = Zhonghua_Revival_Society
+				days = -1
+			}
+			set_variable = {
+				ZHRS_political_power_gain = 0.5
+			}
+			set_variable = {
+				ZHRS_research_time_factor = 0.1
+			}
+			set_variable = {
+				ZHRS_fascism_drift = 0.02
+			}
+			set_power_balance = {
+				id = CHI_struggle_balance
+				set_default = yes
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive

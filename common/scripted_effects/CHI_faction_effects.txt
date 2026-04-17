@@ -1,0 +1,213 @@
+# 计算派系影响力并更新修正效果
+CHI_update_faction_effects = {
+   
+    # 确保效果变量存在
+    if = {
+        limit = { NOT = { has_variable = CHI_he_supply_consumption } }
+        set_variable = { CHI_he_supply_consumption = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_he_supply_range } }
+        set_variable = { CHI_he_supply_range = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_he_planning_speed } }
+        set_variable = { CHI_he_planning_speed = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_chen_army_exp } }
+        set_variable = { CHI_chen_army_exp = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_chen_political_power } }
+        set_variable = { CHI_chen_political_power = -0.05 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_army_org } }
+        set_variable = { CHI_hu_army_org = 1.0 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_commander_exp } }
+        set_variable = { CHI_hu_commander_exp = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_industrial } }
+        set_variable = { CHI_tang_industrial = -0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_irregular_attack } }
+        set_variable = { CHI_tang_irregular_attack = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_irregular_defence } }
+        set_variable = { CHI_tang_irregular_defence = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_irregular_org } }
+        set_variable = { CHI_tang_irregular_org = 0.1 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_power_fuxing } }
+        set_variable = { CHI_hu_power_fuxing = 0 }
+    }
+    
+    # 直接设置技能影响力为相应将领的等级（只计算陆军将领）
+    set_variable = { CHI_he_power_skill = 0 }
+    set_variable = { CHI_chen_power_skill = 0 }
+    set_variable = { CHI_hu_power_skill = 0 }
+    set_variable = { CHI_tang_power_skill = 0 }
+    
+    # 计算陆军将领的技能影响力
+    every_army_leader = {
+        limit = { AND = { has_trait = heyingqinxi is_employed_by = ROOT } }
+        add_to_variable = { PREV.CHI_he_power_skill = skill }
+    }
+    every_army_leader = {
+        limit = { AND = { has_trait = chenchengxi is_employed_by = ROOT } }
+        add_to_variable = { PREV.CHI_chen_power_skill = skill }
+    }
+    every_army_leader = {
+        limit = { AND = { has_trait = huzongnanxi is_employed_by = ROOT } }
+        add_to_variable = { PREV.CHI_hu_power_skill = skill }
+    }
+    every_army_leader = {
+        limit = { AND = { has_trait = tangenboxi is_employed_by = ROOT } }
+        add_to_variable = { PREV.CHI_tang_power_skill = skill }
+    }
+    
+    # 计算总影响力 = 基础影响力 + 内阁加成 + 技能影响力
+    set_variable = { CHI_he_power = CHI_he_power_base }
+    add_to_variable = { CHI_he_power = CHI_he_power_skill }
+    
+    set_variable = { CHI_chen_power = CHI_chen_power_base }
+    add_to_variable = { CHI_chen_power = CHI_chen_power_skill }
+    
+    set_variable = { CHI_hu_power = CHI_hu_power_base }
+    add_to_variable = { CHI_hu_power = CHI_hu_power_skill }
+    add_to_variable = { CHI_hu_power = CHI_hu_power_fuxing }
+    
+    set_variable = { CHI_tang_power = CHI_tang_power_base }
+    add_to_variable = { CHI_tang_power = CHI_tang_power_skill }
+    
+    # 计算总派系影响力
+    set_variable = { CHI_total_clique_power = 0 }
+    add_to_variable = { CHI_total_clique_power = CHI_he_power }
+    add_to_variable = { CHI_total_clique_power = CHI_chen_power }
+    add_to_variable = { CHI_total_clique_power = CHI_hu_power }
+    add_to_variable = { CHI_total_clique_power = CHI_tang_power }
+    
+    # 确保总派系影响力变量存在
+    if = {
+        limit = { NOT = { has_variable = CHI_total_clique_power } }
+        set_variable = { CHI_total_clique_power = 0 }
+    }
+    
+    # 确保影响力百分比变量存在
+    if = {
+        limit = { NOT = { has_variable = CHI_he_power_percent } }
+        set_variable = { CHI_he_power_percent = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_chen_power_percent } }
+        set_variable = { CHI_chen_power_percent = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_hu_power_percent } }
+        set_variable = { CHI_hu_power_percent = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = CHI_tang_power_percent } }
+        set_variable = { CHI_tang_power_percent = 25 }
+    }
+    
+    # 计算影响力百分比
+    if = {
+        limit = { CHI_total_clique_power > 0 }
+        set_variable = { CHI_he_power_percent = CHI_he_power }
+        divide_variable = { CHI_he_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_he_power_percent = 100 }
+        
+        set_variable = { CHI_chen_power_percent = CHI_chen_power }
+        divide_variable = { CHI_chen_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_chen_power_percent = 100 }
+        
+        set_variable = { CHI_hu_power_percent = CHI_hu_power }
+        divide_variable = { CHI_hu_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_hu_power_percent = 100 }
+        
+        set_variable = { CHI_tang_power_percent = CHI_tang_power }
+        divide_variable = { CHI_tang_power_percent = CHI_total_clique_power }
+        multiply_variable = { CHI_tang_power_percent = 100 }
+    }
+    else {
+        set_variable = { CHI_he_power_percent = 25 }
+        set_variable = { CHI_chen_power_percent = 25 }
+        set_variable = { CHI_hu_power_percent = 25 }
+        set_variable = { CHI_tang_power_percent = 25 }
+    }
+    
+    # 应用派系影响力效果
+    # 直接根据影响力百分比计算变量值
+    
+    # 何应钦派系
+    # 供应消耗因子: -0.15 * (影响力百分比/100)
+    set_variable = { CHI_he_supply_consumption = -0.15 }
+    multiply_variable = { CHI_he_supply_consumption = CHI_he_power_percent }
+    divide_variable = { CHI_he_supply_consumption = 100 }
+    
+    # 供应范围: 0.15 * (影响力百分比/100)
+    set_variable = { CHI_he_supply_range = 0.15 }
+    multiply_variable = { CHI_he_supply_range = CHI_he_power_percent }
+    divide_variable = { CHI_he_supply_range = 100 }
+    
+    # 计划速度: -0.15 * (影响力百分比/100)
+    set_variable = { CHI_he_planning_speed = -0.15 }
+    multiply_variable = { CHI_he_planning_speed = CHI_he_power_percent }
+    divide_variable = { CHI_he_planning_speed = 100 }
+    
+    # 陈诚派系
+    # 陆军经验获取因子: 0.15 * (影响力百分比/100)
+    set_variable = { CHI_chen_army_exp = 0.15 }
+    multiply_variable = { CHI_chen_army_exp = CHI_chen_power_percent }
+    divide_variable = { CHI_chen_army_exp = 100 }
+    
+    # 政治点数因子: -0.1 * (影响力百分比/100)
+    set_variable = { CHI_chen_political_power = -0.1 }
+    multiply_variable = { CHI_chen_political_power = CHI_chen_power_percent }
+    divide_variable = { CHI_chen_political_power = 100 }
+    
+    # 胡宗南派系
+    # 陆军组织度: 1.5 * (影响力百分比/100)
+    set_variable = { CHI_hu_army_org = 1.5 }
+    multiply_variable = { CHI_hu_army_org = CHI_hu_power_percent }
+    divide_variable = { CHI_hu_army_org = 100 }
+    
+    # 指挥官经验获取因子: -0.15 * (影响力百分比/100)
+    set_variable = { CHI_hu_commander_exp = -0.15 }
+    multiply_variable = { CHI_hu_commander_exp = CHI_hu_power_percent }
+    divide_variable = { CHI_hu_commander_exp = 100 }
+    
+    # 汤恩伯派系
+    # 工厂工业产能: -0.15 * (影响力百分比/100)
+    set_variable = { CHI_tang_industrial = -0.15 }
+    multiply_variable = { CHI_tang_industrial = CHI_tang_power_percent }
+    divide_variable = { CHI_tang_industrial = 100 }
+    
+    # 非正规部队攻击: 0.15 * (影响力百分比/100)
+    set_variable = { CHI_tang_irregular_attack = 0.15 }
+    multiply_variable = { CHI_tang_irregular_attack = CHI_tang_power_percent }
+    divide_variable = { CHI_tang_irregular_attack = 100 }
+    
+    # 非正规部队防御: 0.15 * (影响力百分比/100)
+    set_variable = { CHI_tang_irregular_defence = 0.15 }
+    multiply_variable = { CHI_tang_irregular_defence = CHI_tang_power_percent }
+    divide_variable = { CHI_tang_irregular_defence = 100 }
+    
+    # 非正规部队组织度: 0.15 * (影响力百分比/100)
+    set_variable = { CHI_tang_irregular_org = 0.15 }
+    multiply_variable = { CHI_tang_irregular_org = CHI_tang_power_percent }
+    divide_variable = { CHI_tang_irregular_org = 100 }
+
+}
+
+

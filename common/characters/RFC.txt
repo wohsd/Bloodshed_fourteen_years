@@ -1,20 +1,20 @@
 characters={
-		RFC_DengYangDa={
-		name=RFC_DengYangDa
+		RFC_DengYanDa={
+		name=RFC_DengYanDa
 		portraits={
 			civilian={
-				large="gfx/leaders/RFC/RFC_DengYangDa.png"
+				large="gfx/leaders/RFC/RFC_DengYanDa.png"
 			}
 		}
 		country_leader={
-			desc = RFC_DengYangDa_leader_desc
+			desc = RFC_DengYanDa_leader_desc
 			ideology=marxism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
 		corps_commander = {
-			desc = RFC_DengYangDa_leader_desc
+			desc = RFC_DengYanDa_leader_desc
 			traits={ 
 				Leftist_Kuomintang
 			}
@@ -52,11 +52,11 @@ characters={
 			logistics_skill = 3
 		}
 	}		
-		RFC_huangqixiang={
-		name=RFC_huangqixiang
+		RFC_HuangQiXiang={
+		name=RFC_HuangQiXiang
 		portraits={
 			civilian={
-				large="gfx/leaders/RFC/RFC_huangqixiang.png"
+				large="gfx/leaders/RFC/RFC_HuangQiXiang.png"
 			}
 		}
 		corps_commander = {

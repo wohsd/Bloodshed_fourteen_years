@@ -44,14 +44,14 @@ characters={
 			id=-1
 		}
 	}			
-	ROG_Yuhanmou={
-		name=ROG_Yuhanmou
+	ROG_YuHanMou={
+		name=ROG_YuHanMou
 		portraits={
 			civilian={
-				large="gfx/leaders/ROG/ROG_Yuhanmou.png"
+				large="gfx/leaders/ROG/ROG_YuHanMou.png"
 			}
 		}
-		country_leader={	desc = ROG_Yuhanmou_leader_desc
+		country_leader={	desc = ROG_YuHanMou_leader_desc
 
 			ideology=despotism
 			traits={ }

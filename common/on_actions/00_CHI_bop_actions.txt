@@ -1,0 +1,58 @@
+on_power_balance_change = {
+	trigger = {
+		tag = CHI
+	}
+
+	if = {
+		limit = {
+			has_power_balance = {
+				id = CHI_struggle_balance
+				value < -0.7
+			}
+		}
+		country_event = { id = CHI_struggle_balance_left_high }
+	}
+
+	if = {
+		limit = {
+			has_power_balance = {
+				id = CHI_struggle_balance
+				value >= -0.7
+				value < -0.3
+			}
+		}
+		country_event = { id = CHI_struggle_balance_left_low }
+	}
+
+	if = {
+		limit = {
+			has_power_balance = {
+				id = CHI_struggle_balance
+				value >= -0.3
+				value <= 0.3
+			}
+		}
+		country_event = { id = CHI_struggle_balance_mid }
+	}
+
+	if = {
+		limit = {
+			has_power_balance = {
+				id = CHI_struggle_balance
+				value > 0.3
+				value <= 0.7
+			}
+		}
+		country_event = { id = CHI_struggle_balance_right_low }
+	}
+
+	if = {
+		limit = {
+			has_power_balance = {
+				id = CHI_struggle_balance
+				value > 0.7
+			}
+		}
+		country_event = { id = CHI_struggle_balance_right_high }
+	}
+}
