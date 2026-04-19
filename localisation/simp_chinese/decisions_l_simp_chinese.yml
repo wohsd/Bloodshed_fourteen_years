@@ -13,7 +13,7 @@
  MINOR_EVENT_POPUP_CHECKBOX_TOOLTIP: "§G点击§!切换启用次要事件（例如王牌飞行员事件）通知。"
  POPUP_MINOR_EVENTS: "次要事件弹窗"
  DECISION_COST_DESC: "执行此决议需要£pol_power $VAL|H0$"
- DECISION_COST_NOT_ENOUGH: "执行此决议需要£pol_power $VAL|HR0$"
+ DECISION_COST_NOT_ENOUGH: "执行此决议需要£pol_power $VAL|HR0$" 
  ON_MAP_DECISION_NAME_DEFAULT: "在地图上寻找决议。"
  ADD_DAYS_TO_DECISION: "决议$DECISION|H$添加$DAYS|H$日时长"
  REMOVE_DAYS_TO_DECISION: "决议$DECISION|H$中减少$DAYS|H$日时长"
@@ -108,6 +108,58 @@ Mao_road3: "解决抗战时期“右”倾教条主义"
 Zhou_road: "调节矛盾"
 Zhou_road1: "支持毛路线"
 Zhou_road2: "支持王路线"
+
+# 政治平衡决策分类
+PRC_mao_political_line_category: "政治平衡"
+PRC_mao_political_line_category_desc: "党内关于革命路线的争论和选择。毛泽东路线强调独立自主、农村包围城市；王明路线则主张城市中心论、服从共产国际。"
+
+# 新增政治平衡决策
+criticize_wang_ming_line: "批判王明路线"
+criticize_wang_ming_line_desc: "通过党内批评和自我批评，揭露王明路线在理论和实践上的错误，提高全党对毛泽东思想的认识。"
+
+emphasize_independence: "强调独立自主"
+emphasize_independence_desc: "在统一战线中必须坚持独立自主原则，不能放弃党的领导权和武装力量，这是革命胜利的根本保证。"
+
+rural_base_construction: "农村根据地建设"
+rural_base_construction_desc: "加强农村革命根据地的建设，发展生产，整训部队，巩固和扩大红色区域。"
+
+deepen_rectification_movement: "整风运动深化"
+deepen_rectification_movement_desc: "在全党范围内深入开展整风运动，彻底肃清王明路线的影响，确立毛泽东思想的指导地位。"
+
+unite_with_soviet_comrades: "联合苏联同志"
+unite_with_soviet_comrades_desc: "加强与苏联和共产国际的联系，争取更多的物资援助和政治支持。"
+
+urban_worker_movement: "城市工人运动"
+urban_worker_movement_desc: "在城市中组织工人运动，发动罢工和示威，配合农村革命。"
+
+accept_comintern_guidance: "接受共产国际指导"
+accept_comintern_guidance_desc: "认真学习和贯彻共产国际的指示精神，调整党的路线方针政策。"
+
+# 毛泽东路线决策
+mao_rural_strategy: "农村包围城市"
+mao_rural_strategy_desc: "坚持毛泽东提出的农村包围城市、武装夺取政权的革命道路，加强农村根据地建设，积蓄革命力量。"
+
+mao_guerrilla_warfare: "游击战理论"
+mao_guerrilla_warfare_desc: "贯彻毛泽东的游击战思想：敌进我退，敌驻我扰，敌疲我打，敌退我追。以灵活机动的战术打击敌人。"
+
+mao_mass_line: "群众路线"
+mao_mass_line_desc: "坚持从群众中来，到群众中去的工作方法，发动广大人民群众参加革命，建立巩固的工农联盟。"
+
+mao_new_democracy: "新民主主义论"
+mao_new_democracy_desc: "毛泽东在1940年提出的新民主主义理论，为中国革命指明了方向，确立了无产阶级领导的人民大众的反帝反封建的革命道路。"
+
+# 王明路线决策
+wang_urban_center: "城市中心论"
+wang_urban_center_desc: "坚持王明主张的城市中心论，认为革命应该在大城市中首先取得胜利，然后向农村扩展。"
+
+wang_regular_army: "正规军建设"
+wang_regular_army_desc: "按照苏联模式建设正规化的革命军队，强调正规战和阵地战，提高军队的组织性和纪律性。"
+
+wang_internationalism: "国际主义"
+wang_internationalism_desc: "坚持无产阶级国际主义，服从共产国际的统一领导，与苏联和世界无产阶级革命保持紧密联系。"
+
+wang_united_front_right: "统一战线右倾"
+wang_united_front_right_desc: "在抗日民族统一战线中过分强调与国民党的合作，主张一切服从统一战线，放弃共产党的独立自主原则。"
 
 Expand_Shaanxi_Gansu_Ningxia: "扩大陕甘宁" 
 Expand_Shaanxi_Gansu_Ningxia_desc: "红军的军事部署和作战行动，应确定地放在“打通抗日路线”与“巩固、扩大现有苏区”这个基点上。把国内战争同民族战争结合起来；准备对日作战；扩大红军。"
@@ -321,3 +373,7 @@ CHI_hu_clique_tt: "§B胡宗南系§!§L，国民革命军第一军是蒋介石�
 CHI_hu_power_tt: "§B胡宗南系§!§L影响力目前为：[?CHI_hu_power_percent|0]%（[?CHI_hu_power|0]级）"
 CHI_tang_clique_tt: "§O汤恩伯系§!§L，汤恩伯并非黄埔出身，但凭借战功和蒋介石的赏识，在中原大战后开始崛起。他代表了中央军中较为实用主义的一支。在财政上，由于得不到中央预算的充分倾斜，其部队往往依赖驻地供给，这导致了严重的部队经商和掠夺民财现象。为扩充势力，汤恩伯大量收编地方部队和土匪武装，导致部队成分复杂，军纪废弛。"
 CHI_tang_power_tt: "§O汤恩伯系§!§L影响力目前为：[?CHI_tang_power_percent|0]%（[?CHI_tang_power|0]级）"
+CHI_he_effect_tt: "补给消耗 §G[?CHI_he_supply_consumption|]§!\n补给范围 §G[?CHI_he_supply_range|]§!\n计划速度 §R[?CHI_he_planning_speed|]§!"
+CHI_chen_effect_tt: "陆军经验获取 §G[?CHI_chen_army_exp|]§!\n政治点数获取 §R[?CHI_chen_political_power|]§!"
+CHI_hu_effect_tt: "陆军组织度 §G[?CHI_hu_army_org|]§!\n指挥官经验获取 §R[?CHI_hu_commander_exp|]§!" 
+CHI_tang_effect_tt: "非正规步兵攻防 §G[?CHI_tang_irregular_attack|]§!\n工厂产出 §R[?CHI_tang_industrial|]§!"

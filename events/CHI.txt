@@ -1,4 +1,4 @@
-﻿add_namespace = CHI
+add_namespace = CHI
 add_namespace = CHI_hidden
 add_namespace = CHIFocus
 
@@ -70,6 +70,9 @@ country_event = {
 			id = CHI_struggle_balance
 		}
 		set_country_flag = jiangjieshi_gg
+		# 移除领袖权威
+		remove_dynamic_modifier = { modifier = Leader_Authority }
+		set_country_flag = leader_authority_removed
 	}
 }
 
@@ -89,7 +92,7 @@ country_event = {
 	}
 	option = {
 		name = CHI.2.b
-		trigger = { not= { has_country_flag = RFC_DengYangDa1 } } 
+		trigger = { not= { has_country_flag = RFC_DengYanDa1 } } 
 		custom_effect_tooltip = CHI.2.b.d
 	}
 }
@@ -237,6 +240,185 @@ news_event = {
 
 	option = {
 		name = CHIFocus.30.a
+	}
+}
+
+# 定期更新派系影响力的事件
+country_event = {
+	id = CHI_hidden.100
+	hidden = yes
+	persistent = yes
+
+	trigger = {
+		tag = CHI
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		CHI_update_faction_effects = yes
+	}
+
+	option = {
+		name = CHI_hidden.100.a
+	}
+}
+
+# 权力平衡事件
+country_event = {
+	id = CHI_struggle_balance_left_high
+	title = CHI_struggle_balance_left_high.t
+	desc = CHI_struggle_balance_left_high.d
+	picture = generic_political_crisis
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_struggle_balance_left_high.a
+		CHI = {
+			# 减少更多政治点数，增加更多生活消费品，每日增加更多中立主义支持率
+			add_to_variable = {
+				ZHRS_political_power_gain = -0.2
+			}
+			add_to_variable = {
+				ZHRS_consumer_goods = 0.05
+			}
+			add_to_variable = {
+				ZHRS_neutrality_drift = 0.01
+			}
+			# 政治平衡每月额外向左侧移动很多
+			add_power_balance_value = {
+				id = CHI_struggle_balance
+				value = -0.05
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CHI_struggle_balance_left_low
+	title = CHI_struggle_balance_left_low.t
+	desc = CHI_struggle_balance_left_low.d
+	picture = generic_political_crisis
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_struggle_balance_left_low.a
+		CHI = {
+			# 减少政治点数，增加生活消费品，每日增加中立主义支持率
+			add_to_variable = {
+				ZHRS_political_power_gain = -0.1
+			}
+			add_to_variable = {
+				ZHRS_consumer_goods = 0.03
+			}
+			add_to_variable = {
+				ZHRS_neutrality_drift = 0.005
+			}
+			# 政治平衡每月额外向左侧移动很少
+			add_power_balance_value = {
+				id = CHI_struggle_balance
+				value = -0.01
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CHI_struggle_balance_mid
+	title = CHI_struggle_balance_mid.t
+	desc = CHI_struggle_balance_mid.d
+	picture = generic_political_crisis
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_struggle_balance_mid.a
+		CHI = {
+			# 动态修正"领袖权威"额外增加5%政治点数、战争支持率、稳定性
+			add_to_variable = {
+				ZHRS_political_power_gain = 0.1
+			}
+			add_to_variable = {
+				ZHRS_war_support = 0.05
+			}
+			add_to_variable = {
+				ZHRS_stability = 0.05
+			}
+			# 当党政平衡时，把CHI_hu_power_fuxing设置为零
+			set_variable = {
+				CHI_hu_power_fuxing = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CHI_struggle_balance_right_low
+	title = CHI_struggle_balance_right_low.t
+	desc = CHI_struggle_balance_right_low.d
+	picture = generic_political_crisis
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_struggle_balance_right_low.a
+		CHI = {
+			# 减少政治点数，减少科研速度，增加变量CHI_hu_power_fuxing2点，增加法西斯主义支持率
+			add_to_variable = {
+				ZHRS_political_power_gain = -0.1
+			}
+			add_to_variable = {
+				ZHRS_research_time_factor = 0.05
+			}
+			add_to_variable = {
+				CHI_hu_power_fuxing = 2
+			}
+			add_to_variable = {
+				ZHRS_fascism_drift = 0.01
+			}
+			# 政治平衡每月额外向右侧移动很少
+			add_power_balance_value = {
+				id = CHI_struggle_balance
+				value = 0.01
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CHI_struggle_balance_right_high
+	title = CHI_struggle_balance_right_high.t
+	desc = CHI_struggle_balance_right_high.d
+	picture = generic_political_crisis
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_struggle_balance_right_high.a
+		CHI = {
+			# 减少更多政治点数，减少更少科研速度，增加变量CHI_hu_power_fuxing5点，增加更多法西斯主义支持率
+			add_to_variable = {
+				ZHRS_political_power_gain = -0.2
+			}
+			add_to_variable = {
+				ZHRS_research_time_factor = 0.03
+			}
+			add_to_variable = {
+				CHI_hu_power_fuxing = 5
+			}
+			add_to_variable = {
+				ZHRS_fascism_drift = 0.02
+			}
+			# 政治平衡每月额外向右侧移动很多
+			add_power_balance_value = {
+				id = CHI_struggle_balance
+				value = 0.05
+			}
+		}
 	}
 }
 

@@ -16,7 +16,7 @@ set_war_support = 0.7
 
 recruit_character = YUL_JingYueXiu
 #获取领导人，将领（在common\characters\你的国家tag）
-recruit_character = YUL_GaoShuangChen
+recruit_character = YUL_GaoShuangCheng
 set_politics = {
 	ruling_party = neutrality
 	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality

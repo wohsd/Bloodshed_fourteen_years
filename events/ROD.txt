@@ -1,5 +1,6 @@
-﻿add_namespace = ROD
+add_namespace = ROD
 add_namespace = ROD_hidden
+add_namespace = ROD_unreal
 country_event = {
 	id = ROD.1
 	title = ROD.1.t
@@ -12,6 +13,8 @@ country_event = {
 		AND={
 			date > 1931.6.11
 			date < 1931.6.13
+			NOT = { has_country_flag = ROD_follows_central }
+			NOT = { has_country_flag = ROD_united_front }
 		}
     }
     immediate = {
@@ -83,6 +86,7 @@ country_event = {
 				date < 1935.1.1
 				has_war = yes
 				surrender_progress > 0.17
+				has_country_flag = ROD_follows_central
 			}
 		}
     }
@@ -116,6 +120,9 @@ country_event = {
 		date < 1935.10.4
 		NOT = {
 			74={is_controlled_by = ROD}
+		}
+		ROD = {
+			has_country_flag = ROD_follows_central
 		}
     }
     immediate = {
@@ -312,6 +319,11 @@ news_event = {
 	major = yes
 
 	is_triggered_only = yes
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_follows_central
+		}
+	}
 	immediate = {
 		hidden_effect = {
 			ROD={
@@ -386,6 +398,11 @@ news_event = {
 
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_follows_central
+		}
+	}
 	immediate = {
 		hidden_effect = {
 			CHI={
@@ -407,4 +424,622 @@ news_event = {
 	option = {
 			name = ROD.9.a
 	}		
+}
+
+
+
+
+
+
+# ========== 东北军抗日架空历史事件链 ==========
+
+# 事件1：九一八事变 - 东北军奋起抵抗
+country_event = {
+	id = ROD_unreal.1
+	title = ROD_unreal.1.t
+	desc = ROD_unreal.1.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		AND={
+			date > 1931.9.17
+			date < 1931.9.19
+			ROD = {
+				has_country_flag = ROD_united_front
+				controls_state = 9
+				controls_state = 12
+				controls_state = 13
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			ROD = {
+				add_political_power = 30
+				army_experience = 5
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+				add_war_support = 0.1
+				add_stability = 0.05
+				set_country_flag = ROD_resist_japan
+			}
+			CHI = {
+				add_opinion_modifier = {
+					target = ROD
+					modifier = ROD_resists_japan
+				}
+
+			}
+		}
+		
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.1.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.2 days = 10 }
+		}
+	}
+}
+
+# 事件2：组织东北抗日义勇军
+country_event = {
+	id = ROD_unreal.2
+	title = ROD_unreal.2.t
+	desc = ROD_unreal.2.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_resist_japan
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+		}
+	}
+	immediate = {
+		ROD = {
+			add_manpower = 5000
+			army_experience = 5
+			add_war_support = 0.08
+			set_country_flag = ROD_volunteers_organized
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.2.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.3 days = 20 }
+		}
+	}
+}
+
+# 事件3：联合东北抗日联军
+country_event = {
+	id = ROD_unreal.3
+	title = ROD_unreal.3.t
+	desc = ROD_unreal.3.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_volunteers_organized
+			has_country_flag = ROD_united_front
+		}
+	}
+	immediate = {
+		ROD = {
+			add_war_support = 0.1
+			add_manpower = 3000
+			army_experience = 5
+			set_country_flag = ROD_united_with_anti_japanese
+		}
+		PRC = {
+			add_opinion_modifier = {
+				target = ROD
+				modifier = ROD_anti_japanese_alliance
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.3.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.4 days = 30 }
+		}
+	}
+}
+
+# 事件4：建立敌后抗日根据地
+country_event = {
+	id = ROD_unreal.4
+	title = ROD_unreal.4.t
+	desc = ROD_unreal.4.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_united_with_anti_japanese
+			has_country_flag = ROD_united_front
+		}
+	}
+	immediate = {
+		ROD = {
+			add_stability = 0.05
+			add_war_support = 0.08
+			add_manpower = 2000
+			set_country_flag = ROD_bases_established
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.4.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.5 days = 40 }
+		}
+	}
+}
+
+# 事件5：获得苏联援助
+country_event = {
+	id = ROD_unreal.5
+	title = ROD_unreal.5.t
+	desc = ROD_unreal.5.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_bases_established
+			has_country_flag = ROD_united_front
+		}
+		PRC = {
+			is_allied_with = ROD
+		}
+	}
+	immediate = {
+		ROD = {
+			add_manpower = 10000
+			army_experience = 15
+			add_stability = 0.05
+			set_country_flag = ROD_soviet_aid_received
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROD
+				modifier = ROD_soviet_aid
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.5.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.6 days = 30 }
+		}
+	}
+}
+
+# 事件6：发动冬季攻势
+country_event = {
+	id = ROD_unreal.6
+	title = ROD_unreal.6.t
+	desc = ROD_unreal.6.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_soviet_aid_received
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+		}
+		OR = {
+			date > 1931.12.1
+			date < 1932.3.1
+			date > 1932.12.1
+			date < 1933.3.1
+		}
+	}
+	immediate = {
+		ROD = {
+			add_war_support = 0.12
+			army_experience = 10
+			set_country_flag = ROD_winter_offensive
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.6.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.7 days = 40 }
+		}
+	}
+}
+
+# 事件7：收复沈阳
+country_event = {
+	id = ROD_unreal.7
+	title = ROD_unreal.7.t
+	desc = ROD_unreal.7.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_winter_offensive
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+			has_war_score = {
+				target = JAP
+				value = 0.3
+			}
+		}
+	}
+	immediate = {
+		ROD = {
+			add_war_support = 0.15
+			army_experience = 15
+			add_stability = 0.08
+			79 = { transfer_state_to = ROD }
+			set_country_flag = ROD_shenyang_liberated
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.7.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.8 days = 50 }
+		}
+	}
+}
+
+# 事件8：与关内抗日力量会师
+country_event = {
+	id = ROD_unreal.8
+	title = ROD_unreal.8.t
+	desc = ROD_unreal.8.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_shenyang_liberated
+			has_country_flag = ROD_united_front
+		}
+		CHI = {
+			is_at_war_with = JAP
+		}
+	}
+	immediate = {
+		ROD = {
+			add_war_support = 0.2
+			add_stability = 0.1
+			add_manpower = 10000
+			set_country_flag = ROD_joined_with_central
+		}
+		CHI = {
+			add_opinion_modifier = {
+				target = ROD
+				modifier = ROD_anti_japanese_union
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.8.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.9 days = 60 }
+		}
+	}
+}
+
+# 事件9：发动全面反攻
+country_event = {
+	id = ROD_unreal.9
+	title = ROD_unreal.9.t
+	desc = ROD_unreal.9.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_joined_with_central
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+			has_war_score = {
+				target = JAP
+				value = 0.6
+			}
+		}
+		CHI = {
+			is_at_war_with = JAP
+			is_allied_with = ROD
+		}
+	}
+	immediate = {
+		ROD = {
+			add_war_support = 0.2
+			army_experience = 20
+			78 = { transfer_state_to = ROD }
+			59 = { transfer_state_to = ROD }
+			37 = { transfer_state_to = ROD }
+			set_country_flag = ROD_full_counter_attack
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.9.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.10 days = 40 }
+		}
+	}
+}
+
+# 事件10：抗日战争胜利
+country_event = {
+	id = ROD_unreal.10
+	title = ROD_unreal.10.t
+	desc = ROD_unreal.10.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_full_counter_attack
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+			has_war_score = {
+				target = JAP
+				value = 0.9
+			}
+		}
+	}
+	immediate = {
+		ROD = {
+			annex_country = {
+				target = JAP
+			}
+			add_war_support = 0.25
+			add_stability = 0.15
+			add_political_power = 50
+			set_cosmetic_tag = ROD_anti_japanese_hero
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.10.a
+		hidden_effect = {
+			country_event = { id = ROD_unreal.11 days = 30 }
+		}
+	}
+}
+
+# 事件11：南京要求我们放弃抵抗
+country_event = {
+	id = ROD_unreal.11
+	title = ROD_unreal.11.t
+	desc = ROD_unreal.11.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+		}
+		CHI = {
+			NOT = { is_at_war_with = JAP }
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.11.a
+		trigger = { is_ai = no }
+		CHI = {
+			add_opinion_modifier = {
+				target = ROD
+				modifier = ROD_disobey_central
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ROD_refuse_surrender
+			country_event = { id = ROD_unreal.12 days = 15 }
+		}
+	}
+	option = {
+		name = ROD_unreal.11.b
+		trigger = { is_ai = yes }
+		CHI = {
+			add_opinion_modifier = {
+				target = ROD
+				modifier = ROD_disobey_central
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ROD_refuse_surrender
+			country_event = { id = ROD_unreal.12 days = 15 }
+		}
+	}
+}
+
+# 事件12：正式脱离南京政府
+country_event = {
+	id = ROD_unreal.12
+	title = ROD_unreal.12.t
+	desc = ROD_unreal.12.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_refuse_surrender
+			has_country_flag = ROD_united_front
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.12.a
+		add_political_power = -50
+		add_war_support = 0.1
+		add_stability = -0.05
+		set_country_flag = ROD_broke_away_from_central
+		set_cosmetic_tag = ROD_independent
+		CHI = {
+			add_opinion_modifier = {
+				target = ROD
+				modifier = ROD_traitor
+			}
+		}
+		hidden_effect = {
+			country_event = { id = ROD_unreal.13 days = 20 }
+		}
+	}
+}
+
+# 事件13：号召民间抗日
+country_event = {
+	id = ROD_unreal.13
+	title = ROD_unreal.13.t
+	desc = ROD_unreal.13.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_broke_away_from_central
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.13.a
+		add_manpower = 15000
+		add_war_support = 0.15
+		add_stability = 0.05
+		army_experience = 10
+		set_country_flag = ROD_civilian_mobilized
+		hidden_effect = {
+			country_event = { id = ROD_unreal.14 days = 25 }
+		}
+	}
+}
+
+# 事件14：转移工厂
+country_event = {
+	id = ROD_unreal.14
+	title = ROD_unreal.14.t
+	desc = ROD_unreal.14.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_civilian_mobilized
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.14.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = ROD
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 500
+			producer = ROD
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 800
+			producer = ROD
+		}
+		add_stability = 0.03
+		set_country_flag = ROD_factories_relocated
+		hidden_effect = {
+			country_event = { id = ROD_unreal.15 days = 30 }
+		}
+	}
+}
+
+# 事件15：东北军回援
+country_event = {
+	id = ROD_unreal.15
+	title = ROD_unreal.15.t
+	desc = ROD_unreal.15.d
+	picture = GFX_anti_japanese_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			has_country_flag = ROD_factories_relocated
+			has_country_flag = ROD_united_front
+			is_at_war_with = JAP
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ROD_unreal.15.a
+		add_manpower = 25000
+		add_war_support = 0.2
+		add_stability = 0.1
+		army_experience = 20
+		add_command_power = 50
+		set_country_flag = ROD_reinforcements_arrived
+	}
 }

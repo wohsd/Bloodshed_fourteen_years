@@ -22,7 +22,7 @@ country_event = {
 		set_global_flag = state_2634
 		
 		CHI={
-			CHI_TangShenZhi = {
+			CHI_TangShengZhi = {
 				unit_leader_event = Generals.1
 			}
 		}
@@ -44,12 +44,12 @@ unit_leader_event = {
 		name = Generals.1.a
 		random_list = {
 			99={
-				CHI_TangShenZhi={
+				CHI_TangShengZhi={
 					unit_leader_event = {id=Generals.2 days=10}
 				}
 			}
 			1={
-				CHI_TangShenZhi={
+				CHI_TangShengZhi={
 					unit_leader_event = {id=Generals.3 days=10}
 				}
 			}
@@ -81,7 +81,7 @@ unit_leader_event = {
 	is_triggered_only = yes
 	option = {
 		name = Generals.3.a
-		retire_character = CHI_TangShenZhi
+		retire_character = CHI_TangShengZhi
 	}		
 }
 ###抗日

@@ -1,15 +1,16 @@
 ﻿l_simp_chinese:
- government:0 "政府政策"
- adviser:0 "顾问"
-
-Defense_Industry_Experts_Theorists:0 "军工企业及理论家"
-Army_Generals:0 "三军将领"
-Commander_Chief:0 "总司令"
-Commander_Chief1:0 "总司令"
-Naval_Admirals:0 "海军部长"
-Air_Force_Generals:0 "空军部长"
-
-
-
+ government: "政府政策"
+ adviser: "顾问"
+ Defense_Industry_Experts_Theorists: "军工企业及理论家"
+ Army_Generals: "三军将领"
+ Commander_Chief: "总司令"
+ Commander_Chief1: "总司令"
+ Naval_Admirals: "海军部长"
+ Air_Force_Generals: "空军部长"
+ Zhonghua_Revival_Society: "中华复兴社"
+ Zhonghua_Revival_Society_desc: "中华复兴社的成立增强了国民党的政治控制能力，同时推动了法西斯主义思想的传播，但也对科研发展产生了一定的阻碍。"
+ ZHRS_political_power_gain: "每日政治点数"
+ ZHRS_research_time_factor: "科研速度"
+ ZHRS_fascism_drift: "每日法西斯主义支持率"
 
 

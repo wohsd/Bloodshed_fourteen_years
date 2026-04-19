@@ -49,22 +49,22 @@ YUL_JingYueXiu={
 			legacy_id=-1
 		}
 	}
-	YUL_GaoShuangChen={
-		name=YUL_GaoShuangChen
+	YUL_GaoShuangCheng={
+		name=YUL_GaoShuangCheng
 
 		#肖像选择（平民状态和军事状态）
 		portraits={
 			civilian={
-				large="gfx//leaders//YUL//YUL_GaoShuangChen.png"
+				large="gfx//leaders//YUL//YUL_GaoShuangCheng.png"
 			}
 			army={
-				large="gfx//leaders//YUL//YUL_GaoShuangChen.png"
-				small="gfx//leaders//YUL//YUL_GaoShuangChen.png"
+				large="gfx//leaders//YUL//YUL_GaoShuangCheng.png"
+				small="gfx//leaders//YUL//YUL_GaoShuangCheng.png"
 			}
 
 		}
 		#担任党派领导人时的数据
-		country_leader={	desc = YUL_GaoShuangChen_leader_desc
+		country_leader={	desc = YUL_GaoShuangCheng_leader_desc
 
 			#意识形态
 			ideology=despotism
@@ -75,7 +75,7 @@ YUL_JingYueXiu={
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
 		}
-		field_marshal={	desc = YUL_GaoShuangChen_leader_desc
+		field_marshal={	desc = YUL_GaoShuangCheng_leader_desc
 
 			#特质（如堑壕大师）
 			traits={ }

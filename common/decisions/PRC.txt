@@ -286,7 +286,501 @@ Yan_an_Rectification_Movement= {
 				value = 0.1
 			}
 		}   
-	}  
+	}
+}
+
+# 毛泽东路线政治平衡决策
+PRC_mao_political_line = {
+	# 批判王明路线
+	criticize_wang_ming_line = {
+		icon = generic_political_discourse
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > -0.5
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.15
+			}
+			add_stability = -0.02
+		}
+		remove_effect = {
+			add_stability = 0.03
+		}
+	}
+
+	# 农村包围城市
+	mao_rural_strategy = {
+		icon = generic_construction
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > -0.4
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 40
+		days_remove = 50
+		fire_only_once = no
+		ai_will_do = {
+			factor = 3
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.05
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.1
+			}
+			add_stability = 0.02
+		}
+	}
+
+	# 游击战理论
+	mao_guerrilla_warfare = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > -0.2
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 60
+		days_remove = 70
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			army_attack_factor = 0.05
+			army_speed_factor = 0.05
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.12
+			}
+			army_experience = 10
+		}
+	}
+
+	# 群众路线
+	mao_mass_line = {
+		icon = generic_political_discourse
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > 0.1
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 45
+		days_remove = 55
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			conscription = 0.005
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.08
+			}
+			add_manpower = 1000
+		}
+	}
+
+	# 新民主主义论
+	mao_new_democracy = {
+		icon = generic_research
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > 0.2
+			}
+			date > 1940.1.1
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 80
+		days_remove = 90
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 4
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.18
+			}
+			add_political_power = 75
+			add_war_support = 0.05
+		}
+	}
+
+	# 强调独立自主
+	emphasize_independence = {
+		icon = generic_independence
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > 0
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 75
+		days_remove = 90
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 3
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.2
+			}
+			add_war_support = 0.05
+			set_country_flag = PRC_independence_emphasized
+		}
+	}
+
+	# 农村根据地建设
+	rural_base_construction = {
+		icon = generic_construction
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > -0.3
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 60
+		days_remove = 70
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.03
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.12
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	# 整风运动深化
+	deepen_rectification_movement = {
+		icon = generic_political_discourse
+		available = {
+			has_country_flag = PRC_Mao_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value > 0.3
+			}
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_focus87
+		}
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			stability_weekly = -0.002
+			war_support_weekly = 0.003
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = 0.25
+			}
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+	}
+
+	# 王明路线 - 城市中心论
+	wang_urban_center = {
+		icon = generic_industry
+		available = {
+			has_country_flag = PRC_Wang_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value < 0.4
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 35
+		days_remove = 45
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			production_speed_industrial_complex_factor = 0.08
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.1
+			}
+		}
+	}
+
+	# 王明路线 - 正规军建设
+	wang_regular_army = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = PRC_Wang_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value < 0.2
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 55
+		days_remove = 65
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			army_org_factor = 0.03
+			planning_speed = 0.05
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.08
+			}
+			army_experience = 15
+		}
+	}
+
+	# 王明路线 - 国际主义
+	wang_internationalism = {
+		icon = generic_communism
+		available = {
+			has_country_flag = PRC_Wang_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value < -0.1
+			}
+			SOV = { exists = yes }
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 40
+		days_remove = 50
+		fire_only_once = no
+		ai_will_do = {
+			factor = 3
+		}
+		modifier = {
+			subversive_activities_cost = -0.15
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.12
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = PRC_pro_soviet
+				}
+			}
+		}
+	}
+
+	# 王明路线 - 统一战线右倾
+	wang_united_front_right = {
+		icon = generic_political_discourse
+		available = {
+			has_country_flag = PRC_Wang_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value < -0.3
+			}
+			OR = {
+				CHI = { is_in_faction_with = PRC }
+				any_country = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 30
+		days_remove = 40
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			political_power_gain = 0.05
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.1
+			}
+			add_stability = -0.02
+		}
+	}
+
+	# 王明路线 - 联合苏联同志
+	unite_with_soviet_comrades = {
+		icon = generic_communism
+		available = {
+			has_country_flag = PRC_Wang_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value < 0.5
+			}
+			SOV = { exists = yes }
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			subversive_activities_cost = -0.1
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.15
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = PRC_pro_soviet
+				}
+			}
+		}
+	}
+
+	# 王明路线 - 城市工人运动
+	urban_worker_movement = {
+		icon = generic_industry
+		available = {
+			has_country_flag = PRC_Wang_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value < 0
+			}
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 40
+		days_remove = 45
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			production_speed_industrial_complex_factor = 0.05
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.1
+			}
+			add_manpower = 500
+		}
+	}
+
+	# 王明路线 - 接受共产国际指导
+	accept_comintern_guidance = {
+		icon = generic_communism
+		available = {
+			has_country_flag = PRC_Wang_FLAG
+			power_balance_value = {
+				id = PRC_struggle_balance
+				value < -0.3
+			}
+			SOV = { exists = yes }
+		}
+		visible = {
+			tag = PRC
+		}
+		cost = 30
+		days_remove = 40
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			political_power_gain = 0.05
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = PRC_struggle_balance
+				value = -0.12
+			}
+			add_political_power = 50
+		}
+	}
+}  
 	
 	Zhou_road = {
 		available = {

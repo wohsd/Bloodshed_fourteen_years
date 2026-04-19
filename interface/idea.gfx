@@ -164,11 +164,35 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Not_resisting"
-		texturefile = "gfx/interface/ideas/CHI/Not_resisting.dds"
+		texturefile = "gfx/interface/ideas/CHI/Not_resisting.dds" 
 	}
 	spriteType = {
 		name = "GFX_idea_Negative_Encirclement"
 		texturefile = "gfx/interface/ideas/ROD/Negative_Encirclement.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ROD_northeast_army_tradition"
+		texturefile = "gfx/interface/ideas/ROD/ROD_northeast_army_tradition.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ROD_exile_pain"
+		texturefile = "gfx/interface/ideas/ROD/ROD_exile_pain.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ROD_anti_japanese_vanguard"
+		texturefile = "gfx/interface/ideas/ROD/ROD_anti_japanese_vanguard.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_the_republic_restored"
+		texturefile = "gfx/interface/ideas/CHI/The_winner_Central.png"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_the_long_march2"
+		texturefile = "gfx/interface/ideas/PRC/Chinese_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_hundred_regiments_offensive"
+		texturefile = "gfx/interface/ideas/PRC/Chinese_red_army.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_Chinese_red_army"

@@ -19,7 +19,7 @@ recruit_character = ROG_ChenMingQu
 recruit_character = ROG_ChenJiTang
 
 recruit_character = ROG_WangJingWei
-recruit_character = ROG_Yuhanmou
+recruit_character = ROG_YuHanMou
 set_popularities = {
 	democratic = 0
 	communism = 0

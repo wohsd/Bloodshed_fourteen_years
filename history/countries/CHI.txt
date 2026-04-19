@@ -53,15 +53,15 @@ recruit_character = CHI_JiangJieShi
 recruit_character = CHI_ChenCheng
 recruit_character = CHI_WangJingWei
 recruit_character = CHI_HeYingQing
-recruit_character = CHI_TangShenZhi
+recruit_character = CHI_TangShengZhi
 recruit_character = CHI_GuZhuTong
 recruit_character = CHI_XueYue
 recruit_character = CHI_WeiLiHuang
 recruit_character = CHI_HuHanMing
-recruit_character = CHI_QiangDaJun
+recruit_character = CHI_QianDaJun
 recruit_character = CHI_SunLiRen
 recruit_character = CHI_ZhuSaoLiang
-recruit_character = CHI_DaiAngLang
+recruit_character = CHI_DaiAnLan
 recruit_character = CHI_YuJiShi
 recruit_character = CHI_XuTingYao
 recruit_character = CHI_XiongShiHui
@@ -77,7 +77,7 @@ recruit_character = CHI_HuangBaiTao
 recruit_character = CHI_GuanLinZheng
 recruit_character = CHI_SunKe
 
-recruit_character = CHI_ChenQiang
+recruit_character = CHI_ChengQian
 recruit_character = CHI_ZhangZhiZhong
 recruit_character = CHI_LuoZuoYing
 recruit_character = CHI_LiuZhi
@@ -94,9 +94,9 @@ recruit_character = CHI_ZhangQun
 recruit_character = CHI_HuZongNan
 recruit_character = CHI_Alexander_von_Falkenhausen
 
-recruit_character = CHI_BaiCongXi
+recruit_character = CHI_BaiChongXi
 
-recruit_character = RFC_huangqixiang
+recruit_character = RFC_HuangQiXiang
 recruit_character = CHI_ChenShaoKuang 
 recruit_character = CHI_ChenJiLiang
 recruit_character = CHI_ChenCe
@@ -145,6 +145,12 @@ add_to_variable = { CHI_navy_spotting_chance = -0.1 }
 
 #huangpu
 add_dynamic_modifier = {modifier = Republic_of_China_Military_Academy}
+
+#领袖权威
+add_dynamic_modifier = {modifier = Leader_Authority}
+add_to_variable = {Leader_Authority_political_power_factor = 0.1}
+add_to_variable = {Leader_Authority_stability_factor = 0.1}
+add_to_variable = {Leader_Authority_war_support_factor = 0.1}
 
 puppet = CEN
 add_manpower=321450
@@ -406,9 +412,9 @@ add_equipment_to_stockpile = {
 		CHI_army_corruption_1
 		The_Golden_Decade
 	}
-	retire_character = RFC_DengYangDa
+	retire_character = RFC_DengYanDa
 	retire_character = RFC_LiJiSheng
-	retire_character = RFC_huangqixiang
+	retire_character = RFC_HuangQiXiang
 	add_dynamic_modifier = {
 		modifier = Anti_Japanese_zeal
 	}
@@ -424,7 +430,7 @@ add_equipment_to_stockpile = {
 	set_war_support = 0.8
 	set_political_power = 430
 
-	recruit_character = RFC_huangqixiang
+	recruit_character = RFC_HuangQiXiang
 }
 1937.1.1={
 	set_stability = 0.7
@@ -439,7 +445,7 @@ add_equipment_to_stockpile = {
 	capital = 238
 	CHI = {
 		retire_character = CHI_ZhangZiZhong
-		retire_character = CHI_DaiAngLang
+		retire_character = CHI_DaiAnLan
 		create_faction_from_template = faction_template_chinese_united_front
 		add_to_faction = YUL
 		add_to_faction = ROC

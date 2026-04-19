@@ -643,7 +643,7 @@ country_event = {
 	option = {
 		name =  CHI_1936.3.a
 		ROG = {
-			promote_character = ROG_Yuhanmou
+			promote_character = ROG_YuHanMou
 		}
 	}	
 }
