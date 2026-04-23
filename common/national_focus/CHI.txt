@@ -2559,10 +2559,7 @@ focus_tree = {
 			set_variable = {
 				ZHRS_fascism_drift = 0.02
 			}
-			set_power_balance = {
-				id = CHI_struggle_balance
-				set_default = yes
-			}
+
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
 			}
