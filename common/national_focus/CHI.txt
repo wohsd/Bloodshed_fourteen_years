@@ -737,7 +737,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Announce_Political_Tutelage
-		x = 20
+		x = 15
 		y = 1
 		cost = 7
 		icon = GFX_kmt_44
@@ -2184,18 +2184,11 @@ focus_tree = {
 	}
 	focus = {
 		id = Solve_the_economic_crisis
-		x = -15
-		y = 1
+		x = 68
+		y = 3
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Continue_political_training
-		}
-		prerequisite = {
-			focus = Transition_to_Constitutional_Government
-		}
-		relative_position_id = Transition_to_Constitutional_Government
 	}
 	focus = {
 		id = Abolish_the_silver_standard
