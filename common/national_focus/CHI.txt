@@ -58,28 +58,6 @@ focus_tree = {
 		relative_position_id = Establish_United_Front
 	}
 	focus = {
-		id = Reorganize_National_Revolutionary_Army
-		x = 0
-		y = 1
-		cost = 7
-		icon = GFX_kmt_67
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Support_Chen_Chengs_reforms
-		}
-		completion_reward = {
-			add_to_variable = {
-				CHI_army_army_army_org_factor = 0.05
-			}
-			add_to_variable = {
-				CHI_army_org_loss_when_moving = -0.05
-			}
-			custom_effect_tooltip = Reorganize_National_Revolutionary_Army_tooltip
-		}
-		relative_position_id = Support_Chen_Chengs_reforms
-	}
-	focus = {
 		id = Chinese_Hindenburg_Line
 		x = 1
 		y = 1
@@ -2070,18 +2048,17 @@ focus_tree = {
 	}
 	focus = {
 		id = He_Bu_Lou_Agreement
-		x = -2
-		y = 1
+		x = 49
+		y = 8
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Reorganize_National_Revolutionary_Army
-		}
-		prerequisite = {
 			focus = Dehua_Credit_Loan_Contract
 		}
-		relative_position_id = Reorganize_National_Revolutionary_Army
+		prerequisite = {
+			focus = Reorganize_National_Revolutionary_Army
+		}
 	}
 	focus = {
 		id = Split_and_Revive_Society
@@ -2557,8 +2534,8 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_the_Presidential_System
-		x = 0
-		y = 3
+		x = 51
+		y = 10
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -2586,7 +2563,6 @@ focus_tree = {
 				custom_effect_tooltip = leader_authority_positive
 			}
 		}
-		relative_position_id = Reorganize_National_Revolutionary_Army
 	}
 	focus = {
 		id = Promulgate_the_Program_for_War_of_Resistance_an_Nation_Building
@@ -3932,5 +3908,16 @@ focus_tree = {
 			focus = Ensure_freedom_of_speech
 		}
 		relative_position_id = Ensure_freedom_of_speech
+	}
+	focus = {
+		id = Reorganize_National_Revolutionary_Army
+		x = 51
+		y = 7
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Support_Chen_Chengs_reforms
+		}
 	}
 }
