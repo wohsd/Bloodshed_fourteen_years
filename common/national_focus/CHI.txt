@@ -1903,20 +1903,12 @@ focus_tree = {
 			focus = Fascist_propaganda
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = leader_authority_removed
+			hidden_effect = {
+				random_unit_leader = {
+					limit = {
+						is_character = CHI_ChenCheng
 					}
-				}
-				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
-				}
-				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
-				}
-				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					set_nationality = RFC
 				}
 			}
 			effect_tooltip = {
@@ -3950,10 +3942,20 @@ focus_tree = {
 		x = 41
 		y = 3
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = HeYingqi_takes_office
+		}
+		completion_reward = {
+			hidden_effect = {
+				random_unit_leader = {
+					limit = {
+						is_character = CHI_ChenCheng
+					}
+					set_nationality = RFC
+				}
+			}
 		}
 	}
 	focus = {
@@ -3961,8 +3963,8 @@ focus_tree = {
 		x = 47
 		y = 3
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = HeYingqi_takes_office
 		}
@@ -3972,8 +3974,8 @@ focus_tree = {
 		x = 43
 		y = 4
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Integrate_Huangpu
 		}
@@ -3983,8 +3985,8 @@ focus_tree = {
 		x = 45
 		y = 4
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_stable_four_major_families
 		}
@@ -3994,8 +3996,8 @@ focus_tree = {
 		x = 44
 		y = 5
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Form_the_Blue_Shirts_Society
 		}
@@ -4008,8 +4010,8 @@ focus_tree = {
 		x = 47
 		y = 4
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_stable_four_major_families
 		}
@@ -4019,8 +4021,8 @@ focus_tree = {
 		x = 41
 		y = 5
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Loyal_troops_first
 		}
@@ -4030,8 +4032,8 @@ focus_tree = {
 		x = 47
 		y = 7
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_Second_Central_Plains_War
 		}
@@ -4044,8 +4046,8 @@ focus_tree = {
 		x = 47
 		y = 5
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Implement_a_controlled_economy
 		}
@@ -4055,8 +4057,8 @@ focus_tree = {
 		x = 41
 		y = 4
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Integrate_Huangpu
 		}
@@ -4066,16 +4068,16 @@ focus_tree = {
 		x = 44
 		y = 6
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 	}
 	focus = {
 		id = Block_medi_information
 		x = 44
 		y = 7
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_Second_Central_Plains_War
 		}
@@ -4088,8 +4090,8 @@ focus_tree = {
 		x = 41
 		y = 7
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_Second_Central_Plains_War
 		}
@@ -4102,8 +4104,8 @@ focus_tree = {
 		x = 41
 		y = 9
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Positiona_warfare
 		}
@@ -4113,8 +4115,8 @@ focus_tree = {
 		x = 45
 		y = 9
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Support_party_run_media
 		}
@@ -4124,8 +4126,8 @@ focus_tree = {
 		x = 41
 		y = 8
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Advance_step_by_step
 		}
@@ -4135,8 +4137,8 @@ focus_tree = {
 		x = 43
 		y = 9
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_Blue_Shirt_Society_infiltrates_the_military
 		}
@@ -4146,8 +4148,8 @@ focus_tree = {
 		x = 43
 		y = 8
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Block_medi_information
 		}
@@ -4157,8 +4159,8 @@ focus_tree = {
 		x = 45
 		y = 8
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Block_medi_information
 		}
@@ -4168,8 +4170,8 @@ focus_tree = {
 		x = 47
 		y = 8
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Forced_military_levies
 		}
@@ -4179,8 +4181,8 @@ focus_tree = {
 		x = 42
 		y = 10
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Secret_foreign_military_advisor
 		}
@@ -4193,8 +4195,8 @@ focus_tree = {
 		x = 47
 		y = 9
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Material_Supplies_Monopoly_Bureau
 		}
@@ -4204,8 +4206,8 @@ focus_tree = {
 		x = 46
 		y = 10
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Cooperate_with_National_Land_Housing
 		}
@@ -4218,8 +4220,8 @@ focus_tree = {
 		x = 44
 		y = 11
 		cost = 0
-		cancel_if_invalid = yes
 		continue_if_invalid = no
+		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Solidarity_Party_and_Country
 		}

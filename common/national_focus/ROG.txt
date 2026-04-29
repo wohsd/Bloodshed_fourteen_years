@@ -1,0 +1,11 @@
+focus_tree = {
+	id = ROG
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ROG
+		}
+	}
+	default = no
+}

@@ -103,11 +103,11 @@ country_event = {
 
 	option = {
 		name = CHI.3.a
-        complete_national_focus =  Democracy_Over_Autocracy
+        complete_national_focus =  HeYingqi_takes_office
 	}
 	option = {
 		name = CHI.3.b
-		complete_national_focus = Democracy_Over_Autocracy
+		complete_national_focus = HeYingqi_takes_office
 
 	}
 }
