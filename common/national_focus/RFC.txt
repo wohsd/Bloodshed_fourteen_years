@@ -540,8 +540,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_31
-		}
-		prerequisite = {
 			focus = new_focus_29
 		}
 		relative_position_id = new_focus_18
@@ -677,7 +675,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_38
-		x = 25
+		x = 26
 		y = 0
 		cost = 0
 		continue_if_invalid = no
