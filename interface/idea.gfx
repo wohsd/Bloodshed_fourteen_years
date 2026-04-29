@@ -438,5 +438,8 @@ spriteTypes = {
 		name = "GFX_idea_laws_education_development5"
 		texturefile = "gfx/interface/law_development/laws_education_development5.png"	
 	}
-	
+	spriteType = {
+		name = "GFX_idea_Leader_Authority"
+		texturefile = "gfx/interface/ideas/CHI/Leader_Authority.png"
+	}
 }

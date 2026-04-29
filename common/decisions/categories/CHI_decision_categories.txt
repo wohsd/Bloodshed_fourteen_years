@@ -8,15 +8,7 @@ Hump_route= {
 	visible_when_empty = yes
 }
 
-CHI_struggle_balance_00_category= {
-	icon = military_operation
-	picture = GFX_Hump_route
-	visible = { 
-		tag=CHI
-		has_completed_focus = Democracy_Over_Autocracy
-	}
-	visible_when_empty = yes
-}
+
 
 CHI_clique_struggle = {
 	icon = power_struggle
@@ -104,14 +96,7 @@ CHI_Defend_against_enemy_category= {
 	}
 }
 
-CHI_struggle_balance_category = {
-	icon = military_operation
-	visible = { 
-		tag=CHI
-		has_completed_focus = CHI_focus_4
-	}
-	visible_when_empty = yes
-}
+
 
 
 Yunnan_Burma_Highway_category= {

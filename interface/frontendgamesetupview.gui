@@ -568,7 +568,7 @@ guiTypes = {
 #有趣的国家
 	containerWindowType = {
 		name ="gamesetup_interesting_countries_window"
-		size = { width=1225 height=717 }
+		size = { width = 1400 height = 788 }
 		Orientation = center
 		origo = center
 		clipping = no
@@ -582,7 +582,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = -150 y = -52 }
+			position = { x = -200 y = -120 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
@@ -594,7 +594,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "select_button"
-			position = { x = 390 y = -52 }
+			position = { x = 300 y = -120 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "FE_SELECT_COUNTRY"
 			buttonFont = "hoi_18mbs"

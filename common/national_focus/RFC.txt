@@ -182,7 +182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Revolutionar_Education
-		x = 11
+		x = 12
 		y = 4
 		cost = 5
 		icon = GFX_focus_por_workers_of_iberia
@@ -194,7 +194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Pilot_reduction_of_rent_and_interest
-		x = 11
+		x = 12
 		y = 5
 		cost = 5
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
@@ -206,7 +206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Learn_guerrilla_warfare
-		x = 9
+		x = 10
 		y = 5
 		cost = 5
 		icon = GFX_focus_PRC_eastward_expansion
@@ -232,7 +232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Recognize_the_status_of_the_Soviet_area
-		x = 9
+		x = 10
 		y = 4
 		cost = 5
 		icon = GFX_focus_PRC_restore_the_old_republic
@@ -240,39 +240,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Reconstruct_the_Political_Department
-		}
-	}
-	focus = {
-		id = Contact_the_old_warlords
-		x = 13
-		y = 4
-		cost = 5
-		icon = GFX_focus_CHI_mend_the_rift_with_hu
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		available = {
-			ROG = {
-				exists = yes
-				has_country_leader = {
-					character = ROG_WangJingWei
-					ruling_only = yes
-				}
-			}
-		}
-		prerequisite = {
-			focus = Reconstruct_the_Political_Department
-		}
-	}
-	focus = {
-		id = Accepting_assistance
-		x = 13
-		y = 5
-		cost = 5
-		icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Contact_the_old_warlords
 		}
 	}
 	focus = {
@@ -294,50 +261,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = The_Final_Battle
-		x = 15
-		y = 6
-		cost = 5
-		icon = GFX_focus_CHI_weaponise_the_faithful
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = Left_wing_stronghold
-			focus = The_Second_United_Front
-		}
-		prerequisite = {
-			focus = Military_Industry_Award
-		}
-		prerequisite = {
-			focus = Forced_labor
-		}
-		prerequisite = {
-			focus = Accepting_assistance
-		}
-	}
-	focus = {
-		id = Left_wing_stronghold
-		x = 7
-		y = 6
-		cost = 5
-		icon = GFX_goal_generic_construct_military
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = The_Final_Battle
-			focus = The_Second_United_Front
-		}
-		prerequisite = {
-			focus = Military_Crash_Course
-		}
-		prerequisite = {
-			focus = Production_Self_Help_Movement
-		}
-		prerequisite = {
-			focus = Learn_guerrilla_warfare
-		}
-	}
-	focus = {
 		id = The_Second_United_Front
 		x = 11
 		y = 6
@@ -345,18 +268,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_dissent_in_the_united_front
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = Left_wing_stronghold
-			focus = The_Final_Battle
-		}
 		prerequisite = {
 			focus = Pilot_reduction_of_rent_and_interest
 		}
 		prerequisite = {
 			focus = Learn_guerrilla_warfare
-		}
-		prerequisite = {
-			focus = Accepting_assistance
 		}
 	}
 	focus = {
@@ -439,11 +355,17 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_1
-		x = 43
-		y = 1
+		x = 16
+		y = 5
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Military_Industry_Award
+		}
+		prerequisite = {
+			focus = Forced_labor
+		}
 	}
 	focus = {
 		id = new_focus_8
@@ -573,11 +495,17 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_18
-		x = 33
-		y = 1
+		x = 6
+		y = 5
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Military_Crash_Course
+		}
+		prerequisite = {
+			focus = Production_Self_Help_Movement
+		}
 	}
 	focus = {
 		id = new_focus_28
@@ -612,8 +540,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_31
-		}
-		prerequisite = {
 			focus = new_focus_29
 		}
 		relative_position_id = new_focus_18
@@ -749,37 +675,19 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_38
-		x = 23
-		y = 1
+		x = 26
+		y = 0
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 	}
 	focus = {
 		id = new_focus_19
-		x = 2
+		x = 0
 		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = new_focus_20
-		}
-		prerequisite = {
-			focus = new_focus_38
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_20
-		x = -2
-		y = 1
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = new_focus_19
-		}
 		prerequisite = {
 			focus = new_focus_38
 		}
@@ -838,7 +746,7 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_20
+			focus = new_focus_19
 		}
 		relative_position_id = new_focus_38
 	}
@@ -863,9 +771,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_19
-		}
-		prerequisite = {
-			focus = new_focus_20
 		}
 		relative_position_id = new_focus_38
 	}

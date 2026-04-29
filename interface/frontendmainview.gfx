@@ -187,4 +187,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/main/main_bg.dds"
 		alwaystransparent = no
 	}
+
+	spriteType = {
+		name = "GFX_14frontend_bg"
+		texturefile = "gfx/loadingscreens/14frontend_bg/14frontend_bg.dds"
+		alwaystransparent = no
+	}
 }

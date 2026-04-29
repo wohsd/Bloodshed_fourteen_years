@@ -1,12 +1,11 @@
 focus_tree = {
-	id = AFG
+	id = ROG
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
-			tag = AFG
+			add = 100
+			tag = ROG
 		}
 	}
 	default = no
-
 }
