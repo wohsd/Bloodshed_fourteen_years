@@ -159,13 +159,6 @@ country_event = {
 	option = {
 		name = CHI.5.a
 		custom_effect_tooltip = CHI.5.a.d
-		hidden_effect = {
-			random_unit_leader = {
-					limit = { is_character = CHI_ChenCheng }
-					set_nationality = RFC
-			}
-		CHI =  { country_event = { id = CHI.6  days = 30 } }
-		}
 	}
 }
 country_event = {
