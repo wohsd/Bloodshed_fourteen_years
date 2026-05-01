@@ -1122,8 +1122,10 @@ country_event = {
 			id = PRC_struggle_balance
 		}
 	    retire_character = PRC_BoGu
+retire_character = PRC_ZhangWengTian
+		retire_character = PRC_WangMing
 		add_country_leader_role = {
-			character = PRC_ZhangWengTian
+			character = PRC_MaoZeDong
 			promote_leader = yes
 			country_leader = {
 				ideology = marxism
