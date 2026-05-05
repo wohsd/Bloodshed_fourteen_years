@@ -1,0 +1,118 @@
+l_simp_chinese:
+ # === ROG国策树本地化 ===
+ rog_back_to_revolution: "重回革命之地"
+ rog_back_to_revolution_desc: "回到革命的发源地，重温革命初心。广州作为革命的摇篮，见证了无数先烈的奋斗与牺牲。我们将从这里重新出发，为实现三民主义而努力。"
+
+ rog_elder_return: "元老派归来"
+ rog_elder_return_desc: "邀请党内元老回归，整合各方力量。元老们拥有丰富的政治经验和崇高的威望，他们的归来将为党国注入新的活力。"
+
+ rog_allies_arrival: "盟友的到来"
+ rog_allies_arrival_desc: "欢迎各方盟友的到来，共同商讨国家大计。团结一切可以团结的力量，建立广泛的统一战线。"
+
+ rog_clean_opposition: "清洗反对派"
+ rog_clean_opposition_desc: "清除党内的反对势力，维护党的团结统一。对于那些破坏党国利益的分子，必须坚决予以清除。"
+
+ rog_crown_prince_visit: "太子系的来访"
+ rog_crown_prince_visit_desc: "孙科先生来访，带来了新的思路和建议。作为未来的接班人，他的到来将为党国的发展带来新的机遇。"
+
+ rog_reshape_coalition: "重塑联合政府"
+ rog_reshape_coalition_desc: "重新塑造联合政府的架构，优化权力分配。建立一个高效、团结的政府班子，共同应对国家面临的挑战。"
+
+ rog_strengthen_belief: "坚定信仰"
+ rog_strengthen_belief_desc: "加强思想教育，坚定革命信仰。通过宣传和学习，使全体党员和民众都能坚定地信仰三民主义。"
+
+ rog_contact_south_asia: "接触南亚"
+ rog_contact_south_asia_desc: "加强与南亚各国的联系与合作。通过外交途径，拓展国际空间，争取更多的国际支持。"
+
+ rog_second_northern_expedition: "二次北伐"
+ rog_second_northern_expedition_desc: "发起第二次北伐，完成国家统一。北伐战争是实现国家统一的关键一步，我们必须全力以赴。"
+
+ rog_last_chance: "最后的机会"
+ rog_last_chance_desc: "这是最后的机会，必须把握。国家正处于关键时刻，我们必须做出正确的选择。"
+
+ rog_prime_minister_successor: "先总理的继承者"
+ rog_prime_minister_successor_desc: "继承先总理的遗志，继续推进革命事业。我们将以先总理为榜样，为实现国家富强、民族振兴而奋斗。"
+
+ rog_new_national_revolutionary_army: "新国民革命军"
+ rog_new_national_revolutionary_army_desc: "组建新的国民革命军，提升军队战斗力。通过改革和训练，打造一支现代化的精锐之师。"
+
+ rog_revive_guangdong: "复活广东"
+ rog_revive_guangdong_desc: "振兴广东经济，使其成为国家发展的引擎。广东作为改革开放的前沿，具有重要的战略地位。"
+
+ rog_japanese_educated_talents: "留日人才"
+ rog_japanese_educated_talents_desc: "吸纳留日人才回国效力。这些人才具有先进的知识和技术，将为国家的现代化建设做出重要贡献。"
+
+ rog_south_asia_aid: "南亚的援助"
+ rog_south_asia_aid_desc: "争取南亚各国的援助与支持。通过友好合作，获得经济和技术上的帮助，促进国家发展。"
+
+ rog_south_asia_cooperation: "对南亚的合作"
+ rog_south_asia_cooperation_desc: "加强与南亚各国的经济合作。通过贸易和投资，实现互利共赢，共同发展。"
+
+ rog_improve_school_education: "提高学校教育"
+ rog_improve_school_education_desc: "大力发展教育事业，提高国民素质。教育是国家发展的基础，必须优先发展。"
+
+ rog_low_key_figures: "低调人士"
+ rog_low_key_figures_desc: "吸纳那些低调但有才华的人士加入政府。他们虽然不事张扬，但拥有丰富的经验和卓越的能力。"
+
+ rog_overseas_chinese: "海外华侨"
+ rog_overseas_chinese_desc: "动员海外华侨回国投资和创业。海外华侨心系祖国，他们的支持对于国家建设至关重要。"
+
+ rog_south_asia_mission: "前往南亚的使团"
+ rog_south_asia_mission_desc: "派遣使团出访南亚各国，加强外交联系。通过高层互访，增进相互了解，促进友好合作。"
+
+ rog_call_to_people: "对百姓的号召"
+ rog_call_to_people_desc: "向全国人民发出号召，共同建设国家。人民是国家的主人，只有团结人民，才能实现国家的繁荣富强。"
+
+ rog_new_government_new_army: "新政府新军队"
+ rog_new_government_new_army_desc: "建立新政府和新军队，开启国家发展的新篇章。这是一个全新的开始，我们将以崭新的面貌迎接未来。"
+
+ rog_whampoa_spirit: "黄埔精神"
+ rog_whampoa_spirit_desc: "弘扬黄埔精神，传承革命传统。黄埔军校培养了无数优秀的军事人才，他们的精神将永远激励我们前进。"
+
+ rog_new_model: "全新模式"
+ rog_new_model_desc: "探索全新的发展模式，突破传统思维。在新时代背景下，我们需要创新和变革，寻找适合国家发展的新道路。"
+
+ rog_national_will: "国家意志"
+ rog_national_will_desc: "强化国家意志，凝聚民族精神。一个强大的国家需要坚定的意志和统一的精神力量。"
+
+ rog_new_training_policy: "训练新政策"
+ rog_new_training_policy_desc: "推行新的训练政策，提高军队素质。通过科学的训练方法，打造一支纪律严明、战斗力强的军队。"
+
+ rog_new_central_army: "全新中央军"
+ rog_new_central_army_desc: "组建全新的中央军，加强中央集权。中央军是国家的精锐力量，必须保持绝对的忠诚和强大的战斗力。"
+
+ rog_loyalty_to_leader: "对国家和领袖忠诚"
+ rog_loyalty_to_leader_desc: "强调对国家和领袖的绝对忠诚。忠诚是军人的天职，也是每个公民应尽的义务。"
+
+ rog_destroy_red_elements: "毁灭赤色分子"
+ rog_destroy_red_elements_desc: "坚决消灭赤色分子，维护国家安全。赤色分子是国家的敌人，必须彻底清除。"
+
+ rog_absorb_defectors: "吸纳投诚者"
+ rog_absorb_defectors_desc: "吸纳那些愿意投诚的人员，扩大力量。对于真心悔改的人，我们应该给予机会。"
+
+ rog_destroy_jiang_elements: "毁灭蒋介石分子"
+ rog_destroy_jiang_elements_desc: "清除蒋介石残余势力，巩固革命成果。蒋介石集团的残余势力仍然存在，必须彻底消灭。"
+
+ rog_blockade_red_areas: "封锁赤色地区"
+ rog_blockade_red_areas_desc: "对赤色地区实施封锁，切断其补给线。通过封锁，削弱赤色分子的战斗力。"
+
+ rog_seize_materials: "夺取物资"
+ rog_seize_materials_desc: "夺取敌方的物资，补充我方供应。物资是战争的基础，必须确保充足的供应。"
+
+ rog_final_settlement: "最后的清算"
+ rog_final_settlement_desc: "进行最后的清算，彻底解决历史遗留问题。只有解决了过去的问题，才能轻装上阵，迎接未来。"
+
+ rog_public_propaganda: "对公众的宣传"
+ rog_public_propaganda_desc: "加强对公众的宣传，引导舆论导向。通过宣传，让人民了解政府的政策和成就。"
+
+ rog_no_more_red_elements: "再无赤色分子"
+ rog_no_more_red_elements_desc: "彻底消灭赤色分子，实现国家的长治久安。赤色分子的威胁将不复存在。"
+
+ rog_target_nanjing: "目标南京"
+ rog_target_nanjing_desc: "将南京作为最终目标，完成统一大业。南京是国家的首都，必须夺回。"
+
+ rog_dust_settled: "尘埃落定"
+ rog_dust_settled_desc: "一切尘埃落定，国家终于实现统一。经过艰苦的斗争，我们终于迎来了和平与稳定。"
+
+ rog_return_to_nanjing: "重返南京"
+ rog_return_to_nanjing_desc: "重返南京，恢复首都地位。这是历史性的时刻，我们将在南京重新建立政府，开启新的时代。"

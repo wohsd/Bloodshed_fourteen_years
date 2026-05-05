@@ -3,9 +3,640 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 100
+			add = 10
 			tag = ROG
 		}
 	}
 	default = no
+	continuous_focus_position = {
+		x = 10000
+		y = 10000
+	}
+	# === 第一层：重回革命之地 ===
+	focus = {
+		id = rog_back_to_revolution
+		x = 0
+		y = 0
+		cost = 5
+		icon = GFX_focus_CHI_nanjing
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# === 第二层：元老派归来 ===
+	focus = {
+		id = rog_elder_return
+		x = 0
+		y = 1
+		cost = 5
+		icon = GFX_focus_CHI_nanking_righteous_cause
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_back_to_revolution
+		}
+	}
+	# === 第三层 ===
+	focus = {
+		id = rog_allies_arrival
+		x = -2
+		y = 2
+		cost = 5
+		icon = GFX_focus_CHI_the_northern_mandate
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_elder_return
+		}
+	}
+	focus = {
+		id = rog_clean_opposition
+		x = 0
+		y = 2
+		cost = 5
+		icon = GFX_focus_CHI_hunting_the_communists
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_elder_return
+		}
+	}
+	focus = {
+		id = rog_crown_prince_visit
+		x = 2
+		y = 2
+		cost = 5
+		icon = GFX_focus_CHI_sun不信
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_elder_return
+		}
+	}
+	# === 第四层：重塑联合政府 ===
+	focus = {
+		id = rog_reshape_coalition
+		x = 0
+		y = 3
+		cost = 5
+		icon = GFX_focus_CHI_united_front_dissolution
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_allies_arrival
+		}
+		prerequisite = {
+			focus = rog_clean_opposition
+		}
+		prerequisite = {
+			focus = rog_crown_prince_visit
+		}
+	}
+	# === 第五层 ===
+	focus = {
+		id = rog_strengthen_belief
+		x = -1
+		y = 4
+		cost = 5
+		icon = GFX_focus_CHI_speak_no_evil
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_reshape_coalition
+		}
+	}
+	focus = {
+		id = rog_contact_south_asia
+		x = 1
+		y = 4
+		cost = 5
+		icon = GFX_focus_CHI_reach_out_to_the_uk
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_reshape_coalition
+		}
+	}
+	# === 第六层：二次北伐 ===
+	focus = {
+		id = rog_second_northern_expedition
+		x = 0
+		y = 5
+		cost = 5
+		icon = GFX_focus_CHI_the_northern_expedition
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_strengthen_belief
+		}
+		prerequisite = {
+			focus = rog_contact_south_asia
+		}
+	}
+	# === 第七层：最后的机会 ===
+	focus = {
+		id = rog_last_chance
+		x = 0
+		y = 6
+		cost = 5
+		icon = GFX_focus_CHI_one_last_chance
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_second_northern_expedition
+		}
+	}
+	# === 第八层 ===
+	focus = {
+		id = rog_prime_minister_successor
+		x = -2
+		y = 7
+		cost = 5
+		icon = GFX_focus_CHI_the_successor
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_last_chance
+		}
+	}
+	focus = {
+		id = rog_new_national_revolutionary_army
+		x = 0
+		y = 7
+		cost = 5
+		icon = GFX_focus_CHI_the_national_revolutionary_army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_last_chance
+		}
+	}
+	focus = {
+		id = rog_revive_guangdong
+		x = 2
+		y = 7
+		cost = 5
+		icon = GFX_focus_CHI_the_guardians_of_the_state
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_last_chance
+		}
+	}
+	# === 第九层 ===
+	focus = {
+		id = rog_japanese_educated_talents
+		x = -3
+		y = 8
+		cost = 5
+		icon = GFX_focus_CHI_invest_in_military
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_prime_minister_successor
+		}
+	}
+	focus = {
+		id = rog_south_asia_aid
+		x = -1
+		y = 8
+		cost = 5
+		icon = GFX_focus_CHI_diplomatic_loans
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_prime_minister_successor
+		}
+	}
+	focus = {
+		id = rog_south_asia_cooperation
+		x = 1
+		y = 8
+		cost = 5
+		icon = GFX_focus_CHI_invest_in_national_industry
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_revive_guangdong
+		}
+	}
+	focus = {
+		id = rog_improve_school_education
+		x = 3
+		y = 8
+		cost = 5
+		icon = GFX_focus_CHI_land_reform
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_revive_guangdong
+		}
+	}
+	# === 第十层 ===
+	focus = {
+		id = rog_low_key_figures
+		x = -3
+		y = 9
+		cost = 5
+		icon = GFX_focus_CHI_internal_security
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_japanese_educated_talents
+		}
+	}
+	focus = {
+		id = rog_overseas_chinese
+		x = -1
+		y = 9
+		cost = 5
+		icon = GFX_focus_CHI_overseas_chinese
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_south_asia_aid
+		}
+	}
+	focus = {
+		id = rog_south_asia_mission
+		x = 1
+		y = 9
+		cost = 5
+		icon = GFX_focus_CHI_manchurian_academy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_south_asia_cooperation
+		}
+	}
+	focus = {
+		id = rog_call_to_people
+		x = 3
+		y = 9
+		cost = 5
+		icon = GFX_focus_CHI_school_education
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_improve_school_education
+		}
+	}
+	# === 第十一层：新政府新军队 ===
+	focus = {
+		id = rog_new_government_new_army
+		x = 0
+		y = 10
+		cost = 5
+		icon = GFX_focus_CHI_army_reform
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_national_revolutionary_army
+		}
+	}
+	# === 军事改革分支 - 黄埔精神线 ===
+	focus = {
+		id = rog_whampoa_spirit
+		x = -2
+		y = 11
+		cost = 5
+		icon = GFX_focus_CHI_whampoa_military_academy
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_government_new_army
+		}
+	}
+	focus = {
+		id = rog_new_model
+		x = 2
+		y = 11
+		cost = 5
+		icon = GFX_focus_CHI_modernize_the_army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_government_new_army
+		}
+	}
+	# === 军事改革分支 - 第二层 ===
+	focus = {
+		id = rog_national_will
+		x = -2
+		y = 12
+		cost = 5
+		icon = GFX_focus_CHI_the_military_affairs_commission
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_whampoa_spirit
+		}
+	}
+	focus = {
+		id = rog_new_training_policy
+		x = 2
+		y = 12
+		cost = 5
+		icon = GFX_focus_CHI_military_training
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_model
+		}
+	}
+	# === 军事改革分支 - 第三层 ===
+	focus = {
+		id = rog_new_central_army
+		x = -2
+		y = 13
+		cost = 5
+		icon = GFX_focus_CHI_fujian_army_clique
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_national_will
+		}
+	}
+	focus = {
+		id = rog_loyalty_to_leader
+		x = 2
+		y = 13
+		cost = 5
+		icon = GFX_focus_CHI_strength_military
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_training_policy
+		}
+	}
+	# === 军事改革分支 - 第四层 ===
+	focus = {
+		id = rog_destroy_red_elements
+		x = -2
+		y = 14
+		cost = 5
+		icon = GFX_focus_CHI_hunting_the_communists
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_central_army
+		}
+		prerequisite = {
+			focus = rog_loyalty_to_leader
+		}
+	}
+	focus = {
+		id = rog_absorb_defectors
+		x = 0
+		y = 14
+		cost = 5
+		icon = GFX_focus_CHI_reclaim_the_defectors
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_central_army
+		}
+		prerequisite = {
+			focus = rog_loyalty_to_leader
+		}
+	}
+	focus = {
+		id = rog_destroy_jiang_elements
+		x = 2
+		y = 14
+		cost = 5
+		icon = GFX_focus_CHI_destroy_chiang_叛徒
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_new_central_army
+		}
+		prerequisite = {
+			focus = rog_loyalty_to_leader
+		}
+	}
+	# === 军事改革分支 - 第五层 ===
+	focus = {
+		id = rog_blockade_red_areas
+		x = -3
+		y = 15
+		cost = 5
+		icon = GFX_focus_CHI_blockade_the_communists
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_destroy_red_elements
+		}
+	}
+	focus = {
+		id = rog_seize_materials
+		x = -1
+		y = 15
+		cost = 5
+		icon = GFX_focus_CHI_anti__banditry_campaign
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_destroy_red_elements
+		}
+	}
+	focus = {
+		id = rog_final_settlement
+		x = 1
+		y = 15
+		cost = 5
+		icon = GFX_focus_CHI_anti_chiang_叛徒
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_destroy_jiang_elements
+		}
+	}
+	focus = {
+		id = rog_public_propaganda
+		x = 3
+		y = 15
+		cost = 5
+		icon = GFX_focus_CHI_propaganda_campaign
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_destroy_jiang_elements
+		}
+	}
+	# === 军事改革分支 - 第六层 ===
+	focus = {
+		id = rog_no_more_red_elements
+		x = -2
+		y = 16
+		cost = 5
+		icon = GFX_focus_CHI_anti_communist
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_blockade_red_areas
+		}
+		prerequisite = {
+			focus = rog_seize_materials
+		}
+	}
+	focus = {
+		id = rog_target_nanjing
+		x = 2
+		y = 16
+		cost = 5
+		icon = GFX_focus_CHI_march_on_nanjing
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_final_settlement
+		}
+		prerequisite = {
+			focus = rog_public_propaganda
+		}
+	}
+	# === 最终层 ===
+	focus = {
+		id = rog_dust_settled
+		x = 0
+		y = 17
+		cost = 5
+		icon = GFX_focus_CHI_united_under_one_leader
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_no_more_red_elements
+		}
+		prerequisite = {
+			focus = rog_target_nanjing
+		}
+	}
+	focus = {
+		id = rog_return_to_nanjing
+		x = 0
+		y = 18
+		cost = 5
+		icon = GFX_focus_CHI_return_to_nanjing
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = rog_dust_settled
+		}
+	}
 }
