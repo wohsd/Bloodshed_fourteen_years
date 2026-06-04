@@ -371,6 +371,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+			focus = rog_new_model
+		}
 		prerequisite = {
 			focus = rog_new_government_new_army
 		}
@@ -385,6 +388,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = rog_whampoa_spirit
 		}
 		prerequisite = {
 			focus = rog_new_government_new_army
@@ -466,8 +472,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = rog_new_central_army
-		}
-		prerequisite = {
 			focus = rog_loyalty_to_leader
 		}
 	}
@@ -483,10 +487,8 @@ focus_tree = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = rog_new_central_army
-		}
-		prerequisite = {
 			focus = rog_loyalty_to_leader
+			focus = rog_new_central_army
 		}
 	}
 	focus = {
@@ -502,8 +504,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = rog_new_central_army
-		}
-		prerequisite = {
 			focus = rog_loyalty_to_leader
 		}
 	}
