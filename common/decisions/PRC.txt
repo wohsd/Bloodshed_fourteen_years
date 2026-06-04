@@ -1900,6 +1900,1155 @@ Long_march_decisions = {
 			}
 		}
 	}
+	Long_march_mission_state0 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission0 
+			FROM = { 
+				state = 606 
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 606 
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.2 start_equipment_factor = 0.6" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.1 start_equipment_factor = 0.4" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.1 start_equipment_factor = 0.35" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+						custom_effect_tooltip=Covert_Action_select_unit_A17_IA_Team_tt 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -20 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state1 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission1 
+			FROM = { 
+				state = 607
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 607
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.15 start_equipment_factor = 0.5" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.1 start_equipment_factor = 0.4" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.05 start_equipment_factor = 0.3" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -15 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state2 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission2 
+			FROM = { 
+				state = 607
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 607
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.15 start_equipment_factor = 0.45" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.1 start_equipment_factor = 0.35" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.05 start_equipment_factor = 0.25" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -12 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state3 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission3 
+			FROM = { 
+				state = 611
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 611 
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.12 start_equipment_factor = 0.4" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.08 start_equipment_factor = 0.3" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.05 start_equipment_factor = 0.2" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -10 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state4 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission4 
+			FROM = { 
+				state = 610
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 610
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.1 start_equipment_factor = 0.35" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.06 start_equipment_factor = 0.25" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.03 start_equipment_factor = 0.15" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -8 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state5 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission5 
+			FROM = { 
+				OR={
+					state = 616 
+					state = 283
+					state = 648
+					state = 618
+					state = 311
+					state = 304
+					state = 286
+					state = 278
+				}
+				
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				OR={
+					state = 616 
+					state = 283
+					state = 648
+					state = 618
+					state = 311
+					state = 304
+					state = 286
+					state = 278
+				}
+				
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.08 start_equipment_factor = 0.3" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.05 start_equipment_factor = 0.2" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.02 start_equipment_factor = 0.1" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -6 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state6 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission6 
+			FROM = { 
+				state = 620
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state =  620
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.06 start_equipment_factor = 0.25" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.04 start_equipment_factor = 0.15" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.02 start_equipment_factor = 0.08" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -5 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state7 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission7 
+			FROM = { 
+				state = 627
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 627
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.05 start_equipment_factor = 0.2" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.03 start_equipment_factor = 0.1" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.05" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -4 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state8 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission8 
+			FROM = { 
+				state = 687
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 687
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.04 start_equipment_factor = 0.15" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.02 start_equipment_factor = 0.08" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.03" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -3 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state9 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission9 
+			FROM = { 
+				state = 633
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 633
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.03 start_equipment_factor = 0.1" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.02 start_equipment_factor = 0.05" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.02" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -2 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state10 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission10 
+			FROM = { 
+				state =174
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 174
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREV 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.02 start_equipment_factor = 0.08" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.03" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.01" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -1 
+				} 
+			} 
+		} 
+	} 
+	Long_march_mission_state11 = { 
+		icon = GFX_decision_Covert_Action_choose_target_state_A 
+		visible = { 
+			has_decision = Long_march_mission11 
+			FROM = { 
+				state = 658
+			} 
+		} 
+		 
+		available = { 
+		} 
+		cost = 0 
+		days_remove = 1 
+		 
+		state_target = yes 
+		on_map_mode = map_only 
+		 
+		target_trigger = { 
+			FROM = { 
+				state = 658 
+			} 
+		} 
+		complete_effect = { 
+			hidden_effect = { 
+				every_country = { 
+					limit = { 
+						NOT = { 
+							tag = ROOT 
+						} 
+					} 
+				} 
+			} 
+		} 
+		remove_effect = { 
+			if = { 
+				limit = { 
+				} 
+				hidden_effect = { 
+					if = { 
+						limit = { 
+							FROM = { 
+								controller = { 
+									has_war_with = ROOT 
+								} 
+							} 
+						} 
+						FROM = { 
+							ROOT = { 
+								divisions_in_state = { 
+									state = PREP 
+									size < 1 
+								} 
+							} 
+						} 
+						FROM = { 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.05" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.02" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+							create_unit = { 
+								division = "name = \"红军先遣队\" division_template = \"游击支队\" start_experience_factor = 0.01 start_equipment_factor = 0.01" 
+								owner = ROOT 
+								allow_spawning_on_enemy_provs = yes 
+								count = 1 
+							} 
+						} 
+					} 
+					FROM = { 
+						teleport_armies = { 
+							limit = { 
+								tag = ROOT 
+							} 
+							to_state = FROM 
+						} 
+						add_manpower = -100 
+					} 
+				} 
+			} 
+			hidden_effect = { 
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment 
+					amount = -1 
+				} 
+			} 
+		} 
+	} 
 }
 #########张国焘
 
