@@ -3914,7 +3914,7 @@ focus_tree = {
 	}
 	focus = {
 		id = After_the_assassination
-		x = 51
+		x = -15
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -3922,11 +3922,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Victory_of_the_National_Revolution
 		}
+		relative_position_id = Victory_of_the_National_Revolution
 	}
 	focus = {
 		id = HeYingqi_takes_office
-		x = 44
-		y = 2
+		x = -7
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3936,6 +3937,7 @@ focus_tree = {
 		prerequisite = {
 			focus = After_the_assassination
 		}
+		relative_position_id = After_the_assassination
 	}
 	focus = {
 		id = Integrate_Huangpu
