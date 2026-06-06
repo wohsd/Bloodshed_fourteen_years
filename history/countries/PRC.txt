@@ -51,7 +51,7 @@ recruit_character =PRC_KangSheng
 
 recruit_character = PRC_LiuShaoQi
 recruit_character = PRC_RaoShuShi
-
+add_manpower = 323211
 set_popularities = {
 	communism = 100
 }

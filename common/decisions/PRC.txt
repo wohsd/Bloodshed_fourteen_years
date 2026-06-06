@@ -38,7 +38,7 @@ Yan_an_Literature_Art_Association= {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -53,7 +53,7 @@ Yan_an_Literature_Art_Association= {
 		}  
 		visible = {
 		} 
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -68,7 +68,7 @@ Yan_an_Literature_Art_Association= {
 		}  
 		visible = {
 		} 
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -83,7 +83,7 @@ Yan_an_Literature_Art_Association= {
 		}  
 		visible = {
 		} 
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -103,7 +103,7 @@ Yan_an_Rectification_Movement= {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -122,7 +122,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -143,7 +143,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			has_country_flag = PRC_Wang_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -167,7 +167,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			has_country_flag = PRC_Wang_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -190,7 +190,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			has_country_flag = PRC_Wang_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -212,7 +212,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			has_country_flag = PRC_Mao_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = yes
 		ai_will_do = {
@@ -234,7 +234,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			has_country_flag = PRC_Mao_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -255,7 +255,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			has_country_flag = PRC_Mao_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -274,7 +274,7 @@ Yan_an_Rectification_Movement= {
 		visible = {
 			has_country_flag = PRC_Mao_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -788,7 +788,7 @@ PRC_mao_political_line = {
 		visible = {
 			has_country_flag = PRC_Zhou_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -808,7 +808,7 @@ PRC_mao_political_line = {
 		visible = {
 			has_country_flag = PRC_Zhou_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -827,7 +827,7 @@ PRC_mao_political_line = {
 		visible = {
 			has_country_flag = PRC_Zhou_FLAG
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -850,7 +850,7 @@ War_Resistance_Behind_Enemy = {
 		
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -885,7 +885,7 @@ War_Resistance_Behind_Enemy = {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -906,7 +906,7 @@ War_Resistance_Behind_Enemy = {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 230
 		fire_only_once = no
 		ai_will_do = {
@@ -929,7 +929,7 @@ War_Resistance_Behind_Enemy = {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -964,7 +964,7 @@ War_Resistance_Behind_Enemy = {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no 
 		ai_will_do = {
@@ -989,7 +989,7 @@ War_Resistance_Behind_Enemy = {
 			}
 		} 
 		custom_cost_text = decision_cost_infantry_equipment_500
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -1033,7 +1033,7 @@ War_Resistance_Behind_Enemy = {
 			command_power > 15 
 		}
 		custom_cost_text = decision_cost_CP_15
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = yes
 		ai_will_do = {
@@ -1067,7 +1067,7 @@ PRC_CHINA = {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -1097,7 +1097,7 @@ PRC_CHINA = {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -1118,7 +1118,7 @@ PRC_CHINA = {
 		}  
 		visible = {
 		}
-		cost = 0 
+		cost = 40 
 		days_remove= 30
 		fire_only_once = no
 		ai_will_do = {
@@ -1247,8 +1247,7 @@ PRC_Buy_gun = {
 Long_march_decisions = {
 	Long_March_mobilization_meeting = {
 		available = {
-			has_war = yes
-			date > 1934.10.16 
+			
 		}
 		visible = {
 			
@@ -1903,7 +1902,8 @@ Long_march_decisions = {
 	Long_march_mission_state0 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission0 
+			has_active_mission =  Long_march_mission0 
+			#has_active_mission =Long_march_mission0 
 			FROM = { 
 				state = 606 
 			} 
@@ -1911,8 +1911,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -1998,7 +1998,7 @@ Long_march_decisions = {
 	Long_march_mission_state1 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission1 
+			has_active_mission =Long_march_mission1 
 			FROM = { 
 				state = 607
 			} 
@@ -2006,8 +2006,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2092,7 +2092,7 @@ Long_march_decisions = {
 	Long_march_mission_state2 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission2 
+			has_active_mission =Long_march_mission2 
 			FROM = { 
 				state = 607
 			} 
@@ -2100,8 +2100,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2186,7 +2186,7 @@ Long_march_decisions = {
 	Long_march_mission_state3 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission3 
+			has_active_mission =Long_march_mission3 
 			FROM = { 
 				state = 611
 			} 
@@ -2194,8 +2194,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2280,7 +2280,7 @@ Long_march_decisions = {
 	Long_march_mission_state4 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission4 
+			has_active_mission =Long_march_mission4 
 			FROM = { 
 				state = 610
 			} 
@@ -2288,8 +2288,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2374,7 +2374,7 @@ Long_march_decisions = {
 	Long_march_mission_state5 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission5 
+			has_active_mission =Long_march_mission5 
 			FROM = { 
 				OR={
 					state = 616 
@@ -2392,8 +2392,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2488,7 +2488,7 @@ Long_march_decisions = {
 	Long_march_mission_state6 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission6 
+			has_active_mission =Long_march_mission6 
 			FROM = { 
 				state = 620
 			} 
@@ -2496,8 +2496,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2582,7 +2582,7 @@ Long_march_decisions = {
 	Long_march_mission_state7 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission7 
+			has_active_mission =Long_march_mission7 
 			FROM = { 
 				state = 627
 			} 
@@ -2590,8 +2590,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2676,7 +2676,7 @@ Long_march_decisions = {
 	Long_march_mission_state8 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission8 
+			has_active_mission =Long_march_mission8 
 			FROM = { 
 				state = 687
 			} 
@@ -2684,8 +2684,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2770,7 +2770,7 @@ Long_march_decisions = {
 	Long_march_mission_state9 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission9 
+			has_active_mission =Long_march_mission9 
 			FROM = { 
 				state = 633
 			} 
@@ -2778,8 +2778,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2864,7 +2864,7 @@ Long_march_decisions = {
 	Long_march_mission_state10 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission10 
+			has_active_mission =Long_march_mission10 
 			FROM = { 
 				state =174
 			} 
@@ -2872,8 +2872,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
@@ -2958,7 +2958,7 @@ Long_march_decisions = {
 	Long_march_mission_state11 = { 
 		icon = GFX_decision_Covert_Action_choose_target_state_A 
 		visible = { 
-			has_decision = Long_march_mission11 
+			has_active_mission =Long_march_mission11 
 			FROM = { 
 				state = 658
 			} 
@@ -2966,8 +2966,8 @@ Long_march_decisions = {
 		 
 		available = { 
 		} 
-		cost = 0 
-		days_remove = 1 
+		cost = 40 
+		days_remove = 15 
 		 
 		state_target = yes 
 		on_map_mode = map_only 
