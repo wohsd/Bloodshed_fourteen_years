@@ -72,13 +72,7 @@ Long_march_decisions = {
 	icon = military_operation
 	picture = GFX_Long_march
 	visible = {
-		tag=PRC
-		is_ai = no
-		NOT={
-			has_global_flag = fall_of_ChangZheng_end
-			has_completed_focus = PRC_focus43
-		}
-		has_completed_focus = PRC_focus38
+		
 	}
 	on_map_area = {
 		name = Long_march_decisions_map
