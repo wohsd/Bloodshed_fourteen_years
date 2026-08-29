@@ -62,12 +62,6 @@ country_event = {
 					type = annex_everything
 				}
 			}
-			JAP={
-				declare_war_on = {
-					target = CAR
-					type = annex_everything
-				}
-			}
 		}
 		
 	}

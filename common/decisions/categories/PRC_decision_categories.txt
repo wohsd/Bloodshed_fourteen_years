@@ -72,7 +72,12 @@ Long_march_decisions = {
 	icon = military_operation
 	picture = GFX_Long_march
 	visible = {
+		tag=PRC
 		
+	}
+	available = {
+		date > 1934.10.15
+		has_completed_focus = PRC_focus38
 	}
 	on_map_area = {
 		name = Long_march_decisions_map

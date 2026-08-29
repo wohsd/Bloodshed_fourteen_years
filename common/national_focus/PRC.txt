@@ -596,6 +596,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+				unlock_decision_category_tooltip = Long_march_decisions
 					set_global_flag = define_of_ChangZheng
 					582 = {
 							add_building_construction = {

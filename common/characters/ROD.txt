@@ -9,7 +9,7 @@ characters={
 		country_leader={
 			desc = ROD_ZhangXueLiang_leader_desc
 			ideology=despotism
-			traits={ }
+			traits={ substance_addict }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -66,5 +66,249 @@ characters={
 			logistics_skill = 1
 		}
 	}
-	
+	ROD_ZangShiYi={
+		name=ROD_ZangShiYi
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_ZangShiYi.png"
+				small="gfx/interface/advisers/ROD_ZangShiYi.png"
+			}
+		}
+		advisor={
+			desc = ROD_ZangShiYi_leader_desc
+			slot = political_advisor
+			idea_token = ROD_ZangShiYi_P
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ROD_WangShuHan={
+		name=ROD_WangShuHan
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_WangShuHan.png"
+				small="gfx/interface/advisers/ROD_WangShuHan.png"
+			}
+		}
+		advisor={
+			desc = ROD_WangShuHan_leader_desc
+			slot = political_advisor
+			idea_token = ROD_WangShuHan_P
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ROD_MoDeHui={
+		name=ROD_MoDeHui
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_MoDeHui.png"
+				small="gfx/interface/advisers/ROD_MoDeHui.png"
+			}
+		}
+		advisor={
+			desc = ROD_MoDeHui_leader_desc
+			slot = political_advisor
+			idea_token = ROD_MoDeHui_P
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+			}
+			traits = {
+				popular_figurehead
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ROD_LiuShangQing={
+		name=ROD_LiuShangQing
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_LiuShangQing.png"
+				small="gfx/interface/advisers/ROD_LiuShangQing.png"
+			}
+		}
+		advisor={
+			desc = ROD_LiuShangQing_leader_desc
+			slot = political_advisor
+			idea_token = ROD_LiuShangQing_P
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ROD_GaoJiYi={
+		name=ROD_GaoJiYi
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_GaoJiYi.png"
+				small="gfx/interface/advisers/ROD_GaoJiYi.png"
+			}
+		}
+		advisor={
+			desc = ROD_GaoJiYi_leader_desc
+			slot = political_advisor
+			idea_token = ROD_GaoJiYi_P
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+			}
+			traits = {
+				the_banker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ROD_ZhangZuoXiang={
+		name=ROD_ZhangZuoXiang
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_ZhangZuoXiang.png"
+			}
+		}
+		corps_commander = {
+			desc = ROD_ZhangZuoXiang_leader_desc
+			traits = {
+				old_guard
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ROD_WanFuLin={
+		name=ROD_WanFuLin
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_WanFuLin.png"
+			}
+		}
+		corps_commander = {
+			desc = ROD_WanFuLin_leader_desc
+			traits = {
+				old_guard
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	ROD_TangYuLin={
+		name=ROD_TangYuLin
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_TangYuLin.png"
+			}
+		}
+		corps_commander = {
+			desc = ROD_TangYuLin_leader_desc
+			traits = {
+				old_guard
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ROD_HeZhuGuo={
+		name=ROD_HeZhuGuo
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_HeZhuGuo.png"
+			}
+		}
+		corps_commander = {
+			desc = ROD_HeZhuGuo_leader_desc
+			traits = {
+				offensive_doctrine
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROD_LiuDuoQuan={
+		name=ROD_LiuDuoQuan
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_LiuDuoQuan.png"
+			}
+		}
+		corps_commander = {
+			desc = ROD_LiuDuoQuan_leader_desc
+			traits = {
+				organizer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ROD_WangYiZhe={
+		name=ROD_WangYiZhe
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_WangYiZhe.png"
+			}
+		}
+		corps_commander = {
+			desc = ROD_WangYiZhe_leader_desc
+			traits = {
+				defensive_doctrine
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
 }

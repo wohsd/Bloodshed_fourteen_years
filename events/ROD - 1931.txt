@@ -1,0 +1,188 @@
+add_namespace = ROD1931
+country_event = { 
+	id = ROD1931.915
+	title = ROD1931.915.t
+	desc = ROD1931.915.d
+    #picture = 
+ 
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+      	days = 2
+    }
+	option = {
+		name = ROD1931.915.a
+		add_war_support=-0.02
+		hidden_effect = {
+			ROD={
+				country_event = { id = ROD1931.921  days = 3 } 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ROD1931.921
+	title = ROD1931.921.t
+	desc = ROD1931.921.d
+    #picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = ROD1931.921.a
+		add_war_support=0.02
+	}
+}
+
+# 高纪毅整理东北铁路（3月）
+country_event = {
+	id = ROD1931.301
+	title = ROD1931.301.t
+	desc = ROD1931.301.d
+    #picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = ROD1931.301.a
+		hidden_effect = {
+			ROD = {
+				add_political_power = 80
+			}
+		}
+	}
+}
+
+# 张学良患病赴平就医（6月1日）
+country_event = {
+	id = ROD1931.501
+	title = ROD1931.501.t
+	desc = ROD1931.501.d
+    #picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		ROD = {
+			exists = yes
+			date > 1931.5.1
+			date < 1931.5.15
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = ROD1931.501.a
+		hidden_effect = {
+			ROD = {
+				add_stability = -0.03
+				set_country_flag = ROD_ZhangXueLiang_ill
+			}
+		}
+	}
+}
+
+# 汤玉麟热河腐败（6月25日）
+country_event = {
+	id = ROD1931.601
+	title = ROD1931.601.t
+	desc = ROD1931.601.d
+    #picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = ROD1931.601.a
+		hidden_effect = {
+			ROD = {
+				add_stability = -0.04
+				add_political_power = -50
+			}
+		}
+	}
+}
+
+# 张学良健康恶化（7月1日）
+country_event = {
+	id = ROD1931.701
+	title = ROD1931.701.t
+	desc = ROD1931.701.d
+    #picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = ROD1931.701.a
+		hidden_effect = {
+			ROD = {
+				add_stability = -0.03
+				add_war_support = -0.02
+			}
+		}
+	}
+}
+
+# 张学良病情好转（7月15日）
+country_event = {
+	id = ROD1931.715
+	title = ROD1931.715.t
+	desc = ROD1931.715.d
+    #picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = ROD1931.715.a
+		hidden_effect = {
+			ROD = {
+				add_stability = 0.04
+				add_war_support = 0.02
+				clr_country_flag = ROD_ZhangXueLiang_ill
+			}
+		}
+	}
+}
+
+# 崂山事变（12月3日）
+country_event = {
+	id = ROD1931.1203
+	title = ROD1931.1203.t
+	desc = ROD1931.1203.d
+    #picture = 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = ROD1931.1203.a
+		hidden_effect = {
+			ROD = {
+				add_stability = -0.05
+				add_political_power = -60
+			}
+		}
+	}
+}

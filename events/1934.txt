@@ -218,9 +218,9 @@ country_event = {
 		619={transfer_state_to = ROY}
 		275={transfer_state_to = ROS}
 
-		261={transfer_state_to = RYS}
-		243={transfer_state_to = RYS}
-		234={transfer_state_to = RYS}
+		261={transfer_state_to = ROS}
+		243={transfer_state_to = ROS}
+		234={transfer_state_to = ROS}
 
 		606={transfer_state_to = CHI}
 		666={transfer_state_to = CHI}

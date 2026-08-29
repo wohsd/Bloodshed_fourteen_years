@@ -18,6 +18,17 @@ recruit_character = ROD_ZhangXueLiang
 recruit_character = ROD_YuXueZhong
 recruit_character = ROD_XiQia
 recruit_character = ROD_MaZhanShan
+recruit_character = ROD_ZangShiYi
+recruit_character = ROD_WangShuHan
+recruit_character = ROD_MoDeHui
+recruit_character = ROD_LiuShangQing
+recruit_character = ROD_GaoJiYi
+recruit_character = ROD_ZhangZuoXiang
+recruit_character = ROD_WanFuLin
+recruit_character = ROD_TangYuLin
+recruit_character = ROD_HeZhuGuo
+recruit_character = ROD_LiuDuoQuan
+recruit_character = ROD_WangYiZhe
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -32,6 +43,13 @@ set_politics = {
 
 add_ideas = Regionalist_warlords
 add_ideas = ROD_northeast_army_tradition
+
+country_event={id=ROD1931.301 days=60}
+country_event={id=ROD1931.501 days=151}
+country_event={id=ROD1931.601 days=175}
+country_event={id=ROD1931.701 days=181}
+country_event={id=ROD1931.715 days=195}
+country_event={id=ROD1931.1203 days=333}
 
 1933.1.1={
 	ROD_XiQia = {
