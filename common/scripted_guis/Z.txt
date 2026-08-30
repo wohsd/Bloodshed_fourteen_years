@@ -1,0 +1,22 @@
+scripted_gui = {
+	zhang_xueliang_rehab_ui = {
+		window_name = "zhang_xueliang_rehab_ui_container"
+		context_type = decision_category
+		effects = {
+		}
+		triggers = {
+			
+		}
+		properties = {
+			ROD_zhang_xueliang_rehab_1 = {
+				frame = ROD_zhang_xueliang_rehab_1
+			}
+			ROD_zhang_xueliang_rehab_2 = {
+				frame = ROD_zhang_xueliang_rehab_2
+			}
+		}
+		ai_enabled = {
+			always = no
+		}
+	}
+}

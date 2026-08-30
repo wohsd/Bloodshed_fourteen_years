@@ -1,0 +1,27 @@
+add_namespace = SJN1931
+
+# 傅作义主政绥远（8月18日）
+country_event = {
+	id = SJN1931.818
+	title = SJN1931.818.t
+	desc = SJN1931.818.d
+	picture = GFX_SJN_1931_818
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SJN1931.818.a
+		hidden_effect = {
+			SJN = {
+				retire_country_leader = yes
+				promote_character = {
+					character = SJN_FuZuoYi
+					ideology = neutrality
+				}
+				add_stability = 0.03
+				add_political_power = 30
+			}
+		}
+	}
+}

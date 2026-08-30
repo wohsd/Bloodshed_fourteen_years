@@ -1,42 +1,68 @@
-﻿add_namespace = ROJ_1932
-add_namespace = ROJ_1932Hidden
+add_namespace = ROJ1931
+add_namespace = ROJ1932
+
+# 徐永昌继任山西省主席（8月11日）
 country_event = {
-	id = ROJ_1932Hidden.1
-	title = ROJ_1932Hidden.1.t
-	desc = ROJ_1932Hidden.1.d
-    #picture = 
-	fire_only_once = yes
-	trigger = {
-		date > 1932.2.9 
-		date < 1932.2.11 
-	}
-    immediate = {
-		
-	}
-	option = {
-		name = ROJ_1932Hidden.1.a
-		ROJ={
-			news_event = ROJ_1932.1
-		}
-	}
-}
-news_event = {
-	id = ROJ_1932.1
-	title = ROJ_1932.1.t
-	desc = ROJ_1932.1.d
-    #picture = 
-	is_major = yes
+	id = ROJ1931.811
+	title = ROJ1931.811.t
+	desc = ROJ1931.811.d
+	picture = GFX_ROJ_1931_811
+
 	is_triggered_only = yes
-    immediate = {
-		ROJ={
-			promote_character = {
-				character = ROJ_YanXiShan
-				ideology = neutrality
+	fire_only_once = yes
+
+	option = {
+		name = ROJ1931.811.a
+		hidden_effect = {
+			ROJ = {
+				retire_country_leader = yes
+				promote_character = {
+					character = ROJ_XuYongChang
+					ideology = neutrality
+				}
+				add_stability = 0.02
+				add_political_power = 20
 			}
 		}
 	}
+}
+
+# 阎锡山重回山西（2月20日）
+country_event = {
+	id = ROJ1932.220
+	title = ROJ1932.220.t
+	desc = ROJ1932.220.d
+	picture = GFX_ROJ_1932_220
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
 	option = {
-		name = ROJ_1932.1.a
-		
+		name = ROJ1932.220.a
+		hidden_effect = {
+			ROJ = {
+				retire_country_leader = yes
+				promote_character = {
+					character = ROJ_YanXiShan
+					ideology = neutrality
+				}
+				add_stability = 0.05
+				add_political_power = 50
+				news_event = ROJ1932.1
+			}
+		}
+	}
+}
+
+news_event = {
+	id = ROJ1932.1
+	title = ROJ1932.1.t
+	desc = ROJ1932.1.d
+	picture = GFX_ROJ_1932_220
+	is_major = yes
+	is_triggered_only = yes
+	option = {
+		name = ROJ1932.1.a
+
 	}
 }

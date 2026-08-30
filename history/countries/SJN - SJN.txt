@@ -14,9 +14,14 @@ set_stability = 0.7
 set_war_support = 0.7
 #设置战争支持度
 
+recruit_character = SJN_LiPeiJi
 recruit_character = SJN_FuZuoYi
-#获取领导人，将领（在common\characters\你的国家tag）
 
+#获取领导人，将领（在common\characters\你的国家tag）
+country_event={id=SJN1931.818 days=229}
+1931.8.18={
+	retire_country_leader = yes
+}
 set_politics = {
 	ruling_party = neutrality
 	#领导该国家的派系，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality

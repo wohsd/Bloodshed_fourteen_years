@@ -13,5 +13,37 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}	
 	}
+	ROJ_ShangZhen={
+		name=ROJ_ShangZhen
+		portraits={
+			civilian={
+				large="gfx/leaders/ROJ/ROJ_ShangZhen.png"
+				small="gfx/leaders/ROJ/ROJ_ShangZhen.png"
+			}
+		}
+		country_leader={
+			desc = ROJ_ShangZhen_leader_desc
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ROJ_XuYongChang={
+		name=ROJ_XuYongChang
+		portraits={
+			civilian={
+				large="gfx/leaders/ROJ/ROJ_XuYongChang.png"
+				small="gfx/leaders/ROJ/ROJ_XuYongChang.png"
+			}
+		}
+		country_leader={
+			desc = ROJ_XuYongChang_leader_desc
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

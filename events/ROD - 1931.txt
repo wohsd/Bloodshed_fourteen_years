@@ -3,11 +3,11 @@ country_event = {
 	id = ROD1931.915
 	title = ROD1931.915.t
 	desc = ROD1931.915.d
-    #picture = 
- 
+	picture = GFX_ROD_1931_915
+
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
     mean_time_to_happen = {
       	days = 2
     }
@@ -26,7 +26,7 @@ country_event = {
 	id = ROD1931.921
 	title = ROD1931.921.t
 	desc = ROD1931.921.d
-    #picture = 
+	picture = GFX_ROD_1931_921
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -41,7 +41,7 @@ country_event = {
 	id = ROD1931.301
 	title = ROD1931.301.t
 	desc = ROD1931.301.d
-    #picture = 
+	picture = GFX_ROD_1931_301
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -64,7 +64,7 @@ country_event = {
 	id = ROD1931.501
 	title = ROD1931.501.t
 	desc = ROD1931.501.d
-    #picture = 
+	picture = GFX_ROD_1931_501
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -85,17 +85,20 @@ country_event = {
 			ROD = {
 				add_stability = -0.03
 				set_country_flag = ROD_ZhangXueLiang_ill
+				set_variable = {
+					ROD_zhang_xueliang_stress = 40
+				}
 			}
 		}
 	}
 }
 
-# 汤玉麟热河腐败（6月25日）
+# 汤玉麟热河盗墓（6月25日）
 country_event = {
 	id = ROD1931.601
 	title = ROD1931.601.t
 	desc = ROD1931.601.d
-    #picture = 
+	picture = GFX_ROD_1931_601
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -119,7 +122,7 @@ country_event = {
 	id = ROD1931.701
 	title = ROD1931.701.t
 	desc = ROD1931.701.d
-    #picture = 
+	picture = GFX_ROD_1931_701
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -143,7 +146,7 @@ country_event = {
 	id = ROD1931.715
 	title = ROD1931.715.t
 	desc = ROD1931.715.d
-    #picture = 
+	picture = GFX_ROD_1931_715
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -157,7 +160,6 @@ country_event = {
 			ROD = {
 				add_stability = 0.04
 				add_war_support = 0.02
-				clr_country_flag = ROD_ZhangXueLiang_ill
 			}
 		}
 	}
@@ -168,7 +170,7 @@ country_event = {
 	id = ROD1931.1203
 	title = ROD1931.1203.t
 	desc = ROD1931.1203.d
-    #picture = 
+	picture = GFX_ROD_1931_1203
 
 	is_triggered_only = yes
 	fire_only_once = yes

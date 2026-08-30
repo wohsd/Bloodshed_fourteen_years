@@ -1,0 +1,12 @@
+# ROD决议分类
+ROD_zhang_xueliang_rehab = {
+	icon = military_operation
+	picture = GFX_ROD_zhang_xueliang_rehab
+	scripted_gui = zhang_xueliang_rehab_ui
+
+	visible = { 
+		tag = ROD     
+		#has_country_flag = ROD_ZhangXueLiang_ill
+	}        
+}      
+      

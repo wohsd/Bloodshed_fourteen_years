@@ -1,7 +1,0 @@
-spriteType = {
-	name = "GFX_anti_japanese_speech"
-	texturefile = "gfx/event/anti_japanese_speech.png"
-	noOfFrames = 1
-	norefcount = no
-	animation = no
-}

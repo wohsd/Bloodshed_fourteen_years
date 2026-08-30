@@ -44,8 +44,24 @@ characters={
 			#计划等级
 			planning_skill=3
 			logistics_skill=4
-			#作者也不知道这个有什么用，不过能运行就不要碰
-			legacy_id=-1
+		#作者也不知道这个有什么用，不过能运行就不要碰
+		legacy_id=-1
+	}
+	}
+	SJN_LiPeiJi={
+		name=SJN_LiPeiJi
+		portraits={
+			civilian={
+				large="gfx/leaders/SJN/SJN_LiPeiJi.png"
+				small="gfx/leaders/SJN/SJN_LiPeiJi.png"
+			}
+		}
+		country_leader={
+			desc = SJN_LiPeiJi_leader_desc
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 }

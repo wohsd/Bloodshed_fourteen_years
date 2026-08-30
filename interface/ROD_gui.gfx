@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ROD_zhang_xueliang_rehab_1"
+		texturefile = "gfx/interface/ROD_zhang_xueliang_rehab_1.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_ROD_zhang_xueliang_rehab_2"
+		texturefile = "gfx/interface/ROD_zhang_xueliang_rehab_2.png"
+		noOfFrames = 2
+	}
+} 

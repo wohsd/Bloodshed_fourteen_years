@@ -1,5 +1,5 @@
 guiTypes = {
-  
+
     containerWindowType = { 
 		name = "Yanan_Rectification_window"
 		position = { x = 110 y = 310} 	
@@ -53,7 +53,7 @@ guiTypes = {
 }
 
 
-
+###NSD大清洗
 scripted_gui = {
 
 	NSD_paranoia_system_ui = {

@@ -280,4 +280,66 @@ spriteTypes = {
 		name = "GFX_Surrender_2"
 		texturefile = "gfx/event/Surrender_2.png"
 	}
+
+	# ROD 1931 事件配图
+	spriteType = {
+		name = "GFX_ROD_1931_301"
+		texturefile = "gfx/event/ROD_1931_301.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_1931_501"
+		texturefile = "gfx/event/ROD_1931_501.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_1931_601"
+		texturefile = "gfx/event/ROD_1931_601.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_1931_701"
+		texturefile = "gfx/event/ROD_1931_701.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_1931_715"
+		texturefile = "gfx/event/ROD_1931_715.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_1931_915"
+		texturefile = "gfx/event/ROD_1931_915.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_1931_921"
+		texturefile = "gfx/event/ROD_1931_921.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_1931_1203"
+		texturefile = "gfx/event/ROD_1931_1203.png"
+	}
+
+	# ROJ 事件配图
+	spriteType = {
+		name = "GFX_ROJ_1931_811"
+		texturefile = "gfx/event/ROJ_1931_811.png"
+	}
+	spriteType = {
+		name = "GFX_ROJ_1932_220"
+		texturefile = "gfx/event/ROJ_1932_220.png"
+	}
+
+	# SJN 事件配图
+	spriteType = {
+		name = "GFX_SJN_1931_818"
+		texturefile = "gfx/event/SJN_1931_818.png"
+	}
+
+	spriteType = {
+		name = "GFX_ROD_zhang_xueliang_rehab"
+		texturefile = "gfx/event/ROD_zhang_xueliang_rehab.png"
+	}
+	spriteType = {
+		name = "GFX_anti_japanese_speech"
+		texturefile = "gfx/event/anti_japanese_speech.png"
+		noOfFrames = 1
+		norefcount = no
+		animation = no
+	}
 }

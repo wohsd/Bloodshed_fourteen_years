@@ -402,3 +402,18 @@ CHI_he_effect_tt: "补给消耗 §G[?CHI_he_supply_consumption|]§!\n补给范�
 CHI_chen_effect_tt: "陆军经验获取 §G[?CHI_chen_army_exp|]§!\n政治点数获取 §R[?CHI_chen_political_power|]§!"
 CHI_hu_effect_tt: "陆军组织度 §G[?CHI_hu_army_org|]§!\n指挥官经验获取 §R[?CHI_hu_commander_exp|]§!" 
 CHI_tang_effect_tt: "非正规步兵攻防 §G[?CHI_tang_irregular_attack|]§!\n工厂产出 §R[?CHI_tang_industrial|]§!"
+
+ROD_zhang_xueliang_rehab: "张学良戒毒"
+ROD_zhang_xueliang_rehab_desc: "张学良因长期吸食鸦片，身体日渐衰弱，严重影响东北军政运作。在端纳等顾问的劝说下，张学良决意彻底戒除烟瘾，恢复健康。\n\n当前张学良压力值：§R[?ROD_zhang_xueliang_stress|0]§!/100" 
+ROD_zhang_xueliang_rehabilitation: "喝口茶吧"
+ROD_zhang_xueliang_rehabilitation_desc: "喝口好茶。\n\n当前压力值：§R[?ROD_zhang_xueliang_stress|0]§!/100"
+ROD_zhang_xueliang_relieve_stress: "洗个澡吧"
+ROD_zhang_xueliang_relieve_stress_desc: "洗个好澡，神清气爽。\n\n压力值降低 §G20§!点\n当前压力值：§R[?ROD_zhang_xueliang_stress|0]§!/100"
+ROD_zhang_xueliang_stress_accumulate: "药物戒断法"
+ROD_zhang_xueliang_stress_accumulate_desc: "戒毒期间，张学良身心痛苦加剧，压力持续积累，逐步减少对毒品的依赖。。\n\n压力值增加 §R15§!点\n当前压力值：§R[?ROD_zhang_xueliang_stress|0]§!/100"
+
+ 
+zhang_xueliang_rehab_t1: "当前状态:良好"
+zhang_xueliang_rehab_tt1: "少帅目前状态稳定，压力值偏小，将会带来政治点数和稳定度增益" 
+zhang_xueliang_rehab_t2: "当前状态:较差"
+zhang_xueliang_rehab_tt2: "少帅目前状态较差，压力值偏大，将会减少政治点数和稳定度增益"  
