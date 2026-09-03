@@ -15,12 +15,12 @@ CHI_update_faction_effects = {
         set_variable = { CHI_hu_political_power = 0.15 }
     }
     if = {
-        limit = { NOT = { has_variable = CHI_tang_infantry_attack } }
-        set_variable = { CHI_tang_infantry_attack = 0.1 }
+        limit = { NOT = { has_variable = CHI_tang_consumer_goods } }
+        set_variable = { CHI_tang_consumer_goods = -0.1 }
     }
     if = {
-        limit = { NOT = { has_variable = CHI_tang_infantry_defence } }
-        set_variable = { CHI_tang_infantry_defence = 0.1 }
+        limit = { NOT = { has_variable = CHI_tang_consumer_goods_display } }
+        set_variable = { CHI_tang_consumer_goods_display = 0.1 }
     }
     if = {
         limit = { NOT = { has_variable = CHI_hu_power_fuxing } }
@@ -144,15 +144,14 @@ CHI_update_faction_effects = {
     divide_variable = { CHI_hu_political_power = 100 }
 
     # 汤恩伯派系
-    # 步兵师攻击: 0.15 * (影响力百分比/100)
-    set_variable = { CHI_tang_infantry_attack = 0.15 }
-    multiply_variable = { CHI_tang_infantry_attack = CHI_tang_power_percent }
-    divide_variable = { CHI_tang_infantry_attack = 100 }
-
-    # 步兵师防御: 0.15 * (影响力百分比/100)
-    set_variable = { CHI_tang_infantry_defence = 0.15 }
-    multiply_variable = { CHI_tang_infantry_defence = CHI_tang_power_percent }
-    divide_variable = { CHI_tang_infantry_defence = 100 }
+    # 生活消费品系数（实际修正值，负数）: -0.15 * (影响力百分比/100)
+    set_variable = { CHI_tang_consumer_goods = -0.15 }
+    multiply_variable = { CHI_tang_consumer_goods = CHI_tang_power_percent }
+    divide_variable = { CHI_tang_consumer_goods = 100 }
+    # 生活消费品系数（显示用，正数）: 0.15 * (影响力百分比/100)
+    set_variable = { CHI_tang_consumer_goods_display = 0.15 }
+    multiply_variable = { CHI_tang_consumer_goods_display = CHI_tang_power_percent }
+    divide_variable = { CHI_tang_consumer_goods_display = 100 }
 
 }
 
