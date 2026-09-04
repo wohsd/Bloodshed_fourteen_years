@@ -26,7 +26,7 @@ country_event = {
 	id = ROD1931.921
 	title = ROD1931.921.t
 	desc = ROD1931.921.d
-	picture = GFX_ROD_1931_921
+	picture = GFX_ROD_1931_915
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -122,7 +122,7 @@ country_event = {
 	id = ROD1931.701
 	title = ROD1931.701.t
 	desc = ROD1931.701.d
-	picture = GFX_ROD_1931_701
+	picture = GFX_ROD_1931_501
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -146,7 +146,7 @@ country_event = {
 	id = ROD1931.715
 	title = ROD1931.715.t
 	desc = ROD1931.715.d
-	picture = GFX_ROD_1931_715
+	picture = GFX_ROD_1931_501
 
 	is_triggered_only = yes
 	fire_only_once = yes
