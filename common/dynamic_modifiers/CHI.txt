@@ -162,24 +162,17 @@ Republic_of_China_Military_Academy = {
 		always = yes
 	}
 	
-	# 何应钦（保守官僚，长期稳定战线）
-		supply_consumption_factor = CHI_he_supply_consumption
-	supply_node_range = CHI_he_supply_range
-	planning_speed = CHI_he_planning_speed
-	
-	# 陈诚（军改与反腐，发展与建设）
+	# 何应钦（部队HP）
+	army_strength_factor = CHI_he_army_strength
+
+	# 陈诚（陆军经验增长）
 	experience_gain_army_factor = CHI_chen_army_exp
-	political_power_factor = CHI_chen_political_power
-	
-	# 胡宗南（忠诚与统一，统一战争）
-	army_org = CHI_hu_army_org
-	experience_gain_factor = CHI_hu_commander_exp
-	
-	# 汤恩伯（非正规部队，爆兵短期稳定战线）
-	modifier_army_sub_unit_irregular_infantry_attack_factor = CHI_tang_irregular_attack
-	modifier_army_sub_unit_irregular_infantry_defence_factor = CHI_tang_irregular_defence
-	modifier_army_sub_unit_irregular_infantry_max_org_factor = CHI_tang_irregular_org
-	industrial_capacity_factory = CHI_tang_industrial
+
+	# 胡宗南（政治点数）
+	political_power_factor = CHI_hu_political_power
+
+	# 汤恩伯（减少生活消费品系数）
+	consumer_goods_factor = CHI_tang_consumer_goods
 }
 
 Leader_Authority = {
