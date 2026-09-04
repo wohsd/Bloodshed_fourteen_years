@@ -555,8 +555,8 @@ characters={
 			}
 		}
 		advisor={	desc = CHI_WeiLiHuang_leader_desc
-	
-			slot = army_chief
+
+			slot = theorist
 			idea_token = CHI_Alexander_von_Falkenhausen_A
 			allowed = {
 				original_tag = CHI
@@ -564,7 +564,7 @@ characters={
 			available = {
 			}
 			traits = {
-				army_chief_reform_2
+				german_advisor
 			}
 			cost = 100
 			ai_will_do = {
@@ -840,7 +840,7 @@ CHI_TangEnBo={
 			}
 		}
 		traits = {
-			army_chief_morale_2
+			shuihanhuangtang
 		}
 		cost = 100
 		on_add = {
