@@ -112,7 +112,7 @@ characters={
 			}
 		}
 		traits = {
-			army_chief_reform_2
+			zhongguo_napolun
 		}
 		cost = 100
 		on_add = {
@@ -161,7 +161,7 @@ characters={
 			}
 		}
 		traits = {
-			army_chief_old_guard
+			huangpu_zhi_mu
 		}
 		cost = 100
 		on_add = {
@@ -195,7 +195,8 @@ characters={
 	}
 	advisor={	desc = CHI_TangShengZhi_leader_desc
 
-		slot = army_chief
+		slot = high_command
+		ledger = army
 		idea_token = CHI_TangShengZhi
 		allowed = {
 			original_tag = CHI
@@ -208,7 +209,7 @@ characters={
 			}
 		}
 		traits = {
-			army_chief_offensive_2
+			army_commando_2
 		}
 		cost = 100
 		ai_will_do = {
@@ -424,10 +425,32 @@ characters={
 			}
 		}
 		
+		advisor={	desc = CHI_ZhangZhiZhong_leader_desc
+			slot = theorist
+			idea_token = CHI_ZhangZhiZhong
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				has_war_with = JAP
+				NOT = {
+					has_advisor = {
+						character = CHI_ZhangZhiZhong
+					}
+				}
+			}
+			traits = {
+				gongshi_fangyu
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={	desc = CHI_ZhangZhiZhong_leader_desc
 
-			traits={ 
-				
+			traits={
+
 			}
 			skill=2
 			attack_skill=1
@@ -435,7 +458,7 @@ characters={
 			planning_skill=1
 			logistics_skill=2
 		}
-	}	
+	}
 	CHI_ChengQian={
 		name=CHI_ChengQian
 		portraits={
@@ -953,7 +976,7 @@ CHI_TangEnBo={
 			}
 		}
 		traits = {
-			army_chief_organizational_2
+			tianzimen_sheng
 		}
 		cost = 100
 		on_add = {
