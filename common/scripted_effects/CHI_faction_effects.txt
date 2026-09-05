@@ -51,6 +51,29 @@ CHI_update_faction_effects = {
         add_to_variable = { PREV.CHI_tang_power_skill = skill }
     }
     
+    # 基础影响力：雇佣任意拥有对应派系特质的顾问时 +5（通用检测，每日重算，幂等）
+    # 派系特质（heyingqinxi/chenchengxi/huzongnanxi/tangenboxi）在角色的军长角色上，顾问雇佣状态用 is_advisor 判定
+    set_variable = { CHI_he_power_base = 0 }
+    set_variable = { CHI_chen_power_base = 0 }
+    set_variable = { CHI_hu_power_base = 0 }
+    set_variable = { CHI_tang_power_base = 0 }
+    every_character = {
+        limit = { is_advisor = yes has_trait = heyingqinxi }
+        add_to_variable = { PREV.CHI_he_power_base = 5 }
+    }
+    every_character = {
+        limit = { is_advisor = yes has_trait = chenchengxi }
+        add_to_variable = { PREV.CHI_chen_power_base = 5 }
+    }
+    every_character = {
+        limit = { is_advisor = yes has_trait = huzongnanxi }
+        add_to_variable = { PREV.CHI_hu_power_base = 5 }
+    }
+    every_character = {
+        limit = { is_advisor = yes has_trait = tangenboxi }
+        add_to_variable = { PREV.CHI_tang_power_base = 5 }
+    }
+
     # 计算总影响力 = 基础影响力 + 内阁加成 + 技能影响力
     set_variable = { CHI_he_power = CHI_he_power_base }
     add_to_variable = { CHI_he_power = CHI_he_power_skill }
@@ -126,93 +149,383 @@ CHI_update_faction_effects = {
     # 直接根据影响力百分比计算变量值（仅保留正面属性）
 
     # 何应钦派系
-    # 部队HP: 0.15 * (影响力百分比/100)
-    set_variable = { CHI_he_army_strength = 0.15 }
+    # 部队HP: 0.3 * (影响力百分比/100)
+    set_variable = { CHI_he_army_strength = 0.3 }
     multiply_variable = { CHI_he_army_strength = CHI_he_power_percent }
     divide_variable = { CHI_he_army_strength = 100 }
 
     # 陈诚派系
-    # 陆军经验获取因子: 0.15 * (影响力百分比/100)
-    set_variable = { CHI_chen_army_exp = 0.15 }
+    # 陆军经验获取因子: 0.3 * (影响力百分比/100)
+    set_variable = { CHI_chen_army_exp = 0.3 }
     multiply_variable = { CHI_chen_army_exp = CHI_chen_power_percent }
     divide_variable = { CHI_chen_army_exp = 100 }
 
     # 胡宗南派系
-    # 政治点数因子: 0.15 * (影响力百分比/100)
-    set_variable = { CHI_hu_political_power = 0.15 }
+    # 政治点数因子: 0.3 * (影响力百分比/100)
+    set_variable = { CHI_hu_political_power = 0.3 }
     multiply_variable = { CHI_hu_political_power = CHI_hu_power_percent }
     divide_variable = { CHI_hu_political_power = 100 }
 
     # 汤恩伯派系
-    # 生活消费品系数（实际修正值，负数）: -0.15 * (影响力百分比/100)
-    set_variable = { CHI_tang_consumer_goods = -0.15 }
+    # 生活消费品系数（实际修正值，负数）: -0.3 * (影响力百分比/100)
+    set_variable = { CHI_tang_consumer_goods = -0.3 }
     multiply_variable = { CHI_tang_consumer_goods = CHI_tang_power_percent }
     divide_variable = { CHI_tang_consumer_goods = 100 }
-    # 生活消费品系数（显示用，正数）: 0.15 * (影响力百分比/100)
-    set_variable = { CHI_tang_consumer_goods_display = 0.15 }
+    # 生活消费品系数（显示用，正数）: 0.3 * (影响力百分比/100)
+    set_variable = { CHI_tang_consumer_goods_display = 0.3 }
     multiply_variable = { CHI_tang_consumer_goods_display = CHI_tang_power_percent }
     divide_variable = { CHI_tang_consumer_goods_display = 100 }
 
 }
 
-# 计算领袖权威：五人顾问（胡宗南/戴笠/康泽/贺衷寒/邓文仪）在任加成
-# 设计为幂等的一次性触发：顾问激活/替换只会使效果变化一次，重算结果恒定，绝不逐日累积
-CHI_update_leader_authority_effect = {
-    # 统计当前在任的五人顾问数量
-    set_variable = { LA_advisor_count = 0 }
-    if = {
-        limit = { has_idea = CHI_HuZongNan }
-        add_to_variable = { LA_advisor_count = 1 }
-    }
-    if = {
-        limit = { has_idea = CHI_DaiLi_P }
-        add_to_variable = { LA_advisor_count = 1 }
-    }
-    if = {
-        limit = { has_idea = CHI_KangZe_P }
-        add_to_variable = { LA_advisor_count = 1 }
-    }
-    if = {
-        limit = { has_idea = CHI_HeZhongHan_A }
-        add_to_variable = { LA_advisor_count = 1 }
-    }
-    if = {
-        limit = { has_idea = CHI_DengWenYi_P }
-        add_to_variable = { LA_advisor_count = 1 }
-    }
+# 领袖权威决议：五大派系影响力系统（CC系/黄埔系/复兴社/财政系/政学系）
+# 影响力为百分比制（0-100），除复兴社外，其余四派通过扶植决议分配空间
+# 复兴社影响力与法西斯主义支持率绑定（支持率为0则影响力为0）
+# 设计为幂等：每次调用先重算黄埔系支持（绝对设定），再叠加派系效果
+# 复兴社影响力同步：读取当前法西斯主义支持率（0-1）换算为百分比（0-100）
+CHI_sync_fxs_power = {
+    set_variable = { LA_power_fxs = party_popularity@fascism }
+    multiply_variable = { LA_power_fxs = 100 }
+}
 
-    # —— 总值 = 国策基础(LA_focus_*) + 0.025×人数 ——
-    # 绝对设定：无论重算多少次结果恒定，旧存档中的错误累积一天内被自动覆盖修正
-    set_variable = { Leader_Authority_political_power_factor = LA_focus_political_power_factor }
-    set_variable = { LA_contrib_pp = 0.025 }
-    multiply_variable = { LA_contrib_pp = LA_advisor_count }
-    add_to_variable = { Leader_Authority_political_power_factor = LA_contrib_pp }
-
-    set_variable = { Leader_Authority_stability_factor = LA_focus_stability_factor }
-    set_variable = { LA_contrib_stab = 0.025 }
-    multiply_variable = { LA_contrib_stab = LA_advisor_count }
-    add_to_variable = { Leader_Authority_stability_factor = LA_contrib_stab }
-
-    set_variable = { Leader_Authority_war_support_factor = LA_focus_war_support_factor }
-    set_variable = { LA_contrib_ws = 0.025 }
-    multiply_variable = { LA_contrib_ws = LA_advisor_count }
-    add_to_variable = { Leader_Authority_war_support_factor = LA_contrib_ws }
-
-    # —— 每日法西斯主义支持率：3-4人 +0.05；5人 +0.1；其余为0（绝对设定，无累积）——
+CHI_update_authority_faction_effects = {
+    # 1. 复兴社顾问雇佣状态变化：每人法西斯主义支持率±5%（贺衷寒/胡宗南/康泽/戴笠/邓文仪）
+    # 游戏无顾问任免钩子，每日检测人数变化；add_popularity不接受变量，按人数步进（最多5人）
+    set_variable = { LA_fxs_adv_now = 0 }
+    if = { limit = { has_idea = CHI_HeZhongHan_A } add_to_variable = { LA_fxs_adv_now = 1 } }
+    if = { limit = { has_idea = CHI_HuZongNan } add_to_variable = { LA_fxs_adv_now = 1 } }
+    if = { limit = { has_idea = CHI_KangZe_P } add_to_variable = { LA_fxs_adv_now = 1 } }
+    if = { limit = { has_idea = CHI_DaiLi_P } add_to_variable = { LA_fxs_adv_now = 1 } }
+    if = { limit = { has_idea = CHI_DengWenYi_P } add_to_variable = { LA_fxs_adv_now = 1 } }
     if = {
-        limit = { check_variable = { var = LA_advisor_count value = 5 compare = greater_than_or_equals } }
-        set_variable = { Leader_Authority_fascism_drift = 0.1 }
+        limit = { NOT = { has_variable = LA_fxs_adv_last } }
+        set_variable = { LA_fxs_adv_last = LA_fxs_adv_now }
     }
-    else_if = {
-        limit = { check_variable = { var = LA_advisor_count value = 3 compare = greater_than_or_equals } }
-        set_variable = { Leader_Authority_fascism_drift = 0.05 }
+    set_variable = { LA_fxs_adv_delta = LA_fxs_adv_now }
+    subtract_from_variable = { LA_fxs_adv_delta = LA_fxs_adv_last }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = 1 compare = greater_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = 0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = 1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = 1 compare = greater_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = 0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = 1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = 1 compare = greater_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = 0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = 1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = 1 compare = greater_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = 0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = 1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = 1 compare = greater_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = 0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = 1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = -1 compare = less_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = -0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = -1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = -1 compare = less_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = -0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = -1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = -1 compare = less_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = -0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = -1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = -1 compare = less_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = -0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = -1 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_fxs_adv_delta value = -1 compare = less_than_or_equals } }
+        add_popularity = { ideology = fascism popularity = -0.05 }
+        subtract_from_variable = { LA_fxs_adv_delta = -1 }
+    }
+    set_variable = { LA_fxs_adv_last = LA_fxs_adv_now }
+
+    # 2. 重算黄埔系基础值（保证幂等，绝不逐日累积）
+    CHI_update_faction_effects = yes
+
+    # 3. 初始化其余四派影响力（默认各25%，四派总和100%）
+    if = {
+        limit = { NOT = { has_variable = LA_power_cc } }
+        set_variable = { LA_power_cc = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = LA_power_hp } }
+        set_variable = { LA_power_hp = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = LA_power_cz } }
+        set_variable = { LA_power_cz = 25 }
+    }
+    if = {
+        limit = { NOT = { has_variable = LA_power_zx } }
+        set_variable = { LA_power_zx = 25 }
+    }
+    # 复兴社影响力与法西斯主义支持率绑定（绝对覆盖，支持率0%则影响力0%）
+    CHI_sync_fxs_power = yes
+    # 影响力变化传导：复兴社增减时其余四派按比例缩放，五派总和保持100%
+    if = {
+        limit = { NOT = { has_variable = LA_fxs_power_last } }
+        set_variable = { LA_fxs_power_last = LA_power_fxs }
+    }
+    set_variable = { LA_fxs_rescale_denom = 100 }
+    subtract_from_variable = { LA_fxs_rescale_denom = LA_fxs_power_last }
+    set_variable = { LA_fxs_rescale_ratio = 100 }
+    subtract_from_variable = { LA_fxs_rescale_ratio = LA_power_fxs }
+    if = {
+        limit = { check_variable = { var = LA_fxs_rescale_denom value = 0.01 compare = greater_than } }
+        divide_variable = { LA_fxs_rescale_ratio = LA_fxs_rescale_denom }
     }
     else = {
-        set_variable = { Leader_Authority_fascism_drift = 0 }
+        set_variable = { LA_fxs_rescale_ratio = 0 }
+    }
+    multiply_variable = { LA_power_cc = LA_fxs_rescale_ratio }
+    multiply_variable = { LA_power_hp = LA_fxs_rescale_ratio }
+    multiply_variable = { LA_power_cz = LA_fxs_rescale_ratio }
+    multiply_variable = { LA_power_zx = LA_fxs_rescale_ratio }
+    set_variable = { LA_fxs_power_last = LA_power_fxs }
+
+    # 3. 黄埔系：黄埔系支持（四大将领效果）× (黄埔系影响力/100)
+    set_variable = { LA_hp_scale = LA_power_hp }
+    divide_variable = { LA_hp_scale = 100 }
+    multiply_variable = { CHI_he_army_strength = LA_hp_scale }
+    multiply_variable = { CHI_chen_army_exp = LA_hp_scale }
+    multiply_variable = { CHI_hu_political_power = LA_hp_scale }
+    multiply_variable = { CHI_tang_consumer_goods = LA_hp_scale }
+    multiply_variable = { CHI_tang_consumer_goods_display = LA_hp_scale }
+
+    # 4. 各派系正面效果 = 0.25 × (影响力/100)，即100%影响力时达到最大值25%
+    # CC系：稳定度
+    set_variable = { LA_cc_stability = 0.25 }
+    multiply_variable = { LA_cc_stability = LA_power_cc }
+    divide_variable = { LA_cc_stability = 100 }
+
+    # 复兴社：每日政治点数
+    set_variable = { LA_fxs_pp_gain = 0.25 }
+    multiply_variable = { LA_fxs_pp_gain = LA_power_fxs }
+    divide_variable = { LA_fxs_pp_gain = 100 }
+
+    # 财政系：生活消费品系数（实际修正值，负数）
+    set_variable = { LA_cz_cg = -0.25 }
+    multiply_variable = { LA_cz_cg = LA_power_cz }
+    divide_variable = { LA_cz_cg = 100 }
+    # 财政系：显示用正值
+    set_variable = { LA_cz_cg_display = 0.25 }
+    multiply_variable = { LA_cz_cg_display = LA_power_cz }
+    divide_variable = { LA_cz_cg_display = 100 }
+
+    # 政学系：建造速度
+    set_variable = { LA_zx_build = 0.25 }
+    multiply_variable = { LA_zx_build = LA_power_zx }
+    divide_variable = { LA_zx_build = 100 }
+
+    # 5. 负面效果：任一派系影响力超过50%时触发
+    # 政治点数惩罚（百分比系数）= 0.25 × (影响力/100)，最大-25%
+    # 生活消费品惩罚（绝对值）= 0.25 × (影响力/100)，最大+25%
+    # 按派系分别记录（供决议界面显示），再汇总
+    set_variable = { LA_penalty_cc = 0 }
+    set_variable = { LA_penalty_hp = 0 }
+    set_variable = { LA_penalty_fxs = 0 }
+    set_variable = { LA_penalty_cz = 0 }
+    set_variable = { LA_penalty_zx = 0 }
+    set_variable = { LA_penalty_cc_pp = 0 }
+    set_variable = { LA_penalty_fxs_pp = 0 }
+    set_variable = { LA_penalty_cz_pp = 0 }
+    set_variable = { LA_penalty_zx_pp = 0 }
+    set_variable = { LA_penalty_pp = 0 }
+    set_variable = { LA_penalty_cg = 0 }
+    if = {
+        limit = { check_variable = { var = LA_power_cc value = 50 compare = greater_than } }
+        set_variable = { LA_penalty_cc = 0.25 }
+        multiply_variable = { LA_penalty_cc = LA_power_cc }
+        divide_variable = { LA_penalty_cc = 100 }
+        add_to_variable = { LA_penalty_cg = LA_penalty_cc }
+        set_variable = { LA_penalty_cc_pp = LA_penalty_cc }
+        add_to_variable = { LA_penalty_pp = LA_penalty_cc_pp }
+    }
+    if = {
+        limit = { check_variable = { var = LA_power_hp value = 50 compare = greater_than } }
+        set_variable = { LA_penalty_hp = 0.1 }
+        multiply_variable = { LA_penalty_hp = LA_power_hp }
+        divide_variable = { LA_penalty_hp = 100 }
+    }
+    if = {
+        limit = { check_variable = { var = LA_power_fxs value = 50 compare = greater_than } }
+        set_variable = { LA_penalty_fxs = 0.25 }
+        multiply_variable = { LA_penalty_fxs = LA_power_fxs }
+        divide_variable = { LA_penalty_fxs = 100 }
+        add_to_variable = { LA_penalty_cg = LA_penalty_fxs }
+        set_variable = { LA_penalty_fxs_pp = LA_penalty_fxs }
+        add_to_variable = { LA_penalty_pp = LA_penalty_fxs_pp }
+    }
+    if = {
+        limit = { check_variable = { var = LA_power_cz value = 50 compare = greater_than } }
+        set_variable = { LA_penalty_cz = 0.25 }
+        multiply_variable = { LA_penalty_cz = LA_power_cz }
+        divide_variable = { LA_penalty_cz = 100 }
+        add_to_variable = { LA_penalty_cg = LA_penalty_cz }
+        set_variable = { LA_penalty_cz_pp = LA_penalty_cz }
+        add_to_variable = { LA_penalty_pp = LA_penalty_cz_pp }
+    }
+    if = {
+        limit = { check_variable = { var = LA_power_zx value = 50 compare = greater_than } }
+        set_variable = { LA_penalty_zx = 0.25 }
+        multiply_variable = { LA_penalty_zx = LA_power_zx }
+        divide_variable = { LA_penalty_zx = 100 }
+        add_to_variable = { LA_penalty_cg = LA_penalty_zx }
+        set_variable = { LA_penalty_zx_pp = LA_penalty_zx }
+        add_to_variable = { LA_penalty_pp = LA_penalty_zx_pp }
     }
 
-    # 记录当前人数（仅供调试查看）
-    set_variable = { LA_advisor_count_prev = LA_advisor_count }
+    # 6. 汇总进领袖权威动态修正
+    # CC系稳定度（唯一来源，绝对设定保证幂等）
+    set_variable = { Leader_Authority_stability_factor = LA_cc_stability }
+    # 每日政治点数：国策加成 + 复兴社加成（惩罚已改为百分比系数，见下）
+    set_variable = { Leader_Authority_political_power_gain = LA_focus_political_power_gain }
+    add_to_variable = { Leader_Authority_political_power_gain = LA_fxs_pp_gain }
+    # 政治点数获取（百分比）：派系过大惩罚（池存正数便于显示，写入修正时取负）
+    set_variable = { Leader_Authority_political_power_factor = LA_penalty_pp }
+    multiply_variable = { Leader_Authority_political_power_factor = -1 }
+    # 生活消费品系数：财政系减免 + 派系过大惩罚
+    set_variable = { Leader_Authority_consumer_goods_expected_value = LA_cz_cg }
+    add_to_variable = { Leader_Authority_consumer_goods_expected_value = LA_penalty_cg }
+    # 建造速度：政学系
+    set_variable = { Leader_Authority_production_speed_buildings_factor = LA_zx_build }
+    # 部队组织度：黄埔系派系过大惩罚（唯一来源，绝对设定保证幂等）
+    set_variable = { Leader_Authority_army_org_factor = LA_penalty_hp }
+}
+
+# 扶植CC系：影响力+10%，其余三派按比例缩减（复兴社影响力由支持率决定，不参与分配）
+CHI_authority_boost_cc = {
+    set_variable = { LA_boost_total = 100 }
+    subtract_from_variable = { LA_boost_total = LA_power_fxs }
+    set_variable = { LA_boost_tmp = LA_power_cc }
+    add_to_variable = { LA_boost_tmp = 10 }
+    if = {
+        limit = { check_variable = { var = LA_boost_tmp value = LA_boost_total compare = greater_than } }
+        set_variable = { LA_boost_tmp = LA_boost_total }
+    }
+    set_variable = { LA_boost_ratio = LA_boost_total }
+    subtract_from_variable = { LA_boost_ratio = LA_boost_tmp }
+    set_variable = { LA_boost_denom = LA_boost_total }
+    subtract_from_variable = { LA_boost_denom = LA_power_cc }
+    if = {
+        limit = { check_variable = { var = LA_boost_denom value = 0.01 compare = greater_than } }
+        divide_variable = { LA_boost_ratio = LA_boost_denom }
+    }
+    else = {
+        set_variable = { LA_boost_ratio = 0 }
+    }
+    multiply_variable = { LA_power_hp = LA_boost_ratio }
+    multiply_variable = { LA_power_cz = LA_boost_ratio }
+    multiply_variable = { LA_power_zx = LA_boost_ratio }
+    set_variable = { LA_power_cc = LA_boost_tmp }
+    CHI_update_authority_faction_effects = yes
+}
+
+# 扶植黄埔系：影响力+10%，其余三派按比例缩减（复兴社影响力由支持率决定，不参与分配）
+CHI_authority_boost_hp = {
+    set_variable = { LA_boost_total = 100 }
+    subtract_from_variable = { LA_boost_total = LA_power_fxs }
+    set_variable = { LA_boost_tmp = LA_power_hp }
+    add_to_variable = { LA_boost_tmp = 10 }
+    if = {
+        limit = { check_variable = { var = LA_boost_tmp value = LA_boost_total compare = greater_than } }
+        set_variable = { LA_boost_tmp = LA_boost_total }
+    }
+    set_variable = { LA_boost_ratio = LA_boost_total }
+    subtract_from_variable = { LA_boost_ratio = LA_boost_tmp }
+    set_variable = { LA_boost_denom = LA_boost_total }
+    subtract_from_variable = { LA_boost_denom = LA_power_hp }
+    if = {
+        limit = { check_variable = { var = LA_boost_denom value = 0.01 compare = greater_than } }
+        divide_variable = { LA_boost_ratio = LA_boost_denom }
+    }
+    else = {
+        set_variable = { LA_boost_ratio = 0 }
+    }
+    multiply_variable = { LA_power_cc = LA_boost_ratio }
+    multiply_variable = { LA_power_cz = LA_boost_ratio }
+    multiply_variable = { LA_power_zx = LA_boost_ratio }
+    set_variable = { LA_power_hp = LA_boost_tmp }
+    CHI_update_authority_faction_effects = yes
+}
+
+# 扶植复兴社：法西斯主义支持率+10%（影响力随之上升）
+# 其余四派的缩放由重算统一传导（见 CHI_update_authority_faction_effects 第3步）
+CHI_authority_boost_fxs = {
+    add_popularity = { ideology = fascism popularity = 0.1 }
+    CHI_update_authority_faction_effects = yes
+}
+
+# 扶植财政系：影响力+10%，其余三派按比例缩减（复兴社影响力由支持率决定，不参与分配）
+CHI_authority_boost_cz = {
+    set_variable = { LA_boost_total = 100 }
+    subtract_from_variable = { LA_boost_total = LA_power_fxs }
+    set_variable = { LA_boost_tmp = LA_power_cz }
+    add_to_variable = { LA_boost_tmp = 10 }
+    if = {
+        limit = { check_variable = { var = LA_boost_tmp value = LA_boost_total compare = greater_than } }
+        set_variable = { LA_boost_tmp = LA_boost_total }
+    }
+    set_variable = { LA_boost_ratio = LA_boost_total }
+    subtract_from_variable = { LA_boost_ratio = LA_boost_tmp }
+    set_variable = { LA_boost_denom = LA_boost_total }
+    subtract_from_variable = { LA_boost_denom = LA_power_cz }
+    if = {
+        limit = { check_variable = { var = LA_boost_denom value = 0.01 compare = greater_than } }
+        divide_variable = { LA_boost_ratio = LA_boost_denom }
+    }
+    else = {
+        set_variable = { LA_boost_ratio = 0 }
+    }
+    multiply_variable = { LA_power_cc = LA_boost_ratio }
+    multiply_variable = { LA_power_hp = LA_boost_ratio }
+    multiply_variable = { LA_power_zx = LA_boost_ratio }
+    set_variable = { LA_power_cz = LA_boost_tmp }
+    CHI_update_authority_faction_effects = yes
+}
+
+# 扶植政学系：影响力+10%，其余三派按比例缩减（复兴社影响力由支持率决定，不参与分配）
+CHI_authority_boost_zx = {
+    set_variable = { LA_boost_total = 100 }
+    subtract_from_variable = { LA_boost_total = LA_power_fxs }
+    set_variable = { LA_boost_tmp = LA_power_zx }
+    add_to_variable = { LA_boost_tmp = 10 }
+    if = {
+        limit = { check_variable = { var = LA_boost_tmp value = LA_boost_total compare = greater_than } }
+        set_variable = { LA_boost_tmp = LA_boost_total }
+    }
+    set_variable = { LA_boost_ratio = LA_boost_total }
+    subtract_from_variable = { LA_boost_ratio = LA_boost_tmp }
+    set_variable = { LA_boost_denom = LA_boost_total }
+    subtract_from_variable = { LA_boost_denom = LA_power_zx }
+    if = {
+        limit = { check_variable = { var = LA_boost_denom value = 0.01 compare = greater_than } }
+        divide_variable = { LA_boost_ratio = LA_boost_denom }
+    }
+    else = {
+        set_variable = { LA_boost_ratio = 0 }
+    }
+    multiply_variable = { LA_power_cc = LA_boost_ratio }
+    multiply_variable = { LA_power_hp = LA_boost_ratio }
+    multiply_variable = { LA_power_cz = LA_boost_ratio }
+    set_variable = { LA_power_zx = LA_boost_tmp }
+    CHI_update_authority_faction_effects = yes
 }
 
 

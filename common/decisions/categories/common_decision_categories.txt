@@ -7,14 +7,6 @@ DEBUG = {
 	}
 }
  
-Eeconomic_system = {
-	icon = generic_economy
-	picture = GFX_Eeconomic_system
-	visible = {   
-	} 
-	priority = 1000
-} 
-
 Gannan_New_Deal = {
 	icon = generic_economy
 	picture = GFX_Gannan_New_Deal 

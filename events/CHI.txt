@@ -249,7 +249,7 @@ country_event = {
 	}
 
 	immediate = {
-		CHI_update_faction_effects = yes
+		CHI_update_authority_faction_effects = yes
 	}
 
 	option = {

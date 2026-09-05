@@ -1,0 +1,142 @@
+guiTypes = {
+	containerWindowType = {
+		name = "la_authority_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 540 }
+
+		# ============ 每行左侧 x=0~150 为预留图标位（待设计，可仿照 clique_struggle.gui 加 iconType） ============
+
+		# ===== CC系 =====
+		instantTextBoxType = {
+			name = "la_gui_cc_power"
+			position = { x = 160 y = 15 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_cc_power"
+			maxWidth = 280
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+		instantTextBoxType = {
+			name = "la_gui_cc_effect"
+			position = { x = 160 y = 35 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_cc_effect"
+			maxWidth = 350
+			maxHeight = 80
+			fixedsize = yes
+			format = left
+		}
+
+		# ===== 黄埔系 =====
+		instantTextBoxType = {
+			name = "la_gui_hp_power"
+			position = { x = 160 y = 115 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_hp_power"
+			maxWidth = 280
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+		instantTextBoxType = {
+			name = "la_gui_hp_effect"
+			position = { x = 160 y = 135 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_hp_effect"
+			maxWidth = 350
+			maxHeight = 80
+			fixedsize = yes
+			format = left
+		}
+
+		# ===== 复兴社 =====
+		instantTextBoxType = {
+			name = "la_gui_fxs_power"
+			position = { x = 160 y = 215 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_fxs_power"
+			maxWidth = 280
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+		instantTextBoxType = {
+			name = "la_gui_fxs_effect"
+			position = { x = 160 y = 235 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_fxs_effect"
+			maxWidth = 350
+			maxHeight = 80
+			fixedsize = yes
+			format = left
+		}
+
+		# ===== 财政系 =====
+		instantTextBoxType = {
+			name = "la_gui_cz_power"
+			position = { x = 160 y = 315 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_cz_power"
+			maxWidth = 280
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+		instantTextBoxType = {
+			name = "la_gui_cz_effect"
+			position = { x = 160 y = 335 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_cz_effect"
+			maxWidth = 350
+			maxHeight = 80
+			fixedsize = yes
+			format = left
+		}
+
+		# ===== 政学系 =====
+		instantTextBoxType = {
+			name = "la_gui_zx_power"
+			position = { x = 160 y = 415 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_zx_power"
+			maxWidth = 280
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+		instantTextBoxType = {
+			name = "la_gui_zx_effect"
+			position = { x = 160 y = 435 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_zx_effect"
+			maxWidth = 350
+			maxHeight = 80
+			fixedsize = yes
+			format = left
+		}
+
+		# ===== 派系过大惩罚（影响力>50% 时显示） =====
+		instantTextBoxType = {
+			name = "la_gui_penalty_text"
+			position = { x = 160 y = 505 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "LA_gui_penalty_text"
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+		}
+	}
+}

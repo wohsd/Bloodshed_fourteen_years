@@ -1,0 +1,18 @@
+scripted_gui = {
+	la_authority_gui = {
+		window_name = "la_authority_gui"
+		context_type = decision_category
+		visible = {
+			tag = CHI
+			has_dynamic_modifier = { modifier = Leader_Authority }
+		}
+		triggers = {
+			la_gui_penalty_text_visible = {
+				check_variable = { var = LA_penalty_pp value = 0.001 compare = greater_than }
+			}
+		}
+		ai_enabled = {
+			always = no
+		}
+	}
+}

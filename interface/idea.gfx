@@ -5,13 +5,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_modifiers_Shortage_personnel"
-		texturefile = "gfx/interface/ideas/Shortage_personnel.png"
-	} 
-
-
-
-	spriteType = {
 		name = "GFX_modifiers_Rectification_movement"
 		texturefile = "gfx/interface/ideas/PRC/Rectification_movement.png"
 	} 
