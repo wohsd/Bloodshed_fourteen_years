@@ -155,4 +155,64 @@ CHI_update_faction_effects = {
 
 }
 
+# 计算领袖权威：五人顾问（胡宗南/戴笠/康泽/贺衷寒/邓文仪）在任加成
+# 设计为幂等的一次性触发：顾问激活/替换只会使效果变化一次，重算结果恒定，绝不逐日累积
+CHI_update_leader_authority_effect = {
+    # 统计当前在任的五人顾问数量
+    set_variable = { LA_advisor_count = 0 }
+    if = {
+        limit = { has_idea = CHI_HuZongNan }
+        add_to_variable = { LA_advisor_count = 1 }
+    }
+    if = {
+        limit = { has_idea = CHI_DaiLi_P }
+        add_to_variable = { LA_advisor_count = 1 }
+    }
+    if = {
+        limit = { has_idea = CHI_KangZe_P }
+        add_to_variable = { LA_advisor_count = 1 }
+    }
+    if = {
+        limit = { has_idea = CHI_HeZhongHan_A }
+        add_to_variable = { LA_advisor_count = 1 }
+    }
+    if = {
+        limit = { has_idea = CHI_DengWenYi_P }
+        add_to_variable = { LA_advisor_count = 1 }
+    }
+
+    # —— 总值 = 国策基础(LA_focus_*) + 0.025×人数 ——
+    # 绝对设定：无论重算多少次结果恒定，旧存档中的错误累积一天内被自动覆盖修正
+    set_variable = { Leader_Authority_political_power_factor = LA_focus_political_power_factor }
+    set_variable = { LA_contrib_pp = 0.025 }
+    multiply_variable = { LA_contrib_pp = LA_advisor_count }
+    add_to_variable = { Leader_Authority_political_power_factor = LA_contrib_pp }
+
+    set_variable = { Leader_Authority_stability_factor = LA_focus_stability_factor }
+    set_variable = { LA_contrib_stab = 0.025 }
+    multiply_variable = { LA_contrib_stab = LA_advisor_count }
+    add_to_variable = { Leader_Authority_stability_factor = LA_contrib_stab }
+
+    set_variable = { Leader_Authority_war_support_factor = LA_focus_war_support_factor }
+    set_variable = { LA_contrib_ws = 0.025 }
+    multiply_variable = { LA_contrib_ws = LA_advisor_count }
+    add_to_variable = { Leader_Authority_war_support_factor = LA_contrib_ws }
+
+    # —— 每日法西斯主义支持率：3-4人 +0.05；5人 +0.1；其余为0（绝对设定，无累积）——
+    if = {
+        limit = { check_variable = { var = LA_advisor_count value = 5 compare = greater_than_or_equals } }
+        set_variable = { Leader_Authority_fascism_drift = 0.1 }
+    }
+    else_if = {
+        limit = { check_variable = { var = LA_advisor_count value = 3 compare = greater_than_or_equals } }
+        set_variable = { Leader_Authority_fascism_drift = 0.05 }
+    }
+    else = {
+        set_variable = { Leader_Authority_fascism_drift = 0 }
+    }
+
+    # 记录当前人数（仅供调试查看）
+    set_variable = { LA_advisor_count_prev = LA_advisor_count }
+}
+
 

@@ -20,6 +20,13 @@ focus_tree = {
 		cancel_if_invalid = yes
 		completion_reward = {
 			add_political_power = 200
+			# 领袖权威：政治点数/稳定度/战争支持度 +10%
+			add_to_variable = { LA_focus_political_power_factor = 0.1 }
+			add_to_variable = { LA_focus_stability_factor = 0.1 }
+			add_to_variable = { LA_focus_war_support_factor = 0.1 }
+			effect_tooltip = {
+				custom_effect_tooltip = leader_authority_positive
+			}
 		}
 	}
 	focus = {
@@ -891,13 +898,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 		}
@@ -931,13 +938,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 		}
@@ -1396,13 +1403,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 		}
@@ -1430,13 +1437,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 			effect_tooltip = {
@@ -1989,13 +1996,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			add_dynamic_modifier = {
@@ -2128,13 +2135,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			effect_tooltip = {
@@ -2392,13 +2399,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			effect_tooltip = {
@@ -2509,13 +2516,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			effect_tooltip = {
@@ -2542,13 +2549,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			effect_tooltip = {
@@ -2604,13 +2611,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			effect_tooltip = {
@@ -3204,13 +3211,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 			effect_tooltip = {
@@ -3382,13 +3389,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			effect_tooltip = {
@@ -3415,13 +3422,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 			effect_tooltip = {
@@ -3503,13 +3510,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 			effect_tooltip = {
@@ -3579,13 +3586,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 			effect_tooltip = {
@@ -3615,13 +3622,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = 0.05
+					LA_focus_political_power_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = 0.05
+					LA_focus_stability_factor = 0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = 0.05
+					LA_focus_war_support_factor = 0.05
 				}
 			}
 			effect_tooltip = {
@@ -3787,13 +3794,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 			effect_tooltip = {
@@ -3835,13 +3842,13 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					Leader_Authority_political_power_factor = -0.05
+					LA_focus_political_power_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_stability_factor = -0.05
+					LA_focus_stability_factor = -0.05
 				}
 				add_to_variable = {
-					Leader_Authority_war_support_factor = -0.05
+					LA_focus_war_support_factor = -0.05
 				}
 			}
 			effect_tooltip = {

@@ -52,10 +52,16 @@ leader_traits = {
 		army_speed_factor = 0.1
 		consumer_goods_expected_value = -0.1
 		stability_factor = -0.1
-		max_command_power = 20
+
+		command_cap_increase = 20
+		command_power = 0
 
 		ai_will_do = {
 			factor = 0.68
+			modifier = {
+				factor = 0
+				command_power < 0
+			}
 		}
 	}
 	german_advisor = {
@@ -77,10 +83,16 @@ leader_traits = {
 		army_org_factor = 0.08
 		political_power_gain = 0.1
 		army_attack_factor = -0.05
-		max_command_power = 20
+
+		command_cap_increase = 20
+		command_power = 0
 
 		ai_will_do = {
 			factor = 0.68
+			modifier = {
+				factor = 0
+				command_power < 0
+			}
 		}
 	}
 	huangpu_zhi_mu = {
@@ -90,10 +102,16 @@ leader_traits = {
 		supply_consumption_factor = -0.1
 		supply_node_range = 0.1
 		planning_speed = -0.25
-		max_command_power = 20
+
+		command_cap_increase = 20
+		command_power = 0
 
 		ai_will_do = {
 			factor = 0.68
+			modifier = {
+				factor = 0
+				command_power < 0
+			}
 		}
 	}
 	zhongguo_napolun = {
@@ -103,10 +121,16 @@ leader_traits = {
 		experience_gain_army_factor = 0.1
 		experience_gain_army_unit_factor = 0.1
 		army_org_regain = -0.1
-		max_command_power = 20
+
+		command_cap_increase = 20
+		command_power = 0
 
 		ai_will_do = {
 			factor = 0.68
+			modifier = {
+				factor = 0
+				command_power < 0
+			}
 		}
 	}
 	gongshi_fangyu = {
@@ -120,6 +144,64 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	guofang_lun = {
+		random = no
+		sprite = 14
+
+		army_defence_factor = 0.1
+		grand_battleplan_mastery_gain_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zhenggong_dianfan = {
+		random = no
+		sprite = 14
+
+		army_org_factor = 0.08
+		army_org_regain = 0.08
+		mass_assault_mastery_gain_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kuaisu_bushu = {
+		random = no
+		sprite = 9
+
+		army_speed_factor = 0.05
+		org_loss_when_moving = -0.15
+
+		command_cap_increase = 20
+		command_power = 0
+
+		ai_will_do = {
+			factor = 0.64
+			modifier = {
+				factor = 0
+				command_power < 0
+			}
+		}
+	}
+	dixing_kancha = {
+		random = no
+		sprite = 9
+
+		terrain_penalty_reduction = 0.15
+
+		command_cap_increase = 20
+		command_power = 0
+
+		ai_will_do = {
+			factor = 0.64
+			modifier = {
+				factor = 0
+				command_power < 0
+			}
 		}
 	}
 }
