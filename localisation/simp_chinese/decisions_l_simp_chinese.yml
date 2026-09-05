@@ -380,7 +380,7 @@ zhang_xueliang_rehab_tt2: "少帅目前状态较差，压力值偏大，将会�
  LA_boost_decision_cc: "扶植CC系"
  LA_boost_decision_cc_desc: "§YCC系§!当前影响力：[?LA_power_cc|0]%\n当前效果：稳定度 §G+[?LA_cc_stability|%]§!\n§R若影响力超过50%：§!政治点数获取 §R-[?LA_penalty_cc_pp|%]§!，生活消费品系数 §R+[?LA_penalty_cc|%]§!\n\n花费§Y50§!政治点数：CC系影响力§G+10%§!，其余派系影响力按比例缩减（复兴社除外，其影响力随法西斯主义支持率变动）。"
  LA_boost_decision_hp: "扶植黄埔系"
- LA_boost_decision_hp_desc: "§G黄埔系§!当前影响力：[?LA_power_hp|0]%\n当前效果：黄埔系支持（四大将领派系效果）×[?LA_hp_scale|%]\n§R若影响力超过50%：§!部队组织度 §R-[?LA_penalty_hp|%]§!\n\n花费§Y50§!政治点数：黄埔系影响力§G+10%§!，其余派系影响力按比例缩减（复兴社除外，其影响力随法西斯主义支持率变动）。"
+ LA_boost_decision_hp_desc: "§G黄埔系§!当前影响力：[?LA_power_hp|0]%\n当前效果：黄埔系支持（四大将领派系效果）×[?LA_hp_scale|%]\n§R若影响力超过50%：§!部队组织度 §R-[?LA_penalty_hp|%]§!\n\n花费§Y50§!政治点数：黄埔系影响力§G+10%§!，其余派系影响力按比例缩减（复兴社除外，其影响力随法西斯主义支持率变动）。"\n\n§R调试§!：顾问角色 [?LA_dbg_advisors0] | 被雇佣 [?LA_dbg_hired0] | 何系特质 [?LA_dbg_he_trait0] | 何系基础 [?CHI_he_power_base0]
  LA_boost_decision_fxs: "扶植复兴社"
  LA_boost_decision_fxs_desc: "§B复兴社§!当前影响力：[?LA_power_fxs|0]%（随法西斯主义支持率变动）\n当前效果：每日政治点数 §G+[?LA_fxs_pp_gain|+2]§!\n§R若影响力超过50%：§!政治点数获取 §R-[?LA_penalty_fxs_pp|%]§!，生活消费品系数 §R+[?LA_penalty_fxs|%]§!\n\n花费§Y50§!政治点数：法西斯主义支持率§G+10%§!（复兴社影响力随之上升），其余派系影响力按比例缩减。"
  LA_boost_decision_cz: "扶植财政系"

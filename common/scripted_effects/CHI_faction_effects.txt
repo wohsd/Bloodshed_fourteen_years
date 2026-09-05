@@ -52,26 +52,44 @@ CHI_update_faction_effects = {
     }
     
     # 基础影响力：雇佣任意拥有对应派系特质的顾问时 +5（通用检测，每日重算，幂等）
-    # 派系特质（heyingqinxi/chenchengxi/huzongnanxi/tangenboxi）在角色的军长角色上，顾问雇佣状态用 is_advisor 判定
+    # 派系特质（heyingqinxi/chenchengxi/huzongnanxi/tangenboxi）在角色的军长角色上
+    # is_hired_as_advisor = 正被雇佣为顾问（is_advisor 只判断拥有顾问角色，未雇佣也算，不可用）
     set_variable = { CHI_he_power_base = 0 }
     set_variable = { CHI_chen_power_base = 0 }
     set_variable = { CHI_hu_power_base = 0 }
     set_variable = { CHI_tang_power_base = 0 }
     every_character = {
-        limit = { is_advisor = yes has_trait = heyingqinxi }
+        limit = { is_hired_as_advisor = yes has_trait = heyingqinxi }
         add_to_variable = { PREV.CHI_he_power_base = 5 }
     }
     every_character = {
-        limit = { is_advisor = yes has_trait = chenchengxi }
+        limit = { is_hired_as_advisor = yes has_trait = chenchengxi }
         add_to_variable = { PREV.CHI_chen_power_base = 5 }
     }
     every_character = {
-        limit = { is_advisor = yes has_trait = huzongnanxi }
+        limit = { is_hired_as_advisor = yes has_trait = huzongnanxi }
         add_to_variable = { PREV.CHI_hu_power_base = 5 }
     }
     every_character = {
-        limit = { is_advisor = yes has_trait = tangenboxi }
+        limit = { is_hired_as_advisor = yes has_trait = tangenboxi }
         add_to_variable = { PREV.CHI_tang_power_base = 5 }
+    }
+
+    # 调试计数（临时，定位通用检测断点后删除）
+    set_variable = { LA_dbg_advisors = 0 }
+    set_variable = { LA_dbg_hired = 0 }
+    set_variable = { LA_dbg_he_trait = 0 }
+    every_character = {
+        limit = { is_advisor = yes }
+        add_to_variable = { PREV.LA_dbg_advisors = 1 }
+    }
+    every_character = {
+        limit = { is_hired_as_advisor = yes }
+        add_to_variable = { PREV.LA_dbg_hired = 1 }
+    }
+    every_character = {
+        limit = { has_trait = heyingqinxi }
+        add_to_variable = { PREV.LA_dbg_he_trait = 1 }
     }
 
     # 计算总影响力 = 基础影响力 + 内阁加成 + 技能影响力
