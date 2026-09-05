@@ -184,6 +184,7 @@ Leader_Authority = {
 	political_power_factor = Leader_Authority_political_power_factor #政治点数（百分比）
 	stability_factor = Leader_Authority_stability_factor #稳定度
 	war_support_factor = Leader_Authority_war_support_factor #战争支持度
+	fascism_drift = Leader_Authority_fascism_drift #每日法西斯主义支持率
 }
 
 Zhonghua_Revival_Society = {

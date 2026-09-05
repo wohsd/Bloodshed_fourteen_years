@@ -4,6 +4,8 @@ on_actions = {
             CHI = {
                 # 初始化并计算派系影响力
                 CHI_update_faction_effects = yes
+                # 初始化领袖权威（五人顾问统计）
+                CHI_update_leader_authority_effect = yes
                 # 添加动态修正
                 add_dynamic_modifier = {
                     modifier = Republic_of_China_Military_Academy
@@ -11,14 +13,16 @@ on_actions = {
             }
         }
     }
-    
+
     # 每日更新派系影响力
     on_daily = {
         effect = {
             CHI = {
                 CHI_update_faction_effects = yes
+                # 每日重算领袖权威（顾问增减后自动增减效果）
+                CHI_update_leader_authority_effect = yes
             }
         }
     }
-    
+
 }

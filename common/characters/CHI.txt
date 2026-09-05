@@ -762,9 +762,30 @@ characters={
 				large="gfx/leaders/CHI/CHI_JiangBaiLi.png"
 			}
 		}
+		advisor={	desc = CHI_JiangBaiLi_leader_desc
+			slot = theorist
+			idea_token = CHI_JiangBaiLi
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_JiangBaiLi
+					}
+				}
+			}
+			traits = {
+				guofang_lun
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={		desc = CHI_JiangBaiLi_leader_desc
 
-			traits={ 
+			traits={
 				theorist
 				strategic_genius
 			}
@@ -1078,7 +1099,7 @@ CHI_TangEnBo={
 
 		}
 		advisor={	desc = CHI_DaiLi_leader_desc
-	
+
 			slot = political_advisor
 			idea_token = CHI_DaiLi_P
 			allowed = {
@@ -1088,7 +1109,82 @@ CHI_TangEnBo={
 				has_completed_focus = China_Revival_Society
 			}
 			traits = {
+				head_of_intelligence
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_DengWenYi={
+		name=CHI_DengWenYi
+		advisor={	desc = CHI_DengWenYi_leader_desc
+			slot = political_advisor
+			idea_token = CHI_DengWenYi_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_DengWenYi
+					}
+				}
+			}
+			traits = {
+				fascist_demagogue
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_KangZe={
+		name=CHI_KangZe
+		advisor={	desc = CHI_KangZe_leader_desc
+			slot = political_advisor
+			idea_token = CHI_KangZe_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_KangZe
+					}
+				}
+			}
+			traits = {
 				prince_of_terror
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_HeZhongHan={
+		name=CHI_HeZhongHan
+		advisor={	desc = CHI_HeZhongHan_leader_desc
+			slot = theorist
+			idea_token = CHI_HeZhongHan_A
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_HeZhongHan
+					}
+				}
+			}
+			traits = {
+				zhenggong_dianfan
 			}
 			cost = 100
 			ai_will_do = {

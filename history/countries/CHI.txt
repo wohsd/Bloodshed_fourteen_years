@@ -1,4 +1,4 @@
-﻿capital = 214 
+capital = 214 
 set_oob = "CHI_1933"
 set_naval_oob = "CHI_1933_naval"
 set_technology = {
@@ -87,6 +87,9 @@ recruit_character = CHI_JiangGuangDing
 
 recruit_character = CHI_KongXiangXi
 recruit_character = CHI_DaiLi
+recruit_character = CHI_DengWenYi
+recruit_character = CHI_KangZe
+recruit_character = CHI_HeZhongHan
 recruit_character = CHI_ChenLiFu
 recruit_character = CHI_HuangFu
 recruit_character = CHI_JiangJingGuo
