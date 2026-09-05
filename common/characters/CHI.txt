@@ -447,6 +447,27 @@ characters={
 				factor = 1.000
 			}
 		}
+		advisor={	desc = CHI_ZhangZhiZhong_leader_desc
+			slot = army_chief
+			idea_token = CHI_ZhangZhiZhong_C
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_ZhangZhiZhong
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={	desc = CHI_ZhangZhiZhong_leader_desc
 
 			traits={
@@ -489,6 +510,28 @@ characters={
 			}
 		}
 		
+		advisor={	desc = CHI_LiuZhi_leader_desc
+			slot = high_command
+			ledger = army
+			idea_token = CHI_LiuZhi
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_LiuZhi
+					}
+				}
+			}
+			traits = {
+				army_entrenchment_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={	desc = CHI_LiuZhi_leader_desc
 
 			traits={ 
@@ -510,6 +553,28 @@ characters={
 			}
 		}
 		
+		advisor={	desc = CHI_LuoZuoYing_leader_desc
+			slot = high_command
+			ledger = army
+			idea_token = CHI_LuoZuoYing
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_LuoZuoYing
+					}
+				}
+			}
+			traits = {
+				dixing_kancha
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={	desc = CHI_LuoZuoYing_leader_desc
 
 			traits={ 
@@ -804,6 +869,28 @@ characters={
 				large="gfx/leaders/CHI/CHI_JiangDingWen.png"
 			}
 		}
+		advisor={		desc = CHI_JiangDingWen_leader_desc
+			slot = high_command
+			ledger = army
+			idea_token = CHI_JiangDingWen
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_JiangDingWen
+					}
+				}
+			}
+			traits = {
+				kuaisu_bushu
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={		desc = CHI_JiangDingWen_leader_desc
 
 			traits={
@@ -939,6 +1026,28 @@ CHI_TangEnBo={
 				large="gfx/leaders/CHI/CHI_XiongShiHui.png"
 			}
 		}
+		advisor={		desc = CHI_XiongShiHui_leader_desc
+			slot = high_command
+			ledger = army
+			idea_token = CHI_XiongShiHui
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_XiongShiHui
+					}
+				}
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={		desc = CHI_XiongShiHui_leader_desc
 
 			traits={ 
@@ -959,6 +1068,28 @@ CHI_TangEnBo={
 		portraits={
 			army={
 				large="gfx/leaders/CHI/CHI_XuTingYao.png"
+			}
+		}
+		advisor={		desc = CHI_XuTingYao_leader_desc
+			slot = high_command
+			ledger = army
+			idea_token = CHI_XuTingYao
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = CHI_XuTingYao
+					}
+				}
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={		desc = CHI_XuTingYao_leader_desc

@@ -11420,7 +11420,8 @@ leader_traits = {
 	army_chief_drill_1 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.05
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army_unit_factor = 0.05
+		experience_gain_army = 0.2
 
 		command_cap_increase = @tier1_cp_cap_increase
 		command_power = @tier1_cp_cost
@@ -11437,7 +11438,8 @@ leader_traits = {
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.1
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army_unit_factor = 0.1
+		experience_gain_army = 0.3
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -11454,7 +11456,8 @@ leader_traits = {
 	army_chief_drill_3 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.15
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army_unit_factor = 0.15
+		experience_gain_army = 0.4
 
 		command_cap_increase = @tier3_cp_cap_increase
 		command_power = @tier3_cp_cost
@@ -11625,7 +11628,7 @@ leader_traits = {
 
 	army_chief_morale_1 = { # Ground units get 4 more Morale
 		sprite = 5
-		out_of_supply_factor = -0.03
+		army_morale_factor = 0.05
 		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier1_cp_cap_increase
@@ -11642,7 +11645,7 @@ leader_traits = {
 
 	army_chief_morale_2 = { # Ground units get 8 more Morale
 		sprite = 5
-		out_of_supply_factor = -0.06
+		army_morale_factor = 0.1
 		experience_gain_army = @chief_experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -11659,8 +11662,59 @@ leader_traits = {
 
 	army_chief_morale_3 = { # Ground units get 12 more Morale
 		sprite = 5
-		out_of_supply_factor = -0.09
+		army_morale_factor = 0.15
 		experience_gain_army = @chief_experience_gain_high
+
+		command_cap_increase = @tier3_cp_cap_increase
+		command_power = @tier3_cp_cost
+
+		ai_will_do = {
+			factor = @army_chief_factor_3
+			modifier = {
+				factor = 0
+				command_power < @tier3_cp_cost
+			}
+		}
+	}
+
+	army_chief_training_1 = { # Divisions train 5% faster
+		sprite = 5
+		training_time_army_factor = -0.05
+		experience_gain_army_unit_factor = 0.05
+
+		command_cap_increase = @tier1_cp_cap_increase
+		command_power = @tier1_cp_cost
+
+		ai_will_do = {
+			factor = @army_chief_factor_1
+			modifier = {
+				factor = 0
+				command_power < @tier1_cp_cost
+			}
+		}
+	}
+
+	army_chief_training_2 = { # Divisions train 10% faster
+		sprite = 5
+		training_time_army_factor = -0.1
+		experience_gain_army_unit_factor = 0.1
+
+		command_cap_increase = @tier2_cp_cap_increase
+		command_power = @tier2_cp_cost
+
+		ai_will_do = {
+			factor = @army_chief_factor_2
+			modifier = {
+				factor = 0
+				command_power < @tier2_cp_cost
+			}
+		}
+	}
+
+	army_chief_training_3 = { # Divisions train 15% faster
+		sprite = 5
+		training_time_army_factor = -0.15
+		experience_gain_army_unit_factor = 0.15
 
 		command_cap_increase = @tier3_cp_cap_increase
 		command_power = @tier3_cp_cost
@@ -11728,8 +11782,7 @@ leader_traits = {
 
 	army_chief_entrenchment_1 = {
 		sprite = 5
-		max_dig_in = 3
-		mobilization_speed = -0.02
+		max_dig_in = 4
 		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier1_cp_cap_increase
@@ -11746,8 +11799,7 @@ leader_traits = {
 
 	army_chief_entrenchment_2 = {
 		sprite = 5
-		max_dig_in = 5
-		mobilization_speed = -0.04
+		max_dig_in = 8
 		experience_gain_army = @chief_experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -11764,8 +11816,7 @@ leader_traits = {
 
 	army_chief_entrenchment_3 = {
 		sprite = 5
-		max_dig_in = 7
-		mobilization_speed = -0.06
+		max_dig_in = 12
 		experience_gain_army = @chief_experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase
@@ -11781,9 +11832,10 @@ leader_traits = {
 	}
 
 
-	army_entrenchment_1 = { # Ground units entrench n% faster
+	army_entrenchment_1 = { # Entrenchment cap +10%, speed +10%
 		sprite = 9
-		dig_in_speed_factor = 0.08
+		max_dig_in_factor = 0.1
+		dig_in_speed_factor = 0.1
 		#experience_gain_army = @experience_gain_low
 
 		command_cap_increase = @tier1_cp_cap_increase
@@ -11798,9 +11850,10 @@ leader_traits = {
 		}
 	}
 
-	army_entrenchment_2 = { # Ground units entrench 8% faster
+	army_entrenchment_2 = { # Entrenchment cap +20%, speed +20%
 		sprite = 9
-		dig_in_speed_factor = 0.16
+		max_dig_in_factor = 0.2
+		dig_in_speed_factor = 0.2
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -11815,9 +11868,10 @@ leader_traits = {
 		}
 	}
 
-	army_entrenchment_3 = { # Ground units entrench 12% faster
-		sprite = 9
-		dig_in_speed_factor = 0.24
+	army_entrenchment_3 = { # Entrenchment cap +30%, speed +30%
+			sprite = 9
+			max_dig_in_factor = 0.3
+			dig_in_speed_factor = 0.3
 		#experience_gain_army = @experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase
@@ -12272,9 +12326,10 @@ leader_traits = {
 	}
 
 
-	army_logistics_1 = {  # Ground units suffer 4% less attrition
+	army_logistics_1 = {  # Supply consumption -4%, supply range +4%
 		sprite = 6
-		attrition = -0.04
+		supply_consumption_factor = -0.04
+		supply_node_range = 0.04
 		#experience_gain_army = @experience_gain_low
 
 		command_cap_increase = @tier1_cp_cap_increase
@@ -12289,9 +12344,10 @@ leader_traits = {
 		}
 	}
 
-	army_logistics_2 = {  # Ground units suffer 8% less attrition
+	army_logistics_2 = {  # Supply consumption -8%, supply range +8%
 		sprite = 6
-		attrition = -0.08
+		supply_consumption_factor = -0.08
+		supply_node_range = 0.08
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -12306,9 +12362,10 @@ leader_traits = {
 		}
 	}
 
-	army_logistics_3 = {  # Ground units suffer 12% less attrition
+	army_logistics_3 = {  # Supply consumption -12%, supply range +12%
 		sprite = 6
-		attrition = -0.12
+		supply_consumption_factor = -0.12
+		supply_node_range = 0.12
 		#experience_gain_army = @experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase
