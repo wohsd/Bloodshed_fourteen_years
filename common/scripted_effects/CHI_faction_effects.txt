@@ -185,8 +185,8 @@ CHI_update_faction_effects = {
 # 设计为幂等：每次调用先重算黄埔系支持（绝对设定），再叠加派系效果
 # 复兴社影响力与法西斯主义支持率双向绑定：
 #   正向：支持率变化 → 影响力同步（支持率×100）
-#   反向：影响力被独立修改（如扶植其他派系挤压）→ 支持率同步（影响力/100）
-# 通过记录上一次支持率来区分变化来源，避免循环覆盖。
+#   反向：影响力被独立修改（如扶植其他派系挤压）→ 支持率同步（影响力差值/100）
+# 通过记录上一次支持率来区分变化来源；add_popularity 仅接受临时变量，故用 temp 传值。
 CHI_sync_fxs_power = {
     # 上一次支持率基线（懒初始化）
     if = {
@@ -198,18 +198,35 @@ CHI_sync_fxs_power = {
     set_variable = { LA_fxs_target = LA_fxs_pop_now }
     multiply_variable = { LA_fxs_target = 100 }
 
-    # 正向：支持率发生了变化 → 用支持率覆盖影响力
+    # 支持率变化量（普通变量用于 check_variable）
+    set_variable = { LA_fxs_pop_diff = LA_fxs_pop_now }
+    subtract_from_variable = { LA_fxs_pop_diff = LA_fxs_pop_last }
+
+    # 正向：支持率变化超过阈值 → 用支持率覆盖影响力
     if = {
-        limit = { NOT = { check_variable = { var = LA_fxs_pop_now value = LA_fxs_pop_last compare = equals } } }
+        limit = {
+            OR = {
+                check_variable = { var = LA_fxs_pop_diff value = 0.001 compare = greater_than }
+                check_variable = { var = LA_fxs_pop_diff value = -0.001 compare = less_than }
+            }
+        }
         set_variable = { LA_power_fxs = LA_fxs_target }
     }
     # 反向：支持率未变，但影响力与支持率不匹配 → 用影响力反向修正支持率
     else = {
+        set_variable = { LA_fxs_inf_diff = LA_power_fxs }
+        subtract_from_variable = { LA_fxs_inf_diff = LA_fxs_target }
         if = {
-            limit = { NOT = { check_variable = { var = LA_power_fxs value = LA_fxs_target compare = equals } } }
-            set_variable = { LA_fxs_sync_delta = LA_power_fxs }
-            subtract_from_variable = { LA_fxs_sync_delta = LA_fxs_target }
-            divide_variable = { LA_fxs_sync_delta = 100 }
+            limit = {
+                OR = {
+                    check_variable = { var = LA_fxs_inf_diff value = 0.1 compare = greater_than }
+                    check_variable = { var = LA_fxs_inf_diff value = -0.1 compare = less_than }
+                }
+            }
+            # add_popularity 仅接受临时变量（原版 france.txt 用法）
+            set_temp_variable = { LA_fxs_sync_delta = LA_power_fxs }
+            subtract_from_temp_variable = { LA_fxs_sync_delta = LA_fxs_target }
+            divide_temp_variable = { LA_fxs_sync_delta = 100 }
             add_popularity = { ideology = fascism popularity = LA_fxs_sync_delta }
         }
     }
