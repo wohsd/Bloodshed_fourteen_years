@@ -5,6 +5,7 @@ oob = YGC_1933
 #军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
 	mass_assault = 1
 }
@@ -40,3 +41,6 @@ add_ideas = {
 	Regionalist_warlords
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
+
+# 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）
+BFY_development_preset_by_date = yes

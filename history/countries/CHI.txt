@@ -2,6 +2,7 @@ capital = 214
 set_oob = "CHI_1933"
 set_naval_oob = "CHI_1933_naval"
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
 	tech_recon = 1
 	tech_support = 1		
@@ -29,6 +30,7 @@ set_technology = {
 }
 
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 		early_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
@@ -36,6 +38,7 @@ set_technology = {
 		transport = 1
 }
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 		submarine_mine_laying = 1
 		improved_ship_torpedo_launcher = 1
 		early_ship_hull_submarine = 1
@@ -91,6 +94,8 @@ recruit_character = CHI_DengWenYi
 recruit_character = CHI_KangZe
 recruit_character = CHI_HeZhongHan
 recruit_character = CHI_ChenLiFu
+recruit_character = CHI_ChenGuoFu
+recruit_character = CHI_SongZiWen
 recruit_character = CHI_HuangFu
 recruit_character = CHI_JiangJingGuo
 recruit_character = CHI_ZhangQun
@@ -467,6 +472,7 @@ add_equipment_to_stockpile = {
 	}
 	
 	set_technology = {
+	BFY_irregular_infantry_tech = 1
 		infantry_weapons = 1
 		tech_recon = 2
 		tech_support = 2		
@@ -506,3 +512,6 @@ add_equipment_to_stockpile = {
 
 
 
+
+# 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）
+BFY_development_preset_by_date = yes

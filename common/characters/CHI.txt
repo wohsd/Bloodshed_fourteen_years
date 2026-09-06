@@ -265,6 +265,30 @@ characters={
 			small = "gfx/interface/advisers/CHI_XueYue.png"
 		}
 	}
+  advisor={       desc = CHI_XueYue_leader_desc
+
+          slot = high_command
+          ledger = army
+          idea_token = CHI_XueYue_HC
+          allowed = {
+                  original_tag = CHI
+          }
+          available = {
+                  NOT = {
+                          has_advisor = {
+                                  character = CHI_XueYue
+                          }
+                  }
+          }
+          traits = {
+                  army_infantry_2
+          }
+          cost = 150
+          ai_will_do = {
+                  factor = 1.000
+          }
+  }
+
 	advisor={	
 		desc = CHI_XueYue_leader_desc
 		slot = army_chief
@@ -308,6 +332,30 @@ characters={
 			}
 		}
 		
+                advisor={       desc = CHI_WeiLiHuang_leader_desc
+
+                        slot = high_command
+                        ledger = army
+                        idea_token = CHI_WeiLiHuang_HC
+                        allowed = {
+                                original_tag = CHI
+                        }
+                        available = {
+                                NOT = {
+                                        has_advisor = {
+                                                character = CHI_WeiLiHuang
+                                        }
+                                }
+                        }
+                        traits = {
+                                army_infantry_3
+                        }
+                        cost = 150
+                        ai_will_do = {
+                                factor = 1.000
+                        }
+                }
+
 		corps_commander={		desc = CHI_WeiLiHuang_leader_desc
 
 			traits={ 
@@ -637,6 +685,30 @@ characters={
 			allowed = {
 				original_tag = CHI
 			}
+        advisor={       desc = CHI_BaiChongXi_leader_desc
+
+                slot = high_command
+                ledger = army
+                idea_token = CHI_BaiChongXi_HC
+                allowed = {
+                        original_tag = CHI
+                }
+                available = {
+                        NOT = {
+                                has_advisor = {
+                                        character = CHI_BaiChongXi
+                                }
+                        }
+                }
+                traits = {
+                        army_cavalry_2
+                }
+                cost = 150
+                ai_will_do = {
+                        factor = 1.000
+                }
+        }
+
 			available = {
 			}
 			traits = {
@@ -725,7 +797,31 @@ characters={
 				large="gfx/leaders/CHI/CHI_YuJiShi.png"
 			}
 		}
-		corps_commander={		desc = CHI_Alexander_von_Falkenhausen_leader_desc
+                advisor={       desc = CHI_YuJiShi_leader_desc
+
+                        slot = high_command
+                        ledger = army
+                        idea_token = CHI_YuJiShi_HC
+                        allowed = {
+                                original_tag = CHI
+                        }
+                        available = {
+                                NOT = {
+                                        has_advisor = {
+                                                character = CHI_YuJiShi
+                                        }
+                                }
+                        }
+                        traits = {
+                                army_infantry_2
+                        }
+                        cost = 150
+                        ai_will_do = {
+                                factor = 1.000
+                        }
+                }
+
+		corps_commander={		desc = CHI_YuJiShi_leader_desc
 
 			traits={ 
 				old_guard
@@ -1149,7 +1245,7 @@ CHI_TangEnBo={
 		expire="1965.1.1.1"
 			id=-1
 		}
-		advisor={	desc = CHI_YuJiShi_leader_desc
+		advisor={	desc = CHI_SunKe_leader_desc
 	
 			slot = political_advisor
 			idea_token = CHI_SunKe_P
@@ -1211,9 +1307,6 @@ CHI_TangEnBo={
 			idea_token = CHI_DaiLi_P
 			allowed = {
 				original_tag = CHI
-			}
-			available = {
-				has_completed_focus = China_Revival_Society
 			}
 			traits = {
 				head_of_intelligence
@@ -1315,11 +1408,58 @@ CHI_TangEnBo={
 			allowed = {
 				original_tag = CHI
 			}
-			available = {
-				has_completed_focus = Central_Club
+			traits = {
+			backroom_backstabber
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	}
+
+	CHI_ChenGuoFu={
+		name=CHI_ChenGuoFu
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_ChenGuoFu.png"
+			}
+
+		}
+		advisor={	desc = CHI_ChenGuoFu_leader_desc
+
+			slot = political_advisor
+			idea_token = CHI_ChenGuoFu_P
+			allowed = {
+				original_tag = CHI
 			}
 			traits = {
-				backroom_backstabber
+				dangwu_guanlizhe
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	CHI_SongZiWen={
+		name=CHI_SongZiWen
+		portraits={
+			civilian={
+				small = "gfx/interface/advisers/CHI_SongZiWen.png"
+			}
+
+		}
+		advisor={	desc = CHI_SongZiWen_leader_desc
+
+			slot = political_advisor
+			idea_token = CHI_SongZiWen_P
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				economic_reformer
 			}
 			cost = 100
 			ai_will_do = {

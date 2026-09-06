@@ -1294,14 +1294,19 @@ CHI_Purging_party_category = {
 				
 			}
             RFC = {
-				hidden_effect = {
-				set_politics = { ruling_party = communism }
-			    #load_focus_tree = RFC
-			    set_rule = { 
+			hidden_effect = {
+			# 第一次起义：中国国民党临时行动委员会——民主派执政（邓演达）
+			set_politics = { ruling_party = democratic }
+			set_popularities = {
+				democratic = 30
+				communism = 20
+				neutrality = 50
+			}
+		    #load_focus_tree = RFC
+		    set_rule = {
                     can_not_declare_war = no
                 }
-				add_popularity = { ideology = communism popularity = 0.5 }
-				transfer_state = 603
+			transfer_state = 603
 				transfer_state = 292
 				transfer_state = 281
 				add_state_core = 603
@@ -2160,7 +2165,8 @@ LA_authority_category = {
 
 	# 扶植CC系：影响力+10%
 	LA_boost_decision_cc = {
-		icon = generic_political_actions
+		fire_only_once = no
+          icon = generic_political_actions
 
 		visible = {
 			tag = CHI
@@ -2181,7 +2187,8 @@ LA_authority_category = {
 
 	# 扶植黄埔系：影响力+10%
 	LA_boost_decision_hp = {
-		icon = generic_political_actions
+		fire_only_once = no
+          icon = generic_political_actions
 
 		visible = {
 			tag = CHI
@@ -2202,7 +2209,8 @@ LA_authority_category = {
 
 	# 扶植复兴社：法西斯主义支持率+10%
 	LA_boost_decision_fxs = {
-		icon = generic_political_actions
+		fire_only_once = no
+          icon = generic_political_actions
 
 		visible = {
 			tag = CHI
@@ -2223,7 +2231,8 @@ LA_authority_category = {
 
 	# 扶植财政系：影响力+10%
 	LA_boost_decision_cz = {
-		icon = generic_political_actions
+		fire_only_once = no
+          icon = generic_political_actions
 
 		visible = {
 			tag = CHI
@@ -2244,7 +2253,8 @@ LA_authority_category = {
 
 	# 扶植政学系：影响力+10%
 	LA_boost_decision_zx = {
-		icon = generic_political_actions
+		fire_only_once = no
+          icon = generic_political_actions
 
 		visible = {
 			tag = CHI

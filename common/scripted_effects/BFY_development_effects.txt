@@ -1,0 +1,474 @@
+# ============================================================
+# 中国现代化系统（月度结算与阶段进退）
+# ============================================================
+# 每种现代化使用三个变量：
+#   X_development_stage   当前阶段（0-5，对应该法案第6~第1级；开局为1）
+#   X_development_var     当前阶段内的现代化进度（%），达到101%晋阶归0，降至-1%回退归100
+#   X_development_monthly 月度现代化进程（%），每月1号结算进 X_development_var
+# 六种前缀：education / farming / social / industrial / military / medical
+# 进度来源：持续性国策“推动XX改革”（选择时 X_development_monthly = 1.5，取消时归0）
+# 法案等级随阶段自动切换（add_ideas 同栏位法案自动替换），玩家无法手动切换
+# ============================================================
+
+# 初始化（幂等，开局对所有国家执行）
+BFY_development_init = {
+	if = { limit = { NOT = { has_variable = education_development_stage } }   set_variable = { education_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = education_development_var } }     set_variable = { education_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = education_development_monthly } } set_variable = { education_development_monthly = 0 } }
+
+	if = { limit = { NOT = { has_variable = farming_development_stage } }   set_variable = { farming_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = farming_development_var } }     set_variable = { farming_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = farming_development_monthly } } set_variable = { farming_development_monthly = 0 } }
+
+	if = { limit = { NOT = { has_variable = social_development_stage } }   set_variable = { social_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = social_development_var } }     set_variable = { social_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = social_development_monthly } } set_variable = { social_development_monthly = 0 } }
+
+	if = { limit = { NOT = { has_variable = industrial_development_stage } }   set_variable = { industrial_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = industrial_development_var } }     set_variable = { industrial_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = industrial_development_monthly } } set_variable = { industrial_development_monthly = 0 } }
+
+	if = { limit = { NOT = { has_variable = military_development_stage } }   set_variable = { military_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = military_development_var } }     set_variable = { military_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = military_development_monthly } } set_variable = { military_development_monthly = 0 } }
+
+	if = { limit = { NOT = { has_variable = medical_development_stage } }   set_variable = { medical_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = medical_development_var } }     set_variable = { medical_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = medical_development_monthly } } set_variable = { medical_development_monthly = 0 } }
+
+	# 月度加成变量：民族精神/顾问等来源（BFY_development_recalc_monthly 每次绝对重算）
+	if = { limit = { NOT = { has_variable = education_development_bonus } }  set_variable = { education_development_bonus = 0 } }
+	if = { limit = { NOT = { has_variable = farming_development_bonus } }    set_variable = { farming_development_bonus = 0 } }
+	if = { limit = { NOT = { has_variable = social_development_bonus } }     set_variable = { social_development_bonus = 0 } }
+	if = { limit = { NOT = { has_variable = industrial_development_bonus } } set_variable = { industrial_development_bonus = 0 } }
+	if = { limit = { NOT = { has_variable = military_development_bonus } }   set_variable = { military_development_bonus = 0 } }
+	if = { limit = { NOT = { has_variable = medical_development_bonus } }    set_variable = { medical_development_bonus = 0 } }
+	# 月度合计变量：持续国策 + 加成（用于结算与法案介绍显示）
+	if = { limit = { NOT = { has_variable = education_development_monthly_total } }  set_variable = { education_development_monthly_total = 0 } }
+	if = { limit = { NOT = { has_variable = farming_development_monthly_total } }    set_variable = { farming_development_monthly_total = 0 } }
+	if = { limit = { NOT = { has_variable = social_development_monthly_total } }     set_variable = { social_development_monthly_total = 0 } }
+	if = { limit = { NOT = { has_variable = industrial_development_monthly_total } } set_variable = { industrial_development_monthly_total = 0 } }
+	if = { limit = { NOT = { has_variable = military_development_monthly_total } }   set_variable = { military_development_monthly_total = 0 } }
+	if = { limit = { NOT = { has_variable = medical_development_monthly_total } }    set_variable = { medical_development_monthly_total = 0 } }
+}
+
+# 重算月度进程：加成（民族精神/顾问等）→ 合计 = 持续国策 + 加成（幂等，绝对设定）
+# 调用时机：每月结算前、持续国策选择/取消后、民族精神增减后
+BFY_development_recalc_monthly = {
+	# 加成清零，再按来源逐项设定
+	set_variable = { education_development_bonus = 0 }
+	set_variable = { farming_development_bonus = 0 }
+	set_variable = { social_development_bonus = 0 }
+	set_variable = { industrial_development_bonus = 0 }
+	set_variable = { military_development_bonus = 0 }
+	set_variable = { medical_development_bonus = 0 }
+
+	# 日本：「明治维新的遗产」六项各 +2/月
+	if = {
+		limit = { has_dynamic_modifier = { modifier = JAP_meiji_restoration_legacy } }
+		set_variable = { education_development_bonus = 2 }
+		set_variable = { farming_development_bonus = 2 }
+		set_variable = { social_development_bonus = 2 }
+		set_variable = { industrial_development_bonus = 2 }
+		set_variable = { military_development_bonus = 2 }
+		set_variable = { medical_development_bonus = 2 }
+	}
+
+	# 合计 = 持续国策进程 + 加成
+	set_variable = { education_development_monthly_total = education_development_monthly }
+	add_to_variable = { education_development_monthly_total = education_development_bonus }
+	set_variable = { farming_development_monthly_total = farming_development_monthly }
+	add_to_variable = { farming_development_monthly_total = farming_development_bonus }
+	set_variable = { social_development_monthly_total = social_development_monthly }
+	add_to_variable = { social_development_monthly_total = social_development_bonus }
+	set_variable = { industrial_development_monthly_total = industrial_development_monthly }
+	add_to_variable = { industrial_development_monthly_total = industrial_development_bonus }
+	set_variable = { military_development_monthly_total = military_development_monthly }
+	add_to_variable = { military_development_monthly_total = military_development_bonus }
+	set_variable = { medical_development_monthly_total = medical_development_monthly }
+	add_to_variable = { medical_development_monthly_total = medical_development_bonus }
+}
+
+# ---------- 教育：阶段 → 法案 ----------
+BFY_development_swap_education = {
+	if = {
+		limit = { education_development_stage < 1 }
+		add_ideas = { lower_education }
+	}
+	else_if = {
+		limit = { education_development_stage < 2 }
+		add_ideas = { low_education }
+	}
+	else_if = {
+		limit = { education_development_stage < 3 }
+		add_ideas = { medium_education }
+	}
+	else_if = {
+		limit = { education_development_stage < 4 }
+		add_ideas = { high_education }
+	}
+	else_if = {
+		limit = { education_development_stage < 5 }
+		add_ideas = { higher_education }
+	}
+	else = {
+		add_ideas = { highest_education }
+	}
+}
+
+# ---------- 农业：阶段 → 法案 ----------
+BFY_development_swap_farming = {
+	if = {
+		limit = { farming_development_stage < 1 }
+		add_ideas = { lower_farming }
+	}
+	else_if = {
+		limit = { farming_development_stage < 2 }
+		add_ideas = { low_farming }
+	}
+	else_if = {
+		limit = { farming_development_stage < 3 }
+		add_ideas = { medium_farming }
+	}
+	else_if = {
+		limit = { farming_development_stage < 4 }
+		add_ideas = { high_farming }
+	}
+	else_if = {
+		limit = { farming_development_stage < 5 }
+		add_ideas = { higher_farming }
+	}
+	else = {
+		add_ideas = { highest_farming }
+	}
+}
+
+# ---------- 社会：阶段 → 法案 ----------
+BFY_development_swap_social = {
+	if = {
+		limit = { social_development_stage < 1 }
+		add_ideas = { lower_social }
+	}
+	else_if = {
+		limit = { social_development_stage < 2 }
+		add_ideas = { low_social }
+	}
+	else_if = {
+		limit = { social_development_stage < 3 }
+		add_ideas = { medium_social }
+	}
+	else_if = {
+		limit = { social_development_stage < 4 }
+		add_ideas = { high_social }
+	}
+	else_if = {
+		limit = { social_development_stage < 5 }
+		add_ideas = { higher_social }
+	}
+	else = {
+		add_ideas = { highest_social }
+	}
+}
+
+# ---------- 工业：阶段 → 法案 ----------
+BFY_development_swap_industrial = {
+	if = {
+		limit = { industrial_development_stage < 1 }
+		add_ideas = { lower_industry }
+	}
+	else_if = {
+		limit = { industrial_development_stage < 2 }
+		add_ideas = { low_industry }
+	}
+	else_if = {
+		limit = { industrial_development_stage < 3 }
+		add_ideas = { medium_industry }
+	}
+	else_if = {
+		limit = { industrial_development_stage < 4 }
+		add_ideas = { high_industry }
+	}
+	else_if = {
+		limit = { industrial_development_stage < 5 }
+		add_ideas = { higher_industry }
+	}
+	else = {
+		add_ideas = { highest_industry }
+	}
+}
+
+# ---------- 军事：阶段 → 法案 ----------
+BFY_development_swap_military = {
+	if = {
+		limit = { military_development_stage < 1 }
+		add_ideas = { lower_military }
+	}
+	else_if = {
+		limit = { military_development_stage < 2 }
+		add_ideas = { low_military }
+	}
+	else_if = {
+		limit = { military_development_stage < 3 }
+		add_ideas = { medium_military }
+	}
+	else_if = {
+		limit = { military_development_stage < 4 }
+		add_ideas = { high_military }
+	}
+	else_if = {
+		limit = { military_development_stage < 5 }
+		add_ideas = { higher_military }
+	}
+	else = {
+		add_ideas = { highest_military }
+	}
+}
+
+# ---------- 医疗：阶段 → 法案 ----------
+BFY_development_swap_medical = {
+	if = {
+		limit = { medical_development_stage < 1 }
+		add_ideas = { lower_medical }
+	}
+	else_if = {
+		limit = { medical_development_stage < 2 }
+		add_ideas = { low_medical }
+	}
+	else_if = {
+		limit = { medical_development_stage < 3 }
+		add_ideas = { medium_medical }
+	}
+	else_if = {
+		limit = { medical_development_stage < 4 }
+		add_ideas = { high_medical }
+	}
+	else_if = {
+		limit = { medical_development_stage < 5 }
+		add_ideas = { higher_medical }
+	}
+	else = {
+		add_ideas = { highest_medical }
+	}
+}
+
+# ---------- 教育：月度结算 ----------
+BFY_development_settle_education = {
+	if = { limit = { NOT = { has_variable = education_development_stage } }   set_variable = { education_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = education_development_var } }     set_variable = { education_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = education_development_monthly } } set_variable = { education_development_monthly = 0 } }
+	# 重算月度合计（持续国策 + 民族精神/顾问加成）
+	BFY_development_recalc_monthly = yes
+	# 结算：月度合计 → 现代化进度
+	add_to_variable = { education_development_var = education_development_monthly_total }
+	# 达到101%：进入下一阶段并重置到0%（已是最高阶段则封顶100%）
+	if = {
+		limit = { check_variable = { var = education_development_var value = 101 compare = greater_than_or_equals } }
+		if = {
+			limit = { education_development_stage < 5 }
+			add_to_variable = { education_development_stage = 1 }
+			set_variable = { education_development_var = 0 }
+		}
+		else = {
+			set_variable = { education_development_var = 100 }
+		}
+		BFY_development_swap_education = yes
+	}
+	# 降至-1%：回退到上一阶段并重置到100%（已是最低阶段则归0）
+	else_if = {
+		limit = { check_variable = { var = education_development_var value = -1 compare = less_than_or_equals } }
+		if = {
+			limit = { education_development_stage > 0 }
+			subtract_from_variable = { education_development_stage = 1 }
+			set_variable = { education_development_var = 100 }
+		}
+		else = {
+			set_variable = { education_development_var = 0 }
+		}
+		BFY_development_swap_education = yes
+	}
+}
+
+# ---------- 农业：月度结算 ----------
+BFY_development_settle_farming = {
+	if = { limit = { NOT = { has_variable = farming_development_stage } }   set_variable = { farming_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = farming_development_var } }     set_variable = { farming_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = farming_development_monthly } } set_variable = { farming_development_monthly = 0 } }
+	# 重算月度合计（持续国策 + 民族精神/顾问加成）
+	BFY_development_recalc_monthly = yes
+	# 结算：月度合计 → 现代化进度
+	add_to_variable = { farming_development_var = farming_development_monthly_total }
+	if = {
+		limit = { check_variable = { var = farming_development_var value = 101 compare = greater_than_or_equals } }
+		if = {
+			limit = { farming_development_stage < 5 }
+			add_to_variable = { farming_development_stage = 1 }
+			set_variable = { farming_development_var = 0 }
+		}
+		else = {
+			set_variable = { farming_development_var = 100 }
+		}
+		BFY_development_swap_farming = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = farming_development_var value = -1 compare = less_than_or_equals } }
+		if = {
+			limit = { farming_development_stage > 0 }
+			subtract_from_variable = { farming_development_stage = 1 }
+			set_variable = { farming_development_var = 100 }
+		}
+		else = {
+			set_variable = { farming_development_var = 0 }
+		}
+		BFY_development_swap_farming = yes
+	}
+}
+
+# ---------- 社会：月度结算 ----------
+BFY_development_settle_social = {
+	if = { limit = { NOT = { has_variable = social_development_stage } }   set_variable = { social_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = social_development_var } }     set_variable = { social_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = social_development_monthly } } set_variable = { social_development_monthly = 0 } }
+	# 重算月度合计（持续国策 + 民族精神/顾问加成）
+	BFY_development_recalc_monthly = yes
+	# 结算：月度合计 → 现代化进度
+	add_to_variable = { social_development_var = social_development_monthly_total }
+	if = {
+		limit = { check_variable = { var = social_development_var value = 101 compare = greater_than_or_equals } }
+		if = {
+			limit = { social_development_stage < 5 }
+			add_to_variable = { social_development_stage = 1 }
+			set_variable = { social_development_var = 0 }
+		}
+		else = {
+			set_variable = { social_development_var = 100 }
+		}
+		BFY_development_swap_social = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = social_development_var value = -1 compare = less_than_or_equals } }
+		if = {
+			limit = { social_development_stage > 0 }
+			subtract_from_variable = { social_development_stage = 1 }
+			set_variable = { social_development_var = 100 }
+		}
+		else = {
+			set_variable = { social_development_var = 0 }
+		}
+		BFY_development_swap_social = yes
+	}
+}
+
+# ---------- 工业：月度结算 ----------
+BFY_development_settle_industrial = {
+	if = { limit = { NOT = { has_variable = industrial_development_stage } }   set_variable = { industrial_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = industrial_development_var } }     set_variable = { industrial_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = industrial_development_monthly } } set_variable = { industrial_development_monthly = 0 } }
+	# 重算月度合计（持续国策 + 民族精神/顾问加成）
+	BFY_development_recalc_monthly = yes
+	# 结算：月度合计 → 现代化进度
+	add_to_variable = { industrial_development_var = industrial_development_monthly_total }
+	if = {
+		limit = { check_variable = { var = industrial_development_var value = 101 compare = greater_than_or_equals } }
+		if = {
+			limit = { industrial_development_stage < 5 }
+			add_to_variable = { industrial_development_stage = 1 }
+			set_variable = { industrial_development_var = 0 }
+		}
+		else = {
+			set_variable = { industrial_development_var = 100 }
+		}
+		BFY_development_swap_industrial = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = industrial_development_var value = -1 compare = less_than_or_equals } }
+		if = {
+			limit = { industrial_development_stage > 0 }
+			subtract_from_variable = { industrial_development_stage = 1 }
+			set_variable = { industrial_development_var = 100 }
+		}
+		else = {
+			set_variable = { industrial_development_var = 0 }
+		}
+		BFY_development_swap_industrial = yes
+	}
+}
+
+# ---------- 军事：月度结算 ----------
+BFY_development_settle_military = {
+	if = { limit = { NOT = { has_variable = military_development_stage } }   set_variable = { military_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = military_development_var } }     set_variable = { military_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = military_development_monthly } } set_variable = { military_development_monthly = 0 } }
+	# 重算月度合计（持续国策 + 民族精神/顾问加成）
+	BFY_development_recalc_monthly = yes
+	# 结算：月度合计 → 现代化进度
+	add_to_variable = { military_development_var = military_development_monthly_total }
+	if = {
+		limit = { check_variable = { var = military_development_var value = 101 compare = greater_than_or_equals } }
+		if = {
+			limit = { military_development_stage < 5 }
+			add_to_variable = { military_development_stage = 1 }
+			set_variable = { military_development_var = 0 }
+		}
+		else = {
+			set_variable = { military_development_var = 100 }
+		}
+		BFY_development_swap_military = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = military_development_var value = -1 compare = less_than_or_equals } }
+		if = {
+			limit = { military_development_stage > 0 }
+			subtract_from_variable = { military_development_stage = 1 }
+			set_variable = { military_development_var = 100 }
+		}
+		else = {
+			set_variable = { military_development_var = 0 }
+		}
+		BFY_development_swap_military = yes
+	}
+}
+
+# ---------- 医疗：月度结算 ----------
+BFY_development_settle_medical = {
+	if = { limit = { NOT = { has_variable = medical_development_stage } }   set_variable = { medical_development_stage = 1 } }
+	if = { limit = { NOT = { has_variable = medical_development_var } }     set_variable = { medical_development_var = 0 } }
+	if = { limit = { NOT = { has_variable = medical_development_monthly } } set_variable = { medical_development_monthly = 0 } }
+	# 重算月度合计（持续国策 + 民族精神/顾问加成）
+	BFY_development_recalc_monthly = yes
+	# 结算：月度合计 → 现代化进度
+	add_to_variable = { medical_development_var = medical_development_monthly_total }
+	if = {
+		limit = { check_variable = { var = medical_development_var value = 101 compare = greater_than_or_equals } }
+		if = {
+			limit = { medical_development_stage < 5 }
+			add_to_variable = { medical_development_stage = 1 }
+			set_variable = { medical_development_var = 0 }
+		}
+		else = {
+			set_variable = { medical_development_var = 100 }
+		}
+		BFY_development_swap_medical = yes
+	}
+	else_if = {
+		limit = { check_variable = { var = medical_development_var value = -1 compare = less_than_or_equals } }
+		if = {
+			limit = { medical_development_stage > 0 }
+			subtract_from_variable = { medical_development_stage = 1 }
+			set_variable = { medical_development_var = 100 }
+		}
+		else = {
+			set_variable = { medical_development_var = 0 }
+		}
+		BFY_development_swap_medical = yes
+	}
+}
+
+# ---------- 每月1号：六项现代化统一结算（on_monthly 对每个国家触发） ----------
+BFY_development_monthly_settlement = {
+	BFY_development_settle_education = yes
+	BFY_development_settle_farming = yes
+	BFY_development_settle_social = yes
+	BFY_development_settle_industrial = yes
+	BFY_development_settle_military = yes
+	BFY_development_settle_medical = yes
+}

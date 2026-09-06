@@ -1,5 +1,5 @@
 characters={
-		RFC_DengYanDa={
+	RFC_DengYanDa={
 		name=RFC_DengYanDa
 		portraits={
 			civilian={
@@ -9,13 +9,24 @@ characters={
 		country_leader={
 			desc = RFC_DengYanDa_leader_desc
 			ideology=marxism
-			traits={ }
+			traits={
+				dageming_yingxiong
+			}
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader={
+			desc = RFC_DengYanDa_leader_desc
+			ideology=democratic
+			traits={
+				dageming_yingxiong
+			}
+			expire="1965.1.1.1"
+			id=-2
+		}
 		corps_commander = {
 			desc = RFC_DengYanDa_leader_desc
-			traits={ 
+			traits={
 				Leftist_Kuomintang
 			}
 			skill = 3
@@ -31,18 +42,44 @@ characters={
 			civilian={
 				large="gfx/leaders/RFC/RFC_LiJiSheng.png"
 			}
+			army={
+				large="gfx/leaders/RFC/RFC_LiJiSheng.png"
+			}
 		}
 		country_leader={	desc = RFC_LiJiSheng_leader_desc
 
 			ideology=despotism
 			traits={
-				
+
 			 }
 			expire="1965.1.1.1"
 			id=-1
 		}
+		advisor={
+			desc = RFC_LiJiSheng_leader_desc
+
+			slot = army_chief
+			idea_token = RFC_LiJiSheng
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = RFC_LiJiSheng
+					}
+				}
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander = {
-			traits={ 
+			traits={
 				Leftist_Kuomintang
 			}
 			skill = 2
@@ -51,16 +88,43 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 		}
-	}		
-		RFC_HuangQiXiang={
+	}
+	RFC_HuangQiXiang={
 		name=RFC_HuangQiXiang
 		portraits={
 			civilian={
 				large="gfx/leaders/RFC/RFC_HuangQiXiang.png"
 			}
+			army={
+				large="gfx/leaders/RFC/RFC_HuangQiXiang.png"
+			}
+		}
+		advisor={
+			desc = RFC_HuangQiXiang_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = RFC_HuangQiXiang
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+				NOT = {
+					has_advisor = {
+						character = RFC_HuangQiXiang
+					}
+				}
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 		corps_commander = {
-			traits={ 
+			traits={
 				Leftist_Kuomintang
 			}
 			skill = 2

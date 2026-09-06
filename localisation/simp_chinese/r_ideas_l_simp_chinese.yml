@@ -127,9 +127,12 @@
  Guangxi_Army:0 "桂军"  
  Guangxi_Army_desc:1 "“广西狼兵，雄于天下” —— 桂军以其彪悍的民风、顽强的意志和卓越的山地作战能力闻名。在李宗仁、白崇禧的率领下，这支戴着独特“托尼帽”的军队，以其无畏的牺牲，赢得了全国的敬畏。"
 
- development:"中国现代化"
+ development:"现代化进程"
+ development_auto_progress_tt:"该法案等级将随「现代化进程」系统自动晋升或回退，无法手动切换。"
  education_development:"教育现代化"
- education_development_modifier_tooltip:"------------\n£development 教育现代化：[?education_development_var|+1%]\n£development 月度教育现代化进程：[?modifier@education_development_monthly|=+1%]"
+ JAP_meiji_restoration_legacy:"明治维新的遗产"
+ JAP_meiji_restoration_legacy_tt:"明治维新以来的近代化遗产：教育、农业、社会、工业、军事、医疗六项现代化，每月各获得基础现代化进程 §G+2%§!（无需选择改革国策）。"
+ education_development_modifier_tooltip:"------------\n£development 教育现代化阶段进度：[?education_development_var|0]%\n£development 每月现代化进程：\n£development   持续国策：[?education_development_monthly|+1]%\n£development   民族精神与顾问：[?education_development_bonus|+1]%\n£development   月度合计：[?education_development_monthly_total|+1]%\n£development 进度满101%自动晋升下一等级（不可手动切换）"
  lower_education:"传统私塾教育"
  lower_education_desc:"识字率极低，教育以儒家经典为主，缺乏现代科学知识。"
  low_education:"大众扫盲运动"
@@ -144,7 +147,7 @@
  highest_education_desc:"建立研究生院和留学基金，培养能在国际前沿竞争的顶尖人才。"
 
  farming_development:"农业现代化"
- farming_development_modifier_tooltip:"------------\n£development 农业现代化：[?farming_development_var|+1%]\n£development 月度农业现代化进程：[?modifier@farming_development_monthly|=+1%]"
+ farming_development_modifier_tooltip:"------------\n£development 农业现代化阶段进度：[?farming_development_var|0]%\n£development 每月现代化进程：\n£development   持续国策：[?farming_development_monthly|+1]%\n£development   民族精神与顾问：[?farming_development_bonus|+1]%\n£development   月度合计：[?farming_development_monthly_total|+1]%\n£development 进度满101%自动晋升下一等级（不可手动切换）"
  lower_farming:"传统佃农经济"
  lower_farming_desc:"生产关系落后，生产技术停滞，靠天吃饭，单位产量低下。"
  low_farming:"减租与垦荒"
@@ -159,7 +162,7 @@
  highest_farming_desc:"农业实现区域专业化生产，农产品加工和物流发达，农民收入大幅提高。"
 
  social_development:"社会现代化"
- social_development_modifier_tooltip:"------------\n£development 社会现代化：[?social_development_var|+1%]\n£development 月度社会现代化进程：[?modifier@social_development_monthly|=+1%]"
+ social_development_modifier_tooltip:"------------\n£development 社会现代化阶段进度：[?social_development_var|0]%\n£development 每月现代化进程：\n£development   持续国策：[?social_development_monthly|+1]%\n£development   民族精神与顾问：[?social_development_bonus|+1]%\n£development   月度合计：[?social_development_monthly_total|+1]%\n£development 进度满101%自动晋升下一等级（不可手动切换）"
  lower_social:"宗族自治社会"
  lower_social_desc:"国家权力仅止于县城，乡村由士绅和宗族长老依照习惯法管理。"
  low_social:"国家权力下沉"
@@ -174,7 +177,7 @@
  highest_social_desc:"社会具备高度的动员能力和自我管理能力，基层治理实现现代化。"
 
  industrial_development:"工业现代化"
- industrial_development_modifier_tooltip:"------------\n£development 工业现代化：[?industrial_development_var|+1%]\n£development 月度工业现代化进程：[?modifier@industrial_development_monthly|=+1%]"
+ industrial_development_modifier_tooltip:"------------\n£development 工业现代化阶段进度：[?industrial_development_var|0]%\n£development 每月现代化进程：\n£development   持续国策：[?industrial_development_monthly|+1]%\n£development   民族精神与顾问：[?industrial_development_bonus|+1]%\n£development   月度合计：[?industrial_development_monthly_total|+1]%\n£development 进度满101%自动晋升下一等级（不可手动切换）"
  lower_industry:"手工业与作坊"
  lower_industry_desc:"工业生产依赖人力、水力，产品以农产品加工和简单消费品为主。"
  low_industry:"初步工业化"
@@ -189,7 +192,7 @@
  highest_industry_desc:"能够自主生产精密机床、仪器仪表和高端合金，工业产能位居世界前列。"
 
  military_development:"军事现代化"
- military_development_modifier_tooltip:"------------\n£development 军事现代化：[?military_development_var|+1%].\n£development 月度军事现代化进程：[?modifier@military_development_monthly|=+1%]"
+ military_development_modifier_tooltip:"------------\n£development 军事现代化阶段进度：[?military_development_var|0]%\n£development 每月现代化进程：\n£development   持续国策：[?military_development_monthly|+1]%\n£development   民族精神与顾问：[?military_development_bonus|+1]%\n£development   月度合计：[?military_development_monthly_total|+1]%\n£development 进度满101%自动晋升下一等级（不可手动切换）"
  lower_military:"私人军阀武装"
  lower_military_desc:"军队效忠于个人，兵源靠抓丁，装备万国造，缺乏统一训练。"
  low_military:"国家化改造"
@@ -204,7 +207,7 @@
  highest_military_desc:"建立完善的国防动员体系和后勤保障体系，具备在本土进行全维作战并投射力量的能力。"
 
  medical_development:"医疗现代化"
- medical_development_modifier_tooltip:"------------\n£development 医疗现代化：[?medical_development_var|+1%]\n£development 月度医疗现代化进程： [?modifier@medical_development_monthly|=+1%]"
+ medical_development_modifier_tooltip:"------------\n£development 医疗现代化阶段进度：[?medical_development_var|0]%\n£development 每月现代化进程：\n£development   持续国策：[?medical_development_monthly|+1]%\n£development   民族精神与顾问：[?medical_development_bonus|+1]%\n£development   月度合计：[?medical_development_monthly_total|+1]%\n£development 进度满101%自动晋升下一等级（不可手动切换）"
  lower_medical:"经验医学体系"
  lower_medical_desc:"基于传统中医和零散西医诊所，主要服务城市富裕阶层。"
  low_medical:"公共卫生启蒙"

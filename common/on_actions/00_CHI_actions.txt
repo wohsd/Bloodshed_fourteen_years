@@ -9,6 +9,37 @@ on_actions = {
                     modifier = Republic_of_China_Military_Academy
                 }
             }
+            # 日本：「明治维新的遗产」（六项现代化每月基础进程+2%，结算见BFY_development_effects）
+            JAP = {
+                add_dynamic_modifier = {
+                    modifier = JAP_meiji_restoration_legacy
+                }
+            }
+            # 非正规军科技：已写入各中国势力 history 文件（set_technology），此处不再授予
+            # 中国现代化：为所有国家初始化现代化变量（阶段/进度/月度进程）
+            every_country = {
+                BFY_development_init = yes
+            }
+            # 现代化进程：按剧本起始日期预设各派系现代化水平（幂等；history 文件亦已调用，此处为动态tag等兜底）
+            every_country = {
+                limit = {
+                    OR = {
+                        BFY_is_chinese_faction = yes
+                        tag = JAP
+                    }
+                }
+                BFY_development_preset_by_date = yes
+            }
+            # 启动后立即重算月度合计（确保日本「明治维新的遗产」等加成首日即显示在法案介绍中）
+            every_country = {
+                limit = {
+                    OR = {
+                        BFY_is_chinese_faction = yes
+                        tag = JAP
+                    }
+                }
+                BFY_development_recalc_monthly = yes
+            }
         }
     }
 
@@ -18,6 +49,33 @@ on_actions = {
             CHI = {
                 # 每日重算（顾问增减、决议扶植后自动更新）
                 CHI_update_authority_faction_effects = yes
+            }
+        }
+    }
+
+    # 每月1号：中国现代化结算（月度进程 → 现代化进度，并处理阶段进退）
+    # on_monthly 对每个国家分别触发（国别作用域），此处直接结算
+    on_monthly = {
+        effect = {
+            BFY_development_monthly_settlement = yes
+            # 内战动态tag补发非正规军科技（幂等）
+            every_country = {
+                limit = {
+                    BFY_is_chinese_faction = yes
+                    NOT = { has_tech = BFY_irregular_infantry_tech }
+                }
+                set_technology = { BFY_irregular_infantry_tech = 1 }
+            }
+            # 剧本开始后才成立的国家（伪满、傀儡政权、根据地等）：按当前日期补设现代化水平（幂等）
+            if = {
+                limit = {
+                    OR = {
+                        BFY_is_chinese_faction = yes
+                        tag = JAP
+                    }
+                    NOT = { has_variable = BFY_dev_preset }
+                }
+                BFY_development_preset_by_date = yes
             }
         }
     }

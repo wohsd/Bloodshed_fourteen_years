@@ -1577,6 +1577,8 @@
  zhenggong_dianfan: "政工典范"
  kuaisu_bushu: "快速部署\n（大师）"
  dixing_kancha: "地形勘察\n（大师）"
+ dageming_yingxiong: "大革命的英雄"
+ dageming_yingxiong_desc: "大革命的英雄：战争支持度 §G+10%§!，陆军经验增长 §G+5%§!。"
  Talented_conductor: "天生领袖"
  Anti_counterinsurgency_expert: "肃反专家"
 
@@ -1602,3 +1604,4 @@ heyingqinxi: "何应钦系"
 heyingqinxi_desc: "该人物在升级后会加强何应钦系的影响力"
 tangenboxi: "汤恩伯系"
 tangenboxi_desc: "该人物在升级后会加强汤恩伯系的影响力"
+ dangwu_guanlizhe: "党务管理者"
