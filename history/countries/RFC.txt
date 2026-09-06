@@ -1,4 +1,4 @@
-capital = 319
+﻿capital = 319
 set_oob = "RFC_1933"
 set_technology = {
 	BFY_irregular_infantry_tech = 1
@@ -23,7 +23,8 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas={
+add_ideas = {
+	Regionalist_warlords
 }
 set_rule = {
 	can_join_factions = no

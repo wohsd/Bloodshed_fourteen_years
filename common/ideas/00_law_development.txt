@@ -20,7 +20,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					education_development_stage < 1
+					check_variable = { var = education_development_stage value = 1 compare = less_than }
 				}
 			}
 			modifier = {
@@ -39,8 +39,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					education_development_stage > 0
-					education_development_stage < 2
+					check_variable = { var = education_development_stage value = 0 compare = greater_than }
+					check_variable = { var = education_development_stage value = 2 compare = less_than }
 				}
 			}
 			modifier = {
@@ -58,8 +58,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					education_development_stage > 1
-					education_development_stage < 3
+					check_variable = { var = education_development_stage value = 1 compare = greater_than }
+					check_variable = { var = education_development_stage value = 3 compare = less_than }
 				}
 			}
 			modifier = {
@@ -77,8 +77,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					education_development_stage > 2
-					education_development_stage < 4
+					check_variable = { var = education_development_stage value = 2 compare = greater_than }
+					check_variable = { var = education_development_stage value = 4 compare = less_than }
 				}
 			}
 			modifier = {
@@ -95,8 +95,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					education_development_stage > 3
-					education_development_stage < 5
+					check_variable = { var = education_development_stage value = 3 compare = greater_than }
+					check_variable = { var = education_development_stage value = 5 compare = less_than }
 				}
 			}
 			modifier = {
@@ -114,7 +114,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					education_development_stage > 4
+					check_variable = { var = education_development_stage value = 4 compare = greater_than }
 				}
 			}
 			modifier = {
@@ -139,7 +139,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					farming_development_stage < 1
+					check_variable = { var = farming_development_stage value = 1 compare = less_than }
 				}
 			}
 			modifier = {
@@ -161,8 +161,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					farming_development_stage > 0
-					farming_development_stage < 2
+					check_variable = { var = farming_development_stage value = 0 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 2 compare = less_than }
 				}
 			}
 			modifier = {
@@ -183,8 +183,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					farming_development_stage > 1
-					farming_development_stage < 3
+					check_variable = { var = farming_development_stage value = 1 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 3 compare = less_than }
 				}
 			}
 			modifier = {
@@ -201,8 +201,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					farming_development_stage > 2
-					farming_development_stage < 4
+					check_variable = { var = farming_development_stage value = 2 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 4 compare = less_than }
 				}
 			}
 			modifier = {
@@ -222,8 +222,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					farming_development_stage > 3
-					farming_development_stage < 5
+					check_variable = { var = farming_development_stage value = 3 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 5 compare = less_than }
 				}
 			}
 			modifier = {
@@ -244,7 +244,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					farming_development_stage > 4
+					check_variable = { var = farming_development_stage value = 4 compare = greater_than }
 				}
 			}
 			modifier = {
@@ -269,7 +269,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					social_development_stage < 1
+					check_variable = { var = social_development_stage value = 1 compare = less_than }
 				}
 			}
 			modifier = {
@@ -290,8 +290,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					social_development_stage > 0
-					social_development_stage < 2
+					check_variable = { var = social_development_stage value = 0 compare = greater_than }
+					check_variable = { var = social_development_stage value = 2 compare = less_than }
 				}
 			}
 			modifier = {
@@ -311,8 +311,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					social_development_stage > 1
-					social_development_stage < 3
+					check_variable = { var = social_development_stage value = 1 compare = greater_than }
+					check_variable = { var = social_development_stage value = 3 compare = less_than }
 				}
 			}
 			modifier = {
@@ -331,8 +331,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					social_development_stage > 2
-					social_development_stage < 4
+					check_variable = { var = social_development_stage value = 2 compare = greater_than }
+					check_variable = { var = social_development_stage value = 4 compare = less_than }
 				}
 			}
 			modifier = {
@@ -350,8 +350,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					social_development_stage > 3
-					social_development_stage < 5
+					check_variable = { var = social_development_stage value = 3 compare = greater_than }
+					check_variable = { var = social_development_stage value = 5 compare = less_than }
 				}
 			}
 			modifier = {
@@ -371,7 +371,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					social_development_stage > 4
+					check_variable = { var = social_development_stage value = 4 compare = greater_than }
 				}
 			}
 			modifier = {
@@ -395,7 +395,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					industrial_development_stage < 1
+					check_variable = { var = industrial_development_stage value = 1 compare = less_than }
 				}
 			}
 			modifier = {
@@ -421,8 +421,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					industrial_development_stage > 0
-					industrial_development_stage < 2
+					check_variable = { var = industrial_development_stage value = 0 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 2 compare = less_than }
 				}
 			}
 			modifier = {
@@ -447,8 +447,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					industrial_development_stage > 1
-					industrial_development_stage < 3
+					check_variable = { var = industrial_development_stage value = 1 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 3 compare = less_than }
 				}
 			}
 			modifier = {
@@ -473,8 +473,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					industrial_development_stage > 2
-					industrial_development_stage < 4
+					check_variable = { var = industrial_development_stage value = 2 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 4 compare = less_than }
 				}
 			}
 			modifier = {
@@ -491,8 +491,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					industrial_development_stage > 3
-					industrial_development_stage < 5
+					check_variable = { var = industrial_development_stage value = 3 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 5 compare = less_than }
 				}
 			}
 			modifier = {
@@ -517,7 +517,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					industrial_development_stage > 4
+					check_variable = { var = industrial_development_stage value = 4 compare = greater_than }
 				}
 			}
 			modifier = {
@@ -546,7 +546,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					military_development_stage < 1
+					check_variable = { var = military_development_stage value = 1 compare = less_than }
 				}
 			}
 			modifier = {
@@ -573,8 +573,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					military_development_stage > 0
-					military_development_stage < 2
+					check_variable = { var = military_development_stage value = 0 compare = greater_than }
+					check_variable = { var = military_development_stage value = 2 compare = less_than }
 				}
 			}
 			modifier = {
@@ -600,8 +600,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					military_development_stage > 1
-					military_development_stage < 3
+					check_variable = { var = military_development_stage value = 1 compare = greater_than }
+					check_variable = { var = military_development_stage value = 3 compare = less_than }
 				}
 			}
 			modifier = {
@@ -619,8 +619,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					military_development_stage > 2
-					military_development_stage < 4
+					check_variable = { var = military_development_stage value = 2 compare = greater_than }
+					check_variable = { var = military_development_stage value = 4 compare = less_than }
 				}
 			}
 			modifier = {
@@ -640,8 +640,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					military_development_stage > 3
-					military_development_stage < 5
+					check_variable = { var = military_development_stage value = 3 compare = greater_than }
+					check_variable = { var = military_development_stage value = 5 compare = less_than }
 				}
 			}
 			modifier = {
@@ -671,7 +671,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					military_development_stage > 4
+					check_variable = { var = military_development_stage value = 4 compare = greater_than }
 				}
 			}
 			modifier = {
@@ -705,7 +705,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					medical_development_stage < 1
+					check_variable = { var = medical_development_stage value = 1 compare = less_than }
 				}
 			}
 			modifier = {
@@ -727,8 +727,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					medical_development_stage > 0
-					medical_development_stage < 2
+					check_variable = { var = medical_development_stage value = 0 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 2 compare = less_than }
 				}
 			}
 			modifier = {
@@ -749,8 +749,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					medical_development_stage > 1
-					medical_development_stage < 3
+					check_variable = { var = medical_development_stage value = 1 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 3 compare = less_than }
 				}
 			}
 			modifier = {
@@ -769,8 +769,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					medical_development_stage > 2
-					medical_development_stage < 4
+					check_variable = { var = medical_development_stage value = 2 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 4 compare = less_than }
 				}
 			}
 			modifier = {
@@ -788,8 +788,8 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					medical_development_stage > 3
-					medical_development_stage < 5
+					check_variable = { var = medical_development_stage value = 3 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 5 compare = less_than }
 				}
 			}
 			modifier = {
@@ -810,7 +810,7 @@ ideas = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = development_auto_progress_tt
-					medical_development_stage > 4
+					check_variable = { var = medical_development_stage value = 4 compare = greater_than }
 				}
 			}
 			modifier = {

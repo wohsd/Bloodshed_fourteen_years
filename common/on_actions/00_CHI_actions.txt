@@ -40,6 +40,10 @@ on_actions = {
                 }
                 BFY_development_recalc_monthly = yes
             }
+            # 开局自愈：所有国家按当前阶段挂上对应现代化法案（add_ideas 同法案为无操作）
+            every_country = {
+                BFY_development_swap_all = yes
+            }
         }
     }
 
@@ -49,6 +53,12 @@ on_actions = {
             CHI = {
                 # 每日重算（顾问增减、决议扶植后自动更新）
                 CHI_update_authority_faction_effects = yes
+            }
+        }
+        # 现代化每日收益：经验→军事、政治点数→社会、工厂→工业（所有国家）
+        effect = {
+            every_country = {
+                BFY_development_daily_gains = yes
             }
         }
     }

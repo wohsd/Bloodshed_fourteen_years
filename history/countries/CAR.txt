@@ -44,6 +44,7 @@ add_equipment_to_stockpile = {
 }
 add_ideas = {
 	Armies_from_world
+	Regionalist_warlords
 }
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
 
