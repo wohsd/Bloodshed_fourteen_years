@@ -1,0 +1,19 @@
+# ============================================================
+# 临委会（RFC）起义动态修正变量初始化
+# 在「第三路线」国策完成（起义）时调用，幂等
+# 初始效果：每日陆军经验 -0.1、每日政治点数 -0.1、组织度恢复 -4%
+# 其余军事修正变量归零（待后续军事国策追加）
+# ============================================================
+RFC_init_uprising_modifier = {
+	set_variable = { RFC_pcq_exp = -0.1 }
+	set_variable = { RFC_pcq_pp = -0.1 }
+	set_variable = { RFC_army_morale_factor = -0.04 }
+	set_variable = { RFC_supply_consumption_factor = 0 }
+	set_variable = { RFC_army_org_factor = 0 }
+	set_variable = { RFC_army_attack_factor = 0 }
+	set_variable = { RFC_army_defence_factor = 0 }
+	set_variable = { RFC_max_dig_in_factor = 0 }
+	set_variable = { RFC_dig_in_speed_factor = 0 }
+	set_variable = { RFC_recon_factor = 0 }
+	set_variable = { RFC_recon_factor_while_entrenched = 0 }
+}

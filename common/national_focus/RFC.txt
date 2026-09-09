@@ -20,8 +20,15 @@ focus_tree = {
 		cancel_if_invalid = yes
 		completion_reward = {
 			add_political_power = 50
+			RFC_init_uprising_modifier = yes
 			add_dynamic_modifier = {
 				modifier = Provisional_Committee_Uprising
+			}
+			# 隐藏：删除随省份转移继承自民国（CHI）的甲/乙/丙种师编制及其部队
+			hidden_effect = {
+				delete_unit_template_and_units = { division_template = "国民革命军甲种师" }
+				delete_unit_template_and_units = { division_template = "国民革命军乙种师" }
+				delete_unit_template_and_units = { division_template = "国民革命军丙种师" }
 			}
 			country_event = { id = RFC_country.3 days = 3 }
 		}
@@ -38,11 +45,27 @@ focus_tree = {
 			focus = The_Third_Road
 		}
 		available = {
-			NOT = { CHI = { has_country_flag = RFC_DengYanDa1 } }
+			custom_trigger_tooltip = {
+				tooltip = RFC_deng_yanda_alive_tt
+				NOT = { CHI = { has_country_flag = RFC_DengYanDa1 } }
+			}
 		}
 		completion_reward = {
 			add_stability = 0.02
 			add_war_support = 0.02
+			custom_effect_tooltip = RFC_provisional_gov_reward_tt
+			# 提升一级社会现代化（复用现代化系统升阶逻辑：换法案 + 升级事件）
+			if = {
+				limit = { check_variable = { var = social_development_stage value = 5 compare = less_than } }
+				add_to_variable = { social_development_stage = 1 }
+				set_variable = { social_development_var = 0 }
+				BFY_development_swap_social = yes
+				set_variable = { BFY_disp_social = social_development_stage }
+				add_to_variable = { BFY_disp_social = 1 }
+				country_event = { id = BFY_dev_event.5 hours = 6 }
+			}
+			# 临委会起义修正：每日政治点数 +0.05
+			add_to_variable = { RFC_pcq_pp = 0.05 }
 			country_event = { id = RFC_country.4 }
 		}
 		relative_position_id = The_Third_Road
@@ -60,6 +83,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Establish_a_provisional_government
+		}
+		completion_reward = {
+			add_dynamic_modifier = { modifier = RFC_professional_army }
+			add_dynamic_modifier = { modifier = RFC_high_military_cost }
 		}
 		relative_position_id = Establish_a_provisional_government
 	}
@@ -121,6 +148,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Establish_a_provisional_government
+		}
+		completion_reward = {
+			add_dynamic_modifier = { modifier = RFC_army_civilian_unity }
+			add_dynamic_modifier = { modifier = RFC_undertrained_army }
 		}
 		relative_position_id = Establish_a_provisional_government
 	}
@@ -193,6 +224,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
+			custom_effect_tooltip = RFC_political_dept_reward_tt
+			# 临委会起义修正：每日政治点数 +0.05、组织度恢复 +4%
+			add_to_variable = { RFC_pcq_pp = 0.05 }
+			add_to_variable = { RFC_army_morale_factor = 0.04 }
+			# 若已雇佣郭沫若为政治顾问：政治部重建效果翻倍，并暗中提升共产主义支持度
+			if = {
+				limit = { RFC_GuoMoRuo = { is_hired_as_advisor = yes } }
+				add_to_variable = { RFC_pcq_pp = 0.05 }
+				add_to_variable = { RFC_army_morale_factor = 0.04 }
+				add_popularity = { ideology = communism popularity = 0.05 }
+				add_stability = 0.01
+			}
 		}
 		relative_position_id = Establish_a_provisional_government
 	}

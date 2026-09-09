@@ -99,6 +99,8 @@ country_event = {
 		is_triggered_only = yes
 		option = {
 			name = RFC_country.4.a
+			# 三位默默无闻的地下工作者在护送途中献出了生命
+			add_manpower = -3
 			hidden_effect = {
 				country_event = { id = RFC_country.5 days = 16 random = 3 }
 			}

@@ -2373,3 +2373,8 @@
  sp_tag_nuclear_power_speed_factor_tt: " $sp_tag_nuclear_power_speed_factor$：$RIGHT|+=%1$"
  sp_tag_radar_speed_factor: "雷达专项计划速度"
  sp_tag_radar_speed_factor_tt: " $sp_tag_radar_speed_factor$：$RIGHT|+=%1$"
+# === RFC 深入群众/精兵强将 动态修正 ===
+RFC_army_civilian_unity: "军民团结"
+RFC_undertrained_army: "军队训练不足"
+RFC_professional_army: "职业军队"
+RFC_high_military_cost: "高昂的军费"
