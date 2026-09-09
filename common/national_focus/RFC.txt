@@ -20,9 +20,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 		completion_reward = {
 			add_political_power = 50
-			add_dynamic_modifiers = {
+			add_dynamic_modifier = {
 				modifier = Provisional_Committee_Uprising
 			}
+			country_event = { id = RFC_country.3 days = 3 }
 		}
 	}
 	focus = {
@@ -36,9 +37,13 @@ focus_tree = {
 		prerequisite = {
 			focus = The_Third_Road
 		}
+		available = {
+			NOT = { CHI = { has_country_flag = RFC_DengYanDa1 } }
+		}
 		completion_reward = {
 			add_stability = 0.02
 			add_war_support = 0.02
+			country_event = { id = RFC_country.4 }
 		}
 		relative_position_id = The_Third_Road
 	}

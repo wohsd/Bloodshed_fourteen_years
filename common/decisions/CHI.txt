@@ -1287,32 +1287,93 @@ CHI_Purging_party_category = {
 		fire_only_once = yes
 		is_good = no
 		timeout_effect = {
+			# 互斥：若「国民党左派起义」决议已触发过起义，则跳过（防止重复 load_oob）
+			if = {
+				limit = { NOT = { has_country_flag = KMT_left_uprising_done } }
+				set_country_flag = KMT_left_uprising_done
+				news_event = RFC_NEW.1
+				random_unit_leader = {
+						limit = { is_character = RFC_HuangQiXiang }
+						set_nationality = RFC
+
+				}
+				RFC = {
+				hidden_effect = {
+				# 第一次起义：中国国民党临时行动委员会——民主派执政（邓演达）
+				set_politics = { ruling_party = democratic }
+				set_popularities = {
+					democratic = 30
+					communism = 20
+					neutrality = 50
+				}
+			    #load_focus_tree = RFC
+			    set_rule = {
+	                    can_not_declare_war = no
+	                }
+				 transfer_state = 603
+				 if = {
+                                                limit = { NOT = { has_dynamic_modifier = { modifier = Provisional_Committee_Uprising } } }
+                                                add_dynamic_modifier = { modifier = Provisional_Committee_Uprising }
+                                        }
+					transfer_state = 292
+					transfer_state = 281
+					add_state_core = 603
+					add_state_core = 292
+					add_state_core = 281
+				}
+					set_capital = {
+						state = 281
+					}
+					load_oob = "RFC_1931"
+				}
+			}
+		}
+	}
+
+	# 国民党左派起义：点击后立即触发（无需等待任务超时）
+	KMT_left_uprising = {
+		icon = generic_civil_support
+
+		visible = {
+			tag = CHI
+			NOT = { has_country_flag = KMT_left_uprising_done }
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			# 互斥标记：防止与「起义进行中」任务线重复触发
+			set_country_flag = KMT_left_uprising_done
+			# 新闻弹窗 → 联动 RFC_country.1（RFC 宣战 + 玩家切换至左派政权）
 			news_event = RFC_NEW.1
-            random_unit_leader = {
-					limit = { is_character = RFC_HuangQiXiang }
-					set_nationality = RFC
-				
+			random_unit_leader = {
+				limit = { is_character = RFC_HuangQiXiang }
+				set_nationality = RFC
 			}
-            RFC = {
-			hidden_effect = {
-			# 第一次起义：中国国民党临时行动委员会——民主派执政（邓演达）
-			set_politics = { ruling_party = democratic }
-			set_popularities = {
-				democratic = 30
-				communism = 20
-				neutrality = 50
-			}
-		    #load_focus_tree = RFC
-		    set_rule = {
-                    can_not_declare_war = no
-                }
-			transfer_state = 603
-				transfer_state = 292
-				transfer_state = 281
-				add_state_core = 603
-				add_state_core = 292
-				add_state_core = 281
-			}
+			RFC = {
+				hidden_effect = {
+					# 国民党左派起义：中国国民党临时行动委员会——民主派执政（邓演达）
+					set_politics = { ruling_party = democratic }
+					set_popularities = {
+						democratic = 30
+						communism = 20
+						neutrality = 50
+					}
+					set_rule = {
+						can_not_declare_war = no
+					}
+					 transfer_state = 603
+					 if = {
+                                                limit = { NOT = { has_dynamic_modifier = { modifier = Provisional_Committee_Uprising } } }
+                                                add_dynamic_modifier = { modifier = Provisional_Committee_Uprising }
+                                        }
+					transfer_state = 292
+					transfer_state = 281
+					add_state_core = 603
+					add_state_core = 292
+					add_state_core = 281
+				}
 				set_capital = {
 					state = 281
 				}

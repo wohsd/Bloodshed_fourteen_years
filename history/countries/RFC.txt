@@ -1,4 +1,4 @@
-﻿capital = 319
+capital = 319
 set_oob = "RFC_1933"
 set_technology = {
 	BFY_irregular_infantry_tech = 1
@@ -12,6 +12,16 @@ set_technology = {
 }
 
 recruit_character = RFC_DengYanDa
+recruit_character = RFC_GuoGuanJie
+recruit_character = RFC_PengZeMin
+recruit_character = RFC_GaoYuHan
+recruit_character = RFC_TanPingShan
+recruit_character = RFC_ZhangBoJun
+recruit_character = RFC_GuoMoRuo
+recruit_character = RFC_JiFang
+recruit_character = RFC_QiuXueXun
+recruit_character = RFC_HeZiJian
+recruit_character = RFC_ZhuRunShan
 set_popularities = {
 	democratic = 50
 	neutrality = 25

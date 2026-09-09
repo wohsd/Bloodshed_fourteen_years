@@ -1,4 +1,4 @@
-﻿add_namespace = RFC_NEW
+add_namespace = RFC_NEW
 add_namespace = RFC_country
 news_event = {
 	id = RFC_NEW.1
@@ -67,3 +67,62 @@ country_event = {
 		name = RFC_country.2.b
 	}
 }
+
+	# ============================================================
+	# 郭沫若归国事件链（架空）
+	# 事件1：天涯孤臣（The_Third_Road完成后触发，郭沫若在日本得知九一八与邓演达起义）
+	# 事件2：杨先生到了！（组建临时政府完成后触发，上海临委会接到来自日本的杨先生）
+	# 事件3：郭沫若回国！（事件2后16天触发，历经磨难抵达武昌，与邓演达重逢）
+	# ============================================================
+
+	# 事件1：天涯孤臣
+	country_event = {
+		id = RFC_country.3
+		title = RFC_country.3.t
+		desc = RFC_country.3.d
+		#picture =
+		fire_only_once = yes
+		is_triggered_only = yes
+		option = {
+			name = RFC_country.3.a
+			set_country_flag = RFC_guomoruo_invited
+		}
+	}
+
+	# 事件2：杨先生到了！
+	country_event = {
+		id = RFC_country.4
+		title = RFC_country.4.t
+		desc = RFC_country.4.d
+		#picture =
+		fire_only_once = yes
+		is_triggered_only = yes
+		option = {
+			name = RFC_country.4.a
+			hidden_effect = {
+				country_event = { id = RFC_country.5 days = 16 random = 3 }
+			}
+		}
+	}
+
+	# 事件3：郭沫若回国！
+	country_event = {
+		id = RFC_country.5
+		title = RFC_country.5.t
+		desc = RFC_country.5.d
+		#picture =
+		fire_only_once = yes
+		is_triggered_only = yes
+		option = {
+			name = RFC_country.5.a
+			set_country_flag = RFC_guomoruo_returned
+			add_political_power = 25
+			add_stability = 0.02
+		}
+		option = {
+			name = RFC_country.5.b
+			set_country_flag = RFC_guomoruo_returned
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}

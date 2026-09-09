@@ -17,7 +17,7 @@ characters={
 		}
 		country_leader={
 			desc = RFC_DengYanDa_leader_desc
-			ideology=democratic
+			ideology=socialism
 			traits={
 				dageming_yingxiong
 			}
@@ -132,6 +132,233 @@ characters={
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 3
+		}
+	}
+	RFC_GuoGuanJie={
+		name=RFC_GuoGuanJie
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_GuoGuanJie.png"
+			}
+		}
+		advisor={
+			desc = RFC_GuoGuanJie_desc
+			slot = political_advisor
+			idea_token = RFC_GuoGuanJie
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RFC_PengZeMin={
+		name=RFC_PengZeMin
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_PengZeMin.png"
+			}
+		}
+		advisor={
+			desc = RFC_PengZeMin_desc
+			slot = political_advisor
+			idea_token = RFC_PengZeMin
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RFC_GaoYuHan={
+		name=RFC_GaoYuHan
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_GaoYuHan.png"
+			}
+		}
+		advisor={
+			desc = RFC_GaoYuHan_desc
+			slot = political_advisor
+			idea_token = RFC_GaoYuHan
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RFC_TanPingShan={
+		name=RFC_TanPingShan
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_TanPingShan.png"
+			}
+		}
+		advisor={
+			desc = RFC_TanPingShan_desc
+			slot = political_advisor
+			idea_token = RFC_TanPingShan
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RFC_ZhangBoJun={
+		name=RFC_ZhangBoJun
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_ZhangBoJun.png"
+			}
+		}
+		advisor={
+			desc = RFC_ZhangBoJun_desc
+			slot = political_advisor
+			idea_token = RFC_ZhangBoJun
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RFC_GuoMoRuo={
+		name=RFC_GuoMoRuo
+		portraits={
+			civilian={
+				large="gfx/leaders/RFC/RFC_GuoMoRuo.png"
+			}
+		}
+		advisor={
+			desc = RFC_GuoMoRuo_desc
+			slot = political_advisor
+			idea_token = RFC_GuoMoRuo
+			allowed = {
+				original_tag = RFC
+			}
+			available = {
+
+			\tcustom_trigger_tooltip = {
+				\ttooltip = RFC_guomoruo_returned_tt
+				\thas_country_flag = RFC_guomoruo_returned
+				}
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RFC_JiFang={
+		name=RFC_JiFang
+		portraits={
+			army={
+				large="gfx/leaders/RFC/RFC_JiFang.png"
+			}
+		}
+		corps_commander = {
+			traits={
+				Leftist_Kuomintang
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	RFC_QiuXueXun={
+		name=RFC_QiuXueXun
+		portraits={
+			army={
+				large="gfx/leaders/RFC/RFC_QiuXueXun.png"
+			}
+		}
+		corps_commander = {
+			traits={
+				Leftist_Kuomintang
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	RFC_HeZiJian={
+		name=RFC_HeZiJian
+		portraits={
+			army={
+				large="gfx/leaders/RFC/RFC_HeZiJian.png"
+			}
+		}
+		corps_commander = {
+			traits={
+				Leftist_Kuomintang
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	RFC_ZhuRunShan={
+		name=RFC_ZhuRunShan
+		portraits={
+			army={
+				large="gfx/leaders/RFC/RFC_ZhuRunShan.png"
+			}
+		}
+		corps_commander = {
+			traits={
+				Leftist_Kuomintang
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 }
