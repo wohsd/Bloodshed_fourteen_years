@@ -132,13 +132,15 @@ China_Soviet_Road_category= {
 
 
 
-New_Military_Service_Law_category= {
-	icon = generic_propaganda
-	picture = GFX_New_Military_Service_Law_category 
-	visible = { 
-		tag=CHI
-		#has_completed_focus = CHIFocus_9
-	} 
-	
+
+LA_authority_category = {
+	icon = power_struggle
+	# 置顶：高于黄埔派系(146)
+	priority = 147
+	scripted_gui = la_authority_gui
+	visible = {
+		tag = CHI
+		has_dynamic_modifier = { modifier = Leader_Authority }
+	}
 	visible_when_empty = yes
 }

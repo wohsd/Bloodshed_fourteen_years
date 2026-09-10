@@ -1,0 +1,8 @@
+# BFY：日本动态修正
+# 「明治维新的遗产」：六项现代化每月各 +2% 基础进程
+# 实际施加逻辑见 common/scripted_effects/BFY_development_effects.txt（每月结算时按 has_dynamic_modifier 判定）
+JAP_meiji_restoration_legacy = {
+	enable = { always = yes }
+	icon = GFX_idea_JAP_modern_ashigaru
+	custom_modifier_tooltip = JAP_meiji_restoration_legacy_tt
+}

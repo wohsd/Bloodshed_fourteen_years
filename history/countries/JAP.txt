@@ -1,4 +1,4 @@
-﻿capital = 121 
+capital = 121 
 set_naval_oob = "JAP_1936_naval"
 1931.1.1={
    set_oob = "JAP_1931"
@@ -853,3 +853,6 @@ puppet = XIA
 	}
 	puppet = JDF
 }
+
+# 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）
+BFY_development_preset_by_date = yes

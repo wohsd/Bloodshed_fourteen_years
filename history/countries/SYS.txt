@@ -1,8 +1,9 @@
-﻿capital = 119 
+capital = 119 
 
 oob = "SYS_1933"
 
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -29,3 +30,10 @@ set_politics = {
 	retire_character = SYS_ShiYouSan
 	set_cosmetic_tag = SYS_1933
 }
+
+add_ideas = {
+	Regionalist_warlords
+}
+
+# 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）
+BFY_development_preset_by_date = yes

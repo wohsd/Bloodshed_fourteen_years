@@ -1,28 +1,67 @@
 Political_Department = {
-	
-	enable = { always = yes }
 
-	icon = GFX_idea_Political_Department
+        enable = { always = yes }
 
-	political_power_gain=RFC_political_power_gain     #每日获得得到政治点数
-	experience_loss_factor = RFC_experience_loss_factor #有经验的士兵损失
-	terrain_penalty_reduction = RFC_terrain_penalty_reduction #地形适应
+        icon = GFX_idea_Political_Department
+
+        political_power_gain=RFC_political_power_gain     #每日获得得到政治点数
+        experience_loss_factor = RFC_experience_loss_factor #有经验的士兵损失
+        terrain_penalty_reduction = RFC_terrain_penalty_reduction #地形适应
 
 }
 
+# 临委会起义：初始为负面（新生政权的阵痛），随国策推进逐步转好
+# 初始：每日陆军经验-0.1、每日政治点数-0.1、组织度恢复-4%
+# 组建临时政府：每日政治点数 +0.05；重设政治部：每日政治点数 +0.05、组织度恢复 +4%（雇郭沫若则翻倍）
 Provisional_Committee_Uprising = {
-	
-	enable = { always = yes }
 
-	icon = GFX_idea_Provisional_Committee_Uprising
+        enable = { always = yes }
 
-	supply_consumption_factor= RFC_supply_consumption_factor   #补给使用
-	army_org_factor = RFC_army_org_factor #陆军组织度
-	army_morale_factor = RFC_army_morale_factor #组织度恢复
-	army_attack_factor = RFC_army_attack_factor #陆军攻击
-	army_defence_factor = RFC_army_defence_factor #陆军防御
-	max_dig_in_factor = RFC_max_dig_in_factor  #堑壕上线
-	dig_in_speed_factor = RFC_dig_in_speed_factor #堑壕速度
-	recon_factor = RFC_recon_factor #侦查 
-	recon_factor_while_entrenched = RFC_recon_factor_while_entrenched #堑壕侦查
+        icon = GFX_idea_Provisional_Committee_Uprising
+
+        experience_gain_army = RFC_pcq_exp            #每日陆军经验获取
+        political_power_gain = RFC_pcq_pp             #每日政治点数获取
+        army_morale_factor = RFC_army_morale_factor   #组织度恢复
+        supply_consumption_factor = RFC_supply_consumption_factor   #补给使用
+        army_org_factor = RFC_army_org_factor         #陆军组织度
+        army_attack_factor = RFC_army_attack_factor   #陆军攻击
+        army_defence_factor = RFC_army_defence_factor #陆军防御
+        max_dig_in_factor = RFC_max_dig_in_factor     #堑壕上限
+        dig_in_speed_factor = RFC_dig_in_speed_factor #堑壕速度
+        recon_factor = RFC_recon_factor               #侦察
+        recon_factor_while_entrenched = RFC_recon_factor_while_entrenched #堑壕侦察
+}
+
+# 「深入群众」国策：军民团结（适役人口+10%，陆军组织度-8%）
+RFC_army_civilian_unity = {
+
+        enable = { always = yes }
+
+        recruitable_population_factor = 0.1            #适役人口修正
+        army_org_factor = -0.08                        #陆军组织度
+}
+
+# 「深入群众」国策：军队训练不足（陆军组织度-8%）
+RFC_undertrained_army = {
+
+        enable = { always = yes }
+
+        army_org_factor = -0.08                        #陆军组织度
+}
+
+# 「精兵强将」国策：职业军队（特种部队上限+6，陆军训练时间+20%）
+RFC_professional_army = {
+
+        enable = { always = yes }
+
+        special_forces_cap_flat = 6                    #特种部队上限（平铺+6）
+        training_time_army_factor = 0.2                #陆军师训练时间
+}
+
+# 「精兵强将」国策：高昂的军费（生活消费品系数+5%）
+RFC_high_military_cost = {
+
+        enable = { always = yes }
+
+        consumer_goods_expected_value = 0.05           #生活消费品系数
 }

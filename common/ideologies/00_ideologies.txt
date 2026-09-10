@@ -15,6 +15,10 @@ ideologies = {
 
 			populism = {
 			}
+
+			# 国民党临时行动委员会（邓演达第三党）——革命三民主义
+			revolutionary_sanminism = {
+			}
 		}
 
 		dynamic_faction_names = {

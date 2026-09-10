@@ -55,3 +55,13 @@
  PRC_communism_party_long: "中国共产党"
  PRC_neutrality_party: "地区独立人士"
  PRC_neutrality_party_long: "地区独立人士"
+# === RFC 第三党意识形态与政党名 ===
+revolutionary_sanminism: "革命三民主义"
+RFC_democratic_party: "国民党临时行动委员会"
+RFC_democratic_party_long: "中国国民党临时行动委员会"
+RFC_communism_party: "前中国共产党员"
+RFC_communism_party_long: "前中国共产党员"
+RFC_fascism_party: "国民革命军"
+RFC_fascism_party_long: "国民革命军"
+RFC_neutrality_party: "国民党民主派"
+RFC_neutrality_party_long: "国民党民主派"

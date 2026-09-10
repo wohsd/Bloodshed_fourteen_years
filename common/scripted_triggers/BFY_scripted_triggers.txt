@@ -1,0 +1,157 @@
+# BFY：中国势力判定
+# 覆盖 BFY_countries.txt 中除列强外的全部中国势力（含内战动态tag D01-D75）
+# 不含：GER/JAP/SOV/FRA/USA/RAJ/SIA/AFG/HOL/POR/TAN/BHU/NEP/MEG（外国）
+#       PCN（公共租界）、NRC（南京安全区）（非中国势力）
+BFY_is_chinese_faction = {
+	OR = {
+		# 主要势力
+		tag = CHI
+		tag = PRC
+		tag = ROD
+		tag = ROX
+		tag = XZS
+		tag = ROA
+		tag = MCK
+		tag = RFC
+		tag = CAR
+		tag = RON
+		tag = JDW
+		tag = MGJ
+		tag = NAF
+		tag = JDF
+		tag = SJN
+		tag = CEN
+		tag = NFA
+		tag = NAC
+		# 川系
+		tag = ROS
+		tag = ROW
+		tag = ROT
+		tag = RJY
+		tag = RYS
+		tag = RHC
+		tag = RDX
+		tag = NSD
+		# 西南军阀
+		tag = ROC
+		tag = ROY
+		tag = ROG
+		tag = ROH
+		tag = YGC
+		tag = JZZ
+		tag = SOX
+		tag = HZD
+		# 西北军阀
+		tag = ROJ
+		tag = YHC
+		tag = YUL
+		tag = ROQ
+		tag = ROK
+		tag = ROZ
+		tag = MBQ
+		tag = MZY
+		tag = LDC
+		tag = SYS
+		tag = CGZ
+		tag = YWQ
+		tag = MTX
+		# 其他地方势力
+		tag = BTF
+		tag = LZN
+		tag = DOT
+		tag = TOH
+		tag = ZOT
+		tag = HET
+		# 根据地
+		tag = NHA
+		tag = PRH
+		tag = PRQ
+		tag = PRJ
+		tag = NSA
+		tag = PRD
+		tag = PRY
+		tag = JCJ
+		# 抗日武装与伪政权
+		tag = HLJ
+		tag = JLS
+		tag = WDL
+		tag = YPQ
+		tag = XIA
+		# 内战动态tag
+		tag = D01
+		tag = D02
+		tag = D03
+		tag = D04
+		tag = D05
+		tag = D06
+		tag = D07
+		tag = D08
+		tag = D09
+		tag = D10
+		tag = D11
+		tag = D12
+		tag = D13
+		tag = D14
+		tag = D15
+		tag = D16
+		tag = D17
+		tag = D18
+		tag = D19
+		tag = D20
+		tag = D21
+		tag = D22
+		tag = D23
+		tag = D24
+		tag = D25
+		tag = D26
+		tag = D27
+		tag = D28
+		tag = D29
+		tag = D30
+		tag = D31
+		tag = D32
+		tag = D33
+		tag = D34
+		tag = D35
+		tag = D36
+		tag = D37
+		tag = D38
+		tag = D39
+		tag = D40
+		tag = D41
+		tag = D42
+		tag = D43
+		tag = D44
+		tag = D45
+		tag = D46
+		tag = D47
+		tag = D48
+		tag = D49
+		tag = D50
+		tag = D51
+		tag = D52
+		tag = D53
+		tag = D54
+		tag = D55
+		tag = D56
+		tag = D57
+		tag = D58
+		tag = D59
+		tag = D60
+		tag = D61
+		tag = D62
+		tag = D63
+		tag = D64
+		tag = D65
+		tag = D66
+		tag = D67
+		tag = D68
+		tag = D69
+		tag = D70
+		tag = D71
+		tag = D72
+		tag = D73
+		tag = D74
+		tag = D75
+	}
+}

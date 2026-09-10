@@ -161,8 +161,8 @@ leader_traits = {
 		random = no
 		sprite = 14
 
-		army_org_factor = 0.08
-		army_org_regain = 0.08
+		army_org_factor = 0.04
+		army_org_regain = 0.04
 		mass_assault_mastery_gain_factor = 0.15
 
 		ai_will_do = {
@@ -204,4 +204,23 @@ leader_traits = {
 			}
 		}
 	}
+	# 邓演达：大革命的英雄（国家领袖特质）
+	dageming_yingxiong = {
+		random = no
+		sprite = 13
+
+		war_support_factor = 0.10
+		experience_gain_army_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
+
+	dangwu_guanlizhe = {
+		random = no
+		sprite = 13
+
+		neutrality_drift = 0.001
+	}

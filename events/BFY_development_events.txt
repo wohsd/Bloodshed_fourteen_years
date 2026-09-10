@@ -1,0 +1,138 @@
+# ============================================================
+# 现代化进程：等级变化提醒事件（晋级/回退各一个，共12个）
+# 由 BFY_development_stage_check_* 在阶段变化时触发（仅人类玩家弹窗）
+# 1/2 教育  3/4 农业  5/6 社会  7/8 工业  9/10 军事  11/12 医疗
+# ============================================================
+add_namespace = BFY_dev_event
+
+# 教育：晋级
+country_event = {
+	id = BFY_dev_event.1
+	title = BFY_dev_event.1.t
+	desc = BFY_dev_event.1.d
+	picture = GFX_report_event_generic_research_lab
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 教育：回退
+country_event = {
+	id = BFY_dev_event.2
+	title = BFY_dev_event.2.t
+	desc = BFY_dev_event.2.d
+	picture = GFX_report_event_generic_research_lab
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 农业：晋级
+country_event = {
+	id = BFY_dev_event.3
+	title = BFY_dev_event.3.t
+	desc = BFY_dev_event.3.d
+	picture = GFX_report_event_generic_construction_site
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 农业：回退
+country_event = {
+	id = BFY_dev_event.4
+	title = BFY_dev_event.4.t
+	desc = BFY_dev_event.4.d
+	picture = GFX_report_event_generic_construction_site
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 社会：晋级
+country_event = {
+	id = BFY_dev_event.5
+	title = BFY_dev_event.5.t
+	desc = BFY_dev_event.5.d
+	picture = GFX_report_event_generic_politician_speech
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 社会：回退
+country_event = {
+	id = BFY_dev_event.6
+	title = BFY_dev_event.6.t
+	desc = BFY_dev_event.6.d
+	picture = GFX_report_event_generic_politician_speech
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 工业：晋级
+country_event = {
+	id = BFY_dev_event.7
+	title = BFY_dev_event.7.t
+	desc = BFY_dev_event.7.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 工业：回退
+country_event = {
+	id = BFY_dev_event.8
+	title = BFY_dev_event.8.t
+	desc = BFY_dev_event.8.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 军事：晋级
+country_event = {
+	id = BFY_dev_event.9
+	title = BFY_dev_event.9.t
+	desc = BFY_dev_event.9.d
+	picture = GFX_report_event_chinese_army_training
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 军事：回退
+country_event = {
+	id = BFY_dev_event.10
+	title = BFY_dev_event.10.t
+	desc = BFY_dev_event.10.d
+	picture = GFX_report_event_chinese_army_training
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 医疗：晋级
+country_event = {
+	id = BFY_dev_event.11
+	title = BFY_dev_event.11.t
+	desc = BFY_dev_event.11.d
+	picture = GFX_report_event_generic_china
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}
+
+# 医疗：回退
+country_event = {
+	id = BFY_dev_event.12
+	title = BFY_dev_event.12.t
+	desc = BFY_dev_event.12.d
+	picture = GFX_report_event_generic_china
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = { name = BFY_dev_event.ok }
+}

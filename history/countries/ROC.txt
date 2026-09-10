@@ -1,4 +1,4 @@
-﻿capital = 324
+capital = 324
 
 set_oob = "ROC_1931"
 add_manpower=20000
@@ -8,6 +8,7 @@ add_equipment_to_stockpile = {
     producer = CHI
 }
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -45,3 +46,6 @@ declare_war_on = {
 1944.1.1={
 	set_oob = "ROC_1944"
 }
+
+# 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）
+BFY_development_preset_by_date = yes

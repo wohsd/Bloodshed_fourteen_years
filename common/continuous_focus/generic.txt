@@ -1,0 +1,265 @@
+# 持续性国策（整体替换原版 generic.txt）
+# 保留：镇压抵抗（continuous_suppression）
+# 新增：六种“推动XX改革”（对应现代化进程六项，每月1号结算 +1.5% 月度进程）
+#       以及“完善地方机构”（顺从度增长）
+# 注意：六种改革的进程通过 select_effect/cancel_effect 绝对设定月度进程变量，
+#       选择/取消后立即调用 BFY_development_recalc_monthly 重算月度合计，
+#       结算与阶段进退逻辑见 common/scripted_effects/BFY_development_effects.txt
+continuous_focus_palette = {
+	id = generic_focus
+
+	country = {
+		factor = 1
+	}
+
+	default = yes
+	reset_on_civilwar = no
+
+	position = { x = 50 y = 1000 }
+
+	# ========== 原版保留：镇压抵抗 ==========
+	focus = {
+		id = continuous_suppression
+
+		icon = GFX_goal_continuous_suppression
+
+		available = {
+		}
+
+		modifier = {
+			resistance_target = -0.05
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+
+				num_occupied_states < 1
+			}
+		}
+
+		supports_ai_strategy = ai_focus_military_advancements
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+
+	# ========== 推动教育改革 ==========
+	focus = {
+		id = bfy_continuous_education_reform
+
+		icon = GFX_goal_continuous_research
+
+		available = {
+		}
+
+		modifier = {
+			custom_modifier_tooltip = bfy_continuous_education_reform_effect_tt
+		}
+
+		select_effect = {
+			set_variable = { education_development_monthly = 1.5 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		cancel_effect = {
+			set_variable = { education_development_monthly = 0 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+
+	# ========== 推动农业改革 ==========
+	focus = {
+		id = bfy_continuous_farming_reform
+
+		icon = GFX_goal_generic_consumer_goods
+
+		available = {
+		}
+
+		modifier = {
+			custom_modifier_tooltip = bfy_continuous_farming_reform_effect_tt
+		}
+
+		select_effect = {
+			set_variable = { farming_development_monthly = 1.5 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		cancel_effect = {
+			set_variable = { farming_development_monthly = 0 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+
+	# ========== 推动社会改革 ==========
+	focus = {
+		id = bfy_continuous_social_reform
+
+		icon = GFX_goal_continuous_increase_nu
+
+		available = {
+		}
+
+		modifier = {
+			custom_modifier_tooltip = bfy_continuous_social_reform_effect_tt
+		}
+
+		select_effect = {
+			set_variable = { social_development_monthly = 1.5 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		cancel_effect = {
+			set_variable = { social_development_monthly = 0 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+
+	# ========== 推动工业改革 ==========
+	focus = {
+		id = bfy_continuous_industry_reform
+
+		icon = GFX_goal_generic_construct_civ_factory
+
+		available = {
+		}
+
+		modifier = {
+			custom_modifier_tooltip = bfy_continuous_industry_reform_effect_tt
+		}
+
+		select_effect = {
+			set_variable = { industrial_development_monthly = 1.5 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		cancel_effect = {
+			set_variable = { industrial_development_monthly = 0 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+
+	# ========== 推动军事改革 ==========
+	focus = {
+		id = bfy_continuous_military_reform
+
+		icon = GFX_goal_continuous_reduce_training_time
+
+		available = {
+		}
+
+		modifier = {
+			custom_modifier_tooltip = bfy_continuous_military_reform_effect_tt
+		}
+
+		select_effect = {
+			set_variable = { military_development_monthly = 1.5 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		cancel_effect = {
+			set_variable = { military_development_monthly = 0 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		supports_ai_strategy = ai_focus_military_advancements
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+
+	# ========== 推动医疗改革 ==========
+	focus = {
+		id = bfy_continuous_medical_reform
+
+		icon = GFX_goal_continuous_repairments
+
+		available = {
+		}
+
+		modifier = {
+			custom_modifier_tooltip = bfy_continuous_medical_reform_effect_tt
+		}
+
+		select_effect = {
+			set_variable = { medical_development_monthly = 1.5 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		cancel_effect = {
+			set_variable = { medical_development_monthly = 0 }
+			BFY_development_recalc_monthly = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+
+	# ========== 完善地方机构 ==========
+	focus = {
+		id = bfy_continuous_local_institutions
+
+		icon = GFX_goal_continuous_def_against_influence
+
+		available = {
+		}
+
+		# 每日顺从度增长 +0.02%（compliance_gain 每日顺从度增量）
+		modifier = {
+			compliance_gain = 0.0002
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		daily_cost = 1
+
+		available_if_capitulated = yes
+	}
+}

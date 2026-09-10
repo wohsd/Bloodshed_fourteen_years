@@ -1,4 +1,15 @@
 ideas = {
+	# ============================================================
+	# 现代化进程：六项现代化法案
+	# 阶段 stage 0~5 对应 lower/low/medium/high/higher/highest
+	# 定位：
+	#   教育 = 科研速度与人才（research_speed、将领起始等级）
+	#   农业 = 生产力与基础（消费品需求、人口、资源、补给消耗）
+	#   社会 = 组织与动员（稳定度、政治点数、战争支持度）
+	#   工业 = 建设与生产（建造速度、工厂产出、生产效率）
+	#   军事 = 军队质量（组织度、攻防、训练、陆军经验、顾问成本；高阶含空海军）
+	#   医疗 = 伤病与人口（经验损失、疾病率、人口增长）
+	# ============================================================
 	education_development = {
 		law = yes
 		use_list_view = yes
@@ -7,14 +18,17 @@ ideas = {
 			level = 6
 			picture = laws_education_development
 			available = {
-				education_development_var < 100
-		    }
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = education_development_stage value = 1 compare = less_than }
+				}
+			}
 			modifier = {
-				research_speed_factor = -0.25
+				research_speed_factor = -0.20
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		low_education = {
@@ -23,15 +37,18 @@ ideas = {
 			picture = laws_education_development1
 			default = yes
 			available = {
-				education_development_var > 99
-				education_development_var < 200
-		    }
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = education_development_stage value = 0 compare = greater_than }
+					check_variable = { var = education_development_stage value = 2 compare = less_than }
+				}
+			}
 			modifier = {
-				research_speed_factor = -0.15
+				research_speed_factor = -0.10
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		medium_education = {
@@ -39,15 +56,18 @@ ideas = {
 			level = 4
 			picture = laws_education_development2
 			available = {
-				education_development_var > 199
-				education_development_var < 300
-		    }
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = education_development_stage value = 1 compare = greater_than }
+					check_variable = { var = education_development_stage value = 3 compare = less_than }
+				}
+			}
 			modifier = {
 				research_speed_factor = -0.05
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		high_education = {
@@ -55,14 +75,17 @@ ideas = {
 			level = 3
 			picture = laws_education_development3
 			available = {
-				education_development_var > 299
-				education_development_var < 400
-		    }
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = education_development_stage value = 2 compare = greater_than }
+					check_variable = { var = education_development_stage value = 4 compare = less_than }
+				}
+			}
 			modifier = {
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		higher_education = {
@@ -70,15 +93,18 @@ ideas = {
 			level = 2
 			picture = laws_education_development4
 			available = {
-				education_development_var > 399
-				education_development_var < 500
-		    }
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = education_development_stage value = 3 compare = greater_than }
+					check_variable = { var = education_development_stage value = 5 compare = less_than }
+				}
+			}
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.07
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		highest_education = {
@@ -86,17 +112,20 @@ ideas = {
 			level = 1
 			picture = laws_education_development5
 			available = {
-				education_development_var > 499
-		    }
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = education_development_stage value = 4 compare = greater_than }
+				}
+			}
 			modifier = {
-				research_speed_factor = 0.25
-				air_ace_generation_chance_factor = 0.2
-				navy_leader_start_level = 2
-				army_leader_start_level = 2
+				research_speed_factor = 0.15
+				army_leader_start_level = 1
+				navy_leader_start_level = 1
+				air_ace_generation_chance_factor = 0.15
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 	}
@@ -108,17 +137,20 @@ ideas = {
 			level = 6
 			picture = laws_farming_development
 			available = {
-				farming_development_var < 100
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = farming_development_stage value = 1 compare = less_than }
+				}
 			}
 			modifier = {
-				consumer_goods_factor = 0.15
-				MONTHLY_POPULATION = -0.5
-				local_resources_factor = -0.5
-				production_factory_max_efficiency_factor = -0.1
+				consumer_goods_expected_value = 0.12
+				monthly_population = -0.25
+				local_resources_factor = -0.30
+				supply_consumption_factor = 0.10
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		low_farming = {
@@ -127,18 +159,21 @@ ideas = {
 			picture = laws_farming_development1
 			default = yes
 			available = {
-				farming_development_var > 99
-				farming_development_var < 200
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = farming_development_stage value = 0 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 2 compare = less_than }
+				}
 			}
 			modifier = {
-				consumer_goods_factor = 0.1
-				MONTHLY_POPULATION = -0.3
-				local_resources_factor = -0.3
-				production_factory_max_efficiency_factor = -0.05
+				consumer_goods_expected_value = 0.06
+				monthly_population = -0.10
+				local_resources_factor = -0.15
+				supply_consumption_factor = 0.05
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		medium_farming = {
@@ -146,17 +181,17 @@ ideas = {
 			level = 4
 			picture = laws_farming_development2
 			available = {
-				farming_development_var > 199
-				farming_development_var < 300
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = farming_development_stage value = 1 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 3 compare = less_than }
+				}
 			}
 			modifier = {
-				consumer_goods_factor = 0.05
-				MONTHLY_POPULATION = -0.1
-				local_resources_factor = -0.1
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		high_farming = {
@@ -164,17 +199,20 @@ ideas = {
 			level = 3
 			picture = laws_farming_development3
 			available = {
-				farming_development_var > 299
-				farming_development_var < 400
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = farming_development_stage value = 2 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 4 compare = less_than }
+				}
 			}
 			modifier = {
-				MONTHLY_POPULATION = 0.1
-				local_resources_factor = 0.1
-				production_factory_max_efficiency_factor = 0.05
+				monthly_population = 0.05
+				local_resources_factor = 0.08
+				supply_consumption_factor = -0.05
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		higher_farming = {
@@ -182,18 +220,21 @@ ideas = {
 			level = 2
 			picture = laws_farming_development4
 			available = {
-				farming_development_var > 399
-				farming_development_var < 500
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = farming_development_stage value = 3 compare = greater_than }
+					check_variable = { var = farming_development_stage value = 5 compare = less_than }
+				}
 			}
 			modifier = {
-				consumer_goods_factor = -0.05
-				MONTHLY_POPULATION = 0.3
-				local_resources_factor = 0.3
-				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_expected_value = -0.05
+				monthly_population = 0.12
+				local_resources_factor = 0.15
+				supply_consumption_factor = -0.10
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		highest_farming = {
@@ -201,17 +242,20 @@ ideas = {
 			level = 1
 			picture = laws_farming_development5
 			available = {
-				farming_development_var > 499
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = farming_development_stage value = 4 compare = greater_than }
+				}
 			}
 			modifier = {
-				consumer_goods_factor = -0.1
-				MONTHLY_POPULATION = 0.5
-				local_resources_factor = 0.5
-				production_factory_max_efficiency_factor = 0.15
+				consumer_goods_expected_value = -0.10
+				monthly_population = 0.20
+				local_resources_factor = 0.25
+				supply_consumption_factor = -0.15
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 	}
@@ -223,16 +267,19 @@ ideas = {
 			level = 6
 			picture = laws_social_development
 			available = {
-				social_development_var < 100
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = social_development_stage value = 1 compare = less_than }
+				}
 			}
 			modifier = {
-				stability_factor = -0.2
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_infrastructure_factor = -0.05
+				stability_factor = -0.15
+				political_power_factor = -0.15
+				war_support_factor = -0.10
 				custom_modifier_tooltip = social_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		low_social = {
@@ -241,15 +288,20 @@ ideas = {
 			picture = laws_social_development1
 			default = yes
 			available = {
-				social_development_var > 99
-				social_development_var < 200
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = social_development_stage value = 0 compare = greater_than }
+					check_variable = { var = social_development_stage value = 2 compare = less_than }
+				}
 			}
 			modifier = {
-				stability_factor = -0.15
+				stability_factor = -0.10
+				political_power_factor = -0.10
+				war_support_factor = -0.05
 				custom_modifier_tooltip = social_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		medium_social = {
@@ -257,17 +309,19 @@ ideas = {
 			level = 4
 			picture = laws_social_development2
 			available = {
-				social_development_var > 199
-				social_development_var < 300
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = social_development_stage value = 1 compare = greater_than }
+					check_variable = { var = social_development_stage value = 3 compare = less_than }
+				}
 			}
 			modifier = {
-				stability_factor = -0.1
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor =0.05
+				stability_factor = -0.05
+				political_power_factor = -0.05
 				custom_modifier_tooltip = social_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		high_social = {
@@ -275,18 +329,18 @@ ideas = {
 			level = 3
 			picture = laws_social_development3
 			available = {
-				social_development_var > 299
-				social_development_var < 400
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = social_development_stage value = 2 compare = greater_than }
+					check_variable = { var = social_development_stage value = 4 compare = less_than }
+				}
 			}
 			modifier = {
-				stability_factor = -0.05
-				neutrality_drift = -0.05
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor =0.1
+				war_support_factor = 0.03
 				custom_modifier_tooltip = social_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		higher_social = {
@@ -294,17 +348,20 @@ ideas = {
 			level = 2
 			picture = laws_social_development4
 			available = {
-				social_development_var > 399
-				social_development_var < 500
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = social_development_stage value = 3 compare = greater_than }
+					check_variable = { var = social_development_stage value = 5 compare = less_than }
+				}
 			}
 			modifier = {
-				neutrality_drift = -0.10
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_infrastructure_factor =0.15
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				war_support_factor = 0.07
 				custom_modifier_tooltip = social_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		highest_social = {
@@ -312,19 +369,19 @@ ideas = {
 			level = 1
 			picture = laws_social_development5
 			available = {
-				social_development_var > 499
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = social_development_stage value = 4 compare = greater_than }
+				}
 			}
 			modifier = {
-				stability_weekly = 0.01
-				neutrality_drift = -0.15
-				production_speed_industrial_complex_factor = 0.2
-				production_speed_infrastructure_factor =0.2
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.10
+				political_power_factor = 0.10
+				war_support_factor = 0.12
 				custom_modifier_tooltip = social_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 	}
@@ -336,21 +393,24 @@ ideas = {
 			level = 6
 			picture = laws_industry_development
 			available = {
-				industrial_development_var < 100
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = industrial_development_stage value = 1 compare = less_than }
+				}
 			}
 			modifier = {
-				production_speed_rail_way_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
-				production_speed_buildings_factor = -0.2
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
-				production_factory_max_efficiency_factor = -0.2
-				line_change_production_efficiency_factor = -0.2
-				production_factory_efficiency_gain_factor = -0.2
+				production_speed_buildings_factor = -0.20
+				production_speed_infrastructure_factor = -0.20
+				production_speed_rail_way_factor = -0.20
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				line_change_production_efficiency_factor = -0.20
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		low_industry = {
@@ -359,22 +419,25 @@ ideas = {
 			picture = laws_industry_development1
 			default = yes
 			available = {
-				industrial_development_var > 99
-				industrial_development_var < 200
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = industrial_development_stage value = 0 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 2 compare = less_than }
+				}
 			}
 			modifier = {
-				production_speed_rail_way_factor = -0.15
-				production_speed_infrastructure_factor = -0.15
-				production_speed_buildings_factor = -0.15
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_factory_max_efficiency_factor = -0.15
-				line_change_production_efficiency_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.10
+				production_speed_infrastructure_factor = -0.10
+				production_speed_rail_way_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_factory_max_efficiency_factor = -0.08
+				production_factory_efficiency_gain_factor = -0.08
+				line_change_production_efficiency_factor = -0.10
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		medium_industry = {
@@ -382,22 +445,25 @@ ideas = {
 			level = 4
 			picture = laws_industry_development2
 			available = {
-				industrial_development_var > 199
-				industrial_development_var < 300
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = industrial_development_stage value = 1 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 3 compare = less_than }
+				}
 			}
 			modifier = {
-				production_speed_rail_way_factor = -0.1
-				production_speed_infrastructure_factor = -0.1
-				production_speed_buildings_factor = -0.1
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				production_factory_max_efficiency_factor = -0.1
-				line_change_production_efficiency_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				production_speed_infrastructure_factor = -0.05
+				production_speed_rail_way_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_factory_max_efficiency_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.04
+				line_change_production_efficiency_factor = -0.05
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		high_industry = {
@@ -405,22 +471,17 @@ ideas = {
 			level = 3
 			picture = laws_industry_development3
 			available = {
-				industrial_development_var > 299
-				industrial_development_var < 400
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = industrial_development_stage value = 2 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 4 compare = less_than }
+				}
 			}
 			modifier = {
-				production_speed_rail_way_factor = -0.05
-				production_speed_infrastructure_factor = -0.05
-				production_speed_buildings_factor = -0.05
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				production_factory_max_efficiency_factor = -0.05
-				line_change_production_efficiency_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.05
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		higher_industry = {
@@ -428,15 +489,25 @@ ideas = {
 			level = 2
 			picture = laws_industry_development4
 			available = {
-				industrial_development_var > 399
-				industrial_development_var < 500
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = industrial_development_stage value = 3 compare = greater_than }
+					check_variable = { var = industrial_development_stage value = 5 compare = less_than }
+				}
 			}
 			modifier = {
-				
+				production_speed_buildings_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		highest_industry = {
@@ -444,21 +515,24 @@ ideas = {
 			level = 1
 			picture = laws_industry_development5
 			available = {
-				industrial_development_var > 499
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = industrial_development_stage value = 4 compare = greater_than }
+				}
 			}
 			modifier = {
-				production_speed_rail_way_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
-				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_factory_max_efficiency_factor = 0.05
-				line_change_production_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				production_speed_rail_way_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				line_change_production_efficiency_factor = 0.10
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 	}
@@ -470,20 +544,25 @@ ideas = {
 			level = 6
 			picture = laws_military_development
 			available = {
-				military_development_var < 100
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = military_development_stage value = 1 compare = less_than }
+				}
 			}
 			modifier = {
-				conscription_total_factor = 0.2
-				training_time_army_factor = -0.2
-				army_org_factor = -0.2
-				high_command_cost_factor = 0.5
-				air_chief_cost_factor = 0.5
-				army_chief_cost_factor = 0.5
-				navy_chief_cost_factor = 0.5
+				army_org_factor = -0.20
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				training_time_army_factor = 0.15
+				experience_gain_army_factor = -0.20
+				army_chief_cost_factor = 0.50
+				high_command_cost_factor = 0.50
+				air_chief_cost_factor = 0.50
+				navy_chief_cost_factor = 0.50
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		low_military = {
@@ -492,21 +571,26 @@ ideas = {
 			picture = laws_military_development1
 			default = yes
 			available = {
-				military_development_var > 99
-				military_development_var < 200
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = military_development_stage value = 0 compare = greater_than }
+					check_variable = { var = military_development_stage value = 2 compare = less_than }
+				}
 			}
 			modifier = {
-				conscription_total_factor = 0.1
-				training_time_army_factor = -0.1
-				army_org_factor = -0.1
+				army_org_factor = -0.10
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				training_time_army_factor = 0.08
+				experience_gain_army_factor = -0.10
+				army_chief_cost_factor = 0.25
 				high_command_cost_factor = 0.25
 				air_chief_cost_factor = 0.25
-				army_chief_cost_factor = 0.25
 				navy_chief_cost_factor = 0.25
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		medium_military = {
@@ -514,17 +598,18 @@ ideas = {
 			level = 4
 			picture = laws_military_development2
 			available = {
-				military_development_var > 199
-				military_development_var < 300
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = military_development_stage value = 1 compare = greater_than }
+					check_variable = { var = military_development_stage value = 3 compare = less_than }
+				}
 			}
 			modifier = {
-				training_time_army_factor = 0.1
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
+				army_org_factor = -0.05
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		high_military = {
@@ -532,18 +617,20 @@ ideas = {
 			level = 3
 			picture = laws_military_development3
 			available = {
-				military_development_var > 299
-				military_development_var < 400
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = military_development_stage value = 2 compare = greater_than }
+					check_variable = { var = military_development_stage value = 4 compare = less_than }
+				}
 			}
 			modifier = {
-				training_time_army_factor = 0.2
-				army_org_factor = 0.4
-				army_attack_factor = 0.04
-				army_defence_factor = 0.04
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				training_time_army_factor = -0.05
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		higher_military = {
@@ -551,27 +638,30 @@ ideas = {
 			level = 2
 			picture = laws_military_development4
 			available = {
-				military_development_var > 399
-				military_development_var < 500
-			}
-			allowed_to_remove = {
-				development = yes
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = military_development_stage value = 3 compare = greater_than }
+					check_variable = { var = military_development_stage value = 5 compare = less_than }
+				}
 			}
 			modifier = {
-				training_time_army_factor = 0.2
-				army_org_factor = 0.8
-				army_attack_factor = 0.08
-				army_defence_factor = 0.08
-				air_superiority_efficiency = 0.05
+				army_org_factor = 0.05
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				training_time_army_factor = -0.10
+				experience_gain_army_factor = 0.10
+				army_chief_cost_factor = -0.10
+				high_command_cost_factor = -0.10
+				air_chief_cost_factor = -0.10
+				navy_chief_cost_factor = -0.10
 				air_cas_efficiency = 0.05
-				air_strategic_bomber_bombing_factor = 0.05
-				naval_speed_factor = 0.05
-				navy_capital_ship_attack_factor = 0.5
+				air_superiority_efficiency = 0.05
+				navy_capital_ship_attack_factor = 0.05
 				navy_capital_ship_defence_factor = 0.05
-				navy_carrier_air_attack_factor = 0.05
-				navy_carrier_air_targetting_factor = 0.05
-				convoy_raiding_efficiency_factor = 0.05
 				custom_modifier_tooltip = military_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				always = no
 			}
 		}
 		highest_military = {
@@ -579,26 +669,29 @@ ideas = {
 			level = 1
 			picture = laws_military_development5
 			available = {
-				military_development_var > 499
-			}
-			allowed_to_remove = {
-				development = yes
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = military_development_stage value = 4 compare = greater_than }
+				}
 			}
 			modifier = {
-				training_time_army_factor = 0.2
-				army_org_factor = 0.12
-				army_attack_factor = 0.12
-				army_defence_factor = 0.12
-				air_superiority_efficiency = 0.1
-				air_cas_efficiency = 0.1
-				air_strategic_bomber_bombing_factor = 0.1
-				naval_speed_factor = 0.1
-				navy_capital_ship_attack_factor = 0.1
-				navy_capital_ship_defence_factor = 0.1
-				navy_carrier_air_attack_factor = 0.1
-				navy_carrier_air_targetting_factor = 0.1
-				convoy_raiding_efficiency_factor = 0.1
+				army_org_factor = 0.10
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				training_time_army_factor = -0.15
+				experience_gain_army_factor = 0.20
+				army_chief_cost_factor = -0.20
+				high_command_cost_factor = -0.20
+				air_chief_cost_factor = -0.20
+				navy_chief_cost_factor = -0.20
+				air_cas_efficiency = 0.10
+				air_superiority_efficiency = 0.10
+				navy_capital_ship_attack_factor = 0.10
+				navy_capital_ship_defence_factor = 0.10
 				custom_modifier_tooltip = military_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				always = no
 			}
 		}
 	}
@@ -610,18 +703,20 @@ ideas = {
 			level = 6
 			picture = laws_medical_development
 			available = {
-				medical_development_var < 100
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = medical_development_stage value = 1 compare = less_than }
+				}
 			}
 			modifier = {
-				experience_loss_factor = 0.45
-				air_wing_xp_loss_when_killed_factor = 0.45
-				sickness_chance =  0.2
-				monthly_population = -0.6
-				license_infantry_eq_production_speed_factor = 0.5
+				experience_loss_factor = 0.40
+				air_wing_xp_loss_when_killed_factor = 0.40
+				sickness_chance = 0.20
+				monthly_population = -0.25
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		low_medical = {
@@ -630,18 +725,21 @@ ideas = {
 			picture = laws_medical_development1
 			default = yes
 			available = {
-				medical_development_var > 99
-				medical_development_var < 200
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = medical_development_stage value = 0 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 2 compare = less_than }
+				}
 			}
 			modifier = {
-				experience_loss_factor = 0.30
-				air_wing_xp_loss_when_killed_factor = 0.30
-				sickness_chance =  0.1
-				monthly_population = -0.4
+				experience_loss_factor = 0.25
+				air_wing_xp_loss_when_killed_factor = 0.25
+				sickness_chance = 0.10
+				monthly_population = -0.10
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		medium_medical = {
@@ -649,17 +747,19 @@ ideas = {
 			level = 4
 			picture = laws_medical_development2
 			available = {
-				medical_development_var > 199
-				medical_development_var < 300
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = medical_development_stage value = 1 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 3 compare = less_than }
+				}
 			}
 			modifier = {
-				experience_loss_factor = 0.15
-				air_wing_xp_loss_when_killed_factor = 0.15
-				monthly_population = -0.2
+				experience_loss_factor = 0.10
+				air_wing_xp_loss_when_killed_factor = 0.10
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		high_medical = {
@@ -667,15 +767,18 @@ ideas = {
 			level = 3
 			picture = laws_medical_development3
 			available = {
-				medical_development_var > 299
-				medical_development_var < 400
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = medical_development_stage value = 2 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 4 compare = less_than }
+				}
 			}
 			modifier = {
-				sickness_chance =  -0.1
+				sickness_chance = -0.10
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		higher_medical = {
@@ -683,18 +786,21 @@ ideas = {
 			level = 2
 			picture = laws_medical_development4
 			available = {
-				medical_development_var > 399
-				medical_development_var < 500
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = medical_development_stage value = 3 compare = greater_than }
+					check_variable = { var = medical_development_stage value = 5 compare = less_than }
+				}
 			}
 			modifier = {
-				experience_loss_factor = -0.15
-				air_wing_xp_loss_when_killed_factor = -0.15
-				sickness_chance =  -0.2
-				monthly_population = 0.2
+				experience_loss_factor = -0.10
+				air_wing_xp_loss_when_killed_factor = -0.10
+				sickness_chance = -0.15
+				monthly_population = 0.08
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 		highest_medical = {
@@ -702,20 +808,20 @@ ideas = {
 			level = 1
 			picture = laws_medical_development5
 			available = {
-				medical_development_var > 499
+				custom_trigger_tooltip = {
+					tooltip = development_auto_progress_tt
+					check_variable = { var = medical_development_stage value = 4 compare = greater_than }
+				}
 			}
 			modifier = {
-				experience_loss_factor = -0.3
-				air_wing_xp_loss_when_killed_factor = -0.3
-				sickness_chance =  -0.2
-				monthly_population = 0.4
-				resistance_target = -0.1
-				compliance_gain = 0.0002
-				resistance_damage_to_garrison = -0.25
+				experience_loss_factor = -0.20
+				air_wing_xp_loss_when_killed_factor = -0.20
+				sickness_chance = -0.20
+				monthly_population = 0.15
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
-				development = yes
+				always = no
 			}
 		}
 	}

@@ -1,0 +1,553 @@
+# ============================================================
+# 现代化进程：各剧本初始现代化水平预设（按现实水平安排）
+# ============================================================
+# 六个剧本起始日期：1931 / 1933 / 1936 / 1939 / 1942 / 1944
+# 阶段变量 stage 0~5 对应六档法案（lower/low/medium/high/higher/highest）
+# 六维顺序：教育 education / 农业 farming / 社会 social / 工业 industrial / 军事 military / 医疗 medical
+#
+# 调用：on_startup 对所有中国势力（BFY_is_chinese_faction）及 JAP 执行；
+#       on_monthly 对剧本开始后才成立的国家（如伪满、汪伪等）按当前日期补设（幂等，标记 BFY_dev_preset）。
+# ============================================================
+
+# ---------- 通用档位（六维 stage） ----------
+# tier0：原始（西藏、土司等）
+BFY_dev_tier0 = {
+	set_variable = { education_development_stage = 0 }
+	set_variable = { farming_development_stage = 0 }
+	set_variable = { social_development_stage = 0 }
+	set_variable = { industrial_development_stage = 0 }
+	set_variable = { military_development_stage = 0 }
+	set_variable = { medical_development_stage = 0 }
+}
+
+# tier1：落后军阀（默认兜底；西北、贵州、川系小派）
+BFY_dev_tier1 = {
+	set_variable = { education_development_stage = 0 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 0 }
+	set_variable = { industrial_development_stage = 0 }
+	set_variable = { military_development_stage = 1 }
+	set_variable = { medical_development_stage = 0 }
+}
+
+# tier2：普通军阀（初步近代化）
+BFY_dev_tier2 = {
+	set_variable = { education_development_stage = 1 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 1 }
+	set_variable = { military_development_stage = 1 }
+	set_variable = { medical_development_stage = 1 }
+}
+
+# tier3：治军军阀（军事 2）
+BFY_dev_tier3 = {
+	set_variable = { education_development_stage = 1 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 1 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 1 }
+}
+
+# tier4：沿海/建设派（工业 2）
+BFY_dev_tier4 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 1 }
+}
+
+# tier5：黄金十年中央（江浙，1936）
+BFY_dev_tier5 = {
+	set_variable = { education_development_stage = 3 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 3 }
+	set_variable = { military_development_stage = 3 }
+	set_variable = { medical_development_stage = 2 }
+}
+
+# tier6：日本 1931（明治维新后已全面近代化的工业列强）
+BFY_dev_tier6 = {
+	set_variable = { education_development_stage = 5 }
+	set_variable = { farming_development_stage = 4 }
+	set_variable = { social_development_stage = 5 }
+	set_variable = { industrial_development_stage = 5 }
+	set_variable = { military_development_stage = 5 }
+	set_variable = { medical_development_stage = 4 }
+}
+
+# tier7：日本 1936+（全面近代化顶峰）
+BFY_dev_tier7 = {
+	set_variable = { education_development_stage = 5 }
+	set_variable = { farming_development_stage = 4 }
+	set_variable = { social_development_stage = 5 }
+	set_variable = { industrial_development_stage = 5 }
+	set_variable = { military_development_stage = 5 }
+	set_variable = { medical_development_stage = 5 }
+}
+
+# tier8：大后方 / 侨乡（六维均衡 2）
+BFY_dev_tier8 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 2 }
+}
+
+# tier9：美械远征军（军事 4）
+BFY_dev_tier9 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 1 }
+	set_variable = { military_development_stage = 4 }
+	set_variable = { medical_development_stage = 2 }
+}
+
+# tier10：伪满重工业（工业 3）
+BFY_dev_tier10 = {
+	set_variable = { education_development_stage = 3 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 3 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 2 }
+}
+
+# ---------- 派系特化档位 ----------
+# 东北军 1931：奉天兵工厂 + 屯垦，军事 3
+BFY_dev_tier_rod31 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 3 }
+	set_variable = { medical_development_stage = 1 }
+}
+
+# 晋系 1936：西北实业公司，工业 3
+BFY_dev_tier_jin36 = {
+	set_variable = { education_development_stage = 3 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 3 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 2 }
+}
+
+# 桂系：广西民团军训，军事 3、工业弱
+BFY_dev_tier_gui = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 1 }
+	set_variable = { military_development_stage = 3 }
+	set_variable = { medical_development_stage = 1 }
+}
+BFY_dev_tier_gui39 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 1 }
+	set_variable = { military_development_stage = 3 }
+	set_variable = { medical_development_stage = 1 }
+}
+
+# 绥军（傅作义）：五原抗战，军事 3
+BFY_dev_tier_sui = {
+	set_variable = { education_development_stage = 1 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 1 }
+	set_variable = { military_development_stage = 3 }
+	set_variable = { medical_development_stage = 1 }
+}
+
+# 中央 1939：相持阶段，内迁后社会/医疗维持，军事 3
+BFY_dev_tier_chi39 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 3 }
+	set_variable = { medical_development_stage = 2 }
+}
+# 中央 1942：美援军事 4
+BFY_dev_tier_chi42 = {
+	set_variable = { education_development_stage = 3 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 4 }
+	set_variable = { medical_development_stage = 2 }
+}
+# 中央 1944
+BFY_dev_tier_chi44 = {
+	set_variable = { education_development_stage = 3 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 4 }
+	set_variable = { medical_development_stage = 3 }
+}
+
+# 晋系 1939：山西大部沦陷
+BFY_dev_tier_roj39 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 1 }
+}
+# 粤系 1939：广州沦陷后据守粤北
+BFY_dev_tier_rog39 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 2 }
+}
+# 滇系 1939：滇缅公路、内迁据点
+BFY_dev_tier_roy39 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 2 }
+}
+# 滇系 1942：滇西战场、美援
+BFY_dev_tier_roy42 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 3 }
+	set_variable = { medical_development_stage = 2 }
+}
+
+# 伪满初建（1933）
+BFY_dev_tier_mck33 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 1 }
+	set_variable = { medical_development_stage = 1 }
+}
+# 伪满 1936：产业五年计划
+BFY_dev_tier_mck36 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 3 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 2 }
+}
+# 日占傀儡政权（汪伪等）
+BFY_dev_tier_jdf40 = {
+	set_variable = { education_development_stage = 2 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 1 }
+	set_variable = { medical_development_stage = 1 }
+}
+
+# 根据地武装（特殊派系，不公开说明）：社会动员与军事组织强、工业医疗薄弱
+BFY_dev_tier_red = {
+	set_variable = { education_development_stage = 1 }
+	set_variable = { farming_development_stage = 0 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 0 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 0 }
+}
+BFY_dev_tier_redb = {
+	set_variable = { education_development_stage = 0 }
+	set_variable = { farming_development_stage = 0 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 0 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 0 }
+}
+BFY_dev_tier_redw = {
+	set_variable = { education_development_stage = 1 }
+	set_variable = { farming_development_stage = 1 }
+	set_variable = { social_development_stage = 1 }
+	set_variable = { industrial_development_stage = 0 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 1 }
+}
+# 东北抗日义勇军等临时武装
+BFY_dev_tier_vol = {
+	set_variable = { education_development_stage = 0 }
+	set_variable = { farming_development_stage = 0 }
+	set_variable = { social_development_stage = 0 }
+	set_variable = { industrial_development_stage = 0 }
+	set_variable = { military_development_stage = 2 }
+	set_variable = { medical_development_stage = 0 }
+}
+# 远征军 1944：美械换装完成
+BFY_dev_tier_cen44 = {
+	set_variable = { education_development_stage = 3 }
+	set_variable = { farming_development_stage = 2 }
+	set_variable = { social_development_stage = 2 }
+	set_variable = { industrial_development_stage = 2 }
+	set_variable = { military_development_stage = 4 }
+	set_variable = { medical_development_stage = 3 }
+}
+
+# ============================================================
+# 主效果：按当前剧本日期设置该国现代化水平（幂等）
+# ============================================================
+BFY_development_preset_by_date = {
+	if = {
+		limit = { NOT = { has_variable = BFY_dev_preset } }
+		BFY_development_init = yes
+
+		# 默认档：中国势力 = 落后军阀；最落后区域（西藏、土司等）= 原始
+		if = { limit = { BFY_is_chinese_faction = yes } BFY_dev_tier1 = yes }
+		if = { limit = { tag = XZS } BFY_dev_tier0 = yes }
+		if = { limit = { tag = DOT } BFY_dev_tier0 = yes }
+		if = { limit = { tag = TOH } BFY_dev_tier0 = yes }
+		if = { limit = { tag = ZOT } BFY_dev_tier0 = yes }
+		if = { limit = { tag = HET } BFY_dev_tier0 = yes }
+
+		# ---------- 1944 剧本 ----------
+		if = {
+			limit = { date > 1943.12.31 }
+			if = { limit = { tag = JAP } BFY_dev_tier7 = yes }
+			if = { limit = { tag = CHI } BFY_dev_tier_chi44 = yes }
+			if = { limit = { tag = ROD } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROJ } BFY_dev_tier_roj39 = yes }
+			if = { limit = { tag = ROG } BFY_dev_tier_rog39 = yes }
+			if = { limit = { tag = ROC } BFY_dev_tier_gui39 = yes }
+			if = { limit = { tag = ROY } BFY_dev_tier_roy42 = yes }
+			if = { limit = { tag = ROS } BFY_dev_tier8 = yes }
+			if = { limit = { tag = ROW } BFY_dev_tier2 = yes }
+			if = { limit = { tag = RON } BFY_dev_tier3 = yes }
+			if = { limit = { tag = SJN } BFY_dev_tier_sui = yes }
+			if = { limit = { tag = ROX } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROH } BFY_dev_tier2 = yes }
+			if = { limit = { tag = MCK } BFY_dev_tier10 = yes }
+			if = { limit = { tag = JDF } BFY_dev_tier_jdf40 = yes }
+			if = { limit = { tag = CEN } BFY_dev_tier_cen44 = yes }
+			# 特殊派系（根据地武装）
+			if = { limit = { tag = PRC } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NHA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRH } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NSD } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRQ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRJ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NSA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRD } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRY } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = JCJ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NFA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NAC } BFY_dev_tier_redw = yes }
+		}
+		# ---------- 1942 剧本 ----------
+		else_if = {
+			limit = { date > 1941.12.31 }
+			if = { limit = { tag = JAP } BFY_dev_tier7 = yes }
+			if = { limit = { tag = CHI } BFY_dev_tier_chi42 = yes }
+			if = { limit = { tag = ROD } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROJ } BFY_dev_tier_roj39 = yes }
+			if = { limit = { tag = ROG } BFY_dev_tier_rog39 = yes }
+			if = { limit = { tag = ROC } BFY_dev_tier_gui39 = yes }
+			if = { limit = { tag = ROY } BFY_dev_tier_roy42 = yes }
+			if = { limit = { tag = ROS } BFY_dev_tier8 = yes }
+			if = { limit = { tag = ROW } BFY_dev_tier2 = yes }
+			if = { limit = { tag = RON } BFY_dev_tier3 = yes }
+			if = { limit = { tag = SJN } BFY_dev_tier_sui = yes }
+			if = { limit = { tag = ROX } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROH } BFY_dev_tier2 = yes }
+			if = { limit = { tag = MCK } BFY_dev_tier10 = yes }
+			if = { limit = { tag = JDF } BFY_dev_tier_jdf40 = yes }
+			if = { limit = { tag = CEN } BFY_dev_tier9 = yes }
+			# 特殊派系（根据地武装）
+			if = { limit = { tag = PRC } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NHA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRH } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NSD } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRQ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRJ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NSA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRD } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRY } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = JCJ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NFA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NAC } BFY_dev_tier_redw = yes }
+		}
+		# ---------- 1939 剧本 ----------
+		else_if = {
+			limit = { date > 1938.12.31 }
+			if = { limit = { tag = JAP } BFY_dev_tier7 = yes }
+			if = { limit = { tag = CHI } BFY_dev_tier_chi39 = yes }
+			if = { limit = { tag = ROD } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROJ } BFY_dev_tier_roj39 = yes }
+			if = { limit = { tag = ROG } BFY_dev_tier_rog39 = yes }
+			if = { limit = { tag = ROC } BFY_dev_tier_gui39 = yes }
+			if = { limit = { tag = ROY } BFY_dev_tier_roy39 = yes }
+			if = { limit = { tag = ROS } BFY_dev_tier8 = yes }
+			if = { limit = { tag = ROW } BFY_dev_tier2 = yes }
+			if = { limit = { tag = RON } BFY_dev_tier3 = yes }
+			if = { limit = { tag = SJN } BFY_dev_tier_sui = yes }
+			if = { limit = { tag = ROX } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROH } BFY_dev_tier2 = yes }
+			if = { limit = { tag = MCK } BFY_dev_tier10 = yes }
+			if = { limit = { tag = JDF } BFY_dev_tier_jdf40 = yes }
+			# 特殊派系（根据地武装）
+			if = { limit = { tag = PRC } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NHA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRH } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NSD } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRQ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRJ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NSA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRD } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = PRY } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = JCJ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NFA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NAC } BFY_dev_tier_redw = yes }
+		}
+		# ---------- 1936 剧本 ----------
+		else_if = {
+			limit = { date > 1935.12.31 }
+			if = { limit = { tag = JAP } BFY_dev_tier7 = yes }
+			if = { limit = { tag = CHI } BFY_dev_tier5 = yes }
+			if = { limit = { tag = ROD } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROJ } BFY_dev_tier_jin36 = yes }
+			if = { limit = { tag = ROG } BFY_dev_tier5 = yes }
+			if = { limit = { tag = ROC } BFY_dev_tier_gui = yes }
+			if = { limit = { tag = ROY } BFY_dev_tier4 = yes }
+			if = { limit = { tag = ROA } BFY_dev_tier4 = yes }
+			if = { limit = { tag = RON } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROS } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROW } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROT } BFY_dev_tier2 = yes }
+			if = { limit = { tag = RDX } BFY_dev_tier2 = yes }
+			if = { limit = { tag = RJY } BFY_dev_tier2 = yes }
+			if = { limit = { tag = RYS } BFY_dev_tier2 = yes }
+			if = { limit = { tag = RHC } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROH } BFY_dev_tier2 = yes }
+			if = { limit = { tag = SJN } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROX } BFY_dev_tier2 = yes }
+			if = { limit = { tag = MCK } BFY_dev_tier_mck36 = yes }
+			if = { limit = { tag = JDW } BFY_dev_tier3 = yes }
+			if = { limit = { tag = JDF } BFY_dev_tier2 = yes }
+			# 特殊派系（根据地武装）
+			if = { limit = { tag = PRC } BFY_dev_tier_red = yes }
+			if = { limit = { tag = NHA } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRH } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NSD } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRQ } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRJ } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NSA } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRD } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRY } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = JCJ } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NFA } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NAC } BFY_dev_tier_redw = yes }
+			if = { limit = { tag = NAF } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = HLJ } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = JLS } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = WDL } BFY_dev_tier_vol = yes }
+		}
+		# ---------- 1933 剧本 ----------
+		else_if = {
+			limit = { date > 1932.12.31 }
+			if = { limit = { tag = JAP } BFY_dev_tier6 = yes }
+			if = { limit = { tag = CHI } BFY_dev_tier4 = yes }
+			if = { limit = { tag = ROD } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROJ } BFY_dev_tier4 = yes }
+			if = { limit = { tag = ROG } BFY_dev_tier8 = yes }
+			if = { limit = { tag = ROC } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROY } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROA } BFY_dev_tier3 = yes }
+			if = { limit = { tag = RON } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROS } BFY_dev_tier2 = yes }
+			if = { limit = { tag = SJN } BFY_dev_tier3 = yes }
+			if = { limit = { tag = MCK } BFY_dev_tier_mck33 = yes }
+			if = { limit = { tag = RFC } BFY_dev_tier3 = yes }
+			if = { limit = { tag = CAR } BFY_dev_tier_vol = yes }
+			# 剧本开始后才成立的国家（on_monthly 补设）：冀察政务委员会、冀东防共（1935 末）
+			if = { limit = { tag = JDW } BFY_dev_tier3 = yes }
+			if = { limit = { tag = JDF } BFY_dev_tier2 = yes }
+			# 特殊派系（根据地武装）
+			if = { limit = { tag = PRC } BFY_dev_tier_red = yes }
+			if = { limit = { tag = NHA } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRH } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NSD } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRQ } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRJ } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NSA } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRD } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRY } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NAF } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = HLJ } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = JLS } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = WDL } BFY_dev_tier_vol = yes }
+		}
+		# ---------- 1931 剧本 ----------
+		else = {
+			if = { limit = { tag = JAP } BFY_dev_tier6 = yes }
+			if = { limit = { tag = CHI } BFY_dev_tier4 = yes }
+			if = { limit = { tag = ROD } BFY_dev_tier_rod31 = yes }
+			if = { limit = { tag = ROJ } BFY_dev_tier4 = yes }
+			if = { limit = { tag = ROG } BFY_dev_tier8 = yes }
+			if = { limit = { tag = ROC } BFY_dev_tier3 = yes }
+			if = { limit = { tag = ROY } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROA } BFY_dev_tier3 = yes }
+			if = { limit = { tag = RON } BFY_dev_tier2 = yes }
+			if = { limit = { tag = ROS } BFY_dev_tier2 = yes }
+			if = { limit = { tag = SJN } BFY_dev_tier3 = yes }
+			# 剧本开始后才成立的国家（on_monthly 补设）：伪满 1932
+			if = { limit = { tag = MCK } BFY_dev_tier_mck33 = yes }
+			# 特殊派系（根据地武装）
+			if = { limit = { tag = PRC } BFY_dev_tier_red = yes }
+			if = { limit = { tag = NHA } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRH } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NSD } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRQ } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRJ } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NSA } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRD } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = PRY } BFY_dev_tier_redb = yes }
+			if = { limit = { tag = NAF } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = HLJ } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = JLS } BFY_dev_tier_vol = yes }
+			if = { limit = { tag = WDL } BFY_dev_tier_vol = yes }
+		}
+
+		# 进度归零，按阶段同步六栏现代化法案
+		set_variable = { education_development_var = 0 }
+		set_variable = { farming_development_var = 0 }
+		set_variable = { social_development_var = 0 }
+		set_variable = { industrial_development_var = 0 }
+		set_variable = { military_development_var = 0 }
+		set_variable = { medical_development_var = 0 }
+		set_variable = { education_development_monthly = 0 }
+		set_variable = { farming_development_monthly = 0 }
+		set_variable = { social_development_monthly = 0 }
+		set_variable = { industrial_development_monthly = 0 }
+		set_variable = { military_development_monthly = 0 }
+		set_variable = { medical_development_monthly = 0 }
+		BFY_development_swap_education = yes
+		BFY_development_swap_farming = yes
+		BFY_development_swap_social = yes
+		BFY_development_swap_industrial = yes
+		BFY_development_swap_military = yes
+		BFY_development_swap_medical = yes
+		set_variable = { BFY_dev_preset = 1 }
+	}
+}

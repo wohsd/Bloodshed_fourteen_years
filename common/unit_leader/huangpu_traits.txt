@@ -87,4 +87,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+        # 国民党左派将领（邓演达/李济深/黄琪翔等第三党系）
+        Leftist_Kuomintang = {
+                type = all
+                trait_type = personality_trait
+                gain_xp = {
+                        always = no # not gainable
+                }
+                modifier = {
+
+                }
+
+                ai_will_do = {
+                        factor = 1
+                }
+                new_commander_weight = {
+                        factor = 0
+                }
+        }
 }

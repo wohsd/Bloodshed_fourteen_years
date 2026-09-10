@@ -5,6 +5,7 @@ capital = 50
 
 
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -73,3 +74,6 @@ country_event={id=ROD1931.1203 days=333}
 	}
 	set_cosmetic_tag = ROD_1936
 }
+
+# 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）
+BFY_development_preset_by_date = yes
