@@ -4,13 +4,17 @@ state={
 	provinces={
 		316 880 1482 1741 2734 
 	}
+	resources={
+		coal = 6
+	}
 	history={
 		owner = YHC
 		
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 2
+			industrial_complex = 1
 			arms_factory = 1
+			dockyard = 0
 		}
 		1935.1.1={
 			owner = ROD

@@ -6,12 +6,15 @@ state={
 	}
 	
 	resources={
-		coal = 20
+		coal = 27
 	}
-	history={
+	history = {
 		owner = ROJ
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
 		}
 		
 		victory_points = {

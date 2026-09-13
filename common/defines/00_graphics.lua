@@ -71,6 +71,16 @@ NMapMode = {
 	RAILWAY_GUN_RANGE_INDICATOR_DEFAULT_COLOR = { 1.0, 1.0, 1.0, 1.0 },				-- On map circle indicating the railway gun bombardment range.
 	RAILWAY_GUN_RANGE_INDICATOR_ROTATION_SPEED = 0.001,								-- How fast the indicator is rotating.
 	RAILWAY_GUN_RANGE_STRIPES_COLOR = { 1.0, 0.5, 0.0, 0.2 },						-- Color of the railway gun range stripes (when hovered)
+	-- ============ [1.19 补全] 部署将军/通信线视觉定义（值与原版一致，旧版副本缺失） ============
+	DEPLOYED_GENERAL_UNIT_LINE_COLOR = { 1.0, 1.0, 1.0, 0.3 },							-- Colour of the line drawn between a deployed General and their divisions when no commander ability is active.
+	DEPLOYED_GENERAL_UNIT_LINE_COLOR_ABILITY_ACTIVE = { 1.0, 0.55, 0.1, 1.0 },			-- Colour of the line drawn between a deployed General and their divisions when at least one commander ability is active on the General.
+	SHOW_DEPLOYED_GENERAL_COMMUNICATION_LINES = true,									-- If true, show lines between deployed generals and their divisions when in range
+	SHOW_DEPLOYED_GENERAL_NO_COMMUNICATION_LINES = true,								-- If true, show lines between deployed generals and their divisions when outside range
+	SHOW_DEPLOYED_GENERAL_FRONT_LINES = true,											-- If true, show the always-on line from each deployed General to the nearest point of their frontline.
+	DEPLOYED_GENERAL_FRONT_LINE_MAX_CAMERA_HEIGHT = 350.0,								-- Camera height above which the always-on General->frontline lines are culled (hidden).
+	SHOW_DEPLOYED_GENERAL_BASE_PLATES = true,											-- If true, draw a flat circular decal under each deployed General as a visual anchor for the comms lines.
+	DEPLOYED_GENERAL_BASE_PLATE_RADIUS = 2.5,											-- Radius of the deployed General base plate in map units.
+	DEPLOYED_GENERAL_BASE_PLATE_COLOR = { 1.0, 1.0, 1.0, 0.9 },							-- Multiplicative tint applied to the white base-plate texture.
 
 	PREPARING_RAID_ARROW_COLOR = { 0.7, 0.7, 0.7, 1.0 },							    -- Color of the arrow drawn in the raid map mode for raids that are still preparing.
 	READY_RAID_ARROW_COLOR = { 0.7, 0.7, 0, 0.9},							        -- Color of the arrow drawn in the raid map mode for raids that can be launched.
@@ -1307,6 +1317,7 @@ NGraphics = {
 	--  "idle3"			- idle animation of the third stage (looped)
 	RAID_UNIT_SECOND_STAGE_PROGRESS = 0.33,			-- Specifies raid progress value on [0,1] where second stage is activated
 	RAID_UNIT_THIRD_STAGE_PROGRESS = 0.66,			-- Specifies raid progress value on [0,1] where third stage is activated
+	RAID_UNIT_ZOOM_HEIGHT = 150.0,					-- Camera height at which the raid unit entity becomes visible
 
 	DEFAULT_NUDGE_FLOATING_HARBOR_DIST = 7.0,       -- Default distance of floating harbors from the coast in pixels, for nudger
 
@@ -1535,7 +1546,9 @@ NSound = {
 	BATTLE_SOUND_MIN_UNIT_COUNT =   6,
 
 	VOICE_OVER_CATEGORY  = "Voices",
-	VOICE_OVER_COOL_DOWN = 2.8, -- Wait for this many seconds before playing another vo
+        VOICE_OVER_COOL_DOWN = 2.8, -- Wait for this many seconds before playing another vo
+
+        ABILITY_GENERIC_SOUND_NAME = "ability_generic", -- Sound played in addition to an ability's own sound effect when the player activates an ability
 },
 
 NFriendGUI = {

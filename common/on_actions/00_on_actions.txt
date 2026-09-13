@@ -27,7 +27,26 @@ on_actions = {
 					set_state_owner_to = ROOT
 				}
 			}
-			
+
+			# 「临委会起义」修正：带修正参战后即标记；战争结束进入和平即永久移除，再次开战不会恢复
+			RFC = {
+				if = {
+					limit = { has_dynamic_modifier = { modifier = Provisional_Committee_Uprising } }
+					if = {
+						limit = { is_at_war = yes }
+						set_country_flag = RFC_pcq_war_engaged
+					}
+					if = {
+						limit = {
+							has_country_flag = RFC_pcq_war_engaged
+							is_at_war = no
+						}
+						remove_dynamic_modifier = { modifier = Provisional_Committee_Uprising }
+						clr_country_flag = RFC_pcq_war_engaged
+					}
+				}
+			}
+
 		}
 	}
 

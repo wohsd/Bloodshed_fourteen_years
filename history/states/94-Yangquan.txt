@@ -6,9 +6,10 @@ state={
 	}
 	
 	resources={
-		coal = 2
+		coal = 11
+		aluminium = 5
 	}
-	history={
+	history = {
 		owner = ROJ
 		buildings = {
 			infrastructure = 1

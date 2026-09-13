@@ -2,9 +2,8 @@ state={
 	id=342
 	name="STATE_342"
 	resources={
-		tungsten=5.000
-		steel=5.000
-		chromium=3.000
+		tungsten = 8
+		chromium = 2
 	}
 	history={
 		owner = ROG

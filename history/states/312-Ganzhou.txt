@@ -3,13 +3,17 @@ state={
 	id=312
 	name="STATE_312"
 
+	resources={
+		tungsten = 30
+		coal = 3
+	}
 	history={
 		owner = CHI
         add_core_of = CHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			arms_factory = 3
+			arms_factory = 1
 			1338={
 				bunker = 2
 			}
@@ -19,6 +23,7 @@ state={
 			1989={
 				bunker = 2
 			}
+			dockyard = 0
 		}
 		
 		victory_points = {

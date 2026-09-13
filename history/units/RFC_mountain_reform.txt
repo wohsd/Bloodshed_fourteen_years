@@ -1,0 +1,23 @@
+# 「精兵强将」国策解锁编制：军官突击团
+# 六个山地步兵营（两团，每团三营）+ 两个步兵炮连（团属支援，每团一个）+ 一个工兵连（师属支援）
+# 注意：团属支援连（regimental_support）仅在 OOB/AI 模板解析中受支持，
+#       故通过国策 load_oob 加载本文件（脚本内联 division_template 不支持 regimental_support）。
+#       无 units 块：不刷新兵，仅解锁编制模板。
+division_template = {
+	name = "军官突击团"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	regimental_support = {
+		field_guns = { x = 0 y = 0 }
+		field_guns = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}

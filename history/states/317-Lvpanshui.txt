@@ -4,11 +4,16 @@ state={
 	provinces={
 		2703 4016 
 	}
+	resources={
+		coal = 14
+	}
 	history={
 		owner = ROH
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 0
 		}
 		add_core_of = ROH
 		

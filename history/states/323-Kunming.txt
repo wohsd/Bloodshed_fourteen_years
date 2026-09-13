@@ -4,6 +4,9 @@ state={
 	provinces={
 		1663 1675 2094 
 	}
+	resources={
+		steel = 3
+	}
 	history={
 		owner = ROY
 		buildings = {
@@ -11,6 +14,9 @@ state={
 			1663={
 				bunker = 2
 			}
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 0
 		}
 		victory_points = {
 			1675 20

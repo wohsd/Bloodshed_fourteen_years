@@ -5,9 +5,8 @@ state={
 		1540 2230 2737 4067 4090 4100 
 	}
 	resources={
-		tungsten=15 # was: 20
-		steel= 15 # was: 20
-		chromium = 3 # was: 4
+		tungsten = 18
+		chromium = 4
 	}
 	history={
 		owner = ROG

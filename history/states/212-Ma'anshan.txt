@@ -1,11 +1,11 @@
 state={
 	id=212
 	name="STATE_212"
-	resources={
-		steel=11.000
-	}
 	provinces={
 		3780 4049 
+	}
+	resources={
+		steel = 18
 	}
 	history={
 		owner = CHI

@@ -4,10 +4,16 @@ state={
 	provinces={
 		1113 2109 3611 3624 
 	}
+	resources={
+		coal = 12
+	}
 	history={
 		owner = SJN
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 0
 		}
 		1939.1.1={
 			owner = XIA

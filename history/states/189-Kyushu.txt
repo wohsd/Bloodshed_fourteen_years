@@ -5,9 +5,9 @@ state={
 		537 1679 1690 1996 2120 2213 2247 2512 2565 2570 2646 2674 3210 3767 3772 3775 3776 3788 3808 4278 4279 4280 
 	}
 	resources={
-		steel = 25
+		steel = 40
 		aluminium=5 # was: 12
-		coal = 3
+		coal = 4
 	}
 	history={
 		owner = JAP
@@ -20,9 +20,10 @@ state={
 				coastal_bunker = 1
 			}
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 4
 			arms_factory = 3
 			
+			dockyard = 1
 		}
 		
 		add_core_of = JAP

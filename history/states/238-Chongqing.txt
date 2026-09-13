@@ -2,8 +2,9 @@ state={
 	id=238
 	name="STATE_238"
 	resources={
-		steel=22.000
-		aluminium=12.000
+		steel = 35
+		aluminium = 19
+		coal = 5
 	}
 	history={
 		owner = ROW
@@ -11,13 +12,14 @@ state={
 			infrastructure = 1
 			arms_factory = 1
 			supply_node = 1
-			industrial_complex = 2
+			industrial_complex = 3
 			anti_air_building= 1
 			air_base= 1
 			3850={
 				naval_base = 2
 				coastal_bunker = 1
 			}
+			dockyard = 0
 		}
 
 		

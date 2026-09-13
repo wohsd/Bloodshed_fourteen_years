@@ -5,11 +5,10 @@ state={
 		594 2090 2298 2312 2782 2842 3040 3498 3510 
 	}
 	resources={
-		steel = 2
-		aluminium=2 # was: 12
-		tungsten = 2
+		oil = 24
+		coal = 3
 	}
-	history={
+	history = {
 		owner = ROD
 		buildings = {
 			infrastructure = 1

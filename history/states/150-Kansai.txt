@@ -5,17 +5,17 @@ state={
 		610 1143 1600 1650 1677 2172 2373 2434 2662 2693 2810 3191 3719 3720 3725 3733 3742 3753 4276 
 	}
 	resources={
-		steel = 25
+		steel = 40
 		aluminium=5 # was: 12
-		coal = 5
+		coal = 7
 	}
 	history={
 		owner = JAP
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 3
-			dockyard= 3
+			industrial_complex = 5
+			arms_factory = 4
+			dockyard = 3
 			3720= {
 				naval_base = 2
 				coastal_bunker = 1

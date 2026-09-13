@@ -4,8 +4,8 @@ state={
 	provinces={
 		636 1387 
 	}
-	resources = {
-		tungsten = 2.000
+	resources={
+		oil = 4
 	}
 	history={
 		owner = CGZ

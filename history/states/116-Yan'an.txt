@@ -1,20 +1,21 @@
 state={
 	id=116
 	name="STATE_116"
-	resources={
-		steel=3.000
-		tungsten=3.000
-	}
 	provinces={
 		1896 1976 
+	}
+	resources={
+		oil = 8
+		coal = 3
 	}
 	history={
 		owner = YUL
 		
 		buildings = {
 			infrastructure = 1
-			arms_factory = 2
-			industrial_complex = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 0
 		}
 		1935.1.1={
 			owner = ROD

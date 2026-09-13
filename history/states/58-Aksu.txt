@@ -4,6 +4,9 @@ state={
 	provinces={
 		33 202 486 546 648 676 717 722 1114 2240 2476 3245 3600 3609 
 	}
+	resources={
+		oil = 3
+	}
 	history={
 		owner = ROX
 		buildings = {

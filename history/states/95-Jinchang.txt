@@ -4,6 +4,9 @@ state={
 	provinces={
 		1743 
 	}
+	resources={
+		chromium = 8
+	}
 	history={
 		owner = MBQ
 		buildings = {

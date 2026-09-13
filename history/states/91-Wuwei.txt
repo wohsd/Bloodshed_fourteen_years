@@ -6,9 +6,9 @@ state={
 	}
 	
 	resources={
-		coal = 10
+		coal = 4
 	}
-	history={
+	history = {
 		owner = MBQ
 		buildings = {
 			infrastructure = 1

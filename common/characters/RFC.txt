@@ -7,22 +7,13 @@ characters={
 			}
 		}
 		country_leader={
-			desc = RFC_DengYanDa_leader_desc
-			ideology=marxism
-			traits={
-				dageming_yingxiong
-			}
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
 		desc = RFC_DengYanDa_leader_desc
 		ideology=revolutionary_sanminism
 		traits={
 			dageming_yingxiong
 		}
 		expire="1965.1.1.1"
-		id=-2
+		id=-1
 	}
 		corps_commander = {
 			desc = RFC_DengYanDa_leader_desc
@@ -241,6 +232,15 @@ characters={
 				large="gfx/leaders/RFC/RFC_ZhangBoJun.png"
 			}
 		}
+		# 「前中国共产党员」（共产主义意识形态）早期领导人；郭沫若归国后由其接任
+		country_leader={
+			ideology=marxism
+			traits={
+				political_reformer_1
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
 		advisor={
 			desc = RFC_ZhangBoJun_desc
 			slot = political_advisor
@@ -266,6 +266,15 @@ characters={
 				large="gfx/leaders/RFC/RFC_GuoMoRuo.png"
 			}
 		}
+		# 归国事件后由事件 promote_character 接任共产主义领导人，党改名中国共产党
+		country_leader={
+			ideology=marxism
+			traits={
+				silent_workhorse
+			}
+			expire="1965.1.1.1"
+			id=100
+		}
 		advisor={
 			desc = RFC_GuoMoRuo_desc
 			slot = political_advisor
@@ -274,10 +283,9 @@ characters={
 				original_tag = RFC
 			}
 			available = {
-
-			\tcustom_trigger_tooltip = {
-				\ttooltip = RFC_guomoruo_returned_tt
-				\thas_country_flag = RFC_guomoruo_returned
+				custom_trigger_tooltip = {
+					tooltip = RFC_guomoruo_returned_tt
+					has_country_flag = RFC_guomoruo_returned
 				}
 			}
 			traits = {
@@ -286,6 +294,15 @@ characters={
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+			# 解雇郭沫若：共产主义支持率 -5%（on_remove 为角色作用域，需转 owner）
+			on_remove = {
+				owner = {
+					add_popularity = {
+						ideology = communism
+						popularity = -0.05
+					}
+				}
 			}
 		}
 	}

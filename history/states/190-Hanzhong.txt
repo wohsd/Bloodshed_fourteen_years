@@ -1,20 +1,20 @@
 state={
 	id=190
 	name="STATE_190"
-	resources={
-		steel=2.000
-		aluminium=2.000
-	}
 	provinces={
 		596 2522 2785 2961 3044 3771 
+	}
+	resources={
+		steel = 3
 	}
 	history={
 		owner = YHC
 		
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 2
+			industrial_complex = 1
 			arms_factory = 1
+			dockyard = 0
 		}
 		1936.1.1={
 			owner = CHI

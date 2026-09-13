@@ -4,6 +4,10 @@ state={
 	provinces={
 		344 1700 2243 2286 2520 2682 2694 3198 4143 
 	}
+	resources={
+		aluminium = 13
+		coal = 3
+	}
 	history={
 		owner = ROC
 		buildings = {
