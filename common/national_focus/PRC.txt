@@ -1874,7 +1874,12 @@ focus_tree = {
 				}
 			available = {
 					has_completed_focus = PRC_focus55
-					has_war = no
+					controls_state = 655
+					NOT = { has_border_war = yes }
+					NOT = { has_war_with = ROJ }
+				}
+			bypass = {
+					NOT = { ROJ = { exists = yes } }
 				}
 			completion_reward = {
 					custom_effect_tooltip = PRC_focus54_tt

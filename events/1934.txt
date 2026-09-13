@@ -611,7 +611,10 @@ country_event = {
 	fire_only_once = yes
     trigger = {
 		PRC = {
-			controls_province = 5250
+			OR = {
+				controls_province = 5250
+				controls_state = 617
+			}
 		}
     }
     immediate = {
@@ -638,7 +641,10 @@ country_event = {
 			check_variable={
 				Chi_Shui > 0
 			}
-			controls_province = 3938
+			OR = {
+				controls_province = 3938
+				controls_state = 615
+			}
 		}
     }
     immediate = {
@@ -665,7 +671,10 @@ country_event = {
 			check_variable={
 				Chi_Shui > 1
 			}
-			controls_province = 5248
+			OR = {
+				controls_province = 5248
+				controls_state = 616
+			}
 		}
     }
     immediate = {
@@ -691,7 +700,10 @@ country_event = {
 			check_variable={
 				Chi_Shui > 2
 			}
-			controls_province = 3316
+			OR = {
+				controls_province = 3316
+				controls_state = 618
+			}
 		}
     }
     immediate = {

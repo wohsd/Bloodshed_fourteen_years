@@ -27,6 +27,11 @@ country_event = {
 				type = annex_everything
 			}
 		}
+		ROD={
+			add_to_variable = {
+				ROD_zhang_xueliang_stress = 10
+			}
+		}
 	    }
 	}
     mean_time_to_happen = {

@@ -1397,6 +1397,7 @@ Long_march_decisions = {
 		icon = generic_civil_support
 		available = {
 			OR={
+				has_country_flag = Long_march_finished
 				PRC = {
 					AND={
 						has_war = yes
@@ -1410,8 +1411,8 @@ Long_march_decisions = {
 					}
 				}
 			}
-			
-			
+
+
 		}
 		days_mission_timeout = 25
 		activation = {
@@ -1432,13 +1433,16 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission0
 		} 
 		complete_effect = {
-			608 = { Long_march_battle = yes } 
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				608 = { Long_march_battle = yes }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission0
 		}
@@ -1447,6 +1451,7 @@ Long_march_decisions = {
 		icon = generic_civil_support
 		available = {
 			OR={
+				has_country_flag = Long_march_finished
 				PRC = {
 					AND={
 						has_war = yes
@@ -1477,13 +1482,16 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission1
 		}
 		complete_effect = {
-			607 = { Long_march_battle = yes } 
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				607 = { Long_march_battle = yes }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission1
 		}
@@ -1492,6 +1500,7 @@ Long_march_decisions = {
 		icon = generic_civil_support
 		available = {
 			OR={
+				has_country_flag = Long_march_finished
 				PRC = {
 					AND={
 						has_war = yes
@@ -1521,13 +1530,16 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission2
 		}
 		complete_effect = {
-			611 = { Long_march_battle = yes } 
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				611 = { Long_march_battle = yes }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission2
 		}
@@ -1536,6 +1548,7 @@ Long_march_decisions = {
 		icon = generic_civil_support
 		available = {
 			OR={
+				has_country_flag = Long_march_finished
 				PRC = {
 					AND={
 						has_war = yes
@@ -1565,13 +1578,16 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission3
 		}
 		complete_effect = {
-			610 = { Long_march_battle = yes } 
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				610 = { Long_march_battle = yes }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission3
 		}
@@ -1580,6 +1596,7 @@ Long_march_decisions = {
 		icon = generic_civil_support
 		available = {
 			OR={
+				has_country_flag = Long_march_finished
 				PRC = {
 					AND={
 						has_war = yes
@@ -1608,18 +1625,21 @@ Long_march_decisions = {
 			275 = { Long_march_battle = yes } 
 			617 = { Long_march_battle = yes } 
 			618 = { Long_march_battle = yes } 
-			304 = { Long_march_battle = yes } 
+			304 = { Long_march_battle = yes }
 			add_manpower = -5000
 			add_war_support = -0.05
 			set_country_flag = Long_march_mission3
 		}
 		complete_effect = {
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission3
 		}
@@ -1627,23 +1647,24 @@ Long_march_decisions = {
 	Long_march_mission5 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					custom_trigger_tooltip = {
-						check_variable = {
-							Chi_Shui > 3
+			OR = {
+				has_country_flag = Long_march_finished
+				PRC = {
+					AND={
+						has_war = yes
+						custom_trigger_tooltip = {
+							check_variable = {
+								Chi_Shui > 3
+								tooltip = Chi_Shui
+							}
+							tooltip = Chi_Shui_tooltip
+						}
+						custom_trigger_tooltip = {
 							tooltip = Chi_Shui
 						}
-						tooltip = Chi_Shui_tooltip
-					}
-					custom_trigger_tooltip = {
-						tooltip = Chi_Shui
 					}
 				}
-					 
 			}
-			
 		}
 		days_mission_timeout = 245
 		activation = {
@@ -1660,13 +1681,16 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission5
 		}
 		complete_effect = {
-			263 = { Long_march_battle = yes } 
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				263 = { Long_march_battle = yes }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission5
 		}
@@ -1674,10 +1698,13 @@ Long_march_decisions = {
 	Long_march_mission6 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 5271
+			OR = {
+				has_country_flag = Long_march_finished
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 5271
+					}
 				}
 			}
 		}
@@ -1695,13 +1722,16 @@ Long_march_decisions = {
 			add_war_support = -0.05
 			set_country_flag = Long_march_mission6
 		}
-		complete_effect = { 
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+		complete_effect = {
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission6
 		}
@@ -1709,10 +1739,13 @@ Long_march_decisions = {
 	Long_march_mission7 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 1255
+			OR = {
+				has_country_flag = Long_march_finished
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 1255
+					}
 				}
 			}
 		}
@@ -1731,12 +1764,15 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission7
 		}
 		complete_effect = {
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission7
 		}
@@ -1744,10 +1780,13 @@ Long_march_decisions = {
 	Long_march_mission8 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 1962
+			OR = {
+				has_country_flag = Long_march_finished
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 1962
+					}
 				}
 			}
 		}
@@ -1766,26 +1805,28 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission8
 		}
 		complete_effect = {
-			687={
-				transfer_state_to = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				687={
+					transfer_state_to = PRC
+				}
+				634={
+					transfer_state_to = NSD
+				}
+				602={
+					transfer_state_to = ROT
+				}
+				204={
+					transfer_state_to = RHC
+				}
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
-			634={
-				transfer_state_to = NSD
-			}
-			602={
-				transfer_state_to = ROT
-			}
-			204={
-				transfer_state_to = RHC
-			}
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
-			}
-			
 			set_country_flag = Long_march_mission8
 		}
 	}
@@ -1797,19 +1838,22 @@ Long_march_decisions = {
 	Long_march_mission9 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 3766
+			OR = {
+				has_country_flag = Long_march_finished
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 3766
+					}
 				}
 			}
 		}
-		days_mission_timeout = 55  
+		days_mission_timeout = 55
 		activation = {
 			has_country_flag = Long_march_mission8
 		}
 		visible = {
-		}		
+		}
 		fixed_random_seed = no
 		fire_only_once = yes
 		is_good = no
@@ -1819,12 +1863,15 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission9
 		}
 		complete_effect = {
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission9
 		}
@@ -1834,10 +1881,13 @@ Long_march_decisions = {
 	Long_march_mission10 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 3384
+			OR = {
+				has_country_flag = Long_march_finished
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 3384
+					}
 				}
 			}
 		}
@@ -1846,7 +1896,7 @@ Long_march_decisions = {
 			has_country_flag = Long_march_mission9
 		}
 		visible = {
-		}		
+		}
 		fixed_random_seed = no
 		fire_only_once = yes
 		is_good = no
@@ -1856,12 +1906,15 @@ Long_march_decisions = {
 			set_country_flag = Long_march_mission10
 		}
 		complete_effect = {
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
 			}
 			set_country_flag = Long_march_mission10
 		}
@@ -1869,10 +1922,13 @@ Long_march_decisions = {
 	Long_march_mission11 = {
 		icon = generic_civil_support
 		available = {
-			PRC = {
-				AND={
-					has_war = yes
-					controls_province = 1829
+			OR = {
+				has_country_flag = Long_march_finished
+				PRC = {
+					AND={
+						has_war = yes
+						controls_province = 1829
+					}
 				}
 			}
 		}
@@ -1881,7 +1937,7 @@ Long_march_decisions = {
 			has_country_flag = Long_march_mission10
 		}
 		visible = {
-		}		
+		}
 		fixed_random_seed = no
 		fire_only_once = yes
 		is_good = no
@@ -1890,12 +1946,17 @@ Long_march_decisions = {
 			add_war_support = -0.05
 		}
 		complete_effect = {
-			add_manpower = 1000
-			add_war_support = 0.05
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = PRC
+			if = {
+				limit = { NOT = { has_country_flag = Long_march_finished } }
+				add_manpower = 1000
+				add_war_support = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = PRC
+				}
+				# 正常走完全程同样结算长征
+				country_event = { id = PRC_1935.20 days = 2 }
 			}
 		}
 	}
@@ -3228,11 +3289,24 @@ PRC_struggle_balance_category = {
 Expand_Shaanxi_Gansu_Ningxia = {
 	The_Eastern_Expedition_against_Yan_Xishan = {
 		available = {
-			104={
-				is_controlled_by = PRC
+			OR = {
+				# 攻占太原
+				104={
+					is_controlled_by = PRC
+				}
+				# 或在晋西黄河沿岸任一州站稳脚跟（东征抢粮扩红即达目的）
+				99={
+					is_controlled_by = PRC
+				}
+				87={
+					is_controlled_by = PRC
+				}
+				131={
+					is_controlled_by = PRC
+				}
 			}
-		} 
-		days_mission_timeout = 180
+		}
+		days_mission_timeout = 90
 		activation = {  
 			has_completed_focus = PRC_focus55
 		}		 
@@ -3243,8 +3317,9 @@ Expand_Shaanxi_Gansu_Ningxia = {
 		}
 		timeout_effect = {
 			PRC = {country_event = PRC_1936.9}
-		} 
+		}
 		complete_effect = {
+			PRC = {country_event = PRC_1936.9}
 		}
 	}
 	Western_Expedition_Ma_Family_Army = {

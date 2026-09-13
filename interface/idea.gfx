@@ -207,6 +207,10 @@ spriteTypes = {
 		name = "GFX_idea_The_impact_Lisan_route"
 		texturefile = "gfx/interface/ideas/PRC/The_impact_Lisan_route.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Extreme_democratization"
+		texturefile = "gfx/interface/ideas/PRC/Extreme_democratization.png"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_Revolutionary_base"

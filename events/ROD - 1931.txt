@@ -16,6 +16,9 @@ country_event = {
 		add_war_support=-0.02
 		hidden_effect = {
 			ROD={
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 10
+				}
 				country_event = { id = ROD1931.921  days = 3 } 
 			}
 		}
@@ -88,6 +91,9 @@ country_event = {
 				set_variable = {
 					ROD_zhang_xueliang_stress = 40
 				}
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 10
+				}
 			}
 		}
 	}
@@ -112,6 +118,9 @@ country_event = {
 			ROD = {
 				add_stability = -0.04
 				add_political_power = -50
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 10
+				}
 			}
 		}
 	}
@@ -136,6 +145,9 @@ country_event = {
 			ROD = {
 				add_stability = -0.03
 				add_war_support = -0.02
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 10
+				}
 			}
 		}
 	}
@@ -184,6 +196,9 @@ country_event = {
 			ROD = {
 				add_stability = -0.05
 				add_political_power = -60
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 10
+				}
 			}
 		}
 	}

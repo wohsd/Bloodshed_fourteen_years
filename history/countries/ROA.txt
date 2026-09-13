@@ -15,6 +15,9 @@ interwar_antitank = 1
 
 recruit_character = ROA_HangFuQu
 recruit_character = ROA_ShengHongLie
+recruit_character = ROA_SunTongXuan
+recruit_character = ROA_CaoFuLin
+recruit_character = ROA_GuLiangMin
 set_popularities = {
 	democratic = 0
 	communism = 0

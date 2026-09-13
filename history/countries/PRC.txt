@@ -82,6 +82,7 @@ add_ideas={
 	The_impact_Lisan_route
 	Leftism
 	Revolutionary_base
+	Extreme_democratization
 	PRC_Central_Special_Branch
 }
 create_intelligence_agency = {
