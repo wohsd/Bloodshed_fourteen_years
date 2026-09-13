@@ -7,7 +7,9 @@ state={
 		owner = PRH
 		buildings = {
 			infrastructure = 1
-			arms_factory = 2
+			arms_factory = 1
+			industrial_complex = 0
+			dockyard = 0
 		}
 		victory_points = {
 			3944 5

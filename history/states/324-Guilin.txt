@@ -17,6 +17,9 @@ state={
 			724={
 				bunker = 2
 			}
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
 		}
 		victory_points = {
 			4013 5 

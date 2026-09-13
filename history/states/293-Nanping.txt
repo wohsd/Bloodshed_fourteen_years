@@ -11,7 +11,7 @@ state={
         add_core_of = CHI
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 			
 			1267={
 				bunker = 2
@@ -29,7 +29,6 @@ state={
 				bunker = 2
 			}
 			
-			industrial_complex = 1
 			arms_factory = 0
 			dockyard = 0
 		}

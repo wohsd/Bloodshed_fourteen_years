@@ -12,15 +12,13 @@ state={
 			infrastructure = 1
 			arms_factory = 1
 			supply_node = 1
-			industrial_complex = 2
+			industrial_complex = 3
 			anti_air_building= 1
 			air_base= 1
 			3850={
 				naval_base = 2
 				coastal_bunker = 1
 			}
-			industrial_complex = 3
-			arms_factory = 1
 			dockyard = 0
 		}
 

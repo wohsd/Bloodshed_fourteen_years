@@ -8,8 +8,10 @@ state={
 		owner = ROD
 		buildings = {
 			infrastructure = 1
-			arms_factory = 3
+			arms_factory = 1
 			air_base= 2
+			industrial_complex = 2
+			dockyard = 0
 		}
 		add_core_of = ROD
 		

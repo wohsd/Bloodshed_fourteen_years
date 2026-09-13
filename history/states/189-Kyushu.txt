@@ -20,11 +20,9 @@ state={
 				coastal_bunker = 1
 			}
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 3
-			
 			industrial_complex = 4
 			arms_factory = 3
+			
 			dockyard = 1
 		}
 		

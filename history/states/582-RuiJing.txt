@@ -9,9 +9,8 @@ state={
 		owner = PRC
 		buildings = {
 			infrastructure = 1
-			arms_factory = 2
-			industrial_complex = 0
 			arms_factory = 1
+			industrial_complex = 0
 			dockyard = 0
 		}
 		victory_points = {

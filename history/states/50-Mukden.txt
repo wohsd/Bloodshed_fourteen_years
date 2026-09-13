@@ -8,8 +8,10 @@ state={
 		owner = ROD
 		buildings = {
 			infrastructure = 1
-			arms_factory = 3
+			arms_factory = 4
 			air_base= 2
+			industrial_complex = 2
+			dockyard = 0
 		}
 		victory_points = {
 			2805 50
