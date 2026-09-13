@@ -120,11 +120,27 @@ country_event = {
 			set_country_flag = RFC_guomoruo_returned
 			add_political_power = 25
 			add_stability = 0.02
+			# 共产主义力量接掌政权：郭沫若出任国家领导人，党改名中国共产党
+			set_politics = { ruling_party = communism }
+			promote_character = RFC_GuoMoRuo
+			set_party_name = {
+				ideology = communism
+				name = RFC_ccp_party
+				long_name = RFC_ccp_party_long
+			}
 		}
 		option = {
 			name = RFC_country.5.b
 			set_country_flag = RFC_guomoruo_returned
 			add_political_power = 25
 			add_stability = 0.02
+			# 共产主义力量接掌政权：郭沫若出任国家领导人，党改名中国共产党
+			set_politics = { ruling_party = communism }
+			promote_character = RFC_GuoMoRuo
+			set_party_name = {
+				ideology = communism
+				name = RFC_ccp_party
+				long_name = RFC_ccp_party_long
+			}
 		}
 	}

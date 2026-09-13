@@ -19,19 +19,21 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
-			add_political_power = 50
+		add_political_power = 50
+		custom_effect_tooltip = RFC_uprising_modifier_tt
+		# 隐藏：初始化并附加「临委会起义」动态修正（变量驱动，数值说明见 tooltip）
+		# 隐藏：删除随省份转移继承自民国（CHI）的甲/乙/丙种师编制及其部队
+		hidden_effect = {
 			RFC_init_uprising_modifier = yes
 			add_dynamic_modifier = {
 				modifier = Provisional_Committee_Uprising
 			}
-			# 隐藏：删除随省份转移继承自民国（CHI）的甲/乙/丙种师编制及其部队
-			hidden_effect = {
-				delete_unit_template_and_units = { division_template = "国民革命军甲种师" }
-				delete_unit_template_and_units = { division_template = "国民革命军乙种师" }
-				delete_unit_template_and_units = { division_template = "国民革命军丙种师" }
-			}
-			country_event = { id = RFC_country.3 days = 3 }
+			delete_unit_template_and_units = { division_template = "国民革命军甲种师" }
+			delete_unit_template_and_units = { division_template = "国民革命军乙种师" }
+			delete_unit_template_and_units = { division_template = "国民革命军丙种师" }
 		}
+		country_event = { id = RFC_country.3 days = 3 }
+	}
 	}
 	focus = {
 		id = Establish_a_provisional_government
@@ -89,10 +91,19 @@ focus_tree = {
 			custom_effect_tooltip = RFC_mountain_reform_tt
 			hidden_effect = {
 				# 解锁山地步兵科技
-				add_tech = tech_mountaineers
-				# 通过 load_oob 整编「国民革命军」：8 山地步兵营 + 2 个步兵炮连（团属支援）
+				set_technology = { tech_mountaineers = 1 }
+				# 通过 load_oob 解锁「军官突击团」编制：
+				# 6 山地步兵营 + 2 步兵炮连（团属支援）+ 1 工兵连（师属支援）
 				# 团属支援连仅 OOB 模板解析支持，故不使用内联 division_template 脚本
 				load_oob = "RFC_mountain_reform"
+				# 在首都部署 1 支齐装满员的军官突击团，经验因子 0.5 = 三级「训练有素」
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"军官突击团\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 1
+					}
+				}
 			}
 		}
 		relative_position_id = Establish_a_provisional_government
@@ -159,14 +170,14 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = RFC_militia_reform_tt
 			hidden_effect = {
-				# 解锁民兵科技
-				add_tech = militia_tech
+				# 解锁民兵科技（MOD 自有科技，模板参照原版 militia_tech）
+				set_technology = { BFY_irregular_infantry_tech = 1 }
 				# 通过 load_oob 整编「地方部队」：全师六个民兵营
 				load_oob = "RFC_militia_reform"
-				# 在首都新建 6 支地方部队
+				# 在首都新建 6 支地方部队（一级「乌合之众」）
 				capital_scope = {
 					create_unit = {
-						division = "division_template = \"地方部队\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+						division = "division_template = \"地方部队\" start_experience_factor = 0.05 start_equipment_factor = 0.5"
 						owner = ROOT
 						count = 6
 					}
