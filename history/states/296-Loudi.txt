@@ -4,6 +4,9 @@ state={
 	provinces={
 		2704 2749 3937 
 	}
+	resources={
+		tungsten = 15
+	}
 	history={
 		owner = RON
 		buildings = {

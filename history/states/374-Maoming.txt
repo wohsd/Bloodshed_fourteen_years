@@ -4,6 +4,10 @@ state={
 	provinces={
 		695 1397 1633 1963 2392 2633 2824 4189 4192 4195 4198 4207 4209 4210 
 	}
+	resources={
+		rubber = 5
+		oil = 2
+	}
 	history={
 		owner = ROG
 		buildings = {

@@ -1,11 +1,11 @@
 state={
 	id=199
 	name="STATE_199"
-	resources={
-		steel=11.000
-	}
 	provinces={
 		1305 2323 2809 3786 3797 3803 
+	}
+	resources={
+		steel = 18
 	}
 	history={
 		owner = CHI
@@ -13,6 +13,9 @@ state={
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
 		}
 		victory_points = {
 			2323 5

@@ -4,6 +4,10 @@ state={
 	provinces={
 		1184 3853 
 	}
+	resources={
+		steel = 22
+		coal = 5
+	}
 	history={
 		owner = PRH
 		buildings = {

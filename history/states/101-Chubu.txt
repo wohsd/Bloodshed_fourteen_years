@@ -2,10 +2,10 @@ state={
 	id=101
 	name="STATE_101"
 	resources={
-		steel = 25
+		steel = 40
 		aluminium=10 # was: 12
-		tungsten=3
-		coal = 3
+		tungsten=5
+		coal = 4
 	}
 	provinces={
 		55 236 687 752 1129 1548 1597 1944 1953 2052 2366 2448 2480 2589 2614 2665 2729 2801 3085 3120 3250 3369 3386 3678 3682 3695 3703 3716 3717 3718 3727 3728 4274
@@ -21,6 +21,9 @@ state={
 				naval_base = 2
 				coastal_bunker = 1
 			}
+			industrial_complex = 4
+			arms_factory = 4
+			dockyard = 0
 		}
 		add_core_of = JAP
 	}

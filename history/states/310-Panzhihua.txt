@@ -4,7 +4,8 @@ state={
 	name="STATE_310"
 
 	resources={
-		coal = 5
+		steel = 22
+		coal = 4
 	}
 	history={
 		owner = ROW

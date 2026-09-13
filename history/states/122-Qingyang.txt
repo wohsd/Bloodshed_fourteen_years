@@ -3,6 +3,9 @@ state={
 	id=122
 	name="STATE_122"
 
+	resources={
+		oil = 6
+	}
 	history={
 		owner = CGZ
 		buildings = {

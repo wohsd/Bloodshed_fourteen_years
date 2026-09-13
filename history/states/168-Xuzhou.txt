@@ -4,12 +4,18 @@ state={
 	provinces={
 		731 884 3091 3739 3741 
 	}
+	resources={
+		coal = 11
+	}
 	history={
 		owner = CHI
         add_core_of = CHI
 		buildings = {
 			infrastructure = 1
 			arms_factory = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 0
 		}
 		
 		victory_points = {

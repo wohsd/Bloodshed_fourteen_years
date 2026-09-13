@@ -6,7 +6,7 @@ state={
 	}
 	
 	resources={
-		coal = 25
+		coal = 34
 	}
 	history={
 		owner = ROJ

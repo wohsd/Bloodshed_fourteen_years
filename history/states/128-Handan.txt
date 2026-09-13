@@ -6,7 +6,8 @@ state={
 	}
 	
 	resources={
-		coal = 2
+		coal = 8
+		steel = 6
 	}
 	history={
 
@@ -14,6 +15,9 @@ state={
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
+			industrial_complex = 0
+			arms_factory = 1
+			dockyard = 0
 		}
 		1936.1.1={
 			owner = JDW

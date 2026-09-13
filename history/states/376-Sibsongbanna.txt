@@ -4,6 +4,9 @@ state={
 	provinces={
 		347 2111 
 	}
+	resources={
+		rubber = 15
+	}
 	history={
 		owner = ROY
 		buildings = {

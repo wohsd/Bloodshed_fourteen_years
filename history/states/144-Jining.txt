@@ -5,9 +5,7 @@ state={
 		647 1680 2020 
 	}
 	resources={
-		steel = 2
-		aluminium=2 # was: 12
-		tungsten = 2
+		coal = 11
 	}
 	history={
 		owner = ROA

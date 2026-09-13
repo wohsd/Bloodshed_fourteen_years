@@ -4,7 +4,11 @@ state={
 	provinces={
 		145 608 611 1414 2185 2430 2444 
 	}
-	history={
+	resources={
+		oil = 6
+		coal = 3
+	}
+	history = {
 		owner = MZY
 		buildings = {
 			infrastructure = 1

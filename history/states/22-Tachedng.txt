@@ -4,7 +4,11 @@ state={
 	provinces={
 		165 457 468 658 804 1000 1078 1805 1883 2937 3323 3501 3531 
 	}
-	history={
+	resources={
+		chromium = 4
+		oil = 2
+	}
+	history = {
 		owner = ROX
 		buildings = {
 			infrastructure = 1

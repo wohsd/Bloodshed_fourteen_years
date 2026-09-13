@@ -4,6 +4,10 @@ state={
 	provinces={
 		2310 2511 2803 3082 3381 4086 4145 4161 
 	}
+	resources={
+		tungsten = 8
+		rubber = 5
+	}
 	history={
 		owner = ROY
 		buildings = {

@@ -5,8 +5,8 @@ state={
 		295 393 430 604 926 947 1197 1728 1740 2713 2717 2778 2848 2955 3152 
 	}
 	resources = {
-		tungsten=5
-		coal = 5
+		tungsten=8
+		coal = 7
 	}
 	history={
 		owner = JAP
@@ -14,6 +14,9 @@ state={
 			infrastructure = 4
 			industrial_complex = 4
 			arms_factory = 4
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 0
 		}
 		add_core_of = JAP
 	}

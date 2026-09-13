@@ -1336,13 +1336,10 @@ CHI_Purging_party_category = {
 	KMT_left_uprising = {
 		icon = generic_civil_support
 
-		# 开局即可见；9 月 20 日前灰色不可用，之后可手动发动起义
+		# 测试用：开局立即可点，无任何时间限制
 		visible = {
 			tag = CHI
 			NOT = { has_country_flag = KMT_left_uprising_done }
-		}
-		available = {
-			date > 1931.9.19
 		}
 		fire_only_once = yes
 		ai_will_do = {

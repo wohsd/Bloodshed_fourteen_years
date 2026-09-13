@@ -4,6 +4,9 @@ state={
 	provinces={
 		3190 3723 
 	}
+	resources={
+		coal = 11
+	}
 	history={
 		owner = CHI
         add_core_of = CHI

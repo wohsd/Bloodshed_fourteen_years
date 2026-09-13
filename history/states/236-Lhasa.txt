@@ -4,6 +4,9 @@ state={
 	provinces={
 		758 1439 1480 
 	}
+	resources={
+		chromium = 2
+	}
 	history={
 		owner = XZS
 		buildings = {

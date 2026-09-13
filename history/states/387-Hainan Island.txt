@@ -3,6 +3,10 @@ state={
 	id=387
 	name="STATE_387"
 
+	resources={
+		steel = 16
+		rubber = 10
+	}
 	history={
 		owner = ROG
 		buildings = {

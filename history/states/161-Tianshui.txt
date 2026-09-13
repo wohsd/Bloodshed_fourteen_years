@@ -2,9 +2,6 @@
 state={
 	id=161
 	name="STATE_161"
-	resources = {
-		tungsten = 2.000
-	}
 	history={
 		owner = MTX
 		buildings = {

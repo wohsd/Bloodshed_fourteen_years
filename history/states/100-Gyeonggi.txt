@@ -5,10 +5,10 @@ state={
 		491 1423 4822
 	}
 	resources={
-		steel = 10
+		steel = 16
 		aluminium=2 # was: 12
-		tungsten=5
-		coal = 2
+		tungsten=8
+		coal = 3
 	}
 	history={
 		owner = JAP
@@ -19,6 +19,9 @@ state={
 				naval_base = 1
 				coastal_bunker = 1
 			}
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 0
 		}
 		add_core_of = JAP
 		victory_points = {

@@ -4,10 +4,16 @@ state={
 	provinces={
 		193 209 982 2114 2401 3597 3598 3603 
 	}
-	history={
+	resources={
+		steel = 10
+	}
+	history = {
 		owner = SJN
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
 		}
 		victory_points = {
 			3603 5

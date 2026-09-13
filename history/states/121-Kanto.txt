@@ -5,9 +5,8 @@ state={
 		352 1140 1293 1306 2079 2607 2702 2922 2924 3266 3338 3681 3688 3696 3702 3704 3707 3712 
 	}
 	resources={
-		steel = 25
-		aluminium=5 # was: 12
-		
+		steel = 40
+		aluminium = 8
 	}
 	history={
 		owner = JAP
@@ -22,6 +21,9 @@ state={
 				naval_base = 2
 				coastal_bunker = 1
 			}
+			industrial_complex = 6
+			arms_factory = 5
+			dockyard = 4
 		}
 		victory_points = {
 			3707 50

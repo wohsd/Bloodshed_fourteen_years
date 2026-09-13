@@ -3,8 +3,8 @@ state={
 	id=293
 	name="STATE_293"
 	resources={
-		steel = 6
-		aluminium=2 # was: 12
+		steel = 3
+		tungsten = 5
 	}
 	history={
 		owner = CHI
@@ -29,6 +29,9 @@ state={
 				bunker = 2
 			}
 			
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
 		}
 		
 		victory_points = {

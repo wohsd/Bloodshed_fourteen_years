@@ -1,17 +1,12 @@
 state={
 	id=89
 	name="STATE_89"
-	resources={
-		steel=2.000
-		aluminium=2.000
-		steel=3.000
-		tungsten=3.000
-	}
 	
 	resources={
-		coal = 2
+		coal = 11
+		oil = 2
 	}
-	history={
+	history = {
 		owner = YUL
 		buildings = {
 		}

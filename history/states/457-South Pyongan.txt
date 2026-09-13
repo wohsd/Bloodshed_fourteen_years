@@ -5,9 +5,9 @@ state={
 		84 415 1749 2322 2304 3635 4796
 	}
 	resources={
-		steel = 10
+		steel = 16
 		aluminium=2 # was: 12
-		coal = 3
+		coal = 4
 	}
 	history={
 		owner = JAP

@@ -6,7 +6,8 @@ state={
 	}
 	
 	resources={
-		coal = 2
+		aluminium = 6
+		coal = 3
 	}
 	history={
 		owner = CHI
@@ -14,6 +15,9 @@ state={
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
+			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 0
 		}
 		victory_points = {
 			816 10

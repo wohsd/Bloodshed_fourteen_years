@@ -5,9 +5,6 @@ state={
 		2773 3770 
 	}
 	
-	resources={
-		coal = 5
-	}
 	history={
 		owner = CHI
         add_core_of = CHI

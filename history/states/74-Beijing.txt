@@ -4,12 +4,18 @@ state={
 	provinces={
 		141 1301 3625 3632 4951
 	}
-	history={
+	resources={
+		coal = 4
+	}
+	history = {
 		owner = ROD
 		buildings = {
 			infrastructure = 1
 			arms_factory = 2
 			air_base= 1
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 0
 		}
 		victory_points = {
 			141 50

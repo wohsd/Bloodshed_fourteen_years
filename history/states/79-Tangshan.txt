@@ -4,7 +4,11 @@ state={
 	provinces={
 		194 1794 3111 3629 
 	}
-	history={
+	resources={
+		coal = 16
+		steel = 6
+	}
+	history = {
 		owner = ROD
 		buildings = {
 			infrastructure = 1

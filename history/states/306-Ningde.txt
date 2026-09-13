@@ -4,6 +4,9 @@ state={
 	provinces={
 		1231 1756 2024 2367 2450 3166 3315 3956 3958 3967 3980 
 	}
+	resources={
+		tungsten = 4
+	}
 	history={
 		owner = CHI
         add_core_of = CHI

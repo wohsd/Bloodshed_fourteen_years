@@ -6,12 +6,16 @@ state={
 	}
 	
 	resources={
-		coal = 10
+		coal = 14
+		steel = 8
 	}
 	history={
 		owner = ROJ
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 3
+			dockyard = 0
 		}
 		victory_points = {
 			1975 30

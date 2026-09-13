@@ -1,0 +1,946 @@
+# 资源勘探与矿藏开发决议
+# 机制仿原版 resource_prospecting：受 excavation（挖掘/资源勘探）科技分级解锁，
+# 消耗政治点、占用民用工厂 days_remove 天后，在指定州通过 add_resource 永久增加自然资源。
+# 任何控制该州的国家均可开发（日占东北煤铁同样可由日方经营）。
+# 注意：原版 7 个在华勘探决议的州 ID 与本 MOD 地图不对应（如"山东铝矿"原指向 597），在此重定义修正。
+
+prospect_for_resources = {
+
+	# ============ 修正原版在华勘探决议（州 ID 重定向，沿用原版 loc 与标记） ============
+
+	# 原版"开发山东铝矿"：597 -> 123 淄博（山东铝土矿实际产地）
+	develop_shandong_aluminium_deposits = {
+		icon = aluminium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 123 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 123
+			controls_state = 123
+		}
+		visible = {
+			owns_state = 123
+			controls_state = 123
+			123 = { NOT = { has_state_flag = shandong_aluminium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = aluminium amount < 1 } }
+		}
+		remove_effect = {
+			123 = { set_state_flag = shandong_aluminium_developed }
+			123 = { add_resource = { type = aluminium amount = 10 } }
+		}
+	}
+
+	# 原版"开发绥远铁矿"：621(绵阳) -> 57 包头（白云鄂博铁矿）
+	develop_suiyuan_steel_deposits = {
+		icon = steel
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 57 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 57
+			controls_state = 57
+		}
+		visible = {
+			owns_state = 57
+			controls_state = 57
+			57 = { NOT = { has_state_flag = suiyuan_steel_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = steel amount < 1 } }
+		}
+		remove_effect = {
+			57 = { set_state_flag = suiyuan_steel_developed }
+			57 = { add_resource = { type = steel amount = 10 } }
+		}
+	}
+
+	# 原版"勘探大庆油田"一期：714(不存在) -> 21 大庆
+	develop_daqing_deposits = {
+		icon = oil
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 21 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 21
+			controls_state = 21
+		}
+		visible = {
+			owns_state = 21
+			controls_state = 21
+			21 = { NOT = { has_state_flag = daqing_oil_developed_1 } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 120
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = oil amount < 1 } }
+		}
+		remove_effect = {
+			21 = { set_state_flag = daqing_oil_developed_1 }
+			21 = { add_resource = { type = oil amount = 12 } }
+		}
+	}
+
+	# 原版"勘探大庆油田"二期（深部油层）
+	develop_daqing_deposits_2 = {
+		icon = oil
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 21 } }
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 21
+			controls_state = 21
+		}
+		visible = {
+			owns_state = 21
+			controls_state = 21
+			21 = { has_state_flag = daqing_oil_developed_1 }
+			21 = { NOT = { has_state_flag = daqing_oil_developed_2 } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 150
+		modifier = { civilian_factory_use = 4 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = oil amount < 1 } }
+		}
+		remove_effect = {
+			21 = { set_state_flag = daqing_oil_developed_2 }
+			21 = { add_resource = { type = oil amount = 16 } }
+		}
+	}
+
+	# 原版"开发云南铝矿"：325(黔西南) -> 323 昆明（滇中铝土带）
+	develop_yunnan_aluminium_deposits = {
+		icon = aluminium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 323 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 323
+			controls_state = 323
+		}
+		visible = {
+			owns_state = 323
+			controls_state = 323
+			323 = { NOT = { has_state_flag = yunnan_aluminium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = aluminium amount < 1 } }
+		}
+		remove_effect = {
+			323 = { set_state_flag = yunnan_aluminium_developed }
+			323 = { add_resource = { type = aluminium amount = 10 } }
+		}
+	}
+
+	# 原版"开发吉林铝矿"：328(泉州) -> 40 吉林
+	develop_kirin_aluminium_deposits = {
+		icon = aluminium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 40 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 40
+			controls_state = 40
+		}
+		visible = {
+			owns_state = 40
+			controls_state = 40
+			40 = { NOT = { has_state_flag = kirin_aluminium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = aluminium amount < 1 } }
+		}
+		remove_effect = {
+			40 = { set_state_flag = kirin_aluminium_developed }
+			40 = { add_resource = { type = aluminium amount = 8 } }
+		}
+	}
+
+	# 原版"开发四川铝矿"：605(租界) -> 229 成都（彭县铝土矿）
+	develop_sichuan_aluminium_deposits = {
+		icon = aluminium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 229 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 229
+			controls_state = 229
+		}
+		visible = {
+			owns_state = 229
+			controls_state = 229
+			229 = { NOT = { has_state_flag = sichuan_aluminium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = aluminium amount < 1 } }
+		}
+		remove_effect = {
+			229 = { set_state_flag = sichuan_aluminium_developed }
+			229 = { add_resource = { type = aluminium amount = 10 } }
+		}
+	}
+
+	# ============ 石油 ============
+
+	# 玉门油矿扩建（中国最早的现代石油工业基地）
+	bfy_develop_yumen_oilfields = {
+		icon = oil
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 55 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 55
+			controls_state = 55
+		}
+		visible = {
+			owns_state = 55
+			controls_state = 55
+			55 = { NOT = { has_state_flag = bfy_yumen_oil_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = oil amount < 1 } }
+		}
+		remove_effect = {
+			55 = { set_state_flag = bfy_yumen_oil_developed }
+			55 = { add_resource = { type = oil amount = 10 } }
+		}
+	}
+
+	# 延长油矿（陕北，中国大陆第一口油井）
+	bfy_develop_yanchang_oilfields = {
+		icon = oil
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 116 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 116
+			controls_state = 116
+		}
+		visible = {
+			owns_state = 116
+			controls_state = 116
+			116 = { NOT = { has_state_flag = bfy_yanchang_oil_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = oil amount < 1 } }
+		}
+		remove_effect = {
+			116 = { set_state_flag = bfy_yanchang_oil_developed }
+			116 = { add_resource = { type = oil amount = 8 } }
+		}
+	}
+
+	# 克拉玛依油田（准噶尔盆地西北缘）
+	bfy_develop_karamay_oilfields = {
+		icon = oil
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 84 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 84
+			controls_state = 84
+		}
+		visible = {
+			owns_state = 84
+			controls_state = 84
+			84 = { NOT = { has_state_flag = bfy_karamay_oil_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 120
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = oil amount < 1 } }
+		}
+		remove_effect = {
+			84 = { set_state_flag = bfy_karamay_oil_developed }
+			84 = { add_resource = { type = oil amount = 12 } }
+		}
+	}
+
+	# 四川天然气与盐卤油苗（自贡古火井）
+	bfy_develop_zigong_gas = {
+		icon = oil
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 270 } }
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 270
+			controls_state = 270
+		}
+		visible = {
+			owns_state = 270
+			controls_state = 270
+			270 = { NOT = { has_state_flag = bfy_zigong_gas_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 120
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = oil amount < 1 } }
+		}
+		remove_effect = {
+			270 = { set_state_flag = bfy_zigong_gas_developed }
+			270 = { add_resource = { type = oil amount = 8 } }
+		}
+	}
+
+	# 胜利油田（黄河入海口，深层勘探方能发现）
+	bfy_develop_shengli_oilfields = {
+		icon = oil
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 108 } }
+		available = {
+			has_tech = excavation5
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 108
+			controls_state = 108
+		}
+		visible = {
+			owns_state = 108
+			controls_state = 108
+			108 = { NOT = { has_state_flag = bfy_shengli_oil_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 150
+		modifier = { civilian_factory_use = 4 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = oil amount < 1 } }
+		}
+		remove_effect = {
+			108 = { set_state_flag = bfy_shengli_oil_developed }
+			108 = { add_resource = { type = oil amount = 16 } }
+		}
+	}
+
+	# ============ 钢铁 ============
+
+	# 鞍山昭和制钢所扩建
+	bfy_expand_anshan_steel = {
+		icon = steel
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 66 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 66
+			controls_state = 66
+		}
+		visible = {
+			owns_state = 66
+			controls_state = 66
+			66 = { NOT = { has_state_flag = bfy_anshan_steel_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = steel amount < 1 } }
+		}
+		remove_effect = {
+			66 = { set_state_flag = bfy_anshan_steel_developed }
+			66 = { add_resource = { type = steel amount = 14 } }
+		}
+	}
+
+	# 大冶铁矿深部开采（汉冶萍命脉）
+	bfy_develop_daye_iron = {
+		icon = steel
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 257 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 257
+			controls_state = 257
+		}
+		visible = {
+			owns_state = 257
+			controls_state = 257
+			257 = { NOT = { has_state_flag = bfy_daye_iron_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = steel amount < 1 } }
+		}
+		remove_effect = {
+			257 = { set_state_flag = bfy_daye_iron_developed }
+			257 = { add_resource = { type = steel amount = 12 } }
+		}
+	}
+
+	# 攀枝花钒钛磁铁矿（深藏大裂谷，需高级勘探）
+	bfy_develop_panzhihua_iron = {
+		icon = steel
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 310 } }
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 310
+			controls_state = 310
+		}
+		visible = {
+			owns_state = 310
+			controls_state = 310
+			310 = { NOT = { has_state_flag = bfy_panzhihua_iron_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 120
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = steel amount < 1 } }
+		}
+		remove_effect = {
+			310 = { set_state_flag = bfy_panzhihua_iron_developed }
+			310 = { add_resource = { type = steel amount = 14 } }
+		}
+	}
+
+	# 石碌铁矿（海南岛，中国最富铁矿之一）
+	bfy_develop_shilu_iron = {
+		icon = steel
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 387 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 387
+			controls_state = 387
+		}
+		visible = {
+			owns_state = 387
+			controls_state = 387
+			387 = { NOT = { has_state_flag = bfy_shilu_iron_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = steel amount < 1 } }
+		}
+		remove_effect = {
+			387 = { set_state_flag = bfy_shilu_iron_developed }
+			387 = { add_resource = { type = steel amount = 10 } }
+		}
+	}
+
+	# 马鞍山铁矿（长江中下游铁带）
+	bfy_develop_maanshan_iron = {
+		icon = steel
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 212 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 212
+			controls_state = 212
+		}
+		visible = {
+			owns_state = 212
+			controls_state = 212
+			212 = { NOT = { has_state_flag = bfy_maanshan_iron_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = steel amount < 1 } }
+		}
+		remove_effect = {
+			212 = { set_state_flag = bfy_maanshan_iron_developed }
+			212 = { add_resource = { type = steel amount = 8 } }
+		}
+	}
+
+	# ============ 铝土 ============
+
+	# 平果铝土矿（桂西，堆积型铝土）
+	bfy_develop_pingguo_aluminium = {
+		icon = aluminium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 339 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 339
+			controls_state = 339
+		}
+		visible = {
+			owns_state = 339
+			controls_state = 339
+			339 = { NOT = { has_state_flag = bfy_pingguo_aluminium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = aluminium amount < 1 } }
+		}
+		remove_effect = {
+			339 = { set_state_flag = bfy_pingguo_aluminium_developed }
+			339 = { add_resource = { type = aluminium amount = 10 } }
+		}
+	}
+
+	# 豫西铝土矿带（三门峡—洛阳）
+	bfy_develop_yuxi_aluminium = {
+		icon = aluminium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 164 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 164
+			controls_state = 164
+		}
+		visible = {
+			owns_state = 164
+			controls_state = 164
+			164 = { NOT = { has_state_flag = bfy_yuxi_aluminium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = aluminium amount < 1 } }
+		}
+		remove_effect = {
+			164 = { set_state_flag = bfy_yuxi_aluminium_developed }
+			164 = { add_resource = { type = aluminium amount = 8 } }
+		}
+	}
+
+	# 修文铝土矿（贵阳附近）
+	bfy_develop_xiuwen_aluminium = {
+		icon = aluminium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 311 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 311
+			controls_state = 311
+		}
+		visible = {
+			owns_state = 311
+			controls_state = 311
+			311 = { NOT = { has_state_flag = bfy_xiuwen_aluminium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = aluminium amount < 1 } }
+		}
+		remove_effect = {
+			311 = { set_state_flag = bfy_xiuwen_aluminium_developed }
+			311 = { add_resource = { type = aluminium amount = 8 } }
+		}
+	}
+
+	# ============ 钨（中国当时产量占世界半数以上） ============
+
+	# 赣南钨矿深采（大余—赣州，世界钨都）
+	bfy_develop_gannan_tungsten = {
+		icon = tungsten
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 312 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 312
+			controls_state = 312
+		}
+		visible = {
+			owns_state = 312
+			controls_state = 312
+			312 = { NOT = { has_state_flag = bfy_gannan_tungsten_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = { base = 0.4 }
+		remove_effect = {
+			312 = { set_state_flag = bfy_gannan_tungsten_developed }
+			312 = { add_resource = { type = tungsten amount = 14 } }
+		}
+	}
+
+	# 湘南钨矿（郴州瑶岗仙—柿竹园）
+	bfy_develop_chenzhou_tungsten = {
+		icon = tungsten
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 316 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 316
+			controls_state = 316
+		}
+		visible = {
+			owns_state = 316
+			controls_state = 316
+			316 = { NOT = { has_state_flag = bfy_chenzhou_tungsten_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = { base = 0.4 }
+		remove_effect = {
+			316 = { set_state_flag = bfy_chenzhou_tungsten_developed }
+			316 = { add_resource = { type = tungsten amount = 8 } }
+		}
+	}
+
+	# 平桂钨锡矿（贺州，需更深井勘技术）
+	bfy_develop_pinggui_tungsten = {
+		icon = tungsten
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 337 } }
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 337
+			controls_state = 337
+		}
+		visible = {
+			owns_state = 337
+			controls_state = 337
+			337 = { NOT = { has_state_flag = bfy_pinggui_tungsten_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = { base = 0.3 }
+		remove_effect = {
+			337 = { set_state_flag = bfy_pinggui_tungsten_developed }
+			337 = { add_resource = { type = tungsten amount = 8 } }
+		}
+	}
+
+	# ============ 煤炭（竖井延深/机械化开采） ============
+
+	# 抚顺煤矿深部开采
+	bfy_deepen_fushun_coal = {
+		icon = coal
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 60 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 60
+			controls_state = 60
+		}
+		visible = {
+			owns_state = 60
+			controls_state = 60
+			60 = { NOT = { has_state_flag = bfy_fushun_coal_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = coal amount < 1 } }
+		}
+		remove_effect = {
+			60 = { set_state_flag = bfy_fushun_coal_developed }
+			60 = { add_resource = { type = coal amount = 12 } }
+		}
+	}
+
+	# 开滦煤矿竖井延深
+	bfy_deepen_kailuan_coal = {
+		icon = coal
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 79 } }
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 79
+			controls_state = 79
+		}
+		visible = {
+			owns_state = 79
+			controls_state = 79
+			79 = { NOT = { has_state_flag = bfy_kailuan_coal_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 60
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = coal amount < 1 } }
+		}
+		remove_effect = {
+			79 = { set_state_flag = bfy_kailuan_coal_developed }
+			79 = { add_resource = { type = coal amount = 10 } }
+		}
+	}
+
+	# 大同煤田扩建
+	bfy_deepen_datong_coal = {
+		icon = coal
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 77 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 77
+			controls_state = 77
+		}
+		visible = {
+			owns_state = 77
+			controls_state = 77
+			77 = { NOT = { has_state_flag = bfy_datong_coal_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = coal amount < 1 } }
+		}
+		remove_effect = {
+			77 = { set_state_flag = bfy_datong_coal_developed }
+			77 = { add_resource = { type = coal amount = 14 } }
+		}
+	}
+
+	# 淮南煤矿扩建
+	bfy_deepen_huainan_coal = {
+		icon = coal
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 173 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 173
+			controls_state = 173
+		}
+		visible = {
+			owns_state = 173
+			controls_state = 173
+			173 = { NOT = { has_state_flag = bfy_huainan_coal_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.4
+			modifier = { factor = 5 has_resources_in_country = { resource = coal amount < 1 } }
+		}
+		remove_effect = {
+			173 = { set_state_flag = bfy_huainan_coal_developed }
+			173 = { add_resource = { type = coal amount = 12 } }
+		}
+	}
+
+	# ============ 橡胶（垦殖周期长，不强制高科技） ============
+
+	# 琼崖橡胶园（海南岛北部）
+	bfy_expand_hainan_rubber = {
+		icon = rubber
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 388 } }
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 388
+			controls_state = 388
+		}
+		visible = {
+			owns_state = 388
+			controls_state = 388
+			388 = { NOT = { has_state_flag = bfy_hainan_rubber_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 180
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = rubber amount < 1 } }
+		}
+		remove_effect = {
+			388 = { set_state_flag = bfy_hainan_rubber_developed }
+			388 = { add_resource = { type = rubber amount = 8 } }
+		}
+	}
+
+	# 西双版纳垦殖
+	bfy_expand_banna_rubber = {
+		icon = rubber
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 376 } }
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			owns_state = 376
+			controls_state = 376
+		}
+		visible = {
+			owns_state = 376
+			controls_state = 376
+			376 = { NOT = { has_state_flag = bfy_banna_rubber_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 180
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = rubber amount < 1 } }
+		}
+		remove_effect = {
+			376 = { set_state_flag = bfy_banna_rubber_developed }
+			376 = { add_resource = { type = rubber amount = 10 } }
+		}
+	}
+
+	# ============ 铬 / 镍（中国稀缺，门槛高） ============
+
+	# 金川镍矿（金昌，世界级镍都，游戏内以铬代理特种合金）
+	bfy_develop_jinchang_nickel = {
+		icon = chromium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 95 } }
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 95
+			controls_state = 95
+		}
+		visible = {
+			owns_state = 95
+			controls_state = 95
+			95 = { NOT = { has_state_flag = bfy_jinchang_nickel_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 90
+		modifier = { civilian_factory_use = 2 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = chromium amount < 1 } }
+		}
+		remove_effect = {
+			95 = { set_state_flag = bfy_jinchang_nickel_developed }
+			95 = { add_resource = { type = chromium amount = 8 } }
+		}
+	}
+
+	# 罗布莎铬铁矿（藏南，中国最大铬矿）
+	bfy_develop_luobusha_chromium = {
+		icon = chromium
+		allowed = { }
+		highlight_states = { highlight_state_targets = { state = 435 } }
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 435
+			controls_state = 435
+		}
+		visible = {
+			owns_state = 435
+			controls_state = 435
+			435 = { NOT = { has_state_flag = bfy_luobusha_chromium_developed } }
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 120
+		modifier = { civilian_factory_use = 3 }
+		ai_will_do = {
+			base = 0.3
+			modifier = { factor = 5 has_resources_in_country = { resource = chromium amount < 1 } }
+		}
+		remove_effect = {
+			435 = { set_state_flag = bfy_luobusha_chromium_developed }
+			435 = { add_resource = { type = chromium amount = 6 } }
+		}
+	}
+}

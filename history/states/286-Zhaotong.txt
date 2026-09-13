@@ -5,7 +5,7 @@ state={
 		1454 2540 2692 2942 3916 3957 
 	}
 	resources={
-		oil=2.000
+		coal = 5
 	}
 	history={
 		owner = ROY

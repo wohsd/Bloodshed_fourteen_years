@@ -4,6 +4,9 @@ state={
 	provinces={
 		532 2318 
 	}
+	resources={
+		oil = 12
+	}
 	history={
 		owner = ROA
 		buildings = {
