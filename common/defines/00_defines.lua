@@ -859,9 +859,18 @@ NMilitary = {
 	MAX_DIVISION_SUPPORT_WIDTH = 1,			-- Max width of support in division designer.
 	MAX_DIVISION_SUPPORT_HEIGHT = 5,		-- Max height of support in division designer.
 
+	-- 1.19 Operation Postern 新增：团属支援连（Regimental Support）
+	MAX_REGIMENTAL_SUPPORT_WIDTH = 5,		-- 团属支援在编制设计器中的最大列数。
+	MAX_REGIMENTAL_SUPPORT_HEIGHT = 1,		-- 团属支援在编制设计器中的最大行数。
+	MAX_HQ_REGIMENTAL_SUPPORT_WIDTH = 0,	-- 陆军集团军 HQ 模板的团属最大列数。
+	MAX_HQ_REGIMENTAL_SUPPORT_HEIGHT = 0,	-- 陆军集团军 HQ 模板的团属最大行数。
+	REGIMENTAL_SUPPORT_REQUIRED_BATTALIONS = { 3 }, -- 每 3 个战斗营解锁 1 个团属支援槽（按团/列计算）。
+
 	BASE_DIVISION_BRIGADE_GROUP_COST = 20, 	--Base cost to unlock a regiment slot,
 	BASE_DIVISION_BRIGADE_CHANGE_COST = 5,	--Base cost to change a regiment column.
 	BASE_DIVISION_SUPPORT_SLOT_COST = 10, 	--Base cost to unlock a support slot
+
+	REGIMENTAL_SUPPORT_SLOT_COST_MULTIPLIER = 0.5, -- 团属支援槽解锁花费相对普通支援槽的比例
 
 	MAX_ARMY_EXPERIENCE = 500,			--Max army experience a country can store
 	MAX_NAVY_EXPERIENCE = 500,			--Max navy experience a country can store

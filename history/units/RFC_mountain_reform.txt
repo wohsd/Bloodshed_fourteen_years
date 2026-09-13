@@ -1,0 +1,22 @@
+# 「精兵强将」国策整编：国民革命军
+# 步兵全部替换为山地步兵，每团配属一个步兵炮连（团属支援，共 2 个）
+# 注意：团属支援连（regimental_support）仅在 OOB/AI 模板解析中受支持，
+#       故通过国策 load_oob 加载本文件（脚本内联 division_template 不保证支持 regimental_support）。
+#       无 units 块：不刷新兵，仅覆盖同名模板，现有部队自动改用新编制。
+division_template = {
+	name = "国民革命军"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+	}
+	regimental_support = {
+		field_guns = { x = 0 y = 0 }
+		field_guns = { x = 1 y = 0 }
+	}
+}

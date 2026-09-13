@@ -827,5 +827,7 @@ Requisition_factory_desc: ""
   bfy_continuous_medical_reform_effect_tt: "每月医疗现代化进程 §G+1.5%§!（每月1号自动结算，与民族精神/顾问加成叠加）"
 # === RFC 国策触发/效果提示 ===
 RFC_deng_yanda_alive_tt: "邓演达仍然在世且未被刺杀（未通过决议「除掉邓演达」）"
-RFC_provisional_gov_reward_tt: "§G社会现代化提升一级§!（自动切换相应社会现代化法案）\n§G「临委会起义」修正：§!每日政治点数 +0.05"
+RFC_provisional_gov_reward_tt: "§G社会现代化提升一级§!"
 RFC_political_dept_reward_tt: "§G「临委会起义」修正：§!每日政治点数 +0.05、组织度恢复 +4%\n§Y若已聘用郭沫若为政治顾问，政治部的重建效果会更好（上述加成翻倍），并暗中提升共产主义支持度。§!"
+RFC_militia_reform_tt: "§G解锁科技：§!民兵\n§G整编「地方部队」：§!全师六个民兵营\n§G在首都新建 6 支地方部队§!"
+RFC_mountain_reform_tt: "§G解锁科技：§!山地步兵 I\n§G整编「国民革命军」：§!步兵全部替换为山地步兵，每团增设一个步兵炮连（团属支援，共 2 个）"

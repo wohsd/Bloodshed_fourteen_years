@@ -50,11 +50,11 @@ focus_tree = {
 				NOT = { CHI = { has_country_flag = RFC_DengYanDa1 } }
 			}
 		}
-		completion_reward = {
-			add_stability = 0.02
-			add_war_support = 0.02
-			custom_effect_tooltip = RFC_provisional_gov_reward_tt
-			# 提升一级社会现代化（复用现代化系统升阶逻辑：换法案 + 升级事件）
+	completion_reward = {
+		add_stability = 0.10
+		custom_effect_tooltip = RFC_provisional_gov_reward_tt
+		# 提升一级社会现代化（实际效果隐藏，说明见 tooltip）：换法案 + 升级事件
+		hidden_effect = {
 			if = {
 				limit = { check_variable = { var = social_development_stage value = 5 compare = less_than } }
 				add_to_variable = { social_development_stage = 1 }
@@ -64,10 +64,11 @@ focus_tree = {
 				add_to_variable = { BFY_disp_social = 1 }
 				country_event = { id = BFY_dev_event.5 hours = 6 }
 			}
-			# 临委会起义修正：每日政治点数 +0.05
-			add_to_variable = { RFC_pcq_pp = 0.05 }
-			country_event = { id = RFC_country.4 }
 		}
+		# 临委会起义修正：每日政治点数 +0.05
+		add_to_variable = { RFC_pcq_pp = 0.05 }
+		country_event = { id = RFC_country.4 }
+	}
 		relative_position_id = The_Third_Road
 	}
 	focus = {
@@ -85,8 +86,14 @@ focus_tree = {
 			focus = Establish_a_provisional_government
 		}
 		completion_reward = {
-			add_dynamic_modifier = { modifier = RFC_professional_army }
-			add_dynamic_modifier = { modifier = RFC_high_military_cost }
+			custom_effect_tooltip = RFC_mountain_reform_tt
+			hidden_effect = {
+				# 解锁山地步兵科技
+				add_tech = tech_mountaineers
+				# 通过 load_oob 整编「国民革命军」：8 山地步兵营 + 2 个步兵炮连（团属支援）
+				# 团属支援连仅 OOB 模板解析支持，故不使用内联 division_template 脚本
+				load_oob = "RFC_mountain_reform"
+			}
 		}
 		relative_position_id = Establish_a_provisional_government
 	}
@@ -150,8 +157,21 @@ focus_tree = {
 			focus = Establish_a_provisional_government
 		}
 		completion_reward = {
-			add_dynamic_modifier = { modifier = RFC_army_civilian_unity }
-			add_dynamic_modifier = { modifier = RFC_undertrained_army }
+			custom_effect_tooltip = RFC_militia_reform_tt
+			hidden_effect = {
+				# 解锁民兵科技
+				add_tech = militia_tech
+				# 通过 load_oob 整编「地方部队」：全师六个民兵营
+				load_oob = "RFC_militia_reform"
+				# 在首都新建 6 支地方部队
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"地方部队\" start_experience_factor = 0.3 start_equipment_factor = 0.5"
+						owner = ROOT
+						count = 6
+					}
+				}
+			}
 		}
 		relative_position_id = Establish_a_provisional_government
 	}
@@ -222,9 +242,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Establish_a_provisional_government
 		}
-		completion_reward = {
-			add_political_power = 100
-			custom_effect_tooltip = RFC_political_dept_reward_tt
+	completion_reward = {
+		add_political_power = 25
+		custom_effect_tooltip = RFC_political_dept_reward_tt
 			# 临委会起义修正：每日政治点数 +0.05、组织度恢复 +4%
 			add_to_variable = { RFC_pcq_pp = 0.05 }
 			add_to_variable = { RFC_army_morale_factor = 0.04 }

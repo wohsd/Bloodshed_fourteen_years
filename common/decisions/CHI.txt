@@ -1300,7 +1300,8 @@ CHI_Purging_party_category = {
 				RFC = {
 				hidden_effect = {
 				# 第一次起义：中国国民党临时行动委员会——民主派执政（邓演达）
-				set_politics = { ruling_party = revolutionary_sanminism }
+				# set_politics 只接受意识形态组名；切到 democratic 后由邓演达的 revolutionary_sanminism 领袖身份执政
+				set_politics = { ruling_party = democratic }
 				set_popularities = {
 					democratic = 30
 					communism = 20
@@ -1354,7 +1355,8 @@ CHI_Purging_party_category = {
 			RFC = {
 				hidden_effect = {
 					# 国民党左派起义：中国国民党临时行动委员会——民主派执政（邓演达）
-					set_politics = { ruling_party = revolutionary_sanminism }
+					# set_politics 只接受意识形态组名；切到 democratic 后由邓演达的 revolutionary_sanminism 领袖身份执政
+					set_politics = { ruling_party = democratic }
 					set_popularities = {
 						democratic = 30
 						communism = 20
