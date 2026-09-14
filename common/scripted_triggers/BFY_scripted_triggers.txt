@@ -155,3 +155,14 @@ BFY_is_chinese_faction = {
 		tag = D75
 	}
 }
+
+# BFY：中国领土州（state scope）
+# 任意中国势力拥有核心，或为蒙古（MEG）核心——用于“整合”占领决议的目标限定
+BFY_is_chinese_territory_state = {
+	OR = {
+		any_country_with_core = {
+			BFY_is_chinese_faction = yes
+		}
+		is_core_of = MEG
+	}
+}

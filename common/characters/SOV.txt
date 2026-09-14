@@ -36,6 +36,10 @@ characters={
 				#original_tag = SOV
 			}
 			available = {
+			SOV_blyukher_A = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			}
 			traits = {
 				army_chief_reform_2

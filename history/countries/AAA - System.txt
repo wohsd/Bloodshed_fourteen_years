@@ -1,0 +1,9 @@
+###############
+### BFY 系统后台国 ###
+# 永不扮演、不可见，仅作为“整合”占领法案机制中的
+# 临时被占领国（抵抗/顺从度载体），开局注册为全局 event_target
+###############
+
+capital = 1
+
+save_global_event_target_as = bfy_system

@@ -1,4 +1,4 @@
-﻿l_simp_chinese:
+l_simp_chinese:
  WHILE_FOCUSING: "执行该国策将产生以下效果：\n$EFF$"
  generic_focus: "国策"
  
@@ -816,7 +816,7 @@ Requisition_factory_desc: ""
   bfy_continuous_medical_reform: "推动医疗改革"
   bfy_continuous_medical_reform_desc: "全力推动医疗现代化建设，完善医疗与公共卫生体系。\n每月医疗现代化进程 +1.5%"
   bfy_continuous_local_institutions: "完善地方机构"
-  bfy_continuous_local_institutions_desc: "整顿并强化基层行政机构，提升对地方尤其是占领区的治理能力。\n每日顺从度增长 +0.02%"
+  bfy_continuous_local_institutions_desc: "整顿并强化基层行政机构，提升对地方尤其是占领区的治理能力。\n每日顺从度增长 +0.03%（与「整合」占领法案相同，可与其叠加）"
 
   # 持续国策执行效果提示（持续国策面板"效果"栏显示）
   bfy_continuous_education_reform_effect_tt: "每月教育现代化进程 §G+1.5%§!（每月1号自动结算，与民族精神/顾问加成叠加）"

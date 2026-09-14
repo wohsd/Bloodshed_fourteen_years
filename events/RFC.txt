@@ -116,31 +116,31 @@ country_event = {
 		fire_only_once = yes
 		is_triggered_only = yes
 		option = {
-			name = RFC_country.5.a
-			set_country_flag = RFC_guomoruo_returned
-			add_political_power = 25
-			add_stability = 0.02
-			# 共产主义力量接掌政权：郭沫若出任国家领导人，党改名中国共产党
-			set_politics = { ruling_party = communism }
-			promote_character = RFC_GuoMoRuo
-			set_party_name = {
-				ideology = communism
-				name = RFC_ccp_party
-				long_name = RFC_ccp_party_long
-			}
+		name = RFC_country.5.a
+		set_country_flag = RFC_guomoruo_returned
+		add_political_power = 25
+		add_stability = 0.02
+		# 郭沫若出任【共产党党派领袖】而非国家领袖：
+		# promote_character 仅将其推为马克思主义派党的党魁；由于不改执政党，
+		# 他不会成为国家元首（日后共产党经选举/政变上台时才是国家领袖）。
+		promote_character = RFC_GuoMoRuo
+		set_party_name = {
+			ideology = communism
+			name = RFC_ccp_party
+			long_name = RFC_ccp_party_long
 		}
-		option = {
-			name = RFC_country.5.b
-			set_country_flag = RFC_guomoruo_returned
-			add_political_power = 25
-			add_stability = 0.02
-			# 共产主义力量接掌政权：郭沫若出任国家领导人，党改名中国共产党
-			set_politics = { ruling_party = communism }
-			promote_character = RFC_GuoMoRuo
-			set_party_name = {
-				ideology = communism
-				name = RFC_ccp_party
-				long_name = RFC_ccp_party_long
-			}
+	}
+	option = {
+		name = RFC_country.5.b
+		set_country_flag = RFC_guomoruo_returned
+		add_political_power = 25
+		add_stability = 0.02
+		# 郭沫若出任【共产党党派领袖】而非国家领袖（同上）
+		promote_character = RFC_GuoMoRuo
+		set_party_name = {
+			ideology = communism
+			name = RFC_ccp_party
+			long_name = RFC_ccp_party_long
 		}
+	}
 	}

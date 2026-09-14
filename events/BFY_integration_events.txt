@@ -1,0 +1,46 @@
+add_namespace = BFY_integration
+
+############################################
+# BFY：领土整合通知
+# state_event：ROOT = 完成整合的州。州事件默认投递给州 owner，
+# 故在 BFY_add_state_core_upon_threshold 中用 trigger_for = controller
+# 指定投递给发起整合的占领者（玩家）。
+############################################
+
+state_event = {
+	id = BFY_integration.1
+	title = BFY_integration.1.t
+	desc = BFY_integration.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = BFY_integration.1.a
+	}
+}
+
+############################################
+# 开局初始化：对已控制的中国领土非核心州自动登记整合
+# ROOT = 收到事件的中国势力
+############################################
+country_event = {
+	id = BFY_integration.2
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = BFY_integration.2.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					BFY_is_chinese_territory_state = yes
+					NOT = { is_core_of = ROOT }
+					NOT = { has_variable = can_integrate_@ROOT }
+					impassable = no
+				}
+				BFY_enable_state_integration_50_compliance = yes
+			}
+		}
+	}
+}

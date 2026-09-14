@@ -1,0 +1,33 @@
+﻿l_simp_chinese:
+
+ # ===== 系统后台国 =====
+ AAA:0 "系统"
+ AAA_DEF:0 "系统"
+
+ # ===== 占领法案 =====
+ BFY_territorial_integration:0 "整合"
+ BFY_territorial_integration_tt:0 "对占领地区推行行政整合：该地顺从度达到 §H50%§! 时将正式成为我国核心领土。整合期间所需驻军大幅减少，抵抗强度衰减更快。"
+
+ # ===== 脚本效果提示 =====
+ BFY_state_integration_enabled_tooltip:0 "该地区在为我国§Y所有并控制§!期间，顺从度达到 §H50%§! 时即可被整合为核心领土。"
+ BFY_state_integration_law_unlocked:0 "启用 §H$BFY_territorial_integration$§! 占领法案。"
+ BFY_state_integration_disabled_tooltip:0 "该地区将无法再被整合为核心领土。"
+
+ # ===== 决议分类 =====
+ BFY_integration_category:0 "领土整合"
+ BFY_integration_category_desc:0 "我军占领的中国领土（含台湾、澎湖、藏南、港澳、广州湾、关东州等）将§Y自动§!开始行政整合，顺从度达到 §H50%§! 后纳入核心版图。此处仅可手动中止整合，或对极个别未自动登记的地区补行整合。"
+
+ # ===== 决议 =====
+ BFY_integrate_state:0 "整合 [This.GetName]"
+ BFY_integrate_state_desc:0 "占领中国领土后整合通常会§Y自动开始§!，无需手动操作。仅当 [This.GetName] 因特殊原因未自动登记时，才需使用本决议补行整合。\n\n整合期间适用“整合”占领法案，顺从度达到 §H50%§! 后该地正式成为我国核心领土。"
+
+ BFY_cancel_state_integration:0 "停止整合 [This.GetName]"
+ BFY_cancel_state_integration_desc:0 "撤销对 [This.GetName] 的整合工作，该地将恢复普通占领状态，且无法再通过顺从度成为我国核心领土。"
+
+ # ===== 事件 =====
+ BFY_integration.1.t:0 "整合完成：[This.GetName]"
+ BFY_integration.1.d:0 "经过持续的行政渗透与治理，[This.GetName] 民众对我国统治的顺从程度已达到临界点。地方行政体系已与中央接轨，该地正式纳入我国核心版图。"
+ BFY_integration.1.a:0 "可喜可贺。"
+
+ # ===== 隐藏事件 =====
+ BFY_integration.2.a:0 "好。"

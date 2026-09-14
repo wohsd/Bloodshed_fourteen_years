@@ -100,6 +100,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_ZhuDe_H = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -136,6 +140,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+				PRC_ZhouEngLai_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_country_flag = PRC_1931_16
 			}
 			traits  = {
@@ -172,6 +180,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_BoGu_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -189,6 +201,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+				PRC_BoGu_H = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_country_flag = PRC_1934_4
 				}
@@ -225,6 +241,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_LiDe_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 				
 			}
@@ -243,6 +263,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+				PRC_LiDe_H = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_country_flag = PRC_1934_4
 				}
@@ -272,6 +296,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_WangJiaXiang_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -299,6 +327,10 @@ characters={
 				date < 1935.1.1
 			}
 			available  = {
+			PRC_GuZuoLing_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -325,6 +357,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_RenBiShi_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -351,6 +387,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_ChenYun_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -386,6 +426,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_LiuBoChen_H = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -431,6 +475,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+				PRC_WuYuZhang_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_completed_focus = PRC_focus97
 			}
 			traits  = {
@@ -457,6 +505,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_lingboqu_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -483,6 +535,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_XuTeLi_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -510,6 +566,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_LiuShaoQi_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -535,6 +595,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_RaoShuShi_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -562,6 +626,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+				PRC_DongBiWu_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_completed_focus = PRC_focus86
 			}
 			traits  = {
@@ -587,6 +655,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+				PRC_KangSheng_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_completed_focus = PRC_focus96
 			}
 			traits  = {
@@ -613,6 +685,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+				PRC_XieJueZai_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_completed_focus = PRC_focus105
 			}
 			traits  = {
@@ -690,6 +766,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_PengDeHuai_H = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -726,6 +806,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_FangZhiMing_H = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {
@@ -763,6 +847,10 @@ characters={
 				original_tag  = PRC
 			}
 			available  = {
+			PRC_PengDeHuai_H = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 				
 			}
 			traits  = {

@@ -1,0 +1,27 @@
+############################################
+# BFY：“整合”占领法案（移植自 Kaiserreich 的 territorial_integration）
+# 该法案只对系统后台国 AAA 作为被占领国时可见——
+# 即中国势力对已发起整合的占领州。
+# 顺从度达到阈值（50%）时，该州自动成为占领者的核心。
+############################################
+
+BFY_territorial_integration = {
+	icon = 13
+	tooltip = BFY_territorial_integration_tt
+	sound_effect = "Martial_Law_Interface_Foreign_Cvilian_Oversight"
+
+	visible = {
+		FROM = { original_tag = event_target:bfy_system }
+	}
+
+	state_modifier = {
+		compliance_gain 				= 0.03
+		required_garrison_factor 		= -0.5
+		resistance_damage_to_garrison 	= -0.3
+		resistance_decay 				= 0.5
+	}
+
+	ai_will_do = {
+		base = 200
+	}
+}

@@ -1,0 +1,57 @@
+############################################
+# BFY：领土整合——自动化钩子
+#
+# 规则：
+#   ROOT = 新控制者，FROM = 旧控制者，FROM.FROM = 发生变更的州
+#   中国势力占领任意“中国领土州”（含台湾、藏南、港澳、广州湾、关东州
+#   等加有中国核心的州）且该州尚非其核心时，自动发起整合（无需决议）；
+#   顺从度达到 50% 后自动成为核心。
+############################################
+
+on_actions = {
+
+	# 开局脉冲：对开局即已控制的州补登记（正常情况下中国势力本土州都有
+	# 自身核心，此处主要用于兼容非标准开局/修改过的历史配置）
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					BFY_is_chinese_faction = yes
+				}
+				country_event = { id = BFY_integration.2 hours = 2 }
+			}
+		}
+	}
+
+	# 州控制权变更：自动整合 / 转移或清理整合槽位
+	on_state_control_changed = {
+		effect = {
+			FROM.FROM = {
+				# 新控制者为中国势力、州属中国领土、尚非其核心、尚未登记：自动发起整合
+				if = {
+					limit = {
+						ROOT = { BFY_is_chinese_faction = yes }
+						BFY_is_chinese_territory_state = yes
+						NOT = { is_core_of = ROOT }
+						NOT = { has_variable = can_integrate_@ROOT }
+						impassable = no
+					}
+					BFY_enable_state_integration_50_compliance = yes
+				}
+
+				# 已登记整合的州易手：切换整合抵抗槽位；否则清理系统国临时核心
+				if = {
+					limit = {
+						has_variable = can_integrate_@ROOT
+						NOT = { is_core_of = ROOT }
+						impassable = no
+					}
+					BFY_start_state_integration_resistance = yes
+				}
+				else = {
+					BFY_clear_state_integration_resistance = yes
+				}
+			}
+		}
+	}
+}

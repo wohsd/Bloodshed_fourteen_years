@@ -1,5 +1,7 @@
 #check resistance_modifiers.txt for example
 
+# BFY：普通顺从度阶段在“整合中”的州（被占领国为系统后台国 AAA）不显示，
+# 这些州改由文件末尾的整合修饰符处理。
 
 compliance_15 = {
 	type = core_compliance_modifier
@@ -7,6 +9,9 @@ compliance_15 = {
 	small_icon = "GFX_occupation_compliance_modifier_small_strip:1"
 	threshold = 15
 	margin = 2
+	visible = {
+		NOT = { FROM = { original_tag = event_target:bfy_system } }
+	}
 	state_modifier = {
 		enemy_operative_detection_chance = 0.25
 	}
@@ -18,6 +23,9 @@ compliance_25 = {
 	small_icon = "GFX_occupation_compliance_modifier_small_strip:2"
 	threshold = 25
 	margin = 2
+	visible = {
+		NOT = { FROM = { original_tag = event_target:bfy_system } }
+	}
 	state_modifier = {
 		required_garrison_factor = -0.25
 		recruitable_population = 0.005
@@ -29,6 +37,9 @@ compliance_40 = {
 	small_icon = "GFX_occupation_compliance_modifier_small_strip:3"
 	threshold = 40
 	margin = 2
+	visible = {
+		NOT = { FROM = { original_tag = event_target:bfy_system } }
+	}
 	state_modifier = {
 		local_factories = 0.1
 		local_resources = 0.1
@@ -40,6 +51,9 @@ compliance_60 = {
 	small_icon = "GFX_occupation_compliance_modifier_small_strip:4"
 	threshold = 60
 	margin = 2
+	visible = {
+		NOT = { FROM = { original_tag = event_target:bfy_system } }
+	}
 	state_modifier = {
 		recruitable_population_factor = 0.2
 	}
@@ -50,7 +64,7 @@ compliance_60 = {
 	# small_icon = "GFX_occupation_compliance_modifier_small_strip:5"
 	# threshold = 80
 	# margin = 2
-	
+
 	# visible = {
 		# has_dlc = "La Resistance"
 	# }
@@ -60,8 +74,54 @@ compliance_60 = {
 	# }
 	# state_modifier = {
 	# }
-	
+
 	# on_enable = {
 		# country_event = { id = occupied_countries.1 days = 2 }
 	# }
 # }
+
+############################################
+# BFY：整合机制专用——顺从度达到阈值时自动给占领者加核心
+############################################
+
+BFY_compliance_integration_state_50 = {
+	type = state_compliance_modifier
+	icon = "GFX_occupation_compliance_modifier_strip:5"
+	small_icon = "GFX_occupation_compliance_modifier_small_strip:5"
+	threshold = 50
+	margin = 2
+
+	visible = {
+		occupied_country_tag = event_target:bfy_system
+		check_variable = { can_integrate_@FROM = 50 }
+	}
+
+	enabled = {
+		is_owned_by = ROOT
+	}
+
+	on_enable = {
+		BFY_add_state_core_upon_threshold = yes
+	}
+}
+
+BFY_compliance_integration_state_80 = {
+	type = state_compliance_modifier
+	icon = "GFX_occupation_compliance_modifier_strip:5"
+	small_icon = "GFX_occupation_compliance_modifier_small_strip:5"
+	threshold = 80
+	margin = 2
+
+	visible = {
+		occupied_country_tag = event_target:bfy_system
+		check_variable = { can_integrate_@FROM = 80 }
+	}
+
+	enabled = {
+		is_owned_by = ROOT
+	}
+
+	on_enable = {
+		BFY_add_state_core_upon_threshold = yes
+	}
+}

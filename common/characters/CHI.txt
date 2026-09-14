@@ -105,6 +105,10 @@ characters={
 			original_tag = CHI
 		}
 		available = {
+			CHI_ChenCheng = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			NOT = {
 				has_advisor = {
 					character = CHI_ChenCheng
@@ -148,6 +152,10 @@ characters={
 			original_tag = CHI
 		}
 		available = {
+			CHI_HeYingQing = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			NOT = {
 				has_advisor = {
 					character = CHI_HeYingQing
@@ -190,6 +198,10 @@ characters={
 			original_tag = CHI
 		}
 		available = {
+			CHI_TangShengZhi = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			NOT = {
 				has_advisor = {
 					character = CHI_TangShengZhi
@@ -230,6 +242,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+			CHI_GuZhuTong = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			}
 			traits = {
 				army_chief_morale_2
@@ -274,6 +290,10 @@ characters={
                   original_tag = CHI
           }
           available = {
+                  CHI_XueYue_HC = {
+                  	is_hired_as_advisor = no
+                  	is_country_leader = no
+                  }
                   NOT = {
                           has_advisor = {
                                   character = CHI_XueYue
@@ -297,6 +317,10 @@ characters={
 			original_tag = CHI
 		}
 		available = {
+			CHI_XueYue_H = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			has_completed_focus = CHIFocus_21
 			NOT = {
 				has_advisor = {
@@ -341,6 +365,10 @@ characters={
                                 original_tag = CHI
                         }
                         available = {
+                                CHI_WeiLiHuang_HC = {
+                                	is_hired_as_advisor = no
+                                	is_country_leader = no
+                                }
                                 NOT = {
                                         has_advisor = {
                                                 character = CHI_WeiLiHuang
@@ -468,6 +496,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				CHI_ZhangZhiZhong = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_war_with = JAP
 				NOT = {
 					has_advisor = {
@@ -490,6 +522,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				CHI_ZhangZhiZhong_C = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_ZhangZhiZhong
@@ -554,6 +590,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				CHI_LiuZhi = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_LiuZhi
@@ -597,6 +637,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				CHI_LuoZuoYing = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_LuoZuoYing
@@ -694,6 +738,10 @@ characters={
                         original_tag = CHI
                 }
                 available = {
+                        CHI_BaiChongXi_HC = {
+                        	is_hired_as_advisor = no
+                        	is_country_leader = no
+                        }
                         NOT = {
                                 has_advisor = {
                                         character = CHI_BaiChongXi
@@ -710,6 +758,10 @@ characters={
         }
 
 			available = {
+			CHI_Alexander_von_Falkenhausen_A = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			}
 			traits = {
 				german_advisor
@@ -741,6 +793,10 @@ characters={
 			original_tag = CHI
 		}
 		available = {
+			CHI_BaiChongXi_H = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			has_completed_focus = CHIFocus_20
 			NOT = {
 				has_advisor = {
@@ -806,6 +862,10 @@ characters={
                                 original_tag = CHI
                         }
                         available = {
+                                CHI_YuJiShi_HC = {
+                                	is_hired_as_advisor = no
+                                	is_country_leader = no
+                                }
                                 NOT = {
                                         has_advisor = {
                                                 character = CHI_YuJiShi
@@ -918,6 +978,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				CHI_JiangBaiLi = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_JiangBaiLi
@@ -961,6 +1025,10 @@ characters={
 				original_tag = CHI
 			}
 			available = {
+				CHI_JiangDingWen = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_JiangDingWen
@@ -1048,6 +1116,10 @@ CHI_TangEnBo={
 			original_tag = CHI
 		}
 		available = {
+			CHI_TangEnBo = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			NOT = {
 				has_advisor = {
 					character = CHI_TangEnBo
@@ -1112,6 +1184,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+				CHI_XiongShiHui = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_XiongShiHui
@@ -1156,6 +1232,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+				CHI_XuTingYao = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_XuTingYao
@@ -1199,6 +1279,10 @@ CHI_TangEnBo={
 			original_tag = CHI
 		}
 		available = {
+			CHI_HuZongNan = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			NOT = {
 				has_advisor = {
 					character = CHI_HuZongNan
@@ -1253,6 +1337,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+			CHI_SunKe_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			}
 			traits = {
 				political_reformer_1
@@ -1280,6 +1368,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+				CHI_KongXiangXi_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_completed_focus = Unified_Tax_Reform
 			}
 			traits = {
@@ -1308,6 +1400,13 @@ CHI_TangEnBo={
 			allowed = {
 				original_tag = CHI
 			}
+			available = {
+				CHI_DaiLi_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				head_of_intelligence
 			}
@@ -1327,6 +1426,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+				CHI_DengWenYi_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_DengWenYi
@@ -1352,6 +1455,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+				CHI_KangZe_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_KangZe
@@ -1377,6 +1484,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+				CHI_HeZhongHan_A = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				NOT = {
 					has_advisor = {
 						character = CHI_HeZhongHan
@@ -1408,6 +1519,13 @@ CHI_TangEnBo={
 			allowed = {
 				original_tag = CHI
 			}
+			available = {
+				CHI_ChenLiFu_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 			backroom_backstabber
 		}
@@ -1433,6 +1551,13 @@ CHI_TangEnBo={
 			allowed = {
 				original_tag = CHI
 			}
+			available = {
+				CHI_ChenGuoFu_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				dangwu_guanlizhe
 			}
@@ -1458,6 +1583,13 @@ CHI_TangEnBo={
 			allowed = {
 				original_tag = CHI
 			}
+			available = {
+				CHI_SongZiWen_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				economic_reformer
 			}
@@ -1515,6 +1647,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+			CHI_HuangFu_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			}
 			traits = {
 				BRA_distinguished_diplomat
@@ -1541,6 +1677,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+			CHI_LingSeng_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			}
 			traits = {
 				old_figurehead
@@ -1568,6 +1708,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+				CHI_JiangJingGuo_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_completed_focus = CHIFocus_33
 			}
 			traits = {
@@ -1596,6 +1740,10 @@ CHI_TangEnBo={
 				original_tag = CHI
 			}
 			available = {
+			CHI_ZhangQun_P = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
 			}
 			traits = {
 				BRA_political_fox
@@ -1631,6 +1779,13 @@ CHI_TangEnBo={
 			}
 			allowed = {
 			}
+			available = {
+				CHI_ChenShaoKuang_N = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = { navy_capital_ship_2 }
 			cost = 100				
 		}		
@@ -1667,6 +1822,13 @@ CHI_TangEnBo={
 			}
 			allowed = {
 			}
+			available = {
+				CHI_ChenJiLiang_N = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = { navy_capital_ship_2 }
 			cost = 100				
 		}		
@@ -1699,6 +1861,13 @@ CHI_TangEnBo={
 			}
 			allowed = {
 			}
+			available = {
+				CHI_ChenCe_N = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = { navy_screen_2 }
 			cost = 100				
 		}		

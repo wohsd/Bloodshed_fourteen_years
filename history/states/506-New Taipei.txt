@@ -6,6 +6,7 @@ state={
 	}
 	history={
 		owner = JAP
+	add_core_of = CHI
 		buildings = {
 			air_base= 1
 			2839= {

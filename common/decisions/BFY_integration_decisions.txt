@@ -1,0 +1,74 @@
+############################################
+# BFY：领土整合决议（仅中国势力可用）
+#
+# 正常情况下整合为全自动：中国势力占领中国领土州后立即自动开始，
+# 顺从度达到 50% 即成为核心。本分类只保留：
+#   1. “整合领土”——兜底手段，仅在极个别未自动登记的州出现，免费
+#   2. “停止整合”——玩家可随时中止对某州的整合
+############################################
+
+BFY_integration_category = {
+
+	# ===== 兜底：手动对未自动登记的州发起整合（免费） =====
+	BFY_integrate_state = {
+		icon = GFX_decision_generic_form_nation
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		# 仅中国势力可见可执行
+		target_root_trigger = {
+			BFY_is_chinese_faction = yes
+		}
+
+		# 可整合目标：我方控制、尚非我方核心、属于中国领土、尚未开始整合
+		target_trigger = {
+			is_controlled_by = ROOT
+			NOT = { is_core_of = ROOT }
+			impassable = no
+			BFY_is_chinese_territory_state = yes
+			NOT = { has_variable = can_integrate_@ROOT }
+		}
+
+		cost = 0
+		fire_only_once = no
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			BFY_enable_state_integration_50_compliance = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	# ===== 停止整合（撤销） =====
+	BFY_cancel_state_integration = {
+		icon = GFX_decision_generic_break_treaty
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_root_trigger = {
+			BFY_is_chinese_faction = yes
+		}
+
+		target_trigger = {
+			is_controlled_by = ROOT
+			NOT = { is_core_of = ROOT }
+			has_variable = can_integrate_@ROOT
+		}
+
+		cost = 0
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			BFY_disable_state_integration = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

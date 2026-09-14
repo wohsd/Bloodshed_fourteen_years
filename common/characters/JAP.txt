@@ -64,6 +64,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				tomoyuki_yamashita = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				grand_battle_plan_expert
 			}
@@ -98,6 +105,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				hisaichi_terauchi = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				military_theorist
 			}
@@ -131,6 +145,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				shunroku_hata = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				army_concealment_2
 			}
@@ -228,6 +249,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				yasuji_okamura = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				army_infantry_2
 			}
@@ -372,6 +400,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				kenji_doihara = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				air_chief_all_weather_1
 			}
@@ -651,6 +686,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				hitoshi_imamura = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				army_logistics_2
 			}
@@ -732,6 +774,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				isoroku_yamamoto = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			
 			traits = {
 				naval_aviation_pioneer
@@ -874,6 +923,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				soemu_toyoda = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				navy_capital_ship_1
 			}
@@ -1020,6 +1076,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+		available = {
+			minoru_genda = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
+		}
+
 			traits = { naval_theorist }
 		}
 	}
@@ -1040,6 +1103,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				yoshitoshi_tokugawa = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				assault_avaition
 			}
@@ -1062,6 +1132,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				hino_kumazo = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = { air_warfare_theorist }
 		}
 	}
@@ -1082,6 +1159,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				kanin_kotohito = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				army_chief_offensive_1
 			}
@@ -1107,6 +1191,10 @@ characters={
 				original_tag = JAP
 			}
 			available = {
+				hajime_sugiyama = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				has_completed_focus = JAP_army_expansion
 			}
 			traits = {
@@ -1133,6 +1221,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				hideki_tojo = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				army_chief_morale_2
 			}
@@ -1159,6 +1254,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				fushimi_hiroyasu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				navy_chief_naval_aviation_2
 			}
@@ -1183,6 +1285,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				osami_nagano = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				navy_chief_commerce_raiding_1
 			}
@@ -1207,6 +1316,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				shigetaro_shimada = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				navy_chief_decisive_battle_2
 			}
@@ -1236,6 +1352,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				torashiro_kawabe = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				air_chief_night_operations_1
 			}
@@ -1260,6 +1383,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				korechika_anami = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				air_chief_ground_support_1
 			}
@@ -1296,6 +1426,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				mitsuo_fuchida = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				air_tactical_bombing_2
 			}
@@ -1321,6 +1458,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				nishizo_tsukahara = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				air_naval_strike_1
 			}
@@ -1346,6 +1490,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				tateo_kato = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				air_air_combat_training_3
 			}
@@ -1371,6 +1522,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				matome_ugaki = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				navy_naval_air_defense_2
 			}
@@ -1396,6 +1554,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				chuichi_nagumo = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				navy_carrier_2
 			}
@@ -1421,6 +1586,10 @@ characters={
 			slot = political_advisor
 			idea_token = sanzo_nosaka
 			available = {
+				sanzo_nosaka = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				if = {
 					limit = {
 						has_dlc = "Waking the Tiger"
@@ -1465,6 +1634,10 @@ characters={
 			slot = political_advisor
 			idea_token = kijuro_shidehara
 			available = {
+				kijuro_shidehara = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				if = {
 					limit = {
 						has_dlc = "Waking the Tiger"
@@ -1512,6 +1685,10 @@ characters={
 				original_tag = JAP
 			}
 			available = {
+				kingoro_hashimoto = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -1549,6 +1726,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				JAP_mitsumasa_yonai = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				silent_workhorse 
 			}
@@ -1569,6 +1753,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				JAP_hiroshi_oshima = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				prince_of_terror 
 			}
@@ -1592,6 +1783,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				JAP_chiune_sugihara = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				compassionate_gentleman 
 			}
@@ -1615,6 +1813,13 @@ characters={
 			allowed = {
 				original_tag = JAP
 			}
+			available = {
+				takuo_godo = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+
 			traits = {
 				war_industrialist 
 			}
