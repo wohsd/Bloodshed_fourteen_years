@@ -28,5 +28,56 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}	
+	}
+	ROA_SunTongXuan={
+		name=ROA_SunTongXuan
+		portraits={
+			army={
+				large="gfx/leaders/ROA/ROA_SunTongXuan.png"
+				small="gfx/leaders/ROA/ROA_SunTongXuan.png"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	ROA_CaoFuLin={
+		name=ROA_CaoFuLin
+		portraits={
+			army={
+				large="gfx/leaders/ROA/ROA_CaoFuLin.png"
+				small="gfx/leaders/ROA/ROA_CaoFuLin.png"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_leader defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ROA_GuLiangMin={
+		name=ROA_GuLiangMin
+		portraits={
+			army={
+				large="gfx/leaders/ROA/ROA_GuLiangMin.png"
+				small="gfx/leaders/ROA/ROA_GuLiangMin.png"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 	}

@@ -1,4 +1,4 @@
-﻿add_namespace = PRC_1935Hidden
+add_namespace = PRC_1935Hidden
 add_namespace = PRC_1935
 add_namespace = PRC_SiFang
 add_namespace = CHI_1935
@@ -306,8 +306,7 @@ country_event = {
 					num_provinces = 2
 					dig_in_factor = 1
 					terrain_factor = 1
-					on_win = PRC_1935.17
-				}	
+				}
 				defender = {
 					state = 657
 					num_provinces = 2
@@ -533,6 +532,47 @@ news_event = {
 	}
 	option = {
 		name = CHI_1935.2.a
+	}
+}
+
+# 长征胜利结束：中央红军抵达陕北（保安 state 655）即自动结算，无论四渡赤水是否走完
+country_event = {
+	id = PRC_1935.20
+	title = PRC_1935.20.t
+	desc = PRC_1935.20.d
+	#picture =
+
+	fire_only_once = yes
+
+	# 自动触发：长征已开始且尚未结束，并控制了保安（陕北根据地）
+	trigger = {
+		has_country_flag = Long_march_mission
+		NOT = { has_country_flag = Long_march_finished }
+		controls_state = 655
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = PRC_1935.20.a
+		hidden_effect = {
+			# 总结束标记：立即清空整条长征任务链（各任务以此为出口级联完成）
+			set_country_flag = Long_march_finished
+			# 会师国策总开关
+			set_country_flag = fall_of_ChangZheng_end
+			# 红军精神升级为长征完成态
+			if = {
+				limit = { has_idea = Chinese_red_army1 }
+				swap_ideas = { remove_idea = Chinese_red_army1 add_idea = Chinese_red_army3 }
+			}
+			if = {
+				limit = { has_idea = Chinese_red_army2 }
+				swap_ideas = { remove_idea = Chinese_red_army2 add_idea = Chinese_red_army3 }
+			}
+			add_political_power = 50
+			add_war_support = 0.1
+		}
 	}
 }
 

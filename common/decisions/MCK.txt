@@ -1,6 +1,7 @@
 Take_Northeast= {
 	Take_over_Northeast = {
 		available = {
+			OR={
 			9={
 				is_owned_by = JAP
 			}
@@ -22,6 +23,11 @@ Take_Northeast= {
 			8={
 				is_owned_by = JAP
 			}
+			689={
+				is_owned_by = JAP
+			}
+			}
+			
 		}  
 		visible = {
 		} 
@@ -40,6 +46,7 @@ Take_Northeast= {
 				transfer_state = 25
 				transfer_state = 12
 				transfer_state = 8
+				transfer_state = 689
 			}
 		}   
 	}

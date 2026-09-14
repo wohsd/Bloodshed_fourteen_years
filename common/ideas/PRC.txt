@@ -158,16 +158,29 @@ ideas = {
 			}
 		}
 		The_impact_Lisan_route= {
-			allowed = {
-			}
-			picture = The_impact_Lisan_route
-			
-			modifier = {
-				war_support_factor=0.05
-				war_stability_factor=-0.1
-				minimum_training_level=0.1
-			}
+		allowed = {
 		}
+		picture = The_impact_Lisan_route
+
+		modifier = {
+			war_support_factor=0.05
+			war_stability_factor=-0.1
+			minimum_training_level=0.1
+		}
+	}
+	Extreme_democratization = {
+		allowed = {
+		}
+		picture = Extreme_democratization
+
+		modifier = {
+			political_power_gain=-0.1
+			stability_factor=-0.05
+			org_loss_when_moving=0.05
+			max_planning=-0.1
+			land_org_factor=-0.05
+		}
+	}
 		Local_outpost= {
 			allowed = {
 			}

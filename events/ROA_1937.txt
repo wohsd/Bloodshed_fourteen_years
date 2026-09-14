@@ -1,4 +1,4 @@
-﻿add_namespace = ROA_1937
+add_namespace = ROA_1937
 
 country_event = {
 	id = ROA_1937.0
@@ -53,15 +53,17 @@ country_event = {
 				}
 			}
 		}
-		CHI={
-			country_event = {id=ROA_1937.2 days=5}
-		}
-		
     }
     immediate = {
 		news_event = Fall_City.2
 		set_global_flag = fall_of_JiNan
-    } 
+		hidden_effect = {
+			#济南沦陷后，蒋介石决意借开封军事会议解决韩复榘
+			CHI = {
+				country_event = { id = ROA_1937.2 days = 5 }
+			}
+		}
+    }
     
 	option = {
 		name = ROA_1937.1.a
@@ -69,6 +71,7 @@ country_event = {
 	}		
 }
 
+# 蒋介石开封诱捕、军法处决韩复榘（CHI决策）
 country_event = {
 	id = ROA_1937.2
 	title = ROA_1937.2.t
@@ -77,8 +80,131 @@ country_event = {
 	#picture = GFX_ROG_1931_1
 	is_triggered_only = yes
     immediate = {
-    } 
+    }
+	# 历史主线：军法处决，随后中央借势整编鲁省军政
 	option = {
 		name = ROA_1937.2.a
-	}		
+		add_political_power = 50
+		add_war_support = 0.05
+		if = {
+			limit = {
+				ROA = { exists = yes }
+			}
+			ROA = {
+				# 韩复榘以“违抗命令，擅自撤退”罪被枪决
+				retire_country_leader = {
+					ideology = despotism
+					kill = yes
+				}
+				# 沈鸿烈接任山东省政，孙桐萱接掌第三集团军
+				promote_character = {
+					character = ROA_ShengHongLie
+					ideology = despotism
+				}
+				set_country_flag = ROA_HanFuQu_executed
+				add_stability = -0.10
+				add_war_support = -0.05
+			}
+			country_event = { id = ROA_1937.3 days = 10 }
+		}
+	}
+	# 支线：念其中原大战旧勋，仅撤职而不问斩，山东维持半独立
+	option = {
+		name = ROA_1937.2.b
+		add_political_power = -25
+		if = {
+			limit = {
+				ROA = { exists = yes }
+			}
+			ROA = {
+				retire_country_leader = {
+					ideology = despotism
+				}
+				promote_character = {
+					character = ROA_ShengHongLie
+					ideology = despotism
+				}
+				set_country_flag = ROA_HanFuQu_spared
+				add_stability = -0.05
+			}
+		}
+	}
+}
+
+# 整编鲁省军政：CHI决定彻底中央化还是暂留第三集团军建制
+country_event = {
+	id = ROA_1937.3
+	title = ROA_1937.3.t
+	desc = ROA_1937.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+    }
+	# 全面整编：第三集团军通电归顺，山东军政悉归中央（CHI吞并ROA）
+	option = {
+		name = ROA_1937.3.a
+		hidden_effect = {
+			if = {
+				limit = {
+					ROA = { exists = yes }
+				}
+				ROA = {
+					set_country_flag = ROA_central_army_takeover
+					country_event = { id = ROA_1937.4 days = 3 }
+				}
+			}
+		}
+	}
+	# 暂缓中央化：沈鸿烈主鲁、孙桐萱掌军，ROA成为CHI傀儡
+	option = {
+		name = ROA_1937.3.b
+		add_stability = 0.05
+		hidden_effect = {
+			if = {
+				limit = {
+					ROA = {
+						exists = yes
+						NOT = { is_subject_of = CHI }
+					}
+				}
+				ROA = {
+					puppet = CHI
+					set_country_flag = ROA_third_army_retained
+					add_stability = 0.05
+				}
+			}
+		}
+	}
+}
+
+# 第三集团军通电服从中央（ROA视角），随后CHI完成吞并
+country_event = {
+	id = ROA_1937.4
+	title = ROA_1937.4.t
+	desc = ROA_1937.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+    immediate = {
+    }
+	option = {
+		name = ROA_1937.4.a
+		hidden_effect = {
+			set_country_flag = ROA_third_army_reorganized
+			add_stability = -0.05
+			if = {
+				limit = {
+					CHI = { exists = yes }
+				}
+				CHI = {
+					annex_country = {
+						target = ROA
+						transfer_templates = yes
+					}
+					set_global_flag = ROA_annexed_by_CHI
+					add_war_support = 0.05
+					add_political_power = 50
+				}
+			}
+		}
+	}
 }
