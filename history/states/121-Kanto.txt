@@ -18,7 +18,7 @@ state={
 			air_base= 1
 			3707= {
 				naval_facility = 1
-				naval_base = 2
+				naval_base = 4
 				coastal_bunker = 1
 			}
 		}
@@ -31,3 +31,4 @@ state={
 	state_category = large_city
 	local_supplies = 0.0
 }
+

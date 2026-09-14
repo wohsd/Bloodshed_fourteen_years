@@ -12,6 +12,9 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 			dockyard = 1
+			2347 = {
+				naval_base = 2
+			}
 		}
 		victory_points = {
 			4002 15
@@ -22,3 +25,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

@@ -9,7 +9,7 @@ state={
 		buildings = {
 			infrastructure = 1
 			2647= {
-				naval_base = 2
+				naval_base = 3
 				coastal_bunker = 1
 				air_base= 1
 			}
@@ -29,3 +29,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

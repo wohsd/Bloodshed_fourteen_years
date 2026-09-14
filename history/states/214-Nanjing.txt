@@ -16,6 +16,9 @@ state={
 			air_base= 1
 			industrial_complex = 3
 			dockyard = 0
+			5268 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			2957 50
@@ -33,3 +36,4 @@ state={
 	state_category=large_city
 	local_supplies=0.000
 }
+

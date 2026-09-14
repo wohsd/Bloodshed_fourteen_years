@@ -9,6 +9,9 @@ state={
         add_core_of = CHI
 		buildings = {
 			infrastructure = 1
+			1886 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			1886 10
@@ -22,3 +25,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

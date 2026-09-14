@@ -9,6 +9,9 @@ state={
 		add_core_of = ROG
 		buildings = {
 			infrastructure = 1
+			3217 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			3217 5
@@ -23,3 +26,4 @@ add_core_of = CHI
 	state_category = town
 	local_supplies = 0.0
 }
+
