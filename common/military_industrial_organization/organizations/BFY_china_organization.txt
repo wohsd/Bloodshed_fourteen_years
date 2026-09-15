@@ -287,3 +287,87 @@ BFY_mio_china_motor_vehicle_organization = {
 		owner = { controls_state = 300 }
 	}
 }
+
+# ===== 枪械/步兵装备（第三批） =====
+
+# 成都兵工厂（四川机器局传统，成渝地区的步枪与弹药修造）
+BFY_mio_chengdu_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 229 }
+	}
+}
+
+# 西安机器局（西北军械修造中心，抗战时期扩编为兵工基地）
+BFY_mio_xian_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 170 }
+	}
+}
+
+# 云南兵工厂（昆明，龙云经营的滇系军工，步枪、机枪与弹药自给）
+BFY_mio_yunnan_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 323 }
+	}
+}
+
+# ===== 支援装备（第三批） =====
+
+# 甘肃制造局（兰州，清末洋务延续的西北军械与弹药修造机构）
+BFY_mio_gansu_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 129 }
+	}
+}
+
+# 天津机器局（津海关道辖下，华北近代军工的发源地，子弹与火药）
+BFY_mio_tianjin_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 82 }
+	}
+}
+
+# ===== 舰艇修造（第三批） =====
+
+# 黄埔船坞（广州，华南舰艇修造与海防设施基地）
+BFY_mio_whampoa_dockyard_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 357 }
+	}
+}

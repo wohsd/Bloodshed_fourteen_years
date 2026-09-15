@@ -127,3 +127,49 @@
 
  BFY_mio_china_motor_vehicle_organization:0 "中国汽车制造公司"
  BFY_mio_china_motor_vehicle_organization_desc:0 "资源委员会在株洲创办的中国汽车制造公司引进德国奔驰技术组装载重汽车，是中国本土汽车工业的第一次尝试。控制株洲后可雇佣。"
+
+ # ===== 工业企业（第三批） =====
+
+ BFY_io_qixin_cement:0 "启新洋灰公司"
+ BFY_io_qixin_cement_desc:0 "唐山启新洋灰公司是中国第一家机械化水泥厂，其“马牌”水泥曾获国际赛会金奖，供应全国铁路、港口与工矿建设。控制唐山后可雇佣。"
+
+ BFY_io_jiangnan_cement:0 "江南水泥公司"
+ BFY_io_jiangnan_cement_desc:0 "1935年在南京栖霞山建成投产，引进丹麦史密斯公司的最新回转窑设备，是当时远东工艺最先进的水泥厂之一。控制南京后可雇佣。"
+
+ BFY_io_jiuda_salt:0 "久大精盐公司"
+ BFY_io_jiuda_salt_desc:0 "范旭东在塘沽创办的久大精盐公司结束了中国人只能吃粗盐的历史，与永利碱厂并称中国化学工业的摇篮。控制天津后可雇佣。"
+
+ BFY_io_tianyuan_chemical:0 "天原电化厂"
+ BFY_io_tianyuan_chemical_desc:0 "吴蕴初在上海创办的天原电化厂以电解食盐生产烧碱、盐酸与漂白粉，抗战内迁重庆后成为大后方化工支柱。控制上海后可雇佣。"
+
+ BFY_io_hunan_machinery:0 "湖南机械厂"
+ BFY_io_hunan_machinery_desc:0 "设于长沙的湖南机械厂制造机床、蒸汽机与兵工机器，并试制汽车零件，是华中内地少有的成规模机械工厂。控制长沙后可雇佣。"
+
+ BFY_io_central_electric:0 "中央电工厂"
+ BFY_io_central_electric_desc:0 "资源委员会中央电工器材厂在昆明设总厂，生产电线电缆、电灯泡、无线电收发报机与电话机，是战时中国电工器材的主要来源。控制昆明后可雇佣。"
+
+ BFY_io_yunnan_tin:0 "云南锡业公司"
+ BFY_io_yunnan_tin_desc:0 "个旧锡矿开采历史悠久，云南锡业公司统办其冶炼与运销，锡锭长期是中国出口换汇、偿付军火借款的支柱矿产。控制昆明后可雇佣。"
+
+ BFY_io_gansu_machinery:0 "甘肃机器厂"
+ BFY_io_gansu_machinery_desc:0 "由左宗棠兰州制造局一脉延续而来，是西北腹地唯一的机器制造厂，承担军械修理、农工机具制造与军工厂筹建。控制兰州后可雇佣。"
+
+ # ===== 军用企业（第三批） =====
+
+ BFY_mio_chengdu_arsenal_organization:0 "成都兵工厂"
+ BFY_mio_chengdu_arsenal_organization_desc:0 "承四川机器局之传统的成都兵工厂制造步枪、子弹与手榴弹，与重庆军工体系互为犄角。控制成都后可雇佣。"
+
+ BFY_mio_xian_arsenal_organization:0 "西安机器局"
+ BFY_mio_xian_arsenal_organization_desc:0 "西安机器局是西北军械修造的中心，抗战中扩编修理各战区后撤枪械并小批量制造弹药。控制西安后可雇佣。"
+
+ BFY_mio_yunnan_arsenal_organization:0 "云南兵工厂"
+ BFY_mio_yunnan_arsenal_organization_desc:0 "龙云苦心经营的滇系军工在昆明制造步枪、机枪、迫击炮弹与弹药，滇军装备因此自给自足。控制昆明后可雇佣。"
+
+ BFY_mio_gansu_arsenal_organization:0 "甘肃制造局"
+ BFY_mio_gansu_arsenal_organization_desc:0 "清末洋务运动延续下来的兰州军械机构，维持西北驻军的弹药补给与枪械修理。控制兰州后可雇佣。"
+
+ BFY_mio_tianjin_arsenal_organization:0 "天津机器局"
+ BFY_mio_tianjin_arsenal_organization_desc:0 "天津机器局是华北近代军工的发源地，以子弹、火药与军械修理见长，海运设备进口便利。控制天津后可雇佣。"
+
+ BFY_mio_whampoa_dockyard_organization:0 "黄埔船坞"
+ BFY_mio_whampoa_dockyard_organization_desc:0 "广州黄埔的船坞与修造设施是华南海军舰艇维护的依托，兼营轮船修理与海防工事营造。控制广州后可雇佣。"

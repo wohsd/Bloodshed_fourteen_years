@@ -15,6 +15,7 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		NOT = { OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = BEL original_tag = CZE original_tag = ROM  original_tag = HUN } }
 		NOT = {
 			AND = {
@@ -320,6 +321,7 @@ generic_infantry_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -617,6 +619,7 @@ generic_assault_guns_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -930,6 +933,7 @@ generic_mobile_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -1151,6 +1155,7 @@ generic_medium_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_2
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -1388,6 +1393,7 @@ generic_heavy_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -1639,6 +1645,7 @@ generic_tank_refurbishment_plant_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -1931,6 +1938,7 @@ generic_task_force_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -2191,6 +2199,7 @@ generic_battle_line_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_2
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -2454,6 +2463,7 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
 		NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
 		NOT = {
@@ -2744,6 +2754,7 @@ generic_raider_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		AND = {
 			has_dlc = "Arms Against Tyranny"
 			original_tag = ICE
@@ -3047,6 +3058,7 @@ generic_submarine_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -3373,6 +3385,7 @@ generic_black_sea_fleet_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_2
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -3682,6 +3695,7 @@ generic_refurbishment_repair_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -3964,6 +3978,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		NOT = { 
 			OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT 
 			} 
@@ -4331,6 +4346,7 @@ generic_light_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -4673,6 +4689,7 @@ generic_medium_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -4996,6 +5013,7 @@ generic_heavy_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_2
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -5291,6 +5309,7 @@ generic_cas_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -5548,6 +5567,7 @@ generic_naval_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -5834,6 +5854,7 @@ generic_multi_role_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -6186,6 +6207,7 @@ generic_high_agility_fighter_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -6462,6 +6484,7 @@ generic_range_focused_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -6796,6 +6819,7 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = CZE tag = ROM tag = MEX } }
 		NOT = {
 			AND = {
@@ -7200,6 +7224,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST } }
 		NOT = {
 			AND = {
@@ -7578,6 +7603,7 @@ generic_support_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
@@ -7846,6 +7872,7 @@ generic_motorized_mechanized_organization = {
 	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = ROM tag = MEX } }
 		NOT = {
 			AND = {
@@ -8251,6 +8278,7 @@ generic_armored_car_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 		has_dlc = "La Resistance"
 	}
@@ -8465,6 +8493,7 @@ generic_helicopter_organization = {
 	icon = GFX_idea_generic_helicopter_1
 
 	allowed = {
+	    BFY_is_chinese_faction = no
 		always = no # Archetype only - countries using it have their own verisons
 		has_dlc = "Gotterdammerung"
 	}
