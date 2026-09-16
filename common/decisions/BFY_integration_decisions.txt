@@ -23,11 +23,13 @@ BFY_integration_category = {
 
 		# 可整合目标：我方控制、尚非我方核心、属于中国领土、尚未开始整合
 		target_trigger = {
-			is_controlled_by = ROOT
-			NOT = { is_core_of = ROOT }
-			impassable = no
-			BFY_is_chinese_territory_state = yes
-			NOT = { has_variable = can_integrate_@ROOT }
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+				impassable = no
+				BFY_is_chinese_territory_state = yes
+				NOT = { has_variable = can_integrate_@ROOT }
+			}
 		}
 
 		cost = 0
@@ -55,9 +57,11 @@ BFY_integration_category = {
 		}
 
 		target_trigger = {
-			is_controlled_by = ROOT
-			NOT = { is_core_of = ROOT }
-			has_variable = can_integrate_@ROOT
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = { is_core_of = ROOT }
+				has_variable = can_integrate_@ROOT
+			}
 		}
 
 		cost = 0

@@ -55,9 +55,6 @@ country_event = {
     is_triggered_only = yes
     immediate = {
 	}
-    mean_time_to_happen = {
-      	days = 2
-    }
 	option = {
 		name = ROD.2.a
 		hidden_effect = {
@@ -167,9 +164,6 @@ country_event = {
     is_triggered_only = yes
     immediate = {
 	}
-    mean_time_to_happen = {
-      	days = 2
-    }
 	option = {
 		name = ROD.4.a
 		CAR={

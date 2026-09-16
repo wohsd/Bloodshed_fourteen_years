@@ -4199,7 +4199,7 @@ leader_traits = {
 	}
 
 	SWE_minister_of_supply = {
-		supply_factor = 0.1
+		supply_consumption_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.2
 	}
 
@@ -14058,6 +14058,14 @@ leader_traits = {
 		stability_factor = -0.05
 		war_support_factor = -0.05
 		political_power_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	construction_company_shell = {
+		random = no
 
 		ai_will_do = {
 			factor = 1

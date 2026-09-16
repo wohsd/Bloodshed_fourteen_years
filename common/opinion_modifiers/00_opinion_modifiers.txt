@@ -80,4 +80,14 @@ opinion_modifiers = {
 	ROD_suppresses_communists = {
 		value = 15
 	}
+
+	# BFY补充：events/ROD.txt 中引用但漏定义
+	ROD_resists_japan = {
+		value = 20
+	}
+
+	# 第二次国共合作：PRC拒绝联合政府提议
+	RFC_second_united_front_refused = {
+		value = -50
+	}
 }

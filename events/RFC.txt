@@ -49,6 +49,51 @@ country_event = {
 	}
 }
 
+# 第二次国共合作？ — RFC完成「第二次国共合作」国策后，向PRC弹出
+country_event = {
+	id = RFC_NEW.2
+	title = RFC_NEW.2.t
+	desc = RFC_NEW.2.d
+	picture = GFX_report_event_generic_signed_treaty
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { }
+
+	option = {
+		name = RFC_NEW.2.a
+		# 接受邀请：与RFC建立阵营，RFC作为阵营领导者
+		# RFC的「三大政策：名存实亡」替换为「三大政策：初步推行」
+		# 追加效果：每日政治点数+0.05，战争支持度+5%，稳定度+5%（一次性）
+		hidden_effect = {
+			RFC = {
+				create_faction = "第二次国共合作"
+				add_to_faction = ROOT
+				# 替换动态修正
+				remove_dynamic_modifier = { modifier = Three_Major_Policies_Nominal }
+				add_dynamic_modifier = { modifier = Three_Major_Policies_Initial }
+				# 追加效果
+				add_to_variable = { RFC_three_policies_pp = 0.05 }
+				add_to_variable = { RFC_three_policies_war_support = 0.05 }
+				add_stability = 0.05
+			}
+		}
+	}
+
+	option = {
+		name = RFC_NEW.2.b
+		# 我们不能相信他们
+		# RFC对PRC评价-50，PRC对RFC评价-50
+		# RFC共产主义支持率-10%
+		hidden_effect = {
+			add_opinion_modifier = { target = RFC modifier = RFC_second_united_front_refused }
+			RFC = {
+				add_opinion_modifier = { target = ROOT modifier = RFC_second_united_front_refused }
+				add_popularity = { ideology = communism popularity = -0.10 }
+			}
+		}
+	}
+}
+
 country_event = {
 	id = RFC_country.2
 	title = RFC_country.2.t

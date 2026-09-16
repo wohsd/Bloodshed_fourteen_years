@@ -26,6 +26,8 @@ Provisional_Committee_Uprising = {
         army_org_factor = RFC_army_org_factor         #陆军组织度
         army_attack_factor = RFC_army_attack_factor   #陆军攻击
         army_defence_factor = RFC_army_defence_factor #陆军防御
+        army_breakthrough_factor = RFC_army_breakthrough_factor #陆军突破
+        terrain_penalty_reduction = RFC_terrain_penalty_reduction_pcq #地形惩罚
         max_dig_in_factor = RFC_max_dig_in_factor     #堑壕上限
         dig_in_speed_factor = RFC_dig_in_speed_factor #堑壕速度
         recon_factor = RFC_recon_factor               #侦察
@@ -64,4 +66,32 @@ RFC_high_military_cost = {
         enable = { always = yes }
 
         consumer_goods_expected_value = 0.05           #生活消费品系数
+}
+
+# 三大政策：名存实亡
+# 「承认苏区地位」国策添加：每日政治点数+0.1，共产主义接纳度+25%
+# 「试行减租减息」国策追加：每日政治点数+0.05，战争支持度+10%
+Three_Major_Policies_Nominal = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_Political_Department
+
+        political_power_gain = RFC_three_policies_pp           #每日政治点数
+        communism_party_popularity = RFC_three_policies_communism  #共产主义接纳度
+        war_support_factor = RFC_three_policies_war_support    #战争支持度
+}
+
+# 三大政策：初步推行
+# 「第二次国共合作」事件选项一：替换名存实亡，追加效果
+# 每日政治点数+0.05，战争支持度+5%，稳定度+5%（一次性）
+Three_Major_Policies_Initial = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_Political_Department
+
+        political_power_gain = RFC_three_policies_pp           #每日政治点数（继承累计值）
+        communism_party_popularity = RFC_three_policies_communism  #共产主义接纳度（继承累计值）
+        war_support_factor = RFC_three_policies_war_support    #战争支持度（继承累计值）
 }

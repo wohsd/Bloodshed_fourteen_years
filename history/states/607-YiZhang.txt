@@ -3,6 +3,7 @@ state={
 	id=607
 	name="STATE_607"
 
+	state_category = rural
 	history={
 		owner = RON
 		buildings = {

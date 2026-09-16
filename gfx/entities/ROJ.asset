@@ -239,7 +239,7 @@ entity = {
 		
 		attach = { 	name = "infantry"		infantry = "ROJ_bicycle_rider_rifle_entity" }	
 		attach = { 	name = "combined"		combined = "ROJ_bicycle_rifle_combined_entity" }	
-		attach = { 	name = "bicycle"		bike = "bicycle_vehicle_entity" }	
+		attach = { 	name = "bicycle"		bike = "generic_bicycle_vehicle_entity" }	
 	}
 	
 	entity = {
