@@ -109,7 +109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Speed_is_of_the_essence_in_military_operations
-		x = 8
+		x = 6
 		y = 1
 		cost = 5
 		icon = GFX_focus_prc_infiltration
@@ -191,7 +191,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Make_steady_and_solid_progress
-		x = -8
+		x = -6
 		y = 1
 		cost = 5
 		icon = GFX_goal_generic_construct_military
@@ -282,7 +282,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Reconstruct_the_Political_Department
-		x = 0
+		x = -2
 		y = 2
 		cost = 5
 		icon = GFX_focus_prc_agrarian_socialism
@@ -734,7 +734,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_28
-		x = -1
+		x = 1
 		y = 2
 		cost = 0
 		continue_if_invalid = no
@@ -746,7 +746,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_31
-		x = -1
+		x = 1
 		y = 3
 		cost = 0
 		continue_if_invalid = no
@@ -771,43 +771,43 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_27
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_18
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_26
 	}
 	focus = {
 		id = new_focus_29
-		x = 1
-		y = 3
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_27
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_27
 	}
 	focus = {
 		id = new_focus_32
-		x = 3
-		y = 2
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_26
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_26
 	}
 	focus = {
 		id = new_focus_25
-		x = -3
+		x = 3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -822,7 +822,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_26
-		x = 3
+		x = -3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -837,7 +837,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_33
-		x = -3
+		x = 3
 		y = 4
 		cost = 0
 		continue_if_invalid = no
@@ -849,31 +849,31 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_34
-		x = 3
-		y = 3
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_32
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_32
 	}
 	focus = {
 		id = new_focus_35
-		x = 3
-		y = 4
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_34
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_34
 	}
 	focus = {
 		id = new_focus_36
-		x = -3
+		x = 3
 		y = 3
 		cost = 0
 		continue_if_invalid = no
@@ -885,8 +885,8 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_37
-		x = 2
-		y = 5
+		x = 1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -896,7 +896,7 @@ focus_tree = {
 		prerequisite = {
 			focus = new_focus_30
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_35
 	}
 	focus = {
 		id = new_focus_19
@@ -919,14 +919,11 @@ focus_tree = {
 		prerequisite = {
 			focus = new_focus_23
 		}
-		prerequisite = {
-			focus = new_focus_42
-		}
 		relative_position_id = new_focus_23
 	}
 	focus = {
 		id = new_focus_22
-		x = 2
+		x = 3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -941,30 +938,30 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_23
-		x = 22
+		x = 24
 		y = 12
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_24
+			focus = new_focus_41
 		}
 	}
 	focus = {
 		id = new_focus_24
-		x = 26
-		y = 11
+		x = 18
+		y = 13
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_19
+			focus = new_focus_71
 		}
 	}
 	focus = {
 		id = new_focus_39
-		x = 38
-		y = 13
+		x = 2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -972,11 +969,9 @@ focus_tree = {
 			focus = new_focus_20
 		}
 		prerequisite = {
-			focus = new_focus_44
-		}
-		prerequisite = {
 			focus = new_focus_104
 		}
+		relative_position_id = new_focus_104
 	}
 	focus = {
 		id = new_focus_40
@@ -991,35 +986,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_41
-		x = 26
-		y = 12
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = new_focus_53
-		}
-		prerequisite = {
-			focus = new_focus_24
-		}
-		prerequisite = {
-			focus = new_focus_40
-		}
-	}
-	focus = {
-		id = new_focus_51
-		x = 34
-		y = 14
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_20
-		}
-	}
-	focus = {
-		id = new_focus_43
-		x = 32
+		x = 24
 		y = 11
 		cost = 0
 		continue_if_invalid = no
@@ -1029,26 +996,41 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = new_focus_50
-		x = 30
-		y = 13
+		id = new_focus_51
+		x = 5
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
+			focus = new_focus_20
+			focus = new_focus_39
+		}
+		prerequisite = {
 			focus = new_focus_53
-			focus = new_focus_41
+		}
+		relative_position_id = new_focus_20
+	}
+	focus = {
+		id = new_focus_43
+		x = 34
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_19
 		}
 	}
 	focus = {
 		id = new_focus_52
-		x = 30
-		y = 14
+		x = 34
+		y = 15
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_50
+			focus = new_focus_51
 		}
 	}
 	focus = {
@@ -1059,10 +1041,13 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
-			focus = new_focus_41
+			focus = new_focus_71
 		}
 		prerequisite = {
 			focus = new_focus_40
+		}
+		prerequisite = {
+			focus = new_focus_41
 		}
 		prerequisite = {
 			focus = new_focus_43
@@ -1070,31 +1055,30 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_54
-		x = 1
+		x = 0
 		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_21
+			focus = new_focus_57
 		}
-		relative_position_id = new_focus_21
+		relative_position_id = new_focus_57
 	}
 	focus = {
 		id = new_focus_49
-		x = 28
-		y = 13
+		x = 18
+		y = 15
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_41
-			focus = new_focus_53
+			focus = new_focus_61
 		}
 	}
 	focus = {
 		id = new_focus_100
-		x = -1
+		x = 0
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -1124,7 +1108,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_102
-		x = -3
+		x = 3
 		y = 2
 		cost = 0
 		continue_if_invalid = no
@@ -1136,7 +1120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_103
-		x = -2
+		x = 2
 		y = 5
 		cost = 0
 		continue_if_invalid = no
@@ -1151,7 +1135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_104
-		x = 36
+		x = 35
 		y = 12
 		cost = 0
 		continue_if_invalid = no
@@ -1162,8 +1146,8 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_20
-		x = 34
-		y = 13
+		x = -6
+		y = 1
 		cost = 0
 		icon = GFX_focus_PRC_develop_yanan_soviet
 		continue_if_invalid = no
@@ -1174,30 +1158,7 @@ focus_tree = {
 		prerequisite = {
 			focus = new_focus_104
 		}
-	}
-	focus = {
-		id = new_focus_42
-		x = 20
-		y = 11
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_37
-			focus = new_focus_103
-		}
-	}
-	focus = {
-		id = new_focus_44
-		x = 38
-		y = 11
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_17
-			focus = new_focus_100
-		}
+		relative_position_id = new_focus_104
 	}
 	focus = {
 		id = new_focus_46
@@ -1206,6 +1167,15 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_66
+		}
+		prerequisite = {
+			focus = new_focus_67
+		}
+		prerequisite = {
+			focus = new_focus_68
+		}
 	}
 	focus = {
 		id = new_focus_45
@@ -1214,13 +1184,428 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_67
+		}
+		prerequisite = {
+			focus = new_focus_66
+		}
+		prerequisite = {
+			focus = new_focus_79
+		}
 	}
 	focus = {
 		id = new_focus_47
-		x = 22
+		x = 23
 		y = 17
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_60
+		}
+		prerequisite = {
+			focus = new_focus_68
+		}
+	}
+	focus = {
+		id = new_focus_38
+		x = 31
+		y = 3
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Establish_a_provisional_government
+		}
+	}
+	focus = {
+		id = new_focus_48
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_38
+		}
+		relative_position_id = new_focus_38
+	}
+	focus = {
+		id = new_focus_55
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_59
+		}
+		prerequisite = {
+			focus = new_focus_58
+		}
+		relative_position_id = new_focus_58
+	}
+	focus = {
+		id = new_focus_56
+		x = 1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_38
+		}
+		relative_position_id = new_focus_38
+	}
+	focus = {
+		id = new_focus_58
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_56
+		}
+		relative_position_id = new_focus_56
+	}
+	focus = {
+		id = new_focus_59
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_48
+		}
+		relative_position_id = new_focus_48
+	}
+	focus = {
+		id = new_focus_57
+		x = 0
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_21
+			focus = new_focus_22
+		}
+		relative_position_id = new_focus_23
+	}
+	focus = {
+		id = new_focus_60
+		x = 20
+		y = 16
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_49
+		}
+		prerequisite = {
+			focus = new_focus_54
+		}
+		prerequisite = {
+			focus = new_focus_83
+		}
+		prerequisite = {
+			focus = new_focus_84
+		}
+	}
+	focus = {
+		id = new_focus_61
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_24
+		}
+		relative_position_id = new_focus_24
+	}
+	focus = {
+		id = new_focus_62
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_39
+			focus = new_focus_20
+		}
+		prerequisite = {
+			focus = new_focus_53
+		}
+		relative_position_id = new_focus_39
+	}
+	focus = {
+		id = new_focus_63
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_64
+		}
+		relative_position_id = new_focus_64
+	}
+	focus = {
+		id = new_focus_64
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_22
+		}
+		relative_position_id = new_focus_22
+	}
+	focus = {
+		id = new_focus_65
+		x = -2
+		y = 0
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_71
+		}
+		prerequisite = {
+			focus = new_focus_37
+		}
+		relative_position_id = new_focus_21
+	}
+	focus = {
+		id = new_focus_66
+		x = 26
+		y = 16
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_63
+		}
+		prerequisite = {
+			focus = new_focus_54
+		}
+	}
+	focus = {
+		id = new_focus_67
+		x = 34
+		y = 16
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_52
+		}
+		prerequisite = {
+			focus = new_focus_69
+		}
+		prerequisite = {
+			focus = new_focus_78
+		}
+	}
+	focus = {
+		id = new_focus_68
+		x = 29
+		y = 16
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_76
+		}
+		prerequisite = {
+			focus = new_focus_77
+		}
+	}
+	focus = {
+		id = new_focus_76
+		x = 30
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_75
+		}
+	}
+	focus = {
+		id = new_focus_75
+		x = 29
+		y = 14
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_20
+		}
+	}
+	focus = {
+		id = new_focus_69
+		x = 32
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_73
+		}
+	}
+	focus = {
+		id = new_focus_74
+		x = 39
+		y = 14
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_100
+		}
+		prerequisite = {
+			focus = new_focus_39
+		}
+	}
+	focus = {
+		id = new_focus_71
+		x = 19
+		y = 12
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_53
+		}
+		prerequisite = {
+			focus = new_focus_41
+		}
+	}
+	focus = {
+		id = new_focus_73
+		x = 32
+		y = 14
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_20
+			focus = new_focus_39
+		}
+		prerequisite = {
+			focus = new_focus_22
+		}
+		prerequisite = {
+			focus = new_focus_53
+		}
+	}
+	focus = {
+		id = new_focus_77
+		x = 28
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_75
+		}
+	}
+	focus = {
+		id = new_focus_78
+		x = 36
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_62
+		}
+	}
+	focus = {
+		id = new_focus_79
+		x = 39
+		y = 16
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_81
+		}
+		prerequisite = {
+			focus = new_focus_80
+		}
+	}
+	focus = {
+		id = new_focus_80
+		x = 38
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_74
+		}
+	}
+	focus = {
+		id = new_focus_81
+		x = 40
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_74
+		}
+	}
+	focus = {
+		id = new_focus_84
+		x = 20
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_85
+		}
+	}
+	focus = {
+		id = new_focus_85
+		x = 20
+		y = 14
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_65
+		}
+	}
+	focus = {
+		id = new_focus_82
+		x = 22
+		y = 14
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_21
+		}
+	}
+	focus = {
+		id = new_focus_83
+		x = 22
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_82
+		}
 	}
 }
