@@ -114,6 +114,8 @@
  PRC_yanan_arsenal_organization:0 "延安兵工厂"
 
  Provisional_Committee_Uprising:0 "临委会起义"
+ Civil_War_Trauma:0 "内战创伤"
+ Civil_War_Trauma_desc:0 "多年的内战在军队、工业与行政体系上都留下了深深的伤痕。通过「重建工作」决议逐步医治：军事创伤（组织度与恢复）、工业创伤（建造速度与工厂产出）、机构创伤（政治点数与稳定度）各为独立等级，全部抚平后本状况即告终结。"
  Political_Department:0 "政治部"
  Three_Major_Policies_Nominal:0 "三大政策：名存实亡"
  Three_Major_Policies_Initial:0 "三大政策：初步推行"

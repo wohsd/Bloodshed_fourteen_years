@@ -1,0 +1,143 @@
+# ============================================================
+# 临委会（RFC）「重建工作」决议
+# 内战结束后出现（标记 RFC_civil_war_trauma）。
+# 军事调整 / 重建工厂 / 改组机构 三类决议，各对应「内战创伤」的一类debuff，
+# 初始等级4（受战前国策影响可能为3~5），每点击一次降低一级：
+#   · 消耗50政治点数，历时60天，期间每日政治点数-0.05
+#   · 等级降为0时该类debuff彻底消除，决议永久隐藏
+#   · 三类全部完成后，移除「内战创伤」修正与整个决议组
+# ============================================================
+RFC_reconstruction = {
+
+	# 军事调整：消除军事创伤（每级 陆军组织度-3%、组织度恢复-3%）
+	RFC_military_adjustment = {
+		icon = military_operation
+		allowed = { always = yes }
+
+		visible = {
+			tag = RFC
+			check_variable = { RFC_cw_level_army > 0 }
+		}
+
+		cost = 50
+		days_remove = 60
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		remove_effect = {
+			add_to_variable = { RFC_cw_level_army = -1 }
+			add_to_variable = { RFC_cw_army = 0.03 }
+			add_to_variable = { RFC_cw_army_morale = 0.03 }
+
+			# 军事创伤清零：彻底消除debuff并永久隐藏本决议
+			if = {
+				limit = { check_variable = { RFC_cw_level_army <= 0 } }
+				set_variable = { RFC_cw_army = 0 }
+				set_variable = { RFC_cw_army_morale = 0 }
+				set_country_flag = RFC_cw_army_done
+			}
+
+			# 三类重建全部完成：移除内战创伤，决议组随之隐藏
+			if = {
+				limit = {
+					has_country_flag = RFC_cw_army_done
+					has_country_flag = RFC_cw_industry_done
+					has_country_flag = RFC_cw_govt_done
+				}
+				remove_dynamic_modifier = { modifier = Civil_War_Trauma }
+				clr_country_flag = RFC_civil_war_trauma
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	# 重建工厂：消除工业创伤（每级 建造速度-5%、工厂产出-3%）
+	RFC_rebuild_factories = {
+		icon = generic_economy
+		allowed = { always = yes }
+
+		visible = {
+			tag = RFC
+			check_variable = { RFC_cw_level_industry > 0 }
+		}
+
+		cost = 50
+		days_remove = 60
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		remove_effect = {
+			add_to_variable = { RFC_cw_level_industry = -1 }
+			add_to_variable = { RFC_cw_build = 0.05 }
+			add_to_variable = { RFC_cw_factory = 0.03 }
+
+			# 工业创伤清零：彻底消除debuff并永久隐藏本决议
+			if = {
+				limit = { check_variable = { RFC_cw_level_industry <= 0 } }
+				set_variable = { RFC_cw_build = 0 }
+				set_variable = { RFC_cw_factory = 0 }
+				set_country_flag = RFC_cw_industry_done
+			}
+
+			# 三类重建全部完成：移除内战创伤，决议组随之隐藏
+			if = {
+				limit = {
+					has_country_flag = RFC_cw_army_done
+					has_country_flag = RFC_cw_industry_done
+					has_country_flag = RFC_cw_govt_done
+				}
+				remove_dynamic_modifier = { modifier = Civil_War_Trauma }
+				clr_country_flag = RFC_civil_war_trauma
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	# 改组机构：消除机构创伤（每级 政治点数获取-4%、稳定度-3%）
+	RFC_restructure_institutions = {
+		icon = generic_political_actions
+		allowed = { always = yes }
+
+		visible = {
+			tag = RFC
+			check_variable = { RFC_cw_level_govt > 0 }
+		}
+
+		cost = 50
+		days_remove = 60
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		remove_effect = {
+			add_to_variable = { RFC_cw_level_govt = -1 }
+			add_to_variable = { RFC_cw_pp = 0.04 }
+			add_to_variable = { RFC_cw_stability = 0.03 }
+
+			# 机构创伤清零：彻底消除debuff并永久隐藏本决议
+			if = {
+				limit = { check_variable = { RFC_cw_level_govt <= 0 } }
+				set_variable = { RFC_cw_pp = 0 }
+				set_variable = { RFC_cw_stability = 0 }
+				set_country_flag = RFC_cw_govt_done
+			}
+
+			# 三类重建全部完成：移除内战创伤，决议组随之隐藏
+			if = {
+				limit = {
+					has_country_flag = RFC_cw_army_done
+					has_country_flag = RFC_cw_industry_done
+					has_country_flag = RFC_cw_govt_done
+				}
+				remove_dynamic_modifier = { modifier = Civil_War_Trauma }
+				clr_country_flag = RFC_civil_war_trauma
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+}

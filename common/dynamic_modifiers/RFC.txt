@@ -82,6 +82,28 @@ Three_Major_Policies_Nominal = {
         war_support_factor = RFC_three_policies_war_support    #战争支持度
 }
 
+# ============================================================
+# 内战创伤：击败国民政府（「革命的胜利」事件）后获得
+# 三类创伤各有等级（变量 RFC_cw_level_*，基础4级，受战前国策±1影响），
+# 通过「重建工作」决议逐级消除；三类全部清零后移除本修正。
+# 军事创伤（军事调整）：每级 陆军组织度-3%、组织度恢复-3%
+# 工业创伤（重建工厂）：每级 建造速度-5%、工厂产出-3%
+# 机构创伤（改组机构）：每级 政治点数获取-4%、稳定度-3%
+# ============================================================
+Civil_War_Trauma = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_generic_build_infrastructure
+
+        army_org_factor = RFC_cw_army                         #陆军组织度（军事创伤）
+        army_morale_factor = RFC_cw_army_morale               #组织度恢复（军事创伤）
+        production_speed_buildings_factor = RFC_cw_build      #建造速度（工业创伤）
+        factory_output = RFC_cw_factory                       #工厂产出（工业创伤）
+        political_power_factor = RFC_cw_pp                    #政治点数获取（机构创伤）
+        stability_factor = RFC_cw_stability                   #稳定度（机构创伤）
+}
+
 # 三大政策：初步推行
 # 「第二次国共合作」事件选项一：替换名存实亡，追加效果
 # 每日政治点数+0.05，战争支持度+5%，稳定度+5%（一次性）

@@ -27,26 +27,31 @@ on_actions = {
 					set_state_owner_to = ROOT
 				}
 			}
+		}
+	}
 
-			# 「临委会起义」修正：带修正参战后即标记；战争结束进入和平即永久移除，再次开战不会恢复
-			RFC = {
-				if = {
-					limit = { has_dynamic_modifier = { modifier = Provisional_Committee_Uprising } }
-					if = {
-						limit = { is_at_war = yes }
-						set_country_flag = RFC_pcq_war_engaged
+	# 临委会起义后击败国民政府（CHI投降，胜方为RFC或其阵营）：触发「革命的胜利」
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+					RFC = {
+						has_completed_focus = The_Third_Road
+						NOT = { has_country_flag = RFC_victory_won }
 					}
-					if = {
-						limit = {
-							has_country_flag = RFC_pcq_war_engaged
-							is_at_war = no
+					OR = {
+						FROM = { tag = RFC }
+						AND = {
+							RFC = { is_faction_leader = yes }
+							FROM = { is_in_faction_with = RFC }
 						}
-						remove_dynamic_modifier = { modifier = Provisional_Committee_Uprising }
-						clr_country_flag = RFC_pcq_war_engaged
 					}
 				}
+				RFC = {
+					country_event = { id = RFC_country.6 hours = 12 }
+				}
 			}
-
 		}
 	}
 

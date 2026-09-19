@@ -18,6 +18,13 @@ focus_tree = {
 		icon = GFX_focus_CHI_glorify_deng_yanda
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		# 起义国策：仅由「江西起义」事件自动完成，玩家无法手动点选
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				trigger = { always = no }
+			}
+		}
 		completion_reward = {
 			add_political_power = 50
 			custom_effect_tooltip = RFC_uprising_modifier_tt
@@ -397,7 +404,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		icon = GFX_focus_PRC_eastward_expansion
+		icon = GFX_focus_prc_infiltration
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -583,6 +590,13 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		# 战后议题：仅由「革命的胜利」事件自动完成，玩家无法手动点选
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				trigger = { always = no }
+			}
+		}
 		prerequisite = {
 			focus = Military_Industry_Award
 		}
@@ -724,6 +738,13 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		# 战后议题：仅由「革命的胜利」事件自动完成，玩家无法手动点选
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				trigger = { always = no }
+			}
+		}
 		prerequisite = {
 			focus = Military_Crash_Course
 		}
@@ -905,12 +926,20 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		# 战后议题：仅由「革命的胜利」事件自动完成，玩家无法手动点选
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				trigger = { always = no }
+			}
+		}
 	}
 	focus = {
 		id = new_focus_21
 		x = -2
 		y = 1
 		cost = 0
+		icon = GFX_focus_prc_maoism
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
@@ -926,6 +955,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 0
+		icon = GFX_focus_CHI_clear_out_sycophants
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
@@ -963,6 +993,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 0
+		icon = GFX_focus_PRC_adopt_sun_yat_sens_principles
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
@@ -1149,7 +1180,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		cost = 0
-		icon = GFX_focus_PRC_develop_yanan_soviet
+		icon = GFX_focus_ARG_develop_the_electricity_sector
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
@@ -1165,6 +1196,7 @@ focus_tree = {
 		x = 29
 		y = 17
 		cost = 0
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -1182,6 +1214,7 @@ focus_tree = {
 		x = 35
 		y = 17
 		cost = 0
+		icon = GFX_focus_generic_democratic_asia
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -1199,6 +1232,7 @@ focus_tree = {
 		x = 23
 		y = 17
 		cost = 0
+		icon = GFX_focus_CHL_union_of_hispanic_republics
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
@@ -1479,6 +1513,7 @@ focus_tree = {
 		x = 19
 		y = 12
 		cost = 0
+		icon = GFX_focus_generic_subjugation
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
