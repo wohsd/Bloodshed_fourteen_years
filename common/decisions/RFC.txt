@@ -11,7 +11,7 @@ RFC_reconstruction = {
 
 	# 军事调整：消除军事创伤（每级 陆军组织度-3%、组织度恢复-3%）
 	RFC_military_adjustment = {
-		icon = military_operation
+		icon = generic_military
 		allowed = { always = yes }
 
 		visible = {
@@ -32,7 +32,7 @@ RFC_reconstruction = {
 
 			# 军事创伤清零：彻底消除debuff并永久隐藏本决议
 			if = {
-				limit = { check_variable = { RFC_cw_level_army <= 0 } }
+				limit = { check_variable = { RFC_cw_level_army < 1 } }
 				set_variable = { RFC_cw_army = 0 }
 				set_variable = { RFC_cw_army_morale = 0 }
 				set_country_flag = RFC_cw_army_done
@@ -55,7 +55,7 @@ RFC_reconstruction = {
 
 	# 重建工厂：消除工业创伤（每级 建造速度-5%、工厂产出-3%）
 	RFC_rebuild_factories = {
-		icon = generic_economy
+		icon = generic_construction
 		allowed = { always = yes }
 
 		visible = {
@@ -76,7 +76,7 @@ RFC_reconstruction = {
 
 			# 工业创伤清零：彻底消除debuff并永久隐藏本决议
 			if = {
-				limit = { check_variable = { RFC_cw_level_industry <= 0 } }
+				limit = { check_variable = { RFC_cw_level_industry < 1 } }
 				set_variable = { RFC_cw_build = 0 }
 				set_variable = { RFC_cw_factory = 0 }
 				set_country_flag = RFC_cw_industry_done
@@ -99,7 +99,7 @@ RFC_reconstruction = {
 
 	# 改组机构：消除机构创伤（每级 政治点数获取-4%、稳定度-3%）
 	RFC_restructure_institutions = {
-		icon = generic_political_actions
+		icon = generic_political_discourse
 		allowed = { always = yes }
 
 		visible = {
@@ -120,7 +120,7 @@ RFC_reconstruction = {
 
 			# 机构创伤清零：彻底消除debuff并永久隐藏本决议
 			if = {
-				limit = { check_variable = { RFC_cw_level_govt <= 0 } }
+				limit = { check_variable = { RFC_cw_level_govt < 1 } }
 				set_variable = { RFC_cw_pp = 0 }
 				set_variable = { RFC_cw_stability = 0 }
 				set_country_flag = RFC_cw_govt_done
@@ -138,6 +138,468 @@ RFC_reconstruction = {
 			}
 		}
 
+		ai_will_do = { factor = 1 }
+	}
+}
+
+# ============================================================
+# 临委会（RFC）「军事改革」决议
+# 完成「民兵武备库」（民兵线）或「组建敢死队」（精兵线）后解锁。
+# 所有决议均以陆军经验为花费（无政治点数花费、无耗时，点击即时生效）：
+#   · 基础决议两路线通用，按当前持有的精神（人民武装/国民革命军）加强对应修正
+#   · 民兵线决议仅在持有「人民武装」时可用，精兵线决议仅在持有「国民革命军」时可用
+#   · 「加强民兵训练」「加强部队建设」各10级，花费40陆军经验起，每级递增20
+# ============================================================
+RFC_military_reform = {
+
+	# ---------- 基础决议（两路线通用） ----------
+
+	# 地方干部军事化：核心领土攻防+5%
+	RFC_mr_local_cadets = {
+		icon = generic_army_support
+		allowed = { always = yes }
+
+		visible = {
+			tag = RFC
+			OR = {
+				has_dynamic_modifier = { modifier = People_Armed_Forces }
+				has_dynamic_modifier = { modifier = National_Revolutionary_Army }
+			}
+		}
+
+		available = {
+			has_army_experience > 49
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			army_experience = -50
+			if = {
+				limit = { has_dynamic_modifier = { modifier = People_Armed_Forces } }
+				add_to_variable = { RFC_paf_core_atk = 0.05 }
+				add_to_variable = { RFC_paf_core_def = 0.05 }
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = National_Revolutionary_Army } }
+				add_to_variable = { RFC_nra_core_atk = 0.05 }
+				add_to_variable = { RFC_nra_core_def = 0.05 }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	# 政工干部军事化：组织度恢复+4%
+	RFC_mr_political_cadets = {
+		icon = generic_political_discourse
+		allowed = { always = yes }
+
+		visible = {
+			tag = RFC
+			OR = {
+				has_dynamic_modifier = { modifier = People_Armed_Forces }
+				has_dynamic_modifier = { modifier = National_Revolutionary_Army }
+			}
+		}
+
+		available = {
+			has_army_experience > 49
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			army_experience = -50
+			if = {
+				limit = { has_dynamic_modifier = { modifier = People_Armed_Forces } }
+				add_to_variable = { RFC_paf_morale = 0.04 }
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = National_Revolutionary_Army } }
+				add_to_variable = { RFC_nra_morale = 0.04 }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	# ---------- 民兵线额外决议（需持有「人民武装」、完成「民兵武备库」） ----------
+
+	# 修整农村小路：核心领土攻防+5%
+	RFC_mr_repair_roads = {
+		icon = generic_construction
+		allowed = { always = yes }
+
+		visible = {
+			tag = RFC
+			has_dynamic_modifier = { modifier = People_Armed_Forces }
+			has_completed_focus = Militia_Armory
+		}
+
+		available = {
+			has_army_experience > 49
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			army_experience = -50
+			add_to_variable = { RFC_paf_core_atk = 0.05 }
+			add_to_variable = { RFC_paf_core_def = 0.05 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	# 加强民兵训练（1~10级）：民兵攻防各+5%/级，花费40陆军经验起每级+20；每级需60天，完成后解锁下一级
+	RFC_mr_militia_training_1 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory NOT = { has_country_flag = RFC_mr_militia_1_done } }
+		available = { has_army_experience > 39 }
+		days_remove = 60
+		complete_effect = { army_experience = -40 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_1_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 40 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_2 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_1_done NOT = { has_country_flag = RFC_mr_militia_2_done } }
+		available = { has_army_experience > 59 }
+		days_remove = 60
+		complete_effect = { army_experience = -60 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_2_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 60 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_3 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_2_done NOT = { has_country_flag = RFC_mr_militia_3_done } }
+		available = { has_army_experience > 79 }
+		days_remove = 60
+		complete_effect = { army_experience = -80 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_3_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 80 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_4 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_3_done NOT = { has_country_flag = RFC_mr_militia_4_done } }
+		available = { has_army_experience > 99 }
+		days_remove = 60
+		complete_effect = { army_experience = -100 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_4_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 100 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_5 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_4_done NOT = { has_country_flag = RFC_mr_militia_5_done } }
+		available = { has_army_experience > 119 }
+		days_remove = 60
+		complete_effect = { army_experience = -120 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_5_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 120 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_6 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_5_done NOT = { has_country_flag = RFC_mr_militia_6_done } }
+		available = { has_army_experience > 139 }
+		days_remove = 60
+		complete_effect = { army_experience = -140 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_6_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 140 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_7 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_6_done NOT = { has_country_flag = RFC_mr_militia_7_done } }
+		available = { has_army_experience > 159 }
+		days_remove = 60
+		complete_effect = { army_experience = -160 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_7_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 160 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_8 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_7_done NOT = { has_country_flag = RFC_mr_militia_8_done } }
+		available = { has_army_experience > 179 }
+		days_remove = 60
+		complete_effect = { army_experience = -180 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_8_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 180 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_9 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_8_done NOT = { has_country_flag = RFC_mr_militia_9_done } }
+		available = { has_army_experience > 199 }
+		days_remove = 60
+		complete_effect = { army_experience = -200 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_9_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 200 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_militia_training_10 = {
+		icon = generic_reorganize_irregulars
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = People_Armed_Forces } has_completed_focus = Militia_Armory has_country_flag = RFC_mr_militia_9_done NOT = { has_country_flag = RFC_mr_militia_10_done } }
+		available = { has_army_experience > 219 }
+		days_remove = 60
+		complete_effect = { army_experience = -220 }
+		remove_effect = {
+			add_to_variable = { RFC_paf_militia_atk = 0.05 }
+			add_to_variable = { RFC_paf_militia_def = 0.05 }
+			set_country_flag = RFC_mr_militia_10_done
+			custom_effect_tooltip = RFC_mr_militia_buff_tt
+		}
+		cancel_effect = { army_experience = 220 }
+		ai_will_do = { factor = 1 }
+	}
+
+	# ---------- 精兵线额外决议（需持有「国民革命军」、完成「组建敢死队」） ----------
+
+	# 引进甲基苯丙胺：突破+10%
+	RFC_mr_methamphetamine = {
+		icon = generic_military
+		allowed = { always = yes }
+
+		visible = {
+			tag = RFC
+			has_dynamic_modifier = { modifier = National_Revolutionary_Army }
+			has_completed_focus = Suicide_Squad
+		}
+
+		available = {
+			has_army_experience > 49
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			army_experience = -50
+			add_to_variable = { RFC_nra_breakthrough = 0.10 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	# 加强部队建设（1~10级）：特种攻击+2.5%、特种上限+2/级，花费40陆军经验起每级+20；每级需60天，完成后解锁下一级
+	RFC_mr_force_building_1 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad NOT = { has_country_flag = RFC_mr_force_1_done } }
+		available = { has_army_experience > 39 }
+		days_remove = 60
+		complete_effect = { army_experience = -40 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_1_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 40 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_2 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_1_done NOT = { has_country_flag = RFC_mr_force_2_done } }
+		available = { has_army_experience > 59 }
+		days_remove = 60
+		complete_effect = { army_experience = -60 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_2_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 60 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_3 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_2_done NOT = { has_country_flag = RFC_mr_force_3_done } }
+		available = { has_army_experience > 79 }
+		days_remove = 60
+		complete_effect = { army_experience = -80 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_3_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 80 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_4 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_3_done NOT = { has_country_flag = RFC_mr_force_4_done } }
+		available = { has_army_experience > 99 }
+		days_remove = 60
+		complete_effect = { army_experience = -100 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_4_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 100 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_5 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_4_done NOT = { has_country_flag = RFC_mr_force_5_done } }
+		available = { has_army_experience > 119 }
+		days_remove = 60
+		complete_effect = { army_experience = -120 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_5_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 120 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_6 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_5_done NOT = { has_country_flag = RFC_mr_force_6_done } }
+		available = { has_army_experience > 139 }
+		days_remove = 60
+		complete_effect = { army_experience = -140 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_6_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 140 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_7 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_6_done NOT = { has_country_flag = RFC_mr_force_7_done } }
+		available = { has_army_experience > 159 }
+		days_remove = 60
+		complete_effect = { army_experience = -160 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_7_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 160 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_8 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_7_done NOT = { has_country_flag = RFC_mr_force_8_done } }
+		available = { has_army_experience > 179 }
+		days_remove = 60
+		complete_effect = { army_experience = -180 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_8_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 180 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_9 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_8_done NOT = { has_country_flag = RFC_mr_force_9_done } }
+		available = { has_army_experience > 199 }
+		days_remove = 60
+		complete_effect = { army_experience = -200 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_9_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 200 }
+		ai_will_do = { factor = 1 }
+	}
+	RFC_mr_force_building_10 = {
+		icon = generic_military
+		allowed = { always = yes }
+		visible = { tag = RFC has_dynamic_modifier = { modifier = National_Revolutionary_Army } has_completed_focus = Suicide_Squad has_country_flag = RFC_mr_force_9_done NOT = { has_country_flag = RFC_mr_force_10_done } }
+		available = { has_army_experience > 219 }
+		days_remove = 60
+		complete_effect = { army_experience = -220 }
+		remove_effect = {
+			add_to_variable = { RFC_nra_sf_attack = 0.025 }
+			add_to_variable = { RFC_nra_sf_cap = 2 }
+			set_country_flag = RFC_mr_force_10_done
+			custom_effect_tooltip = RFC_mr_force_buff_tt
+		}
+		cancel_effect = { army_experience = 220 }
 		ai_will_do = { factor = 1 }
 	}
 }

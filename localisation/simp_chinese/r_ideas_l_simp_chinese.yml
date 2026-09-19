@@ -116,9 +116,15 @@
  Provisional_Committee_Uprising:0 "临委会起义"
  Civil_War_Trauma:0 "内战创伤"
  Civil_War_Trauma_desc:0 "多年的内战在军队、工业与行政体系上都留下了深深的伤痕。通过「重建工作」决议逐步医治：军事创伤（组织度与恢复）、工业创伤（建造速度与工厂产出）、机构创伤（政治点数与稳定度）各为独立等级，全部抚平后本状况即告终结。"
+ People_Armed_Forces:0 "人民武装"
+ People_Armed_Forces_desc:0 "深入群众之后，根据地的工农青壮普遍被编入民兵与地方武装。他们装备简陋、训练有限，但人数众多、熟悉乡土，是革命政权最深厚的兵源与防线。武备库、速成轮训与难民安置能让这支武装略微像样一些——但也仅仅是略微。"
+ National_Revolutionary_Army:0 "国民革命军"
+ National_Revolutionary_Army_desc:0 "这支由革命军官团统带的精锐武装，承袭了国民革命军的番号与正统。人数不多，却是临委会麾下最可靠的突击力量。敢死队的决死意志与军功奖励的厚赏，能让这支小规模精兵在关键时刻发挥超出数量的作用。"
  Political_Department:0 "政治部"
  Three_Major_Policies_Nominal:0 "三大政策：名存实亡"
+ Three_Major_Policies_Nominal_desc:0 "联俄、联共、扶助农工——三大政策写在纸上，却处处打折。承认苏区换取了共产党人的合作，但两党之间的猜忌远未消弭。"
  Three_Major_Policies_Initial:0 "三大政策：初步推行"
+ Three_Major_Policies_Initial_desc:0 "第二次国共合作达成后，三大政策第一次得到像样的推行。两党军队并肩作战，民众动员的深度也前所未有。"
  RFC_second_united_front_refused:0 "拒绝联合政府"
 
 

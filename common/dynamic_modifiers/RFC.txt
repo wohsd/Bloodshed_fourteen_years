@@ -26,12 +26,49 @@ Provisional_Committee_Uprising = {
         army_org_factor = RFC_army_org_factor         #陆军组织度
         army_attack_factor = RFC_army_attack_factor   #陆军攻击
         army_defence_factor = RFC_army_defence_factor #陆军防御
-        army_breakthrough_factor = RFC_army_breakthrough_factor #陆军突破
+        breakthrough_factor = RFC_army_breakthrough_factor #陆军突破
         terrain_penalty_reduction = RFC_terrain_penalty_reduction_pcq #地形惩罚
         max_dig_in_factor = RFC_max_dig_in_factor     #堑壕上限
         dig_in_speed_factor = RFC_dig_in_speed_factor #堑壕速度
         recon_factor = RFC_recon_factor               #侦察
         recon_factor_while_entrenched = RFC_recon_factor_while_entrenched #堑壕侦察
+}
+
+# 人民武装：完成「深入群众」国策获得，代表遍地生根的民兵与地方武装。
+# 永久修正，数值刻意保守：初始仅适役人口+3%；
+# 国策（援助难民/民兵武备库/军事速成课）与「军事改革」决议可小幅加强。
+People_Armed_Forces = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_Encourage_enlistment_military
+
+        recruitable_population_factor = RFC_paf_recruit    #适役人口
+        army_defence_factor = RFC_paf_defence              #陆军防御
+        army_org_factor = RFC_paf_org                      #陆军组织度
+        army_morale_factor = RFC_paf_morale                #组织度恢复（政工干部军事化）
+        army_core_attack_factor = RFC_paf_core_atk         #核心领土攻击（地方干部/修路）
+        army_core_defence_factor = RFC_paf_core_def        #核心领土防御（地方干部/修路）
+        modifier_army_sub_unit_militia_attack_factor = RFC_paf_militia_atk   #民兵攻击（加强民兵训练）
+        modifier_army_sub_unit_militia_defence_factor = RFC_paf_militia_def  #民兵防御（加强民兵训练）
+}
+
+# 国民革命军：完成「精兵强将」国策获得，代表走精锐路线的正规军官团武装。
+# 永久修正，数值刻意吝啬：初始仅特种部队上限+2；
+# 国策（组建敢死队/高昂军功奖励）与「军事改革」决议可小幅加强。
+National_Revolutionary_Army = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_CHI_army
+
+        special_forces_cap_flat = RFC_nra_sf_cap           #特种部队上限
+        army_attack_factor = RFC_nra_attack                #陆军攻击
+        army_morale_factor = RFC_nra_morale                #组织度恢复
+        army_core_attack_factor = RFC_nra_core_atk         #核心领土攻击（地方干部军事化）
+        army_core_defence_factor = RFC_nra_core_def        #核心领土防御（地方干部军事化）
+        breakthrough_factor = RFC_nra_breakthrough         #突破（引进甲基苯丙胺）
+        special_forces_attack_factor = RFC_nra_sf_attack   #特种攻击（加强部队建设）
 }
 
 # 「深入群众」国策：军民团结（适役人口+10%，陆军组织度-8%）
@@ -78,8 +115,8 @@ Three_Major_Policies_Nominal = {
         icon = GFX_idea_Political_Department
 
         political_power_gain = RFC_three_policies_pp           #每日政治点数
-        communism_party_popularity = RFC_three_policies_communism  #共产主义接纳度
         war_support_factor = RFC_three_policies_war_support    #战争支持度
+        #注：共产主义接纳度+25% 不支持持续修正，由「承认苏区」国策完成时 add_popularity 一次性给予
 }
 
 # ============================================================
@@ -99,7 +136,7 @@ Civil_War_Trauma = {
         army_org_factor = RFC_cw_army                         #陆军组织度（军事创伤）
         army_morale_factor = RFC_cw_army_morale               #组织度恢复（军事创伤）
         production_speed_buildings_factor = RFC_cw_build      #建造速度（工业创伤）
-        factory_output = RFC_cw_factory                       #工厂产出（工业创伤）
+        industrial_capacity_factory = RFC_cw_factory         #工厂产出（工业创伤）
         political_power_factor = RFC_cw_pp                    #政治点数获取（机构创伤）
         stability_factor = RFC_cw_stability                   #稳定度（机构创伤）
 }
@@ -114,6 +151,6 @@ Three_Major_Policies_Initial = {
         icon = GFX_idea_Political_Department
 
         political_power_gain = RFC_three_policies_pp           #每日政治点数（继承累计值）
-        communism_party_popularity = RFC_three_policies_communism  #共产主义接纳度（继承累计值）
         war_support_factor = RFC_three_policies_war_support    #战争支持度（继承累计值）
+        #注：共产主义接纳度已在「承认苏区」时一次性给予，切换本修正时自然继承，无需重复施加
 }

@@ -9,3 +9,17 @@ RFC_reconstruction = {
 	}
 	priority = 90
 }
+
+# 军事改革：完成「民兵武备库」（民兵线）或「组建敢死队」（精兵线）后出现
+# 决议以陆军经验为花费，按所持精神（人民武装/国民革命军）加强对应的动态修正
+RFC_military_reform = {
+	icon = military_operation
+	visible = {
+		tag = RFC
+		OR = {
+			has_completed_focus = Militia_Armory
+			has_completed_focus = Suicide_Squad
+		}
+	}
+	priority = 80
+}
