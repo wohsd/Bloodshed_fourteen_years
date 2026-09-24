@@ -1,0 +1,42 @@
+# BFY占位idea定义
+# CHI_scripted_effects.txt 中 swap_ideas 引用以下idea但本体从未定义，
+# 导致验证报错。此处提供空壳定义消除报错。
+# 这些idea无任何修正效果，add/remove操作无实际影响。
+
+ideas = {
+	country = {
+		# ===== 日本干涉中国（1-6级） =====
+		idea_JAP_intervene_in_china_1 = { }
+		idea_JAP_intervene_in_china_2 = { }
+		idea_JAP_intervene_in_china_3 = { }
+		idea_JAP_intervene_in_china_4 = { }
+		idea_JAP_intervene_in_china_5 = { }
+		idea_JAP_intervene_in_china_6 = { }
+
+		# ===== 寸土寸血（1-8级） =====
+		idea_CHI_every_inch_of_land_defended_with_blood_1 = { }
+		idea_CHI_every_inch_of_land_defended_with_blood_2 = { }
+		idea_CHI_every_inch_of_land_defended_with_blood_3 = { }
+		idea_CHI_every_inch_of_land_defended_with_blood_4 = { }
+		idea_CHI_every_inch_of_land_defended_with_blood_5 = { }
+		idea_CHI_every_inch_of_land_defended_with_blood_6 = { }
+		idea_CHI_every_inch_of_land_defended_with_blood_7 = { }
+		idea_CHI_every_inch_of_land_defended_with_blood_8 = { }
+
+		# ===== 国防状态 =====
+		national_defense_state = { }
+
+		# ===== 恶性通货膨胀（CHI AI策略引用） =====
+		CHI_hyper_inflation_1 = { }
+		CHI_hyper_inflation_2 = { }
+		CHI_hyper_inflation_3 = { }
+		CHI_hyper_inflation_4 = { }
+		CHI_hyper_inflation_5 = { }
+
+		# ===== 原版law类idea（mod覆盖_manpower.txt时遗漏） =====
+		ETH_chitet_law = { }
+		ETH_chitet_law_peace_time = { }
+		SWI_citizen_militia_1 = { }
+		SWI_citizen_militia_2 = { }
+	}
+}

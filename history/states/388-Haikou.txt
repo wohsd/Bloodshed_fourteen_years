@@ -11,6 +11,9 @@ state={
 		owner = ROG
 		buildings = {
 			infrastructure = 1
+			4225 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = ROG
 		
@@ -26,3 +29,4 @@ add_core_of = CHI
 	state_category = town
 	local_supplies = 0.0
 }
+

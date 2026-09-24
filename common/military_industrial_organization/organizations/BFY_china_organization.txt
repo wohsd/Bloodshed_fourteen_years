@@ -1,0 +1,373 @@
+############################################
+# BFY：中国势力专属军用企业（军事工业组织 MIO）
+# 规则：
+#   1. 仅 BFY_is_chinese_faction 涵盖的中国势力可见（列强与外国不可见）
+#   2. 必须控制（占领）企业所在地块才能雇佣：available = controls_state
+#   3. 全部 include 原版通用原型，特性树与数值与原版完全一致，暂不调整
+############################################
+
+# ===== 枪械/步兵装备 =====
+
+# 金陵兵工厂（南京：二四式马克沁重机枪、中正式步枪前身）
+BFY_mio_jinling_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 214 }
+	}
+}
+
+# 巩县兵工厂（洛阳/巩县：中正式步枪制式化生产基地）
+BFY_mio_gongxian_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 166 }
+	}
+}
+
+# 广东兵工厂（广州石井：粤造步枪、机枪与迫击炮）
+BFY_mio_canton_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 357 }
+	}
+}
+
+# ===== 火炮 =====
+
+# 汉阳兵工厂炮厂（武汉：汉阳造步枪起家，后为国产山野炮生产中心）
+BFY_mio_hanyang_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 246 }
+	}
+}
+
+# ===== 支援装备 =====
+
+# 四川兵工厂（重庆：抗战内迁后形成的支援武器与军需制造基地）
+BFY_mio_sichuan_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 238 }
+	}
+}
+
+# ===== 舰艇修造 =====
+
+# 福州船政局 / 马尾造船所（中国近代造船与海军工业的摇篮）
+BFY_mio_foochow_navy_yard_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 319 }
+	}
+}
+
+# ===== 航空工业 =====
+
+# 韶关飞机制造厂（粤北：抗战时期战斗机仿制与修理基地）
+BFY_mio_shaoguan_aircraft_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 332 }
+	}
+}
+
+# 中央南昌飞机制造厂（中意合办，轰炸机/中型机方向）
+BFY_mio_nanchang_aircraft_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_3
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 281 }
+	}
+}
+
+# 中央空军第一飞机制造厂（昆明垒允，内迁后的综合航空制造基地）
+BFY_mio_kunming_aircraft_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 323 }
+	}
+}
+
+# ===== 铁道装备 =====
+
+# 北宁铁路唐山制造厂（中国第一台蒸汽机车与铁路军械车辆基地）
+BFY_mio_tangshan_railway_works_organization = {
+	include = generic_train_organization
+	icon = GFX_idea_generic_build_infrastructure
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 79 }
+	}
+}
+
+# ===== 枪械/步兵装备（第二批） =====
+
+# 太原兵工厂（晋系军工核心，晋造步枪、冲锋枪、迫击炮与山野炮俱全）
+BFY_mio_taiyuan_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 104 }
+	}
+}
+
+# 济南兵工厂（山东最大兵工基地，步枪、机枪与弹药修造）
+BFY_mio_jinan_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 119 }
+	}
+}
+
+# ===== 火炮（第二批） =====
+
+# 东三省兵工厂（沈阳，全国规模最大的兵工厂，以山野炮与炮弹产量著称）
+BFY_mio_shenyang_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 50 }
+	}
+}
+
+# 株洲兵工厂（炮兵技术研究处，规划中的新式火炮与炮弹生产基地）
+BFY_mio_zhuzhou_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_artillery_manufacturer_3
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 300 }
+	}
+}
+
+# ===== 支援装备/光学（第二批） =====
+
+# 第二十二工厂（昆明光学厂，国产望远镜、测远仪与瞄准镜基地）
+BFY_mio_kunming_optical_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 323 }
+	}
+}
+
+# 柳州兵工厂（桂中后方弹药与军械修造基地）
+BFY_mio_liuzhou_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 326 }
+	}
+}
+
+# ===== 舰艇修造（第二批） =====
+
+# 江南造船所（上海，中国规模最大、技术最新的造船与修船基地）
+BFY_mio_jiangnan_navy_yard_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 228 }
+	}
+}
+
+# 大沽造船所（天津/塘沽，华北舰艇修造与海防工事基地）
+BFY_mio_dagu_navy_yard_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 82 }
+	}
+}
+
+# 大连船坞（辽东半岛南端的大型深水船坞与船舶修理厂）
+BFY_mio_dalian_dockyard_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 83 }
+	}
+}
+
+# ===== 车辆工业（第二批） =====
+
+# 中国汽车制造公司（株洲，资源委员会引入德国技术兴办的国产汽车总装厂）
+BFY_mio_china_motor_vehicle_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 300 }
+	}
+}
+
+# ===== 枪械/步兵装备（第三批） =====
+
+# 成都兵工厂（四川机器局传统，成渝地区的步枪与弹药修造）
+BFY_mio_chengdu_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 229 }
+	}
+}
+
+# 西安机器局（西北军械修造中心，抗战时期扩编为兵工基地）
+BFY_mio_xian_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 170 }
+	}
+}
+
+# 云南兵工厂（昆明，龙云经营的滇系军工，步枪、机枪与弹药自给）
+BFY_mio_yunnan_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 323 }
+	}
+}
+
+# ===== 支援装备（第三批） =====
+
+# 甘肃制造局（兰州，清末洋务延续的西北军械与弹药修造机构）
+BFY_mio_gansu_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 129 }
+	}
+}
+
+# 天津机器局（津海关道辖下，华北近代军工的发源地，子弹与火药）
+BFY_mio_tianjin_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 82 }
+	}
+}
+
+# ===== 舰艇修造（第三批） =====
+
+# 黄埔船坞（广州，华南舰艇修造与海防设施基地）
+BFY_mio_whampoa_dockyard_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+
+	allowed = {
+		BFY_is_chinese_faction = yes
+	}
+	available = {
+		owner = { controls_state = 357 }
+	}
+}

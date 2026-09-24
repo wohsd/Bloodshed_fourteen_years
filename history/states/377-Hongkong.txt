@@ -6,11 +6,15 @@ state={
 	}
 	history={
 		owner = RAJ
+	add_core_of = CHI
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 0
 			dockyard = 1
+			2877 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = RAJ
 		1941.1.1={
@@ -21,3 +25,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

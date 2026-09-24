@@ -62,7 +62,7 @@ CHI_Battle_China = {
 	priority = 111
 	visible_when_empty = yes
 }
-CHI_Chinese_Hindenburg_category {
+CHI_Chinese_Hindenburg_category = {
 	icon = military_operation
 	picture = GFX_JiangJieShi_1
 	visible = { 
@@ -142,5 +142,12 @@ LA_authority_category = {
 		tag = CHI
 		has_dynamic_modifier = { modifier = Leader_Authority }
 	}
+	visible_when_empty = yes
+}
+
+# BFY占位分类：永不显示，仅让脚本引用的决议ID入库
+BFY_hidden_placeholder = {
+	icon = military_operation
+	visible = { always = no }
 	visible_when_empty = yes
 }

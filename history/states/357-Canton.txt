@@ -18,6 +18,9 @@ state={
 			air_base= 1
 			
 			dockyard = 1
+			3251 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = ROG
 		
@@ -29,3 +32,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

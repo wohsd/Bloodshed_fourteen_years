@@ -1,6 +1,7 @@
 state={
 	id=609
 	name="STATE_609"
+	state_category = rural
 	provinces={
 		2531 2617 4048 4071 
 	}

@@ -6,7 +6,11 @@ state={
 	}
 	history={
 		owner = FRA
+	add_core_of = CHI
 		buildings = {
+			1790 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			1790 5
@@ -22,3 +26,4 @@ state={
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
+

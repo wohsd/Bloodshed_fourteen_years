@@ -1,0 +1,2 @@
+# BFY：系统后台国，永不扮演，仅用作“整合”占领机制的顺从度/抵抗载体
+AAA = "countries/BFY_system.txt"

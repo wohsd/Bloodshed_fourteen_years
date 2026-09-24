@@ -31,7 +31,7 @@ Mass_production_movement = {
 	production_speed_industrial_complex_factor = PRC_production_speed_industrial_complex_factor
 	production_speed_infrastructure_factor = PRC_production_speed_infrastructure_factor
 	production_speed_supply_node_factor = PRC_production_speed_supply_node_factor
-	supply_factor = PRC_supply_factor
+	supply_consumption_factor = PRC_supply_factor
 	production_factory_start_efficiency_factor = PRC_production_factory_start_efficiency_factor
 	production_factory_max_efficiency_factor = PRC_production_factory_max_efficiency_factor
 	production_factory_efficiency_gain_factor = PRC_production_factory_efficiency_gain_factor
@@ -178,3 +178,28 @@ Combat_direction_effect = {
 	supply_consumption_factor=-1
 }
 
+
+# BFY补充：原版TUR脚本引用，mod覆盖本文件时漏掉的定义
+kurdish_agitation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_agitation
+
+	resistance_growth = 0.03
+	resistance_target = 0.1
+	resistance_decay = -0.1
+	state_resources_factor = -0.15
+}
+
+kurdish_separatism = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_separatism
+
+	compliance_growth = -0.05
+	resistance_growth = 0.05
+	resistance_target = 0.20
+	resistance_decay = -0.20
+	state_resources_factor = -0.33
+	disable_strategic_redeployment = 1
+}

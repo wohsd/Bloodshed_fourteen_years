@@ -35,19 +35,19 @@ CHI_update_faction_effects = {
     
     # 计算陆军将领的技能影响力
     every_army_leader = {
-        limit = { AND = { has_trait = heyingqinxi is_employed_by = ROOT } }
+        limit = { has_trait = heyingqinxi }
         add_to_variable = { PREV.CHI_he_power_skill = skill }
     }
     every_army_leader = {
-        limit = { AND = { has_trait = chenchengxi is_employed_by = ROOT } }
+        limit = { has_trait = chenchengxi }
         add_to_variable = { PREV.CHI_chen_power_skill = skill }
     }
     every_army_leader = {
-        limit = { AND = { has_trait = huzongnanxi is_employed_by = ROOT } }
+        limit = { has_trait = huzongnanxi }
         add_to_variable = { PREV.CHI_hu_power_skill = skill }
     }
     every_army_leader = {
-        limit = { AND = { has_trait = tangenboxi is_employed_by = ROOT } }
+        limit = { has_trait = tangenboxi }
         add_to_variable = { PREV.CHI_tang_power_skill = skill }
     }
     

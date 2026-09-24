@@ -1,0 +1,113 @@
+# BFY占位决议：脚本引用但本体缺失的建设类决议，包裹在隐藏分类中入库
+BFY_hidden_placeholder = {
+
+	CHI_burma_road_construction = {
+		days_remove = 304
+		days_re_enable = 1
+	}
+
+	CHI_repair_huayuankou_embankment = {
+		days_remove = 365
+		days_re_enable = 1
+	}
+
+	CHI_baoji_tianshui_section_of_lanzhou_haizhou_railway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_tianshui_lanzhou_section_of_lanzhou_haizhou_railway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_chengdu_chongqing_railway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_hunan_guizhou_railway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_nanjing_nanchang_railway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_qinghai_tibet_highway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_south_xinjiang_highway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_xikang_qinghai_highway_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_expand_gongxian_arsenal = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_expand_hanyang_arsenal = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_expand_jinling_arsenal = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_expand_zhuzhou_arsenal = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_chemical_industry_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_electrical_industry_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_fuel_industry_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_mechanical_industry_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_metallurgical_industry_construction = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_eradication_of_corruption = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_first_stage_of_industrial_relocation = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+
+	CHI_second_stage_of_industrial_relocation = {
+		days_remove = 180
+		days_re_enable = 1
+	}
+}

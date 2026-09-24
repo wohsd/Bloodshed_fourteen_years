@@ -216,11 +216,11 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+		dangwu_guanlizhe = {
+			random = no
+			sprite = 13
+
+			neutrality_drift = 0.001
+		}
 }
-
-	dangwu_guanlizhe = {
-		random = no
-		sprite = 13
-
-		neutrality_drift = 0.001
-	}

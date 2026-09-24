@@ -1,4 +1,4 @@
-# BFY：中国势力判定
+﻿# BFY：中国势力判定
 # 覆盖 BFY_countries.txt 中除列强外的全部中国势力（含内战动态tag D01-D75）
 # 不含：GER/JAP/SOV/FRA/USA/RAJ/SIA/AFG/HOL/POR/TAN/BHU/NEP/MEG（外国）
 #       PCN（公共租界）、NRC（南京安全区）（非中国势力）
@@ -154,4 +154,81 @@ BFY_is_chinese_faction = {
 		tag = D74
 		tag = D75
 	}
+}
+
+# BFY：中国领土州（state scope）
+# 任意中国势力拥有核心，或为蒙古（MEG）核心——用于“整合”占领决议的目标限定
+BFY_is_chinese_territory_state = {
+	OR = {
+		any_country_with_core = {
+			BFY_is_chinese_faction = yes
+		}
+		is_core_of = MEG
+	}
+}
+
+# BFY补充：CHI经济脚本（CHI_scripted_effects.txt）引用但原本缺失定义的自定义触发器
+# 国家拥有任一“工业化”动态修正（1-4级）
+has_industrialisation = {
+	OR = {
+		has_dynamic_modifier = { modifier = CHI_industrialisation_dynamic_modifier_1 }
+		has_dynamic_modifier = { modifier = CHI_industrialisation_dynamic_modifier_2 }
+		has_dynamic_modifier = { modifier = CHI_industrialisation_dynamic_modifier_3 }
+		has_dynamic_modifier = { modifier = CHI_industrialisation_dynamic_modifier_4 }
+	}
+}
+
+# 国家拥有任一“军事工业”动态修正（1-4级）
+has_military_industry = {
+	OR = {
+		has_dynamic_modifier = { modifier = CHI_military_industry_dynamic_modifier_1 }
+		has_dynamic_modifier = { modifier = CHI_military_industry_dynamic_modifier_2 }
+		has_dynamic_modifier = { modifier = CHI_military_industry_dynamic_modifier_3 }
+		has_dynamic_modifier = { modifier = CHI_military_industry_dynamic_modifier_4 }
+	}
+}
+
+# 官僚制2级/3级动态修正已无任何实际效果（全部加成变量约等于0），应直接移除而非升降级
+# 判定阈值与 swap_or_remove_bureaucracy 各转换分支中的空壳判定保持一致
+need_to_remove_bureaucracy = {
+	OR = {
+		AND = {
+			has_dynamic_modifier = { modifier = CHI_bureaucracy_dynamic_modifier_2 }
+			check_variable = { CHI_bureaucracy_political_power_gain > -0.01 }
+			check_variable = { CHI_bureaucracy_mobilization_laws_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_trade_laws_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_economy_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_political_advisor_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_tank_manufacturer_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_naval_manufacturer_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_aircraft_manufacturer_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_materiel_manufacturer_cost_factor < 0.01 }
+			check_variable = { CHI_bureaucracy_industrial_concern_cost_factor < 0.01 }
+		}
+		AND = {
+			has_dynamic_modifier = { modifier = CHI_bureaucracy_dynamic_modifier_3 }
+			check_variable = { CHI_bureaucracy_stability_factor > -0.11 }
+			check_variable = { CHI_bureaucracy_consumer_goods_factor < 0.01 }
+		}
+	}
+}
+
+# BFY补充：CHI_scripted_effects.txt 引用但未定义的自定义触发器
+# state scope：该州被敌人或盟友控制（非本国控制）
+is_controlled_by_enemy_or_ally = {
+	NOT = { is_controlled_by = ROOT }
+}
+
+# unit_leader scope：将领军衔判断（旧版trigger，当前版本用rank变量替代）
+rank_is_major_general = {
+	rank >= 9
+}
+rank_is_lieutenant_general = {
+	rank >= 10
+}
+rank_is_actual_general = {
+	rank >= 11
+}
+rank_is_general_of_second_rank = {
+	rank >= 12
 }

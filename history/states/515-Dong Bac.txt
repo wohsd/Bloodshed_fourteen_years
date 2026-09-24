@@ -8,6 +8,9 @@ state={
 		owner = FRA
 		buildings = {
 			infrastructure = 1
+			5064 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = FRA
 	}
@@ -15,3 +18,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

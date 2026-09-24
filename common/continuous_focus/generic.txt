@@ -249,9 +249,9 @@ continuous_focus_palette = {
 		available = {
 		}
 
-		# 每日顺从度增长 +0.02%（compliance_gain 每日顺从度增量）
+		# 每日顺从度增长 +0.03（与“整合”占领法案 compliance_gain = 0.03 完全一致）
 		modifier = {
-			compliance_gain = 0.0002
+			compliance_gain = 0.03
 		}
 
 		ai_will_do = {

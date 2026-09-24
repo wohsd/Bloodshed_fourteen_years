@@ -33,9 +33,6 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-add_ideas = {
-	Regionalist_warlords
-}
 set_rule = {
 	can_join_factions = no
 	can_join_opposite_factions = no  

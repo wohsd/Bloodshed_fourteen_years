@@ -1,0 +1,333 @@
+﻿# BFY占位动态修正
+# CHI_scripted_effects.txt 的经济/军事系统脚本大量 add/has/remove_dynamic_modifier
+# 以下修正，但修正本体从未定义。此处提供空壳定义（始终可用、无实际效果），
+# 让修正能被正常添加/移除/判定，消除报错并打通脚本逻辑链。
+# political_power_gain = 0 为无害占位（月度政治点+0，等同无效果）。
+# 日后补全经济系统时，请替换为真实 modifier 数值。
+
+# ===== 经济形势（1-3级） =====
+ECO_economic_situation_dynamic_modifier_1 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+ECO_economic_situation_dynamic_modifier_2 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+ECO_economic_situation_dynamic_modifier_3 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+
+# ===== 预算赤字 =====
+ECO_budget_deficit_dynamic_modifier = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+
+# ===== 官僚制（1-3级） =====
+CHI_bureaucracy_dynamic_modifier_1 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_bureaucracy_dynamic_modifier_2 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_bureaucracy_dynamic_modifier_3 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+
+# ===== 工业化（1-4级） =====
+CHI_industrialisation_dynamic_modifier_1 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_industrialisation_dynamic_modifier_2 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_industrialisation_dynamic_modifier_3 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_industrialisation_dynamic_modifier_4 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+
+# ===== 军事工业（1-4级） =====
+CHI_military_industry_dynamic_modifier_1 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_military_industry_dynamic_modifier_2 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_military_industry_dynamic_modifier_3 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_military_industry_dynamic_modifier_4 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+
+# ===== 国民素质（1-3级） =====
+CHI_national_quality_dynamic_modifier_1 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_national_quality_dynamic_modifier_2 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_national_quality_dynamic_modifier_3 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+
+# ===== 民国陆海军/空军 =====
+CHI_roc_army_dynamic_modifier_1 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_roc_army_dynamic_modifier_2 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_roc_army_dynamic_modifier_3 = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_roc_navy_dynamic_modifier = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_roc_air_force_dynamic_modifier = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+
+# ===== 作战临时修正 =====
+CHI_pitched_battle = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+CHI_counter_offensive_operation = {
+	enable = { always = yes }
+	political_power_gain = 0
+}
+# BFY补充：原版0_dynamic_modifiers.txt中有但mod覆盖时遗漏的定义
+
+islamist_opposition = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_unrest
+	
+	recruitable_population_factor = -0.05
+	local_building_slots_factor = -0.1
+	state_resources_factor = -0.1
+	state_production_speed_buildings_factor = -0.15
+}
+
+islamist_sedition = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_sedition
+	
+	recruitable_population_factor = -0.25
+	local_building_slots_factor = -0.25
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	army_speed_factor_for_controller = -0.15
+}
+
+islamist_insurgency = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_insurgency
+	
+	recruitable_population_factor = -0.5
+	local_building_slots_factor = -0.33
+	state_resources_factor = -0.5
+	state_production_speed_buildings_factor = -0.33
+	army_speed_factor_for_controller = -0.33
+}
+
+islamists_placated = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_traditionalist_placated
+	
+	state_production_speed_buildings_factor = 0.05
+}
+
+kurdish_rebellion = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_rebellion
+	
+	compliance_growth = -0.1
+	resistance_growth = 0.07
+	resistance_target = 0.35
+	resistance_decay = -0.25
+	state_resources_factor = -0.33
+	disable_strategic_redeployment = 1
+}
+
+kemalist_loyalties = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kemalist_loyalties
+	
+	recruitable_population_factor = 0.15
+	state_production_speed_buildings_factor = 0.1
+}
+
+kemalist_schemers = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kemalist_unrest
+	
+	recruitable_population_factor = -0.33
+	state_production_speed_buildings_factor = -0.25
+	army_speed_factor_for_controller = -0.5
+}
+
+separatist_fatigue = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_fatigue
+	
+	compliance_growth = 0.05
+	resistance_decay = 0.15
+	state_resources_factor = -0.33
+}
+
+SOV_third_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT - Basic
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+	#PREVIOUS -> Third Five Year Plan
+	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #-0.1
+	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.05
+	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.1
+	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0.05
+
+	#INITIAL
+	industrial_concern_cost_factor = SOV_fyp_industrial_concern_cost_factor #-0.15
+	
+	#EXTRA IMPROVEMENTS
+	local_resources_factor = SOV_fyp_local_resources_factor #0.10 -> Increase State Reserves
+}
+
+SOV_third_five_year_plan_military_dynamic_modifier = { #NATIONAL SPIRIT - Military
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan_military_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+	#PREVIOUS
+	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #-0.1 (turned to 0 with Optmize Production Lines)
+	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.05
+	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.1
+	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0
+	industrial_concern_cost_factor = SOV_fyp_industrial_concern_cost_factor #-0.15
+	
+	#INITIAL -> Shift to Armaments Production
+	production_speed_arms_factory_factor = SOV_fyp_production_speed_arms_factory_factor #0.10
+
+	#EXTRA IMPROVEMENTS
+	local_resources_factor = SOV_fyp_local_resources_factor #0.10 -> Increase State Reserves
+	production_factory_start_efficiency_factor = SOV_fyp_production_factory_start_efficiency_factor #0.05 -> Optimize Production Lines
+	industrial_capacity_factory = SOV_fyp_industrial_capacity_factory #0.05 -> Steel Casting Industry / Shift to Armaments Production
+	industrial_capacity_dockyard = SOV_fyp_industrial_capacity_dockyard #0.05 -> Steel Casting Industry
+	fuel_gain_factor_from_states = SOV_fyp_fuel_gain_factor_from_states #0.05 -> Oil Production
+	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
+}
+
+SOV_third_five_year_plan_civilian_dynamic_modifier = { #NATIONAL SPIRIT - Civilian
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan_civilian_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+	#PREVIOUS
+	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #-0.1
+	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.05
+	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.08
+	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0.1
+	industrial_concern_cost_factor = SOV_fyp_industrial_concern_cost_factor #-0.15
+	
+	#EXTRA IMPROVEMENTS
+	local_resources_factor = SOV_fyp_local_resources_factor #0.10 -> Increase State Reserves
+	line_change_production_efficiency_factor = SOV_fyp_line_change_production_efficiency_factor #0.1 -> Industrial Modernization
+	industrial_capacity_factory = SOV_fyp_industrial_capacity_factory #0.05 -> Steel Casting Industry / Shift to Armaments Production
+	industrial_capacity_dockyard = SOV_fyp_industrial_capacity_dockyard #0.05 -> Steel Casting Industry
+	fuel_gain_factor_from_states = SOV_fyp_fuel_gain_factor_from_states #0.05 -> Oil Production
+	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
+}
+
+SOV_fourth_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_fourth_five_year_plan
+
+	#PREVIOUS
+	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #0
+	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.1 (0.2 with Civilian focus)
+	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.06/0.08 (and turned into 0.2/0.12 in this NS)
+	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0
+	industrial_concern_cost_factor = SOV_fyp_industrial_concern_cost_factor #-0.15
+
+	#OPTIONAL IMPROVEMENTS
+	production_speed_arms_factory_factor = SOV_fyp_production_speed_arms_factory_factor #0.10 -> Shift to Armaments Production
+	line_change_production_efficiency_factor = SOV_fyp_line_change_production_efficiency_factor #0.1 -> Industrial Modernization
+	production_factory_start_efficiency_factor = SOV_fyp_production_factory_start_efficiency_factor #0.05 -> Optimize Production Lines
+	industrial_capacity_factory = SOV_fyp_industrial_capacity_factory #0.05 -> Steel Casting Industry / Shift to Armaments Production
+	industrial_capacity_dockyard = SOV_fyp_industrial_capacity_dockyard #0.05 -> Steel Casting Industry
+	fuel_gain_factor_from_states = SOV_fyp_fuel_gain_factor_from_states #0.05 -> Oil Production
+	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
+
+	#INITIAL -> Fourth Five Year Plan
+	industry_repair_factor = SOV_fyp_industry_repair_factor #0.1
+}
+
+international_city = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -1
+	recruitable_population_factor = -1
+	local_factories = -1
+	disable_strategic_redeployment = yes
+}
+
+international_city_2 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.75
+	recruitable_population_factor = -0.75
+	local_factories = -0.75
+	resistance_growth = 1.2
+	disable_strategic_redeployment = yes
+}
+
+international_city_3 = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	state_resources_factor = -0.5
+	recruitable_population_factor = -0.5
+	local_factories = -0.5
+	resistance_growth = 0.6
+	compliance_gain = 0.1
+	disable_strategic_redeployment = yes
+}
+

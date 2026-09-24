@@ -29,15 +29,82 @@ guiTypes = {
 		clipping = no 
 		
 		background = {
-			name = "Background"		
+			name = "Background"
 			quadTextureSprite ="GFX_14frontend_bg"
 			alwaystransparent = yes
 		}
 	}
 }
-	
-	
-	
+
+	# BFY补充：新版引擎DLC界面需要这两个容器模板，原版frontendmainview.gui中有定义，
+	# mod定制本文件时缺失，报“Undefined GUI_TYPE: owned_dlc_item”（有崩溃风险）
+	containerWindowType = {
+		name = "owned_dlc_item"
+		size = { width = 50 height = 50 }
+
+		buttonType =
+		{
+			position = { x = -230 y = 0 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+
+		iconType = {
+			name = "glowup"
+			position = { x = -50 y = -21 }
+			spriteType = "GFX_spirit_glow"
+			scale = 0.8
+		}
+
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -6 y = 1 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+		}
+
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = 28 y = 24 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "unowned_dlc_item"
+		size = { width = 50 height = 50 }
+
+		buttonType =
+		{
+			position = { x = -230 y = 0 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -6 y = 1 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+		}
+
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = 28 y = 24 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+	}
+
+
+
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
@@ -188,16 +255,30 @@ guiTypes = {
 		}
 
 		@warn_icon_x = 280
-		iconType = {
-			name = "single_player_button_warn"
-			position = { x = @warn_icon_x y = 22 }
-			spriteType = "GFX_missing_dlc_warning_sign"
-		}
+	iconType = {
+		name = "single_player_button_warn"
+		position = { x = @warn_icon_x y = 22 }
+		spriteType = "GFX_missing_dlc_warning_sign"
+	}
 
-		positionType = {
-			name = "version_label_subscription_position"
-			position = { x = 35 y = 524 }
-		}
+	# BFY补充：引擎硬编码要求mainmenu_panel_bottom内存在version_label，缺失时报
+	# “Could not find version_label”
+	instantTextBoxType = {
+		name ="version_label"
+		position = { x = 35 y = 396 }
+		textureFile = ""
+		font = "hoi_18b"
+		borderSize = {x = 0 y = 0}
+		text = "ALPHA"
+		format = centre
+		maxWidth = 320
+		maxHeight = 20
+	}
+
+	positionType = {
+		name = "version_label_subscription_position"
+		position = { x = 35 y = 524 }
+	}
 		
 		
 		ButtonType = {

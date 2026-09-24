@@ -1,0 +1,7 @@
+BFY_integration_category = {
+	icon = generic_political_actions
+
+	visible = {
+		always = yes
+	}
+}

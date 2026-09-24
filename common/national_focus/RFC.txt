@@ -18,22 +18,38 @@ focus_tree = {
 		icon = GFX_focus_CHI_glorify_deng_yanda
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		# 起义国策：仅由「江西起义」事件自动完成，玩家无法手动点选
 		completion_reward = {
-		add_political_power = 50
-		custom_effect_tooltip = RFC_uprising_modifier_tt
-		# 隐藏：初始化并附加「临委会起义」动态修正（变量驱动，数值说明见 tooltip）
-		# 隐藏：删除随省份转移继承自民国（CHI）的甲/乙/丙种师编制及其部队
-		hidden_effect = {
-			RFC_init_uprising_modifier = yes
-			add_dynamic_modifier = {
-				modifier = Provisional_Committee_Uprising
+			add_political_power = 50
+			custom_effect_tooltip = RFC_uprising_modifier_tt
+			# 隐藏：初始化并附加「临委会起义」动态修正（变量驱动，数值说明见 tooltip）
+			# 隐藏：删除随省份转移继承自民国（CHI）的甲/乙/丙种师编制及其部队
+			hidden_effect = {
+				RFC_init_uprising_modifier = yes
+				add_dynamic_modifier = {
+					modifier = Provisional_Committee_Uprising
+				}
+				delete_unit_template_and_units = {
+					division_template = "国民革命军甲种师"
+				}
+				delete_unit_template_and_units = {
+					division_template = "国民革命军乙种师"
+				}
+				delete_unit_template_and_units = {
+					division_template = "国民革命军丙种师"
+				}
 			}
-			delete_unit_template_and_units = { division_template = "国民革命军甲种师" }
-			delete_unit_template_and_units = { division_template = "国民革命军乙种师" }
-			delete_unit_template_and_units = { division_template = "国民革命军丙种师" }
+			country_event = {
+				id = RFC_country.3
+				days = 3
+			}
 		}
-		country_event = { id = RFC_country.3 days = 3 }
-	}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				always = no
+			}
+		}
 	}
 	focus = {
 		id = Establish_a_provisional_government
@@ -46,36 +62,61 @@ focus_tree = {
 		prerequisite = {
 			focus = The_Third_Road
 		}
+		completion_reward = {
+			add_stability = 0.1
+			custom_effect_tooltip = RFC_provisional_gov_reward_tt
+			# 提升一级社会现代化（实际效果隐藏，说明见 tooltip）：换法案 + 升级事件
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = social_development_stage
+							value = 5
+							compare = less_than
+						}
+					}
+					add_to_variable = {
+						social_development_stage = 1
+					}
+					set_variable = {
+						social_development_var = 0
+					}
+					BFY_development_swap_social = yes
+					set_variable = {
+						BFY_disp_social = social_development_stage
+					}
+					add_to_variable = {
+						BFY_disp_social = 1
+					}
+					country_event = {
+						id = BFY_dev_event.5
+						hours = 6
+					}
+				}
+			}
+			# 临委会起义修正：每日政治点数 +0.05
+			add_to_variable = {
+				RFC_pcq_pp = 0.05
+			}
+			country_event = {
+				id = RFC_country.4
+			}
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = RFC_deng_yanda_alive_tt
-				NOT = { CHI = { has_country_flag = RFC_DengYanDa1 } }
+				NOT = {
+					CHI = {
+						has_country_flag = RFC_DengYanDa1
+					}
+				}
 			}
 		}
-	completion_reward = {
-		add_stability = 0.10
-		custom_effect_tooltip = RFC_provisional_gov_reward_tt
-		# 提升一级社会现代化（实际效果隐藏，说明见 tooltip）：换法案 + 升级事件
-		hidden_effect = {
-			if = {
-				limit = { check_variable = { var = social_development_stage value = 5 compare = less_than } }
-				add_to_variable = { social_development_stage = 1 }
-				set_variable = { social_development_var = 0 }
-				BFY_development_swap_social = yes
-				set_variable = { BFY_disp_social = social_development_stage }
-				add_to_variable = { BFY_disp_social = 1 }
-				country_event = { id = BFY_dev_event.5 hours = 6 }
-			}
-		}
-		# 临委会起义修正：每日政治点数 +0.05
-		add_to_variable = { RFC_pcq_pp = 0.05 }
-		country_event = { id = RFC_country.4 }
-	}
 		relative_position_id = The_Third_Road
 	}
 	focus = {
 		id = Speed_is_of_the_essence_in_military_operations
-		x = 5
+		x = 6
 		y = 1
 		cost = 5
 		icon = GFX_focus_prc_infiltration
@@ -89,9 +130,37 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = RFC_mountain_reform_tt
+			custom_effect_tooltip = RFC_nra_modifier_tt
+			# 获得永久动态修正「国民革命军」（初始数值吝啬，后续军事国策/军事改革决议小幅加强）
+			set_variable = {
+				RFC_nra_sf_cap = 2
+			}
+			set_variable = {
+				RFC_nra_attack = 0
+			}
+			set_variable = {
+				RFC_nra_morale = 0
+			}
+			set_variable = {
+				RFC_nra_core_atk = 0
+			}
+			set_variable = {
+				RFC_nra_core_def = 0
+			}
+			set_variable = {
+				RFC_nra_breakthrough = 0
+			}
+			set_variable = {
+				RFC_nra_sf_attack = 0
+			}
+			add_dynamic_modifier = {
+				modifier = National_Revolutionary_Army
+			}
 			hidden_effect = {
 				# 解锁山地步兵科技
-				set_technology = { tech_mountaineers = 1 }
+				set_technology = {
+					tech_mountaineers = 1
+				}
 				# 通过 load_oob 解锁「军官突击团」编制：
 				# 6 山地步兵营 + 2 步兵炮连（团属支援）+ 1 工兵连（师属支援）
 				# 团属支援连仅 OOB 模板解析支持，故不使用内联 division_template 脚本
@@ -124,6 +193,14 @@ focus_tree = {
 				type = arms_factory
 				level = 2
 			}
+			custom_effect_tooltip = RFC_requisition_factory_tt
+			# 加强「临委会起义」：征用的兵工厂让部队装备齐整、组织度回升（战时临时修正，数值从优）
+			add_to_variable = {
+				RFC_army_org_factor = 0.06
+			}
+			add_to_variable = {
+				RFC_army_attack_factor = 0.04
+			}
 		}
 		relative_position_id = Speed_is_of_the_essence_in_military_operations
 	}
@@ -138,6 +215,15 @@ focus_tree = {
 		prerequisite = {
 			focus = Speed_is_of_the_essence_in_military_operations
 		}
+		completion_reward = {
+			add_war_support = 0.1
+			custom_effect_tooltip = RFC_nra_attack_tt
+			custom_effect_tooltip = RFC_military_reform_unlock_tt
+			# 加强「国民革命军」：敢死队的决死突击
+			add_to_variable = {
+				RFC_nra_attack = 0.03
+			}
+		}
 		relative_position_id = Speed_is_of_the_essence_in_military_operations
 	}
 	focus = {
@@ -151,11 +237,20 @@ focus_tree = {
 		prerequisite = {
 			focus = Suicide_Squad
 		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			custom_effect_tooltip = RFC_nra_morale_tt
+			# 加强「国民革命军」：重赏之下士气提振
+			add_to_variable = {
+				RFC_nra_morale = 0.03
+			}
+		}
 		relative_position_id = Suicide_Squad
 	}
 	focus = {
 		id = Make_steady_and_solid_progress
-		x = -5
+		x = -6
 		y = 1
 		cost = 5
 		icon = GFX_goal_generic_construct_military
@@ -169,9 +264,40 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = RFC_militia_reform_tt
+			custom_effect_tooltip = RFC_paf_modifier_tt
+			# 获得永久动态修正「人民武装」（初始数值保守，后续民兵线国策/军事改革决议小幅加强）
+			set_variable = {
+				RFC_paf_recruit = 0.03
+			}
+			set_variable = {
+				RFC_paf_defence = 0
+			}
+			set_variable = {
+				RFC_paf_org = 0
+			}
+			set_variable = {
+				RFC_paf_morale = 0
+			}
+			set_variable = {
+				RFC_paf_core_atk = 0
+			}
+			set_variable = {
+				RFC_paf_core_def = 0
+			}
+			set_variable = {
+				RFC_paf_militia_atk = 0
+			}
+			set_variable = {
+				RFC_paf_militia_def = 0
+			}
+			add_dynamic_modifier = {
+				modifier = People_Armed_Forces
+			}
 			hidden_effect = {
 				# 解锁民兵科技（MOD 自有科技，模板参照原版 militia_tech）
-				set_technology = { BFY_irregular_infantry_tech = 1 }
+				set_technology = {
+					BFY_irregular_infantry_tech = 1
+				}
 				# 通过 load_oob 整编「地方部队」：全师六个民兵营
 				load_oob = "RFC_militia_reform"
 				# 在首都新建 6 支地方部队（一级「乌合之众」）
@@ -200,6 +326,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.02
+			custom_effect_tooltip = RFC_aid_refugees_tt
+			# 加强「人民武装」：获救的难民青壮纷纷加入民兵
+			add_to_variable = {
+				RFC_paf_recruit = 0.02
+			}
 		}
 		relative_position_id = Make_steady_and_solid_progress
 	}
@@ -214,6 +345,18 @@ focus_tree = {
 		prerequisite = {
 			focus = Aid_refugees
 		}
+		completion_reward = {
+			add_political_power = 25
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			custom_effect_tooltip = RFC_production_self_help_tt
+			# 加强「临委会起义」：根据地生产自给减轻了军队补给负担
+			add_to_variable = {
+				RFC_supply_consumption_factor = -0.04
+			}
+		}
 		relative_position_id = Aid_refugees
 	}
 	focus = {
@@ -226,6 +369,18 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Make_steady_and_solid_progress
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+			}
+			custom_effect_tooltip = RFC_militia_armory_tt
+			custom_effect_tooltip = RFC_military_reform_unlock_tt
+			# 加强「人民武装」：武备库让民兵有枪可用、守土有据
+			add_to_variable = {
+				RFC_paf_defence = 0.03
+			}
 		}
 		relative_position_id = Make_steady_and_solid_progress
 	}
@@ -240,11 +395,20 @@ focus_tree = {
 		prerequisite = {
 			focus = Militia_Armory
 		}
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+			custom_effect_tooltip = RFC_military_crash_course_tt
+			# 加强「人民武装」：速成轮训让乌合之众有了基本的组织纪律
+			add_to_variable = {
+				RFC_paf_org = 0.03
+			}
+		}
 		relative_position_id = Militia_Armory
 	}
 	focus = {
 		id = Reconstruct_the_Political_Department
-		x = 0
+		x = -2
 		y = 2
 		cost = 5
 		icon = GFX_focus_prc_agrarian_socialism
@@ -253,18 +417,33 @@ focus_tree = {
 		prerequisite = {
 			focus = Establish_a_provisional_government
 		}
-	completion_reward = {
-		add_political_power = 25
-		custom_effect_tooltip = RFC_political_dept_reward_tt
+		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = RFC_political_dept_reward_tt
 			# 临委会起义修正：每日政治点数 +0.05、组织度恢复 +4%
-			add_to_variable = { RFC_pcq_pp = 0.05 }
-			add_to_variable = { RFC_army_morale_factor = 0.04 }
+			add_to_variable = {
+				RFC_pcq_pp = 0.05
+			}
+			add_to_variable = {
+				RFC_army_morale_factor = 0.04
+			}
 			# 若已雇佣郭沫若为政治顾问：政治部重建效果翻倍，并暗中提升共产主义支持度
 			if = {
-				limit = { RFC_GuoMoRuo = { is_hired_as_advisor = yes } }
-				add_to_variable = { RFC_pcq_pp = 0.05 }
-				add_to_variable = { RFC_army_morale_factor = 0.04 }
-				add_popularity = { ideology = communism popularity = 0.05 }
+				limit = {
+					RFC_GuoMoRuo = {
+						is_hired_as_advisor = yes
+					}
+				}
+				add_to_variable = {
+					RFC_pcq_pp = 0.05
+				}
+				add_to_variable = {
+					RFC_army_morale_factor = 0.04
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
 				add_stability = 0.01
 			}
 		}
@@ -281,6 +460,39 @@ focus_tree = {
 		prerequisite = {
 			focus = Reconstruct_the_Political_Department
 		}
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = RFC_revolutionar_education_tt
+			# 提升一级教育现代化
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = education_development_stage
+							value = 5
+							compare = less_than
+						}
+					}
+					add_to_variable = {
+						education_development_stage = 1
+					}
+					set_variable = {
+						education_development_var = 0
+					}
+					BFY_development_swap_education = yes
+					set_variable = {
+						BFY_disp_education = education_development_stage
+					}
+					add_to_variable = {
+						BFY_disp_education = 1
+					}
+					country_event = {
+						id = BFY_dev_event.1
+						hours = 6
+					}
+				}
+			}
+		}
 		relative_position_id = Reconstruct_the_Political_Department
 	}
 	focus = {
@@ -294,6 +506,16 @@ focus_tree = {
 		prerequisite = {
 			focus = Revolutionar_Education
 		}
+		completion_reward = {
+			custom_effect_tooltip = RFC_pilot_rent_reduction_tt
+			# 「三大政策：名存实亡」追加效果：每日政治点数+0.05，战争支持度+10%
+			add_to_variable = {
+				RFC_three_policies_pp = 0.05
+			}
+			set_variable = {
+				RFC_three_policies_war_support = 0.1
+			}
+		}
 		relative_position_id = Revolutionar_Education
 	}
 	focus = {
@@ -301,24 +523,23 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		icon = GFX_focus_PRC_eastward_expansion
+		icon = GFX_focus_prc_infiltration
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Recognize_the_status_of_the_Soviet_area
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = PRC_master_the_terrain
-				bonus = 1
-				uses = 1
-				category = mountaineers_tech
+			custom_effect_tooltip = RFC_learn_guerrilla_warfare_tt
+			# 临委会起义修正：陆军防御+10%，突破+10%，地形惩罚-15%
+			set_variable = {
+				RFC_army_defence_factor = 0.1
 			}
-			add_mastery_bonus = {
-				bonus = 0.25
-				days = 365
-				name = PRC_supreme_infiltration
-				sub_doctrine = guerilla_war
+			set_variable = {
+				RFC_army_breakthrough_factor = 0.1
+			}
+			set_variable = {
+				RFC_terrain_penalty_reduction_pcq = 0.15
 			}
 		}
 		relative_position_id = Recognize_the_status_of_the_Soviet_area
@@ -333,6 +554,22 @@ focus_tree = {
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Reconstruct_the_Political_Department
+		}
+		completion_reward = {
+			custom_effect_tooltip = RFC_recognize_soviet_area_tt
+			# 添加动态民族精神「三大政策：名存实亡」
+			# 效果：每日政治点数+0.1，共产主义接纳度+25%
+			add_dynamic_modifier = {
+				modifier = Three_Major_Policies_Nominal
+			}
+			set_variable = {
+				RFC_three_policies_pp = 0.1
+			}
+			# 共产主义接纳度+25%（本版本无持续型政党支持率修正，只能一次性给予）
+			add_popularity = {
+				ideology = communism
+				popularity = 0.25
+			}
 		}
 		relative_position_id = Reconstruct_the_Political_Department
 	}
@@ -352,6 +589,14 @@ focus_tree = {
 				type = industrial_complex
 				level = 2
 			}
+			custom_effect_tooltip = RFC_forced_labor_tt
+			# 加强「临委会起义」：征发的民夫承担辎重、赶筑工事（战时临时修正，数值从优）
+			add_to_variable = {
+				RFC_supply_consumption_factor = -0.06
+			}
+			add_to_variable = {
+				RFC_dig_in_speed_factor = 0.1
+			}
 		}
 		relative_position_id = Requisition_factory
 	}
@@ -368,6 +613,24 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Learn_guerrilla_warfare
+		}
+		completion_reward = {
+			custom_effect_tooltip = RFC_second_united_front_tt
+			# 中央苏区弹出事件「第二次国共合作？」
+			PRC = {
+				country_event = {
+					id = RFC_NEW.2
+					hours = 6
+				}
+			}
+		}
+		available = {
+			country_exists = PRC
+			PRC = {
+				NOT = {
+					has_idea = Leftism
+				}
+			}
 		}
 		relative_position_id = Reconstruct_the_Political_Department
 	}
@@ -456,11 +719,18 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		# 战后议题：仅由「革命的胜利」事件自动完成，玩家无法手动点选
 		prerequisite = {
 			focus = Military_Industry_Award
 		}
 		prerequisite = {
 			focus = Forced_labor
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				always = no
+			}
 		}
 		relative_position_id = Forced_labor
 	}
@@ -574,7 +844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_17
-		x = 0
+		x = 1
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -597,17 +867,24 @@ focus_tree = {
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		# 战后议题：仅由「革命的胜利」事件自动完成，玩家无法手动点选
 		prerequisite = {
 			focus = Military_Crash_Course
 		}
 		prerequisite = {
 			focus = Production_Self_Help_Movement
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				always = no
+			}
+		}
 		relative_position_id = Military_Crash_Course
 	}
 	focus = {
 		id = new_focus_28
-		x = -1
+		x = 1
 		y = 2
 		cost = 0
 		continue_if_invalid = no
@@ -619,7 +896,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_31
-		x = -1
+		x = 1
 		y = 3
 		cost = 0
 		continue_if_invalid = no
@@ -644,43 +921,43 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_27
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_18
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_26
 	}
 	focus = {
 		id = new_focus_29
-		x = 1
-		y = 3
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_27
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_27
 	}
 	focus = {
 		id = new_focus_32
-		x = 3
-		y = 2
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_26
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_26
 	}
 	focus = {
 		id = new_focus_25
-		x = -3
+		x = 3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -695,7 +972,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_26
-		x = 3
+		x = -3
 		y = 1
 		cost = 0
 		continue_if_invalid = no
@@ -710,7 +987,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_33
-		x = -3
+		x = 3
 		y = 4
 		cost = 0
 		continue_if_invalid = no
@@ -722,31 +999,31 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_34
-		x = 3
-		y = 3
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_32
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_32
 	}
 	focus = {
 		id = new_focus_35
-		x = 3
-		y = 4
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_34
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_34
 	}
 	focus = {
 		id = new_focus_36
-		x = -3
+		x = 3
 		y = 3
 		cost = 0
 		continue_if_invalid = no
@@ -758,8 +1035,8 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_37
-		x = 2
-		y = 5
+		x = 1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -769,222 +1046,202 @@ focus_tree = {
 		prerequisite = {
 			focus = new_focus_30
 		}
-		relative_position_id = new_focus_18
+		relative_position_id = new_focus_35
 	}
 	focus = {
-		id = new_focus_38
-		x = 23
+		id = new_focus_19
+		x = 29
+		y = 10
+		cost = 0
+		icon = GFX_focus_generic_china1
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		# 战后议题：仅由「革命的胜利」事件自动完成，玩家无法手动点选
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = RFC_focus_auto_only_tt
+				always = no
+			}
+		}
+	}
+	focus = {
+		id = new_focus_21
+		x = -2
+		y = 1
+		cost = 0
+		icon = GFX_focus_prc_maoism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_22
+		}
+		prerequisite = {
+			focus = new_focus_23
+		}
+		relative_position_id = new_focus_23
+	}
+	focus = {
+		id = new_focus_22
+		x = 3
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_clear_out_sycophants
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_21
+		}
+		prerequisite = {
+			focus = new_focus_23
+		}
+		relative_position_id = new_focus_23
+	}
+	focus = {
+		id = new_focus_23
+		x = 24
+		y = 12
+		cost = 0
+		icon = GFX_focus_generic_workers
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_41
+		}
+	}
+	focus = {
+		id = new_focus_24
+		x = 18
+		y = 13
+		cost = 0
+		icon = GFX_focus_PRC_rebuild_28_bolshevik
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_71
+		}
+	}
+	focus = {
+		id = new_focus_39
+		x = 2
+		y = 1
+		cost = 0
+		icon = GFX_focus_PRC_adopt_sun_yat_sens_principles
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_20
+		}
+		prerequisite = {
+			focus = new_focus_104
+		}
+		relative_position_id = new_focus_104
+	}
+	focus = {
+		id = new_focus_40
+		x = 29
 		y = 11
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_19
+		}
 	}
 	focus = {
-		id = new_focus_19
+		id = new_focus_41
+		x = 24
+		y = 11
+		cost = 0
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_19
+		}
+	}
+	focus = {
+		id = new_focus_51
+		x = 5
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_negotiate_the_nine_powers_treaty
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_20
+			focus = new_focus_39
+		}
+		prerequisite = {
+			focus = new_focus_53
+		}
+		relative_position_id = new_focus_20
+	}
+	focus = {
+		id = new_focus_43
+		x = 34
+		y = 11
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_19
+		}
+	}
+	focus = {
+		id = new_focus_52
+		x = 34
+		y = 15
+		cost = 0
+		icon = GFX_focus_CHI_utilize_german_contacts
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_51
+		}
+	}
+	focus = {
+		id = new_focus_53
+		x = 32
+		y = 12
+		cost = 0
+		icon = GFX_focus_generic_stockpile_currency
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_71
+		}
+		prerequisite = {
+			focus = new_focus_40
+		}
+		prerequisite = {
+			focus = new_focus_41
+		}
+		prerequisite = {
+			focus = new_focus_43
+		}
+	}
+	focus = {
+		id = new_focus_54
 		x = 0
 		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_38
+			focus = new_focus_57
 		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_21
-		x = -3
-		y = 4
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = new_focus_22
-		}
-		prerequisite = {
-			focus = new_focus_23
-		}
-		prerequisite = {
-			focus = new_focus_39
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_22
-		x = -1
-		y = 4
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		mutually_exclusive = {
-			focus = new_focus_21
-		}
-		prerequisite = {
-			focus = new_focus_23
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_23
-		x = -2
-		y = 3
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_40
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_24
-		x = -4
-		y = 2
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_19
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_39
-		x = -4
-		y = 3
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_24
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_40
-		x = 0
-		y = 2
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_19
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_41
-		x = 3
-		y = 5
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_52
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_51
-		x = 1
-		y = 4
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_50
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_43
-		x = 4
-		y = 2
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_19
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_55
-		x = -4
-		y = 5
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_21
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_50
-		x = 2
-		y = 3
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_40
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_52
-		x = 3
-		y = 4
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_50
-		}
-		prerequisite = {
-			focus = new_focus_104
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_53
-		x = 0
-		y = 5
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_51
-		}
-		prerequisite = {
-			focus = new_focus_22
-		}
-		relative_position_id = new_focus_38
-	}
-	focus = {
-		id = new_focus_54
-		x = -2
-		y = 5
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = new_focus_21
-		}
-		relative_position_id = new_focus_38
+		relative_position_id = new_focus_57
 	}
 	focus = {
 		id = new_focus_49
-		x = 0
-		y = 3
+		x = 18
+		y = 15
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = new_focus_40
+			focus = new_focus_61
 		}
-		relative_position_id = new_focus_38
 	}
 	focus = {
 		id = new_focus_100
@@ -1018,7 +1275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_102
-		x = -3
+		x = 3
 		y = 2
 		cost = 0
 		continue_if_invalid = no
@@ -1030,7 +1287,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_103
-		x = -2
+		x = 2
 		y = 5
 		cost = 0
 		continue_if_invalid = no
@@ -1045,14 +1302,534 @@ focus_tree = {
 	}
 	focus = {
 		id = new_focus_104
-		x = 4
-		y = 3
+		x = 35
+		y = 12
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = new_focus_43
 		}
+	}
+	focus = {
+		id = new_focus_20
+		x = -6
+		y = 1
+		cost = 0
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_39
+		}
+		prerequisite = {
+			focus = new_focus_104
+		}
+		relative_position_id = new_focus_104
+	}
+	focus = {
+		id = new_focus_46
+		x = 29
+		y = 17
+		cost = 0
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_66
+		}
+		prerequisite = {
+			focus = new_focus_67
+		}
+		prerequisite = {
+			focus = new_focus_68
+		}
+	}
+	focus = {
+		id = new_focus_45
+		x = 35
+		y = 17
+		cost = 0
+		icon = GFX_focus_generic_democratic_asia
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_67
+		}
+		prerequisite = {
+			focus = new_focus_66
+		}
+		prerequisite = {
+			focus = new_focus_79
+		}
+	}
+	focus = {
+		id = new_focus_47
+		x = 23
+		y = 17
+		cost = 0
+		icon = GFX_focus_CHL_union_of_hispanic_republics
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_60
+		}
+		prerequisite = {
+			focus = new_focus_68
+		}
+	}
+	focus = {
+		id = new_focus_38
+		x = 31
+		y = 3
+		cost = 0
+		icon = GFX_focus_BRA_ethical_internationalism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = Establish_a_provisional_government
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = new_focus_48
+		x = -1
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_change_in_leadership
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_38
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+			}
+		}
 		relative_position_id = new_focus_38
+	}
+	focus = {
+		id = new_focus_55
+		x = -1
+		y = 1
+		cost = 0
+		icon = GFX_focus_generic_advanced_military_studies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_59
+		}
+		prerequisite = {
+			focus = new_focus_58
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+		relative_position_id = new_focus_58
+	}
+	focus = {
+		id = new_focus_56
+		x = 1
+		y = 1
+		cost = 0
+		icon = GFX_focus_generic_flight_instructors
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_38
+		}
+		completion_reward = {
+			add_command_power = 30
+			add_war_support = 0.05
+		}
+		relative_position_id = new_focus_38
+	}
+	focus = {
+		id = new_focus_58
+		x = 0
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_political_advisors_in_every_division
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_56
+		}
+		completion_reward = {
+			add_manpower = 20000
+			add_command_power = 20
+		}
+		relative_position_id = new_focus_56
+	}
+	focus = {
+		id = new_focus_59
+		x = 0
+		y = 1
+		cost = 0
+		icon = GFX_focus_generic_workers
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_48
+		}
+		completion_reward = {
+			add_manpower = 25000
+			add_war_support = 0.05
+		}
+		relative_position_id = new_focus_48
+	}
+	focus = {
+		id = new_focus_57
+		x = 0
+		y = 2
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_21
+			focus = new_focus_22
+		}
+		relative_position_id = new_focus_23
+	}
+	focus = {
+		id = new_focus_60
+		x = 20
+		y = 16
+		cost = 0
+		icon = GFX_focus_PRC_three_rules_of_discipline
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_49
+		}
+		prerequisite = {
+			focus = new_focus_54
+		}
+		prerequisite = {
+			focus = new_focus_83
+		}
+		prerequisite = {
+			focus = new_focus_84
+		}
+	}
+	focus = {
+		id = new_focus_61
+		x = 0
+		y = 1
+		cost = 0
+		icon = GFX_focus_PRC_land_revolution_expedited
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_24
+		}
+		relative_position_id = new_focus_24
+	}
+	focus = {
+		id = new_focus_62
+		x = -1
+		y = 1
+		cost = 0
+		icon = GFX_focus_CHI_found_fertiliser_plant
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_39
+			focus = new_focus_20
+		}
+		prerequisite = {
+			focus = new_focus_53
+		}
+		relative_position_id = new_focus_39
+	}
+	focus = {
+		id = new_focus_63
+		x = 0
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_64
+		}
+		relative_position_id = new_focus_64
+	}
+	focus = {
+		id = new_focus_64
+		x = -1
+		y = 1
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_22
+		}
+		relative_position_id = new_focus_22
+	}
+	focus = {
+		id = new_focus_65
+		x = -2
+		y = 0
+		cost = 0
+		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_71
+		}
+		prerequisite = {
+			focus = new_focus_37
+		}
+		relative_position_id = new_focus_21
+	}
+	focus = {
+		id = new_focus_66
+		x = 26
+		y = 16
+		cost = 0
+		icon = GFX_focus_generic_advanced_military_studies
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_63
+		}
+		prerequisite = {
+			focus = new_focus_54
+		}
+	}
+	focus = {
+		id = new_focus_67
+		x = 34
+		y = 16
+		cost = 0
+		icon = GFX_focus_PRC_urbanization
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_52
+		}
+		prerequisite = {
+			focus = new_focus_69
+		}
+		prerequisite = {
+			focus = new_focus_78
+		}
+	}
+	focus = {
+		id = new_focus_68
+		x = 29
+		y = 16
+		cost = 0
+		icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_76
+		}
+		prerequisite = {
+			focus = new_focus_77
+		}
+	}
+	focus = {
+		id = new_focus_76
+		x = 30
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_75
+		}
+	}
+	focus = {
+		id = new_focus_75
+		x = 29
+		y = 14
+		cost = 0
+		icon = GFX_focus_PRC_restore_the_old_republic
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_20
+		}
+	}
+	focus = {
+		id = new_focus_69
+		x = 32
+		y = 15
+		cost = 0
+		icon = GFX_focus_GER_autarky_ambitions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_73
+		}
+	}
+	focus = {
+		id = new_focus_74
+		x = 39
+		y = 14
+		cost = 0
+		icon = GFX_focus_AUS_devalue_the_schilling
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_100
+		}
+		prerequisite = {
+			focus = new_focus_39
+		}
+	}
+	focus = {
+		id = new_focus_71
+		x = 19
+		y = 12
+		cost = 0
+		icon = GFX_focus_CHI_registry_of_property
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = new_focus_53
+		}
+		prerequisite = {
+			focus = new_focus_41
+		}
+	}
+	focus = {
+		id = new_focus_73
+		x = 32
+		y = 14
+		cost = 0
+		icon = GFX_focus_CHI_found_fertiliser_plant
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_20
+			focus = new_focus_39
+		}
+		prerequisite = {
+			focus = new_focus_22
+		}
+		prerequisite = {
+			focus = new_focus_53
+		}
+	}
+	focus = {
+		id = new_focus_77
+		x = 28
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_75
+		}
+	}
+	focus = {
+		id = new_focus_78
+		x = 36
+		y = 15
+		cost = 0
+		icon = GFX_focus_CHI_denounce_feudalism
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_62
+		}
+	}
+	focus = {
+		id = new_focus_79
+		x = 39
+		y = 16
+		cost = 0
+		icon = GFX_focus_PRC_reorganize_divisions
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_81
+		}
+		prerequisite = {
+			focus = new_focus_80
+		}
+	}
+	focus = {
+		id = new_focus_80
+		x = 38
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_74
+		}
+	}
+	focus = {
+		id = new_focus_81
+		x = 40
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_74
+		}
+	}
+	focus = {
+		id = new_focus_84
+		x = 20
+		y = 15
+		cost = 0
+		icon = GFX_focus_PRC_eight_points_for_attention
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_85
+		}
+	}
+	focus = {
+		id = new_focus_85
+		x = 20
+		y = 14
+		cost = 0
+		icon = GFX_focus_PRC_invite_soviet_general
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_65
+		}
+	}
+	focus = {
+		id = new_focus_82
+		x = 22
+		y = 14
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_21
+		}
+	}
+	focus = {
+		id = new_focus_83
+		x = 22
+		y = 15
+		cost = 0
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = new_focus_82
+		}
 	}
 }

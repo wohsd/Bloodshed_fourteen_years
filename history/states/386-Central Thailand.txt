@@ -11,6 +11,9 @@ state={
 			industrial_complex = 1
 			arms_factory = 0
 			dockyard = 1
+			817 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = SIA
 		victory_points = {
@@ -21,3 +24,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

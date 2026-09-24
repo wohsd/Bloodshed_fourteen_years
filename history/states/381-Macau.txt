@@ -6,8 +6,12 @@ state={
 	}
 	history={
 		owner = POR
+	add_core_of = CHI
 		buildings = {
 			infrastructure = 1
+			2724 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = POR
 	}
@@ -15,3 +19,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

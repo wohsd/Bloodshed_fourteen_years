@@ -11,6 +11,9 @@ state={
 			industrial_complex = 1
 			arms_factory = 0
 			dockyard = 2
+			4281 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = RAJ
 	}
@@ -18,3 +21,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 1
 
+			2229 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			2229 10
@@ -24,3 +27,4 @@ state={
 	state_category=town
 	local_supplies=0.000
 }
+

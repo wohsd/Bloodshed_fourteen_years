@@ -49,6 +49,51 @@ country_event = {
 	}
 }
 
+# 第二次国共合作？ — RFC完成「第二次国共合作」国策后，向PRC弹出
+country_event = {
+	id = RFC_NEW.2
+	title = RFC_NEW.2.t
+	desc = RFC_NEW.2.d
+	picture = GFX_report_event_generic_signed_treaty
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { }
+
+	option = {
+		name = RFC_NEW.2.a
+		# 接受邀请：与RFC建立阵营，RFC作为阵营领导者
+		# RFC的「三大政策：名存实亡」替换为「三大政策：初步推行」
+		# 追加效果：每日政治点数+0.05，战争支持度+5%，稳定度+5%（一次性）
+		hidden_effect = {
+			RFC = {
+				create_faction = "第二次国共合作"
+				add_to_faction = ROOT
+				# 替换动态修正
+				remove_dynamic_modifier = { modifier = Three_Major_Policies_Nominal }
+				add_dynamic_modifier = { modifier = Three_Major_Policies_Initial }
+				# 追加效果
+				add_to_variable = { RFC_three_policies_pp = 0.05 }
+				add_to_variable = { RFC_three_policies_war_support = 0.05 }
+				add_stability = 0.05
+			}
+		}
+	}
+
+	option = {
+		name = RFC_NEW.2.b
+		# 我们不能相信他们
+		# RFC对PRC评价-50，PRC对RFC评价-50
+		# RFC共产主义支持率-10%
+		hidden_effect = {
+			add_opinion_modifier = { target = RFC modifier = RFC_second_united_front_refused }
+			RFC = {
+				add_opinion_modifier = { target = ROOT modifier = RFC_second_united_front_refused }
+				add_popularity = { ideology = communism popularity = -0.10 }
+			}
+		}
+	}
+}
+
 country_event = {
 	id = RFC_country.2
 	title = RFC_country.2.t
@@ -116,31 +161,119 @@ country_event = {
 		fire_only_once = yes
 		is_triggered_only = yes
 		option = {
-			name = RFC_country.5.a
-			set_country_flag = RFC_guomoruo_returned
-			add_political_power = 25
-			add_stability = 0.02
-			# 共产主义力量接掌政权：郭沫若出任国家领导人，党改名中国共产党
-			set_politics = { ruling_party = communism }
-			promote_character = RFC_GuoMoRuo
-			set_party_name = {
-				ideology = communism
-				name = RFC_ccp_party
-				long_name = RFC_ccp_party_long
-			}
-		}
-		option = {
-			name = RFC_country.5.b
-			set_country_flag = RFC_guomoruo_returned
-			add_political_power = 25
-			add_stability = 0.02
-			# 共产主义力量接掌政权：郭沫若出任国家领导人，党改名中国共产党
-			set_politics = { ruling_party = communism }
-			promote_character = RFC_GuoMoRuo
-			set_party_name = {
-				ideology = communism
-				name = RFC_ccp_party
-				long_name = RFC_ccp_party_long
-			}
+		name = RFC_country.5.a
+		set_country_flag = RFC_guomoruo_returned
+		add_political_power = 25
+		add_stability = 0.02
+		# 郭沫若出任【共产党党派领袖】而非国家领袖：
+		# promote_character 仅将其推为马克思主义派党的党魁；由于不改执政党，
+		# 他不会成为国家元首（日后共产党经选举/政变上台时才是国家领袖）。
+		promote_character = RFC_GuoMoRuo
+		set_party_name = {
+			ideology = communism
+			name = RFC_ccp_party
+			long_name = RFC_ccp_party_long
 		}
 	}
+	option = {
+		name = RFC_country.5.b
+		set_country_flag = RFC_guomoruo_returned
+		add_political_power = 25
+		add_stability = 0.02
+		# 郭沫若出任【共产党党派领袖】而非国家领袖（同上）
+		promote_character = RFC_GuoMoRuo
+		set_party_name = {
+			ideology = communism
+			name = RFC_ccp_party
+			long_name = RFC_ccp_party_long
+		}
+	}
+	}
+
+# ============================================================
+# 革命的胜利
+# 临委会完成「第三路线」起义后击败国民政府（CHI投降，见 on_capitulation）
+# · 移除「临委会起义」动态修正，获得「内战创伤」动态修正
+# · 解锁「重建工作」决议组
+# · 自动完成战后三议题国策：军队战斗力问题 / 解决军队开支 / 新训政
+# 内战创伤三类等级基础均为4；战时稳健国策各-1级，战时激进国策各+1级
+# ============================================================
+country_event = {
+	id = RFC_country.6
+	title = RFC_country.6.t
+	desc = RFC_country.6.d
+	picture = GFX_report_event_generic_signed_treaty
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# 临委会起义动员状态解除
+			remove_dynamic_modifier = { modifier = Provisional_Committee_Uprising }
+			clr_country_flag = RFC_pcq_war_engaged
+			set_country_flag = RFC_victory_won
+
+			# 三类内战创伤基础等级均为4
+			set_variable = { RFC_cw_level_army = 4 }
+			set_variable = { RFC_cw_level_industry = 4 }
+			set_variable = { RFC_cw_level_govt = 4 }
+
+			# 稳健的战时国策：减轻对应创伤1级
+			if = {
+				limit = { has_completed_focus = Military_Crash_Course }
+				add_to_variable = { RFC_cw_level_army = -1 }
+			}
+			if = {
+				limit = { has_completed_focus = Production_Self_Help_Movement }
+				add_to_variable = { RFC_cw_level_industry = -1 }
+			}
+			if = {
+				limit = { has_completed_focus = Aid_refugees }
+				add_to_variable = { RFC_cw_level_govt = -1 }
+			}
+
+			# 激进的战时国策：加重对应创伤1级
+			if = {
+				limit = { has_completed_focus = Suicide_Squad }
+				add_to_variable = { RFC_cw_level_army = 1 }
+			}
+			if = {
+				limit = { has_completed_focus = Requisition_factory }
+				add_to_variable = { RFC_cw_level_industry = 1 }
+			}
+			if = {
+				limit = { has_completed_focus = Forced_labor }
+				add_to_variable = { RFC_cw_level_govt = 1 }
+			}
+
+			# 等级换算为修正数值（每级：军事-3%组织度/-3%恢复；工业-5%建造/-3%产出；机构-4%PP/-3%稳定）
+			set_variable = { RFC_cw_army = RFC_cw_level_army }
+			multiply_variable = { RFC_cw_army = -0.03 }
+			set_variable = { RFC_cw_army_morale = RFC_cw_level_army }
+			multiply_variable = { RFC_cw_army_morale = -0.03 }
+
+			set_variable = { RFC_cw_build = RFC_cw_level_industry }
+			multiply_variable = { RFC_cw_build = -0.05 }
+			set_variable = { RFC_cw_factory = RFC_cw_level_industry }
+			multiply_variable = { RFC_cw_factory = -0.03 }
+
+			set_variable = { RFC_cw_pp = RFC_cw_level_govt }
+			multiply_variable = { RFC_cw_pp = -0.04 }
+			set_variable = { RFC_cw_stability = RFC_cw_level_govt }
+			multiply_variable = { RFC_cw_stability = -0.03 }
+
+			# 获得「内战创伤」并解锁「重建工作」决议组
+			add_dynamic_modifier = { modifier = Civil_War_Trauma }
+			set_country_flag = RFC_civil_war_trauma
+
+			# 自动完成战后三议题国策（玩家无法手动点选）
+			complete_national_focus = new_focus_18
+			complete_national_focus = new_focus_1
+			complete_national_focus = new_focus_19
+		}
+	}
+
+	option = {
+		name = RFC_country.6.a
+	}
+}

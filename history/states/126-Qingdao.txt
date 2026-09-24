@@ -11,6 +11,9 @@ state={
 			industrial_complex = 2
 			arms_factory = 0
 			dockyard = 1
+			3700 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = ROA
 		
@@ -25,3 +28,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

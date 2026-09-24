@@ -1,0 +1,25 @@
+# 临委会（RFC）决议分类
+# 重建工作：击败国民政府（「革命的胜利」事件）后出现，三类重建决议全部完成后随「内战创伤」一同消失
+RFC_reconstruction = {
+	icon = generic_economy
+	picture = GFX_Gannan_New_Deal
+	visible = {
+		tag = RFC
+		has_country_flag = RFC_civil_war_trauma
+	}
+	priority = 90
+}
+
+# 军事改革：完成「民兵武备库」（民兵线）或「组建敢死队」（精兵线）后出现
+# 决议以陆军经验为花费，按所持精神（人民武装/国民革命军）加强对应的动态修正
+RFC_military_reform = {
+	icon = military_operation
+	visible = {
+		tag = RFC
+		OR = {
+			has_completed_focus = Militia_Armory
+			has_completed_focus = Suicide_Squad
+		}
+	}
+	priority = 80
+}

@@ -14,6 +14,9 @@ state={
 			industrial_complex = 3
 			arms_factory = 3
 			dockyard = 2
+			3049 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = JAP
 	}
@@ -21,3 +24,4 @@ state={
 	state_category = town
 	local_supplies = 0.0
 }
+

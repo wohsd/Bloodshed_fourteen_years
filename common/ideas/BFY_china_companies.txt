@@ -1,0 +1,868 @@
+############################################
+# BFY：中国势力专属工业企业（工业顾问/工业组织）
+# 规则：
+#   1. 仅 BFY_is_chinese_faction 涵盖的中国势力可见（列强与外国不可见）
+#   2. 必须控制（占领）企业所在地块才能雇佣
+#   3. 失去所在地块后自动卸任（cancel_if_invalid）
+#   4. 效果按史实企业状况定制：科研加成统一压低（工业研究多为 +5%），
+#      主效果改为生产效率上限/增长、工厂建造、消费品、资源等经营类加成；
+#      经营衰落或初创未成的企业数值从低。
+############################################
+
+ideas = {
+	industrial_concern = {
+
+		# ===== 综合工业 =====
+
+		# 资源委员会（南京，1935年成立）—— 国家级重工业统制机构，督办厂矿建设
+		BFY_io_nrc = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 214
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 钢铁 =====
+
+		# 汉冶萍煤铁厂矿有限公司（汉阳-大冶-萍乡，武汉）—— 盛期已过，负债累累、经营衰落
+		BFY_io_hanyehping = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 246
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.02
+			}
+
+			traits = { industrial_steel_mills_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 煤矿/矿业 =====
+
+		# 开滦矿务总局（唐山，中英合办，中国最大煤矿）—— 机械化程度最高，盈利丰厚
+		BFY_io_kailuan = {
+			picture = generic_industrial_concern_3
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 79
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				local_resources_factor = 0.15
+				fuel_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 抚顺炭矿（奉天，东亚最大露天煤矿）—— 日资经营多年，收复后规模首屈一指
+		BFY_io_fushun = {
+			picture = generic_industrial_concern_3
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 50
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				local_resources_factor = 0.20
+				fuel_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 化工/炼油 =====
+
+		# 永利化学工业公司（塘沽久大精盐/永利碱厂，天津）—— 亚洲第一碱厂，化工龙头
+		BFY_io_yongli = {
+			picture = generic_refining_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 82
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.10
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+
+			traits = { refinery_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 玉门油矿（甘肃玉门/酒泉，抗战时期主要石油来源）—— 1939年才投产，规模有限
+		BFY_io_yumen = {
+			picture = generic_refining_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 55
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				synth_resources = 0.05
+			}
+			modifier = {
+				fuel_gain_factor = 0.05
+			}
+
+			traits = { refinery_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 电气/电子 =====
+
+		# 扬子电气股份有限公司（首都电厂，南京）—— 首都供电中枢，设备较新
+		BFY_io_yangtze_power = {
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 214
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				electronics = 0.10
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { electronics_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 航运/物流 =====
+
+		# 民生实业股份有限公司（重庆，卢作孚，长江航运）—— 航运龙头，主持宜昌大撤退
+		BFY_io_minsheng = {
+			picture = generic_logistics
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 238
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+
+			traits = { merchant_marine_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 金融 =====
+
+		# 中国建设银公司（上海，国有资本银团）—— 为工矿铁路建设融资
+		BFY_io_construction_bank = {
+			picture = CHI_bank_of_china
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 228
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+
+			traits = { banking_magnate_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 建筑工程 =====
+
+		# 中国桥梁公司（杭州钱塘江大桥工程）—— 茅以升主持的现代桥梁工程力量
+		BFY_io_china_bridge = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 248
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_rail_way_factor = 0.10
+				production_speed_supply_node_factor = 0.10
+				production_speed_buildings_factor = 0.03
+			}
+			research_bonus = {
+				construction_tech = 0.05
+			}
+
+			traits = { construction_company_shell }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 钢铁/重工（第二批） =====
+
+		# 西北实业公司（太原，阎锡山主持的山西煤铁钢机器兵工综合集团）—— 规模大但管理粗放
+		BFY_io_xibei_shiye = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 104
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+			}
+
+			traits = { industrial_steel_mills_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 本溪湖煤铁有限公司（本溪，东北重要炼铁基地）
+		BFY_io_benxihu = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 65
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				industrial_capacity_factory = 0.03
+				local_resources_factor = 0.05
+			}
+
+			traits = { industrial_steel_mills_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 中央钢铁厂（湘潭，资源委员会借德国援助筹建的现代化钢铁厂）—— 开工即遭战争打断，未成气候
+		BFY_io_xiangtan_steel = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 299
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				industrial_capacity_factory = 0.02
+				production_factory_max_efficiency_factor = 0.02
+			}
+
+			traits = { industrial_steel_mills_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 纺织/民用工业（第二批） =====
+
+		# 申新纺织公司（无锡/上海，荣宗敬、荣德生创办的中国最大民营纺织集团）—— 规模第一但债务沉重
+		BFY_io_shenxin_textile = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 219
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 华新纺织公司（青岛，华北大型棉纺织企业，战后并入中国纺织建设公司）—— 经营稳健
+		BFY_io_huaxin_textile = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 126
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.02
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 大华纺织厂（西安，抗战时期西北最大的机器棉纺织厂）—— 遭日机轰炸后内迁恢复
+		BFY_io_dahua_textile = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 170
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.02
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 裕华纺织公司（成都，由武汉内迁的大型纱厂，支撑大后方被服供应）—— 内迁后产能受损
+		BFY_io_yuhua_textile = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 229
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 雍兴实业股份有限公司（宝鸡，中国银行直辖的西北纺织与机械工业集团）—— 银行资本兴办，多业并举
+		BFY_io_yongxing_shiye = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 162
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 贵州企业公司（贵阳，抗战内迁后形成的西南综合工矿集团）—— 底子薄弱，新兴综合
+		BFY_io_guizhou_enterprise = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 311
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				local_resources_factor = 0.05
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 机器制造（第二批） =====
+
+		# 中央机器制造厂（昆明，资源委员会兴办的机床、锅炉与精密机器厂）—— 大后方机械工业技术标杆
+		BFY_io_central_machine = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 323
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+				motorized_equipment = 0.05
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 建材/化工（第三批） =====
+
+		# 启新洋灰公司（唐山，中国第一家机械化水泥厂，"马牌"水泥驰名全国）
+		BFY_io_qixin_cement = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 79
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 江南水泥公司（南京栖霞山，1935年投产，引进丹麦史密斯最新设备）
+		BFY_io_jiangnan_cement = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 214
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 久大精盐公司（塘沽，范旭东创办，中国化学工业的摇篮企业）
+		BFY_io_jiuda_salt = {
+			picture = generic_refining_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 82
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				synth_resources = 0.05
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+
+			traits = { refinery_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 天原电化厂（上海，吴蕴初创办的氯碱化工企业，内迁重庆后恢复生产）
+		BFY_io_tianyuan_chemical = {
+			picture = generic_refining_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 228
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				synth_resources = 0.10
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { refinery_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 机器/电工（第三批） =====
+
+		# 湖南机械厂（长沙，大后方重要的机床与兵工机器制造厂）
+		BFY_io_hunan_machinery = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 287
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 中央电工厂（昆明，资源委员会电工器材厂，电线、灯泡与无线电器材）
+		BFY_io_central_electric = {
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 323
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				electronics = 0.10
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+			}
+
+			traits = { electronics_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 云南锡业公司（昆明/个旧，中国最大锡矿，出口换汇的支柱矿产）
+		BFY_io_yunnan_tin = {
+			picture = generic_industrial_concern_3
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 323
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				local_resources_factor = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 甘肃机器厂（兰州，左宗棠时代延续下来的西北唯一机器制造厂）
+		BFY_io_gansu_machinery = {
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 129
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.02
+			}
+
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}

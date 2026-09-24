@@ -1,0 +1,145 @@
+############################################
+# BFY：领土整合脚本效果（移植自 Kaiserreich 整合机制）
+#
+# 原理：
+#   被整合的州先挂上系统后台国 AAA 的核心，并以 AAA 为“被占领国”
+#   开启一套独立的顺从度/抵抗槽位，适用“整合”占领法案；
+#   当顺从度达到该州变量 can_integrate_@<占领者> 记录的阈值（50/80）时，
+#   state_compliance_modifier 触发，自动给当前控制者添加核心。
+#
+# 约定：以下效果均在 state scope 调用，ROOT = 发起整合/当前控制该州的国家。
+############################################
+
+# ===== 启用（50% / 80% 阈值包装） =====
+
+BFY_enable_state_integration_50_compliance = {
+	set_temp_variable = { bfy_integration_threshold = 50 }
+	BFY_enable_state_integration = yes
+}
+
+BFY_enable_state_integration_80_compliance = {
+	set_temp_variable = { bfy_integration_threshold = 80 }
+	BFY_enable_state_integration = yes
+}
+
+BFY_enable_state_integration = {
+	if = {
+		limit = {
+			NOT = { check_variable = { can_integrate_@ROOT = var:bfy_integration_threshold?50 } }
+		}
+		set_variable = { can_integrate_@ROOT = var:bfy_integration_threshold?50 }
+		if = {
+			limit = {
+				is_owned_and_controlled_by = ROOT
+				compliance > var:bfy_integration_threshold?50
+			}
+			# 顺从度已达标：立即获得核心
+			BFY_add_state_core_upon_threshold = yes
+		}
+		else = {
+			if = {
+				limit = { NOT = { is_core_of = ROOT } }
+				custom_effect_tooltip = BFY_state_integration_enabled_tooltip
+				custom_effect_tooltip = BFY_state_integration_law_unlocked
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+						NOT = { is_core_of = ROOT }
+						impassable = no
+					}
+					BFY_start_state_integration_resistance = yes
+				}
+				force_update_map_mode = { mapmode = cores_claims_map_mode }
+			}
+		}
+	}
+}
+
+# ===== 取消整合 =====
+
+BFY_disable_state_integration = {
+	if = {
+		limit = { has_variable = can_integrate_@ROOT }
+		clear_variable = can_integrate_@ROOT
+		if = {
+			limit = { NOT = { is_core_of = ROOT } }
+			custom_effect_tooltip = BFY_state_integration_disabled_tooltip
+		}
+		hidden_effect = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				BFY_clear_state_integration_resistance = yes
+			}
+			force_update_map_mode = { mapmode = cores_claims_map_mode }
+		}
+	}
+}
+
+# ===== 抵抗/顺从度槽位切换 =====
+
+BFY_start_state_integration_resistance = {
+	if = {
+		limit = {
+			NOT = { occupied_country_tag = event_target:bfy_system }
+		}
+		if = {
+			limit = { has_resistance = yes }
+			set_temp_variable = { bfy_previous_compliance = compliance }
+			set_temp_variable = { bfy_previous_resistance = resistance }
+			cancel_resistance = yes
+		}
+		add_core_of = event_target:bfy_system
+		start_resistance = event_target:bfy_system
+		set_compliance = var:bfy_previous_compliance?0
+		set_resistance = var:bfy_previous_resistance?0
+	}
+	hidden_effect = {
+		BFY_clear_state_integration_resistance = yes
+	}
+	# 对 AAA 槽位启用“整合”占领法案
+	# 作用域必须与 KR 一致：controller(占领者) = { bfy_system(被占领国) = { 效果 } }，
+	# 缺少外层 controller 跳转时占领者上下文丢失，法案不会真正套用到占领州（顺从度不增长）
+	controller = {
+		event_target:bfy_system = {
+			set_occupation_law_where_available = BFY_territorial_integration
+		}
+	}
+}
+
+# 清除 AAA 在不再需要整合的州上的临时核心
+# （州已成为控制者核心，或该州未被任何国家标记为可整合）
+BFY_clear_state_integration_resistance = {
+	event_target:bfy_system = {
+		every_core_state = {
+			limit = {
+				OR = {
+					is_core_of = controller
+					NOT = { has_variable = can_integrate_@var:controller }
+				}
+			}
+			remove_core_of = event_target:bfy_system
+		}
+	}
+}
+
+# ===== 达到顺从度阈值：获得核心 =====
+
+BFY_add_state_core_upon_threshold = {
+	add_core_of = var:controller
+	remove_claim_by = var:controller
+
+	BFY_clear_state_integration_resistance = yes
+
+	# 玩家获得弹窗通知（trigger_for = controller 才能把州事件投递给整合方/占领者，
+	# 否则默认投递给州 owner，可能落到敌国）
+	if = {
+		limit = {
+			controller = { is_ai = no }
+		}
+		state_event = { id = BFY_integration.1 hours = 2 trigger_for = controller }
+	}
+
+	force_update_map_mode = { mapmode = cores_claims_map_mode }
+}

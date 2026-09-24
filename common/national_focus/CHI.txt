@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = Victory_of_the_National_Revolution
-		x = 66
+		x = 65
 		y = 0
 		cost = 2
 		icon = GFX_kmt01
@@ -21,7 +21,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			# 领袖权威：每日政治点数 +0.02
-			add_to_variable = { LA_focus_political_power_gain = 0.02 }
+			add_to_variable = {
+				LA_focus_political_power_gain = 0.02
+			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
 			}
@@ -35,16 +37,6 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			date = 1937.7.7
-			has_country_leader = {
-				ruling_only = yes
-				character = CHI_JiangJieShi
-			}
-		}
-		ai_will_do = {
-			factor = 10
-		}
 		prerequisite = {
 			focus = Establish_United_Front
 		}
@@ -59,6 +51,16 @@ focus_tree = {
 			}
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
+		}
+		available = {
+			date = 1937.7.7
+			has_country_leader = {
+				ruling_only = yes
+				character = CHI_JiangJieShi
+			}
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		relative_position_id = Establish_United_Front
 	}
@@ -148,14 +150,14 @@ focus_tree = {
 	}
 	focus = {
 		id = Internal_Pacification_Before_Resistance
-		x = 55
-		y = 3
+		x = -10
+		y = 1
 		cost = 3
 		icon = GFX_kmt_41
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Chiang_Kai_shek_Consolidates_Power
+			focus = Victory_of_the_National_Revolution
 		}
 		completion_reward = {
 			add_to_temp_variable = {
@@ -164,6 +166,7 @@ focus_tree = {
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
 		}
+		relative_position_id = Victory_of_the_National_Revolution
 	}
 	focus = {
 		id = Order_Warlords_to_Attack
@@ -324,9 +327,6 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		ai_will_do = {
-			factor = 10
-		}
 		prerequisite = {
 			focus = CHIFocus_1
 		}
@@ -338,6 +338,9 @@ focus_tree = {
 			}
 			Anti_JP_zeal_add = yes
 			Anti_JP_zeal_var = yes
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		relative_position_id = CHIFocus_1
 	}
@@ -366,68 +369,6 @@ focus_tree = {
 		icon = GFX_focus_GER_kdf_wagen
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			has_war_with = JAP
-			has_equipment = {
-				train_equipment > 59
-			}
-			#20 trains per factory
-			OR = {
-				threat > 0.35
-				any_enemy_country = {
-					capital_scope = {
-						is_on_continent = asia
-					}
-				}
-			}
-		}
-		select_effect = {
-			add_equipment_to_stockpile = {
-				type = train_equipment
-				amount = SOV_industrial_relocation_trains_focus_negative
-				producer = SOV
-			}
-			214 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 228
-				}
-				228 = {
-					remove_building = {
-						type = arms_factory
-						level = 1
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 248
-				}
-				248 = {
-					remove_building = {
-						type = arms_factory
-						level = 1
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-			}
-		}
 		prerequisite = {
 			focus = CHIFocus_20
 		}
@@ -569,6 +510,68 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_relocate_industry_repair_tt
 		}
+		available = {
+			has_war_with = JAP
+			has_equipment = {
+				train_equipment > 59
+			}
+			#20 trains per factory
+			OR = {
+				threat > 0.35
+				any_enemy_country = {
+					capital_scope = {
+						is_on_continent = asia
+					}
+				}
+			}
+		}
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = SOV_industrial_relocation_trains_focus_negative
+				producer = SOV
+			}
+			214 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 228
+				}
+				228 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 248
+				}
+				248 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+		}
 		relative_position_id = CHIFocus_20
 	}
 	focus = {
@@ -579,8 +582,6 @@ focus_tree = {
 		icon = GFX_focus_FIN_motti_tactics
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-		}
 		prerequisite = {
 			focus = CHIFocus_20
 		}
@@ -698,22 +699,14 @@ focus_tree = {
 	}
 	focus = {
 		id = Chiang_Kai_shek_Consolidates_Power
-		x = 58
-		y = 2
+		x = 41
+		y = 0
 		cost = 5
 		icon = GFX_kmt03
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			not = {
-				has_country_flag = jiangjieshi_gg
-			}
-		}
 		mutually_exclusive = {
 			focus = HeYingqi_takes_office
-		}
-		prerequisite = {
-			focus = After_the_assassination
 		}
 		completion_reward = {
 			add_trait = {
@@ -722,6 +715,11 @@ focus_tree = {
 				trait = dictator
 			}
 			custom_effect_tooltip = Chiang_Kai_shek_Consolidates_Power_tooltip
+		}
+		available = {
+			not = {
+				has_country_flag = jiangjieshi_gg
+			}
 		}
 	}
 	focus = {
@@ -895,7 +893,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 		}
 		relative_position_id = Government_Organization
@@ -927,7 +927,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 		}
 		relative_position_id = Government_Organization
@@ -1211,16 +1213,6 @@ focus_tree = {
 		icon = GFX_focus_generic_agricultural_subsidies
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = economy_var_tooltip
-				check_variable = {
-					var = National_economy_var
-					value = 60
-					compare = greater_than_or_equals
-				}
-			}
-		}
 		prerequisite = {
 			focus = Promote_New_Technologies
 		}
@@ -1239,6 +1231,16 @@ focus_tree = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = economy_var_tooltip
+				check_variable = {
+					var = National_economy_var
+					value = 60
+					compare = greater_than_or_equals
+				}
 			}
 		}
 		relative_position_id = National_Livelihood
@@ -1357,16 +1359,6 @@ focus_tree = {
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = literacy_var_tooltip
-				check_variable = {
-					var = National_literacy_var
-					value = 60
-					compare = greater_than_or_equals
-				}
-			}
-		}
 		prerequisite = {
 			focus = Improve_Border_Teacher_Welfare
 		}
@@ -1384,7 +1376,19 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = literacy_var_tooltip
+				check_variable = {
+					var = National_literacy_var
+					value = 60
+					compare = greater_than_or_equals
+				}
 			}
 		}
 		relative_position_id = National_Education
@@ -1410,7 +1414,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_negative
@@ -1543,13 +1549,6 @@ focus_tree = {
 		icon = GFX_focus_GER_wirtschaftswunder
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			NOT = {
-				214 = {
-					is_controlled_by = CHI
-				}
-			}
-		}
 		prerequisite = {
 			focus = CHIFocus_20
 		}
@@ -1564,6 +1563,13 @@ focus_tree = {
 				set_victory_points = {
 					province = 3850
 					value = 40
+				}
+			}
+		}
+		available = {
+			NOT = {
+				214 = {
+					is_controlled_by = CHI
 				}
 			}
 		}
@@ -1654,8 +1660,6 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-		}
 		prerequisite = {
 			focus = CHIFocus_21
 		}
@@ -1705,9 +1709,6 @@ focus_tree = {
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			date > 1943.1.1
-		}
 		prerequisite = {
 			focus = CHIFocus_24
 		}
@@ -1719,6 +1720,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHIFocus_27
+		}
+		available = {
+			date
+			>
+			1943.1.1
 		}
 		relative_position_id = CHIFocus_21
 	}
@@ -1746,6 +1752,17 @@ focus_tree = {
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		prerequisite = {
+			focus = CHIFocus_1
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 100
+			news_event = CHIFocus.30
+			NFA = {
+				add_manpower = -10000
+			}
+		}
 		available = {
 			OR = {
 				232 = {
@@ -1760,17 +1777,6 @@ focus_tree = {
 			}
 			country_exists = NFA
 		}
-		prerequisite = {
-			focus = CHIFocus_1
-		}
-		completion_reward = {
-			add_stability = -0.05
-			add_political_power = 100
-			news_event = CHIFocus.30
-			NFA = {
-				add_manpower = -10000
-			}
-		}
 		relative_position_id = CHIFocus_1
 	}
 	focus = {
@@ -1781,9 +1787,6 @@ focus_tree = {
 		icon = GFX_focus_attack_japan
 		continue_if_invalid = no
 		cancel_if_invalid = yes
-		available = {
-			is_neighbor_of = PRC
-		}
 		prerequisite = {
 			focus = CHIFocus_30
 		}
@@ -1828,6 +1831,9 @@ focus_tree = {
 					}
 				}
 			}
+		}
+		available = {
+			is_neighbor_of = PRC
 		}
 		relative_position_id = CHIFocus_30
 	}
@@ -1900,9 +1906,6 @@ focus_tree = {
 		prerequisite = {
 			focus = Internal_Pacification_Before_Resistance
 		}
-		prerequisite = {
-			focus = Chiang_Kai_shek_Consolidates_Power
-		}
 		relative_position_id = Internal_Pacification_Before_Resistance
 	}
 	focus = {
@@ -1961,7 +1964,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			add_dynamic_modifier = {
 				modifier = Zhonghua_Revival_Society
@@ -2061,18 +2066,6 @@ focus_tree = {
 		relative_position_id = CHI_focus_6
 	}
 	focus = {
-		id = Establish_a
-		x = -2
-		y = 2
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Lushan_Military_Officer_Training_Class
-		}
-		relative_position_id = CHI_focus_4
-	}
-	focus = {
 		id = Continue_political_training
 		x = 6
 		y = 2
@@ -2092,7 +2085,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
@@ -2348,7 +2343,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
@@ -2457,7 +2454,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
@@ -2467,13 +2466,13 @@ focus_tree = {
 	}
 	focus = {
 		id = Establish_the_Presidential_System
-		x = 52
-		y = 11
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
-			focus = Reorganize_National_Revolutionary_Army
+			focus = Chiang_Kai_shek_Consolidates_Power
 		}
 		completion_reward = {
 			if = {
@@ -2482,12 +2481,15 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
 			}
 		}
+		relative_position_id = Chiang_Kai_shek_Consolidates_Power
 	}
 	focus = {
 		id = Promulgate_the_Program_for_War_of_Resistance_an_Nation_Building
@@ -2536,7 +2538,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
@@ -3128,7 +3132,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_negative
@@ -3298,7 +3304,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
@@ -3323,7 +3331,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_negative
@@ -3403,7 +3413,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_negative
@@ -3471,7 +3483,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_negative
@@ -3499,7 +3513,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_positive
@@ -3663,7 +3679,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_negative
@@ -3703,7 +3721,9 @@ focus_tree = {
 						has_country_flag = leader_authority_removed
 					}
 				}
-				add_to_variable = { LA_focus_political_power_gain = 0.02 }
+				add_to_variable = {
+					LA_focus_political_power_gain = 0.02
+				}
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = leader_authority_negative
@@ -3764,46 +3784,31 @@ focus_tree = {
 	}
 	focus = {
 		id = Reorganize_National_Revolutionary_Army
-		x = 52
-		y = 7
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Support_Chen_Chengs_reforms
 		}
-	}
-	focus = {
-		id = After_the_assassination
-		x = -15
-		y = 1
-		cost = 0
-		continue_if_invalid = no
-		cancel_if_invalid = yes
-		prerequisite = {
-			focus = Victory_of_the_National_Revolution
-		}
-		relative_position_id = Victory_of_the_National_Revolution
+		relative_position_id = Support_Chen_Chengs_reforms
 	}
 	focus = {
 		id = HeYingqi_takes_office
-		x = -7
-		y = 1
+		x = 29
+		y = 0
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		mutually_exclusive = {
 			focus = Chiang_Kai_shek_Consolidates_Power
 		}
-		prerequisite = {
-			focus = After_the_assassination
-		}
-		relative_position_id = After_the_assassination
 	}
 	focus = {
 		id = Integrate_Huangpu
-		x = 41
-		y = 3
+		x = -3
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3820,44 +3825,48 @@ focus_tree = {
 				}
 			}
 		}
+		relative_position_id = HeYingqi_takes_office
 	}
 	focus = {
 		id = The_stable_four_major_families
-		x = 47
-		y = 3
+		x = 3
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = HeYingqi_takes_office
 		}
+		relative_position_id = HeYingqi_takes_office
 	}
 	focus = {
 		id = Form_the_Blue_Shirts_Society
-		x = 43
-		y = 4
+		x = 2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Integrate_Huangpu
 		}
+		relative_position_id = Integrate_Huangpu
 	}
 	focus = {
 		id = Reorganize_the_Party_and_government_system
-		x = 45
-		y = 4
+		x = -2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_stable_four_major_families
 		}
+		relative_position_id = The_stable_four_major_families
 	}
 	focus = {
 		id = Impose_martial_law
-		x = 44
-		y = 5
+		x = -1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3867,33 +3876,36 @@ focus_tree = {
 		prerequisite = {
 			focus = Reorganize_the_Party_and_government_system
 		}
+		relative_position_id = Reorganize_the_Party_and_government_system
 	}
 	focus = {
 		id = Implement_a_controlled_economy
-		x = 47
-		y = 4
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_stable_four_major_families
 		}
+		relative_position_id = The_stable_four_major_families
 	}
 	focus = {
 		id = Requesting_equipment_support_from_Japan
-		x = 41
-		y = 5
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Loyal_troops_first
 		}
+		relative_position_id = Loyal_troops_first
 	}
 	focus = {
 		id = Forced_military_levies
-		x = 47
-		y = 7
+		x = 0
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3903,41 +3915,45 @@ focus_tree = {
 		prerequisite = {
 			focus = Request_a_loan
 		}
+		relative_position_id = Request_a_loan
 	}
 	focus = {
 		id = Request_a_loan
-		x = 47
-		y = 5
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Implement_a_controlled_economy
 		}
+		relative_position_id = Implement_a_controlled_economy
 	}
 	focus = {
 		id = Loyal_troops_first
-		x = 41
-		y = 4
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Integrate_Huangpu
 		}
+		relative_position_id = Integrate_Huangpu
 	}
 	focus = {
 		id = The_Second_Central_Plains_War
-		x = 44
-		y = 6
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		relative_position_id = Impose_martial_law
 	}
 	focus = {
 		id = Block_medi_information
-		x = 44
-		y = 7
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3947,11 +3963,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Impose_martial_law
 		}
+		relative_position_id = The_Second_Central_Plains_War
 	}
 	focus = {
 		id = Advance_step_by_step
-		x = 41
-		y = 7
+		x = 0
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -3961,88 +3978,96 @@ focus_tree = {
 		prerequisite = {
 			focus = Requesting_equipment_support_from_Japan
 		}
+		relative_position_id = Requesting_equipment_support_from_Japan
 	}
 	focus = {
 		id = Logistics_and_supply
-		x = 41
-		y = 9
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Positiona_warfare
 		}
+		relative_position_id = Positiona_warfare
 	}
 	focus = {
 		id = Establish_leadership_authority
-		x = 45
-		y = 9
+		x = 1
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Support_party_run_media
 		}
+		relative_position_id = Block_medi_information
 	}
 	focus = {
 		id = Positiona_warfare
-		x = 41
-		y = 8
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Advance_step_by_step
 		}
+		relative_position_id = Advance_step_by_step
 	}
 	focus = {
 		id = Secret_foreign_military_advisor
-		x = 43
-		y = 9
+		x = -1
+		y = 2
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = The_Blue_Shirt_Society_infiltrates_the_military
 		}
+		relative_position_id = Block_medi_information
 	}
 	focus = {
 		id = The_Blue_Shirt_Society_infiltrates_the_military
-		x = 43
-		y = 8
+		x = -1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Block_medi_information
 		}
+		relative_position_id = Block_medi_information
 	}
 	focus = {
 		id = Support_party_run_media
-		x = 45
-		y = 8
+		x = 1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Block_medi_information
 		}
+		relative_position_id = Block_medi_information
 	}
 	focus = {
 		id = Material_Supplies_Monopoly_Bureau
-		x = 47
-		y = 8
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Forced_military_levies
 		}
+		relative_position_id = Forced_military_levies
 	}
 	focus = {
 		id = Improve_the_General_Staff
-		x = 42
-		y = 10
+		x = -1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -4052,22 +4077,24 @@ focus_tree = {
 		prerequisite = {
 			focus = Logistics_and_supply
 		}
+		relative_position_id = Secret_foreign_military_advisor
 	}
 	focus = {
 		id = Cooperate_with_National_Land_Housing
-		x = 47
-		y = 9
+		x = 0
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		prerequisite = {
 			focus = Material_Supplies_Monopoly_Bureau
 		}
+		relative_position_id = Material_Supplies_Monopoly_Bureau
 	}
 	focus = {
 		id = Solidarity_Party_and_Country
-		x = 46
-		y = 10
+		x = 1
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -4077,11 +4104,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Establish_leadership_authority
 		}
+		relative_position_id = Establish_leadership_authority
 	}
 	focus = {
 		id = Initiate_a_strategic_decisive_battle
-		x = 44
-		y = 11
+		x = -2
+		y = 1
 		cost = 0
 		continue_if_invalid = no
 		cancel_if_invalid = yes
@@ -4091,5 +4119,6 @@ focus_tree = {
 		prerequisite = {
 			focus = Improve_the_General_Staff
 		}
+		relative_position_id = Solidarity_Party_and_Country
 	}
 }
