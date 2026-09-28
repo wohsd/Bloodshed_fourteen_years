@@ -82,7 +82,8 @@ on_actions = {
 						original_tag = JAP
 					}
 				}
-				# 移除：原"遍地文盲"动态修正（CHI_research_speed_effect）已由教育现代化法案覆盖
+				# 移除旧版"遍地文盲"动态修正（CHI_research_speed_effect，原为科研-80%）：新档已不再添加、由教育现代化法案覆盖；此处用于旧存档加载时自愈摘除
+				remove_dynamic_modifier = { modifier = CHI_research_speed_effect }
 			}
 		}
 	}

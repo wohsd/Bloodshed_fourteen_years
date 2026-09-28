@@ -152,6 +152,9 @@ country_event = {
 			YUL = {
 				AND={
 					has_war = yes
+					PRC = {
+						is_ai = yes
+					}
 					PRC={
 						has_global_flag = end_of_ChangZheng
 					}
