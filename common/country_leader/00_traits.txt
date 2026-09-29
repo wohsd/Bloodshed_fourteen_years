@@ -63,8 +63,8 @@ leader_traits = {
 		supply_combat_penalties_on_core_factor=-0.4
 		targeted_modifier = {
 				tag = CHI
-				attack_bonus_against=-0.75 
-                defense_bonus_against=-0.75
+				attack_bonus_against=0.75
+                defense_bonus_against=0.75
 		}
 		ai_will_do = {
 			factor = 1
