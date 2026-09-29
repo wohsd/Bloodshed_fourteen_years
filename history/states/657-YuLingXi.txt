@@ -15,9 +15,6 @@ state={
 			add_core_of = PRC
 		}
 		victory_points = {
-			3302 3
-		}
-		victory_points = {
 			2303 3
 		}
 		victory_points = {

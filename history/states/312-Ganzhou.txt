@@ -29,9 +29,6 @@ state={
 		victory_points = {
 			2096 15 
 		}
-		victory_points = {
-			2531 5 
-		}
 		set_state_flag = Key_areas
 
 	}

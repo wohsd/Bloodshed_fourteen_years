@@ -211,7 +211,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_back_button"
 			position = { x = 70 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
 			clicksound = click_close
@@ -238,10 +238,12 @@ guiTypes = {
 			name = "single_player_button"
 			position = { x = 70 y = 100 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_SINGLE_PLAYER"				
-			clicksound = click_default			
+			font = "hoi_24header"
+			text = "FE_SINGLE_PLAYER"
+			clicksound = click_default
 			oversound = ui_menu_over
+			# 点击单人游戏时弹出序章视频（自动播放，无进度条；播完或中途按 ESC 继续）
+			web_link = "file:///C:/Users/Hasee/Documents/Paradox%20Interactive/Hearts%20of%20Iron%20IV/mod/Bloodshed_fourteen_years/bfy_intro.html"
 		}
 
 		ButtonType = {

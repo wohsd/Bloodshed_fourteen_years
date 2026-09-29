@@ -9,6 +9,9 @@ state={
 	}
 	history={
 		owner = XZS
+		victory_points = {
+			758 15
+		}
 		buildings = {
 			infrastructure = 1
 		}

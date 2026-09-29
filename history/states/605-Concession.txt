@@ -7,6 +7,9 @@ state={
 	}
 	history = {
 		owner = PCN
+		victory_points = {
+			5241 40
+		}
 		set_demilitarized_zone = yes
 		1939.1.1={
 			owner = JAP

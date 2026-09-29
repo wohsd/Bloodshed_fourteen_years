@@ -6,6 +6,9 @@ state={
 	}
 	history={
 		owner = ROW
+		victory_points = {
+			3864 5
+		}
 
 		1933.1.1={
 			owner = RYS

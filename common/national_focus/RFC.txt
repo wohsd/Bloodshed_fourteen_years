@@ -222,7 +222,8 @@ focus_tree = {
 			# 加强「国民革命军」：敢死队的决死突击
 			add_to_variable = {
 				RFC_nra_attack = 0.03
-			}
+			}
+
 		}
 		relative_position_id = Speed_is_of_the_essence_in_military_operations
 	}
@@ -380,7 +381,8 @@ focus_tree = {
 			# 加强「人民武装」：武备库让民兵有枪可用、守土有据
 			add_to_variable = {
 				RFC_paf_defence = 0.03
-			}
+			}
+
 		}
 		relative_position_id = Make_steady_and_solid_progress
 	}
@@ -1128,6 +1130,10 @@ focus_tree = {
 		icon = GFX_focus_PRC_adopt_sun_yat_sens_principles
 		continue_if_invalid = no
 		cancel_if_invalid = yes
+		cancelable = no
+		select_effect = {
+			country_event = { id = RFC_country.7 hours = 4 }
+		}
 		mutually_exclusive = {
 			focus = new_focus_20
 		}

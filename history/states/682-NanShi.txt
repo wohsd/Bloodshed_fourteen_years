@@ -7,6 +7,9 @@ state={
 	}
 	history={
 		owner = CHI
+		victory_points = {
+			5269 10
+		}
         add_core_of = CHI
 		buildings = {
 		}

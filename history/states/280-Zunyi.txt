@@ -13,19 +13,7 @@ state={
 			dockyard = 0
 		}
 		victory_points = {
-			3938 20 
-		}
-		victory_points = {
 			2433 5 
-		}
-		victory_points = {
-			1364 5 
-		}
-		victory_points = {
-			900 5 
-		}
-		victory_points = {
-			634 5 
 		}
 		add_core_of = ROH
 		

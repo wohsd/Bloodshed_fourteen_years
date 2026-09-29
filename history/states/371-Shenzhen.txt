@@ -6,6 +6,9 @@ state={
 	}
 	history={
 		owner = ROG
+		victory_points = {
+			4177 3
+		}
 		buildings = {
 			infrastructure = 1
 		}

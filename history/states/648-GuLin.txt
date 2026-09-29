@@ -20,12 +20,6 @@ add_core_of = CHI
 			1596 5
 		}
 		victory_points = {
-			900 5
-		}
-		victory_points = {
-			3913 5
-		}
-		victory_points = {
 			3923 5
 		}
 		add_core_of = ROH

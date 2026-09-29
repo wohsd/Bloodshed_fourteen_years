@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = CGZ
+		victory_points = {
+			2710 5
+		}
 		buildings = {
 			infrastructure = 1
 

@@ -10,7 +10,7 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			3375 15
+			3375 10
 		}
 		1939.1.1={
 			owner = CHI

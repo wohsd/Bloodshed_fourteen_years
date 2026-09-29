@@ -12,6 +12,11 @@ state={
 	history={
 		owner = JAP
 		victory_points = {
+			4278 15
+			3772 10
+			4279 5
+		}
+		victory_points = {
 			2247 15
 		}
 		buildings = {

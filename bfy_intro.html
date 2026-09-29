@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+html,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	overflow: hidden;
+}
+video {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	object-fit: contain;
+}
+#overlay {
+	position: fixed;
+	inset: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,.72);
+	color: #ddd;
+	font-size: 30px;
+	font-family: "Microsoft YaHei", sans-serif;
+	letter-spacing: 2px;
+	cursor: pointer;
+	z-index: 10;
+	text-align: center;
+}
+#err {
+	position: fixed;
+	left: 12px;
+	top: 12px;
+	display: none;
+	max-width: 70%;
+	background: rgba(120,0,0,.85);
+	color: #fff;
+	font-size: 18px;
+	font-family: "Microsoft YaHei", sans-serif;
+	padding: 10px 14px;
+	z-index: 20;
+}
+</style>
+</head>
+<body>
+<!-- 优先带声起播；若被 CEF 自动播放策略拦截，JS 自动降级静音，页内点击/按键无声开声 -->
+<video id="v" src="changjiang.mp4" autoplay playsinline></video>
+<div id="overlay"></div>
+<div id="err"></div>
+<script>
+var v = document.getElementById('v');
+var overlay = document.getElementById('overlay');
+var errBox = document.getElementById('err');
+
+function showOverlay(html) {
+	overlay.innerHTML = html;
+	overlay.style.display = 'flex';
+}
+
+// 第一步：直接尝试【带声音】播放（本机 file:// 媒体参与度足够时 CEF 放行，开页即有声）
+v.play().catch(function () {
+	// 第二步：被拒绝则静音起播保证画面，不弹任何提示
+	v.muted = true;
+	v.play().catch(function () {});
+});
+
+// 页内任意点击/按键都是用户手势 → 无声开声（ESC 不拦截，交给游戏关窗）
+function unmute() {
+	v.muted = false;
+	v.play().then(function () { overlay.style.display = 'none'; }).catch(function () {});
+}
+document.addEventListener('click', unmute);
+document.addEventListener('keydown', function (e) {
+	if (e.key === 'Escape') { return; }
+	unmute();
+});
+
+// 视频加载失败：左上角直接显示原因（正常播放时不可见）
+v.addEventListener('error', function () {
+	var map = {
+		1: 'ABORTED 中止',
+		2: 'NETWORK 文件读取失败（检查 mp4 路径/文件名）',
+		3: 'DECODE 解码失败（用 ffmpeg 转成 H.264/AAC）',
+		4: 'SRC_NOT_SUPPORTED 格式不支持'
+	};
+	var e = v.error;
+	errBox.textContent = '视频加载失败 code=' + e.code + ' ' + (map[e.code] || '');
+	errBox.style.display = 'block';
+});
+
+// 播放结束：停末帧，提示 ESC 继续
+v.addEventListener('ended', function () {
+	showOverlay('播放完毕，按 ESC 继续');
+}, { once: true });
+</script>
+</body>
+</html>

@@ -22,13 +22,10 @@ state={
 			dockyard = 0
 		}
 		victory_points = {
-			4013 5 
-		}
-		victory_points = {
 			3101 5 
 		}
 		victory_points = {
-			2257 30
+			2257 20
 		}
 		add_core_of = ROC
 		

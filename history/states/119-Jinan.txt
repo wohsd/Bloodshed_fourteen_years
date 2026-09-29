@@ -14,7 +14,7 @@ state={
 			dockyard = 0
 		}
 		victory_points = {
-			2178 40
+			2178 30
 		}
 		add_core_of = ROA
 		

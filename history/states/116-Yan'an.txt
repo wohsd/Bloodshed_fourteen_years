@@ -24,7 +24,7 @@ state={
 			owner = PRC
 		}
 		victory_points = {
-			1976 30
+			1976 20
 		}
 		victory_points = {
 			1896 5
