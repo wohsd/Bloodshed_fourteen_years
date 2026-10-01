@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = JAP
 	}
-	manpower=323000
+	manpower=1410500
 	state_category = town
 	local_supplies = 0.0
 }

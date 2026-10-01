@@ -30,7 +30,7 @@ add_core_of = CHI
 	provinces={
 		1187 2136 2433 
 	}
-	manpower=323000
+	manpower=1180300
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

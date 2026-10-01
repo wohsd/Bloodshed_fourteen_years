@@ -29,4 +29,125 @@ characters={
 			id=-1
 		}
 	}		
+		ROZ_MaDunJing={
+		name=ROZ_MaDunJing
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		#陆军部长（马惇靖：马鸿宾之子，熟稔骑兵）
+		advisor={	desc = ROZ_MaDunJing_leader_desc
+
+			slot = army_chief
+			idea_token = ROZ_MaDunJing
+			allowed = {
+				original_tag = ROZ
+			}
+			available = {
+				ROZ_MaDunJing = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROZ_MaDunJing
+					}
+				}
+			}
+			traits = {
+				army_chief_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = ROZ_MaDunJing_leader_desc
+
+			traits={ cavalry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
 	}
+	ROZ_YeChengZhang={
+		name=ROZ_YeChengZhang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		#总司令（冶成章：马鸿宾麾下悍将，绰号“冶骡子”）
+		advisor={	desc = ROZ_YeChengZhang_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = ROZ_YeChengZhang
+			allowed = {
+				original_tag = ROZ
+			}
+			available = {
+				ROZ_YeChengZhang = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROZ_YeChengZhang
+					}
+				}
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = ROZ_YeChengZhang_leader_desc
+
+			traits={ cavalry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#马福寿：马鸿逵叔父，宁夏省府民政厅长，主持后方政务
+	ROZ_MaFuShou={
+		name=ROZ_MaFuShou
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_3.dds"
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		#政治顾问（马福寿：马家长辈，老成持重）
+		advisor={	desc = ROZ_MaFuShou_leader_desc
+
+			slot = political_advisor
+			idea_token = ROZ_MaFuShou_P
+			allowed = {
+				original_tag = ROZ
+			}
+			available = {
+				ROZ_MaFuShou_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

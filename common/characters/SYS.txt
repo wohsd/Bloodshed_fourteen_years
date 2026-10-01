@@ -36,4 +36,84 @@ characters={
 			logistics_skill = 1
 		}
 	}	
+		SYS_MiWenHe={
+		name=SYS_MiWenHe
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		advisor={	desc = SYS_MiWenHe_leader_desc
+
+			slot = army_chief
+			idea_token = SYS_MiWenHe
+			allowed = {
+				original_tag = SYS
+			}
+			available = {
+				SYS_MiWenHe = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = SYS_MiWenHe
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = SYS_MiWenHe_leader_desc
+
+			traits={ organizer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
 	}
+	#程希贤：石友三第十三路军将领，统带步兵
+	SYS_ChengXiXian={
+		name=SYS_ChengXiXian
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		#总司令（程希贤：西北军旧部，转战有年）
+		advisor={	desc = SYS_ChengXiXian_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = SYS_ChengXiXian
+			allowed = {
+				original_tag = SYS
+			}
+			available = {
+				SYS_ChengXiXian = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = SYS_ChengXiXian
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

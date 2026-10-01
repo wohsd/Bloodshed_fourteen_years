@@ -12,6 +12,9 @@ interwar_antitank = 1
 }
 
 recruit_character = ROK_MaHongKui
+recruit_character = ROK_MaHongBin
+recruit_character = ROK_MaDunJing
+recruit_character = ROK_MaFuShou
 set_popularities = {
 	democratic = 0
 	communism = 0

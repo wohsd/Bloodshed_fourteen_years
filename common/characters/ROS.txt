@@ -1,4 +1,4 @@
-characters={
+﻿characters={
     ROS_LiuXiang={
 		name=ROS_LiuXiang
 		portraits={
@@ -13,5 +13,143 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
 	}
+	#唐式遵：刘湘部将，骁勇善战，善守
+	ROS_TangShiZun={
+		name=ROS_TangShiZun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		advisor={	desc = ROS_TangShiZun_leader_desc
+
+			slot = army_chief
+			idea_token = ROS_TangShiZun
+			allowed = {
+				original_tag = ROS
+			}
+			available = {
+				ROS_TangShiZun = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROS_TangShiZun
+					}
+				}
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = ROS_TangShiZun_leader_desc
+
+			traits={ defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	#潘文华：刘湘部将，稳重多谋
+	ROS_PanWenHua={
+		name=ROS_PanWenHua
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		advisor={	desc = ROS_PanWenHua_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = ROS_PanWenHua
+			allowed = {
+				original_tag = ROS
+			}
+			available = {
+				ROS_PanWenHua = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROS_PanWenHua
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = ROS_PanWenHua_leader_desc
+
+			traits={ organizer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	#王陵基：刘湘部将，老成持重
+	ROS_WangLingJi={
+		name=ROS_WangLingJi
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = ROS_WangLingJi_leader_desc
+
+			traits={ old_guard }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	#张斯可：刘湘谋士，老成稳重
+	ROS_ZhangSiKe={
+		name=ROS_ZhangSiKe
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={	desc = ROS_ZhangSiKe_leader_desc
+
+			slot = political_advisor
+			idea_token = ROS_ZhangSiKe_P
+			allowed = {
+				original_tag = ROS
+			}
+			available = {
+				ROS_ZhangSiKe_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+}
+}

@@ -18,6 +18,10 @@ add_ideas={
 	#Sichuan_Army
 }
 recruit_character = ROT_TianSongYao
+recruit_character = ROT_SunZhen
+recruit_character = ROT_DongSongHeng
+recruit_character = ROT_ZengXianDong
+recruit_character = ROT_WangMingZhang
 set_popularities = {
 	democratic = 0
 	communism = 0

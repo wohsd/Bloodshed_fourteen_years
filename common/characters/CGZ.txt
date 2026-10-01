@@ -43,10 +43,100 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	CGZ_ChenGuoDong={
+		name=CGZ_ChenGuoDong
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander={	desc = CGZ_ChenGuoDong_leader_desc
+
+			traits={ infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#孙远志：陈珪璋部参谋长，陇东军幕核心
+	CGZ_SunYuanZhi={
+		name=CGZ_SunYuanZhi
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		#陆军部长（孙远志：整训部伍，操持军务）
+		advisor={	desc = CGZ_SunYuanZhi_leader_desc
+
+			slot = army_chief
+			idea_token = CGZ_SunYuanZhi
+			allowed = {
+				original_tag = CGZ
+			}
+			available = {
+				CGZ_SunYuanZhi = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = CGZ_SunYuanZhi
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#杨抱诚：陈珪璋部旅长，陇东军步兵将领
+	CGZ_YangBaoCheng={
+		name=CGZ_YangBaoCheng
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		#总司令（杨抱诚：统带步队，转战陇东）
+		advisor={	desc = CGZ_YangBaoCheng_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = CGZ_YangBaoCheng
+			allowed = {
+				original_tag = CGZ
+			}
+			available = {
+				CGZ_YangBaoCheng = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = CGZ_YangBaoCheng
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

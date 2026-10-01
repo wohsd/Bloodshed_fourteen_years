@@ -24,10 +24,12 @@ state={
 		}
 		victory_points = {
 			3707 50
+		
+			3712 10
 		}
 		add_core_of = JAP
 	}
-	manpower=13773000
+	manpower=13300000
 	state_category = large_city
 	local_supplies = 0.0
 }

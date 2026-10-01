@@ -1,4 +1,4 @@
-capital = 45 
+﻿capital = 45 
 
 set_technology = {
 	BFY_irregular_infantry_tech = 1
@@ -12,6 +12,9 @@ interwar_antitank = 1
 }
 recruit_character = ROX_JingShuRen
 recruit_character = ROX_ShengShiCai
+recruit_character = ROX_ZhangPeiYuan
+recruit_character = ROX_HeJiaNiYaZi
+recruit_character = ROX_YaoZhiBang
 set_popularities = {
 	democratic = 0
 	communism = 0

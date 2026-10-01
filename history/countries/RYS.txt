@@ -18,6 +18,10 @@ add_ideas={
 	#Sichuan_Army
 }
 recruit_character = RYS_YangSen
+recruit_character = RYS_YangHanYu
+recruit_character = RYS_XiaJiong
+recruit_character = RYS_YuMengQun
+recruit_character = RYS_YangGanCai
 set_popularities = {
 	democratic = 0
 	communism = 0

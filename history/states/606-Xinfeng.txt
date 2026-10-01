@@ -18,7 +18,7 @@ state={
 		}
 		set_state_flag = Key_areas
 	}
-	manpower=210000
+	manpower=365900
 	buildings_max_level_factor=1.000
 	local_supplies=20.000
 }

@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	YHC_YangHuCheng={
 		name=YHC_YangHuCheng
@@ -46,6 +46,164 @@ characters={
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	#孙蔚如：杨虎城麾下头号战将，沉稳老练，善守
+	YHC_SunWeiRu={
+		name=YHC_SunWeiRu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		#陆军部长（孙蔚如：沉稳老练，善守）
+		advisor={	desc = YHC_SunWeiRu_leader_desc
+
+			slot = army_chief
+			idea_token = YHC_SunWeiRu
+			allowed = {
+				original_tag = YHC
+			}
+			available = {
+				YHC_SunWeiRu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = YHC_SunWeiRu
+					}
+				}
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = YHC_SunWeiRu_leader_desc
+
+			traits={ defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	#赵寿山：杨虎城麾下将领，敢作敢为，思想开明
+	YHC_ZhaoShouShan={
+		name=YHC_ZhaoShouShan
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		#总司令（赵寿山：敢作敢为，思想开明）
+		advisor={	desc = YHC_ZhaoShouShan_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = YHC_ZhaoShouShan
+			allowed = {
+				original_tag = YHC
+			}
+			available = {
+				YHC_ZhaoShouShan = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = YHC_ZhaoShouShan
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = YHC_ZhaoShouShan_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#杜斌丞：杨虎城智囊，著名教育家、民主人士
+	YHC_DuBinCheng={
+		name=YHC_DuBinCheng
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_2.dds"
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		#政治顾问（杜斌丞：开明进步，擅教育文化）
+		advisor={	desc = YHC_DuBinCheng_leader_desc
+
+			slot = political_advisor
+			idea_token = YHC_DuBinCheng_P
+			allowed = {
+				original_tag = YHC
+			}
+			available = {
+				YHC_DuBinCheng_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	YHC_LiXingZhong={
+		name=YHC_LiXingZhong
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = YHC_LiXingZhong_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#孔从洲：杨虎城麾下炮兵将领，技术精湛
+	YHC_KongCongZhou={
+		name=YHC_KongCongZhou
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = YHC_KongCongZhou_leader_desc
+
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
 		}
 	}
 }

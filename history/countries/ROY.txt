@@ -12,6 +12,10 @@ interwar_antitank = 1
 }
 
 recruit_character = ROY_LongYun
+recruit_character = ROY_LuHan
+recruit_character = ROY_SunDu
+recruit_character = ROY_ZhangChong
+recruit_character = ROY_MiaoYunTai
 set_popularities = {
 	democratic = 0
 	communism = 0

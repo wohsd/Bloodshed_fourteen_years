@@ -24,7 +24,7 @@ add_core_of = CHI
 		add_core_of = ROH
 
 	}
-	manpower=23110
+	manpower=372900
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

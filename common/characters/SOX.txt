@@ -65,4 +65,38 @@ SOX_SongXing={
 		}
 	}
 	
+	SOX_JiangZaiZhen={
+		name=SOX_JiangZaiZhen
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		corps_commander={	desc = SOX_JiangZaiZhen_leader_desc
+
+			traits={ infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	SOX_CheMingYi={
+		name=SOX_CheMingYi
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		corps_commander={	desc = SOX_CheMingYi_leader_desc
+
+			traits={ defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 }

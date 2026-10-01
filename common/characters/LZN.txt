@@ -48,4 +48,92 @@ LZN_LiuZhenNian={
 			legacy_id=-1
 		}
 	}
+	LZN_HeBen={
+		name=LZN_HeBen
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		advisor={	desc = LZN_HeBen_leader_desc
+
+			slot = army_chief
+			idea_token = LZN_HeBen
+			allowed = {
+				original_tag = LZN
+			}
+			available = {
+				LZN_HeBen = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = LZN_HeBen
+					}
+				}
+			}
+			traits = {
+				army_chief_reform_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = LZN_HeBen_leader_desc
+
+			traits={ organizer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	LZN_LiuKaiTai={
+		name=LZN_LiuKaiTai
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		#总司令（刘开泰：刘珍年部将，统带步兵）
+		advisor={	desc = LZN_LiuKaiTai_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = LZN_LiuKaiTai
+			allowed = {
+				original_tag = LZN
+			}
+			available = {
+				LZN_LiuKaiTai = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = LZN_LiuKaiTai
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = LZN_LiuKaiTai_leader_desc
+
+			traits={ defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 }

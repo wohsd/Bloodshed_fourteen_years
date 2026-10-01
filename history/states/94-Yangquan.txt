@@ -24,7 +24,7 @@ state={
 			add_core_of = NAC
 		}
 	}
-	manpower=323000
+	manpower=811100
 	state_category = town
 	local_supplies = 0.0
 }

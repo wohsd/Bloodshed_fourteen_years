@@ -1,4 +1,4 @@
-capital = 79
+﻿capital = 79
 #首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
 #oob =
@@ -17,6 +17,9 @@ set_war_support = 0.7
 
 recruit_character = JDF_YingRuGeng
 recruit_character = JDF_WangJingWei
+recruit_character = JDF_ZhangQingYu
+recruit_character = JDF_ZhangYanTian
+recruit_character = JDF_ChiZongMo
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

@@ -1,61 +1,202 @@
-characters={
-	ROC_LiZongRen={
-		name=ROC_LiZongRen
-		portraits={
-			civilian={
-				large="gfx/leaders/ROC/ROC_LiZongRen.png"
+﻿characters={
+		ROC_LiZongRen={
+			name=ROC_LiZongRen
+			portraits={
+				civilian={
+					large="gfx/leaders/ROC/ROC_LiZongRen.png"
+				}
+			}
+			country_leader={	desc = ROC_LiZongRen_leader_desc
+
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
+			}
+			corps_commander = {
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
 			}
 		}
-		country_leader={	desc = ROC_LiZongRen_leader_desc
+	    ROC_HuangShaoHong={
+			name=ROC_HuangShaoHong
+			portraits={
+				civilian={
+					large="gfx/leaders/ROC/ROC_HuangShaoHong.png"
+				}
+			}
+			country_leader={	desc = ROC_HuangShaoHong_leader_desc
 
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		corps_commander = {
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
-		}
-	}
-    ROC_HuangShaoHong={
-		name=ROC_HuangShaoHong
-		portraits={
-			civilian={
-				large="gfx/leaders/ROC/ROC_HuangShaoHong.png"
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
+			}
+			corps_commander = {
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
 			}
 		}
-		country_leader={	desc = ROC_HuangShaoHong_leader_desc
+		ROC_HuangXuChu={
+			name=ROC_HuangXuChu
+			portraits={
+				civilian={
+					large="gfx/leaders/ROC/ROC_HuangXuChu.png"
+				}
+			}
+			country_leader={	desc = ROC_HuangXuChu_leader_desc
 
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
-		corps_commander = {
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}	
-	ROC_HuangXuChu={
-		name=ROC_HuangXuChu
-		portraits={
-			civilian={
-				large="gfx/leaders/ROC/ROC_HuangXuChu.png"
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
 			}
 		}
-		country_leader={	desc = ROC_HuangXuChu_leader_desc
+		#白崇禧：桂系二号人物，小诸葛，善谋略
+		ROC_BaiChongXi={
+			name=ROC_BaiChongXi
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+				}
+			}
+			advisor={	desc = ROC_BaiChongXi_leader_desc
 
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
+				slot = army_chief
+				idea_token = ROC_BaiChongXi
+				allowed = {
+					original_tag = ROC
+				}
+				available = {
+					ROC_BaiChongXi = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROC_BaiChongXi
+						}
+					}
+				}
+				traits = {
+					army_chief_reform_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			corps_commander={	desc = ROC_BaiChongXi_leader_desc
+
+				traits={ brilliant_strategist }
+				skill=4
+				attack_skill=3
+				defense_skill=3
+				planning_skill=4
+				logistics_skill=3
+			}
 		}
-	}		
-	}
+		#黄旭初：桂系将领，稳重可靠
+		ROC_HuangXuChu2={
+			name=ROC_HuangXuChu2
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+				}
+			}
+			advisor={	desc = ROC_HuangXuChu2_leader_desc
+
+				slot = high_command
+				ledger = army
+				idea_token = ROC_HuangXuChu2
+				allowed = {
+					original_tag = ROC
+				}
+				available = {
+					ROC_HuangXuChu2 = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROC_HuangXuChu2
+						}
+					}
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			corps_commander={	desc = ROC_HuangXuChu2_leader_desc
+
+				traits={ organizer }
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=1
+			}
+		}
+		#夏威：桂系将领，骁勇善战
+		ROC_XiaWei={
+			name=ROC_XiaWei
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+				}
+			}
+			corps_commander={	desc = ROC_XiaWei_leader_desc
+
+				traits={ offensive_doctrine }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+		}
+		#黄绍竑政治顾问（已有人物，补advisor）
+		#实际上黄绍竑已经是country_leader，不能同时是advisor
+		#改为新增一个政治顾问：李任仁
+		#李任仁：桂系文人，长于民政
+		ROC_LiRenRen={
+			name=ROC_LiRenRen
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+					small="GFX_idea_generic_political_advisor_asia_1"
+				}
+			}
+			advisor={	desc = ROC_LiRenRen_leader_desc
+
+				slot = political_advisor
+				idea_token = ROC_LiRenRen_P
+				allowed = {
+					original_tag = ROC
+				}
+				available = {
+					ROC_LiRenRen_P = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+				}
+				traits = {
+					political_reformer_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+}
+}

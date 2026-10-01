@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	JZZ_JiangZhaiZeng={
 		name=JZZ_JiangZhaiZeng
@@ -46,6 +46,23 @@ characters={
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	JZZ_HouZhiDan={
+		name=JZZ_HouZhiDan
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		corps_commander={	desc = JZZ_HouZhiDan_leader_desc
+
+			traits={ defensive_doctrine infantry_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

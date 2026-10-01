@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 NSA_LiuZhiDan={
 		name=NSA_LiuZhiDan
@@ -34,7 +34,7 @@ NSA_LiuZhiDan={
 		corps_commander={
 			#特质（如堑壕大师）
 			desc = NSA_LiuZhiDan_leader_desc
-			traits={ }
+			traits={ guerilla_fighter }
 			#等级
 			skill=2
 			#攻击等级

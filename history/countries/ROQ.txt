@@ -13,6 +13,10 @@ interwar_antitank = 1
 
 recruit_character = ROQ_MaQi
 recruit_character = ROQ_MaBuFang
+recruit_character = ROQ_MaYuanHai
+recruit_character = ROQ_MaBiao
+recruit_character = ROQ_MaBuKang
+recruit_character = ROQ_MaZhongHua
 set_popularities = {
 	democratic = 0
 	communism = 0

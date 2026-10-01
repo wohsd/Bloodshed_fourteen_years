@@ -24,7 +24,7 @@ add_core_of = CHI
 		}
 		add_core_of = ROH
 	}
-	manpower=823000
+	manpower=300000
 	state_category = town
 	local_supplies=0.000
 	buildings_max_level_factor=1.000

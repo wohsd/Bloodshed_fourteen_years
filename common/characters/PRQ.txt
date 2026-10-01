@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	PRQ_FengBaiJu={
 		name=PRQ_FengBaiJu
@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = PRQ_FengBaiJu_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ guerilla_fighter }
 			#等级
 			skill=4
 			#攻击等级

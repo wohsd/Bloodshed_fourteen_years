@@ -1,49 +1,175 @@
-characters={
-    ROJ_YanXiShan={
-		name=ROJ_YanXiShan
-		portraits={
-			civilian={
-				large="gfx/leaders/ROJ/ROJ_YanXiShan.png"
+﻿characters={
+	    ROJ_YanXiShan={
+			name=ROJ_YanXiShan
+			portraits={
+				civilian={
+					large="gfx/leaders/ROJ/ROJ_YanXiShan.png"
+				}
 			}
-		}
-		country_leader={	desc = ROJ_YanXiShan_leader_desc
+			country_leader={	desc = ROJ_YanXiShan_leader_desc
 
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	ROJ_ShangZhen={
-		name=ROJ_ShangZhen
-		portraits={
-			civilian={
-				large="gfx/leaders/ROJ/ROJ_ShangZhen.png"
-				small="gfx/leaders/ROJ/ROJ_ShangZhen.png"
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
 			}
 		}
-		country_leader={
-			desc = ROJ_ShangZhen_leader_desc
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	ROJ_XuYongChang={
-		name=ROJ_XuYongChang
-		portraits={
-			civilian={
-				large="gfx/leaders/ROJ/ROJ_XuYongChang.png"
-				small="gfx/leaders/ROJ/ROJ_XuYongChang.png"
+		ROJ_ShangZhen={
+			name=ROJ_ShangZhen
+			portraits={
+				civilian={
+					large="gfx/leaders/ROJ/ROJ_ShangZhen.png"
+					small="gfx/leaders/ROJ/ROJ_ShangZhen.png"
+				}
+			}
+			country_leader={
+				desc = ROJ_ShangZhen_leader_desc
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
 			}
 		}
-		country_leader={
-			desc = ROJ_XuYongChang_leader_desc
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
+		ROJ_XuYongChang={
+			name=ROJ_XuYongChang
+			portraits={
+				civilian={
+					large="gfx/leaders/ROJ/ROJ_XuYongChang.png"
+					small="gfx/leaders/ROJ/ROJ_XuYongChang.png"
+				}
+			}
+			country_leader={
+				desc = ROJ_XuYongChang_leader_desc
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
+			}
 		}
-	}
+		#徐永昌：晋系将领，善于练兵（已有，补advisor）
+		#实际上徐永昌是country_leader，不能同时是advisor
+		#改为新增人物
+		#商震：晋系将领，稳重老练（已有，补advisor）
+		#同样问题，商震也是country_leader
+		#晋系新增人物
+		#傅作义：晋系名将，善守（已在SJN，但历史上此时属晋系，加advisor）
+		ROJ_FuZuoYi={
+			name=ROJ_FuZuoYi
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+				}
+			}
+			advisor={	desc = ROJ_FuZuoYi_leader_desc
+
+				slot = army_chief
+				idea_token = ROJ_FuZuoYi
+				allowed = {
+					original_tag = ROJ
+				}
+				available = {
+					ROJ_FuZuoYi = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROJ_FuZuoYi
+						}
+					}
+				}
+				traits = {
+					army_chief_defensive_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			corps_commander={	desc = ROJ_FuZuoYi_leader_desc
+
+				traits={ defensive_doctrine }
+				skill=3
+				attack_skill=1
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=2
+			}
+		}
+		#杨爱源：晋系将领，骁勇善战
+		ROJ_YangAiYuan={
+			name=ROJ_YangAiYuan
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+				}
+			}
+			advisor={	desc = ROJ_YangAiYuan_leader_desc
+
+				slot = high_command
+				ledger = army
+				idea_token = ROJ_YangAiYuan
+				allowed = {
+					original_tag = ROJ
+				}
+				available = {
+					ROJ_YangAiYuan = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROJ_YangAiYuan
+						}
+					}
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			corps_commander={	desc = ROJ_YangAiYuan_leader_desc
+
+				traits={ offensive_doctrine }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+		}
+		#赵戴文：阎锡山谋士，长于民政
+		ROJ_ZhaoDaiWen={
+			name=ROJ_ZhaoDaiWen
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+					small="GFX_idea_generic_political_advisor_asia_2"
+				}
+			}
+			advisor={	desc = ROJ_ZhaoDaiWen_leader_desc
+
+				slot = political_advisor
+				idea_token = ROJ_ZhaoDaiWen_P
+				allowed = {
+					original_tag = ROJ
+				}
+				available = {
+					ROJ_ZhaoDaiWen_P = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+				}
+				traits = {
+					political_reformer_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+}
 }

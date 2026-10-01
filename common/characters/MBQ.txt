@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	MBQ_MaBuQing={
 		name=MBQ_MaBuQing
@@ -30,11 +30,38 @@ characters={
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
 		}
+		#陆军部长（马步青：骑兵出身，注重骑术训练）
+		advisor={	desc = MBQ_MaBuQing_leader_desc
+
+			slot = army_chief
+			idea_token = MBQ_MaBuQing
+			allowed = {
+				original_tag = MBQ
+			}
+			available = {
+				MBQ_MaBuQing = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = MBQ_MaBuQing
+					}
+				}
+			}
+			traits = {
+				army_chief_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		#担任陆军将军时的数据
 		field_marshal={	desc = MBQ_MaBuQing_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ cavalry_officer }
 			#等级
 			skill=4
 			#攻击等级
@@ -43,10 +70,123 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	#马廷勷：马步青叔父，老成持重，骑战经验丰富
+	MBQ_MaTingRang={
+		name=MBQ_MaTingRang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		#总司令（马廷勷：老成持重，经验丰富）
+		advisor={	desc = MBQ_MaTingRang_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = MBQ_MaTingRang
+			allowed = {
+				original_tag = MBQ
+			}
+			available = {
+				MBQ_MaTingRang = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = MBQ_MaTingRang
+					}
+				}
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = MBQ_MaTingRang_leader_desc
+
+			traits={ cavalry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	#马绍武：马步青麾下行政人才，精于理财，善于外交
+	MBQ_MaShaoWu={
+		name=MBQ_MaShaoWu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		#政治顾问（马绍武：精于理财，善于外交）
+		advisor={	desc = MBQ_MaShaoWu_leader_desc
+
+			slot = political_advisor
+			idea_token = MBQ_MaShaoWu_P
+			allowed = {
+				original_tag = MBQ
+			}
+			available = {
+				MBQ_MaShaoWu_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				the_banker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MBQ_MaBuLuan={
+		name=MBQ_MaBuLuan
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander={	desc = MBQ_MaBuLuan_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#马全义：马步青麾下老将，稳健持重，擅长防守
+	MBQ_MaQuanYi={
+		name=MBQ_MaQuanYi
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		corps_commander={	desc = MBQ_MaQuanYi_leader_desc
+
+			traits={ defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

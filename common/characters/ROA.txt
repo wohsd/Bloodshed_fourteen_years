@@ -37,6 +37,34 @@ characters={
 				small="gfx/leaders/ROA/ROA_SunTongXuan.png"
 			}
 		}
+		#总司令（孙桐萱：韩复榘麾下大将，持重稳成）
+		advisor={	desc = ROA_SunTongXuan_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = ROA_SunTongXuan
+			allowed = {
+				original_tag = ROA
+			}
+			available = {
+				ROA_SunTongXuan = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROA_SunTongXuan
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander = {
 			traits = { infantry_leader }
 			skill = 3
@@ -44,6 +72,74 @@ characters={
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 3
+		}
+	}
+	#张绍堂：韩复榘秘书长，山东省府核心幕僚，主持政务
+	ROA_ZhangShaoTang={
+		name=ROA_ZhangShaoTang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_2.dds"
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		#政治顾问（张绍堂：老成幕僚，勤于庶务）
+		advisor={	desc = ROA_ZhangShaoTang_leader_desc
+
+			slot = political_advisor
+			idea_token = ROA_ZhangShaoTang_P
+			allowed = {
+				original_tag = ROA
+			}
+			available = {
+				ROA_ZhangShaoTang_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#李树椿：第三路军参谋长，韩复榘军事幕僚
+	ROA_LiShuChun={
+		name=ROA_LiShuChun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		#陆军部长（李树椿：参谋出身，讲求操典训练）
+		advisor={	desc = ROA_LiShuChun_leader_desc
+
+			slot = army_chief
+			idea_token = ROA_LiShuChun
+			allowed = {
+				original_tag = ROA
+			}
+			available = {
+				ROA_LiShuChun = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROA_LiShuChun
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	ROA_CaoFuLin={
@@ -80,4 +176,21 @@ characters={
 			logistics_skill = 2
 		}
 	}
+		ROA_ZhanShuTang={
+		name=ROA_ZhanShuTang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander={	desc = ROA_ZhanShuTang_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
 	}
+}

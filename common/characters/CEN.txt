@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	CEN_DuYuMing={
 		name=CEN_DuYuMing
@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = CEN_DuYuMing_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ armor_officer }
 			#等级
 			skill=4
 			#攻击等级

@@ -20,6 +20,10 @@ interwar_antitank = 1
 recruit_character = ROC_LiZongRen
 recruit_character = ROC_HuangShaoHong
 recruit_character = ROC_HuangXuChu
+recruit_character = ROC_BaiChongXi
+recruit_character = ROC_HuangXuChu2
+recruit_character = ROC_XiaWei
+recruit_character = ROC_LiRenRen
 
 set_popularities = {
 	democratic = 0

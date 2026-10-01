@@ -16,6 +16,10 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = MBQ_MaBuQing
+recruit_character = MBQ_MaTingRang
+recruit_character = MBQ_MaShaoWu
+recruit_character = MBQ_MaBuLuan
+recruit_character = MBQ_MaQuanYi
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

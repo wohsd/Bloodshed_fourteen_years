@@ -18,6 +18,8 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = MGJ_Demchugdongrub
+recruit_character = MGJ_LiShouXin
+recruit_character = MGJ_ZhuoTeBaZhaPu
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

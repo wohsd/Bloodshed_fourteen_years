@@ -1,32 +1,174 @@
-characters={
-    ROQ_MaQi={
-		name=ROQ_MaQi
-		portraits={
-			civilian={
-				large="gfx/leaders/ROQ/ROQ_MaQi.png"
+﻿characters={
+	    ROQ_MaQi={
+			name=ROQ_MaQi
+			portraits={
+				civilian={
+					large="gfx/leaders/ROQ/ROQ_MaQi.png"
+				}
+			}
+			country_leader={	desc = ROQ_MaQi_leader_desc
+
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
 			}
 		}
-		country_leader={	desc = ROQ_MaQi_leader_desc
+		ROQ_MaBuFang={
+			name=ROQ_MaBuFang
+			portraits={
+				civilian={
+					large="gfx/leaders/ROQ/ROQ_MaBuFang.png"
+				}
+			}
+			country_leader={	desc = ROQ_MaBuFang_leader_desc
 
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	ROQ_MaBuFang={
-		name=ROQ_MaBuFang
-		portraits={
-			civilian={
-				large="gfx/leaders/ROQ/ROQ_MaBuFang.png"
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
 			}
 		}
-		country_leader={	desc = ROQ_MaBuFang_leader_desc
+		#马步芳：马麒之子，骁勇善战，野心勃勃（已有country_leader，补advisor）
+		#country_leader和advisor不能同时存在，所以不加advisor
+		#改为新增人物
+		#马元海：马麒部将，老成持重
+		ROQ_MaYuanHai={
+			name=ROQ_MaYuanHai
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+				}
+			}
+			advisor={	desc = ROQ_MaYuanHai_leader_desc
 
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
+				slot = army_chief
+				idea_token = ROQ_MaYuanHai
+				allowed = {
+					original_tag = ROQ
+				}
+				available = {
+					ROQ_MaYuanHai = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROQ_MaYuanHai
+						}
+					}
+				}
+				traits = {
+					army_chief_cavalry_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			corps_commander={	desc = ROQ_MaYuanHai_leader_desc
+
+				traits={ old_guard }
+				skill=2
+				attack_skill=1
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=2
+			}
 		}
-	}				
-	}
+		#马彪：马麒部将，勇猛善战
+		ROQ_MaBiao={
+			name=ROQ_MaBiao
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+				}
+			}
+			advisor={	desc = ROQ_MaBiao_leader_desc
+
+				slot = high_command
+				ledger = army
+				idea_token = ROQ_MaBiao
+				allowed = {
+					original_tag = ROQ
+				}
+				available = {
+					ROQ_MaBiao = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROQ_MaBiao
+						}
+					}
+				}
+				traits = {
+					army_cavalry_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			corps_commander={	desc = ROQ_MaBiao_leader_desc
+
+				traits={ cavalry_officer }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+		}
+		#马步康：马麒之子
+		ROQ_MaBuKang={
+			name=ROQ_MaBuKang
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+				}
+			}
+			corps_commander={	desc = ROQ_MaBuKang_leader_desc
+
+				traits={  }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+		}
+		#马步青谋士（MBQ已有，ROQ不需要重复）
+		#政治顾问
+		ROQ_MaZhongHua={
+			name=ROQ_MaZhongHua
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+					small="GFX_idea_generic_political_advisor_asia_1"
+				}
+			}
+			advisor={	desc = ROQ_MaZhongHua_leader_desc
+
+				slot = political_advisor
+				idea_token = ROQ_MaZhongHua_P
+				allowed = {
+					original_tag = ROQ
+				}
+				available = {
+					ROQ_MaZhongHua_P = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+				}
+				traits = {
+					silent_workhorse
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+}
+}

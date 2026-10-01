@@ -14,4 +14,122 @@ characters={
 			id=-1
 		}
 	}		
+		XZS_CaRong={
+		name=XZS_CaRong
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		advisor={	desc = XZS_CaRong_leader_desc
+
+			slot = army_chief
+			idea_token = XZS_CaRong
+			allowed = {
+				original_tag = XZS
+			}
+			available = {
+				XZS_CaRong = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = XZS_CaRong
+					}
+				}
+			}
+			traits = {
+				army_chief_reform_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = XZS_CaRong_leader_desc
+
+			traits={ organizer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
 	}
+	XZS_LongXia={
+		name=XZS_LongXia
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_3.dds"
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={	desc = XZS_LongXia_leader_desc
+
+			slot = political_advisor
+			idea_token = XZS_LongXia_P
+			allowed = {
+				original_tag = XZS
+			}
+			available = {
+				XZS_LongXia_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	XZS_KaiMo={
+		name=XZS_KaiMo
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		#总司令（凯墨：藏军将领，统带步卒）
+		advisor={	desc = XZS_KaiMo_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = XZS_KaiMo
+			allowed = {
+				original_tag = XZS
+			}
+			available = {
+				XZS_KaiMo = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = XZS_KaiMo
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = XZS_KaiMo_leader_desc
+
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+}

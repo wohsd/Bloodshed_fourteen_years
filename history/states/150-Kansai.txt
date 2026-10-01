@@ -14,7 +14,7 @@ state={
 		victory_points = {
 			1600 20
 			3719 10
-			3725 5
+			3725 10
 		}
 		buildings = {
 			infrastructure = 3
@@ -28,7 +28,7 @@ state={
 		}
 		add_core_of = JAP
 	}
-	manpower=823000
+	manpower=10900000
 	state_category = town
 	local_supplies = 0.0
 }

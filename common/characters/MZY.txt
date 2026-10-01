@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	MZY_MaZhongYing={
 		name=MZY_MaZhongYing
@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = MZY_MaZhongYing_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ cavalry_officer trait_reckless }
 			#等级
 			skill=4
 			#攻击等级
@@ -43,7 +43,7 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
@@ -92,10 +92,140 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	MZY_MaHuShan={
+		name=MZY_MaHuShan
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		#总司令（马虎山：马仲英麾下师长，统领骑兵）
+		advisor={	desc = MZY_MaHuShan_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = MZY_MaHuShan
+			allowed = {
+				original_tag = MZY
+			}
+			available = {
+				MZY_MaHuShan = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = MZY_MaHuShan
+					}
+				}
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = MZY_MaHuShan_leader_desc
+
+			traits={ cavalry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#葛霁云：马仲英秘书长，掌理文书庶务
+	MZY_GeJiYun={
+		name=MZY_GeJiYun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_3.dds"
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		#政治顾问（葛霁云：幕僚出身，勤谨供职）
+		advisor={	desc = MZY_GeJiYun_leader_desc
+
+			slot = political_advisor
+			idea_token = MZY_GeJiYun_P
+			allowed = {
+				original_tag = MZY
+			}
+			available = {
+				MZY_GeJiYun_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#吴应祺：马仲英部参谋长，赞画军机
+	MZY_WuYingQi={
+		name=MZY_WuYingQi
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		#陆军部长（吴应祺：参谋人才，主长途奔袭之策）
+		advisor={	desc = MZY_WuYingQi_leader_desc
+
+			slot = army_chief
+			idea_token = MZY_WuYingQi
+			allowed = {
+				original_tag = MZY
+			}
+			available = {
+				MZY_WuYingQi = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = MZY_WuYingQi
+					}
+				}
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	MZY_MaZhanCang={
+		name=MZY_MaZhanCang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = MZY_MaZhanCang_leader_desc
+
+			traits={ cavalry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

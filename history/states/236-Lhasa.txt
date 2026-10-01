@@ -18,7 +18,7 @@ state={
 		add_core_of = XZS
 		
 	}
-	manpower=323000
+	manpower=421500
 	state_category = town
 	local_supplies = 0.0
 }

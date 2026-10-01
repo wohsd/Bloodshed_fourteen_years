@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	JDF_YingRuGeng={
 		name=JDF_YingRuGeng
@@ -51,5 +51,69 @@ characters={
 			id=-1
 		}
 		
+	}
+	JDF_ZhangQingYu={
+		name=JDF_ZhangQingYu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = JDF_ZhangQingYu_leader_desc
+
+			traits={ infantry_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	JDF_ZhangYanTian={
+		name=JDF_ZhangYanTian
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander={	desc = JDF_ZhangYanTian_leader_desc
+
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	JDF_ChiZongMo={
+		name=JDF_ChiZongMo
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		advisor={	desc = JDF_ChiZongMo_leader_desc
+
+			slot = political_advisor
+			idea_token = JDF_ChiZongMo_P
+			allowed = {
+				original_tag = JDF
+			}
+			available = {
+				JDF_ChiZongMo_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				the_banker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 }

@@ -17,6 +17,10 @@ set_war_support = 0.7
 
 recruit_character = MZY_MaZhongYing
 recruit_character = MZY_YaoLeBoShi
+recruit_character = MZY_MaHuShan
+recruit_character = MZY_MaZhanCang
+recruit_character = MZY_GeJiYun
+recruit_character = MZY_WuYingQi
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

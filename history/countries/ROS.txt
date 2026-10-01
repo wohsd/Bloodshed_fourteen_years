@@ -13,6 +13,10 @@ interwar_antitank = 1
 }
 
 recruit_character = ROS_LiuXiang
+recruit_character = ROS_TangShiZun
+recruit_character = ROS_PanWenHua
+recruit_character = ROS_WangLingJi
+recruit_character = ROS_ZhangSiKe
 set_popularities = {
 	democratic = 0
 	communism = 0

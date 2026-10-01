@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	HLJ_SuBingWeng={
 		name=HLJ_SuBingWeng
@@ -42,7 +42,7 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
@@ -80,7 +80,7 @@ characters={
 		field_marshal={	desc = HLJ_MaZhanShan_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ cavalry_officer brave }
 			#等级
 			skill=4
 			#攻击等级
@@ -92,6 +92,110 @@ characters={
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	HLJ_YuanChongGu={
+		name=HLJ_YuanChongGu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		advisor={	desc = HLJ_YuanChongGu_leader_desc
+
+			slot = army_chief
+			idea_token = HLJ_YuanChongGu
+			allowed = {
+				original_tag = HLJ
+			}
+			available = {
+				HLJ_YuanChongGu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = HLJ_YuanChongGu
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = HLJ_YuanChongGu_leader_desc
+
+			traits={ organizer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	HLJ_WuSongLin={
+		name=HLJ_WuSongLin
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		advisor={	desc = HLJ_WuSongLin_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = HLJ_WuSongLin
+			allowed = {
+				original_tag = HLJ
+			}
+			available = {
+				HLJ_WuSongLin = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = HLJ_WuSongLin
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = HLJ_WuSongLin_leader_desc
+
+			traits={ infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	HLJ_HanGuangDi={
+		name=HLJ_HanGuangDi
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = HLJ_HanGuangDi_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

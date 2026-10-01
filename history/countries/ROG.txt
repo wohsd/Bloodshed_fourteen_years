@@ -21,6 +21,11 @@ recruit_character = ROG_ChenJiTang
 
 recruit_character = ROG_WangJingWei
 recruit_character = ROG_YuHanMou
+recruit_character = ROG_XiangHanPing
+recruit_character = ROG_MiaoPeiNan
+recruit_character = ROG_LiHanHun
+recruit_character = ROG_ZhangRuiGui
+recruit_character = ROG_QuFangPu
 set_popularities = {
 	democratic = 0
 	communism = 0

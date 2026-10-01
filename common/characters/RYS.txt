@@ -14,4 +14,145 @@ characters={
 			id=-1
 		}
 	}		
+		RYS_YangHanYu={
+		name=RYS_YangHanYu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		advisor={	desc = RYS_YangHanYu_leader_desc
+
+			slot = army_chief
+			idea_token = RYS_YangHanYu
+			allowed = {
+				original_tag = RYS
+			}
+			available = {
+				RYS_YangHanYu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = RYS_YangHanYu
+					}
+				}
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = RYS_YangHanYu_leader_desc
+
+			traits={ infantry_leader offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
 	}
+	RYS_XiaJiong={
+		name=RYS_XiaJiong
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		advisor={	desc = RYS_XiaJiong_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = RYS_XiaJiong
+			allowed = {
+				original_tag = RYS
+			}
+			available = {
+				RYS_XiaJiong = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = RYS_XiaJiong
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = RYS_XiaJiong_leader_desc
+
+			traits={ infantry_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	RYS_YuMengQun={
+		name=RYS_YuMengQun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander={	desc = RYS_YuMengQun_leader_desc
+
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#杨干才：杨森族中晚辈，第二十军骁将
+	RYS_YangGanCai={
+		name=RYS_YangGanCai
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		#总司令（杨干才：敢战悍将，统带步队）
+		advisor={	desc = RYS_YangGanCai_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = RYS_YangGanCai
+			allowed = {
+				original_tag = RYS
+			}
+			available = {
+				RYS_YangGanCai = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = RYS_YangGanCai
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

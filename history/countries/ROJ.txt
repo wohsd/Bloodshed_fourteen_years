@@ -15,6 +15,9 @@ interwar_antitank = 1
 recruit_character = ROJ_ShangZhen
 recruit_character = ROJ_XuYongChang
 recruit_character = ROJ_YanXiShan
+recruit_character = ROJ_FuZuoYi
+recruit_character = ROJ_YangAiYuan
+recruit_character = ROJ_ZhaoDaiWen
 1931.8.11={
 	retire_country_leader = yes
 }

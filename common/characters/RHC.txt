@@ -14,4 +14,111 @@ characters={
 			id=-1
 		}
 	}		
+		RHC_YanDeJi={
+		name=RHC_YanDeJi
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = RHC_YanDeJi_leader_desc
+
+			traits={ old_guard }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
 	}
+	RHC_YuJiTang={
+		name=RHC_YuJiTang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = RHC_YuJiTang_leader_desc
+
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#廖震：刘存厚部师长，长期镇守绥定
+	RHC_LiaoZhen={
+		name=RHC_LiaoZhen
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		#陆军部长（廖震：老于行伍，善守边鄙）
+		advisor={	desc = RHC_LiaoZhen_leader_desc
+
+			slot = army_chief
+			idea_token = RHC_LiaoZhen
+			allowed = {
+				original_tag = RHC
+			}
+			available = {
+				RHC_LiaoZhen = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = RHC_LiaoZhen
+					}
+				}
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#刘邦俊：刘存厚族弟，第二十三军师长
+	RHC_LiuBangJun={
+		name=RHC_LiuBangJun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		#总司令（刘邦俊：川军旧部，统带步兵）
+		advisor={	desc = RHC_LiuBangJun_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = RHC_LiuBangJun
+			allowed = {
+				original_tag = RHC
+			}
+			available = {
+				RHC_LiuBangJun = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = RHC_LiuBangJun
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

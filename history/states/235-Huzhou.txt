@@ -23,7 +23,7 @@ state={
 		set_state_flag=ZheJiang
 	}
 	
-	manpower=323000
+	manpower=1968800
 	state_category = town
 	local_supplies = 0.0
 }

@@ -16,6 +16,9 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = MTX_Ma_tingxian
+recruit_character = MTX_MaZhongXiao
+recruit_character = MTX_WangZhanLin
+recruit_character = MTX_HanJinLu
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

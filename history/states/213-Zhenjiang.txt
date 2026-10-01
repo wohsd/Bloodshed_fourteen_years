@@ -21,7 +21,7 @@ state={
 			owner = JDF
 		}
 	}
-	manpower=423000
+	manpower=1926400
 	state_category = town
 	local_supplies = 0.0
 }
