@@ -27,6 +27,8 @@ ideas = {
 				max_fuel_factor = -0.45
 				fuel_gain_factor = -0.6
 				agency_upgrade_time = 1.0
+				industrial_development_monthly = -0.005
+				social_development_monthly = -0.002
 			}
 			
 			allowed_to_remove = {
@@ -60,6 +62,7 @@ ideas = {
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.5
 				agency_upgrade_time = 0.8
+				industrial_development_monthly = -0.003
 			}
 			allowed_to_remove = {
 				OR = {
@@ -85,6 +88,7 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
+				industrial_development_monthly = 0.001
 			}
 			
 			default = yes
@@ -106,6 +110,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.25
+				industrial_development_monthly = 0.003
 			}
 			
 			cancel_if_invalid = no
@@ -140,6 +145,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
 				fuel_gain_factor = -0.1
+				industrial_development_monthly = 0.006
 			}
 			
 			cancel_if_invalid = no
@@ -178,6 +184,8 @@ ideas = {
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
+				industrial_development_monthly = 0.010
+				military_development_monthly = 0.002
 			}
 			
 			cancel_if_invalid = no
@@ -247,6 +255,9 @@ ideas = {
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
+				industrial_development_monthly = 0.014
+				military_development_monthly = 0.003
+				social_development_monthly = -0.002
 			}
 			
 			cancel_if_invalid = no
@@ -270,6 +281,9 @@ ideas = {
 				research_speed_factor = 0.10
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
+				education_development_monthly = 0.005
+				industrial_development_monthly = 0.004
+				social_development_monthly = 0.002
 			}
 			
 			cancel_if_invalid = no
@@ -291,6 +305,8 @@ ideas = {
 				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
 				navy_intel_to_others = 10.0
+				education_development_monthly = 0.002
+				industrial_development_monthly = 0.002
 			}
 			
 			default = yes
@@ -335,6 +351,7 @@ ideas = {
 				research_speed_factor = 0.01
 				civilian_intel_to_others = 10.0
 				navy_intel_to_others = 5
+				industrial_development_monthly = 0.001
 			}
 			
 			cancel_if_invalid = no
@@ -385,6 +402,8 @@ ideas = {
 			modifier = {
 				min_export = 0
 				#civilian_intel_to_others = 0.0
+				education_development_monthly = -0.002
+				military_development_monthly = 0.001
 			}
 			
 			on_add = {

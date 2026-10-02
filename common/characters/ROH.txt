@@ -13,7 +13,15 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	ROH_MaoGuangXing={
 		name=ROH_MaoGuangXing
 		portraits={
@@ -63,7 +71,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = ROY_YouGuoCai_leader_desc
+		field_marshal={	desc = ROY_YouGuoCai_leader_desc
 
 			traits={ cavalry_officer }
 			skill=2

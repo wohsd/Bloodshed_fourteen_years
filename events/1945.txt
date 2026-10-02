@@ -1,4 +1,4 @@
-﻿add_namespace = boy
+add_namespace = boy
 add_namespace = fat_boy
 add_namespace = Surrender
 country_event = {

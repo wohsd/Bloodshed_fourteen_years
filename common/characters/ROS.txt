@@ -1,4 +1,4 @@
-﻿characters={
+characters={
     ROS_LiuXiang={
 		name=ROS_LiuXiang
 		portraits={
@@ -13,7 +13,15 @@
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	#唐式遵：刘湘部将，骁勇善战，善守
 	ROS_TangShiZun={
 		name=ROS_TangShiZun
@@ -48,7 +56,7 @@
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = ROS_TangShiZun_leader_desc
+		field_marshal={	desc = ROS_TangShiZun_leader_desc
 
 			traits={ defensive_doctrine }
 			skill=3

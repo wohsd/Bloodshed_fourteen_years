@@ -81,7 +81,7 @@ LZN_LiuZhenNian={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = LZN_HeBen_leader_desc
+		field_marshal={	desc = LZN_HeBen_leader_desc
 
 			traits={ organizer }
 			skill=1

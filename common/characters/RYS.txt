@@ -13,7 +13,15 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}		
 		RYS_YangHanYu={
 		name=RYS_YangHanYu
 		portraits={
@@ -47,7 +55,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = RYS_YangHanYu_leader_desc
+		field_marshal={	desc = RYS_YangHanYu_leader_desc
 
 			traits={ infantry_leader offensive_doctrine }
 			skill=2

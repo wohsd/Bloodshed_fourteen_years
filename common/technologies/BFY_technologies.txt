@@ -1,12 +1,17 @@
 # BFY：非正规军科技
-# 解锁原版 irregular_infantry（非正规步兵，基础HP由 common/units/infantry.txt 覆盖为25）
-# allow = always = no：不可研发，由 on_startup 脚本授予所有中国势力
-# （模板参照原版 militia_tech）
+# 解锁原版 irregular_infantry（基础HP由 common/units/infantry.txt 覆盖为25）
+# allow = always = no：不可研发，由 history/on_startup 授予所有中国势力
+# 必须带 research_cost，否则注册静默失败（参照原版 SWE_lynx_armored_car）
 technologies = {
 	BFY_irregular_infantry_tech = {
 		allow = { always = no }
 		enable_subunits = {
 			irregular_infantry
+		}
+		research_cost = 1
+		start_year = 1918
+		categories = {
+			infantry_tech
 		}
 	}
 }

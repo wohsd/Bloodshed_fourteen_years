@@ -1,4 +1,4 @@
-﻿add_namespace = NSD_1935
+add_namespace = NSD_1935
 add_namespace = NSD_1938
 add_namespace = NSD_Paranoia
 country_event = {

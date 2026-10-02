@@ -1,0 +1,48 @@
+# ============================================================
+# BFY 现代化进程自定义 modifier（烈焰升腾同款机制）
+# 各类国家法律/民族精神通过这些 modifier 驱动每月现代化进度。
+# 读取：modifier@token（country scope）；结算见 BFY_development_effects.txt
+# 值为小数百分比（0.01 = 每月+1% 进度）
+# ============================================================
+
+education_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+farming_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+social_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+industrial_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+military_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+medical_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}

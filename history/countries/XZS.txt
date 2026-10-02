@@ -1,4 +1,4 @@
-﻿capital = 236 
+capital = 236 
 
 set_technology = {
 	BFY_irregular_infantry_tech = 1

@@ -83,7 +83,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = YWQ_WangZhen_leader_desc
+		field_marshal={	desc = YWQ_WangZhen_leader_desc
 
 			traits={ infantry_leader }
 			skill=1

@@ -1,4 +1,4 @@
-﻿characters={
+characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	JDF_YingRuGeng={
 		name=JDF_YingRuGeng
@@ -25,7 +25,15 @@
 			id=-1
 		}
 		
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	JDF_WangJingWei={
 		name=JDF_WangJingWei
 

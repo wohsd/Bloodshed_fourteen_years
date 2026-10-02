@@ -27,7 +27,15 @@ characters={
 			id=-1
 		}
 		#担任陆军将军时的数据
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	PRH_XiaXi={
 		name=PRH_XiaXi
 		#肖像选择（平民状态和军事状态）

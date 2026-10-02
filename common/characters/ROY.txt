@@ -1,4 +1,4 @@
-﻿characters={
+characters={
     ROY_LongYun={
 		name=ROY_LongYun
 		portraits={
@@ -13,7 +13,15 @@
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	#卢汉：龙云表弟，滇军头号战将，沉稳善谋
 	ROY_LuHan={
 		name=ROY_LuHan
@@ -49,7 +57,7 @@
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = ROY_LuHan_leader_desc
+		field_marshal={	desc = ROY_LuHan_leader_desc
 
 			traits={ organizer }
 			skill=3

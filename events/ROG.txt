@@ -1,4 +1,4 @@
-﻿add_namespace = ROG
+add_namespace = ROG
 country_event = {
 	id = ROG.1
 	title =  ROG.1.t

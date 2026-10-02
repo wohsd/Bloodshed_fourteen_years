@@ -1,4 +1,4 @@
-﻿characters={
+characters={
     CHI_JiangJieShi={
 	name = CHI_JiangJieShi
 	portraits={ 

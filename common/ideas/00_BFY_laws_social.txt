@@ -1,0 +1,684 @@
+ideas = {
+	# ============================================================
+	# 国家法律：社会与经济法案（1930-1950东亚化设计，机制参考烈焰升腾）
+	# 四类法律各档位在给出现实效果的同时，通过自定义 modifier
+	# （X_development_monthly）直接驱动六项现代化进程，每月1号结算。
+	# 玩家可花费政治点数在各档之间切换。
+	# ============================================================
+
+	# ============================================================
+	# 一、女性地位法
+	# ============================================================
+	bfy_female_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 默认：传统女教
+		bfy_female_traditional = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			default = yes
+			picture = laws_social_development
+			modifier = {
+				social_development_monthly = -0.002
+				industrial_development_monthly = -0.001
+			}
+		}
+
+		# 废止缠足、兴办女学
+		bfy_female_limited = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			picture = laws_social_development1
+			modifier = {
+				social_development_monthly = 0.002
+			}
+		}
+
+		# 妇女进入工厂与社会
+		bfy_female_workforce = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_social_development2
+			modifier = {
+				industrial_development_monthly = 0.006
+				social_development_monthly = 0.003
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# 法律上男女平等
+		bfy_female_equal = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_social_development4
+			modifier = {
+				social_development_monthly = 0.008
+				industrial_development_monthly = 0.003
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		# 妇女能顶半边天
+		bfy_female_full = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_social_development5
+			modifier = {
+				social_development_monthly = 0.012
+				military_development_monthly = 0.003
+				industrial_development_monthly = 0.003
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.03
+				war_support_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+	}
+
+	# ============================================================
+	# 二、工人权利法
+	# ============================================================
+	bfy_worker_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 默认：禁止工会
+		bfy_worker_banned = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			default = yes
+			picture = laws_industry_development
+			modifier = {
+				industrial_development_monthly = -0.002
+				social_development_monthly = -0.001
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		# 有限保护
+		bfy_worker_limited = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			picture = laws_industry_development1
+			modifier = {
+				social_development_monthly = 0.002
+			}
+		}
+
+		# 工会合法化
+		bfy_worker_legal = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_industry_development2
+			modifier = {
+				industrial_development_monthly = 0.004
+				social_development_monthly = 0.004
+				stability_factor = 0.03
+			}
+		}
+
+		# 八小时工作制
+		bfy_worker_eight_hours = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_industry_development4
+			modifier = {
+				industrial_development_monthly = 0.008
+				social_development_monthly = 0.006
+				stability_factor = 0.05
+				production_speed_buildings_factor = -0.03
+			}
+		}
+
+		# 工人监督生产
+		bfy_worker_control = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_industry_development5
+			modifier = {
+				industrial_development_monthly = 0.010
+				social_development_monthly = 0.008
+				military_development_monthly = 0.002
+				production_speed_buildings_factor = -0.02
+				stability_factor = -0.03
+			}
+		}
+	}
+
+	# ============================================================
+	# 三、利率法
+	# ============================================================
+	bfy_interest_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 默认：高利贷盘剥
+		bfy_interest_usury = {
+			removal_cost = -1
+			cost = 150
+			level = 6
+			default = yes
+			picture = laws_farming_development
+			modifier = {
+				farming_development_monthly = -0.006
+				social_development_monthly = -0.002
+				production_speed_buildings_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+
+		# 高息民间借贷
+		bfy_interest_high = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			picture = laws_farming_development1
+			modifier = {
+				farming_development_monthly = -0.003
+				production_speed_buildings_factor = -0.08
+			}
+		}
+
+		# 钱业公会行规
+		bfy_interest_moderate = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			picture = laws_farming_development2
+			modifier = {
+				farming_development_monthly = 0.001
+				social_development_monthly = 0.001
+				production_speed_buildings_factor = -0.02
+			}
+		}
+
+		# 官办银行放贷
+		bfy_interest_low = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_farming_development3
+			modifier = {
+				farming_development_monthly = 0.003
+				social_development_monthly = 0.002
+				production_speed_buildings_factor = 0.04
+			}
+		}
+
+		# 政策性低息
+		bfy_interest_development = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_farming_development4
+			modifier = {
+				farming_development_monthly = 0.006
+				industrial_development_monthly = 0.003
+				production_speed_buildings_factor = 0.10
+				stability_factor = 0.03
+			}
+		}
+
+		# 无息配给信贷
+		bfy_interest_zero = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_farming_development5
+			modifier = {
+				farming_development_monthly = 0.008
+				industrial_development_monthly = 0.005
+				production_speed_buildings_factor = 0.15
+			}
+		}
+	}
+
+	# ============================================================
+	# 四、少数民族权利法
+	# ============================================================
+	bfy_minority_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 默认：民族压迫
+		bfy_minority_oppression = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			default = yes
+			picture = laws_education_development
+			modifier = {
+				social_development_monthly = -0.002
+				military_development_monthly = -0.001
+				non_core_manpower = -0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		# 强制同化
+		bfy_minority_assimilation = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			picture = laws_education_development1
+			modifier = {
+				social_development_monthly = -0.001
+				non_core_manpower = -0.02
+			}
+		}
+
+		# 五族共和
+		bfy_minority_recognition = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_education_development2
+			modifier = {
+				social_development_monthly = 0.003
+				non_core_manpower = 0.05
+			}
+		}
+
+		# 民族区域自治
+		bfy_minority_autonomy = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_education_development4
+			modifier = {
+				social_development_monthly = 0.006
+				non_core_manpower = 0.10
+				stability_factor = 0.05
+			}
+		}
+
+		# 各民族一律平等
+		bfy_minority_equality = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_education_development5
+			modifier = {
+				social_development_monthly = 0.010
+				military_development_monthly = 0.002
+				non_core_manpower = 0.15
+				political_power_factor = -0.05
+			}
+		}
+	}
+
+	# ============================================================
+	# 五、言论管控法
+	# ============================================================
+	bfy_speech_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 言论自由
+		bfy_speech_free = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			picture = laws_military_development5
+			modifier = {
+				social_development_monthly = 0.006
+				democratic_drift = 0.03
+				political_power_factor = -0.05
+				stability_factor = -0.03
+			}
+		}
+
+		# 默认：依法登记
+		bfy_speech_limited = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			default = yes
+			picture = laws_military_development4
+			modifier = {
+				social_development_monthly = 0.003
+			}
+		}
+
+		# 新闻检查
+		bfy_speech_censored = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_military_development2
+			modifier = {
+				social_development_monthly = 0.001
+				political_power_factor = 0.05
+			}
+		}
+
+		# 邮电检查
+		bfy_speech_monopoly = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_military_development1
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.03
+				social_development_monthly = -0.002
+			}
+		}
+
+		# 舆论统制
+		bfy_speech_total = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_military_development
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				social_development_monthly = -0.004
+				democratic_drift = -0.03
+			}
+		}
+	}
+
+	# ============================================================
+	# 六、禁烟禁毒法
+	# ============================================================
+	bfy_opium_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 严禁鸦片
+		bfy_opium_strict = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			picture = laws_medical_development5
+			modifier = {
+				social_development_monthly = 0.005
+				medical_development_monthly = 0.002
+				stability_factor = -0.03
+			}
+		}
+
+		# 默认：渐禁特许
+		bfy_opium_license = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			default = yes
+			picture = laws_medical_development4
+			modifier = {
+				social_development_monthly = 0.002
+				political_power_factor = 0.03
+			}
+		}
+
+		# 寓禁于征
+		bfy_opium_tax = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_medical_development2
+			modifier = {
+				political_power_factor = 0.08
+			}
+		}
+
+		# 官膏专卖
+		bfy_opium_monopoly = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_medical_development1
+			modifier = {
+				political_power_factor = 0.13
+				stability_factor = 0.02
+				social_development_monthly = -0.003
+			}
+		}
+
+		# 鸦片公卖
+		bfy_opium_open = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_medical_development
+			modifier = {
+				political_power_factor = 0.18
+				stability_factor = -0.05
+				social_development_monthly = -0.006
+				medical_development_monthly = -0.002
+			}
+		}
+	}
+
+	# ============================================================
+
+	# ============================================================
+	# 八、赋税制度
+	# ============================================================
+	bfy_tax_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 轻徭薄赋
+		bfy_tax_light = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			picture = laws_industry_development5
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# 默认：依率计征
+		bfy_tax_normal = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			default = yes
+			picture = laws_industry_development4
+			modifier = {
+				political_power_factor = 0.02
+			}
+		}
+
+		# 整顿税务
+		bfy_tax_reform = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_industry_development2
+			modifier = {
+				political_power_factor = 0.08
+				industrial_development_monthly = 0.002
+			}
+		}
+
+		# 加征苛捐
+		bfy_tax_surtax = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_industry_development1
+			modifier = {
+				political_power_factor = 0.13
+				stability_factor = -0.05
+			}
+		}
+
+		# 横征暴敛
+		bfy_tax_heavy = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_industry_development
+			modifier = {
+				political_power_factor = 0.20
+				stability_factor = -0.10
+				war_support_factor = 0.03
+				industrial_capacity_factory = -0.05
+			}
+		}
+	}
+
+	# ============================================================
+	# 九、地方权力分配
+	# ============================================================
+	bfy_local_power_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 联省自治
+		bfy_local_confederation = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			picture = laws_social_development5
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.12
+				production_speed_buildings_factor = 0.03
+			}
+		}
+
+		# 地方自治
+		bfy_local_selfgovernment = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			picture = laws_social_development4
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.02
+			}
+		}
+
+		# 默认：督导县区
+		bfy_local_supervise = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			default = yes
+			picture = laws_social_development2
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+
+		# 中央集权
+		bfy_local_centralization = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_social_development1
+			modifier = {
+				political_power_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				industrial_development_monthly = 0.002
+			}
+		}
+
+		# 政令统一
+		bfy_local_unification = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_social_development
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.08
+				social_development_monthly = 0.003
+			}
+		}
+	}
+
+	# ============================================================
+	# 十、警察治安法
+	# ============================================================
+	bfy_police_laws = {
+		law = yes
+		use_list_view = yes
+
+		# 默认：治安废弛
+		bfy_police_lax = {
+			removal_cost = -1
+			cost = 150
+			level = 5
+			default = yes
+			picture = laws_military_development
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		# 商团民团
+		bfy_police_militia = {
+			removal_cost = -1
+			cost = 150
+			level = 4
+			picture = laws_military_development1
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+
+		# 保甲制度
+		bfy_police_baojia = {
+			removal_cost = -1
+			cost = 150
+			level = 3
+			picture = laws_military_development2
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.04
+			}
+		}
+
+		# 新式警察
+		bfy_police_modern = {
+			removal_cost = -1
+			cost = 150
+			level = 2
+			picture = laws_military_development4
+			modifier = {
+				stability_factor = 0.08
+				social_development_monthly = 0.003
+			}
+		}
+
+		# 专业警政
+		bfy_police_professional = {
+			removal_cost = -1
+			cost = 150
+			level = 1
+			picture = laws_military_development5
+			modifier = {
+				stability_factor = 0.10
+				social_development_monthly = 0.005
+				political_power_factor = 0.03
+			}
+		}
+	}
+
+	# ============================================================
+
+	# ============================================================
+}

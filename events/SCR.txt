@@ -1,4 +1,4 @@
-﻿add_namespace = SCR
+add_namespace = SCR
 news_event = {
 	id = SCR.1
 	title = SCR.1.t

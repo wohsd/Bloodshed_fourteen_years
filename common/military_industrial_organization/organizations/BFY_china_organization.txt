@@ -17,7 +17,7 @@ BFY_mio_jinling_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 214 }
+		FROM = { controls_state = 214 }
 	}
 }
 
@@ -30,7 +30,7 @@ BFY_mio_gongxian_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 166 }
+		FROM = { controls_state = 166 }
 	}
 }
 
@@ -43,7 +43,7 @@ BFY_mio_canton_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 357 }
+		FROM = { controls_state = 357 }
 	}
 }
 
@@ -58,7 +58,7 @@ BFY_mio_hanyang_artillery_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 246 }
+		FROM = { controls_state = 246 }
 	}
 }
 
@@ -73,7 +73,7 @@ BFY_mio_sichuan_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 238 }
+		FROM = { controls_state = 238 }
 	}
 }
 
@@ -88,7 +88,7 @@ BFY_mio_foochow_navy_yard_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 319 }
+		FROM = { controls_state = 319 }
 	}
 }
 
@@ -103,7 +103,7 @@ BFY_mio_shaoguan_aircraft_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 332 }
+		FROM = { controls_state = 332 }
 	}
 }
 
@@ -116,7 +116,7 @@ BFY_mio_nanchang_aircraft_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 281 }
+		FROM = { controls_state = 281 }
 	}
 }
 
@@ -129,7 +129,7 @@ BFY_mio_kunming_aircraft_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 323 }
+		FROM = { controls_state = 323 }
 	}
 }
 
@@ -144,7 +144,7 @@ BFY_mio_tangshan_railway_works_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 79 }
+		FROM = { controls_state = 79 }
 	}
 }
 
@@ -159,7 +159,7 @@ BFY_mio_taiyuan_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 104 }
+		FROM = { controls_state = 104 }
 	}
 }
 
@@ -172,7 +172,7 @@ BFY_mio_jinan_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 119 }
+		FROM = { controls_state = 119 }
 	}
 }
 
@@ -187,7 +187,7 @@ BFY_mio_shenyang_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 50 }
+		FROM = { controls_state = 50 }
 	}
 }
 
@@ -200,7 +200,7 @@ BFY_mio_zhuzhou_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 300 }
+		FROM = { controls_state = 300 }
 	}
 }
 
@@ -215,7 +215,7 @@ BFY_mio_kunming_optical_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 323 }
+		FROM = { controls_state = 323 }
 	}
 }
 
@@ -228,7 +228,7 @@ BFY_mio_liuzhou_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 326 }
+		FROM = { controls_state = 326 }
 	}
 }
 
@@ -243,7 +243,7 @@ BFY_mio_jiangnan_navy_yard_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 228 }
+		FROM = { controls_state = 228 }
 	}
 }
 
@@ -256,7 +256,7 @@ BFY_mio_dagu_navy_yard_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 82 }
+		FROM = { controls_state = 82 }
 	}
 }
 
@@ -269,7 +269,7 @@ BFY_mio_dalian_dockyard_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 83 }
+		FROM = { controls_state = 83 }
 	}
 }
 
@@ -284,7 +284,7 @@ BFY_mio_china_motor_vehicle_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 300 }
+		FROM = { controls_state = 300 }
 	}
 }
 
@@ -299,7 +299,7 @@ BFY_mio_chengdu_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 229 }
+		FROM = { controls_state = 229 }
 	}
 }
 
@@ -312,7 +312,7 @@ BFY_mio_xian_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 170 }
+		FROM = { controls_state = 170 }
 	}
 }
 
@@ -325,7 +325,7 @@ BFY_mio_yunnan_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 323 }
+		FROM = { controls_state = 323 }
 	}
 }
 
@@ -340,7 +340,7 @@ BFY_mio_gansu_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 129 }
+		FROM = { controls_state = 129 }
 	}
 }
 
@@ -353,7 +353,7 @@ BFY_mio_tianjin_arsenal_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 82 }
+		FROM = { controls_state = 82 }
 	}
 }
 
@@ -368,6 +368,6 @@ BFY_mio_whampoa_dockyard_organization = {
 		BFY_is_chinese_faction = yes
 	}
 	available = {
-		owner = { controls_state = 357 }
+		FROM = { controls_state = 357 }
 	}
 }

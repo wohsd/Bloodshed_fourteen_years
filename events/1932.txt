@@ -1,4 +1,4 @@
-﻿
+
 add_namespace = CHI_1932
 add_namespace = JAP_1932
 add_namespace = ROA_1932

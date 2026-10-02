@@ -1,0 +1,7 @@
+# BFY 现代化进程 modifier 注册（供 modifier@ 读取）
+education_development_monthly
+farming_development_monthly
+social_development_monthly
+industrial_development_monthly
+military_development_monthly
+medical_development_monthly

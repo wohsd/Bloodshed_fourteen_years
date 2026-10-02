@@ -1,4 +1,4 @@
-﻿add_namespace = common
+add_namespace = common
 country_event = {
 	id = common.1
 	title = common.1.t

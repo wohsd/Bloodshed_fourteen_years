@@ -1,4 +1,4 @@
-﻿characters={
+characters={
 		ROC_LiZongRen={
 			name=ROC_LiZongRen
 			portraits={
@@ -13,7 +13,9 @@
 				expire="1965.1.1.1"
 				id=-1
 			}
-			corps_commander = {
+			field_marshal={	desc = ROC_LiZongRen_leader_desc
+
+				traits={ old_guard }
 				skill = 3
 				attack_skill = 3
 				defense_skill = 2
@@ -92,7 +94,7 @@
 					factor = 1.000
 				}
 			}
-			corps_commander={	desc = ROC_BaiChongXi_leader_desc
+			field_marshal={	desc = ROC_BaiChongXi_leader_desc
 
 				traits={ brilliant_strategist }
 				skill=4

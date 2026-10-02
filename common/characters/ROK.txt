@@ -1,4 +1,4 @@
-﻿characters={
+characters={
 	    ROK_MaHongKui={
 			name=ROK_MaHongKui
 			portraits={
@@ -13,7 +13,15 @@
 				expire="1965.1.1.1"
 				id=-1
 			}
-		}
+		
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 		#马鸿宾：马鸿逵堂弟，骁勇善战
 		ROK_MaHongBin={
 			name=ROK_MaHongBin
@@ -48,7 +56,7 @@
 					factor = 1.000
 				}
 			}
-			corps_commander={	desc = ROK_MaHongBin_leader_desc
+			field_marshal={	desc = ROK_MaHongBin_leader_desc
 
 				traits={ cavalry_officer }
 				skill=3

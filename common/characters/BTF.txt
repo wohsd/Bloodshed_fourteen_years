@@ -83,7 +83,7 @@ BTF_BietingFang={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = BTF_NingXiGu_leader_desc
+		field_marshal={	desc = BTF_NingXiGu_leader_desc
 
 			traits={ infantry_leader }
 			skill=1

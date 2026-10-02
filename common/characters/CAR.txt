@@ -1,4 +1,4 @@
-﻿characters={
+characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	CAR_FengYuXiang={
 		name=CAR_FengYuXiang
@@ -143,7 +143,7 @@
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = CAR_FangZhenWu_leader_desc
+		field_marshal={	desc = CAR_FangZhenWu_leader_desc
 
 			traits={ offensive_doctrine }
 			skill=2

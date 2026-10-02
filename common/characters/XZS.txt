@@ -13,7 +13,15 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}		
 		XZS_CaRong={
 		name=XZS_CaRong
 		portraits={
@@ -47,7 +55,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = XZS_CaRong_leader_desc
+		field_marshal={	desc = XZS_CaRong_leader_desc
 
 			traits={ organizer }
 			skill=2

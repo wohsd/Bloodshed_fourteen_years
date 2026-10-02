@@ -1,4 +1,4 @@
-﻿add_namespace = ROS
+add_namespace = ROS
 add_namespace = ROSHidden
 country_event = {
 	id = ROSHidden.0

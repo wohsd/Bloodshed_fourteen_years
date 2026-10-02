@@ -153,7 +153,7 @@ YUL_JingYueXiu={
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = YUL_ZuoShiYun_leader_desc
+		field_marshal={	desc = YUL_ZuoShiYun_leader_desc
 
 			traits={ infantry_leader }
 			skill=1

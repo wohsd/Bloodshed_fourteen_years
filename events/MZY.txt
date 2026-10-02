@@ -1,4 +1,4 @@
-﻿add_namespace = MZY
+add_namespace = MZY
 news_event = {
 	id = MZY.1
 	title = MZY.1.t

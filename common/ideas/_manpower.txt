@@ -16,6 +16,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
+				industrial_development_monthly = 0.004
+				farming_development_monthly = 0.003
+				education_development_monthly = 0.002
 			}
 			
 			cancel_if_invalid = no
@@ -44,6 +47,8 @@ ideas = {
 
 			modifier = {
 				conscription = 0.015
+				industrial_development_monthly = 0.002
+				farming_development_monthly = 0.002
 			}
 			
 			default = yes
@@ -66,6 +71,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.025
+				industrial_development_monthly = 0.001
 			}
 
 			ai_will_do = {
@@ -116,6 +122,7 @@ ideas = {
 				#industrial_capacity_factory = -0.1
 				#production_speed_buildings_factor = -0.1
 				training_time_factor = 0.1
+				industrial_development_monthly = -0.001
 			}
 			
 			cancel_if_invalid = no
@@ -166,6 +173,8 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
 				training_time_factor = 0.2
+				industrial_development_monthly = -0.003
+				military_development_monthly = 0.001
 			}
 			
 			cancel_if_invalid = no
@@ -221,6 +230,9 @@ ideas = {
 				production_speed_buildings_factor = -0.3
 				#XP from reinforcement penalty (small)
 				training_time_factor = 0.3
+				industrial_development_monthly = -0.005
+				farming_development_monthly = -0.002
+				military_development_monthly = 0.002
 			}
 			
 			cancel_if_invalid = no
@@ -274,6 +286,10 @@ ideas = {
 				industrial_capacity_dockyard = -0.4
 				production_speed_buildings_factor = -0.4
 				training_time_factor = 0.5
+				industrial_development_monthly = -0.008
+				farming_development_monthly = -0.004
+				education_development_monthly = -0.002
+				military_development_monthly = 0.003
 			}
 			
 			cancel_if_invalid = no

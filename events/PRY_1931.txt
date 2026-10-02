@@ -1,4 +1,4 @@
-﻿add_namespace = PRY_1931
+add_namespace = PRY_1931
 country_event = {
 	id = PRY_1931.1
 	title = PRY_1931.1.t

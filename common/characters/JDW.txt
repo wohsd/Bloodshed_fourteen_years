@@ -1,4 +1,4 @@
-﻿characters={
+characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
 	JDW_SongZheYuan={
 		name=JDW_SongZheYuan
@@ -63,7 +63,7 @@
 			id=-1
 		}
 		#担任陆军将军时的数据
-		corps_commander = {
+		field_marshal = {
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1

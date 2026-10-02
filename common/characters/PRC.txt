@@ -1,4 +1,4 @@
-﻿characters={
+characters={
 	PRC_XiangZhongFa={
 		name=PRC_XiangZhongFa
 		portraits={

@@ -1,4 +1,4 @@
-﻿capital = 633
+capital = 633
 set_oob = RDX_1933
 set_technology = {
 	BFY_irregular_infantry_tech = 1

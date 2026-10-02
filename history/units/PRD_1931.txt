@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "游击支队" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
 	division_names_group = JAP_CAV_01
 	regiments = {

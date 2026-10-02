@@ -3,12 +3,12 @@ ideas = {
 	# 现代化进程：六项现代化法案
 	# 阶段 stage 0~5 对应 lower/low/medium/high/higher/highest
 	# 定位：
-	#   教育 = 科研速度与人才（research_speed、将领起始等级）
-	#   农业 = 生产力与基础（消费品需求、人口、资源、补给消耗）
-	#   社会 = 组织与动员（稳定度、政治点数、战争支持度）
-	#   工业 = 建设与生产（建造速度、工厂产出、生产效率）
-	#   军事 = 军队质量（组织度、攻防、训练、陆军经验、顾问成本；高阶含空海军）
-	#   医疗 = 伤病与人口（经验损失、疾病率、人口增长）
+	#   教育 = 科研速度与人才（research_speed、将领起始等级）；有文化的工人加速生产效率成长
+#   农业 = 生产力与基础（消费品需求、人口、资源、补给消耗）；粮食安全影响稳定度
+#   社会 = 组织与动员（稳定度、政治点数、战争支持度）
+#   工业 = 建设与生产（建造速度、工厂产出、生产效率）；工业基础反哺科研
+#   军事 = 军队质量（组织度、攻防、训练、陆军经验、顾问成本；高阶含空海军）
+#   医疗 = 伤病与人口（经验损失、疾病率、人口增长）；人口体质影响适役人口系数
 	# ============================================================
 	education_development = {
 		law = yes
@@ -25,6 +25,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.08
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -45,6 +46,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.04
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -64,6 +66,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.02
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -82,6 +85,7 @@ ideas = {
 				}
 			}
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.02
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -101,6 +105,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = 0.07
+				production_factory_efficiency_gain_factor = 0.04
 				custom_modifier_tooltip = education_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -119,6 +124,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.08
 				army_leader_start_level = 1
 				navy_leader_start_level = 1
 				air_ace_generation_chance_factor = 0.15
@@ -147,6 +153,8 @@ ideas = {
 				monthly_population = -0.25
 				local_resources_factor = -0.30
 				supply_consumption_factor = 0.10
+				conscription_factor = -0.25
+				stability_factor = -0.08
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -170,6 +178,8 @@ ideas = {
 				monthly_population = -0.10
 				local_resources_factor = -0.15
 				supply_consumption_factor = 0.05
+				conscription_factor = -0.12
+				stability_factor = -0.04
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -188,6 +198,7 @@ ideas = {
 				}
 			}
 			modifier = {
+				conscription_factor = 0.00
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -209,6 +220,8 @@ ideas = {
 				monthly_population = 0.05
 				local_resources_factor = 0.08
 				supply_consumption_factor = -0.05
+				conscription_factor = 0.06
+				stability_factor = 0.03
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -231,6 +244,8 @@ ideas = {
 				monthly_population = 0.12
 				local_resources_factor = 0.15
 				supply_consumption_factor = -0.10
+				conscription_factor = 0.12
+				stability_factor = 0.05
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -252,6 +267,8 @@ ideas = {
 				monthly_population = 0.20
 				local_resources_factor = 0.25
 				supply_consumption_factor = -0.15
+				conscription_factor = 0.20
+				stability_factor = 0.08
 				custom_modifier_tooltip = farming_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -407,6 +424,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.15
 				line_change_production_efficiency_factor = -0.20
+				research_speed_factor = -0.08
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -434,6 +452,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.08
 				production_factory_efficiency_gain_factor = -0.08
 				line_change_production_efficiency_factor = -0.10
+				research_speed_factor = -0.04
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -460,6 +479,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.04
 				production_factory_efficiency_gain_factor = -0.04
 				line_change_production_efficiency_factor = -0.05
+				research_speed_factor = -0.02
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -478,6 +498,7 @@ ideas = {
 				}
 			}
 			modifier = {
+				research_speed_factor = 0.02
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -504,6 +525,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				line_change_production_efficiency_factor = 0.05
+				research_speed_factor = 0.04
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -529,6 +551,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
 				line_change_production_efficiency_factor = 0.10
+				research_speed_factor = 0.08
 				custom_modifier_tooltip = industrial_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -559,6 +582,7 @@ ideas = {
 				high_command_cost_factor = 0.50
 				air_chief_cost_factor = 0.50
 				navy_chief_cost_factor = 0.50
+				conscription_factor = -0.15
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -587,6 +611,7 @@ ideas = {
 				high_command_cost_factor = 0.25
 				air_chief_cost_factor = 0.25
 				navy_chief_cost_factor = 0.25
+				conscription_factor = -0.08
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -606,6 +631,7 @@ ideas = {
 			}
 			modifier = {
 				army_org_factor = -0.05
+				conscription_factor = 0.00
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -627,6 +653,7 @@ ideas = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				training_time_army_factor = -0.05
+				conscription_factor = 0.04
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -658,6 +685,7 @@ ideas = {
 				air_superiority_efficiency = 0.05
 				navy_capital_ship_attack_factor = 0.05
 				navy_capital_ship_defence_factor = 0.05
+				conscription_factor = 0.08
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -688,6 +716,7 @@ ideas = {
 				air_superiority_efficiency = 0.10
 				navy_capital_ship_attack_factor = 0.10
 				navy_capital_ship_defence_factor = 0.10
+				conscription_factor = 0.12
 				custom_modifier_tooltip = military_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -713,6 +742,7 @@ ideas = {
 				air_wing_xp_loss_when_killed_factor = 0.40
 				sickness_chance = 0.20
 				monthly_population = -0.25
+				conscription_factor = -0.10
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -736,6 +766,7 @@ ideas = {
 				air_wing_xp_loss_when_killed_factor = 0.25
 				sickness_chance = 0.10
 				monthly_population = -0.10
+				conscription_factor = -0.05
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -775,6 +806,7 @@ ideas = {
 			}
 			modifier = {
 				sickness_chance = -0.10
+				conscription_factor = 0.03
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -797,6 +829,7 @@ ideas = {
 				air_wing_xp_loss_when_killed_factor = -0.10
 				sickness_chance = -0.15
 				monthly_population = 0.08
+				conscription_factor = 0.06
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {
@@ -818,6 +851,7 @@ ideas = {
 				air_wing_xp_loss_when_killed_factor = -0.20
 				sickness_chance = -0.20
 				monthly_population = 0.15
+				conscription_factor = 0.10
 				custom_modifier_tooltip = medical_development_modifier_tooltip
 			}
 			allowed_to_remove = {

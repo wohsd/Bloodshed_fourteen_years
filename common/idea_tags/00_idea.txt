@@ -22,12 +22,26 @@ idea_categories = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
-		slot = industrial_concern
-		slot = industrial_concern
-		slot = industrial_concern
+		slot = bfy_female_laws
+		slot = bfy_worker_laws
+		slot = bfy_minority_laws
 
 		ledger = civilian
-		
+
+		cost = 150
+		removal_cost = 0
+	}
+
+	bfy_state_laws = {
+		slot = bfy_speech_laws
+		slot = bfy_opium_laws
+		slot = bfy_interest_laws
+		slot = bfy_tax_laws
+		slot = bfy_local_power_laws
+		slot = bfy_police_laws
+
+		ledger = civilian
+
 		cost = 150
 		removal_cost = 0
 	}
@@ -51,25 +65,25 @@ idea_categories = {
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
 		slot = materiel_manufacturer
-		character_slot = theorist
-		character_slot = theorist
+		slot = industrial_concern
+		slot = industrial_concern
 
 		ledger = civilian
-		
+
 		cost = 150
 		removal_cost = 0
 	}
-	
+
 	Army_Generals = {
-		character_slot = army_chief 
 		character_slot = army_chief
 		character_slot = navy_chief
-		character_slot = navy_chief
 		character_slot = air_chief
-		character_slot = air_chief
-		
+		character_slot = theorist
+		slot = bfy_military_academy
+		slot = bfy_foreign_advisor
+
 		ledger = invalid # must be overridden
-		
+
 		cost = 150
 		removal_cost = 0
 	}
@@ -160,7 +174,7 @@ idea_categories = {
 		politics_tab = no
 		
 		ledger = hidden
-		slot = navy_spirit
+		slot = naval_spirit
 	}
 
 	naval_command_spirit = {
@@ -221,10 +235,13 @@ slot_ledgers = {
 	tank_manufacturer = army
 	naval_manufacturer = navy
 	aircraft_manufacturer = air
-	
+	industrial_concern = civilian
+	bfy_military_academy = army
+	bfy_foreign_advisor = army
+
 	theorist = invalid # must be overridden
 	high_command = invalid # must be overridden
-	
-	
+
+
 	mobilization_laws = civilian
 }

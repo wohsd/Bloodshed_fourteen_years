@@ -14071,4 +14071,41 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	# ===== BFY：军校与外国顾问槽位标识trait =====
+	military_academy_trait = {
+		random = no
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	naval_academy_trait = {
+		random = no
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	air_academy_trait = {
+		random = no
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	foreign_advisor_trait = {
+		random = no
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

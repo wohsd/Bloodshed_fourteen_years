@@ -19,6 +19,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/tech/Mine_Warfare.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_BFY_cavalry_tech_medium"
+		texturefile = "gfx/interface/goals/goal_generic_cavalry.dds"
+		legacy_lazy_load = no
+	}
 
 	#template for new entries
 	#spriteType = {

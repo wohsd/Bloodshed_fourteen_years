@@ -1,4 +1,4 @@
-﻿add_namespace = ROC
+add_namespace = ROC
 country_event = {
 	id = ROC.1
 	title =  ROC.1.t

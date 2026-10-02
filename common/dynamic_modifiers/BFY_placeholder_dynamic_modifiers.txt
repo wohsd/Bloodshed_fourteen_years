@@ -1,4 +1,4 @@
-﻿# BFY占位动态修正
+# BFY占位动态修正
 # CHI_scripted_effects.txt 的经济/军事系统脚本大量 add/has/remove_dynamic_modifier
 # 以下修正，但修正本体从未定义。此处提供空壳定义（始终可用、无实际效果），
 # 让修正能被正常添加/移除/判定，消除报错并打通脚本逻辑链。

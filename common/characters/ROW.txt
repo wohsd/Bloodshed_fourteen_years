@@ -1,4 +1,4 @@
-﻿characters={
+characters={
     ROW_LiuWengHui={
 		name=ROW_LiuWengHui
 		portraits={
@@ -13,7 +13,15 @@
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	#冷寅东：刘文辉部将，善于谋划
 	ROW_LengYinDong={
 		name=ROW_LengYinDong
@@ -48,7 +56,7 @@
 				factor = 1.000
 			}
 		}
-		corps_commander={	desc = ROW_LengYinDong_leader_desc
+		field_marshal={	desc = ROW_LengYinDong_leader_desc
 
 			traits={ organizer }
 			skill=2

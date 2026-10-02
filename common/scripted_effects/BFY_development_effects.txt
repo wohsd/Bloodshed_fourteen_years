@@ -1,14 +1,16 @@
 # ============================================================
-# 现代化进程系统（结算、阶段进退、收益与事件提醒）
+# 现代化进程系统（烈焰升腾同款：法律通过 modifier@ 驱动每月进度）
 # ============================================================
 # 每种现代化使用变量：
-#   X_development_stage   当前阶段（0-5，对应 lower/low/medium/high/higher/highest 法案）
-#   X_development_var     当前阶段内的现代化进度（%），≥101% 晋阶归0，≤-1% 回退归100
-#   X_development_monthly 月度现代化进程（%），每月1号结算进 X_development_var
+#   X_development_stage       当前阶段（0-5，对应 lower/low/medium/high/higher/highest 法案）
+#   X_development_var         当前阶段内的现代化进度（%），≥101% 晋阶归0，≤-1% 回退归100
+#   X_development_monthly_total 月度现代化进程合计（%），每月1号结算进 X_development_var
 # 六种前缀：education / farming / social / industrial / military / medical
 #
 # 进度来源：
-#   1) 月度：持续国策“推动XX改革” + 民族精神/顾问加成（合计每月结算）
+#   1) 每月：各类国家法律（女性地位、工人权利、利率、少数民族权利等）经自定义
+#      modifier（X_development_monthly，见 common/modifier_definitions）贡献进度，
+#      民族精神/动态修正（如日本「明治维新的遗产」）同样直接携带这些 modifier
 #   2) 每日：海陆空经验每累计获得50点 → 军事+1%；政治点数每累计获得100点 → 社会+1%；
 #      工厂数量每净增/净减2座 → 工业+1%/-1%（每日结算）
 #   3) 每月：全国基础设施总等级每净增/净减4级 → 农业/教育/医疗 各+1%/-1%
@@ -22,79 +24,50 @@
 BFY_development_init = {
 	if = { limit = { NOT = { has_variable = education_development_stage } }   set_variable = { education_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = education_development_var } }     set_variable = { education_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = education_development_monthly } } set_variable = { education_development_monthly = 0 } }
+	if = { limit = { NOT = { has_variable = education_development_monthly_total } } set_variable = { education_development_monthly_total = 0 } }
 
 	if = { limit = { NOT = { has_variable = farming_development_stage } }   set_variable = { farming_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = farming_development_var } }     set_variable = { farming_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = farming_development_monthly } } set_variable = { farming_development_monthly = 0 } }
+	if = { limit = { NOT = { has_variable = farming_development_monthly_total } } set_variable = { farming_development_monthly_total = 0 } }
 
 	if = { limit = { NOT = { has_variable = social_development_stage } }   set_variable = { social_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = social_development_var } }     set_variable = { social_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = social_development_monthly } } set_variable = { social_development_monthly = 0 } }
+	if = { limit = { NOT = { has_variable = social_development_monthly_total } } set_variable = { social_development_monthly_total = 0 } }
 
 	if = { limit = { NOT = { has_variable = industrial_development_stage } }   set_variable = { industrial_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = industrial_development_var } }     set_variable = { industrial_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = industrial_development_monthly } } set_variable = { industrial_development_monthly = 0 } }
+	if = { limit = { NOT = { has_variable = industrial_development_monthly_total } } set_variable = { industrial_development_monthly_total = 0 } }
 
 	if = { limit = { NOT = { has_variable = military_development_stage } }   set_variable = { military_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = military_development_var } }     set_variable = { military_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = military_development_monthly } } set_variable = { military_development_monthly = 0 } }
+	if = { limit = { NOT = { has_variable = military_development_monthly_total } } set_variable = { military_development_monthly_total = 0 } }
 
 	if = { limit = { NOT = { has_variable = medical_development_stage } }   set_variable = { medical_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = medical_development_var } }     set_variable = { medical_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = medical_development_monthly } } set_variable = { medical_development_monthly = 0 } }
-
-	# 月度加成变量：民族精神/顾问等来源（BFY_development_recalc_monthly 每次绝对重算）
-	if = { limit = { NOT = { has_variable = education_development_bonus } }  set_variable = { education_development_bonus = 0 } }
-	if = { limit = { NOT = { has_variable = farming_development_bonus } }    set_variable = { farming_development_bonus = 0 } }
-	if = { limit = { NOT = { has_variable = social_development_bonus } }     set_variable = { social_development_bonus = 0 } }
-	if = { limit = { NOT = { has_variable = industrial_development_bonus } } set_variable = { industrial_development_bonus = 0 } }
-	if = { limit = { NOT = { has_variable = military_development_bonus } }   set_variable = { military_development_bonus = 0 } }
-	if = { limit = { NOT = { has_variable = medical_development_bonus } }    set_variable = { medical_development_bonus = 0 } }
-	# 月度合计变量：持续国策 + 加成（用于结算与法案介绍显示）
-	if = { limit = { NOT = { has_variable = education_development_monthly_total } }  set_variable = { education_development_monthly_total = 0 } }
-	if = { limit = { NOT = { has_variable = farming_development_monthly_total } }    set_variable = { farming_development_monthly_total = 0 } }
-	if = { limit = { NOT = { has_variable = social_development_monthly_total } }     set_variable = { social_development_monthly_total = 0 } }
-	if = { limit = { NOT = { has_variable = industrial_development_monthly_total } } set_variable = { industrial_development_monthly_total = 0 } }
-	if = { limit = { NOT = { has_variable = military_development_monthly_total } }   set_variable = { military_development_monthly_total = 0 } }
-	if = { limit = { NOT = { has_variable = medical_development_monthly_total } }    set_variable = { medical_development_monthly_total = 0 } }
+	if = { limit = { NOT = { has_variable = medical_development_monthly_total } } set_variable = { medical_development_monthly_total = 0 } }
 }
 
-# 重算月度进程：加成（民族精神/顾问等）→ 合计 = 持续国策 + 加成（幂等，绝对设定）
-# 调用时机：每月结算前、持续国策选择/取消后、民族精神增减后
+# 重算月度进程合计：读取国家法律/民族精神等携带的自定义 modifier（modifier@token）。
+# modifier 值为小数百分比（0.01=1%），×100 换算为本系统的百分点。
+# 调用时机：开局、每月结算前。
 BFY_development_recalc_monthly = {
-	# 加成清零，再按来源逐项设定
-	set_variable = { education_development_bonus = 0 }
-	set_variable = { farming_development_bonus = 0 }
-	set_variable = { social_development_bonus = 0 }
-	set_variable = { industrial_development_bonus = 0 }
-	set_variable = { military_development_bonus = 0 }
-	set_variable = { medical_development_bonus = 0 }
+	set_variable = { var = education_development_monthly_total value = modifier@education_development_monthly }
+	multiply_variable = { var = education_development_monthly_total value = 100 }
 
-	# 日本：「明治维新的遗产」六项各 +2/月
-	if = {
-		limit = { has_dynamic_modifier = { modifier = JAP_meiji_restoration_legacy } }
-		set_variable = { education_development_bonus = 2 }
-		set_variable = { farming_development_bonus = 2 }
-		set_variable = { social_development_bonus = 2 }
-		set_variable = { industrial_development_bonus = 2 }
-		set_variable = { military_development_bonus = 2 }
-		set_variable = { medical_development_bonus = 2 }
-	}
+	set_variable = { var = farming_development_monthly_total value = modifier@farming_development_monthly }
+	multiply_variable = { var = farming_development_monthly_total value = 100 }
 
-	# 合计 = 持续国策进程 + 加成
-	set_variable = { education_development_monthly_total = education_development_monthly }
-	add_to_variable = { education_development_monthly_total = education_development_bonus }
-	set_variable = { farming_development_monthly_total = farming_development_monthly }
-	add_to_variable = { farming_development_monthly_total = farming_development_bonus }
-	set_variable = { social_development_monthly_total = social_development_monthly }
-	add_to_variable = { social_development_monthly_total = social_development_bonus }
-	set_variable = { industrial_development_monthly_total = industrial_development_monthly }
-	add_to_variable = { industrial_development_monthly_total = industrial_development_bonus }
-	set_variable = { military_development_monthly_total = military_development_monthly }
-	add_to_variable = { military_development_monthly_total = military_development_bonus }
-	set_variable = { medical_development_monthly_total = medical_development_monthly }
-	add_to_variable = { medical_development_monthly_total = medical_development_bonus }
+	set_variable = { var = social_development_monthly_total value = modifier@social_development_monthly }
+	multiply_variable = { var = social_development_monthly_total value = 100 }
+
+	set_variable = { var = industrial_development_monthly_total value = modifier@industrial_development_monthly }
+	multiply_variable = { var = industrial_development_monthly_total value = 100 }
+
+	set_variable = { var = military_development_monthly_total value = modifier@military_development_monthly }
+	multiply_variable = { var = military_development_monthly_total value = 100 }
+
+	set_variable = { var = medical_development_monthly_total value = modifier@medical_development_monthly }
+	multiply_variable = { var = medical_development_monthly_total value = 100 }
 }
 
 # ---------- 全量同步六栏法案与阶段（自愈；add_ideas 同法案为无操作） ----------
@@ -477,8 +450,7 @@ BFY_development_stage_check_medical = {
 BFY_development_settle_education = {
 	if = { limit = { NOT = { has_variable = education_development_stage } }   set_variable = { education_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = education_development_var } }     set_variable = { education_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = education_development_monthly } } set_variable = { education_development_monthly = 0 } }
-	# 重算月度合计（持续国策 + 民族精神/顾问加成）
+	# 重算月度合计（国家法律/民族精神等自定义 modifier 合计）
 	BFY_development_recalc_monthly = yes
 	# 结算：月度合计 → 现代化进度，再作阶段进退判定
 	add_to_variable = { education_development_var = education_development_monthly_total }
@@ -489,8 +461,6 @@ BFY_development_settle_education = {
 BFY_development_settle_farming = {
 	if = { limit = { NOT = { has_variable = farming_development_stage } }   set_variable = { farming_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = farming_development_var } }     set_variable = { farming_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = farming_development_monthly } } set_variable = { farming_development_monthly = 0 } }
-	BFY_development_recalc_monthly = yes
 	add_to_variable = { farming_development_var = farming_development_monthly_total }
 	BFY_development_stage_check_farming = yes
 }
@@ -499,8 +469,6 @@ BFY_development_settle_farming = {
 BFY_development_settle_social = {
 	if = { limit = { NOT = { has_variable = social_development_stage } }   set_variable = { social_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = social_development_var } }     set_variable = { social_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = social_development_monthly } } set_variable = { social_development_monthly = 0 } }
-	BFY_development_recalc_monthly = yes
 	add_to_variable = { social_development_var = social_development_monthly_total }
 	BFY_development_stage_check_social = yes
 }
@@ -509,8 +477,6 @@ BFY_development_settle_social = {
 BFY_development_settle_industrial = {
 	if = { limit = { NOT = { has_variable = industrial_development_stage } }   set_variable = { industrial_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = industrial_development_var } }     set_variable = { industrial_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = industrial_development_monthly } } set_variable = { industrial_development_monthly = 0 } }
-	BFY_development_recalc_monthly = yes
 	add_to_variable = { industrial_development_var = industrial_development_monthly_total }
 	BFY_development_stage_check_industrial = yes
 }
@@ -519,8 +485,6 @@ BFY_development_settle_industrial = {
 BFY_development_settle_military = {
 	if = { limit = { NOT = { has_variable = military_development_stage } }   set_variable = { military_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = military_development_var } }     set_variable = { military_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = military_development_monthly } } set_variable = { military_development_monthly = 0 } }
-	BFY_development_recalc_monthly = yes
 	add_to_variable = { military_development_var = military_development_monthly_total }
 	BFY_development_stage_check_military = yes
 }
@@ -529,8 +493,6 @@ BFY_development_settle_military = {
 BFY_development_settle_medical = {
 	if = { limit = { NOT = { has_variable = medical_development_stage } }   set_variable = { medical_development_stage = 1 } }
 	if = { limit = { NOT = { has_variable = medical_development_var } }     set_variable = { medical_development_var = 0 } }
-	if = { limit = { NOT = { has_variable = medical_development_monthly } } set_variable = { medical_development_monthly = 0 } }
-	BFY_development_recalc_monthly = yes
 	add_to_variable = { medical_development_var = medical_development_monthly_total }
 	BFY_development_stage_check_medical = yes
 }

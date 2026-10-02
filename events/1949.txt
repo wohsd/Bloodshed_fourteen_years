@@ -1,4 +1,4 @@
-﻿
+
 add_namespace = NEW_china
 
 news_event = {

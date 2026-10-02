@@ -1,4 +1,4 @@
-﻿add_namespace = NSD_1936
+add_namespace = NSD_1936
 add_namespace = Hidden_NSD_1936
 country_event = {
 	id = Hidden_NSD_1936.1

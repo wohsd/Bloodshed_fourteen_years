@@ -1,4 +1,4 @@
-﻿add_namespace = WangJingWei_1938
+add_namespace = WangJingWei_1938
 add_namespace = WangJingWei_1938_hidden
 
 ###抗日

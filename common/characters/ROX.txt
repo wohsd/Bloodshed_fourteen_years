@@ -1,4 +1,4 @@
-﻿characters={
+characters={
     ROX_ShengShiCai={
 		name=ROX_ShengShiCai
 		portraits={
@@ -13,7 +13,15 @@
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}		
 	ROX_JingShuRen={
 		name=ROX_JingShuRen
 		portraits={
