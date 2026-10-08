@@ -9,6 +9,16 @@ state={
 		owner = ROD
 		buildings = {
 			infrastructure = 1
+			1262={
+				landmark_great_wall_section={
+					level = 1
+				}
+			}
+			1199={
+				landmark_great_wall_section={
+					level = 1
+				}
+			}
 		}
 		
 		victory_points = {

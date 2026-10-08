@@ -12,6 +12,12 @@ state={
 		owner = ROD
 		buildings = {
 			infrastructure = 1
+			dockyard = 0
+			1757={
+				landmark_great_wall_section={
+					level = 1
+				}
+			}
 		}
 		add_core_of = ROD
 		
