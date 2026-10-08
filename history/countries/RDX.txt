@@ -18,6 +18,10 @@ add_ideas={
 	#Sichuan_Army
 }
 recruit_character = RDX_DengXiHou
+recruit_character = RDX_ChenDingXun
+recruit_character = RDX_WangMingZhang
+recruit_character = RDX_HuangYin
+recruit_character = RDX_NiuXiGuang
 
 set_popularities = {
 	democratic = 0

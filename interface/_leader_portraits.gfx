@@ -8841,4 +8841,849 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_idea_yoshio_nishina"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hideo_itokawa"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROC_BaiChongXi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hino_kumazo"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRY_DengXiaoPing_H"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hitoshi_imamura"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROQ_MaYuanHai"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_ChenYun_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_BoGu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAR_FangZhenWu"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_LiDe_H"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_TanPingShan"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_SunKe_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JDW_QinDeChun"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YHC_DuBinCheng_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hajime_sugiyama"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ChenShaoKuang_N"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hideki_tojo"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_yoshitoshi_tokugawa"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SJN_FuZuoYi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_DaiLi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROC_LiRenRen_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MBQ_MaTingRang"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_RenBiShi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_PengZeMin"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_shigetaro_shimada"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_korechika_anami"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kanin_kotohito"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_SongZiWen_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_XuTingYao"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROS_TangShiZun"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROS_ZhangSiKe_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_KongXiangXi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_DongBiWu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_WeiLiHuang_HC"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROJ_ZhaoDaiWen_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MBQ_MaShaoWu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROJ_YangAiYuan"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_TangShengZhi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_HeYingQing"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_LiuZhi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_osami_nagano"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_BaiChongXi_H"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_shunroku_hata"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_ZhuDe_H"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_BaiChongXi_HC"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JAP_hiroshi_oshima"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_HuangQiXiang"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_GaoYuHan"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_GuoMoRuo"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JDW_XiaoZhenYing_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_KangZe_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ChenCe_N"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_ZhangBoJun"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROK_MaHongBin"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sanzo_nosaka"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRY_DengXiaoPing_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_ZhouEngLai_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_XueYue_H"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kenji_doihara"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MBQ_MaBuQing"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROK_MaDunJing"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YHC_SunWeiRu"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_XuTeLi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kingoro_hashimoto"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_LiJiSheng"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROK_MaFuShou_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nishizo_tsukahara"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_YHC_ZhaoShouShan"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ZhangZhiZhong_C"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_JiangJingGuo_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROY_YouGuoCai"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_Alexander_von_Falkenhausen_A"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_WangJiaXiang_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROW_ZhangZhiHe_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROW_XiangChuanYi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_minoru_genda"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hisaichi_terauchi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_BoGu_H"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROD_LiuShangQing_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_chuichi_nagumo"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_tateo_kato"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ZhangZhiZhong"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_YuJiShi_HC"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mitsuo_fuchida"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_KangSheng_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ChenLiFu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_TangEnBo"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_LiDe_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fushimi_hiroyasu"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JAP_chiune_sugihara"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_lingboqu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_PengDeHuai_H"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROQ_MaBiao"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROJ_FuZuoYi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROY_MiaoYunTai_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_isoroku_yamamoto"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_DengWenYi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROW_LengYinDong"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAR_JiHongchang"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JAP_mitsumasa_yonai"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_WuYuZhang_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_soemu_toyoda"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_XiongShiHui"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kijuro_shidehara"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ChenJiLiang_N"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROD_ZangShiYi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_XieJueZai_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROD_GaoJiYi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_matome_ugaki"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROS_PanWenHua"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_tomoyuki_yamashita"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_FangZhiMing_H"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_takuo_godo"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SJN_DongQiWu"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SJN_WangKeJun_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_RaoShuShi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_HuangFu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROY_BoHuiZhang"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RFC_GuoGuanJie"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_XueYue_HC"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JDW_ZhangZiZhong"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROC_HuangXuChu2"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_GuZhuTong"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ChenCheng"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_JiangDingWen"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROD_MoDeHui_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROY_LuHan"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROD_WangShuHan_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAR_XuanXiaFu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROQ_MaZhongHua_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_LingSeng_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_HeZhongHan_A"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_HuZongNan"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_JiangBaiLi"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ZhangQun_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_yasuji_okamura"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_ChenGuoFu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_torashiro_kawabe"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_LiuBoChen_H"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_LiuShaoQi_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_GuZuoLing_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROY_SunDu"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CHI_LuoZuoYing"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RON_LiJue"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RON_TaoGuang"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RON_CaoBoWen_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_LZN_HeBen"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HLJ_YuanChongGu"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_HLJ_WuSongLin"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JLS_FengZhanHai"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JLS_XingZhanQing"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SYS_MiWenHe"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROG_XiangHanPing"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROG_MiaoPeiNan"
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ROG_QuFangPu_P"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+	}
+
+        spriteType = {
+                name = "GFX_idea_RDX_ChenDingXun"
+                texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_RDX_NiuXiGuang_P"
+                texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_ROT_SunZhen"
+                texturefile = "gfx/interface/ideas/idea_asia_generic_warlord2.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_ROT_DongSongHeng"
+                texturefile = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_RYS_YangHanYu"
+                texturefile = "gfx/interface/ideas/idea_asia_generic_warlord1.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_RYS_XiaJiong"
+                texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_ROX_HeJiaNiYaZi_P"
+                texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_ROX_YaoZhiBang_P"
+                texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_MGJ_LiShouXin"
+                texturefile = "gfx/interface/ideas/idea_asia_generic_warlord1.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_JDF_ChiZongMo_P"
+                texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_1.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_LDC_LiangJun_P"
+                texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_2.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_XZS_CaRong"
+                texturefile = "gfx/interface/ideas/idea_asia_generic_warlord2.dds"
+        }
+
+        spriteType = {
+                name = "GFX_idea_XZS_LongXia_P"
+                texturefile = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
+        }
 }

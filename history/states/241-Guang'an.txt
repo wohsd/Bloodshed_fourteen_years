@@ -6,6 +6,9 @@ state={
 	}
 	history={
 		owner = ROT
+		victory_points = {
+			1038 5
+		}
 		buildings = {
 			infrastructure = 1
 		}
@@ -22,7 +25,7 @@ state={
 add_core_of = CHI
 		}
 	}
-	manpower=323000
+	manpower=2811800
 	state_category = town
 	local_supplies = 0.0
 }

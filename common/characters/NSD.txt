@@ -30,7 +30,15 @@ characters={
 			id=-1
 		}
 		
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	NSD_XuXianQiang={
 		name=NSD_XuXianQiang
 		#肖像选择（平民状态和军事状态）

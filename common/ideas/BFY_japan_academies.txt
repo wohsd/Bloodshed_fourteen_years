@@ -1,0 +1,192 @@
+############################################
+# BFY：日本军校系统（陆军/海军/空军学校）
+# 规则：
+#   1. 仅 JAP 可用
+#   2. 不依赖地块占领，启用后直接生效
+#   3. 效果按该校历史人才质量与部队实战表现定制：
+#      - 陆军：经验/攻防/组织度
+#      - 海军：经验/命中/夜战/舰载机效率
+#      - 空军：经验/敏捷/轰炸/空优
+############################################
+
+ideas = {
+	bfy_military_academy = {
+
+		# ===== 陆军 =====
+
+		# 陆军士官学校（东京）—— 日本陆军军官摇篮，
+		# 士官生素质高、战术素养好，但战略视野偏窄、崇尚进攻。
+		BFY_academy_japan_army = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = yes
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_army_factor = 0.06
+				army_attack_factor = 0.03
+				army_defence_factor = 0.01
+				army_org_regain = 0.01
+			}
+
+			traits = { military_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 陆军大学校（东京）—— 陆军最高学府，
+		# 培养参谋与高级指挥官，战略能力突出。
+		BFY_academy_japan_staff = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = yes
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_army_factor = 0.04
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				planning_speed = 0.02
+			}
+
+			traits = { military_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 海军 =====
+
+		# 海军兵学校（广岛江田岛）—— 日本海军军官摇篮，
+		# 训练严苛、航海与炮术精湛，夜战能力突出。
+		BFY_academy_japan_navy = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = yes
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_navy_factor = 0.06
+				naval_damage_factor = 0.02
+				naval_night_attack = 0.03
+			}
+
+			traits = { naval_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 海军大学校（东京）—— 海军最高学府，
+		# 培养舰队参谋与航空兵人才，舰载机运用能力强。
+		BFY_academy_japan_navy_staff = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = yes
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_navy_factor = 0.04
+				naval_damage_factor = 0.01
+				sortie_efficiency = 0.02
+			}
+
+			traits = { naval_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 空军 =====
+
+		# 陆军航空士官学校（岐阜）—— 陆军航空兵摇篮，
+		# 飞行员素质较高，但装备与战术更新滞后。
+		BFY_academy_japan_air = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = yes
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_air_factor = 0.05
+				ground_attack_factor = 0.02
+				air_mission_efficiency = 0.02
+			}
+
+			traits = { air_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 航空兵学校（东京/滨松）—— 空军最高学府，
+		# 培养航空参谋与高级飞行员，空优与轰炸并重。
+		BFY_academy_japan_air_staff = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = yes
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_air_factor = 0.04
+				ground_attack_factor = 0.01
+				air_mission_efficiency = 0.01
+				air_superiority = 0.02
+			}
+
+			traits = { air_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}

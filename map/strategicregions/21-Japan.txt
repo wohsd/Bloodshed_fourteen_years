@@ -13,10 +13,10 @@ strategic_region={
 			no_phenomenon=0.500
 			rain_light=0.460
 			rain_heavy=0.040
-			snow=0.100
-			blizzard=0.000
+			snow=0.200
+			blizzard=0.020
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -30,7 +30,7 @@ strategic_region={
 			snow=0.060
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -44,7 +44,7 @@ strategic_region={
 			snow=0.020
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -58,7 +58,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -72,7 +72,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -86,7 +86,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -100,7 +100,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -114,7 +114,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -128,7 +128,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -142,7 +142,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -156,7 +156,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -167,10 +167,10 @@ strategic_region={
 			no_phenomenon=0.600
 			rain_light=0.460
 			rain_heavy=0.040
-			snow=0.100
-			blizzard=0.000
+			snow=0.150
+			blizzard=0.010
 			arctic_water=0.000
-			mud=0.350
+			mud=0.000
 			sandstorm=0.000
 			min_snow_level=0.000
 		}

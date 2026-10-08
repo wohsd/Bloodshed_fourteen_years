@@ -1,4 +1,4 @@
-﻿add_namespace = game_start
+add_namespace = game_start
 add_namespace = PRC_1931
 add_namespace = PRC_1931Hidden
 add_namespace = ROC_1931

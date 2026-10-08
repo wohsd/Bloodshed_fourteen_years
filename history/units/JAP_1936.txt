@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "华北方面军" 
 	is_locked = yes
 	regiments = {

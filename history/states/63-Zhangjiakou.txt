@@ -19,13 +19,10 @@ state={
 			owner = JAP
 		}
 		victory_points ={
-			2482 5
-		}
-		victory_points ={
 			544 5
 		}
 	}
-	manpower=323000
+	manpower=2594400
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

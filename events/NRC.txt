@@ -1,4 +1,4 @@
-﻿add_namespace = NRC
+add_namespace = NRC
 news_event = {
 	id = NRC.1
 	title = NRC.1.t

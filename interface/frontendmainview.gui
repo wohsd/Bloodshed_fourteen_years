@@ -211,7 +211,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sp_back_button"
 			position = { x = 70 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"	
+			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "BACK"
 			buttonFont = "hoi_24header"
 			clicksound = click_close
@@ -238,9 +238,9 @@ guiTypes = {
 			name = "single_player_button"
 			position = { x = 70 y = 100 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_SINGLE_PLAYER"				
-			clicksound = click_default			
+			font = "hoi_24header"
+			text = "FE_SINGLE_PLAYER"
+			clicksound = click_default
 			oversound = ui_menu_over
 		}
 

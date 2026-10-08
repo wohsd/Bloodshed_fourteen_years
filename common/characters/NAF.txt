@@ -25,7 +25,7 @@ NAF_ZhaoShanZhi={
 		field_marshal={	desc = NAF_ZhaoShanZhi_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ guerilla_fighter }
 			#等级
 			skill=4
 			#攻击等级
@@ -34,7 +34,7 @@ NAF_ZhaoShanZhi={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1

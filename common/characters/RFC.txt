@@ -15,7 +15,7 @@ characters={
 		expire="1965.1.1.1"
 		id=-1
 	}
-		corps_commander = {
+		field_marshal = {
 			desc = RFC_DengYanDa_leader_desc
 			traits={
 				Leftist_Kuomintang
@@ -73,7 +73,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits={
 				Leftist_Kuomintang
 			}

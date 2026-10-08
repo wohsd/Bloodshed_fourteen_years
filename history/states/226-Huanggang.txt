@@ -21,7 +21,7 @@ state={
 		}
 		
 	}
-	manpower=723000
+	manpower=1356100
 	state_category = town
 	local_supplies = 0.0
 }

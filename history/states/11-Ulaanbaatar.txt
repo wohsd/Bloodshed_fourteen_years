@@ -6,12 +6,15 @@ state={
 	}
 	history={
 		owner = MEG
+		victory_points = {
+			4950 5
+		}
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = MEG
 	}
-	manpower=323000
+	manpower=100000
 	state_category = town
 	local_supplies = 0.0
 }

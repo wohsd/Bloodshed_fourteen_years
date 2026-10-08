@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = ROG
+		victory_points = {
+			3314 3
+		}
 		buildings = {
 			infrastructure = 1
 
@@ -23,7 +26,7 @@ state={
 	provinces={
 		3314 4227 
 	}
-	manpower=323000
+	manpower=984800
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

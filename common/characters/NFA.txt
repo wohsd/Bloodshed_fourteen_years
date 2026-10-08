@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = NFA_YeTing_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ infantry_officer }
 			#等级
 			skill=2
 			#攻击等级

@@ -13,6 +13,9 @@ interwar_antitank = 1
 
 recruit_character = ROZ_MaHongBing
 recruit_character = ROZ_MaHongKui
+recruit_character = ROZ_MaDunJing
+recruit_character = ROZ_YeChengZhang
+recruit_character = ROZ_MaFuShou
 set_popularities = {
 	democratic = 0
 	communism = 0

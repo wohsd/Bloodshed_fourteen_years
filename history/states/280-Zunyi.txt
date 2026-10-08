@@ -13,19 +13,7 @@ state={
 			dockyard = 0
 		}
 		victory_points = {
-			3938 20 
-		}
-		victory_points = {
 			2433 5 
-		}
-		victory_points = {
-			1364 5 
-		}
-		victory_points = {
-			900 5 
-		}
-		victory_points = {
-			634 5 
 		}
 		add_core_of = ROH
 		
@@ -42,7 +30,7 @@ add_core_of = CHI
 	provinces={
 		1187 2136 2433 
 	}
-	manpower=323000
+	manpower=1180300
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

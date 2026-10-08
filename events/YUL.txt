@@ -1,4 +1,4 @@
-﻿add_namespace = YUL_1936
+add_namespace = YUL_1936
 country_event = {
 	id = YUL_1936.1
 	title = YUL_1936.1.t

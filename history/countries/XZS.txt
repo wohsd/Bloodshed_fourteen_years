@@ -32,6 +32,9 @@ interwar_antitank = 1
 }
 
 recruit_character = XZS_TuDengJiaChuo
+recruit_character = XZS_CaRong
+recruit_character = XZS_LongXia
+recruit_character = XZS_KaiMo
 set_popularities = {
 	democratic = 0
 	communism = 0

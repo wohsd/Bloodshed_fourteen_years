@@ -1,4 +1,4 @@
-﻿add_namespace = RTS_1944
+add_namespace = RTS_1944
 
 
 ###抗日 

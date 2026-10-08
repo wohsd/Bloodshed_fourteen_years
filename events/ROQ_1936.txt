@@ -1,4 +1,4 @@
-﻿add_namespace = ROQ_1936
+add_namespace = ROQ_1936
 country_event = {
 	id = ROQ_1936.1
 	title = ROQ_1936.1.t

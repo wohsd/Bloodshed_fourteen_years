@@ -43,7 +43,7 @@ YUL_JingYueXiu={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
@@ -75,20 +75,92 @@ YUL_JingYueXiu={
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
 		}
-		field_marshal={	desc = YUL_GaoShuangCheng_leader_desc
+		#陆军部长（高双成：榆林守将，稳守北线）
+	advisor={	desc = YUL_GaoShuangCheng_leader_desc
 
-			#特质（如堑壕大师）
-			traits={ }
-			#等级
-			skill=4
-			#攻击等级
-			attack_skill=2
-			#防御等级
-			defense_skill=2
-			#计划等级
+		slot = army_chief
+		idea_token = YUL_GaoShuangCheng
+		allowed = {
+			original_tag = YUL
+		}
+		available = {
+			YUL_GaoShuangCheng = {
+				is_hired_as_advisor = no
+				is_country_leader = no
+			}
+			NOT = {
+				has_advisor = {
+					character = YUL_GaoShuangCheng
+				}
+			}
+		}
+		traits = {
+			army_chief_defensive_1
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1.000
+		}
+	}
+	field_marshal={	desc = YUL_GaoShuangCheng_leader_desc
+
+		#特质（如堑壕大师）
+		traits={ }
+		#等级
+		skill=4
+		#攻击等级
+		attack_skill=2
+		#防御等级
+		defense_skill=2
+		#计划等级
+		planning_skill=1
+		logistics_skill=2
+		legacy_id=-1
+	}
+	}
+	YUL_ZuoShiYun={
+		name=YUL_ZuoShiYun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		#总司令（左世允：八十六师宿将，统带步兵）
+		advisor={	desc = YUL_ZuoShiYun_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = YUL_ZuoShiYun
+			allowed = {
+				original_tag = YUL
+			}
+			available = {
+				YUL_ZuoShiYun = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = YUL_ZuoShiYun
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={	desc = YUL_ZuoShiYun_leader_desc
+
+			traits={ infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
 			planning_skill=1
-			logistics_skill=2
-			legacy_id=-1
+			logistics_skill=1
 		}
 	}
 }

@@ -11,13 +11,16 @@ state={
 	}
 	history={
 		owner = ROX
+		victory_points = {
+			4953 10
+		}
 		buildings = {
 			infrastructure = 1
 		}
 		
 		add_core_of = ROX
 	}
-	manpower=323000
+	manpower=120000
 	state_category = town
 	local_supplies = 0.0
 }

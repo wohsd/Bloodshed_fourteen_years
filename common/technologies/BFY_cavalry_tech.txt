@@ -1,0 +1,25 @@
+# BFY：骑兵部队科技
+# 骑兵改为特种部队：须研发解锁，与其他特种部队同列（1936年列）
+# 注意：科技树显示依赖 GUI 中同名网格盒 BFY_cavalry_tech_tree
+# （已在 interface/countrytechtreeview.gui 的 infantry_folder 中注册）
+technologies = {
+	BFY_cavalry_tech = {
+		allow = { always = yes }
+		enable_subunits = {
+			cavalry
+		}
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 2 }
+		}
+		categories = {
+			cat_special_forces_generic
+			infantry_tech
+		}
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+}

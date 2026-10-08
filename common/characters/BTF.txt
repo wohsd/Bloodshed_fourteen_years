@@ -43,10 +43,123 @@ BTF_BietingFang={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	BTF_NingXiGu={
+		name=BTF_NingXiGu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		#陆军部长（宁洗古：宛西自治干将，编练民团）
+		advisor={	desc = BTF_NingXiGu_leader_desc
+
+			slot = army_chief
+			idea_token = BTF_NingXiGu
+			allowed = {
+				original_tag = BTF
+			}
+			available = {
+				BTF_NingXiGu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = BTF_NingXiGu
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={	desc = BTF_NingXiGu_leader_desc
+
+			traits={ infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#彭锡田（字禹廷）：宛西自治首倡者，兴办教育与民团
+	BTF_PengXiTian={
+		name=BTF_PengXiTian
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_2.dds"
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		#政治顾问（彭禹廷：地方自治，兴学安民）
+		advisor={	desc = BTF_PengXiTian_leader_desc
+
+			slot = political_advisor
+			idea_token = BTF_PengXiTian_P
+			allowed = {
+				original_tag = BTF
+			}
+			available = {
+				BTF_PengXiTian_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				political_reformer_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#陈重华：内乡民团首领，别廷芳部将
+	BTF_ChenZhongHua={
+		name=BTF_ChenZhongHua
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		#总司令（陈重华：统带民团步队）
+		advisor={	desc = BTF_ChenZhongHua_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = BTF_ChenZhongHua
+			allowed = {
+				original_tag = BTF
+			}
+			available = {
+				BTF_ChenZhongHua = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = BTF_ChenZhongHua
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

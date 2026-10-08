@@ -43,10 +43,113 @@ LDC_LuDaChang={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	LDC_LiangJun={
+		name=LDC_LiangJun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_2.dds"
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={	desc = LDC_LiangJun_leader_desc
+
+			slot = political_advisor
+			idea_token = LDC_LiangJun_P
+			allowed = {
+				original_tag = LDC
+			}
+			available = {
+				LDC_LiangJun_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#梁应奎：新编第十四师旅长，鲁大昌麾下主将，善守
+	LDC_LiangYingKui={
+		name=LDC_LiangYingKui
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		#陆军部长（梁应奎：扼守要隘，沉稳持重）
+		advisor={	desc = LDC_LiangYingKui_leader_desc
+
+			slot = army_chief
+			idea_token = LDC_LiangYingKui
+			allowed = {
+				original_tag = LDC
+			}
+			available = {
+				LDC_LiangYingKui = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = LDC_LiangYingKui
+					}
+				}
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#蒋汉城（字云台）：鲁大昌部将，后以善战闻名
+	LDC_JiangHanCheng={
+		name=LDC_JiangHanCheng
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		#总司令（蒋汉城：陇上将领，统带步兵）
+		advisor={	desc = LDC_JiangHanCheng_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = LDC_JiangHanCheng
+			allowed = {
+				original_tag = LDC
+			}
+			available = {
+				LDC_JiangHanCheng = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = LDC_JiangHanCheng
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿add_namespace = KanRi_1937
+add_namespace = KanRi_1937
 add_namespace = CHI_1937
 add_namespace = CHI_1937_hidden
 add_namespace = Fall_City

@@ -6,6 +6,9 @@ state={
 	}
 	history={
 		owner = XZS
+		victory_points = {
+			2195 5
+		}
 		buildings = {
 			infrastructure = 1
 		}
@@ -15,7 +18,7 @@ state={
 			1308 1
 		}
 	}
-	manpower=323000
+	manpower=334300
 	state_category = town
 	local_supplies = 0.0
 }

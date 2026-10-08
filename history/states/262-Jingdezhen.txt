@@ -6,6 +6,9 @@ state={
 	}
 	history={
 		owner = PRH
+		victory_points = {
+			3873 10
+		}
 		add_core_of = PRH
 		add_core_of = RFC
 		1933.1.1={
@@ -22,7 +25,7 @@ add_core_of = CHI
 			owner = JAP
 		}
 	}
-	manpower=323000
+	manpower=1240800
 	state_category = town
 	local_supplies = 0.0
 }

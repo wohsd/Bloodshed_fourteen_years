@@ -9,6 +9,9 @@ state={
 	}
 	history={
 		owner = ROG
+		victory_points = {
+			1598 5
+		}
 		buildings = {
 			infrastructure = 1
 			4065={
@@ -22,11 +25,8 @@ state={
 			owner = CHI
 add_core_of = CHI
 		}
-		victory_points = {
-			4092 10
-		}
 	}
-	manpower=330000
+	manpower=365900
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

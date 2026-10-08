@@ -1,175 +1,113 @@
 ﻿l_simp_chinese:
 
- # ===== 工业企业 =====
-
  BFY_io_nrc:0 "资源委员会"
- BFY_io_nrc_desc:0 "1935年成立于南京的国民政府直属重工业统制机构，负责全国矿产勘探、工矿建设与战略资源管制，是抗战前中国工业化的核心推手。控制南京后可雇佣。"
-
  BFY_io_hanyehping:0 "汉冶萍煤铁厂矿有限公司"
- BFY_io_hanyehping_desc:0 "统合汉阳铁厂、大冶铁矿与萍乡煤矿的中国第一代钢铁联合企业，所产生铁长期支撑国内兵工与铁路建设。控制武汉后可雇佣。"
-
  BFY_io_kailuan:0 "开滦矿务总局"
- BFY_io_kailuan_desc:0 "中英合办于唐山的开滦煤矿是当时中国产量最大、机械化程度最高的煤矿，北宁铁路与北方工业的能源命脉。控制唐山后可雇佣。"
-
  BFY_io_fushun:0 "抚顺炭矿"
- BFY_io_fushun_desc:0 "东北南部的抚顺煤矿拥有东亚首屈一指的露天采炭场，煤炭供应南满铁路、奉天兵工厂与大连港。控制奉天后可雇佣。"
-
  BFY_io_yongli:0 "永利化学工业公司"
- BFY_io_yongli_desc:0 "范旭东在塘沽创办的久大精盐与永利碱厂，打破了外国公司对纯碱市场的垄断，是中国近代化学工业的代表。控制天津后可雇佣。"
-
- BFY_io_yumen:0 "玉门油矿"
- BFY_io_yumen_desc:0 "位于河西走廊的玉门老君庙油矿是抗战时期中国唯一规模开采的石油基地，支撑着大后方的油料供给。控制酒泉/玉门后可雇佣。"
-
  BFY_io_yangtze_power:0 "扬子电气股份有限公司"
- BFY_io_yangtze_power_desc:0 "建设委员会属下经营首都电厂等公用事业的电气公司，为南京及周边兵工企业提供电力与电气技术支持。控制南京后可雇佣。"
-
  BFY_io_minsheng:0 "民生实业公司"
- BFY_io_minsheng_desc:0 "卢作孚创办的民生公司以轮船航运为业，抗战中指挥宜昌大撤退，将大量人员、设备与军工物资抢运入川。控制重庆后可雇佣。"
-
  BFY_io_construction_bank:0 "中国建设银公司"
- BFY_io_construction_bank_desc:0 "由中国银行、交通银行等共同发起的国家资本银团，为铁路、工矿与公用事业建设募集和融通资金。控制上海后可雇佣。"
-
+ BFY_io_xibei_shiye:0 "西北实业公司"
+ BFY_io_benxihu:0 "本溪湖煤铁有限公司"
+ BFY_io_dahua_textile:0 "大华纺织厂"
+ BFY_io_yuhua_textile:0 "裕华纺织公司"
+ BFY_io_guizhou_enterprise:0 "贵州企业公司"
+ BFY_io_central_machine:0 "中央机器制造厂"
+ BFY_io_qixin_cement:0 "启新洋灰公司"
+ BFY_io_jiangnan_cement:0 "江南水泥公司"
+ BFY_io_jiuda_salt:0 "久大精盐公司"
+ BFY_io_tianyuan_chemical:0 "天原电化厂"
+ BFY_io_hunan_machinery:0 "湖南机械厂"
+ BFY_io_central_electric:0 "中央电工厂"
+ BFY_io_yunnan_tin:0 "云南锡业公司"
+ BFY_io_gansu_machinery:0 "甘肃机器厂"
+ BFY_io_yumen:0 "玉门油矿"
  BFY_io_china_bridge:0 "中国桥梁公司"
- BFY_io_china_bridge_desc:0 "以茅以升主持的钱塘江大桥工程为代表的中国桥梁工程力量，掌握着大型钢梁与铁路桥涵的设计施工能力。控制杭州后可雇佣。"
+ BFY_io_xiangtan_steel:0 "中央钢铁厂"
+ BFY_io_shenxin_textile:0 "申新纺织公司"
+ BFY_io_huaxin_textile:0 "华新纺织公司"
+ BFY_io_yongxing_shiye:0 "雍兴实业公司"
 
- # ===== 军用企业 =====
+ BFY_io_yumen_desc:0 "位于河西走廊老君庙的玉门油矿于1939年钻获工业油流，随后陆续建成钻井、炼油与储运配套设施，所产汽油、柴油和煤油经兰新公路东运，是战时中国唯一规模开采的石油基地。控制酒泉/玉门后可雇佣。"
+ BFY_io_china_bridge_desc:0 "中国桥梁公司集中了以茅以升为代表的第一代中国桥梁工程师，1937年主持建成钱塘江大桥，这是第一座由中国人自行设计并主持施工的现代化公路铁路两用钢桥，公司由此掌握了大型钢梁制造与深水桥墩施工的成套技术。控制杭州后可雇佣。"
+ BFY_io_xiangtan_steel_desc:0 "资源委员会借助德国克虏伯等厂家的技术援助，在湘潭规划建设中央钢铁厂，设计年产钢十万吨，厂址平整、设备陆续运抵，却因战事全面扩大而中断建设。控制湘潭后可雇佣。"
+ BFY_io_shenxin_textile_desc:0 "荣宗敬、荣德生兄弟创办的申新纺织系统在上海、无锡、汉口等地拥有九家纱厂，纱锭总数居全国之冠。尽管债务负担不轻，其产量、设备与管理水平仍稳居民营棉纺织业首位。控制无锡后可雇佣。"
+ BFY_io_huaxin_textile_desc:0 "周学熙创办的华新纺织系统在天津、青岛、唐山、卫辉分设四厂，其中青岛工厂规模最大、经营稳健，所产棉纱棉布行销华北，是北方棉纺织业的重镇。控制青岛后可雇佣。"
+ BFY_io_yongxing_shiye_desc:0 "雍兴实业公司由中国银行在宝鸡投资设立，下辖纱厂、面粉厂、机器厂与煤矿十余家企业，沿陇海铁路西段多业并举，是战时西北规模最大的国家资本工业集团之一。控制宝鸡后可雇佣。"
+
+ BFY_io_nrc_desc:0 "1935年在南京设立的国家级工业主管机构，负责全国矿产、冶金、电气、机械与化工事业的调查规划，以参股和贷款方式兴办厂矿，并从欧美引进成套设备与专利技术，是中国重工业建设的总枢。控制南京后可雇佣。"
+ BFY_io_hanyehping_desc:0 "1908年由汉阳铁厂、大冶铁矿与萍乡煤矿合并组成，曾是亚洲规模最大的煤铁钢联合企业，所产钢轨供应京汉、粤汉等多条铁路干线。后因债务沉重、设备老化而盛期不再，但仍是国内最重要的钢铁产业遗产。控制武汉后可雇佣。"
+ BFY_io_kailuan_desc:0 "中英合营的开滦矿务总局统管开平与滦州两大矿区，机械化采煤与洗选程度全国领先，所产优质煤炭供应铁路机车、沿海轮船与南北工厂，长年保持丰厚盈利，是华北能源命脉。控制唐山后可雇佣。"
+ BFY_io_fushun_desc:0 "抚顺炭矿拥有东亚罕见的大型露天采坑，矿区自备发电厂、炼油厂与机械修造厂，煤炭沿南满铁路远销各地。其储量、产量与设备齐整程度均居东亚煤矿前列。控制奉天后可雇佣。"
+ BFY_io_yongli_desc:0 "范旭东1917年在塘沽创办永利制碱公司，由侯德榜主持技术攻关，纯碱品质跻身世界一流，打破了外商对中国碱业市场的长期垄断；附设的黄海化学工业研究社更是国内首屈一指的民办化工研究机构。控制天津后可雇佣。"
+ BFY_io_yangtze_power_desc:0 "扬子电气股份有限公司经营首都电厂等公用事业，下辖新式发电机组与输配电网络，为南京的机关、工厂和民用照明提供稳定电力，设备多购自欧美名厂，管理亦较规范。控制南京后可雇佣。"
+ BFY_io_minsheng_desc:0 "卢作孚1925年创办的民生公司以轮船航运起家，十余年间整合川江航业，船队往来于长江全线。1938年秋宜昌危急之际，公司调集全部运力，将沿江堆积的大量厂矿设备、学校人员与军需物资抢运入川。控制重庆后可雇佣。"
+ BFY_io_construction_bank_desc:0 "1934年由中国银行、交通银行等联合发起的中国建设银公司，是国内第一家以投资工矿交通事业为宗旨的银团，通过募集和融通资金，参股铁路、煤矿、电厂与制造厂等一批重点建设项目。控制上海后可雇佣。"
+ BFY_io_xibei_shiye_desc:0 "阎锡山在山西主持的西北实业公司下辖煤矿、铁矿、炼钢厂、机器厂、纺织厂与卷烟厂等数十家企业，形成自成体系的地方工业集团，厂矿数量与资产规模在关内各省中首屈一指。控制太原后可雇佣。"
+ BFY_io_benxihu_desc:0 "本溪湖煤铁有限公司依托本地优质焦煤与庙儿沟铁矿，建有新式高炉与炼焦设备，所产生铁质地优良，除供应东北各大工厂外还远销海外，是东北南部重要的炼铁基地。控制本溪后可雇佣。"
+ BFY_io_dahua_textile_desc:0 "石凤翔等人1936年在西安创办的大华纱厂，引进全套英美纺机，是西北第一家现代化机器棉纺织厂，所产棉纱、棉布除供应西北民用市场外，还承担大量军布加工。控制西安后可雇佣。"
+ BFY_io_yuhua_textile_desc:0 "裕华纺织公司原设武汉，沿海局势紧张后将全部设备拆运入川，在成都重建复工，并陆续在重庆、西安等地分设纱厂，与内迁同业共同支撑起大后方的纱布供应。控制成都后可雇佣。"
+ BFY_io_guizhou_enterprise_desc:0 "贵州企业公司由地方政府与多家银行共同出资，在贵阳经营机械、矿冶、化工、纺织与运输各业，使原本工业基础薄弱的贵州初步形成了门类较多的地方工业体系。控制贵阳后可雇佣。"
+ BFY_io_central_machine_desc:0 "资源委员会1939年在昆明兴办的中央机器制造厂，引进瑞士等国机床与图纸，制造机床、锅炉、汽轮机零件与精密工具，部分产品填补国内空白，是大后方机器工业的技术标杆。控制昆明后可雇佣。"
+ BFY_io_qixin_cement_desc:0 "周学熙1906年接办恢复的启新洋灰公司是中国第一家机械化水泥厂，马牌水泥质量稳定，广泛用于铁路、港口、桥梁与厂房工程，畅销南北各地并长期执国内水泥业牛耳。控制唐山后可雇佣。"
+ BFY_io_jiangnan_cement_desc:0 "1935年在南京栖霞山建成投产的江南水泥公司，引进丹麦史密斯公司最新式回转窑与湿法生产线，工艺设备在远东名列前茅，所产水泥大量供应首都建设与华东工程。控制南京后可雇佣。"
+ BFY_io_jiuda_salt_desc:0 "范旭东1914年在塘沽创办的久大精盐公司，以机器化制盐结束了国人长期只能食用粗盐的历史，精盐畅销沿海各埠，并为随后创办的永利碱厂培养了最早的一批化工技术人才。控制天津后可雇佣。"
+ BFY_io_tianyuan_chemical_desc:0 "吴蕴初1929年在上海创办的天原电化厂，以电解食盐法生产烧碱、盐酸与漂白粉，填补了国内氯碱工业的空白；后将主要设备内迁重庆复工，为后方印染、造纸与军械修造提供紧缺化工原料。控制上海后可雇佣。"
+ BFY_io_hunan_machinery_desc:0 "设在长沙的湖南机械厂设备较新，能够制造机床、水泵与兵工专用机具，并承担枪械修配任务，地处连接华南与西南的交通要冲，是大后方重要的机器制造与修造中心。控制长沙后可雇佣。"
+ BFY_io_central_electric_desc:0 "资源委员会在昆明兴办的中央电工厂，下设电线、电管、电话与无线电四个分厂，首次实现国产电线、电子管与通信器材的批量生产，被誉为中国电工器材工业的摇篮。控制昆明后可雇佣。"
+ BFY_io_yunnan_tin_desc:0 "个旧锡矿开采历史悠久，素有锡都之称。云南锡业公司以新式洗选、冶炼设备统一经营，精炼的大锡成色优良、大量出口，是国家换取外汇、偿付对外贷款的重要支柱矿产品。控制昆明后可雇佣。"
+ BFY_io_gansu_machinery_desc:0 "甘肃机器厂的前身可追溯到清末兰州制造局，历经整顿扩建后能够制造机床、抽水机与军械配件，是地处西北腹地的少有的综合性机器制造与修配骨干企业。控制兰州后可雇佣。"
 
  BFY_mio_jinling_arsenal_organization:0 "金陵兵工厂"
  BFY_mio_jinling_arsenal_organization_desc:0 "南京金陵兵工厂在制式化基础上量产二四式马克沁重机枪、迫击炮及步枪弹药，是中央系核心兵工厂之一。控制南京后可雇佣。"
-
  BFY_mio_gongxian_arsenal_organization:0 "巩县兵工厂"
  BFY_mio_gongxian_arsenal_organization_desc:0 "位于河南巩县（今巩义），是中正式步枪制式化生产的主力工厂，并承担炮弹与手榴弹的大批量生产。控制洛阳后可雇佣。"
-
  BFY_mio_canton_arsenal_organization:0 "广东兵工厂"
  BFY_mio_canton_arsenal_organization_desc:0 "广州石井兵工厂为粤系军队制造步枪、机枪、迫击炮与弹药，是华南最大的综合兵工基地。控制广州后可雇佣。"
-
  BFY_mio_hanyang_artillery_organization:0 "汉阳兵工厂（炮厂）"
  BFY_mio_hanyang_artillery_organization_desc:0 "汉阳兵工厂由汉阳造步枪闻名，其炮厂同时承担国产山炮、野炮及炮弹的修造，是华中火炮工业的中心。控制武汉后可雇佣。"
-
  BFY_mio_sichuan_arsenal_organization:0 "四川兵工厂"
  BFY_mio_sichuan_arsenal_organization_desc:0 "以重庆为中心的四川军工体系在抗战内迁后迅速扩充，承担支援武器、被服装具与军需物资的大规模生产。控制重庆后可雇佣。"
-
  BFY_mio_foochow_navy_yard_organization:0 "福州船政局"
  BFY_mio_foochow_navy_yard_organization_desc:0 "马尾造船所是中国近代海军的摇篮，拥有船坞、轮机与修造能力，可承担舰艇抢修、改装与武备维护。控制福州后可雇佣。"
-
  BFY_mio_shaoguan_aircraft_organization:0 "韶关飞机制造厂"
  BFY_mio_shaoguan_aircraft_organization_desc:0 "建于粤北韶关的飞机制造厂在抗战期间仿制和修理战斗机，是华南航空工业的重要据点。控制韶关后可雇佣。"
-
  BFY_mio_nanchang_aircraft_organization:0 "中央南昌飞机制造厂"
  BFY_mio_nanchang_aircraft_organization_desc:0 "与意大利合作建设的南昌飞机厂，具备中型飞机的装配能力，是中央空军重要的制造基地。控制南昌后可雇佣。"
-
  BFY_mio_kunming_aircraft_organization:0 "中央空军第一飞机制造厂"
  BFY_mio_kunming_aircraft_organization_desc:0 "内迁昆明及垒允的中央航空制造基地，在大后方继续维持军机装配与修理，支撑抗战后期的空中作战。控制昆明后可雇佣。"
-
  BFY_mio_tangshan_railway_works_organization:0 "北宁铁路唐山制造厂"
  BFY_mio_tangshan_railway_works_organization_desc:0 "中国第一台蒸汽机车“龙号”的诞生地，长期制造机车、车辆与铁路军械装备，是华北铁道工业的根基。控制唐山后可雇佣。"
-
- # ===== 工业企业（第二批） =====
-
- BFY_io_xibei_shiye:0 "西北实业公司"
- BFY_io_xibei_shiye_desc:0 "阎锡山主持创办于太原的西北实业公司，统合山西的煤矿、钢铁、机器、火柴与兵工生产，是华北最大的地方重工业集团。控制太原后可雇佣。"
-
- BFY_io_benxihu:0 "本溪湖煤铁有限公司"
- BFY_io_benxihu_desc:0 "位于辽东本溪湖的中日合办煤铁联合企业，拥有优质低磷生铁冶炼能力，是东北钢铁工业的重要支柱。控制本溪后可雇佣。"
-
- BFY_io_xiangtan_steel:0 "中央钢铁厂"
- BFY_io_xiangtan_steel_desc:0 "资源委员会借助德国克虏伯技术援助在湘潭筹建的现代化钢铁厂，规划年产十万吨钢，因全面抗战爆发而中断。控制湘潭后可雇佣。"
-
- BFY_io_shenxin_textile:0 "申新纺织公司"
- BFY_io_shenxin_textile_desc:0 "荣宗敬、荣德生兄弟创办的申新系统纱厂遍布无锡、上海、汉口等地，是中国规模最大的民营棉纺织集团。控制无锡后可雇佣。"
-
- BFY_io_huaxin_textile:0 "华新纺织公司"
- BFY_io_huaxin_textile_desc:0 "周学熙创办的华新纺织系统在青岛、天津、唐山设有大厂，青岛工厂战后并入中国纺织建设公司，是华北棉纺业重镇。控制青岛后可雇佣。"
-
- BFY_io_dahua_textile:0 "大华纺织厂"
- BFY_io_dahua_textile_desc:0 "石凤翔等人在西安创办的大华纱厂是抗战时期西北最大的机器棉纺织厂，供应着西北军民的大量被服布匹。控制西安后可雇佣。"
-
- BFY_io_yuhua_textile:0 "裕华纺织公司"
- BFY_io_yuhua_textile_desc:0 "由武汉内迁成都的裕华纱厂在大后方迅速复工扩充，与申新、大华等厂共同支撑战时布匹被服供应。控制成都后可雇佣。"
-
- BFY_io_yongxing_shiye:0 "雍兴实业公司"
- BFY_io_yongxing_shiye_desc:0 "中国银行在宝鸡投资设立的雍兴实业公司，经营纺织、面粉、机器与煤矿，是抗战时期西北最大的国家资本工业集团之一。控制宝鸡后可雇佣。"
-
- BFY_io_guizhou_enterprise:0 "贵州企业公司"
- BFY_io_guizhou_enterprise_desc:0 "抗战内迁浪潮中在贵阳成立的贵州企业公司，统办电厂、水泥、玻璃、机械与矿产，是西南大后方的新兴综合工矿集团。控制贵阳后可雇佣。"
-
- BFY_io_central_machine:0 "中央机器制造厂"
- BFY_io_central_machine_desc:0 "资源委员会在昆明兴办的中央机器厂，制造机床、锅炉、汽轮机与纺织机械，代表着中国近代精密机器制造的最高水平。控制昆明后可雇佣。"
-
- # ===== 军用企业（第二批） =====
-
  BFY_mio_taiyuan_arsenal_organization:0 "太原兵工厂"
  BFY_mio_taiyuan_arsenal_organization_desc:0 "晋系斥巨资经营的太原兵工厂可自产晋造步枪、冲锋枪、迫击炮与山野炮，规模冠绝关内地方兵工厂。控制太原后可雇佣。"
-
  BFY_mio_jinan_arsenal_organization:0 "济南兵工厂"
  BFY_mio_jinan_arsenal_organization_desc:0 "济南兵工厂是山东最大的军械制造基地，承担步枪、机枪、手榴弹与弹药的生产和维修。控制济南后可雇佣。"
-
  BFY_mio_shenyang_arsenal_organization:0 "东三省兵工厂"
  BFY_mio_shenyang_arsenal_organization_desc:0 "张作霖、张学良父子倾力建设的东三省兵工厂员工逾万，以山野炮、炮弹和无烟药的量产能力著称，曾是全国规模最大的兵工厂。控制沈阳后可雇佣。"
-
  BFY_mio_zhuzhou_arsenal_organization:0 "株洲兵工厂"
  BFY_mio_zhuzhou_arsenal_organization_desc:0 "设在株洲的炮兵技术研究处（株洲兵工厂）按德国技术标准规划，是抗战前夕筹建的新式火炮与炮弹生产基地。控制株洲后可雇佣。"
-
  BFY_mio_kunming_optical_organization:0 "第二十二工厂（昆明光学厂）"
  BFY_mio_kunming_optical_organization_desc:0 "兵工署第二十二工厂是中国第一家军用光学仪器厂，在昆明仿制望远镜、测远镜与炮兵瞄准镜。控制昆明后可雇佣。"
-
  BFY_mio_liuzhou_arsenal_organization:0 "柳州兵工厂"
  BFY_mio_liuzhou_arsenal_organization_desc:0 "抗战时期在柳州扩建的弹药与军械修造基地，为第四、第九战区提供子弹、手榴弹和战场抢修支持。控制柳州后可雇佣。"
-
  BFY_mio_jiangnan_navy_yard_organization:0 "江南造船所"
  BFY_mio_jiangnan_navy_yard_organization_desc:0 "上海江南造船所拥有中国最大的船坞和最新的轮机设备，可建造和大修大型军舰，是中国海军工业的旗舰。控制上海后可雇佣。"
-
  BFY_mio_dagu_navy_yard_organization:0 "大沽造船所"
  BFY_mio_dagu_navy_yard_organization_desc:0 "位于塘沽的大沽造船所是华北历史最久的官办船厂，承担近海舰艇修造、水雷制造与海防工事支援。控制天津后可雇佣。"
-
  BFY_mio_dalian_dockyard_organization:0 "大连船坞"
  BFY_mio_dalian_dockyard_organization_desc:0 "大连港的大型深水船坞与船舶修理厂具备大型舰艇入坞检修能力，是东北亚重要的海军修造据点。控制大连后可雇佣。"
-
  BFY_mio_china_motor_vehicle_organization:0 "中国汽车制造公司"
  BFY_mio_china_motor_vehicle_organization_desc:0 "资源委员会在株洲创办的中国汽车制造公司引进德国奔驰技术组装载重汽车，是中国本土汽车工业的第一次尝试。控制株洲后可雇佣。"
-
- # ===== 工业企业（第三批） =====
-
- BFY_io_qixin_cement:0 "启新洋灰公司"
- BFY_io_qixin_cement_desc:0 "唐山启新洋灰公司是中国第一家机械化水泥厂，其“马牌”水泥曾获国际赛会金奖，供应全国铁路、港口与工矿建设。控制唐山后可雇佣。"
-
- BFY_io_jiangnan_cement:0 "江南水泥公司"
- BFY_io_jiangnan_cement_desc:0 "1935年在南京栖霞山建成投产，引进丹麦史密斯公司的最新回转窑设备，是当时远东工艺最先进的水泥厂之一。控制南京后可雇佣。"
-
- BFY_io_jiuda_salt:0 "久大精盐公司"
- BFY_io_jiuda_salt_desc:0 "范旭东在塘沽创办的久大精盐公司结束了中国人只能吃粗盐的历史，与永利碱厂并称中国化学工业的摇篮。控制天津后可雇佣。"
-
- BFY_io_tianyuan_chemical:0 "天原电化厂"
- BFY_io_tianyuan_chemical_desc:0 "吴蕴初在上海创办的天原电化厂以电解食盐生产烧碱、盐酸与漂白粉，抗战内迁重庆后成为大后方化工支柱。控制上海后可雇佣。"
-
- BFY_io_hunan_machinery:0 "湖南机械厂"
- BFY_io_hunan_machinery_desc:0 "设于长沙的湖南机械厂制造机床、蒸汽机与兵工机器，并试制汽车零件，是华中内地少有的成规模机械工厂。控制长沙后可雇佣。"
-
- BFY_io_central_electric:0 "中央电工厂"
- BFY_io_central_electric_desc:0 "资源委员会中央电工器材厂在昆明设总厂，生产电线电缆、电灯泡、无线电收发报机与电话机，是战时中国电工器材的主要来源。控制昆明后可雇佣。"
-
- BFY_io_yunnan_tin:0 "云南锡业公司"
- BFY_io_yunnan_tin_desc:0 "个旧锡矿开采历史悠久，云南锡业公司统办其冶炼与运销，锡锭长期是中国出口换汇、偿付军火借款的支柱矿产。控制昆明后可雇佣。"
-
- BFY_io_gansu_machinery:0 "甘肃机器厂"
- BFY_io_gansu_machinery_desc:0 "由左宗棠兰州制造局一脉延续而来，是西北腹地唯一的机器制造厂，承担军械修理、农工机具制造与军工厂筹建。控制兰州后可雇佣。"
-
- # ===== 军用企业（第三批） =====
-
  BFY_mio_chengdu_arsenal_organization:0 "成都兵工厂"
  BFY_mio_chengdu_arsenal_organization_desc:0 "承四川机器局之传统的成都兵工厂制造步枪、子弹与手榴弹，与重庆军工体系互为犄角。控制成都后可雇佣。"
-
  BFY_mio_xian_arsenal_organization:0 "西安机器局"
  BFY_mio_xian_arsenal_organization_desc:0 "西安机器局是西北军械修造的中心，抗战中扩编修理各战区后撤枪械并小批量制造弹药。控制西安后可雇佣。"
-
  BFY_mio_yunnan_arsenal_organization:0 "云南兵工厂"
  BFY_mio_yunnan_arsenal_organization_desc:0 "龙云苦心经营的滇系军工在昆明制造步枪、机枪、迫击炮弹与弹药，滇军装备因此自给自足。控制昆明后可雇佣。"
-
  BFY_mio_gansu_arsenal_organization:0 "甘肃制造局"
  BFY_mio_gansu_arsenal_organization_desc:0 "清末洋务运动延续下来的兰州军械机构，维持西北驻军的弹药补给与枪械修理。控制兰州后可雇佣。"
-
  BFY_mio_tianjin_arsenal_organization:0 "天津机器局"
  BFY_mio_tianjin_arsenal_organization_desc:0 "天津机器局是华北近代军工的发源地，以子弹、火药与军械修理见长，海运设备进口便利。控制天津后可雇佣。"
-
  BFY_mio_whampoa_dockyard_organization:0 "黄埔船坞"
  BFY_mio_whampoa_dockyard_organization_desc:0 "广州黄埔的船坞与修造设施是华南海军舰艇维护的依托，兼营轮船修理与海防工事营造。控制广州后可雇佣。"

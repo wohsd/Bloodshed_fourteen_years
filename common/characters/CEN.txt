@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = CEN_DuYuMing_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ armor_officer }
 			#等级
 			skill=4
 			#攻击等级

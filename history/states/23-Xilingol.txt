@@ -14,11 +14,8 @@ state={
 		1936.1.1={
 			owner = MGJ
 		}
-		victory_points = {
-			544 5
-		}
 	}
-	manpower=323000
+	manpower=692300
 	state_category = town
 	local_supplies=0.000
 }

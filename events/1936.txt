@@ -1,4 +1,4 @@
-﻿add_namespace = PRC_1936Hidden
+add_namespace = PRC_1936Hidden
 add_namespace = PRC_1936
 add_namespace = PRC_1936_1
 add_namespace = ROC_1936

@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = PRQ_FengBaiJu_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ guerilla_fighter }
 			#等级
 			skill=4
 			#攻击等级

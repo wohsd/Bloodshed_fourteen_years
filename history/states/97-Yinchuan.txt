@@ -10,11 +10,14 @@ state={
 	}
 	history={
 		owner = ROZ
+		victory_points = {
+			3656 10
+		}
 		buildings = {
 			infrastructure = 1
 		}
 	}
-	manpower=323000
+	manpower=120000
 	state_category = town
 	local_supplies = 0.0
 }

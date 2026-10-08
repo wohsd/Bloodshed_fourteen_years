@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = WDL_WangDeLing_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ guerilla_fighter }
 			#等级
 			skill=4
 			#攻击等级
@@ -43,10 +43,44 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	WDL_KongXianRong={
+		name=WDL_KongXianRong
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = WDL_KongXianRong_leader_desc
+
+			traits={ infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	WDL_WuYiCheng={
+		name=WDL_WuYiCheng
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = WDL_WuYiCheng_leader_desc
+
+			traits={ guerilla_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

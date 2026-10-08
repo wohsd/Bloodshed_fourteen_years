@@ -17,6 +17,10 @@ set_war_support = 0.7
 
 recruit_character = CAR_FengYuXiang
 recruit_character = CAR_JiHongchang
+recruit_character = CAR_FangZhenWu
+recruit_character = CAR_XuanXiaFu
+recruit_character = CAR_TongLinGe
+recruit_character = CAR_ZhaoDengYu
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

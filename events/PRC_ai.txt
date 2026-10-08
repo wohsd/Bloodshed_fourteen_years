@@ -1,4 +1,4 @@
-﻿
+
 add_namespace = PRC_AI
 country_event = {
 	id = PRC_AI.1

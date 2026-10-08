@@ -43,10 +43,100 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	MTX_MaZhongXiao={
+		name=MTX_MaZhongXiao
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = MTX_MaZhongXiao_leader_desc
+
+			traits={ cavalry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#王占林：马廷贤部军长，陇上回军悍将
+	MTX_WangZhanLin={
+		name=MTX_WangZhanLin
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		#陆军部长（王占林：敢于奔袭，锋芒外露）
+		advisor={	desc = MTX_WangZhanLin_leader_desc
+
+			slot = army_chief
+			idea_token = MTX_WangZhanLin
+			allowed = {
+				original_tag = MTX
+			}
+			available = {
+				MTX_WangZhanLin = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = MTX_WangZhanLin
+					}
+				}
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#韩进禄：马廷贤部骑兵将领
+	MTX_HanJinLu={
+		name=MTX_HanJinLu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		#总司令（韩进禄：统带骑队，巡掠陇右）
+		advisor={	desc = MTX_HanJinLu_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = MTX_HanJinLu
+			allowed = {
+				original_tag = MTX
+			}
+			available = {
+				MTX_HanJinLu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = MTX_HanJinLu
+					}
+				}
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

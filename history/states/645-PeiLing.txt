@@ -23,7 +23,7 @@ state={
 add_core_of = CHI
 		}
 	}
-	manpower=238800
+	manpower=815000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -10,10 +10,10 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			1559 20
+			1559 5
 		}
 	}
-	manpower=323000
+	manpower=2811800
 	state_category = town
 	local_supplies = 0.0
 }

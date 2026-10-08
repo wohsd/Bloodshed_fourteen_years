@@ -11,14 +11,14 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			1730 5
+			1730 10
 		}
 		
 		1939.1.1={
 			owner = JAP
 		}
 	}
-	manpower=323000
+	manpower=1659800
 	state_category = town
 	local_supplies = 0.0
 }

@@ -2378,3 +2378,11 @@ RFC_army_civilian_unity: "军民团结"
 RFC_undertrained_army: "军队训练不足"
 RFC_professional_army: "职业军队"
 RFC_high_military_cost: "高昂的军费"
+
+# 现代化进程（自定义 modifier，驱动每月现代化进度）
+ education_development_monthly:0 "教育现代化进程"
+ farming_development_monthly:0 "农业现代化进程"
+ social_development_monthly:0 "社会现代化进程"
+ industrial_development_monthly:0 "工业现代化进程"
+ military_development_monthly:0 "军事现代化进程"
+ medical_development_monthly:0 "医疗卫生现代化进程"

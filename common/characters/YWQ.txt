@@ -43,10 +43,54 @@ characters={
 			defense_skill=4
 			#计划等级
 			planning_skill=3
-			后勤等级
+			#后勤等级
 			logistics_skill=4
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	YWQ_WangZhen={
+		name=YWQ_WangZhen
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		#陆军部长（王振：杨万青部将，约束部伍）
+		advisor={	desc = YWQ_WangZhen_leader_desc
+
+			slot = army_chief
+			idea_token = YWQ_WangZhen
+			allowed = {
+				original_tag = YWQ
+			}
+			available = {
+				YWQ_WangZhen = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = YWQ_WangZhen
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={	desc = YWQ_WangZhen_leader_desc
+
+			traits={ infantry_leader }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

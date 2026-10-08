@@ -1,17 +1,145 @@
 characters={
-    ROK_MaHongKui={
-		name=ROK_MaHongKui
-		portraits={
-			civilian={
-				large="gfx/leaders/ROK/ROK_MaHongKui.png"
+	    ROK_MaHongKui={
+			name=ROK_MaHongKui
+			portraits={
+				civilian={
+					large="gfx/leaders/ROK/ROK_MaHongKui.png"
+				}
+			}
+			country_leader={	desc = ROK_MaHongKui_leader_desc
+
+				ideology=despotism
+				traits={ }
+				expire="1965.1.1.1"
+				id=-1
+			}
+		
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
+		#马鸿宾：马鸿逵堂弟，骁勇善战
+		ROK_MaHongBin={
+			name=ROK_MaHongBin
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+				}
+			}
+			advisor={	desc = ROK_MaHongBin_leader_desc
+
+				slot = army_chief
+				idea_token = ROK_MaHongBin
+				allowed = {
+					original_tag = ROK
+				}
+				available = {
+					ROK_MaHongBin = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROK_MaHongBin
+						}
+					}
+				}
+				traits = {
+					army_chief_cavalry_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			field_marshal={	desc = ROK_MaHongBin_leader_desc
+
+				traits={ cavalry_officer }
+				skill=3
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
 			}
 		}
-		country_leader={	desc = ROK_MaHongKui_leader_desc
+		#马敦静：马鸿逵之子，年轻勇猛
+		ROK_MaDunJing={
+			name=ROK_MaDunJing
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+				}
+			}
+			advisor={	desc = ROK_MaDunJing_leader_desc
 
-			ideology=despotism
-			traits={ }
-			expire="1965.1.1.1"
-			id=-1
+				slot = high_command
+				ledger = army
+				idea_token = ROK_MaDunJing
+				allowed = {
+					original_tag = ROK
+				}
+				available = {
+					ROK_MaDunJing = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+					NOT = {
+						has_advisor = {
+							character = ROK_MaDunJing
+						}
+					}
+				}
+				traits = {
+					army_cavalry_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+			corps_commander={	desc = ROK_MaDunJing_leader_desc
+
+				traits={ offensive_doctrine }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
 		}
-	}		
-	}
+		#马福寿：马鸿逵谋士，善于理财
+		ROK_MaFuShou={
+			name=ROK_MaFuShou
+			portraits={
+				civilian={
+					large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+					small="GFX_idea_generic_political_advisor_asia_3"
+				}
+			}
+			advisor={	desc = ROK_MaFuShou_leader_desc
+
+				slot = political_advisor
+				idea_token = ROK_MaFuShou_P
+				allowed = {
+					original_tag = ROK
+				}
+				available = {
+					ROK_MaFuShou_P = {
+						is_hired_as_advisor = no
+						is_country_leader = no
+					}
+				}
+				traits = {
+					the_banker
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+}
+}

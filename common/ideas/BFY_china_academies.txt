@@ -1,0 +1,224 @@
+############################################
+# BFY：中国势力共用军校系统（陆军学校/海军学校/空军学校）
+# 规则：
+#   1. 仅 BFY_is_chinese_faction 涵盖的中国势力可见
+#   2. 必须控制（占领）学校所在地块才能启用
+#   3. 失去所在地块后自动卸任（cancel_if_invalid）
+#   4. 效果按该校历史人才质量与部队实战表现定制：
+#      - 顶级军校给更高经验/攻防加成
+#      - 草创/弱校给低值甚至负值
+#      - 军事类加成大于研究类加成（中国军校以带兵为主）
+############################################
+
+ideas = {
+	bfy_military_academy = {
+
+		# ===== 顶级军校 =====
+
+		# 保定陆军军官学校（河北保定）—— 中国近代第一所正规陆军军校，
+		# 毕业生素质最高，蒋介石、白崇禧、张治中、陈诚等皆出于此。
+		BFY_academy_baoding = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 85
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_army_factor = 0.05
+				army_org_regain = 0.02
+				land_reinforce_rate = 0.02
+			}
+
+			traits = { military_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 黄埔军校（广东广州）—— 国共两党名将摇篮，
+		# 教学重实践、毕业即上战场，士气极高，但早期学制短、理论浅。
+		BFY_academy_whampoa = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 357
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_army_factor = 0.04
+				army_org_regain = 0.03
+				land_night_attack = 0.05
+			}
+
+			traits = { military_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 正规军校 =====
+
+		# 南京中央陆军军官学校（江苏南京）—— 国民政府最高军事学府，
+		# 德式教学、体系完整，但内战消耗大、毕业生素质逐渐稀释。
+		BFY_academy_nanjing = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 214
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_army_factor = 0.04
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+			}
+
+			traits = { military_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 东北陆军讲武堂（辽宁沈阳）—— 奉系最高军事学府，
+		# 奉军战斗力较强，但派系倾轧、装备依赖外援。
+		BFY_academy_mukden = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 50
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_army_factor = 0.03
+				army_attack_factor = 0.02
+				army_defence_factor = -0.01
+			}
+
+			traits = { military_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 云南陆军讲武堂（云南昆明）—— 滇军摇篮，重山地作战，
+		# 蔡锷、朱德、叶剑英皆出于此，但装备落后、经费不足。
+		BFY_academy_kunming = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 323
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_army_factor = 0.03
+				out_of_supply_factor = -0.03
+				army_speed_factor = 0.01
+			}
+
+			traits = { military_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ===== 地方/草创军校 =====
+
+		# 马尾海军学校（福建福州）—— 近代最早海军学堂，但规模小、经费匮乏，
+		# 培养的是海军军官而非陆军将领。
+		BFY_academy_mawei = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 292
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_navy_factor = 0.03
+				naval_damage_factor = 0.01
+			}
+
+			traits = { naval_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# 笕桥中央航空学校（浙江杭州）—— 中国空军摇篮，
+		# 装备与训练尚属草创，但飞行员士气高昂。
+		BFY_academy_jianqiao = {
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				BFY_is_chinese_faction = yes
+			}
+			available = {
+				controls_state = 248
+			}
+			cancel_if_invalid = yes
+
+			cost = 150
+			removal_cost = 10
+
+			modifier = {
+				experience_gain_air_factor = 0.04
+				ground_attack_factor = 0.02
+				air_mission_efficiency = 0.01
+			}
+
+			traits = { air_academy_trait }
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}

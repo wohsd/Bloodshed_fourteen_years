@@ -23,7 +23,15 @@ characters={
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
 		}
-	}
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}
 	NHA_ShengZeMing={
 		name=NHA_ShengZeMing
 

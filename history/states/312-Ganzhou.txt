@@ -29,9 +29,6 @@ state={
 		victory_points = {
 			2096 15 
 		}
-		victory_points = {
-			2531 5 
-		}
 		set_state_flag = Key_areas
 
 	}
@@ -39,7 +36,7 @@ state={
 	provinces={
 		1205 1338 1704 1789 1989 2096 3119 3984 4011 4018 
 	}
-	manpower=2323000
+	manpower=1384000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=10.000

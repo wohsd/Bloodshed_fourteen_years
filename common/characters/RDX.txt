@@ -13,5 +13,148 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}		
+		RDX_ChenDingXun={
+		name=RDX_ChenDingXun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		advisor={	desc = RDX_ChenDingXun_leader_desc
+
+			slot = army_chief
+			idea_token = RDX_ChenDingXun
+			allowed = {
+				original_tag = RDX
+			}
+			available = {
+				RDX_ChenDingXun = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = RDX_ChenDingXun
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={	desc = RDX_ChenDingXun_leader_desc
+
+			traits={ organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
 	}
+	RDX_WangMingZhang={
+		name=RDX_WangMingZhang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander={	desc = RDX_WangMingZhang_leader_desc
+
+			traits={ defensive_doctrine infantry_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	RDX_HuangYin={
+		name=RDX_HuangYin
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		#总司令（黄隐：邓锡侯麾下师长，统带步兵）
+		advisor={	desc = RDX_HuangYin_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = RDX_HuangYin
+			allowed = {
+				original_tag = RDX
+			}
+			available = {
+				RDX_HuangYin = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = RDX_HuangYin
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = RDX_HuangYin_leader_desc
+
+			traits={ infantry_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	RDX_NiuXiGuang={
+		name=RDX_NiuXiGuang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		advisor={	desc = RDX_NiuXiGuang_leader_desc
+
+			slot = political_advisor
+			idea_token = RDX_NiuXiGuang_P
+			allowed = {
+				original_tag = RDX
+			}
+			available = {
+				RDX_NiuXiGuang_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

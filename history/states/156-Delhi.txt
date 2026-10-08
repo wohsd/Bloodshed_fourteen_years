@@ -6,6 +6,9 @@ state={
 	}
 	history={
 		owner = RAJ
+		victory_points = {
+			4857 20
+		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -14,7 +17,7 @@ state={
 		}
 		add_core_of = RAJ
 	}
-	manpower=323000
+	manpower=581700
 	state_category = town
 	local_supplies = 0.0
 }

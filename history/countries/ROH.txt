@@ -18,6 +18,10 @@ add_equipment_to_stockpile = {
 }
 recruit_character = ROH_MaoGuangXing
 recruit_character = ROH_WangJiaLie
+recruit_character = ROY_YouGuoCai
+recruit_character = ROY_BoHuiZhang
+recruit_character = ROY_HeZhiZhong
+recruit_character = ROH_WanShuFen
 set_popularities = {
 	democratic = 0
 	communism = 0

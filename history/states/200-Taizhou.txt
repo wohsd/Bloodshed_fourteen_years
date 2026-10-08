@@ -6,6 +6,9 @@ state={
 	}
 	history={
 		owner = CHI
+		victory_points = {
+			2121 5
+		}
         add_core_of = CHI
 		buildings = {
 			infrastructure = 1
@@ -18,7 +21,7 @@ state={
 			owner = JDF
 		}
 	}
-	manpower=323000
+	manpower=1704100
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

@@ -21,7 +21,7 @@ state={
 			owner = JAP
 		}
 	}
-	manpower=323000
+	manpower=1097600
 	state_category = town
 	local_supplies=0.000
 }

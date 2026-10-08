@@ -471,9 +471,7 @@ characters={
 		
 		corps_commander={	desc = CHI_DaiAnLan_leader_desc
 
-			traits={ 
-				
-			}
+			traits={ brave }
 			skill=2
 			attack_skill=1
 			defense_skill=2

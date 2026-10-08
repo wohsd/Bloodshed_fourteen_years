@@ -7,6 +7,9 @@ state={
 	}
 	history = {
 		owner = PCN
+		victory_points = {
+			5241 40
+		}
 		set_demilitarized_zone = yes
 		1939.1.1={
 			owner = JAP
@@ -16,7 +19,7 @@ state={
 			owner = JDF
 		}
 	}
-	manpower=23524
+	manpower=1086700
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

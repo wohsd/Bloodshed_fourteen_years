@@ -1,4 +1,4 @@
-﻿add_namespace = YHC_1931
+add_namespace = YHC_1931
 add_namespace = YHC_1931Hidden
 country_event = {
 	id = YHC_1931.1

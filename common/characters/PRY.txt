@@ -34,7 +34,7 @@ characters={
 		field_marshal={	desc = PRY_WeiBaQun_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ guerilla_fighter }
 			#等级
 			skill=2
 			#攻击等级
@@ -62,7 +62,7 @@ characters={
 				small = "gfx/interface/advisers/PRY_DengXiaoPing.png"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2

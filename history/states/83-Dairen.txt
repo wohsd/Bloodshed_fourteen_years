@@ -22,11 +22,11 @@ state={
 			owner = MCK
 		}
 		victory_points = {
-			2647 10
+			2647 15
 		}
 		
 	}
-	manpower=323000
+	manpower=1000000
 	state_category = town
 	local_supplies = 0.0
 }

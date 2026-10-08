@@ -13,5 +13,154 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-	}		
+	
+			field_marshal={
+				traits={ }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}}		
+		ROT_SunZhen={
+		name=ROT_SunZhen
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		advisor={	desc = ROT_SunZhen_leader_desc
+
+			slot = army_chief
+			idea_token = ROT_SunZhen
+			allowed = {
+				original_tag = ROT
+			}
+			available = {
+				ROT_SunZhen = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROT_SunZhen
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={	desc = ROT_SunZhen_leader_desc
+
+			traits={ organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
 	}
+	ROT_DongSongHeng={
+		name=ROT_DongSongHeng
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		advisor={	desc = ROT_DongSongHeng_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = ROT_DongSongHeng
+			allowed = {
+				original_tag = ROT
+			}
+			available = {
+				ROT_DongSongHeng = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROT_DongSongHeng
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = ROT_DongSongHeng_leader_desc
+
+			traits={ infantry_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	ROT_ZengXianDong={
+		name=ROT_ZengXianDong
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = ROT_ZengXianDong_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#王铭章：孙震麾下师长，沉毅果敢，后于滕县殉国
+	ROT_WangMingZhang={
+		name=ROT_WangMingZhang
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		#总司令（王铭章：善抚士卒，统带步兵）
+		advisor={	desc = ROT_WangMingZhang_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = ROT_WangMingZhang
+			allowed = {
+				original_tag = ROT
+			}
+			available = {
+				ROT_WangMingZhang = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = ROT_WangMingZhang
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

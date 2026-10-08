@@ -21,7 +21,7 @@ state={
 			owner = PRC
 		}
 	}
-	manpower=101000
+	manpower=284400
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -1,4 +1,4 @@
-﻿capital = 287
+capital = 287
 #首都地块states(带#的均为注释，无效果，若想要效果，就删除#)
 
 oob = RON_1931
@@ -23,6 +23,11 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = RON_HeJian
+recruit_character = RON_LiJue
+recruit_character = RON_TaoGuang
+recruit_character = RON_WangDongYuan
+recruit_character = RON_LiuJianXu
+recruit_character = RON_CaoBoWen
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = ROW
+		victory_points = {
+			1137 5
+		}
 		buildings = {
 			infrastructure = 1
 
@@ -30,7 +33,7 @@ add_core_of = CHI
 	provinces={
 		1137 
 	}
-	manpower=323000
+	manpower=2811800
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

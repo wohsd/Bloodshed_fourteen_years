@@ -10,7 +10,7 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			3375 15
+			3375 10
 		}
 		1939.1.1={
 			owner = CHI
@@ -18,7 +18,7 @@ add_core_of = CHI
 		}
 		add_core_of = RON
 	}
-	manpower=323000
+	manpower=2106500
 	state_category = town
 	local_supplies = 0.0
 }

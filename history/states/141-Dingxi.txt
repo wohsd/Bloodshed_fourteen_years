@@ -21,7 +21,7 @@ state={
 add_core_of = CHI
 		}
 	}
-	manpower=83000
+	manpower=464800
 	state_category = town
 	local_supplies = 0.0
 }

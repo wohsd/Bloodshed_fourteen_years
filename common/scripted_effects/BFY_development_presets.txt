@@ -536,13 +536,7 @@ BFY_development_preset_by_date = {
 		set_variable = { industrial_development_var = 0 }
 		set_variable = { military_development_var = 0 }
 		set_variable = { medical_development_var = 0 }
-		set_variable = { education_development_monthly = 0 }
-		set_variable = { farming_development_monthly = 0 }
-		set_variable = { social_development_monthly = 0 }
-		set_variable = { industrial_development_monthly = 0 }
-		set_variable = { military_development_monthly = 0 }
-		set_variable = { medical_development_monthly = 0 }
-		BFY_development_swap_education = yes
+	BFY_development_swap_education = yes
 		BFY_development_swap_farming = yes
 		BFY_development_swap_social = yes
 		BFY_development_swap_industrial = yes

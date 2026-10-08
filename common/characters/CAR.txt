@@ -1,6 +1,6 @@
 characters={
 #角色名称，请自行修改(带#的均为注释，无效果，若想要效果，就删除#)
-CAR_FengYuXiang={
+	CAR_FengYuXiang={
 		name=CAR_FengYuXiang
 		#肖像选择（平民状态和军事状态）
 		portraits={
@@ -25,7 +25,7 @@ CAR_FengYuXiang={
 		field_marshal={	desc = CAR_FengYuXiang_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ old_guard }
 			#等级
 			skill=2
 			#攻击等级
@@ -34,7 +34,7 @@ CAR_FengYuXiang={
 			defense_skill=2
 			#计划等级
 			planning_skill=2
-			后勤等级
+			#后勤等级
 			logistics_skill=1
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
@@ -61,11 +61,38 @@ CAR_FengYuXiang={
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
 		}
+		#陆军部长（吉鸿昌：治军严格，注重训练）
+		advisor={	desc = CAR_JiHongchang_leader_desc
+
+			slot = army_chief
+			idea_token = CAR_JiHongchang
+			allowed = {
+				original_tag = CAR
+			}
+			available = {
+				CAR_JiHongchang = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = CAR_JiHongchang
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		#担任陆军将军时的数据
 		field_marshal={	desc = CAR_JiHongchang_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ brave }
 			#等级
 			skill=3
 			#攻击等级
@@ -74,10 +101,123 @@ CAR_FengYuXiang={
 			defense_skill=2
 			#计划等级
 			planning_skill=2
-			后勤等级
+			#后勤等级
 			logistics_skill=3
 			#作者也不知道这个有什么用，不过能运行就不要碰
 			legacy_id=-1
+		}
+	}
+	#方振武：抗日同盟军前敌总司令，性格刚烈，作战勇猛
+	CAR_FangZhenWu={
+		name=CAR_FangZhenWu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+			}
+		}
+		#总司令（方振武：敢打敢冲，但谋略稍逊）
+		advisor={	desc = CAR_FangZhenWu_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = CAR_FangZhenWu
+			allowed = {
+				original_tag = CAR
+			}
+			available = {
+				CAR_FangZhenWu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = CAR_FangZhenWu
+					}
+				}
+			}
+			traits = {
+				army_commando_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={	desc = CAR_FangZhenWu_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#宣侠父：政治部主任，共产党员，擅长统战宣传
+	CAR_XuanXiaFu={
+		name=CAR_XuanXiaFu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_1.dds"
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		#政治顾问（宣侠父：笔杆子，擅宣传鼓动）
+		advisor={	desc = CAR_XuanXiaFu_leader_desc
+
+			slot = political_advisor
+			idea_token = CAR_XuanXiaFu_P
+			allowed = {
+				original_tag = CAR
+			}
+			available = {
+				CAR_XuanXiaFu_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	CAR_TongLinGe={
+		name=CAR_TongLinGe
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = CAR_TongLinGe_leader_desc
+
+			traits={ old_guard }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	#赵登禹：喜峰口大捷功臣，勇猛善战，夜袭专家
+	CAR_ZhaoDengYu={
+		name=CAR_ZhaoDengYu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = CAR_ZhaoDengYu_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

@@ -24,7 +24,7 @@ state={
 			owner = JDF
 		}
 	}
-	manpower=5300
+	manpower=200000
 	state_category=city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

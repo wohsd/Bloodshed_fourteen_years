@@ -30,11 +30,38 @@ characters={
 			#我也不知道这个是什么，但最好不要碰这个
 			id=-1
 		}
+		#陆军部长（傅作义：治军严谨，注重训练）
+		advisor={	desc = SJN_FuZuoYi_leader_desc
+
+			slot = army_chief
+			idea_token = SJN_FuZuoYi
+			allowed = {
+				original_tag = SJN
+			}
+			available = {
+				SJN_FuZuoYi = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = SJN_FuZuoYi
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		#担任陆军将军时的数据
 		field_marshal={	desc = SJN_FuZuoYi_leader_desc
 
 			#特质（如堑壕大师）
-			traits={ }
+			traits={ defensive_doctrine }
 			#等级
 			skill=4
 			#攻击等级
@@ -62,6 +89,119 @@ characters={
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1
+		}
+	}
+	#董其武：傅作义麾下大将，骁勇善战，敢打硬仗
+	SJN_DongQiWu={
+		name=SJN_DongQiWu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		#总司令（董其武：骁勇善战，敢打硬仗）
+		advisor={	desc = SJN_DongQiWu_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = SJN_DongQiWu
+			allowed = {
+				original_tag = SJN
+			}
+			available = {
+				SJN_DongQiWu = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = SJN_DongQiWu
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={	desc = SJN_DongQiWu_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#王克俊：傅作义秘书长，智囊，老成持重
+	SJN_WangKeJun={
+		name=SJN_WangKeJun
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_3.dds"
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		#政治顾问（王克俊：老成持重，稳健务实）
+		advisor={	desc = SJN_WangKeJun_leader_desc
+
+			slot = political_advisor
+			idea_token = SJN_WangKeJun_P
+			allowed = {
+				original_tag = SJN
+			}
+			available = {
+				SJN_WangKeJun_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				silent_workhorse
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SJN_SunLanFeng={
+		name=SJN_SunLanFeng
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = SJN_SunLanFeng_leader_desc
+
+			traits={ cavalry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#鲁英麟：傅作义麾下将领，勇猛有余，谋略不足
+	SJN_LuYingLin={
+		name=SJN_LuYingLin
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = SJN_LuYingLin_leader_desc
+
+			traits={  }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 }

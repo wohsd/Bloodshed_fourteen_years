@@ -17,7 +17,7 @@ state={
 			owner = ROC
 		}
 	}
-	manpower=323000
+	manpower=949300
 	state_category = town
 	local_supplies = 0.0
 }

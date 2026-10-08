@@ -277,3 +277,24 @@ country_event = {
 		name = RFC_country.6.a
 	}
 }
+
+# ============================================================
+# 「自由放任」国策(new_focus_74)被选中时由国策 select_effect 直接触发
+# 该国策 cancelable = no，一旦开始便不可取消
+# 孙科在经济政策会议上的讲话；邓演达派干部动摇、平民政权路线受挫的伏笔
+# ============================================================
+country_event = {
+	id = RFC_country.7
+	title = RFC_country.7.t
+	desc = RFC_country.7.d
+	picture = GFX_report_event_generic_rally
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = RFC_country.7.a
+	}
+	option = {
+		name = RFC_country.7.b
+	}
+}

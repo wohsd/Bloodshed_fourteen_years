@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "游击支队" 			
 	regiments = {
 		militia = { x = 0 y = 0 }

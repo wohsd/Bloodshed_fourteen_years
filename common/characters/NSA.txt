@@ -31,10 +31,10 @@ NSA_LiuZhiDan={
 			id=-1
 		}
 		#担任陆军将军时的数据
-		corps_commander={
+		field_marshal={
 			#特质（如堑壕大师）
 			desc = NSA_LiuZhiDan_leader_desc
-			traits={ }
+			traits={ guerilla_fighter }
 			#等级
 			skill=2
 			#攻击等级

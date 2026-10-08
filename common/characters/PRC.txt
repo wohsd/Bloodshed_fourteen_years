@@ -116,7 +116,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_ZhangWengTian_leader_desc
 
-			traits={ }
+			traits={ brilliant_strategist organizer }
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -156,7 +156,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_ZhouEngLai_leader_desc
 
-			traits={ }
+			traits={ politically_connected }
 			skill=2
 			attack_skill=2
 			defense_skill=3
@@ -751,7 +751,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_BoGu_leader_desc
 
-			traits={ }
+			traits={ infantry_officer trait_mountaineer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -791,7 +791,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_FangZhiMing_leader_desc
 
-			traits={ }
+			traits={ guerilla_fighter }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -832,7 +832,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_LingBiao_leader_desc
 
-			traits={ }
+			traits={ infantry_officer trait_mountaineer }
 			skill=5
 			attack_skill=4
 			defense_skill=3
@@ -870,7 +870,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_HeLong_leader_desc
 
-			traits={ }
+			traits={ guerilla_fighter }
 			skill=3
 			attack_skill=4
 			defense_skill=2
@@ -887,7 +887,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_XuXianQian_leader_desc
 
-			traits={ }
+			traits={ infantry_officer }
 			skill=3
 			attack_skill=4
 			defense_skill=2
@@ -904,7 +904,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_DongZhenTang_leader_desc
 
-			traits={ }
+			traits={ brave }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -921,7 +921,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_XunHuaiZhou_leader_desc
 
-			traits={ }
+			traits={ brave }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -976,23 +976,7 @@ characters={
 		}
 		corps_commander={	desc = PRC_LiuTaoXi_leader_desc
 
-			traits={ }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
-	PRC_LiuTaoXi={
-		name=PRC_LiuTaoXi
-		portraits={
-			civilian={
-				large="gfx/leaders/PRC/PRC_LiuTaoXi.png"
-			}
-		}
-		corps_commander={
-			traits={ }
+			traits={ brave }
 			skill=3
 			attack_skill=2
 			defense_skill=2

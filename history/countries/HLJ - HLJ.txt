@@ -16,6 +16,10 @@ set_war_support = 0.7
 #设置战争支持度
 
 recruit_character = HLJ_SuBingWeng
+recruit_character = HLJ_MaZhanShan
+recruit_character = HLJ_YuanChongGu
+recruit_character = HLJ_WuSongLin
+recruit_character = HLJ_HanGuangDi
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

@@ -11,7 +11,7 @@ state={
 		}
 		add_core_of = AFG
 	}
-	manpower=323000
+	manpower=7250000
 	state_category = town
 	local_supplies = 0.0
 }

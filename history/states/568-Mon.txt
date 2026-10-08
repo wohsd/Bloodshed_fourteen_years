@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = RAJ
 	}
-	manpower=323000
+	manpower=731800
 	state_category = town
 	local_supplies = 0.0
 }
