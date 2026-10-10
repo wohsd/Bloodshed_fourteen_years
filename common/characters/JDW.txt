@@ -235,4 +235,108 @@ characters={
 			logistics_skill=2
 		}
 	}
+
+	#赵登禹：132师师长，喜峰口大捷功臣，卢沟桥事变殉国，夜袭专家
+	JDW_ZhaoDengYu={
+		name=JDW_ZhaoDengYu
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={	desc = JDW_ZhaoDengYu_leader_desc
+
+			traits={ offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	#吉星文：卢沟桥事变时守卫宛平城的团长，后升师长
+	JDW_JiXingWen={
+		name=JDW_JiXingWen
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_5.dds"
+			}
+		}
+		corps_commander={	desc = JDW_JiXingWen_leader_desc
+
+			traits={ defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	#何基沣：110旅旅长，后任77军军长，抗战中屡立战功
+	JDW_HeJiFeng={
+		name=JDW_HeJiFeng
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={	desc = JDW_HeJiFeng_leader_desc
+
+			traits={ defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	#张克侠：二十九军副参谋长，冯玉祥连襟，后任第三绥靖区副司令
+	JDW_ZhangKeXia={
+		name=JDW_ZhangKeXia
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		#参谋长（张克侠：谋定后动，长于参谋筹划）
+		advisor={	desc = JDW_ZhangKeXia_leader_desc
+
+			slot = high_command
+			ledger = army
+			idea_token = JDW_ZhangKeXia
+			allowed = {
+				original_tag = JDW
+			}
+			available = {
+				JDW_ZhangKeXia = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+				NOT = {
+					has_advisor = {
+						character = JDW_ZhangKeXia
+					}
+				}
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={	desc = JDW_ZhangKeXia_leader_desc
+
+			traits={ organizer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
 }

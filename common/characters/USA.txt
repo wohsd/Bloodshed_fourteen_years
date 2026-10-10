@@ -1,0 +1,17 @@
+characters={
+	USA_Dwight_f_davis={
+		name=USA_Dwight_f_davis
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+			}
+		}
+		country_leader={
+			desc = USA_Dwight_f_davis_leader_desc
+			ideology=liberalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -202,22 +202,4 @@ characters={
 			logistics_skill=2
 		}
 	}
-	#赵登禹：喜峰口大捷功臣，勇猛善战，夜袭专家
-	CAR_ZhaoDengYu={
-		name=CAR_ZhaoDengYu
-		portraits={
-			civilian={
-				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
-			}
-		}
-		corps_commander={	desc = CAR_ZhaoDengYu_leader_desc
-
-			traits={ offensive_doctrine }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-		}
-	}
 }

@@ -15,7 +15,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_0
         icon = GFX_focus_GER_ally_chiang_kai_shek
-        x = 2
+        x = 12
         y = 0
         cost = 10
         ai_will_do = { factor = 1 }
@@ -32,7 +32,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_2
         icon = GFX_focus_CHI_avoid_another_crisis
-        x = 2
+        x = 12
         y = 1
         cost = 10
         ai_will_do = { factor = 1 }
@@ -48,7 +48,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_3
         icon = GFX_focus_ARG_balancing_act
-        x = 2
+        x = 12
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
@@ -65,7 +65,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_4
         icon = GFX_focus_BEL_engine_of_the_economy
-        x = 2
+        x = 12
         y = 3
         cost = 10
         ai_will_do = { factor = 1 }
@@ -80,7 +80,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_5
         icon = GFX_focus_CHI_the_northern_mandate
-        x = 0
+        x = 10
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
@@ -94,7 +94,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_6
         icon = GFX_focus_CHI_tongzi_jun
-        x = 4
+        x = 14
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
@@ -109,7 +109,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_7
         icon = GFX_focus_CHI_start_looking_outwards
-        x = 2
+        x = 12
         y = 5
         cost = 10
         ai_will_do = { factor = 1 }
@@ -123,181 +123,44 @@ focus_tree = {
         }
     }
 
-    # 第6行 - 释放政治犯
-    focus = {
-        id = ROD_focus_8
-        icon = GFX_focus_CHI_arrest_the_seven_gentlemen
-        x = 4
-        y = 6
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_7 }
-        completion_reward = {
-            add_stability = 0.03
-            add_political_power = 20
-        }
-    }
+    # 第6行 - 释放政治犯（已隐藏）
+    # focus = {
+    #     id = ROD_focus_8
+    #     icon = GFX_focus_CHI_arrest_the_seven_gentlemen
+    #     x = 14
+    #     y = 6
+    #     cost = 10
+    #     ai_will_do = { factor = 1 }
+    #     prerequisite = { focus = ROD_focus_7 }
+    #     completion_reward = {
+    #         add_stability = 0.03
+    #         add_political_power = 20
+    #     }
+    # }
 
-    # 第7行 - 回国复出
-    focus = {
-        id = ROD_focus_9
-        icon = GFX_focus_CHI_appropriate_design
-        x = 2
-        y = 7
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_7 }
-        completion_reward = {
-            add_political_power = 60
-            add_stability = 0.05
-            add_popularity = { ideology = neutrality popularity = 0.03 }
-        }
-    }
+    # 第7行 - 回国复出（已隐藏）
+    # focus = {
+    #     id = ROD_focus_9
+    #     icon = GFX_focus_CHI_appropriate_design
+    #     x = 12
+    #     y = 7
+    #     cost = 10
+    #     ai_will_do = { factor = 1 }
+    #     prerequisite = { focus = ROD_focus_7 }
+    #     completion_reward = {
+    #         add_political_power = 60
+    #         add_stability = 0.05
+    #         add_popularity = { ideology = neutrality popularity = 0.03 }
+    #     }
+    # }
 
-    # 第8行 - 两个分支
-    focus = {
-        id = ROD_focus_10
-        icon = GFX_focus_CHI_military_mission
-        x = 0
-        y = 8
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_9 }
-        completion_reward = {
-            add_political_power = 30
-            add_stability = 0.02
-        }
-    }
-
-    focus = {
-        id = ROD_focus_11
-        icon = GFX_focus_CHI_weaponise_the_faithful
-        x = 4
-        y = 8
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_9 }
-        completion_reward = {
-            add_manpower = 10000
-            add_war_support = 0.05
-            army_experience = 5
-        }
-    }
-
-    # 第9行 - 建立四维学会分支
-    focus = {
-        id = ROD_focus_17
-        icon = GFX_focus_CHI_reject_the_nine_powers
-        x = -2
-        y = 9
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_10 }
-        completion_reward = {
-            add_stability = 0.03
-            add_political_power = 20
-        }
-    }
-
-    focus = {
-        id = ROD_focus_18
-        icon = GFX_focus_CHI_utilize_german_contacts
-        x = 0
-        y = 9
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_10 }
-        completion_reward = {
-            add_war_support = 0.05
-            add_popularity = { ideology = fascism popularity = 0.05 }
-        }
-    }
-
-    # 第9行 - 重组东北军分支
-    focus = {
-        id = ROD_focus_12
-        icon = GFX_focus_CHI_decisive_battles
-        x = 4
-        y = 9
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_11 }
-        completion_reward = {
-            add_manpower = 15000
-            add_war_support = 0.05
-            army_experience = 10
-        }
-    }
-
-    # 第10行 - 赴任西北剿总
-    focus = {
-        id = ROD_focus_13
-        icon = GFX_focus_chi_cooperation_with_the_communists
-        x = 4
-        y = 10
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_12 }
-        completion_reward = { 
-            add_political_power = 40 
-            620 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-            621 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-        } 
-    }
-
-    # 第11行 - 接触共产党
-    focus = {
-        id = ROD_focus_14
-        icon = GFX_focus_CHI_generalissimo_for_all_of_china
-        x = 4
-        y = 11
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_13 }
-        completion_reward = {
-            PRC = { add_opinion_modifier = { target = ROD modifier = ROD_contacts_communists } }
-            add_stability = -0.03
-            add_war_support = 0.05
-        }
-    }
-
-    # 第12行 - 两个分支
-    focus = {
-        id = ROD_focus_15
-        icon = GFX_focus_attack_japan
-        x = 2
-        y = 12 
-        cost = 10
-        ai_will_do = { factor = 1 } 
-        prerequisite = { focus = ROD_focus_14 } 
-        completion_reward = {
-            add_war_support = 0.1 
-            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_forces_anti_japanese } }
-            JAP = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese } }
-        }
-    }
-
-    focus = {
-        id = ROD_focus_16
-        icon = GFX_focus_generic_attack_chinese_soviets
-        x = 6
-        y = 12
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_focus_14 }
-        completion_reward = {
-            add_war_support = 0.05
-            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_suppresses_communists } }
-            add_popularity = { ideology = neutrality popularity = 0.05 }
-        }
-    }
 
     # ========== 右主线（联共抗日线）==========
     # 第0行 - 联共抗日
     focus = {
         id = ROD_focus_1
         icon = GFX_focus_AFG_against_kabul
-        x = 8
+        x = 18
         y = 0
         cost = 10
         ai_will_do = { factor = 1 }
@@ -316,7 +179,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_19
         icon = GFX_ROD_focus_19
-        x = 8
+        x = 18
         y = 1
         cost = 10
         ai_will_do = { factor = 1 }
@@ -331,7 +194,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_20
         icon = GFX_focus_AFG_defender_of_central_asia
-        x = 10
+        x = 20
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
@@ -346,7 +209,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_21
         icon = GFX_ROD_focus_21
-        x = 12
+        x = 22
         y = 1
         cost = 10
         ai_will_do = { factor = 1 }
@@ -362,7 +225,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_22
         icon = GFX_ROD_focus_22
-        x = 8
+        x = 18
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
@@ -377,7 +240,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_23
         icon = GFX_focus_CHI_guerrilla_warfare
-        x = 12
+        x = 22
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
@@ -393,7 +256,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_24
         icon = GFX_focus_AUS_union_of_danubian_socialist_republics
-        x = 7
+        x = 17
         y = 3
         cost = 10
         ai_will_do = { factor = 1 }
@@ -408,7 +271,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_25
         icon = GFX_focus_generic_befriend_the_chinese_soviet
-        x = 9
+        x = 19
         y = 3
         cost = 10
         ai_will_do = { factor = 1 }
@@ -424,7 +287,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_26
         icon = GFX_focus_RAJ_enrollment_of_dali_children
-        x = 12
+        x = 22
         y = 3
         cost = 10
         ai_will_do = { factor = 1 }
@@ -440,7 +303,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_27
         icon = GFX_focus_SOV_the_supreme_soviet
-        x = 8
+        x = 18
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
@@ -456,7 +319,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_28
         icon = GFX_focus_chi_mission_to_the_soviet_union
-        x = 10
+        x = 20
         y = 4
         cost = 10
         ai_will_do = { factor = 1 } 
@@ -471,7 +334,7 @@ focus_tree = {
     focus = {   
         id = ROD_focus_29 
         icon = GFX_focus_PRC_revolutionary_war_of_the_masses
-        x = 14 
+        x = 24
         y = 4 
         cost = 10
         ai_will_do = { factor = 1 }
@@ -487,7 +350,7 @@ focus_tree = {
     focus = {
         id = ROD_focus_30
         icon = GFX_focus_CHI_victory_over_the_invaders
-        x = 12
+        x = 22
         y = 5
         cost = 10
         ai_will_do = { factor = 1 }
@@ -500,6 +363,1023 @@ focus_tree = {
             add_popularity = { ideology = communism popularity = 0.08 }
             PRC = { add_opinion_modifier = { target = ROD modifier = ROD_united_front_leader } }
             CHI = { add_opinion_modifier = { target = ROD modifier = ROD_united_front_leader } }
+        }
+    }
+
+    # ========== 工业线 & 经济线（东北新建设）==========
+    # 总根 - 东北新建设
+    focus = {
+        id = ROD_ind_root
+        icon = GFX_goal_generic_construction2
+        x = 39
+        y = 0
+        cost = 10
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.05
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # ===== 工业线（左列，中心 x=18）=====
+    # 工业1 - 扩充东三省兵工厂（奉天兵工厂）
+    focus = {
+        id = ROD_ind_arsenal
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 35
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_root }
+        completion_reward = {
+            add_ideas = ROD_idea_mukden_arsenal
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+            if = {
+                limit = { has_full_control_of_state = 50 }
+                50 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+            else = {
+                random_owned_controlled_state = {
+                    limit = { is_core_of = ROD }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                }
+            }
+        }
+    }
+
+    # 工业2 - 互斥：采办万国军械
+    focus = {
+        id = ROD_ind_buy_arms
+        icon = GFX_goal_generic_construct_military
+        x = 33
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_arsenal }
+        mutually_exclusive = { focus = ROD_ind_copy_arms }
+        completion_reward = {
+            army_experience = 25
+            add_war_support = 0.03
+            add_political_power = 25
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 工业2 - 互斥：设厂仿造军械
+    focus = {
+        id = ROD_ind_copy_arms
+        icon = GFX_goal_generic_small_arms
+        x = 37
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_arsenal }
+        mutually_exclusive = { focus = ROD_ind_buy_arms }
+        completion_reward = {
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 工业3 - 聘请外籍技师
+    focus = {
+        id = ROD_ind_foreign_advisors
+        icon = GFX_goal_generic_army_artillery
+        x = 33
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_buy_arms }
+        completion_reward = {
+            add_political_power = 25
+            army_experience = 15
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery }
+        }
+    }
+
+    # 工业3 - 统一弹药制式
+    focus = {
+        id = ROD_ind_standardize
+        icon = GFX_goal_generic_production
+        x = 37
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_copy_arms }
+        completion_reward = {
+            add_ideas = ROD_idea_standard_arms
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+            add_political_power = 25
+        }
+    }
+
+    # 工业4 - 抚顺阜新煤田与页岩油
+    focus = {
+        id = ROD_ind_fuel
+        icon = GFX_goal_generic_oil_refinery
+        x = 35
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_foreign_advisors }
+        prerequisite = { focus = ROD_ind_standardize }
+        completion_reward = {
+            add_ideas = ROD_idea_coal_steel
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = excavation }
+            if = {
+                limit = { has_full_control_of_state = 60 }
+                60 = {
+                    add_resource = { type = oil amount = 6 }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes }
+                }
+            }
+            if = {
+                limit = { has_full_control_of_state = 53 }
+                53 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+            }
+        }
+    }
+
+    # 工业5 - 互斥：鞍山本溪煤铁
+    focus = {
+        id = ROD_ind_steel
+        icon = GFX_focus_BRA_national_steel_company
+        x = 33
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_fuel }
+        mutually_exclusive = { focus = ROD_ind_port }
+        completion_reward = {
+            if = { limit = { has_full_control_of_state = 66 } 66 = { add_resource = { type = steel amount = 8 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            if = { limit = { has_full_control_of_state = 65 } 65 = { add_resource = { type = steel amount = 4 } } }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 工业5 - 互斥：葫芦岛筑港
+    focus = {
+        id = ROD_ind_port
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 37
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_fuel }
+        mutually_exclusive = { focus = ROD_ind_steel }
+        completion_reward = {
+            add_ideas = ROD_idea_huludao
+            if = {
+                limit = { has_full_control_of_state = 72 }
+                72 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = { type = naval_base level = 2 instant_build = yes }
+                    add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+                }
+            }
+            else = {
+                random_owned_controlled_state = {
+                    limit = { is_core_of = ROD }
+                    add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+                }
+            }
+        }
+    }
+
+    # 工业6 - 东北机器修造业
+    focus = {
+        id = ROD_ind_machinery
+        icon = GFX_focus_GER_kdf_wagen
+        x = 33
+        y = 6
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_steel }
+        completion_reward = {
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 工业6 - 自建铁路干线（奉海、吉海、洮索）
+    focus = {
+        id = ROD_ind_railway
+        icon = GFX_focus_CHL_connect_the_northern_railways
+        x = 37
+        y = 6
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_port }
+        completion_reward = {
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = excavation }
+            if = { limit = { has_full_control_of_state = 50 } 50 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            if = { limit = { has_full_control_of_state = 64 } 64 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            if = { limit = { has_full_control_of_state = 63 } 63 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            if = { limit = { has_full_control_of_state = 72 } 72 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+
+    # 工业7 - 扩充东北大学理工科（研究槽）
+    focus = {
+        id = ROD_ind_university
+        icon = GFX_focus_generic_university_1
+        x = 35
+        y = 7
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_machinery }
+        prerequisite = { focus = ROD_ind_railway }
+        completion_reward = {
+            add_research_slot = 1
+            add_political_power = 50
+        }
+    }
+
+    # 工业8 - 互斥：战时军工总动员
+    focus = {
+        id = ROD_ind_wartime
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 33
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_university }
+        mutually_exclusive = { focus = ROD_ind_relocate }
+        completion_reward = {
+            add_war_support = 0.05
+            add_tech_bonus = { bonus = 0.5 uses = 2 category = industry }
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+        }
+    }
+
+    # 工业8 - 互斥：工业内迁大西北
+    focus = {
+        id = ROD_ind_relocate
+        icon = GFX_focus_ARG_develop_the_electricity_sector
+        x = 37
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_university }
+        mutually_exclusive = { focus = ROD_ind_wartime }
+        completion_reward = {
+            add_stability = 0.03
+            if = {
+                limit = { has_full_control_of_state = 170 }
+                170 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+                    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+                }
+            }
+            if = { limit = { has_full_control_of_state = 162 } 162 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 工业9 - 建成国防工业体系
+    focus = {
+        id = ROD_ind_defense
+        icon = GFX_goal_generic_production2
+        x = 35
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_wartime }
+        prerequisite = { focus = ROD_ind_relocate }
+        completion_reward = {
+            add_war_support = 0.1
+            add_political_power = 50
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # ===== 经济线（右列，中心 x=26）=====
+    # 经济1 - 巩固东三省官银号
+    focus = {
+        id = ROD_eco_bank
+        icon = GFX_focus_generic_stockpile_currency
+        x = 43
+        y = 1
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_ind_root }
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.05
+        }
+    }
+
+    # 经济2 - 互斥：整顿奉票
+    focus = {
+        id = ROD_eco_fengpiao
+        icon = GFX_focus_generic_currency_reforms
+        x = 41
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_bank }
+        mutually_exclusive = { focus = ROD_eco_fabi }
+        completion_reward = {
+            add_ideas = ROD_idea_fengpiao
+            add_political_power = 50
+        }
+    }
+
+    # 经济2 - 互斥：遵行法币政策
+    focus = {
+        id = ROD_eco_fabi
+        icon = GFX_focus_AFG_afghan_bank
+        x = 45
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_bank }
+        mutually_exclusive = { focus = ROD_eco_fengpiao }
+        completion_reward = {
+            add_political_power = 50
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 经济3 - 三省金融网络（边业银行与官银号分号）
+    focus = {
+        id = ROD_eco_banknet
+        icon = GFX_focus_AFG_a_modern_economy
+        x = 41
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_fengpiao }
+        completion_reward = {
+            add_political_power = 40
+            add_stability = 0.03
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 经济3 - 力争关税自主
+    focus = {
+        id = ROD_eco_customs
+        icon = GFX_goal_generic_positive_trade_relations
+        x = 45
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_fabi }
+        completion_reward = {
+            add_political_power = 120
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 经济4 - 振兴大豆三品
+    focus = {
+        id = ROD_eco_soy
+        icon = GFX_focus_generic_agricultural_subsidies
+        x = 43
+        y = 4
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_banknet }
+        prerequisite = { focus = ROD_eco_customs }
+        completion_reward = {
+            add_ideas = ROD_idea_soy_trade
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+
+    # 经济5 - 互斥：兴安屯垦实边
+    focus = {
+        id = ROD_eco_reclaim
+        icon = GFX_focus_generic_farmland
+        x = 41
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_soy }
+        mutually_exclusive = { focus = ROD_eco_immigration }
+        completion_reward = {
+            add_stability = 0.03
+            if = { limit = { has_full_control_of_state = 19 } 19 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            if = { limit = { has_full_control_of_state = 30 } 30 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+        }
+    }
+
+    # 经济5 - 互斥：招徕关内移民
+    focus = {
+        id = ROD_eco_immigration
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 45
+        y = 5
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_soy }
+        mutually_exclusive = { focus = ROD_eco_reclaim }
+        completion_reward = {
+            add_manpower = 30000
+            add_stability = 0.02
+            if = { limit = { has_full_control_of_state = 24 } 24 = { add_extra_state_shared_building_slots = 2 } }
+            if = { limit = { has_full_control_of_state = 36 } 36 = { add_extra_state_shared_building_slots = 2 } }
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_extra_state_shared_building_slots = 1 }
+        }
+    }
+
+    # 经济6 - 农村信用合作社
+    focus = {
+        id = ROD_eco_cooperatives
+        icon = GFX_focus_CHI_import_fertilisers
+        x = 41
+        y = 6
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_reclaim }
+        completion_reward = {
+            add_political_power = 30
+            add_stability = 0.05
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+
+    # 经济6 - 以工代赈兴修公路
+    focus = {
+        id = ROD_eco_relief_works
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 45
+        y = 6
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_immigration }
+        completion_reward = {
+            add_political_power = 20
+            if = { limit = { has_full_control_of_state = 85 } 85 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            if = { limit = { has_full_control_of_state = 98 } 98 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+        }
+    }
+
+    # 经济7 - 对日经济绝交
+    focus = {
+        id = ROD_eco_trade_war
+        icon = GFX_goal_generic_trade
+        x = 43
+        y = 7
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_cooperatives }
+        prerequisite = { focus = ROD_eco_relief_works }
+        completion_reward = {
+            add_war_support = 0.1
+            add_political_power = 50
+            JAP = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese } }
+        }
+    }
+
+    # 经济8 - 互斥：国民经济建设运动
+    focus = {
+        id = ROD_eco_national_economy
+        icon = GFX_focus_BEL_engine_of_the_economy
+        x = 41
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_trade_war }
+        mutually_exclusive = { focus = ROD_eco_control }
+        completion_reward = {
+            add_ideas = ROD_idea_national_economy
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+        }
+    }
+
+    # 经济8 - 互斥：推行统制经济
+    focus = {
+        id = ROD_eco_control
+        icon = GFX_goal_generic_production
+        x = 45
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_trade_war }
+        mutually_exclusive = { focus = ROD_eco_national_economy }
+        completion_reward = {
+            add_ideas = ROD_idea_war_economy
+            add_war_support = 0.05
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+            random_owned_controlled_state = { limit = { is_core_of = ROD } add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+        }
+    }
+
+    # 经济9 - 建立战时经济体制
+    focus = {
+        id = ROD_eco_wartime_system
+        icon = GFX_goal_generic_national_unity
+        x = 43
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_eco_national_economy }
+        prerequisite = { focus = ROD_eco_control }
+        completion_reward = {
+            add_political_power = 80
+            add_stability = 0.05
+            add_war_support = 0.1
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+            random_owned_controlled_state = {
+                limit = { is_core_of = ROD }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            }
+        }
+    }
+    # ========== 政治转型三线（民主 / 共产 / 法西斯 · 错支线）==========
+    # 政治总根 - 政统何往（KR式独立政治根，开局可选）
+    focus = {
+        id = ROD_pol_root
+        icon = GFX_focus_EST_rally_the_nation
+        x = 17
+        y = 7
+        cost = 10
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_political_power = 75
+            add_stability = 0.05
+        }
+    }
+
+    # ===== 民主主义线（折线摆动 15~19，含侧支汇合）=====
+    focus = {
+        id = ROD_pol_dem_1
+        icon = GFX_focus_CHI_students_to_the_countryside
+        x = 12
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_root }
+        mutually_exclusive = { focus = ROD_pol_com_1 focus = ROD_pol_fas_1 }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.08 }
+            add_political_power = 30
+        }
+    }
+
+    # 民主2 - 营救七君子·释放政治犯
+    focus = {
+        id = ROD_pol_dem_2
+        icon = GFX_ROD_focus_seven_gentlemen
+        x = 11
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_dem_1 }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.08 }
+            add_stability = 0.03
+        }
+    }
+
+    # 民主3 - 支持一二九学生运动（主线向右摆）
+    focus = {
+        id = ROD_pol_dem_3
+        icon = GFX_focus_JAP_organize_the_student_movements
+        x = 13
+        y = 10
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_dem_2 }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.08 }
+            add_war_support = 0.03
+        }
+    }
+
+    # 民主侧支 - 开放言论·扶持救亡报刊
+    focus = {
+        id = ROD_pol_dem_press
+        icon = GFX_focus_generic_printing_press
+        x = 9
+        y = 10
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_dem_2 }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.07 }
+            add_political_power = 25
+            add_war_support = -0.02
+        }
+    }
+
+    # 民主4 - 召集全国救国会议（主线向左摆）
+    focus = {
+        id = ROD_pol_dem_4
+        icon = GFX_focus_CZE_coalition_building
+        x = 10
+        y = 11
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_dem_3 }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.07 }
+            add_political_power = 30
+        }
+    }
+
+    # 民主5 - 民主联合政府（主线+侧支汇合）
+    focus = {
+        id = ROD_pol_dem_5
+        icon = GFX_focus_ARG_alvears_democracy
+        x = 12
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_dem_4 }
+        prerequisite = { focus = ROD_pol_dem_press }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.1 }
+            add_stability = 0.03
+        }
+    }
+
+    # 民主6 - 颁行宪法·还政于民（民主转型）
+    focus = {
+        id = ROD_pol_dem_6
+        icon = GFX_focus_AFG_parliamentary_democracy
+        x = 11
+        y = 13
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_dem_5 }
+        completion_reward = {
+            add_popularity = { ideology = democratic popularity = 0.12 }
+            add_stability = 0.05
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = yes
+            }
+        }
+    }
+
+    # 民主7 - 民主抗战的堡垒（终局）
+    focus = {
+        id = ROD_pol_dem_7
+        icon = GFX_focus_AST_a_democratic_bulwark
+        x = 12
+        y = 14
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_dem_6 }
+        completion_reward = {
+            add_ideas = ROD_idea_democratic
+            add_political_power = 60
+            add_stability = 0.05
+            add_war_support = 0.05
+        }
+    }
+
+    # ===== 共产主义线（中央菱形：兵谏 ‖ 西北国防政府 → 三位一体）=====
+    focus = {
+        id = ROD_pol_com_1
+        icon = GFX_focus_generic_befriend_the_chinese_soviet
+        x = 17
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_root }
+        mutually_exclusive = { focus = ROD_pol_dem_1 focus = ROD_pol_fas_1 }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.08 }
+            if = {
+                limit = { PRC = { exists = yes } }
+                PRC = { add_opinion_modifier = { target = ROD modifier = ROD_united_front } }
+            }
+        }
+    }
+
+    # 共产2 - 洛川会谈
+    focus = {
+        id = ROD_pol_com_2
+        icon = GFX_focus_generic_diplomatic_treaty
+        x = 18
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_com_1 }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.08 }
+            add_political_power = 25
+        }
+    }
+
+    # 共产3 - 延安会谈（周恩来与张学良）
+    focus = {
+        id = ROD_pol_com_3
+        icon = GFX_focus_chi_cooperation_with_the_communists
+        x = 16
+        y = 10
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_com_2 }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.08 }
+            add_stability = -0.02
+            if = {
+                limit = { PRC = { exists = yes } }
+                PRC = { add_opinion_modifier = { target = ROD modifier = ROD_communist_cooperation } }
+            }
+        }
+    }
+
+    # 共产4a（菱形左）- 西安兵谏
+    focus = {
+        id = ROD_pol_com_4a
+        icon = GFX_ROD_focus_xian_incident
+        x = 15
+        y = 11
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_com_3 }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_war_support = 0.08
+            add_stability = -0.05
+        }
+    }
+
+    # 共产4b（菱形右）- 组建西北国防政府
+    focus = {
+        id = ROD_pol_com_4b
+        icon = GFX_ROD_focus_northwest_government
+        x = 19
+        y = 11
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_com_3 }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.06 }
+            add_political_power = 40
+        }
+    }
+
+    # 共产5 - 三位一体·逼蒋抗日（菱形汇合）
+    focus = {
+        id = ROD_pol_com_5
+        icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+        x = 17
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_com_4a }
+        prerequisite = { focus = ROD_pol_com_4b }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.1 }
+            army_experience = 25
+            if = {
+                limit = { PRC = { exists = yes } }
+                PRC = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese_alliance } }
+            }
+        }
+    }
+
+    # 共产6 - 人民革命政府（共产主义转型）
+    focus = {
+        id = ROD_pol_com_6
+        icon = GFX_focus_AUS_union_of_danubian_socialist_republics
+        x = 18
+        y = 13
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_com_5 }
+        completion_reward = {
+            add_popularity = { ideology = communism popularity = 0.12 }
+            add_war_support = 0.05
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+        }
+    }
+
+    # 共产7 - 红军抗日先锋（终局）
+    focus = {
+        id = ROD_pol_com_7
+        icon = GFX_focus_ITA_peasants_rise
+        x = 17
+        y = 14
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_com_6 }
+        completion_reward = {
+            add_ideas = ROD_idea_communist
+            add_political_power = 50
+            add_war_support = 0.1
+            add_manpower = 10000
+        }
+    }
+
+    # ===== 法西斯主义线（折线摆动 27~31，含侧支汇合，向下移2行）=====
+    focus = {
+        id = ROD_pol_fas_1
+        icon = GFX_focus_ARG_fascist_researchers
+        x = 23
+        y = 9
+        cost = 10 
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_root }
+        mutually_exclusive = { focus = ROD_pol_dem_1 focus = ROD_pol_com_1 }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.08 }
+            add_political_power = 30
+        }
+    }
+
+    # 法西斯2 - 结交齐亚诺·意式建军
+    focus = {
+        id = ROD_pol_fas_2
+        icon = GFX_focus_AUS_diplomatic_effort
+        x = 23
+        y = 11
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_1 }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.08 }
+            air_experience = 25
+        }
+    }
+
+    # 法西斯3 - 拥护唯一领袖（主线向左摆）
+    focus = {
+        id = ROD_pol_fas_3
+        icon = GFX_focus_IRQ_rally_behind_the_hashemite_dynasty
+        x = 21
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_2 }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.08 }
+            add_stability = 0.03
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
+        }
+    }
+
+    # 法西斯侧支 - 取消复东会·拥蒋合流（主线向左摆）
+    focus = {
+        id = ROD_pol_fas_fudong
+        icon = GFX_focus_CHI_reject_the_nine_powers
+        x = 21
+        y = 13
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_3 }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.06 }
+            add_political_power = 20
+            add_stability = 0.03
+        }
+    }
+
+    # 法西斯侧支 - 德意顾问团·研修法西斯主义
+    focus = {
+        id = ROD_pol_fas_italy
+        icon = GFX_focus_generic_fascist_propaganda
+        x = 25
+        y = 12
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_2 }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.07 }
+            air_experience = 25
+        }
+    }
+
+    # 法西斯4 - 四维学会与新生活运动
+    focus = {
+        id = ROD_pol_fas_4
+        icon = GFX_focus_CHL_unify_the_fascist_movements
+        x = 23
+        y = 13
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_fudong }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.07 }
+            add_political_power = 30
+            add_stability = 0.02
+            add_war_support = 0.05
+        }
+    }
+
+    # 法西斯5 - 蓝衣社入军·全力剿共（主线+侧支汇合）
+    focus = {
+        id = ROD_pol_fas_5
+        icon = GFX_focus_eng_organise_the_blackshirts
+        x = 25
+        y = 14
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_4 }
+        prerequisite = { focus = ROD_pol_fas_italy }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.1 }
+            add_war_support = 0.05
+            army_experience = 10
+        }
+    }
+
+    # 法西斯6 - 军事统制独裁（法西斯转型）
+    focus = {
+        id = ROD_pol_fas_6
+        icon = GFX_focus_generic_military_dictatorship
+        x = 23
+        y = 15
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_5 }
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.12 }
+            add_war_support = 0.05
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+            }
+        }
+    }
+
+    # 法西斯7 - 反共防波堤（终局）
+    focus = {
+        id = ROD_pol_fas_7
+        icon = GFX_focus_GER_anti_comintern_pact
+        x = 22
+        y = 16
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_6 }
+        completion_reward = {
+            add_ideas = ROD_idea_fascist
+            add_political_power = 50
+            add_war_support = 0.1
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
         }
     }
 

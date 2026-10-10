@@ -1,0 +1,17 @@
+characters={
+	NEP_Tribhuva={
+		name=NEP_Tribhuva
+		portraits={
+			civilian={
+				large="gfx/leaders/NEP/portrait_nep_juddah_rana.dds"
+			}
+		}
+		country_leader={
+			desc = NEP_Tribhuva_leader_desc
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

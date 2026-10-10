@@ -13,6 +13,27 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader={
+			desc = ROD_ZhangXueLiang_leader_desc_democratic
+			ideology=liberalism
+			traits={ substance_addict }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc = ROD_ZhangXueLiang_leader_desc_communism
+			ideology=leninism
+			traits={ substance_addict }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc = ROD_ZhangXueLiang_leader_desc_fascism
+			ideology=fascism_ideology
+			traits={ substance_addict }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	
 			field_marshal={
 				traits={ }
