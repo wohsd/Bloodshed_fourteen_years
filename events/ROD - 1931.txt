@@ -19,7 +19,8 @@ country_event = {
 				add_to_variable = {
 					ROD_zhang_xueliang_stress = 10
 				}
-				country_event = { id = ROD1931.921  days = 3 } 
+				country_event = { id = ROD1931.921  days = 3 }
+				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 	}
@@ -89,11 +90,12 @@ country_event = {
 				add_stability = -0.03
 				set_country_flag = ROD_ZhangXueLiang_ill
 				set_variable = {
-					ROD_zhang_xueliang_stress = 40
-				}
-				add_to_variable = {
-					ROD_zhang_xueliang_stress = 10
-				}
+				ROD_zhang_xueliang_stress = 40
+			}
+			add_to_variable = {
+				ROD_zhang_xueliang_stress = 10
+			}
+			country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 	}
@@ -121,6 +123,7 @@ country_event = {
 				add_to_variable = {
 					ROD_zhang_xueliang_stress = 10
 				}
+				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 	}
@@ -148,6 +151,7 @@ country_event = {
 				add_to_variable = {
 					ROD_zhang_xueliang_stress = 10
 				}
+				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 	}
@@ -199,7 +203,141 @@ country_event = {
 				add_to_variable = {
 					ROD_zhang_xueliang_stress = 10
 				}
+				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
+	}
+}
+
+# 压力巡检（隐藏）：每次压力变动后2天自查，挂/摘阶梯debuff
+country_event = {
+	id = ROD1931.990
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# ≥90：严重状态
+		if = {
+			limit = {
+				check_variable = { ROD_zhang_xueliang_stress > 89 }
+				NOT = { has_idea = ROD_zhang_stress_severe }
+			}
+			add_ideas = ROD_zhang_stress_severe
+			country_event = { id = ROD1931.992 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_idea = ROD_zhang_stress_severe
+				check_variable = { ROD_zhang_xueliang_stress < 90 }
+			}
+			remove_ideas = ROD_zhang_stress_severe
+		}
+		# ≥70：积劳成疾
+		if = {
+			limit = {
+				check_variable = { ROD_zhang_xueliang_stress > 69 }
+				NOT = { has_idea = ROD_zhang_stress_high }
+			}
+			add_ideas = ROD_zhang_stress_high
+			country_event = { id = ROD1931.991 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_idea = ROD_zhang_stress_high
+				check_variable = { ROD_zhang_xueliang_stress < 70 }
+			}
+			remove_ideas = ROD_zhang_stress_high
+		}
+	}
+}
+
+# 压力≥70：旧疾复发（可见提示）
+country_event = {
+	id = ROD1931.991
+	title = ROD1931.991.t
+	desc = ROD1931.991.d
+	picture = GFX_ROD_1931_501
+
+	is_triggered_only = yes
+
+	option = {
+		name = ROD1931.991.a
+		add_stability = -0.01
+	}
+}
+
+# 压力≥90：身心俱疲（可见警告）
+country_event = {
+	id = ROD1931.992
+	title = ROD1931.992.t
+	desc = ROD1931.992.d
+	picture = GFX_ROD_1931_501
+
+	is_triggered_only = yes
+
+	option = {
+		name = ROD1931.992.a
+		add_stability = -0.02
+		add_war_support = -0.01
+	}
+}
+
+# 东北民众抗日救国会成立（1931.9.27，北平西单牌楼哈尔飞大戏院）
+country_event = {
+	id = ROD1931.927
+	title = ROD1931.927.t
+	desc = ROD1931.927.d
+	picture = GFX_ROD_1931_915
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ROD1931.927.a
+		add_war_support = 0.05
+		add_stability = -0.01
+		hidden_effect = {
+			ROD = {
+				add_political_power = -30
+				JAP = { add_opinion_modifier = { target = ROD modifier = ROD_supports_resistance } }
+			}
+		}
+	}
+	option = {
+		name = ROD1931.927.b
+		add_war_support = 0.02
+	}
+}
+
+# 江桥抗战（1931.11.4，马占山率黑龙江省防军抵抗日军）
+country_event = {
+	id = ROD1931.1104
+	title = ROD1931.1104.t
+	desc = ROD1931.1104.d
+	picture = GFX_ROD_1931_915
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ROD1931.1104.a
+		add_war_support = 0.1
+		add_stability = -0.02
+		hidden_effect = {
+			ROD = {
+				add_political_power = -20
+				add_to_variable = { ROD_zhang_xueliang_stress = 10 }
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
+	}
+	option = {
+		name = ROD1931.1104.b
+		add_war_support = 0.04
+	}
+	option = {
+		name = ROD1931.1104.c
+		add_war_support = -0.05
+		add_stability = 0.01
 	}
 }

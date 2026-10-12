@@ -1,0 +1,28 @@
+add_namespace = ROD1932
+
+# 伪满洲国成立（1932.3.9，溥仪在长春登基）
+country_event = {
+	id = ROD1932.309
+	title = ROD1932.309.t
+	desc = ROD1932.309.d
+	picture = GFX_ROD_1931_915
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ROD1932.309.a
+		add_war_support = 0.05
+		add_stability = -0.01
+		hidden_effect = {
+			ROD = {
+				JAP = { add_opinion_modifier = { target = ROD modifier = ROD_opposes_manchukuo } }
+			}
+		}
+	}
+	option = {
+		name = ROD1932.309.b
+		add_war_support = 0.02
+		add_stability = -0.02
+	}
+}

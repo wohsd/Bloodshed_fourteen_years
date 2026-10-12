@@ -114,12 +114,12 @@ guiTypes = {
 		animation_time = 1000
 		size = { width = 256 height = 768}
 		
-		iconType =
-		{
-			name ="frontend_game_logo"
-			spriteType = "GFX_frontend_game_logo"
-			position = { x= 1430 y = 20 }
-		}
+		#iconType =
+		#{
+			#name ="frontend_game_logo"
+			#spriteType = "GFX_frontend_game_logo"
+			#position = { x= 1430 y = 20 }
+		#}
 		ButtonType = {
 			name = "achievements_button"
 			position = { x = 0 y = -200 }
@@ -127,26 +127,26 @@ guiTypes = {
 			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}
 
-		iconType =
-		{
-			name ="frontend_dev_logo"
-			spriteType = "GFX_frontend_dev_logo"
-			position = { x= 1280 y = 20 }
-		}
+		#iconType =
+		#{
+			#name ="frontend_dev_logo"
+			#spriteType = "GFX_frontend_dev_logo"
+			#position = { x= 1280 y = 20 }
+		#}
 		
-		iconType =
-		{
-			name ="pdx_int_logo"
-			spriteType = "GFX_pdx_int_logo"
-			position = { x= 1160 y = 20 }
-		}	
+		#iconType =
+		#{
+			#name ="pdx_int_logo"
+			#spriteType = "GFX_pdx_int_logo"
+			#position = { x= 1160 y = 20 }
+		#}	
 		
 		ButtonType = {
 			name = "privacy_policy_button"
 			quadTextureSprite ="privacy"
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
 			scale = 0.9
-			position = { x=1450 y=200 }
+			position = { x=60 y=30 }
 			quadTextureSprite ="GFX_14years"
 			pdx_tooltip = "GFX_14years"
 			web_link = "https://www.bilibili.com/video/BV11bCUY8Eca/?spm_id_from=333.1387.list.card_archive.click&vd_source=b81441fdeef9aa5c7e116f0f597fb241"
@@ -173,7 +173,7 @@ guiTypes = {
 			position = { x = 70 y = 100 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CONTINUE"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -183,7 +183,7 @@ guiTypes = {
 			position = { x = 70 y = 150 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -193,7 +193,7 @@ guiTypes = {
 			position = {  x = 70 y = 200 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -203,7 +203,7 @@ guiTypes = {
 			position = { x = 70 y = 250}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_TUTORIAL"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -213,7 +213,7 @@ guiTypes = {
 			position = { x = 70 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "BACK"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
@@ -223,22 +223,22 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x = 0 y = 0}
+		position = { x = -580 y = -140}
 		size = { width = 417 height = 696 }
 		Orientation = center
 		Origo = center
 
 				
-		background = {
-			name = "Background"		
-			quadTextureSprite ="GFX_main_bg"
-		}
+		#background = {
+			#name = "Background"		
+			#quadTextureSprite ="GFX_main_bg"
+		#}
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 70 y = 100 }
+			position = { x = 70 y = 350 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"
+			font = "bfy_start_50"
 			text = "FE_SINGLE_PLAYER"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -246,9 +246,9 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 70 y = 150}
+			position = { x = 70 y = 420}
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
+			font = "bfy_start_50"			
 			text = "FE_MULTI_PLAYER"			
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -277,25 +277,25 @@ guiTypes = {
 
 	positionType = {
 		name = "version_label_subscription_position"
-		position = { x = 35 y = 524 }
+		position = { x =65 y = 800 }
 	}
 		
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 70 y = 200 }
+			position = { x = 70 y = 560 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 70 y = 248 }
+			position = { x = 70 y = 490 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_CAREER_PROFILE"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -310,17 +310,17 @@ guiTypes = {
 
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 70 y = 300 }
+			position = { x = 70 y = 700 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
-			buttonFont = "hoi_24header"
+			buttonFont = "bfy_start_50"
 		}
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 70 y = 350 }
+			position = { x = 70 y = 650 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
+			font = "bfy_start_50"			
 			text = "FE_EXIT"			
 			clicksound = click_default
 			oversound = ui_menu_over

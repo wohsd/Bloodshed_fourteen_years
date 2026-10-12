@@ -93,8 +93,11 @@ country_event = {
 			ROD_YuXueZhong={
 				promote_character = yes
 			}
+			# 配套国策：通电下野自动完成左线「锦州交涉」「辞副帅·待罪北平」
+			complete_national_focus = ROD_focus_2
+			complete_national_focus = ROD_focus_3
 		}
-    } 
+    }
 	option = {
 		name = ROD_hidden.1.a
 		hidden_effect = {
@@ -130,8 +133,37 @@ country_event = {
     } 
 	option = {
 		name = ROD_hidden.1.a
-	}		
+	}
 }
+
+
+# 配套国策：1932年8月任北平绥靖公署主任，自动完成「赴任北平绥靖公署」
+country_event = {
+	id = ROD_hidden.3
+	title = ROD_hidden.3.t
+	desc = ROD_hidden.3.d
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+		tag = ROD
+		date > 1932.8.18
+		date < 1932.9.15
+		has_completed_national_focus = ROD_focus_3
+		has_country_flag = ROD_follows_central
+    }
+    mean_time_to_happen = {
+      	days = 2
+    }
+	immediate = {
+		ROD = {
+			complete_national_focus = ROD_focus_4
+		}
+	}
+	option = {
+		name = ROD_hidden.1.a
+	}
+}
+
 
 news_event = {
 	id = ROD.3
@@ -237,7 +269,15 @@ news_event = {
 
 	major = yes
 
-	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = ROD
+		date > 1932.1.1
+		date < 1932.2.1
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
 	immediate = {
 		hidden_effect = {
 			ROD={
@@ -252,6 +292,11 @@ news_event = {
 				transfer_state = 79
 				transfer_state = 59
 				transfer_state = 37
+				# 配套国策：锦州撤军自动完成左线「锦州交涉·李顿调查团」（仅听命中央线）
+				if = {
+					limit = { has_completed_national_focus = ROD_focus_0 }
+					complete_national_focus = ROD_focus_2
+				}
 			}
 			JAP={
 				white_peace = ROD

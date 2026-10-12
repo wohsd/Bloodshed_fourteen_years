@@ -86,6 +86,16 @@ opinion_modifiers = {
 		value = 20
 	}
 
+	# 支持东北民众抗日救国会
+	ROD_supports_resistance = {
+		value = -15
+	}
+
+	# 反对伪满洲国
+	ROD_opposes_manchukuo = {
+		value = -20
+	}
+
 	# 第二次国共合作：PRC拒绝联合政府提议
 	RFC_second_united_front_refused = {
 		value = -50

@@ -47,7 +47,7 @@ focus_tree = {
     # 第2行 - 通电下野
     focus = {
         id = ROD_focus_3
-        icon = GFX_focus_ARG_balancing_act
+        icon = GFX_ROD_focus_resign_command
         x = 12
         y = 2
         cost = 10
@@ -491,7 +491,7 @@ focus_tree = {
         }
     }
 
-    # 工业4 - 抚顺阜新煤田与页岩油
+    # 工业4 - 抚顺阜新煤田与页岩油（两路汇合：外籍技师 OR 弹药制式，避免互斥分支死锁）
     focus = {
         id = ROD_ind_fuel
         icon = GFX_goal_generic_oil_refinery
@@ -499,8 +499,7 @@ focus_tree = {
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_foreign_advisors }
-        prerequisite = { focus = ROD_ind_standardize }
+        prerequisite = { focus = ROD_ind_foreign_advisors focus = ROD_ind_standardize }
         completion_reward = {
             add_ideas = ROD_idea_coal_steel
             add_tech_bonus = { bonus = 0.5 uses = 1 category = excavation }
@@ -611,7 +610,7 @@ focus_tree = {
         }
     }
 
-    # 工业7 - 扩充东北大学理工科（研究槽）
+    # 工业7 - 扩充东北大学理工科（两路汇合：机器修造 OR 铁路干线，避免互斥分支死锁）
     focus = {
         id = ROD_ind_university
         icon = GFX_focus_generic_university_1
@@ -619,8 +618,7 @@ focus_tree = {
         y = 7
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_machinery }
-        prerequisite = { focus = ROD_ind_railway }
+        prerequisite = { focus = ROD_ind_machinery focus = ROD_ind_railway }
         completion_reward = {
             add_research_slot = 1
             add_political_power = 50
@@ -674,7 +672,7 @@ focus_tree = {
         }
     }
 
-    # 工业9 - 建成国防工业体系
+    # 工业9 - 建成国防工业体系（两路汇合：战时总动员 OR 工业内迁，避免互斥分支死锁）
     focus = {
         id = ROD_ind_defense
         icon = GFX_goal_generic_production2
@@ -682,8 +680,7 @@ focus_tree = {
         y = 9
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_wartime }
-        prerequisite = { focus = ROD_ind_relocate }
+        prerequisite = { focus = ROD_ind_wartime focus = ROD_ind_relocate }
         completion_reward = {
             add_war_support = 0.1
             add_political_power = 50
@@ -788,7 +785,7 @@ focus_tree = {
         }
     }
 
-    # 经济4 - 振兴大豆三品
+    # 经济4 - 振兴大豆三品（两路汇合：左路金融网络 OR 右路关税自主，避免互斥分支死锁）
     focus = {
         id = ROD_eco_soy
         icon = GFX_focus_generic_agricultural_subsidies
@@ -796,8 +793,7 @@ focus_tree = {
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_banknet }
-        prerequisite = { focus = ROD_eco_customs }
+        prerequisite = { focus = ROD_eco_banknet focus = ROD_eco_customs }
         completion_reward = {
             add_ideas = ROD_idea_soy_trade
             random_owned_controlled_state = {
@@ -877,7 +873,7 @@ focus_tree = {
         }
     }
 
-    # 经济7 - 对日经济绝交
+    # 经济7 - 对日经济绝交（两路汇合：信用合作社 OR 以工代赈，避免互斥分支死锁）
     focus = {
         id = ROD_eco_trade_war
         icon = GFX_goal_generic_trade
@@ -885,8 +881,7 @@ focus_tree = {
         y = 7
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_cooperatives }
-        prerequisite = { focus = ROD_eco_relief_works }
+        prerequisite = { focus = ROD_eco_cooperatives focus = ROD_eco_relief_works }
         completion_reward = {
             add_war_support = 0.1
             add_political_power = 50
@@ -929,7 +924,7 @@ focus_tree = {
         }
     }
 
-    # 经济9 - 建立战时经济体制
+    # 经济9 - 建立战时经济体制（两路汇合：建设运动 OR 统制经济，避免互斥分支死锁）
     focus = {
         id = ROD_eco_wartime_system
         icon = GFX_goal_generic_national_unity
@@ -937,8 +932,7 @@ focus_tree = {
         y = 9
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_national_economy }
-        prerequisite = { focus = ROD_eco_control }
+        prerequisite = { focus = ROD_eco_national_economy focus = ROD_eco_control }
         completion_reward = {
             add_political_power = 80
             add_stability = 0.05
@@ -965,12 +959,46 @@ focus_tree = {
             add_stability = 0.05
         }
     }
+ 
+    # ===== 拥蒋合流支线（政统何往下的独立政治选项，任意路线可取）=====
+    # 合流1 - 取消复东会·拥蒋合流
+    focus = {
+        id = ROD_pol_fas_fudong
+        icon = GFX_focus_CHI_reject_the_nine_powers
+        x = 21
+        y = 8
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_root }
+        completion_reward = {
+            add_political_power = 40
+            add_stability = 0.03
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
+        }
+    }
+
+    # 合流2 - 四维学会与新生活运动
+    focus = {
+        id = ROD_pol_fas_4
+        icon = GFX_focus_CHL_unify_the_fascist_movements
+        x = 21
+        y = 9
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_pol_fas_fudong }
+        completion_reward = {
+            add_political_power = 30
+            add_stability = 0.05
+            add_war_support = 0.02
+            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
+        }
+    }
 
     # ===== 民主主义线（折线摆动 15~19，含侧支汇合）=====
     focus = {
         id = ROD_pol_dem_1
         icon = GFX_focus_CHI_students_to_the_countryside
-        x = 12
+        x = 11
         y = 8
         cost = 10
         ai_will_do = { factor = 1 }
@@ -1063,7 +1091,7 @@ focus_tree = {
     focus = {
         id = ROD_pol_dem_6
         icon = GFX_focus_AFG_parliamentary_democracy
-        x = 11
+        x = 12
         y = 13
         cost = 10
         ai_will_do = { factor = 1 }
@@ -1118,7 +1146,7 @@ focus_tree = {
     focus = {
         id = ROD_pol_com_2
         icon = GFX_focus_generic_diplomatic_treaty
-        x = 18
+        x = 17
         y = 9
         cost = 10
         ai_will_do = { factor = 1 }
@@ -1133,7 +1161,7 @@ focus_tree = {
     focus = {
         id = ROD_pol_com_3
         icon = GFX_focus_chi_cooperation_with_the_communists
-        x = 16
+        x = 17
         y = 10
         cost = 10
         ai_will_do = { factor = 1 }
@@ -1203,7 +1231,7 @@ focus_tree = {
     focus = {
         id = ROD_pol_com_6
         icon = GFX_focus_AUS_union_of_danubian_socialist_republics
-        x = 18
+        x = 17
         y = 13
         cost = 10
         ai_will_do = { factor = 1 }
@@ -1235,111 +1263,82 @@ focus_tree = {
         }
     }
 
-    # ===== 法西斯主义线（折线摆动 27~31，含侧支汇合，向下移2行）=====
+    # ===== 法西斯主义线（子承父业 → 通电入关：模仿张作霖入关问鼎中原的强人路线）=====
+    # 法西斯1 - 子承父业
     focus = {
         id = ROD_pol_fas_1
-        icon = GFX_focus_ARG_fascist_researchers
+        icon = GFX_ROD_focus_succeeding_father
         x = 23
         y = 9
-        cost = 10 
+        cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_root }
         mutually_exclusive = { focus = ROD_pol_dem_1 focus = ROD_pol_com_1 }
         completion_reward = {
             add_popularity = { ideology = fascism popularity = 0.08 }
-            add_political_power = 30
+            add_stability = 0.05
+            army_experience = 25
         }
     }
 
-    # 法西斯2 - 结交齐亚诺·意式建军
+    # 法西斯2 - 整军经武·重振奉军
     focus = {
         id = ROD_pol_fas_2
-        icon = GFX_focus_AUS_diplomatic_effort
+        icon = GFX_ROD_focus_military_reform
         x = 23
-        y = 11
+        y = 10
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_fas_1 }
         completion_reward = {
-            add_popularity = { ideology = fascism popularity = 0.08 }
-            air_experience = 25
+            add_popularity = { ideology = fascism popularity = 0.06 }
+            add_war_support = 0.03
+            army_experience = 25
+            add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
         }
     }
 
-    # 法西斯3 - 拥护唯一领袖（主线向左摆）
+    # 法西斯3（菱形左）- 拥立唯一领袖
     focus = {
         id = ROD_pol_fas_3
-        icon = GFX_focus_IRQ_rally_behind_the_hashemite_dynasty
+        icon = GFX_focus_generic_fascist_propaganda
         x = 21
-        y = 12
+        y = 11
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_fas_2 }
         completion_reward = {
-            add_popularity = { ideology = fascism popularity = 0.08 }
-            add_stability = 0.03
-            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
+            add_popularity = { ideology = fascism popularity = 0.09 }
+            add_stability = 0.05
+            add_political_power = 40
         }
     }
 
-    # 法西斯侧支 - 取消复东会·拥蒋合流（主线向左摆）
-    focus = {
-        id = ROD_pol_fas_fudong
-        icon = GFX_focus_CHI_reject_the_nine_powers
-        x = 21
-        y = 13
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_pol_fas_3 }
-        completion_reward = {
-            add_popularity = { ideology = fascism popularity = 0.06 }
-            add_political_power = 20
-            add_stability = 0.03
-        }
-    }
-
-    # 法西斯侧支 - 德意顾问团·研修法西斯主义
+    # 法西斯侧支（菱形右）- 远交德意·采购军火
     focus = {
         id = ROD_pol_fas_italy
-        icon = GFX_focus_generic_fascist_propaganda
+        icon = GFX_focus_GER_appease_the_wehrmacht
         x = 25
-        y = 12
+        y = 11
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_fas_2 }
         completion_reward = {
-            add_popularity = { ideology = fascism popularity = 0.07 }
+            add_popularity = { ideology = fascism popularity = 0.06 }
             air_experience = 25
+            army_experience = 15
         }
     }
 
-    # 法西斯4 - 四维学会与新生活运动
-    focus = {
-        id = ROD_pol_fas_4
-        icon = GFX_focus_CHL_unify_the_fascist_movements
-        x = 23
-        y = 13
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_pol_fas_fudong }
-        completion_reward = {
-            add_popularity = { ideology = fascism popularity = 0.07 }
-            add_political_power = 30
-            add_stability = 0.02
-            add_war_support = 0.05
-        }
-    }
-
-    # 法西斯5 - 蓝衣社入军·全力剿共（主线+侧支汇合）
+    # 法西斯4 - 蓝衣社入军·组训党军（菱形汇合）
     focus = {
         id = ROD_pol_fas_5
         icon = GFX_focus_eng_organise_the_blackshirts
-        x = 25
-        y = 14
+        x = 23
+        y = 12
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_pol_fas_4 }
-        prerequisite = { focus = ROD_pol_fas_italy }
+        prerequisite = { focus = ROD_pol_fas_3 focus = ROD_pol_fas_italy }
         completion_reward = {
             add_popularity = { ideology = fascism popularity = 0.1 }
             add_war_support = 0.05
@@ -1347,39 +1346,41 @@ focus_tree = {
         }
     }
 
-    # 法西斯6 - 军事统制独裁（法西斯转型）
+    # 法西斯5 - 兵出榆关
     focus = {
         id = ROD_pol_fas_6
         icon = GFX_focus_generic_military_dictatorship
         x = 23
-        y = 15
+        y = 13
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_fas_5 }
         completion_reward = {
-            add_popularity = { ideology = fascism popularity = 0.12 }
-            add_war_support = 0.05
-            set_politics = {
-                ruling_party = fascism
-                elections_allowed = no
-            }
+            add_popularity = { ideology = fascism popularity = 0.08 }
+            add_war_support = 0.1
+            add_political_power = 30
+            army_experience = 25
         }
     }
 
-    # 法西斯7 - 反共防波堤（终局）
+    # 法西斯6 - 通电入关·问鼎中原（终局·法西斯转型）
     focus = {
         id = ROD_pol_fas_7
-        icon = GFX_focus_GER_anti_comintern_pact
-        x = 22
-        y = 16
+        icon = GFX_ROD_focus_march_into_pass
+        x = 23
+        y = 14
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_fas_6 }
         completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.12 }
+            add_war_support = 0.15
+            add_political_power = 80
             add_ideas = ROD_idea_fascist
-            add_political_power = 50
-            add_war_support = 0.1
-            CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+            }
         }
     }
 

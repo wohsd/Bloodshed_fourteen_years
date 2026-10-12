@@ -1,4 +1,4 @@
-﻿﻿l_simp_chinese:
+﻿﻿﻿l_simp_chinese:
 HuangPu: "黄埔系-陈诚"
 ZengXue: "政学系"
 CC: "CC系"
@@ -1489,3 +1489,7 @@ AFG_mohammed_nadir_shah: "穆罕默德·纳迪尔沙"
 AFG_mohammed_nadir_shah_leader_desc: "§Y背景：§!§L穆罕默德·纳迪尔沙，阿富汗国王，巴拉克宰王朝开创者。1929年平定哈比布拉叛乱后即位，推行渐进改革，重建阿富汗中央权威。§!\n\n"
 NEP_Tribhuva: "特里布万"
 NEP_Tribhuva_leader_desc: "§Y背景：§!§L特里布万·比尔·比克拉姆·沙阿，尼泊尔国王。沙阿王朝君主，名义上为国家元首，实权长期掌握在世袭首相拉纳家族手中。§!\n\n"
+ROD_GaoChongMin: "高崇民"
+ROD_GaoChongMin_leader_desc: "§Y背景：§!§L高崇民，辽宁开原人，东北民众抗日救国会发起人之一。九一八后流亡北平，与阎宝航、卢广绩等在哈尔飞大戏院成立救国会，奔走呼号，组织义勇军募捐援抗。抗战胜利后参与民主运动，反对内战，是东北民主阵营的代表人物。§!\n\n"
+ROD_YanBaoHang: "阎宝航"
+ROD_YanBaoHang_leader_desc: "§Y背景：§!§L阎宝航，辽宁海城人，东北民众抗日救国会核心发起人。早年信奉基督教，办贫儿学校，九一八后投身救亡运动。暗中与中共有联系，后秘密加入中国共产党，在救国会和东北民主运动中扮演重要角色，是东北共产主义阵营的代表人物。§!\n\n"

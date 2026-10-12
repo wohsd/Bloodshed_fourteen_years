@@ -1,0 +1,11 @@
+bitmapfonts = {
+	# 站酷高端黑 50 - 用于开始界面大标题
+	bitmapfont = {
+		name = "bfy_start_50"
+		fontfiles = {
+			"gfx/fonts/chinese/bfy_start_0"
+			"gfx/fonts/chinese/bfy_start_1"
+		}
+		color = 0xffffffff
+	}
+}
