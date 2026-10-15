@@ -14,6 +14,11 @@ bookmarks = {
 				PRCBOOK2
 				PRCBOOK3
 			}
+			focuses = {
+				PRC_focus0
+				PRC_focus1
+				PRC_focus2
+			}
 		}
 		"CHI"={
 			history = "CHI_STORM_DESC"
@@ -36,28 +41,24 @@ bookmarks = {
 		"ROD"={
 			history = "ROD_STREOM_DESC"
 			ideas={
-				RODBOOK0
-				RODBOOK1
-				RODBOOK2
-				RODBOOK3
+				ROD_leader
+			}
+			focuses = {
+				ROD_focus_0
+				ROD_focus_3
+				ROD_pol_fas_2
 			}
 		}
 		"ROC"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideas={
-				OMOBOOK0
-				OMOBOOK1
-				OMOBOOK2
-				OMOBOOK3
+				ROC_leader
 			}
 		}
 		"ROG"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideas={
-				OMOBOOK0
-				OMOBOOK1
-				OMOBOOK2
-				OMOBOOK3
+				ROG_leader
 			}
 		}
 	}

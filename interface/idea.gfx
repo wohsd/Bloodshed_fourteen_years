@@ -1,9 +1,25 @@
 spriteTypes = {
+	ROD_STREOM_DESC = {
+		name = "GFX_ROD_STREOM_DESC1"
+		texturefile = "gfx/interface/ideas/ROS/Sichuan_Army.png"
+	}
 	spriteType = {
 		name = "GFX_idea_Sichuan_Army"
 		texturefile = "gfx/interface/ideas/ROS/Sichuan_Army.png"
 	}
-
+	spriteType = {
+		name = "GFX_idea_ROG_leader"
+		texturefile = "gfx/interface/ideas/game/ROG_leader.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ROC_leader"
+		texturefile = "gfx/interface/ideas/game/ROC_leader.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ROD_leader"
+		texturefile = "gfx/interface/ideas/game/ROD_leader.png"
+	}
+	
 	spriteType = {
 		name = "GFX_modifiers_Rectification_movement"
 		texturefile = "gfx/interface/ideas/PRC/Rectification_movement.png"

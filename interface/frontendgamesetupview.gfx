@@ -264,7 +264,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_country_selection_entry"
-		texturefile = "gfx/interface/country_selection_entry.tga"
+		texturefile = "gfx/interface/country_selection_entry.dds"
 		noOfFrames = 2		
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
 	}
