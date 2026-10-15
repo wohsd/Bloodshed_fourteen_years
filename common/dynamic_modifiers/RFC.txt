@@ -141,6 +141,29 @@ Civil_War_Trauma = {
         stability_factor = RFC_cw_stability                   #稳定度（机构创伤）
 }
 
+# ============================================================
+# 从内战中恢复：「民主同盟的胜利」事件（击败CHI）后获得，非常强力的战后debuff
+# 三类创伤各有等级（变量 RFC_rc_level_*，基础5级，受战前国策±1影响）：
+#   城市破坏（每级 建造速度-6%、工厂产出-4%）
+#   政治激化（每级 政治点数获取-6%、稳定度-4%）
+#   军队混乱（每级 陆军组织度-4%、组织度恢复-4%）
+# 战后恢复国策（收拾残局支线）每完成一个缓解2级，支线末策清零；
+# 三类全部清零后由终策「百废俱兴」移除本修正。
+# ============================================================
+RFC_Recovering_From_Civil_War = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_generic_build_infrastructure
+
+        production_speed_buildings_factor = RFC_rc_build        #建造速度（城市破坏）
+        industrial_capacity_factory = RFC_rc_factory           #工厂产出（城市破坏）
+        political_power_factor = RFC_rc_pp                     #政治点数获取（政治激化）
+        stability_factor = RFC_rc_stab                         #稳定度（政治激化）
+        army_org_factor = RFC_rc_org                           #陆军组织度（军队混乱）
+        army_morale_factor = RFC_rc_morale                     #组织度恢复（军队混乱）
+}
+
 # 三大政策：初步推行
 # 「第二次国共合作」事件选项一：替换名存实亡，追加效果
 # 每日政治点数+0.05，战争支持度+5%，稳定度+5%（一次性）
@@ -153,4 +176,49 @@ Three_Major_Policies_Initial = {
         political_power_gain = RFC_three_policies_pp           #每日政治点数（继承累计值）
         war_support_factor = RFC_three_policies_war_support    #战争支持度（继承累计值）
         #注：共产主义接纳度已在「承认苏区」时一次性给予，切换本修正时自然继承，无需重复施加
+}
+
+# ============================================================
+# 三线终局国策动态修正（烈焰升腾风格：初始较弱、可积累）
+# 数值由变量驱动，后续国策/决议/事件可通过 add_to_variable 逐级加强
+# ============================================================
+
+# 左线「平民阶级专政」：生活消费品需求最低，初始修正较弱
+RFC_populist_dictatorship = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_Encourage_enlistment_military
+
+        consumer_goods_factor = RFC_pd_cg            #生活消费品（初始-8%，三线最低）
+        recruitable_population_factor = RFC_pd_recruit #适役人口
+        army_morale_factor = RFC_pd_morale           #组织度恢复
+}
+
+# 中线「伟大复兴之路」：三线中最好的动态修正，但生活消费品需求非常高
+RFC_road_of_revival = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_Political_Department
+
+        consumer_goods_factor = RFC_rr_cg                       #生活消费品（初始+8%，三线最高）
+        production_speed_buildings_factor = RFC_rr_build        #建造速度
+        industrial_capacity_factory = RFC_rr_output             #工厂产出
+        production_factory_max_efficiency_factor = RFC_rr_max_eff #生产效率上限
+        political_power_gain = RFC_rr_pp                        #每日政治点数
+        social_development_monthly = RFC_rr_social              #社会现代化进程（提升较快）
+}
+
+# 右线「亚洲新自由灯塔」：惊人的建造速度与生产效率
+RFC_comprador_boom = {
+
+        enable = { always = yes }
+
+        icon = GFX_idea_generic_build_infrastructure
+
+        production_speed_buildings_factor = RFC_cb_build        #建造速度（初始+10%）
+        production_factory_efficiency_gain_factor = RFC_cb_eff_gain #生产效率增长
+        production_factory_max_efficiency_factor = RFC_cb_max_eff #生产效率上限
+        industrial_capacity_factory = RFC_cb_output             #工厂产出
 }
