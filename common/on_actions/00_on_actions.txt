@@ -30,7 +30,7 @@ on_actions = {
 		}
 	}
 
-	# 临委会起义后击败国民政府（CHI投降，胜方为RFC或其阵营）：触发「革命的胜利」
+	# 临委会起义后击败国民政府（CHI投降，胜方为RFC或其阵营）：先触发全球新闻「南昌大起义的胜利」，新闻次日由RFC收到「民主同盟的胜利」
 	on_capitulation = {
 		effect = {
 			if = {
@@ -48,9 +48,7 @@ on_actions = {
 						}
 					}
 				}
-				RFC = {
-					country_event = { id = RFC_country.6 hours = 12 }
-				}
+				news_event = { id = RFC_NEW.3 hours = 12 }
 			}
 		}
 	}
