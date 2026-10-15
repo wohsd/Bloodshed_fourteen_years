@@ -10,7 +10,7 @@ interwar_antitank = 1
 	fuel_silos = 1
 }
 
-recruit_character = RAJ_Freeman_Thomas
+recruit_character = RAJ_freeman_freeman_thomas
 set_popularities = {
 	democratic = 0
 	communism = 0

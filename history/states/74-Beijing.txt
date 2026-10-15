@@ -15,7 +15,13 @@ state={
 			air_base= 1
 			industrial_complex = 2
 			dockyard = 0
+			3632={
+				landmark_great_wall_section={
+					level = 1
+				}
+			}
 		}
+		
 		victory_points = {
 			141 50
 		}

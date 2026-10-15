@@ -64,5 +64,157 @@ ideas = {
 				supply_consumption_factor = -0.05
 			}
 		}
+
+		# ===== 工业与经济国策线配套精神 =====
+		# 东三省兵工厂 - 奉天兵工厂，远东最大兵工基地
+		ROD_idea_mukden_arsenal = {
+			picture = HUN_secret_rearmament
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		# 统一弹药制式 - 结束万国牌装备的后勤乱象
+		ROD_idea_standard_arms = {
+			picture = generic_production_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+		# 煤铁基地 - 抚顺、阜新煤田与鞍山、本溪铁矿
+		ROD_idea_coal_steel = {
+			picture = stalingrad_tractor_factory
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		# 葫芦岛开港 - 打破日人对大连港的垄断
+		ROD_idea_huludao = {
+			picture = generic_industrial_concern_2
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_infra_factor = 0.1
+				production_speed_buildings_factor = 0.03
+			}
+		}
+
+		# 奉票信用 - 1929年整顿奉票、稳定三省金融
+		ROD_idea_fengpiao = {
+			picture = CHI_bank_of_china
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_need_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+
+		# 大豆三品贸易 - 大豆、豆粕、豆油出口创汇
+		ROD_idea_soy_trade = {
+			picture = laws_farming_development
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_need_factor = -0.03
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		# 国民经济建设运动 - 1935年起的全面经济建设动员
+		ROD_idea_national_economy = {
+			picture = generic_industrial_concern_1
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				political_power_factor = -0.03
+			}
+		}
+
+		# 战时统制经济 - 一切为了前线
+		ROD_idea_war_economy = {
+			picture = generic_industrial_concern_3
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_need_factor = -0.07
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		# ===== 政治转型三线终局精神 =====
+		# 民主抗战的堡垒 - 宪政民主，举国一致
+		ROD_idea_democratic = {
+			picture = generic_democratic_drift_bonus
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+				drift_defence_factor = 0.15
+				consumer_goods_need_factor = 0.05
+			}
+		}
+
+		# 人民革命政府 - 发动群众，死战不降
+		ROD_idea_communist = {
+			picture = Revolutionary_base
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				conscription = 0.02
+				consumer_goods_need_factor = -0.05
+				surrender_limit = -0.1
+			}
+		}
+
+		# 反共防波堤 - 蓝衣独裁，先安内后攘外
+		ROD_idea_fascist = {
+			picture = generic_secret_police
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = 0.05
+				army_attack_factor = 0.05
+				production_speed_buildings_factor = 0.03
+			}
+		}
 	}
 }

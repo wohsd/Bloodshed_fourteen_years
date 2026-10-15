@@ -30,6 +30,8 @@ recruit_character = ROD_TangYuLin
 recruit_character = ROD_HeZhuGuo
 recruit_character = ROD_LiuDuoQuan
 recruit_character = ROD_WangYiZhe
+recruit_character = ROD_GaoChongMin
+recruit_character = ROD_YanBaoHang
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -50,7 +52,12 @@ country_event={id=ROD1931.501 days=151}
 country_event={id=ROD1931.601 days=175}
 country_event={id=ROD1931.701 days=181}
 country_event={id=ROD1931.715 days=195}
+country_event={id=ROD1931.927 days=270}
+country_event={id=ROD1931.1104 days=308}
 country_event={id=ROD1931.1203 days=333}
+country_event={id=ROD1932.309 days=434}
+country_event={id=ROD1933.101 days=731}
+country_event={id=ROD1933.311 days=800}
 
 1933.1.1={
 	ROD_XiQia = {

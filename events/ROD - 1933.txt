@@ -1,0 +1,53 @@
+add_namespace = ROD1933
+
+# 榆关抗战·长城抗战爆发（1933.1.1，日军进攻山海关）
+country_event = {
+	id = ROD1933.101
+	title = ROD1933.101.t
+	desc = ROD1933.101.d
+	picture = GFX_ROD_1931_915
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ROD1933.101.a
+		add_war_support = 0.1
+		add_stability = -0.01
+		hidden_effect = {
+			ROD = {
+				add_to_variable = { ROD_zhang_xueliang_stress = 10 }
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
+	}
+	option = {
+		name = ROD1933.101.b
+		add_war_support = -0.03
+		add_stability = -0.02
+	}
+}
+
+# 喜峰口大捷（1933.3.11，二十九军大刀队夜袭）
+country_event = {
+	id = ROD1933.311
+	title = ROD1933.311.t
+	desc = ROD1933.311.d
+	picture = GFX_ROD_1931_915
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ROD1933.311.a
+		add_war_support = 0.15
+		add_stability = 0.02
+		add_political_power = 30
+		hidden_effect = {
+			ROD = {
+				add_to_variable = { ROD_zhang_xueliang_stress = -10 }
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
+	}
+}

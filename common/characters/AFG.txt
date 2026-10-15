@@ -1,0 +1,17 @@
+characters={
+	AFG_mohammed_nadir_shah={
+		name=AFG_mohammed_nadir_shah
+		portraits={
+			civilian={
+				large="gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+			}
+		}
+		country_leader={
+			desc = AFG_mohammed_nadir_shah_leader_desc
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

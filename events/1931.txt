@@ -178,7 +178,7 @@ news_event = {
 			
 			WDL = {
 				declare_war_on = {
-					target = JAP
+					target = MCK
 					type = annex_everything
 				}
 			}

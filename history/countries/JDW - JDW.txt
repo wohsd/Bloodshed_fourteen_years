@@ -22,6 +22,10 @@ recruit_character = JDW_ZhangZiZhong
 recruit_character = JDW_QinDeChun
 recruit_character = JDW_XiaoZhenYing
 recruit_character = JDW_LiuRuMing
+recruit_character = JDW_ZhaoDengYu
+recruit_character = JDW_JiXingWen
+recruit_character = JDW_HeJiFeng
+recruit_character = JDW_ZhangKeXia
 #获取领导人，将领（在common\characters\你的国家tag）
 
 set_politics = {

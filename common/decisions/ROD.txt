@@ -4,12 +4,12 @@ ROD_zhang_xueliang_rehab = {
 	ROD_zhang_xueliang_rehabilitation = {
 		icon = generic_political_discourse
 		available = {
-			
+			has_country_flag = ROD_ZhangXueLiang_ill
 		}
 		visible = {
-			
+			has_country_flag = ROD_ZhangXueLiang_ill
 		}
-		cost =5
+		cost = 150
 		days_remove = 120
 		fire_only_once = yes
 		ai_will_do = {
@@ -19,7 +19,7 @@ ROD_zhang_xueliang_rehab = {
 			ROD = {
 				add_stability = 0.05
 				add_war_support = 0.03
-				add_political_power = 50
+				add_timed_idea = { idea = ROD_rehab_suffering days = 180 }
 				set_variable = {
 					ROD_zhang_xueliang_stress = 0
 				}
@@ -29,6 +29,7 @@ ROD_zhang_xueliang_rehab = {
 				set_variable = {
 					ROD_zhang_xueliang_rehab_2 = 1
 				}
+				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 		remove_effect = {
@@ -59,6 +60,7 @@ ROD_zhang_xueliang_rehab = {
 					max = 100
 				}
 				add_stability = 0.01
+				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 		remove_effect = {
@@ -89,6 +91,7 @@ ROD_zhang_xueliang_rehab = {
 					max = 100
 				}
 				add_stability = -0.01
+				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 		remove_effect = {

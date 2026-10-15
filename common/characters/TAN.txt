@@ -1,0 +1,17 @@
+characters={
+	TAN_Donduk_Kuular={
+		name=TAN_Donduk_Kuular
+		portraits={
+			civilian={
+				large="gfx/leaders/TAN/portrait_tan_salchak_toka.dds"
+			}
+		}
+		country_leader={
+			desc = TAN_Donduk_Kuular_leader_desc
+			ideology=centrism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

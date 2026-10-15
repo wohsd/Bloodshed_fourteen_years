@@ -13,6 +13,27 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader={
+			desc = ROD_ZhangXueLiang_leader_desc_democratic
+			ideology=liberalism
+			traits={ substance_addict }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc = ROD_ZhangXueLiang_leader_desc_communism
+			ideology=leninism
+			traits={ substance_addict }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc = ROD_ZhangXueLiang_leader_desc_fascism
+			ideology=fascism_ideology
+			traits={ substance_addict }
+			expire="1965.1.1.1"
+			id=-1
+		}
 	
 			field_marshal={
 				traits={ }
@@ -339,4 +360,77 @@ characters={
 		}
 	}
 
+	ROD_GaoChongMin={
+		name=ROD_GaoChongMin
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_China_Generic_1.dds"
+			}
+		}
+		country_leader={
+			desc = ROD_GaoChongMin_leader_desc
+			ideology=liberalism
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+		advisor={
+			desc = ROD_GaoChongMin_leader_desc
+			slot = political_advisor
+			idea_token = ROD_GaoChongMin_P
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+				ROD_GaoChongMin_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				democratic_reformer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	ROD_YanBaoHang={
+		name=ROD_YanBaoHang
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_China_Generic_2.dds"
+			}
+		}
+		country_leader={
+			desc = ROD_YanBaoHang_leader_desc
+			ideology=leninism
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+		advisor={
+			desc = ROD_YanBaoHang_leader_desc
+			slot = political_advisor
+			idea_token = ROD_YanBaoHang_P
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+				ROD_YanBaoHang_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 }

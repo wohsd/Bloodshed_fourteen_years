@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		# 压力≥70：积劳成疾（旧疾复发）
+		ROD_zhang_stress_high = {
+			picture = ROD_exile_pain
+			allowed = {
+				original_tag = ROD
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.1
+			}
+		}
+
+		# 压力≥90：身心俱疲（严重状态）
+		ROD_zhang_stress_severe = {
+			picture = ROD_exile_pain
+			allowed = {
+				original_tag = ROD
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.2
+				war_support_factor = -0.05
+			}
+		}
+
+		# 戒毒之苦：完成戒毒后的180天戒断反应
+		ROD_rehab_suffering = {
+			picture = ROD_exile_pain
+			allowed = {
+				original_tag = ROD
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				political_power_factor = -0.1
+			}
+		}
+	}
+}

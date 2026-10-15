@@ -13,6 +13,11 @@ state={
 		owner = ROJ
 		buildings = {
 			infrastructure = 1
+			2825={
+				landmark_great_wall_section={
+					level = 1
+				}
+			}
 		}
 		add_core_of = ROJ
 		

@@ -10,8 +10,8 @@ interwar_antitank = 1
 	fuel_silos = 1
 }
 
-recruit_character = SOV_Stalin
-recruit_character = SOV_blyukher
+recruit_character = SOV_iosif_stalin
+recruit_character = SOV_vasily_blyukher
 set_popularities = {
 	democratic = 0
 	communism = 100
