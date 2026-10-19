@@ -23,10 +23,14 @@ bookmarks = {
 		"CHI"={
 			history = "CHI_STORM_DESC"
 			ideas={
+<<<<<<< Updated upstream
 				CHIBOOK0
 				CHIBOOK1
 				CHIBOOK2
 				CHIBOOK3
+=======
+				CHI_leader
+>>>>>>> Stashed changes
 			}
 		}
 		"JAP"={
