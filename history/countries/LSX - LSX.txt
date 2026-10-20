@@ -5,8 +5,9 @@ capital = 654
 #军队数据，若暂时没有，可以在oob前面加上#注释掉 
 
 set_technology = {
+	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
-	mass_assault = 1
+	BFY_cavalry_tech = 1
 }
 #开始时的科技
 set_stability = 0.7

@@ -7,7 +7,11 @@ oob = RON_1931
 set_technology = {
 	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
-	mass_assault = 1
+	BFY_cavalry_tech = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
 }
 add_manpower=20000
 add_equipment_to_stockpile = {

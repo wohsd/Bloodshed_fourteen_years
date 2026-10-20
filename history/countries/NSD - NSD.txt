@@ -9,6 +9,7 @@ capital = 217
 set_technology = {
 	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
+	BFY_cavalry_tech = 1
 	mass_assault = 1
 }
 #开始时的科技

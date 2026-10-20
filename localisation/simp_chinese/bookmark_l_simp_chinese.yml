@@ -21,4 +21,11 @@ OMO_STREOM_DESC:0 ""
 COUNTRY_SELECTION_CHARACTER_DESC: "$NAME|Y$\n$TRAITS_DESC|$"
 
 PRC_1936_storm:0 ""
+#国家领袖精神（书签界面引用）
+CHI_leader:0 "蒋介石"
+JAP_leader:0 "裕仁"
+PRC_leader:0 "向忠发"
+ROC_leader:0 "李宗仁"
+ROG_leader:0 "陈铭枢"
+ROD_leader:0 "张学良"
 

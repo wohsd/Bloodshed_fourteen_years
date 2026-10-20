@@ -3,6 +3,7 @@ set_oob = PRC_1931
 set_technology = {
 	BFY_irregular_infantry_tech = 1
 	infantry_weapons = 1
+	BFY_cavalry_tech = 1
 	tech_support = 1		
 	tech_engineers = 1
 }

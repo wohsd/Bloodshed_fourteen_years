@@ -9,10 +9,7 @@ bookmarks = {
 		"PRC"={
 			history = "PRC_STROM_DESC"
 			ideas={
-				PRCBOOK0
-				PRCBOOK1
-				PRCBOOK2
-				PRCBOOK3
+				PRC_leader
 			}
 			focuses = {
 				PRC_focus0
@@ -23,19 +20,13 @@ bookmarks = {
 		"CHI"={
 			history = "CHI_STORM_DESC"
 			ideas={
-				CHIBOOK0
-				CHIBOOK1
-				CHIBOOK2
-				CHIBOOK3
+				CHI_leader
 			}
 		}
 		"JAP"={
 			history = "JAP_STREOM_DESC"
 			ideas={
-				JAPBOOK0
-				JAPBOOK1
-				JAPBOOK2
-				JAPBOOK3
+				JAP_leader
 			}
 		}
 		"ROD"={

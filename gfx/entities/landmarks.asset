@@ -9,7 +9,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -41,7 +41,7 @@ entity = {
 	}
 
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -56,7 +56,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -85,7 +85,7 @@ entity = {
 				event = { time = 15 node="final_explosion_fire" particle = "ship_damaged_smoke_particle"  keep_particle = yes sound = { soundeffect = "explosion_fuel_small" }}		
 				}
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -101,7 +101,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -121,7 +121,7 @@ entity = {
 			event = { time = 5.1 sound = { soundeffect = "sub_hit" }}
 	}
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -137,7 +137,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -167,7 +167,7 @@ entity = {
 			event = { time = 9.9 sound = { soundeffect = "impact_low" }}	
 	}
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -183,7 +183,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -206,7 +206,7 @@ entity = {
 			event = { time = 5.1 sound = { soundeffect = "sub_hit" }}
 	}
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -222,7 +222,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -249,7 +249,7 @@ entity = {
 			event = { time = 1 node="explosion5" particle = "bunker_smoke_effect"  keep_particle = yes trigger_once = yes }	
 	}
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -265,7 +265,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -296,7 +296,7 @@ entity = {
 	}
 
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -305,13 +305,13 @@ entity = {
 #################################
 
 entity = {
-	name = "building_landmark_berlin_reichstag"
-	pdxmesh = "landmark_reichstag_mesh"
+	name = "building_landmark_Sihang_Warehouse"
+	pdxmesh = "Sihang_Warehouse_mesh"
 
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -345,7 +345,7 @@ entity = {
 	}
 
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -363,7 +363,7 @@ entity = {
 			event = { time = 0 node="flame2" particle = "ship_damaged_smoke_particle" keep_particle = yes }
 	}
 
-	scale = 0.35
+	scale = 0.15
 
 }
 
@@ -391,7 +391,7 @@ entity = {
 	}
 
 
-	scale = 0.35
+	scale = 0.15
 
 }
 
@@ -406,7 +406,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -435,7 +435,7 @@ entity = {
 				}
 
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -450,7 +450,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.355
+	scale = 0.25
 
 }
 
@@ -483,7 +483,7 @@ entity = {
 				}
 
 
-	scale = 0.355
+	scale = 0.25
 
 }
 
@@ -498,7 +498,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -535,7 +535,7 @@ entity = {
 				}
 
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -550,7 +550,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -582,7 +582,7 @@ entity = {
 				}
 
 
-	scale = 0.35
+	scale = 0.2
 
 }
 
@@ -598,7 +598,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 0.8 looping = yes }
 
-	scale = 0.35
+	scale = 0.16
 
 }
 
@@ -630,7 +630,7 @@ entity = {
 				}
 
 
-	scale = 0.35
+	scale = 0.16
 }
 
 #############################################
@@ -644,7 +644,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 0.8 looping = yes }
 
-	scale = 0.35
+	scale = 0.16
 
 }
 
@@ -676,7 +676,7 @@ entity = {
 				}
 
 
-	scale = 0.35
+	scale = 0.16
 }
 
 #################################################
@@ -690,7 +690,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 0.8 looping = yes }
 
-	scale = 0.35
+	scale = 0.16
 
 }
 
@@ -722,7 +722,7 @@ entity = {
 				}
 
 
-	scale = 0.35
+	scale = 0.16
 }
 
 ###############################
@@ -737,7 +737,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.0 animation_speed = 0.8 looping = yes }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -766,7 +766,7 @@ entity = {
 			event = { time = 13.2 sound = { soundeffect = "explosion_c4" }}
 		}
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -781,7 +781,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.0 animation_speed = 0.8 looping = yes }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -801,7 +801,7 @@ entity = {
 			event = { time = 5.1 sound = { soundeffect = "sub_hit" }}
 			event = { time = 6.6 sound = { soundeffect = "brick_impact" }}
 		}
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -816,7 +816,7 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.0 animation_speed = 0.8 looping = yes }
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -851,7 +851,7 @@ entity = {
 				}
 
 
-	scale = 0.35
+	scale = 0.3
 
 }
 
@@ -884,5 +884,94 @@ entity = {
 		}
 
 	scale = 1.0
+
+}
+
+
+###############################
+#####    Prague Castle   ######
+###############################
+
+entity = {
+	name = "building_landmark_prague_castle"
+	pdxmesh = "landmark_prague_castle_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
+
+	scale = 0.12
+
+}
+
+#DESTROYED
+entity = {
+	name = "building_landmark_prague_castle_destroyed"
+	pdxmesh = "landmark_prague_castle_destroyed_mesh"
+
+	default_state = "destroy"
+	state = { name = "destroy"			animation = "destroy" 			animation_blend_time = 0.0  animation_speed = 0.8 looping = no
+			event = { time = 10 node="roof_explosion0" particle = "ship_explosion_particle" keep_particle = yes }
+			event = { time = 6 node="roof_explosion1" particle = "ship_explosion_particle" keep_particle = yes }
+			event = { time = 12 node="roof_explosion2" particle = "building_explode_effect" keep_particle = yes }
+			event = { time = 7 node="fire0" particle = "building_fire_particle" keep_particle = yes }
+			event = { time = 14 node="fire1" particle = "building_fire_big_particle" keep_particle = yes }
+			event = { time = 16 node="fire_tower" particle = "building_fire_particle" keep_particle = yes }
+			event = { time = 20.5 node="tower_impact" particle = "building_explode_effect" keep_particle = yes }
+			event = { time = 13 node="fire2" particle = "building_fire_big_particle" keep_particle = yes }
+			event = { time = 22 node="fire3" particle = "building_fire_particle" keep_particle = yes }
+
+			event = { time = 6.1 sound = { soundeffect = "explosion_c4" }}
+			event = { time = 10.1 sound = { soundeffect = "explosion_c4" }}
+			event = { time = 12.1 sound = { soundeffect = "explosion_flashbang_large" }}
+			event = { time = 20.6 sound = { soundeffect = "building_large_crash_impact" }}
+
+
+				}
+
+
+	scale = 0.12
+
+}
+
+###############################
+#####    Bojnice Castle   #####
+###############################
+
+entity = {
+	name = "building_landmark_bojnice_castle"
+	pdxmesh = "landmark_bojnice_castle_mesh"
+
+	default_state = "idle"
+	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 looping = no }
+
+	scale = 0.12
+
+}
+
+#DESTROYED
+entity = {
+	name = "building_landmark_bojnice_castle_destroyed"
+	pdxmesh = "landmark_bojnice_castle_destroyed_mesh"
+
+	default_state = "destroy"
+	state = { name = "destroy"			animation = "destroy" 			animation_blend_time = 0.0  animation_speed = 0.8 looping = no
+			event = { time = 4 node="roof_explosion0" particle = "ship_explosion_particle" keep_particle = yes }
+			event = { time = 4 node="fire_tower_small" particle = "building_fire_particle" keep_particle = yes }
+			event = { time = 7 node="fire0" particle = "building_fire_particle" keep_particle = yes }
+			event = { time = 14 node="fire1" particle = "building_fire_big_particle" keep_particle = yes }
+			event = { time = 16 node="fire_tower_big" particle = "building_fire_particle" keep_particle = yes }
+			event = { time = 15 node="tower_impact" particle = "building_explode_effect" keep_particle = yes }
+			event = { time = 13 node="fire2" particle = "building_fire_big_particle" keep_particle = yes }
+
+			event = { time = 6.1 sound = { soundeffect = "explosion_c4" }}
+			event = { time = 10.1 sound = { soundeffect = "explosion_c4" }}
+			event = { time = 12.1 sound = { soundeffect = "explosion_flashbang_large" }}
+			event = { time = 15 sound = { soundeffect = "building_large_crash_impact" }}
+
+
+				}
+
+
+	scale = 0.12
 
 }

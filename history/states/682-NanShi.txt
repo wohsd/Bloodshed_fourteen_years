@@ -12,6 +12,10 @@ state={
 		}
         add_core_of = CHI
 		buildings = {
+			5269 = {
+
+				landmark_Sihang_Warehouse = 1
+			}
 		}
 		1933.1.1={
 			set_demilitarized_zone = yes

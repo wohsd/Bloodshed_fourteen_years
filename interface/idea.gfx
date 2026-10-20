@@ -19,7 +19,19 @@ spriteTypes = {
 		name = "GFX_idea_ROD_leader"
 		texturefile = "gfx/interface/ideas/game/ROD_leader.png"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_CHI_leader"
+		texturefile = "gfx/interface/ideas/game/CHI_leader.png"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_leader"
+		texturefile = "gfx/interface/ideas/game/JAP_leader.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_leader"
+		texturefile = "gfx/interface/ideas/game/PRC_leader.png"
+	}
+
 	spriteType = {
 		name = "GFX_modifiers_Rectification_movement"
 		texturefile = "gfx/interface/ideas/PRC/Rectification_movement.png"
