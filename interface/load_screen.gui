@@ -30,7 +30,6 @@ guiTypes = {
 				#scale = 0.85
 			}
 			
-<<<<<<< Updated upstream
 			instantTextBoxType = {
 				name = "text"
 				position = { x = -510 y = 133 } #-466
@@ -43,20 +42,6 @@ guiTypes = {
 				fixedsize = yes
 				format = centre
 			}
-=======
-			#instantTextBoxType = {
-			#	name = "text"
-			#	position = { x = -510 y = 133 } #-466
-			#	textureFile = ""
-			#	font = "loadscreen_tip"
-			#	borderSize = {x = 0 y = 0}
-			#	text = ""	
-			#	maxWidth = 933
-			#	maxHeight = 30
-			#	fixedsize = yes
-			#	format = centre
-			#}
->>>>>>> Stashed changes
 		}
 		
 		windowType = {
@@ -85,11 +70,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "text"
-<<<<<<< Updated upstream
 				position = { x = 80 y = -40 }
-=======
-				position = { x = 80 y = 110 }
->>>>>>> Stashed changes
 				textureFile = ""
 				font = "loadscreen_tip"
 				borderSize = {x = 0 y = 0}
