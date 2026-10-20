@@ -8,21 +8,4 @@ bitmapfonts = {
 		}
 		color = 0xffffffff
 	}
-<<<<<<< Updated upstream
-=======
-
-	bitmapfont = {
-		name = "bfy_start_81"
-		fontfiles = {
-			"gfx/fonts/chinese/bfy_font_81_0"
-			"gfx/fonts/chinese/bfy_font_81_1"
-			"gfx/fonts/chinese/bfy_font_81_2"
-			"gfx/fonts/chinese/bfy_font_81_3"
-			"gfx/fonts/chinese/bfy_font_81_4"
-			"gfx/fonts/chinese/bfy_font_81_5"
-			"gfx/fonts/chinese/bfy_font_81_6"
-		}
-		color = 0xff000000
-	}
->>>>>>> Stashed changes
 }
