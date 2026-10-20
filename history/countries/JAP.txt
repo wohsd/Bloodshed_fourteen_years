@@ -46,6 +46,17 @@ add_equipment_to_stockpile = {
     amount = 100000
     producer = JAP
 }
+# 旅团级编制所需的野炮兵装备与支援装备（工兵/侦察/支援炮兵）
+add_equipment_to_stockpile = {
+    type = artillery_equipment
+    amount = 2400
+    producer = JAP
+}
+add_equipment_to_stockpile = {
+    type = support_equipment
+    amount = 1800
+    producer = JAP
+}
 set_convoys = 200
 set_technology = {
 	cv_early_fighter = 1

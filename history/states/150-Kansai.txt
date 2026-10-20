@@ -13,8 +13,24 @@ state={
 		owner = JAP
 		victory_points = {
 			1600 20
+		}
+		victory_points = {
 			3719 10
+		}
+		victory_points = {
 			3725 10
+		}
+		victory_points = {
+			3733 10
+		}
+		victory_points = {
+			1650 5
+		}
+		victory_points = {
+			2373 5
+		}
+		victory_points = {
+			2172 5
 		}
 		buildings = {
 			infrastructure = 3

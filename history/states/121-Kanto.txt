@@ -24,8 +24,18 @@ state={
 		}
 		victory_points = {
 			3707 50
-		
+		}
+		victory_points = {
 			3712 10
+		}
+		victory_points = {
+			2607 5
+		}
+		victory_points = {
+			2924 5
+		}
+		victory_points = {
+			2922 5
 		}
 		add_core_of = JAP
 	}
