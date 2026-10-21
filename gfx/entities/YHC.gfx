@@ -1,7 +1,7 @@
 objectTypes = {
 	pdxmesh = {
 		name = "YHC_infantry_0_mesh"
-		file = "gfx/models/units/MI_YHC_infantry_0_desert.mesh"
+		file = "gfx/models/units/MI_CHI_cavalry_1_snow.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_rifle_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_rifle_attack_animation" }
@@ -29,7 +29,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "YHC_infantry_0_mg_mesh"
-		file = "gfx/models/units/MI_YHC_infantry_0_desert.mesh"
+		file = "gfx/models/units/MI_CHI_cavalry_1_snow.mesh"
 
 		animation = { id = "idle"			type = "GER_infantry_mg_idle_animation" }
 		animation = { id = "attack"			type = "GER_infantry_mg_attack_animation" }
