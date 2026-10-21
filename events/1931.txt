@@ -1,4 +1,4 @@
-add_namespace = game_start
+﻿add_namespace = game_start
 add_namespace = PRC_1931
 add_namespace = PRC_1931Hidden
 add_namespace = ROC_1931
@@ -145,20 +145,14 @@ news_event = {
 country_event = {
 		id = ROD_1931.4
 		hidden = yes
-
-		fire_only_once = yes
 	
+		fire_only_once = yes
+		is_triggered_only = yes
 		trigger = {
-			AND={
-				date > 1932.2.7
-				date < 1932.2.9
-			}
+			date < 1933.1.1
 		}
 		immediate = {
 			news_event = ROD_1931.5
-		}
-		mean_time_to_happen = {
-			days = 2
 		}
 }
 	
@@ -843,17 +837,17 @@ country_event = {
 		PRC={
 			582={
 				create_unit = {
-					division = "name = \"中国工农红军第13军\" division_template = \"中国工农红军\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"红军旅第13军\" division_template = \"红军旅\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = PRC
 					prioritize_location = 3989
 				}
 				create_unit = {
-					division = "name = \"中国工农红军第14军\" division_template = \"中国工农红军\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"红军旅第14军\" division_template = \"红军旅\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = PRC
 					prioritize_location = 3989
 				}
 				create_unit = {
-					division = "name = \"中国工农红军第15军\" division_template = \"中国工农红军\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"红军旅第15军\" division_template = \"红军旅\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = PRC
 					prioritize_location = 3989
 				}
@@ -1218,17 +1212,17 @@ country_event = {
 		name = PRC_1931.17.a
 		582={
 			create_unit = {
-				division = "name = \"中国工农红军红七军第十九师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+				division = "name = \"红军旅红七军第十九师\" division_template = \"红军旅\" start_experience_factor = 0.8"
 				owner = PRC
 				prioritize_location = 618
 			}
 			create_unit = {
-				division = "name = \"中国工农红军红七军第二十师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+				division = "name = \"红军旅红七军第二十师\" division_template = \"红军旅\" start_experience_factor = 0.8"
 				owner = PRC
 				prioritize_location = 618
 			}
 			create_unit = {
-				division = "name = \"中国工农红军红七军第二十一师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+				division = "name = \"红军旅红七军第二十一师\" division_template = \"红军旅\" start_experience_factor = 0.8"
 				owner = PRC
 				prioritize_location = 618
 			}
@@ -1257,3 +1251,4 @@ country_event = {
 		}
 	}		
 }
+

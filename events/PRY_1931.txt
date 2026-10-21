@@ -1,4 +1,4 @@
-add_namespace = PRY_1931
+﻿add_namespace = PRY_1931
 country_event = {
 	id = PRY_1931.1
 	title = PRY_1931.1.t
@@ -17,17 +17,17 @@ country_event = {
 		PRC={
 			582={
 				create_unit = {
-					division = "name = \"中国工农红军第七军十九师\" division_template = \"中国工农红军\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"红七军十九师\" division_template = \"红军旅\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = PRC
 					prioritize_location = 4000
 				}
 				create_unit = {
-					division = "name = \"中国工农红军第七军二十师\" division_template = \"中国工农红军\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"红七军二十师\" division_template = \"红军旅\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = PRC
 					prioritize_location = 4000
 				}
 				create_unit = {
-					division = "name = \"中国工农红军第七军二十一师\" division_template = \"中国工农红军\" start_experience_factor = 1 start_equipment_factor = 1"
+					division = "name = \"红七军二十一师\" division_template = \"红军旅\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = PRC
 					prioritize_location = 4000
 				}
@@ -40,3 +40,4 @@ country_event = {
 		}
 	}
 }
+

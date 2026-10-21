@@ -1,4 +1,4 @@
-add_namespace = PRC_1936Hidden
+﻿add_namespace = PRC_1936Hidden
 add_namespace = PRC_1936
 add_namespace = PRC_1936_1
 add_namespace = ROC_1936
@@ -235,82 +235,82 @@ country_event = {
 		hidden_effect = {
 			114={
 				create_unit = {
-					division = "name = \"中国工农红军2军第4师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红2军第4旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军2军第6师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红2军第6旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军6军第16师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红6军第16旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军6军第17师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红6军第17旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军6军第18师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红6军第18旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军4军第10师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红4军第10旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军4军第11师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红4军第11旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军4军第12师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红4军第12旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军5军第13师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红5军第13旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军5军第15师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红5军第15旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军9军第25师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红9军第25旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军9军第27师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红9军第27旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军30军第88师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红30军第88旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军30军第89师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红30军第89旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军31军第91师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红31军第91旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
 				create_unit = {
-					division = "name = \"中国工农红军31军第93师\" division_template = \"中国工农红军\" start_experience_factor = 0.8"
+					division = "name = \"红31军第93旅\" division_template = \"红军旅\" start_experience_factor = 0.8"
 					owner = PRC
 					prioritize_location = 2030
 				}
@@ -647,3 +647,4 @@ country_event = {
 		}
 	}	
 }
+

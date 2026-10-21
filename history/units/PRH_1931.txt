@@ -41,84 +41,84 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第1支队"
 		location = 2625
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第2支队"
 		location = 2625
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第3支队"
 		location = 2625
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军红二军第四师"
+		name = "红军第2军团第2军第4师"
 		location = 2625
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军红六军第十六师"
+		name = "红军第2军团第6军第16师"
 		location = 1862
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第4支队"
 		location = 1862
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第5支队"
 		location = 1862
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第6支队"
 		location = 1862
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军红六军第十七师"
+		name = "红军第2军团第6军第17师"
 		location = 3873
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第7支队"
 		location = 3873
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第8支队"
 		location = 3873
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第9支队"
 		location = 3873
 		division_template = "游击支队"
 		start_experience_factor = 0.9

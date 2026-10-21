@@ -728,12 +728,12 @@ country_event = {
 
 ##苏德战争
 country_event = {
-	id = Hidden_News.24
+	id = Hidden_News.27
 	hidden = yes
 	fire_only_once = yes
     trigger = {
 		date > 1941.6.21
-		date < 1941.1.23
+		date < 1941.6.23
     }
     immediate = {
 		set_global_flag = Hidden_News_24
@@ -742,7 +742,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = Hidden_News.24.a
+		name = Hidden_News.27.a
 	}		
 }
 ##偷袭珍珠港
@@ -807,7 +807,7 @@ country_event = {
 	}		
 }
 country_event = {
-	id = Hidden_News.25
+	id = Hidden_News.28
 	hidden = yes
 	fire_only_once = yes
     trigger = {
@@ -825,7 +825,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = Hidden_News.25.a
+		name = Hidden_News.28.a
 	}		
 }
 
@@ -1278,8 +1278,15 @@ news_event = {
 			63={
 				transfer_state_to = CAR
 			}
+			23={
+				transfer_state_to = CAR
+			}
+			49={
+				transfer_state_to = CAR
+			}
 			CAR={
 				load_oob = "CAR_1933"
+				set_country_flag = CAR_beiping_mission
 				declare_war_on = {
 					target = LSX
 					type = annex_everything
@@ -1363,6 +1370,63 @@ news_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+			# 中央红军落脚陕北，蒋介石借机收编黔军
+			CHI = {
+				annex_country = { target = ROH }
+				annex_country = { target = SOX }
+				annex_country = { target = YGC }
+				annex_country = { target = JZZ }
+				annex_country = { target = HZD }
+			}
+			# 川军防区调整（与长征事件 PRC_1934Hidden.3 保持一致）
+			###刘文辉
+			188={transfer_state_to = ROW}
+			239={transfer_state_to = ROW}
+			263={transfer_state_to = ROW}
+			277={transfer_state_to = ROW}
+			310={transfer_state_to = ROW}
+			620={transfer_state_to = ROW}
+			627={transfer_state_to = ROW}
+			636={transfer_state_to = ROW}
+			639={transfer_state_to = ROW}
+			620={transfer_state_to = ROW}
+			###邓锡侯
+			183={transfer_state_to = RDX}
+			223={transfer_state_to = RDX}
+			229={transfer_state_to = RDX}
+			631={transfer_state_to = RDX}
+			632={transfer_state_to = RDX}
+			633={transfer_state_to = RDX}
+			634={transfer_state_to = RDX}
+			635={transfer_state_to = RDX}
+			637={transfer_state_to = RDX}
+			638={transfer_state_to = RDX}
+			640={transfer_state_to = RDX}
+			641={transfer_state_to = RDX}
+			643={transfer_state_to = RDX}
+			644={transfer_state_to = RDX}
+			###孙震
+			201={transfer_state_to = ROT}
+			202={transfer_state_to = ROT}
+			602={transfer_state_to = ROT}
+			621={transfer_state_to = ROT}
+			###刘厚存
+			204={transfer_state_to = RHC}
+			211={transfer_state_to = RHC}
+			###杨森
+			217={transfer_state_to = RYS}
+			241={transfer_state_to = RYS}
+			###刘湘
+			234={transfer_state_to = ROS}
+			243={transfer_state_to = ROS}
+			261={transfer_state_to = ROS}
+			275={transfer_state_to = ROS}
+			278={transfer_state_to = ROS}
+			596={transfer_state_to = ROS}
+
+			###刘厚存
+			624={transfer_state_to = YHC}
+			174={transfer_state_to = LDC}
 		}
 	}
 	option = {

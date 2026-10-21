@@ -1,0 +1,17 @@
+# CAR决议分类（仅察哈尔抗日同盟军可见）
+CAR_attack_beiping = {
+	icon = military_operation
+	picture = GFX_anti_japanese_speech
+
+	on_map_area = {
+		name = CAR_attack_beiping_map
+		state = 74
+		state = 63
+		state = 23
+		zoom = 650
+	}
+
+	visible = {
+		#tag = CAR
+	}
+}

@@ -41,91 +41,91 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "中国工农红军第一军团红三军七师"
+		name = "红军第1方面军第3军第7师"
 		location = 4043
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红三军八师"
+		name = "红军第1方面军第3军第8师"
 		location = 4052
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红三军九师"
+		name = "红军第1方面军第3军第9师"
 		location = 4033
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红四军十师"
+		name = "红军第1方面军第4军第10师"
 		location = 1546
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红四军十一师"
+		name = "红军第1方面军第4军第11师"
 		location = 1299
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红四军十二师"
+		name = "红军第1方面军第4军第12师"
 		location = 4021
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红十二军三十四师"
+		name = "红军第1方面军第12军第34师"
 		location = 2483
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红十二军三十五师"
+		name = "红军第1方面军第12军第35师"
 		location = 2273
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第一军团红十二军三十六师"
+		name = "红军第1方面军第12军第36师"
 		location = 618
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第三军团红五军一师"
+		name = "红军第1方面军第5军第1师"
 		location = 618
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第三军团红五军二师"
+		name = "红军第1方面军第5军第2师"
 		location = 2757
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第三军团红五军三师"
+		name = "红军第1方面军第5军第3师"
 		location = 2916
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军第三军团红八军"
+		name = "红军第1方面军第8军"
 		location = 3955
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
@@ -133,7 +133,7 @@ units = {
 	}
 
 	division= {	
-		name = "中国工农红军红三十五军"
+		name = "红军第35军"
 		location = 618
 		division_template = "独立师"
 		start_experience_factor = 0.9

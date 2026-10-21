@@ -779,14 +779,6 @@ country_event = {
     }
     immediate = {
 		set_global_flag = fall_of_ChangZheng
-		ROS={
-			annex_country = {
-				target = ROT
-			}
-			annex_country = {
-				target = ROW
-			}
-		}
 		PRC={
 			annex_country = {
 				target = NSA

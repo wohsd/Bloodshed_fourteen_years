@@ -626,6 +626,9 @@ country_event = {
 		26={
 			transfer_state_to = MCK
 		}
+		82={
+			transfer_state_to = ROD
+		}
 		clr_global_flag = fall_of_Changcheng
 	}		
 }

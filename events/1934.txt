@@ -1357,6 +1357,7 @@ news_event = {
 		hidden_effect = {
 			MGJ={
 				transfer_state = 23
+				transfer_state = 49
 			}
 		}
 	}

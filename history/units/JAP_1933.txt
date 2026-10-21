@@ -438,7 +438,7 @@ units = {
 	# 关东军骑兵集团
 	division = {
 		name = "骑兵第1旅团"
-		location = 572
+		location = 1768
 		division_template = "骑兵旅团"
 		start_experience_factor = 0.55
 		start_equipment_factor = 0.85

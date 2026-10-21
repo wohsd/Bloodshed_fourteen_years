@@ -1,0 +1,49 @@
+# 察哈尔抗日同盟军决议（倒计时使命：参考长征使命模板 days_mission_timeout）
+CAR_attack_beiping = {
+	CAR_attack_beiping_mission = {
+		icon = eng_blackshirt_march
+
+		# 胜利条件：攻入北平城
+		available = {
+			has_war = yes
+			controls_province = 141
+		}
+
+		days_mission_timeout = 1
+		activation = {
+			has_country_flag = CAR_beiping_mission
+		}
+		visible = {
+			tag = CAR
+		}
+		modifier = {
+
+		}
+		fixed_random_seed = no
+		fire_only_once = yes
+		is_good = no
+
+		# 失败结算：逾期未攻入北平，东北军吞并察哈尔抗日同盟军
+		timeout_effect = {
+			if = {
+				limit = { 
+					ROD = {
+						exists = yes
+					}
+				}
+				ROD = {
+					
+					annex_country = { target = CAR transfer_troops = yes }
+				}
+			}
+		}
+
+		# 成功结算：攻入北平
+		complete_effect = {
+			set_country_flag = CAR_captured_beiping
+			add_war_support = 0.1
+			add_political_power = 50
+			add_manpower = 5000
+		}
+	}
+}

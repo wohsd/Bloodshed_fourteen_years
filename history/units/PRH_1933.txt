@@ -24,42 +24,42 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "中国工农红军第4师"
+		name = "红军第2军团第4师"
 		location = 2560
 		division_template = "中国工农红军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "中国工农红军第16师"
+		name = "红军第6军团第16师"
 		location = 2560
 		division_template = "中国工农红军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "中国工农红军第17师"
+		name = "红军第6军团第17师"
 		location = 2560
 		division_template = "中国工农红军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第1支队"
 		location = 3879
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第2支队"
 		location = 3853
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘鄂西游击队第3支队"
 		location = 2396
 		division_template = "游击支队"
 		start_experience_factor = 0.3

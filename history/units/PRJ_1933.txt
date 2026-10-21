@@ -12,21 +12,21 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "游击支队"
+		name = "红军湘赣游击队第1支队"
 		location = 2077
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘赣游击队第2支队"
 		location = 3022
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘赣游击队第3支队"
 		location = 3978
 		division_template = "游击支队"
 		start_experience_factor = 0.3

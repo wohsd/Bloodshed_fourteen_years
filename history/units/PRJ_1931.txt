@@ -41,35 +41,35 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "游击支队"
+		name = "红军湘赣游击队第1支队"
 		location = 3978
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军湘赣游击队第2支队"
 		location = 3978
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "湘东南独立师"
+		name = "红军湘东南独立师"
 		location = 3978
 		division_template = "独立师"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "湘赣红军独立第1师"
+		name = "红军湘赣独立第1师"
 		location = 3978
 		division_template = "独立师"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "湘赣红军独立第3师"
+		name = "红军湘赣独立第3师"
 		location = 3978
 		division_template = "独立师"
 		start_experience_factor = 0.9

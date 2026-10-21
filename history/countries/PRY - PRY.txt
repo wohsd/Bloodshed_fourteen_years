@@ -37,7 +37,7 @@ set_popularities = {
 	#设置意识形态支持度，总数不超过100，共产：communism，法西斯：fascism，民主：democratic，中立：neutrality
 }
 1931.1.1={
-	country_event = {id=PRY_1931.1 days = 212 }
+	country_event = {id=PRY_1931.1 days = 190 }
 }
 add_ideas = {
 	Revolutionary_base

@@ -41,49 +41,49 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "游击支队"
+		name = "红军鄂豫皖游击队第1支队"
 		location = 1767
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军鄂豫皖游击队第2支队"
 		location = 1767
 		division_template = "游击支队"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军红四军第十师"
+		name = "红军第4方面军第4军第10师"
 		location = 1767
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军红四军第十一师"
+		name = "红军第4方面军第4军第11师"
 		location = 1767
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军红四军第十二师"
+		name = "红军第4方面军第4军第12师"
 		location = 1767
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "中国工农红军红二十五军第七十三师"
+		name = "红军第4方面军第25军第73师"
 		location = 476
 		division_template = "中国工农红军"
 		start_experience_factor = 0.9
 		start_equipment_factor = 0.9
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军鄂豫皖游击队第3支队"
 		location = 476
 		division_template = "游击支队"
 		start_experience_factor = 0.9

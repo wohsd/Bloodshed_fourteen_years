@@ -46,112 +46,112 @@ division_template = {
 units = {
 	
 	division = {
-		name = "中国工农红军2军第4师"
+		name = "红军第2方面军第2军第4师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军2军第6师"
+		name = "红军第2方面军第2军第6师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军6军第16师"
+		name = "红军第2方面军第6军第16师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军6军第17师"
+		name = "红军第2方面军第6军第17师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军6军第18师"
+		name = "红军第2方面军第6军第18师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军4军第10师"
+		name = "红军第4方面军第4军第10师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军4军第11师"
+		name = "红军第4方面军第4军第11师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军4军第12师"
+		name = "红军第4方面军第4军第12师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军5军第13师"
+		name = "红军第4方面军第5军第13师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军5军第15师"
+		name = "红军第4方面军第5军第15师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军9军第25师"
+		name = "红军第4方面军第9军第25师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军9军第27师"
+		name = "红军第4方面军第9军第27师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军30军第88师"
+		name = "红军第4方面军第30军第88师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军30军第89师"
+		name = "红军第4方面军第30军第89师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军31军第91师"
+		name = "红军第4方面军第31军第91师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 	division = {
-		name = "中国工农红军31军第93师"
+		name = "红军第4方面军第31军第93师"
 		location = 1251
 		division_template = "中国工农红军"
 		start_experience_factor = 0.8

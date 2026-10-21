@@ -463,3 +463,8 @@ zhang_xueliang_rehab_tt2: "少帅目前状态较差，压力值偏大，将会�
  bfy_develop_jinchang_nickel_desc: "河西走廊龙首山下发现储量惊人的硫化铜镍矿，镍、铬俱备，堪称合金工业的聚宝盆。"
  bfy_develop_luobusha_chromium: "开发罗布莎铬铁矿"
  bfy_develop_luobusha_chromium_desc: "雅鲁藏布江缝合带的罗布莎是中国最大的铬铁矿床，高原施工虽苦，战略价值极高。"
+CAR_attack_beiping: "察哈尔抗日同盟军"
+CAR_attack_beiping_desc: "冯玉祥、吉鸿昌率察哈尔民众抗日同盟军誓师北上，收复察东之后兵锋直指北平。同盟军须在三十日之内攻入北平，以昭示抗日到底之决心；若久攻不克、师老兵疲，东北军将出手收编同盟军。"
+CAR_attack_beiping_map: "北平方向作战"
+CAR_attack_beiping_mission: "三十日攻入北平"
+CAR_attack_beiping_mission_desc: "限令同盟军于三十日之内攻入北平城。逾期未能攻克，察哈尔抗日同盟军将被东北军吞并收编。"

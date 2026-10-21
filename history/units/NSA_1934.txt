@@ -35,56 +35,56 @@ division_template = {
 }
 units = {
 	division= {	
-		name = "中国工农红军第二十六军第四十二师"
+		name = "红军第26军第42师"
 		location = 2975
 		division_template = "中国工农红军"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "中国工农红军第二十七军第八十四师"
+		name = "红军第27军第84师"
 		location = 2975
 		division_template = "独立师"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军陕甘游击队第1支队"
 		location = 2975
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军陕甘游击队第2支队"
 		location = 2975
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军陕甘游击队第3支队"
 		location = 2975
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陕北赤卫军"
+		name = "陕北赤卫军第1团"
 		location = 2975
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "陕北赤卫军"
+		name = "陕北赤卫军第2团"
 		location = 2975
 		division_template = "游击支队"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 	}
 	division= {	
-		name = "游击支队"
+		name = "红军陕甘游击队第4支队"
 		location = 2975
 		division_template = "游击支队"
 		start_experience_factor = 0.3
