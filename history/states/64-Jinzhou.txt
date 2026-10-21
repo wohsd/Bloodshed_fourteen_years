@@ -4,9 +4,11 @@ state={
 	provinces={
 		1846 1936 2806 3099 
 	}
-	history={
+	history = {
 		owner = ROD
 		buildings = {
+			air_base = 2
+
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1

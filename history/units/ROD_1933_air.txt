@@ -1,0 +1,8 @@
+#AIRCRAFT - ROD 1933 / 东北军残部（热河战败后）
+# wing key = state 74 (北京)
+
+air_wings = {
+	74 = {
+		fighter_equipment_0 = { owner = "ROD" amount = 6 version_name = "霍克II" }
+	}
+}

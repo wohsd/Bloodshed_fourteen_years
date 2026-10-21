@@ -1,6 +1,7 @@
 capital = 50
 1931.1.1={
   set_oob = "ROD_1931"
+                set_air_oob = "ROD_1931_air"
 }
 
 
@@ -14,6 +15,9 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antitank = 1
 	early_fighter = 1
+        CAS1 = 1
+        early_bomber = 1
+        early_transport_plane = 1
 	fuel_silos = 1
 }
 
@@ -74,6 +78,7 @@ add_ideas = ROD_northeast_army_tradition
 		set_nationality = MCK
 	}
 	set_oob = "ROD_1933"
+                set_air_oob = "ROD_1933_air"
 	capital = 74
 	add_ideas = Not_resisting
 	
@@ -84,6 +89,7 @@ add_ideas = ROD_northeast_army_tradition
 }
 1936.1.1={
 	set_oob = "ROD_1936"
+                set_air_oob = "ROD_1936_air"
 	remove_ideas = Not_resisting
 	add_ideas = Negative_Encirclement
 	JAP={

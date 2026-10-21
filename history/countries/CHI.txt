@@ -1,5 +1,6 @@
 capital = 214 
 set_oob = "CHI_1933"
+                set_air_oob = "CHI_1933_air"
 set_naval_oob = "CHI_1933_naval"
 set_technology = {
 	BFY_irregular_infantry_tech = 1
@@ -10,6 +11,9 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
+        early_fighter = 1
+        CAS1 = 1
+        early_transport_plane = 1
 	tech_mountaineers = 1
 	tech_trucks = 1
 	motorised_infantry = 1
@@ -415,6 +419,7 @@ add_equipment_to_stockpile = {
 	set_war_support = 0.6
 	set_political_power = 330
 	set_oob = "CHI_1933"
+                set_air_oob = "CHI_1933_air"
 	complete_national_focus = Victory_of_the_National_Revolution
 	complete_national_focus = National_Crisis
 	complete_national_focus = Internal_Pacification_Before_Resistance
@@ -434,6 +439,7 @@ add_equipment_to_stockpile = {
 }
 1936.1.1={
 	set_oob = "CHI_1937"
+                set_air_oob = "CHI_1937_air"
 	add_to_faction = ROD
 	add_to_faction = JDW
 	
@@ -448,6 +454,7 @@ add_equipment_to_stockpile = {
 	set_war_support = 0.8
 	set_political_power = 430
 	set_oob = "CHI_1937"
+                set_air_oob = "CHI_1937_air"
 }
 1944.1.1={
 	set_stability = 0.7

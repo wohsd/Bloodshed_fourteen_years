@@ -1,0 +1,13 @@
+#AIRCRAFT - CHI 1937 / 中华民国空军（抗战爆发）
+# wing key = state 74 (北京)
+
+air_wings = {
+	74 = {
+		fighter_equipment_0 = { owner = "CHI" amount = 40 version_name = "霍克III" }
+		fighter_equipment_0 = { owner = "CHI" amount = 20 version_name = "霍克II" }
+		tac_bomber_equipment_0 = { owner = "CHI" amount = 30 version_name = "诺斯罗普γ" }
+		tac_bomber_equipment_0 = { owner = "CHI" amount = 12 version_name = "SB-2" }
+		cas_equipment_0 = { owner = "CHI" amount = 12 version_name = "V-11" }
+		transport_plane_equipment_1 = { owner = "CHI" amount = 8 version_name = "DC-2" }
+	}
+}

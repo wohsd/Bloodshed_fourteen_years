@@ -216,5 +216,61 @@ ideas = {
 				production_speed_buildings_factor = 0.03
 			}
 		}
+
+		# ===== 军事国策线配套精神 =====
+		# 永固工事 - 沿华北平原构筑水泥工事体系
+		ROD_idea_fortification = {
+			picture = generic_army_chief_def_eastern_european_2d
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				army_core_defence_factor = 0.05
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		# 东北军整编 - 统一编制、集中指挥
+		ROD_idea_army_integration = {
+			picture = generic_army_asia_2
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+				max_planning_factor = 0.05
+			}
+		}
+
+		# 江桥抗战的经验 - 以血肉之躯对抗日军现代化火力
+		ROD_idea_jiangqiao_lessons = {
+			picture = generic_army_asia_4
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_morale_factor = 0.05
+				war_support_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		# 东北抗日义勇军 - 白山黑水间的民众武装
+		ROD_idea_yiyongjun = {
+			picture = generic_guerilla_warfare
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				war_support_factor = 0.05
+				army_morale_factor = 0.1
+				surrender_limit = 0.05
+			}
+		}
 	}
 }

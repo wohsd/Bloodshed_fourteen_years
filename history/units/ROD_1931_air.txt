@@ -1,0 +1,9 @@
+#AIRCRAFT - ROD 1931 / 东北航空处（九一八事变）
+# wing key = state 83 (大连) — 东北航空处主力
+
+air_wings = {
+	83 = {
+		fighter_equipment_0 = { owner = "ROD" amount = 20 version_name = "辽F-1" }
+		tac_bomber_equipment_0 = { owner = "ROD" amount = 6 version_name = "诺斯罗普γ" }
+	}
+}

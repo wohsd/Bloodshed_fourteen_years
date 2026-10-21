@@ -1,0 +1,11 @@
+#AIRCRAFT - ROD 1936 / 东北军重整备战
+# wing key = state 170
+
+air_wings = {
+	170 = {
+		fighter_equipment_0 = { owner = "ROD" amount = 20 version_name = "霍克II" }
+		tac_bomber_equipment_0 = { owner = "ROD" amount = 8 version_name = "诺斯罗普γ" }
+		cas_equipment_0 = { owner = "ROD" amount = 6 version_name = "A-12" }
+		transport_plane_equipment_1 = { owner = "ROD" amount = 4 version_name = "DC-2" }
+	}
+}
