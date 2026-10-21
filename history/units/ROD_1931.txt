@@ -1,5 +1,5 @@
 division_template = {
-	name = "东北边防军" 
+	name = "东北军步兵旅" 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -10,12 +10,6 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		infantry = { x = 4 y = 0 }
-		infantry = { x = 4 y = 1 }
-		infantry = { x = 4 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -23,8 +17,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "骑兵旅" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
-	division_names_group = JAP_CAV_01
+	name = "东北军骑兵旅" 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -35,11 +28,10 @@ division_template = {
 	}
 }
 division_template = {
-	name = "炮兵团" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
-	division_names_group = JAP_CAV_01
+	name = "东北军炮兵旅" 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		artillery = { x = 1 y = 0 }
 		artillery = { x = 1 y = 1 }
@@ -49,156 +41,253 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 	}
 }
+division_template = {
+	name = "东北军省防旅" 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
 units = {
+	# 辽宁国防军
 	division= {	
-		location = 1104
-                name = "炮兵第1团"
-		division_template = "炮兵团"
+		location = 2805
+		name = "东北军独立第7旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2816
-                name = "炮兵第2团"
-		division_template = "炮兵团"
+		location = 3580
+		name = "东北军独立第8旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1104
+		name = "东北军独立第9旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1394
+		name = "东北军独立第10旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1104
+		name = "东北军独立第11旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1846
+		name = "东北军独立第12旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 194
+		name = "东北军独立第13旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1104
+		name = "东北军独立第14旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1394
+		name = "东北军独立第15旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 359
+		name = "东北军独立第16旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2999
+		name = "东北军独立第17旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1846
+		name = "东北军独立第18旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1813
+		name = "东北军独立第19旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1156
+		name = "东北军独立第20旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	# 吉林国防军
+	division= {	
+		location = 3524
+		name = "东北军独立第21旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 95
+		name = "东北军独立第22旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		location = 3114
-                name = "炮兵第3团"
-		division_template = "炮兵团"
+		name = "东北军独立第23旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2842
-                name = "炮兵第4团"
-		division_template = "炮兵团"
+		location = 4955
+		name = "东北军独立第24旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 3512
-                name = "炮兵第5团"
-		division_template = "炮兵团"
-		start_experience_factor = 0.4
-	}
-
-
-
-
-
-
-	division= {	
-		location = 1104
-                name = "骑兵第1旅"
-		division_template = "骑兵旅"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 2842
-                name = "骑兵第2旅"
-		division_template = "骑兵旅"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3512
-                name = "骑兵第3旅"
-		division_template = "骑兵旅"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3114
-                name = "骑兵第4旅"
-		division_template = "骑兵旅"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3114
-                name = "步兵第1旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 2816
-                name = "步兵第2旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 1138
-                name = "步兵第4旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3108
-                name = "步兵第7旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 1144
-                name = "步兵第8旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3134
-                name = "步兵第11旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 2983
-                name = "步兵第12旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3125
-                name = "步兵第16旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 1104
-                name = "步兵第19旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 1104
-                name = "步兵第22旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3125
-                name = "步兵第25旅"
-		division_template = "东北边防军"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 2983
-                name = "步兵第27旅"
-		division_template = "东北边防军"
+		location = 2797
+		name = "东北军独立第25旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		location = 148
-                name = "步兵第29旅"
-		division_template = "东北边防军"
+		name = "东北军独立第26旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 148
-                name = "步兵第30旅"
-		division_template = "东北边防军"
+		location = 718
+		name = "东北军独立第27旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 	division= {	
-		location = 2842
-                name = "步兵第33旅"
-		division_template = "东北边防军"
+		location = 3114
+		name = "东北军独立第28旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	# 黑龙江国防军
+	division= {	
+		location = 1712
+		name = "东北军独立第29旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2999
+		name = "东北军独立第30旅"
+		division_template = "东北军步兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 2282
+		name = "东北军独立第31旅"
+		division_template = "东北军步兵旅"
 		start_experience_factor = 0.4
 	}
 
+	# 骑兵
+	division= {	
+		location = 3042
+		name = "东北军骑兵第2旅"
+		division_template = "东北军骑兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3556
+		name = "东北军骑兵第3旅"
+		division_template = "东北军骑兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 867
+		name = "东北军骑兵第4旅"
+		division_template = "东北军骑兵旅"
+		start_experience_factor = 0.4
+	}
+
+	# 炮兵
+	division= {	
+		location = 1846
+		name = "东北军炮兵第8旅"
+		division_template = "东北军炮兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 1292
+		name = "东北军炮兵第9团"
+		division_template = "东北军炮兵旅"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		location = 3114
+		name = "东北军炮兵第10团"
+		division_template = "东北军炮兵旅"
+		start_experience_factor = 0.4
+	}
+
+	# 省防旅
+	division= {	
+		location = 2805
+		name = "东北军辽宁省防第1旅"
+		division_template = "东北军省防旅"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 3125
+		name = "东北军辽宁省防第2旅"
+		division_template = "东北军省防旅"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 148
+		name = "东北军吉林省防第1旅"
+		division_template = "东北军省防旅"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 2797
+		name = "东北军吉林省防第2旅"
+		division_template = "东北军省防旅"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 2680
+		name = "东北军黑龙江省防第1旅"
+		division_template = "东北军省防旅"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 2680
+		name = "东北军黑龙江省防第2旅"
+		division_template = "东北军省防旅"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 2816
+		name = "东北军黑龙江省防第3旅"
+		division_template = "东北军省防旅"
+		start_experience_factor = 0.3
+	}
 }

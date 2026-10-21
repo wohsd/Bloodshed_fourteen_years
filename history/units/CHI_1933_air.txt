@@ -2,8 +2,14 @@
 # wing key = state 74 (北京)
 
 air_wings = {
-	74 = {
-		fighter_equipment_0 = { owner = "CHI" amount = 10 version_name = "霍克II" }
-		tac_bomber_equipment_0 = { owner = "CHI" amount = 6 version_name = "诺斯罗普γ" }
+	214 = {
+		fighter_equipment_0 = {
+            owner = "CHI"
+            amount = 10
+        }
+        strat_bomber_equipment_1 = {
+            owner = "CHI"
+            amount = 5
+        }
 	}
 }

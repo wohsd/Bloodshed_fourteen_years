@@ -1,427 +1,129 @@
 division_template = {
-	name = "抗日义勇军" 
-	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 0 y = 3 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 1 y = 3 }
-		
-	}
-	support = {
-	}
-}
-division_template = {
-	name = "国民革命军甲种师" 
+	name = "国民革命军步兵旅" 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		infantry = { x = 4 y = 0 }
-		infantry = { x = 4 y = 1 }
-		infantry = { x = 4 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		field_hospital= { x = 0 y = 2 }
-		military_police= { x = 0 y = 3 }
-	}
-}
-division_template = {
-	name = "国民革命军乙种师" 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		infantry = { x = 4 y = 0 }
-		infantry = { x = 4 y = 1 }
-		infantry = { x = 4 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "国民革命军丙种师" 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		infantry = { x = 4 y = 0 }
-		infantry = { x = 4 y = 1 }
-		infantry = { x = 4 y = 2 }
-	}
-	
-}
-division_template = {
-	name = "骑兵旅" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
-	division_names_group = JAP_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "中央军" 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		cavalry = { x = 3 y = 1 }
-		cavalry = { x = 3 y = 2 }
-	}
-	support = {
-		artillery= { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
 	}
 }
 units = {
- 
-	#上海
-	division= {	
-		name = "国民革命军第87师"
-		location = 3828
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第88师"
-		location = 3821
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
+	# 第1军（陈继承）
+	division = { location = 2011 name = "国民革命军第1军第1师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2011 name = "国民革命军第1军第1师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2011 name = "国民革命军第1军第1师独立旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 4061 name = "国民革命军第1军第3师第7旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 4061 name = "国民革命军第1军第3师第8旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 4061 name = "国民革命军第1军第3师第9旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
-    #江西
-	division= {	
-		name = "国民革命军第18师"
-		location = 2096
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第52师"
-		location = 2096
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第59师"
-		location = 2505
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第60师"
-		location = 3355
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第61师"
-		location = 2101
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
+	# 第18军（陈诚）
+	division = { location = 3826 name = "国民革命军第18军第11师第31旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3826 name = "国民革命军第18军第11师第32旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2141 name = "国民革命军第18军第14师第40旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2141 name = "国民革命军第18军第14师第41旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2141 name = "国民革命军第18军第14师第42旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2096 name = "国民革命军第18军第52师第154旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2096 name = "国民革命军第18军第52师第155旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
-	###福建
-	division= {	
-		name = "国民革命军第3师"
-		location = 4061
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第9师"
-		location = 4002
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第24师"
-		location = 4001
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第49师"
-		location = 1402
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第56师"
-		location = 2980
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第78师"
-		location = 3083
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第80师"
-		location = 3952
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第84师"
-		location = 3380
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第89师"
-		location = 2819
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第90师"
-		location = 4053
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-    #河南
-	division= {	
-		name = "国民革命军第2师"
-		location = 816
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第4师"
-		location = 3738
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第25师"
-		location = 3760
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第26师"
-		location = 1762
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
+	# 第19路军（蒋光鼐、蔡廷锴）
+	division = { location = 3355 name = "国民革命军第19路军第60师第119旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3355 name = "国民革命军第19路军第60师第120旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2101 name = "国民革命军第19路军第61师第121旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2101 name = "国民革命军第19路军第61师第122旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3083 name = "国民革命军第19路军第78师第155旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3083 name = "国民革命军第19路军第78师第156旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
-	##西安
-	division= {	
-		name = "国民革命军第29师"
-		location = 1053
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第38师"
-		location = 2819
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
+	# 第5军（张治中，1932年编成）
+	division = { location = 3828 name = "国民革命军第5军第87师第259旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3828 name = "国民革命军第5军第87师第261旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3821 name = "国民革命军第5军第88师第262旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3821 name = "国民革命军第5军第88师第264旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
+	# 第2军（蒋鼎文）
+	division = { location = 4002 name = "国民革命军第2军第9师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 4002 name = "国民革命军第2军第9师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
-	#湖北
-	division= {	
-		name = "国民革命军第1师"
-		location = 2011
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第5师"
-		location = 2403
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第10师"
-		location = 1912
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第14师"
-		location = 2141
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第19师"
-		location = 3846
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
+	# 第8军（赵观涛）
+	division = { location = 3966 name = "国民革命军第8军第6师第17旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3966 name = "国民革命军第8军第6师第18旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
+	# 第14军（卫立煌）
+	division = { location = 1912 name = "国民革命军第14军第10师第28旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1912 name = "国民革命军第14军第10师第30旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
-	#安徽
-	division= {	
-		name = "国民革命军第6师"
-		location = 3966
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第7师"
-		location = 3777
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第11师"
-		location = 3826
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
+	# 第3军（王均）
+	division = { location = 3777 name = "国民革命军第3军第7师第19旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3777 name = "国民革命军第3军第7师第21旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2957 name = "国民革命军第3军第12师第34旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2957 name = "国民革命军第3军第12师第35旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 
-	#江苏
-	division= {	
-		name = "国民革命军第12师"
-		location = 2957
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第13师"
-		location = 2957
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第15师"
-		location = 1300
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第16师"
-		location = 2941
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第17师"
-		location = 2671
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第20师"
-		location = 2121
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第21师"
-		location = 3744
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第22师"
-		location = 495
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		name = "国民革命军第23师"
-		location = 1415
-		division_template = "国民革命军"
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
-	}
-	#重庆
+	# 第26路军（孙连仲）
+	division = { location = 3760 name = "国民革命军第26路军第25师第73旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3760 name = "国民革命军第26路军第25师第74旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3760 name = "国民革命军第26路军第25师第75旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+
+	# 第9路军（鲁涤平）
+	division = { location = 2096 name = "国民革命军第9路军第18师第52旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2096 name = "国民革命军第9路军第18师第53旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2096 name = "国民革命军第9路军第18师第54旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+
+	# 第29军（宋哲元）
+	division = { location = 2819 name = "国民革命军第29军第38师第112旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2819 name = "国民革命军第29军第38师第113旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2819 name = "国民革命军第29军第38师第114旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+
+	# 第17路军（杨虎城）
+	division = { location = 2671 name = "国民革命军第17路军第17师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2671 name = "国民革命军第17路军第17师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+
+	# 第4路军（何键）
+	division = { location = 3846 name = "国民革命军第4路军第19师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3846 name = "国民革命军第4路军第19师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1300 name = "国民革命军第4路军第15师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1300 name = "国民革命军第4路军第15师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+
+	# 第3路军（韩复榘）
+	division = { location = 2121 name = "国民革命军第3路军第20师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2121 name = "国民革命军第3路军第20师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 495 name = "国民革命军第3路军第22师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 495 name = "国民革命军第3路军第22师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1053 name = "国民革命军第3路军第29师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1053 name = "国民革命军第3路军第29师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+
+	# 军委会直辖师
+	division = { location = 816 name = "国民革命军第2师第4旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 816 name = "国民革命军第2师第6旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3738 name = "国民革命军第4师第10旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3738 name = "国民革命军第4师第11旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3738 name = "国民革命军第4师第12旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2403 name = "国民革命军第5师第13旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2403 name = "国民革命军第5师第14旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2403 name = "国民革命军第5师第15旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2957 name = "国民革命军第13师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2957 name = "国民革命军第13师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3952 name = "国民革命军第80师第238旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3952 name = "国民革命军第80师第239旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 4001 name = "国民革命军第24师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 4001 name = "国民革命军第24师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1402 name = "国民革命军第49师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1402 name = "国民革命军第49师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2980 name = "国民革命军第56师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2980 name = "国民革命军第56师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3380 name = "国民革命军第84师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3380 name = "国民革命军第84师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3744 name = "国民革命军第21师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 3744 name = "国民革命军第21师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1762 name = "国民革命军第26师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1762 name = "国民革命军第26师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1415 name = "国民革命军第23师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 1415 name = "国民革命军第23师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2941 name = "国民革命军第16师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2941 name = "国民革命军第16师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2505 name = "国民革命军第59师第1旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
+	division = { location = 2505 name = "国民革命军第59师第2旅" division_template = "国民革命军步兵旅" start_experience_factor = 0.5 start_equipment_factor = 0.5 }
 }

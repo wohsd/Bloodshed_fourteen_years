@@ -55,7 +55,7 @@ division_template = {
 units = {
 	division= {	
 		location = 1438
-		name = "骑兵第一挺进师"
+		name = "东北军骑兵第1师"
 		division_template = "骑兵师"
 		start_experience_factor = 0.4
 	}
@@ -80,57 +80,57 @@ units = {
 
 	division= {	
 		location = 2545
-		name = "东北军第51军第116师"
+		name = "东北军第53军第116师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		location = 1127
-		name = "东北军第51军第119师"
+		name = "东北军第53军第119师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		location = 6
-		name = "东北军第51军第129师"
+		name = "东北军第53军第129师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
-
-
 	division= {	
 		location = 225
-		name = "东北军第51军第108师"
+		name = "东北军第53军第108师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
+
 	division= {	
 		location = 1499
-		name = "东北军第51军第109师"
+		name = "东北军第57军第109师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		location = 3550
-		name = "东北军第51军第120师"
+		name = "东北军第57军第120师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
+
 	division= {	
 		location = 972
-		name = "东北军第51军第107师"
+		name = "东北军第67军第107师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		location = 1974
-		name = "东北军第51军第110师"
+		name = "东北军第67军第110师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		location = 141
-		name = "东北军第51军第117师"
+		name = "东北军第67军第117师"
 		division_template = "东北边防军"
 		start_experience_factor = 0.4
 	}
