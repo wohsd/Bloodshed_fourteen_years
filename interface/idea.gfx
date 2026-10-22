@@ -1,5 +1,10 @@
 spriteTypes = {
-	ROD_STREOM_DESC = {
+	spriteType = {
+		name = "GFX_new_update_icons"
+		texturefile = "gfx/interface/ideas/game/new_update_icons.png"
+	}
+	
+	spriteType = {
 		name = "GFX_ROD_STREOM_DESC1"
 		texturefile = "gfx/interface/ideas/ROS/Sichuan_Army.png"
 	}

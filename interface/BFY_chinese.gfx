@@ -8,4 +8,16 @@ bitmapfonts = {
 		}
 		color = 0xffffffff
 	}
+	#字魂白鸽天行体(商用需授权)100px
+	bitmapfont = {
+		name = "bfy_font_81"
+		color = 0xff000000
+		fontfiles = {
+			"gfx/fonts/chinese/bfy_font_81_0"
+			"gfx/fonts/chinese/bfy_font_81_1"
+			"gfx/fonts/chinese/bfy_font_81_2"
+			"gfx/fonts/chinese/bfy_font_81_3"
+			"gfx/fonts/chinese/bfy_font_81_4"
+		}
+	}
 }

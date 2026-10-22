@@ -20,6 +20,16 @@ focus_tree = {
         cost = 10
         ai_will_do = { factor = 1 }
         mutually_exclusive = { focus = ROD_focus_1 }
+        available = {
+            date > 1931.9.17
+            OR = {
+                has_country_flag = ROD_918_obey
+                AND = {
+                    date > 1931.12.31
+                    NOT = { has_country_flag = ROD_918_resist }
+                }
+            }
+        }
         completion_reward = {
             add_stability = 0.05
             add_political_power = 50
@@ -53,6 +63,9 @@ focus_tree = {
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_2 }
+        available = {
+            date > 1933.3.11
+        }
         completion_reward = {
             add_political_power = -50
             add_stability = -0.05
@@ -115,6 +128,9 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_5 }
         prerequisite = { focus = ROD_focus_6 }
+        available = {
+            date > 1933.1.1
+        }
         completion_reward = {
             add_war_support = 0.05
             add_stability = 0.03
@@ -165,6 +181,16 @@ focus_tree = {
         cost = 10
         ai_will_do = { factor = 1 }
         mutually_exclusive = { focus = ROD_focus_0 }
+        available = {
+            date > 1935.12.8
+            OR = {
+                has_country_flag = ROD_918_resist
+                AND = {
+                    date > 1931.12.31
+                    NOT = { has_country_flag = ROD_918_obey }
+                }
+            }
+        }
         completion_reward = {
             add_war_support = 0.15
             add_stability = -0.03
@@ -635,6 +661,9 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_university }
         mutually_exclusive = { focus = ROD_ind_relocate }
+        available = {
+            date > 1937.7.6
+        }
         completion_reward = {
             add_war_support = 0.05
             add_tech_bonus = { bonus = 0.5 uses = 2 category = industry }
@@ -653,6 +682,9 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_university }
         mutually_exclusive = { focus = ROD_ind_wartime }
+        available = {
+            date > 1937.7.6
+        }
         completion_reward = {
             add_stability = 0.03
             if = {
@@ -933,6 +965,9 @@ focus_tree = {
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_eco_national_economy focus = ROD_eco_control }
+        available = {
+            date > 1937.7.6
+        }
         completion_reward = {
             add_political_power = 80
             add_stability = 0.05
@@ -954,6 +989,9 @@ focus_tree = {
         y = 7
         cost = 10
         ai_will_do = { factor = 1 }
+        available = {
+            date > 1936.12.11
+        }
         completion_reward = {
             add_political_power = 75
             add_stability = 0.05
@@ -970,6 +1008,9 @@ focus_tree = {
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_root }
+        available = {
+            has_country_flag = ROD_follows_central
+        }
         completion_reward = {
             add_political_power = 40
             add_stability = 0.03
@@ -1133,6 +1174,10 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_root }
         mutually_exclusive = { focus = ROD_pol_dem_1 focus = ROD_pol_fas_1 }
+        available = {
+            has_country_flag = ROD_united_front
+            PRC = { exists = yes }
+        }
         completion_reward = {
             add_popularity = { ideology = communism popularity = 0.08 }
             if = {

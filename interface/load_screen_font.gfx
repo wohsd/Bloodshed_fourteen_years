@@ -51,8 +51,10 @@ bitmapfonts = {
 		name = "loadscreen_tip"
 #		path = "gfx/fonts/hoi_24header"
 		fontfiles = { 
-			"gfx/fonts/chinese/bfy_start_0"
-			"gfx/fonts/chinese/bfy_start_1"
+			"gfx/fonts/chinese/hoi_30header_1of4"
+			"gfx/fonts/chinese/hoi_30header_2of4"
+			"gfx/fonts/chinese/hoi_30header_3of4"
+			"gfx/fonts/chinese/hoi_30header_4of4"
 		}		
 		cursor_offset = { 0 4 }
 		color = 0xffffffff
@@ -70,8 +72,10 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "loadscreen_tip"
 		fontfiles = { 
-			"gfx/fonts/chinese/bfy_start_0"
-			"gfx/fonts/chinese/bfy_start_1"
+			"gfx/fonts/chinese/hoi_30header_1of4"
+			"gfx/fonts/chinese/hoi_30header_2of4"
+			"gfx/fonts/chinese/hoi_30header_3of4"
+			"gfx/fonts/chinese/hoi_30header_4of4"
 		}
 		languages = { "l_russian" "l_polish" } 
 	}
@@ -79,8 +83,10 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "loadscreen_tip"
 		fontfiles = {
-			"gfx/fonts/chinese/bfy_start_0"
-			"gfx/fonts/chinese/bfy_start_1"
+			"gfx/fonts/chinese/hoi_30header_1of4"
+			"gfx/fonts/chinese/hoi_30header_2of4"
+			"gfx/fonts/chinese/hoi_30header_3of4"
+			"gfx/fonts/chinese/hoi_30header_4of4"
 		}
 		languages = { "l_japanese" }
 	}
@@ -88,8 +94,10 @@ bitmapfonts = {
 	bitmapfont_override = {
 		name = "loadscreen_tip"
 		fontfiles = {
-			"gfx/fonts/chinese/bfy_start_0"
-			"gfx/fonts/chinese/bfy_start_1"
+			"gfx/fonts/chinese/hoi_30header_1of4"
+			"gfx/fonts/chinese/hoi_30header_2of4"
+			"gfx/fonts/chinese/hoi_30header_3of4"
+			"gfx/fonts/chinese/hoi_30header_4of4"
 		}
 		languages = { "l_simp_chinese" }
 	}

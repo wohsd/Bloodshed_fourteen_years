@@ -7,17 +7,12 @@ state={
 	}
 	history={
 		owner = CHI
-		victory_points = {
-			5269 10
-		}
         add_core_of = CHI
 		buildings = {
 			5269 = {
-
 				landmark_Sihang_Warehouse  = {
 						level = 1
 				}
-			}
 			}
 		}
 		1933.1.1={
@@ -30,7 +25,8 @@ state={
 			owner = JDF
 		}
 	}
-	manpower=642100
+	
+	manpower=142100
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

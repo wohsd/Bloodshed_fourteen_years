@@ -1068,3 +1068,28 @@ country_event = {
 		set_country_flag = ROD_reinforcements_arrived
 	}
 }
+
+# 九一八事变后的抉择：听命中央 / 抗命自卫
+country_event = {
+	id = ROD_918.1
+	title = ROD_918.1.t
+	desc = ROD_918.1.d
+	picture = GFX_Mukden_Incident
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_918.1.a
+		set_country_flag = ROD_918_obey
+		add_political_power = 25
+		add_stability = 0.03
+	}
+	option = {
+		name = ROD_918.1.b
+		set_country_flag = ROD_918_resist
+		remove_ideas = Not_resisting
+		add_war_support = 0.1
+		add_stability = -0.03
+	}
+}
