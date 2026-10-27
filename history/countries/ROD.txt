@@ -1,7 +1,7 @@
 capital = 50
 1931.1.1={
   set_oob = "ROD_1931"
-                set_air_oob = "ROD_1931_air"
+ set_air_oob = "ROD_1931_air"
 }
 
 
@@ -18,6 +18,7 @@ set_technology = {
         CAS1 = 1
         early_bomber = 1
         early_transport_plane = 1
+	gwtank = 1
 	fuel_silos = 1
 }
 
@@ -49,12 +50,38 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-
-add_ideas = Regionalist_warlords
-add_ideas = ROD_northeast_army_tradition
+# 九一八前东北军重装备库存
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 850
+	producer = ROD
+}
+# 雷诺FT-17轻型战车36辆（1927-28年购自法国）
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_0
+	amount = 36
+	producer = ROD
+}
+# 教练机/封存机/未交付新机（现役192架已编入航空队OOB）
+add_equipment_to_stockpile = {
+	type = fighter_equipment_0
+	amount = 20
+	producer = ROD
+}
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_0
+	amount = 30
+	producer = ROD
+}
+add_equipment_to_stockpile = {
+	type = CAS_equipment_0
+	amount = 20
+	producer = ROD
+}
 
 1931.1.1={
 	country_event={id=ROD1931.301 days=60}
+	country_event={id=ROD1931.531 days=150}
 	country_event={id=ROD1931.501 days=151}
 	country_event={id=ROD1931.601 days=175}
 	country_event={id=ROD1931.701 days=181}
@@ -78,10 +105,13 @@ add_ideas = ROD_northeast_army_tradition
 		set_nationality = MCK
 	}
 	set_oob = "ROD_1933"
-                set_air_oob = "ROD_1933_air"
+    set_air_oob = "ROD_1933_air"
 	capital = 74
 	add_ideas = Not_resisting
 	
+}
+1935.1.1={
+	country_event={id=ROD1935.706 days=186}
 }
 1936.1.1={
 	capital = 170
@@ -89,7 +119,7 @@ add_ideas = ROD_northeast_army_tradition
 }
 1936.1.1={
 	set_oob = "ROD_1936"
-                set_air_oob = "ROD_1936_air"
+    set_air_oob = "ROD_1936_air"
 	remove_ideas = Not_resisting
 	add_ideas = Negative_Encirclement
 	JAP={

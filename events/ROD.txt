@@ -1084,6 +1084,23 @@ country_event = {
 		set_country_flag = ROD_918_obey
 		add_political_power = 25
 		add_stability = 0.03
+		# 不抵抗政策：沈阳东塔机场与库存重装备全部被日军缴获
+		hidden_effect = {
+			JAP = {
+				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 76 producer = JAP }
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = 102 producer = JAP }
+				add_equipment_to_stockpile = { type = CAS_equipment_0 amount = 84 producer = JAP }
+				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 36 producer = JAP }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 850 producer = JAP }
+			}
+			ROD = {
+				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = -20 producer = ROD }
+				add_equipment_to_stockpile = { type = tac_bomber_equipment_0 amount = -30 producer = ROD }
+				add_equipment_to_stockpile = { type = CAS_equipment_0 amount = -20 producer = ROD }
+				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = -36 producer = ROD }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = -850 producer = ROD }
+			}
+		}
 	}
 	option = {
 		name = ROD_918.1.b

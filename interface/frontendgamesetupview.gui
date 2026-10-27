@@ -32,7 +32,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "spirit_idea_entry"
-		size = { width=2200 height=768 }
+		size = { width=60 height=68 }
 		clipping = no
 
 		iconType = {

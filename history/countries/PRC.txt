@@ -77,6 +77,7 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
+
 add_ideas={
 	Soviet_district_spirit
 	AB_spirit
@@ -84,7 +85,6 @@ add_ideas={
 	Leftism
 	Revolutionary_base
 	Extreme_democratization
-	PRC_Central_Special_Branch
 }
 create_intelligence_agency = {
     name = "中央特科"

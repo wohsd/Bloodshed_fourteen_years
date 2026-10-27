@@ -1,8 +1,39 @@
-#AIRCRAFT - ROD 1931 / 东北航空处（九一八事变）
-# wing key = state 83 (大连) — 东北航空处主力
+#AIRCRAFT - ROD 1931 / 东北航空处（九一八事变前约262架，含教练机与封存机）
+# wing key = state 50 (沈阳) — 东北航空处主力（沈阳东塔机场）
+# 现役作战飞机192架编入五个航空队，余70架教练机/封存机/未交付机入库存
+# 听命中央（不抵抗）路线下，九一八后全部被日军缴获（见 ROD_918.1.a）
 
 air_wings = {
-	83 = {
-		small_plane_airframe_0 = { owner = "ROD" amount = 20 version_name = "辽F-1" }
+	50 = {
+		# 飞鹰队：法制纽波特NiD.29战斗机
+		fighter_equipment_0 = {
+			owner = "ROD"
+			amount = 36
+		}
+		# 飞鹰队：东北航空工厂自造辽F-1战斗机
+		fighter_equipment_0 = {
+			owner = "ROD"
+			amount = 20
+		}
+		# 飞龙队：法制布雷盖19轻轰炸机
+		tac_bomber_equipment_0 = {
+			owner = "ROD"
+			amount = 48
+		}
+		# 飞虎队：法制布雷盖14轻轰炸机
+		tac_bomber_equipment_0 = {
+			owner = "ROD"
+			amount = 24
+		}
+		# 飞豹队：英制韦斯特兰“黄蜂”（陆协/近距支援）
+		CAS_equipment_0 = {
+			owner = "ROD"
+			amount = 40
+		}
+		# 飞雁队：法制波泰25侦察/陆军协同机
+		CAS_equipment_0 = {
+			owner = "ROD"
+			amount = 24
+		}
 	}
 }

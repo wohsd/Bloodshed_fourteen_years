@@ -32,7 +32,7 @@ guiTypes = {
 			
 		instantTextBoxType = {
 				name = "text"
-				position = { x = -510 y = 133 } #-466
+				position = { x = -2510 y = 2133 } #-466
 				textureFile = ""
 				font = "loadscreen_tip"
 				borderSize = {x = 0 y = 0}

@@ -28,20 +28,6 @@ division_template = {
 	}
 }
 division_template = {
-	name = "东北军炮兵旅" 
-	regiments = {
-		artillery = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		artillery = { x = 1 y = 0 }
-		artillery = { x = 1 y = 1 }
-		artillery = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
 	name = "东北军省防旅" 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -224,26 +210,6 @@ units = {
 		location = 867
 		name = "东北军骑兵第4旅"
 		division_template = "东北军骑兵旅"
-		start_experience_factor = 0.4
-	}
-
-	# 炮兵
-	division= {	
-		location = 1846
-		name = "东北军炮兵第8旅"
-		division_template = "东北军炮兵旅"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 1292
-		name = "东北军炮兵第9团"
-		division_template = "东北军炮兵旅"
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 3114
-		name = "东北军炮兵第10团"
-		division_template = "东北军炮兵旅"
 		start_experience_factor = 0.4
 	}
 

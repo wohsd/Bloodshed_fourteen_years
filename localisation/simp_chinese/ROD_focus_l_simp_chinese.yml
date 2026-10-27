@@ -455,3 +455,115 @@
   ROD1933.311.t: "喜峰口大捷"
   ROD1933.311.d: "§Y1933年3月11日§!，宋哲元第二十九军在喜峰口夜袭日军营地，大刀队砍杀日寇数百，缴获炮十八门、坦克数十辆，取得九一八以来§Y正面战场首次大捷§!。捷报传出，全国欢腾，「大刀向鬼子们的头上砍去」从此传唱长城内外。少帅闻讯，精神为之一振。"
   ROD1933.311.a: "为英雄庆功，通电嘉奖"
+
+  ROD1931.531.t: "第一辆国产汽车下线"
+  ROD1931.531.d: "§Y1931年5月31日§!，中国第一辆自主生产的汽车——§O民生75型载货汽车§!在辽宁迫击炮厂总装下线。全车666种零件中464种为自制，国产化率高达七成。为庆祝第一辆国产汽车的问世，辽宁迫击炮厂举行了隆重的庆祝大会。这辆载重两吨的卡车证明：东北人完全有能力建立自己的汽车工业，军队的轮子从此不必再看洋人的脸色。"
+  ROD1931.531.a: "东北制造，名不虚传"
+
+# ========== ROD 军事线国策 ==========
+  ROD_army_root: "东北军整军备战"
+  ROD_army_root_desc: "九一八的炮声证明：旧军队的老一套已经打不赢现代战争。汰弱留强、统一军械、重整训练，东北军要从头练起。"
+
+  ROD_army_def_root: "划区设防"
+  ROD_army_def_root_desc: "划设四大防务区，纵深配置、梯次防御，把每一道山梁与河流都变成日军前进的代价。"
+
+  ROD_army_atk_root: "厉兵秣马·待机反攻"
+  ROD_army_atk_root_desc: "防御只能保住残局，反攻才能打回老家。整训攻击兵团，蓄精锐以待天时。"
+
+  ROD_army_gua_root: "持久游击"
+  ROD_army_gua_root_desc: "敌强我弱，则以空间换时间。化整为零、深入敌后，让关东军寝食难安。"
+
+  ROD_army_fortify: "构筑国防工事"
+  ROD_army_fortify_desc: "沿险要山口与铁路枢纽构筑永久工事群，配置重炮与机枪巢——钢筋水泥是最沉默的哨兵。"
+
+  ROD_army_logistics: "整备兵站后勤"
+  ROD_army_logistics_desc: "打仗打的是粮弹。统一兵站线路、扩建被服粮秣厂，让前线不再为一发子弹等待。"
+
+  ROD_army_foreshore: "渤海湾岸防"
+  ROD_army_foreshore_desc: "日军舰艇可随时在渤海湾择地登陆。配置岸炮、敷设雷区，封锁辽东湾的每一处滩头。"
+
+  ROD_army_armor: "组建战车部队"
+  ROD_army_armor_desc: "大帅时代东北军就有雷诺坦克驰骋关内。购买与仿制并举，组建真正属于东北军的战车部队。"
+
+  ROD_army_cavalry_pro: "骑兵现代化"
+  ROD_army_cavalry_pro_desc: "东北骑兵天下闻名。配发机枪迫炮、编练乘马步兵，让马刀与现代火力结合起来。"
+
+  ROD_army_air_pro: "扩建东北空军"
+  ROD_army_air_pro_desc: "东北空军曾为全国之冠，二百余架战机却在九一八一朝资敌。重建航空队、自办航校，夺回东北的天空。"
+
+  ROD_army_mobilize: "动员抗日义勇军"
+  ROD_army_mobilize_desc: "辽吉黑大地上，义勇军风起云涌。收编整顿、配发枪械、派入军官——民众的怒火就是最雄厚的兵源。"
+
+  ROD_army_sabotage: "敌后破袭战"
+  ROD_army_sabotage_desc: "炸桥梁、扒铁路、袭据点、夺军资，让满铁的军列夜夜不得安宁。"
+
+  ROD_army_mountain: "长白山山地训练"
+  ROD_army_mountain_desc: "长白山的林海雪原是最好的演兵场。编练山地部队，专在日军最不适应的地形与时节作战。"
+
+  ROD_army_jiangqiao: "江桥抗战的教训"
+  ROD_army_jiangqiao_desc: "马占山在嫩江桥证明日军并非不可战胜，也暴露了火力与后勤的致命短板。通令全军研讨此战得失，逐条整顿。"
+
+  ROD_army_eq_ind: "装备自主化"
+  ROD_army_eq_ind_desc: "奉天兵工厂的机器不能停。枪炮弹药自给自足，东北军的命脉才不握于外人之手。"
+
+  ROD_army_eq_sov: "换装苏式军械"
+  ROD_army_eq_sov_desc: "经秘密渠道洽购苏式装备：战车、飞机、火炮性能可靠且价格低廉。莫斯科乐见有人在远东牵制日本。"
+
+  ROD_army_eq_ger: "换装德式军械"
+  ROD_army_eq_ger_desc: "聘请德国顾问、采购克虏伯火炮与德械，以世界上最严整的陆军标准重整东北军备。"
+
+  ROD_army_mukden_expand: "扩建奉天兵工厂"
+  ROD_army_mukden_expand_desc: "增设枪弹、炮弹与机枪分厂，招募技工、添置机床，让这座远东第一兵工厂开足马力。"
+
+  ROD_army_standardize: "全军枪械制式化"
+  ROD_army_standardize_desc: "以辽十三式步枪为全军制式，统一口径、统一弹药、统一操典，万国牌军队从此成为历史。"
+
+  ROD_army_copy_foreign: "仿制列国名械"
+  ROD_army_copy_foreign_desc: "测绘捷克式轻机枪、哈奇开斯重机枪与各国名炮，择其优者仿制，逐步形成自己的军械体系。"
+
+  ROD_army_sov_advisors: "延聘苏联军事顾问"
+  ROD_army_sov_advisors_desc: "伏龙芝军事学院出身的顾问团抵达奉天，带来大纵深作战与诸兵种协同的新战术。"
+
+  ROD_army_t26: "列装T-26战车"
+  ROD_army_t26_desc: "成营的T-26开下军列，45毫米战车炮足以击穿日军任何装甲——东北军第一次拥有可靠的装甲拳头。"
+
+  ROD_army_sbomber: "列装SB快速轰炸机"
+  ROD_army_sbomber_desc: "SB快速轰炸机编队成军，速度之快令日军现役战斗机望尘莫及，关东军的机场与兵站从此不再安全。"
+
+  ROD_army_ger_advisors: "延聘德国军事顾问"
+  ROD_army_ger_advisors_desc: "普鲁士教官整训参谋本部，讲授阵地构筑、火力配系与参谋作业，东北军的指挥水准为之一新。"
+
+  ROD_army_panzerIII: "列装三号坦克"
+  ROD_army_panzerIII_desc: "三号坦克的50毫米长身管炮，足以撕开日军任何野战工事。"
+
+  ROD_army_ju87: "列装斯图卡"
+  ROD_army_ju87_desc: "Ju-87俯冲时的呼啸，将成为关东军阵地上最恐怖的声音。"
+
+  ROD_army_unified: "军令军政统一"
+  ROD_army_unified_desc: "撤并冗杂机关、统一号令章则，三省军队听从一个参谋本部。东北军从此如臂使指。"
+
+  ROD_army_academy2: "扩建东北讲武堂"
+  ROD_army_academy2_desc: "东三省陆军讲武堂曾与保定、黄埔齐名。扩招步、骑、炮、工各科，为全军源源不断输送现代军官。"
+
+  ROD_army_army_group: "编组野战军团"
+  ROD_army_army_group_desc: "以军为单位编组野战集群，统一指挥、协同作战，改变以往各旅各自为战的旧习。"
+
+  ROD_army_reserves: "建立后备兵役"
+  ROD_army_reserves_desc: "在乡军人登记造册、定期集训。一旦有事，半月之内可再成军十万。"
+
+  ROD_army_resist_japan: "枕戈待旦·收复东北"
+  ROD_army_resist_japan_desc: "整军完毕、战备完成。全军枕戈待旦，只待一声令下——打回老家去，收复白山黑水！"
+
+# ========== ROD 军事线国家精神 ==========
+  ROD_idea_fortification: "国防工事群"
+  ROD_idea_fortification_desc: "山口与要道上遍布永备工事，来犯之敌将在钢筋水泥前撞得头破血流。"
+  ROD_idea_yiyongjun: "东北抗日义勇军"
+  ROD_idea_yiyongjun_desc: "不愿做奴隶的人们拿起武器：义勇军遍布白山黑水，为正规军提供兵员、情报与游击支援。"
+  ROD_idea_jiangqiao_lessons: "江桥抗战的经验"
+  ROD_idea_jiangqiao_lessons_desc: "嫩江桥畔的血战换来的经验教训，已化为全军的操典与火力配系。"
+  ROD_idea_army_integration: "军令统一"
+  ROD_idea_army_integration_desc: "号令出于一门，三省军队如臂使指，再不是各自为战的旧军阀部队。"
+
+  ROD1935.706.t: "何梅协定"
+  ROD1935.706.d: "§Y1935年5月§!，华北日军借口东北军支援抗日义勇军、违反《塘沽协定》，在河北步步紧逼，要求中央军与东北军悉数撤出。为围剿江西红军、集中兵力于西北，南京方面选择了退让——§Y7月6日§!，何应钦与梅津美治郎达成§O《何梅协定》§!：河北的中央军与东北军全部南调，党政军机关一律撤离。东北军就此离开盘踞两年的华北，调往西北「围剿」陕北红军。故土未复，又失栖身之地，白山黑水的儿郎从此成了寄人篱下的流亡之师。"
+  ROD1935.706.a: "寄人篱下，待机复仇"

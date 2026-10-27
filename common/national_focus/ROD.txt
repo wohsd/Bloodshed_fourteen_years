@@ -525,7 +525,8 @@ focus_tree = {
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_foreign_advisors focus = ROD_ind_standardize }
+        prerequisite = { focus = ROD_ind_foreign_advisors }
+        prerequisite = { focus = ROD_ind_standardize }
         completion_reward = {
             add_ideas = ROD_idea_coal_steel
             add_tech_bonus = { bonus = 0.5 uses = 1 category = excavation }
@@ -644,7 +645,8 @@ focus_tree = {
         y = 7
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_machinery focus = ROD_ind_railway }
+        prerequisite = { focus = ROD_ind_machinery }
+        prerequisite = { focus = ROD_ind_railway }
         completion_reward = {
             add_research_slot = 1
             add_political_power = 50
@@ -712,7 +714,8 @@ focus_tree = {
         y = 9
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_wartime focus = ROD_ind_relocate }
+        prerequisite = { focus = ROD_ind_wartime }
+        prerequisite = { focus = ROD_ind_relocate }
         completion_reward = {
             add_war_support = 0.1
             add_political_power = 50
@@ -825,7 +828,8 @@ focus_tree = {
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_banknet focus = ROD_eco_customs }
+        prerequisite = { focus = ROD_eco_banknet }
+        prerequisite = { focus = ROD_eco_customs }
         completion_reward = {
             add_ideas = ROD_idea_soy_trade
             random_owned_controlled_state = {
@@ -913,7 +917,8 @@ focus_tree = {
         y = 7
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_cooperatives focus = ROD_eco_relief_works }
+        prerequisite = { focus = ROD_eco_cooperatives }
+        prerequisite = { focus = ROD_eco_relief_works }
         completion_reward = {
             add_war_support = 0.1
             add_political_power = 50
@@ -964,7 +969,8 @@ focus_tree = {
         y = 9
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_national_economy focus = ROD_eco_control }
+        prerequisite = { focus = ROD_eco_national_economy }
+        prerequisite = { focus = ROD_eco_control }
         available = {
             date > 1937.7.6
         }
@@ -1647,13 +1653,8 @@ focus_tree = {
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_army_def_root }
-        available = {
-            OR = {
-                focus_completed = ROD_army_def_root
-                focus_completed = ROD_army_atk_root
-                focus_completed = ROD_army_gua_root
-            }
-        }
+        prerequisite = { focus = ROD_army_atk_root }
+        prerequisite = { focus = ROD_army_gua_root }
         completion_reward = {
             add_ideas = ROD_idea_jiangqiao_lessons
             add_war_support = 0.05
@@ -1861,13 +1862,8 @@ focus_tree = {
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_army_eq_ind }
-        available = {
-            OR = {
-                focus_completed = ROD_army_eq_ind
-                focus_completed = ROD_army_eq_sov
-                focus_completed = ROD_army_eq_ger
-            }
-        }
+        prerequisite = { focus = ROD_army_eq_sov }
+        prerequisite = { focus = ROD_army_eq_ger }
         completion_reward = {
             add_ideas = ROD_idea_army_integration
             army_experience = 15
@@ -1931,14 +1927,9 @@ focus_tree = {
         y = 8
         cost = 10
         ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_army_academy2 }
         prerequisite = { focus = ROD_army_army_group }
-        available = {
-            OR = {
-                focus_completed = ROD_army_academy2
-                focus_completed = ROD_army_army_group
-                focus_completed = ROD_army_reserves
-            }
-        }
+        prerequisite = { focus = ROD_army_reserves }
         completion_reward = {
             add_political_power = 100
             add_war_support = 0.15

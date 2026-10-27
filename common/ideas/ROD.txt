@@ -11,7 +11,8 @@ ideas = {
 			}
 
 			removal_cost = -1
-		picture = ROD_northeast_army_tradition
+
+			picture = GFX_idea_ROD_northeast_army_tradition
 
 			modifier = {
 				army_attack_factor = 0.05
@@ -125,7 +126,7 @@ ideas = {
 
 		# 奉票信用 - 1929年整顿奉票、稳定三省金融
 		ROD_idea_fengpiao = {
-			picture = CHI_bank_of_china
+			picture = generic_industrial_concern_2
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -218,9 +219,9 @@ ideas = {
 		}
 
 		# ===== 军事国策线配套精神 =====
-		# 永固工事 - 沿华北平原构筑水泥工事体系
+		# 国防工事群 - 沿华北平原构筑水泥工事体系
 		ROD_idea_fortification = {
-			picture = generic_army_chief_def_eastern_european_2d
+			picture = resource_commitee
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -233,7 +234,7 @@ ideas = {
 
 		# 东北军整编 - 统一编制、集中指挥
 		ROD_idea_army_integration = {
-			picture = generic_army_asia_2
+			picture = HUN_secret_rearmament
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -247,7 +248,7 @@ ideas = {
 
 		# 江桥抗战的经验 - 以血肉之躯对抗日军现代化火力
 		ROD_idea_jiangqiao_lessons = {
-			picture = generic_army_asia_4
+			picture = generic_guerilla_warfare
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
