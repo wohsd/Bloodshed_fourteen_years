@@ -183,3 +183,231 @@ JAP_buffer_1212 = {
 	}
 }
 
+########################################
+# 历史路线阶段（按日期门控）
+# 918(已有buffer_918) → 1933长城/热河 → 1935华北分离 → 1937.7.7全面侵华 → 1939诺门罕/相持 → 1941南进
+########################################
+
+# 1933.1-1933.6 长城抗战·热河作战（目标是东北军ROD）
+JAP_rehe_1933 = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date > 1933.1.1
+		date < 1933.6.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = ROD
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = ROD
+		value = 300
+	}
+	ai_strategy = {
+		type = declare_war
+		id = ROD
+		value = 100
+	}
+}
+
+# 1933.6-1937.7 塘沽协定后·华北分离运动（扶植伪政权，蚕食备战）
+JAP_north_china_autonomy = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date > 1933.6.1
+		date < 1937.7.7
+	}
+	abort_when_not_enabled = yes
+	# 扶植伪满与华北伪政权
+	ai_strategy = {
+		type = befriend
+		id = MCK
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = JDF
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = MGJ
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = JDW
+		value = 200
+	}
+	# 压制义勇军
+	ai_strategy = {
+		type = conquer
+		id = NAF
+		value = 200
+	}
+	# 对南京国民政府持续备战
+	ai_strategy = {
+		type = prepare_for_war
+		id = CHI
+		value = 150
+	}
+}
+
+# 1937.7.7 卢沟桥·全面侵华
+JAP_marco_polo_1937 = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date > 1937.7.7
+	}
+	abort = {
+		has_capitulated = yes
+	}
+	ai_strategy = {
+		type = declare_war
+		id = CHI
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = CHI
+		value = 500
+	}
+	ai_strategy = {
+		type = conquer
+		id = PRC
+		value = 200
+	}
+	# 前线增兵需求
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 150
+	}
+	# 淞沪/广州方向登陆意愿（原版AI登陆怂，必须拉权重）
+	ai_strategy = {
+		type = invade
+		id = CHI
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_invasion_supremacy_weight
+		value = 30
+	}
+}
+
+# 1939 诺门罕试探苏联 + 相持阶段巩固占领区
+JAP_nomonhan_1939 = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date > 1939.5.1
+		date < 1939.9.16
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = SOV
+		value = 100
+	}
+}
+
+# 1939后相持阶段：驻防占领区，扫荡根据地
+JAP_stalemate_occupation = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date > 1939.1.1
+		has_war_with = CHI
+	}
+	abort = {
+		NOT = { has_war_with = CHI }
+	}
+	ai_strategy = {
+		type = garrison
+		value = 50
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 50
+	}
+	ai_strategy = {
+		type = conquer
+		id = PRC
+		value = 300
+	}
+	ai_strategy = {
+		type = conquer
+		id = NAC
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = JCJ
+		value = 200
+	}
+}
+
+# 1941.6后 南进·太平洋战争
+JAP_southward_1941 = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date > 1941.6.1
+	}
+	abort = {
+		has_capitulated = yes
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = USA
+		value = 200
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = RAJ
+		value = 150
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = HOL
+		value = 150
+	}
+	ai_strategy = {
+		type = conquer
+		id = HOL
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = RAJ
+		value = 150
+	}
+	ai_strategy = {
+		type = invade
+		id = USA
+		value = 50
+	}
+	ai_strategy = {
+		type = invade
+		id = RAJ
+		value = 80
+	}
+	ai_strategy = {
+		type = invade
+		id = HOL
+		value = 80
+	}
+}
+

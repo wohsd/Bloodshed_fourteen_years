@@ -688,7 +688,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "info"
-			position = { x = 1005 y = 100 }
+			position = { x = 1405 y = 100 }
 
 			#instantTextBoxType = {
 			#	name = "leader_label"
@@ -715,7 +715,7 @@ guiTypes = {
 				name = "ideology_label"
 				position = { x = 0 y = 35 }
 				textureFile = ""
-				font = "hoi_30"
+				font = "vic_36_black"
 				borderSize = {x = 0 y = 0}
 				text = "IDEOLOGY"
 				maxWidth = 340
@@ -792,7 +792,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "nation_title"
-			position = { x = 440 y = 150 }
+			position = { x = 850 y = 150 }
 			font = "bfy_font_81"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 540
@@ -856,13 +856,13 @@ guiTypes = {
 			format = centre
 		}
 
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name = "history"
-			position = { x = 430 y = 580 }
-			font = "vic_36"
+			position = { x = 430 y = 480 }
+			font = "vic_36" 
 			borderSize = {x = 0 y = 0}
-			maxWidth = 830
-			maxHeight = 130
+			maxWidth = 1130
+			maxHeight = 330
 			format = left
 		}
 	}

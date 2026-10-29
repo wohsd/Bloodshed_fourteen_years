@@ -3115,25 +3115,6 @@ Long_march_decisions = {
 
 
 PRC_struggle_balance1_category = {
-	PRC_struggle_Zhang_Guotao = {
-		available = {
-			has_country_flag = Zhang_Guotao
-		}
-		days_mission_timeout = 50
-		activation = {  
-		}		
-		fixed_random_seed = no
-		fire_only_once = no
-		is_good = no
-		timeout_effect = {
-		}
-		complete_effect = {
-			add_power_balance_value = {
-				id = PRC_struggle_balance1
-				value = -0.05
-			}
-		}
-	}
 	PRC_Red_Four_group = {
 		available = {
 		}

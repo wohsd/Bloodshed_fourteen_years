@@ -1,4 +1,10 @@
-spriteTypes = {	
+spriteTypes = {
+
+		spriteType = {
+			name = "GFX_ROD_bookmark_flag"
+			texturefile = "gfx/interface/ideas/game/ROD_leader.png"
+			legacy_lazy_load = no
+		}
 
 		frameAnimatedSpriteType = {
 			name = "GFX_PRCBOOK0"
