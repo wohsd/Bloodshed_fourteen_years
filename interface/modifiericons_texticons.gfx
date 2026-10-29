@@ -1,8 +1,38 @@
 spriteTypes = {
 
 		spriteType = {
-			name = "GFX_ROD_bookmark_flag"
+			name = "GFX_CHI_bookmark_leader"
+			texturefile = "gfx/interface/ideas/game/CHI_leader.png"
+			legacy_lazy_load = no
+		}
+
+		spriteType = {
+			name = "GFX_PRC_bookmark_leader"
+			texturefile = "gfx/interface/ideas/game/PRC_leader.png"
+			legacy_lazy_load = no
+		}
+
+		spriteType = {
+			name = "GFX_JAP_bookmark_leader"
+			texturefile = "gfx/interface/ideas/game/JAP_leader.png"
+			legacy_lazy_load = no
+		}
+
+		spriteType = {
+			name = "GFX_ROD_bookmark_leader"
 			texturefile = "gfx/interface/ideas/game/ROD_leader.png"
+			legacy_lazy_load = no
+		}
+
+		spriteType = {
+			name = "GFX_ROC_bookmark_leader"
+			texturefile = "gfx/interface/ideas/game/ROC_leader.png"
+			legacy_lazy_load = no
+		}
+
+		spriteType = {
+			name = "GFX_ROG_bookmark_leader"
+			texturefile = "gfx/interface/ideas/game/ROG_leader.png"
 			legacy_lazy_load = no
 		}
 

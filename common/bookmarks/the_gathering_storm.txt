@@ -9,7 +9,7 @@ bookmarks = {
 		"PRC"={
 			history = "PRC_STROM_DESC"
 			ideas={
-				PRC_leader
+				
 			}
 			focuses = {
 				PRC_focus0
@@ -20,19 +20,21 @@ bookmarks = {
 		"CHI"={
 			history = "CHI_STORM_DESC"
 			ideas={
-				CHI_leader
+				
 			}
 		}
 		"JAP"={
 			history = "JAP_STREOM_DESC"
 			ideas={
-				JAP_leader
+				
 			}
 		}
 		"ROD"={
 			history = "ROD_STREOM_DESC"
 			ideas={
-				ROD_leader
+				ROD_northeast_army_tradition
+				ROD_exile_pain
+				ROD_anti_japanese_vanguard
 			}
 			focuses = {
 				ROD_focus_0
@@ -41,15 +43,15 @@ bookmarks = {
 			}
 		}
 		"ROC"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "ROC_STREOM_DESC"
 			ideas={
-				ROC_leader
+				
 			}
 		}
 		"ROG"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "ROG_STREOM_DESC"
 			ideas={
-				ROG_leader
+				
 			}
 		}
 		effect = {
