@@ -54,6 +54,9 @@ immediate = {
 		
 	}
 	
+	# 上面转入关东军的 48 / 66 / 67 / 75 即为东北失守的判定依据：
+	# CHIJiang.1 只在东北失守后才触发（events/CHI_jiang_leadership.txt）
+	
 	
 }
 mean_time_to_happen = {
@@ -1228,6 +1231,10 @@ news_event = {
 			647={transfer_state_to = CHI}
 			670={transfer_state_to = CHI}
 			586={transfer_state_to = CHI}
+			671={transfer_state_to = CHI}
+			216={transfer_state_to = CHI}
+			669={transfer_state_to = CHI}
+			237={transfer_state_to = CHI}
 		}
 		
 	}

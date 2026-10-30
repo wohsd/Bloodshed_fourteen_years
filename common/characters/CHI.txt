@@ -67,6 +67,26 @@ characters={
 		expire="1965.1.1.1"
 			id=-1
 		}
+		advisor={	
+			slot = political_advisor
+			idea_token = CHI_LingSeng_P
+			allowed = {
+				original_tag = CHI
+			}
+			available = {
+				CHI_LingSeng_P = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				old_figurehead
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 	CHI_HuHanMing={
 		name=CHI_HuHanMing
@@ -1652,36 +1672,6 @@ CHI_TangEnBo={
 			}
 			traits = {
 				BRA_distinguished_diplomat
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	CHI_LingSeng={
-		name=CHI_LingSeng
-		portraits={
-			civilian={
-				small = "gfx/interface/advisers/CHI_LingSeng.png"
-			}
-
-		}
-		advisor={	
-			slot = political_advisor
-			idea_token = CHI_LingSeng_P
-			allowed = {
-				original_tag = CHI
-			}
-			available = {
-			CHI_LingSeng_P = {
-				is_hired_as_advisor = no
-				is_country_leader = no
-			}
-			}
-			traits = {
-				old_figurehead
 			}
 			cost = 100
 			ai_will_do = {

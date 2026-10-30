@@ -1,0 +1,187 @@
+add_namespace = CHIJiang
+
+########################################
+# 蒋介石的历次下野与复出
+# 1931.12.15 第二次下野 → 1932.3 复出（前置：九一八事变后东北失守；守住东北则不下野）
+# 1935.12 汪精卫遇刺后兼行政院长
+# 1943.8 林森逝世后任国民政府主席
+#
+# 触发方式照抄原版 events/AAT_Denmark.txt 的 denmark_events.200：
+#   original_tag + date > 下界（不写上界）+ mean_time_to_happen + fire_only_once
+########################################
+
+# 1931年12月15日：宁粤对峙，蒋通电下野
+country_event = {
+	id = CHIJiang.1
+	title = CHIJiang.1.t
+	desc = CHIJiang.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	trigger = {
+		original_tag = CHI
+		date > 1931.12.14
+		# 东北失守：48 / 66 / 67 / 75 已被关东军占领（由 Hidden_News.1 九一八事变转入）
+		48 = { is_controlled_by = JAP }
+		66 = { is_controlled_by = JAP }
+		67 = { is_controlled_by = JAP }
+		75 = { is_controlled_by = JAP }
+		NOT = { has_country_flag = CHI_jiang_stage_1931 }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = CHI_jiang_stage_1931
+	}
+
+	option = {
+		name = CHIJiang.1.a
+		ai_chance = { base = 85 }
+
+		set_country_flag = CHI_jiang_resigned_1931
+		add_political_power = 25
+		add_stability = -0.05
+		add_war_support = 0.03
+
+		# 林森继任国民政府主席（名义元首，实权仍在蒋系军中）
+		# 林森在 characters 文件中已持有 despotism 领袖角色，只能用 promote_character 提升
+		promote_character = {
+			character = CHI_LingSeng
+			ideology = despotism
+		}
+	}
+
+	#option = {
+	#	name = CHIJiang.1.b
+	#	ai_chance = { base = 15 }
+
+	#	set_country_flag = CHI_jiang_defied_1931
+	#	add_political_power = -40
+	#	add_stability = -0.10
+	#}
+}
+
+# 1932年3月：一二八事变后，党内请蒋复出
+country_event = {
+	id = CHIJiang.2
+	title = CHIJiang.2.t
+	desc = CHIJiang.2.d
+	picture = GFX_news_event_generic_read_write
+
+	trigger = {
+		original_tag = CHI
+		date > 1932.02.28
+		has_country_flag = CHI_jiang_resigned_1931
+		NOT = { has_country_flag = CHI_jiang_stage_1932 }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = CHI_jiang_stage_1932
+	}
+
+	option = {
+		name = CHIJiang.2.a
+		ai_chance = { base = 90 }
+
+		clr_country_flag = CHI_jiang_resigned_1931
+		set_country_flag = CHI_jiang_returned_1932
+		add_political_power = 40
+		add_stability = 0.05
+		add_war_support = 0.05
+
+		# 蒋介石复任军事委员会委员长，重掌中央军权
+		promote_character = {
+			character = CHI_JiangJieShi
+			ideology = despotism
+		}
+	}
+
+	#option = {
+	#	name = CHIJiang.2.b
+	#	ai_chance = { base = 10 }
+
+		# 维持林森主政，蒋滞留幕后
+	#	add_political_power = -10
+	#	add_stability = -0.03
+	#}
+}
+
+# 1935年12月7日：汪精卫遇刺后，蒋兼行政院长
+country_event = {
+	id = CHIJiang.3
+	title = CHIJiang.3.t
+	desc = CHIJiang.3.d
+	picture = GFX_news_event_generic_read_write
+
+	trigger = {
+		original_tag = CHI
+		date > 1935.12.06
+		NOT = { has_country_flag = CHI_jiang_stage_1935 }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = CHI_jiang_stage_1935
+	}
+
+	option = {
+		name = CHIJiang.3.a
+		ai_chance = { base = 95 }
+
+		add_political_power = 60
+		add_stability = 0.03
+	}
+
+	option = {
+		name = CHIJiang.3.b
+		ai_chance = { base = 5 }
+
+		# 党内推举他人组阁
+		add_political_power = -15
+		add_stability = -0.05
+	}
+}
+
+# 1943年8月1日：林森逝世，蒋出任国民政府主席
+country_event = {
+	id = CHIJiang.4
+	title = CHIJiang.4.t
+	desc = CHIJiang.4.d
+	picture = GFX_report_event_generic_funeral
+
+	trigger = {
+		original_tag = CHI
+		date > 1943.07.31
+		NOT = { has_country_flag = CHI_jiang_stage_1943 }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = CHI_jiang_stage_1943
+	}
+
+	option = {
+		name = CHIJiang.4.a
+		ai_chance = { base = 95 }
+
+		add_political_power = 100
+		add_stability = 0.05
+
+		promote_character = {
+			character = CHI_JiangJieShi
+			ideology = despotism
+		}
+	}
+
+	option = {
+		name = CHIJiang.4.b
+		ai_chance = { base = 5 }
+
+		add_political_power = -20
+		add_stability = -0.08
+	}
+}

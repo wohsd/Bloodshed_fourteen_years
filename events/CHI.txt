@@ -52,6 +52,9 @@ country_event = {
 		        }
 			} 
 		} 
+		ai_chance = {
+			base = 100
+		}
 		CHI =  { 
 			country_event = { id = CHI.2  days = 3 } 
 			
@@ -61,6 +64,10 @@ country_event = {
 	option = {
 		name = CHI.1.b
 		trigger = { not= { has_completed_focus = Chiang_Kai_shek_Consolidates_Power } } 
+		# AI 权重归零：AI 统治下的 CHI 永不选择「遇刺身亡」分支
+		ai_chance = {
+			base = 0
+		}
 		news_event = { id = WorldNew.37 days = 10 }
 		CHI =  { 
 			country_event = { id = CHI.3  days = 3 } 
@@ -238,7 +245,6 @@ news_event = {
 country_event = {
 	id = CHI_hidden.100
 	hidden = yes
-	persistent = yes
 
 	trigger = {
 		tag = CHI

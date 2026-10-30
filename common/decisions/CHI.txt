@@ -1259,7 +1259,7 @@ CHI_Purging_party_category = {
 		days_remove= 3
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 1
+			factor = 1000
 		} 
 		complete_effect = {
 			RFC_DengYanDa = {
@@ -1275,7 +1275,11 @@ CHI_Purging_party_category = {
 		# 任务型决议语义：available 为真 = 任务被解除（隐藏）。
 		# 起义经由手动决议触发（置标记）后任务作废；此前为假 → 开局即激活倒计时
 		available = {
-			has_country_flag = KMT_left_uprising_done
+			# 起义已发动，或邓演达已被处死（RFC_DengYanDa1）→ 任务立刻解除
+			OR = {
+				has_country_flag = KMT_left_uprising_done
+				has_country_flag = RFC_DengYanDa1
+			}
 		}
 		days_mission_timeout = 262
 		activation = {
@@ -1290,7 +1294,10 @@ CHI_Purging_party_category = {
 		timeout_effect = {
 			# 互斥：若「国民党左派起义」决议已触发过起义，则跳过（防止重复 load_oob）
 			if = {
-				limit = { NOT = { has_country_flag = KMT_left_uprising_done } }
+				limit = {
+					NOT = { has_country_flag = KMT_left_uprising_done }
+					NOT = { has_country_flag = RFC_DengYanDa1 }
+				}
 				set_country_flag = KMT_left_uprising_done
 				news_event = RFC_NEW.1
 				random_unit_leader = {
@@ -1340,6 +1347,7 @@ CHI_Purging_party_category = {
 		visible = {
 			tag = CHI
 			NOT = { has_country_flag = KMT_left_uprising_done }
+			NOT = { has_country_flag = RFC_DengYanDa1 }
 		}
 		fire_only_once = yes
 		ai_will_do = {
@@ -1548,7 +1556,7 @@ CHI_Defend_against_enemy_category = {
 			add_manpower = -10000
 			add_stability = -0.1
 		}
-	}
+	} 
 }
 
 ######### 
