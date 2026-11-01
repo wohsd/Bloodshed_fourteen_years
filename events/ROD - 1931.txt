@@ -161,6 +161,39 @@ country_event = {
 	}
 }
 
+# 幼子张闾琪病逝（6月）
+country_event = {
+	id = ROD1931.610
+	title = ROD1931.610.t
+	desc = ROD1931.610.d
+	picture = GFX_ROD_1931_501
+
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ROD
+		date > 1931.06.05
+		NOT = { has_country_flag = ROD_zhang_luqi_died }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	fire_only_once = yes
+
+	option = {
+		name = ROD1931.610.a
+		add_stability = -0.02
+		add_war_support = -0.01
+		hidden_effect = {
+			add_to_variable = {
+				ROD_zhang_xueliang_stress = 15
+			}
+			set_country_flag = ROD_zhang_luqi_died
+			country_event = { id = ROD1931.990 days = 2 }
+		}
+	}
+}
+
 # 张学良健康恶化（7月1日）
 country_event = {
 	id = ROD1931.701

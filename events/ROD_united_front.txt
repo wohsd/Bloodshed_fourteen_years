@@ -1,0 +1,118 @@
+add_namespace = ROD_uf
+
+########################################
+# 东北军「联共抗日」国策线（ROD_focus_1 ~ ROD_focus_30）架空历史事件
+# 触发方式：各国策 completion_reward 里直接 country_event 派发（is_triggered_only）
+########################################
+
+# 联共抗日（ROD_focus_1）
+country_event = {
+	id = ROD_uf.1
+	title = ROD_uf.1.t
+	desc = ROD_uf.1.d
+	picture = GFX_ROD_NEA_2
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_uf.1.a
+		add_war_support = 0.05
+		set_country_flag = ROD_stop_civil_war
+		PRC = { add_opinion_modifier = { target = ROD modifier = ROD_united_front } }
+		CHI = {
+			add_war_support = 0.03
+			add_stability = -0.01
+		}
+	}
+}
+
+# 组织抗日义勇军（ROD_focus_19）
+country_event = {
+	id = ROD_uf.2
+	title = ROD_uf.2.t
+	desc = ROD_uf.2.d
+	picture = GFX_ROD_NEA_1
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_uf.2.a
+		add_manpower = 5000
+		army_experience = 5
+		set_country_flag = ROD_yiyongjun_formed
+		JAP = { add_stability = -0.02 }
+	}
+}
+
+
+# 联合东北抗日联军（ROD_focus_21）
+country_event = {
+	id = ROD_uf.4
+	title = ROD_uf.4.t
+	desc = ROD_uf.4.d
+	picture = GFX_ROD_NEA_3
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_uf.4.a
+		add_manpower = 4000
+		army_experience = 10
+		set_country_flag = ROD_yiyongjun_joined_northeast
+		PRC = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese_alliance } }
+		JAP = { add_stability = -0.01 }
+	}
+}
+
+
+
+# 接受中共领导（ROD_focus_24）——重大转折点，保留两个选项
+country_event = {
+	id = ROD_uf.7
+	title = ROD_uf.7.t
+	desc = ROD_uf.7.d
+	picture = GFX_ROD_NEA_5
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_uf.7.a
+		add_popularity = { ideology = communism popularity = 0.06 }
+		add_stability = -0.03
+		add_war_support = 0.05
+		set_country_flag = ROD_accepts_cpc_leadership
+		PRC = { add_opinion_modifier = { target = ROD modifier = ROD_communist_cooperation } }
+	}
+
+	option = {
+		name = ROD_uf.7.b
+		add_stability = 0.03
+		add_political_power = 20
+		set_country_flag = ROD_keeps_own_line
+	}
+}
+
+
+
+
+
+
+# 血债血偿（ROD_focus_30）——重大转折点，保留两个选项
+country_event = {
+	id = ROD_uf.13
+	title = ROD_uf.13.t
+	desc = ROD_uf.13.d
+	picture = GFX_ROD_NEA_4
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_uf.13.a
+		add_war_support = 0.1
+		add_manpower = 5000
+		set_country_flag = ROD_blood_debt_paid
+		JAP = { add_stability = -0.05 }
+	}
+
+	option = {
+		name = ROD_uf.13.b
+		add_political_power = 50
+		add_stability = 0.03
+		set_country_flag = ROD_blood_debt_paid
+	}
+}

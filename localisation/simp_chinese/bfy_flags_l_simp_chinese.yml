@@ -1,0 +1,85 @@
+﻿l_simp_chinese:
+ # 国策 / 决议条件里显示的国家标记（country flag）本地化
+ # 没有这些键时，游戏会直接显示原始 flag 名（例如 ROD_918_obey）
+
+ # --- 国策引用的 flag ---
+ leader_authority_removed:0 "领袖权威已解除"
+ RFC_DengYanDa1:0 "邓演达已被处死"
+ ROD_918_obey:0 "已执行不抵抗命令"
+ ROD_918_resist:0 "已违命抵抗日军"
+ ROD_follows_central:0 "听命于南京中央"
+
+ # --- 决议：淞沪 ---
+ songhu:0 "淞沪会战进行中"
+ songhu_win:0 "淞沪会战胜利"
+ songhu_lose:0 "淞沪会战失利"
+
+ # --- 决议：各大会战 ---
+ ChangDe_win:0 "常德会战胜利"
+ ChangDe_lose:0 "常德会战失利"
+ ChangHeng_win:0 "常衡会战胜利"
+ ChangHeng_lose:0 "常衡会战失利"
+ ChangSha1_win:0 "长沙会战胜利"
+ ChangSha1_lose:0 "长沙会战失利"
+ EXi_win:0 "鄂西会战胜利"
+ EXi_lose:0 "鄂西会战失利"
+ GuiLiu_win:0 "桂柳会战胜利"
+ GuiLiu_lose:0 "桂柳会战失利"
+ ShangGao_win:0 "上高会战胜利"
+ ShangGao_lose:0 "上高会战失利"
+ SuiZao_win:0 "随枣会战胜利"
+ SuiZao_lose:0 "随枣会战失利"
+ Taiyuan_win:0 "太原会战胜利"
+ Taiyuan_lose:0 "太原会战失利"
+ WuHan_win:0 "武汉会战胜利"
+ WuHan_lose:0 "武汉会战失利"
+ XiangXi_win:0 "湘西会战胜利"
+ XiangXi_lose:0 "湘西会战失利"
+ Xuzhou_win:0 "徐州会战胜利"
+ Xuzhou_lose:0 "徐州会战失利"
+ YuNan_win:0 "豫南会战胜利"
+ YuNan_lose:0 "豫南会战失利"
+ YuZhong_win:0 "豫中会战胜利"
+ YuZhong_lose:0 "豫中会战失利"
+ ZaoYi_win:0 "枣宜会战胜利"
+ ZaoYi_lose:0 "枣宜会战失利"
+ ZheGan_win:0 "浙赣会战胜利"
+ ZheGan_lose:0 "浙赣会战失利"
+
+ # --- 决议：其他 ---
+ CHI_Encirclement77:0 "围剿作战已展开"
+ KMT_left_uprising_done:0 "国民党左派起义已发动"
+
+ # --- 决议：长征 ---
+ Long_march_mission:0 "长征正在进行"
+ Long_march_finished:0 "长征已完成"
+ PRC_Mao_FLAG:0 "毛泽东路线"
+ PRC_Wang_FLAG:0 "王明路线"
+ PRC_Zhou_FLAG:0 "周恩来路线"
+ SiFang:0 "懋功会师已实现"
+
+ # --- 决议：扩军与民兵 ---
+ RFC_mr_force_1_done:0 "扩军计划第 1 阶段完成"
+ RFC_mr_force_2_done:0 "扩军计划第 2 阶段完成"
+ RFC_mr_force_3_done:0 "扩军计划第 3 阶段完成"
+ RFC_mr_force_4_done:0 "扩军计划第 4 阶段完成"
+ RFC_mr_force_5_done:0 "扩军计划第 5 阶段完成"
+ RFC_mr_force_6_done:0 "扩军计划第 6 阶段完成"
+ RFC_mr_force_7_done:0 "扩军计划第 7 阶段完成"
+ RFC_mr_force_8_done:0 "扩军计划第 8 阶段完成"
+ RFC_mr_force_9_done:0 "扩军计划第 9 阶段完成"
+ RFC_mr_force_10_done:0 "扩军计划第 10 阶段完成"
+ RFC_mr_militia_1_done:0 "民兵训练第 1 阶段完成"
+ RFC_mr_militia_2_done:0 "民兵训练第 2 阶段完成"
+ RFC_mr_militia_3_done:0 "民兵训练第 3 阶段完成"
+ RFC_mr_militia_4_done:0 "民兵训练第 4 阶段完成"
+ RFC_mr_militia_5_done:0 "民兵训练第 5 阶段完成"
+ RFC_mr_militia_6_done:0 "民兵训练第 6 阶段完成"
+ RFC_mr_militia_7_done:0 "民兵训练第 7 阶段完成"
+ RFC_mr_militia_8_done:0 "民兵训练第 8 阶段完成"
+ RFC_mr_militia_9_done:0 "民兵训练第 9 阶段完成"
+ RFC_mr_militia_10_done:0 "民兵训练第 10 阶段完成"
+
+ # --- 决议：其他势力 ---
+ ROD_ZhangXueLiang_ill:0 "张学良患病"
+ CAR_beiping_mission:0 "北平行动进行中"

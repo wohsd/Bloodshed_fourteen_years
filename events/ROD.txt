@@ -1,6 +1,7 @@
 add_namespace = ROD
 add_namespace = ROD_hidden
 add_namespace = ROD_unreal
+add_namespace = ROD_yiyongjun
 country_event = {
 	id = ROD.1
 	title = ROD.1.t
@@ -1074,7 +1075,7 @@ country_event = {
 	id = ROD_918.1
 	title = ROD_918.1.t
 	desc = ROD_918.1.d
-	picture = GFX_Mukden_Incident
+	picture = GFX_ROD_NEA_5
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1108,5 +1109,141 @@ country_event = {
 		remove_ideas = Not_resisting
 		add_war_support = 0.1
 		add_stability = -0.03
+	}
+}
+
+########################################
+# 东北抗日义勇军 / 抗日联军 历史事件
+# 前置：义勇军已编成（国策「动员抗日义勇军」授予 ROD_idea_yiyongjun，或 ROD_unreal 事件链置 ROD_volunteers_organized）
+########################################
+
+# 1932年4月21日：辽东民众自卫军桓仁誓师（唐聚五）
+country_event = {
+	id = ROD_yiyongjun.1
+	title = ROD_yiyongjun.1.t
+	desc = ROD_yiyongjun.1.d
+	picture = GFX_ROD_NEA_1
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1932.04.20
+		date < 1933.12.31
+		OR = {
+			has_idea = ROD_idea_yiyongjun
+			has_country_flag = ROD_volunteers_organized
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = ROD_yiyongjun.1.a
+		add_manpower = 4000
+		add_war_support = 0.05
+		army_experience = 5
+		set_country_flag = ROD_yiyongjun_liadong
+		CHI = { add_war_support = 0.02 }
+		JAP = { add_stability = -0.02 }
+	}
+}
+
+# 1935年5月24日：《风云儿女》上映，《义勇军进行曲》传遍全国
+country_event = {
+	id = ROD_yiyongjun.2
+	title = ROD_yiyongjun.2.t
+	desc = ROD_yiyongjun.2.d
+	picture = GFX_ROD_NEA_2
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1935.05.23
+		date < 1936.12.31
+		OR = {
+			has_idea = ROD_idea_yiyongjun
+			has_country_flag = ROD_volunteers_organized
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = ROD_yiyongjun.2.a
+		add_war_support = 0.05
+		add_stability = 0.02
+		set_country_flag = ROD_yiyongjun_song
+		CHI = { add_war_support = 0.03 }
+	}
+}
+
+# 1936年2月20日：东北抗日联军统一军队建制
+country_event = {
+	id = ROD_yiyongjun.3
+	title = ROD_yiyongjun.3.t
+	desc = ROD_yiyongjun.3.d
+	picture = GFX_ROD_NEA_3
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1936.02.19
+		date < 1937.12.31
+		OR = {
+			has_idea = ROD_idea_yiyongjun
+			has_country_flag = ROD_volunteers_organized
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = ROD_yiyongjun.3.a
+		add_manpower = 6000
+		add_war_support = 0.06
+		army_experience = 5
+		set_country_flag = ROD_anti_japanese_army_unified
+		PRC = { add_opinion_modifier = { target = ROD modifier = ROD_anti_japanese_alliance } }
+		JAP = { add_stability = -0.02 }
+	}
+
+	option = {
+		name = ROD_yiyongjun.3.b
+		add_political_power = 30
+		add_war_support = 0.03
+		set_country_flag = ROD_anti_japanese_army_unified
+	}
+}
+
+# 1940年2月23日：杨靖宇濛江殉国
+country_event = {
+	id = ROD_yiyongjun.4
+	title = ROD_yiyongjun.4.t
+	desc = ROD_yiyongjun.4.d
+	picture = GFX_ROD_NEA_4
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1940.02.22
+		date < 1941.06.01
+		OR = {
+			has_idea = ROD_idea_yiyongjun
+			has_country_flag = ROD_volunteers_organized
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = ROD_yiyongjun.4.a
+		add_war_support = 0.08
+		add_stability = -0.03
+		add_manpower = 3000
+		set_country_flag = ROD_yangjingyu_martyred
+		PRC = { add_war_support = 0.02 }
+	}
+
+	option = {
+		name = ROD_yiyongjun.4.b
+		add_stability = 0.02
+		add_war_support = -0.02
+		set_country_flag = ROD_yangjingyu_martyred
 	}
 }

@@ -192,6 +192,7 @@ focus_tree = {
             }
         }
         completion_reward = {
+            country_event = { id = ROD_uf.1 }
             add_war_support = 0.15
             add_stability = -0.03
             add_manpower = 3000
@@ -211,6 +212,7 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_1 }
         completion_reward = {
+            country_event = { id = ROD_uf.2 }
             add_manpower = 5000
             army_experience = 10
             add_war_support = 0.05
@@ -241,6 +243,7 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_1 }
         completion_reward = {
+            country_event = { id = ROD_uf.4 }
             add_war_support = 0.08
             add_manpower = 8000
             army_experience = 5
@@ -288,6 +291,7 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_22 }
         completion_reward = {
+            country_event = { id = ROD_uf.7 }
             add_political_power = 30
             add_stability = 0.02
             add_popularity = { ideology = communism popularity = 0.03 }
@@ -383,6 +387,7 @@ focus_tree = {
         prerequisite = { focus = ROD_focus_28 }
         prerequisite = { focus = ROD_focus_29 }
         completion_reward = {
+            country_event = { id = ROD_uf.13 }
             add_political_power = 80
             add_stability = 0.08
             add_war_support = 0.15

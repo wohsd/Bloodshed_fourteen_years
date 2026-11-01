@@ -334,4 +334,26 @@ spriteTypes = {
 		norefcount = no
 		animation = no
 	}
+
+	# 东北军历史照片
+	spriteType = {
+		name = "GFX_ROD_NEA_1"
+		texturefile = "gfx/event/ROD_NEA_1.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_NEA_2"
+		texturefile = "gfx/event/ROD_NEA_2.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_NEA_3"
+		texturefile = "gfx/event/ROD_NEA_3.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_NEA_4"
+		texturefile = "gfx/event/ROD_NEA_4.png"
+	}
+	spriteType = {
+		name = "GFX_ROD_NEA_5"
+		texturefile = "gfx/event/ROD_NEA_5.png"
+	}
 }

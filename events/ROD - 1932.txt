@@ -30,3 +30,212 @@ country_event = {
 		add_stability = -0.02
 	}
 }
+
+# 《日满议定书》签订（1932.9.15，日本正式承认伪满洲国）
+country_event = {
+	id = ROD1932.915
+	title = ROD1932.915.t
+	desc = ROD1932.915.d
+	picture = GFX_ROD_NEA_5
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1933.1.1
+	}
+
+	option = {
+		name = ROD1932.915.a
+		add_war_support = 0.03
+		add_stability = -0.02
+		hidden_effect = {
+			ROD = {
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 10
+				}
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
+	}
+}
+
+# 中苏恢复邦交（1932.12.12）
+country_event = {
+	id = ROD1932.1212
+	title = ROD1932.1212.t
+	desc = ROD1932.1212.d
+	picture = GFX_ROD_NEA_2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1933.1.1
+	}
+
+	option = {
+		name = ROD1932.1212.a
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+
+# 全国民众救国团体联合会通电全国（1932.2.10）
+country_event = {
+	id = ROD1932.210
+	title = ROD1932.210.t
+	desc = ROD1932.210.d
+	picture = GFX_ROD_NEA_2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1933.1.1
+	}
+
+	option = {
+		name = ROD1932.210.a
+		add_war_support = 0.03
+		add_political_power = 10
+	}
+}
+
+# 日军袭击安固镇，谎报马占山战死（1932.5.28）
+country_event = {
+	id = ROD1932.528
+	title = ROD1932.528.t
+	desc = ROD1932.528.d
+	picture = GFX_ROD_NEA_4
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1933.1.1
+	}
+
+	option = {
+		name = ROD1932.528.a
+		add_war_support = 0.02
+		army_experience = 5
+	}
+}
+
+# 张学良辞去北平绥靖公署主任（1932.8.6，配套国策：待罪北平）
+country_event = {
+	id = ROD1932.806
+	title = ROD1932.806.t
+	desc = ROD1932.806.d
+	picture = GFX_ROD_1931_501
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1933.1.1
+	}
+
+	option = {
+		name = ROD1932.806.a
+		add_stability = -0.02
+		add_political_power = -30
+		hidden_effect = {
+			ROD = {
+				# 仅听命中央线：自动完成「锦州交涉」「待罪北平」，张学良下台
+				if = {
+					limit = { has_country_flag = ROD_follows_central }
+					complete_national_focus = ROD_focus_2
+					complete_national_focus = ROD_focus_3
+				}
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 15
+				}
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
+	}
+}
+
+# 李顿调查团报告书在北平签字（1932.9.4，同时触发全球新闻）
+country_event = {
+	id = ROD1932.904
+	title = ROD1932.904.t
+	desc = ROD1932.904.d
+	picture = GFX_ROD_NEA_5
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1933.1.1
+	}
+
+	option = {
+		name = ROD1932.904.a
+		add_political_power = 15
+		hidden_effect = {
+			news_event = { id = ROD1932.905 }
+		}
+	}
+}
+
+news_event = {
+	id = ROD1932.905
+	title = ROD1932.905.t
+	desc = ROD1932.905.d
+	picture = GFX_world1931_2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROD1932.905.a
+	}
+}
+
+# 平顶山惨案（1932.9.16，同时触发全球新闻）
+country_event = {
+	id = ROD1932.916
+	title = ROD1932.916.t
+	desc = ROD1932.916.d
+	picture = GFX_ROD_NEA_4
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		date < 1933.1.1
+	}
+
+	option = {
+		name = ROD1932.916.a
+		add_war_support = 0.05
+		add_stability = -0.03
+		JAP = { add_stability = -0.03 }
+		hidden_effect = {
+			news_event = { id = ROD1932.917 }
+			ROD = {
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 10
+				}
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
+	}
+}
+
+news_event = {
+	id = ROD1932.917
+	title = ROD1932.917.t
+	desc = ROD1932.917.d
+	picture = GFX_world1931_4
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROD1932.917.a
+	}
+}

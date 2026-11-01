@@ -83,6 +83,7 @@ add_equipment_to_stockpile = {
 	country_event={id=ROD1931.301 days=60}
 	country_event={id=ROD1931.531 days=150}
 	country_event={id=ROD1931.501 days=151}
+	country_event={id=ROD1931.610 days=156}
 	country_event={id=ROD1931.601 days=175}
 	country_event={id=ROD1931.701 days=181}
 	country_event={id=ROD1931.715 days=195}
@@ -95,7 +96,14 @@ add_equipment_to_stockpile = {
 
 1932.1.1={
 	country_event={id=ROD_1931.4 days=38}
+	country_event={id=ROD1932.210 days=40}
 	country_event={id=ROD1932.309 days=68}
+	country_event={id=ROD1932.528 days=148}
+	country_event={id=ROD1932.806 days=218}
+	country_event={id=ROD1932.904 days=247}
+	country_event={id=ROD1932.915 days=258}
+	country_event={id=ROD1932.916 days=259}
+	country_event={id=ROD1932.1212 days=346}
 }
 
 1933.1.1={

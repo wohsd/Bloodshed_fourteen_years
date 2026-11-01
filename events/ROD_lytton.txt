@@ -1,0 +1,180 @@
+add_namespace = ROD_lytton
+
+########################################
+# 九一八事变后的国联李顿调查团事件链（1931.12 - 1933.2）
+# 前置：九一八事变已爆发（date > 1931.09.18），事件归属东北军（ROD）
+########################################
+
+# 1931年12月10日：国联理事会决议派遣调查团
+country_event = {
+	id = ROD_lytton.1
+	title = ROD_lytton.1.t
+	desc = ROD_lytton.1.d
+	picture = GFX_ROD_NEA_2
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1931.12.09
+		OR = {
+			has_country_flag = ROD_918_obey
+			has_country_flag = ROD_918_resist
+		}
+		NOT = { has_country_flag = ROD_lytton_commission }
+	}
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = ROD_lytton.1.a
+		add_political_power = 20
+		add_war_support = 0.03
+		set_country_flag = ROD_lytton_commission
+		hidden_effect = {
+			news_event = { id = ROD_lytton.10 }
+		}
+	}
+}
+
+# 1932年4月21日：调查团抵达中国
+country_event = {
+	id = ROD_lytton.2
+	title = ROD_lytton.2.t
+	desc = ROD_lytton.2.d
+	picture = GFX_ROD_NEA_3
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1932.04.20
+		has_country_flag = ROD_lytton_commission
+		NOT = { has_country_flag = ROD_lytton_arrived }
+	}
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = ROD_lytton.2.a
+		add_political_power = 15
+		add_stability = 0.03
+		set_country_flag = ROD_lytton_arrived
+		JAP = { add_stability = -0.01 }
+		hidden_effect = {
+			news_event = { id = ROD_lytton.11 }
+		}
+	}
+}
+
+# 1932年10月2日：《李顿报告书》公布
+country_event = {
+	id = ROD_lytton.3
+	title = ROD_lytton.3.t
+	desc = ROD_lytton.3.d
+	picture = GFX_ROD_NEA_4
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1932.10.01
+		has_country_flag = ROD_lytton_arrived
+		NOT = { has_country_flag = ROD_lytton_report }
+	}
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = ROD_lytton.3.a
+		add_war_support = 0.08
+		add_stability = -0.02
+		set_country_flag = ROD_lytton_report
+		JAP = { add_stability = -0.03 }
+		hidden_effect = {
+			news_event = { id = ROD_lytton.12 }
+		}
+	}
+}
+
+# 1933年2月24日：国联大会通过报告书，日本退出国联
+country_event = {
+	id = ROD_lytton.4
+	title = ROD_lytton.4.t
+	desc = ROD_lytton.4.d
+	picture = GFX_ROD_NEA_2
+
+	fire_only_once = yes
+	trigger = {
+		original_tag = ROD
+		date > 1933.02.23
+		has_country_flag = ROD_lytton_report
+		NOT = { has_country_flag = ROD_lytton_adopted }
+	}
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = ROD_lytton.4.a
+		add_political_power = 30
+		add_war_support = 0.05
+		set_country_flag = ROD_lytton_adopted
+		JAP = { add_stability = -0.05 }
+		hidden_effect = {
+			news_event = { id = ROD_lytton.13 }
+		}
+	}
+}
+
+########################################
+# 对应的全球新闻事件
+########################################
+
+news_event = {
+	id = ROD_lytton.10
+	title = ROD_lytton.10.t
+	desc = ROD_lytton.10.d
+	picture = GFX_world1931_3
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_lytton.10.a
+	}
+}
+
+news_event = {
+	id = ROD_lytton.11
+	title = ROD_lytton.11.t
+	desc = ROD_lytton.11.d
+	picture = GFX_ROD_5
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_lytton.11.a
+	}
+}
+
+news_event = {
+	id = ROD_lytton.12
+	title = ROD_lytton.12.t
+	desc = ROD_lytton.12.d
+	picture = GFX_world1931_5
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_lytton.12.a
+	}
+}
+
+news_event = {
+	id = ROD_lytton.13
+	title = ROD_lytton.13.t
+	desc = ROD_lytton.13.d
+	picture = GFX_world1931_4
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_lytton.13.a
+	}
+}
