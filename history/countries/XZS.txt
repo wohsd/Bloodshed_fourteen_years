@@ -24,6 +24,10 @@ set_technology = {
 	ROW = {
 		white_peace = XZS
 	}
+	# 停战后把昌都（209）还给西藏
+	209 = {
+		transfer_state_to = XZS
+	}
 }
 
 recruit_character = XZS_TuDengJiaChuo

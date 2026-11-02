@@ -1,0 +1,153 @@
+########################################
+# 东北军「敌后根据地」机制
+# 联动国策线：ROD_focus_19（组织抗日义勇军）→ ROD_focus_21（联合抗联）→ ROD_focus_23（游击战术）
+########################################
+
+ROD_partisan_category = {
+
+	ROD_establish_base_area = {
+		icon = generic_prepare_civil_war
+		cost = 50
+		fire_only_once = yes
+
+		available = {
+			has_country_flag = ROD_yiyongjun_formed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_country_flag = ROD_base_area_established
+			set_variable = { ROD_base_area_strength = 1 }
+			add_war_support = 0.02
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = MCK
+						is_owned_by = HLJ
+						is_owned_by = JLS
+					}
+					NOT = { is_controlled_by = ROD }
+					NOT = { is_controlled_by = CHI }
+				}
+				add_resistance_target = 15
+			}
+		}
+	}
+
+	ROD_aid_volunteers = {
+		icon = generic_infantry
+		cost = 35
+		days_re_enable = 60
+
+		available = {
+			has_country_flag = ROD_base_area_established
+			has_equipment = { infantry_equipment > 1000 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 }
+			add_manpower = 800
+			army_experience = 3
+			if = {
+				limit = { check_variable = { ROD_base_area_strength < 5 } }
+				add_to_variable = { ROD_base_area_strength = 1 }
+			}
+			# 联动：完成「联合东北抗日联军」后援助效果更强
+			if = {
+				limit = { has_country_flag = ROD_yiyongjun_joined_northeast }
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = MCK
+							is_owned_by = HLJ
+							is_owned_by = JLS
+						}
+						NOT = { is_controlled_by = ROD }
+						NOT = { is_controlled_by = CHI }
+					}
+					add_resistance_target = 15
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = MCK
+							is_owned_by = HLJ
+							is_owned_by = JLS
+						}
+						NOT = { is_controlled_by = ROD }
+						NOT = { is_controlled_by = CHI }
+					}
+					add_resistance_target = 10
+				}
+			}
+		}
+	}
+
+	ROD_sabotage_transport = {
+		cost = 40
+		days_re_enable = 90
+
+		available = {
+			has_country_flag = ROD_base_area_established
+			check_variable = { ROD_base_area_strength > 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			# 联动：联合抗联 + 游击战术（ROD_focus_23）时破坏升级为三级
+			if = {
+				limit = {
+					has_country_flag = ROD_yiyongjun_joined_northeast
+					has_country_flag = ROD_guerrilla_doctrine
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = MCK
+							is_owned_by = HLJ
+							is_owned_by = JLS
+						}
+						NOT = { is_controlled_by = ROD }
+						NOT = { is_controlled_by = CHI }
+					}
+					damage_building = { type = infrastructure damage = 3 }
+				}
+			}
+			else = {
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = MCK
+							is_owned_by = HLJ
+							is_owned_by = JLS
+						}
+						NOT = { is_controlled_by = ROD }
+						NOT = { is_controlled_by = CHI }
+					}
+					damage_building = { type = infrastructure damage = 2 }
+				}
+			}
+			random_list = {
+				70 = {
+					army_experience = 5
+					add_war_support = 0.01
+				}
+				30 = {
+					country_event = { id = ROD_pw.1 }
+				}
+			}
+		}
+	}
+}

@@ -109,6 +109,10 @@ add_equipment_to_stockpile = {
 1933.1.1={
 	country_event={id=ROD1933.101 days=0}
 	country_event={id=ROD1933.311 days=69}
+	every_country = {
+		country_event = { id = Hidden_News.10 days = 145 }	# 1933.5.26 察哈尔民众抗日同盟军成立
+		news_event = { id = ROD.5 days = 150 }				# 1933.5.31 塘沽协定
+	}
 	ROD_XiQia = {
 		set_nationality = MCK
 	}

@@ -37,6 +37,10 @@ add_ideas={
 	ROW = {
 		white_peace = XZS
 	}
+	# 停战后把昌都（209）还给西藏
+	209 = {
+		transfer_state_to = XZS
+	}
 }
 
 # 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）

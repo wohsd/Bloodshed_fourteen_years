@@ -212,6 +212,7 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_1 }
         completion_reward = {
+            unlock_decision_tooltip = ROD_establish_base_area
             country_event = { id = ROD_uf.2 }
             add_manpower = 5000
             army_experience = 10
@@ -243,6 +244,7 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_focus_1 }
         completion_reward = {
+            unlock_decision_tooltip = ROD_aid_volunteers
             country_event = { id = ROD_uf.4 }
             add_war_support = 0.08
             add_manpower = 8000
@@ -278,6 +280,9 @@ focus_tree = {
             add_war_support = 0.1
             add_stability = 0.02
             add_manpower = 5000
+            unlock_decision_tooltip = ROD_sabotage_transport
+            # 联动「敌后根据地」机制：解锁破袭交通线三级破坏
+            set_country_flag = ROD_guerrilla_doctrine
         }
     }
 
@@ -553,7 +558,7 @@ focus_tree = {
     # 工业5 - 互斥：鞍山本溪煤铁
     focus = {
         id = ROD_ind_steel
-        icon = GFX_focus_BRA_national_steel_company
+        icon = GFX_focus_generic_steel
         x = 33
         y = 5
         cost = 10
@@ -995,7 +1000,7 @@ focus_tree = {
     # 政治总根 - 政统何往（KR式独立政治根，开局可选）
     focus = {
         id = ROD_pol_root
-        icon = GFX_focus_EST_rally_the_nation
+        icon = GFX_focus_GER_fuhrerprinzip_himmler
         x = 17
         y = 7
         cost = 10
@@ -1111,7 +1116,7 @@ focus_tree = {
     # 民主4 - 召集全国救国会议（主线向左摆）
     focus = {
         id = ROD_pol_dem_4
-        icon = GFX_focus_CZE_coalition_building
+        icon = GFX_focus_generic_conference
         x = 10
         y = 11
         cost = 10
@@ -1126,7 +1131,7 @@ focus_tree = {
     # 民主5 - 民主联合政府（主线+侧支汇合）
     focus = {
         id = ROD_pol_dem_5
-        icon = GFX_focus_ARG_alvears_democracy
+        icon = GFX_focus_CHI_unify_as_the_china_democratic_league
         x = 12
         y = 12
         cost = 10
@@ -1161,7 +1166,7 @@ focus_tree = {
     # 民主7 - 民主抗战的堡垒（终局）
     focus = {
         id = ROD_pol_dem_7
-        icon = GFX_focus_AST_a_democratic_bulwark
+        icon = GFX_focus_generic_mountain_fortification
         x = 12
         y = 14
         cost = 10

@@ -9,8 +9,8 @@ ROD_zhang_xueliang_rehab = {
 		visible = {
 			has_country_flag = ROD_ZhangXueLiang_ill
 		}
-		cost = 150
-		days_remove = 120
+		cost = 75
+		days_remove = 90
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -20,8 +20,13 @@ ROD_zhang_xueliang_rehab = {
 				add_stability = 0.05
 				add_war_support = 0.03
 				add_timed_idea = { idea = ROD_rehab_suffering days = 180 }
-				set_variable = {
-					ROD_zhang_xueliang_stress = 0
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = -20
+				}
+				clamp_variable = {
+					var = ROD_zhang_xueliang_stress
+					min = 0
+					max = 100
 				}
 				set_variable = {
 					ROD_zhang_xueliang_rehab_1 = 2
@@ -43,7 +48,7 @@ ROD_zhang_xueliang_rehab = {
 		visible = {
 			
 		}
-		cost = 10
+		cost = 15
 		days_remove = 15
 		fire_only_once = no
 		ai_will_do = {
@@ -52,7 +57,7 @@ ROD_zhang_xueliang_rehab = {
 		complete_effect = {
 			ROD = {
 				add_to_variable = {
-					ROD_zhang_xueliang_stress = -20
+					ROD_zhang_xueliang_stress = -8
 				}
 				clamp_variable = {
 					var = ROD_zhang_xueliang_stress
@@ -74,7 +79,7 @@ ROD_zhang_xueliang_rehab = {
 		visible = {
 			 
 		} 
-		cost = 10
+		cost = 0
 		days_remove = 10
 		fire_only_once = no
 		ai_will_do = {
@@ -83,7 +88,7 @@ ROD_zhang_xueliang_rehab = {
 		complete_effect = {
 			ROD = {
 				add_to_variable = {
-					ROD_zhang_xueliang_stress = 15
+					ROD_zhang_xueliang_stress = 10
 				}
 				clamp_variable = {
 					var = ROD_zhang_xueliang_stress

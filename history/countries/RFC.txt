@@ -20,6 +20,11 @@ recruit_character = RFC_JiFang
 recruit_character = RFC_QiuXueXun
 recruit_character = RFC_HeZiJian
 recruit_character = RFC_ZhuRunShan
+# 李济深（despotism，neutrality组）是 RFC 唯一的 neutrality 系领导人，
+# 原在 1933.1.1 日期块招募，但 RFC 开局不存在、日期块招募不生效，导致福建事变后无领导人显示；
+# 移至顶层开局招募
+recruit_character = RFC_LiJiSheng
+recruit_character = RFC_HuangQiXiang
 set_popularities = {
 	democratic = 50
 	neutrality = 25
@@ -35,10 +40,6 @@ set_rule = {
 	can_join_factions = no
 	can_join_opposite_factions = no  
 	can_create_factions = no
-}
-1933.1.1 = {
-	recruit_character = RFC_LiJiSheng
-	recruit_character = RFC_HuangQiXiang
 }
 
 # 现代化进程：按剧本起始日期设置该国现代化阶段并自动切换法案（玩家无法手动切换）

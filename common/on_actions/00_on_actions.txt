@@ -54,18 +54,9 @@ on_actions = {
 	}
 
 	
-	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					tag = CAR
-					FROM = { tag = ROD }
-				}
-				news_event = ROD.5
-			}
-    }
-	}
-	
+	# ROD.5（塘沽协定）原挂于 on_capitulation（tag=CAR, FROM=ROD），该条件永不成立；
+	# 已改为在 history/countries/ROD.txt 的 1933.1.1 块按日期调度（days=150 → 1933.5.31）
+
 
 	on_startup = {
 		effect = {

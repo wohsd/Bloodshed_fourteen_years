@@ -1329,12 +1329,9 @@ Long_march_decisions = {
 				declare_war_on = {
 					target = RDX
 					type = annex_everything
-				}   
-				declare_war_on = {
-					target = ROG
-					type = annex_everything
-				} 
-			}   
+				}
+				# 按用户要求：长征不对粤系（ROG）宣战
+			}
 			PRH={  
 				add_to_war = {
 					targeted_alliance = ROOT

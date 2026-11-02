@@ -1,0 +1,36 @@
+add_namespace = ROD_pw
+
+# 日军讨伐敌后根据地（破袭交通线决议的反击风险事件）
+country_event = {
+	id = ROD_pw.1
+	title = ROD_pw.1.t
+	desc = ROD_pw.1.d
+	picture = GFX_ROD_NEA_4
+
+	is_triggered_only = yes
+
+	option = {
+		name = ROD_pw.1.a
+		add_stability = -0.02
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_by = MCK
+					is_owned_by = HLJ
+					is_owned_by = JLS
+				}
+				NOT = { is_controlled_by = ROD }
+				NOT = { is_controlled_by = CHI }
+			}
+			add_resistance_target = -10
+		}
+		hidden_effect = {
+			ROD = {
+				add_to_variable = {
+					ROD_zhang_xueliang_stress = 5
+				}
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
+	}
+}

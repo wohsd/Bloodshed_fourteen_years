@@ -408,6 +408,10 @@ country_event = {
 		name = ROD1931.1104.a
 		add_war_support = 0.1
 		add_stability = -0.02
+		add_manpower = -2000
+		army_experience = 10
+		add_ideas = ROD_idea_jiangqiao_lessons
+		JAP = { add_stability = -0.02 }
 		hidden_effect = {
 			ROD = {
 				add_political_power = -20
@@ -418,11 +422,14 @@ country_event = {
 	}
 	option = {
 		name = ROD1931.1104.b
-		add_war_support = 0.04
-	}
-	option = {
-		name = ROD1931.1104.c
 		add_war_support = -0.05
 		add_stability = 0.01
+		hidden_effect = {
+			ROD = {
+				add_political_power = 20
+				add_to_variable = { ROD_zhang_xueliang_stress = 5 }
+				country_event = { id = ROD1931.990 days = 2 }
+			}
+		}
 	}
 }

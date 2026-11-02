@@ -1,0 +1,13 @@
+# 敌后根据地决议分类
+ROD_partisan_category = {
+	icon = military_operation
+	picture = GFX_ROD_NEA_2
+
+	visible = {
+		tag = ROD
+		OR = {
+			has_country_flag = ROD_yiyongjun_formed
+			has_idea = ROD_idea_yiyongjun
+		}
+	}
+}
