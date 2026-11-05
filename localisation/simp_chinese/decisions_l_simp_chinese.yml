@@ -468,3 +468,14 @@ CAR_attack_beiping_desc: "冯玉祥、吉鸿昌率察哈尔民众抗日同盟军
 CAR_attack_beiping_map: "北平方向作战"
 CAR_attack_beiping_mission: "三十日攻入北平"
 CAR_attack_beiping_mission_desc: "限令同盟军于三十日之内攻入北平城。逾期未能攻克，察哈尔抗日同盟军将被东北军吞并收编。"
+
+# ========== ROD 决议补充 ==========
+ROD_partisan_category: "东北民众抗日救国会"
+ROD_partisan_category_desc: "九一八事变后，东北民众自发成立抗日救国会，组建义勇军、建立根据地、破坏日军交通线，以游击战配合正面抗战。"
+ROD_aid_volunteers: "援助抗日义勇军"
+ROD_aid_volunteers_desc: "向东北抗日义勇军秘密输送弹药与干部，并派军官潜入关内指挥作战。"
+ROD_establish_base_area: "建立根据地"
+ROD_establish_base_area_desc: "在热河、察东等地建立敌后根据地，发动群众、组织民兵，将日占区变为抗日前线。"
+ROD_sabotage_transport: "破坏交通线"
+ROD_sabotage_transport_desc: "组织便衣队破坏日军铁路、桥梁与公路补给线，牵制其兵力调动。"
+ROD_base_area_strength: "援助过抗日义勇军：1次"

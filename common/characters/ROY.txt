@@ -27,7 +27,7 @@ characters={
 		name=ROY_LuHan
 		portraits={
 			civilian={
-				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord1.dds"
+				large="gfx/leaders/ROY/ROY_LuHan.png"
 			}
 		}
 		#陆军部长（卢汉：沉稳善谋，治军有方）
@@ -72,7 +72,7 @@ characters={
 		name=ROY_SunDu
 		portraits={
 			civilian={
-				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_1.dds"
+				large="gfx/leaders/ROY/ROY_SunDu.png"
 			}
 		}
 		#总司令（孙渡：谨慎持重，稳健务实）

@@ -24,8 +24,7 @@ country_event = {
 					ROD_zhang_xueliang_stress = 10
 				}
 				country_event = { id = ROD1931.921  days = 3 }
-				country_event = { id = ROD1931.990 days = 2 }
-			}
+				}
 		}
 	}
 }
@@ -123,7 +122,6 @@ country_event = {
 			add_to_variable = {
 				ROD_zhang_xueliang_stress = 10
 			}
-			country_event = { id = ROD1931.990 days = 2 }
 			}
 		}
 	}
@@ -155,8 +153,7 @@ country_event = {
 				add_to_variable = {
 					ROD_zhang_xueliang_stress = 10
 				}
-				country_event = { id = ROD1931.990 days = 2 }
-			}
+				}
 		}
 	}
 }
@@ -189,7 +186,6 @@ country_event = {
 				ROD_zhang_xueliang_stress = 15
 			}
 			set_country_flag = ROD_zhang_luqi_died
-			country_event = { id = ROD1931.990 days = 2 }
 		}
 	}
 }
@@ -220,8 +216,7 @@ country_event = {
 				add_to_variable = {
 					ROD_zhang_xueliang_stress = 10
 				}
-				country_event = { id = ROD1931.990 days = 2 }
-			}
+				}
 		}
 	}
 }
@@ -280,82 +275,48 @@ country_event = {
 				add_to_variable = {
 					ROD_zhang_xueliang_stress = 10
 				}
-				country_event = { id = ROD1931.990 days = 2 }
-			}
+				}
 		}
 	}
 }
 
-# 压力巡检（隐藏）：每次压力变动后2天自查，挂/摘阶梯debuff
+# ==============================================
+# 九一八事变后南京政府态度：抵抗 or 不抵抗
+# 决定 ROD_focus_0（听命中央）vs ROD_focus_1（联共抗日）国策树走向
+# 由 Hidden_News.1（九一八事变）的 ROD scope 于 +3 天调度
+# ==============================================
 country_event = {
-	id = ROD1931.990
-	hidden = yes
+	id = ROD1931.50
+	title = ROD1931.50.t
+	desc = ROD1931.50.d
+	picture = GFX_news_event_001
+
+	fire_only_once = yes
 	is_triggered_only = yes
 
-	immediate = {
-		# ≥90：严重状态
-		if = {
-			limit = {
-				check_variable = { ROD_zhang_xueliang_stress > 89 }
-				NOT = { has_idea = ROD_zhang_stress_severe }
-			}
-			add_ideas = ROD_zhang_stress_severe
-			country_event = { id = ROD1931.992 days = 1 }
-		}
-		else_if = {
-			limit = {
-				has_idea = ROD_zhang_stress_severe
-				check_variable = { ROD_zhang_xueliang_stress < 90 }
-			}
-			remove_ideas = ROD_zhang_stress_severe
-		}
-		# ≥70：积劳成疾
-		if = {
-			limit = {
-				check_variable = { ROD_zhang_xueliang_stress > 69 }
-				NOT = { has_idea = ROD_zhang_stress_high }
-			}
-			add_ideas = ROD_zhang_stress_high
-			country_event = { id = ROD1931.991 days = 1 }
-		}
-		else_if = {
-			limit = {
-				has_idea = ROD_zhang_stress_high
-				check_variable = { ROD_zhang_xueliang_stress < 70 }
-			}
-			remove_ideas = ROD_zhang_stress_high
-		}
+	# 必须在九一八后，且两个 flag 都没设过（防万一）
+	trigger = {
+		date > 1931.9.18
+		NOT = { has_country_flag = ROD_918_obey }
+		NOT = { has_country_flag = ROD_918_resist }
 	}
-}
-
-# 压力≥70：旧疾复发（可见提示）
-country_event = {
-	id = ROD1931.991
-	title = ROD1931.991.t
-	desc = ROD1931.991.d
-	picture = GFX_ROD_1931_501
-
-	is_triggered_only = yes
 
 	option = {
-		name = ROD1931.991.a
-		add_stability = -0.01
+		name = ROD1931.50.a	# 遵命执行，不抵抗
+		complete_national_focus = ROD_focus_0
+		hidden_effect = {
+			set_country_flag = ROD_918_obey
+			add_stability = 0.02
+		}
 	}
-}
-
-# 压力≥90：身心俱疲（可见警告）
-country_event = {
-	id = ROD1931.992
-	title = ROD1931.992.t
-	desc = ROD1931.992.d
-	picture = GFX_ROD_1931_501
-
-	is_triggered_only = yes
-
 	option = {
-		name = ROD1931.992.a
-		add_stability = -0.02
-		add_war_support = -0.01
+		name = ROD1931.50.b	# 通电全国，奋起抗日
+		complete_national_focus = ROD_focus_1
+		hidden_effect = {
+			set_country_flag = ROD_918_resist
+			add_war_support = 0.05
+			add_political_power = 10
+		}
 	}
 }
 
@@ -410,14 +371,12 @@ country_event = {
 		add_stability = -0.02
 		add_manpower = -2000
 		army_experience = 10
-		add_ideas = ROD_idea_jiangqiao_lessons
 		JAP = { add_stability = -0.02 }
 		hidden_effect = {
 			ROD = {
 				add_political_power = -20
 				add_to_variable = { ROD_zhang_xueliang_stress = 10 }
-				country_event = { id = ROD1931.990 days = 2 }
-			}
+				}
 		}
 	}
 	option = {
@@ -428,8 +387,7 @@ country_event = {
 			ROD = {
 				add_political_power = 20
 				add_to_variable = { ROD_zhang_xueliang_stress = 5 }
-				country_event = { id = ROD1931.990 days = 2 }
-			}
+				}
 		}
 	}
 }

@@ -4,7 +4,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_ZhangXueLiang.png"
-			}
+			small="gfx/interface/advisers/ROD_ZhangXueLiang.png"
+		}
 		}
 		country_leader={
 			desc = ROD_ZhangXueLiang_leader_desc
@@ -48,7 +49,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_YuXueZhong.png"
-			}
+			small="gfx/interface/advisers/ROD_YuXueZhong.png"
+		}
 		}
 		country_leader={	desc = ROD_YuXueZhong_leader_desc
 
@@ -70,7 +72,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_XiQia.png"
-			}
+			small="gfx/interface/advisers/ROD_XiQia.png"
+		}
 		}
 		corps_commander = {
 			skill = 1
@@ -85,7 +88,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_MaZhanShan.png"
-			}
+			small="gfx/interface/advisers/ROD_MaZhanShan.png"
+		}
 		}
 		corps_commander = {
 			skill = 2
@@ -250,7 +254,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_ZhangZuoXiang.png"
-			}
+			small="gfx/interface/advisers/ROD_ZhangZuoXiang.png"
+		}
 		}
 		corps_commander = {
 			desc = ROD_ZhangZuoXiang_leader_desc
@@ -269,7 +274,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_WanFuLin.png"
-			}
+			small="gfx/interface/advisers/ROD_WanFuLin.png"
+		}
 		}
 		corps_commander = {
 			desc = ROD_WanFuLin_leader_desc
@@ -288,7 +294,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_TangYuLin.png"
-			}
+			small="gfx/interface/advisers/ROD_TangYuLin.png"
+		}
 		}
 		corps_commander = {
 			desc = ROD_TangYuLin_leader_desc
@@ -307,7 +314,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_HeZhuGuo.png"
-			}
+			small="gfx/interface/advisers/ROD_HeZhuGuo.png"
+		}
 		}
 		corps_commander = {
 			desc = ROD_HeZhuGuo_leader_desc
@@ -326,7 +334,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_LiuDuoQuan.png"
-			}
+			small="gfx/interface/advisers/ROD_LiuDuoQuan.png"
+		}
 		}
 		corps_commander = {
 			desc = ROD_LiuDuoQuan_leader_desc
@@ -345,7 +354,8 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ROD/ROD_WangYiZhe.png"
-			}
+			small="gfx/interface/advisers/ROD_WangYiZhe.png"
+		}
 		}
 		corps_commander = {
 			desc = ROD_WangYiZhe_leader_desc
@@ -364,8 +374,9 @@ characters={
 		name=ROD_GaoChongMin
 		portraits={
 			civilian={
-				large="gfx/leaders/Portrait_China_Generic_1.dds"
-			}
+				large="gfx/leaders/ROD/ROD_GaoChongMin.png"
+			small="gfx/interface/advisers/ROD_GaoChongMin.png"
+		}
 		}
 		country_leader={
 			desc = ROD_GaoChongMin_leader_desc
@@ -382,6 +393,7 @@ characters={
 				original_tag = ROD
 			}
 			available = {
+				has_completed_focus = ROD_pol_dem_7
 				ROD_GaoChongMin_P = {
 					is_hired_as_advisor = no
 					is_country_leader = no
@@ -401,8 +413,9 @@ characters={
 		name=ROD_YanBaoHang
 		portraits={
 			civilian={
-				large="gfx/leaders/Portrait_China_Generic_2.dds"
-			}
+				large="gfx/leaders/ROD/ROD_YanBaoHang.png"
+			small="gfx/interface/advisers/ROD_YanBaoHang.png"
+		}
 		}
 		country_leader={
 			desc = ROD_YanBaoHang_leader_desc
@@ -419,6 +432,7 @@ characters={
 				original_tag = ROD
 			}
 			available = {
+				has_completed_focus = ROD_pol_com_7
 				ROD_YanBaoHang_P = {
 					is_hired_as_advisor = no
 					is_country_leader = no
@@ -426,6 +440,137 @@ characters={
 			}
 			traits = {
 				communist_revolutionary
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	#黄显声：东北军骑兵师师长，九一八后坚持抗日
+	ROD_HuangXianSheng={
+		name=ROD_HuangXianSheng
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_HuangXianSheng.png"
+			small="gfx/interface/advisers/ROD_HuangXianSheng.png"
+		}
+		}
+		corps_commander={
+			traits={ cavalry_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	#王树常：东北军骑兵军军长
+	ROD_WangShuChang={
+		name=ROD_WangShuChang
+		portraits={
+			civilian={
+				large="gfx/leaders/ROD/ROD_WangShuChang.png"
+			small="gfx/interface/advisers/ROD_WangShuChang.png"
+		}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	#荣臻：东北边防军参谋长，陆军部长
+	ROD_RongZhen={
+		name=ROD_RongZhen
+		portraits={
+			army={
+				large="gfx/leaders/ROD/ROD_RongZhen.png"
+				small="gfx/interface/advisers/ROD_RongZhen.png"
+			}
+		}
+		advisor={
+			desc = ROD_RongZhen_leader_desc
+			slot = army_chief
+			idea_token = ROD_RongZhen
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+				ROD_RongZhen = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#沈鸿烈：东北海军司令，海军部长
+	ROD_ShenHongLie={
+		name=ROD_ShenHongLie
+		portraits={
+			army={
+				large="gfx/leaders/ROD/ROD_ShenHongLie.png"
+				small="gfx/interface/advisers/ROD_ShenHongLie.png"
+			}
+		}
+		advisor={
+			desc = ROD_ShenHongLie_leader_desc
+			slot = navy_chief
+			idea_token = ROD_ShenHongLie
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+				ROD_ShenHongLie = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	#高志航：东北航空队飞行员，空军部长
+	ROD_GaoZhiHang={
+		name=ROD_GaoZhiHang
+		portraits={
+			army={
+				large="gfx/leaders/ROD/ROD_GaoZhiHang.png"
+				small="gfx/interface/advisers/ROD_GaoZhiHang.png"
+			}
+		}
+		advisor={
+			desc = ROD_GaoZhiHang_leader_desc
+			slot = air_chief
+			idea_token = ROD_GaoZhiHang
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+				ROD_GaoZhiHang = {
+					is_hired_as_advisor = no
+					is_country_leader = no
+				}
+			}
+			traits = {
+				air_chief_ground_support_2
 			}
 			cost = 100
 			ai_will_do = {

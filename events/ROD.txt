@@ -1244,3 +1244,50 @@ country_event = {
 		set_country_flag = ROD_yangjingyu_martyred
 	}
 }
+# 1932年3月：满洲国成立后荣臻投敌（不抵抗线）
+unit_leader_event = {
+	id = ROD.13
+	title = ROD.13.t
+	desc = ROD.13.d
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ROD
+		date > 1932.3.1
+		MCK = { exists = yes }
+	}
+	mean_time_to_happen = { days = 30 }
+
+	option = {
+		name = ROD.13.a
+		add_stability = -0.02
+		ROD_RongZhen = {
+			set_nationality = JAP
+		}
+	}
+}
+# 1932年4月：马占山通电反正（需先发生降满事件 ROD_1931.2）
+country_event = {
+	id = ROD.14
+	title = ROD.14.t
+	desc = ROD.14.d
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ROD
+		has_country_flag = ROD_mazhanshan_defected
+		NOT = { has_country_flag = ROD_mazhanshan_returned }
+		date > 1932.3.25
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = ROD.14.a
+		set_country_flag = ROD_mazhanshan_returned
+		add_war_support = 0.05
+		add_stability = 0.02
+		ROD_MaZhanShan = {
+			set_nationality = ROD
+		}
+	}
+}

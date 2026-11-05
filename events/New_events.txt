@@ -20,6 +20,13 @@ immediate = {
 	ROD_XiQia = {
 		unit_leader_event = {id=ROD_1931.1 days=1}
 	}
+	# 九一八后第3天（南京政府反应）：抵抗 or 不抵抗 ← 决定国策树走向
+	country_event = { id = ROD1931.50 days = 3 }
+	# 九一八后汉奸投降事件链（相对九一八触发，而非硬编码绝对日期）
+	country_event = { id = Hidden_News.21 days = 30 }		# +30 天：1931.10.18 袁金铠辽宁维持会
+	country_event = { id = Hidden_News.22 days = 58 }		# +58 天：1931.11.15 张景惠就任东省特别区长官
+	country_event = { id = Hidden_News.23 days = 89 }		# +89 天：1931.12.16 臧式毅奉天省长
+	country_event = { id = Hidden_News.24 days = 106 }		# +106 天：1932.1.2 马占山江桥停战
 	}
 	
 	JAP={
@@ -1937,3 +1944,65 @@ news_event = {
 		}		
 	}
 
+
+
+########################################
+# 九一八事变后汉奸投敌事件（确定性调度，Rodia）
+# 历史背景：东北沦陷，熙洽、袁金铠、张景惠、臧式毅、马占山等或主动、或被迫走上投敌之路
+########################################
+
+# 1931.10.18 袁金铠组织辽宁维持委员会
+country_event = {
+	id = Hidden_News.21
+	title = Hidden_News.21.t
+	desc = Hidden_News.21.d
+	picture = GFX_news_event_001
+	is_triggered_only = yes
+	immediate = {
+		add_war_support = -0.02
+		add_political_power = -15
+	}
+	option = { name = Hidden_News.21.a }
+}
+
+# 1931.11.15 张景惠就任东省特别区长官
+country_event = {
+	id = Hidden_News.22
+	title = Hidden_News.22.t
+	desc = Hidden_News.22.d
+	picture = GFX_news_event_001
+	is_triggered_only = yes
+	immediate = {
+		add_war_support = -0.02
+		add_stability = -0.01
+	}
+	option = { name = Hidden_News.22.a }
+}
+
+# 1931.12.16 臧式毅接受奉天省省长职务
+country_event = {
+	id = Hidden_News.23
+	title = Hidden_News.23.t
+	desc = Hidden_News.23.d
+	picture = GFX_news_event_001
+	is_triggered_only = yes
+	immediate = {
+		add_war_support = -0.02
+		add_stability = -0.01
+	}
+	option = { name = Hidden_News.23.a }
+}
+
+# 1932.1.2 马占山江桥停战
+country_event = {
+	id = Hidden_News.24
+	title = Hidden_News.24.t
+	desc = Hidden_News.24.d
+	picture = GFX_news_event_001
+	is_triggered_only = yes
+	immediate = {
+		add_war_support = -0.05
+		add_stability = -0.02
+	}
+	option = { name = Hidden_News.24.a }
+}

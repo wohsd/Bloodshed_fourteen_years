@@ -1,4 +1,4 @@
-characters={
+﻿characters={
     CHI_JiangJieShi={
 	name = CHI_JiangJieShi
 	portraits={ 
@@ -1870,4 +1870,58 @@ CHI_TangEnBo={
 			legacy_id=-1
 		}
 	}	
+
+	#区寿年：粤系将领，长期在中央军序列
+	CHI_QuShouNian={
+		name=CHI_QuShouNian
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_QuShouNian.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	#郭勋祺：川军将领，抗战时期划入中央军
+	CHI_GuoXunQi={
+		name=CHI_GuoXunQi
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_GuoXunQi.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	#李家钰：川军将领，抗战殉国追赠上将
+	CHI_LiJiaYu={
+		name=CHI_LiJiaYu
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/CHI_LiJiaYu.png"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 }

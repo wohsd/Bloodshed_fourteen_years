@@ -98,9 +98,12 @@ ROD_partisan_category = {
 
 		available = {
 			has_country_flag = ROD_base_area_established
-			check_variable = { ROD_base_area_strength > 1 }
+			check_variable = { 
+				ROD_base_area_strength > 1 
+				tooltip = ROD_base_area_strength
+			}
 		}
-
+ 
 		ai_will_do = {
 			factor = 1
 		}

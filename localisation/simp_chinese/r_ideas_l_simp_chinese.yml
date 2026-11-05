@@ -442,3 +442,14 @@ RFC_pcq_pp: "每日政治点数获取"
  naval_academy_trait:0 "海军院校"
  air_academy_trait:0 "航空院校"
  foreign_advisor_trait:0 "外国军事顾问"
+
+# ======== 东北军开局精神（always=yes，开局自带）========
+ROD_idea_zhongyuan_war:0 "中原大战的影响"
+ROD_idea_zhongyuan_war_desc:0 "1930年，张学良二十万东北军入关参战，虽兵不血刃拿下平津，却因精锐分散、补给线拉长而元气大伤，此后兵员素质与装备更新均不复当年。"
+
+ROD_idea_pledge_to_central:0 "归附中央"
+ROD_idea_pledge_to_central_desc:0 "张学良于东北易帜后正式归附国民政府，名义上服从蒋介石领导，但东三省的军队、工业、财政仍由张家实际掌控。"
+
+ROD_idea_black_land:0 "黑土地"
+ROD_idea_black_land_desc:0 "北大荒无垠的黑土地是东北粮仓，抚顺煤矿、鞍山铁矿则是近代化工业的根基。得之则甲天下，失之则一无凭依。"
+

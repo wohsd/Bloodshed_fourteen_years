@@ -1164,7 +1164,7 @@ focus_tree = {
     }
 
     # 民主7 - 民主抗战的堡垒（终局）
-    focus = {
+    focus = { 
         id = ROD_pol_dem_7
         icon = GFX_focus_generic_mountain_fortification
         x = 12
@@ -1177,6 +1177,9 @@ focus_tree = {
             add_political_power = 60
             add_stability = 0.05
             add_war_support = 0.05
+            
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = ROD_GaoChongMin_P
         }
     }
 
@@ -1321,6 +1324,8 @@ focus_tree = {
             add_political_power = 50
             add_war_support = 0.1
             add_manpower = 10000
+            show_ideas_tooltip = ROD_YanBaoHang
+            custom_effect_tooltip = available_political_advisor
         }
     }
 

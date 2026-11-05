@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  # 国策 / 决议条件里显示的国家标记（country flag）本地化
  # 没有这些键时，游戏会直接显示原始 flag 名（例如 ROD_918_obey）
 

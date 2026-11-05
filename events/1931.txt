@@ -103,6 +103,7 @@ unit_leader_event = {
 	option = {
 		name = ROD_1931.2.a
 		hidden_effect = {
+			set_country_flag = ROD_mazhanshan_defected
 			news_event = {id=ROD_1931.3 days=60}
 		}
 	}

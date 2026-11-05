@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 	PRC_XiangZhongFa={
 		name=PRC_XiangZhongFa
 		portraits={
@@ -1001,4 +1001,59 @@ characters={
 			logistics_skill=2
 		}
 	}
+	
+
+	#恽代英：中共早期领导人，黄埔军校政治教官
+	PRC_YunDaiYing={
+		name=PRC_YunDaiYing
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_YunDaiYing.png"
+			}
+		}
+		advisor={
+			desc = PRC_YunDaiYing_leader_desc
+			slot = political_advisor
+			idea_token = PRC_YunDaiYing_P
+			traits={ communist_revolutionary }
+			cost = 50
+			ai_will_do = { factor = 1.0 }
+		}
 	}
+
+	#周士第：黄埔一期，早期红军参谋长
+	PRC_ZhouShiDi={
+		name=PRC_ZhouShiDi
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_ZhouShiDi.png"
+			}
+		}
+		corps_commander={
+			traits={ organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	#左权：八路军副参谋长
+	PRC_ZuoQuan={
+		name=PRC_ZuoQuan
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/PRC_ZuoQuan.png"
+			}
+		}
+		corps_commander={
+			traits={ offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+}

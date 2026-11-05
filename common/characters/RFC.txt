@@ -1,4 +1,4 @@
-characters={
+﻿characters={
 	RFC_DengYanDa={
 		name=RFC_DengYanDa
 		portraits={
@@ -88,10 +88,10 @@ characters={
 		name=RFC_HuangQiXiang
 		portraits={
 			civilian={
-				large="gfx/leaders/RFC/RFC_HuangQiXiang.png"
+				large="gfx/leaders/RFC/RFC_huangqixiang.png"
 			}
 			army={
-				large="gfx/leaders/RFC/RFC_HuangQiXiang.png"
+				large="gfx/leaders/RFC/RFC_huangqixiang.png"
 			}
 		}
 		advisor={
@@ -291,7 +291,7 @@ characters={
 		name=RFC_GuoMoRuo
 		portraits={
 			civilian={
-				large="gfx/leaders/RFC/RFC_GuoMoRuo.png"
+				large="gfx/leaders/RFC/RFC_guomoruo.png"
 			}
 		}
 		# 归国事件后由事件 promote_character 出任共产党（马克思主义派）党魁——

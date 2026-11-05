@@ -356,4 +356,26 @@ spriteTypes = {
 		name = "GFX_ROD_NEA_5"
 		texturefile = "gfx/event/ROD_NEA_5.png"
 	}
+
+# 九一八汉奸投敌事件照片（Rodia）
+	spriteType = {
+		name = "GFX_event_Hidden_News_20"
+		texturefile = "gfx/event_pictures/ROD/Hidden_News_20.png"
+	}
+	spriteType = {
+		name = "GFX_event_Hidden_News_21"
+		texturefile = "gfx/event_pictures/ROD/Hidden_News_21.png"
+	}
+	spriteType = {
+		name = "GFX_event_Hidden_News_22"
+		texturefile = "gfx/event_pictures/ROD/Hidden_News_22.png"
+	}
+	spriteType = {
+		name = "GFX_event_Hidden_News_23"
+		texturefile = "gfx/event_pictures/ROD/Hidden_News_23.png"
+	}
+	spriteType = {
+		name = "GFX_event_Hidden_News_24"
+		texturefile = "gfx/event_pictures/ROD/Hidden_News_24.png"
+	}
 }

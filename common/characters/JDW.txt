@@ -144,7 +144,7 @@ characters={
 		name=JDW_QinDeChun
 		portraits={
 			civilian={
-				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_3.dds"
+				large="gfx/leaders/JDW/JDW_QinDeChun.png"
 			}
 		}
 		#总司令（秦德纯：谨慎多谋，擅谋划）
@@ -222,7 +222,7 @@ characters={
 		name=JDW_LiuRuMing
 		portraits={
 			civilian={
-				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_4.dds"
+				large="gfx/leaders/JDW/JDW_LiuRuMing.png"
 			}
 		}
 		corps_commander={	desc = JDW_LiuRuMing_leader_desc
@@ -241,7 +241,7 @@ characters={
 		name=JDW_ZhaoDengYu
 		portraits={
 			civilian={
-				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_land_2.dds"
+				large="gfx/leaders/JDW/JDW_ZhaoDengYu.png"
 			}
 		}
 		corps_commander={	desc = JDW_ZhaoDengYu_leader_desc

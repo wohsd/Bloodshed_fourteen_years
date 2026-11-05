@@ -39,6 +39,10 @@ recruit_character = ROD_LiuDuoQuan
 recruit_character = ROD_WangYiZhe
 recruit_character = ROD_GaoChongMin
 recruit_character = ROD_YanBaoHang
+recruit_character = ROD_RongZhen
+recruit_character = ROD_ShenHongLie
+recruit_character = ROD_GaoZhiHang
+# 高崇民/阎宝航 不在开局 recruit，改由政治三线终局国策解锁
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -92,6 +96,11 @@ add_equipment_to_stockpile = {
 	country_event={id=ROD1931.1104 days=307}
 	country_event={id=ROD1931.1203 days=336}
 	country_event={id=ROD.1 days=162}
+	add_ideas = ROD_northeast_army_tradition
+	add_ideas = ROD_idea_zhongyuan_war
+	add_ideas = ROD_idea_pledge_to_central
+	add_ideas = ROD_idea_black_land
+	
 }
 
 1932.1.1={
@@ -119,8 +128,7 @@ add_equipment_to_stockpile = {
 	set_oob = "ROD_1933"
     set_air_oob = "ROD_1933_air"
 	capital = 74
-	add_ideas = Not_resisting
-	
+	add_ideas = Negative_Encirclement
 }
 1935.1.1={
 	country_event={id=ROD1935.706 days=186}

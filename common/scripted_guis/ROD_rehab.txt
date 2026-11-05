@@ -10,9 +10,15 @@ scripted_gui = {
 		properties = {
 			ROD_zhang_xueliang_rehab_1 = {
 				frame = ROD_zhang_xueliang_rehab_1
+				visible = {
+					check_variable = { ROD_zhang_xueliang_rehab_1 = 2 }
+				}
 			}
 			ROD_zhang_xueliang_rehab_2 = {
 				frame = ROD_zhang_xueliang_rehab_2
+				visible = {
+					check_variable = { ROD_zhang_xueliang_rehab_2 = 2 }
+				}
 			}
 		}
 		ai_enabled = {

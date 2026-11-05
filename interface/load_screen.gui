@@ -26,7 +26,7 @@ guiTypes = {
 			iconType = {
 				name = "progressbar"
 				spriteType = "GFX_loadingstatus_progress"
-				position  = { x=-468 y=142 }
+				position  = { x=520 y=95 }
 				#scale = 0.85
 			}
 			

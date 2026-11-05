@@ -28,12 +28,6 @@ ROD_zhang_xueliang_rehab = {
 					min = 0
 					max = 100
 				}
-				set_variable = {
-					ROD_zhang_xueliang_rehab_1 = 2
-				}
-				set_variable = {
-					ROD_zhang_xueliang_rehab_2 = 1
-				}
 				country_event = { id = ROD1931.990 days = 2 }
 			}
 		}

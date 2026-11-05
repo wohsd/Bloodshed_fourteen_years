@@ -180,17 +180,6 @@
   ROD1931.1203.d: "九一八事变后，东北海军失去东北基地，退驻青岛，军饷无着、补给困难。海军内部以舰长凌霄、方念祖为代表的军官派对副总司令沈鸿烈不满，借机发难。1931年12月3日，凌霄等人在崂山海域发动兵变，将沈鸿烈软禁于舰上，要求张学良撤换沈鸿烈。事变暴露了东北海军内部派系对立的严重问题，后经东北军方面斡旋，沈鸿烈获释复职，凌霄等人被清除出东北海军。崂山事变削弱了东北海军的凝聚力，为日后海军分裂埋下伏笔。"
   ROD1931.1203.a: "海军内讧，沈鸿烈脱险"
 
-  # 意见修正器
-  ROD_follows_central_gov: "服从中央政府"
-  ROD_negotiates_with_japan: "与日本谈判"
-  ROD_resigned: "通电下野"
-  ROD_united_front: "统一战线"
-  ROD_cooperates_with_communists: "与共产党合作"
-  ROD_communist_liaison: "中共联络"
-  ROD_anti_japanese_alliance: "抗日同盟"
-  ROD_communist_cooperation: "国共合作"
-  ROD_seeks_soviet_aid: "寻求苏联援助"
-  ROD_united_front_leader: "统一战线领袖"
   ROD_broke_away: "脱离南京政府"
 
   # 民族精神

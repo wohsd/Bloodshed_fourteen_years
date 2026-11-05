@@ -43,6 +43,47 @@ ideas = {
 			}
 		}
 
+		# 中原大战的影响 - 东北军在中原大战中损耗巨大、精锐尽丧
+		ROD_idea_zhongyuan_war = {
+			picture = GFX_idea_ROD_idea_zhongyuan_war
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.03
+				army_org_factor = -0.02
+				conscription = 0.01
+				war_support_factor = 0.05
+			}
+		}
+
+		# 归附中央 - 东北军名义上服从国民政府，实则地方割据
+		ROD_idea_pledge_to_central = {
+			picture = GFX_idea_ROD_idea_pledge_to_central
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = -0.03
+				consumer_goods_need_factor = 0.02
+			}
+		}
+
+		# 黑土地 - 东北得天独厚的资源与粮仓
+		ROD_idea_black_land = {
+			picture = GFX_idea_ROD_idea_black_land
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.04
+				production_speed_buildings_factor = 0.03
+				consumer_goods_need_factor = -0.05
+				max_manpower_increase = 10000
+			}
+		}
+
 		# 抗日先锋 - 代表东北军积极抗日的决心和士气
 		ROD_anti_japanese_vanguard = {
 			picture = ROD_anti_japanese_vanguard

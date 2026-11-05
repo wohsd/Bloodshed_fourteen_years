@@ -1,6 +1,33 @@
 on_actions = {
 	# country 
-
+	on_daily = {
+		effect = {
+			ROD = {
+				if = {
+					limit = {
+						check_variable = {
+							ROD_zhang_xueliang_stress < 50
+						}
+					}
+					set_variable = {
+						ROD_zhang_xueliang_rehab_1 = 2
+					}
+					set_variable = {
+						ROD_zhang_xueliang_rehab_2 = 1
+					}
+					else = {
+						set_variable = {
+							ROD_zhang_xueliang_rehab_1 = 1
+						}
+						set_variable = {
+							ROD_zhang_xueliang_rehab_2 = 2
+						}
+					}
+				}
+ 			}
+		}
+	}
+	
 	on_capitulation = { 
 		effect = { 
 			every_country = {

@@ -26,7 +26,7 @@ characters={
 		name=ROT_SunZhen
 		portraits={
 			civilian={
-				large="gfx/leaders/Asia_Generic/Portrait_Asia_Generic_warlord2.dds"
+				large="gfx/leaders/ROT/ROT_SunZhen.png"
 			}
 		}
 		advisor={	desc = ROT_SunZhen_leader_desc
