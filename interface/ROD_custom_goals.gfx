@@ -2,33 +2,33 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ROD_focus_19"
-		texturefile = "gfx/interface/goals/组织抗日义勇军.png"
+		texturefile = "gfx/interface/goals/organize_volunteers.png"
 	}
 
 	spriteType = {
 		name = "GFX_ROD_focus_21"
-		texturefile = "gfx/interface/goals/联合东北抗日联军.png"
+		texturefile = "gfx/interface/goals/unite_nea.png"
 	}
 
 	spriteType = {
 		name = "GFX_ROD_focus_22"
-		texturefile = "gfx/interface/goals/发动群众抗日.png"
+		texturefile = "gfx/interface/goals/mobilize_masses.png"
 	}
 
 	# ===== 政治线自定义图标（goal/ROD）=====
 	spriteType = {
 		name = "GFX_ROD_focus_seven_gentlemen"
-		texturefile = "gfx/interface/goals/ROD/七君子.png"
+		texturefile = "gfx/interface/goals/ROD/seven_gentlemen.png"
 	}
 
 	spriteType = {
 		name = "GFX_ROD_focus_xian_incident"
-		texturefile = "gfx/interface/goals/ROD/西安兵谏.png"
+		texturefile = "gfx/interface/goals/ROD/xian_incident.png"
 	}
 
 	spriteType = {
 		name = "GFX_ROD_focus_northwest_government"
-		texturefile = "gfx/interface/goals/ROD/西北国防政府.png"
+		texturefile = "gfx/interface/goals/ROD/northwest_government.png"
 	}
 
 	spriteType = {
@@ -54,10 +54,10 @@ spriteTypes = {
 	# ===== shine 高光版本 =====
 	spriteType = {
 		name = "GFX_ROD_focus_seven_gentlemen_shine"
-		texturefile = "gfx/interface/goals/ROD/七君子.png"
+		texturefile = "gfx/interface/goals/ROD/seven_gentlemen.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ROD/七君子.png"
+			animationmaskfile = "gfx/interface/goals/ROD/seven_gentlemen.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -69,7 +69,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ROD/七君子.png"
+			animationmaskfile = "gfx/interface/goals/ROD/seven_gentlemen.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -85,10 +85,10 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ROD_focus_xian_incident_shine"
-		texturefile = "gfx/interface/goals/ROD/西安兵谏.png"
+		texturefile = "gfx/interface/goals/ROD/xian_incident.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ROD/西安兵谏.png"
+			animationmaskfile = "gfx/interface/goals/ROD/xian_incident.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -100,7 +100,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ROD/西安兵谏.png"
+			animationmaskfile = "gfx/interface/goals/ROD/xian_incident.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -116,10 +116,10 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ROD_focus_northwest_government_shine"
-		texturefile = "gfx/interface/goals/ROD/西北国防政府.png"
+		texturefile = "gfx/interface/goals/ROD/northwest_government.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ROD/西北国防政府.png"
+			animationmaskfile = "gfx/interface/goals/ROD/northwest_government.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -131,7 +131,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ROD/西北国防政府.png"
+			animationmaskfile = "gfx/interface/goals/ROD/northwest_government.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

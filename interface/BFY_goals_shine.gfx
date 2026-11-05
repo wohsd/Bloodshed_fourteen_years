@@ -3823,10 +3823,10 @@ legacy_lazy_load = no
 
 spriteType = {
 name = "GFX_ROD_focus_19_shine"
-texturefile = "gfx/interface/goals/组织抗日义勇军.png"
+texturefile = "gfx/interface/goals/organize_volunteers.png"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx/interface/goals/组织抗日义勇军.png"
+	animationmaskfile = "gfx/interface/goals/organize_volunteers.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 	animationrotation = -90.0
 	animationlooping = no
@@ -3838,7 +3838,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 }
 }
 animation = {
-	animationmaskfile = "gfx/interface/goals/组织抗日义勇军.png"
+	animationmaskfile = "gfx/interface/goals/organize_volunteers.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 	animationrotation = 90.0
 	animationlooping = no
@@ -3854,10 +3854,10 @@ legacy_lazy_load = no
 
 spriteType = {
 name = "GFX_ROD_focus_21_shine"
-texturefile = "gfx/interface/goals/联合东北抗日联军.png"
+texturefile = "gfx/interface/goals/unite_nea.png"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx/interface/goals/联合东北抗日联军.png"
+	animationmaskfile = "gfx/interface/goals/unite_nea.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 	animationrotation = -90.0
 	animationlooping = no
@@ -3869,7 +3869,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 }
 }
 animation = {
-	animationmaskfile = "gfx/interface/goals/联合东北抗日联军.png"
+	animationmaskfile = "gfx/interface/goals/unite_nea.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 	animationrotation = 90.0
 	animationlooping = no
@@ -3885,10 +3885,10 @@ legacy_lazy_load = no
 
 spriteType = {
 name = "GFX_ROD_focus_22_shine"
-texturefile = "gfx/interface/goals/发动群众抗日.png"
+texturefile = "gfx/interface/goals/mobilize_masses.png"
 effectFile = "gfx/FX/buttonstate.lua"
 animation = {
-	animationmaskfile = "gfx/interface/goals/发动群众抗日.png"
+	animationmaskfile = "gfx/interface/goals/mobilize_masses.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 	animationrotation = -90.0
 	animationlooping = no
@@ -3900,7 +3900,7 @@ animation = {
 	animationtexturescale = { x = 1.0 y = 1.0 }
 }
 animation = {
-	animationmaskfile = "gfx/interface/goals/发动群众抗日.png"
+	animationmaskfile = "gfx/interface/goals/mobilize_masses.png"
 	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 	animationrotation = 90.0
 	animationlooping = no

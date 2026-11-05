@@ -1245,7 +1245,7 @@ country_event = {
 	}
 }
 # 1932年3月：满洲国成立后荣臻投敌（不抵抗线）
-unit_leader_event = {
+country_event = {
 	id = ROD.13
 	title = ROD.13.t
 	desc = ROD.13.d
@@ -1253,7 +1253,7 @@ unit_leader_event = {
 
 	trigger = {
 		original_tag = ROD
-		date > 1932.3.1
+		date > 1940.3.30
 		MCK = { exists = yes }
 	}
 	mean_time_to_happen = { days = 30 }
