@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		# 戒毒之苦：完成戒毒后的180天戒断反应
 		ROD_rehab_suffering = {
-			picture = ROD_exile_pain
+			picture = GFX_idea_ROD_rehab_suffering
 			allowed = {
 				original_tag = ROD
 			}

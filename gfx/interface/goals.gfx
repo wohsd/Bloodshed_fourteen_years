@@ -1,6 +1,0 @@
-spriteTypes = {
-    spriteType = {
-        name = "GFX_focus_ROD_pol_fas_4"
-        textureFile = "gfx/interface/goals/focus_ROD_pol_fas_4.dds"
-    }
-}

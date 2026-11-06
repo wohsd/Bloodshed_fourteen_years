@@ -1,5 +1,20 @@
+# 察哈尔民众抗日同盟军（1933.5.26 张家口成立）
+# 兵力约 5 万人：冯玉祥旧部（察哈尔自卫军）、方振武抗日救国军、
+# 吉鸿昌第二军、佟麟阁第一军、收编的东北义勇军与察哈尔蒙古骑兵。
+# 驻地全部在察哈尔境内（state 63 张家口 / state 23 察北 / state 49 乌兰察布）
+
 division_template = {
-	name = "东北边防军" 
+	name = "察哈尔自卫军"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "同盟军第一军"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,18 +27,9 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "察哈尔自卫军" 
-	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "国民革命军" 
+	name = "同盟军第二军"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -37,283 +43,174 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 	}
 }
+
 division_template = {
-	name = "抗日救国军" 
+	name = "同盟军第十六军"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "游击师" 
-	regiments = {
-		militia = { x = 0 y = 0 }
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 1 y = 0 }
 	}
 }
 
 division_template = {
-	name = "蒙古军" 
+	name = "抗日救国军"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
 	}
 }
+
 division_template = {
-	name = "骑兵师" 			
+	name = "察北骑兵"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 0 }
 	}
 }
+
+division_template = {
+	name = "同盟军游击队"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+}
+
 units = {
 
-	division= {	
-		location = 544
+	# —— 张家口（state 63）：总部与冯玉祥卫队 ——
+	division = {
+		location = 2482
+		name = "同盟军总司令部卫队"
+		division_template = "察哈尔自卫军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 818
 		name = "察哈尔自卫军第一师"
 		division_template = "察哈尔自卫军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
 	}
-	division= {	
-		location = 544
+	division = {
+		location = 1587
 		name = "察哈尔自卫军第二师"
 		division_template = "察哈尔自卫军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
 	}
-	division= {	
-		location = 544
-		name = "察哈尔自卫军第三师"
-		division_template = "察哈尔自卫军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 1908
+		name = "同盟军第一军第一师"
+		division_template = "同盟军第一军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "抗日救国军第二师"
-		division_template = "抗日救国军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "抗日救国军第三师"
-		division_template = "抗日救国军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "抗日救国军教导师"
-		division_template = "抗日救国军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "游击第一路"
-		division_template = "游击师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "游击第二路"
-		division_template = "游击师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "国民革命军第六路军第一师"
-		division_template = "游击师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "国民革命军第十八军第三十二师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "国民革命军第十八军第二十三师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "国民革命军第十八军第三十四师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	
-	division= {	
-		location = 544
-		name = "国民革命军第十六军第一师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "国民革命军第十六军第二师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 2587
+		name = "同盟军第一军第二师"
+		division_template = "同盟军第一军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
 
-	division= {	
-		location = 544
-		name = "国民革命军第十六军第三师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	# —— 察北前线（state 23）：方振武东路军、吉鸿昌第二军、第十六军 ——
+	division = {
+		location = 123
+		name = "抗日救国军第一师"
+		division_template = "抗日救国军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "国民革命军第二十九军第一师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 284
+		name = "抗日救国军第二师"
+		division_template = "抗日救国军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "国民革命军第二十九军第二师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 397
+		name = "抗日救国军教导师"
+		division_template = "抗日救国军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "国民革命军第二十九军第二十四师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 424
+		name = "同盟军第二军第四师"
+		division_template = "同盟军第二军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "国民革命军第二十九军第二十五师"
-		division_template = "国民革命军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 477
+		name = "同盟军第二军第五师"
+		division_template = "同盟军第二军"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "骑兵第三师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 496
+		name = "同盟军第十六军第一师"
+		division_template = "同盟军第十六军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
 	}
-	division= {	
-		location = 544
-		name = "骑兵第四师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 587
+		name = "同盟军第十六军第二师"
+		division_template = "同盟军第十六军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
 	}
-	division= {	
-		location = 544
-		name = "骑兵第五师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+
+	# —— 察北骑兵（多伦、沽源方向）——
+	division = {
+		location = 645
+		name = "察北骑兵第一师"
+		division_template = "察北骑兵"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "骑兵第十师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 667
+		name = "察北骑兵第二师"
+		division_template = "察北骑兵"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
-	division= {	
-		location = 544
-		name = "骑兵第十一师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+
+	# —— 收编的义勇军游击队 ——
+	division = {
+		location = 761
+		name = "同盟军游击第一路"
+		division_template = "同盟军游击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 	}
-	division= {	
-		location = 544
-		name = "骑兵第十二师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+	division = {
+		location = 786
+		name = "同盟军游击第二路"
+		division_template = "同盟军游击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
 	}
-	division= {	
-		location = 544
-		name = "骑兵第十六师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "骑兵第十八师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "骑兵第二师"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "东北军第十六师"
-		division_template = "东北边防军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "东北军第二十四师"
-		division_template = "东北边防军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	
-	division= {	
-		location = 544
-		name = "东北军第二十五师"
-		division_template = "东北边防军"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "骑兵第一挺进军"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
-	}
-	division= {	
-		location = 544
-		name = "骑兵第二挺进军"
-		division_template = "骑兵师"
-		start_experience_factor = 0
-		start_equipment_factor = 0
+
+	# —— 乌兰察布（state 49）：蒙古骑兵 ——
+	division = {
+		location = 626
+		name = "蒙古骑兵师"
+		division_template = "察北骑兵"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 	}
 }

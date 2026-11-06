@@ -71,6 +71,11 @@ country_event = {
 				has_war = yes
 				surrender_progress > 0.17
 				has_country_flag = ROD_follows_central
+				# 前提：哈尔滨/长春/吉林/沈阳 均已不在东北军控制下
+				NOT = { controls_state = 24 }
+				NOT = { controls_state = 36 }
+				NOT = { controls_state = 40 }
+				NOT = { controls_state = 50 }
 			}
 		}
     }
@@ -192,23 +197,31 @@ country_event = {
 			}
 			set_cosmetic_tag = CAR_1933
 			delete_units = {
-				division_template = "东北边防军"
+				division_template = "察哈尔自卫军"
 				disband = yes
 			}
 			delete_units = {
-				division_template = "国民革命军"
+				division_template = "同盟军第一军"
 				disband = yes
 			}
 			delete_units = {
-				division_template = "游击师"
+				division_template = "同盟军第二军"
 				disband = yes
 			}
 			delete_units = {
-				division_template = "蒙古军"
+				division_template = "同盟军第十六军"
 				disband = yes
 			}
 			delete_units = {
-				division_template = "骑兵师"
+				division_template = "抗日救国军"
+				disband = yes
+			}
+			delete_units = {
+				division_template = "察北骑兵"
+				disband = yes
+			}
+			delete_units = {
+				division_template = "同盟军游击队"
 				disband = yes
 			}
 		}
@@ -227,6 +240,7 @@ news_event = {
 	major = yes
 
 	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
 		hidden_effect = {
 			59={
@@ -259,6 +273,13 @@ news_event = {
 		tag = ROD
 		date > 1932.1.1
 		date < 1932.2.1
+		JAP = {
+			AND={
+				controls_state = 50
+				controls_state = 36
+				controls_state = 40
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 2
@@ -1253,7 +1274,8 @@ country_event = {
 
 	trigger = {
 		original_tag = ROD
-		date > 1940.3.30
+		date > 1932.03.01
+		date < 1932.12.31
 		MCK = { exists = yes }
 	}
 	mean_time_to_happen = { days = 30 }

@@ -484,4 +484,8 @@ spriteTypes = {
 		name = "GFX_idea_ROD_idea_black_land"
 		texturefile = "gfx/interface/ideas/ROD/ROD_idea_black_land.png"
 	}
+	spriteType = {
+		name = "GFX_idea_ROD_rehab_suffering"
+		texturefile = "gfx/interface/ideas/ROD/ROD_rehab_suffering.png"
+	}
 }

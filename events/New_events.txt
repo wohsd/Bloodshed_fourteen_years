@@ -1,5 +1,6 @@
 add_namespace = WorldNew
 add_namespace = Hidden_News
+add_namespace = BFYfall
 
 country_event = {
 	id = Hidden_News.1
@@ -2005,4 +2006,226 @@ country_event = {
 		add_stability = -0.02
 	}
 	option = { name = Hidden_News.24.a }
+}
+
+# ============================================================
+# 大城市沦陷新闻（参考原版 news.101 巴黎沦陷）
+# 前置条件：该州原属守方、被敌方攻占、且双方处于战争状态
+# 调度由 common/on_actions/00_on_actions.txt 的 on_state_control_changed 负责
+# ============================================================
+
+# 南京
+news_event = {
+	id = BFYfall.1
+	title = BFYfall.1.t
+	desc = BFYfall.1.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.1.a }
+}
+
+# 上海
+news_event = {
+	id = BFYfall.2
+	title = BFYfall.2.t
+	desc = BFYfall.2.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.2.a }
+}
+
+# 北平
+news_event = {
+	id = BFYfall.3
+	title = BFYfall.3.t
+	desc = BFYfall.3.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.3.a }
+}
+
+# 武汉
+news_event = {
+	id = BFYfall.4
+	title = BFYfall.4.t
+	desc = BFYfall.4.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.4.a }
+}
+
+# 广州
+news_event = {
+	id = BFYfall.5
+	title = BFYfall.5.t
+	desc = BFYfall.5.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.5.a }
+}
+
+# 重庆
+news_event = {
+	id = BFYfall.6
+	title = BFYfall.6.t
+	desc = BFYfall.6.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.6.a }
+}
+
+# 东京
+news_event = {
+	id = BFYfall.7
+	title = BFYfall.7.t
+	desc = BFYfall.7.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.7.a }
+}
+
+# 大阪
+news_event = {
+	id = BFYfall.8
+	title = BFYfall.8.t
+	desc = BFYfall.8.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.8.a }
+}
+
+# 名古屋
+news_event = {
+	id = BFYfall.9
+	title = BFYfall.9.t
+	desc = BFYfall.9.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.9.a }
+}
+
+# 福冈
+news_event = {
+	id = BFYfall.10
+	title = BFYfall.10.t
+	desc = BFYfall.10.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.10.a }
+}
+
+# 长沙
+news_event = {
+	id = BFYfall.11
+	title = BFYfall.11.t
+	desc = BFYfall.11.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.11.a }
+}
+
+# 南昌
+news_event = {
+	id = BFYfall.12
+	title = BFYfall.12.t
+	desc = BFYfall.12.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.12.a }
+}
+
+# 济南
+news_event = {
+	id = BFYfall.13
+	title = BFYfall.13.t
+	desc = BFYfall.13.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.13.a }
+}
+
+# 太原
+news_event = {
+	id = BFYfall.14
+	title = BFYfall.14.t
+	desc = BFYfall.14.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.14.a }
+}
+
+# 西安
+news_event = {
+	id = BFYfall.15
+	title = BFYfall.15.t
+	desc = BFYfall.15.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.15.a }
+}
+
+# 徐州
+news_event = {
+	id = BFYfall.16
+	title = BFYfall.16.t
+	desc = BFYfall.16.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.16.a }
+}
+
+# 桂林
+news_event = {
+	id = BFYfall.17
+	title = BFYfall.17.t
+	desc = BFYfall.17.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.17.a }
+}
+
+# 昆明
+news_event = {
+	id = BFYfall.18
+	title = BFYfall.18.t
+	desc = BFYfall.18.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = BFYfall.18.a }
 }

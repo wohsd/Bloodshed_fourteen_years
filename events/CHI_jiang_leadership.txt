@@ -20,6 +20,7 @@ country_event = {
 	trigger = {
 		original_tag = CHI
 		date > 1931.12.14
+		date < 1932.06.01
 		# 东北失守：48 / 66 / 67 / 75 已被关东军占领（由 Hidden_News.1 九一八事变转入）
 		48 = { is_controlled_by = JAP }
 		66 = { is_controlled_by = JAP }
@@ -71,6 +72,7 @@ country_event = {
 	trigger = {
 		original_tag = CHI
 		date > 1932.02.28
+		date < 1933.01.01
 		has_country_flag = CHI_jiang_resigned_1931
 		NOT = { has_country_flag = CHI_jiang_stage_1932 }
 	}
@@ -118,6 +120,7 @@ country_event = {
 	trigger = {
 		original_tag = CHI
 		date > 1935.12.06
+		date < 1936.06.01
 		NOT = { has_country_flag = CHI_jiang_stage_1935 }
 	}
 	mean_time_to_happen = { days = 2 }
@@ -155,6 +158,7 @@ country_event = {
 	trigger = {
 		original_tag = CHI
 		date > 1943.07.31
+		date < 1945.06.01
 		NOT = { has_country_flag = CHI_jiang_stage_1943 }
 	}
 	mean_time_to_happen = { days = 2 }

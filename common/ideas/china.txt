@@ -169,7 +169,7 @@ ideas = {
 
 
 		Not_resisting = {
-		
+			picture = BEL_the_kings_surrender
 			allowed = {
 				always = yes
 			}
@@ -182,8 +182,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag=JAP
-					attack_bonus_against=-0.75 
-                    defense_bonus_against=-0.75
+					attack_bonus_against=-0.5
+                    defense_bonus_against=-0.5
 				}
 		}
 

@@ -14,6 +14,8 @@ country_event = {
 	hidden = yes
 	fire_only_once = yes
     trigger = {
+		date > 1937.10.01
+		date < 1938.02.01
 		JAP={
 			controls_province = 2634
 		}
@@ -22,6 +24,7 @@ country_event = {
 		set_global_flag = state_2634
 		
 		CHI={
+			set_capital = 238
 			CHI_TangShengZhi = {
 				unit_leader_event = Generals.1
 			}
@@ -152,161 +155,6 @@ news_event = {
 		
 	}
 }
-
-
-
-country_event = {
-	id = Fall_City.0
-	hidden = yes
-	fire_only_once = yes
-    trigger = {
-		date > 1932.1.1
-		CHI = {
-			AND={
-				has_war_with = JAP
-			}
-		}
-		JAP={
-			controls_province = 3828
-			controls_province = 3841
-			controls_province = 3815
-		}
-    }
-	immediate = {
-		hidden_effect = {
-			news_event = {id=SCR.1 days=10}
-			CHI={
-				news_event = Fall_City.1
-			}
-			set_global_flag = fall_of_ShangHai
-		}
-	}
-    
-	option = {
-		name = Fall_City.0.a
-		clr_global_flag = fall_of_ShangHai
-	}		
-}
-
-###上海
-news_event = {
-	id = Fall_City.1
-	title =Fall_City.1.t
-	desc = Fall_City.1.d
-	picture=GFX_Fall_City_1
-	major = yes
-	fire_only_once = yes
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-		216={
-			add_dynamic_modifier = {
-				modifier = Morale_collapsed
-				scope = CHI
-				days=135
-			}
-		}
-		669={
-			add_dynamic_modifier = {
-				modifier = Morale_collapsed
-				scope = CHI
-				days=135
-			}
-		}
-		219={
-			add_dynamic_modifier = {
-				modifier = Morale_collapsed
-				scope = CHI
-				days=135
-			}
-		}
-		215={
-			add_dynamic_modifier = {
-				modifier = Morale_collapsed
-				scope = CHI
-				days=135
-			}
-		}
-		213={
-			add_dynamic_modifier = {
-				modifier = Morale_collapsed
-				scope = CHI
-				days=135
-			}
-		}
-		}
-	}
-	option = {
-		name = Fall_City.1.a
-		
-	}
-}		
-
-
-news_event = {
-	id = Fall_City.2
-	title =Fall_City.2.t
-	desc = Fall_City.2.d
-	picture=GFX_Fall_City_2
-	major = yes
-	fire_only_once = no
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			every_state = {
-				if = {
-					limit = {
-						is_core_of = ROA
-					}
-					add_dynamic_modifier = {
-						modifier = Morale_collapsed
-						scope = ROA
-						days = 200
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = Fall_City.2.a
-		
-	}
-}		
-
-
-
-
-news_event = {
-	id = Fall_City.3
-	title =Fall_City.3.t
-	desc = Fall_City.3.d
-	picture=GFX_Fall_City_2
-	major = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	immediate = {
-	}
-	option = {
-		name = Fall_City.3.a
-	}
-}		
-
-
-
-news_event = {
-	id = Fall_City.4
-	title =Fall_City.4.t
-	desc = Fall_City.4.d
-	picture=GFX_Fall_City_2
-	major = yes
-	is_triggered_only = yes
-	immediate = {
-	}
-	option = {
-		name = Fall_City.4.a
-	}
-}		
-
 
 
 

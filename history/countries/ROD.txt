@@ -97,9 +97,13 @@ add_equipment_to_stockpile = {
 	country_event={id=ROD1931.1203 days=336}
 	country_event={id=ROD.1 days=162}
 	add_ideas = ROD_northeast_army_tradition
+
+
+
 	add_ideas = ROD_idea_zhongyuan_war
 	add_ideas = ROD_idea_pledge_to_central
 	add_ideas = ROD_idea_black_land
+
 	
 }
 

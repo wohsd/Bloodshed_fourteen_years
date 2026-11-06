@@ -407,7 +407,7 @@ focus_tree = {
     focus = {
         id = ROD_ind_root
         icon = GFX_goal_generic_construction2
-        x = 39
+        x = 35
         y = 0
         cost = 10
         ai_will_do = { factor = 1 }
@@ -427,7 +427,7 @@ focus_tree = {
     focus = {
         id = ROD_ind_arsenal
         icon = GFX_goal_generic_construct_mil_factory
-        x = 35
+        x = 31
         y = 1
         cost = 10
         ai_will_do = { factor = 1 }
@@ -457,12 +457,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_buy_arms
         icon = GFX_goal_generic_construct_military
-        x = 33
+        x = 28
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_arsenal }
-        mutually_exclusive = { focus = ROD_ind_copy_arms }
         completion_reward = {
             army_experience = 25
             add_war_support = 0.03
@@ -479,12 +478,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_copy_arms
         icon = GFX_goal_generic_small_arms
-        x = 37
+        x = 34
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_arsenal }
-        mutually_exclusive = { focus = ROD_ind_buy_arms }
         completion_reward = {
             add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
             random_owned_controlled_state = {
@@ -499,7 +497,7 @@ focus_tree = {
     focus = {
         id = ROD_ind_foreign_advisors
         icon = GFX_goal_generic_army_artillery
-        x = 33
+        x = 28
         y = 3
         cost = 10
         ai_will_do = { factor = 1 }
@@ -515,7 +513,7 @@ focus_tree = {
     focus = {
         id = ROD_ind_standardize
         icon = GFX_goal_generic_production
-        x = 37
+        x = 34
         y = 3
         cost = 10
         ai_will_do = { factor = 1 }
@@ -531,12 +529,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_fuel
         icon = GFX_goal_generic_oil_refinery
-        x = 35
-        y = 4
+        x = 31
+        y = 2
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_foreign_advisors }
-        prerequisite = { focus = ROD_ind_standardize }
+        prerequisite = { focus = ROD_ind_arsenal }
         completion_reward = {
             add_ideas = ROD_idea_coal_steel
             add_tech_bonus = { bonus = 0.5 uses = 1 category = excavation }
@@ -559,12 +556,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_steel
         icon = GFX_focus_generic_steel
-        x = 33
-        y = 5
+        x = 30
+        y = 3
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_fuel }
-        mutually_exclusive = { focus = ROD_ind_port }
         completion_reward = {
             if = { limit = { has_full_control_of_state = 66 } 66 = { add_resource = { type = steel amount = 8 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
             if = { limit = { has_full_control_of_state = 65 } 65 = { add_resource = { type = steel amount = 4 } } }
@@ -580,12 +576,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_port
         icon = GFX_goal_generic_construct_naval_dockyard
-        x = 37
-        y = 5
+        x = 32
+        y = 3
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_fuel }
-        mutually_exclusive = { focus = ROD_ind_steel }
         completion_reward = {
             add_ideas = ROD_idea_huludao
             if = {
@@ -609,8 +604,8 @@ focus_tree = {
     focus = {
         id = ROD_ind_machinery
         icon = GFX_focus_GER_kdf_wagen
-        x = 33
-        y = 6
+        x = 29
+        y = 4
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_steel }
@@ -632,8 +627,8 @@ focus_tree = {
     focus = {
         id = ROD_ind_railway
         icon = GFX_focus_CHL_connect_the_northern_railways
-        x = 37
-        y = 6
+        x = 33
+        y = 4
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_port }
@@ -651,12 +646,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_university
         icon = GFX_focus_generic_university_1
-        x = 35
-        y = 7
+        x = 36
+        y = 1
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_machinery }
-        prerequisite = { focus = ROD_ind_railway }
+        prerequisite = { focus = ROD_ind_root }
         completion_reward = {
             add_research_slot = 1
             add_political_power = 50
@@ -667,12 +661,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_wartime
         icon = GFX_goal_generic_construct_mil_factory
-        x = 33
-        y = 8
+        x = 30
+        y = 5
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_university }
-        mutually_exclusive = { focus = ROD_ind_relocate }
+        prerequisite = { focus = ROD_ind_fuel }
         available = {
             date > 1937.7.6
         }
@@ -688,12 +681,11 @@ focus_tree = {
     focus = {
         id = ROD_ind_relocate
         icon = GFX_focus_ARG_develop_the_electricity_sector
-        x = 37
-        y = 8
+        x = 32
+        y = 5
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_ind_university }
-        mutually_exclusive = { focus = ROD_ind_wartime }
+        prerequisite = { focus = ROD_ind_fuel }
         available = {
             date > 1937.7.6
         }
@@ -720,8 +712,8 @@ focus_tree = {
     focus = {
         id = ROD_ind_defense
         icon = GFX_goal_generic_production2
-        x = 35
-        y = 9
+        x = 31
+        y = 6
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_ind_wartime }
@@ -743,7 +735,7 @@ focus_tree = {
     focus = {
         id = ROD_eco_bank
         icon = GFX_focus_generic_stockpile_currency
-        x = 43
+        x = 42
         y = 1
         cost = 10
         ai_will_do = { factor = 1 }
@@ -758,12 +750,11 @@ focus_tree = {
     focus = {
         id = ROD_eco_fengpiao
         icon = GFX_focus_generic_currency_reforms
-        x = 41
+        x = 38
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_eco_bank }
-        mutually_exclusive = { focus = ROD_eco_fabi }
         completion_reward = {
             add_ideas = ROD_idea_fengpiao
             add_political_power = 50
@@ -774,12 +765,11 @@ focus_tree = {
     focus = {
         id = ROD_eco_fabi
         icon = GFX_focus_AFG_afghan_bank
-        x = 45
+        x = 46
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_eco_bank }
-        mutually_exclusive = { focus = ROD_eco_fengpiao }
         completion_reward = {
             add_political_power = 50
             CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
@@ -796,10 +786,10 @@ focus_tree = {
         id = ROD_eco_banknet
         icon = GFX_focus_AFG_a_modern_economy
         x = 41
-        y = 3
+        y = 2
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_fengpiao }
+        prerequisite = { focus = ROD_eco_bank }
         completion_reward = {
             add_political_power = 40
             add_stability = 0.03
@@ -815,11 +805,11 @@ focus_tree = {
     focus = {
         id = ROD_eco_customs
         icon = GFX_goal_generic_positive_trade_relations
-        x = 45
-        y = 3
+        x = 44
+        y = 2
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_fabi }
+        prerequisite = { focus = ROD_eco_bank }
         completion_reward = {
             add_political_power = 120
             random_owned_controlled_state = {
@@ -834,8 +824,8 @@ focus_tree = {
     focus = {
         id = ROD_eco_soy
         icon = GFX_focus_generic_agricultural_subsidies
-        x = 43
-        y = 4
+        x = 42
+        y = 3
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_eco_banknet }
@@ -854,12 +844,12 @@ focus_tree = {
     focus = {
         id = ROD_eco_reclaim
         icon = GFX_focus_generic_farmland
-        x = 41
-        y = 5
+        x = 40
+        y = 4
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_eco_soy }
-        mutually_exclusive = { focus = ROD_eco_immigration }
+        prerequisite = { focus = ROD_eco_fengpiao }
         completion_reward = {
             add_stability = 0.03
             if = { limit = { has_full_control_of_state = 19 } 19 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
@@ -871,12 +861,11 @@ focus_tree = {
     focus = {
         id = ROD_eco_immigration
         icon = GFX_goal_generic_construct_infrastructure
-        x = 45
-        y = 5
+        x = 37
+        y = 3
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_soy }
-        mutually_exclusive = { focus = ROD_eco_reclaim }
+        prerequisite = { focus = ROD_eco_fengpiao }
         completion_reward = {
             add_manpower = 30000
             add_stability = 0.02
@@ -890,11 +879,11 @@ focus_tree = {
     focus = {
         id = ROD_eco_cooperatives
         icon = GFX_focus_CHI_import_fertilisers
-        x = 41
-        y = 6
+        x = 39
+        y = 5
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_reclaim }
+        prerequisite = { focus = ROD_eco_fengpiao }
         completion_reward = {
             add_political_power = 30
             add_stability = 0.05
@@ -906,8 +895,8 @@ focus_tree = {
     focus = {
         id = ROD_eco_relief_works
         icon = GFX_goal_generic_construct_infrastructure
-        x = 45
-        y = 6
+        x = 37
+        y = 4
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_eco_immigration }
@@ -923,12 +912,14 @@ focus_tree = {
     focus = {
         id = ROD_eco_trade_war
         icon = GFX_goal_generic_trade
-        x = 43
-        y = 7
+        x = 15
+        y = 1
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_cooperatives }
-        prerequisite = { focus = ROD_eco_relief_works }
+        prerequisite = { 
+            focus = ROD_focus_0
+            focus = ROD_focus_1
+        }
         completion_reward = {
             add_war_support = 0.1
             add_political_power = 50
@@ -940,12 +931,11 @@ focus_tree = {
     focus = {
         id = ROD_eco_national_economy
         icon = GFX_focus_BEL_engine_of_the_economy
-        x = 41
-        y = 8
+        x = 43
+        y = 4
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_trade_war }
-        mutually_exclusive = { focus = ROD_eco_control }
+        prerequisite = { focus = ROD_eco_customs }
         completion_reward = {
             add_ideas = ROD_idea_national_economy
             random_owned_controlled_state = { limit = { is_core_of = ROD } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
@@ -958,11 +948,10 @@ focus_tree = {
         id = ROD_eco_control
         icon = GFX_goal_generic_production
         x = 45
-        y = 8
+        y = 4
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_eco_trade_war }
-        mutually_exclusive = { focus = ROD_eco_national_economy }
+        prerequisite = { focus = ROD_eco_customs }
         completion_reward = {
             add_ideas = ROD_idea_war_economy
             add_war_support = 0.05
@@ -975,8 +964,8 @@ focus_tree = {
     focus = {
         id = ROD_eco_wartime_system
         icon = GFX_goal_generic_national_unity
-        x = 43
-        y = 9
+        x = 44
+        y = 5
         cost = 10
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_eco_national_economy }
@@ -1000,13 +989,13 @@ focus_tree = {
     # 政治总根 - 政统何往（KR式独立政治根，开局可选）
     focus = {
         id = ROD_pol_root
-        icon = GFX_ROD_focus_pol_root
+	icon = GFX_focus_pol_root
         x = 17
         y = 7
         cost = 10
         ai_will_do = { factor = 1 }
-        available = {
-            date > 1936.12.11
+        available = {  
+            date > 1933.1.1
         }
         completion_reward = {
             add_political_power = 75
@@ -1037,7 +1026,7 @@ focus_tree = {
     # 合流2 - 四维学会与新生活运动
     focus = {
         id = ROD_pol_fas_4
-        icon = GFX_focus_ROD_pol_fas_4
+	icon = GFX_focus_ITA_blackshirts
         x = 21
         y = 9
         cost = 10
@@ -1049,11 +1038,11 @@ focus_tree = {
             add_war_support = 0.02
             CHI = { add_opinion_modifier = { target = ROD modifier = ROD_follows_central_gov } }
         }
-    }
+    } 
 
     # ===== 民主主义线（折线摆动 15~19，含侧支汇合）=====
     focus = {
-        id = ROD_pol_dem_1
+        id = ROD_pol_dem_1 
         icon = GFX_focus_CHI_students_to_the_countryside
         x = 11
         y = 8
@@ -1139,6 +1128,7 @@ focus_tree = {
         prerequisite = { focus = ROD_pol_dem_4 }
         prerequisite = { focus = ROD_pol_dem_press }
         completion_reward = {
+            remove_ideas = ROD_idea_zhongyuan_war
             add_popularity = { ideology = democratic popularity = 0.1 }
             add_stability = 0.03
         }
@@ -1170,6 +1160,11 @@ focus_tree = {
         x = 12
         y = 14
         cost = 10
+        available = {
+            NOT={
+                has_war_with=JAP
+            }
+        }
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_dem_6 }
         completion_reward = {
@@ -1190,6 +1185,11 @@ focus_tree = {
         x = 17
         y = 8
         cost = 10
+        available = {
+            NOT={
+                has_war_with=JAP
+            }
+        }
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_root }
         mutually_exclusive = { focus = ROD_pol_dem_1 focus = ROD_pol_fas_1 }
@@ -1282,6 +1282,7 @@ focus_tree = {
         prerequisite = { focus = ROD_pol_com_4a }
         prerequisite = { focus = ROD_pol_com_4b }
         completion_reward = {
+            remove_ideas = ROD_idea_zhongyuan_war
             add_popularity = { ideology = communism popularity = 0.1 }
             army_experience = 25
             if = {
@@ -1298,6 +1299,7 @@ focus_tree = {
         x = 17
         y = 13
         cost = 10
+        
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_com_5 }
         completion_reward = {
@@ -1324,8 +1326,9 @@ focus_tree = {
             add_political_power = 50
             add_war_support = 0.1
             add_manpower = 10000
-            show_ideas_tooltip = ROD_YanBaoHang
             custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = ROD_YanBaoHang_P
+           
         }
     }
 
@@ -1341,6 +1344,14 @@ focus_tree = {
         prerequisite = { focus = ROD_pol_root }
         mutually_exclusive = { focus = ROD_pol_dem_1 focus = ROD_pol_com_1 }
         completion_reward = {
+            remove_trait = {
+				character = ROD_ZhangXueLiang
+				trait = ROD_young_marshal 
+			}
+            add_trait = {
+                character = ROD_ZhangXueLiang
+                trait = ROD_northeast_warlord
+            }
             add_popularity = { ideology = fascism popularity = 0.08 }
             add_stability = 0.05
             army_experience = 25
@@ -1422,6 +1433,7 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         prerequisite = { focus = ROD_pol_fas_5 }
         completion_reward = {
+            remove_ideas = ROD_idea_pledge_to_central
             add_popularity = { ideology = fascism popularity = 0.08 }
             add_war_support = 0.1
             add_political_power = 30
@@ -1447,511 +1459,300 @@ focus_tree = {
                 ruling_party = fascism
                 elections_allowed = no
             }
+           create_wargoal = {
+				type = liberate_wargoal
+				target = CHI
+			}
         }
     }
 
-    # ========== 军事线（东北军整军备战·KR式）==========
-
-    # ROD_army_root (y0 x55)
+    # ========== 军事三线（陆军 / 海军 / 空军）==========
+    # 军事总根 - 整军经武（两条主线皆可通）
     focus = {
-        id = ROD_army_root
-        icon = GFX_ROD_focus_military_reform
-        x = 55
+        id = ROD_mil_root
+        icon = GFX_focus_chi_army_reform
+        x = 58
         y = 0
         cost = 10
         ai_will_do = { factor = 1 }
         completion_reward = {
-            army_experience = 25
-            add_war_support = 0.03
-            add_political_power = 25
+            remove_ideas = ROD_idea_zhongyuan_war
+            add_stability = 0.05
+            add_political_power = 30
+            add_dynamic_modifier = { modifier = ROD_mil_root_training }
+            army_experience = 10
+            add_tech_bonus = { name = ROD_mil_root_infantry bonus = 0.5 uses = 1 category = infantry_weapons }
+            add_tech_bonus = { name = ROD_mil_root_doctrine bonus = 0.4 uses = 1 category = land_doctrine }
         }
     }
 
-    # ROD_army_def_root (y1 x49)
+    # 三选一分支点
     focus = {
-        id = ROD_army_def_root
-        icon = GFX_focus_CHI_the_4_defence_areas
-        x = 49
+        id = ROD_mil_branch
+        icon = GFX_focus_CHI_military_affairs_commission
+        x = 58
         y = 1
-        cost = 10
+        cost = 5
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_root }
-        mutually_exclusive = { focus = ROD_army_atk_root focus = ROD_army_gua_root }
+        prerequisite = { focus = ROD_mil_root }
         completion_reward = {
-            army_experience = 15
-            add_tech_bonus = { bonus = 0.75 uses = 2 category = land_doctrine }
-        }
-    }
-
-    # ROD_army_atk_root (y1 x55)
-    focus = {
-        id = ROD_army_atk_root
-        icon = GFX_focus_CHI_the_northern_mandate
-        x = 55
-        y = 1
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_root }
-        mutually_exclusive = { focus = ROD_army_def_root focus = ROD_army_gua_root }
-        completion_reward = {
-            army_experience = 15
-            add_tech_bonus = { bonus = 0.75 uses = 2 category = land_doctrine }
-        }
-    }
-
-    # ROD_army_gua_root (y1 x61)
-    focus = {
-        id = ROD_army_gua_root
-        icon = GFX_focus_CHI_protracted_warfare
-        x = 61
-        y = 1
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_root }
-        mutually_exclusive = { focus = ROD_army_def_root focus = ROD_army_atk_root }
-        completion_reward = {
-            army_experience = 15
-            add_manpower = 3000
-            add_war_support = 0.05
-        }
-    }
-
-    # ROD_army_fortify (y2 x47)
-    focus = {
-        id = ROD_army_fortify
-        icon = GFX_focus_CHI_prepare_war_zones
-        x = 47
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_def_root }
-        completion_reward = {
-            add_ideas = ROD_idea_fortification
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
             add_political_power = 20
+            add_tech_bonus = { name = ROD_mil_branch_org bonus = 0.3 uses = 1 category = support_tech }
         }
     }
 
-    # ROD_army_logistics (y2 x49)
+    # ---------- 陆军分支 ----------
     focus = {
-        id = ROD_army_logistics
-        icon = GFX_focus_CHI_combined_logistics_command
-        x = 49
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_def_root }
-        completion_reward = {
-            army_experience = 10
-            add_manpower = 3000
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = support_tech }
-        }
-    }
-
-    # ROD_army_foreshore (y2 x51)
-    focus = {
-        id = ROD_army_foreshore
-        icon = GFX_focus_CHI_northern_naval_logistics
-        x = 51
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_def_root }
-        completion_reward = {
-            army_experience = 10
-            add_war_support = 0.03
-            add_stability = 0.02
-        }
-    }
-
-    # ROD_army_armor (y2 x53)
-    focus = {
-        id = ROD_army_armor
-        icon = GFX_goal_generic_build_tank
-        x = 53
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_atk_root }
-        completion_reward = {
-            army_experience = 15
-            add_tech_bonus = { bonus = 0.5 uses = 2 category = armor }
-            add_war_support = 0.03
-        }
-    }
-
-    # ROD_army_cavalry_pro (y2 x55)
-    focus = {
-        id = ROD_army_cavalry_pro
-        icon = GFX_goal_generic_cavalry
-        x = 55
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_atk_root }
-        completion_reward = {
-            army_experience = 10
-            add_manpower = 4000
-            add_war_support = 0.03
-        }
-    }
-
-    # ROD_army_air_pro (y2 x57)
-    focus = {
-        id = ROD_army_air_pro
-        icon = GFX_focus_PER_the_peoples_airforce
-        x = 57
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_atk_root }
-        completion_reward = {
-            air_experience = 25
-            add_tech_bonus = { bonus = 0.5 uses = 2 category = air_equipment }
-        }
-    }
-
-    # ROD_army_mobilize (y2 x59)
-    focus = {
-        id = ROD_army_mobilize
+        id = ROD_mil_army
         icon = GFX_focus_CHI_popular_army
-        x = 59
+        x = 52
         y = 2
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_gua_root }
+        prerequisite = { focus = ROD_mil_branch }
+        mutually_exclusive = {
+            focus = ROD_mil_navy
+            focus = ROD_mil_air
+        }
         completion_reward = {
-            add_ideas = ROD_idea_yiyongjun
-            add_manpower = 6000
-            add_war_support = 0.05
+            add_stability = 0.03
+            add_dynamic_modifier = { modifier = ROD_mil_army_performance }
+            division_template = { template = ROD_infantry_division }
+            army_experience = 20
+            add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = CHI }
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 producer = CHI }
+            add_tech_bonus = { name = ROD_mil_army_infantry bonus = 0.6 uses = 2 category = infantry_tech }
         }
     }
 
-    # ROD_army_sabotage (y2 x61)
     focus = {
-        id = ROD_army_sabotage
-        icon = GFX_focus_CHI_guerrilla_warfare
-        x = 61
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_gua_root }
-        completion_reward = {
-            army_experience = 10
-            add_political_power = -10
-            add_stability = -0.02
-        }
-    }
-
-    # ROD_army_mountain (y2 x63)
-    focus = {
-        id = ROD_army_mountain
-        icon = GFX_focus_CHI_200th_division
-        x = 63
-        y = 2
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_gua_root }
-        completion_reward = {
-            army_experience = 10
-            add_war_support = 0.03
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = support_tech }
-        }
-    }
-
-    # ROD_army_jiangqiao (y3 x55)
-    focus = {
-        id = ROD_army_jiangqiao
-        icon = GFX_focus_AUS_raid_military_storages
-        x = 55
+        id = ROD_mil_infantry
+        icon = GFX_focus_CHI_formalise_training_regime
+        x = 50
         y = 3
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_def_root }
-        prerequisite = { focus = ROD_army_atk_root }
-        prerequisite = { focus = ROD_army_gua_root }
+        prerequisite = { focus = ROD_mil_army }
         completion_reward = {
-            add_ideas = ROD_idea_jiangqiao_lessons
-            add_war_support = 0.05
-            army_experience = 15
+            add_dynamic_modifier = { modifier = ROD_mil_infantry_elite }
+            add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = CHI }
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = CHI }
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 200 producer = CHI }
+            add_political_power = 25
+            add_tech_bonus = { name = ROD_mil_infantry_weapons bonus = 0.6 uses = 2 category = infantry_weapons }
+            add_tech_bonus = { name = ROD_mil_infantry_support bonus = 0.5 uses = 1 category = support_tech }
         }
     }
 
-    # ROD_army_eq_ind (y4 x49)
     focus = {
-        id = ROD_army_eq_ind
-        icon = GFX_focus_generic_modernize_industry
-        x = 49
+        id = ROD_mil_cavalry
+        icon = GFX_focus_PRC_a_modern_army
+        x = 54
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_mil_army }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_cavalry_speed }
+            add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 500 producer = CHI }
+            add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 600 producer = CHI }
+            division_template = { template = ROD_cavalry_division }
+            army_experience = 15
+            add_tech_bonus = { name = ROD_mil_cavalry_motor bonus = 0.6 uses = 2 category = motorized_equipment }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_heavy
+        icon = GFX_focus_CHI_200th_division
+        x = 52
+        y = 4
+        cost = 15
+        ai_will_do = { factor = 1 }
+        prerequisite = {
+            focus = ROD_mil_infantry
+            focus = ROD_mil_cavalry
+        }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_heavy_artillery }
+            add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 200 producer = CHI }
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 400 producer = CHI }
+            add_war_support = 0.08
+            add_political_power = 30
+            add_tech_bonus = { name = ROD_mil_heavy_armor bonus = 0.8 uses = 2 category = cat_heavy_armor }
+            add_tech_bonus = { name = ROD_mil_heavy_artillery_t bonus = 0.6 uses = 2 category = artillery }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_yiyongjun
+        icon = GFX_focus_CHI_guerrilla_warfare
+        x = 50
         y = 4
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_jiangqiao }
-        mutually_exclusive = { focus = ROD_army_eq_sov focus = ROD_army_eq_ger }
+        prerequisite = { focus = ROD_mil_army }
         completion_reward = {
-            add_ideas = ROD_idea_standard_arms
-            add_political_power = 30
-        }
-    }
-
-    # ROD_army_eq_sov (y4 x55)
-    focus = {
-        id = ROD_army_eq_sov
-        icon = GFX_focus_generic_befriend_the_chinese_soviet
-        x = 55
-        y = 4
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_jiangqiao }
-        mutually_exclusive = { focus = ROD_army_eq_ind focus = ROD_army_eq_ger }
-        completion_reward = {
-            add_political_power = 30
-            add_tech_bonus = { bonus = 0.75 uses = 2 category = armor }
-        }
-    }
-
-    # ROD_army_eq_ger (y4 x61)
-    focus = {
-        id = ROD_army_eq_ger
-        icon = GFX_focus_GER_ally_chiang_kai_shek
-        x = 61
-        y = 4
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_jiangqiao }
-        mutually_exclusive = { focus = ROD_army_eq_ind focus = ROD_army_eq_sov }
-        completion_reward = {
-            add_political_power = 30
-            add_tech_bonus = { bonus = 0.75 uses = 2 category = artillery }
-        }
-    }
-
-    # ROD_army_mukden_expand (y5 x47)
-    focus = {
-        id = ROD_army_mukden_expand
-        icon = GFX_focus_HUN_establish_the_mavag_aircraft_factory
-        x = 47
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_ind }
-        completion_reward = {
-            add_ideas = ROD_idea_mukden_arsenal
-            random_owned_controlled_state = {
-                limit = { is_core_of = ROD }
-                add_building_construction = { type = arms_factory level = 1 instant_build = yes }
-            }
-        }
-    }
-
-    # ROD_army_standardize (y5 x49)
-    focus = {
-        id = ROD_army_standardize
-        icon = GFX_goal_generic_small_arms
-        x = 49
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_ind }
-        completion_reward = {
-            add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
-            army_experience = 5
-            add_war_support = 0.02
-        }
-    }
-
-    # ROD_army_copy_foreign (y5 x51)
-    focus = {
-        id = ROD_army_copy_foreign
-        icon = GFX_focus_CHI_weaponise_the_faithful
-        x = 51
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_ind }
-        completion_reward = {
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
-            add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
-            add_research_slot = 1
-        }
-    }
-
-    # ROD_army_sov_advisors (y5 x53)
-    focus = {
-        id = ROD_army_sov_advisors
-        icon = GFX_focus_chi_mission_to_the_soviet_union
-        x = 53
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_sov }
-        completion_reward = {
-            army_experience = 15
-            air_experience = 15
-            add_research_slot = 1
-        }
-    }
-
-    # ROD_army_t26 (y5 x55)
-    focus = {
-        id = ROD_army_t26
-        icon = GFX_focus_SOV_builder_of_the_red_army
-        x = 55
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_sov }
-        completion_reward = {
-            add_tech_bonus = { bonus = 1.0 uses = 2 category = armor }
-            army_experience = 15
-        }
-    }
-
-    # ROD_army_sbomber (y5 x57)
-    focus = {
-        id = ROD_army_sbomber
-        icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-        x = 57
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_sov }
-        completion_reward = {
-            add_tech_bonus = { bonus = 1.0 uses = 2 category = air_equipment }
-            air_experience = 25
-        }
-    }
-
-    # ROD_army_ger_advisors (y5 x59)
-    focus = {
-        id = ROD_army_ger_advisors
-        icon = GFX_focus_ger_bulwark_against_bolshevism
-        x = 59
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_ger }
-        completion_reward = {
-            army_experience = 15
-            add_research_slot = 1
-            add_political_power = 20
-        }
-    }
-
-    # ROD_army_panzerIII (y5 x61)
-    focus = {
-        id = ROD_army_panzerIII
-        icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-        x = 61
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_ger }
-        completion_reward = {
-            add_tech_bonus = { bonus = 1.0 uses = 2 category = armor }
-            army_experience = 15
-            add_war_support = 0.03
-        }
-    }
-
-    # ROD_army_ju87 (y5 x63)
-    focus = {
-        id = ROD_army_ju87
-        icon = GFX_focus_ger_revive_kaiserreich
-        x = 63
-        y = 5
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_ger }
-        completion_reward = {
-            add_tech_bonus = { bonus = 1.0 uses = 2 category = air_equipment }
-            air_experience = 15
-        }
-    }
-
-    # ROD_army_unified (y6 x55)
-    focus = {
-        id = ROD_army_unified
-        icon = GFX_ROD_focus_military_reform
-        x = 55
-        y = 6
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_eq_ind }
-        prerequisite = { focus = ROD_army_eq_sov }
-        prerequisite = { focus = ROD_army_eq_ger }
-        completion_reward = {
-            add_ideas = ROD_idea_army_integration
-            army_experience = 15
-            add_war_support = 0.05
-        }
-    }
-
-    # ROD_army_academy2 (y7 x49)
-    focus = {
-        id = ROD_army_academy2
-        icon = GFX_focus_chi_whampoa_military_academy
-        x = 49
-        y = 7
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_unified }
-        completion_reward = {
-            add_research_slot = 1
-            army_experience = 10
-            air_experience = 10
-        }
-    }
-
-    # ROD_army_army_group (y7 x55)
-    focus = {
-        id = ROD_army_army_group
-        icon = GFX_focus_CHI_military_affairs_commission
-        x = 55
-        y = 7
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_unified }
-        completion_reward = {
-            army_experience = 20
-            add_war_support = 0.05
-            add_manpower = 3000
-        }
-    }
-
-    # ROD_army_reserves (y7 x61)
-    focus = {
-        id = ROD_army_reserves
-        icon = GFX_focus_CHI_formalise_training_regime
-        x = 61
-        y = 7
-        cost = 10
-        ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_unified }
-        completion_reward = {
-            add_manpower = 8000
-            add_war_support = 0.05
+            add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1200 producer = CHI }
+            add_political_power = 25
             add_stability = 0.03
+            add_timed_modifier = { name = ROD_mil_volunteer_boost days = 180 }
+            add_tech_bonus = { name = ROD_mil_yiyongjun_org bonus = 0.4 uses = 1 category = support_tech }
         }
     }
 
-    # ROD_army_resist_japan (y8 x55)
+    # ---------- 海军分支（东北海军曾为中国第三大舰队）----------
     focus = {
-        id = ROD_army_resist_japan
-        icon = GFX_focus_attack_japan
-        x = 55
-        y = 8
+        id = ROD_mil_navy
+        icon = GFX_focus_CHI_Republic_of_china_navy
+        x = 58
+        y = 2
         cost = 10
         ai_will_do = { factor = 1 }
-        prerequisite = { focus = ROD_army_academy2 }
-        prerequisite = { focus = ROD_army_army_group }
-        prerequisite = { focus = ROD_army_reserves }
+        prerequisite = { focus = ROD_mil_branch }
+        mutually_exclusive = {
+            focus = ROD_mil_army
+            focus = ROD_mil_air
+        }
         completion_reward = {
-            add_political_power = 100
-            add_war_support = 0.15
-            army_experience = 30
-            add_manpower = 10000
-            add_stability = 0.05
-            set_country_flag = ROD_army_prepared
+            add_dynamic_modifier = { modifier = ROD_mil_navy_training }
+            navy_experience = 15
+            add_political_power = 20
+            add_tech_bonus = { name = ROD_mil_navy_doctrine bonus = 0.5 uses = 1 category = naval_doctrine }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_coastal
+        icon = GFX_focus_CHI_retake_the_coastal_cities
+        x = 56
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_mil_navy }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_coastal_fortify }
+            add_resource = { type = steel amount = 100 }
+            add_political_power = 25
+            add_tech_bonus = { name = ROD_mil_coastal_fort bonus = 0.6 uses = 2 category = cat_fortification }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_fleet
+        icon = GFX_focus_PRC_naval_capstone
+        x = 60
+        y = 3
+        cost = 15
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_mil_navy }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_shipbuilding }
+            add_resource = { type = steel amount = 200 }
+            add_resource = { type = rubber amount = 100 }
+            navy_experience = 15
+            division_template = { template = ROD_destroyer }
+            add_tech_bonus = { name = ROD_mil_fleet_dd bonus = 0.7 uses = 2 category = dd_tech }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_submarine
+        icon = GFX_focus_PRC_submarines
+        x = 58
+        y = 4
+        cost = 15
+        ai_will_do = { factor = 1 }
+        prerequisite = {
+            focus = ROD_mil_coastal
+            focus = ROD_mil_fleet
+        }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_submarine_warfare }
+            add_resource = { type = steel amount = 150 }
+            add_war_support = 0.08
+            navy_experience = 10
+            add_tech_bonus = { name = ROD_mil_submarine_tech bonus = 0.7 uses = 2 category = ss_tech }
+            add_tech_bonus = { name = ROD_mil_submarine_torpedo bonus = 0.5 uses = 1 category = cat_torpedoes }
+        }
+    }
+
+    # ---------- 空军分支 ----------
+    focus = {
+        id = ROD_mil_air
+        icon = GFX_focus_CHI_air_force
+        x = 64
+        y = 2
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_mil_branch }
+        mutually_exclusive = {
+            focus = ROD_mil_army
+            focus = ROD_mil_navy
+        }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_air_training }
+            air_experience = 10
+            add_political_power = 20
+            add_tech_bonus = { name = ROD_mil_air_equipment bonus = 0.5 uses = 1 category = air_equipment }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_fighter
+        icon = GFX_focus_PRC_pilot_training
+        x = 62
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_mil_air }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_fighter_ace }
+            add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 120 producer = CHI }
+            add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 80 producer = ITA }
+            air_experience = 15
+            add_political_power = 20
+            add_tech_bonus = { name = ROD_mil_fighter_guns bonus = 0.7 uses = 2 category = cat_air_guns }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_bomber
+        icon = GFX_focus_chi_flying_tigers
+        x = 66
+        y = 3
+        cost = 10
+        ai_will_do = { factor = 1 }
+        prerequisite = { focus = ROD_mil_air }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_bomber_strike }
+            add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 100 producer = CHI }
+            add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 80 producer = USA }
+            air_experience = 15
+            add_tech_bonus = { name = ROD_mil_bomber_engine bonus = 0.6 uses = 2 category = cat_air_engine }
+            add_tech_bonus = { name = ROD_mil_bomber_bombs bonus = 0.5 uses = 1 category = cat_air_bombs }
+        }
+    }
+
+    focus = {
+        id = ROD_mil_fortress
+        icon = GFX_focus_PRC_air_force_capstone
+        x = 64
+        y = 4
+        cost = 15
+        ai_will_do = { factor = 1 }
+        prerequisite = {
+            focus = ROD_mil_fighter
+            focus = ROD_mil_bomber
+        }
+        completion_reward = {
+            add_dynamic_modifier = { modifier = ROD_mil_air_fortress }
+            add_equipment_to_stockpile = { type = heavy_fighter_equipment_1 amount = 50 producer = GER }
+            add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 30 producer = USA }
+            add_war_support = 0.08
+            air_experience = 20
+            add_tech_bonus = { name = ROD_mil_fortress_hf bonus = 0.8 uses = 2 category = cat_heavy_fighter }
+            add_tech_bonus = { name = ROD_mil_fortress_sb bonus = 0.8 uses = 2 category = cat_strategic_bomber }
         }
     }
 

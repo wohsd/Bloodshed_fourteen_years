@@ -14108,4 +14108,34 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	# ===== 自定义：少帅（张学良专属）=====
+	ROD_young_marshal = {
+		random = no
+		sprite = 42
+
+		political_power_factor = 0.10
+		war_support_factor = 0.05
+		stability_factor = -0.03
+		army_experience_factor = -0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# ===== 自定义：东北王（张学良专属·张作霖遗产）=====
+	ROD_northeast_warlord = {
+		random = no
+		sprite = 10
+
+		stability_factor = 0.05
+		consumer_goods_need_factor = -0.05
+		industrial_capacity_factory = 0.03
+		conscription = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

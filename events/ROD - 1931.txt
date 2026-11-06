@@ -168,7 +168,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		original_tag = ROD
-		date > 1931.06.05
+		date < 1932.1.1
 		NOT = { has_country_flag = ROD_zhang_luqi_died }
 	}
 
@@ -289,7 +289,7 @@ country_event = {
 	id = ROD1931.50
 	title = ROD1931.50.t
 	desc = ROD1931.50.d
-	picture = GFX_news_event_001
+	picture = GFX_ROD_1931_50
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -297,8 +297,18 @@ country_event = {
 	# 必须在九一八后，且两个 flag 都没设过（防万一）
 	trigger = {
 		date > 1931.9.18
-		NOT = { has_country_flag = ROD_918_obey }
-		NOT = { has_country_flag = ROD_918_resist }
+		# 哈尔滨/长春/吉林/沈阳 全部被日军占领才触发（有一城在手就不触发）
+		NOT = {
+			any_state = {
+				OR = {
+					state = 24	# 哈尔滨
+					state = 36	# 长春
+					state = 40	# 吉林
+					state = 50	# 沈阳
+				}
+				NOT = { is_controlled_by = JAP }
+			}
+		}
 	}
 
 	option = {

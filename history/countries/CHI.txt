@@ -461,13 +461,20 @@ add_equipment_to_stockpile = {
 	set_war_support = 0.8
 	set_political_power = 430
 	set_oob = "CHI_1937"
-                set_air_oob = "CHI_1937_air"
+    set_air_oob = "CHI_1937_air"
+}
+1940.1.1={
+	JAP = {
+		declare_war_on = { target = CHI type = annex_everything }
+	}
 }
 1944.1.1={
+	JAP = {
+		declare_war_on = { target = CHI type = annex_everything }
+	}
 	set_stability = 0.7
 	set_war_support = 0.8
 	set_political_power = 430
-	capital = 238
 	CHI = {
 		retire_character = CHI_ZhangZiZhong
 		retire_character = CHI_DaiAnLan

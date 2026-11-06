@@ -269,4 +269,47 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	# ===== 政统何往（ROD_pol_root）=====
+	spriteType = {
+		name = "GFX_focus_pol_root"
+		texturefile = "gfx/interface/goals/focus_BEL_consitutional_crisis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_pol_root_shine"
+		texturefile = "gfx/interface/goals/focus_BEL_consitutional_crisis.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BEL_consitutional_crisis.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_BEL_consitutional_crisis.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# ===== 扶持四维学会（ROD_pol_fas_4）=====
+	spriteType = {
+		name = "GFX_focus_ROD_pol_fas_4"
+		texturefile = "gfx/interface/goals/focus_ROD_pol_fas_4.dds"
+	}
+
 }

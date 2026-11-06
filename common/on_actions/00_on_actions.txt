@@ -204,6 +204,212 @@ on_actions = {
 		}
 	}
 
+	# 大城市沦陷新闻（对应 events/New_events.txt 的 BFYfall.*）
+	# on_state_control_changed 作用域：ROOT = 新控制者，FROM = 原控制者，FROM.FROM = 该州
+	# 前置条件参照原版 news.101：该州原属守方、被敌方攻占、且守方与新控制者处于战争
+	on_state_control_changed = {
+		effect = {
+			# 南京
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 214
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.1 }
+			}
+			# 上海
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 228
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.2 }
+			}
+			# 北平
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 74
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.3 }
+			}
+			# 武汉
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 246
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.4 }
+			}
+			# 广州
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 357
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.5 }
+			}
+			# 重庆
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 238
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.6 }
+			}
+			# 东京
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 121
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.7 }
+			}
+			# 大阪
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 150
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.8 }
+			}
+			# 名古屋
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 101
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.9 }
+			}
+			# 福冈
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 189
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.10 }
+			}
+			# 长沙
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 287
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.11 }
+			}
+			# 南昌
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 281
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.12 }
+			}
+			# 济南
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 119
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.13 }
+			}
+			# 太原
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 104
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.14 }
+			}
+			# 西安
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 170
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.15 }
+			}
+			# 徐州
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 168
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.16 }
+			}
+			# 桂林
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 324
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.17 }
+			}
+			# 昆明
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 323
+						is_owned_by = FROM
+					}
+					FROM = { has_war_with = ROOT }
+				}
+				news_event = { id = BFYfall.18 }
+			}
+		}
+	}
+
 
 
 }

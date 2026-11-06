@@ -55,7 +55,6 @@ country_event = {
 		}
     }
     immediate = {
-		news_event = Fall_City.2
 		set_global_flag = fall_of_JiNan
 		hidden_effect = {
 			#济南沦陷后，蒋介石决意借开封军事会议解决韩复榘

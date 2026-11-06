@@ -73,6 +73,13 @@ country_event = {
 		AND={
 			date > 1934.4.14
 			date < 1934.4.16
+			# 前提：哈尔滨/长春/吉林/沈阳 均已不在东北军控制下
+			ROD = {
+				NOT = { controls_state = 24 }
+				NOT = { controls_state = 36 }
+				NOT = { controls_state = 40 }
+				NOT = { controls_state = 50 }
+			}
 		}
     }
     immediate = {

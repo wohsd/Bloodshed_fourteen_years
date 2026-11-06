@@ -108,11 +108,4 @@ country_event = {
 		set_country_flag = ROD_blood_debt_paid
 		JAP = { add_stability = -0.05 }
 	}
-
-	option = {
-		name = ROD_uf.13.b
-		add_political_power = 50
-		add_stability = 0.03
-		set_country_flag = ROD_blood_debt_paid
-	}
 }

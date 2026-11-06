@@ -573,6 +573,7 @@ country_event = {
 		ROD = {
 			AND={
 				date > 1933.1.1
+				date < 1934.01.01
 				has_war = yes
 				surrender_progress > 0.21
 			}
@@ -624,6 +625,9 @@ country_event = {
 			transfer_state_to = MCK
 		}
 		26={
+			transfer_state_to = MCK
+		}
+		78={
 			transfer_state_to = MCK
 		}
 		82={

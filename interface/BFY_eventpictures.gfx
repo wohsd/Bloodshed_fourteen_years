@@ -306,6 +306,10 @@ spriteTypes = {
 		name = "GFX_ROD_1931_1203"
 		texturefile = "gfx/event/ROD_1931_1203.png"
 	}
+	spriteType = {
+		name = "GFX_ROD_1931_50"
+		texturefile = "gfx/event/ROD_1931_50.png"
+	}
 
 	# ROJ 事件配图
 	spriteType = {
